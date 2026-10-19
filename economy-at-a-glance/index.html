@@ -36,16 +36,15 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-sans);line-height:1.45}
 .eg{max-width:2400px;margin:0 auto;padding:24px clamp(16px,3vw,48px) 32px;display:grid;grid-template-columns:minmax(0,1fr);gap:var(--gap-lg);align-items:start}
-/* Wide screens: headline beside the rates chart, everything else full width */
-@media (min-width:75rem){
-  .eg{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
-  .eg>*{grid-column:1/-1}
-  .eg>#top{grid-row:1;grid-column:1}
-  .eg>#rates{grid-row:1;grid-column:2}
-  .hide-header .eg>#rates,.hide-rates .eg>#top{grid-column:1/-1}
-}
 /* Scorecard sections sit side by side when there's room */
-#scTables{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,40rem),1fr));gap:var(--gap-md);align-items:start}
+#scTables{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--gap-md);align-items:start}
+@media (min-width:88rem){#scTables{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:128rem){#scTables{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* Overseas cash rates table + policy-rates chart side by side (stacked on narrow screens) */
+.sc-pair{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--gap-md);align-items:stretch}
+@media (min-width:70rem){.sc-pair{grid-template-columns:minmax(0,3fr) minmax(0,2fr)}}
+@media (min-width:88rem){.sc-pair{grid-column:span 2}}
+.hide-scorecard .sc-pair,.hide-rates .sc-pair{grid-template-columns:minmax(0,1fr)}
 .embed .eg{padding-top:12px;padding-bottom:12px}
 .eg-head h1{font-family:var(--font-serif);font-weight:400;font-size:var(--fs-title);margin:0;line-height:1.15}
 .eg-head p{margin:var(--gap-sm) 0 0;color:var(--color-fg-muted);font-size:var(--fs-body);max-width:60rem}
@@ -73,6 +72,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(-
 .eg-tile .v.na{color:var(--color-fg-muted);font-family:var(--font-sans);font-size:var(--fs-body)}
 .eg-tile .pd{font-size:var(--fs-caption);color:var(--color-fg-muted)}
 .eg-tile .nt{font-size:var(--fs-caption);color:var(--color-fg-muted);margin-top:auto;padding-top:4px;line-height:1.3}
+.eg-tile .nt strong{color:var(--color-fg);font-weight:700}
 .eg-ad{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;font-family:var(--font-serif);font-size:1.3rem;margin-top:var(--gap-sm)}
 .eg-ad span:nth-child(1){color:var(--c-C)}.eg-ad span:nth-child(2){color:var(--c-I)}.eg-ad span:nth-child(3){color:var(--c-G)}.eg-ad span:nth-child(4){color:var(--c-XM)}
 .eg-card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--radius);padding:var(--pad-lg)}
@@ -89,9 +89,8 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(-
 .eg tr:last-child td{border-bottom:0}
 .eg td .sub{display:block;color:var(--color-fg-muted);font-weight:400}
 .eg td.m{font-weight:600;min-width:9rem}
-.eg td.val{font-weight:600;white-space:nowrap}
-.eg td.val .sub{white-space:normal}
-.eg td.src{color:var(--color-fg-muted);white-space:nowrap}
+.eg td.val{font-weight:600;min-width:6.5rem}
+.eg td.src{color:var(--color-fg-muted)}
 .eg-sech{font-size:var(--fs-body);font-weight:600;margin:0 0 var(--gap-xs)}
 .eg-fail{display:flex;align-items:center;justify-content:center;gap:6px;min-height:6rem;color:var(--color-fg-muted);font-size:var(--fs-caption)}
 .eg-fail::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--color-bad)}
@@ -99,7 +98,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(-
 @keyframes pulse{50%{opacity:.5}}
 @media (prefers-reduced-motion:reduce){.skel{animation:none}}
 @media (max-width:30rem){.eg-tiles{grid-template-columns:1fr}.eg-ad{font-size:1rem}}
-.hide-scorecard #scorecard,.hide-rates #rates,.hide-header #top{display:none}
+.hide-scorecard #scorecard>div:first-child,.hide-scorecard #scTables .eg-card:not(#rates),.hide-rates #rates,.hide-header #top{display:none}
 </style>
 </head>
 <body>
@@ -117,18 +116,18 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(-
     <div class="eg-ad" aria-hidden="true"><span>▼ C</span><span>+ ▼ I</span><span>+ ▼ G</span><span>+ ▼ (X − M)</span></div>
   </section>
 
-  <section class="eg-card" id="rates">
-    <h2>Policy rates around the world</h2>
-    <p class="note">Latest central bank settings, % (US shows the top of its target range).</p>
-    <div class="eg-chart" id="rateChart"></div>
-  </section>
-
   <section id="scorecard" class="eg-sc">
     <div>
       <h2>Economic scorecard: the last three releases</h2>
       <p class="eg-foot" style="margin-top:var(--gap-xs)">Booklet pages 68–69. Latest release first.</p>
     </div>
-    <div id="scTables" class="eg-sc"></div>
+    <div id="scTables" class="eg-sc">
+      <section class="eg-card" id="rates">
+        <h3 class="eg-sech">Policy rates around the world</h3>
+        <p class="note">Latest central bank settings, % (US shows the top of its target range).</p>
+        <div class="eg-chart" id="rateChart"></div>
+      </section>
+    </div>
   </section>
 
   <p class="eg-foot" id="sources">Figures from ABS, RBA, budget.gov.au, NAB, Fair Work Commission, NBS, IMF and overseas central banks. ABS and RBA figures refresh automatically each day; the rest are checked weekly. "% of GDP" values marked ≈ are calculated from ABS quarterly nominal GDP.</p>
@@ -158,6 +157,13 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(-
       .then(d=>{state[name]=d;},()=>{state.err[name]=true;});
   }
 
+  // Notes mark the previous figure as **…**; show it in bold.
+  function note(text){
+    const d=el("div","nt");
+    String(text||"").split(/\*\*(.+?)\*\*/).forEach((part,i)=>{if(part)d.appendChild(i%2?el("strong",null,part):document.createTextNode(part));});
+    return d;
+  }
+
   function fail(target){target.innerHTML="";target.appendChild(el("div","eg-fail","Couldn't load these figures"));}
 
   function drawGlance(){
@@ -176,7 +182,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(-
           const v=el("div","v",r.display);
           if(/not found|n\/a/i.test(r.display))v.classList.add("na");
           else if(!/^[−+\-$\d]/.test(r.display))v.classList.add("txt");
-          t.append(el("div","lb",r.label),v,el("div","pd",r.period+" · "+r.source),el("div","nt",r.note||""));
+          t.append(el("div","lb",r.label),v,el("div","pd",r.period+" · "+r.source),note(r.note));
         }else{t.append(el("div","lb skel","Loading"),el("div","v skel","0.0%"));}
         g.appendChild(t);
       }
@@ -216,8 +222,8 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(-
   }
 
   function drawScore(){
-    const sc=document.getElementById("scTables");sc.innerHTML="";
-    if(state.err.scorecard)return fail(sc);
+    const sc=document.getElementById("scTables"),rates=document.getElementById("rates");sc.innerHTML="";
+    if(state.err.scorecard){fail(sc);sc.appendChild(rates);return;}
     const rows=state.scorecard||[];
     SECTIONS.forEach((S,si)=>{
       const card=el("div","eg-card");card.id="sc-"+si;card.appendChild(el("h3","eg-sech",S));
@@ -234,7 +240,9 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(-
           else{td.className="src";td.textContent=r[f];}
         });
       });
-      wrap.appendChild(tb);card.appendChild(wrap);sc.appendChild(card);
+      wrap.appendChild(tb);card.appendChild(wrap);
+      if(si===SECTIONS.length-1){const pair=el("div","sc-pair");pair.append(card,rates);sc.appendChild(pair);} // Overseas cash rates + chart
+      else sc.appendChild(card);
     });
   }
 
@@ -251,7 +259,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(-
     }else stamp.textContent="";
   }
 
-  function drawAll(){drawHead();drawGlance();drawRates();drawScore();postHeight();}
+  function drawAll(){drawHead();drawGlance();drawScore();drawRates();postHeight();}
 
   // Tell a parent page (iframe embed) how tall we are, so it can size the frame.
   let lastH=0;

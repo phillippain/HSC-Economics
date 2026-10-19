@@ -44,13 +44,15 @@ growth, world growth, net foreign liabilities/debt, the other scorecard rows, an
    NBS, IMF WEO, Federal Reserve, ECB, Bank of England, Bank of Japan). Only change a figure when a
    newer release is out, and update its `period`, `note` and (for the scorecard) shift
    latest → previous → earlier.
-2. Keep the existing formats: Unicode minus `−`, `%` on rates, `$…b` for billions, periods such as
+2. In each box's `note`, put the previous figure in bold with `**…**`,
+   e.g. `Up from **3.5%** in Jul.` The page shows it in bold.
+3. Keep the existing formats: Unicode minus `−`, `%` on rates, `$…b` for billions, periods such as
    `Sep 2026`, `Jun qtr 2026`, `14 Oct 2026`.
-3. Don't edit the auto-managed ids above unless the job has stopped working. If you do set one of
+4. Don't edit the auto-managed ids above unless the job has stopped working. If you do set one of
    them from a fresher source (e.g. monthly CPI), set its `meta.json → auto.<id>.asOf` to the
    period's end date so the job doesn't overwrite it with an older figure.
-4. Set `meta.json → updated` to the current time (ISO 8601, UTC) and `weeklyCheck` to today's date.
-5. Commit with a message listing what changed, and push to `main`. The push redeploys the site.
+5. Set `meta.json → updated` to the current time (ISO 8601, UTC) and `weeklyCheck` to today's date.
+6. Commit with a message listing what changed, and push to `main`. The push redeploys the site.
 
 ## Running the job by hand
 

@@ -273,7 +273,7 @@ def run(fixtures=None, today=None):
     if len(ur) >= 3:
         (d0, v0), (d1, v1), (d2, v2) = ur[-3], ur[-2], ur[-1]
         set_glance("unemp", d2, pct(v2), month_label(d2),
-                   f"Seasonally adjusted; {move(v2, v1)} on {MON[d1.month-1]} ({v1:.1f}%).", "ABS 6202")
+                   f"Seasonally adjusted; {move(v2, v1)} on {MON[d1.month-1]} (**{v1:.1f}%**).", "ABS 6202")
         set_score("unempsc", d2, {"latest": pct(v2), "latestPeriod": month_label(d2), "previous": pct(v1),
                                   "previousPeriod": month_label(d1), "earlier": pct(v0), "earlierPeriod": month_label(d0)})
     pr = series(tables, "h5", "GLFSPRSA")
@@ -281,7 +281,7 @@ def run(fixtures=None, today=None):
         (d0, v0), (d1, v1), (d2, v2) = pr[-3], pr[-2], pr[-1]
         mv = move(v2, v1)
         set_glance("partic", d2, pct(v2), month_label(d2),
-                   (mv[0].upper() + mv[1:]) + f" on {MON[d1.month-1]}.", "ABS 6202")
+                   (mv[0].upper() + mv[1:]) + f" on {MON[d1.month-1]} (**{v1:.1f}%**).", "ABS 6202")
         set_score("particsc", d2, {"latest": pct(v2), "latestPeriod": month_label(d2), "previous": pct(v1),
                                    "previousPeriod": month_label(d1), "earlier": pct(v0), "earlierPeriod": month_label(d0)})
 
@@ -290,21 +290,21 @@ def run(fixtures=None, today=None):
     if len(wpi) >= 2:
         (d1, v1), (d2, v2) = wpi[-2], wpi[-1]
         set_glance("wpi", d2, pct(v2), qtr_label(d2),
-                   f"Annual growth; {v1:.1f}% in the {qtr_label(d1)}. Compare with CPI inflation for real wages.", "ABS 6345")
+                   f"Annual growth; **{v1:.1f}%** in the {qtr_label(d1)}. Compare with CPI inflation for real wages.", "ABS 6345")
 
     # --- Household saving ratio (RBA H2 = ABS 5206)
     sr = series(tables, "h2", "GGDPICHDISR")
     if len(sr) >= 2:
         (d1, v1), (d2, v2) = sr[-2], sr[-1]
         word = "Up" if v2 > v1 else ("Down" if v2 < v1 else "Unchanged")
-        set_glance("saving", d2, pct(v2), qtr_label(d2), f"{word} from {pct(v1)} in the {qtr_label(d1)}.", "ABS 5206")
+        set_glance("saving", d2, pct(v2), qtr_label(d2), f"{word} from **{pct(v1)}** in the {qtr_label(d1)}.", "ABS 5206")
 
     # --- Household debt to income (RBA E2)
     dti = series(tables, "e2", "BHFDDIT")
     if len(dti) >= 2:
         (d1, v1), (d2, v2) = dti[-2], dti[-1]
         set_glance("debtinc", d2, f"{v2:.0f}%", qtr_label(d2),
-                   f"Household debt as a share of annual disposable income; {v1:.0f}% in the {qtr_label(d1)}.", "RBA table E2")
+                   f"Household debt as a share of annual disposable income; **{v1:.0f}%** in the {qtr_label(d1)}.", "RBA table E2")
 
     # --- GDP growth (RBA H1 = ABS 5206)
     gdp = series(tables, "h1", "GGDPCVGDPY")
@@ -320,16 +320,17 @@ def run(fixtures=None, today=None):
         yy = (tt[-1][1] / tt[-5][1] - 1) * 100
         (d0, c0), (d1, c1), (d2, c2) = q
         set_glance("tot", d2, pct(c2, plus=True), qtr_label(d2),
-                   f"Quarter; {pct(yy, plus=True)} over the year.", "ABS 5206")
+                   f"Quarter; **{pct(c1, plus=True)}** in the {qtr_label(d1)}; {pct(yy, plus=True)} over the year.", "ABS 5206")
         set_score("totsc", d2, {"latest": f"{pct(c2, plus=True)} ({pct(yy, plus=True)} y/y)", "latestPeriod": qtr_label(d2),
                                 "previous": pct(c1, plus=True), "previousPeriod": qtr_label(d1),
                                 "earlier": pct(c0, plus=True), "earlierPeriod": qtr_label(d0)})
 
     # --- Current account % of GDP (RBA I1 = ABS 5302)
     ca = series(tables, "i1", "HCAGSCPGDP")
-    if ca:
-        d2, v2 = ca[-1]
-        set_glance("capct", d2, pct(v2), qtr_label(d2), "Current account balance as a share of GDP (RBA table I1).", "ABS 5302")
+    if len(ca) >= 2:
+        (d1, v1), (d2, v2) = ca[-2], ca[-1]
+        set_glance("capct", d2, pct(v2), qtr_label(d2),
+                   f"**{pct(v1)}** in the {qtr_label(d1)}. Current account balance as a share of GDP (RBA table I1).", "ABS 5302")
 
     # --- Cash rate (RBA A2: one row per change)
     new_rate = series(tables, "a2", "ARBAMPCNCRT")
@@ -342,10 +343,14 @@ def run(fixtures=None, today=None):
             d2, rate, c = decisions[-1]
             this_year = [x for x in decisions if x[0].year == d2.year]
             net = sum(x[2] for x in this_year)
-            set_glance("cash", d2, f"{rate:.2f}%", day_label(d2), "Target band for inflation is 2–3%.", "RBA")
+            set_glance("cash", d2, f"{rate:.2f}%", day_label(d2),
+                       f"{'Up' if c > 0 else 'Down'} from **{rate - c:.2f}%**. Target band for inflation is 2–3%.", "RBA")
             n = len(this_year)
             set_glance("lastchg", d2, f"{sgn(c, 2)} pts", f"{'Raised' if c > 0 else 'Cut'} on {day_label(d2)}",
-                       f"From {rate - c:.2f}% to {rate:.2f}%. {n} change{'s' if n != 1 else ''} in {d2.year} "
+                       (f"Previous move **{sgn(decisions[-2][2], 2)} pts** on {decisions[-2][0].day} {MON[decisions[-2][0].month-1]}"
+                        + (f" {decisions[-2][0].year}" if decisions[-2][0].year != d2.year else "") + ". "
+                        if len(decisions) >= 2 else "") +
+                       f"{n} change{'s' if n != 1 else ''} in {d2.year} "
                        f"({', '.join(MON[x[0].month-1] for x in this_year)}): {sgn(net, 2)} pts net.", "RBA media release")
             last3 = decisions[-3:][::-1] + [None] * 3
             def cell(x):
@@ -368,7 +373,7 @@ def run(fixtures=None, today=None):
         if ago:
             ch = (v2 / ago[1] - 1) * 100
             set_glance("audchg", d2, pct(ch, plus=True), f"Year to {day_label(d2)}",
-                       f"{v2*100:.2f} US cents on {day_label(d2)} vs {ago[1]*100:.2f} a year earlier.", "RBA")
+                       f"{v2*100:.2f} US cents on {day_label(d2)} vs **{ago[1]*100:.2f}** a year earlier.", "RBA")
             set_score("audsc", d2, {"latest": f"{v2*100:.2f}", "latestPeriod": day_label(d2),
                                     "previous": f"{prev_m[1]*100:.2f}" if prev_m else "—",
                                     "previousPeriod": day_label(prev_m[0]) if prev_m else "",
@@ -378,7 +383,8 @@ def run(fixtures=None, today=None):
         d2, v2 = twi[-1]
         ago = value_on_or_before(twi, d2 - timedelta(days=365))
         prev_m = value_on_or_before(twi, d2.replace(day=1) - timedelta(days=1))
-        set_glance("twi", d2, f"{v2:.1f}", day_label(d2), "Trade-weighted index, May 1970 = 100.", "RBA")
+        set_glance("twi", d2, f"{v2:.1f}", day_label(d2),
+                   (f"**{prev_m[1]:.1f}** on {day_label(prev_m[0])}. " if prev_m else "") + "Trade-weighted index, May 1970 = 100.", "RBA")
         set_score("twisc", d2, {"latest": f"{v2:.1f}", "latestPeriod": day_label(d2),
                                 "previous": f"{prev_m[1]:.1f}" if prev_m else "—",
                                 "previousPeriod": day_label(prev_m[0]) if prev_m else "",

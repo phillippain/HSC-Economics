@@ -6,7 +6,7 @@
   "display": "4.7%",
   "period": "Sep 2026",
   "source": "ABS 6202",
-  "note": "Seasonally adjusted; steady on Aug (4.7%). RBA's NAIRU estimate is about 4.5%."
+  "note": "Seasonally adjusted; steady on Aug (**4.7%**). RBA's NAIRU estimate is about 4.5%."
  },
  {
   "id": "underut",
@@ -15,7 +15,7 @@
   "display": "11.0%",
   "period": "Sep 2026",
   "source": "ABS 6202",
-  "note": "Up 0.2 pts on Aug."
+  "note": "Up 0.2 pts on Aug (**10.8%**)."
  },
  {
   "id": "partic",
@@ -24,7 +24,7 @@
   "display": "66.8%",
   "period": "Sep 2026",
   "source": "ABS 6202",
-  "note": "Down 0.2 pts on Aug."
+  "note": "Down 0.2 pts on Aug (**67.0%**)."
  },
  {
   "id": "wpi",
@@ -51,7 +51,7 @@
   "display": "6.5%",
   "period": "Jun qtr 2026",
   "source": "ABS 5206",
-  "note": "Up from 6.4% in the Mar qtr."
+  "note": "Up from **6.4%** in the Mar qtr."
  },
  {
   "id": "popn",
@@ -69,7 +69,7 @@
   "display": "178%",
   "period": "Jun qtr 2026",
   "source": "RBA table E2",
-  "note": "Household debt as a share of annual disposable income; 177% in the Mar qtr 2026."
+  "note": "Household debt as a share of annual disposable income; **177%** in the Mar qtr 2026."
  },
  {
   "id": "cpi",
@@ -78,7 +78,7 @@
   "display": "4.0%",
   "period": "Aug 2026",
   "source": "ABS 6401",
-  "note": "Annual; up from 3.5% in Jul. Above the 2–3% target band."
+  "note": "Annual; up from **3.5%** in Jul. Above the 2–3% target band."
  },
  {
   "id": "tmean",
@@ -87,7 +87,7 @@
   "display": "3.6%",
   "period": "Aug 2026",
   "source": "ABS 6401",
-  "note": "Underlying annual inflation; 3.6% for three months running."
+  "note": "Underlying annual inflation; unchanged from **3.6%** in Jul (three months running)."
  },
  {
   "id": "cash",
@@ -96,7 +96,7 @@
   "display": "4.60%",
   "period": "30 Sep 2026",
   "source": "RBA",
-  "note": "Highest since 2011. Target band for inflation is 2–3%."
+  "note": "Up from **4.35%**. Highest since 2011. Target band for inflation is 2–3%."
  },
  {
   "id": "lastchg",
@@ -105,7 +105,7 @@
   "display": "+0.25 pts",
   "period": "Raised on 30 Sep 2026",
   "source": "RBA media release",
-  "note": "From 4.35% to 4.60%. Fourth rise of 2026 (Feb, Mar, May, Sep): +1.00 pt this year."
+  "note": "Previous move **+0.25 pts** on 5 May. Fourth rise of 2026 (Feb, Mar, May, Sep): +1.00 pt this year."
  },
  {
   "id": "capex",
@@ -132,7 +132,7 @@
   "display": "−13",
   "period": "Sep 2026",
   "source": "NAB Monthly Business Survey",
-  "note": "Index, down 4 pts; conditions −1; capacity use 82.3%."
+  "note": "Index, down 4 pts from **−9**; conditions −1; capacity use 82.3%."
  },
  {
   "id": "profits",
@@ -150,7 +150,7 @@
   "display": "−$22.3b",
   "period": "2025-26 (Final Budget Outcome)",
   "source": "budget.gov.au",
-  "note": "Underlying cash deficit; $6b smaller than the Budget estimate."
+  "note": "Underlying cash deficit; **−$28.3b** at Budget time, so $6b smaller."
  },
  {
   "id": "ucbpct",
@@ -159,7 +159,7 @@
   "display": "−0.8%",
   "period": "2025-26 (Final Budget Outcome)",
   "source": "budget.gov.au",
-  "note": "2026-27 Budget forecast: −$31.5b (−1.0% of GDP)."
+  "note": "**−1.0%** at Budget time. 2026-27 Budget forecast: −$31.5b (−1.0% of GDP)."
  },
  {
   "id": "tax",
@@ -195,7 +195,7 @@
   "display": "19.9%",
   "period": "2026-27 Budget estimate",
   "source": "budget.gov.au",
-  "note": "Up from 18.8% estimated for 2025-26."
+  "note": "Up from **18.8%** estimated for 2025-26."
  },
  {
   "id": "stance",
@@ -222,7 +222,7 @@
   "display": "−1.6%",
   "period": "Jun qtr 2026",
   "source": "ABS 5206",
-  "note": "Quarter; −0.6% over the year. Import prices rose faster than export prices."
+  "note": "Quarter; **+1.0%** in the Mar qtr; −0.6% over the year. Import prices rose faster than export prices."
  },
  {
   "id": "audchg",
@@ -231,7 +231,7 @@
   "display": "+7.0%",
   "period": "Year to 16 Oct 2026",
   "source": "RBA",
-  "note": "69.47 US cents on 16 Oct 2026 vs 64.92 a year earlier."
+  "note": "69.47 US cents on 16 Oct 2026 vs **64.92** a year earlier."
  },
  {
   "id": "ca",
@@ -240,7 +240,7 @@
   "display": "−$27.2b",
   "period": "Jun qtr 2026",
   "source": "ABS 5302",
-  "note": "Deficit, wider than −$25.4b in Mar qtr."
+  "note": "Deficit, wider than **−$25.4b** in Mar qtr."
  },
  {
   "id": "capct",
@@ -249,7 +249,7 @@
   "display": "−3.7%",
   "period": "Jun qtr 2026",
   "source": "ABS 5302",
-  "note": "Calculated: quarterly deficit ÷ quarterly nominal GDP ($742.5b)."
+  "note": "**−3.4%** in the Mar qtr. Calculated: quarterly deficit ÷ quarterly nominal GDP ($742.5b)."
  },
  {
   "id": "china",
@@ -258,7 +258,7 @@
   "display": "4.3%",
   "period": "Jun qtr 2026 (y/y)",
   "source": "NBS",
-  "note": "Down from 5.0% in Mar qtr; weakest since Dec 2022. IMF forecasts 4.5% for 2026."
+  "note": "Down from **5.0%** in Mar qtr; weakest since Dec 2022. IMF forecasts 4.5% for 2026."
  },
  {
   "id": "world",
@@ -267,7 +267,7 @@
   "display": "3.1%",
   "period": "2026 forecast (Oct 2026)",
   "source": "IMF WEO",
-  "note": "Up from 3.0% in July; 3.4% forecast for 2027."
+  "note": "Up from **3.0%** in July; 3.4% forecast for 2027."
  },
  {
   "id": "nfl",
@@ -276,7 +276,7 @@
   "display": "$638.9b",
   "period": "Jun qtr 2026",
   "source": "ABS 5302",
-  "note": "About 21.8% of GDP (calculated). Net foreign debt $1,486.0b."
+  "note": "**$761.7b** in the Mar qtr. About 21.8% of GDP (calculated). Net foreign debt $1,486.0b."
  },
  {
   "id": "twi",
@@ -285,6 +285,6 @@
   "display": "64.4",
   "period": "16 Oct 2026",
   "source": "RBA",
-  "note": "Trade-weighted index, May 1970 = 100."
+  "note": "**64.7** on 30 Sep 2026. Trade-weighted index, May 1970 = 100."
  }
 ]
