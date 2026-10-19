@@ -66,10 +66,10 @@
   "id": "debtinc",
   "panel": "C",
   "label": "Debt : income",
-  "display": "Not found",
-  "period": "RBA table E2",
+  "display": "178%",
+  "period": "Jun qtr 2026",
   "source": "RBA table E2",
-  "note": "RBA table E2 couldn't be reached from here. Look it up on rba.gov.au."
+  "note": "Household debt as a share of annual disposable income; 177% in the Mar qtr 2026."
  },
  {
   "id": "cpi",
@@ -228,10 +228,10 @@
   "id": "audchg",
   "panel": "XM",
   "label": "AUD/USD % Δ",
-  "display": "+8.0%",
-  "period": "Year to 14 Oct 2026",
+  "display": "+7.0%",
+  "period": "Year to 16 Oct 2026",
   "source": "RBA",
-  "note": "70.02 US cents on 14 Oct 2026 vs about 64.9 a year earlier."
+  "note": "69.47 US cents on 16 Oct 2026 vs 64.92 a year earlier."
  },
  {
   "id": "ca",
@@ -282,8 +282,8 @@
   "id": "twi",
   "panel": "XM",
   "label": "TWI",
-  "display": "65.0",
-  "period": "14 Oct 2026",
+  "display": "64.4",
+  "period": "16 Oct 2026",
   "source": "RBA",
   "note": "Trade-weighted index, May 1970 = 100."
  }
