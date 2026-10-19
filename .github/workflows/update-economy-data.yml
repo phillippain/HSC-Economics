@@ -1,0 +1,54 @@
+# Refreshes the Economy at a Glance figures from RBA statistical tables once a day,
+# then redeploys the GitHub Pages site if anything changed.
+name: Update Economy at a Glance data
+
+on:
+  schedule:
+    # 07:23 UTC = 6:23pm AEDT / 5:23pm AEST, after the RBA's 4pm exchange rates and same-day ABS releases.
+    - cron: "23 7 * * *"
+  workflow_dispatch: # lets you run it any time from the Actions tab
+
+permissions:
+  contents: write # commit the updated data files
+  actions: write  # start the Pages deploy (pushes made by this job don't trigger it on their own)
+
+concurrency:
+  group: economy-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Excel reader (fallback only)
+        run: pip install --quiet openpyxl
+
+      - name: Pull latest RBA / ABS figures
+        run: python3 economy-at-a-glance/scripts/update_rba.py
+
+      - name: Commit if anything changed
+        id: commit
+        run: |
+          git config user.name "economy-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add economy-at-a-glance/data
+          if git diff --cached --quiet; then
+            echo "No new figures today."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Economy at a glance: daily data update $(date -u +%Y-%m-%d)"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Redeploy GitHub Pages
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run static.yml --ref main

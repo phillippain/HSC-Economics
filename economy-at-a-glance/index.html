@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Economy at a Glance</title>
+<meta name="description" content="Latest Australian economic indicators for HSC Economics: the economy at a glance (AD = C + I + G + (X − M)), policy rates and an economic scorecard. Updated daily.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+<script src="d3.min.js"></script>
+<style>
+:root{
+  --font-sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-serif:"Source Serif 4",Georgia,serif;
+  --color-bg:#ffffff;--color-panel:#f7f6f3;--color-fg:#1f1e1c;--color-fg-muted:#6b6862;
+  --color-border-line:#e3e0da;--color-bad:#c4402f;--color-accent:#d94436;--chart-muted:#b9b5ad;
+  --popover:#ffffff;--shadow:0 4px 16px rgba(0,0,0,.12);
+  --c-C:#d94436;--c-I:#e07b13;--c-G:#2f7fd6;--c-XM:#6a45b8;
+  --gap-xs:4px;--gap-sm:8px;--gap-md:16px;--gap-lg:28px;--pad-xs:4px;--pad-sm:8px;--pad-md:12px;--pad-lg:16px;--radius:10px;
+  --fs-title:clamp(1.6rem,3vw,2.1rem);--fs-heading:1.2rem;--fs-body:.95rem;--fs-caption:.8rem;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --color-bg:#1c1b19;--color-panel:#252421;--color-fg:#ecebe7;--color-fg-muted:#a3a09a;
+    --color-border-line:#3a3834;--chart-muted:#5f5c56;--popover:#2d2b28;--shadow:0 4px 16px rgba(0,0,0,.5);
+    --c-I:#d9790f;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --color-bg:#1c1b19;--color-panel:#252421;--color-fg:#ecebe7;--color-fg-muted:#a3a09a;
+  --color-border-line:#3a3834;--chart-muted:#5f5c56;--popover:#2d2b28;--shadow:0 4px 16px rgba(0,0,0,.5);
+  --c-I:#d9790f;color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-sans);line-height:1.45}
+.eg{max-width:1200px;margin:0 auto;padding:24px 16px 32px;display:flex;flex-direction:column;gap:var(--gap-lg)}
+.embed .eg{padding-top:12px;padding-bottom:12px}
+.eg-head h1{font-family:var(--font-serif);font-weight:400;font-size:var(--fs-title);margin:0;line-height:1.15}
+.eg-head p{margin:var(--gap-sm) 0 0;color:var(--color-fg-muted);font-size:var(--fs-body);max-width:60rem}
+.eg-head .k{color:var(--color-fg);font-weight:600;font-variant-numeric:tabular-nums}
+.eg-stamp{display:inline-flex;align-items:center;gap:6px;margin-top:var(--gap-sm);font-size:var(--fs-caption);color:var(--color-fg-muted)}
+.eg-stamp::before{content:"";width:7px;height:7px;border-radius:50%;background:#3a9a5b}
+.eg h2{font-size:var(--fs-heading);font-weight:600;margin:0}
+.eg-eq{font-family:var(--font-serif);font-weight:400;color:var(--color-fg-muted)}
+.eg-foot{font-size:var(--fs-caption);color:var(--color-fg-muted);margin:0}
+.eg-panels{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:var(--gap-md);margin-top:var(--gap-md)}
+.eg-panel{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.eg-ph{padding:var(--pad-md) var(--pad-lg);color:#fff}
+.eg-ph b{display:block;font-size:var(--fs-heading);font-weight:600}
+.eg-ph span{font-size:var(--fs-caption);opacity:.92}
+.eg-panel[data-p=C] .eg-ph{background:var(--c-C)}.eg-panel[data-p=I] .eg-ph{background:var(--c-I)}
+.eg-panel[data-p=G] .eg-ph{background:var(--c-G)}.eg-panel[data-p=XM] .eg-ph{background:var(--c-XM)}
+.eg-tiles{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap-sm);padding:var(--pad-md);flex:1}
+.eg-tile{border:1px solid var(--color-border-line);border-radius:8px;padding:var(--pad-sm);background:var(--color-bg);display:flex;flex-direction:column;gap:2px;min-height:7.5rem}
+.eg-tile .lb{font-size:var(--fs-caption);font-weight:600}
+.eg-tile .v{font-family:var(--font-serif);font-weight:500;font-size:1.35rem;font-variant-numeric:tabular-nums;line-height:1.2}
+.eg-tile .v.txt{font-family:var(--font-sans);font-size:var(--fs-body);font-weight:600}
+.eg-tile .v.na{color:var(--color-fg-muted);font-family:var(--font-sans);font-size:var(--fs-body)}
+.eg-tile .pd{font-size:var(--fs-caption);color:var(--color-fg-muted)}
+.eg-tile .nt{font-size:var(--fs-caption);color:var(--color-fg-muted);margin-top:auto;padding-top:4px;line-height:1.3}
+.eg-ad{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;font-family:var(--font-serif);font-size:1.3rem;margin-top:var(--gap-sm)}
+.eg-ad span:nth-child(1){color:var(--c-C)}.eg-ad span:nth-child(2){color:var(--c-I)}.eg-ad span:nth-child(3){color:var(--c-G)}.eg-ad span:nth-child(4){color:var(--c-XM)}
+.eg-card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--radius);padding:var(--pad-lg)}
+.eg-card .note{font-size:var(--fs-caption);color:var(--color-fg-muted);margin:var(--gap-xs) 0 var(--gap-md)}
+.eg-chart{position:relative;min-height:200px}
+.eg-chart svg{display:block;overflow:visible}
+.eg-tip{position:absolute;background:var(--popover);border:1px solid var(--color-border-line);border-radius:8px;box-shadow:var(--shadow);padding:4px 8px;font-size:var(--fs-caption);pointer-events:none;display:none;white-space:nowrap;z-index:2}
+.eg-tip .d{color:var(--color-fg-muted)}
+.eg-sc{display:flex;flex-direction:column;gap:var(--gap-md)}
+.eg-tw{overflow-x:auto}
+.eg table{width:100%;border-collapse:collapse;font-size:var(--fs-caption);font-variant-numeric:tabular-nums}
+.eg th{text-align:left;font-weight:600;padding:var(--pad-xs) var(--pad-sm);border-bottom:1px solid var(--color-border-line);color:var(--color-fg-muted);white-space:nowrap}
+.eg td{padding:6px var(--pad-sm);border-bottom:1px solid var(--color-border-line);vertical-align:top}
+.eg tr:last-child td{border-bottom:0}
+.eg td .sub{display:block;color:var(--color-fg-muted);font-weight:400}
+.eg td.m{font-weight:600;min-width:9rem}
+.eg td.val{font-weight:600;white-space:nowrap}
+.eg td.val .sub{white-space:normal}
+.eg td.src{color:var(--color-fg-muted)}
+.eg-sech{font-size:var(--fs-body);font-weight:600;margin:0 0 var(--gap-xs)}
+.eg-fail{display:flex;align-items:center;justify-content:center;gap:6px;min-height:6rem;color:var(--color-fg-muted);font-size:var(--fs-caption)}
+.eg-fail::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--color-bad)}
+.skel{color:transparent;background:var(--color-border-line);border-radius:4px;animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.5}}
+@media (prefers-reduced-motion:reduce){.skel{animation:none}}
+@media (max-width:30rem){.eg-tiles{grid-template-columns:1fr}.eg-ad{font-size:1rem}}
+.hide-scorecard #scorecard,.hide-rates #rates,.hide-header #top{display:none}
+</style>
+</head>
+<body>
+<main class="eg">
+  <header class="eg-head" id="top">
+    <h1 id="title">Economy at a glance</h1>
+    <p id="takeaway">Inflation is <span class="k" data-k="cpi">—</span> (trimmed mean <span class="k" data-k="tmean">—</span>) against the RBA's 2–3% target, and the cash rate is <span class="k" data-k="cash">—</span>. Growth is <span class="k" data-k="gdp">—</span> over the year and unemployment is <span class="k" data-k="unemp">—</span>.</p>
+    <div class="eg-stamp" id="stamp">Loading latest figures…</div>
+  </header>
+
+  <section id="glance">
+    <h2>The economy at a glance <span class="eg-eq">— AD = C + I + G + (X − M)</span></h2>
+    <p class="eg-foot" style="margin-top:var(--gap-xs)">Latest figure and its period for each box on booklet page 67. The cash rate works on households (C) and firms (I) through interest rates; the overseas sector works through net exports.</p>
+    <div class="eg-panels" id="panels"></div>
+    <div class="eg-ad" aria-hidden="true"><span>▼ C</span><span>+ ▼ I</span><span>+ ▼ G</span><span>+ ▼ (X − M)</span></div>
+  </section>
+
+  <section class="eg-card" id="rates">
+    <h2>Policy rates around the world</h2>
+    <p class="note">Latest central bank settings, % (US shows the top of its target range).</p>
+    <div class="eg-chart" id="rateChart"></div>
+  </section>
+
+  <section id="scorecard" class="eg-sc">
+    <div>
+      <h2>Economic scorecard: the last three releases</h2>
+      <p class="eg-foot" style="margin-top:var(--gap-xs)">Booklet pages 68–69. Latest release first.</p>
+    </div>
+    <div id="scTables" class="eg-sc"></div>
+  </section>
+
+  <p class="eg-foot" id="sources">Figures from ABS, RBA, budget.gov.au, NAB, Fair Work Commission, NBS, IMF and overseas central banks. ABS and RBA figures refresh automatically each day; the rest are checked weekly. "% of GDP" values marked ≈ are calculated from ABS quarterly nominal GDP.</p>
+</main>
+<script>
+(function(){
+  // ---- URL options: ?embed=1  ?theme=light|dark  ?hide=scorecard,rates,header
+  const qs=new URLSearchParams(location.search);
+  if(qs.get("theme")==="light"||qs.get("theme")==="dark")document.documentElement.dataset.theme=qs.get("theme");
+  if(qs.has("embed"))document.body.classList.add("embed");
+  (qs.get("hide")||"").split(",").filter(Boolean).forEach(h=>document.body.classList.add("hide-"+h.trim()));
+
+  const PANELS=[
+    {p:"C",t:"Households",s:"Labour market and consumers"},
+    {p:"I",t:"Firms",s:"Inflation, interest rates and investment"},
+    {p:"G",t:"Government",s:"Budget and public debt"},
+    {p:"XM",t:"Overseas sector",s:"Trade, the dollar and world growth"}];
+  const SECTIONS=["Overall performance and living standards","Labour market and prices","Policy settings","External stability","Overseas cash rates"];
+  const COLS=[["measure","Measure"],["latest","Latest release"],["previous","Previous release"],["earlier","Earlier release"],["source","Source"]];
+  const PER={latest:"latestPeriod",previous:"previousPeriod",earlier:"earlierPeriod"};
+  const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;};
+
+  const state={glance:null,scorecard:null,policy_rates:null,meta:null,err:{}};
+  const bust="?v="+Math.floor(Date.now()/3600000); // refetch at most hourly past caches
+  function load(name){
+    return fetch("data/"+name+".json"+bust).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})
+      .then(d=>{state[name]=d;},()=>{state.err[name]=true;});
+  }
+
+  function fail(target){target.innerHTML="";target.appendChild(el("div","eg-fail","Couldn't load these figures"));}
+
+  function drawGlance(){
+    const root=document.getElementById("panels");root.innerHTML="";
+    if(state.err.glance)return fail(root);
+    const rows=state.glance||[];
+    PANELS.forEach(P=>{
+      const pan=el("div","eg-panel");pan.dataset.p=P.p;pan.id="panel-"+P.p;
+      const h=el("div","eg-ph");h.append(el("b",null,P.t),el("span",null,P.s));pan.appendChild(h);
+      const g=el("div","eg-tiles");
+      const list=rows.filter(r=>r.panel===P.p);
+      const n=state.glance?list.length:8;
+      for(let i=0;i<n;i++){
+        const r=list[i];const t=el("div","eg-tile");
+        if(r){
+          const v=el("div","v",r.display);
+          if(/not found|n\/a/i.test(r.display))v.classList.add("na");
+          else if(!/^[−+\-$\d]/.test(r.display))v.classList.add("txt");
+          t.append(el("div","lb",r.label),v,el("div","pd",r.period+" · "+r.source),el("div","nt",r.note||""));
+        }else{t.append(el("div","lb skel","Loading"),el("div","v skel","0.0%"));}
+        g.appendChild(t);
+      }
+      pan.appendChild(g);root.appendChild(pan);
+    });
+  }
+
+  function drawRates(){
+    const chart=document.getElementById("rateChart");chart.innerHTML="";
+    if(state.err.policy_rates)return fail(chart);
+    if(!state.policy_rates||!window.d3)return;
+    const rows=state.policy_rates.map(r=>({...r,rate:Number(r.rate)}));
+    const W=Math.max(280,chart.clientWidth),bh=26,gap=12;
+    const svg=d3.select(chart).append("svg").attr("width","100%");
+    const tmp=svg.append("g");let lw=0;
+    rows.forEach(r=>{const t=tmp.append("text").attr("font-size",12).attr("font-family","Inter, system-ui, sans-serif").text(r.bank);lw=Math.max(lw,t.node().getComputedTextLength());});
+    tmp.remove();
+    const narrow=W<520,ml=narrow?0:lw+12,mr=80,rowH=narrow?bh+gap+18:bh+gap,H=rows.length*rowH;
+    svg.attr("viewBox",`0 0 ${W} ${H}`).attr("font-family","Inter, system-ui, sans-serif");
+    chart.style.minHeight=H+"px";
+    const x=d3.scaleLinear([0,d3.max(rows,r=>r.rate)*1.05],[0,W-ml-mr]);
+    const tip=el("div","eg-tip");chart.appendChild(tip);
+    rows.forEach((r,i)=>{
+      const y=i*rowH+(narrow?18:0),g=svg.append("g");
+      g.append("text").attr("x",narrow?0:ml-12).attr("y",narrow?y-5:y+bh/2+4).attr("text-anchor",narrow?"start":"end")
+        .attr("font-size",12).attr("fill","var(--color-fg)").text(r.bank);
+      const bar=g.append("rect").attr("x",ml).attr("y",y).attr("height",bh).attr("width",Math.max(2,x(r.rate))).attr("rx",4)
+        .attr("fill",i===0?"var(--color-accent)":"var(--chart-muted)");
+      g.append("text").attr("x",ml+x(r.rate)+6).attr("y",y+bh/2+4).attr("font-size",12).attr("fill","var(--color-fg)")
+        .style("font-variant-numeric","tabular-nums").text(r.label);
+      bar.on("mousemove",ev=>{
+        tip.innerHTML="";tip.append(el("div","d",r.bank+" · "+r.date),el("div",null,r.label));tip.style.display="block";
+        const [mx,my]=d3.pointer(ev,chart),tw=tip.offsetWidth;
+        tip.style.left=Math.min(Math.max(0,mx+10),chart.clientWidth-tw)+"px";tip.style.top=Math.max(0,my-44)+"px";
+      }).on("mouseleave",()=>{tip.style.display="none";});
+    });
+  }
+
+  function drawScore(){
+    const sc=document.getElementById("scTables");sc.innerHTML="";
+    if(state.err.scorecard)return fail(sc);
+    const rows=state.scorecard||[];
+    SECTIONS.forEach((S,si)=>{
+      const card=el("div","eg-card");card.id="sc-"+si;card.appendChild(el("h3","eg-sech",S));
+      const wrap=el("div","eg-tw"),tb=el("table"),th=tb.createTHead().insertRow();
+      COLS.forEach(([,l])=>th.appendChild(el("th",null,l)));
+      const body=tb.createTBody(),list=rows.filter(r=>r.section===S);
+      if(!list.length){const td=body.insertRow().insertCell();td.colSpan=COLS.length;td.textContent="—";}
+      list.forEach(r=>{
+        const tr=body.insertRow();
+        COLS.forEach(([f])=>{
+          const td=tr.insertCell();
+          if(f==="measure"){td.className="m";td.textContent=r.measure;td.appendChild(el("span","sub",r.unit));}
+          else if(PER[f]){td.className="val";td.textContent=r[f]||"—";if(r[PER[f]])td.appendChild(el("span","sub",r[PER[f]]));}
+          else{td.className="src";td.textContent=r[f];}
+        });
+      });
+      wrap.appendChild(tb);card.appendChild(wrap);sc.appendChild(card);
+    });
+  }
+
+  function drawHead(){
+    const by=Object.fromEntries((state.glance||[]).map(r=>[r.id,r.display]));
+    const gdp=(state.scorecard||[]).find(r=>r.id==="gdp");if(gdp)by.gdp=gdp.latest;
+    document.querySelectorAll("#takeaway [data-k]").forEach(s=>{s.textContent=by[s.dataset.k]||"—";});
+    const m=state.meta,stamp=document.getElementById("stamp");
+    if(m&&m.updated){
+      const d=new Date(m.updated);
+      const f=d.toLocaleDateString("en-AU",{day:"numeric",month:"short",year:"numeric",timeZone:"Australia/Sydney"});
+      stamp.textContent="Last updated "+f;
+      if(m.title)document.getElementById("title").textContent=m.title;
+    }else stamp.textContent="";
+  }
+
+  function drawAll(){drawHead();drawGlance();drawRates();drawScore();postHeight();}
+
+  // Tell a parent page (iframe embed) how tall we are, so it can size the frame.
+  let lastH=0;
+  function postHeight(){
+    if(window.parent===window)return;
+    const h=document.documentElement.scrollHeight;
+    if(h!==lastH){lastH=h;window.parent.postMessage({type:"economy-at-a-glance:height",height:h},"*");}
+  }
+
+  drawGlance();drawScore();
+  Promise.all(["glance","scorecard","policy_rates","meta"].map(load)).then(drawAll);
+  let rt;window.addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(()=>{drawRates();postHeight();},120);});
+  if(window.ResizeObserver)new ResizeObserver(postHeight).observe(document.body);
+})();
+</script>
+</body>
+</html>

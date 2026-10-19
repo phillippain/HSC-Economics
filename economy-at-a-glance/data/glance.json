@@ -1,0 +1,290 @@
+[
+ {
+  "id": "unemp",
+  "panel": "C",
+  "label": "Unemployment",
+  "display": "4.7%",
+  "period": "Sep 2026",
+  "source": "ABS 6202",
+  "note": "Seasonally adjusted; steady on Aug (4.7%). RBA's NAIRU estimate is about 4.5%."
+ },
+ {
+  "id": "underut",
+  "panel": "C",
+  "label": "Underutilisation",
+  "display": "11.0%",
+  "period": "Sep 2026",
+  "source": "ABS 6202",
+  "note": "Up 0.2 pts on Aug."
+ },
+ {
+  "id": "partic",
+  "panel": "C",
+  "label": "Participation rate",
+  "display": "66.8%",
+  "period": "Sep 2026",
+  "source": "ABS 6202",
+  "note": "Down 0.2 pts on Aug."
+ },
+ {
+  "id": "wpi",
+  "panel": "C",
+  "label": "Wages (WPI)",
+  "display": "3.2%",
+  "period": "Jun qtr 2026",
+  "source": "ABS 6345",
+  "note": "Annual growth; 0.8% in the quarter. Below CPI, so real wages are falling."
+ },
+ {
+  "id": "minwage",
+  "panel": "C",
+  "label": "Minimum wage",
+  "display": "$26.44/hr",
+  "period": "From 1 Jul 2026",
+  "source": "FWC Annual Wage Review",
+  "note": "$1,004.90 a week. Award rates rose 4.75%."
+ },
+ {
+  "id": "saving",
+  "panel": "C",
+  "label": "Savings ratio",
+  "display": "6.5%",
+  "period": "Jun qtr 2026",
+  "source": "ABS 5206",
+  "note": "Up from 6.4% in the Mar qtr."
+ },
+ {
+  "id": "popn",
+  "panel": "C",
+  "label": "Population growth",
+  "display": "1.4%",
+  "period": "Year to Mar 2026",
+  "source": "ABS 3101",
+  "note": "27.9 million people; net overseas migration was 292,100."
+ },
+ {
+  "id": "debtinc",
+  "panel": "C",
+  "label": "Debt : income",
+  "display": "Not found",
+  "period": "RBA table E2",
+  "source": "RBA table E2",
+  "note": "RBA table E2 couldn't be reached from here. Look it up on rba.gov.au."
+ },
+ {
+  "id": "cpi",
+  "panel": "I",
+  "label": "Headline CPI",
+  "display": "4.0%",
+  "period": "Aug 2026",
+  "source": "ABS 6401",
+  "note": "Annual; up from 3.5% in Jul. Above the 2–3% target band."
+ },
+ {
+  "id": "tmean",
+  "panel": "I",
+  "label": "Trimmed mean",
+  "display": "3.6%",
+  "period": "Aug 2026",
+  "source": "ABS 6401",
+  "note": "Underlying annual inflation; 3.6% for three months running."
+ },
+ {
+  "id": "cash",
+  "panel": "I",
+  "label": "Cash rate target",
+  "display": "4.60%",
+  "period": "30 Sep 2026",
+  "source": "RBA",
+  "note": "Highest since 2011. Target band for inflation is 2–3%."
+ },
+ {
+  "id": "lastchg",
+  "panel": "I",
+  "label": "Last change",
+  "display": "+0.25 pts",
+  "period": "30 Sep 2026",
+  "source": "RBA media release",
+  "note": "Fourth rise of 2026 (Feb, Mar, May, Sep): +1.00 pt this year."
+ },
+ {
+  "id": "capex",
+  "panel": "I",
+  "label": "Capital spending % Δ",
+  "display": "−3.6%",
+  "period": "Jun qtr 2026",
+  "source": "ABS 5625",
+  "note": "Volume, quarter; still +10.7% over the year (data centres, renewables)."
+ },
+ {
+  "id": "prod",
+  "panel": "I",
+  "label": "Productivity",
+  "display": "−0.2%",
+  "period": "Year to Jun qtr 2026",
+  "source": "ABS 5206",
+  "note": "GDP per hour worked; flat in the quarter."
+ },
+ {
+  "id": "bconf",
+  "panel": "I",
+  "label": "Business confidence",
+  "display": "−13",
+  "period": "Sep 2026",
+  "source": "NAB Monthly Business Survey",
+  "note": "Index, down 4 pts; conditions −1; capacity use 82.3%."
+ },
+ {
+  "id": "profits",
+  "panel": "I",
+  "label": "Profits % Δ",
+  "display": "+1.8%",
+  "period": "Jun qtr 2026",
+  "source": "ABS 5676",
+  "note": "Company gross operating profits, quarter; mining +6.8%, non-mining −1.1%."
+ },
+ {
+  "id": "ucb",
+  "panel": "G",
+  "label": "Budget balance $b",
+  "display": "−$22.3b",
+  "period": "2025-26 (Final Budget Outcome)",
+  "source": "budget.gov.au",
+  "note": "Underlying cash deficit; $6b smaller than the Budget estimate."
+ },
+ {
+  "id": "ucbpct",
+  "panel": "G",
+  "label": "Balance % of GDP",
+  "display": "−0.8%",
+  "period": "2025-26 (Final Budget Outcome)",
+  "source": "budget.gov.au",
+  "note": "2026-27 Budget forecast: −$31.5b (−1.0% of GDP)."
+ },
+ {
+  "id": "tax",
+  "panel": "G",
+  "label": "Tax receipts % GDP",
+  "display": "23.8%",
+  "period": "2026-27 Budget estimate",
+  "source": "budget.gov.au",
+  "note": "Total receipts 25.8% of GDP."
+ },
+ {
+  "id": "spend",
+  "panel": "G",
+  "label": "Spending % GDP",
+  "display": "26.8%",
+  "period": "2026-27 Budget estimate",
+  "source": "budget.gov.au",
+  "note": "Payments as a share of GDP."
+ },
+ {
+  "id": "netdebt",
+  "panel": "G",
+  "label": "Net debt $b",
+  "display": "$616.6b",
+  "period": "2026-27 Budget estimate",
+  "source": "budget.gov.au",
+  "note": "Gross debt $1,051b (34.0% of GDP)."
+ },
+ {
+  "id": "netdebtpct",
+  "panel": "G",
+  "label": "Net debt % GDP",
+  "display": "19.9%",
+  "period": "2026-27 Budget estimate",
+  "source": "budget.gov.au",
+  "note": "Up from 18.8% estimated for 2025-26."
+ },
+ {
+  "id": "stance",
+  "panel": "G",
+  "label": "Budget stance",
+  "display": "Mildly expansionary",
+  "period": "2026-27 Budget",
+  "source": "budget.gov.au",
+  "note": "Our reading: deficit forecast to widen from $22.3b (2025-26 actual) to $31.5b and payments rise to 26.8% of GDP."
+ },
+ {
+  "id": "measure",
+  "panel": "G",
+  "label": "Key measure",
+  "display": "NDIS reforms",
+  "period": "2026-27 Budget",
+  "source": "budget.gov.au",
+  "note": "‘Securing the NDIS’ saves about $36.2b; extra hospital funding costs $18.1b."
+ },
+ {
+  "id": "tot",
+  "panel": "XM",
+  "label": "Terms of trade % Δ",
+  "display": "−1.6%",
+  "period": "Jun qtr 2026",
+  "source": "ABS 5206",
+  "note": "Quarter; −0.6% over the year. Import prices rose faster than export prices."
+ },
+ {
+  "id": "audchg",
+  "panel": "XM",
+  "label": "AUD/USD % Δ",
+  "display": "+8.0%",
+  "period": "Year to 14 Oct 2026",
+  "source": "RBA",
+  "note": "70.02 US cents on 14 Oct 2026 vs about 64.9 a year earlier."
+ },
+ {
+  "id": "ca",
+  "panel": "XM",
+  "label": "Current account $b",
+  "display": "−$27.2b",
+  "period": "Jun qtr 2026",
+  "source": "ABS 5302",
+  "note": "Deficit, wider than −$25.4b in Mar qtr."
+ },
+ {
+  "id": "capct",
+  "panel": "XM",
+  "label": "Current account % GDP",
+  "display": "−3.7%",
+  "period": "Jun qtr 2026",
+  "source": "ABS 5302",
+  "note": "Calculated: quarterly deficit ÷ quarterly nominal GDP ($742.5b)."
+ },
+ {
+  "id": "china",
+  "panel": "XM",
+  "label": "China growth",
+  "display": "4.3%",
+  "period": "Jun qtr 2026 (y/y)",
+  "source": "NBS",
+  "note": "Down from 5.0% in Mar qtr; weakest since Dec 2022. IMF forecasts 4.5% for 2026."
+ },
+ {
+  "id": "world",
+  "panel": "XM",
+  "label": "World growth",
+  "display": "3.1%",
+  "period": "2026 forecast (Oct 2026)",
+  "source": "IMF WEO",
+  "note": "Up from 3.0% in July; 3.4% forecast for 2027."
+ },
+ {
+  "id": "nfl",
+  "panel": "XM",
+  "label": "Net foreign liabilities",
+  "display": "$638.9b",
+  "period": "Jun qtr 2026",
+  "source": "ABS 5302",
+  "note": "About 21.8% of GDP (calculated). Net foreign debt $1,486.0b."
+ },
+ {
+  "id": "twi",
+  "panel": "XM",
+  "label": "TWI",
+  "display": "65.0",
+  "period": "14 Oct 2026",
+  "source": "RBA",
+  "note": "Trade-weighted index, May 1970 = 100."
+ }
+]

@@ -1,0 +1,80 @@
+{
+ "title": "Economy at a glance",
+ "updated": "2026-10-15T08:00:00Z",
+ "weeklyCheck": "2026-10-15",
+ "auto": {
+  "unemp": {
+   "asOf": "2026-09-30",
+   "by": "initial snapshot"
+  },
+  "unempsc": {
+   "asOf": "2026-09-30",
+   "by": "initial snapshot"
+  },
+  "partic": {
+   "asOf": "2026-09-30",
+   "by": "initial snapshot"
+  },
+  "particsc": {
+   "asOf": "2026-09-30",
+   "by": "initial snapshot"
+  },
+  "wpi": {
+   "asOf": "2026-06-30",
+   "by": "initial snapshot"
+  },
+  "saving": {
+   "asOf": "2026-06-30",
+   "by": "initial snapshot"
+  },
+  "gdp": {
+   "asOf": "2026-06-30",
+   "by": "initial snapshot"
+  },
+  "tot": {
+   "asOf": "2026-06-30",
+   "by": "initial snapshot"
+  },
+  "totsc": {
+   "asOf": "2026-06-30",
+   "by": "initial snapshot"
+  },
+  "capct": {
+   "asOf": "2026-06-30",
+   "by": "initial snapshot"
+  },
+  "cash": {
+   "asOf": "2026-09-30",
+   "by": "initial snapshot"
+  },
+  "lastchg": {
+   "asOf": "2026-09-30",
+   "by": "initial snapshot"
+  },
+  "cashsc": {
+   "asOf": "2026-09-30",
+   "by": "initial snapshot"
+  },
+  "rate_rba": {
+   "asOf": "2026-09-30",
+   "by": "initial snapshot"
+  },
+  "audchg": {
+   "asOf": "2026-10-14",
+   "by": "initial snapshot"
+  },
+  "audsc": {
+   "asOf": "2026-10-14",
+   "by": "initial snapshot"
+  },
+  "twi": {
+   "asOf": "2026-10-14",
+   "by": "initial snapshot"
+  },
+  "twisc": {
+   "asOf": "2026-10-14",
+   "by": "initial snapshot"
+  }
+ },
+ "updaterWarnings": []
+}
