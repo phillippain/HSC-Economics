@@ -344,10 +344,9 @@ def run(fixtures=None, today=None):
             net = sum(x[2] for x in this_year)
             set_glance("cash", d2, f"{rate:.2f}%", day_label(d2), "Target band for inflation is 2–3%.", "RBA")
             n = len(this_year)
-            word = "rise" if c > 0 else "cut"
-            set_glance("lastchg", d2, f"{sgn(c, 2)} pts", day_label(d2),
-                       f"{n} change{'s' if n != 1 else ''} in {d2.year} ({', '.join(MON[x[0].month-1] for x in this_year)}): "
-                       f"{sgn(net, 2)} pts net. Last move was a {word}.", "RBA media release")
+            set_glance("lastchg", d2, f"{sgn(c, 2)} pts", f"{'Raised' if c > 0 else 'Cut'} on {day_label(d2)}",
+                       f"From {rate - c:.2f}% to {rate:.2f}%. {n} change{'s' if n != 1 else ''} in {d2.year} "
+                       f"({', '.join(MON[x[0].month-1] for x in this_year)}): {sgn(net, 2)} pts net.", "RBA media release")
             last3 = decisions[-3:][::-1] + [None] * 3
             def cell(x):
                 return (f"{x[1]:.2f}% ({sgn(x[2], 2)})", day_label(x[0])) if x else ("—", "")

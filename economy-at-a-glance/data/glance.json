@@ -101,11 +101,11 @@
  {
   "id": "lastchg",
   "panel": "I",
-  "label": "Last change",
+  "label": "Last cash rate change",
   "display": "+0.25 pts",
-  "period": "30 Sep 2026",
+  "period": "Raised on 30 Sep 2026",
   "source": "RBA media release",
-  "note": "Fourth rise of 2026 (Feb, Mar, May, Sep): +1.00 pt this year."
+  "note": "From 4.35% to 4.60%. Fourth rise of 2026 (Feb, Mar, May, Sep): +1.00 pt this year."
  },
  {
   "id": "capex",
