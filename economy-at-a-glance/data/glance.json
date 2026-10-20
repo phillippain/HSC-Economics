@@ -228,10 +228,10 @@
   "id": "audchg",
   "panel": "XM",
   "label": "AUD/USD % Δ",
-  "display": "+7.7%",
-  "period": "Year to 19 Oct 2026",
+  "display": "+7.4%",
+  "period": "Year to 20 Oct 2026",
   "source": "RBA",
-  "note": "69.75 US cents on 19 Oct 2026 vs **64.75** a year earlier."
+  "note": "69.84 US cents on 20 Oct 2026 vs **65.03** a year earlier."
  },
  {
   "id": "ca",
@@ -283,7 +283,7 @@
   "panel": "XM",
   "label": "TWI",
   "display": "64.7",
-  "period": "19 Oct 2026",
+  "period": "20 Oct 2026",
   "source": "RBA",
   "note": "**64.7** on 30 Sep 2026. Trade-weighted index, May 1970 = 100."
  }
