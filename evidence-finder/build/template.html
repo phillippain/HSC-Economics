@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HSC Economics Evidence Finder</title>
+<meta name="description" content="News, statistics and documents for HSC and Year 11 Economics, filed against the syllabus dot points.">
+<style>
+__FONTS__
+:root{
+  --bg:#e8ecf4; --grid:rgba(36,71,214,.075); --grid2:rgba(36,71,214,.12);
+  --card:#ffffff; --card2:#f4f6fb; --ink:#0e1526; --mut:#4a5468; --rule:#d3d9e6; --rule2:#b9c2d6;
+  --acc:#2447d6; --acc-ink:#ffffff; --acc-soft:#e3e9fd;
+  --hl:#ffe14d; --hl-ink:#1b1600; --gap:#c93a22; --ok:#1c7d52;
+  --shadow:0 1px 0 rgba(14,21,38,.06),0 8px 24px -14px rgba(14,21,38,.25);
+  --head:'Bricolage Grotesque','Avenir Next','Segoe UI',system-ui,sans-serif;
+  --body:'Public Sans','Segoe UI',system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --bg:#0c1120; --grid:rgba(140,165,255,.06); --grid2:rgba(140,165,255,.10);
+  --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+  --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52;
+  --hl:#c9a900; --hl-ink:#fff7c8; --gap:#ff8b72; --ok:#59d39b;
+  --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.6);
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0c1120; --grid:rgba(140,165,255,.06); --grid2:rgba(140,165,255,.10);
+    --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+    --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52;
+    --hl:#c9a900; --hl-ink:#fff7c8; --gap:#ff8b72; --ok:#59d39b;
+    --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.6);
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:400 1rem/1.55 var(--body);color:var(--ink);background-color:var(--bg);
+  background-image:linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid2) 1px,transparent 1px),
+  linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:120px 120px,120px 120px,24px 24px,24px 24px;background-position:-1px -1px;}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--acc)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--acc);color:var(--acc-ink);padding:.5rem .8rem;border-radius:6px;z-index:99}
+.skip:focus{left:8px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.head{font-family:var(--head);letter-spacing:-.015em}
+.num{font-variant-numeric:tabular-nums}
+
+/* masthead */
+.mast{display:flex;flex-wrap:wrap;gap:18px 28px;align-items:center;justify-content:space-between;padding:22px 0 14px}
+.brand{display:flex;gap:14px;align-items:center}
+.brand svg{flex:none;width:46px;height:46px}
+.brand .school{margin:0;font-size:.8rem;color:var(--mut)}
+.brand h1{margin:0;font-weight:800;font-size:clamp(1.65rem,3.4vw,2.35rem);line-height:1.02}
+.fw{display:flex;gap:0;border:2px solid var(--ink);border-radius:12px;overflow:hidden;background:var(--card)}
+.fw button{border:0;background:transparent;padding:.5rem .95rem;text-align:left;line-height:1.15;border-right:2px solid var(--ink)}
+.fw button:last-child{border-right:0}
+.fw button b{display:block;font-family:var(--head);font-weight:700;font-size:1.02rem}
+.fw button span{font-size:.76rem;color:var(--mut)}
+.fw button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.fw button[aria-pressed="true"] span{color:inherit;opacity:.8}
+.mast-r{display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.tools{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.tools .btn{padding:.25rem .7rem;font-size:.84rem}
+.btn{border:1.5px solid var(--ink);background:var(--card);border-radius:10px;padding:.42rem .8rem;font-weight:600;font-size:.9rem;text-decoration:none;color:var(--ink);display:inline-flex;gap:.4rem;align-items:center}
+.btn:hover{background:var(--acc-soft)}
+.btn.pri{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.btn.pri:hover{filter:brightness(1.08)}
+.btn.ghost{border-color:var(--rule2);font-weight:500}
+.btn[disabled]{opacity:.45;cursor:default}
+
+/* map panel */
+.map{background:var(--card);border:1.5px solid var(--ink);border-radius:16px;box-shadow:var(--shadow);padding:20px 22px 22px;margin:6px 0 22px}
+.map-top{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;align-items:flex-end;margin-bottom:16px}
+.map h2{margin:0;font-weight:700;font-size:clamp(1.3rem,2.4vw,1.75rem);line-height:1.15;max-width:36ch}
+.map h2 em{font-style:normal;background:linear-gradient(transparent 58%,var(--hl) 58%);padding:0 .1em}
+.map-sub{margin:.35rem 0 0;color:var(--mut);max-width:60ch;font-size:.95rem}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.8rem;color:var(--mut);align-items:center}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:5px}
+.lg-hi{background:#2447d6}.lg-lo{background:color-mix(in srgb,#2447d6 30%,var(--card))}
+.lg-sup{background:repeating-linear-gradient(135deg,#2447d6 0 2px,transparent 2px 5px);border:1px solid #2447d6}
+.lg-gap{border:1.5px dashed var(--gap)}
+.cov{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px 26px}
+.cov-t{min-width:0}
+.cov-t h3{margin:0 0 6px;font-size:.95rem;font-weight:700;display:flex;gap:8px;align-items:baseline;border-bottom:2.5px solid var(--c);padding-bottom:4px}
+.cov-t h3 small{font:500 .76rem var(--body);color:var(--mut);margin-left:auto;white-space:nowrap}
+.cov-s{display:flex;gap:6px 8px;align-items:flex-start;margin:7px 0}
+.cov-s>span{flex:0 0 7.4em;font-size:.72rem;line-height:1.2;color:var(--mut);padding-top:2px;min-width:0}
+.cov-s .sq-row{display:flex;flex-wrap:wrap;gap:4px}
+.sq{width:17px;height:17px;border-radius:3px;border:1.5px solid transparent;padding:0;background:color-mix(in srgb,var(--c) 7%,var(--card))}
+.sq.l1{background:color-mix(in srgb,var(--c) 34%,var(--card))}
+.sq.l2{background:color-mix(in srgb,var(--c) 58%,var(--card))}
+.sq.l3{background:color-mix(in srgb,var(--c) 80%,var(--card))}
+.sq.l4{background:var(--c)}
+.sq.sup{background:repeating-linear-gradient(135deg,var(--c) 0 2px,transparent 2px 5px);border-color:var(--c)}
+.sq.gap{background:transparent;border:1.5px dashed var(--gap)}
+.cov-s.sk .sq{width:11px;height:11px}
+.cov-s.sk .sq.gap{border-color:var(--rule2)}
+.sq:hover{transform:scale(1.25);outline:2px solid var(--ink);z-index:2;position:relative}
+.sq.on{outline:3px solid var(--ink);outline-offset:1px}
+@media (prefers-reduced-motion:no-preference){
+  .cov.enter .sq{animation:pop .4s both cubic-bezier(.2,.8,.3,1);animation-delay:calc(var(--i,0)*3ms)}
+  @keyframes pop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
+}
+
+/* finder bar */
+.finder-bar{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center;margin-bottom:12px}
+.tabs{display:flex;gap:4px;flex-wrap:wrap}
+.tabs button{border:1.5px solid transparent;border-bottom:0;background:transparent;padding:.5rem 1rem;border-radius:10px 10px 0 0;font-family:var(--head);font-weight:600;font-size:1.02rem;color:var(--mut)}
+.tabs button[aria-selected="true"]{background:var(--card);border-color:var(--ink);color:var(--ink);position:relative;box-shadow:0 2px 0 var(--card)}
+.tabs button:hover{color:var(--ink)}
+.tabs .ct{font:600 .72rem var(--body);background:var(--acc-soft);color:var(--ink);padding:1px 7px;border-radius:99px;margin-left:6px}
+.search{flex:1 1 280px;position:relative;min-width:200px}
+.search input{width:100%;padding:.62rem .9rem .62rem 2.4rem;border:1.5px solid var(--ink);border-radius:10px;background:var(--card)}
+.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--mut)}
+.panel{background:var(--card);border:1.5px solid var(--ink);border-radius:0 14px 14px 14px;box-shadow:var(--shadow);padding:16px}
+.filters{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;padding-bottom:14px;margin-bottom:14px;border-bottom:1px dashed var(--rule2)}
+.fgroup{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.fgroup>b{font-size:.82rem;color:var(--mut);font-weight:600;margin-right:2px}
+.fc{border:1.5px solid var(--rule2);background:var(--card);border-radius:99px;padding:.18rem .7rem;font-size:.86rem;display:inline-flex;gap:6px;align-items:center}
+.fc small{color:var(--mut);font-size:.76rem}
+.fc[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.fc[aria-pressed="true"] small{color:inherit;opacity:.8}
+.fc[data-n="0"]:not([aria-pressed="true"]){opacity:.45}
+select.src{border:1.5px solid var(--rule2);border-radius:99px;padding:.2rem .7rem;background:var(--card);font-size:.86rem;max-width:230px}
+.cols{display:grid;grid-template-columns:300px minmax(0,1fr);gap:22px}
+.rail{min-width:0}
+.rail-box{position:sticky;top:10px;max-height:calc(100vh - 20px);overflow:auto;padding-right:6px}
+.rail h2{font-size:.95rem;margin:0 0 8px;color:var(--mut);font-weight:600;font-family:var(--body);letter-spacing:0}
+.tn{width:100%;display:flex;gap:8px;align-items:baseline;text-align:left;border:0;background:transparent;padding:.34rem .5rem;border-radius:8px;line-height:1.25;font-size:.93rem}
+.tn:hover{background:var(--acc-soft)}
+.tn .n{margin-left:auto;font-size:.75rem;color:var(--mut);font-variant-numeric:tabular-nums;padding-left:6px}
+.tn .n.z{color:var(--gap)}
+.tn.top{font-family:var(--head);font-weight:700;font-size:1.02rem;border-left:5px solid var(--c);border-radius:0 8px 8px 0;margin-top:6px;background:color-mix(in srgb,var(--c) 6%,transparent)}
+.tn.sec{padding-left:1.1rem;font-weight:600}
+.tn.pt{padding-left:1.7rem;font-size:.86rem;color:var(--mut);align-items:flex-start}
+.tn.pt code{font:600 .74rem var(--body);color:var(--ink);flex:none;min-width:2.9em;padding-top:1px}
+.tn[aria-current="true"]{background:var(--ink);color:var(--bg)}
+.tn[aria-current="true"] code,.tn[aria-current="true"] .n{color:inherit}
+.tn[aria-current="true"].top{border-left-color:var(--c)}
+.rail-note{font-size:.82rem;color:var(--mut);margin:.7rem .3rem}
+
+/* results */
+.res-head{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between;align-items:flex-end;margin-bottom:10px}
+.crumbs{display:flex;flex-wrap:wrap;gap:2px 4px;align-items:center;font-size:.85rem;color:var(--mut);margin-bottom:4px}
+.crumbs button{border:0;background:transparent;padding:0 2px;text-decoration:underline;text-decoration-color:var(--rule2);text-underline-offset:3px;color:var(--mut)}
+.crumbs button:hover{color:var(--ink)}
+.crumbs span.sep{opacity:.6}
+.res-head h2{margin:0;font-size:clamp(1.25rem,2.4vw,1.65rem);font-weight:700;line-height:1.15}
+.res-head .cnt{color:var(--mut);font-size:.9rem;margin:.2rem 0 0}
+.sortbox{font-size:.85rem;color:var(--mut);display:flex;gap:6px;align-items:center}
+.sortbox select{border:1.5px solid var(--rule2);border-radius:8px;padding:.2rem .5rem;background:var(--card)}
+.active{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.active button{border:1.5px solid var(--acc);background:var(--acc-soft);border-radius:99px;padding:.12rem .65rem;font-size:.82rem}
+.active button::after{content:" ×";font-weight:700}
+.empty{border:2px dashed var(--rule2);border-radius:14px;padding:26px;text-align:center;color:var(--mut)}
+.empty h3{margin:0 0 6px;color:var(--ink);font-size:1.15rem}
+
+/* cards */
+.card{position:relative;display:grid;grid-template-columns:78px minmax(0,1fr);gap:0 16px;background:var(--card);border:1.5px solid var(--rule2);border-radius:14px;padding:16px 18px 14px 24px;margin-bottom:14px;overflow:hidden}
+.card.on{border-color:var(--acc);box-shadow:0 0 0 2px var(--acc)}
+.card.flash{animation:flash 1.6s ease-out}
+@keyframes flash{0%,40%{box-shadow:0 0 0 4px var(--hl)}100%{box-shadow:none}}
+.stripe{position:absolute;left:0;top:0;bottom:0;width:8px;background:linear-gradient(to bottom,var(--c1) 0 50%,var(--c2,var(--c1)) 50% 100%)}
+.when{text-align:left;line-height:1;padding-top:2px}
+.when .d{display:block;font:800 2.5rem/1 var(--head);letter-spacing:-.04em}
+.when .m{display:block;font:700 .95rem var(--head);margin-top:2px}
+.when .y{display:block;font-size:.78rem;color:var(--mut);margin-top:2px}
+.meta{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center;font-size:.84rem;color:var(--mut)}
+.badge{border:1.5px solid var(--ink);color:var(--ink);border-radius:6px;padding:0 .45rem;font-weight:700;font-size:.78rem}
+.badge.alt{border-style:dashed;border-color:var(--rule2);color:var(--mut);font-weight:600}
+.card h3{margin:.25rem 0 .3rem;font-weight:700;font-size:clamp(1.15rem,2vw,1.4rem);line-height:1.18}
+.why{margin:0 0 .6rem;max-width:68ch}
+.figs{list-style:none;margin:0 0 .7rem;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.figs li{background:var(--card2);border-radius:8px;padding:.35rem .6rem .4rem;min-width:0;max-width:260px}
+.figs b{display:inline;font:700 1.12rem/1.2 var(--head);font-variant-numeric:tabular-nums;background:linear-gradient(transparent 56%,var(--hl) 56%);color:var(--ink);padding:0 .1em}
+.figs b.long{font-size:.95rem}
+.figs span{display:block;font-size:.78rem;color:var(--mut);line-height:1.3;margin-top:2px}
+.tags{display:flex;flex-wrap:wrap;gap:5px 6px;align-items:center;margin:.3rem 0}
+.tags .lbl{font-size:.8rem;font-weight:700;margin-right:2px;min-width:5.2em}
+.chip{border:1.5px solid var(--rule2);background:transparent;border-radius:6px;padding:.06rem .5rem;font-size:.8rem;line-height:1.35;text-align:left;max-width:100%}
+.chip:hover{border-color:var(--ink);background:var(--acc-soft)}
+.chip code{font:700 .74rem var(--body);margin-right:5px}
+.chip.pt{border-left:4px solid var(--c)}
+.chip.iss{border-radius:99px;background:var(--card2)}
+.chip.lev{border-radius:99px;border-style:dashed}
+.chip.dia{border-radius:99px;border-color:var(--acc);color:var(--acc)}
+.chip.out{border:0;padding:0;background:none;text-decoration:underline;text-decoration-color:var(--rule2);color:inherit;font-size:inherit}
+.chip.out:hover{background:none;text-decoration-color:var(--ink)}
+.mut{color:var(--mut);font-size:.83rem}
+.via{margin:.3rem 0;font-size:.82rem;color:var(--mut);border-left:3px dashed var(--rule2);padding-left:.6rem}
+details.more{margin:.5rem 0 .2rem}
+details.more>summary{cursor:pointer;font-weight:600;font-size:.9rem;color:var(--acc);list-style:none;display:inline-flex;gap:6px;align-items:center;padding:.2rem 0}
+details.more>summary::-webkit-details-marker{display:none}
+details.more>summary::before{content:"+";display:inline-grid;place-items:center;width:20px;height:20px;border:1.5px solid var(--acc);border-radius:5px;font-weight:800;line-height:1}
+details.more[open]>summary::before{content:"–"}
+.more-body{border-top:1px dashed var(--rule2);margin-top:.4rem;padding-top:.7rem;display:grid;gap:14px}
+.more-body h4{margin:0 0 4px;font:700 .86rem var(--body)}
+.more-body p{margin:0;max-width:70ch}
+table.ft{border-collapse:collapse;width:100%;font-size:.88rem}
+table.ft th,table.ft td{text-align:left;padding:.28rem .5rem .28rem 0;border-bottom:1px solid var(--rule);vertical-align:top}
+table.ft th{font-weight:600;color:var(--mut);font-size:.78rem}
+table.ft td.v{font-weight:700;font-variant-numeric:tabular-nums}
+dl.terms{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px 18px}
+dl.terms dt{font-weight:700;font-size:.88rem}
+dl.terms dd{margin:0 0 4px;font-size:.86rem;color:var(--mut)}
+.qs{margin:0;padding-left:1.3rem}
+.qs li{margin:0 0 3px}
+.qs .mk{color:var(--mut);font-size:.8rem;white-space:nowrap}
+.srcs{margin:0;padding-left:1.1rem;font-size:.86rem}
+.srcs li{margin:0 0 3px;overflow-wrap:anywhere}
+.note{background:var(--card2);border-left:4px solid var(--hl);padding:.5rem .7rem;font-size:.86rem;border-radius:0 8px 8px 0}
+.acts{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin-top:.7rem}
+.pick{display:inline-flex;gap:8px;align-items:center;font-weight:600;font-size:.9rem;cursor:pointer;margin-left:auto}
+.pick input{width:20px;height:20px;accent-color:var(--acc)}
+
+/* stats */
+.stats-wrap{overflow-x:auto}
+table.stats{border-collapse:collapse;width:100%;font-size:.92rem;min-width:640px}
+table.stats th{text-align:left;font-size:.78rem;color:var(--mut);padding:.4rem .7rem;border-bottom:2px solid var(--ink);position:sticky;top:0;background:var(--card)}
+table.stats td{padding:.5rem .7rem;border-bottom:1px solid var(--rule);vertical-align:top}
+table.stats td.v{font:700 1.02rem var(--head);font-variant-numeric:tabular-nums}
+table.stats td.v .vt,table.ft td.v .vt{display:block;font:400 .8rem var(--body);color:var(--mut);white-space:normal}
+table.ft td.v span{background:linear-gradient(transparent 56%,var(--hl) 56%);padding:0 .1em}
+table.stats td.v span{background:linear-gradient(transparent 56%,var(--hl) 56%);padding:0 .1em}
+table.stats tr.grp td{background:var(--card2);font:700 .95rem var(--head);padding:.5rem .7rem;border-bottom:1.5px solid var(--rule2)}
+table.stats .go{border:0;background:none;color:var(--acc);text-decoration:underline;text-align:left;padding:0;font-size:.86rem}
+
+/* selection bar */
+.selbar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:30;width:min(920px,calc(100% - 20px));background:var(--ink);color:var(--bg);border-radius:14px;padding:.6rem .8rem;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;box-shadow:0 12px 40px -10px rgba(0,0,0,.5)}
+.selbar b{font-family:var(--head);font-size:1.02rem;margin-right:auto}
+.selbar .btn{background:var(--bg);color:var(--ink);border-color:var(--bg);font-size:.86rem}
+.selbar .btn.ghost{background:transparent;color:var(--bg);border-color:color-mix(in srgb,var(--bg) 55%,transparent)}
+.selbar label{font-size:.84rem;display:inline-flex;gap:6px;align-items:center}
+.toast{position:fixed;left:50%;bottom:76px;transform:translateX(-50%);background:var(--card);color:var(--ink);border:1.5px solid var(--ink);border-radius:10px;padding:.5rem .9rem;z-index:40;display:flex;gap:12px;align-items:center;box-shadow:var(--shadow)}
+.toast button{border:0;background:none;color:var(--acc);font-weight:700;text-decoration:underline}
+
+/* help dialog */
+dialog{border:2px solid var(--ink);border-radius:16px;padding:0;max-width:min(720px,calc(100% - 24px));width:100%;background:var(--card);color:var(--ink)}
+dialog::backdrop{background:rgba(10,16,34,.55)}
+.help{padding:22px 24px 20px}
+.help h2{margin:0 0 4px;font-size:1.5rem}
+.help ol{padding-left:1.2rem;margin:.8rem 0}
+.help li{margin:0 0 .6rem}
+.help .eg{background:var(--card2);border-radius:10px;padding:.7rem .9rem;font-size:.92rem}
+.help .eg p{margin:.2rem 0}
+footer{margin:34px 0 110px;color:var(--mut);font-size:.84rem;max-width:80ch}
+footer p{margin:.3rem 0}
+
+/* embed */
+.embed .mast{padding-top:10px}.embed .brand h1{font-size:1.5rem}.embed footer{margin-bottom:50px}
+
+/* print */
+#printRoot{display:none}
+@media print{
+  body{background:#fff;color:#000}
+  body.printing>*:not(#printRoot){display:none!important}
+  body.printing #printRoot{display:block}
+  #printRoot{font-size:10.5pt;line-height:1.4;color:#000}
+  #printRoot h1{font:800 18pt var(--head);margin:0 0 2pt}
+  #printRoot h2{font:700 13pt var(--head);margin:14pt 0 4pt;border-bottom:2pt solid #000;padding-bottom:2pt}
+  #printRoot h3{font:700 11pt var(--head);margin:8pt 0 2pt}
+  #printRoot .pi{break-inside:avoid;border-bottom:.5pt solid #999;padding:6pt 0}
+  #printRoot .pm{color:#444;font-size:9pt}
+  #printRoot ul{margin:2pt 0 2pt 14pt;padding:0}
+  #printRoot a{color:#000;text-decoration:none}
+}
+
+@media (max-width:900px){
+  .cols{grid-template-columns:1fr}
+  .rail-box{position:static;max-height:none}
+  .rail details.rail-d{border:1.5px solid var(--rule2);border-radius:10px;padding:.4rem .6rem}
+  .rail details.rail-d>summary{font-weight:700;cursor:pointer}
+}
+@media (max-width:640px){
+  .wrap{padding:0 12px}
+  .mast-r{align-items:stretch;width:100%}.tools{justify-content:flex-start}
+  .card{grid-template-columns:1fr;padding:14px 14px 12px 20px}
+  .when{display:flex;gap:6px;align-items:baseline;margin-bottom:4px}
+  .when .d{font-size:1.5rem}.when .m,.when .y{display:inline;font-size:.9rem;margin:0}
+  .fw{width:100%}.fw button{flex:1;padding:.45rem .5rem}
+  .fw button b{font-size:.92rem}
+  .cov-s>span{flex-basis:5.6em}
+  .map{padding:16px 14px}
+  .tabs button{padding:.45rem .7rem;font-size:.95rem}
+  .panel{border-radius:0 12px 12px 12px;padding:12px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#results">Skip to the evidence</a>
+<div class="wrap">
+  <header class="mast">
+    <div class="brand">
+      <svg viewBox="0 0 48 48" role="img" aria-label="Demand and supply curves crossing at equilibrium">
+        <rect width="48" height="48" rx="11" fill="var(--ink)"/>
+        <path d="M11 9v28h28" fill="none" stroke="var(--bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M15 14 36 33" stroke="var(--bg)" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M15 33 36 14" stroke="var(--bg)" stroke-width="2.6" stroke-linecap="round" opacity=".6"/>
+        <circle cx="25.5" cy="23.5" r="4.6" fill="var(--hl)"/>
+      </svg>
+      <div>
+        <p class="school">Sydney Secondary College, Blackwattle Bay Campus</p>
+        <h1>Economics Evidence Finder</h1>
+      </div>
+    </div>
+    <div class="mast-r">
+      <nav class="fw" id="fw" aria-label="Choose your syllabus"></nav>
+      <div class="tools">
+        <button class="btn ghost" id="helpBtn" type="button">How to use this site</button>
+        <button class="btn ghost" id="resetBtn" type="button">Start again</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="map" aria-labelledby="mapH">
+      <div class="map-top">
+        <div>
+          <h2 id="mapH"></h2>
+          <p class="map-sub" id="mapSub"></p>
+        </div>
+        <div class="legend" aria-label="Key">
+          <span><i class="lg-hi"></i>more evidence</span>
+          <span><i class="lg-sup"></i>supporting only</span>
+          <span><i class="lg-gap"></i>nothing yet</span>
+        </div>
+      </div>
+      <div class="cov enter" id="cov"></div>
+    </section>
+
+    <section aria-label="Find evidence">
+      <div class="finder-bar">
+        <div class="tabs" role="tablist" id="tabs" aria-label="Find by"></div>
+        <div class="search">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg>
+          <input id="q" type="search" placeholder="Search titles, figures, terms and sources" aria-label="Search the evidence" autocomplete="off">
+        </div>
+      </div>
+      <div class="panel">
+        <div class="filters" id="filters"></div>
+        <div class="cols">
+          <aside class="rail" id="rail" aria-label="Browse"></aside>
+          <div id="results" tabindex="-1"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Everything here is filed against dot points in the Economics Stage 6 Syllabus (Board of Studies NSW, 2009) and Economics 11–12 (2025) (NSW Education Standards Authority). A dot point is only marked <em>about</em> when the evidence answers it directly.</p>
+    <p>Figures are as reported when filed. Check the original source before you quote a number in an exam or assessment.</p>
+  </footer>
+</div>
+
+<div class="selbar" id="selbar" hidden></div>
+<div id="toast" class="toast" role="status" hidden></div>
+<dialog id="help" aria-labelledby="helpH"></dialog>
+<div id="printRoot" aria-hidden="true"></div>
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function(){
+'use strict';
+const D = JSON.parse(document.getElementById('data').textContent);
+const SY = D.syl, ITEMS = D.items;
+const $ = (s,r=document)=>r.querySelector(s);
+const esc = s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const store = {get(k){try{return localStorage.getItem(k)}catch(e){return null}}, set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+
+/* ---------- index the syllabi ---------- */
+const FW = SY.frameworks, FWID = FW.map(f=>f.id);
+const PT = {}, SEC = {}, TOP = {};
+FW.forEach(f=>f.topics.forEach(t=>{
+  TOP[t.id] = {id:t.id, name:t.name, label:t.label, color:t.color, fw:f.id, t};
+  t.sections.forEach(s=>{
+    SEC[s.id] = {id:s.id, name:s.name, top:t.id, fw:f.id, skills:!!s.skills, s};
+    s.points.forEach(p=>{ PT[p.id] = {id:p.id, t:p.t, sec:s.id, top:t.id, fw:f.id, skills:!!s.skills}; });
+  });
+}));
+const X = {};
+SY.xwalk.forEach(([a,bs])=>bs.forEach(b=>{ (X[a]=X[a]||new Set()).add(b); (X[b]=X[b]||new Set()).add(a); }));
+const LBL = {};
+['issues','levers','types','diagrams'].forEach(k=>{ LBL[k] = {}; SY[k].forEach(o=>LBL[k][o.id]=o.label); });
+const fwName = id => FW.find(f=>f.id===id).full;
+
+/* ---------- precompute per item ---------- */
+ITEMS.forEach(it=>{
+  it.t = {};
+  FWID.forEach(fw=>{
+    const a = new Set(it.about[fw]||[]), b = new Set(it.also[fw]||[]);
+    const sa = new Set(), sb = new Set(), ta = new Set(), tb = new Set();
+    a.forEach(i=>{ sa.add(PT[i].sec); ta.add(PT[i].top); });
+    b.forEach(i=>{ sb.add(PT[i].sec); tb.add(PT[i].top); });
+    it.t[fw] = {about:a, also:b, secA:sa, secB:sb, topA:ta, topB:tb, via:new Set(), viaTop:new Set()};
+  });
+  FWID.forEach(fw=>{
+    FWID.forEach(ofw=>{
+      if(ofw===fw) return;
+      const o = it.t[ofw];
+      [...o.secA,...o.secB].forEach(s=>(X[s]||[]).forEach(n=>{
+        if(SEC[n] && SEC[n].fw===fw){ it.t[fw].via.add(n); it.t[fw].viaTop.add(SEC[n].top); }
+      }));
+    });
+  });
+  it.src = it.outlets.join(', ');
+  it.hay = [it.title,it.summary,it.lede,it.src,it.angle,it.note,
+    it.terms.map(t=>t.term+' '+t.def).join(' '),
+    it.figures.map(f=>f.label+' '+f.value+' '+f.asAt+' '+f.source).join(' '),
+    it.issues.map(i=>LBL.issues[i]).join(' '), it.levers.map(i=>LBL.levers[i]).join(' '),
+    it.diagrams.map(i=>LBL.diagrams[i]).join(' '),
+    FWID.map(fw=>[...it.t[fw].about,...it.t[fw].also].map(i=>i+' '+PT[i].t).join(' ')).join(' ')
+  ].join(' ').toLowerCase();
+});
+const SOURCES = [...new Set(ITEMS.flatMap(i=>i.outlets))].sort((a,b)=>a.localeCompare(b));
+
+/* ---------- state ---------- */
+const DEF = {fw:'h09', tab:'syl', sel:null, issue:'', lever:'', dia:'', src:'', q:'', types:[], sort:'new'};
+let S = Object.assign({}, DEF, {ticked:[], open:[], exp:[], mapAlso:false});
+const saved = store.get('evf.fw'); if(saved && FWID.includes(saved)) S.fw = saved;
+try{ const t = JSON.parse(store.get('evf.ticked')||'[]'); S.ticked = t.filter(id=>ITEMS.some(i=>i.id===id)); }catch(e){}
+const params = new URLSearchParams(location.search);
+const EMBED = params.get('embed')==='1';
+if(EMBED) document.body.classList.add('embed');
+const th = params.get('theme'); if(th==='light'||th==='dark') document.documentElement.dataset.theme = th;
+if(params.get('fw') && FWID.includes(params.get('fw'))) S.fw = params.get('fw');
+
+function readHash(){
+  const h = new URLSearchParams(location.hash.slice(1));
+  if(!location.hash.slice(1)) return;
+  const g = k=>h.get(k)||'';
+  if(FWID.includes(g('fw'))) S.fw = g('fw');
+  if(['syl','issue','lever','stats'].includes(g('tab'))) S.tab = g('tab');
+  const sel = g('sel'); S.sel = null;
+  if(sel.includes(':')){ const [k,id] = sel.split(':'); const ok = (k==='point'&&PT[id])||(k==='section'&&SEC[id])||(k==='topic'&&TOP[id]);
+    if(ok && ((k==='point'?PT[id]:k==='section'?SEC[id]:TOP[id]).fw===S.fw)) S.sel = {kind:k,id}; }
+  S.issue = LBL.issues[g('issue')]?g('issue'):''; S.lever = LBL.levers[g('lever')]?g('lever'):'';
+  S.dia = LBL.diagrams[g('dia')]?g('dia'):''; S.src = SOURCES.includes(g('src'))?g('src'):'';
+  S.q = g('q'); S.types = g('types')?g('types').split(',').filter(t=>LBL.types[t]):[];
+  S.sort = ['new','old','best'].includes(g('sort'))?g('sort'):'new';
+}
+function writeHash(){
+  const h = new URLSearchParams();
+  if(S.fw!==DEF.fw) h.set('fw',S.fw);
+  if(S.tab!=='syl') h.set('tab',S.tab);
+  if(S.sel) h.set('sel',S.sel.kind+':'+S.sel.id);
+  if(S.issue) h.set('issue',S.issue); if(S.lever) h.set('lever',S.lever);
+  if(S.dia) h.set('dia',S.dia); if(S.src) h.set('src',S.src); if(S.q) h.set('q',S.q);
+  if(S.types.length) h.set('types',S.types.join(',')); if(S.sort!=='new') h.set('sort',S.sort);
+  const str = h.toString();
+  try{ history.replaceState(null,'',location.pathname+location.search+(str?'#'+str:'')); }catch(e){}
+}
+
+/* ---------- matching ---------- */
+function rank(it, fw, sel){
+  if(!sel) return 1;
+  const t = it.t[fw];
+  if(sel.kind==='point') return t.about.has(sel.id)?3 : t.also.has(sel.id)?2 : 0;
+  if(sel.kind==='section') return t.secA.has(sel.id)?3 : t.secB.has(sel.id)?2 : t.via.has(sel.id)?1 : 0;
+  return t.topA.has(sel.id)?3 : t.topB.has(sel.id)?2 : t.viaTop.has(sel.id)?1 : 0;
+}
+function direct(it,fw){ const t=it.t[fw]; return t.about.size+t.also.size>0; }
+function passes(it, skip){
+  if(skip!=='type' && S.types.length && !S.types.includes(it.type)) return false;
+  if(skip!=='dia' && S.dia && !it.diagrams.includes(S.dia)) return false;
+  if(skip!=='src' && S.src && !it.outlets.includes(S.src)) return false;
+  if(skip!=='issue' && S.issue && !it.issues.includes(S.issue)) return false;
+  if(skip!=='lever' && S.lever && !it.levers.includes(S.lever)) return false;
+  if(S.q){ const toks = S.q.toLowerCase().split(/\s+/).filter(Boolean); if(!toks.every(w=>it.hay.includes(w))) return false; }
+  return true;
+}
+function results(skip){
+  const sel = S.tab==='syl' ? S.sel : null;
+  return ITEMS.map(it=>({it, r:rank(it,S.fw,sel)})).filter(x=>x.r>0 && passes(x.it,skip));
+}
+function sortRes(list){
+  const c = {new:(a,b)=>b.it.date.localeCompare(a.it.date)||a.it.title.localeCompare(b.it.title),
+             old:(a,b)=>a.it.date.localeCompare(b.it.date)||a.it.title.localeCompare(b.it.title)};
+  if(S.sort==='best') return list.sort((a,b)=>b.r-a.r||c.new(a,b));
+  return list.sort(c[S.sort]||c.new);
+}
+function nodeCount(kind,id){
+  const fw = S.fw, sel = {kind,id};
+  return ITEMS.filter(it=>rank(it,fw,sel)>(kind==='point'?1:0) ).length;
+}
+
+/* ---------- helpers ---------- */
+const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function dparts(iso){ const [y,m,d]=iso.split('-').map(Number); return {d, m:MON[m-1], y}; }
+function dlong(it){ if(it.dateText) return it.dateText; const p=dparts(it.date); return `${p.d} ${p.m} ${p.y}`; }
+function shorten(s,n){ return s.length>n? s.slice(0,n-1).trimEnd()+'…' : s; }
+function valHTML(v){ const i=v.indexOf(' ('); return i>0 ? `<span>${esc(v.slice(0,i))}</span> <small class="vt">${esc(v.slice(i+1))}</small>` : `<span>${esc(v)}</span>`; }
+function plural(n,a,b){ return n===1?a:b; }
+function topicColors(it){
+  const t = it.t[S.fw]; let tops = [...new Set([...t.about].map(i=>PT[i].top))];
+  if(!tops.length) tops = [...new Set([...t.also].map(i=>PT[i].top))];
+  if(!tops.length) tops = [...t.viaTop];
+  const cs = tops.map(i=>TOP[i].color);
+  return [cs[0]||'var(--rule2)', cs[1]||cs[0]||'var(--rule2)'];
+}
+function ptChip(id, extra){
+  const p = PT[id], c = TOP[p.top].color;
+  return `<button class="chip pt" style="--c:${c}" data-act="tag" data-kind="point" data-id="${esc(id)}" title="${esc(id+' '+p.t)}"><code>${esc(id)}</code>${esc(shorten(p.t,58))}</button>`;
+}
+
+/* ---------- render: masthead ---------- */
+function renderFW(){
+  $('#fw').innerHTML = FW.map(f=>`<button type="button" aria-pressed="${f.id===S.fw}" data-act="fw" data-id="${f.id}" title="${esc(f.note)}"><b>${esc(f.label)}</b><span>${esc(f.sub)}</span></button>`).join('');
+}
+
+/* ---------- render: coverage map ---------- */
+function coverage(){
+  const fw = FW.find(f=>f.id===S.fw);
+  let total=0, covered=0, gaps=0;
+  fw.topics.forEach(t=>t.sections.forEach(s=>{ if(s.skills) return; s.points.forEach(p=>{
+    total++; const a = ITEMS.filter(it=>it.t[fw.id].about.has(p.id)).length; if(a) covered++; else gaps++; }); }));
+  const n = ITEMS.length;
+  $('#mapH').innerHTML = `${n} ${plural(n,'piece','pieces')} of evidence, filed against <em>${covered} of ${total}</em> dot points`;
+  $('#mapSub').textContent = gaps ? `${gaps} ${plural(gaps,'dot point has','dot points have')} nothing written up yet in the ${fw.full}. Click any square to see what is filed there, or to spot where to look before an assessment.`
+                                   : `Every dot point in the ${fw.full} has evidence.`;
+  let k = 0;
+  const html = fw.topics.map(t=>{
+    let tc = 0, tn = 0;
+    const secs = t.sections.map(s=>{
+      const sq = s.points.map(p=>{
+        const a = ITEMS.filter(it=>it.t[fw.id].about.has(p.id)).length;
+        const b = ITEMS.filter(it=>it.t[fw.id].also.has(p.id) && !it.t[fw.id].about.has(p.id)).length;
+        if(!s.skills){ tn++; if(a) tc++; }
+        const cls = a ? 'l'+Math.min(a,4) : b ? 'sup' : 'gap';
+        const tip = `${p.id} ${p.t}\n${a} about, ${b} supporting`;
+        const on = S.sel && S.sel.kind==='point' && S.sel.id===p.id ? ' on' : '';
+        return `<button type="button" class="sq ${cls}${on}" style="--c:${t.color};--i:${k++}" data-act="grid" data-id="${esc(p.id)}" title="${esc(tip)}" aria-label="${esc(tip.replace('\n',': '))}"></button>`;
+      }).join('');
+      return `<div class="cov-s${s.skills?' sk':''}"><span>${esc(s.name)}</span><div class="sq-row">${sq}</div></div>`;
+    }).join('');
+    return `<div class="cov-t" style="--c:${t.color}"><h3 class="head">${esc(t.name)}<small>${tc} of ${tn}</small></h3>${secs}</div>`;
+  }).join('');
+  const cov = $('#cov'); const first = !cov.dataset.done;
+  cov.classList.toggle('enter', first); cov.innerHTML = html; cov.dataset.done='1';
+}
+
+/* ---------- render: tabs, filters, rail ---------- */
+function renderTabs(){
+  const nfig = ITEMS.reduce((a,i)=>a+i.figures.length,0);
+  const tabs = [['syl','Syllabus',null],['issue','Issues and indicators',null],['lever','Policy levers',null],['stats','Statistics',nfig]];
+  $('#tabs').innerHTML = tabs.map(([id,l,c])=>`<button type="button" role="tab" aria-selected="${S.tab===id}" data-act="tab" data-id="${id}">${l}${c!=null?`<span class="ct">${c}</span>`:''}</button>`).join('');
+}
+function renderFilters(){
+  const tc = {}; results('type').forEach(x=>{ tc[x.it.type]=(tc[x.it.type]||0)+1; });
+  const dc = {}; results('dia').forEach(x=>x.it.diagrams.forEach(d=>{ dc[d]=(dc[d]||0)+1; }));
+  const sc = {}; results('src').forEach(x=>x.it.outlets.forEach(o=>{ sc[o]=(sc[o]||0)+1; }));
+  const types = SY.types.map(t=>`<button type="button" class="fc" data-n="${tc[t.id]||0}" aria-pressed="${S.types.includes(t.id)}" data-act="type" data-id="${t.id}">${esc(t.plural)} <small>${tc[t.id]||0}</small></button>`).join('');
+  const dias = SY.diagrams.map(d=>`<button type="button" class="fc" data-n="${dc[d.id]||0}" aria-pressed="${S.dia===d.id}" data-act="dia" data-id="${d.id}">${esc(d.label)} <small>${dc[d.id]||0}</small></button>`).join('');
+  const srcs = `<select class="src" id="srcSel" aria-label="Filter by source"><option value="">Any source</option>${SOURCES.map(o=>`<option value="${esc(o)}"${S.src===o?' selected':''}>${esc(o)} (${sc[o]||0})</option>`).join('')}</select>`;
+  $('#filters').innerHTML = `<div class="fgroup"><b>Type</b>${types}</div><div class="fgroup"><b>Diagram</b>${dias}</div><div class="fgroup"><b>Source</b>${srcs}</div>`;
+}
+function railBody(){
+  const fw = FW.find(f=>f.id===S.fw);
+  if(S.tab==='syl'){
+    const sel = S.sel;
+    const inTop = sel ? (sel.kind==='topic'?sel.id: sel.kind==='section'?SEC[sel.id].top : PT[sel.id].top) : null;
+    const inSec = sel ? (sel.kind==='section'?sel.id: sel.kind==='point'?PT[sel.id].sec : null) : null;
+    return fw.topics.map(t=>{
+      const open = inTop===t.id || S.exp.includes(t.id);
+      const cur = sel && sel.kind==='topic' && sel.id===t.id;
+      const cnt = nodeCount('topic',t.id);
+      let h = `<button type="button" class="tn top" style="--c:${t.color}" data-act="node" data-kind="topic" data-id="${t.id}" aria-expanded="${open}" ${cur?'aria-current="true"':''} data-k="t${t.id}">${esc(t.name)}<span class="n${cnt?'':' z'}">${cnt}</span></button>`;
+      if(open) t.sections.forEach(s=>{
+        const sopen = inSec===s.id || S.exp.includes(s.id);
+        const scur = sel && sel.kind==='section' && sel.id===s.id;
+        const sc = nodeCount('section',s.id);
+        h += `<button type="button" class="tn sec" data-act="node" data-kind="section" data-id="${s.id}" aria-expanded="${sopen}" ${scur?'aria-current="true"':''} data-k="s${s.id}">${esc(s.name)}<span class="n${sc?'':' z'}">${sc}</span></button>`;
+        if(sopen) s.points.forEach(p=>{
+          const pcur = sel && sel.kind==='point' && sel.id===p.id;
+          const pc = nodeCount('point',p.id);
+          h += `<button type="button" class="tn pt" data-act="node" data-kind="point" data-id="${p.id}" ${pcur?'aria-current="true"':''} data-k="p${p.id}" title="${esc(p.t)}"><code>${esc(p.id)}</code><span>${esc(shorten(p.t,90))}</span><span class="n${pc?'':' z'}">${pc}</span></button>`;
+        });
+      });
+      return h;
+    }).join('');
+  }
+  const kind = S.tab==='lever' ? 'lever' : 'issue';
+  const list = kind==='lever' ? SY.levers : SY.issues;
+  const cur = kind==='lever' ? S.lever : S.issue;
+  const f = it => kind==='lever' ? it.levers : it.issues;
+  return list.map(o=>{
+    const n = ITEMS.filter(it=>f(it).includes(o.id)).length;
+    return `<button type="button" class="tn" data-act="facet" data-kind="${kind}" data-id="${o.id}" ${cur===o.id?'aria-current="true"':''} data-k="f${kind}${o.id}">${esc(o.label)}<span class="n${n?'':' z'}">${n}</span></button>`;
+  }).join('');
+}
+function renderRail(){
+  const title = S.tab==='syl' ? 'Browse the syllabus' : S.tab==='lever' ? 'Choose a policy lever' : S.tab==='stats' ? 'Narrow the statistics by indicator' : 'Choose an issue or indicator';
+  const note = S.tab==='syl' ? `<p class="rail-note">Counts show how much evidence is filed against each topic, section and dot point. Dot points marked 0 have nothing yet.</p>` : '';
+  const body = `<h2>${esc(title)}</h2>${railBody()}${note}`;
+  const narrow = matchMedia('(max-width:900px)').matches;
+  $('#rail').innerHTML = narrow ? `<details class="rail-d" ${S.tab==='syl'&&S.sel?'':'open'}><summary>${esc(title)}</summary>${body}</details>` : `<div class="rail-box">${body}</div>`;
+}
+
+/* ---------- render: results ---------- */
+function crumbs(){
+  const fw = FW.find(f=>f.id===S.fw); const parts = [{l:'Everything',a:{k:'clear'}}];
+  if(S.tab==='syl' && S.sel){
+    const s = S.sel;
+    const top = s.kind==='topic'?s.id : s.kind==='section'?SEC[s.id].top : PT[s.id].top;
+    parts.push({l:TOP[top].name,a:{k:'topic',id:top},last:s.kind==='topic'});
+    if(s.kind!=='topic'){ const sec = s.kind==='section'?s.id:PT[s.id].sec; parts.push({l:SEC[sec].name,a:{k:'section',id:sec},last:s.kind==='section'}); }
+    if(s.kind==='point') parts.push({l:s.id,a:null,last:true});
+  }
+  return parts.map((p,i)=>(i?'<span class="sep">›</span>':'')+(p.a&&!p.last?`<button type="button" data-act="crumb" data-kind="${p.a.k}" data-id="${p.a.id||''}">${esc(p.l)}</button>`:`<span>${esc(p.l)}</span>`)).join('');
+}
+function heading(){
+  if(S.tab==='syl' && S.sel){
+    const s=S.sel;
+    if(s.kind==='point') return `${s.id} ${PT[s.id].t}`;
+    return s.kind==='section'?SEC[s.id].name:TOP[s.id].name;
+  }
+  if(S.tab==='issue'&&S.issue) return LBL.issues[S.issue];
+  if(S.tab==='lever'&&S.lever) return LBL.levers[S.lever];
+  if(S.tab==='stats') return 'Statistics bank';
+  return 'All the evidence';
+}
+function activeChips(){
+  const a = [];
+  if(S.issue && S.tab!=='issue') a.push(['issue',`Issue: ${LBL.issues[S.issue]}`]);
+  if(S.lever && S.tab!=='lever') a.push(['lever',`Lever: ${LBL.levers[S.lever]}`]);
+  if(S.tab==='issue' && S.lever) a.push(['lever',`Lever: ${LBL.levers[S.lever]}`]);
+  if(S.tab==='lever' && S.issue) a.push(['issue',`Issue: ${LBL.issues[S.issue]}`]);
+  if(S.dia) a.push(['dia',`Diagram: ${LBL.diagrams[S.dia]}`]);
+  if(S.src) a.push(['src',`Source: ${S.src}`]);
+  S.types.forEach(t=>a.push(['type:'+t,`Type: ${LBL.types[t]}`]));
+  if(S.q) a.push(['q',`Search: “${S.q}”`]);
+  return a.map(([k,l])=>`<button type="button" data-act="unfilter" data-id="${esc(k)}">${esc(l)}</button>`).join('');
+}
+function cardHTML(x){
+  const it = x.it, fw = S.fw, t = it.t[fw], tick = S.ticked.includes(it.id), open = S.open.includes(it.id);
+  const [c1,c2] = topicColors(it), dp = dparts(it.date);
+  const aboutChips = [...t.about].map(id=>ptChip(id)).join('');
+  const alsoChips = [...t.also].map(id=>ptChip(id)).join('');
+  const nAbout = t.about.size;
+  const shownAbout = [...t.about].slice(0,4).map(id=>ptChip(id)).join('') + (nAbout>4?`<span class="mut">+${nAbout-4} more</span>`:'');
+  let tagRow = '';
+  if(nAbout) tagRow = `<div class="tags"><span class="lbl">About</span>${shownAbout}</div>`;
+  else if(t.also.size) tagRow = `<div class="tags"><span class="lbl">Supports</span>${[...t.also].slice(0,3).map(id=>ptChip(id)).join('')}</div>`;
+  const viaNote = !direct(it,fw) ? `<p class="via">Not yet tagged to dot points in the ${esc(fwName(fw))}. It appears here through a matching section in another syllabus.</p>` : '';
+  const others = FWID.filter(f=>f!==fw).map(f=>{
+    const ids=[...it.t[f].about,...it.t[f].also]; if(!ids.length) return '';
+    return `<div class="tags"><span class="lbl" style="min-width:0">${esc(fwName(f))}</span>${ids.map(id=>ptChip(id)).join('')}</div>`;
+  }).join('');
+  const figs = it.figures.slice(0,3).map(f=>{ const i=f.value.indexOf(' ('); const head = i>0?f.value.slice(0,i):f.value, tail = i>0?f.value.slice(i+1):'';
+    return `<li><b class="${head.length>20?'long':''}">${esc(head)}</b><span>${esc(f.label)}${tail?' '+esc(tail):''}</span></li>`; }).join('');
+  const typeBadge = `<span class="badge">${esc(LBL.types[it.type])}</span>`;
+  const more = `<details class="more" data-id="${esc(it.id)}"${open?' open':''}><summary>Show the figures, terms and questions</summary><div class="more-body">
+    <p>${esc(it.lede)}</p>
+    <div><h4>Key figures</h4><table class="ft"><thead><tr><th>Figure</th><th>Value</th><th>As at</th><th>Source</th></tr></thead><tbody>${it.figures.map(f=>`<tr><td>${esc(f.label)}</td><td class="v">${valHTML(f.value)}</td><td>${esc(f.asAt)}</td><td>${esc(f.source)}</td></tr>`).join('')}</tbody></table></div>
+    ${alsoChips?`<div><h4>Also useful for</h4><div class="tags">${alsoChips}</div></div>`:''}
+    ${nAbout>4?`<div><h4>All the dot points it is about</h4><div class="tags">${aboutChips}</div></div>`:''}
+    ${others?`<div><h4>Filed in the other syllabuses</h4>${others}</div>`:''}
+    <div><h4>Themes</h4><div class="tags">${it.issues.map(i=>`<button class="chip iss" type="button" data-act="tag" data-kind="issue" data-id="${i}">${esc(LBL.issues[i])}</button>`).join('')}${it.levers.map(i=>`<button class="chip lev" type="button" data-act="tag" data-kind="lever" data-id="${i}">${esc(LBL.levers[i])}</button>`).join('')}${it.diagrams.map(i=>`<button class="chip dia" type="button" data-act="tag" data-kind="dia" data-id="${i}">${esc(LBL.diagrams[i])} diagram</button>`).join('')}</div></div>
+    <div><h4>Key terms</h4><dl class="terms">${it.terms.map(tm=>`<div><dt>${esc(tm.term)}</dt><dd>${esc(tm.def)}</dd></div>`).join('')}</dl></div>
+    ${it.angle?`<div><h4>How to use it in an answer</h4><p>${esc(it.angle)}</p></div>`:''}
+    ${it.questions&&it.questions.length?`<div><h4>Try these</h4><ol class="qs">${it.questions.map(q=>`<li>${esc(q.q)} <span class="mk">(${q.marks} ${plural(q.marks,'mark','marks')})</span></li>`).join('')}</ol>${it.extended?`<p class="mut" style="margin-top:6px">Extended response: ${esc(it.extended)}</p>`:''}</div>`:''}
+    <div><h4>Sources</h4><ol class="srcs">${it.links.map(l=>`<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a></li>`).join('')}</ol></div>
+    ${it.note?`<p class="note">${esc(it.note)}</p>`:''}
+  </div></details>`;
+  return `<article class="card${tick?' on':''}" id="c-${esc(it.id)}" style="--c1:${c1};--c2:${c2}">
+    <div class="stripe" aria-hidden="true"></div>
+    <div class="when" aria-label="${esc(dlong(it))}"><span class="d">${dp.d}</span><span class="m">${dp.m}</span><span class="y">${dp.y}</span></div>
+    <div class="body">
+      <div class="meta">${typeBadge}${it.outlets.slice(0,4).map((o,i)=>`<button class="chip out" type="button" data-act="tag" data-kind="src" data-id="${esc(o)}">${esc(o)}</button>`).join('')}<span>${esc(it.dateText||'')}</span></div>
+      <h3>${esc(it.title)}</h3>
+      <p class="why">${esc(it.summary)}</p>
+      <ul class="figs" aria-label="Key figures">${figs}</ul>
+      ${tagRow}${viaNote}
+      ${more}
+      <div class="acts">
+        <a class="btn" href="${esc(it.file.path)}" target="_blank" rel="noopener">Open the ${esc(it.file.label.toLowerCase())} (PDF)</a>
+        <label class="pick"><input type="checkbox" data-act="tick" data-id="${esc(it.id)}" ${tick?'checked':''}> Add to my list</label>
+      </div>
+    </div>
+  </article>`;
+}
+function statsHTML(list){
+  const rows = [];
+  list.forEach(x=>x.it.figures.forEach(f=>{ if(!S.issue || f.issue===S.issue) rows.push({f, it:x.it}); }));
+  const by = S.sort==='best';
+  rows.sort((a,b)=> by ? (LBL.issues[a.f.issue]||'').localeCompare(LBL.issues[b.f.issue]||'') || b.it.date.localeCompare(a.it.date)
+                       : S.sort==='old' ? a.it.date.localeCompare(b.it.date) : b.it.date.localeCompare(a.it.date));
+  if(!rows.length) return emptyHTML('No figures match','Clear a filter, or choose another indicator.');
+  let last = null, h = '';
+  rows.forEach(r=>{
+    if(by && r.f.issue!==last){ last=r.f.issue; h += `<tr class="grp"><td colspan="5">${esc(LBL.issues[last])}</td></tr>`; }
+    h += `<tr><td>${esc(r.f.label)}</td><td class="v">${valHTML(r.f.value)}</td><td>${esc(r.f.asAt)}</td><td>${esc(r.f.source)}</td><td><button type="button" class="go" data-act="goitem" data-id="${esc(r.it.id)}">${esc(shorten(r.it.title,48))}</button></td></tr>`;
+  });
+  return `<div class="stats-wrap"><table class="stats"><thead><tr><th>Figure</th><th>Value</th><th>As at</th><th>Source</th><th>Filed in</th></tr></thead><tbody>${h}</tbody></table></div>
+  <p class="mut" style="margin-top:10px">${rows.length} ${plural(rows.length,'figure','figures')} from ${new Set(rows.map(r=>r.it.id)).size} ${plural(new Set(rows.map(r=>r.it.id)).size,'item','items')}. <button type="button" class="go" data-act="copystats" style="border:0;background:none;color:var(--acc);text-decoration:underline;cursor:pointer">Copy as a table</button></p>`;
+}
+function emptyHTML(h,p){ return `<div class="empty"><h3>${esc(h)}</h3><p>${esc(p)}</p></div>`; }
+function renderResults(){
+  const list = sortRes(results());
+  const stats = S.tab==='stats';
+  const nItems = list.length;
+  const sortOpts = stats ? [['new','Newest first'],['old','Oldest first'],['best','By indicator']] : [['new','Newest first'],['old','Oldest first'],['best',S.sel&&S.sel.kind==='point'?'Best match':'Best match']];
+  const cnt = stats ? '' : `<p class="cnt">${nItems} ${plural(nItems,'piece','pieces')} of evidence</p>`;
+  let body;
+  if(stats) body = statsHTML(list);
+  else if(!nItems){
+    const gap = S.tab==='syl' && S.sel && S.sel.kind==='point';
+    body = gap ? emptyHTML('Nothing filed here yet', 'This dot point has no evidence. Find a news story, statistic or report for it and send it to be filed.') : emptyHTML('No evidence matches', 'Clear a filter or change the search.');
+  } else body = list.map(cardHTML).join('');
+  $('#results').innerHTML = `<div class="res-head"><div><div class="crumbs">${S.tab==='syl'?crumbs():''}</div><h2>${esc(heading())}</h2>${cnt}</div>
+    <label class="sortbox">Sort <select id="sortSel">${sortOpts.map(([v,l])=>`<option value="${v}"${S.sort===v?' selected':''}>${l}</option>`).join('')}</select></label></div>
+    <div class="active">${activeChips()}</div>${body}`;
+}
+function renderSel(){
+  const bar = $('#selbar'), n = S.ticked.length;
+  bar.hidden = !n;
+  if(!n){ bar.innerHTML=''; return; }
+  bar.innerHTML = `<b>${n} ${plural(n,'item','items')} in your list</b>
+    <label><input type="checkbox" id="alsoBox" ${S.mapAlso?'checked':''}> include supporting points</label>
+    <button type="button" class="btn" data-act="sheet">Evidence sheet</button>
+    <button type="button" class="btn" data-act="map">Evidence map</button>
+    <button type="button" class="btn ghost" data-act="copymap">Copy map</button>
+    <button type="button" class="btn ghost" data-act="clearticks">Clear</button>`;
+}
+function renderAll(){
+  let fk = document.activeElement && document.activeElement.dataset ? document.activeElement.dataset.k : null;
+  renderFW(); coverage(); renderTabs(); renderFilters(); renderRail(); renderResults(); renderSel(); writeHash();
+  if(fk){ const el = document.querySelector(`[data-k="${CSS.escape(fk)}"]`); if(el) el.focus({preventScroll:true}); }
+}
+
+/* ---------- print + copy ---------- */
+function ticked(){ return S.ticked.map(id=>ITEMS.find(i=>i.id===id)).filter(Boolean).sort((a,b)=>b.date.localeCompare(a.date)); }
+function printOut(html){
+  const root = $('#printRoot'); root.innerHTML = html; document.body.classList.add('printing');
+  const done = ()=>{ document.body.classList.remove('printing'); root.innerHTML=''; removeEventListener('afterprint',done); };
+  addEventListener('afterprint',done); setTimeout(()=>window.print(),30);
+}
+function sheetHTML(){
+  const items = ticked();
+  return `<h1>Evidence sheet</h1><p class="pm">${esc(fwName(S.fw))} · ${items.length} ${plural(items.length,'item','items')} · ${new Date().toLocaleDateString('en-AU',{day:'numeric',month:'long',year:'numeric'})}</p>` + items.map(it=>{
+    const t = it.t[S.fw]; const ids=[...t.about];
+    return `<div class="pi"><h3>${esc(it.title)}</h3><div class="pm">${esc(dlong(it))} · ${esc(it.src)}</div><p>${esc(it.summary)}</p>
+    <ul>${it.figures.map(f=>`<li><b>${esc(f.value)}</b> ${esc(f.label)} (${esc(f.asAt)}; ${esc(f.source)})</li>`).join('')}</ul>
+    ${ids.length?`<div class="pm">About: ${ids.map(i=>esc(i+' '+PT[i].t)).join('; ')}</div>`:''}
+    <div class="pm">${it.links.slice(0,3).map(l=>esc(l.url)).join('<br>')}</div></div>`;
+  }).join('');
+}
+function mapData(){
+  const fw = FW.find(f=>f.id===S.fw), items = ticked(), out = [], used = new Set();
+  fw.topics.forEach(t=>t.sections.forEach(s=>s.points.forEach(p=>{
+    const hit = items.filter(it=>it.t[fw.id].about.has(p.id) || (S.mapAlso && it.t[fw.id].also.has(p.id)));
+    if(hit.length){ hit.forEach(h=>used.add(h.id)); out.push({t,s,p,hit}); }
+  })));
+  return {fw, out, rest: items.filter(i=>!used.has(i.id))};
+}
+function mapHTML(){
+  const {fw,out,rest} = mapData(); let h = `<h1>Evidence map</h1><p class="pm">${esc(fw.full)} · filed by dot point${S.mapAlso?', with supporting points':''}</p>`; let lt=null, ls=null;
+  out.forEach(o=>{
+    if(o.t.id!==lt){ lt=o.t.id; h+=`<h2>${esc(o.t.name)}</h2>`; ls=null; }
+    if(o.s.id!==ls){ ls=o.s.id; h+=`<h3>${esc(o.s.name)}</h3>`; }
+    h += `<div class="pi"><b>${esc(o.p.id)}</b> ${esc(o.p.t)}<ul>${o.hit.map(it=>`<li>${esc(it.title)} <span class="pm">(${esc(dlong(it))}; ${esc(it.src)})</span></li>`).join('')}</ul></div>`;
+  });
+  if(rest.length) h += `<h2>Not tagged to this syllabus yet</h2><ul>${rest.map(it=>`<li>${esc(it.title)}</li>`).join('')}</ul>`;
+  return h;
+}
+function mapText(){
+  const {fw,out,rest} = mapData(); let s = `Evidence map: ${fw.full}\n`; let lt=null;
+  out.forEach(o=>{ if(o.t.id!==lt){ lt=o.t.id; s+=`\n${o.t.name}\n`; } s += `\n  ${o.p.id} ${o.p.t}\n` + o.hit.map(it=>`    - ${it.title} (${dlong(it)}; ${it.src})`).join('\n')+'\n'; });
+  if(rest.length) s += `\nNot tagged to this syllabus yet\n` + rest.map(it=>`  - ${it.title}`).join('\n')+'\n';
+  return s;
+}
+function toast(msg, undo){
+  const t = $('#toast'); t.hidden=false; t.innerHTML = `<span>${esc(msg)}</span>${undo?'<button type="button" id="undoBtn">Undo</button>':''}`;
+  clearTimeout(toast.t); toast.t = setTimeout(()=>{ t.hidden=true; }, undo?7000:2600);
+  if(undo) $('#undoBtn').onclick = ()=>{ undo(); t.hidden=true; };
+}
+function saveTicks(){ store.set('evf.ticked', JSON.stringify(S.ticked)); }
+async function copy(text, ok){
+  try{ await navigator.clipboard.writeText(text); toast(ok); }
+  catch(e){ const ta=document.createElement('textarea'); ta.value=text; document.body.appendChild(ta); ta.select(); let done=false; try{done=document.execCommand('copy')}catch(_){}; ta.remove(); toast(done?ok:'Copy was blocked. Use Evidence map to print instead.'); }
+}
+
+/* ---------- actions ---------- */
+function setSel(kind,id){
+  S.sel = kind ? {kind,id} : null; S.tab = 'syl';
+  if(kind==='topic' && !S.exp.includes(id)) S.exp.push(id);
+  if(kind==='section'){ if(!S.exp.includes(id)) S.exp.push(id); const tp=SEC[id].top; if(!S.exp.includes(tp)) S.exp.push(tp); }
+  if(kind==='point'){ const p=PT[id]; [p.sec,p.top].forEach(x=>{ if(!S.exp.includes(x)) S.exp.push(x); }); }
+}
+function resetAll(){
+  const had = S.ticked.slice();
+  Object.assign(S, DEF, {ticked:[], open:[], exp:[], mapAlso:false}); S.q=''; $('#q').value='';
+  saveTicks(); store.set('evf.fw',S.fw); history.replaceState(null,'',location.pathname+location.search);
+  renderAll();
+  if(had.length) toast('Your list was cleared.', ()=>{ S.ticked = had; saveTicks(); renderAll(); });
+}
+function goItem(id){
+  S.tab='syl'; S.sel=null; S.issue=S.lever=S.dia=S.src=S.q=''; S.types=[]; $('#q').value='';
+  if(!S.open.includes(id)) S.open.push(id);
+  renderAll();
+  const el = document.getElementById('c-'+id); if(el){ el.scrollIntoView({block:'start',behavior:'auto'}); el.classList.add('flash'); }
+}
+document.addEventListener('click', e=>{
+  const b = e.target.closest('[data-act]'); if(!b) return;
+  const act = b.dataset.act, id = b.dataset.id, kind = b.dataset.kind;
+  if(act==='tick') return;
+  if(act==='fw'){ S.fw = id; store.set('evf.fw',id); S.sel=null; S.exp=[]; renderAll(); }
+  else if(act==='tab'){ S.tab = id; renderAll(); }
+  else if(act==='grid'){ setSel('point',id); renderAll(); $('#results').scrollIntoView({behavior:'smooth',block:'start'}); }
+  else if(act==='node'){
+    const cur = S.sel && S.sel.kind===kind && S.sel.id===id;
+    if(kind==='point'){ setSel('point',id); }
+    else if(cur){ S.sel=null; S.exp = S.exp.filter(x=>x!==id); }
+    else setSel(kind,id);
+    renderAll();
+  }
+  else if(act==='facet'){ if(kind==='lever') S.lever = S.lever===id?'':id; else S.issue = S.issue===id?'':id; renderAll(); }
+  else if(act==='crumb'){ if(kind==='clear') S.sel=null; else setSel(kind,id); renderAll(); }
+  else if(act==='type'){ S.types = S.types.includes(id)? S.types.filter(x=>x!==id) : S.types.concat(id); renderAll(); }
+  else if(act==='dia'){ S.dia = S.dia===id?'':id; renderAll(); }
+  else if(act==='tag'){
+    if(kind==='point'){ setSel('point',id); }
+    else if(kind==='issue') S.issue=id; else if(kind==='lever') S.lever=id; else if(kind==='dia') S.dia=id; else if(kind==='src') S.src=id;
+    renderAll(); $('#results').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  else if(act==='unfilter'){
+    if(id==='issue') S.issue=''; else if(id==='lever') S.lever=''; else if(id==='dia') S.dia=''; else if(id==='src') S.src='';
+    else if(id==='q'){ S.q=''; $('#q').value=''; } else if(id.startsWith('type:')) S.types = S.types.filter(x=>x!==id.slice(5));
+    renderAll();
+  }
+  else if(act==='goitem') goItem(id);
+  else if(act==='sheet') printOut(sheetHTML());
+  else if(act==='map') printOut(mapHTML());
+  else if(act==='copymap') copy(mapText(),'Evidence map copied.');
+  else if(act==='clearticks'){ const had=S.ticked.slice(); S.ticked=[]; saveTicks(); renderAll(); toast('Your list was cleared.',()=>{ S.ticked=had; saveTicks(); renderAll(); }); }
+  else if(act==='copystats'){
+    const rows=[]; sortRes(results()).forEach(x=>x.it.figures.forEach(f=>{ if(!S.issue||f.issue===S.issue) rows.push([f.label,f.value,f.asAt,f.source,x.it.title].join('\t')); }));
+    copy(['Figure\tValue\tAs at\tSource\tFiled in',...rows].join('\n'),'Table copied.');
+  }
+});
+document.addEventListener('change', e=>{
+  const t = e.target;
+  if(t.matches('input[data-act="tick"]')){
+    const id = t.dataset.id; S.ticked = t.checked ? S.ticked.concat(id) : S.ticked.filter(x=>x!==id); saveTicks();
+    document.getElementById('c-'+id).classList.toggle('on',t.checked); renderSel();
+  } else if(t.id==='srcSel'){ S.src = t.value; renderAll(); }
+  else if(t.id==='sortSel'){ S.sort = t.value; renderAll(); }
+  else if(t.id==='alsoBox'){ S.mapAlso = t.checked; }
+});
+document.addEventListener('toggle', e=>{
+  const d = e.target; if(d.matches && d.matches('details.more')){ const id=d.dataset.id; S.open = d.open ? (S.open.includes(id)?S.open:S.open.concat(id)) : S.open.filter(x=>x!==id); }
+}, true);
+let qt; $('#q').addEventListener('input', e=>{ clearTimeout(qt); qt=setTimeout(()=>{ S.q=e.target.value.trim(); renderAll(); },160); });
+$('#resetBtn').onclick = resetAll;
+addEventListener('hashchange', ()=>{ readHash(); $('#q').value=S.q; renderAll(); });
+matchMedia('(max-width:900px)').addEventListener('change', renderRail);
+
+/* ---------- help ---------- */
+$('#helpBtn').onclick = ()=>{
+  const d = $('#help');
+  d.innerHTML = `<div class="help"><h2 id="helpH" class="head">How this site works</h2>
+  <p>Every news story, statistic and document is filed against the syllabus dot points it answers, so you can see what to write about, spot what is missing, and print a sheet for a question.</p>
+  <ol>
+   <li><b>Choose your syllabus.</b> The three buttons at the top are the HSC on the 2009 syllabus, the HSC on the 2025 syllabus, and Year 11 on the 2025 syllabus. The map, the lists and the counts all follow. Evidence tagged to another syllabus still shows up through matching sections.</li>
+   <li><b>Find something.</b> <em>Syllabus</em> walks topic, section, dot point. <em>Issues and indicators</em> and <em>Policy levers</em> are for essay questions. <em>Statistics</em> lists every figure with its date and source. Or type in the search box. The squares in the map jump straight to a dot point.</li>
+   <li><b>Read a card.</b> The coloured edge is the syllabus topic. <em>About</em> lists the dot points the evidence answers directly. Press <em>Show the figures, terms and questions</em> for the full set, the sources and practice questions.</li>
+   <li><b>Build a list.</b> Tick <em>Add to my list</em>. The bar at the bottom prints an evidence sheet (one entry per item) or an evidence map (your items sorted by dot point).</li>
+  </ol>
+  <div class="eg"><b>Worked example.</b> “Assess the effectiveness of monetary policy in achieving Australia's economic objectives.” Choose HSC 2009, open Syllabus, then Topic 4 and Monetary policy. Tick the RBA and housing items, add something from Statistics for the cash rate and unemployment, then press Evidence map. You now have a paragraph plan with the figures already dated.</div>
+  <p class="mut" style="margin-top:12px">Your list and your syllabus choice are remembered on this device. The address bar always matches what you are looking at, so you can copy it to share a view.</p>
+  <div style="text-align:right;margin-top:10px"><button class="btn pri" type="button" id="helpClose">Close</button></div></div>`;
+  d.showModal(); $('#helpClose').onclick = ()=>d.close();
+};
+$('#help').addEventListener('click', e=>{ if(e.target.id==='help') e.target.close(); });
+
+readHash(); $('#q').value = S.q; renderAll();
+})();
+</script>
+</body>
+</html>

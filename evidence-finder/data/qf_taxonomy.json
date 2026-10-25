@@ -1,0 +1,774 @@
+{
+ "syl": [
+  {
+   "c": "T1",
+   "n": "Topic 1 — The Global Economy",
+   "h": [
+    {
+     "n": "International economic integration",
+     "d": [
+      {
+       "c": "1A.1",
+       "t": "the global economy"
+      },
+      {
+       "c": "1A.2",
+       "t": "Gross World Product"
+      },
+      {
+       "c": "1A.3",
+       "t": "globalisation — trade in goods and services"
+      },
+      {
+       "c": "1A.4",
+       "t": "globalisation — financial flows"
+      },
+      {
+       "c": "1A.5",
+       "t": "globalisation — investment and transnational corporations"
+      },
+      {
+       "c": "1A.6",
+       "t": "globalisation — technology, transport and communication"
+      },
+      {
+       "c": "1A.7",
+       "t": "globalisation — international division of labour, migration"
+      },
+      {
+       "c": "1A.8",
+       "t": "the international and regional business cycles"
+      }
+     ]
+    },
+    {
+     "n": "Trade, financial flows and foreign investment",
+     "d": [
+      {
+       "c": "1B.1",
+       "t": "the basis of free trade — its advantages and disadvantages"
+      },
+      {
+       "c": "1B.2",
+       "t": "role of international organisations — WTO, IMF, World Bank, United Nations, OECD"
+      },
+      {
+       "c": "1B.3",
+       "t": "influence of government economic forums — G20, G7/8"
+      },
+      {
+       "c": "1B.4",
+       "t": "trading blocs, monetary unions and free trade agreements — advantages and disadvantages of multilateral and bilateral agreements"
+      }
+     ]
+    },
+    {
+     "n": "Protection",
+     "d": [
+      {
+       "c": "1C.1",
+       "t": "reasons for protection — infant industry argument, domestic employment, dumping, defence"
+      },
+      {
+       "c": "1C.2",
+       "t": "methods of protection and the effects of protectionist policies on the domestic and global economy — tariffs, subsidies, quotas, local content rules, export incentives"
+      }
+     ]
+    },
+    {
+     "n": "Globalisation and economic development",
+     "d": [
+      {
+       "c": "1D.1",
+       "t": "differences between economic growth and economic development"
+      },
+      {
+       "c": "1D.2",
+       "t": "distribution of income and wealth"
+      },
+      {
+       "c": "1D.3",
+       "t": "income and quality of life indicators"
+      },
+      {
+       "c": "1D.4",
+       "t": "developing economies, emerging economies, advanced economies"
+      },
+      {
+       "c": "1D.5",
+       "t": "reasons for differences between nations"
+      },
+      {
+       "c": "1D.6",
+       "t": "effects of globalisation"
+      },
+      {
+       "c": "1D.7",
+       "t": "trade, investment and transnational corporations"
+      },
+      {
+       "c": "1D.8",
+       "t": "environmental sustainability"
+      },
+      {
+       "c": "1D.9",
+       "t": "the international business cycle"
+      }
+     ]
+    },
+    {
+     "n": "Case study",
+     "d": [
+      {
+       "c": "1E.1",
+       "t": "case study of the influence of globalisation on an economy other than Australia, including an evaluation of the strategies used to promote economic growth and development"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "c": "T2",
+   "n": "Topic 2 — Australia's Place in the Global Economy",
+   "h": [
+    {
+     "n": "Australia's trade and financial flows",
+     "d": [
+      {
+       "c": "2A.1",
+       "t": "value, composition and direction of Australia's trade and financial flows — trends in Australia's trade pattern"
+      },
+      {
+       "c": "2A.2",
+       "t": "trends in financial flows — debt and equity"
+      }
+     ]
+    },
+    {
+     "n": "Australia's Balance of Payments",
+     "d": [
+      {
+       "c": "2B.1",
+       "t": "structure — Current Account, debits and credits"
+      },
+      {
+       "c": "2B.2",
+       "t": "structure — Capital and Financial Account"
+      },
+      {
+       "c": "2B.3",
+       "t": "links between key Balance of Payments categories"
+      },
+      {
+       "c": "2B.4",
+       "t": "trends in the size and composition of Australia's Balance of Payments — international competitiveness, terms of trade, international borrowing, foreign investment, and the effects of these trends"
+      }
+     ]
+    },
+    {
+     "n": "Exchange rates",
+     "d": [
+      {
+       "c": "2C.1",
+       "t": "measurement of relative exchange rates — to other individual currencies and the Trade Weighted Index"
+      },
+      {
+       "c": "2C.2",
+       "t": "factors affecting the demand for and supply of Australian dollars"
+      },
+      {
+       "c": "2C.3",
+       "t": "changes in exchange rates — appreciation/depreciation"
+      },
+      {
+       "c": "2C.4",
+       "t": "determination of exchange rates including fixed, flexible and managed rates"
+      },
+      {
+       "c": "2C.5",
+       "t": "the influence of the Reserve Bank of Australia on exchange rates"
+      },
+      {
+       "c": "2C.6",
+       "t": "the effects of fluctuations in exchange rates on the Australian economy"
+      }
+     ]
+    },
+    {
+     "n": "Free trade and protection",
+     "d": [
+      {
+       "c": "2D.1",
+       "t": "Australia's policies regarding free trade and protection"
+      },
+      {
+       "c": "2D.2",
+       "t": "Australia's multilateral and bilateral free trade agreements"
+      },
+      {
+       "c": "2D.3",
+       "t": "the implications of Australia's policies for individuals, firms and governments"
+      },
+      {
+       "c": "2D.4",
+       "t": "implications for Australia of protectionist policies of other countries and trading blocs"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "c": "T3",
+   "n": "Topic 3 — Economic Issues",
+   "h": [
+    {
+     "n": "Economic growth",
+     "d": [
+      {
+       "c": "3A.1",
+       "t": "aggregate demand and its components: Y = C + I + G + X – M"
+      },
+      {
+       "c": "3A.2",
+       "t": "injections and withdrawals (I + G + X; S + T + M)"
+      },
+      {
+       "c": "3A.3",
+       "t": "the simple multiplier: k = 1/(1 – MPC)"
+      },
+      {
+       "c": "3A.4",
+       "t": "measurement of growth through changes in real Gross Domestic Product"
+      },
+      {
+       "c": "3A.5",
+       "t": "sources and effects of economic growth in Australia"
+      },
+      {
+       "c": "3A.6",
+       "t": "increases in aggregate supply — improvements in efficiency and technology"
+      },
+      {
+       "c": "3A.7",
+       "t": "trends in business cycle"
+      }
+     ]
+    },
+    {
+     "n": "Unemployment",
+     "d": [
+      {
+       "c": "3B.1",
+       "t": "measurement — labour force, participation rate, unemployment rate"
+      },
+      {
+       "c": "3B.2",
+       "t": "trends"
+      },
+      {
+       "c": "3B.3",
+       "t": "types and causes — cyclical, structural, frictional, seasonal, underemployment, hidden, long term"
+      },
+      {
+       "c": "3B.4",
+       "t": "non-accelerating inflation rate of unemployment (NAIRU)"
+      },
+      {
+       "c": "3B.5",
+       "t": "main groups affected by unemployment"
+      },
+      {
+       "c": "3B.6",
+       "t": "effects of unemployment — economic and social costs"
+      }
+     ]
+    },
+    {
+     "n": "Inflation",
+     "d": [
+      {
+       "c": "3C.1",
+       "t": "measurement — headline and underlying"
+      },
+      {
+       "c": "3C.2",
+       "t": "trends"
+      },
+      {
+       "c": "3C.3",
+       "t": "causes — demand inflation, cost inflation, imported inflation, inflationary expectations"
+      },
+      {
+       "c": "3C.4",
+       "t": "positive and negative effects"
+      }
+     ]
+    },
+    {
+     "n": "External stability",
+     "d": [
+      {
+       "c": "3D.1",
+       "t": "measurement — CAD as a percentage of GDP, net foreign debt as a percentage of GDP, net foreign liabilities as a percentage of GDP, terms of trade, exchange rate, international competitiveness"
+      },
+      {
+       "c": "3D.2",
+       "t": "trends"
+      },
+      {
+       "c": "3D.3",
+       "t": "positive and negative causes and effects"
+      }
+     ]
+    },
+    {
+     "n": "Distribution of income and wealth",
+     "d": [
+      {
+       "c": "3E.1",
+       "t": "measurement — Lorenz curve and Gini coefficient"
+      },
+      {
+       "c": "3E.2",
+       "t": "sources of income as a percentage of household income"
+      },
+      {
+       "c": "3E.3",
+       "t": "taxation, transfer payments and other assistance"
+      },
+      {
+       "c": "3E.4",
+       "t": "sources of wealth"
+      },
+      {
+       "c": "3E.5",
+       "t": "dimensions and trends, according to gender, age, occupation, ethnic background and family structure"
+      },
+      {
+       "c": "3E.6",
+       "t": "economic and social costs and benefits of inequality"
+      }
+     ]
+    },
+    {
+     "n": "Environmental sustainability",
+     "d": [
+      {
+       "c": "3F.1",
+       "t": "ecologically sustainable development"
+      },
+      {
+       "c": "3F.2",
+       "t": "private and social costs and benefits — externalities, market failure"
+      },
+      {
+       "c": "3F.3",
+       "t": "public and private goods — free riders"
+      },
+      {
+       "c": "3F.4",
+       "t": "environmental issues — preservation of natural environments, pollution, climate change, depletion of renewable and non-renewable resources"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "c": "T4",
+   "n": "Topic 4 — Economic Policies and Management",
+   "h": [
+    {
+     "n": "Economic objectives",
+     "d": [
+      {
+       "c": "4A.1",
+       "t": "economic growth and quality of life"
+      },
+      {
+       "c": "4A.2",
+       "t": "full employment"
+      },
+      {
+       "c": "4A.3",
+       "t": "price stability"
+      },
+      {
+       "c": "4A.4",
+       "t": "external stability"
+      },
+      {
+       "c": "4A.5",
+       "t": "environmental sustainability"
+      },
+      {
+       "c": "4A.6",
+       "t": "distribution of income"
+      },
+      {
+       "c": "4A.7",
+       "t": "potential conflicts among objectives"
+      }
+     ]
+    },
+    {
+     "n": "Macroeconomic policies",
+     "d": [
+      {
+       "c": "4B.1",
+       "t": "rationale for macroeconomic policies — stabilisation and shifts in aggregate demand"
+      }
+     ]
+    },
+    {
+     "n": "Fiscal policy",
+     "d": [
+      {
+       "c": "4C.1",
+       "t": "Federal Government budgets and budget outcomes"
+      },
+      {
+       "c": "4C.2",
+       "t": "effects of budgetary changes on resource use, income distribution and economic activity"
+      },
+      {
+       "c": "4C.3",
+       "t": "methods of financing deficits"
+      },
+      {
+       "c": "4C.4",
+       "t": "use of a surplus"
+      }
+     ]
+    },
+    {
+     "n": "Monetary policy",
+     "d": [
+      {
+       "c": "4D.1",
+       "t": "purpose of monetary policy"
+      },
+      {
+       "c": "4D.2",
+       "t": "implementation of monetary policy by the Reserve Bank of Australia"
+      },
+      {
+       "c": "4D.3",
+       "t": "impact of changes in interest rates on economic activity and the exchange rate"
+      }
+     ]
+    },
+    {
+     "n": "Microeconomic policies",
+     "d": [
+      {
+       "c": "4E.1",
+       "t": "rationale for microeconomic policies including shifts in aggregate supply, efficiency"
+      },
+      {
+       "c": "4E.2",
+       "t": "effects of microeconomic policies on individual product and factor markets, individual industries and the economy"
+      },
+      {
+       "c": "4E.3",
+       "t": "regulation and deregulation — competition policy"
+      }
+     ]
+    },
+    {
+     "n": "Labour market policies",
+     "d": [
+      {
+       "c": "4F.1",
+       "t": "role of national and state systems"
+      },
+      {
+       "c": "4F.2",
+       "t": "the national system for determining minimum employment standards, minimum wages, awards, enterprise agreements and employment contracts for high income earners"
+      },
+      {
+       "c": "4F.3",
+       "t": "dispute resolution"
+      },
+      {
+       "c": "4F.4",
+       "t": "arguments for and against the use of centralised, decentralised and individualised methods of determining employment contracts"
+      },
+      {
+       "c": "4F.5",
+       "t": "education, training and employment programs"
+      }
+     ]
+    },
+    {
+     "n": "National and global context for environmental management",
+     "d": [
+      {
+       "c": "4G.1",
+       "t": "regulations"
+      },
+      {
+       "c": "4G.2",
+       "t": "market-based policies"
+      },
+      {
+       "c": "4G.3",
+       "t": "targets"
+      },
+      {
+       "c": "4G.4",
+       "t": "international agreements"
+      }
+     ]
+    },
+    {
+     "n": "Limitations of economic policies",
+     "d": [
+      {
+       "c": "4H.1",
+       "t": "time lags"
+      },
+      {
+       "c": "4H.2",
+       "t": "global influences"
+      },
+      {
+       "c": "4H.3",
+       "t": "political constraints"
+      }
+     ]
+    },
+    {
+     "n": "Policy responses and their effects in dealing with the economic objectives",
+     "d": [
+      {
+       "c": "4I.1",
+       "t": "economic growth and quality of life"
+      },
+      {
+       "c": "4I.2",
+       "t": "full employment"
+      },
+      {
+       "c": "4I.3",
+       "t": "price stability"
+      },
+      {
+       "c": "4I.4",
+       "t": "external stability"
+      },
+      {
+       "c": "4I.5",
+       "t": "distribution of income"
+      },
+      {
+       "c": "4I.6",
+       "t": "environmental sustainability"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "ssk": [
+  {
+   "c": "T1",
+   "n": "Topic 1 — The Global Economy",
+   "d": [
+    {
+     "c": "S1.1",
+     "t": "examine the effects of globalisation on economic growth and the quality of life, levels of unemployment, rates of inflation and external stability"
+    },
+    {
+     "c": "S1.2",
+     "t": "assess the potential impact on the environment of continuing world economic development"
+    },
+    {
+     "c": "S1.3",
+     "t": "investigate the global distribution of income and wealth"
+    },
+    {
+     "c": "S1.4",
+     "t": "assess the consequences of an unequal distribution of global income and wealth"
+    },
+    {
+     "c": "S1.5",
+     "t": "discuss the effects of protectionist policies on the global economy"
+    },
+    {
+     "c": "S1.6",
+     "t": "analyse statistics on trade and financial flows to determine the nature and extent of global interdependence"
+    },
+    {
+     "c": "S1.7",
+     "t": "assess the impact on the global economy of international organisations and contemporary trading bloc agreements"
+    },
+    {
+     "c": "S1.8",
+     "t": "evaluate the impact of development strategies used in a range of contemporary and hypothetical situations"
+    }
+   ]
+  },
+  {
+   "c": "T2",
+   "n": "Topic 2 — Australia's Place in the Global Economy",
+   "d": [
+    {
+     "c": "S2.1",
+     "t": "assess the impact of recent changes in the global economy on Australia's trade and financial flows"
+    },
+    {
+     "c": "S2.2",
+     "t": "examine the effects of changes in trade and financial flows on Australia's economic performance"
+    },
+    {
+     "c": "S2.3",
+     "t": "analyse the effects of changes in the value of the Australian dollar on the Australian economy"
+    },
+    {
+     "c": "S2.4",
+     "t": "discuss the impact of free trade and protection policies on the quality of life in Australia"
+    },
+    {
+     "c": "S2.5",
+     "t": "propose likely changes to the structure of industry within Australia as a result of current trends in the global economy"
+    },
+    {
+     "c": "S2.6",
+     "t": "calculate the main components of Australia's balance of payments"
+    },
+    {
+     "c": "S2.7",
+     "t": "analyse the relationship between the balance of the capital and financial account and the net income balance"
+    },
+    {
+     "c": "S2.8",
+     "t": "explain the relationship between the current account balance and the balance of the capital and financial account"
+    },
+    {
+     "c": "S2.9",
+     "t": "use supply and demand diagrams to explain how the value of a currency is determined under different exchange rate systems"
+    },
+    {
+     "c": "S2.10",
+     "t": "analyse the impact of changes in the components of the balance of payments on the value of the Australian dollar"
+    }
+   ]
+  },
+  {
+   "c": "T3",
+   "n": "Topic 3 — Economic Issues",
+   "d": [
+    {
+     "c": "S3.1",
+     "t": "examine the arguments for and against increasing economic growth rates"
+    },
+    {
+     "c": "S3.2",
+     "t": "investigate the economic and social problems created by unemployment"
+    },
+    {
+     "c": "S3.3",
+     "t": "analyse the effects of inflation on an economy"
+    },
+    {
+     "c": "S3.4",
+     "t": "discuss the effect of a continued current account deficit on an economy"
+    },
+    {
+     "c": "S3.5",
+     "t": "investigate recent trends in the distribution of income in Australia and identify the impact of specific economic policies on this distribution"
+    },
+    {
+     "c": "S3.6",
+     "t": "analyse the economic and social costs of inequality in the distribution of income"
+    },
+    {
+     "c": "S3.7",
+     "t": "examine the economic issues associated with the goal of ecologically sustainable development"
+    },
+    {
+     "c": "S3.8",
+     "t": "identify and analyse problems facing contemporary and hypothetical economies"
+    },
+    {
+     "c": "S3.9",
+     "t": "calculate an equilibrium position for an economy using leakages and injections"
+    },
+    {
+     "c": "S3.10",
+     "t": "determine the impact of the (simple) multiplier effect on national income"
+    },
+    {
+     "c": "S3.11",
+     "t": "explain the implications of the multiplier for fluctuations in the level of economic activity in an economy"
+    },
+    {
+     "c": "S3.12",
+     "t": "calculate the unemployment rate and the participation rate using labour force statistics"
+    },
+    {
+     "c": "S3.13",
+     "t": "interpret a Lorenz curve and a Gini coefficient for the distribution of income in an economy"
+    },
+    {
+     "c": "S3.14",
+     "t": "use economic concepts to analyse a contemporary environmental issue"
+    },
+    {
+     "c": "S3.15",
+     "t": "assess the key problems and issues facing the Australian economy"
+    }
+   ]
+  },
+  {
+   "c": "T4",
+   "n": "Topic 4 — Economic Policies and Management",
+   "d": [
+    {
+     "c": "S4.1",
+     "t": "analyse the opportunity cost of government decisions in addressing specific economic problems or issues"
+    },
+    {
+     "c": "S4.2",
+     "t": "investigate structural changes in the Australian economy resulting from microeconomic policies"
+    },
+    {
+     "c": "S4.3",
+     "t": "apply economic theory to explain how a government could address an economic problem or issue in hypothetical situations"
+    },
+    {
+     "c": "S4.4",
+     "t": "analyse alternative ways to finance a budget deficit"
+    },
+    {
+     "c": "S4.5",
+     "t": "explain how governments are restricted in their ability to simultaneously achieve economic objectives"
+    },
+    {
+     "c": "S4.6",
+     "t": "use (simple) multiplier analysis to explain how governments can solve economic problems"
+    },
+    {
+     "c": "S4.7",
+     "t": "identify limitations of the effectiveness of economic policies"
+    },
+    {
+     "c": "S4.8",
+     "t": "explain the impact of key economic policies on an economy"
+    },
+    {
+     "c": "S4.9",
+     "t": "propose and evaluate alternative policies to address an economic problem in hypothetical and the contemporary Australian contexts"
+    },
+    {
+     "c": "S4.10",
+     "t": "explain, using economic theory, the general effects of macroeconomic and microeconomic policies on an economy"
+    },
+    {
+     "c": "S4.11",
+     "t": "select an appropriate policy mix to address a specific economic problem"
+    }
+   ]
+  }
+ ]
+}
