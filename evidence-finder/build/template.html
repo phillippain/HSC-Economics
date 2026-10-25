@@ -215,6 +215,7 @@ dl.terms dd{margin:0 0 4px;font-size:.86rem;color:var(--mut)}
 .qs .mk{color:var(--mut);font-size:.8rem;white-space:nowrap}
 .srcs{margin:0;padding-left:1.1rem;font-size:.86rem}
 .srcs li{margin:0 0 3px;overflow-wrap:anywhere}
+.badge.old{background:transparent;color:var(--ink);border:1px dashed currentColor}
 .note{background:var(--card2);border-left:4px solid var(--hl);padding:.5rem .7rem;font-size:.86rem;border-radius:0 8px 8px 0}
 .acts{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin-top:.7rem}
 .pick{display:inline-flex;gap:8px;align-items:center;font-weight:600;font-size:.9rem;cursor:pointer;margin-left:auto}
@@ -653,7 +654,7 @@ function cardHTML(x){
   }).join('');
   const figs = it.figures.slice(0,3).map(f=>{ const i=f.value.indexOf(' ('); const head = i>0?f.value.slice(0,i):f.value, tail = i>0?f.value.slice(i+1):'';
     return `<li><b class="${head.length>20?'long':''}">${esc(head)}</b><span>${esc(f.label)}${tail?' '+esc(tail):''}</span></li>`; }).join('');
-  const typeBadge = `<span class="badge">${esc(LBL.types[it.type])}</span>`;
+  const typeBadge = `<span class="badge">${esc(LBL.types[it.type])}</span>` + (it.date<'2026-01-01'?`<span class="badge old" title="Published ${esc(dlong(it))}. Check for newer data before quoting.">Older item · ${dparts(it.date).y}</span>`:'');
   const more = `<details class="more" data-id="${esc(it.id)}"${open?' open':''}><summary>Show the figures, terms and questions</summary><div class="more-body">
     <p>${esc(it.lede)}</p>
     <div><h4>Key figures</h4><table class="ft"><thead><tr><th>Figure</th><th>Value</th><th>As at</th><th>Source</th></tr></thead><tbody>${it.figures.map(f=>`<tr><td>${esc(f.label)}</td><td class="v">${valHTML(f.value)}</td><td>${esc(f.asAt)}</td><td>${esc(f.source)}</td></tr>`).join('')}</tbody></table></div>
@@ -664,7 +665,7 @@ function cardHTML(x){
     <div><h4>Key terms</h4><dl class="terms">${it.terms.map(tm=>`<div><dt>${esc(tm.term)}</dt><dd>${esc(tm.def)}</dd></div>`).join('')}</dl></div>
     ${it.angle?`<div><h4>How to use it in an answer</h4><p>${esc(it.angle)}</p></div>`:''}
     ${it.questions&&it.questions.length?`<div><h4>Try these</h4><ol class="qs">${it.questions.map(q=>`<li>${esc(q.q)} <span class="mk">(${q.marks} ${plural(q.marks,'mark','marks')})</span></li>`).join('')}</ol>${it.extended?`<p class="mut" style="margin-top:6px">Extended response: ${esc(it.extended)}</p>`:''}</div>`:''}
-    <div><h4>Sources</h4><ol class="srcs">${it.links.map(l=>`<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a></li>`).join('')}</ol></div>
+    ${it.links.length?`<div><h4>Sources</h4><ol class="srcs">${it.links.map(l=>`<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a></li>`).join('')}</ol></div>`:''}
     ${it.note?`<p class="note">${esc(it.note)}</p>`:''}
   </div></details>`;
   return `<article class="card${tick?' on':''}" id="c-${esc(it.id)}" style="--c1:${c1};--c2:${c2}">

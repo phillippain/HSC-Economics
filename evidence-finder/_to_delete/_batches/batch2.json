@@ -1,0 +1,2531 @@
+[
+ {
+  "id": "2025-05-14-wage-price-index-march-qtr",
+  "date": "2025-05-14",
+  "added": "2026-10-25",
+  "title": "Wages growth lifts to 3.4% on care-worker and public-sector pay rises, but productivity is flat",
+  "outlets": [
+   "Australian Financial Review",
+   "ABS"
+  ],
+  "summary": "Shows the wages, productivity and inflation link: pay rises ordered by the Fair Work Commission lifted wage growth while labour productivity has not increased in almost a decade.",
+  "lede": "Annual wages growth rose to 3.4% in March 2025 from 3.2% in December, driven by Fair Work Commission pay rises for childcare and aged care workers and new state public-sector deals. Economists warned the rate is not sustainable without productivity growth, though they expected the RBA to keep cutting.",
+  "type": "news",
+  "diagrams": [
+   "phillips"
+  ],
+  "issues": [
+   "inflation",
+   "employment",
+   "productivity"
+  ],
+  "levers": [
+   "labour",
+   "monetary"
+  ],
+  "about": {
+   "h09": [
+    "3C.3",
+    "4F.2",
+    "3B.2"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y2e.1",
+    "Y1a.10"
+   ],
+   "y11": [
+    "P3d.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4D.2",
+    "4E.1",
+    "3A.6"
+   ],
+   "y12": [
+    "Y2c.2",
+    "Y1b.11",
+    "Y2e.7"
+   ],
+   "y11": [
+    "P3c.4"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Wage-price spiral",
+    "def": "Wages push up prices, which push wages up again."
+   },
+   {
+    "term": "Labour productivity",
+    "def": "Output produced per hour worked."
+   },
+   {
+    "term": "Wage Price Index",
+    "def": "ABS measure of changes in the price of labour, holding job quality constant."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Wage Price Index, annual growth",
+    "value": "3.4% (3.2% in Dec 2024)",
+    "asAt": "Mar qtr 2025",
+    "issue": "inflation",
+    "source": "ABS via Australian Financial Review"
+   },
+   {
+    "label": "Quarterly wages growth, private sector",
+    "value": "0.9% (0.7% in Dec qtr)",
+    "asAt": "Mar qtr 2025",
+    "issue": "employment",
+    "source": "ABS via Australian Financial Review"
+   },
+   {
+    "label": "Quarterly wages growth, public sector",
+    "value": "1.0% (0.7% in Dec qtr)",
+    "asAt": "Mar qtr 2025",
+    "issue": "employment",
+    "source": "ABS via Australian Financial Review"
+   },
+   {
+    "label": "Childcare workers' pay rise in the quarter",
+    "value": "10% (aged care 2.3% to 13.5%)",
+    "asAt": "Mar qtr 2025",
+    "issue": "employment",
+    "source": "ABS via Australian Financial Review"
+   },
+   {
+    "label": "Peak annual wages growth in 2023",
+    "value": "4.2% (15-year high)",
+    "asAt": "2023",
+    "issue": "employment",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Unemployment rate",
+    "value": "4.1%",
+    "asAt": "early 2025",
+    "issue": "employment",
+    "source": "RBA via Australian Financial Review"
+   }
+  ],
+  "angle": "Use it to show cost-push risk: wages growing faster than productivity raise unit labour costs, which could feed inflation and limit how far the RBA can cut.",
+  "questions": [
+   {
+    "q": "Explain why wages growth faster than productivity growth can lead to higher inflation.",
+    "marks": 4
+   },
+   {
+    "q": "Outline one role of the Fair Work Commission in wage determination.",
+    "marks": 2
+   }
+  ],
+  "note": "Older item (published May 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Treasurer and economists' comments are opinion; check ABS release for the latest Wage Price Index.",
+  "file": {
+   "path": "files/2025-05/2025-05-14-wage-price-index-march-qtr.pdf",
+   "label": "Original article",
+   "pages": 8
+  },
+  "links": []
+ },
+ {
+  "id": "2025-06-30-unpaid-super-ato",
+  "date": "2025-06-30",
+  "added": "2026-10-25",
+  "title": "Workers lose over $4.7 billion a year in unpaid super and the ATO rarely penalises employers",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "Case of a gap between the legal safety net for workers and its enforcement, with the superannuation guarantee rising to 12% and payday super proposed as a fix.",
+  "lede": "The ATO recovered only 17% of the $4.7 billion in unpaid super for 2020-21, and fewer than half of penalties went beyond repaying the missing amount. The superannuation guarantee rose from 11.5% to 12% on 1 July 2025 and payday super is proposed to cut non-payment.",
+  "type": "news",
+  "diagrams": [],
+  "issues": [
+   "employment",
+   "inequality"
+  ],
+  "levers": [
+   "labour"
+  ],
+  "about": {
+   "h09": [
+    "4F.2",
+    "4F.3"
+   ],
+   "y12": [
+    "Y2e.4",
+    "Y2e.8"
+   ],
+   "y11": [
+    "P4a.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.3"
+   ],
+   "y12": [
+    "Y2e.7",
+    "Y1d.5"
+   ],
+   "y11": [
+    "P3d.1"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Superannuation guarantee",
+    "def": "Compulsory employer contribution, a percentage of ordinary earnings, into a worker's super fund."
+   },
+   {
+    "term": "Payday super",
+    "def": "Proposal that super is paid on the same day as wages."
+   },
+   {
+    "term": "Industrial safety net",
+    "def": "Minimum standards and entitlements protecting workers."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Unpaid super lost by workers, 2020-21",
+    "value": "$4.7 billion",
+    "asAt": "2020-21",
+    "issue": "employment",
+    "source": "ABC News (Super Members Council)"
+   },
+   {
+    "label": "Share of unpaid super recovered by the ATO",
+    "value": "17%",
+    "asAt": "2020-21",
+    "issue": "employment",
+    "source": "ABC News"
+   },
+   {
+    "label": "Workers not receiving full super entitlements",
+    "value": "2.8 million (average $1,810 each)",
+    "asAt": "each financial year (2024 report)",
+    "issue": "inequality",
+    "source": "Super Members Council via ABC News"
+   },
+   {
+    "label": "Penalties above remediation of the unpaid amount",
+    "value": "43% (4,124 of 9,594)",
+    "asAt": "2020-21",
+    "issue": "employment",
+    "source": "ATO figures via ABC News"
+   },
+   {
+    "label": "Superannuation guarantee rate",
+    "value": "12% (from 11.5%)",
+    "asAt": "from 1 Jul 2025",
+    "issue": "employment",
+    "source": "ABC News"
+   },
+   {
+    "label": "Super paid after employee referrals / penalties",
+    "value": "$659m paid, $300m penalties",
+    "asAt": "most recent ATO data",
+    "issue": "employment",
+    "source": "ATO via ABC News"
+   }
+  ],
+  "angle": "Use as an example of a limitation of labour market policy: a minimum entitlement is only as effective as its enforcement.",
+  "questions": [
+   {
+    "q": "Outline one limitation of labour market policies, using unpaid super as an example.",
+    "marks": 3
+   },
+   {
+    "q": "Explain how payday super could improve the effectiveness of the superannuation guarantee.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Jun 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. The latest ATO figures quoted are for 2020-21.",
+  "file": {
+   "path": "files/2025-06/2025-06-30-unpaid-super-ato.pdf",
+   "label": "Original article",
+   "pages": 16
+  },
+  "links": [
+   {
+    "label": "ABC News, 'Australian workers lose more than $4.7 billion a year in unpaid super', 30 Jun 2025",
+    "url": "https://www.abc.net.au/news/2025-06-30/apprentice-no-superannuation-for-more-than-a-year-payday-super/105454986"
+   }
+  ]
+ },
+ {
+  "id": "2025-02-07-business-quits-climate-active",
+  "date": "2025-02-07",
+  "added": "2026-10-25",
+  "title": "Big companies quit the Climate Active carbon-neutral scheme over integrity concerns",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "A real-world case on the limits of voluntary, market-based environmental schemes: doubts about offset quality are driving firms away from buying credits.",
+  "lede": "More than 100 companies, including Australia Post, Telstra and Canva, have left the voluntary Climate Active scheme in two years amid greenwashing and offset-integrity concerns. The federal government is considering reshaping or shutting the scheme.",
+  "type": "news",
+  "diagrams": [
+   "ds"
+  ],
+  "issues": [
+   "environment"
+  ],
+  "levers": [
+   "environmental"
+  ],
+  "about": {
+   "h09": [
+    "4G.2",
+    "3F.4"
+   ],
+   "y12": [
+    "Y2f.3",
+    "Y2f.8"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3F.2",
+    "4G.3"
+   ],
+   "y12": [
+    "Y1e.5",
+    "Y2f.7"
+   ],
+   "y11": [
+    "P2i.2"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Carbon offset",
+    "def": "A credit for emissions avoided or removed elsewhere, bought to cancel out emissions."
+   },
+   {
+    "term": "ACCU",
+    "def": "Australian Carbon Credit Unit; one tonne of abatement."
+   },
+   {
+    "term": "Greenwashing",
+    "def": "Misleading claims about environmental benefits."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Companies that have left Climate Active in two years",
+    "value": "more than 100",
+    "asAt": "Feb 2025",
+    "issue": "environment",
+    "source": "Sydney Morning Herald"
+   },
+   {
+    "label": "Share of offsets bought from global projects",
+    "value": "about 80% (20% are ACCUs)",
+    "asAt": "Feb 2025",
+    "issue": "environment",
+    "source": "Sydney Morning Herald"
+   },
+   {
+    "label": "ACCU price",
+    "value": "about $35 per tonne",
+    "asAt": "Feb 2025",
+    "issue": "environment",
+    "source": "Sydney Morning Herald"
+   },
+   {
+    "label": "Price of some international nature-based credits",
+    "value": "well under $1 per tonne",
+    "asAt": "Feb 2025",
+    "issue": "environment",
+    "source": "Sydney Morning Herald"
+   }
+  ],
+  "angle": "Use when evaluating market-based instruments: they depend on trust and measurement, and weak integrity can undermine the price signal.",
+  "questions": [
+   {
+    "q": "Outline one disadvantage of using carbon offsets to meet emissions targets.",
+    "marks": 3
+   },
+   {
+    "q": "Explain why the integrity of carbon credits matters for market-based environmental policy.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Feb 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Climate Active is a voluntary offset register, not the Safeguard Mechanism.",
+  "file": {
+   "path": "files/2025-02/2025-02-07-business-quits-climate-active.pdf",
+   "label": "Original article",
+   "pages": 2
+  },
+  "links": []
+ },
+ {
+  "id": "2025-02-10-cptpp-china-taiwan-impasse",
+  "date": "2025-02-10",
+  "added": "2026-10-25",
+  "title": "China's shadow stalls Taiwan's bid to join the CPTPP",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "Illustrates how geopolitics shapes regional trade agreements and why consensus rules slow enlargement of a trading bloc.",
+  "lede": "Taiwan's representative in Canberra urged Australia, as incoming chair of the CPTPP, to put Taiwan's application on the agenda, saying it should be judged on economic merit. Members have avoided considering China's and Taiwan's bids, while Costa Rica leapfrogged both.",
+  "type": "news",
+  "diagrams": [],
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "about": {
+   "h09": [
+    "1B.4",
+    "2D.2"
+   ],
+   "y12": [
+    "Y3a.13"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1B.1",
+    "2D.4"
+   ],
+   "y12": [
+    "Y3a.15",
+    "Y3a.16"
+   ],
+   "y11": [
+    "P6a.1"
+   ]
+  },
+  "terms": [
+   {
+    "term": "CPTPP",
+    "def": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership, a regional trade agreement."
+   },
+   {
+    "term": "Trading bloc",
+    "def": "A group of countries that give each other preferential trade terms."
+   },
+   {
+    "term": "Accession",
+    "def": "The process of a new member joining an agreement."
+   }
+  ],
+  "figures": [
+   {
+    "label": "China's economy",
+    "value": "US$17.8 trillion",
+    "asAt": "2023",
+    "issue": "global",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Taiwan's economy",
+    "value": "US$756 billion",
+    "asAt": "2023",
+    "issue": "global",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Costa Rica's GDP (population 5.2 million)",
+    "value": "US$86.5 billion",
+    "asAt": "2023",
+    "issue": "global",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Taiwan's rank as a destination for Australian exports",
+    "value": "sixth-biggest (no FTA)",
+    "asAt": "Feb 2025",
+    "issue": "trade",
+    "source": "Australian Financial Review"
+   }
+  ],
+  "angle": "Good for the advantages and disadvantages of multilateral and regional agreements: gains from market access versus political constraints on expansion.",
+  "questions": [
+   {
+    "q": "Outline one advantage of regional trade agreements such as the CPTPP for Australia.",
+    "marks": 2
+   },
+   {
+    "q": "Explain why membership decisions in a trading bloc can be slowed by non-economic factors.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Feb 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Page also carries an unrelated AUKUS article; only the CPTPP story is summarised.",
+  "file": {
+   "path": "files/2025-02/2025-02-10-cptpp-china-taiwan-impasse.pdf",
+   "label": "Original article",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-07-17-belt-and-road-record",
+  "date": "2025-07-17",
+  "added": "2026-10-25",
+  "title": "China's Belt and Road investment and construction hits a record in the first half of 2025",
+  "outlets": [
+   "Financial Times"
+  ],
+  "summary": "Evidence on shifting foreign investment flows and China's growing economic influence in developing economies as US tariffs rise.",
+  "lede": "Chinese construction contracts and investment in Belt and Road countries reached $124bn in the first half of 2025, more than all of 2024, according to a Griffith University study. Researchers link the surge to slow domestic growth, supply-chain diversification and the US tariff trade war.",
+  "type": "news",
+  "diagrams": [],
+  "issues": [
+   "investment",
+   "global",
+   "trade"
+  ],
+  "levers": [
+   "global",
+   "trade"
+  ],
+  "about": {
+   "h09": [
+    "1A.5",
+    "1D.7"
+   ],
+   "y12": [
+    "Y3b.1",
+    "Y3b.2"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1D.4",
+    "1C.2",
+    "1A.3"
+   ],
+   "y12": [
+    "Y3a.15",
+    "Y3d.5"
+   ],
+   "y11": []
+  },
+  "terms": [
+   {
+    "term": "Foreign direct investment (FDI)",
+    "def": "Investment that gives the investor lasting control or a significant interest in a business abroad."
+   },
+   {
+    "term": "Belt and Road Initiative",
+    "def": "China's global infrastructure and investment programme launched in 2013."
+   },
+   {
+    "term": "Debt trap",
+    "def": "Criticism that heavy lending leaves borrowers dependent on the lender."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Chinese contracts and investment in BRI countries, first half",
+    "value": "$124bn over 176 deals",
+    "asAt": "H1 2025 (all of 2024: $122bn)",
+    "issue": "investment",
+    "source": "Griffith University / GFDC via Financial Times"
+   },
+   {
+    "label": "Total BRI contracts and investment since 2013",
+    "value": "$1.3tn ($775bn construction, $533bn investment)",
+    "asAt": "mid-2025",
+    "issue": "investment",
+    "source": "Griffith University / GFDC via Financial Times"
+   },
+   {
+    "label": "Oil and gas contracts and investment, first half",
+    "value": "about $44bn (record)",
+    "asAt": "H1 2025",
+    "issue": "investment",
+    "source": "Griffith University / GFDC via Financial Times"
+   },
+   {
+    "label": "Chinese announced FDI in BRI countries",
+    "value": "$15.9bn (up 10% year on year)",
+    "asAt": "Q1 2025",
+    "issue": "investment",
+    "source": "Rhodium Group via Financial Times"
+   },
+   {
+    "label": "Growth in China's net equity abroad",
+    "value": "over 50% (US: 21%)",
+    "asAt": "2018 to 2023",
+    "issue": "investment",
+    "source": "IMF via Financial Times"
+   }
+  ],
+  "angle": "Use as a current example of how investment flows and trade diversion respond to protectionism, and of transnational investment benefiting developing economies.",
+  "questions": [
+   {
+    "q": "Distinguish between foreign direct investment and portfolio investment.",
+    "marks": 3
+   },
+   {
+    "q": "Explain one reason why trade barriers can change the pattern of international investment.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Jul 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Figures are in dollars as printed (the FT does not specify currency in the text; likely US$).",
+  "file": {
+   "path": "files/2025-07/2025-07-17-belt-and-road-record.pdf",
+   "label": "Original article",
+   "pages": 3
+  },
+  "links": [
+   {
+    "label": "Financial Times, 'China's Belt and Road investment and construction activity hits record', 17 Jul 2025",
+    "url": "https://www.ft.com/content/a2635ba1-198e-4014-8030-7e420edf34be"
+   }
+  ]
+ },
+ {
+  "id": "2025-05-15-deloitte-jobs-wages-productivity",
+  "date": "2025-05-15",
+  "added": "2026-10-25",
+  "title": "Deloitte: strong jobs and wages, but productivity must follow",
+  "outlets": [
+   "Deloitte Access Economics"
+  ],
+  "summary": "A compact data set on April 2025 labour market strength, wage growth by sector and falling labour productivity.",
+  "lede": "Deloitte Access Economics notes 89,000 jobs were added in April with unemployment steady at 4.1% and participation at a near-record 67.1%. Wage growth returned to 3.4% annually but labour productivity is 5.7% below its March 2022 peak.",
+  "type": "report",
+  "diagrams": [
+   "chart"
+  ],
+  "issues": [
+   "employment",
+   "productivity",
+   "inflation"
+  ],
+  "levers": [
+   "labour"
+  ],
+  "about": {
+   "h09": [
+    "3B.1",
+    "3B.2",
+    "3C.3"
+   ],
+   "y12": [
+    "Y1b.7",
+    "Y1b.11",
+    "Y1a.10"
+   ],
+   "y11": [
+    "P3c.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3A.6",
+    "4F.2"
+   ],
+   "y12": [
+    "Y1b.3",
+    "Y1c.4",
+    "Y2e.7"
+   ],
+   "y11": [
+    "P3d.1"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Participation rate",
+    "def": "Labour force as a share of the working-age population."
+   },
+   {
+    "term": "Underemployment",
+    "def": "Employed workers who want and are available for more hours."
+   },
+   {
+    "term": "Non-market sector",
+    "def": "Industries such as health, education and public administration where output is not sold at market prices."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Unemployment rate",
+    "value": "4.1% (pre-pandemic average 5.2%)",
+    "asAt": "Apr 2025",
+    "issue": "employment",
+    "source": "ABS via Deloitte Access Economics"
+   },
+   {
+    "label": "Participation rate",
+    "value": "67.1% (near record)",
+    "asAt": "Apr 2025",
+    "issue": "employment",
+    "source": "ABS via Deloitte Access Economics"
+   },
+   {
+    "label": "Employment gain in April",
+    "value": "89,000 (389,800 over the year)",
+    "asAt": "Apr 2025",
+    "issue": "employment",
+    "source": "ABS via Deloitte Access Economics"
+   },
+   {
+    "label": "Wage Price Index, annual growth",
+    "value": "3.4% (public 3.6%, private 3.3%)",
+    "asAt": "Mar qtr 2025",
+    "issue": "inflation",
+    "source": "ABS via Deloitte Access Economics"
+   },
+   {
+    "label": "Labour productivity since March 2022 peak",
+    "value": "down 5.7%",
+    "asAt": "to early 2025",
+    "issue": "productivity",
+    "source": "Deloitte Access Economics"
+   }
+  ],
+  "angle": "Use for labour market analysis: low unemployment and high participation, with wage growth only sustainable if productivity improves.",
+  "questions": [
+   {
+    "q": "Calculate what is meant by the participation rate and state its value in April 2025.",
+    "marks": 2
+   },
+   {
+    "q": "Explain why productivity growth is needed for sustainable wage growth.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published May 2025): figures are as at that date; check for newer data before quoting. Secondary source: Deloitte Access Economics email newsletter reproduced for classroom use; ABS data should be checked at source.",
+  "file": {
+   "path": "files/2025-05/2025-05-15-deloitte-jobs-wages-productivity.pdf",
+   "label": "Data sheet",
+   "pages": 3
+  },
+  "links": []
+ },
+ {
+  "id": "2025-07-29-trump-baseline-tariff",
+  "date": "2025-07-29",
+  "added": "2026-10-25",
+  "title": "Trump flags a new baseline tariff of 15 to 20 per cent on the rest of the world",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "A current protectionism case: higher US baseline tariffs and bilateral deals, and what they mean for Australian exporters.",
+  "lede": "President Trump said the US would set a baseline tariff of 15 to 20% for most countries, above the 10% Australia currently faces. Australian meat, gold and pharmaceutical exporters, almost half of US-bound exports, would be exposed, while the UK has locked in a 10% rate.",
+  "type": "news",
+  "diagrams": [
+   "ds"
+  ],
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "about": {
+   "h09": [
+    "1C.2",
+    "2D.4"
+   ],
+   "y12": [
+    "Y3a.6",
+    "Y3a.7"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "2D.2",
+    "1B.4",
+    "1C.1"
+   ],
+   "y12": [
+    "Y3a.13",
+    "Y3a.15",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Tariff",
+    "def": "A tax on imported goods."
+   },
+   {
+    "term": "Baseline tariff",
+    "def": "A minimum tariff rate applied to most trading partners."
+   },
+   {
+    "term": "Bilateral agreement",
+    "def": "A trade deal between two countries."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Proposed US baseline tariff",
+    "value": "15% to 20%",
+    "asAt": "29 Jul 2025",
+    "issue": "trade",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Country-specific tariffs announced in April",
+    "value": "as high as 46%",
+    "asAt": "Apr 2025",
+    "issue": "trade",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Australian goods sold to the US subject to the lowest rate",
+    "value": "about $24 billion a year",
+    "asAt": "Jul 2025",
+    "issue": "trade",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Two-way Australia-US trade (Australia in deficit)",
+    "value": "$74.4 billion",
+    "asAt": "Jul 2025",
+    "issue": "trade",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "UK baseline tariff locked in; steel and aluminium",
+    "value": "10%; 25% levy (others pay 50%)",
+    "asAt": "Jul 2025",
+    "issue": "trade",
+    "source": "Australian Financial Review"
+   }
+  ],
+  "angle": "Use to show how a major trading partner's protectionism affects Australia's exports, and why bilateral deals can lock in lower rates.",
+  "questions": [
+   {
+    "q": "Outline two effects of a tariff on an importing country.",
+    "marks": 4
+   },
+   {
+    "q": "Explain how higher US tariffs could affect Australian exporters.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Jul 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Tariff rates were still being negotiated at publication.",
+  "file": {
+   "path": "files/2025-07/2025-07-29-trump-baseline-tariff.pdf",
+   "label": "Original article",
+   "pages": 10
+  },
+  "links": [
+   {
+    "label": "Australian Financial Review, 'Trump flags new tariff of 15 to 20pc on rest of world', 29 Jul 2025",
+    "url": "https://www.afr.com/world/north-america/trump-flags-new-baseline-tariff-of-15-or-20pc-20250729-p5mii3"
+   }
+  ]
+ },
+ {
+  "id": "2025-08-19-tax-system-favours-older-australians",
+  "date": "2025-08-19",
+  "added": "2026-10-25",
+  "title": "ANU research: tax and transfer system leaves older Australians better off than the young",
+  "outlets": [
+   "Australian Financial Review",
+   "ANU"
+  ],
+  "summary": "Evidence for intergenerational inequality in the tax-transfer system, with a call to broaden the tax base and tackle bracket creep.",
+  "lede": "ANU researchers find the average 75-year-old's post-tax income now equals the national average, up from about 75% 25 years ago, and is one-third higher than for 18 to 30 year olds. They say about one-third of income escapes tax and argue reform should broaden the tax base.",
+  "type": "news",
+  "diagrams": [
+   "chart"
+  ],
+  "issues": [
+   "inequality",
+   "budget"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "about": {
+   "h09": [
+    "3E.3",
+    "3E.5"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y2b.10",
+    "Y1d.10"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3E.4",
+    "4C.2"
+   ],
+   "y12": [
+    "Y1d.9",
+    "Y2b.12"
+   ],
+   "y11": [
+    "P5b.7",
+    "P5b.6"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Bracket creep",
+    "def": "Wage growth pushes taxpayers into higher tax brackets so tax rises as a share of income."
+   },
+   {
+    "term": "Tax base",
+    "def": "The income, wealth or spending that is taxed."
+   },
+   {
+    "term": "Intergenerational equity",
+    "def": "Fairness in the sharing of costs and benefits between generations."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Average post-tax-and-transfer income of a 75-year-old",
+    "value": "equals the national average (about 75% 25 years ago)",
+    "asAt": "FY94-98 vs FY19-23",
+    "issue": "inequality",
+    "source": "ANU via Australian Financial Review"
+   },
+   {
+    "label": "Older Australians' post-tax income compared with ages 18-30",
+    "value": "one-third higher",
+    "asAt": "FY19-23",
+    "issue": "inequality",
+    "source": "ANU via Australian Financial Review"
+   },
+   {
+    "label": "Share of income captured by the tax system",
+    "value": "about two-thirds (one-third untaxed)",
+    "asAt": "recent years",
+    "issue": "budget",
+    "source": "ANU via Australian Financial Review"
+   },
+   {
+    "label": "Superannuation contribution rate for younger workers",
+    "value": "12.5%",
+    "asAt": "Aug 2025",
+    "issue": "inequality",
+    "source": "Australian Financial Review"
+   }
+  ],
+  "angle": "Use for the distribution of income and wealth and the effect of the budget on redistribution: it challenges the assumption that transfers always go to the least well off.",
+  "questions": [
+   {
+    "q": "Explain what is meant by bracket creep.",
+    "marks": 2
+   },
+   {
+    "q": "Assess the extent to which the tax and transfer system redistributes income fairly across age groups.",
+    "marks": 6
+   }
+  ],
+  "note": "Older item (published Aug 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Research claims are those of the ANU authors (Breunig, Varela, Smith); the file name says 4 charts but the PDF shows the article with two charts and a policy discussion.",
+  "file": {
+   "path": "files/2025-08/2025-08-19-tax-system-favours-older-australians.pdf",
+   "label": "Original article",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-08-04-gst-excess-burden-modelling",
+  "date": "2025-08-04",
+  "added": "2026-10-25",
+  "title": "Modelling for the Productivity Commission: GST causes least economic harm per dollar raised",
+  "outlets": [
+   "Australian Financial Review",
+   "Productivity Commission"
+  ],
+  "summary": "Gives numbers on the efficiency of different taxes, useful for evaluating tax reform and the features of a good tax.",
+  "lede": "Modelling by Chris Murphy for the Productivity Commission finds that, per dollar raised, GST does the least economic harm, then personal income tax, then company tax. A package cutting the company tax rate and adding a cash flow tax could lift GDP by 0.5% over a decade.",
+  "type": "news",
+  "diagrams": [],
+  "issues": [
+   "budget",
+   "productivity"
+  ],
+  "levers": [
+   "fiscal",
+   "micro"
+  ],
+  "about": {
+   "h09": [
+    "4C.2",
+    "4E.1"
+   ],
+   "y12": [
+    "Y2b.10",
+    "Y2d.2"
+   ],
+   "y11": [
+    "P5b.6",
+    "P5b.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.3",
+    "4H.3"
+   ],
+   "y12": [
+    "Y2b.11",
+    "Y2b.14"
+   ],
+   "y11": [
+    "P5b.5"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Marginal excess burden",
+    "def": "The economic harm from a tax's disincentive effects per extra dollar of revenue raised."
+   },
+   {
+    "term": "Cash flow tax",
+    "def": "A tax on a company's cash inflows less outflows."
+   },
+   {
+    "term": "Efficiency (of a tax)",
+    "def": "How little a tax distorts decisions to work, save and invest."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Marginal excess burden, GST extended to fresh food",
+    "value": "16%",
+    "asAt": "modelling, Aug 2025",
+    "issue": "budget",
+    "source": "Chris Murphy for Productivity Commission via AFR"
+   },
+   {
+    "label": "Marginal excess burden, raising the 10% GST rate",
+    "value": "30%",
+    "asAt": "modelling, Aug 2025",
+    "issue": "budget",
+    "source": "Chris Murphy for Productivity Commission via AFR"
+   },
+   {
+    "label": "Marginal excess burden, existing corporate tax base",
+    "value": "80%",
+    "asAt": "modelling, Aug 2025",
+    "issue": "budget",
+    "source": "Chris Murphy for Productivity Commission via AFR"
+   },
+   {
+    "label": "Marginal excess burden, commercial stamp duty",
+    "value": "225% (residential 74%)",
+    "asAt": "modelling, Aug 2025",
+    "issue": "budget",
+    "source": "Productivity Commission via AFR"
+   },
+   {
+    "label": "Boost to GDP from the tax package over a decade",
+    "value": "$14 billion or 0.5% of GDP",
+    "asAt": "modelling, Aug 2025",
+    "issue": "growth",
+    "source": "Chris Murphy for Productivity Commission via AFR"
+   },
+   {
+    "label": "Cost of indexing income tax thresholds",
+    "value": "$20 billion to $34 billion over four years",
+    "asAt": "Menzies Research Centre, Aug 2025",
+    "issue": "budget",
+    "source": "Menzies Research Centre via AFR"
+   }
+  ],
+  "angle": "Use for the features of a good tax (efficiency, fairness, simplicity) and microeconomic reform through taxation.",
+  "questions": [
+   {
+    "q": "Outline what is meant by an efficient tax.",
+    "marks": 2
+   },
+   {
+    "q": "Explain why economists might prefer to raise revenue from GST rather than company tax.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Aug 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Modelling results are estimates and the article notes the Prime Minister downplayed expectations of change.",
+  "file": {
+   "path": "files/2025-08/2025-08-04-gst-excess-burden-modelling.pdf",
+   "label": "Original article",
+   "pages": 15
+  },
+  "links": [
+   {
+    "label": "Australian Financial Review, 'Expanding GST better for economy than company and high-income taxes', 4 Aug 2025",
+    "url": "https://www.afr.com/policy/tax-and-super/expanding-gst-better-for-economy-than-company-and-high-income-taxes-20250804-p5mk5z"
+   }
+  ]
+ },
+ {
+  "id": "2025-02-09-firb-delays-chinese-solar-sale",
+  "date": "2025-02-09",
+  "added": "2026-10-25",
+  "title": "FIRB delays put an $800m Chinese purchase of solar farms on the brink of collapse",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "A case on regulating foreign investment: national-interest screening can slow the capital needed for renewable energy targets.",
+  "lede": "The $813m sale of five solar farms by Lightsource bp to Chinese government-backed Beijing Energy was held up for almost 14 months by the Foreign Investment Review Board. The delay highlights a trade-off between national security screening and meeting the 82% renewables target.",
+  "type": "news",
+  "diagrams": [],
+  "issues": [
+   "investment",
+   "environment"
+  ],
+  "levers": [
+   "environmental",
+   "global"
+  ],
+  "about": {
+   "h09": [
+    "2B.4",
+    "4G.3"
+   ],
+   "y12": [
+    "Y3b.2",
+    "Y2f.6"
+   ],
+   "y11": [
+    "P6b.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4E.3",
+    "1A.5"
+   ],
+   "y12": [
+    "Y2f.7",
+    "Y3e.3"
+   ],
+   "y11": []
+  },
+  "terms": [
+   {
+    "term": "FIRB",
+    "def": "Foreign Investment Review Board, which assesses foreign investment against the national interest."
+   },
+   {
+    "term": "Capital recycling",
+    "def": "Selling assets to fund new investment."
+   },
+   {
+    "term": "Foreign direct investment",
+    "def": "Investment that gives control or significant influence over a business abroad."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Equity value of the solar farm sale",
+    "value": "$813 million",
+    "asAt": "agreed Dec 2023",
+    "issue": "investment",
+    "source": "Australian Financial Review (clipping)"
+   },
+   {
+    "label": "Size of the solar portfolio",
+    "value": "1037 megawatts (five farms)",
+    "asAt": "Feb 2025",
+    "issue": "investment",
+    "source": "Australian Financial Review (clipping)"
+   },
+   {
+    "label": "Time held up by FIRB",
+    "value": "almost 14 months",
+    "asAt": "to Feb 2025",
+    "issue": "investment",
+    "source": "Australian Financial Review (clipping)"
+   },
+   {
+    "label": "Government renewables target",
+    "value": "82% by 2030",
+    "asAt": "Feb 2025",
+    "issue": "environment",
+    "source": "Australian Financial Review (clipping)"
+   },
+   {
+    "label": "Emissions cut commitment",
+    "value": "43% by 2030 (from 2005 levels)",
+    "asAt": "Feb 2025",
+    "issue": "environment",
+    "source": "Australian Financial Review (clipping)"
+   }
+  ],
+  "angle": "Use when discussing costs and benefits of foreign investment and the tension between regulation and environmental targets.",
+  "questions": [
+   {
+    "q": "Outline one benefit of foreign investment to Australia.",
+    "marks": 2
+   },
+   {
+    "q": "Explain how foreign investment screening could affect the achievement of emissions targets.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Feb 2025): figures are as at that date; check for newer data before quoting. Scanned newspaper clipping (text read by OCR); date taken from the file's creation date (9 Feb 2025) because no date is printed; masthead assumed to be the Australian Financial Review from layout and byline style, so confirm before citing. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-02/2025-02-09-firb-delays-chinese-solar-sale.pdf",
+   "label": "Original article",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-02-05-aud-global-volatility",
+  "date": "2025-02-05",
+  "added": "2026-10-25",
+  "title": "Deloitte: global volatility and a strong US dollar weigh on the Australian dollar",
+  "outlets": [
+   "Deloitte Access Economics"
+  ],
+  "summary": "Clear explanation of the domestic and global factors behind a falling Australian dollar, including the TWI, terms of trade and China.",
+  "lede": "Deloitte Access Economics says the Australian dollar fell to 61 US cents, more than 10% below its September 2024 high, mainly because of a strong US dollar. China-linked weakness, falling terms of trade and US tariff threats may push it lower.",
+  "type": "report",
+  "diagrams": [
+   "fx"
+  ],
+  "issues": [
+   "fx",
+   "global",
+   "trade"
+  ],
+  "levers": [
+   "global"
+  ],
+  "about": {
+   "h09": [
+    "2C.2",
+    "2C.3",
+    "2C.1"
+   ],
+   "y12": [
+    "Y3c.4",
+    "Y3c.6",
+    "Y3c.5"
+   ],
+   "y11": [
+    "P6c.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2B.4",
+    "3D.1",
+    "2C.6"
+   ],
+   "y12": [
+    "Y1a.7",
+    "Y3c.1"
+   ],
+   "y11": [
+    "P6c.1"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Trade-weighted index (TWI)",
+    "def": "Measure of the Australian dollar against a basket of currencies weighted by trade."
+   },
+   {
+    "term": "Depreciation",
+    "def": "A fall in a currency's value under a floating exchange rate."
+   },
+   {
+    "term": "Terms of trade",
+    "def": "Export prices relative to import prices."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Australian dollar",
+    "value": "61 US cents (high of 69 US cents in Sept 2024)",
+    "asAt": "early Feb 2025",
+    "issue": "fx",
+    "source": "Deloitte Access Economics / RBA"
+   },
+   {
+    "label": "US Dollar Index since end of Sept 2024",
+    "value": "up 8%",
+    "asAt": "to Feb 2025",
+    "issue": "fx",
+    "source": "Deloitte Access Economics"
+   },
+   {
+    "label": "US dollar and renminbi share of the TWI",
+    "value": "almost 40% (renminbi about 30%)",
+    "asAt": "Feb 2025",
+    "issue": "fx",
+    "source": "Deloitte Access Economics"
+   },
+   {
+    "label": "China's share of Australia's exports",
+    "value": "about one-third",
+    "asAt": "Feb 2025",
+    "issue": "trade",
+    "source": "Deloitte Access Economics"
+   },
+   {
+    "label": "Extra US tariff on Chinese exports",
+    "value": "10%",
+    "asAt": "Feb 2025",
+    "issue": "trade",
+    "source": "Deloitte Access Economics"
+   }
+  ],
+  "angle": "Use for exchange rate determination: demand and supply shifts from interest rate differentials, commodity prices and trading partner growth.",
+  "questions": [
+   {
+    "q": "Explain two factors that caused the Australian dollar to depreciate in late 2024 and early 2025.",
+    "marks": 4
+   },
+   {
+    "q": "Outline one effect of a depreciation on Australian exporters.",
+    "marks": 2
+   }
+  ],
+  "note": "Older item (published Feb 2025): figures are as at that date; check for newer data before quoting. Secondary source: Deloitte Access Economics email newsletter reproduced for classroom use; forecasts are Deloitte's views.",
+  "file": {
+   "path": "files/2025-02/2025-02-05-aud-global-volatility.pdf",
+   "label": "Data sheet",
+   "pages": 3
+  },
+  "links": []
+ },
+ {
+  "id": "2025-05-07-government-debt-one-trillion",
+  "date": "2025-05-07",
+  "added": "2026-10-25",
+  "title": "Federal government debt set to hit $1 trillion as soon as September",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "Key figures on gross and net debt, the deficit and credit rating risk for fiscal policy and financing questions.",
+  "lede": "Gross federal debt of $929.1bn is forecast to reach $1 trillion in September or October 2025 while budget deficits continue. Economists warn of risks to the AAA credit rating and to future budgets as interest costs rise.",
+  "type": "news",
+  "diagrams": [
+   "chart"
+  ],
+  "issues": [
+   "budget"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "about": {
+   "h09": [
+    "4C.1",
+    "4C.3"
+   ],
+   "y12": [
+    "Y2b.2",
+    "Y2b.6",
+    "Y2b.12"
+   ],
+   "y11": [
+    "P5a.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4C.2",
+    "4H.3"
+   ],
+   "y12": [
+    "Y2b.13",
+    "Y2b.14"
+   ],
+   "y11": [
+    "P5c.3"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Gross debt",
+    "def": "Total government borrowings, before subtracting financial assets."
+   },
+   {
+    "term": "Net debt",
+    "def": "Debt less financial assets such as the Future Fund."
+   },
+   {
+    "term": "Credit rating",
+    "def": "Agency assessment of a borrower's ability to repay."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Federal government gross debt owed to bondholders",
+    "value": "$929.1 billion",
+    "asAt": "May 2025 (AOFM)",
+    "issue": "budget",
+    "source": "AOFM via Australian Financial Review"
+   },
+   {
+    "label": "Budget deficit forecast, 2025-26",
+    "value": "$65.2 billion",
+    "asAt": "Treasury, Mar 2025",
+    "issue": "budget",
+    "source": "Treasury via Australian Financial Review"
+   },
+   {
+    "label": "Federal gross debt as a share of GDP",
+    "value": "34% (5% in 2008)",
+    "asAt": "2025",
+    "issue": "budget",
+    "source": "Treasury via Australian Financial Review"
+   },
+   {
+    "label": "General government gross debt incl. states",
+    "value": "50.9% of GDP (advanced economy average 110%)",
+    "asAt": "IMF, Apr 2025",
+    "issue": "budget",
+    "source": "IMF via Australian Financial Review"
+   },
+   {
+    "label": "Off-budget spending identified by S&P",
+    "value": "$104 billion",
+    "asAt": "May 2025",
+    "issue": "budget",
+    "source": "S&P Global via Australian Financial Review"
+   },
+   {
+    "label": "Federal spending forecast, 2025-26",
+    "value": "27% of GDP",
+    "asAt": "Treasury, Mar 2025",
+    "issue": "budget",
+    "source": "Treasury via Australian Financial Review"
+   }
+  ],
+  "angle": "Use for budget deficits, financing through bonds and limitations of fiscal policy such as servicing costs and credit ratings.",
+  "questions": [
+   {
+    "q": "Distinguish between gross debt and net debt.",
+    "marks": 2
+   },
+   {
+    "q": "Explain one limitation of financing a budget deficit through debt.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published May 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Forecast of the $1 trillion date is Jarden's estimate and uncertain.",
+  "file": {
+   "path": "files/2025-05/2025-05-07-government-debt-one-trillion.pdf",
+   "label": "Original article",
+   "pages": 4
+  },
+  "links": [
+   {
+    "label": "Australian Financial Review, 'Government debt to hit $1 trillion as soon as September', 7 May 2025",
+    "url": "https://www.afr.com/policy/economy/government-debt-to-hit-1-trillion-as-soon-as-september-20250507-p5lx6i"
+   }
+  ]
+ },
+ {
+  "id": "2025-02-07-woodside-gas-bills-unavoidable",
+  "date": "2025-02-07",
+  "added": "2026-10-25",
+  "title": "Woodside says higher east-coast gas bills are now unavoidable",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "A supply-side case on how drilling restrictions and falling supply push up energy prices and raise the case for LNG imports.",
+  "lede": "Woodside's CEO says it is too late to prevent higher gas bills as Victoria's Bass Strait supply declines and south-eastern states face shortfalls from 2028. Squadron Energy argues LNG imports would boost competition and help consumers.",
+  "type": "news",
+  "diagrams": [
+   "ds"
+  ],
+  "issues": [
+   "inflation",
+   "environment"
+  ],
+  "levers": [
+   "micro",
+   "environmental"
+  ],
+  "about": {
+   "h09": [
+    "4E.3",
+    "3F.4"
+   ],
+   "y12": [
+    "Y2d.2",
+    "Y1e.2"
+   ],
+   "y11": [
+    "P2d.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3C.3",
+    "4G.1"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y2f.2"
+   ],
+   "y11": [
+    "P2c.4"
+   ]
+  },
+  "terms": [
+   {
+    "term": "LNG",
+    "def": "Liquefied natural gas, cooled for shipping and regasified at a terminal."
+   },
+   {
+    "term": "Cost-push inflation",
+    "def": "Price rises caused by higher input costs."
+   },
+   {
+    "term": "Moratorium",
+    "def": "An official ban or pause on an activity."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Expected east-coast gas shortfalls begin",
+    "value": "from 2028",
+    "asAt": "AEMO, Feb 2025",
+    "issue": "environment",
+    "source": "Australian Energy Market Operator via SMH"
+   },
+   {
+    "label": "Year global LNG market forecast to flip to surplus",
+    "value": "2028",
+    "asAt": "Feb 2025",
+    "issue": "global",
+    "source": "Squadron Energy via SMH"
+   },
+   {
+    "label": "Tesla sales in Australia, January",
+    "value": "739 (1107 a year earlier)",
+    "asAt": "Jan 2025",
+    "issue": "environment",
+    "source": "Electric Vehicle Council via SMH"
+   },
+   {
+    "label": "Tesla Model 3 sales, January",
+    "value": "274 (723 a year earlier; down 62%)",
+    "asAt": "Jan 2025",
+    "issue": "environment",
+    "source": "Electric Vehicle Council via SMH"
+   }
+  ],
+  "angle": "Use for supply shifts (a fall in supply raises price), regulation of resource extraction and the trade-off with climate goals.",
+  "questions": [
+   {
+    "q": "Use a supply and demand diagram to explain how a fall in gas supply affects price.",
+    "marks": 4
+   },
+   {
+    "q": "Outline one economic effect of restrictions on gas drilling.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Feb 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Page also includes an SMH article on Tesla sales; Tesla figures come from that second article.",
+  "file": {
+   "path": "files/2025-02/2025-02-07-woodside-gas-bills-unavoidable.pdf",
+   "label": "Original article",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-05-28-chanticleer-rba-wont-save-economy",
+  "date": "2025-05-28",
+  "added": "2026-10-25",
+  "title": "Chanticleer: inflation miss is a reminder the RBA won't save this economy",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "Argues monetary policy has limited power over growth when the real constraints are productivity, uncertainty and regulation.",
+  "lede": "Headline inflation of 2.4% in April and a rise in trimmed mean to 2.8% put a July rate cut in doubt. The column argues that businesses are more worried about uncertainty, costs and productivity than the next rate move.",
+  "type": "news",
+  "diagrams": [],
+  "issues": [
+   "inflation",
+   "rates",
+   "productivity"
+  ],
+  "levers": [
+   "monetary",
+   "micro"
+  ],
+  "about": {
+   "h09": [
+    "3C.1",
+    "4H.1"
+   ],
+   "y12": [
+    "Y2c.8",
+    "Y1c.3"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4D.3",
+    "4E.1",
+    "3A.6"
+   ],
+   "y12": [
+    "Y2c.7",
+    "Y2d.6",
+    "Y1a.10"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Trimmed mean",
+    "def": "RBA's preferred measure of underlying inflation that excludes extreme price changes."
+   },
+   {
+    "term": "Potential output",
+    "def": "The maximum sustainable level of production."
+   },
+   {
+    "term": "Policy lag",
+    "def": "The delay between a policy change and its effect."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Headline inflation",
+    "value": "2.4% (unchanged)",
+    "asAt": "April 2025",
+    "issue": "inflation",
+    "source": "ABS via Australian Financial Review"
+   },
+   {
+    "label": "Trimmed mean inflation",
+    "value": "2.8% (2.7% in March)",
+    "asAt": "April 2025",
+    "issue": "inflation",
+    "source": "ABS via Australian Financial Review"
+   },
+   {
+    "label": "RBA forecast trimmed mean, June quarter",
+    "value": "2.6% (2.9% in March qtr)",
+    "asAt": "Jun qtr 2025",
+    "issue": "inflation",
+    "source": "RBA via Australian Financial Review"
+   },
+   {
+    "label": "Government contribution to economic growth since Dec 2019",
+    "value": "63% (53% of jobs)",
+    "asAt": "to Mar 2025",
+    "issue": "growth",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Economy's maximum growth rate, HSBC estimate",
+    "value": "about 2%",
+    "asAt": "May 2025",
+    "issue": "growth",
+    "source": "HSBC via Australian Financial Review"
+   },
+   {
+    "label": "Cash rate forecast, early 2026 (HSBC)",
+    "value": "3.1%",
+    "asAt": "May 2025",
+    "issue": "rates",
+    "source": "HSBC via Australian Financial Review"
+   }
+  ],
+  "angle": "Use for evaluating the limits of monetary policy: interest rates cannot lift the supply side, so micro reform is needed.",
+  "questions": [
+   {
+    "q": "Distinguish between headline and underlying inflation.",
+    "marks": 2
+   },
+   {
+    "q": "Explain one limitation of monetary policy in raising economic growth.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published May 2025): figures are as at that date; check for newer data before quoting. Opinion column (Chanticleer), not a news report; author not printed in the PDF. The 4.5% wage growth quoted by HSBC differs from the ABS Wage Price Index. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-05/2025-05-28-chanticleer-rba-wont-save-economy.pdf",
+   "label": "Original article",
+   "pages": 12
+  },
+  "links": []
+ },
+ {
+  "id": "2025-08-14-ev-road-user-charge",
+  "date": "2025-08-14",
+  "added": "2026-10-25",
+  "title": "Government plans to phase in a road user charge for electric vehicles",
+  "outlets": [
+   "Australian Financial Review",
+   "Australian Automobile Association"
+  ],
+  "summary": "Case on replacing declining fuel excise revenue as petrol cars leave the fleet, and on EV uptake and tax reform politics.",
+  "lede": "The Albanese government is working on a road user charge starting with heavy electric vehicles, to replace fuel excise lost as petrol and diesel cars leave the fleet. NSW has designed its own scheme from 2027 and EV sales hit a record in the June quarter 2025.",
+  "type": "news",
+  "diagrams": [],
+  "issues": [
+   "budget",
+   "environment"
+  ],
+  "levers": [
+   "fiscal",
+   "environmental"
+  ],
+  "about": {
+   "h09": [
+    "4C.2",
+    "4G.2"
+   ],
+   "y12": [
+    "Y2b.14",
+    "Y2f.3"
+   ],
+   "y11": [
+    "P5b.4",
+    "P5b.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4E.2"
+   ],
+   "y12": [
+    "Y2b.11",
+    "Y2d.2"
+   ],
+   "y11": [
+    "P5b.2"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Fuel excise",
+    "def": "A tax on each litre of fuel sold."
+   },
+   {
+    "term": "Road user charge",
+    "def": "A fee based on distance driven."
+   },
+   {
+    "term": "Indirect tax",
+    "def": "A tax on spending, collected by sellers."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Fuel excise",
+    "value": "51 cents per litre (raises about $17 billion a year)",
+    "asAt": "Aug 2025",
+    "issue": "budget",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "NSW road user charge, battery EV and hydrogen",
+    "value": "2.874c per km (plug-in hybrid 2.379c)",
+    "asAt": "from 1 Jul 2027",
+    "issue": "budget",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Battery electric vehicle sales",
+    "value": "29,244 (17,901 in March qtr)",
+    "asAt": "Jun qtr 2025",
+    "issue": "environment",
+    "source": "Australian Automobile Association via AFR"
+   },
+   {
+    "label": "EV share of new car sales",
+    "value": "just under 10%",
+    "asAt": "Jun qtr 2025",
+    "issue": "environment",
+    "source": "Australian Automobile Association via AFR"
+   },
+   {
+    "label": "Internal combustion share of new car sales",
+    "value": "72% (226,306 sales)",
+    "asAt": "Jun qtr 2025",
+    "issue": "environment",
+    "source": "Australian Automobile Association via AFR"
+   }
+  ],
+  "angle": "Use for tax reform and the link between environmental policy and the budget: fiscal impacts of the energy transition.",
+  "questions": [
+   {
+    "q": "Outline why the government is considering a road user charge.",
+    "marks": 3
+   },
+   {
+    "q": "Explain one effect of growing EV sales on government revenue.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Aug 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Page also carries unrelated stories (ANU); only the EV road user charge story is summarised.",
+  "file": {
+   "path": "files/2025-08/2025-08-14-ev-road-user-charge.pdf",
+   "label": "Original article",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-08-27-lmi-first-home-guarantee",
+  "date": "2025-08-27",
+  "added": "2026-10-25",
+  "title": "Opinion: Labor's first home buyer insurance scheme risks backfiring",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "Critical analysis of an expanded housing policy: demand-side stimulus, price effects and reduced competition in the lenders mortgage insurance market.",
+  "lede": "Labor will let an unlimited number of first home buyers buy with a 5% deposit under a government guarantee that replaces much of the private LMI market. The column cites modelling that house prices could rise 3.5% to 6.6% in 2026 and that private premiums could rise.",
+  "type": "news",
+  "diagrams": [
+   "ds"
+  ],
+  "issues": [
+   "housing",
+   "budget"
+  ],
+  "levers": [
+   "fiscal",
+   "micro"
+  ],
+  "about": {
+   "h09": [
+    "4E.2",
+    "4C.2"
+   ],
+   "y12": [
+    "Y2d.3",
+    "Y2d.6"
+   ],
+   "y11": [
+    "P4c.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4E.3",
+    "4H.3"
+   ],
+   "y12": [
+    "Y1d.6",
+    "Y2d.4",
+    "Y2b.11"
+   ],
+   "y11": [
+    "P2g.3",
+    "P2i.4"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Lenders mortgage insurance (LMI)",
+    "def": "Insurance protecting lenders when borrowers with small deposits default."
+   },
+   {
+    "term": "Adverse selection",
+    "def": "When the riskiest customers are most likely to take up insurance."
+   },
+   {
+    "term": "Crowding out",
+    "def": "Government activity displacing private activity."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Home Guarantee Scheme places",
+    "value": "50,000 in 2024-25 (10,000 in 2020-21; to become unlimited)",
+    "asAt": "Aug 2025",
+    "issue": "housing",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Price cap for eligible first home purchases",
+    "value": "Sydney $1.5m, Brisbane and Canberra $1m, Melbourne $950k",
+    "asAt": "from 1 Oct 2025",
+    "issue": "housing",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Estimated rise in national house prices in 2026",
+    "value": "3.5% to 6.6%",
+    "asAt": "Gruen report",
+    "issue": "housing",
+    "source": "Lateral Economics (Gruen) via AFR"
+   },
+   {
+    "label": "Treasury estimate of price rise over six years",
+    "value": "0.5%",
+    "asAt": "Aug 2025",
+    "issue": "housing",
+    "source": "Treasury via Australian Financial Review"
+   },
+   {
+    "label": "Private LMI gross written premiums",
+    "value": "$533m in 2023-24 (peak $1.3bn in 2020-21)",
+    "asAt": "2023-24",
+    "issue": "housing",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Premium rise needed by LMI providers if activity falls 30%",
+    "value": "19%",
+    "asAt": "Gruen report",
+    "issue": "housing",
+    "source": "Lateral Economics (Gruen) via AFR"
+   }
+  ],
+  "angle": "Use as an evaluation of microeconomic housing policy: boosts demand, may raise prices and distort a private market.",
+  "questions": [
+   {
+    "q": "Outline how a first home buyer guarantee could affect house prices.",
+    "marks": 3
+   },
+   {
+    "q": "Evaluate the effectiveness of demand-side policies in improving housing affordability.",
+    "marks": 6
+   }
+  ],
+  "note": "Older item (published Aug 2025): figures are as at that date; check for newer data before quoting. Opinion piece by John Kehoe (economics editor); government and Treasury views differ. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-08/2025-08-27-lmi-first-home-guarantee.pdf",
+   "label": "Original article",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-05-28-breunig-super-tax-reform",
+  "date": "2025-05-28",
+  "added": "2026-10-25",
+  "title": "Breunig: Chalmers' super tax isn't real reform, here are six proposals",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "An economist's critique of the super tax on unrealised gains and a six-point tax reform agenda, useful for evaluating tax design.",
+  "lede": "Robert Breunig argues taxing unrealised gains on balances over $3 million adds complexity rather than fixing the system. He proposes lowering the CGT discount, raising GST to 15%, taxing trusts and bringing owner-occupied housing wealth into the net.",
+  "type": "news",
+  "diagrams": [],
+  "issues": [
+   "budget",
+   "inequality"
+  ],
+  "levers": [
+   "fiscal",
+   "micro"
+  ],
+  "about": {
+   "h09": [
+    "4C.2",
+    "3E.3"
+   ],
+   "y12": [
+    "Y2b.10",
+    "Y1d.5",
+    "Y2d.2"
+   ],
+   "y11": [
+    "P5b.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.4",
+    "4E.1"
+   ],
+   "y12": [
+    "Y2b.12"
+   ],
+   "y11": [
+    "P5b.6",
+    "P4a.3"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Unrealised gain",
+    "def": "An increase in asset value that has not been sold."
+   },
+   {
+    "term": "Capital gains tax discount",
+    "def": "A reduction in the taxable share of a capital gain."
+   },
+   {
+    "term": "Tax base",
+    "def": "The income, wealth or spending that is taxed."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Super balances targeted by Labor's tax proposal",
+    "value": "over $3 million",
+    "asAt": "May 2025",
+    "issue": "budget",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Proposed CGT discount",
+    "value": "40% (from 50%)",
+    "asAt": "Breunig proposal, May 2025",
+    "issue": "budget",
+    "source": "Robert Breunig via AFR"
+   },
+   {
+    "label": "Proposed GST rate",
+    "value": "15%",
+    "asAt": "Breunig proposal, May 2025",
+    "issue": "budget",
+    "source": "Robert Breunig via AFR"
+   },
+   {
+    "label": "Wealth held in owner-occupied housing",
+    "value": "40%",
+    "asAt": "May 2025",
+    "issue": "inequality",
+    "source": "Robert Breunig via AFR"
+   },
+   {
+    "label": "Proposed standard deduction for wage earners",
+    "value": "$25,000",
+    "asAt": "Breunig proposal, May 2025",
+    "issue": "budget",
+    "source": "Robert Breunig via AFR"
+   }
+  ],
+  "angle": "Use for features of a good tax (simplicity, efficiency, fairness) and to illustrate taxation of wealth.",
+  "questions": [
+   {
+    "q": "Outline two features of a good tax.",
+    "marks": 2
+   },
+   {
+    "q": "Explain how taxing housing wealth could change the distribution of wealth.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published May 2025): figures are as at that date; check for newer data before quoting. Opinion column by Robert Breunig (tax expert); the author's proposals are not government policy. A duplicate copy of this PDF (file name ending '2') was not filed. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-05/2025-05-28-breunig-super-tax-reform.pdf",
+   "label": "Original article",
+   "pages": 5
+  },
+  "links": []
+ },
+ {
+  "id": "2025-05-14-kehoe-liberal-income-tax",
+  "date": "2025-05-14",
+  "added": "2026-10-25",
+  "title": "Opinion: Liberal rebuild must champion lower income tax and spending restraint",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "Opinion with figures on federal spending, the NDIS and bracket creep for fiscal policy discussions.",
+  "lede": "John Kehoe argues the Coalition should offer lower income taxes, possibly by indexing tax thresholds to contain bracket creep, and challenge federal spending headed for its highest share of the economy since 1986. He highlights the cost of the NDIS.",
+  "type": "news",
+  "diagrams": [],
+  "issues": [
+   "budget"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "about": {
+   "h09": [
+    "4C.1",
+    "4C.2"
+   ],
+   "y12": [
+    "Y2b.10",
+    "Y2b.12"
+   ],
+   "y11": [
+    "P5c.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4H.3",
+    "4A.7"
+   ],
+   "y12": [
+    "Y2b.14",
+    "Y2f.6"
+   ],
+   "y11": [
+    "P5b.7"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Bracket creep",
+    "def": "Inflation and wage growth push taxpayers into higher tax brackets."
+   },
+   {
+    "term": "Indexation",
+    "def": "Adjusting a threshold in line with inflation."
+   },
+   {
+    "term": "Fiscal discipline",
+    "def": "Restraint in government spending and borrowing."
+   }
+  ],
+  "figures": [
+   {
+    "label": "NDIS annual cost",
+    "value": "$51 billion (693,000 participants)",
+    "asAt": "May 2025",
+    "issue": "budget",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "NDIS cost risk in the early 2030s",
+    "value": "in excess of $100 billion",
+    "asAt": "government actuary",
+    "issue": "budget",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Federal spending share of GDP",
+    "value": "highest since 1986 outside the pandemic",
+    "asAt": "2025-26",
+    "issue": "budget",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Millennials and Gen Z share of new business account openings",
+    "value": "62%",
+    "asAt": "past 12 months to May 2025",
+    "issue": "inequality",
+    "source": "Commonwealth Bank via AFR"
+   },
+   {
+    "label": "Age pension recipients",
+    "value": "2.6 million",
+    "asAt": "May 2025",
+    "issue": "budget",
+    "source": "Australian Financial Review"
+   }
+  ],
+  "angle": "Use as a political view on fiscal policy, fiscal stance and political constraints on tax reform.",
+  "questions": [
+   {
+    "q": "Explain how indexing income tax thresholds could address bracket creep.",
+    "marks": 3
+   },
+   {
+    "q": "Outline one political constraint on fiscal policy.",
+    "marks": 2
+   }
+  ],
+  "note": "Older item (published May 2025): figures are as at that date; check for newer data before quoting. Opinion piece by John Kehoe; arguments are one-sided and also discuss climate policy. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-05/2025-05-14-kehoe-liberal-income-tax.pdf",
+   "label": "Original article",
+   "pages": 16
+  },
+  "links": []
+ },
+ {
+  "id": "2025-01-29-nvidia-sell-off-super-exposure",
+  "date": "2025-01-29",
+  "added": "2026-10-25",
+  "title": "Local funds exposed with $28 billion in Nvidia after DeepSeek sell-off",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "A case on global financial linkages: how a one-day US share price fall flows through to Australian superannuation funds.",
+  "lede": "A 17% one-day plunge in Nvidia after the DeepSeek AI announcement erased almost US$600 billion of its value and cut more than $5 billion from Australian holdings. Australian investors hold at least $28 billion of Nvidia, and super funds have raised their international equity allocations.",
+  "type": "news",
+  "diagrams": [],
+  "issues": [
+   "investment",
+   "global"
+  ],
+  "levers": [
+   "global"
+  ],
+  "about": {
+   "h09": [
+    "1A.4",
+    "1A.6"
+   ],
+   "y12": [
+    "Y3b.3",
+    "Y3b.1"
+   ],
+   "y11": [
+    "P4b.1",
+    "P4a.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "1A.8",
+    "1A.5"
+   ],
+   "y12": [
+    "Y3e.3"
+   ],
+   "y11": [
+    "P4b.2"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Portfolio investment",
+    "def": "Purchase of shares or bonds without control of the business."
+   },
+   {
+    "term": "Contagion",
+    "def": "Spread of a shock from one market to others."
+   },
+   {
+    "term": "Equity market",
+    "def": "Market for buying and selling company shares."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Nvidia shares held by Australian investors",
+    "value": "at least $28 billion",
+    "asAt": "Jan 2025",
+    "issue": "investment",
+    "source": "VanEck via Australian Financial Review"
+   },
+   {
+    "label": "Nvidia one-day share price fall",
+    "value": "17%",
+    "asAt": "27 Jan 2025",
+    "issue": "investment",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Market value erased from Nvidia",
+    "value": "almost US$600 billion",
+    "asAt": "27 Jan 2025",
+    "issue": "investment",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Super funds' international equity allocation",
+    "value": "nearly $890 billion (34% of all funds)",
+    "asAt": "Sept 2024",
+    "issue": "investment",
+    "source": "MST Marquee via Australian Financial Review"
+   },
+   {
+    "label": "Cash taken out of super fund portfolios",
+    "value": "$36 billion in six months",
+    "asAt": "to Sept 2024",
+    "issue": "investment",
+    "source": "MST Marquee via Australian Financial Review"
+   },
+   {
+    "label": "Potential super fund exposure to Nvidia",
+    "value": "up to $42 billion",
+    "asAt": "Jan 2025",
+    "issue": "investment",
+    "source": "Australian Financial Review"
+   }
+  ],
+  "angle": "Use for financial flows, globalisation and the risks of international portfolio investment.",
+  "questions": [
+   {
+    "q": "Explain how a fall in US share prices can affect Australian superannuation funds.",
+    "marks": 4
+   },
+   {
+    "q": "Outline one risk of international portfolio investment.",
+    "marks": 2
+   }
+  ],
+  "note": "Older item (published Jan 2025): figures are as at that date; check for newer data before quoting. Page also carries an ASX analysis piece on DeepSeek; exposure estimates are VanEck's and may understate holdings. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-01/2025-01-29-nvidia-sell-off-super-exposure.pdf",
+   "label": "Original article",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-05-28-april-cpi-rba-july-cut",
+  "date": "2025-05-28",
+  "added": "2026-10-25",
+  "title": "April inflation at 2.4% is no barrier to a July RBA rate cut",
+  "outlets": [
+   "Australian Financial Review",
+   "ABS"
+  ],
+  "summary": "Monthly CPI data and RBA expectations for inflation measurement and monetary policy questions.",
+  "lede": "Headline inflation held at 2.4% in April and trimmed mean rose to 2.8%, both inside the RBA's 2 to 3% band. The RBA cut the cash rate to 3.85% and markets saw a 68% chance of another cut in July.",
+  "type": "news",
+  "diagrams": [
+   "phillips"
+  ],
+  "issues": [
+   "inflation",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "about": {
+   "h09": [
+    "3C.1",
+    "3C.2",
+    "4D.3"
+   ],
+   "y12": [
+    "Y1c.3",
+    "Y1c.8",
+    "Y2c.3"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4I.3"
+   ],
+   "y12": [
+    "Y2c.2",
+    "Y2c.4",
+    "Y2c.7",
+    "Y1c.9"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Trimmed mean",
+    "def": "Underlying inflation measure that excludes the largest price rises and falls."
+   },
+   {
+    "term": "Inflation target",
+    "def": "The RBA's 2 to 3% goal, on average over time."
+   },
+   {
+    "term": "Cash rate",
+    "def": "The interest rate on overnight loans between banks."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Headline inflation, annual",
+    "value": "2.4% (expected 2.3%)",
+    "asAt": "April 2025",
+    "issue": "inflation",
+    "source": "ABS via Australian Financial Review"
+   },
+   {
+    "label": "Trimmed mean inflation",
+    "value": "2.8% (2.7% in March)",
+    "asAt": "April 2025",
+    "issue": "inflation",
+    "source": "ABS via Australian Financial Review"
+   },
+   {
+    "label": "RBA cash rate",
+    "value": "3.85% (second cut in 2025)",
+    "asAt": "May 2025",
+    "issue": "rates",
+    "source": "RBA via Australian Financial Review"
+   },
+   {
+    "label": "Market chance of a July cut to 3.6%",
+    "value": "68%",
+    "asAt": "28 May 2025",
+    "issue": "rates",
+    "source": "Financial markets via AFR"
+   },
+   {
+    "label": "Rent inflation",
+    "value": "5% (lowest since Feb 2023)",
+    "asAt": "April 2025",
+    "issue": "inflation",
+    "source": "ABS via Australian Financial Review"
+   },
+   {
+    "label": "Egg prices over 12 months",
+    "value": "up 18.6%",
+    "asAt": "April 2025",
+    "issue": "inflation",
+    "source": "ABS via Australian Financial Review"
+   }
+  ],
+  "angle": "Use for inflation trends, the RBA's inflation target and how data feed into rate decisions.",
+  "questions": [
+   {
+    "q": "Distinguish between headline and trimmed mean inflation.",
+    "marks": 2
+   },
+   {
+    "q": "Explain how lower inflation allows the RBA to cut the cash rate.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published May 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Monthly CPI is a partial and volatile indicator; a duplicate copy of this PDF (file name ending '2') was not filed.",
+  "file": {
+   "path": "files/2025-05/2025-05-28-april-cpi-rba-july-cut.pdf",
+   "label": "Original article",
+   "pages": 4
+  },
+  "links": []
+ },
+ {
+  "id": "2025-08-12-rba-productivity-downgrade",
+  "date": "2025-08-12",
+  "added": "2026-10-25",
+  "title": "RBA cuts its productivity assumption ahead of the economic roundtable",
+  "outlets": [
+   "Australian Financial Review",
+   "RBA"
+  ],
+  "summary": "Shows how weak productivity limits potential output, wages and living standards, and why it is the focus of reform.",
+  "lede": "The RBA cut its labour productivity growth assumption to 0.7% from 1%, lowering sustainable earnings growth to 3.2% and potential growth to about 2%. The column says living standards will improve more slowly and links the slump to the care economy and weak investment.",
+  "type": "news",
+  "diagrams": [
+   "adas"
+  ],
+  "issues": [
+   "productivity",
+   "growth",
+   "inflation"
+  ],
+  "levers": [
+   "micro",
+   "monetary"
+  ],
+  "about": {
+   "h09": [
+    "3A.6",
+    "3A.5",
+    "4E.1"
+   ],
+   "y12": [
+    "Y1a.10",
+    "Y1a.15",
+    "Y2d.1"
+   ],
+   "y11": [
+    "P3c.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3A.7",
+    "4D.1"
+   ],
+   "y12": [
+    "Y1a.12",
+    "Y2c.2",
+    "Y2d.5"
+   ],
+   "y11": [
+    "P3c.5"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Productivity",
+    "def": "Output per unit of input, such as labour."
+   },
+   {
+    "term": "Potential output",
+    "def": "The maximum sustainable level of production."
+   },
+   {
+    "term": "Non-market sector",
+    "def": "Industries such as health, education and public administration."
+   }
+  ],
+  "figures": [
+   {
+    "label": "RBA labour productivity growth assumption",
+    "value": "0.7% (from 1.0%)",
+    "asAt": "Aug 2025",
+    "issue": "productivity",
+    "source": "RBA via Australian Financial Review"
+   },
+   {
+    "label": "Sustainable annual earnings growth",
+    "value": "3.2% (from 3.5%)",
+    "asAt": "Aug 2025",
+    "issue": "inflation",
+    "source": "RBA via Australian Financial Review"
+   },
+   {
+    "label": "Maximum sustainable economic growth",
+    "value": "about 2% a year (3% to 4% from 1990s to mid-2000s)",
+    "asAt": "Aug 2025",
+    "issue": "growth",
+    "source": "RBA via Australian Financial Review"
+   },
+   {
+    "label": "Productivity growth in the golden era",
+    "value": "2% to 2.5% a year",
+    "asAt": "1990s to mid-2000s",
+    "issue": "productivity",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Treasury long-term productivity projection",
+    "value": "1.2% a year",
+    "asAt": "Aug 2025",
+    "issue": "productivity",
+    "source": "Treasury via Australian Financial Review"
+   },
+   {
+    "label": "Share of economic growth from population increases",
+    "value": "about 70% (1.3% to 1.4% of GDP)",
+    "asAt": "Aug 2025",
+    "issue": "growth",
+    "source": "RBA via Australian Financial Review"
+   }
+  ],
+  "angle": "Use for aggregate supply and productivity: stagnation shifts AS slowly and restricts real wages.",
+  "questions": [
+   {
+    "q": "Define labour productivity.",
+    "marks": 1
+   },
+   {
+    "q": "Explain how weak productivity growth affects living standards.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Aug 2025): figures are as at that date; check for newer data before quoting. Opinion column by John Kehoe, based on the RBA's August 2025 Statement on Monetary Policy. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-08/2025-08-12-rba-productivity-downgrade.pdf",
+   "label": "Original article",
+   "pages": 12
+  },
+  "links": [
+   {
+    "label": "Australian Financial Review, 'RBA bombshell exposes grim reality for Chalmers', 12 Aug 2025",
+    "url": "https://www.afr.com/policy/economy/rba-bombshell-exposes-grim-reality-for-chalmers-20250812-p5mm7j"
+   }
+  ]
+ }
+]

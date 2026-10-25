@@ -1,0 +1,2209 @@
+[
+ {
+  "id": "2020-09-02-australia-june-qtr-recession",
+  "title": "Australia in recession: biggest contraction since the Great Depression, ABS confirms",
+  "date": "2020-09-02",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "The model case of a pandemic-driven technical recession: shows which parts of aggregate demand collapsed, how the savings ratio jumped and how Australia compared with other advanced economies.",
+  "lede": "GDP fell 7 per cent in the June quarter 2020, confirming Australia's first recession since 1990-91 with the economy 6.3 per cent smaller over the year. Household consumption collapsed as restrictions closed services, while JobKeeper pushed the profit share above 30 per cent.",
+  "about": {
+   "h09": [
+    "3A.4",
+    "3A.7",
+    "1A.8",
+    "3A.1"
+   ],
+   "y12": [
+    "Y1a.5",
+    "Y1a.6",
+    "Y1a.14",
+    "Y1a.16"
+   ],
+   "y11": [
+    "P1e.4",
+    "P1e.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3B.6",
+    "4C.2",
+    "3A.5"
+   ],
+   "y12": [
+    "Y2b.9",
+    "Y3e.1",
+    "Y1a.3"
+   ],
+   "y11": [
+    "P1e.5",
+    "P3a.6",
+    "P1e.1"
+   ]
+  },
+  "issues": [
+   "growth",
+   "global"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "GDP, June quarter 2020",
+    "value": "-7% (first recession since 1990-91)",
+    "asAt": "June qtr 2020",
+    "issue": "growth",
+    "source": "ABS via Sydney Morning Herald"
+   },
+   {
+    "label": "GDP over the 12 months",
+    "value": "-6.3%",
+    "asAt": "Year to June qtr 2020",
+    "issue": "growth",
+    "source": "ABS via Sydney Morning Herald"
+   },
+   {
+    "label": "Household consumption",
+    "value": "-12.7% (services -17.6%, discretionary -25%)",
+    "asAt": "June qtr 2020",
+    "issue": "growth",
+    "source": "ABS via Sydney Morning Herald"
+   },
+   {
+    "label": "Household savings ratio",
+    "value": "19.8% (highest since 1974)",
+    "asAt": "June qtr 2020",
+    "issue": "growth",
+    "source": "ABS via Sydney Morning Herald"
+   },
+   {
+    "label": "GDP per capita",
+    "value": "-7.4% (previous record fall 2.4%, June qtr 1974)",
+    "asAt": "June qtr 2020",
+    "issue": "growth",
+    "source": "ABS via Sydney Morning Herald"
+   },
+   {
+    "label": "Contribution of private demand to GDP",
+    "value": "-7.9 percentage points",
+    "asAt": "June qtr 2020",
+    "issue": "growth",
+    "source": "ABS via Sydney Morning Herald"
+   },
+   {
+    "label": "GDP, June quarter 2020: United States / UK / Germany / Canada",
+    "value": "-31.7% / -20.4% / -9.7% / -11.5%",
+    "asAt": "June qtr 2020",
+    "issue": "global",
+    "source": "Sydney Morning Herald"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Technical recession",
+    "def": "Two consecutive quarters of negative real GDP growth."
+   },
+   {
+    "term": "Savings ratio",
+    "def": "Household savings as a share of household disposable income."
+   },
+   {
+    "term": "GDP per capita",
+    "def": "Real GDP divided by population; a rough guide to income per person."
+   }
+  ],
+  "angle": "Use the component breakdown (consumption -12.7%, private demand -7.9 points, net trade +1.0 point) to show which parts of AD drove the contraction, then contrast with the Great Depression and with other economies.",
+  "questions": [
+   {
+    "q": "Identify two components of aggregate demand that contributed to the fall in GDP in the June quarter 2020, using the article.",
+    "marks": 2
+   },
+   {
+    "q": "Explain why the household savings ratio rose to 19.8 per cent during the June quarter 2020.",
+    "marks": 3
+   },
+   {
+    "q": "Using data from the article, assess the severity of Australia's contraction relative to other advanced economies.",
+    "marks": 4
+   }
+  ],
+  "extended": "Analyse the effects of an economic downturn on households, businesses and the government.",
+  "note": "Older item (published Sep 2020): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Headline and a quarterly-fall figure of 7 per cent are as reported by the newspaper; confirm in the ABS National Accounts.",
+  "file": {
+   "path": "files/2020-09/2020-09-02-australia-june-qtr-recession.pdf",
+   "label": "Original article",
+   "pages": 3
+  },
+  "links": []
+ },
+ {
+  "id": "2020-03-17-china-economy-may-be-shrinking",
+  "title": "Far from bouncing back, China's economy may be shrinking",
+  "date": "2020-03-17",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "Shows why official statistics can mislead and how COVID-19 disrupted the world's growth locomotive, with consequences for Australia's export demand and the global business cycle.",
+  "lede": "Peter Hartcher argues official claims that China is back to normal are unreliable, citing reports of faked electricity use and propped-up share markets. Independent indicators and economist Bert Hofman suggest weak consumer activity and 2020 growth of 2 to 4.5 per cent, below Beijing's 6 per cent goal.",
+  "about": {
+   "h09": [
+    "1E.1",
+    "1A.8",
+    "2D.4"
+   ],
+   "y12": [
+    "Y3e.1",
+    "Y3e.3",
+    "Y3a.15"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3A.7",
+    "3D.3",
+    "2A.1"
+   ],
+   "y12": [
+    "Y3e.2",
+    "Y1a.7"
+   ],
+   "y11": [
+    "P1a.7",
+    "P6a.2"
+   ]
+  },
+  "issues": [
+   "global",
+   "growth"
+  ],
+  "levers": [
+   "global"
+  ],
+  "diagrams": [
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Hofman estimate of China's 2020 growth",
+    "value": "2% to 4.5% (government goal 6%)",
+    "asAt": "Mar 2020",
+    "issue": "growth",
+    "source": "Bert Hofman via Sydney Morning Herald"
+   },
+   {
+    "label": "Share of normal output Beijing says big state-owned firms have reached",
+    "value": "over 90%",
+    "asAt": "Mar 2020",
+    "issue": "growth",
+    "source": "Chinese government via Sydney Morning Herald"
+   },
+   {
+    "label": "China's recovery per CICC independent index",
+    "value": "more than 70% of the way back",
+    "asAt": "Mar 2020",
+    "issue": "growth",
+    "source": "China International Capital Corporation via Sydney Morning Herald"
+   },
+   {
+    "label": "China's recovery per RBA index",
+    "value": "about halfway from its low to normal",
+    "asAt": "Week to 13 Mar 2020",
+    "issue": "growth",
+    "source": "RBA via Sydney Morning Herald"
+   },
+   {
+    "label": "Personal consumption share of China's economy",
+    "value": "about half",
+    "asAt": "Mar 2020",
+    "issue": "growth",
+    "source": "Sydney Morning Herald"
+   },
+   {
+    "label": "Firms Hofman expects back in production by end of March",
+    "value": "85% to 90%",
+    "asAt": "Mar 2020",
+    "issue": "growth",
+    "source": "Bert Hofman via Sydney Morning Herald"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Official statistics",
+    "def": "Data published by governments; they can be unreliable where there is pressure to report good news."
+   },
+   {
+    "term": "Business cycle",
+    "def": "Fluctuations of economic activity around the long-run trend."
+   },
+   {
+    "term": "Constrained stimulus",
+    "def": "Limited ability to use fiscal or monetary policy because of high debt."
+   }
+  ],
+  "angle": "Use as evidence that Australia's export outlook depends on Chinese demand, and on the reliability of data when interpreting an economic indicator.",
+  "questions": [
+   {
+    "q": "Explain why official statistics from China may overstate the strength of its recovery.",
+    "marks": 3
+   },
+   {
+    "q": "Outline one reason why Australia is vulnerable to a slowdown in China's economy.",
+    "marks": 2
+   }
+  ],
+  "note": "Older item (published Mar 2020): figures are as at that date; check for newer data before quoting. Opinion piece; estimates are forecasts made early in the pandemic. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2020-03/2020-03-17-china-economy-may-be-shrinking.pdf",
+   "label": "Original article",
+   "pages": 4
+  },
+  "links": [
+   {
+    "label": "Sydney Morning Herald, Far from bouncing back, China's economy may be shrinking, 17 Mar 2020",
+    "url": "https://www.smh.com.au/world/asia/far-from-bouncing-back-china-s-economy-may-be-shrinking-20200316-p54ah0.html"
+   }
+  ]
+ },
+ {
+  "id": "2020-05-01-riley-sustained-budget-deficits",
+  "title": "Economic brief: the effects of sustained budget deficits",
+  "date": "2020-05-01",
+  "type": "report",
+  "outlets": [
+   "Tim Riley Publications (Current Economics)"
+  ],
+  "summary": "A one-page summary of the budget deficit, net debt and bond-financing effects of the COVID-19 fiscal response, with a simple T and G diagram.",
+  "lede": "Tim Riley explains that the 2019-20 budget moved from a forecast surplus of $7.1b to a deficit of $14b or more as tax revenue fell and spending rose. Net debt was forecast at $361b and could exceed $500b, funded by Australian Government Securities.",
+  "about": {
+   "h09": [
+    "4C.1",
+    "4C.2",
+    "4C.3",
+    "4B.1"
+   ],
+   "y12": [
+    "Y2b.2",
+    "Y2b.3",
+    "Y2b.6",
+    "Y2b.12"
+   ],
+   "y11": [
+    "P5a.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4H.3",
+    "S4.4"
+   ],
+   "y12": [
+    "Y2b.5",
+    "Y2b.1"
+   ],
+   "y11": [
+    "P4c.2",
+    "P5c.3"
+   ]
+  },
+  "issues": [
+   "budget"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Forecast 2019-20 budget balance (April 2019-20 budget)",
+    "value": "+$7.1b surplus",
+    "asAt": "April 2020",
+    "issue": "budget",
+    "source": "Tim Riley Publications"
+   },
+   {
+    "label": "Budget deficit outlook 2019-20",
+    "value": "at least -$14b",
+    "asAt": "April 2020",
+    "issue": "budget",
+    "source": "Tim Riley Publications"
+   },
+   {
+    "label": "Net debt forecast, 2019-20",
+    "value": "$361b (18% of GDP; could exceed $500b)",
+    "asAt": "April 2020",
+    "issue": "budget",
+    "source": "Tim Riley Publications"
+   },
+   {
+    "label": "Net interest payments",
+    "value": "$10.9b (0.5% of GDP)",
+    "asAt": "2019-20",
+    "issue": "budget",
+    "source": "Tim Riley Publications"
+   },
+   {
+    "label": "Government bonds sold by AOFM",
+    "value": "about $50b",
+    "asAt": "April 2020",
+    "issue": "budget",
+    "source": "Tim Riley Publications"
+   },
+   {
+    "label": "Australian Government bonds on issue",
+    "value": "$579.2b",
+    "asAt": "April 2020",
+    "issue": "budget",
+    "source": "Tim Riley Publications"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Budget deficit",
+    "def": "Government spending (G) exceeds tax revenue (T)."
+   },
+   {
+    "term": "Net debt",
+    "def": "Government borrowings less financial assets."
+   },
+   {
+    "term": "Expansionary fiscal policy",
+    "def": "Higher government spending or lower taxes to raise aggregate demand."
+   }
+  ],
+  "angle": "Use the deficit and net debt figures to explain the cost of an expansionary stance and how deficits are financed by selling bonds.",
+  "questions": [
+   {
+    "q": "Explain how a fall in income can move the budget from surplus to deficit.",
+    "marks": 3
+   },
+   {
+    "q": "Outline one effect of sustained budget deficits on the Australian economy.",
+    "marks": 2
+   }
+  ],
+  "note": "Older item (published May 2020): figures are as at that date; check for newer data before quoting. Secondary teaching resource (Tim Riley Publications, Current Economics); check primary sources before quoting. Dated 1 May 2020 as a placeholder: the source shows only the issue (Current Economics, May/June 2020) and data as at April 2020.",
+  "file": {
+   "path": "files/2020-05/2020-05-01-riley-sustained-budget-deficits.pdf",
+   "label": "Report",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2020-05-01-economic-forecasts-covid-snapshot",
+  "title": "Economic forecasts, April/May 2020: key indicators at the start of the COVID-19 recession",
+  "date": "2020-05-01",
+  "type": "stats",
+  "outlets": [
+   "Tim Riley Publications (Current Economics)",
+   "ABS",
+   "RBA"
+  ],
+  "summary": "A one-page dashboard of GDP, inflation, unemployment, wages, current account, interest rates and the exchange rate in the first months of the pandemic.",
+  "lede": "Table of latest figures and forecasts compiled from ABS, RBA and Budget sources. It shows unemployment jumping 1 percentage point to 6.2 per cent in April 2020, the cash rate cut to 0.25 per cent and the Australian dollar falling to US$0.55 in March before stabilising at US$0.64.",
+  "about": {
+   "h09": [
+    "3B.2",
+    "3C.2",
+    "3A.4",
+    "2C.3"
+   ],
+   "y12": [
+    "Y1b.11",
+    "Y1c.8",
+    "Y1a.15",
+    "Y3c.6"
+   ],
+   "y11": [
+    "P1e.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4D.3",
+    "3D.2",
+    "3A.7"
+   ],
+   "y12": [
+    "Y2c.7",
+    "Y1b.9",
+    "Y1b.12"
+   ],
+   "y11": [
+    "P1e.7"
+   ]
+  },
+  "issues": [
+   "growth",
+   "employment",
+   "inflation",
+   "rates",
+   "fx"
+  ],
+  "levers": [
+   "monetary",
+   "fiscal"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Unemployment rate",
+    "value": "6.2% (up 1 point; employment -594,300)",
+    "asAt": "April 2020",
+    "issue": "employment",
+    "source": "ABS"
+   },
+   {
+    "label": "Underemployment / underutilisation rates",
+    "value": "13.7% / 19.9%",
+    "asAt": "April 2020",
+    "issue": "employment",
+    "source": "ABS"
+   },
+   {
+    "label": "Participation rate",
+    "value": "63.5%",
+    "asAt": "April 2020",
+    "issue": "employment",
+    "source": "ABS"
+   },
+   {
+    "label": "Real GDP growth, December quarter 2019",
+    "value": "0.5% (2.2% over the year)",
+    "asAt": "Dec qtr 2019",
+    "issue": "growth",
+    "source": "ABS"
+   },
+   {
+    "label": "CPI inflation, March quarter 2020",
+    "value": "0.3% (2.2% over the year)",
+    "asAt": "Mar qtr 2020",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "Wage Price Index",
+    "value": "0.5% in the quarter (2.1% over the year)",
+    "asAt": "Mar qtr 2020",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "RBA cash rate",
+    "value": "0.25%",
+    "asAt": "May 2020",
+    "issue": "rates",
+    "source": "RBA"
+   },
+   {
+    "label": "AUD against USD",
+    "value": "US$0.55 (Mar 2020), US$0.64 (May 2020)",
+    "asAt": "Mar to May 2020",
+    "issue": "fx",
+    "source": "Tim Riley Publications"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Underutilisation rate",
+    "def": "Unemployed plus underemployed workers as a share of the labour force."
+   },
+   {
+    "term": "Wage Price Index",
+    "def": "ABS measure of changes in the price of labour, excluding changes in quality or quantity."
+   },
+   {
+    "term": "Depreciation",
+    "def": "A fall in the value of a currency in a floating exchange rate system."
+   }
+  ],
+  "angle": "Use it as a single snapshot of the macroeconomy at the start of the COVID-19 recession when explaining the combined effect on unemployment, inflation, interest rates and the dollar.",
+  "questions": [
+   {
+    "q": "Calculate the change in the unemployment rate between March and April 2020 using the data.",
+    "marks": 1
+   },
+   {
+    "q": "Explain why the Australian dollar depreciated to US$0.55 in March 2020.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published May 2020): figures are as at that date; check for newer data before quoting. Secondary teaching resource (Tim Riley Publications, Current Economics); check primary sources before quoting. Forecast columns are the compiler's estimates. Dated 1 May 2020 as a placeholder: the source gives 'April/May 2020' with no day.",
+  "file": {
+   "path": "files/2020-05/2020-05-01-economic-forecasts-covid-snapshot.pdf",
+   "label": "Data sheet",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2020-02-07-economy-had-more-momentum",
+  "title": "Economy had more momentum: stronger retail growth in December quarter",
+  "date": "2020-02-07",
+  "type": "news",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "Shows how stronger consumption led economists to abandon calls for another rate cut just before COVID-19 changed the outlook.",
+  "lede": "Retail trade rose 0.5 per cent in real terms in the December quarter 2019, above the 0.3 per cent expected. Economists said the RBA, holding the cash rate at 0.75 per cent, was unlikely to cut again, although bushfires and coronavirus posed new risks.",
+  "about": {
+   "h09": [
+    "3A.7",
+    "4D.3",
+    "3A.1"
+   ],
+   "y12": [
+    "Y1a.6",
+    "Y2c.7"
+   ],
+   "y11": [
+    "P1e.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4H.1",
+    "3A.5"
+   ],
+   "y12": [
+    "Y2c.8",
+    "Y3e.1"
+   ],
+   "y11": [
+    "P3a.9",
+    "P1e.5"
+   ]
+  },
+  "issues": [
+   "growth",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Retail trade volumes, December quarter 2019",
+    "value": "+0.5% (expected 0.3%)",
+    "asAt": "Dec qtr 2019",
+    "issue": "growth",
+    "source": "ABS via Australian Financial Review"
+   },
+   {
+    "label": "RBA cash rate",
+    "value": "0.75% (record low)",
+    "asAt": "Feb 2020",
+    "issue": "rates",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "NAB business conditions",
+    "value": "+2 index points",
+    "asAt": "Dec qtr 2019",
+    "issue": "growth",
+    "source": "NAB via Australian Financial Review"
+   },
+   {
+    "label": "Morgan Stanley forecast of December quarter GDP",
+    "value": "0.4% (annual 2%)",
+    "asAt": "Dec qtr 2019",
+    "issue": "growth",
+    "source": "Morgan Stanley via Australian Financial Review"
+   },
+   {
+    "label": "Household goods / clothing / department stores retailing",
+    "value": "+1.4% / +1.5% / +2.1%",
+    "asAt": "Dec qtr 2019",
+    "issue": "growth",
+    "source": "ABS via Australian Financial Review"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Gentle turning point",
+    "def": "The RBA's description of the economy reaching the bottom of the slowdown."
+   },
+   {
+    "term": "Consumption",
+    "def": "Household spending on goods and services, the largest component of aggregate demand."
+   }
+  ],
+  "angle": "Use as pre-COVID evidence of why the RBA held rates, and to show how external shocks (bushfires, coronavirus) change expectations.",
+  "questions": [
+   {
+    "q": "Explain how stronger retail spending could influence the RBA's decision on the cash rate.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Feb 2020): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Pre-pandemic: the outlook changed within weeks.",
+  "file": {
+   "path": "files/2020-02/2020-02-07-economy-had-more-momentum.pdf",
+   "label": "Original article",
+   "pages": 3
+  },
+  "links": []
+ },
+ {
+  "id": "2020-05-01-riley-covid-fiscal-measures",
+  "title": "Fiscal measures in response to the COVID-19 pandemic",
+  "date": "2020-05-01",
+  "type": "report",
+  "outlets": [
+   "Tim Riley Publications (Current Economics)",
+   "Treasury"
+  ],
+  "summary": "A full account of the three 2020 fiscal packages, JobKeeper and the budget consequences; usable as the Australian fiscal case study for the downturn.",
+  "lede": "Describes the supply and demand shocks from COVID-19 and the three fiscal phases: $17.63b on 12 March, $66.1b on 22 March and the $130b JobKeeper wage subsidy on 30 March. Total support reached $320b (16.4 per cent of GDP) and the budget moved from a forecast surplus of $7.1b to a deficit of at least $14b.",
+  "about": {
+   "h09": [
+    "4C.1",
+    "4C.2",
+    "4B.1",
+    "4I.2"
+   ],
+   "y12": [
+    "Y2b.1",
+    "Y2b.3",
+    "Y2b.5",
+    "Y2b.9"
+   ],
+   "y11": [
+    "P5a.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3B.6",
+    "4H.1",
+    "4I.1"
+   ],
+   "y12": [
+    "Y2g.1",
+    "Y2b.12",
+    "Y2b.13"
+   ],
+   "y11": [
+    "P5c.1",
+    "P1e.7"
+   ]
+  },
+  "issues": [
+   "budget",
+   "employment",
+   "growth"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "adas"
+  ],
+  "figures": [
+   {
+    "label": "Total government support for the economy",
+    "value": "$320b (16.4% of GDP)",
+    "asAt": "2 May 2020",
+    "issue": "budget",
+    "source": "Treasury via Tim Riley Publications"
+   },
+   {
+    "label": "JobKeeper Payment",
+    "value": "$130b ($1,500 per fortnight per employee)",
+    "asAt": "30 Mar 2020",
+    "issue": "employment",
+    "source": "Treasury via Tim Riley Publications"
+   },
+   {
+    "label": "Phase 2 package (including JobSeeker)",
+    "value": "$66.1b",
+    "asAt": "22 Mar 2020",
+    "issue": "budget",
+    "source": "Tim Riley Publications"
+   },
+   {
+    "label": "Phase 1 package",
+    "value": "$17.63b",
+    "asAt": "12 Mar 2020",
+    "issue": "budget",
+    "source": "Tim Riley Publications"
+   },
+   {
+    "label": "Treasury estimate of unemployment",
+    "value": "10% by June 2020",
+    "asAt": "Apr 2020",
+    "issue": "employment",
+    "source": "Treasury via Tim Riley Publications"
+   },
+   {
+    "label": "Budget outcome 2019-20",
+    "value": "deficit of at least -$14b (April forecast: +$7.1b surplus)",
+    "asAt": "Apr 2020",
+    "issue": "budget",
+    "source": "Tim Riley Publications"
+   },
+   {
+    "label": "Net debt forecast",
+    "value": "$361b (18% of GDP); could reach $500b+",
+    "asAt": "Apr 2020",
+    "issue": "budget",
+    "source": "Tim Riley Publications"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Supply shock",
+    "def": "A sudden fall in production, such as disrupted supply chains."
+   },
+   {
+    "term": "Automatic stabilisers",
+    "def": "Budget items such as tax revenue and unemployment benefits that change automatically with the cycle."
+   },
+   {
+    "term": "JobKeeper",
+    "def": "A wage subsidy of $1,500 per fortnight per employee that helped firms keep staff."
+   }
+  ],
+  "angle": "Use it to describe the discretionary expansion of fiscal policy in 2020 and to separate cyclical from structural parts of the deficit.",
+  "questions": [
+   {
+    "q": "Explain why COVID-19 is both a supply shock and a demand shock.",
+    "marks": 4
+   },
+   {
+    "q": "Outline how the JobKeeper Payment supports employers and employees.",
+    "marks": 3
+   },
+   {
+    "q": "Assess the effectiveness of the fiscal response in 2020 in supporting aggregate demand.",
+    "marks": 6
+   }
+  ],
+  "extended": "Evaluate the effectiveness of fiscal policy in responding to a significant economic downturn.",
+  "note": "Older item (published May 2020): figures are as at that date; check for newer data before quoting. Secondary teaching resource (Tim Riley Publications, Current Economics); check primary sources before quoting. Dated 1 May 2020 as a placeholder: the source gives the issue (May/June 2020) and Treasury text updated 2 May 2020.",
+  "file": {
+   "path": "files/2020-05/2020-05-01-riley-covid-fiscal-measures.pdf",
+   "label": "Report",
+   "pages": 6
+  },
+  "links": []
+ },
+ {
+  "id": "2020-02-17-millennials-fed-job-harder",
+  "title": "How millennials could make the Fed's job harder",
+  "date": "2020-02-17",
+  "type": "news",
+  "outlets": [
+   "New York Times"
+  ],
+  "summary": "Links saving behaviour, the paradox of thrift, low inflation expectations and the limited room for central banks to cut rates.",
+  "lede": "Jeanna Smialek reports that aggressive saving and low inflation expectations among young people could leave the US Federal Reserve with less room to cut interest rates. With US rates at 1.5 to 1.75 per cent, the Fed has room for about six quarter-point cuts, compared with rates above 5 per cent before the last recession.",
+  "about": {
+   "h09": [
+    "3C.3",
+    "4D.3",
+    "4H.2"
+   ],
+   "y12": [
+    "Y2c.3",
+    "Y2c.8",
+    "Y1c.4"
+   ],
+   "y11": [
+    "P3a.6"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4D.1",
+    "3C.2"
+   ],
+   "y12": [
+    "Y2c.6",
+    "Y2c.1"
+   ],
+   "y11": [
+    "P4c.3",
+    "P4c.5"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "rates",
+   "global"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "US federal funds rate range",
+    "value": "1.5% to 1.75% (room for about six quarter-point cuts)",
+    "asAt": "Feb 2020",
+    "issue": "rates",
+    "source": "New York Times"
+   },
+   {
+    "label": "US interest rate before the last recession",
+    "value": "above 5%",
+    "asAt": "pre-2008",
+    "issue": "rates",
+    "source": "New York Times"
+   },
+   {
+    "label": "Fed's preferred inflation index",
+    "value": "1.6% over the past year",
+    "asAt": "Feb 2020",
+    "issue": "inflation",
+    "source": "New York Times"
+   },
+   {
+    "label": "Millennials (with 401(k)) expecting to retire before 65",
+    "value": "43% (Gen X 35%)",
+    "asAt": "Feb 2020",
+    "issue": "employment",
+    "source": "T. Rowe Price via New York Times"
+   },
+   {
+    "label": "Millennial savers with more than $100,000 saved",
+    "value": "25% (16% in 2018)",
+    "asAt": "Feb 2020",
+    "issue": "inequality",
+    "source": "Bank of America via New York Times"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Paradox of thrift",
+    "def": "When many households save more at once, total spending and income fall."
+   },
+   {
+    "term": "Secular stagnation",
+    "def": "A long period of low growth and low inflation."
+   },
+   {
+    "term": "Inflation expectations",
+    "def": "What households and firms expect inflation to be, which influences wages and prices."
+   }
+  ],
+  "angle": "A US source: use it for the zero lower bound and expectations ideas, not Australian data.",
+  "questions": [
+   {
+    "q": "Explain the paradox of thrift using the article.",
+    "marks": 3
+   },
+   {
+    "q": "Explain why low inflation expectations limit the ability of a central bank to cut interest rates.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Feb 2020): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. US evidence (Federal Reserve); use for the general principle.",
+  "file": {
+   "path": "files/2020-02/2020-02-17-millennials-fed-job-harder.pdf",
+   "label": "Original article",
+   "pages": 4
+  },
+  "links": [
+   {
+    "label": "New York Times, How Millennials Could Make the Fed's Job Harder, 17 Feb 2020",
+    "url": "https://www.nytimes.com/2020/02/17/business/economy/millennials-retirement.html"
+   }
+  ]
+ },
+ {
+  "id": "2020-12-09-gittins-learning-to-live-without-inflation",
+  "title": "Learning to live without inflation",
+  "date": "2020-12-09",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "Explains why very low inflation keeps interest rates low and what that means for savers, using the real versus nominal rate distinction.",
+  "lede": "Ross Gittins argues that interest rates are low mainly because inflation has fallen for 30 years, not because of the pandemic, so retirees must adjust. CPI rose only 0.7 per cent over the year to September 2020, and self-funded retirees' living costs also rose 0.7 per cent.",
+  "about": {
+   "h09": [
+    "3C.2",
+    "3C.4",
+    "4D.3"
+   ],
+   "y12": [
+    "Y1c.8",
+    "Y1c.7",
+    "Y2c.8"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3C.3",
+    "4I.3"
+   ],
+   "y12": [
+    "Y2c.2",
+    "Y1c.1"
+   ],
+   "y11": [
+    "P4a.3",
+    "P3a.6"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "CPI inflation, year to September 2020",
+    "value": "0.7%",
+    "asAt": "Sept qtr 2020",
+    "issue": "inflation",
+    "source": "ABS via Sydney Morning Herald"
+   },
+   {
+    "label": "Living cost index for self-funded retirees",
+    "value": "+0.7%",
+    "asAt": "Year to Sept 2020",
+    "issue": "inflation",
+    "source": "ABS via Sydney Morning Herald"
+   },
+   {
+    "label": "Peak inflation under the Whitlam government",
+    "value": "17% a year briefly (about 10% average in the 1970s)",
+    "asAt": "1970s",
+    "issue": "inflation",
+    "source": "Sydney Morning Herald"
+   },
+   {
+    "label": "RBA cash rate floor referred to",
+    "value": "0.1%",
+    "asAt": "Nov 2020",
+    "issue": "rates",
+    "source": "Sydney Morning Herald"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Real interest rate",
+    "def": "The nominal interest rate minus the inflation rate."
+   },
+   {
+    "term": "Nominal interest rate",
+    "def": "The stated rate, which includes compensation for expected inflation."
+   }
+  ],
+  "angle": "Use to explain the link between inflation and nominal interest rates and who gains and loses from low rates.",
+  "questions": [
+   {
+    "q": "Distinguish between nominal and real interest rates.",
+    "marks": 2
+   },
+   {
+    "q": "Explain why low inflation has led to low interest rates, and one effect on retirees.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Dec 2020): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Dated from the filename (12_9_2020), read as 9 Dec 2020.",
+  "file": {
+   "path": "files/2020-12/2020-12-09-gittins-learning-to-live-without-inflation.pdf",
+   "label": "Original article",
+   "pages": 3
+  },
+  "links": []
+ },
+ {
+  "id": "2020-05-01-riley-microeconomic-reform",
+  "title": "Microeconomic reform policies",
+  "date": "2020-05-01",
+  "type": "report",
+  "outlets": [
+   "Tim Riley Publications (Current Economics)"
+  ],
+  "summary": "Teaching notes covering the rationale, examples, efficiency gains and costs of microeconomic reform, with an AD-AS diagram and a timeline of Australian reforms.",
+  "lede": "Tim Riley sets out how reform shifts aggregate supply to the right, with examples in product and factor markets such as tariff cuts, the National Competition Policy, the GST, financial deregulation and enterprise bargaining. It lists the costs, including structural unemployment and reform fatigue, and cites the Productivity Commission on stalled productivity.",
+  "about": {
+   "h09": [
+    "4E.1",
+    "4E.2",
+    "4E.3",
+    "3A.6"
+   ],
+   "y12": [
+    "Y2d.1",
+    "Y2d.2",
+    "Y2d.4",
+    "Y2d.6"
+   ],
+   "y11": [
+    "P3c.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4F.4",
+    "4I.1",
+    "S4.2"
+   ],
+   "y12": [
+    "Y1a.10",
+    "Y2e.2",
+    "Y2g.1"
+   ],
+   "y11": [
+    "P5a.5",
+    "P5b.7"
+   ]
+  },
+  "issues": [
+   "productivity",
+   "trade"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [
+   "adas"
+  ],
+  "figures": [
+   {
+    "label": "Tariffs on most imported manufactured goods",
+    "value": "cut to 5% by 1996",
+    "asAt": "1996",
+    "issue": "trade",
+    "source": "Tim Riley Publications"
+   },
+   {
+    "label": "Average effective rate of assistance",
+    "value": "5% or less",
+    "asAt": "after 2010 and 2015 cuts",
+    "issue": "trade",
+    "source": "Tim Riley Publications"
+   },
+   {
+    "label": "Goods and Services Tax",
+    "value": "10% on most goods and services",
+    "asAt": "2000",
+    "issue": "budget",
+    "source": "Tim Riley Publications"
+   },
+   {
+    "label": "Company tax rate after the New Tax System",
+    "value": "30%",
+    "asAt": "2000",
+    "issue": "budget",
+    "source": "Tim Riley Publications"
+   },
+   {
+    "label": "Productivity Commission finding",
+    "value": "labour and multifactor productivity growth stalled or fell away (MFP growth under 1%)",
+    "asAt": "2007-08 to 2015-16 vs 1993-94 to 1998-99",
+    "issue": "productivity",
+    "source": "Productivity Commission, Shifting the Dial (2017), via Tim Riley Publications"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Microeconomic reform",
+    "def": "Policies that raise efficiency and productivity by changing how individual markets work."
+   },
+   {
+    "term": "Allocative efficiency",
+    "def": "Resources are used to produce the goods and services consumers value most."
+   },
+   {
+    "term": "Deregulation",
+    "def": "Removing government restrictions to increase competition."
+   }
+  ],
+  "angle": "Use the list of reforms and the AD-AS diagram as a ready outline for an answer on microeconomic policy and its limitations.",
+  "questions": [
+   {
+    "q": "Explain, using an AD-AS diagram, how microeconomic reform can increase aggregate supply.",
+    "marks": 4
+   },
+   {
+    "q": "Evaluate the benefits and costs of microeconomic reform policies.",
+    "marks": 6
+   }
+  ],
+  "extended": "Assess the effectiveness of microeconomic policy in improving Australia's productivity.",
+  "note": "Older item (published May 2020): figures are as at that date; check for newer data before quoting. Secondary teaching resource (Tim Riley Publications, Current Economics); check primary sources before quoting. Dated 1 May 2020 as a placeholder: the source gives only the issue (Current Economics, May/June 2020). Productivity figures are ambiguous in the source: check the Productivity Commission report.",
+  "file": {
+   "path": "files/2020-05/2020-05-01-riley-microeconomic-reform.pdf",
+   "label": "Report",
+   "pages": 4
+  },
+  "links": []
+ },
+ {
+  "id": "2020-06-18-hewson-seize-the-day-tax-reform",
+  "title": "Seize the day for tax reform",
+  "date": "2020-06-18",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "A well-argued case for broad tax reform as part of the COVID-19 recovery, with specific proposals on GST, cash-flow taxes, stamp duty and road pricing.",
+  "lede": "John Hewson argues the tax and transfer system is too complex, inefficient and unfair and that the pandemic offers a chance to reform it. He says lifting the GST rate to about 15 per cent and broadening it could raise $90 billion to $100 billion a year, a third of which would compensate the bottom 40 per cent of earners.",
+  "about": {
+   "h09": [
+    "4E.1",
+    "4E.2",
+    "4C.2"
+   ],
+   "y12": [
+    "Y2d.2",
+    "Y2d.1",
+    "Y2b.10"
+   ],
+   "y11": [
+    "P5b.7",
+    "P5b.6"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.3",
+    "4H.3",
+    "4G.2"
+   ],
+   "y12": [
+    "Y2d.6",
+    "Y2g.2",
+    "Y2f.3"
+   ],
+   "y11": [
+    "P5b.4",
+    "P5b.5",
+    "P5b.3"
+   ]
+  },
+  "issues": [
+   "budget",
+   "productivity"
+  ],
+  "levers": [
+   "fiscal",
+   "micro"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Revenue from lifting the GST to about 15% and broadening it",
+    "value": "$90b to $100b a year",
+    "asAt": "once the economy recovers",
+    "issue": "budget",
+    "source": "John Hewson via Sydney Morning Herald"
+   },
+   {
+    "label": "Share of that revenue needed to compensate low earners",
+    "value": "about one third (bottom 40% of income earners)",
+    "asAt": "June 2020",
+    "issue": "inequality",
+    "source": "John Hewson via Sydney Morning Herald"
+   },
+   {
+    "label": "Year of the Asprey tax report",
+    "value": "1975",
+    "asAt": "1975",
+    "issue": "budget",
+    "source": "Sydney Morning Herald"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Broad-based tax",
+    "def": "A tax that applies to a wide base, such as the GST."
+   },
+   {
+    "term": "Tax and transfer system",
+    "def": "Taxes and government payments that together redistribute income."
+   },
+   {
+    "term": "Business cash-flow tax",
+    "def": "A tax on business cash flow rather than profits, proposed by Ken Henry."
+   }
+  ],
+  "angle": "Use as a source of reform arguments and the political constraints (vested interests, federal-state conflict) on tax change.",
+  "questions": [
+   {
+    "q": "Outline one reason why governments find it hard to implement tax reform.",
+    "marks": 2
+   },
+   {
+    "q": "Explain how a more efficient tax system could improve productivity.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Jun 2020): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Opinion piece by a former Liberal opposition leader; the revenue figures are the author's estimates.",
+  "file": {
+   "path": "files/2020-06/2020-06-18-hewson-seize-the-day-tax-reform.pdf",
+   "label": "Original article",
+   "pages": 2
+  },
+  "links": []
+ },
+ {
+  "id": "2020-05-01-riley-rba-monetary-policy-2020",
+  "title": "The Reserve Bank's recent conduct of monetary policy",
+  "date": "2020-05-01",
+  "type": "report",
+  "outlets": [
+   "Tim Riley Publications (Current Economics)",
+   "RBA"
+  ],
+  "summary": "A full account of the RBA's March 2020 package, with a table of 17 cash rate cuts since 2011 and the RBA's May 2020 baseline scenario.",
+  "lede": "The RBA cut the cash rate to 0.25 per cent on 20 March 2020, set a 0.25 per cent target for 3-year bond yields, created a funding facility of at least $90b and raised the interest on exchange settlement balances to 0.10 per cent. On 5 May it held policy settings and outlined a baseline with GDP down about 6 per cent in 2020 and unemployment peaking near 10 per cent.",
+  "about": {
+   "h09": [
+    "4D.1",
+    "4D.2",
+    "4D.3",
+    "4B.1"
+   ],
+   "y12": [
+    "Y2c.1",
+    "Y2c.5",
+    "Y2c.6",
+    "Y2c.8"
+   ],
+   "y11": [
+    "P4a.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3C.1",
+    "4H.1",
+    "2C.5"
+   ],
+   "y12": [
+    "Y2c.2",
+    "Y2c.7",
+    "Y2g.1"
+   ],
+   "y11": [
+    "P4c.3",
+    "P4c.2"
+   ]
+  },
+  "issues": [
+   "rates",
+   "inflation",
+   "employment"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "RBA cash rate target",
+    "value": "0.25% (from 0.75% before March 2020)",
+    "asAt": "20 Mar 2020",
+    "issue": "rates",
+    "source": "RBA via Tim Riley Publications"
+   },
+   {
+    "label": "Cuts in the cash rate in the current easing cycle",
+    "value": "17 cuts from 4.75% (Nov 2011) to 0.25%",
+    "asAt": "Nov 2011 to Mar 2020",
+    "issue": "rates",
+    "source": "RBA via Tim Riley Publications"
+   },
+   {
+    "label": "Target for 3-year government bond yield",
+    "value": "about 0.25%",
+    "asAt": "Mar 2020",
+    "issue": "rates",
+    "source": "RBA"
+   },
+   {
+    "label": "RBA three-year term funding facility",
+    "value": "at least $90b at 0.25%",
+    "asAt": "Mar 2020",
+    "issue": "rates",
+    "source": "RBA"
+   },
+   {
+    "label": "RBA baseline: GDP",
+    "value": "-10% in first half of 2020, -6% over the year, +6% in 2021",
+    "asAt": "5 May 2020",
+    "issue": "growth",
+    "source": "RBA via Tim Riley Publications"
+   },
+   {
+    "label": "RBA baseline: unemployment",
+    "value": "peak around 10%; above 7% in 2021",
+    "asAt": "5 May 2020",
+    "issue": "employment",
+    "source": "RBA via Tim Riley Publications"
+   },
+   {
+    "label": "Government bonds purchased by the RBA",
+    "value": "about $50b",
+    "asAt": "to 5 May 2020",
+    "issue": "rates",
+    "source": "RBA"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Unconventional monetary policy",
+    "def": "Tools other than changing the cash rate, such as bond purchases and term funding."
+   },
+   {
+    "term": "Yield curve target",
+    "def": "A target for the interest rate on government bonds of a given maturity."
+   },
+   {
+    "term": "Repo",
+    "def": "A transaction where the RBA lends or borrows cash against government bonds to manage liquidity."
+   }
+  ],
+  "angle": "Use as the main source on the 2020 RBA package and on why unconventional policy was needed once the cash rate reached its lower bound.",
+  "questions": [
+   {
+    "q": "Outline two components of the RBA's March 2020 policy package.",
+    "marks": 2
+   },
+   {
+    "q": "Explain why the RBA used unconventional monetary policy in 2020.",
+    "marks": 4
+   }
+  ],
+  "extended": "Evaluate the effectiveness of monetary policy in responding to an economic downturn.",
+  "note": "Older item (published May 2020): figures are as at that date; check for newer data before quoting. Secondary teaching resource (Tim Riley Publications, Current Economics); check primary sources before quoting. Dated 1 May 2020 as a placeholder: the source gives only the issue (Current Economics, May/June 2020) and RBA statements to 5 May 2020.",
+  "file": {
+   "path": "files/2020-05/2020-05-01-riley-rba-monetary-policy-2020.pdf",
+   "label": "Report",
+   "pages": 5
+  },
+  "links": []
+ },
+ {
+  "id": "2020-08-03-gittins-weak-inflation-demand-side",
+  "title": "Weak inflation tells us: it's the demand side, stupid",
+  "date": "2020-08-03",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "Explains deflation and the case for fiscal policy when interest rates are near zero, using the June quarter 2020 CPI fall.",
+  "lede": "Ross Gittins explains that the 1.9 per cent fall in the CPI in the June quarter 2020 reflected cuts to childcare and petrol prices, not deflation. Inflation has been below the RBA's target for almost six years, so he argues monetary policy is exhausted and fiscal policy must support demand.",
+  "about": {
+   "h09": [
+    "3C.4",
+    "3C.2",
+    "3C.1",
+    "4D.3"
+   ],
+   "y12": [
+    "Y1c.1",
+    "Y1c.7",
+    "Y1c.8",
+    "Y2c.8"
+   ],
+   "y11": [
+    "P1e.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4B.1",
+    "4I.3",
+    "3C.3"
+   ],
+   "y12": [
+    "Y2b.1",
+    "Y2g.1",
+    "Y1c.6"
+   ],
+   "y11": [
+    "P4c.3",
+    "P4c.4"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "rates"
+  ],
+  "levers": [
+   "fiscal",
+   "monetary"
+  ],
+  "diagrams": [
+   "adas"
+  ],
+  "figures": [
+   {
+    "label": "CPI, June quarter 2020",
+    "value": "-1.9%",
+    "asAt": "June qtr 2020",
+    "issue": "inflation",
+    "source": "ABS via Sydney Morning Herald"
+   },
+   {
+    "label": "Rise in all other CPI prices during the quarter",
+    "value": "0.1%",
+    "asAt": "June qtr 2020",
+    "issue": "inflation",
+    "source": "ABS via Sydney Morning Herald"
+   },
+   {
+    "label": "Time inflation has been below the RBA's target band",
+    "value": "almost six years",
+    "asAt": "to Aug 2020",
+    "issue": "inflation",
+    "source": "Sydney Morning Herald"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Deflation",
+    "def": "A sustained fall in the general price level."
+   },
+   {
+    "term": "Real interest rate",
+    "def": "The nominal interest rate minus inflation."
+   },
+   {
+    "term": "Fiscal policy",
+    "def": "Changes to government spending and taxation to influence aggregate demand."
+   }
+  ],
+  "angle": "Use to distinguish a temporary price fall from deflation and to justify fiscal stimulus when monetary policy has limited room.",
+  "questions": [
+   {
+    "q": "Distinguish between a fall in the CPI and deflation.",
+    "marks": 3
+   },
+   {
+    "q": "Explain why fiscal policy may be needed when the cash rate is close to zero.",
+    "marks": 4
+   }
+  ],
+  "extended": "Assess the limitations of monetary policy in a downturn and the role of fiscal policy.",
+  "note": "Older item (published Aug 2020): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. The PDF text layer is encoded; wording and the 1.9 per cent figure read via OCR. Opinion piece.",
+  "file": {
+   "path": "files/2020-08/2020-08-03-gittins-weak-inflation-demand-side.pdf",
+   "label": "Original article",
+   "pages": 4
+  },
+  "links": []
+ },
+ {
+  "id": "2020-03-13-what-is-a-recession",
+  "title": "What is a recession?",
+  "date": "2020-03-13",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "Defines technical recession and the alternative unemployment-based definition, and records Australia's past recessions.",
+  "lede": "Jessica Irvine explains that a technical recession is two quarters of negative GDP growth and that Saul Eslake prefers a rise in unemployment of 1.5 percentage points within 18 months. December quarter 2019 GDP was $480.4 billion, up 0.5 per cent, and the first stimulus package was $17.6 billion.",
+  "about": {
+   "h09": [
+    "3A.4",
+    "3A.7",
+    "3B.1"
+   ],
+   "y12": [
+    "Y1a.5",
+    "Y1a.3",
+    "Y1a.12"
+   ],
+   "y11": [
+    "P1e.4",
+    "P1e.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4C.2",
+    "4B.1"
+   ],
+   "y12": [
+    "Y2b.9",
+    "Y1b.7"
+   ],
+   "y11": [
+    "P1e.7",
+    "P1e.1"
+   ]
+  },
+  "issues": [
+   "growth",
+   "employment",
+   "budget"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "GDP, December quarter 2019",
+    "value": "$480.4b (+$2.5b, +0.5%)",
+    "asAt": "Dec qtr 2019",
+    "issue": "growth",
+    "source": "ABS via Sydney Morning Herald"
+   },
+   {
+    "label": "Length of Australia's expansion",
+    "value": "28 years",
+    "asAt": "Mar 2020",
+    "issue": "growth",
+    "source": "Sydney Morning Herald"
+   },
+   {
+    "label": "Federal spending announced in first stimulus package",
+    "value": "$17.6b (including a $750 payment to 6.5 million recipients)",
+    "asAt": "12 Mar 2020",
+    "issue": "budget",
+    "source": "Sydney Morning Herald"
+   },
+   {
+    "label": "Eslake definition of recession",
+    "value": "jobless rate up 1.5 percentage points within 18 months",
+    "asAt": "Mar 2020",
+    "issue": "employment",
+    "source": "Saul Eslake via Sydney Morning Herald"
+   },
+   {
+    "label": "Unemployment rate, Aug 2008 to June 2009",
+    "value": "4.0% to 5.9%",
+    "asAt": "2008 to 2009",
+    "issue": "employment",
+    "source": "Sydney Morning Herald"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Technical recession",
+    "def": "Two consecutive quarters of negative real GDP growth."
+   },
+   {
+    "term": "Business Cycle Dating Committee",
+    "def": "The US NBER panel that decides when recessions begin and end."
+   },
+   {
+    "term": "Stimulus package",
+    "def": "Government spending and tax measures to support aggregate demand."
+   }
+  ],
+  "angle": "A clear source for defining recession and for comparing measures.",
+  "questions": [
+   {
+    "q": "Define a technical recession.",
+    "marks": 1
+   },
+   {
+    "q": "Outline one alternative way to define a recession and why it may be a better measure.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Mar 2020): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Explainer written before the June quarter result; see the 2 Sept 2020 article for the outcome.",
+  "file": {
+   "path": "files/2020-03/2020-03-13-what-is-a-recession.pdf",
+   "label": "Original article",
+   "pages": 6
+  },
+  "links": [
+   {
+    "label": "Sydney Morning Herald, What is a recession?, 13 Mar 2020",
+    "url": "https://www.smh.com.au/business/the-economy/what-is-a-recession-20200312-p549ez.html"
+   }
+  ]
+ },
+ {
+  "id": "2020-12-03-irvine-why-a-trade-war-would-be-dumb",
+  "title": "Why a trade war would be dumb",
+  "date": "2020-12-03",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "Gives the free-trade argument against retaliating when China restricts Australian exports, with comparative advantage and tariff reform history.",
+  "lede": "Jessica Irvine argues Australia should not retaliate with tariffs against China's restrictions on exports such as barley, beef, wine and lobsters. She says tariffs would be illegal under WTO rules, escalate tensions and raise prices for Australian shoppers, and that tariff reduction since the Whitlam government has lifted productivity and wages.",
+  "about": {
+   "h09": [
+    "1B.1",
+    "1C.2",
+    "2D.4",
+    "2D.1"
+   ],
+   "y12": [
+    "Y3a.3",
+    "Y3a.7",
+    "Y3a.14",
+    "Y3a.16"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1B.2",
+    "1C.1",
+    "3D.3",
+    "S1.5"
+   ],
+   "y12": [
+    "Y3a.15",
+    "Y3a.6",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P6a.1"
+   ]
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "ds"
+  ],
+  "figures": [
+   {
+    "label": "Barley, beef, wine and lobsters",
+    "value": "subject to Chinese tariffs and other trade restrictions",
+    "asAt": "Dec 2020",
+    "issue": "trade",
+    "source": "Sydney Morning Herald"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Countervailing duties",
+    "def": "Duties imposed to offset subsidies or dumping by exporters."
+   },
+   {
+    "term": "Comparative advantage",
+    "def": "The ability to produce a good at a lower opportunity cost than other countries."
+   },
+   {
+    "term": "Tit-for-tat",
+    "def": "Retaliation in kind, often escalating a trade dispute."
+   }
+  ],
+  "angle": "Use for the arguments for free trade and the costs of protection, and Australia's response to China's trade restrictions.",
+  "questions": [
+   {
+    "q": "Explain why retaliating with tariffs could harm Australian consumers.",
+    "marks": 3
+   },
+   {
+    "q": "Outline the role of the WTO in resolving trade disputes.",
+    "marks": 2
+   }
+  ],
+  "note": "Older item (published Dec 2020): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Dated 3 Dec 2020 from the filename and PDF creation date (2 Dec 2020 UTC); PDF text layer is encoded and was decoded by hand. Opinion piece with few statistics.",
+  "file": {
+   "path": "files/2020-12/2020-12-03-irvine-why-a-trade-war-would-be-dumb.pdf",
+   "label": "Original article",
+   "pages": 2
+  },
+  "links": []
+ },
+ {
+  "id": "2025-01-30-cpi-sense-inflation-is-off",
+  "title": "If you get the sense inflation is a little off, you're probably right",
+  "date": "2025-01-30",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "Explains how the CPI is built (basket, weights, frequency) and why it understates pressure on households with mortgages.",
+  "lede": "Millie Muroi explains that the CPI is a rough estimate of price changes that excludes interest rates, and that inflation was 2.4 per cent in the year to December 2024, the slowest since March 2021. Working households' living costs rose 4.7 per cent against 2.8 per cent for self-funded retirees.",
+  "about": {
+   "h09": [
+    "3C.1",
+    "3C.2",
+    "3C.3"
+   ],
+   "y12": [
+    "Y1c.2",
+    "Y1c.3",
+    "Y1c.8",
+    "Y1c.9"
+   ],
+   "y11": [
+    "P1a.7",
+    "P4c.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4I.3",
+    "4D.1",
+    "3E.5"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y2c.2"
+   ],
+   "y11": [
+    "P4c.7",
+    "P3a.9"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "rates",
+   "housing"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "CPI inflation, annual",
+    "value": "2.4% (slowest since March 2021)",
+    "asAt": "Dec qtr 2024",
+    "issue": "inflation",
+    "source": "ABS via Sydney Morning Herald"
+   },
+   {
+    "label": "CPI inflation two years earlier",
+    "value": "7.8%",
+    "asAt": "Dec qtr 2022",
+    "issue": "inflation",
+    "source": "ABS via Sydney Morning Herald"
+   },
+   {
+    "label": "Living costs: working households / self-funded retirees",
+    "value": "+4.7% / +2.8%",
+    "asAt": "Sept qtr 2024",
+    "issue": "inflation",
+    "source": "ABS selected living-cost indexes via Sydney Morning Herald"
+   },
+   {
+    "label": "Share of household spending: housing / food and non-alcoholic drinks / transport",
+    "value": "over 20% / 17% / about 11%",
+    "asAt": "2025",
+    "issue": "inflation",
+    "source": "ABS via Sydney Morning Herald"
+   },
+   {
+    "label": "Share of Australian households with a mortgage",
+    "value": "about one third",
+    "asAt": "Jan 2025",
+    "issue": "housing",
+    "source": "Sydney Morning Herald"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Consumer price index (CPI)",
+    "def": "A measure of the change in the price of a basket of goods and services bought by households."
+   },
+   {
+    "term": "Weighting",
+    "def": "The relative importance of an item in the CPI basket."
+   },
+   {
+    "term": "Selected living-cost indexes",
+    "def": "ABS indexes showing cost-of-living changes for different household types, including interest costs."
+   }
+  ],
+  "angle": "Use for how inflation is measured and the limits of the CPI as a measure of cost of living.",
+  "questions": [
+   {
+    "q": "Explain one reason why the CPI may not reflect the price changes experienced by a household with a mortgage.",
+    "marks": 3
+   },
+   {
+    "q": "Outline how the ABS decides the weighting of items in the CPI.",
+    "marks": 2
+   }
+  ],
+  "note": "Older item (published Jan 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Updated 31 Jan 2025; first published 30 Jan 2025.",
+  "file": {
+   "path": "files/2025-01/2025-01-30-cpi-sense-inflation-is-off.pdf",
+   "label": "Original article",
+   "pages": 5
+  },
+  "links": [
+   {
+    "label": "Sydney Morning Herald, If you get the sense inflation is a little off, you're probably right, 31 Jan 2025",
+    "url": "https://www.smh.com.au/business/the-economy/if-you-get-the-sense-inflation-is-a-little-off-you-re-probably-right-20250130-p5l8gm.html"
+   }
+  ]
+ },
+ {
+  "id": "2025-05-12-elders-delta-farmers-fear-duopoly",
+  "title": "Farmers fear Coles, Woolworths-style duopoly in Elders' $475m buyout",
+  "date": "2025-05-12",
+  "type": "news",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "A live competition-policy case on market concentration, merger review by the ACCC and the effects on buyers in local markets.",
+  "lede": "Farmers fear a duopoly in farm supplies if the ACCC approves Elders' $475 million buyout of Delta Agribusiness. Elders is the second-largest seller with 245 outlets, Delta the third with about 64 sites and market leader Nutrien holds over 40 per cent with 385 sites.",
+  "about": {
+   "h09": [
+    "4E.3",
+    "4E.2"
+   ],
+   "y12": [
+    "Y2d.2",
+    "Y2d.4"
+   ],
+   "y11": [
+    "P2g.1",
+    "P2g.2",
+    "P2g.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4E.1"
+   ],
+   "y12": [
+    "Y2d.5"
+   ],
+   "y11": [
+    "P2i.1",
+    "P2i.2",
+    "P2h.6"
+   ]
+  },
+  "issues": [
+   "productivity",
+   "investment"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Value of the Elders buyout of Delta Agribusiness",
+    "value": "$475m",
+    "asAt": "announced Nov 2024",
+    "issue": "investment",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Elders outlets / Delta sites / Nutrien sites",
+    "value": "245 / about 64 / 385",
+    "asAt": "May 2025",
+    "issue": "productivity",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Nutrien Ag Solutions market share",
+    "value": "more than 40%",
+    "asAt": "May 2025",
+    "issue": "productivity",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Locations where competition would be lost, per a farmer",
+    "value": "about 33",
+    "asAt": "May 2025",
+    "issue": "productivity",
+    "source": "Andrew Weidemann via Australian Financial Review"
+   },
+   {
+    "label": "Fall in Elders and GrainCorp share prices",
+    "value": "about 25%",
+    "asAt": "six months to May 2025",
+    "issue": "investment",
+    "source": "Australian Financial Review"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Duopoly",
+    "def": "A market with two dominant sellers."
+   },
+   {
+    "term": "Market concentration",
+    "def": "The extent to which a few firms control sales in a market."
+   },
+   {
+    "term": "Divestment",
+    "def": "Forced sale of assets to restore competition after a merger."
+   }
+  ],
+  "angle": "Use as evidence on how mergers increase market concentration, the ACCC role, and impacts on farmers' input costs.",
+  "questions": [
+   {
+    "q": "Explain how a merger between the second and third largest sellers could affect competition and prices.",
+    "marks": 4
+   },
+   {
+    "q": "Outline the role of the ACCC in reviewing the proposed merger.",
+    "marks": 2
+   }
+  ],
+  "note": "Older item (published May 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. ACCC decision pending at the time of the article (date reset to 29 May 2025).",
+  "file": {
+   "path": "files/2025-05/2025-05-12-elders-delta-farmers-fear-duopoly.pdf",
+   "label": "Original article",
+   "pages": 7
+  },
+  "links": []
+ },
+ {
+  "id": "2025-06-22-chalmers-red-tape-supply-side",
+  "title": "Good ideas strangled by red tape: Treasurer to crack down on bureaucracy",
+  "date": "2025-06-22",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "Evidence of a shift towards supply-side and microeconomic reform to lift productivity, and of the planned regulator review.",
+  "lede": "Treasurer Jim Chalmers says progressives are getting in their own way and that the August productivity roundtable will focus on the supply side. He is asking regulators including APRA, ASIC and the ACCC to cut compliance costs, while the Productivity Commission has five inquiries underway.",
+  "about": {
+   "h09": [
+    "4E.1",
+    "4E.3",
+    "3A.6"
+   ],
+   "y12": [
+    "Y2d.1",
+    "Y2d.2",
+    "Y1a.10"
+   ],
+   "y11": [
+    "P3c.4",
+    "P5a.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4A.7",
+    "4B.1"
+   ],
+   "y12": [
+    "Y2g.1",
+    "Y2d.6"
+   ],
+   "y11": [
+    "P5a.1",
+    "P1a.11"
+   ]
+  },
+  "issues": [
+   "productivity",
+   "budget"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [
+   "adas"
+  ],
+  "figures": [
+   {
+    "label": "Productivity Commission inquiries underway",
+    "value": "five",
+    "asAt": "June 2025",
+    "issue": "productivity",
+    "source": "Sydney Morning Herald"
+   },
+   {
+    "label": "Time until the 2026 budget",
+    "value": "14 months",
+    "asAt": "June 2025",
+    "issue": "budget",
+    "source": "Sydney Morning Herald"
+   },
+   {
+    "label": "Date of the fourth Chalmers budget",
+    "value": "25 March 2025 (earliest since federation)",
+    "asAt": "Mar 2025",
+    "issue": "budget",
+    "source": "Sydney Morning Herald"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Supply-side policy",
+    "def": "Policy that raises the economy's productive capacity by removing barriers to production."
+   },
+   {
+    "term": "Regulatory burden",
+    "def": "The cost to businesses of complying with government rules."
+   },
+   {
+    "term": "Productivity",
+    "def": "Output produced per unit of input."
+   }
+  ],
+  "angle": "Use as a contemporary example of the government's productivity agenda.",
+  "questions": [
+   {
+    "q": "Explain how reducing regulatory compliance costs could increase aggregate supply.",
+    "marks": 3
+   },
+   {
+    "q": "Outline one limitation of using supply-side policies.",
+    "marks": 2
+   }
+  ],
+  "note": "Older item (published Jun 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. The file name differs from the headline; the PDF text shows this headline.",
+  "file": {
+   "path": "files/2025-06/2025-06-22-chalmers-red-tape-supply-side.pdf",
+   "label": "Original article",
+   "pages": 5
+  },
+  "links": []
+ },
+ {
+  "id": "2025-05-19-super-tax-productivity-clash",
+  "title": "Super tax hike may force early retirement of skilled workers",
+  "date": "2025-05-19",
+  "type": "news",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "Applies tax efficiency and equity criteria to a live policy proposal, with a link to the productivity debate.",
+  "lede": "Economists warn that Labor's plan to double the tax on earnings on superannuation balances above $3 million to 30 per cent could prompt early retirement and raise less than forecast. The measure would initially hit about 80,000 people and raise $2.3 billion a year.",
+  "about": {
+   "h09": [
+    "4C.2",
+    "3E.3",
+    "4E.2"
+   ],
+   "y12": [
+    "Y2b.10",
+    "Y2d.2",
+    "Y2b.14"
+   ],
+   "y11": [
+    "P5b.7",
+    "P5b.6",
+    "P4a.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.6",
+    "4H.3"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y2d.6"
+   ],
+   "y11": [
+    "P5b.3",
+    "P5a.4"
+   ]
+  },
+  "issues": [
+   "budget",
+   "productivity",
+   "inequality"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Tax rate on earnings for balances above $3 million",
+    "value": "30% (up from 15%)",
+    "asAt": "May 2025",
+    "issue": "budget",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "People initially affected",
+    "value": "about 80,000",
+    "asAt": "May 2025",
+    "issue": "budget",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Forecast revenue from the measure",
+    "value": "$2.3b a year initially",
+    "asAt": "May 2025",
+    "issue": "budget",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Productivity growth",
+    "value": "none in almost a decade",
+    "asAt": "May 2025",
+    "issue": "productivity",
+    "source": "Australian Financial Review"
+   },
+   {
+    "label": "Company tax rate under review by the Productivity Commission",
+    "value": "30%",
+    "asAt": "May 2025",
+    "issue": "budget",
+    "source": "Australian Financial Review"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Marginal excess burden",
+    "def": "The economic cost of a tax beyond the revenue raised."
+   },
+   {
+    "term": "Unrealised gains",
+    "def": "Increases in asset value that have not been sold."
+   },
+   {
+    "term": "Superannuation",
+    "def": "Compulsory retirement savings with concessional tax treatment."
+   }
+  ],
+  "angle": "Use it to evaluate a tax proposal against simplicity, fairness and efficiency.",
+  "questions": [
+   {
+    "q": "Explain one reason why the super tax change may raise less revenue than forecast.",
+    "marks": 3
+   },
+   {
+    "q": "Assess the proposal against the features of a good tax.",
+    "marks": 6
+   }
+  ],
+  "note": "Older item (published May 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use. Describes the proposal as at 19 May 2025; check the final legislation.",
+  "file": {
+   "path": "files/2025-05/2025-05-19-super-tax-productivity-clash.pdf",
+   "label": "Original article",
+   "pages": 13
+  },
+  "links": []
+ }
+]

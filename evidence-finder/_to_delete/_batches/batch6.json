@@ -1,0 +1,2187 @@
+[
+ {
+  "id": "2025-05-15-afr-chalmers-super-tax-opinion",
+  "title": "Opinion: Chalmers' tax on unrealised super gains is clever, and cruel to the unadvised",
+  "date": "2025-05-15",
+  "type": "news",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "A critical view of the proposed tax on high-balance super that shows how a tax on unrealised gains can fall on people who do not expect to be caught, which is useful for evaluating equity and efficiency.",
+  "lede": "AFR wealth reporter Andrew Hobbs argues the proposed tax on unrealised gains in super balances above $3 million will initially hit hardly anyone, but will catch unsophisticated investors holding illiquid assets as property values rise. The government says fewer than 80,000 people (0.5 per cent of account holders) are affected, a figure the article notes dates from February 2023.",
+  "about": {
+   "h09": [
+    "4C.2"
+   ],
+   "y12": [
+    "Y2b.10"
+   ],
+   "y11": [
+    "P5b.6",
+    "P5b.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.3",
+    "3E.4",
+    "4I.5"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y2b.11"
+   ],
+   "y11": [
+    "P5b.3",
+    "P4a.3"
+   ]
+  },
+  "issues": [
+   "budget",
+   "inequality"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Super balance threshold for the proposed tax",
+    "value": "$3 million (possibly $2 million)",
+    "asAt": "May 2025 proposal",
+    "issue": "budget",
+    "source": "AFR (Andrew Hobbs)"
+   },
+   {
+    "label": "Share of super account holders affected at start",
+    "value": "0.5% (under 80,000 people)",
+    "asAt": "Government figure from Feb 2023",
+    "issue": "inequality",
+    "source": "AFR citing the Treasurer"
+   },
+   {
+    "label": "Share of account holders paying by 2053",
+    "value": "about 10%",
+    "asAt": "Government projection",
+    "issue": "inequality",
+    "source": "AFR citing government numbers"
+   },
+   {
+    "label": "Super contribution rate used in author's example",
+    "value": "12% of salary",
+    "asAt": "May 2025",
+    "issue": "budget",
+    "source": "AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Unrealised gain",
+    "def": "An increase in the value of an asset that has not yet been sold, so no cash has been received."
+   },
+   {
+    "term": "Bracket creep / non-indexed threshold",
+    "def": "A threshold that is not adjusted for inflation, so more people reach it over time."
+   },
+   {
+    "term": "Vertical equity",
+    "def": "Those with a greater capacity to pay contribute more tax."
+   }
+  ],
+  "angle": "Use as the opposing view when you evaluate the equity of taxing high-balance super: the policy is progressive in intent but the article argues it is poorly targeted at the unadvised.",
+  "questions": [
+   {
+    "q": "Explain why a tax on unrealised gains may be seen as less fair than a tax on realised gains.",
+    "marks": 3
+   },
+   {
+    "q": "Outline why not indexing the $3 million threshold matters over time.",
+    "marks": 2
+   }
+  ],
+  "note": "Older item (published May 2025): figures are as at that date; check for newer data before quoting. Opinion piece, not a news report; the proposal was a draft and design details may differ from what was legislated. Newspaper article reproduced for classroom use. A second copy of the same article in the folder was skipped as a duplicate.",
+  "file": {
+   "path": "files/2025-05/2025-05-15-afr-chalmers-super-tax-opinion.pdf",
+   "label": "Original article",
+   "pages": 8
+  },
+  "links": []
+ },
+ {
+  "id": "2026-09-02-year11-economy-data-dashboard",
+  "title": "Australian economy data dashboard for Year 11, September 2026",
+  "date": "2026-09-02",
+  "type": "stats",
+  "outlets": [
+   "ABS",
+   "RBA",
+   "Fair Work Commission",
+   "Treasury (Budget Paper 1)"
+  ],
+  "summary": "A single set of ten current indicators, each with its previous value and an exam hook, ready to quote with direction and source in any short answer or extended response.",
+  "lede": "The dashboard collects the latest official figures at 2 September 2026: GDP growth of 0.4 per cent in the June quarter, headline inflation of 3.5 per cent, unemployment of 4.5 per cent and a cash rate of 4.35 per cent after three rises in 2026. It links them into a loop of prices, the RBA, borrowing and output, jobs and the federal Budget.",
+  "about": {
+   "h09": [
+    "3A.4",
+    "3B.1",
+    "3C.1",
+    "4D.3",
+    "4C.1"
+   ],
+   "y12": [
+    "Y1a.3",
+    "Y1b.9",
+    "Y1c.3",
+    "Y2c.5",
+    "Y2b.3"
+   ],
+   "y11": [
+    "P1e.5",
+    "P4c.3",
+    "P5a.4",
+    "P3a.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3A.7",
+    "3C.2",
+    "4A.7",
+    "4I.3",
+    "3B.2"
+   ],
+   "y12": [
+    "Y1a.15",
+    "Y1b.8",
+    "Y2e.4",
+    "Y2b.9",
+    "Y2c.4"
+   ],
+   "y11": [
+    "P1e.4",
+    "P1d.2",
+    "P5c.2"
+   ]
+  },
+  "issues": [
+   "growth",
+   "inflation",
+   "employment",
+   "rates",
+   "budget"
+  ],
+  "levers": [
+   "fiscal",
+   "monetary"
+  ],
+  "diagrams": [
+   "flow",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Real GDP growth, quarterly",
+    "value": "0.4% (March qtr 0.3%; 2.1% through the year)",
+    "asAt": "June qtr 2026",
+    "issue": "growth",
+    "source": "ABS National Accounts"
+   },
+   {
+    "label": "Headline CPI inflation",
+    "value": "3.5% (June 3.8%)",
+    "asAt": "12 months to July 2026",
+    "issue": "inflation",
+    "source": "ABS Monthly CPI Indicator"
+   },
+   {
+    "label": "Underlying inflation (trimmed mean)",
+    "value": "3.6% (unchanged)",
+    "asAt": "12 months to July 2026",
+    "issue": "inflation",
+    "source": "ABS Monthly CPI Indicator"
+   },
+   {
+    "label": "Unemployment rate",
+    "value": "4.5% (June 4.4%)",
+    "asAt": "July 2026",
+    "issue": "employment",
+    "source": "ABS Labour Force"
+   },
+   {
+    "label": "Underemployment rate",
+    "value": "6.4% (unchanged; underutilisation 10.9%)",
+    "asAt": "July 2026",
+    "issue": "employment",
+    "source": "ABS Labour Force"
+   },
+   {
+    "label": "RBA cash rate target",
+    "value": "4.35% (was 4.10%)",
+    "asAt": "Held 11 Aug 2026",
+    "issue": "rates",
+    "source": "RBA"
+   },
+   {
+    "label": "Household saving ratio",
+    "value": "6.5% (March qtr 6.4%)",
+    "asAt": "June qtr 2026",
+    "issue": "growth",
+    "source": "ABS National Accounts"
+   },
+   {
+    "label": "Underlying cash balance",
+    "value": "-$31.5b (-1.0% of GDP)",
+    "asAt": "2026-27 Budget estimate",
+    "issue": "budget",
+    "source": "2026-27 Budget, Budget Paper 1"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Trimmed mean",
+    "def": "Underlying inflation that removes the 15% of items with the largest price rises and the 15% with the largest falls."
+   },
+   {
+    "term": "Underutilisation rate",
+    "def": "Unemployment plus underemployment as a share of the labour force."
+   },
+   {
+    "term": "Fiscal stance",
+    "def": "Whether the Budget is expansionary, contractionary or neutral, judged by the change in the balance as a share of GDP."
+   },
+   {
+    "term": "Transmission mechanism",
+    "def": "How a change in the cash rate reaches spending and prices."
+   }
+  ],
+  "angle": "Quote direction as well as level (for example unemployment 4.5%, up from 4.4%) and link two indicators in each paragraph.",
+  "questions": [
+   {
+    "q": "Distinguish between headline and underlying inflation, using the 3.5% and 3.6% figures.",
+    "marks": 3
+   },
+   {
+    "q": "Explain how the three cash-rate rises in 2026 are expected to slow aggregate demand.",
+    "marks": 4
+   },
+   {
+    "q": "Assess whether a deficit of 1.0% of GDP is an appropriate fiscal stance when growth is below trend.",
+    "marks": 6
+   }
+  ],
+  "note": "Teacher revision handout for Year 11 compiling official releases as at 2 September 2026; figures are as at that date and later releases will have updated them, so check the ABS and RBA before quoting. Budget figures for 2025-26 onwards are estimates, not outcomes.",
+  "file": {
+   "path": "files/2026-09/2026-09-02-year11-economy-data-dashboard.pdf",
+   "label": "Data sheet",
+   "pages": 8
+  },
+  "links": []
+ },
+ {
+  "id": "2026-08-01-bocsar-petrol-thefts-price-elasticity",
+  "title": "Petrol thefts and petrol prices: a BOCSAR study turned into an elasticity lesson",
+  "date": "2026-08-01",
+  "dateText": "August 2026",
+  "type": "report",
+  "outlets": [
+   "NSW Bureau of Crime Statistics and Research (BOCSAR)"
+  ],
+  "summary": "A real NSW dataset that applies price elasticity of demand, the total outlay method and supply shocks in the petrol market, and shows that cost of living matters more than price for theft.",
+  "lede": "BOCSAR Bulletin No. 280 (August 2026) finds a 1 per cent rise in petrol prices raises petrol thefts by about 3 per cent over several months, around 37 extra incidents a month in NSW. The bigger driver is the general cost of living, with wages moving theft in the opposite direction.",
+  "about": {
+   "h09": [],
+   "y12": [],
+   "y11": [
+    "P2e.1",
+    "P2e.3",
+    "P2e.4",
+    "P2d.1"
+   ]
+  },
+  "also": {
+   "h09": [],
+   "y12": [],
+   "y11": [
+    "P2c.4",
+    "P2e.5",
+    "P1e.5",
+    "P3a.8"
+   ]
+  },
+  "issues": [
+   "inflation"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [
+   "ds"
+  ],
+  "figures": [
+   {
+    "label": "Increase in petrol thefts after a 1% rise in petrol prices",
+    "value": "about 3% (peak 3.3%; 1.7% in month 0)",
+    "asAt": "BOCSAR Bulletin 280, Aug 2026",
+    "issue": "inflation",
+    "source": "NSW BOCSAR (Adams, 2026)"
+   },
+   {
+    "label": "Extra petrol thefts a month across NSW",
+    "value": "37",
+    "asAt": "From a 1% price rise",
+    "issue": "inflation",
+    "source": "NSW BOCSAR"
+   },
+   {
+    "label": "Average petrol thefts a month in NSW",
+    "value": "1,118",
+    "asAt": "2025",
+    "issue": "inflation",
+    "source": "NSW BOCSAR"
+   },
+   {
+    "label": "Elasticity of theft with respect to wages",
+    "value": "-16.35%",
+    "asAt": "Since 2016",
+    "issue": "inflation",
+    "source": "NSW BOCSAR"
+   },
+   {
+    "label": "Elasticity of theft with respect to living costs",
+    "value": "+6.51%",
+    "asAt": "Since 2016",
+    "issue": "inflation",
+    "source": "NSW BOCSAR"
+   },
+   {
+    "label": "Elasticity of theft with respect to petrol prices",
+    "value": "+0.94%",
+    "asAt": "Since 2016",
+    "issue": "inflation",
+    "source": "NSW BOCSAR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Price elasticity of demand",
+    "def": "Responsiveness of quantity demanded to a change in price: %change in quantity demanded divided by %change in price."
+   },
+   {
+    "term": "Total outlay method",
+    "def": "Judging elasticity from whether total spending (price times quantity) rises or falls when price changes."
+   },
+   {
+    "term": "Supply shock",
+    "def": "A sudden change in the cost or availability of an input that shifts the supply curve."
+   },
+   {
+    "term": "Correlation vs causation",
+    "def": "Two series can move together because a third factor drives both."
+   }
+  ],
+  "angle": "Use as a Year 11 stimulus for PED: inelastic demand means a supply shock lands on household budgets, which links to cost of living.",
+  "questions": [
+   {
+    "q": "Explain why the demand for petrol is price inelastic.",
+    "marks": 4
+   },
+   {
+    "q": "Using the worked example, apply the total outlay method to show demand is inelastic.",
+    "marks": 3
+   },
+   {
+    "q": "With reference to the stimulus, explain what the findings show about the importance of income compared with price.",
+    "marks": 4
+   }
+  ],
+  "note": "Year 11 teacher summary of a BOCSAR bulletin: the document gives August 2026 but no day, so the date is set to the first of the month. Figure B and the worked example (180c to 198c, 500m to 485m litres) are hypothetical teaching figures, not results from the bulletin. Check the original bulletin before quoting.",
+  "file": {
+   "path": "files/2026-08/2026-08-01-bocsar-petrol-thefts-price-elasticity.pdf",
+   "label": "Teacher handout",
+   "pages": 5
+  },
+  "links": []
+ },
+ {
+  "id": "2023-01-01-mccrindle-income-wealth-distribution",
+  "title": "Australia's income and wealth distribution infographic (McCrindle, 2023)",
+  "date": "2023-01-01",
+  "type": "graph",
+  "outlets": [
+   "McCrindle",
+   "ABS",
+   "Domain"
+  ],
+  "summary": "A one-page picture of how unequally income and wealth are shared across household quintiles, states and generations, with ready-made ratios to quote.",
+  "lede": "The top 20 per cent of households earn 48 per cent of all income and own 63 per cent of private wealth, while the lowest 20 per cent earn 4 per cent of income and own 1 per cent of wealth. The average household in the top quintile holds 93 times the wealth of the bottom quintile, and a median house costs 10.3 times average full-time earnings.",
+  "about": {
+   "h09": [
+    "3E.4",
+    "3E.5",
+    "3E.6"
+   ],
+   "y12": [
+    "Y1d.1",
+    "Y1d.2",
+    "Y1d.11"
+   ],
+   "y11": [
+    "P2h.8"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.1",
+    "4A.6"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y1d.10"
+   ],
+   "y11": [
+    "P3a.9"
+   ]
+  },
+  "issues": [
+   "inequality",
+   "housing"
+  ],
+  "levers": [],
+  "diagrams": [
+   "chart",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Share of all income earned by the top 20% of households",
+    "value": "48% (lowest 20%: 4%)",
+    "asAt": "2023",
+    "issue": "inequality",
+    "source": "McCrindle, ABS"
+   },
+   {
+    "label": "Share of private wealth owned by the top 20% of households",
+    "value": "63% (lowest 20%: 1%)",
+    "asAt": "2023",
+    "issue": "inequality",
+    "source": "McCrindle, ABS"
+   },
+   {
+    "label": "Average household net wealth",
+    "value": "$1,042,000 (top 20%: $3,267,100; lowest 20%: $35,100)",
+    "asAt": "2023",
+    "issue": "inequality",
+    "source": "McCrindle, ABS"
+   },
+   {
+    "label": "Average household gross annual income",
+    "value": "$121,108 (top 20%: $288,028; lowest 20%: $25,012)",
+    "asAt": "2023",
+    "issue": "inequality",
+    "source": "McCrindle, ABS"
+   },
+   {
+    "label": "Top 20% wealth compared with the lowest 20%",
+    "value": "93 times average wealth",
+    "asAt": "2023",
+    "issue": "inequality",
+    "source": "McCrindle"
+   },
+   {
+    "label": "Median house price compared with average full-time earnings",
+    "value": "$1,008,988 (10.3 times earnings of $97,510)",
+    "asAt": "2023",
+    "issue": "housing",
+    "source": "McCrindle, Domain House Price Report"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Income quintile",
+    "def": "One fifth of households ranked by income."
+   },
+   {
+    "term": "Net wealth",
+    "def": "The value of assets minus debts."
+   },
+   {
+    "term": "Income versus wealth",
+    "def": "Income is a flow received over a period; wealth is a stock of assets owned at a point in time."
+   }
+  ],
+  "angle": "Pair the income and wealth quintile shares to show that wealth inequality is wider, then use the generational table for age differences.",
+  "questions": [
+   {
+    "q": "Using the infographic, compare the distribution of income with the distribution of wealth.",
+    "marks": 3
+   },
+   {
+    "q": "Explain one reason wealth is more unequally distributed than income.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published 2023): figures are as at that date; check for newer data before quoting. Only the year (2023) is given, so the date is set to 1 January. Infographic from a social research company drawing on ABS and Domain data; secondary source.",
+  "file": {
+   "path": "files/2023-01/2023-01-01-mccrindle-income-wealth-distribution.pdf",
+   "label": "Data sheet",
+   "pages": 2
+  },
+  "links": []
+ },
+ {
+  "id": "2024-02-01-senate-poverty-inquiry-final-report",
+  "title": "Senate inquiry final report: The extent and nature of poverty in Australia",
+  "date": "2024-02-01",
+  "dateText": "February 2024",
+  "type": "report",
+  "outlets": [
+   "Senate Community Affairs References Committee"
+  ],
+  "summary": "The most authoritative recent source on Australian poverty rates, groups at risk and the role of income support, with 14 recommendations to cite in policy evaluation.",
+  "lede": "The Senate committee's final report (February 2024) uses ACOSS and UNSW analysis to show 13.4 per cent of people, and 16.6 per cent of children, live below the poverty line after housing costs. It examines income support adequacy, employment services, First Nations poverty and child poverty and recommends urgent action to ensure no one lives in poverty.",
+  "about": {
+   "h09": [
+    "3E.5",
+    "3E.6",
+    "3E.3"
+   ],
+   "y12": [
+    "Y1d.4",
+    "Y1d.9",
+    "Y1d.8"
+   ],
+   "y11": [
+    "P2h.8",
+    "P5a.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4I.5",
+    "4F.5"
+   ],
+   "y12": [
+    "Y1d.6",
+    "Y2b.10",
+    "Y2e.4"
+   ],
+   "y11": [
+    "P5c.1"
+   ]
+  },
+  "issues": [
+   "inequality",
+   "employment"
+  ],
+  "levers": [
+   "fiscal",
+   "labour"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Share of people below the poverty line after housing costs",
+    "value": "13.4% (over 3 million people)",
+    "asAt": "2019-20 Census, ACOSS/UNSW",
+    "issue": "inequality",
+    "source": "Senate Community Affairs References Committee, citing ACOSS and UNSW"
+   },
+   {
+    "label": "Share of children below the poverty line after housing costs",
+    "value": "16.6% (over 760,000 children)",
+    "asAt": "2019-20 Census, ACOSS/UNSW",
+    "issue": "inequality",
+    "source": "Senate Community Affairs References Committee, citing ACOSS and UNSW"
+   },
+   {
+    "label": "Poverty line, single adult (50% of median income)",
+    "value": "$489 a week (couple with two children $1,027)",
+    "asAt": "2019-20",
+    "issue": "inequality",
+    "source": "ACOSS/UNSW via Senate report"
+   },
+   {
+    "label": "Average poverty gap after housing costs",
+    "value": "$304 a week",
+    "asAt": "2019-20",
+    "issue": "inequality",
+    "source": "ACOSS/UNSW via Senate report"
+   },
+   {
+    "label": "People lifted out of poverty by pandemic income support",
+    "value": "646,000 (including 245,000 children)",
+    "asAt": "2020",
+    "issue": "inequality",
+    "source": "ACOSS/UNSW via Senate report"
+   },
+   {
+    "label": "People receiving income support payments",
+    "value": "about 5 million (2.6 million on the Age Pension)",
+    "asAt": "Sept 2022",
+    "issue": "inequality",
+    "source": "Department of Social Services via Senate report"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Poverty line",
+    "def": "A cut-off income below which a household is counted as poor; here half of median household income."
+   },
+   {
+    "term": "Poverty gap",
+    "def": "How far below the poverty line the average poor household's income falls."
+   },
+   {
+    "term": "Income support",
+    "def": "Government payments such as JobSeeker, the Age Pension and Youth Allowance."
+   }
+  ],
+  "angle": "Quote the 13.4 per cent and 16.6 per cent figures with 'after housing costs', then use the income support evidence to evaluate government redistribution.",
+  "questions": [
+   {
+    "q": "Outline what is meant by relative poverty, using the 50 per cent of median income measure.",
+    "marks": 2
+   },
+   {
+    "q": "Explain how income support payments can reduce poverty.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Feb 2024): figures are as at that date; check for newer data before quoting. Only the month is given, so the date is set to the first of the month. 206-page parliamentary report: poverty figures come from 2019-20 Census data cited via ACOSS and UNSW (chapter 1, paragraph 1.19), so check the original and newer ABS data before quoting.",
+  "file": {
+   "path": "files/2024-02/2024-02-01-senate-poverty-inquiry-final-report.pdf",
+   "label": "Report",
+   "pages": 206
+  },
+  "links": []
+ },
+ {
+  "id": "2025-08-05-millionaire-migration-2025",
+  "title": "Millionaire migration in 2025: projected net flows by country",
+  "date": "2025-08-05",
+  "type": "graph",
+  "outlets": [
+   "Visual Capitalist",
+   "New World Wealth",
+   "Henley & Partners"
+  ],
+  "summary": "A graph of where high-net-worth individuals are expected to move, showing how tax settings and residency rules can shift wealth and talent between economies.",
+  "lede": "New World Wealth projects the UAE will gain 9.8 thousand millionaires in 2025 and the US 7.5 thousand, while the UK loses 16.5 thousand and China 7.8 thousand. Australia is projected to gain about 1.0 thousand.",
+  "about": {
+   "h09": [
+    "1A.7"
+   ],
+   "y12": [],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1A.4",
+    "3E.4"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y3e.3"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "global",
+   "inequality"
+  ],
+  "levers": [
+   "global"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Projected net millionaire inflow, UAE",
+    "value": "+9.8 thousand",
+    "asAt": "2025 projection",
+    "issue": "global",
+    "source": "New World Wealth via Visual Capitalist"
+   },
+   {
+    "label": "Projected net millionaire inflow, United States",
+    "value": "+7.5 thousand",
+    "asAt": "2025 projection",
+    "issue": "global",
+    "source": "New World Wealth via Visual Capitalist"
+   },
+   {
+    "label": "Projected net millionaire inflow, Australia",
+    "value": "+1.0 thousand",
+    "asAt": "2025 projection",
+    "issue": "global",
+    "source": "New World Wealth via Visual Capitalist"
+   },
+   {
+    "label": "Projected net millionaire outflow, United Kingdom",
+    "value": "-16.5 thousand",
+    "asAt": "2025 projection",
+    "issue": "global",
+    "source": "New World Wealth via Visual Capitalist"
+   },
+   {
+    "label": "Projected net millionaire outflow, China",
+    "value": "-7.8 thousand",
+    "asAt": "2025 projection",
+    "issue": "global",
+    "source": "New World Wealth via Visual Capitalist"
+   },
+   {
+    "label": "Projected net millionaire outflow, India",
+    "value": "-3.5 thousand",
+    "asAt": "2025 projection",
+    "issue": "global",
+    "source": "New World Wealth via Visual Capitalist"
+   }
+  ],
+  "terms": [
+   {
+    "term": "High-net-worth individual (millionaire)",
+    "def": "A person with liquid investable wealth of US$1 million or more."
+   },
+   {
+    "term": "Capital flight",
+    "def": "Movement of money or wealthy people out of a country, often in response to tax or political settings."
+   }
+  ],
+  "angle": "A brief illustration of globalisation of people and capital, and a counterpoint to claims that higher taxes on the wealthy have no effect on behaviour.",
+  "questions": [
+   {
+    "q": "Explain one reason wealthy individuals may move to a different country.",
+    "marks": 2
+   },
+   {
+    "q": "Discuss how tax policy could affect the movement of wealth between countries.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published 2025): figures are as at that date; check for newer data before quoting. No publication date appears on the graphic, so the file's modified date (5 Aug 2025) is used. Figures are projections (based on year-to-date movements) from New World Wealth, accessed via Henley & Partners, in a Visual Capitalist graphic; secondary source. Tagging is loose: it is not tied to one dot point.",
+  "file": {
+   "path": "files/2025-08/2025-08-05-millionaire-migration-2025.pdf",
+   "label": "Original article",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2021-04-29-treasury-estimating-the-nairu",
+  "title": "Treasury working paper: Estimating the NAIRU in Australia",
+  "date": "2021-04-29",
+  "type": "report",
+  "outlets": [
+   "The Treasury"
+  ],
+  "summary": "Treasury's own estimate that unemployment consistent with stable inflation is about 4.75 per cent, which defines how much spare capacity exists in the labour market.",
+  "lede": "The Treasury working paper (April 2021) re-estimates the NAIRU using a wage Phillips curve and finds it lay between 4.5 and 5 per cent in the years before the COVID-19 recession, with a point estimate of 4.75 per cent. It warns the NAIRU cannot be observed and estimates carry large confidence intervals.",
+  "about": {
+   "h09": [
+    "3B.4",
+    "3C.3"
+   ],
+   "y12": [
+    "Y1c.6",
+    "Y1b.11"
+   ],
+   "y11": [
+    "P1e.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3B.1",
+    "4I.2",
+    "3C.2"
+   ],
+   "y12": [
+    "Y1b.9",
+    "Y2c.4",
+    "Y1c.4"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "employment",
+   "inflation"
+  ],
+  "levers": [
+   "monetary",
+   "labour"
+  ],
+  "diagrams": [
+   "phillips"
+  ],
+  "figures": [
+   {
+    "label": "Treasury NAIRU estimate, point estimate",
+    "value": "4.75%",
+    "asAt": "Judgement for the years before COVID-19",
+    "issue": "employment",
+    "source": "Treasury Working Paper 2021-01"
+   },
+   {
+    "label": "Treasury NAIRU estimate, range",
+    "value": "4.5% to 5%",
+    "asAt": "Five years before the COVID-19 recession",
+    "issue": "employment",
+    "source": "Treasury Working Paper 2021-01"
+   },
+   {
+    "label": "Confidence interval around the NAIRU",
+    "value": "plus or minus 0.5 points (0.75 at the endpoint)",
+    "asAt": "68% interval",
+    "issue": "employment",
+    "source": "Treasury Working Paper 2021-01"
+   },
+   {
+    "label": "Peak unemployment rate in the COVID-19 recession",
+    "value": "7.5%",
+    "asAt": "July 2020",
+    "issue": "employment",
+    "source": "ABS via Treasury Working Paper"
+   },
+   {
+    "label": "Unemployment rate",
+    "value": "5.6%",
+    "asAt": "March 2021",
+    "issue": "employment",
+    "source": "ABS via Treasury Working Paper"
+   }
+  ],
+  "terms": [
+   {
+    "term": "NAIRU",
+    "def": "The non-accelerating inflation rate of unemployment: the rate consistent with stable wage growth and inflation."
+   },
+   {
+    "term": "Phillips curve",
+    "def": "The relationship between inflation (or wage growth) and unemployment."
+   },
+   {
+    "term": "Natural rate of unemployment",
+    "def": "The medium to long-run rate reflecting frictional and structural unemployment."
+   }
+  ],
+  "angle": "Use the 4.75 per cent estimate with the caveat that it is unobservable: when unemployment sits below it, wage and price pressure tend to rise.",
+  "questions": [
+   {
+    "q": "Outline what is meant by the NAIRU.",
+    "marks": 2
+   },
+   {
+    "q": "Explain why the NAIRU is difficult to measure and what that means for policy.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Apr 2021): figures are as at that date; check for newer data before quoting. Pre-dates the post-COVID inflation and labour market; the authors' views are not those of Treasury. Technical 43-page working paper, so use the abstract, introduction and conclusion for quotes.",
+  "file": {
+   "path": "files/2021-04/2021-04-29-treasury-estimating-the-nairu.pdf",
+   "label": "Report",
+   "pages": 43
+  },
+  "links": []
+ },
+ {
+  "id": "2023-01-01-mccrindle-australia-population-map",
+  "title": "Australia's population map and generational profile (McCrindle, 2023)",
+  "date": "2023-01-01",
+  "type": "stats",
+  "outlets": [
+   "McCrindle",
+   "ABS"
+  ],
+  "summary": "A snapshot of Australia's demographics (population, age, cities, workforce) that supports answers on ageing, participation and the size of the labour force.",
+  "lede": "Australia's population is 26.3 million with a median age of 38, and Sydney and Melbourne are each above 5 million. The infographic also shows labour market figures (14 million employed, 3.5 per cent unemployment) and how each generation's share of the workforce is projected to change by 2033.",
+  "about": {
+   "h09": [],
+   "y12": [
+    "Y1b.4",
+    "Y1b.2"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3A.5",
+    "3B.2"
+   ],
+   "y12": [
+    "Y1a.15",
+    "Y1b.1"
+   ],
+   "y11": [
+    "P3b.1"
+   ]
+  },
+  "issues": [
+   "growth",
+   "employment"
+  ],
+  "levers": [],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Total population",
+    "value": "26.3 million (growth about 1% a year)",
+    "asAt": "2023",
+    "issue": "growth",
+    "source": "McCrindle, ABS"
+   },
+   {
+    "label": "Median age",
+    "value": "38",
+    "asAt": "2023",
+    "issue": "growth",
+    "source": "McCrindle, ABS"
+   },
+   {
+    "label": "Total employed",
+    "value": "14 million (9.6 million full time, 4.1 million part time)",
+    "asAt": "2023",
+    "issue": "employment",
+    "source": "McCrindle, ABS"
+   },
+   {
+    "label": "Unemployment rate",
+    "value": "3.5%",
+    "asAt": "2023",
+    "issue": "employment",
+    "source": "McCrindle, ABS"
+   },
+   {
+    "label": "Population of Sydney",
+    "value": "5.296 million (Melbourne 5.029 million)",
+    "asAt": "2023",
+    "issue": "growth",
+    "source": "McCrindle, ABS"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Dependency ratio",
+    "def": "The number of people outside working age for every person of working age."
+   },
+   {
+    "term": "Participation rate",
+    "def": "The labour force as a share of the working-age population."
+   }
+  ],
+  "angle": "Use for demographic context: a growing but ageing population affects labour supply, participation and public spending.",
+  "questions": [
+   {
+    "q": "Identify one economic effect of an ageing population.",
+    "marks": 2
+   }
+  ],
+  "note": "Older item (published 2023): figures are as at that date; check for newer data before quoting. Only the year (2023) is given, so the date is set to 1 January. Dense infographic read from extracted text; check any specific number against the original before quoting. Secondary source drawing on ABS data.",
+  "file": {
+   "path": "files/2023-01/2023-01-01-mccrindle-australia-population-map.pdf",
+   "label": "Data sheet",
+   "pages": 2
+  },
+  "links": []
+ },
+ {
+  "id": "2025-08-04-division-296-microeconomic-reform",
+  "title": "Division 296 super tax as a microeconomic reform case study",
+  "date": "2025-08-04",
+  "type": "case",
+  "outlets": [
+   "Teacher notes (HSC Economics)"
+  ],
+  "summary": "A ready-made case study applying the five economic objectives to a targeted tax reform on very large super balances.",
+  "lede": "Division 296 applies an extra tax on earnings from super balances above $3 million, so earnings on that portion are taxed at 30 per cent instead of 15 per cent. The notes estimate it affects around 80,000 people (0.5 per cent of holders) and raises about $2.3 billion over four years, then assess its effects on growth, distribution, employment, price stability and the environment.",
+  "about": {
+   "h09": [
+    "4E.1",
+    "4C.2",
+    "4A.6"
+   ],
+   "y12": [
+    "Y2d.4",
+    "Y2b.10",
+    "Y2a.1"
+   ],
+   "y11": [
+    "P5b.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.3",
+    "4A.7",
+    "4I.5"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y2d.5"
+   ],
+   "y11": [
+    "P5b.6",
+    "P4a.3"
+   ]
+  },
+  "issues": [
+   "budget",
+   "inequality"
+  ],
+  "levers": [
+   "micro",
+   "fiscal"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Tax rate on earnings from super balances above $3 million",
+    "value": "30% (standard concessional rate 15%)",
+    "asAt": "From 1 July 2025",
+    "issue": "budget",
+    "source": "Teacher notes, Division 296"
+   },
+   {
+    "label": "People affected",
+    "value": "about 80,000 (0.5% of super holders)",
+    "asAt": "Notes citing Treasury 2023",
+    "issue": "inequality",
+    "source": "Teacher notes, Division 296"
+   },
+   {
+    "label": "Revenue expected over four years",
+    "value": "about $2.3 billion",
+    "asAt": "Treasury estimate as cited in the notes",
+    "issue": "budget",
+    "source": "Teacher notes citing Treasury"
+   },
+   {
+    "label": "Super tax concessions a year",
+    "value": "about $52 billion",
+    "asAt": "Grattan Institute estimate as cited",
+    "issue": "budget",
+    "source": "Teacher notes citing Grattan Institute"
+   },
+   {
+    "label": "Median super balance",
+    "value": "$150,000 men, $130,000 women",
+    "asAt": "APRA 2023 as cited",
+    "issue": "inequality",
+    "source": "Teacher notes citing APRA"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Division 296",
+    "def": "A tax on the earnings attributable to the part of a super balance above $3 million."
+   },
+   {
+    "term": "Vertical equity",
+    "def": "The principle that those with greater ability to pay should pay more tax."
+   },
+   {
+    "term": "Microeconomic reform",
+    "def": "Changes that alter incentives and the operation of markets to improve efficiency and equity."
+   }
+  ],
+  "angle": "Use the five-objective structure to build an evaluation paragraph on a targeted reform, noting the equity benefit and the limited revenue.",
+  "questions": [
+   {
+    "q": "Explain how a higher tax on earnings of very large super balances may affect the distribution of income and wealth.",
+    "marks": 4
+   },
+   {
+    "q": "Evaluate Division 296 as an example of microeconomic reform.",
+    "marks": 6
+   }
+  ],
+  "note": "Older item (published Aug 2025): figures are as at that date; check for newer data before quoting. No date in the document, so the file's modified date (4 Aug 2025) is used. Teacher study notes, not an official source: the dollar figures are quoted from Treasury, Grattan, ABS and APRA as the notes cite them, and the policy details are as at mid-2025 and may have changed, so check the current legislated design before quoting.",
+  "file": {
+   "path": "files/2025-08/2025-08-04-division-296-microeconomic-reform.pdf",
+   "label": "Teacher handout",
+   "pages": 2
+  },
+  "links": []
+ },
+ {
+  "id": "2026-05-21-ken-henry-tax-reform-speech-article",
+  "title": "Ken Henry's warning on tax reform, fairness and growth (student article)",
+  "date": "2026-05-21",
+  "type": "report",
+  "outlets": [
+   "Teacher article (HSC Economics)",
+   "Dr Ken Henry (speech)"
+  ],
+  "summary": "A long-form article on Australia's tax system that ties together incentives, intergenerational equity, housing, resource rents and carbon pricing for evaluation of tax policy.",
+  "lede": "The article summarises a May 2026 speech by Dr Ken Henry arguing the tax system is 'more obviously broken' than at the time of the Henry Review, with too much reliance on personal income tax and favoured treatment of capital gains and resource rents. It uses reform history from the 1985 Tax Summit, the GST and the carbon price to explain why sound economics often fails politically.",
+  "about": {
+   "h09": [
+    "4C.2",
+    "4E.1",
+    "4H.3"
+   ],
+   "y12": [
+    "Y2b.10",
+    "Y2d.6",
+    "Y2b.14"
+   ],
+   "y11": [
+    "P5b.6",
+    "P5b.7",
+    "P5b.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.3",
+    "3F.2",
+    "4G.2"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y1e.4",
+    "Y1e.5"
+   ],
+   "y11": [
+    "P2h.3",
+    "P2i.2"
+   ]
+  },
+  "issues": [
+   "budget",
+   "inequality",
+   "environment",
+   "productivity"
+  ],
+  "levers": [
+   "fiscal",
+   "micro",
+   "environmental"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Top marginal personal income tax rate before the 1985 reforms",
+    "value": "60%",
+    "asAt": "1985",
+    "issue": "budget",
+    "source": "Teacher article on Ken Henry speech"
+   },
+   {
+    "label": "GST rate when introduced",
+    "value": "10%",
+    "asAt": "1 July 2000",
+    "issue": "budget",
+    "source": "Teacher article on Ken Henry speech"
+   },
+   {
+    "label": "Proposed GST rate in Fightback! package",
+    "value": "15%",
+    "asAt": "Early 1990s",
+    "issue": "budget",
+    "source": "Teacher article on Ken Henry speech"
+   },
+   {
+    "label": "Capital gains tax discount for individuals",
+    "value": "50% (for assets held over 12 months)",
+    "asAt": "Since 1999",
+    "issue": "budget",
+    "source": "Teacher article on Ken Henry speech"
+   },
+   {
+    "label": "Safeguard Mechanism threshold",
+    "value": "facilities over 100,000 t CO2-e a year",
+    "asAt": "May 2026",
+    "issue": "environment",
+    "source": "Teacher article citing government sources"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Economic rent",
+    "def": "A return above the normal return needed to keep a resource or factor in use."
+   },
+   {
+    "term": "Incidence of a tax",
+    "def": "Who actually bears the burden of a tax, not just who pays it legally."
+   },
+   {
+    "term": "Intergenerational equity",
+    "def": "Fairness between current and future generations."
+   },
+   {
+    "term": "Excess burden",
+    "def": "The loss of efficiency caused by a tax beyond the revenue it raises."
+   }
+  ],
+  "angle": "Use the reform history to evaluate why tax changes face political limits, and the CGT and negative gearing discussion for equity and efficiency.",
+  "questions": [
+   {
+    "q": "Explain how the 50 per cent capital gains tax discount may affect investment decisions.",
+    "marks": 4
+   },
+   {
+    "q": "Evaluate the economic and political difficulties of tax reform in Australia.",
+    "marks": 6
+   }
+  ],
+  "extended": "Evaluate the effectiveness of tax reform as a tool for improving Australia's economic efficiency and equity.",
+  "note": "Teacher-prepared article summarising a speech (month stated as May 2026, day taken from the file's modified date); secondary source, so check the original speech before quoting Dr Henry directly. Policy details (for example Safeguard Mechanism) are as described in the article.",
+  "file": {
+   "path": "files/2026-05/2026-05-21-ken-henry-tax-reform-speech-article.pdf",
+   "label": "Teacher handout",
+   "pages": 10
+  },
+  "links": []
+ },
+ {
+  "id": "2026-06-19-reform-aftershocks-budget-rollback",
+  "title": "Reform aftershocks: how the 2026 federal Budget plans were rolled back",
+  "date": "2026-06-19",
+  "type": "case",
+  "outlets": [
+   "Australian Financial Review (source pack)",
+   "Teacher zine (HSC Economics)"
+  ],
+  "summary": "A case study of a microeconomic reform package that was softened under pressure, useful for weighing equity, dynamic efficiency and political feasibility.",
+  "lede": "The classroom zine traces changes to the 2026 Budget tax package: concessions for small business, start-ups and testamentary trusts cost just $475 million over four years against an $8.1 billion revenue target. It also covers NDIS savings, a $3.6 billion childcare wage-subsidy extension, migration, housing, energy prices and bank resilience.",
+  "about": {
+   "h09": [
+    "4E.1",
+    "4E.2",
+    "4C.2"
+   ],
+   "y12": [
+    "Y2d.2",
+    "Y2d.4",
+    "Y2d.6"
+   ],
+   "y11": [
+    "P5b.7",
+    "P5c.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4H.3",
+    "3E.3",
+    "4E.3"
+   ],
+   "y12": [
+    "Y2b.14",
+    "Y2d.3",
+    "Y1d.5"
+   ],
+   "y11": [
+    "P2i.5",
+    "P5a.4"
+   ]
+  },
+  "issues": [
+   "budget",
+   "housing",
+   "productivity"
+  ],
+  "levers": [
+   "micro",
+   "fiscal"
+  ],
+  "diagrams": [
+   "ds"
+  ],
+  "figures": [
+   {
+    "label": "Revenue target of the capital gains, negative gearing and trust changes",
+    "value": "$8.1 billion",
+    "asAt": "Over forward estimates (AFR)",
+    "issue": "budget",
+    "source": "AFR source pack"
+   },
+   {
+    "label": "Cost of concessions after the rollback",
+    "value": "$475 million",
+    "asAt": "Over four years",
+    "issue": "budget",
+    "source": "AFR source pack"
+   },
+   {
+    "label": "Projected NDIS savings",
+    "value": "$37.8 billion",
+    "asAt": "Over four years",
+    "issue": "budget",
+    "source": "Budget material cited in zine"
+   },
+   {
+    "label": "Childcare wage-subsidy extension",
+    "value": "$3.6 billion (60,000 workers)",
+    "asAt": "Added after the Budget",
+    "issue": "budget",
+    "source": "AFR source pack"
+   },
+   {
+    "label": "Active-asset CGT relief turnover threshold",
+    "value": "$10 million (was $2 million)",
+    "asAt": "2026 revised package",
+    "issue": "budget",
+    "source": "AFR source pack"
+   },
+   {
+    "label": "Start of CGT reform (discount replaced by CPI indexation)",
+    "value": "1 July 2027",
+    "asAt": "Budget material",
+    "issue": "budget",
+    "source": "2026 Budget as cited in zine"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Dynamic efficiency",
+    "def": "Improvement in productivity and innovation over time."
+   },
+   {
+    "term": "Microeconomic reform",
+    "def": "Policy changes that alter incentives and market operation to improve efficiency, productivity and competition."
+   },
+   {
+    "term": "Testamentary trust",
+    "def": "A trust set up under a will; the zine notes genuine ones were exempted from the 30% minimum tax floor."
+   }
+  ],
+  "angle": "Use the policy trade-off lens (equity, fiscal sustainability, dynamic efficiency) to evaluate any reform that is later softened.",
+  "questions": [
+   {
+    "q": "Explain how the CGT changes could affect incentives to invest in start-ups.",
+    "marks": 4
+   },
+   {
+    "q": "Evaluate the extent to which the 2026 Budget rollback improved the design of microeconomic reform.",
+    "marks": 6
+   }
+  ],
+  "note": "Classroom zine paraphrasing an AFR source pack and official Budget material; secondary source, check the Budget papers before quoting figures. No date in the document, so the file's modified date (19 Jun 2026) is used. Some policy details (for example the CGT start date) are as described in the zine.",
+  "file": {
+   "path": "files/2026-06/2026-06-19-reform-aftershocks-budget-rollback.pdf",
+   "label": "Teacher handout",
+   "pages": 15
+  },
+  "links": []
+ },
+ {
+  "id": "2025-08-04-age-pension-to-self-funded-retirement",
+  "title": "Age Pension means tests: from part pension to self-funded retirement",
+  "date": "2025-08-04",
+  "type": "stats",
+  "outlets": [
+   "Teacher handout (HSC Economics)"
+  ],
+  "summary": "The asset and income test thresholds that show how the Age Pension tapers and how the tax-transfer system targets support.",
+  "lede": "The Age Pension is means tested, with the test giving the lower payment applying. The handout sets out the 1 July 2025 thresholds and shows that pension falls gradually through the assets and income tests until a retiree is self-funded.",
+  "about": {
+   "h09": [
+    "3E.3"
+   ],
+   "y12": [
+    "Y2b.10"
+   ],
+   "y11": [
+    "P5c.1",
+    "P5a.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4C.2",
+    "4I.5"
+   ],
+   "y12": [
+    "Y1d.9",
+    "Y2b.11"
+   ],
+   "y11": [
+    "P4a.3"
+   ]
+  },
+  "issues": [
+   "budget",
+   "inequality"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Assets limit for full pension, single homeowner",
+    "value": "$321,500 (part pension to $704,500)",
+    "asAt": "1 July 2025",
+    "issue": "budget",
+    "source": "Teacher handout"
+   },
+   {
+    "label": "Assets limit for full pension, single non-homeowner",
+    "value": "$579,500 (part pension to $962,500)",
+    "asAt": "1 July 2025",
+    "issue": "budget",
+    "source": "Teacher handout"
+   },
+   {
+    "label": "Assets limit for full pension, homeowner couple",
+    "value": "$481,500 combined (part pension to $1,059,000)",
+    "asAt": "1 July 2025",
+    "issue": "budget",
+    "source": "Teacher handout"
+   },
+   {
+    "label": "Income limit for full pension, single",
+    "value": "$218 a fortnight (50c reduction per dollar above)",
+    "asAt": "1 July 2025",
+    "issue": "budget",
+    "source": "Teacher handout"
+   },
+   {
+    "label": "Pension reduction per $1,000 of assets over the limit",
+    "value": "about $3 a fortnight",
+    "asAt": "1 July 2025",
+    "issue": "budget",
+    "source": "Teacher handout"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Means test",
+    "def": "A test of income and assets used to decide eligibility for a payment."
+   },
+   {
+    "term": "Transfer payment",
+    "def": "A payment from government to households without a good or service being provided in return."
+   },
+   {
+    "term": "Taper",
+    "def": "A gradual reduction in a payment as income or assets rise."
+   }
+  ],
+  "angle": "Use as a worked example of vertical equity and targeting in transfer payments, including the gradual taper.",
+  "questions": [
+   {
+    "q": "Explain how a means test targets government spending.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Aug 2025): figures are as at that date; check for newer data before quoting. No date in the document, so the file's modified date (4 Aug 2025) is used. Teacher handout, not an official source: thresholds are as at 1 July 2025 and are indexed regularly, so check Services Australia before quoting.",
+  "file": {
+   "path": "files/2025-08/2025-08-04-age-pension-to-self-funded-retirement.pdf",
+   "label": "Teacher handout",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-04-02-rba-kent-ample-reserves-speech",
+  "title": "RBA speech: monetary policy implementation and the move to ample reserves",
+  "date": "2025-04-02",
+  "type": "report",
+  "outlets": [
+   "Reserve Bank of Australia"
+  ],
+  "summary": "An RBA explanation of how the cash rate target is actually implemented through banks' reserves, which sits behind every 'RBA lowers the cash rate' headline.",
+  "lede": "Assistant Governor Christopher Kent announced on 2 April 2025 that from 9 April the RBA would raise the price of new open market operation repos to 10 basis points above the cash rate target and add a seven-day term. He stressed these are operational changes, not a shift in the stance of monetary policy.",
+  "about": {
+   "h09": [
+    "4D.2"
+   ],
+   "y12": [
+    "Y2c.4"
+   ],
+   "y11": [
+    "P4a.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4D.1"
+   ],
+   "y12": [
+    "Y2c.1",
+    "Y2c.6"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "issues": [
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Reserves held by banks at the RBA",
+    "value": "about $240 billion (down about $110 billion in a year)",
+    "asAt": "Early 2025",
+    "issue": "rates",
+    "source": "RBA (Christopher Kent)"
+   },
+   {
+    "label": "Price of new open market operation repos",
+    "value": "10 basis points above the cash rate target (was 5)",
+    "asAt": "From 9 April 2025",
+    "issue": "rates",
+    "source": "RBA"
+   },
+   {
+    "label": "Activity at open market operations",
+    "value": "about $7 billion a week (was about $3 billion)",
+    "asAt": "2024 to early 2025",
+    "issue": "rates",
+    "source": "RBA"
+   },
+   {
+    "label": "Estimated underlying demand for reserves",
+    "value": "$100 billion to $200 billion",
+    "asAt": "As at April 2025",
+    "issue": "rates",
+    "source": "RBA"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Exchange Settlement balances (reserves)",
+    "def": "Funds banks hold at the RBA to settle payments."
+   },
+   {
+    "term": "Open market operations",
+    "def": "The RBA's buying and selling of securities (repos) to influence the cash rate."
+   },
+   {
+    "term": "Ample reserves",
+    "def": "A system in which the RBA supplies as many reserves as banks demand at a price near the cash rate target."
+   }
+  ],
+  "angle": "Use for the 'how' of implementation: the RBA sets the cash rate target and uses open market operations to keep the cash rate close to it.",
+  "questions": [
+   {
+    "q": "Outline how the RBA implements a change in the cash rate target.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Apr 2025): figures are as at that date; check for newer data before quoting. Technical speech by an RBA official; useful for the implementation of monetary policy rather than for the transmission to the economy. Primary source.",
+  "file": {
+   "path": "files/2025-04/2025-04-02-rba-kent-ample-reserves-speech.pdf",
+   "label": "Report",
+   "pages": 7
+  },
+  "links": []
+ },
+ {
+  "id": "2026-06-29-rba-additional-tools-framework-explainer",
+  "title": "RBA's new framework for additional monetary policy tools: illustrated explainer",
+  "date": "2026-06-29",
+  "type": "report",
+  "outlets": [
+   "Reserve Bank of Australia",
+   "Teacher explainer (HSC Economics)"
+  ],
+  "summary": "A summary of how the RBA now plans to use unconventional monetary policy, including its own verdict on the pandemic-era tools, to evaluate effectiveness and limitations.",
+  "lede": "Based on a 29 June 2026 speech and Q&A by Assistant Governor Christopher Kent, the explainer sets out four principles the RBA will apply before using additional tools and grades each of six tools. The pandemic term funding facility cost the RBA about $9 billion and bond purchases about $30 billion to date.",
+  "about": {
+   "h09": [
+    "4D.2",
+    "4D.1"
+   ],
+   "y12": [
+    "Y2c.6",
+    "Y2c.8",
+    "Y2c.7"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4H.1",
+    "4I.3"
+   ],
+   "y12": [
+    "Y2c.1",
+    "Y2c.3",
+    "Y2c.4"
+   ],
+   "y11": [
+    "P4a.2"
+   ]
+  },
+  "issues": [
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Cost to the RBA of the Term Funding Facility",
+    "value": "about $9 billion",
+    "asAt": "As rates rose after the pandemic",
+    "issue": "rates",
+    "source": "RBA (Kent), 29 June 2026"
+   },
+   {
+    "label": "Cost of the bond purchase program",
+    "value": "about $30 billion",
+    "asAt": "To date (June 2026)",
+    "issue": "rates",
+    "source": "RBA (Kent), 29 June 2026"
+   },
+   {
+    "label": "Bond purchases in the first phase of the pandemic",
+    "value": "about $40 billion",
+    "asAt": "March to May 2020",
+    "issue": "rates",
+    "source": "RBA (Kent), 29 June 2026"
+   },
+   {
+    "label": "Neutral cash rate mentioned by a questioner",
+    "value": "about 3.6%",
+    "asAt": "June 2026",
+    "issue": "rates",
+    "source": "RBA Q&A, 29 June 2026"
+   },
+   {
+    "label": "Typical recession rate cut mentioned in the Q&A",
+    "value": "about 400 basis points",
+    "asAt": "June 2026",
+    "issue": "rates",
+    "source": "RBA Q&A, 29 June 2026"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Unconventional monetary policy",
+    "def": "Tools used when the cash rate is at or near its lower bound, such as bond purchases, term funding and forward guidance."
+   },
+   {
+    "term": "Effective lower bound",
+    "def": "The level near zero below which cutting the policy rate is no longer effective."
+   },
+   {
+    "term": "Quantitative easing",
+    "def": "Central bank purchases of government bonds to lower longer-term interest rates."
+   }
+  ],
+  "angle": "The cash rate is the first-choice tool; use the verdicts on each additional tool to support a balanced evaluation of its limits.",
+  "questions": [
+   {
+    "q": "Explain why a central bank might use unconventional monetary policy.",
+    "marks": 3
+   },
+   {
+    "q": "Evaluate the effectiveness of unconventional monetary policy in Australia during the pandemic.",
+    "marks": 6
+   }
+  ],
+  "note": "Teacher explainer based on an RBA speech and Q&A; the date used is the speech date (29 June 2026) and the file was last modified in July 2026. Secondary source; the risk and effectiveness heat-map is the explainer's own illustrative synthesis, not an RBA table. Check the RBA transcript before quoting.",
+  "file": {
+   "path": "files/2026-06/2026-06-29-rba-additional-tools-framework-explainer.pdf",
+   "label": "Teacher handout",
+   "pages": 8
+  },
+  "links": []
+ },
+ {
+  "id": "2025-05-04-imf-gdp-growth-forecasts-2025",
+  "title": "IMF real GDP growth projections for 2025, January versus April",
+  "date": "2025-05-04",
+  "type": "graph",
+  "outlets": [
+   "Visual Capitalist",
+   "IMF"
+  ],
+  "summary": "A graph showing how quickly the IMF downgraded 2025 growth forecasts amid tariffs and uncertainty, with country-by-country changes to quote.",
+  "lede": "The IMF cut its 2025 world growth forecast from 3.3 per cent in January to 2.8 per cent in April, with the largest downgrades for Mexico (1.7 points) and the US (0.9 points). Russia was the only economy in the chart upgraded.",
+  "about": {
+   "h09": [
+    "1A.2",
+    "1A.8"
+   ],
+   "y12": [
+    "Y3e.3",
+    "Y3a.15"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1B.2",
+    "3D.3"
+   ],
+   "y12": [
+    "Y3b.4",
+    "Y3e.1"
+   ],
+   "y11": [
+    "P6a.1"
+   ]
+  },
+  "issues": [
+   "growth",
+   "global",
+   "trade"
+  ],
+  "levers": [
+   "trade",
+   "global"
+  ],
+  "diagrams": [
+   "chart",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "World real GDP growth forecast for 2025",
+    "value": "2.8% (January forecast 3.3%)",
+    "asAt": "IMF April 2025 WEO",
+    "issue": "growth",
+    "source": "IMF via Visual Capitalist"
+   },
+   {
+    "label": "US growth forecast for 2025",
+    "value": "1.8% (January 2.7%)",
+    "asAt": "IMF April 2025 WEO",
+    "issue": "growth",
+    "source": "IMF via Visual Capitalist"
+   },
+   {
+    "label": "China growth forecast for 2025",
+    "value": "4.0% (January 4.6%)",
+    "asAt": "IMF April 2025 WEO",
+    "issue": "growth",
+    "source": "IMF via Visual Capitalist"
+   },
+   {
+    "label": "Euro area growth forecast for 2025",
+    "value": "0.8% (January 1.0%)",
+    "asAt": "IMF April 2025 WEO",
+    "issue": "growth",
+    "source": "IMF via Visual Capitalist"
+   },
+   {
+    "label": "Japan growth forecast for 2025",
+    "value": "0.6% (January 1.1%)",
+    "asAt": "IMF April 2025 WEO",
+    "issue": "growth",
+    "source": "IMF via Visual Capitalist"
+   },
+   {
+    "label": "Mexico growth forecast for 2025",
+    "value": "-0.3% (January 1.4%)",
+    "asAt": "IMF April 2025 WEO",
+    "issue": "growth",
+    "source": "IMF via Visual Capitalist"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Gross world product",
+    "def": "The total output of all economies in the world."
+   },
+   {
+    "term": "Protectionism",
+    "def": "Policies such as tariffs that restrict imports to protect domestic industry."
+   }
+  ],
+  "angle": "Use as quick evidence of a global slowdown caused by tariffs and uncertainty, then link to Australia's exports.",
+  "questions": [
+   {
+    "q": "Using the graph, describe the change in the IMF's forecast for world growth.",
+    "marks": 2
+   },
+   {
+    "q": "Explain how tariffs could slow global economic growth.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Apr 2025): figures are as at that date; check for newer data before quoting. The IMF has since revised these forecasts. No publication date on the graphic, so the file's modified date (4 May 2025) is used. Visual Capitalist graphic of IMF World Economic Outlook projections (January and April 2025); secondary source.",
+  "file": {
+   "path": "files/2025-05/2025-05-04-imf-gdp-growth-forecasts-2025.pdf",
+   "label": "Original article",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-05-25-world-financial-markets-graphics",
+  "title": "World financial markets: centres, shareholders, exchanges and companies",
+  "date": "2025-05-25",
+  "type": "graph",
+  "outlets": [
+   "Visual Capitalist",
+   "Z/Yen Group",
+   "HelloSafe",
+   "World Federation of Exchanges",
+   "BestBrokers"
+  ],
+  "summary": "A set of five graphics on global financial centres, stock market participation and the biggest companies, with Australian comparisons to cite on financial markets.",
+  "lede": "The graphics show New York, London, Hong Kong and Singapore as the top four financial centres, with Melbourne ranked 28th and Sydney 30th. Australia has 37 per cent of its population holding shares, the third highest among the countries shown, and 143 billion-dollar public companies.",
+  "about": {
+   "h09": [
+    "1A.4",
+    "1A.5"
+   ],
+   "y12": [],
+   "y11": [
+    "P4b.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "1B.1"
+   ],
+   "y12": [
+    "Y3b.1",
+    "Y3b.3"
+   ],
+   "y11": [
+    "P4b.2",
+    "P4a.1"
+   ]
+  },
+  "issues": [
+   "global",
+   "investment"
+  ],
+  "levers": [],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Australia's stock market participation rate",
+    "value": "37% (9.6 million shareholders; US 55%)",
+    "asAt": "Latest 2023-24 figures, published April 2025",
+    "issue": "investment",
+    "source": "HelloSafe via Visual Capitalist"
+   },
+   {
+    "label": "Billion-dollar public companies, United States",
+    "value": "1,873",
+    "asAt": "2025",
+    "issue": "investment",
+    "source": "BestBrokers via Visual Capitalist"
+   },
+   {
+    "label": "Billion-dollar public companies, Australia",
+    "value": "143 (China 216)",
+    "asAt": "2025",
+    "issue": "investment",
+    "source": "BestBrokers via Visual Capitalist"
+   },
+   {
+    "label": "Global Financial Centres Index rank, Melbourne",
+    "value": "28 (Sydney 30)",
+    "asAt": "March 2025, GFCI 37",
+    "issue": "investment",
+    "source": "Z/Yen Group via Visual Capitalist"
+   },
+   {
+    "label": "Global Financial Centres Index rank, top three",
+    "value": "New York 1, London 2, Hong Kong 3",
+    "asAt": "March 2025, GFCI 37",
+    "issue": "investment",
+    "source": "Z/Yen Group via Visual Capitalist"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Equity market",
+    "def": "A market in which shares in companies are issued and traded."
+   },
+   {
+    "term": "Market capitalisation",
+    "def": "The total market value of a company's shares."
+   },
+   {
+    "term": "Financial centre",
+    "def": "A city where financial services and markets are concentrated."
+   }
+  ],
+  "angle": "Use the participation rate to show how widely Australians invest in equity markets, and the centres ranking for the global financial system.",
+  "questions": [
+   {
+    "q": "Identify two features of an equity market.",
+    "marks": 2
+   }
+  ],
+  "note": "Older item (published May 2025): figures are as at that date; check for newer data before quoting. Compilation of five Visual Capitalist graphics, with no single publication date, so the file's modified date (25 May 2025) is used. Secondary source; the stock exchange and most-valuable-company graphics were not quoted. Tagging is loose.",
+  "file": {
+   "path": "files/2025-05/2025-05-25-world-financial-markets-graphics.pdf",
+   "label": "Original article",
+   "pages": 5
+  },
+  "links": []
+ },
+ {
+  "id": "2025-03-25-budget-speech-2025-26",
+  "title": "Treasurer's 2025-26 Budget Speech",
+  "date": "2025-03-25",
+  "type": "report",
+  "outlets": [
+   "Treasury Ministers (Dr Jim Chalmers)"
+  ],
+  "summary": "The government's own account of the 2025-26 Budget, showing its forecasts, its fiscal stance and the cost-of-living package in the Treasurer's words.",
+  "lede": "Treasurer Jim Chalmers told Parliament on 25 March 2025 that inflation is down, unemployment is low and growth is picking up, with a $42 billion deficit forecast for 2025-26. The Budget includes $17 billion of new tax cuts, $1.8 billion more energy bill relief and a $33 billion plan to build 1.2 million homes.",
+  "about": {
+   "h09": [
+    "4C.1",
+    "4C.2"
+   ],
+   "y12": [
+    "Y2b.2",
+    "Y2b.3",
+    "Y2b.10"
+   ],
+   "y11": [
+    "P5a.4",
+    "P5c.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4A.7",
+    "4I.3",
+    "3A.7"
+   ],
+   "y12": [
+    "Y2b.9",
+    "Y2b.12",
+    "Y1a.15"
+   ],
+   "y11": [
+    "P5b.2"
+   ]
+  },
+  "issues": [
+   "budget",
+   "growth",
+   "inflation"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Forecast deficit next year",
+    "value": "$42 billion",
+    "asAt": "2025-26 Budget",
+    "issue": "budget",
+    "source": "Treasurer's Budget Speech"
+   },
+   {
+    "label": "Gross debt",
+    "value": "$940 billion",
+    "asAt": "This financial year, 2024-25",
+    "issue": "budget",
+    "source": "Treasurer's Budget Speech"
+   },
+   {
+    "label": "New tax cuts for taxpayers",
+    "value": "$17 billion",
+    "asAt": "2025-26 Budget",
+    "issue": "budget",
+    "source": "Treasurer's Budget Speech"
+   },
+   {
+    "label": "Forecast economic growth",
+    "value": "1.5% this year, rising to 2.5% in 2026-27",
+    "asAt": "2025-26 Budget",
+    "issue": "growth",
+    "source": "Treasurer's Budget Speech"
+   },
+   {
+    "label": "Projected peak unemployment rate",
+    "value": "4.25%",
+    "asAt": "2025-26 Budget",
+    "issue": "employment",
+    "source": "Treasurer's Budget Speech"
+   },
+   {
+    "label": "Treasury global growth forecast",
+    "value": "3.25% a year for 3 years",
+    "asAt": "2025-26 Budget",
+    "issue": "global",
+    "source": "Treasurer's Budget Speech"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Fiscal stance",
+    "def": "Whether the Budget is expansionary, contractionary or neutral."
+   },
+   {
+    "term": "Soft landing",
+    "def": "Bringing inflation down without a sharp rise in unemployment."
+   },
+   {
+    "term": "Cost-of-living relief",
+    "def": "Budget measures that reduce household costs, such as tax cuts and energy rebates."
+   }
+  ],
+  "angle": "Compare the government's framing with an independent analysis such as the Deloitte report.",
+  "questions": [
+   {
+    "q": "Outline one way the 2025-26 Budget supports household incomes.",
+    "marks": 2
+   },
+   {
+    "q": "Explain what a deficit of $42 billion suggests about the fiscal stance.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Mar 2025): figures are as at that date; check for newer data before quoting. Primary source from the Treasurer's website, but a political speech: figures are forecasts, and later Budgets have revised them.",
+  "file": {
+   "path": "files/2025-03/2025-03-25-budget-speech-2025-26.pdf",
+   "label": "Report",
+   "pages": 20
+  },
+  "links": [
+   {
+    "label": "Treasury Ministers, 2025-26 Budget Speech, 25 Mar 2025",
+    "url": "https://ministers.treasury.gov.au/ministers/jim-chalmers-2022/speeches/2025-26-budget-speech-parliament-house-canberra"
+   }
+  ]
+ },
+ {
+  "id": "2025-03-25-deloitte-federal-budget-2025-26-report",
+  "title": "Federal Budget 2025-26: A platform for the next election (Deloitte)",
+  "date": "2025-03-25",
+  "type": "report",
+  "outlets": [
+   "Deloitte Access Economics"
+  ],
+  "summary": "An independent professional analysis that gives the Budget deficits and debt in more than one measure, useful for a critical view of fiscal sustainability.",
+  "lede": "Deloitte says the underlying cash deficit is forecast at $27.6 billion (1.0 per cent of GDP) in 2024-25 but off-budget spending takes the headline deficit to $46.7 billion (1.7 per cent). It argues government spending has become the driver of growth and the medium-term outlook is getting worse, with net debt rising to 23.1 per cent of GDP in 2028-29.",
+  "about": {
+   "h09": [
+    "4C.1",
+    "4C.2",
+    "4C.3"
+   ],
+   "y12": [
+    "Y2b.2",
+    "Y2b.5",
+    "Y2b.12"
+   ],
+   "y11": [
+    "P5a.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4H.3",
+    "4A.7"
+   ],
+   "y12": [
+    "Y2b.14",
+    "Y2b.3"
+   ],
+   "y11": [
+    "P5b.2",
+    "P5c.2"
+   ]
+  },
+  "issues": [
+   "budget",
+   "growth"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Underlying cash deficit",
+    "value": "$27.6 billion (1.0% of GDP)",
+    "asAt": "2024-25 forecast",
+    "issue": "budget",
+    "source": "Deloitte Access Economics"
+   },
+   {
+    "label": "Headline cash deficit including off-budget spending",
+    "value": "$46.7 billion (1.7% of GDP)",
+    "asAt": "2024-25 forecast",
+    "issue": "budget",
+    "source": "Deloitte Access Economics"
+   },
+   {
+    "label": "Fiscal balance deficit",
+    "value": "$50.6 billion (1.8% of GDP)",
+    "asAt": "2024-25 forecast",
+    "issue": "budget",
+    "source": "Deloitte Access Economics"
+   },
+   {
+    "label": "Net debt",
+    "value": "23.1% of GDP (19.9% in 2024-25)",
+    "asAt": "2028-29 projection",
+    "issue": "budget",
+    "source": "Deloitte Access Economics"
+   },
+   {
+    "label": "Lowest marginal tax rate",
+    "value": "14% (was 16%)",
+    "asAt": "Over two years from 1 July 2026",
+    "issue": "budget",
+    "source": "Deloitte Access Economics"
+   },
+   {
+    "label": "Average-earner tax cut",
+    "value": "$536 a year (from 2027-28)",
+    "asAt": "Compared with 2024-25 tax settings",
+    "issue": "budget",
+    "source": "Deloitte Access Economics"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Underlying cash balance",
+    "def": "Receipts minus payments, excluding one-off items."
+   },
+   {
+    "term": "Off-budget spending",
+    "def": "Spending that is not counted in the headline Budget deficit."
+   },
+   {
+    "term": "Structural deficit",
+    "def": "The deficit that remains when the economy is at its normal level of activity."
+   }
+  ],
+  "angle": "Use to show that headline deficits can hide off-budget spending, then assess sustainability using the debt projections.",
+  "questions": [
+   {
+    "q": "Explain why the underlying cash deficit may understate the true fiscal position.",
+    "marks": 3
+   },
+   {
+    "q": "Assess the sustainability of the government's fiscal position using the data in the report.",
+    "marks": 6
+   }
+  ],
+  "note": "Older item (published Mar 2025): figures are as at that date; check for newer data before quoting. Analysis by a private firm, and the document includes opinion; forecasts have been revised by later Budget updates.",
+  "file": {
+   "path": "files/2025-03/2025-03-25-deloitte-federal-budget-2025-26-report.pdf",
+   "label": "Report",
+   "pages": 16
+  },
+  "links": []
+ }
+]

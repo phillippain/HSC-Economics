@@ -1,0 +1,2736 @@
+[
+ {
+  "id": "2026-05-18-obj-price-stability-two-page",
+  "title": "Price stability objective: two-page evaluation summary (May 2026)",
+  "date": "2026-05-18",
+  "added": "2026-10-25",
+  "type": "report",
+  "outlets": [
+   "Teacher resource",
+   "ABS",
+   "RBA"
+  ],
+  "summary": "A ready-made frame for judging whether policy has delivered price stability, with the March 2026 CPI and May 2026 cash rate in one place.",
+  "lede": "Defines price stability as low, stable inflation around 2-3%, then sets out the indicators (CPI, monthly CPI, trimmed mean, cash rate), the policies (monetary, fiscal, supply-side) and a judgement step. It concludes headline inflation of 4.6% is above the band while underlying inflation is within it, and the RBA raised the cash rate to 4.35% on 6 May 2026.",
+  "about": {
+   "h09": [
+    "4A.3",
+    "4D.3",
+    "3C.1",
+    "4I.3"
+   ],
+   "y12": [
+    "Y2a.1",
+    "Y1c.3",
+    "Y2c.2",
+    "Y2c.7"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3C.2",
+    "4D.1",
+    "4A.7",
+    "4H.1"
+   ],
+   "y12": [
+    "Y1c.8",
+    "Y2c.8",
+    "Y2g.2"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "rates"
+  ],
+  "levers": [
+   "monetary",
+   "fiscal"
+  ],
+  "diagrams": [
+   "adas"
+  ],
+  "figures": [
+   {
+    "label": "Headline CPI inflation",
+    "value": "4.6% (year to March 2026)",
+    "asAt": "March 2026",
+    "issue": "inflation",
+    "source": "ABS Consumer Price Index via teacher summary"
+   },
+   {
+    "label": "Monthly CPI change",
+    "value": "1.1%",
+    "asAt": "March 2026",
+    "issue": "inflation",
+    "source": "ABS Consumer Price Index via teacher summary"
+   },
+   {
+    "label": "Trimmed mean (underlying) inflation",
+    "value": "2.9% (within 2-3% band)",
+    "asAt": "March 2026",
+    "issue": "inflation",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "RBA cash rate target",
+    "value": "4.35% (+0.25 pp on 6 May 2026)",
+    "asAt": "6 May 2026",
+    "issue": "rates",
+    "source": "RBA Statement on Monetary Policy, May 2026"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Price stability",
+    "def": "Low, stable and predictable inflation, not zero inflation."
+   },
+   {
+    "term": "Trimmed mean",
+    "def": "An underlying inflation measure that strips out the most volatile price changes."
+   },
+   {
+    "term": "Policy lag",
+    "def": "The delay between a policy change and its full effect on the economy."
+   }
+  ],
+  "angle": "Use the identify-indicators-analyse-trade-offs-judge steps as the skeleton of any 'evaluate the success of policy in achieving price stability' response, quoting the headline versus underlying gap.",
+  "questions": [
+   {
+    "q": "Distinguish between headline and underlying inflation.",
+    "marks": 2
+   },
+   {
+    "q": "Explain one trade-off of using higher interest rates to achieve price stability.",
+    "marks": 3
+   }
+  ],
+  "note": "Teacher-made one-page summary; date taken from the file modified date (18 May 2026). The PDF is image-only, so figures were read by OCR from the infographic: check against the original before quoting. The sheet gives trimmed mean as 2.9% (March 2026); two other sheets in this set give 3.3%, so confirm which is correct.",
+  "file": {
+   "path": "files/2026-05/2026-05-18-obj-price-stability-two-page.pdf",
+   "label": "Teacher handout",
+   "pages": 2
+  },
+  "links": []
+ },
+ {
+  "id": "2026-05-18-obj-full-employment-two-page",
+  "title": "Full employment objective: two-page evaluation summary (May 2026)",
+  "date": "2026-05-18",
+  "added": "2026-10-25",
+  "type": "report",
+  "outlets": [
+   "Teacher resource",
+   "ABS"
+  ],
+  "summary": "Shows what 'full employment' means in the HSC (low unemployment and underemployment, high participation) and the latest labour-market figures to test it against.",
+  "lede": "Defines full employment, lists the key indicators (unemployment rate, participation rate, employed persons, job vacancies) and the fiscal, monetary and supply-side policies used, then walks through analysis, trade-offs and a verdict. It quotes an unemployment rate of 4.3%, participation of 66.8% and 214,800 job vacancies, and puts the long-run average unemployment rate at 6.1%.",
+  "about": {
+   "h09": [
+    "4A.2",
+    "3B.1",
+    "3B.2",
+    "4I.2"
+   ],
+   "y12": [
+    "Y2a.1",
+    "Y1b.3",
+    "Y1b.7",
+    "Y1b.9"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3B.4",
+    "3B.3",
+    "4F.5",
+    "4A.7"
+   ],
+   "y12": [
+    "Y1b.8",
+    "Y1b.11",
+    "Y2e.6"
+   ],
+   "y11": [
+    "P1e.5"
+   ]
+  },
+  "issues": [
+   "employment"
+  ],
+  "levers": [
+   "fiscal",
+   "monetary",
+   "labour"
+  ],
+  "diagrams": [
+   "phillips"
+  ],
+  "figures": [
+   {
+    "label": "Unemployment rate",
+    "value": "4.3%",
+    "asAt": "latest on sheet (sheet compares with Dec 2025)",
+    "issue": "employment",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Participation rate",
+    "value": "66.8% (up from 66.6% in Dec 2025)",
+    "asAt": "latest on sheet",
+    "issue": "employment",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Employed persons",
+    "value": "14.77 million (up 31,100)",
+    "asAt": "latest on sheet",
+    "issue": "employment",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Job vacancies",
+    "value": "214,800 (down from 222,800 in Dec 2025)",
+    "asAt": "latest on sheet",
+    "issue": "employment",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Long-run average unemployment rate",
+    "value": "6.1%",
+    "asAt": "1978-2026",
+    "issue": "employment",
+    "source": "ABS via teacher summary"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Full employment",
+    "def": "Everyone who wants a job and is able to work can find one; includes low underemployment."
+   },
+   {
+    "term": "Participation rate",
+    "def": "Share of the working-age population in the labour force."
+   },
+   {
+    "term": "Underemployment",
+    "def": "Employed people who want more hours."
+   }
+  ],
+  "angle": "Quote the unemployment rate together with participation and vacancies, then use the sheet's trade-off prompts (expansionary policy risks inflation) to evaluate.",
+  "questions": [
+   {
+    "q": "Outline what is meant by full employment.",
+    "marks": 2
+   },
+   {
+    "q": "Explain why a low unemployment rate alone may not show full employment.",
+    "marks": 3
+   }
+  ],
+  "note": "Teacher-made one-page summary; date taken from the file modified date (18 May 2026). The PDF is image-only, so figures were read by OCR from the infographic: check against the original before quoting. Dates for the labour-market figures are not clear in the OCR; the sheet compares with Dec 2025.",
+  "file": {
+   "path": "files/2026-05/2026-05-18-obj-full-employment-two-page.pdf",
+   "label": "Teacher handout",
+   "pages": 2
+  },
+  "links": []
+ },
+ {
+  "id": "2026-05-18-obj-environmental-sustainability",
+  "title": "Environmental sustainability objective: checklist and indicators (2026)",
+  "date": "2026-05-18",
+  "added": "2026-10-25",
+  "type": "report",
+  "outlets": [
+   "Teacher resource"
+  ],
+  "summary": "A one-page checklist for evaluating policy against the environmental sustainability objective, with the renewables share and the 2035 emissions target.",
+  "lede": "Defines environmental sustainability as growth that protects the environment and future living standards, lists policy examples (emissions-reduction policy, the Safeguard Mechanism, the energy transition) and indicators, and rates progress 'improving but incomplete'. It notes renewables were 36% of Australia's electricity in 2024 and that emissions fell in the year to June 2025 but more cuts are needed for the 2035 target of 62-70% below 2005.",
+  "about": {
+   "h09": [
+    "4A.5",
+    "3F.1",
+    "4I.6",
+    "4G.3"
+   ],
+   "y12": [
+    "Y2f.6",
+    "Y2f.7",
+    "Y1e.3",
+    "Y1e.8"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3F.4",
+    "4G.2",
+    "4A.7"
+   ],
+   "y12": [
+    "Y2f.3",
+    "Y2g.2"
+   ],
+   "y11": [
+    "P2h.3"
+   ]
+  },
+  "issues": [
+   "environment"
+  ],
+  "levers": [
+   "environmental"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Renewables share of Australia's electricity",
+    "value": "36%",
+    "asAt": "2024",
+    "issue": "environment",
+    "source": "Teacher summary (image-only PDF)"
+   },
+   {
+    "label": "Australia's 2035 emissions target",
+    "value": "62-70% below 2005 levels",
+    "asAt": "2035 target",
+    "issue": "environment",
+    "source": "Teacher summary (image-only PDF)"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Ecologically sustainable development",
+    "def": "Development that meets current needs without harming future generations' capacity to meet theirs."
+   },
+   {
+    "term": "Safeguard Mechanism",
+    "def": "Policy that limits emissions from Australia's largest industrial facilities."
+   }
+  ],
+  "angle": "Use the define-policy-data-mechanism-lags-judgement sequence, citing the renewables share and target gap to argue policy is partly successful.",
+  "questions": [
+   {
+    "q": "Explain how a market-based instrument can improve environmental sustainability.",
+    "marks": 3
+   }
+  ],
+  "note": "Teacher-made one-page summary; date taken from the file modified date (18 May 2026). The PDF is image-only, so figures were read by OCR from the infographic: check against the original before quoting. The infographic is partly illegible in OCR: only the renewables share, the emissions trend and the 2035 target were read with confidence.",
+  "file": {
+   "path": "files/2026-05/2026-05-18-obj-environmental-sustainability.pdf",
+   "label": "Teacher handout",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2026-05-18-obj-evaluate-policy-aus-indicators",
+  "title": "Evaluating policy success in Australia: indicators and trends (2026)",
+  "date": "2026-05-18",
+  "added": "2026-10-25",
+  "type": "report",
+  "outlets": [
+   "Teacher resource"
+  ],
+  "summary": "A quick reference of what success looks like for each economic objective, with benchmark ranges for inflation, unemployment and growth.",
+  "lede": "Sets out Australia's key economic objectives, the indicators and sources to use (ABS, RBA, Treasury) and a method of comparing before and after while controlling for global shocks. It gives benchmarks of inflation 2-3%, unemployment around 4-4.5% or lower and trend GDP growth of 2-3%, with a recent example of policy trade-offs in 2022-24.",
+  "about": {
+   "h09": [
+    "4A.1",
+    "4A.2",
+    "4A.3",
+    "4A.7",
+    "4I.1"
+   ],
+   "y12": [
+    "Y2a.1",
+    "Y2a.2",
+    "Y2g.2"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "S4.8",
+    "4H.2"
+   ],
+   "y12": [
+    "Y2g.1"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "growth",
+   "inflation",
+   "employment"
+  ],
+  "levers": [
+   "fiscal",
+   "monetary"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Inflation benchmark for success",
+    "value": "2-3%",
+    "asAt": "RBA target band",
+    "issue": "inflation",
+    "source": "Teacher summary"
+   },
+   {
+    "label": "Unemployment benchmark for success",
+    "value": "around 4-4.5% or lower",
+    "asAt": "benchmark",
+    "issue": "employment",
+    "source": "Teacher summary"
+   },
+   {
+    "label": "GDP growth benchmark for success",
+    "value": "2-3% trend",
+    "asAt": "benchmark",
+    "issue": "growth",
+    "source": "Teacher summary"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Trade-off",
+    "def": "Gaining on one objective at a cost to another, such as lower inflation but higher unemployment."
+   },
+   {
+    "term": "Unintended effect",
+    "def": "A side effect of policy that was not the aim."
+   }
+  ],
+  "angle": "Use as the evaluation checklist: match the policy to an objective, track indicators before and after, assess trade-offs, conclude successful, partially successful or not yet.",
+  "questions": [
+   {
+    "q": "Outline two limitations of using a single indicator to judge policy success.",
+    "marks": 2
+   }
+  ],
+  "note": "Teacher-made one-page summary; date taken from the file modified date (18 May 2026). The PDF is image-only, so figures were read by OCR from the infographic: check against the original before quoting. Contains benchmarks rather than measured data; the 2022-24 example numbers were not legible enough to quote.",
+  "file": {
+   "path": "files/2026-05/2026-05-18-obj-evaluate-policy-aus-indicators.pdf",
+   "label": "Teacher handout",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2026-05-18-obj-external-stability-distribution",
+  "title": "External stability and distribution of income: apply the test (Dec 2025 data)",
+  "date": "2026-05-18",
+  "added": "2026-10-25",
+  "type": "report",
+  "outlets": [
+   "Teacher resource",
+   "ABS"
+  ],
+  "summary": "Puts a current account deficit and net foreign liabilities figure next to the income Gini to judge two objectives that often get less attention.",
+  "lede": "Defines external stability (manageable external accounts and foreign liabilities) and distribution of income (fairness), with policy examples, indicators and checklists. It reports a current account deficit of $21.1b and net international investment liabilities of $638.5b at December 2025, an income Gini of 0.307, and rates both objectives manageable/mixed or partial.",
+  "about": {
+   "h09": [
+    "4A.4",
+    "4A.6",
+    "3D.1",
+    "3E.1",
+    "4I.4",
+    "4I.5"
+   ],
+   "y12": [
+    "Y2a.1",
+    "Y1d.3"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3D.2",
+    "3E.3",
+    "4A.7"
+   ],
+   "y12": [
+    "Y1d.9",
+    "Y3c.5"
+   ],
+   "y11": [
+    "P6d.1"
+   ]
+  },
+  "issues": [
+   "trade",
+   "inequality"
+  ],
+  "levers": [
+   "fiscal",
+   "monetary"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Current account deficit",
+    "value": "$21.1b",
+    "asAt": "December quarter 2025",
+    "issue": "trade",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Net international investment liabilities",
+    "value": "$638.5b",
+    "asAt": "December 2025",
+    "issue": "trade",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Gini coefficient, disposable income",
+    "value": "0.307",
+    "asAt": "2022-23",
+    "issue": "inequality",
+    "source": "ABS via teacher summary"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Current account deficit",
+    "def": "Excess of debits over credits on goods, services, income and transfers."
+   },
+   {
+    "term": "Gini coefficient",
+    "def": "Measure of income inequality from 0 (equal) to 1 (unequal)."
+   }
+  ],
+  "angle": "Use the checklists to evaluate: CAD size and trend, foreign liabilities, exchange rate; Gini, real incomes and cost of living.",
+  "questions": [
+   {
+    "q": "Explain why a current account deficit is not necessarily a problem for external stability.",
+    "marks": 3
+   }
+  ],
+  "note": "Teacher-made one-page summary; date taken from the file modified date (18 May 2026). The PDF is image-only, so figures were read by OCR from the infographic: check against the original before quoting. Some indicator labels are partly unclear in OCR (the cumulative inequality snapshot was not read).",
+  "file": {
+   "path": "files/2026-05/2026-05-18-obj-external-stability-distribution.pdf",
+   "label": "Teacher handout",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2026-05-18-obj-evaluate-policy-2025-data",
+  "title": "How to evaluate policy success: 2025 data version",
+  "date": "2026-05-18",
+  "added": "2026-10-25",
+  "type": "report",
+  "outlets": [
+   "Teacher resource",
+   "ABS"
+  ],
+  "summary": "A step-by-step policy evaluation framework with 2025 indicator charts (inflation, GDP, unemployment, wages, productivity), useful as a worked structure for essays.",
+  "lede": "Walks through identifying the policy and objective, understanding the mechanism, choosing indicators, measuring and comparing, assessing trade-offs and making a judgement. It shows policy examples for price stability, full employment and sustained growth and a row of five key indicators with 2025 values such as unemployment of 4.1% in March 2025.",
+  "about": {
+   "h09": [
+    "4A.1",
+    "4A.2",
+    "4A.3",
+    "4A.7",
+    "4I.1"
+   ],
+   "y12": [
+    "Y2a.1",
+    "Y2a.2",
+    "Y2g.2"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4B.1",
+    "4D.1",
+    "4H.1",
+    "S4.8"
+   ],
+   "y12": [
+    "Y2g.1",
+    "Y1a.16"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "growth",
+   "inflation",
+   "employment",
+   "productivity"
+  ],
+  "levers": [
+   "fiscal",
+   "monetary",
+   "micro",
+   "labour"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Unemployment rate",
+    "value": "4.1%",
+    "asAt": "March 2025",
+    "issue": "employment",
+    "source": "ABS via teacher summary"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Leading, lagging and coincident indicators",
+    "def": "Indicators that turn before, after or with the business cycle."
+   },
+   {
+    "term": "Policy mechanism",
+    "def": "The chain through which a policy is meant to change the economy."
+   }
+  ],
+  "angle": "Use the six-step structure to organise an evaluation, then swap in current data.",
+  "questions": [
+   {
+    "q": "Describe how real GDP growth can be used to judge the success of fiscal policy.",
+    "marks": 3
+   }
+  ],
+  "note": "Teacher-made one-page summary; date taken from the file modified date (18 May 2026). The PDF is image-only, so figures were read by OCR from the infographic: check against the original before quoting. This version carries 2025 data (March 2025 reference periods), so the numbers are older than the 2026 sheets; only the unemployment rate was read reliably.",
+  "file": {
+   "path": "files/2026-05/2026-05-18-obj-evaluate-policy-2025-data.pdf",
+   "label": "Teacher handout",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2026-05-18-obj-hsc-objectives-snapshot",
+  "title": "2009 syllabus economic objectives: where Australia stands (2026 snapshot)",
+  "date": "2026-05-18",
+  "added": "2026-10-25",
+  "type": "stats",
+  "outlets": [
+   "Teacher resource",
+   "ABS"
+  ],
+  "summary": "A one-page dashboard of every HSC economic objective with its headline indicator, handy for quoting current statistics in policy-evaluation answers.",
+  "lede": "Lists the six objectives (growth and quality of life, full employment, price stability, external stability, distribution of income, environmental sustainability) with indicators: CPI 4.6% (March 2026), unemployment 4.3%, real GDP up 2.6% (Dec 2025), a $21.1b current account deficit, an income Gini of 0.307 and renewables at 36% of electricity. It concludes a policy is successful if it moves the economy closer to its objectives.",
+  "about": {
+   "h09": [
+    "4A.1",
+    "4A.2",
+    "4A.3",
+    "4A.4",
+    "4A.5",
+    "4A.6"
+   ],
+   "y12": [
+    "Y2a.1"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4A.7",
+    "4I.1",
+    "4I.2",
+    "4I.3"
+   ],
+   "y12": [
+    "Y2a.2",
+    "Y2g.2"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "growth",
+   "inflation",
+   "employment",
+   "trade",
+   "inequality",
+   "environment",
+   "productivity"
+  ],
+  "levers": [
+   "fiscal",
+   "monetary"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Headline CPI inflation",
+    "value": "4.6% (year to March 2026)",
+    "asAt": "March 2026",
+    "issue": "inflation",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Real GDP growth",
+    "value": "2.6% (year)",
+    "asAt": "December 2025",
+    "issue": "growth",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Unemployment rate",
+    "value": "4.3% (underemployment 5.9%)",
+    "asAt": "latest on sheet",
+    "issue": "employment",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Participation rate",
+    "value": "66.8%",
+    "asAt": "latest on sheet",
+    "issue": "employment",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Current account deficit",
+    "value": "$21.1b",
+    "asAt": "December 2025",
+    "issue": "trade",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Labour productivity growth",
+    "value": "0.7%",
+    "asAt": "2024-25",
+    "issue": "productivity",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Renewables share of electricity",
+    "value": "36%",
+    "asAt": "2024",
+    "issue": "environment",
+    "source": "Teacher summary"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Economic objective",
+    "def": "A goal of macroeconomic management such as full employment or price stability."
+   },
+   {
+    "term": "Labour productivity",
+    "def": "Output per hour worked."
+   }
+  ],
+  "angle": "Quote one indicator per objective, then judge whether the economy is moving closer to or further from each.",
+  "questions": [
+   {
+    "q": "Identify two economic objectives and a statistic that measures each.",
+    "marks": 3
+   }
+  ],
+  "note": "Teacher-made one-page summary; date taken from the file modified date (18 May 2026). The PDF is image-only, so figures were read by OCR from the infographic: check against the original before quoting. The trimmed mean reads 3.3% here but 2.9% on the Price Stability sheets; check before quoting.",
+  "file": {
+   "path": "files/2026-05/2026-05-18-obj-hsc-objectives-snapshot.pdf",
+   "label": "Teacher handout",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2026-05-18-obj-policy-evaluation-toolkit",
+  "title": "Policy evaluation toolkit: objectives, tools, indicators, lags and verdicts",
+  "date": "2026-05-18",
+  "added": "2026-10-25",
+  "type": "report",
+  "outlets": [
+   "Teacher resource"
+  ],
+  "summary": "A single-page toolkit linking each objective to the policy tools, indicators, time lags and verdict categories used in HSC evaluation answers.",
+  "lede": "Maps the six objectives to monetary, fiscal and microeconomic policy, lists indicators for each, offers three ways to compare (previous years, trend, target) and gives an HSC answer recipe from defining the objective to a judgement. It also covers short-run versus long-run effects, policy lags and common trade-offs, with verdicts of successful, partial/mixed or not yet successful.",
+  "about": {
+   "h09": [
+    "4A.1",
+    "4A.7",
+    "4B.1",
+    "4D.1",
+    "4H.1",
+    "4I.1"
+   ],
+   "y12": [
+    "Y2a.1",
+    "Y2a.2",
+    "Y2g.1",
+    "Y2g.2"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4C.2",
+    "4E.1",
+    "S4.5",
+    "S4.11"
+   ],
+   "y12": [
+    "Y2b.14",
+    "Y2c.8",
+    "Y2d.6"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "growth",
+   "inflation",
+   "employment",
+   "budget"
+  ],
+  "levers": [
+   "fiscal",
+   "monetary",
+   "micro"
+  ],
+  "diagrams": [
+   "adas"
+  ],
+  "figures": [],
+  "terms": [
+   {
+    "term": "Policy lag",
+    "def": "Delay between a problem arising, policy action and its effect."
+   },
+   {
+    "term": "Policy mix",
+    "def": "The combination of fiscal, monetary and microeconomic policies used together."
+   },
+   {
+    "term": "Trade-off",
+    "def": "Improving one objective at the cost of another."
+   }
+  ],
+  "angle": "Use the six-step answer recipe and the verdict scale to structure any evaluation or policy-mix question.",
+  "questions": [
+   {
+    "q": "Explain why policy lags limit the effectiveness of macroeconomic policy.",
+    "marks": 4
+   }
+  ],
+  "note": "Teacher-made one-page summary; date taken from the file modified date (18 May 2026). The PDF is image-only, so figures were read by OCR from the infographic: check against the original before quoting. No statistics on this sheet, so no figures are recorded.",
+  "file": {
+   "path": "files/2026-05/2026-05-18-obj-policy-evaluation-toolkit.pdf",
+   "label": "Teacher handout",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2026-05-18-obj-price-stability-one-page",
+  "title": "Price stability objective: one-page summary (May 2026)",
+  "date": "2026-05-18",
+  "added": "2026-10-25",
+  "type": "stats",
+  "outlets": [
+   "Teacher resource",
+   "ABS",
+   "RBA"
+  ],
+  "summary": "The headline CPI, monthly CPI, trimmed mean and cash rate on one page, with the judgement that headline inflation is above the band but underlying is within it.",
+  "lede": "One-page version of the price stability sheet. It shows CPI up 4.6% over the year to March 2026, a monthly rise of 1.1%, trimmed mean inflation of 2.9% and a cash rate of 4.35% after the RBA's +0.25 pp move on 6 May 2026, and notes the challenge of reducing inflation without sharply raising unemployment.",
+  "about": {
+   "h09": [
+    "4A.3",
+    "3C.1",
+    "3C.2",
+    "4D.3",
+    "4I.3"
+   ],
+   "y12": [
+    "Y1c.2",
+    "Y1c.3",
+    "Y2c.2",
+    "Y2c.7"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4D.2",
+    "4A.7",
+    "4H.1"
+   ],
+   "y12": [
+    "Y1c.8",
+    "Y2c.4",
+    "Y2c.8"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "rates"
+  ],
+  "levers": [
+   "monetary",
+   "fiscal"
+  ],
+  "diagrams": [
+   "adas"
+  ],
+  "figures": [
+   {
+    "label": "Headline CPI inflation",
+    "value": "4.6% (year-ended)",
+    "asAt": "March 2026",
+    "issue": "inflation",
+    "source": "ABS Consumer Price Index, March 2026"
+   },
+   {
+    "label": "Monthly CPI change",
+    "value": "1.1%",
+    "asAt": "March 2026",
+    "issue": "inflation",
+    "source": "ABS Consumer Price Index, March 2026"
+   },
+   {
+    "label": "Trimmed mean inflation",
+    "value": "2.9% (within 2-3% target band)",
+    "asAt": "March 2026",
+    "issue": "inflation",
+    "source": "ABS Consumer Price Index, March 2026"
+   },
+   {
+    "label": "RBA cash rate target",
+    "value": "4.35% (+0.25 pp on 6 May 2026)",
+    "asAt": "6 May 2026",
+    "issue": "rates",
+    "source": "RBA Statement on Monetary Policy, May 2026"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Headline inflation",
+    "def": "The CPI change over the past 12 months."
+   },
+   {
+    "term": "Trimmed mean",
+    "def": "Underlying inflation after removing the most volatile price changes."
+   },
+   {
+    "term": "Forward guidance",
+    "def": "RBA communication about the likely future path of rates."
+   }
+  ],
+  "angle": "Cite both headline and underlying inflation and the 4.35% cash rate to argue policy is only partly successful in achieving price stability.",
+  "questions": [
+   {
+    "q": "Explain why the RBA looks at underlying inflation as well as headline inflation.",
+    "marks": 3
+   }
+  ],
+  "note": "Teacher-made one-page summary; date taken from the file modified date (18 May 2026). The PDF is image-only, so figures were read by OCR from the infographic: check against the original before quoting. Duplicate of the two-page price stability summary in condensed form; trimmed mean 2.9% here conflicts with 3.3% on other sheets.",
+  "file": {
+   "path": "files/2026-05/2026-05-18-obj-price-stability-one-page.pdf",
+   "label": "Teacher handout",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2026-05-18-obj-price-stability-employment-growth",
+  "title": "Price stability, full employment and growth: has the policy mix worked? (2026)",
+  "date": "2026-05-18",
+  "added": "2026-10-25",
+  "type": "report",
+  "outlets": [
+   "Teacher resource",
+   "ABS",
+   "RBA"
+  ],
+  "summary": "A worked test of the current policy mix against three objectives, concluding policy is strongest on employment, weaker on inflation and mixed on growth.",
+  "lede": "Takes tighter monetary policy (cash rate 4.35% in May 2026) and tests it against inflation (CPI 4.6%), labour-market data (underemployment 5.9%, participation 66.8%) and growth (real GDP up 2.6%, GDP per capita up 0.9%, labour productivity up 0.7% in 2024-25). The bottom line is partial success on inflation, broadly successful on employment and mixed on growth and productivity.",
+  "about": {
+   "h09": [
+    "4A.7",
+    "4A.3",
+    "4A.2",
+    "4I.3",
+    "4I.2",
+    "4D.3"
+   ],
+   "y12": [
+    "Y2a.2",
+    "Y2c.7",
+    "Y2g.2"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4A.1",
+    "4I.1",
+    "S4.5"
+   ],
+   "y12": [
+    "Y2g.1",
+    "Y1a.14",
+    "Y1a.15"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "inflation",
+   "employment",
+   "growth",
+   "productivity",
+   "rates"
+  ],
+  "levers": [
+   "monetary",
+   "fiscal"
+  ],
+  "diagrams": [
+   "adas",
+   "phillips"
+  ],
+  "figures": [
+   {
+    "label": "RBA cash rate",
+    "value": "4.35%",
+    "asAt": "May 2026",
+    "issue": "rates",
+    "source": "RBA via teacher summary"
+   },
+   {
+    "label": "Headline CPI inflation",
+    "value": "4.6% (year to March 2026)",
+    "asAt": "March 2026",
+    "issue": "inflation",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Underemployment rate",
+    "value": "5.9%",
+    "asAt": "latest on sheet",
+    "issue": "employment",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Participation rate",
+    "value": "66.8%",
+    "asAt": "latest on sheet",
+    "issue": "employment",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Real GDP growth",
+    "value": "2.6% (GDP per capita +0.9%)",
+    "asAt": "December 2025",
+    "issue": "growth",
+    "source": "ABS via teacher summary"
+   },
+   {
+    "label": "Labour productivity growth",
+    "value": "0.7%",
+    "asAt": "2024-25",
+    "issue": "productivity",
+    "source": "ABS via teacher summary"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Policy mix",
+    "def": "The combination of macroeconomic and microeconomic policies used together."
+   },
+   {
+    "term": "Trade-off",
+    "def": "Gaining on one objective at the cost of another."
+   },
+   {
+    "term": "GDP per capita",
+    "def": "Real GDP divided by population, a rough guide to average living standards."
+   }
+  ],
+  "angle": "Model answer for the trade-off 'reducing inflation without causing a sharp rise in unemployment': cite the cash rate, CPI, labour market and productivity data.",
+  "questions": [
+   {
+    "q": "Explain how tighter monetary policy could conflict with the objective of full employment.",
+    "marks": 4
+   }
+  ],
+  "note": "Teacher-made one-page summary; date taken from the file modified date (18 May 2026). The PDF is image-only, so figures were read by OCR from the infographic: check against the original before quoting. The trimmed mean appears as 3.3% on this sheet but 2.9% on the Price Stability sheets.",
+  "file": {
+   "path": "files/2026-05/2026-05-18-obj-price-stability-employment-growth.pdf",
+   "label": "Teacher handout",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2026-08-23-news-digest-aug-2026",
+  "title": "Economics News Digest No. 1: the economy in three weeks, 2-23 August 2026",
+  "date": "2026-08-23",
+  "dateText": "2-23 Aug 2026",
+  "added": "2026-10-25",
+  "type": "report",
+  "outlets": [
+   "HSC Economics Course News Digest",
+   "ABS",
+   "RBA",
+   "Reuters"
+  ],
+  "summary": "A supply-shock case study: oil at US$95, headline inflation of 3.8% and trimmed mean of 3.6%, unemployment of 4.5% and a cash rate held at 4.35%.",
+  "lede": "An 18-page teacher-compiled digest of 2-23 August 2026 tagged to all four HSC topics. It traces a partial Strait of Hormuz blockade to cost-push inflation, a hawkish RBA hold at 4.35% on 11 August, unemployment rising to 4.5%, falling real wages, a record $27.1bn current account deficit and a scorecard of the four economic objectives, with an exam toolkit page.",
+  "about": {
+   "h09": [
+    "3C.3",
+    "3C.2",
+    "4D.2",
+    "4A.7",
+    "2B.3",
+    "3B.2"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y1c.5",
+    "Y1c.6",
+    "Y2c.4",
+    "Y2a.2",
+    "Y1b.12"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3A.4",
+    "3D.2",
+    "1A.8",
+    "4C.1",
+    "4H.2",
+    "2C.3",
+    "1D.9"
+   ],
+   "y12": [
+    "Y1a.7",
+    "Y1a.16",
+    "Y3e.3",
+    "Y2b.2",
+    "Y3c.6",
+    "Y1c.3"
+   ],
+   "y11": [
+    "P1e.4"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "employment",
+   "rates",
+   "growth",
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "monetary",
+   "fiscal",
+   "micro"
+  ],
+  "diagrams": [
+   "adas",
+   "phillips"
+  ],
+  "figures": [
+   {
+    "label": "RBA cash rate",
+    "value": "4.35% (held 11 Aug after three 2026 rises)",
+    "asAt": "11 Aug 2026",
+    "issue": "rates",
+    "source": "RBA"
+   },
+   {
+    "label": "Headline CPI inflation",
+    "value": "3.8% (down from 4.0% in May)",
+    "asAt": "Year to June 2026",
+    "issue": "inflation",
+    "source": "ABS (released 29 Jul)"
+   },
+   {
+    "label": "Trimmed mean inflation",
+    "value": "3.6% (unchanged on May)",
+    "asAt": "Year to June 2026",
+    "issue": "inflation",
+    "source": "ABS (released 29 Jul)"
+   },
+   {
+    "label": "Unemployment rate",
+    "value": "4.5% (underemployment 6.4%)",
+    "asAt": "July 2026",
+    "issue": "employment",
+    "source": "ABS (released 20 Aug)"
+   },
+   {
+    "label": "Wage Price Index growth",
+    "value": "3.2% (real wages down about 0.6%)",
+    "asAt": "Year to June quarter 2026",
+    "issue": "inflation",
+    "source": "ABS (released 19 Aug)"
+   },
+   {
+    "label": "Current account deficit",
+    "value": "$27.1bn (worse by $4.1b)",
+    "asAt": "March quarter 2026",
+    "issue": "trade",
+    "source": "ABS (released 2 Jun)"
+   },
+   {
+    "label": "Real GDP growth",
+    "value": "0.3% quarter, 2.5% through the year",
+    "asAt": "March quarter 2026",
+    "issue": "growth",
+    "source": "ABS (released 3 Jun)"
+   },
+   {
+    "label": "Brent crude oil price",
+    "value": "US$95 a barrel (up about 40% y/y)",
+    "asAt": "21 Aug 2026",
+    "issue": "global",
+    "source": "Market data"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Cost-push inflation",
+    "def": "Inflation caused by rising input costs, here oil, which shifts aggregate supply left."
+   },
+   {
+    "term": "Stagflation",
+    "def": "High inflation together with rising unemployment and weak growth."
+   },
+   {
+    "term": "Second-round effects",
+    "def": "Temporary price rises becoming embedded in wage and price expectations."
+   },
+   {
+    "term": "Underutilisation",
+    "def": "Unemployment plus underemployment."
+   }
+  ],
+  "angle": "Use the oil supply shock as a live AS shift example and always cite headline (3.8%) and trimmed mean (3.6%) inflation together, explaining the gap.",
+  "questions": [
+   {
+    "q": "Explain why the RBA cannot easily 'cut its way out' of a supply shock.",
+    "marks": 4
+   },
+   {
+    "q": "Using the digest, outline why a headline unemployment rate of 4.5% can understate labour market slack.",
+    "marks": 3
+   }
+  ],
+  "extended": "Analyse the impact of changes in global economic conditions on Australia's inflation, unemployment and external stability in 2026. In your answer, refer to the role of monetary policy.",
+  "note": "Secondary compilation by the teacher from ABS, RBA and press sources; the digest has its own verification note listing unresolved discrepancies (e.g. US tariff tier 12.5% vs 13%). Date is the compile date (23 Aug 2026). Check original releases before quoting.",
+  "file": {
+   "path": "files/2026-08/2026-08-23-news-digest-aug-2026.pdf",
+   "label": "Report",
+   "pages": 18
+  },
+  "links": []
+ },
+ {
+  "id": "2026-08-01-bocsar-petrol-thefts-prices",
+  "title": "When petrol prices rise, do petrol thefts follow? BOCSAR Bulletin 280 summary",
+  "date": "2026-08-01",
+  "dateText": "August 2026",
+  "added": "2026-10-25",
+  "type": "report",
+  "outlets": [
+   "NSW Bureau of Crime Statistics and Research",
+   "HSC Economics resource"
+  ],
+  "summary": "A research case study showing the causal effect of a 1% petrol price rise (about +3% thefts) is far smaller than the link between thefts and living costs.",
+  "lede": "A teacher summary of Adams (2026), Crime and Justice Bulletin No. 280, which tests whether higher petrol prices cause more petrol theft using three models. It finds a causal rise of about 3% in thefts after a 1% price rise, but medium-term associations show theft tracks living costs (6.51) and wages (-16.35) far more than petrol prices (0.94).",
+  "about": {
+   "h09": [
+    "3C.4",
+    "3E.6",
+    "S3.3"
+   ],
+   "y12": [
+    "Y1c.7",
+    "Y1c.8",
+    "Y1c.9"
+   ],
+   "y11": [
+    "P1a.6",
+    "P1a.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3B.6",
+    "3E.5",
+    "1D.2"
+   ],
+   "y12": [
+    "Y1d.9",
+    "Y1b.10"
+   ],
+   "y11": [
+    "P2b.2",
+    "P1a.4"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "inequality"
+  ],
+  "levers": [],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Rise in petrol thefts from a 1% rise in petrol prices",
+    "value": "about 3% (cumulative)",
+    "asAt": "Monthly NSW data, 2004-2025",
+    "issue": "inflation",
+    "source": "NSW BOCSAR Bulletin 280"
+   },
+   {
+    "label": "Extra thefts per month implied",
+    "value": "37 (against a 2025 average of 1,118 a month)",
+    "asAt": "2025",
+    "issue": "inflation",
+    "source": "NSW BOCSAR Bulletin 280"
+   },
+   {
+    "label": "Elasticity of theft to living costs vs petrol prices",
+    "value": "6.51 vs 0.94",
+    "asAt": "2016-25",
+    "issue": "inflation",
+    "source": "NSW BOCSAR Bulletin 280"
+   },
+   {
+    "label": "Elasticity of theft to nominal wages",
+    "value": "-16.35",
+    "asAt": "2016-25",
+    "issue": "inequality",
+    "source": "NSW BOCSAR Bulletin 280"
+   },
+   {
+    "label": "Elasticity of theft to population",
+    "value": "17.60",
+    "asAt": "2016-25",
+    "issue": "growth",
+    "source": "NSW BOCSAR Bulletin 280"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Instrumental variable",
+    "def": "An outside factor (here world oil prices) used to isolate a cause that the outcome could not have produced."
+   },
+   {
+    "term": "Elasticity",
+    "def": "The % change in one variable after a 1% change in another."
+   },
+   {
+    "term": "Correlation vs causation",
+    "def": "Variables moving together does not prove one causes the other."
+   },
+   {
+    "term": "Real wages",
+    "def": "Wages adjusted for price changes."
+   }
+  ],
+  "angle": "Show that cost-of-living and falling real income, rather than petrol prices alone, explain behavioural change; use it to discuss effects of inflation on households.",
+  "questions": [
+   {
+    "q": "Distinguish between correlation and causation using petrol prices and petrol theft.",
+    "marks": 3
+   },
+   {
+    "q": "Analyse what the elasticities 0.94 (petrol) and 6.51 (living costs) suggest about the causes of the rise in thefts in 2022-24.",
+    "marks": 4
+   }
+  ],
+  "extended": "Analyse the economic and social costs of inflation for the Australian economy, and evaluate the effectiveness of the policies available to government in addressing them. In your answer, refer to the stimulus.",
+  "note": "Teacher research summary of a NSW Government bulletin. The bulletin is dated August 2026 with no day, so 1 Aug is used as the date. The larger elasticities are associations, not causal effects.",
+  "file": {
+   "path": "files/2026-08/2026-08-01-bocsar-petrol-thefts-prices.pdf",
+   "label": "Report",
+   "pages": 4
+  },
+  "links": []
+ },
+ {
+  "id": "2026-08-11-data-sheet-aug-2026-two-page",
+  "title": "HSC Economics Australian economy data sheet, August 2026 (two-page)",
+  "date": "2026-08-11",
+  "added": "2026-10-25",
+  "type": "stats",
+  "outlets": [
+   "HSC Economics resource",
+   "ABS",
+   "RBA",
+   "Commonwealth Budget 2026-27"
+  ],
+  "summary": "Current statistics for growth, labour market, inflation, distribution, budget and China, mapped to the four HSC topics, with a line on how to use each.",
+  "lede": "A two-page data sheet current to 11 August 2026. It reports GDP growth of 2.5%, headline CPI of 3.8%, trimmed mean of 3.6%, unemployment of 4.4% (underutilisation 10.9%), a cash rate of 4.35%, a record $27.1bn current account deficit and wage growth of 3.3%, plus the 2026-27 Budget balance, net debt and a China case study.",
+  "about": {
+   "h09": [
+    "3A.4",
+    "3B.2",
+    "3C.2",
+    "3E.1",
+    "2B.4",
+    "4D.2",
+    "4C.1",
+    "1E.1"
+   ],
+   "y12": [
+    "Y1a.16",
+    "Y1b.12",
+    "Y1c.9",
+    "Y1d.3",
+    "Y2c.4",
+    "Y2b.2"
+   ],
+   "y11": [
+    "P6a.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3D.2",
+    "2C.1",
+    "3C.3",
+    "1D.4",
+    "1D.3"
+   ],
+   "y12": [
+    "Y3e.3",
+    "Y3d.3",
+    "Y2b.12",
+    "Y1a.4"
+   ],
+   "y11": [
+    "P1e.1",
+    "P6a.2"
+   ]
+  },
+  "issues": [
+   "growth",
+   "employment",
+   "inflation",
+   "budget",
+   "trade",
+   "inequality"
+  ],
+  "levers": [
+   "monetary",
+   "fiscal"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Real GDP growth",
+    "value": "2.5% (0.3% in the quarter)",
+    "asAt": "March quarter 2026",
+    "issue": "growth",
+    "source": "ABS"
+   },
+   {
+    "label": "Headline CPI / trimmed mean",
+    "value": "3.8% / 3.6%",
+    "asAt": "Year to June 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "Unemployment rate (underutilisation)",
+    "value": "4.4% (10.9%)",
+    "asAt": "June 2026",
+    "issue": "employment",
+    "source": "ABS"
+   },
+   {
+    "label": "RBA cash rate",
+    "value": "4.35% (held 11 Aug 2026)",
+    "asAt": "11 Aug 2026",
+    "issue": "rates",
+    "source": "RBA"
+   },
+   {
+    "label": "Current account balance",
+    "value": "-$27.1bn (record deficit)",
+    "asAt": "March quarter 2026",
+    "issue": "trade",
+    "source": "ABS"
+   },
+   {
+    "label": "Underlying cash balance",
+    "value": "-$31.5bn (1.0% of GDP)",
+    "asAt": "2026-27 Budget",
+    "issue": "budget",
+    "source": "Commonwealth Budget 2026-27"
+   },
+   {
+    "label": "Gini, disposable income / household wealth",
+    "value": "0.307 / 0.606",
+    "asAt": "2022-23",
+    "issue": "inequality",
+    "source": "ABS"
+   },
+   {
+    "label": "China GDP growth",
+    "value": "4.3% (below 4.5-5.0% target)",
+    "asAt": "Q2 2026, year on year",
+    "issue": "global",
+    "source": "China NBS"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Underutilisation rate",
+    "def": "Unemployment rate plus underemployment rate."
+   },
+   {
+    "term": "Trimmed mean",
+    "def": "Underlying inflation measure that excludes extreme price movements."
+   },
+   {
+    "term": "Net debt",
+    "def": "Government debt less financial assets."
+   }
+  ],
+  "angle": "Pair headline with underlying figures (CPI v trimmed mean; unemployment v underutilisation; income v wealth Gini) to show analysis.",
+  "questions": [
+   {
+    "q": "Compare the Gini coefficients for disposable income and household wealth.",
+    "marks": 3
+   }
+  ],
+  "note": "Secondary teacher compilation; data current to 11 Aug 2026, so later releases (e.g. July 2026 labour force data, 4.5%) supersede some figures. The one-page version carries much of the same data.",
+  "file": {
+   "path": "files/2026-08/2026-08-11-data-sheet-aug-2026-two-page.pdf",
+   "label": "Data sheet",
+   "pages": 2
+  },
+  "links": []
+ },
+ {
+  "id": "2026-08-11-data-sheet-aug-2026-one-page",
+  "title": "HSC Economics Australian economy data sheet, August 2026 (one-page)",
+  "date": "2026-08-11",
+  "added": "2026-10-25",
+  "type": "stats",
+  "outlets": [
+   "HSC Economics resource",
+   "ABS",
+   "RBA",
+   "Commonwealth Budget 2026-27"
+  ],
+  "summary": "A single-page version of the August 2026 data sheet that puts the key indicators for all four topics side by side.",
+  "lede": "Data current to 11 August 2026 covering growth and productivity, unemployment, inflation, income distribution, balance of payments, monetary and fiscal policy and a China case study. Headline figures include real GDP growth of 2.5%, headline CPI of 3.8%, an unemployment rate of 4.4%, a 4.35% cash rate and a $27.1bn current account deficit.",
+  "about": {
+   "h09": [
+    "3A.4",
+    "3B.2",
+    "3C.2",
+    "3E.1",
+    "2B.4",
+    "4D.2",
+    "1E.1"
+   ],
+   "y12": [
+    "Y1a.16",
+    "Y1b.12",
+    "Y1c.9",
+    "Y1d.3",
+    "Y2c.4"
+   ],
+   "y11": [
+    "P6a.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3D.2",
+    "2C.1",
+    "3C.3",
+    "4C.1",
+    "1D.4"
+   ],
+   "y12": [
+    "Y3e.3",
+    "Y3c.6",
+    "Y2b.2"
+   ],
+   "y11": [
+    "P1e.1",
+    "P6a.2"
+   ]
+  },
+  "issues": [
+   "growth",
+   "employment",
+   "inflation",
+   "trade",
+   "budget",
+   "inequality"
+  ],
+  "levers": [
+   "monetary",
+   "fiscal"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Real GDP growth",
+    "value": "2.5% (0.3% in the quarter)",
+    "asAt": "March quarter 2026",
+    "issue": "growth",
+    "source": "ABS"
+   },
+   {
+    "label": "Headline CPI / trimmed mean",
+    "value": "3.8% / 3.6%",
+    "asAt": "Year to June 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "Unemployment rate (underemployment)",
+    "value": "4.4% (6.5%)",
+    "asAt": "June 2026",
+    "issue": "employment",
+    "source": "ABS"
+   },
+   {
+    "label": "RBA cash rate",
+    "value": "4.35%",
+    "asAt": "11 Aug 2026",
+    "issue": "rates",
+    "source": "RBA"
+   },
+   {
+    "label": "Current account balance",
+    "value": "-$27.1bn",
+    "asAt": "March quarter 2026",
+    "issue": "trade",
+    "source": "ABS"
+   },
+   {
+    "label": "Net international investment position",
+    "value": "-$707.6bn",
+    "asAt": "March quarter 2026",
+    "issue": "trade",
+    "source": "ABS"
+   },
+   {
+    "label": "AUD/USD / Trade Weighted Index",
+    "value": "about US$0.70 / 65.3",
+    "asAt": "7 Aug 2026",
+    "issue": "fx",
+    "source": "RBA"
+   },
+   {
+    "label": "Wage Price Index (annual)",
+    "value": "3.3% (real wages about -1.3%)",
+    "asAt": "March quarter 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Trade Weighted Index",
+    "def": "Index measuring the AUD against a basket of trading partners' currencies."
+   },
+   {
+    "term": "Net international investment position",
+    "def": "Australia's foreign assets minus foreign liabilities."
+   },
+   {
+    "term": "Hukou system",
+    "def": "China's household registration system linked to rural-urban inequality."
+   }
+  ],
+  "angle": "Use the 'Use it' notes on the sheet to connect each statistic to a syllabus concept and a policy lever.",
+  "questions": [
+   {
+    "q": "Explain why the trade-weighted index is used to describe the AUD's overall value.",
+    "marks": 3
+   }
+  ],
+  "note": "Secondary teacher compilation; data current to 11 Aug 2026. Overlaps the two-page data sheet; check later ABS releases for newer figures.",
+  "file": {
+   "path": "files/2026-08/2026-08-11-data-sheet-aug-2026-one-page.pdf",
+   "label": "Data sheet",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-08-11-application-smh-rba-rate-mistake",
+  "title": "Application in Action: monetary policy and the SMH article 'Reserve Bank poised to reverse its rate mistake'",
+  "date": "2025-08-11",
+  "added": "2026-10-25",
+  "type": "report",
+  "outlets": [
+   "Sydney Morning Herald",
+   "Teacher resource"
+  ],
+  "summary": "A worked quote-to-concept table showing how to apply a newspaper article to a monetary policy essay.",
+  "lede": "A teacher worksheet that takes quotes from Shane Wright's SMH article (11 Aug 2025) and links each to a syllabus concept, such as the transmission mechanism, price stability, time lags and policy coordination, for the question 'Analyse the use of monetary policy on the achievement of economic objectives'. Quotes include headline inflation at 2.1% and unemployment at a three-year high of 4.3%.",
+  "about": {
+   "h09": [
+    "4D.2",
+    "4D.3",
+    "4A.3",
+    "4A.2",
+    "4H.1"
+   ],
+   "y12": [
+    "Y2c.4",
+    "Y2c.5",
+    "Y2c.7",
+    "Y2c.8"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4A.7",
+    "4C.2",
+    "4I.3",
+    "4I.2"
+   ],
+   "y12": [
+    "Y2g.1",
+    "Y1c.8",
+    "Y1b.11"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "issues": [
+   "rates",
+   "inflation",
+   "employment"
+  ],
+  "levers": [
+   "monetary",
+   "fiscal"
+  ],
+  "diagrams": [
+   "adas"
+  ],
+  "figures": [
+   {
+    "label": "Headline inflation",
+    "value": "2.1% (lowest since early 2021)",
+    "asAt": "As reported in SMH, 11 Aug 2025",
+    "issue": "inflation",
+    "source": "SMH, Shane Wright"
+   },
+   {
+    "label": "Unemployment rate",
+    "value": "4.3% (three-year high)",
+    "asAt": "As reported in SMH, 11 Aug 2025",
+    "issue": "employment",
+    "source": "SMH, Shane Wright"
+   },
+   {
+    "label": "Expected total cash rate cuts in this cycle",
+    "value": "100 basis points (cash rate settles at 2.85%)",
+    "asAt": "As reported in SMH, 11 Aug 2025",
+    "issue": "rates",
+    "source": "SMH, Shane Wright"
+   },
+   {
+    "label": "Household disposable income growth",
+    "value": "1.8%",
+    "asAt": "As reported in SMH, 11 Aug 2025",
+    "issue": "growth",
+    "source": "SMH, Shane Wright"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Transmission mechanism",
+    "def": "How a change in the cash rate flows through to spending and prices."
+   },
+   {
+    "term": "Time lag",
+    "def": "Delay before policy changes affect the economy."
+   },
+   {
+    "term": "Demand-pull inflation",
+    "def": "Inflation from excess aggregate demand."
+   }
+  ],
+  "angle": "Copy the method: pick a short quote, name the syllabus concept, then explain the effect on an objective.",
+  "questions": [
+   {
+    "q": "Explain how a lower cash rate can support the objective of full employment.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Aug 2025): figures are as at that date; check for newer data before quoting. Teacher worksheet built on a newspaper article; the article's figures are as quoted by the worksheet. The original article is not in the PDF.",
+  "file": {
+   "path": "files/2025-08/2025-08-11-application-smh-rba-rate-mistake.pdf",
+   "label": "Teacher handout",
+   "pages": 3
+  },
+  "links": []
+ },
+ {
+  "id": "2025-08-08-application-ft-sanctions-protection",
+  "title": "Application in Action: sanctions as protectionism (FT opinion piece)",
+  "date": "2025-08-08",
+  "added": "2026-10-25",
+  "type": "report",
+  "outlets": [
+   "Financial Times",
+   "Teacher resource"
+  ],
+  "summary": "Links evidence on the human cost of sanctions to the HSC question on effects of protectionist policies on Australia and the world.",
+  "lede": "A teacher worksheet using Francisco Rodriguez's FT opinion article (8 Aug 2025) to answer Q28 from the 2019 HSC. It matches quotes (Iran thalassaemia deaths, Venezuela aid, 564,000 excess deaths a year, sanctions covering 25% of the global economy) to concepts about protectionism, standards of living and welfare.",
+  "about": {
+   "h09": [
+    "1C.2",
+    "S1.5",
+    "1D.6"
+   ],
+   "y12": [
+    "Y3a.7",
+    "Y3a.15"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1C.1",
+    "2D.4",
+    "1D.1"
+   ],
+   "y12": [
+    "Y3d.7",
+    "Y3d.6"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade",
+   "global"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Excess deaths associated with sanctions",
+    "value": "about 564,000 a year",
+    "asAt": "Over the past decade, per article",
+    "issue": "global",
+    "source": "FT, Francisco Rodriguez"
+   },
+   {
+    "label": "Increase in under-five mortality from sanctions",
+    "value": "8%",
+    "asAt": "152 countries, 1971-2021",
+    "issue": "global",
+    "source": "FT, Francisco Rodriguez"
+   },
+   {
+    "label": "Share of global economy under unilateral sanctions",
+    "value": "25% (from 5% in the 1960s)",
+    "asAt": "2010-2022",
+    "issue": "trade",
+    "source": "FT, Francisco Rodriguez"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Trade sanctions",
+    "def": "Restrictions on trade with a target country, a form of protectionism."
+   },
+   {
+    "term": "Standard of living",
+    "def": "The level of material wellbeing of a population."
+   }
+  ],
+  "angle": "Use the opinion piece as a counter-argument example on the costs of protectionism, but flag it as one author's causal study.",
+  "questions": [
+   {
+    "q": "Explain one effect of trade sanctions on living standards in the target economy.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Aug 2025): figures are as at that date; check for newer data before quoting. Teacher worksheet on an opinion article; sanctions are not identical to tariffs, so use carefully as protection evidence.",
+  "file": {
+   "path": "files/2025-08/2025-08-08-application-ft-sanctions-protection.pdf",
+   "label": "Teacher handout",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-08-12-application-afr-rba-productivity",
+  "title": "Application guide: 'RBA bombshell exposes grim reality for Chalmers' (AFR, productivity)",
+  "date": "2025-08-12",
+  "added": "2026-10-25",
+  "type": "report",
+  "outlets": [
+   "Australian Financial Review",
+   "Teacher resource"
+  ],
+  "summary": "A fact-to-concept guide on productivity, potential growth and population-led growth, with a suggested diagram for each fact.",
+  "lede": "A teacher guide to John Kehoe's AFR article (12 Aug 2025). It tabulates facts: the RBA cut its productivity growth forecast from 1% to 0.7% a year, sustainable GDP growth is now about 2% a year (down from 3-4% in the 1990s-2000s), and most growth now comes from population, then links each to a syllabus concept and diagram.",
+  "about": {
+   "h09": [
+    "3A.5",
+    "3A.6",
+    "4E.1",
+    "4E.2"
+   ],
+   "y12": [
+    "Y1a.10",
+    "Y1a.12",
+    "Y2d.1",
+    "Y2d.2"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3C.3",
+    "4I.1",
+    "3A.7",
+    "1D.1"
+   ],
+   "y12": [
+    "Y1a.15",
+    "Y1c.4",
+    "Y1a.13"
+   ],
+   "y11": [
+    "P3c.4",
+    "P3c.5"
+   ]
+  },
+  "issues": [
+   "productivity",
+   "growth",
+   "inflation"
+  ],
+  "levers": [
+   "micro",
+   "monetary"
+  ],
+  "diagrams": [
+   "adas",
+   "phillips"
+  ],
+  "figures": [
+   {
+    "label": "RBA forecast for productivity growth",
+    "value": "cut from 1% to 0.7% a year",
+    "asAt": "As reported in AFR, 12 Aug 2025",
+    "issue": "productivity",
+    "source": "AFR, John Kehoe"
+   },
+   {
+    "label": "Sustainable GDP growth",
+    "value": "about 2% a year (3-4% in 1990s-2000s)",
+    "asAt": "As reported in AFR, 12 Aug 2025",
+    "issue": "growth",
+    "source": "AFR, John Kehoe"
+   },
+   {
+    "label": "Wage growth threshold risking inflation",
+    "value": "above 3.2%",
+    "asAt": "As reported in AFR, 12 Aug 2025",
+    "issue": "inflation",
+    "source": "AFR, John Kehoe"
+   },
+   {
+    "label": "Growth from population increase",
+    "value": "1.3-1.4% of GDP growth",
+    "asAt": "As reported in AFR, 12 Aug 2025",
+    "issue": "growth",
+    "source": "AFR, John Kehoe"
+   },
+   {
+    "label": "Productivity growth after 1990s-2000s reforms",
+    "value": "2.5% a year",
+    "asAt": "1990s-2000s",
+    "issue": "productivity",
+    "source": "AFR, John Kehoe"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Labour productivity",
+    "def": "Output per hour worked."
+   },
+   {
+    "term": "Potential output",
+    "def": "The maximum sustainable level of output."
+   },
+   {
+    "term": "Microeconomic reform",
+    "def": "Policies to raise efficiency and productivity of markets."
+   }
+  ],
+  "angle": "Use to argue weak productivity lowers LRAS and limits wage growth, and to motivate microeconomic reform.",
+  "questions": [
+   {
+    "q": "Explain how lower productivity growth reduces potential output.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Aug 2025): figures are as at that date; check for newer data before quoting. Teacher guide summarising a newspaper article; figures are the article's, as relayed by the guide.",
+  "file": {
+   "path": "files/2025-08/2025-08-12-application-afr-rba-productivity.pdf",
+   "label": "Teacher handout",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-08-13-abc-home-owners-welfare-state-table",
+  "title": "Evidence summary table: 'Home-Owners' Welfare State' (ABC News) on housing tax concessions",
+  "date": "2025-08-13",
+  "added": "2026-10-25",
+  "type": "report",
+  "outlets": [
+   "ABC News",
+   "Teacher resource"
+  ],
+  "summary": "Shows how negative gearing and the CGT discount cost about $49.2 billion a year and favour investors, with supply-side housing targets already behind.",
+  "lede": "A teacher evidence table based on an ABC News article (13 Aug 2025) arguing tax concessions for property investors worsen inequality and affordability. It records the ~$49.2 billion annual cost of CGT discounts and rental deductions, the 1.2 million homes target by 2029 being about 50,000 behind in year one, and policies such as Help to Buy.",
+  "about": {
+   "h09": [
+    "3E.3",
+    "3E.6",
+    "3E.4"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y1d.6",
+    "Y2b.10"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4C.2",
+    "4I.5",
+    "3E.5"
+   ],
+   "y12": [
+    "Y2d.3",
+    "Y1d.9",
+    "Y1d.10"
+   ],
+   "y11": [
+    "P5b.3",
+    "P5b.7"
+   ]
+  },
+  "issues": [
+   "housing",
+   "inequality",
+   "budget"
+  ],
+  "levers": [
+   "fiscal",
+   "micro"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Annual cost of CGT discount and rental deductions",
+    "value": "about $49.2 billion",
+    "asAt": "As reported by ABC News, 13 Aug 2025",
+    "issue": "budget",
+    "source": "ABC News"
+   },
+   {
+    "label": "Government housing supply target",
+    "value": "1.2 million homes by 2029",
+    "asAt": "Target",
+    "issue": "housing",
+    "source": "ABC News"
+   },
+   {
+    "label": "Shortfall against target in first year",
+    "value": "about 50,000 homes behind",
+    "asAt": "First year of target",
+    "issue": "housing",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Negative gearing",
+    "def": "Deducting rental property losses against other income."
+   },
+   {
+    "term": "Capital gains tax discount",
+    "def": "Reduction of the taxable share of a capital gain on assets held over a year."
+   },
+   {
+    "term": "Tax expenditure",
+    "def": "Revenue forgone through concessions in the tax system."
+   }
+  ],
+  "angle": "Use for inequality and wealth answers: concessions favour asset owners, adding to asset-price inflation and wealth gaps.",
+  "questions": [
+   {
+    "q": "Explain how negative gearing and the CGT discount can increase wealth inequality.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Aug 2025): figures are as at that date; check for newer data before quoting. Teacher table built in a Legal Studies style (PEARJJAM, Acts of Parliament) around an ABC article, so the legal framing is not economics; the economic figures are as relayed from the article. Check the original article before quoting.",
+  "file": {
+   "path": "files/2025-08/2025-08-13-abc-home-owners-welfare-state-table.pdf",
+   "label": "Teacher handout",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-08-08-ft-sanctions-kill-as-many-as-wars",
+  "title": "Sanctions can kill as many people as wars (FT opinion)",
+  "date": "2025-08-08",
+  "added": "2026-10-25",
+  "type": "news",
+  "outlets": [
+   "Financial Times"
+  ],
+  "summary": "Opinion evidence that sanctions, a form of trade restriction, cut living standards and raise mortality, with a Lancet Global Health estimate of 564,000 excess deaths a year.",
+  "lede": "Francisco Rodriguez argues from a causal study of 152 countries (1971-2021) that sanctions raise under-five mortality by 8% and are associated with about 564,000 excess deaths a year. He notes the share of the global economy under unilateral sanctions grew from 5% in the 1960s to 25% in 2010-2022.",
+  "about": {
+   "h09": [
+    "1C.2",
+    "S1.5",
+    "1D.6"
+   ],
+   "y12": [
+    "Y3a.7",
+    "Y3a.15"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1C.1",
+    "1D.1"
+   ],
+   "y12": [
+    "Y3d.6",
+    "Y3d.7"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade",
+   "global"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Annual excess deaths associated with sanctions",
+    "value": "about 564,000",
+    "asAt": "Past decade",
+    "issue": "global",
+    "source": "FT, Francisco Rodriguez"
+   },
+   {
+    "label": "Rise in under-five mortality under sanctions",
+    "value": "8%",
+    "asAt": "152 countries, 1971-2021",
+    "issue": "global",
+    "source": "FT, Francisco Rodriguez"
+   },
+   {
+    "label": "Share of global economy under unilateral sanctions",
+    "value": "25% (5% in the 1960s)",
+    "asAt": "2010-2022",
+    "issue": "trade",
+    "source": "FT, Francisco Rodriguez"
+   },
+   {
+    "label": "Thalassaemia deaths in Iran a year",
+    "value": "about 150 (under 40 before 2018 sanctions)",
+    "asAt": "Annual, per article",
+    "issue": "global",
+    "source": "FT, Francisco Rodriguez"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Sanctions",
+    "def": "Government-imposed restrictions on trade or finance to pressure another country."
+   },
+   {
+    "term": "Excess deaths",
+    "def": "Deaths above what would otherwise be expected."
+   }
+  ],
+  "angle": "Use as a human-cost counterpoint on protectionism and economic coercion; it is an opinion piece, so attribute it.",
+  "questions": [
+   {
+    "q": "Discuss one cost of trade restrictions for developing economies.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Aug 2025): figures are as at that date; check for newer data before quoting. Opinion article reproduced for classroom use (browser print, 11 Aug 2025); sanctions are related to, but not the same as, tariffs and quotas.",
+  "file": {
+   "path": "files/2025-08/2025-08-08-ft-sanctions-kill-as-many-as-wars.pdf",
+   "label": "Original article",
+   "pages": 3
+  },
+  "links": []
+ },
+ {
+  "id": "2025-04-03-afr-liberation-day-tariffs-australia",
+  "title": "Trump's 'Liberation Day': impact of US tariffs on Australia (syllabus link sheet)",
+  "date": "2025-04-03",
+  "added": "2026-10-25",
+  "type": "report",
+  "outlets": [
+   "Australian Financial Review",
+   "Teacher resource"
+  ],
+  "summary": "A one-page syllabus map from an AFR article on how US tariffs could hit Australian steel exports, the current account and growth.",
+  "lede": "A teacher sheet based on the AFR piece 'How Trump's tariffs will hit Australia, in four charts' (3 Apr 2025). It links US steel and aluminium tariffs to protection, trade wars, export diversion and dumping, the current account, growth and the policy response to external shocks.",
+  "about": {
+   "h09": [
+    "1C.1",
+    "1C.2",
+    "2D.4",
+    "S1.5"
+   ],
+   "y12": [
+    "Y3a.5",
+    "Y3a.7",
+    "Y3a.15",
+    "Y3e.3"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3D.2",
+    "3A.5",
+    "4H.2",
+    "2D.1"
+   ],
+   "y12": [
+    "Y3e.1",
+    "Y3a.6"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade",
+   "global"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [],
+  "terms": [
+   {
+    "term": "Dumping",
+    "def": "Selling a product abroad below its cost or home price."
+   },
+   {
+    "term": "Trade war",
+    "def": "Escalating tariffs between countries."
+   },
+   {
+    "term": "External shock",
+    "def": "An event outside the economy that affects it."
+   }
+  ],
+  "angle": "Use as a summary of the transmission channels from US tariffs to Australia: export demand, trade diversion and the current account.",
+  "questions": [
+   {
+    "q": "Explain how protectionist policies by a trading partner can affect Australia's current account.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Apr 2025): figures are as at that date; check for newer data before quoting. Teacher summary of a newspaper article; the original article and its charts are not in the PDF and the sheet gives no figures.",
+  "file": {
+   "path": "files/2025-04/2025-04-03-afr-liberation-day-tariffs-australia.pdf",
+   "label": "Teacher handout",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-02-05-afr-asx-china-tariff",
+  "title": "ASX sinks into red as China tariff takes effect (AFR Markets)",
+  "date": "2025-02-05",
+  "added": "2026-10-25",
+  "type": "news",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "Shows markets reacting to the US-China tariff escalation: the ASX 200 fell, the AUD dropped below US62 cents and China hit coal and LNG.",
+  "lede": "The ASX 200 closed 0.1% lower at 8374 as Trump's 10% tariff on Chinese imports took effect and Beijing retaliated with 15% tariffs on coal and LNG and 10% on oil and agricultural equipment. The Australian dollar fell below US62 cents and Brent crude dropped to US$75.31.",
+  "about": {
+   "h09": [
+    "1C.2",
+    "2D.4",
+    "2C.3",
+    "S1.5"
+   ],
+   "y12": [
+    "Y3a.7",
+    "Y3c.4",
+    "Y3a.6"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "2C.2",
+    "2C.6",
+    "1A.4"
+   ],
+   "y12": [
+    "Y3c.5",
+    "Y3c.6",
+    "Y3e.1"
+   ],
+   "y11": [
+    "P6c.1"
+   ]
+  },
+  "issues": [
+   "trade",
+   "fx",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "fx"
+  ],
+  "figures": [
+   {
+    "label": "S&P/ASX 200 close",
+    "value": "8374 points (down 0.1%, 5.4 points)",
+    "asAt": "4 Feb 2025",
+    "issue": "global",
+    "source": "AFR, Bloomberg"
+   },
+   {
+    "label": "China tariffs on US coal and LNG",
+    "value": "15%",
+    "asAt": "Effective Feb 2025",
+    "issue": "trade",
+    "source": "AFR"
+   },
+   {
+    "label": "China tariffs on US oil and agricultural equipment",
+    "value": "10%",
+    "asAt": "Effective Feb 2025",
+    "issue": "trade",
+    "source": "AFR"
+   },
+   {
+    "label": "US tariff on all imports from China",
+    "value": "10%",
+    "asAt": "Effective 4 Feb 2025",
+    "issue": "trade",
+    "source": "AFR"
+   },
+   {
+    "label": "Australian dollar",
+    "value": "below US62 cents",
+    "asAt": "4 Feb 2025",
+    "issue": "fx",
+    "source": "AFR"
+   },
+   {
+    "label": "Brent crude oil",
+    "value": "US$75.31 a barrel",
+    "asAt": "4 Feb 2025",
+    "issue": "global",
+    "source": "AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Retaliatory tariffs",
+    "def": "Tariffs imposed in response to another country's tariffs."
+   },
+   {
+    "term": "Depreciation",
+    "def": "A fall in the value of the AUD against another currency."
+   }
+  ],
+  "angle": "Use as a quick example of how a trade war shows up in financial markets and the exchange rate, and which Australian exports are exposed.",
+  "questions": [
+   {
+    "q": "Explain why tariffs on Australian coal and LNG exports could affect the value of the Australian dollar.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Feb 2025): figures are as at that date; check for newer data before quoting. Newspaper page reproduced for classroom use; also contains unrelated ESG fund and corporate items.",
+  "file": {
+   "path": "files/2025-02/2025-02-05-afr-asx-china-tariff.pdf",
+   "label": "Original article",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-02-10-afr-asx-earnings-season-aud",
+  "title": "ASX to drop despite high hopes for earnings season (AFR Markets)",
+  "date": "2025-02-10",
+  "added": "2026-10-25",
+  "type": "news",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "Links rate-cut hopes and a weaker Australian dollar (down more than 9% from its September peak) to expected company earnings.",
+  "lede": "Investors expect a solid half-year reporting season on easing inflation and hopes of RBA cuts, with the ASX 200 up 3.8% in 2025 and set to open 0.8% lower after weak US jobs data. The AUD had fallen more than 9% from US69 cents to US62.64 cents, expected to give mark-to-market upgrades to firms with overseas exposure.",
+  "about": {
+   "h09": [
+    "2C.6",
+    "2C.3",
+    "4D.3",
+    "S2.3"
+   ],
+   "y12": [
+    "Y3c.5",
+    "Y3c.4",
+    "Y2c.5"
+   ],
+   "y11": [
+    "P4b.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2C.2",
+    "1C.2",
+    "3C.2"
+   ],
+   "y12": [
+    "Y3a.7",
+    "Y1c.8"
+   ],
+   "y11": [
+    "P6c.1"
+   ]
+  },
+  "issues": [
+   "fx",
+   "rates",
+   "global"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "fx"
+  ],
+  "figures": [
+   {
+    "label": "Australian dollar",
+    "value": "US62.64 cents (down more than 9% from US69 cents in September)",
+    "asAt": "10 Feb 2025",
+    "issue": "fx",
+    "source": "AFR"
+   },
+   {
+    "label": "ASX 200 year-to-date gain",
+    "value": "3.8%",
+    "asAt": "10 Feb 2025",
+    "issue": "investment",
+    "source": "AFR"
+   },
+   {
+    "label": "Expected ASX 200 profit growth this financial year",
+    "value": "0.2% (third stagnant year)",
+    "asAt": "Financial year 2024-25",
+    "issue": "growth",
+    "source": "AFR"
+   },
+   {
+    "label": "US jobs created in January",
+    "value": "143,000 (170,000 expected)",
+    "asAt": "Jan 2025",
+    "issue": "employment",
+    "source": "AFR"
+   },
+   {
+    "label": "Date of next RBA board meeting",
+    "value": "18 February",
+    "asAt": "Feb 2025",
+    "issue": "rates",
+    "source": "AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Mark-to-market",
+    "def": "Revaluing foreign-currency assets and earnings at current exchange rates."
+   },
+   {
+    "term": "Depreciation",
+    "def": "A fall in the value of the AUD."
+   }
+  ],
+  "angle": "Use to show who gains from a depreciation (exporters, firms with overseas earnings) and the link between expected rate cuts and share markets.",
+  "questions": [
+   {
+    "q": "Explain how a depreciation of the Australian dollar could affect company earnings.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Feb 2025): figures are as at that date; check for newer data before quoting. Newspaper page reproduced for classroom use with several unrelated items; the profit growth forecast is attributed in the article to an investment bank.",
+  "file": {
+   "path": "files/2025-02/2025-02-10-afr-asx-earnings-season-aud.pdf",
+   "label": "Original article",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-07-24-smh-us-beef-ban-lifted",
+  "title": "Government ends de facto ban on US beef amid Trump tariff negotiations (SMH)",
+  "date": "2025-07-24",
+  "added": "2026-10-25",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald",
+   "Australian Financial Review"
+  ],
+  "summary": "A case of a non-tariff barrier (biosecurity) being relaxed under pressure from US tariffs, testing the free trade versus protection and biosecurity trade-off.",
+  "lede": "The federal government lifted its de facto ban on US beef after a departmental biosecurity review, addressing a trade complaint used to justify President Trump's tariffs on Australia. The Nationals said biosecurity was traded away, while Cattle Australia said Australian beef was 50 cents a kilogram cheaper so volumes would be low.",
+  "about": {
+   "h09": [
+    "2D.1",
+    "2D.3",
+    "2D.4",
+    "1C.2"
+   ],
+   "y12": [
+    "Y3a.5",
+    "Y3a.6",
+    "Y3a.16"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1C.1",
+    "2D.2",
+    "1B.4"
+   ],
+   "y12": [
+    "Y3a.13",
+    "Y3a.7"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "US import tariff on Australia under negotiation",
+    "value": "10%",
+    "asAt": "Jul 2025",
+    "issue": "trade",
+    "source": "SMH"
+   },
+   {
+    "label": "Australian beef price advantage over US beef",
+    "value": "50 cents a kilogram cheaper",
+    "asAt": "Jul 2025",
+    "issue": "trade",
+    "source": "SMH (Cattle Australia)"
+   },
+   {
+    "label": "Year Australia began allowing US beef imports in principle",
+    "value": "2019",
+    "asAt": "2019",
+    "issue": "trade",
+    "source": "SMH"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Non-tariff barrier",
+    "def": "A trade restriction other than a tariff, such as quotas or biosecurity rules."
+   },
+   {
+    "term": "Biosecurity",
+    "def": "Measures that protect against pests and diseases."
+   },
+   {
+    "term": "Bilateral trade negotiation",
+    "def": "Trade talks between two countries."
+   }
+  ],
+  "angle": "Use to show Australian trade policy responding to a trading partner's protectionism, and to weigh biosecurity against market access.",
+  "questions": [
+   {
+    "q": "Explain why a country might use biosecurity rules as a trade barrier.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Jul 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use (browser print, 24 Jul 2025).",
+  "file": {
+   "path": "files/2025-07/2025-07-24-smh-us-beef-ban-lifted.pdf",
+   "label": "Original article",
+   "pages": 4
+  },
+  "links": [
+   {
+    "label": "SMH, Australia lifts US beef ban after Trump demands, 24 Jul 2025",
+    "url": "https://www.smh.com.au/politics/federal/australia-lifts-us-beef-ban-after-trump-demands-20250724-p5mhdv.html"
+   }
+  ]
+ },
+ {
+  "id": "2025-05-15-smh-property-rate-cut-sugar-hit",
+  "title": "'Sugar hit': why the property market just picked up again (SMH)",
+  "date": "2025-05-15",
+  "added": "2026-10-25",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald",
+   "Cotality"
+  ],
+  "summary": "Shows how a 25 basis point RBA cut lifted house values, but analysts warn rises depend on further cuts.",
+  "lede": "After the RBA's first cut in four years in February 2025 (rates held at 4.1% in April), Cotality data showed Sydney and Melbourne values bouncing back and national values hitting a record by March, before growth slowed. Cotality's Eliza Owen described the boost as 'a bit of a sugar hit' that depends on rates continuing to fall.",
+  "about": {
+   "h09": [
+    "4D.3",
+    "S4.10"
+   ],
+   "y12": [
+    "Y2c.5",
+    "Y1d.6"
+   ],
+   "y11": [
+    "P4c.7",
+    "P4c.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.4",
+    "4A.7"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y2c.8"
+   ],
+   "y11": [
+    "P4c.6"
+   ]
+  },
+  "issues": [
+   "housing",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "RBA cash rate",
+    "value": "4.1% (held in April after first cut in four years in February)",
+    "asAt": "April 2025",
+    "issue": "rates",
+    "source": "SMH / RBA"
+   },
+   {
+    "label": "Size of the February rate cut",
+    "value": "25 basis points",
+    "asAt": "Feb 2025",
+    "issue": "rates",
+    "source": "SMH"
+   },
+   {
+    "label": "National home values",
+    "value": "record high by March",
+    "asAt": "March 2025",
+    "issue": "housing",
+    "source": "Cotality via SMH"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Basis point",
+    "def": "One hundredth of a percentage point."
+   },
+   {
+    "term": "Borrowing capacity",
+    "def": "The amount a lender will lend based on income and interest rates."
+   },
+   {
+    "term": "Housing affordability",
+    "def": "How easily households can buy a home given prices, incomes and rates."
+   }
+  ],
+  "angle": "Use to show the transmission of monetary policy to housing and wealth, plus the affordability limit on price gains.",
+  "questions": [
+   {
+    "q": "Explain how a fall in interest rates can raise housing values.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published May 2025): figures are as at that date; check for newer data before quoting. Newspaper article reproduced for classroom use; the SMH piece originates from the Domain property section.",
+  "file": {
+   "path": "files/2025-05/2025-05-15-smh-property-rate-cut-sugar-hit.pdf",
+   "label": "Original article",
+   "pages": 5
+  },
+  "links": []
+ }
+]

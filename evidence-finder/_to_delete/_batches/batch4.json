@@ -1,0 +1,1878 @@
+[
+ {
+  "id": "2025-03-24-guardian-budget-where-money-goes",
+  "title": "Budget 101: where Australia's tax revenue comes from and where it goes",
+  "date": "2025-03-24",
+  "type": "news",
+  "outlets": [
+   "The Guardian Australia",
+   "Parliamentary Budget Office (charts)"
+  ],
+  "summary": "A ready-made picture of the revenue and spending mix, and of how bracket creep props up the budget, for any fiscal policy answer.",
+  "lede": "Guardian economics correspondent Patrick Commins explains the federal tax mix and spending mix ahead of the March 2025 budget, noting that a decade of deficits is forecast. Using PBO data, he shows income tax's share of revenue could climb towards 46% by the mid-2030s if bracket creep returned.",
+  "about": {
+   "h09": [
+    "4C.1",
+    "4C.2",
+    "4C.3"
+   ],
+   "y12": [
+    "Y2b.2",
+    "Y2b.10",
+    "Y2b.12"
+   ],
+   "y11": [
+    "P5b.2",
+    "P5c.2",
+    "P5a.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.3",
+    "4A.6",
+    "4H.3"
+   ],
+   "y12": [
+    "Y2b.13",
+    "Y2b.5",
+    "Y2b.14"
+   ],
+   "y11": [
+    "P5b.7",
+    "P5b.5",
+    "P5c.3"
+   ]
+  },
+  "issues": [
+   "budget",
+   "inequality"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Federal taxes, excises and customs collected",
+    "value": "$650bn",
+    "asAt": "2022-23 (nearer $700bn expected in 2024-25)",
+    "issue": "budget",
+    "source": "The Guardian citing PBO"
+   },
+   {
+    "label": "Share of tax from individuals' income tax",
+    "value": "40%",
+    "asAt": "2022-23",
+    "issue": "budget",
+    "source": "The Guardian citing PBO"
+   },
+   {
+    "label": "Share of tax from company income tax",
+    "value": "about 20%",
+    "asAt": "2022-23",
+    "issue": "budget",
+    "source": "The Guardian citing PBO"
+   },
+   {
+    "label": "Individuals' income tax share if bracket creep returned",
+    "value": "nearly 46% (from 40%)",
+    "asAt": "mid-2030s, PBO scenario",
+    "issue": "budget",
+    "source": "The Guardian citing PBO"
+   },
+   {
+    "label": "Social security and welfare share of spending",
+    "value": "37%",
+    "asAt": "2023-24 estimate",
+    "issue": "budget",
+    "source": "The Guardian citing PBO"
+   },
+   {
+    "label": "Interest on national debt, share of spending",
+    "value": "3.3%",
+    "asAt": "2023-24 estimate (health 'more than 15%', defence about 7%)",
+    "issue": "budget",
+    "source": "The Guardian citing PBO"
+   },
+   {
+    "label": "2024-25 deficit",
+    "value": "not far below $26.9bn",
+    "asAt": "Dec 2024 mid-year update forecast",
+    "issue": "budget",
+    "source": "The Guardian"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Bracket creep",
+    "def": "Rising incomes push people into higher tax brackets, so average tax rates rise when thresholds are not indexed."
+   },
+   {
+    "term": "Tax mix",
+    "def": "The proportions of total revenue raised from different taxes."
+   },
+   {
+    "term": "Budget deficit",
+    "def": "Government spending is greater than revenue in a financial year."
+   }
+  ],
+  "angle": "Use the revenue and spending splits to describe the composition of the budget, then link bracket creep to the progressive tax system and to how deficits are reduced.",
+  "questions": [
+   {
+    "q": "Outline what is meant by 'bracket creep'.",
+    "marks": 2
+   },
+   {
+    "q": "Explain how bracket creep affects the budget outcome and the distribution of income.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Mar 2025): figures are as at that date; check for newer data before quoting. Secondary source (newspaper explainer using PBO charts); pie chart percentages differ slightly from the text, and some chart values were not legible, so figures here are taken from the text. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-03/2025-03-24-guardian-budget-where-money-goes.pdf",
+   "label": "Original article",
+   "pages": 6
+  },
+  "links": []
+ },
+ {
+  "id": "2025-03-23-smh-budget-tax-burden-lowest",
+  "title": "Budget to reveal tax burden at its lowest since the pandemic",
+  "date": "2025-03-23",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "Shows the budget's tax-to-GDP ratio, the political fight over fiscal guardrails, and why a return to deficit limits new spending.",
+  "lede": "SMH reports that the 2025-26 budget will show tax falling to 23.1% of GDP, while the budget heads back into deficit after two years of surplus. The Coalition attacks the scale of spending, and the government points to savings and a $1.8 billion energy bill relief extension.",
+  "about": {
+   "h09": [
+    "4C.1",
+    "4C.2",
+    "4H.3"
+   ],
+   "y12": [
+    "Y2b.2",
+    "Y2b.3",
+    "Y2b.14"
+   ],
+   "y11": [
+    "P5a.4",
+    "P5b.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4A.7",
+    "3C.3"
+   ],
+   "y12": [
+    "Y2a.2",
+    "Y2b.13"
+   ],
+   "y11": [
+    "P5b.2",
+    "P5c.1"
+   ]
+  },
+  "issues": [
+   "budget",
+   "inflation"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Tax receipts as a share of GDP",
+    "value": "23.1% (23.7% last year; 23.4% in Dec update)",
+    "asAt": "2024-25, budget forecast",
+    "issue": "budget",
+    "source": "SMH, unnamed sources"
+   },
+   {
+    "label": "Tax receipts",
+    "value": "$633.4bn",
+    "asAt": "2023-24",
+    "issue": "budget",
+    "source": "SMH"
+   },
+   {
+    "label": "Energy bill relief extension",
+    "value": "$1.8bn",
+    "asAt": "announced 23 Mar 2025",
+    "issue": "budget",
+    "source": "SMH"
+   },
+   {
+    "label": "Savings and spending shifts in the budget",
+    "value": "$2.1bn (vs $22bn in 2022 budget)",
+    "asAt": "Budget 2025",
+    "issue": "budget",
+    "source": "SMH"
+   },
+   {
+    "label": "Cuts or reprioritisations since the last election",
+    "value": "about $95bn",
+    "asAt": "as at Mar 2025 (Finance Minister Gallagher)",
+    "issue": "budget",
+    "source": "SMH"
+   },
+   {
+    "label": "Coalition tax-to-GDP target set a decade ago",
+    "value": "23.9%",
+    "asAt": "as cited by shadow treasurer Taylor",
+    "issue": "budget",
+    "source": "SMH"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Tax-to-GDP ratio",
+    "def": "Total tax revenue as a percentage of GDP; a measure of the tax burden."
+   },
+   {
+    "term": "Fiscal guardrail",
+    "def": "A numerical rule or target a government sets to discipline its budget."
+   },
+   {
+    "term": "Budget deficit",
+    "def": "Spending exceeds revenue in a financial year."
+   }
+  ],
+  "angle": "Good for the political constraints on fiscal policy, and for the tension between cost-of-living relief and inflation.",
+  "questions": [
+   {
+    "q": "Explain one limitation of fiscal policy in the current economy, using the article.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Mar 2025): figures are as at that date; check for newer data before quoting. Pre-budget report based partly on unnamed sources; check final budget papers. Mixes economic content with party-political claims. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-03/2025-03-23-smh-budget-tax-burden-lowest.pdf",
+   "label": "Original article",
+   "pages": 5
+  },
+  "links": []
+ },
+ {
+  "id": "2025-02-17-smh-building-productivity-slump",
+  "title": "Home-building productivity has halved since 1995, Productivity Commission finds",
+  "date": "2025-02-17",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald",
+   "Productivity Commission"
+  ],
+  "summary": "Concrete productivity and housing-supply data for microeconomic reform answers: why supply side policy matters for affordability.",
+  "lede": "SMH reports Productivity Commission research finding Australia builds half as many homes per hour worked as in 1995. Build times have lengthened sharply, and the Commission urges an independent review of building regulation.",
+  "about": {
+   "h09": [
+    "4E.1",
+    "4E.2",
+    "3A.6"
+   ],
+   "y12": [
+    "Y2d.1",
+    "Y2d.2",
+    "Y2d.3"
+   ],
+   "y11": [
+    "P5a.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4I.1",
+    "4I.5"
+   ],
+   "y12": [
+    "Y1a.10",
+    "Y1a.15",
+    "Y2d.4"
+   ],
+   "y11": [
+    "P2i.2"
+   ]
+  },
+  "issues": [
+   "productivity",
+   "housing"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [
+   "adas"
+  ],
+  "figures": [
+   {
+    "label": "Housing productivity, change over 30 years",
+    "value": "-12% (rest of economy +49%)",
+    "asAt": "past 30 years to 2023-24",
+    "issue": "productivity",
+    "source": "Productivity Commission via SMH"
+   },
+   {
+    "label": "Homes built per hour worked vs 1995",
+    "value": "about half",
+    "asAt": "2023-24",
+    "issue": "productivity",
+    "source": "Productivity Commission via SMH"
+   },
+   {
+    "label": "Average time to build a detached house",
+    "value": "10.4 months (from 6.4)",
+    "asAt": "10 years to 2023-24",
+    "issue": "housing",
+    "source": "Productivity Commission via SMH"
+   },
+   {
+    "label": "Average time to build townhouses",
+    "value": "12.9 months (from 9.4)",
+    "asAt": "10 years to 2023-24",
+    "issue": "housing",
+    "source": "Productivity Commission via SMH"
+   },
+   {
+    "label": "Average time to build apartment block",
+    "value": "27.8 months (from 18.5)",
+    "asAt": "10 years to 2023-24",
+    "issue": "housing",
+    "source": "Productivity Commission via SMH"
+   },
+   {
+    "label": "Annual cost if economy-wide productivity matched housing",
+    "value": "$1.1 trillion poorer",
+    "asAt": "as stated in article",
+    "issue": "productivity",
+    "source": "SMH"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Labour productivity",
+    "def": "Output produced per hour worked."
+   },
+   {
+    "term": "Aggregate supply",
+    "def": "The total goods and services firms are willing to produce; raised by productivity gains."
+   },
+   {
+    "term": "Microeconomic reform",
+    "def": "Policies that improve efficiency in particular markets or industries."
+   }
+  ],
+  "angle": "Link slow building productivity to a leftward-shifted short-run supply and to the case for microeconomic reform (regulation, licensing, skills).",
+  "questions": [
+   {
+    "q": "Explain how microeconomic reform could raise productivity in home building.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Feb 2025): figures are as at that date; check for newer data before quoting. Newspaper summary of a Productivity Commission report; check the original report for definitions. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-02/2025-02-17-smh-building-productivity-slump.pdf",
+   "label": "Original article",
+   "pages": 2
+  },
+  "links": []
+ },
+ {
+  "id": "2025-03-24-smh-gittins-supermarket-overcharging",
+  "title": "Gittins: ACCC report shows supermarkets are overcharging",
+  "date": "2025-03-24",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "A market power and cost-push inflation case study: oligopoly pricing power against the conventional demand-pull explanation.",
+  "lede": "Ross Gittins argues the ACCC supermarkets report shows Coles and Woolworths hold market power and raised margins over five years. He contends economists and the RBA have overlooked oligopoly as a source of cost-push inflation.",
+  "about": {
+   "h09": [
+    "4E.3",
+    "3C.3",
+    "4I.3"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y2d.2",
+    "Y1c.8"
+   ],
+   "y11": [
+    "P2g.3",
+    "P2g.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4E.2",
+    "4H.3"
+   ],
+   "y12": [
+    "Y2d.4",
+    "Y2c.8"
+   ],
+   "y11": [
+    "P2h.6",
+    "P2i.1"
+   ]
+  },
+  "issues": [
+   "inflation"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [
+   "adas"
+  ],
+  "figures": [
+   {
+    "label": "Coles and Woolworths share of supermarket sales",
+    "value": "two-thirds",
+    "asAt": "2025 (share has risen since 2008)",
+    "issue": "inflation",
+    "source": "ACCC report via SMH"
+   },
+   {
+    "label": "ACCC recommendations accepted by government",
+    "value": "20",
+    "asAt": "March 2025",
+    "issue": "inflation",
+    "source": "SMH"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Oligopoly",
+    "def": "A market dominated by a few large firms."
+   },
+   {
+    "term": "Cost-push inflation",
+    "def": "Inflation caused by rising costs of production, which firms pass on in prices."
+   },
+   {
+    "term": "Competition policy",
+    "def": "Government rules that promote competition and limit abuse of market power."
+   }
+  ],
+  "angle": "Opinion piece: attribute the claims to Gittins. Use the ACCC findings (higher margins and profits) for evidence, not the commentary.",
+  "questions": [
+   {
+    "q": "Distinguish between demand-pull and cost-push inflation, using the supermarket example.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Mar 2025): figures are as at that date; check for newer data before quoting. Opinion column (Ross Gittins); the ACCC findings are quoted second-hand, check the ACCC report before quoting. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-03/2025-03-24-smh-gittins-supermarket-overcharging.pdf",
+   "label": "Original article",
+   "pages": 4
+  },
+  "links": []
+ },
+ {
+  "id": "2025-05-07-deloitte-three-more-years",
+  "title": "Deloitte Access Economics: Labor's second term needs a bolder reform agenda",
+  "date": "2025-05-07",
+  "type": "report",
+  "outlets": [
+   "Deloitte Access Economics"
+  ],
+  "summary": "An economist's assessment of the policy agenda after the 2025 election: near-term cost-of-living policy versus structural reform on tax, productivity and the budget.",
+  "lede": "Deloitte Access Economics partners say Labor's election win gives it a strong platform but that its agenda lacks ambition. They warn of deficits as far as the eye can see and an outsized tax burden for younger generations without reform.",
+  "about": {
+   "h09": [
+    "4C.1",
+    "4E.1",
+    "4H.3"
+   ],
+   "y12": [
+    "Y2b.12",
+    "Y2d.1",
+    "Y2b.14"
+   ],
+   "y11": [
+    "P5b.7",
+    "P5a.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4A.7",
+    "4C.2"
+   ],
+   "y12": [
+    "Y2a.2",
+    "Y2b.10",
+    "Y1a.15"
+   ],
+   "y11": [
+    "P5c.3"
+   ]
+  },
+  "issues": [
+   "budget",
+   "productivity"
+  ],
+  "levers": [
+   "fiscal",
+   "micro"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Labor two-party-preferred vote",
+    "value": "55% (largest in 50 years)",
+    "asAt": "as at 7 May 2025",
+    "issue": "budget",
+    "source": "Deloitte Access Economics"
+   },
+   {
+    "label": "Tax cuts freezing bracket creep in 2025-26 and 2026-27",
+    "value": "$17.1bn over four years",
+    "asAt": "2025-26 Budget",
+    "issue": "budget",
+    "source": "Deloitte Access Economics"
+   },
+   {
+    "label": "Further personal income tax relief ('instant' work deductions)",
+    "value": "$2.4bn",
+    "asAt": "election commitment",
+    "issue": "budget",
+    "source": "Deloitte Access Economics"
+   },
+   {
+    "label": "Medicare bulk billing boost",
+    "value": "$9bn",
+    "asAt": "election commitment",
+    "issue": "budget",
+    "source": "Deloitte Access Economics"
+   },
+   {
+    "label": "Student debt reduction",
+    "value": "$16bn",
+    "asAt": "election commitment",
+    "issue": "budget",
+    "source": "Deloitte Access Economics"
+   },
+   {
+    "label": "First Home Guarantee Scheme expansion",
+    "value": "$600m",
+    "asAt": "election commitment",
+    "issue": "housing",
+    "source": "Deloitte Access Economics"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Structural reform",
+    "def": "Changes to the underlying settings of the economy, such as tax and regulation, to lift long-run growth."
+   },
+   {
+    "term": "Bracket creep",
+    "def": "Rising incomes push taxpayers into higher tax brackets when thresholds are not indexed."
+   },
+   {
+    "term": "Productivity",
+    "def": "Output per unit of input, usually per hour worked."
+   }
+  ],
+  "angle": "Use the Chalmers quote (first term inflation, second term productivity) to frame the shift in policy priorities.",
+  "questions": [
+   {
+    "q": "Assess the view that Australia needs structural reform to fund government spending sustainably.",
+    "marks": 6
+   }
+  ],
+  "note": "Older item (published May 2025): figures are as at that date; check for newer data before quoting. Private-sector consultancy newsletter dated 7 May 2025; contains an interpretive stance on policy. Reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-05/2025-05-07-deloitte-three-more-years.pdf",
+   "label": "Report",
+   "pages": 3
+  },
+  "links": []
+ },
+ {
+  "id": "2025-04-03-afr-trump-tariffs-hit-australia-charts",
+  "title": "How Trump's 'Liberation Day' tariffs will hit Australia, in four charts",
+  "date": "2025-04-03",
+  "type": "news",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "Quantifies Australia's direct and indirect exposure to US tariffs, and why a small direct hit can still be a large global-trade shock.",
+  "lede": "AFR's Michael Read reports a 10% baseline US tariff on Australian exports from 5 April 2025, with much higher rates on Asian trading partners. He argues the indirect effect through China, Japan and South Korea and global supply chains could be much larger than the direct effect.",
+  "about": {
+   "h09": [
+    "1C.2",
+    "2D.4",
+    "1A.3"
+   ],
+   "y12": [
+    "Y3a.7",
+    "Y3e.1",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2A.1",
+    "1A.8",
+    "1B.1"
+   ],
+   "y12": [
+    "Y3a.15",
+    "Y3a.4",
+    "Y3a.16"
+   ],
+   "y11": [
+    "P6a.1"
+   ]
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade",
+   "global"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "US baseline tariff on Australian exports",
+    "value": "10%",
+    "asAt": "from 5 April 2025",
+    "issue": "trade",
+    "source": "AFR"
+   },
+   {
+    "label": "Highest 'reciprocal' tariff on Asian economies",
+    "value": "49%",
+    "asAt": "announced 2-3 Apr 2025",
+    "issue": "trade",
+    "source": "AFR"
+   },
+   {
+    "label": "US tariff on China / Japan / South Korea",
+    "value": "34% / 24% / 25%",
+    "asAt": "announced Apr 2025",
+    "issue": "trade",
+    "source": "AFR"
+   },
+   {
+    "label": "US share of Australia's goods exports",
+    "value": "4%",
+    "asAt": "2023-24",
+    "issue": "trade",
+    "source": "AFR citing DFAT"
+   },
+   {
+    "label": "Exports of goods and services",
+    "value": "about 24% of GDP",
+    "asAt": "2025 (almost double the share before the 1980s tariff phase-out)",
+    "issue": "trade",
+    "source": "AFR citing ABS"
+   },
+   {
+    "label": "Australian jobs depending on trade",
+    "value": "one in four",
+    "asAt": "as stated by PM Albanese, Apr 2025",
+    "issue": "employment",
+    "source": "AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Reciprocal tariff",
+    "def": "A tariff set in response to the rate another country charges, or its trade surplus."
+   },
+   {
+    "term": "Global supply chain",
+    "def": "The linked stages of production across several countries."
+   },
+   {
+    "term": "Trade diversion",
+    "def": "Trade shifts to other sources or markets because of tariffs."
+   }
+  ],
+  "angle": "Use for the difference between direct and indirect effects: the US takes only 4% of goods exports but Australia's partners in Asia are exposed.",
+  "questions": [
+   {
+    "q": "Outline one way US tariffs could affect Australia indirectly.",
+    "marks": 2
+   },
+   {
+    "q": "Explain the effects of the US tariffs on Australian exporters and the Australian economy.",
+    "marks": 6
+   }
+  ],
+  "note": "Older item (published Apr 2025): figures are as at that date; check for newer data before quoting. Text recovered by OCR from an image-only PDF, so some table values (top 20 exports to the US, top 10 destinations) could not be read reliably and are not quoted. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-04/2025-04-03-afr-trump-tariffs-hit-australia-charts.pdf",
+   "label": "Original article",
+   "pages": 4
+  },
+  "links": []
+ },
+ {
+  "id": "2025-02-21-newscomau-cba-rba-neutral-rate",
+  "title": "CBA analysts see a clue the RBA may cut rates further",
+  "date": "2025-02-21",
+  "type": "news",
+  "outlets": [
+   "news.com.au",
+   "Commonwealth Bank",
+   "RBA"
+  ],
+  "summary": "Explains how the RBA's lower estimate of the neutral rate could mean more cuts, and walks through the transmission mechanism in plain language.",
+  "lede": "Economist Jason Murphy reports that Commonwealth Bank analysts think the RBA's lower neutral rate estimate leaves room for more cuts after its first cut in February 2025. He explains how lower official rates pass through to mortgages, spending and inflation.",
+  "about": {
+   "h09": [
+    "4D.2",
+    "4D.3",
+    "3C.2"
+   ],
+   "y12": [
+    "Y2c.4",
+    "Y2c.5",
+    "Y2c.3"
+   ],
+   "y11": [
+    "P4c.3",
+    "P4c.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4I.3",
+    "4I.1",
+    "3B.4"
+   ],
+   "y12": [
+    "Y1c.8",
+    "Y2c.7",
+    "Y1b.2"
+   ],
+   "y11": [
+    "P4c.4"
+   ]
+  },
+  "issues": [
+   "rates",
+   "inflation",
+   "housing"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Cash rate futures-implied end-2025 level",
+    "value": "3.6%",
+    "asAt": "as at 21 Feb 2025 (two more cuts priced)",
+    "issue": "rates",
+    "source": "ASX Rate Tracker via news.com.au"
+   },
+   {
+    "label": "CBA forecast cash rate",
+    "value": "3.35% (three more 25bp cuts)",
+    "asAt": "end-2025",
+    "issue": "rates",
+    "source": "CBA's Gareth Aird via news.com.au"
+   },
+   {
+    "label": "Neutral rate: older view vs CBA estimate of RBA view",
+    "value": "3.5% vs 2.9%",
+    "asAt": "Feb 2025",
+    "issue": "rates",
+    "source": "news.com.au citing CBA"
+   },
+   {
+    "label": "Wage growth",
+    "value": "3.2%",
+    "asAt": "latest figure, Feb 2025",
+    "issue": "employment",
+    "source": "news.com.au"
+   },
+   {
+    "label": "Unemployment rate",
+    "value": "4.1% (from 4.0%)",
+    "asAt": "latest figure, Feb 2025",
+    "issue": "employment",
+    "source": "news.com.au"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Neutral interest rate",
+    "def": "The rate that neither speeds up nor slows down the economy."
+   },
+   {
+    "term": "Transmission mechanism",
+    "def": "How a cash rate change flows through to spending and prices."
+   },
+   {
+    "term": "Futures market pricing",
+    "def": "Market bets on future interest rates."
+   }
+  ],
+  "angle": "Use the cash-flow channel explanation for mortgage holders. Note the neutral rate is an estimate, and the article shows the RBA's models disagree.",
+  "questions": [
+   {
+    "q": "Explain how a fall in the cash rate can affect household spending and inflation.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Feb 2025): figures are as at that date; check for newer data before quoting. Analyst commentary by an economist; cash rate level after the cut is not stated in the text, so none is quoted. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-02/2025-02-21-newscomau-cba-rba-neutral-rate.pdf",
+   "label": "Original article",
+   "pages": 7
+  },
+  "links": []
+ },
+ {
+  "id": "2025-06-04-afr-march-qtr-gdp-barely-growing",
+  "title": "Economy barely grows in March quarter as business investment falters",
+  "date": "2025-06-04",
+  "type": "news",
+  "outlets": [
+   "Australian Financial Review",
+   "ABS"
+  ],
+  "summary": "March quarter 2025 national accounts: weak GDP and falling GDP per capita, with private investment still the missing piece.",
+  "lede": "The ABS reported GDP growth of just 0.2% in the March quarter, below forecasts, with equipment investment, foreign student spending and state infrastructure all falling. Annual growth held at 1.3% and GDP per capita fell for the ninth time in 11 quarters.",
+  "about": {
+   "h09": [
+    "3A.4",
+    "3A.7",
+    "3A.5"
+   ],
+   "y12": [
+    "Y1a.3",
+    "Y1a.5",
+    "Y1a.15"
+   ],
+   "y11": [
+    "P1e.1",
+    "P1e.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4I.1",
+    "4D.2",
+    "2B.4"
+   ],
+   "y12": [
+    "Y1a.6",
+    "Y1a.14",
+    "Y2c.4"
+   ],
+   "y11": [
+    "P1e.6"
+   ]
+  },
+  "issues": [
+   "growth",
+   "investment",
+   "productivity"
+  ],
+  "levers": [
+   "monetary",
+   "fiscal"
+  ],
+  "diagrams": [
+   "adas"
+  ],
+  "figures": [
+   {
+    "label": "Real GDP growth, quarterly",
+    "value": "0.2%",
+    "asAt": "March quarter 2025 (RBA forecast 0.45%)",
+    "issue": "growth",
+    "source": "ABS via AFR"
+   },
+   {
+    "label": "Real GDP growth, annual",
+    "value": "1.3%",
+    "asAt": "year to March 2025 (long-run average 2.7%)",
+    "issue": "growth",
+    "source": "ABS via AFR"
+   },
+   {
+    "label": "GDP per capita, quarterly",
+    "value": "-0.2%",
+    "asAt": "March quarter 2025 (ninth fall in 11 quarters)",
+    "issue": "growth",
+    "source": "ABS via AFR"
+   },
+   {
+    "label": "Machinery and equipment investment",
+    "value": "-1.7% in the quarter",
+    "asAt": "March quarter 2025 (-3.7% over the year)",
+    "issue": "investment",
+    "source": "ABS via AFR"
+   },
+   {
+    "label": "Household spending",
+    "value": "+0.4%",
+    "asAt": "March quarter 2025 (essentials)",
+    "issue": "growth",
+    "source": "ABS via AFR"
+   },
+   {
+    "label": "Home building",
+    "value": "+2.6%",
+    "asAt": "March quarter 2025",
+    "issue": "housing",
+    "source": "ABS via AFR"
+   },
+   {
+    "label": "Market odds of RBA cut to 3.6% in July",
+    "value": "84%",
+    "asAt": "as at 4 Jun 2025",
+    "issue": "rates",
+    "source": "AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "GDP per capita",
+    "def": "Real GDP divided by population; a rough proxy for living standards."
+   },
+   {
+    "term": "Business investment",
+    "def": "Spending by firms on capital such as machinery and equipment."
+   },
+   {
+    "term": "Net exports",
+    "def": "Exports minus imports; a component of aggregate demand."
+   }
+  ],
+  "angle": "Use for describing the business cycle and the 'public to private' growth handover. Notes that per capita falls mean a per capita recession.",
+  "questions": [
+   {
+    "q": "Outline what the GDP per capita data suggest about living standards.",
+    "marks": 2
+   },
+   {
+    "q": "Explain why weak business investment concerns policy makers.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Jun 2025): figures are as at that date; check for newer data before quoting. The AFR page is a short early report marked 'More to come'; later ABS revisions are possible. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-06/2025-06-04-afr-march-qtr-gdp-barely-growing.pdf",
+   "label": "Original article",
+   "pages": 8
+  },
+  "links": []
+ },
+ {
+  "id": "2025-06-04-afr-markets-live-gdp-q1",
+  "title": "Markets Live: March quarter GDP grew 0.2%, missing forecasts",
+  "date": "2025-06-04",
+  "type": "news",
+  "outlets": [
+   "Australian Financial Review",
+   "ABS"
+  ],
+  "summary": "A same-day market reaction to the March 2025 GDP result, showing the headline numbers against forecasts and the global tariff backdrop.",
+  "lede": "AFR's Markets Live blog flags March quarter GDP growth of 0.2% against a forecast 0.4% and a previous 0.6%, with annual growth stalling at 1.3%. The blog places the weak result against US trade policy and a RBA that had cut rates twice in 2025.",
+  "about": {
+   "h09": [
+    "3A.4",
+    "3A.7"
+   ],
+   "y12": [
+    "Y1a.3",
+    "Y1a.15"
+   ],
+   "y11": [
+    "P1e.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4D.2",
+    "1C.2",
+    "1A.8"
+   ],
+   "y12": [
+    "Y3e.3",
+    "Y2c.4"
+   ],
+   "y11": [
+    "P6a.1"
+   ]
+  },
+  "issues": [
+   "growth",
+   "global"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Real GDP growth, quarterly",
+    "value": "0.2% (forecast 0.4%)",
+    "asAt": "March quarter 2025 (previous quarter 0.6%)",
+    "issue": "growth",
+    "source": "AFR Markets Live"
+   },
+   {
+    "label": "Real GDP growth, annual",
+    "value": "1.3%",
+    "asAt": "year to March 2025",
+    "issue": "growth",
+    "source": "AFR Markets Live"
+   },
+   {
+    "label": "US tariff on steel and aluminium imports",
+    "value": "50%",
+    "asAt": "executive order, as at 4 Jun 2025",
+    "issue": "trade",
+    "source": "AFR Markets Live"
+   },
+   {
+    "label": "China official growth goal",
+    "value": "'around 5 per cent'",
+    "asAt": "2025 (CBA commentary)",
+    "issue": "growth",
+    "source": "CBA via AFR Markets Live"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Business cycle",
+    "def": "Fluctuations in real GDP around its long-run trend."
+   },
+   {
+    "term": "Forecast miss",
+    "def": "When actual data differs from economists' expected figure."
+   }
+  ],
+  "angle": "Pair with the longer AFR GDP article for a fuller picture; only the first post is relevant to the syllabus.",
+  "questions": [
+   {
+    "q": "Using the data, describe Australia's economic growth in the year to March 2025.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Jun 2025): figures are as at that date; check for newer data before quoting. A live blog page: most posts are unrelated company and share market items. Use only the GDP and tariff posts. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-06/2025-06-04-afr-markets-live-gdp-q1.pdf",
+   "label": "Original article",
+   "pages": 9
+  },
+  "links": []
+ },
+ {
+  "id": "2025-02-17-smh-short-term-rentals-sydney",
+  "title": "Councils press NSW to tighten short-term rental rules to free up homes",
+  "date": "2025-02-17",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "A housing supply case study of regulation, with data problems and an unproven effect of the 180-day cap.",
+  "lede": "SMH reports the City of Sydney council will consider urging the NSW government to toughen short-term rental rules, which a council motion says could return over 1000 homes to long-term rental. The housing minister says all options, including a day cap and a levy, will be considered.",
+  "about": {
+   "h09": [
+    "4E.3",
+    "4E.2"
+   ],
+   "y12": [
+    "Y2d.3",
+    "Y2d.4"
+   ],
+   "y11": [
+    "P5a.5",
+    "P2i.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4I.5",
+    "3E.3"
+   ],
+   "y12": [
+    "Y2d.6",
+    "Y2d.5"
+   ],
+   "y11": [
+    "P2i.5",
+    "P2h.1"
+   ]
+  },
+  "issues": [
+   "housing"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [
+   "ds"
+  ],
+  "figures": [
+   {
+    "label": "Active registered short-term rentals in City of Sydney",
+    "value": "2468",
+    "asAt": "2023, NSW government data",
+    "issue": "housing",
+    "source": "SMH"
+   },
+   {
+    "label": "Short-term rentals per AirDNA data",
+    "value": "5454",
+    "asAt": "2023, City of Sydney",
+    "issue": "housing",
+    "source": "AirDNA via SMH"
+   },
+   {
+    "label": "Hosts with multiple listings",
+    "value": "68%",
+    "asAt": "City of Sydney, report from 2024",
+    "issue": "housing",
+    "source": "City of Sydney report via SMH"
+   },
+   {
+    "label": "Short-term rentals as share of dwellings",
+    "value": "about 3.5%",
+    "asAt": "2024 report (Mecone and Atlas Economics)",
+    "issue": "housing",
+    "source": "SMH"
+   },
+   {
+    "label": "Homes that could return to long-term rental",
+    "value": "over 1000",
+    "asAt": "council motion estimate",
+    "issue": "housing",
+    "source": "SMH"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Regulation",
+    "def": "Rules a government sets to change how markets operate."
+   },
+   {
+    "term": "Day cap",
+    "def": "A limit on the number of days a home can be let short-term (180 days for non-hosted rentals in Sydney)."
+   },
+   {
+    "term": "Government failure",
+    "def": "When intervention fails because of poor data, enforcement or unintended effects."
+   }
+  ],
+  "angle": "Good for evaluating a microeconomic policy: weak data and enforcement limit effectiveness.",
+  "questions": [
+   {
+    "q": "Explain one limitation of regulating short-term rentals, using the article.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Feb 2025): figures are as at that date; check for newer data before quoting. Local (Sydney council) story; the two figures for registered rentals differ by source, so quote both with attribution. Newspaper article reproduced for classroom use. A second copy of the same story (a full SMH page) was not filed separately.",
+  "file": {
+   "path": "files/2025-02/2025-02-17-smh-short-term-rentals-sydney.pdf",
+   "label": "Original article",
+   "pages": 2
+  },
+  "links": []
+ },
+ {
+  "id": "2025-06-18-afr-chalmers-tax-reform-crucial",
+  "title": "Chalmers says tax reform is 'crucial' to budget sustainability",
+  "date": "2025-06-18",
+  "type": "news",
+  "outlets": [
+   "Australian Financial Review"
+  ],
+  "summary": "Links the budget outlook, tax mix and stagnant productivity to the government's reform agenda ahead of the August 2025 roundtable.",
+  "lede": "In a National Press Club speech, Treasurer Jim Chalmers says tax reform is needed to cut reliance on income tax and keep the budget sustainable, with deficits forecast for a decade. He sets three preconditions for reform and asks the Productivity Commission to report ahead of an August roundtable.",
+  "about": {
+   "h09": [
+    "4C.1",
+    "4E.1",
+    "4C.3"
+   ],
+   "y12": [
+    "Y2b.12",
+    "Y2b.14",
+    "Y2d.1"
+   ],
+   "y11": [
+    "P5b.7",
+    "P5b.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3A.6",
+    "4H.3",
+    "3E.3"
+   ],
+   "y12": [
+    "Y1a.10",
+    "Y2b.10",
+    "Y2a.2"
+   ],
+   "y11": [
+    "P5b.1",
+    "P5b.6"
+   ]
+  },
+  "issues": [
+   "budget",
+   "productivity"
+  ],
+  "levers": [
+   "fiscal",
+   "micro"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Income tax burden projected to hit highest level since GST",
+    "value": "by 2029",
+    "asAt": "AFR, Jun 2025",
+    "issue": "budget",
+    "source": "AFR citing Treasury"
+   },
+   {
+    "label": "Budget outlook",
+    "value": "deficits for the next decade",
+    "asAt": "Treasury forecast, Jun 2025",
+    "issue": "budget",
+    "source": "AFR"
+   },
+   {
+    "label": "Labour productivity growth since 2016",
+    "value": "barely any",
+    "asAt": "as at Jun 2025",
+    "issue": "productivity",
+    "source": "ABS via AFR"
+   },
+   {
+    "label": "Share of national income growth from productivity gains",
+    "value": "about 80%",
+    "asAt": "past three decades",
+    "issue": "productivity",
+    "source": "Productivity Commission via AFR"
+   },
+   {
+    "label": "Productivity roundtable dates",
+    "value": "19-21 August 2025",
+    "asAt": "announced Jun 2025",
+    "issue": "productivity",
+    "source": "AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Tax reform",
+    "def": "Changing the mix or design of taxes to raise revenue more efficiently or fairly."
+   },
+   {
+    "term": "Budget-neutral",
+    "def": "A policy that does not change the budget balance."
+   },
+   {
+    "term": "Fiscal sustainability",
+    "def": "The ability to meet spending without ever-growing debt."
+   }
+  ],
+  "angle": "Chalmers' three preconditions (national interest, specific and practical, budget-neutral or positive) summarise how the government frames reform.",
+  "questions": [
+   {
+    "q": "Explain why a government might reform its tax system.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Jun 2025): figures are as at that date; check for newer data before quoting. Report on a political speech; policy positions may have changed since. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-06/2025-06-18-afr-chalmers-tax-reform-crucial.pdf",
+   "label": "Original article",
+   "pages": 11
+  },
+  "links": []
+ },
+ {
+  "id": "2024-08-28-smh-wade-trump-tariffs-take-a-toll",
+  "title": "Trump's tariffs will take a toll on Australia",
+  "date": "2024-08-28",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "Pre-election analysis of how proposed US tariffs on China and all imports would hit an open, trade-exposed economy through spillovers, inflation and interest rates.",
+  "lede": "SMH economics writer Matt Wade reports economists' warnings that Donald Trump's plan for a 10% levy on all imports and 60% on China would be 'devastating' for the world economy. Australia would face global spillovers even if exempt from the direct tariff.",
+  "about": {
+   "h09": [
+    "1C.2",
+    "2D.4",
+    "1A.3"
+   ],
+   "y12": [
+    "Y3a.7",
+    "Y3e.1",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3C.3",
+    "4H.2",
+    "1B.4"
+   ],
+   "y12": [
+    "Y3a.15",
+    "Y1c.4",
+    "Y3a.4"
+   ],
+   "y11": [
+    "P6a.1"
+   ]
+  },
+  "issues": [
+   "trade",
+   "global",
+   "inflation"
+  ],
+  "levers": [
+   "trade",
+   "global"
+  ],
+  "diagrams": [
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Proposed US tariff on all imports",
+    "value": "10%",
+    "asAt": "Trump campaign proposal, Aug 2024",
+    "issue": "trade",
+    "source": "SMH"
+   },
+   {
+    "label": "Proposed US tariff on Chinese goods",
+    "value": "60%",
+    "asAt": "Trump campaign proposal, Aug 2024",
+    "issue": "trade",
+    "source": "SMH"
+   },
+   {
+    "label": "Share of Australian exports going to China",
+    "value": "about 35%",
+    "asAt": "Aug 2024",
+    "issue": "trade",
+    "source": "SMH"
+   },
+   {
+    "label": "Australian jobs related to overseas trade",
+    "value": "about one in four",
+    "asAt": "federal government estimate, Aug 2024",
+    "issue": "employment",
+    "source": "SMH"
+   },
+   {
+    "label": "US tariff on Chinese electric vehicles under Biden",
+    "value": "100%",
+    "asAt": "Aug 2024",
+    "issue": "trade",
+    "source": "SMH"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Tariff",
+    "def": "A tax on imports that raises their price."
+   },
+   {
+    "term": "Spillover",
+    "def": "An effect on one economy of changes in another."
+   },
+   {
+    "term": "Tit-for-tat retaliation",
+    "def": "When countries respond to tariffs with their own trade restrictions."
+   }
+  ],
+  "angle": "Written before the 2024 US election, so it is a forecast of policy, not of outcomes; compare with 2025 AFR items.",
+  "questions": [
+   {
+    "q": "Explain how a US-China trade war could affect Australia's exports and inflation.",
+    "marks": 5
+   }
+  ],
+  "note": "Older item (published Aug 2024): figures are as at that date; check for newer data before quoting. Opinion piece; pre-election proposals, not enacted policy. The PDF page also contains an unrelated column on airlines. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2024-08/2024-08-28-smh-wade-trump-tariffs-take-a-toll.pdf",
+   "label": "Original article",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-04-10-smh-bartholomeusz-bond-vigilantes",
+  "title": "Bond markets forced Trump to pause his reciprocal tariffs",
+  "date": "2025-04-10",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "Shows how financial markets can constrain trade policy, and the size of the US-China tariff escalation in April 2025.",
+  "lede": "Columnist Stephen Bartholomeusz argues a sell-off in US bonds, shares and the dollar forced Trump to pause 'reciprocal' tariffs for 90 days. He sets out the US-China escalation to rates of 125% and the stagflation risk from the remaining universal 10% tariff.",
+  "about": {
+   "h09": [
+    "1C.2",
+    "2D.4",
+    "1A.4"
+   ],
+   "y12": [
+    "Y3a.7",
+    "Y3a.15",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P6a.1",
+    "P4c.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "1A.8",
+    "4H.2",
+    "2C.2"
+   ],
+   "y12": [
+    "Y3c.4",
+    "Y1c.1",
+    "Y1a.14"
+   ],
+   "y11": [
+    "P4c.3",
+    "P6c.1"
+   ]
+  },
+  "issues": [
+   "trade",
+   "global",
+   "fx"
+  ],
+  "levers": [
+   "trade",
+   "global"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "US tariff on Chinese goods after Trump's response",
+    "value": "125%",
+    "asAt": "9 Apr 2025 (China's tariff on US goods 84%)",
+    "issue": "trade",
+    "source": "SMH"
+   },
+   {
+    "label": "Pause on 'reciprocal' tariffs",
+    "value": "90 days (10% universal tariff stays)",
+    "asAt": "announced 9 Apr 2025",
+    "issue": "trade",
+    "source": "SMH"
+   },
+   {
+    "label": "US sharemarket move",
+    "value": "about -12% in a week; +9.5% after pause",
+    "asAt": "week to 9 Apr 2025",
+    "issue": "global",
+    "source": "SMH"
+   },
+   {
+    "label": "US-China annual trade",
+    "value": "close to US$600bn",
+    "asAt": "Apr 2025 (US imports from China about US$440bn)",
+    "issue": "trade",
+    "source": "SMH"
+   },
+   {
+    "label": "Rise in US 10-year bond yield before pause",
+    "value": "24 basis points",
+    "asAt": "9 Apr 2025",
+    "issue": "rates",
+    "source": "SMH"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Stagflation",
+    "def": "Slowing growth together with rising inflation."
+   },
+   {
+    "term": "Bond yield",
+    "def": "The return on a bond; moves inversely to bond prices."
+   },
+   {
+    "term": "Retaliation",
+    "def": "A trading partner responds to tariffs by imposing its own."
+   }
+  ],
+  "angle": "Opinion column with a strong view ('mad king'); use the quoted market moves and tariff rates as evidence and attribute the argument to the author.",
+  "questions": [
+   {
+    "q": "Explain how tariffs could cause both lower growth and higher inflation in the United States.",
+    "marks": 4
+   }
+  ],
+  "note": "Older item (published Apr 2025): figures are as at that date; check for newer data before quoting. Opinion column; tariff rates changed rapidly after this date. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-04/2025-04-10-smh-bartholomeusz-bond-vigilantes.pdf",
+   "label": "Original article",
+   "pages": 6
+  },
+  "links": []
+ },
+ {
+  "id": "2025-02-17-smh-news-bargaining-incentive-tariff-threat",
+  "title": "Trump tariff threat leads Australia to pause its big-tech levy",
+  "date": "2025-02-17",
+  "type": "news",
+  "outlets": [
+   "Sydney Morning Herald"
+  ],
+  "summary": "Shows how the threat of US reciprocal tariffs constrains a domestic policy, and why Australia sits in a mixed position as a trade partner.",
+  "lede": "The SMH reports the Australian government has paused a news bargaining incentive on digital platforms while Ambassador Kevin Rudd works to avoid US trade retaliation. Trump had threatened reciprocal tariffs on 'friend and foe' over domestic taxes on US goods.",
+  "about": {
+   "h09": [
+    "2D.4",
+    "1C.2"
+   ],
+   "y12": [
+    "Y3a.15",
+    "Y3e.1"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2D.1",
+    "4H.3",
+    "1B.4"
+   ],
+   "y12": [
+    "Y3a.7",
+    "Y3a.16",
+    "Y2d.6"
+   ],
+   "y11": [
+    "P5a.5"
+   ]
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Funding gap the levy aims to plug",
+    "value": "$200 million",
+    "asAt": "Feb 2025",
+    "issue": "trade",
+    "source": "SMH"
+   },
+   {
+    "label": "Value of Meta payments under the earlier code",
+    "value": "$70 million",
+    "asAt": "before Meta pulled out",
+    "issue": "trade",
+    "source": "SMH"
+   },
+   {
+    "label": "US tariffs on goods moving between Australia and the US",
+    "value": "none (US runs a trade surplus with Australia)",
+    "asAt": "as at Feb 2025",
+    "issue": "trade",
+    "source": "SMH"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Reciprocal tariff",
+    "def": "A tariff matched to a trading partner's own taxes or barriers."
+   },
+   {
+    "term": "News bargaining incentive",
+    "def": "Proposed charge on platforms that decline to pay Australian publishers."
+   },
+   {
+    "term": "Trade retaliation",
+    "def": "A response to a trading partner's policy through trade measures."
+   }
+  ],
+  "angle": "A secondary example only; the economic content is the link between domestic policy and trade retaliation risk.",
+  "questions": [
+   {
+    "q": "Outline how the threat of US tariffs could affect Australian government policy.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Feb 2025): figures are as at that date; check for newer data before quoting. Front-page exclusive based on anonymous sources; the PDF page also includes unrelated CBD columns. The Herald's owner (Nine) is a party to the issue, so treat with care. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2025-02/2025-02-17-smh-news-bargaining-incentive-tariff-threat.pdf",
+   "label": "Original article",
+   "pages": 1
+  },
+  "links": []
+ },
+ {
+  "id": "2025-04-10-visual-capitalist-trump-tariffs-charts",
+  "title": "Visual Capitalist: Trump's tariffs in charts",
+  "date": "2025-04-10",
+  "type": "graph",
+  "outlets": [
+   "Visual Capitalist"
+  ],
+  "summary": "Charts placing the 2025 tariff rises in the long history of US tariffs, with the market and price effects.",
+  "lede": "A Visual Capitalist infographic charts US average effective tariff rates since the 1890s, the April 2025 tariff rates by country, tariff-driven falls in the S&P 500, and the importance of China to US imports.",
+  "about": {
+   "h09": [
+    "1C.2",
+    "1C.1",
+    "2D.4"
+   ],
+   "y12": [
+    "Y3a.7",
+    "Y3a.5",
+    "Y3a.15"
+   ],
+   "y11": [
+    "P6a.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "1B.1",
+    "1A.8"
+   ],
+   "y12": [
+    "Y3a.13",
+    "Y3e.3",
+    "Y3a.14"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "US average effective tariff, 2025 projection",
+    "value": "14.5%",
+    "asAt": "with Trump-imposed tariffs, as at Apr 2025",
+    "issue": "trade",
+    "source": "Visual Capitalist citing US Census Bureau, USITC, Tax Foundation"
+   },
+   {
+    "label": "Tariff on China",
+    "value": "125%",
+    "asAt": "after 9 Apr 2025",
+    "issue": "trade",
+    "source": "Visual Capitalist"
+   },
+   {
+    "label": "S&P 500 low",
+    "value": "4,835",
+    "asAt": "7 Apr 2025",
+    "issue": "global",
+    "source": "Visual Capitalist"
+   },
+   {
+    "label": "China's share of US consumer electronics imports",
+    "value": "41%",
+    "asAt": "2024",
+    "issue": "trade",
+    "source": "US International Trade Administration via Visual Capitalist"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Effective tariff rate",
+    "def": "Total tariff revenue divided by the value of imports."
+   },
+   {
+    "term": "Smoot-Hawley Tariff",
+    "def": "1930 US law raising tariffs on over 20,000 goods, which sparked global retaliation."
+   },
+   {
+    "term": "MFN tariff",
+    "def": "The standard tariff a country applies equally to WTO members."
+   }
+  ],
+  "angle": "Use the long-run chart to show protectionism is cyclical; check figures against original sources before quoting.",
+  "questions": [
+   {
+    "q": "Describe the trend in US tariff rates shown in the infographic.",
+    "marks": 2
+   }
+  ],
+  "note": "Older item (published Apr 2025): figures are as at that date; check for newer data before quoting. Infographic with image-only text recovered by OCR; no publication date shown so the date is taken from the file's modified date (10 Apr 2025). Some chart values were not legible and are not quoted, check the original. Secondary or third-party compilation.",
+  "file": {
+   "path": "files/2025-04/2025-04-10-visual-capitalist-trump-tariffs-charts.pdf",
+   "label": "Report",
+   "pages": 6
+  },
+  "links": []
+ },
+ {
+  "id": "2020-01-29-afr-businesses-not-raising-prices",
+  "title": "60pc of businesses don't plan to raise prices",
+  "date": "2020-01-29",
+  "type": "news",
+  "outlets": [
+   "Australian Financial Review",
+   "Australian Industry Group",
+   "NAB"
+  ],
+  "summary": "A snapshot of low inflation and weak price-setting in early 2020, before COVID, with the RBA below target and rates expected lower.",
+  "lede": "The AFR reports that about 60% of businesses did not plan to raise selling prices in 2020, according to an Ai Group survey, while the NAB survey shows weak inflation pressure. The RBA expected headline inflation below its 2 to 3% target.",
+  "about": {
+   "h09": [
+    "3C.2",
+    "3C.1",
+    "4D.3"
+   ],
+   "y12": [
+    "Y1c.8",
+    "Y2c.3",
+    "Y1c.3"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4I.3",
+    "3B.2"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y2c.7"
+   ],
+   "y11": [
+    "P1e.5"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "phillips"
+  ],
+  "figures": [
+   {
+    "label": "Businesses not planning to raise selling prices in 2020",
+    "value": "about 60%",
+    "asAt": "Ai Group CEO survey, Jan 2020",
+    "issue": "inflation",
+    "source": "Ai Group via AFR"
+   },
+   {
+    "label": "Firms expecting to raise / hold / cut prices",
+    "value": "40% / 53% / 7%",
+    "asAt": "Ai Group survey, Jan 2020",
+    "issue": "inflation",
+    "source": "Ai Group via AFR"
+   },
+   {
+    "label": "RBA forecast headline / trimmed inflation",
+    "value": "1.9% / 1.6%",
+    "asAt": "December quarter 2019 forecast",
+    "issue": "inflation",
+    "source": "AFR citing RBA"
+   },
+   {
+    "label": "Employment rise",
+    "value": "28,800",
+    "asAt": "December 2019 (market expected about 10,000)",
+    "issue": "employment",
+    "source": "AFR"
+   },
+   {
+    "label": "NAB final product price inflation",
+    "value": "0.3% (0.5% in Nov)",
+    "asAt": "December 2019, monthly",
+    "issue": "inflation",
+    "source": "NAB via AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Underlying (trimmed mean) inflation",
+    "def": "A measure that removes volatile price changes to show the trend."
+   },
+   {
+    "term": "Inflation target",
+    "def": "The RBA aims for CPI inflation of 2 to 3% on average over time."
+   },
+   {
+    "term": "Output gap",
+    "def": "Difference between actual and potential output."
+   }
+  ],
+  "angle": "Pre-COVID context useful for comparing the low-inflation 2010s with the 2022-23 surge.",
+  "questions": [
+   {
+    "q": "Explain why low inflation can be a concern for the RBA.",
+    "marks": 3
+   }
+  ],
+  "note": "Older item (published Jan 2020): figures are as at that date; check for newer data before quoting. Dated 29 January 2020, pre-COVID, so conditions are very different from today. Newspaper article reproduced for classroom use.",
+  "file": {
+   "path": "files/2020-01/2020-01-29-afr-businesses-not-raising-prices.pdf",
+   "label": "Original article",
+   "pages": 2
+  },
+  "links": []
+ }
+]
