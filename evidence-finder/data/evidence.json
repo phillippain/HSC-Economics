@@ -2490,5 +2490,880 @@
     "url": "https://www.macrobusiness.com.au/2026/10/the-economic-week-in-review-3/"
    }
   ]
+ },
+ {
+  "id": "2026-10-21-canada-tariff-shield",
+  "title": "Canada spends billions to shield steel and autos from US tariffs",
+  "date": "2026-10-21",
+  "dateText": "21–23 Oct 2026",
+  "type": "news",
+  "outlets": [
+   "Euronews",
+   "money.ca",
+   "Western Standard",
+   "Russell Investments"
+  ],
+  "summary": "A full trade-war cycle in one case: US tariffs, Canadian retaliation, then subsidies, with a tariff diagram and a subsidy diagram ready for an answer.",
+  "lede": "On 21 October Canada's Prime Minister and Ontario's Premier announced a package of roughly C$9 billion to support steel and auto firms hit by 50% US tariffs. It follows US tariffs on about US$20 billion of Canadian goods, failed talks and dollar-for-dollar Canadian retaliation.",
+  "about": {
+   "h09": [
+    "1C.2",
+    "1C.1",
+    "1B.4"
+   ],
+   "y12": [
+    "Y3a.5",
+    "Y3a.6",
+    "Y3a.7",
+    "Y3a.8"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "2D.4",
+    "1B.1",
+    "1A.3"
+   ],
+   "y12": [
+    "Y3a.10",
+    "Y3a.11",
+    "Y3a.13",
+    "Y3e.1"
+   ],
+   "y11": [
+    "P6a.1"
+   ]
+  },
+  "issues": [
+   "trade",
+   "global",
+   "employment"
+  ],
+  "levers": [
+   "trade",
+   "fiscal"
+  ],
+  "diagrams": [
+   "ds",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "US tariff on Canadian goods (about US$20b of trade)",
+    "value": "50%",
+    "asAt": "since late Aug 2026",
+    "issue": "trade",
+    "source": "Euronews; money.ca"
+   },
+   {
+    "label": "Federal–Ontario support package",
+    "value": "about C$9b (Euronews: C$6.2b)",
+    "asAt": "21 Oct 2026",
+    "issue": "budget",
+    "source": "money.ca; Western Standard; Euronews"
+   },
+   {
+    "label": "Canada's retaliatory tariffs on US goods",
+    "value": "10–50%",
+    "asAt": "from 8 Sept 2026",
+    "issue": "trade",
+    "source": "Euronews; GCCA"
+   },
+   {
+    "label": "Fall in Canadian auto exports to the US",
+    "value": "over 10%",
+    "asAt": "2026",
+    "issue": "trade",
+    "source": "Euronews"
+   },
+   {
+    "label": "Fall in US exports to Canada",
+    "value": "over 20%",
+    "asAt": "2026",
+    "issue": "trade",
+    "source": "Euronews"
+   },
+   {
+    "label": "Jobs lost in Ontario",
+    "value": "about 20,000",
+    "asAt": "Sept 2026",
+    "issue": "employment",
+    "source": "Statistics Canada via Euronews"
+   },
+   {
+    "label": "Share of US imports from Canada covered by the 50% tariffs",
+    "value": "about 5%",
+    "asAt": "2026",
+    "issue": "trade",
+    "source": "Russell Investments"
+   },
+   {
+    "label": "Canadian employment insurance replacement rate",
+    "value": "55% of average insured earnings (cap about C$729 a week)",
+    "asAt": "2026",
+    "issue": "employment",
+    "source": "money.ca"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Protectionism",
+    "def": "Policies such as tariffs, quotas and subsidies that shield domestic producers from foreign competition."
+   },
+   {
+    "term": "Tariff",
+    "def": "A tax on imports that raises their domestic price."
+   },
+   {
+    "term": "Retaliation",
+    "def": "Counter-tariffs imposed by a targeted country in response to another country's tariffs."
+   },
+   {
+    "term": "Deadweight loss",
+    "def": "The loss of total welfare when a tariff causes inefficient production and reduced consumption."
+   },
+   {
+    "term": "Trade diversion",
+    "def": "Redirecting exports to new markets, here Canada's goal of doubling non-US exports within a decade."
+   }
+  ],
+  "angle": "Use the first diagram for the effect of a tariff on producers, consumers and government revenue, the second for the cost and benefit of subsidies, and the 'Who bears the cost?' section to show that the costs of a trade war are uneven.",
+  "questions": [
+   {
+    "q": "Using a diagram, explain the effect of a tariff on domestic producers, consumers and government revenue in the importing country.",
+    "marks": 5
+   },
+   {
+    "q": "Explain why the costs of the US–Canada trade war fall more heavily on Canada than on the US.",
+    "marks": 4
+   },
+   {
+    "q": "Assess the effectiveness of industry subsidies as a response to a trading partner's tariffs.",
+    "marks": 6
+   }
+  ],
+  "extended": "Evaluate the effects of protectionist policies on the domestic and global economy.",
+  "note": "Reports differ on the size of the package: C$6.2b (Euronews) versus nearly C$9b (money.ca, Western Standard). Quote the figure with its source. Job numbers in the package are government projections, not measured results.",
+  "file": {
+   "path": "files/2026-10/2026-10-21-canada-tariff-shield.pdf",
+   "label": "Student handout",
+   "pages": 3
+  },
+  "links": [
+   {
+    "label": "Euronews, Canada unveils $6.2bn plan to shield manufacturers as Trump trade tariffs bite, 22 Oct 2026",
+    "url": "https://www.euronews.com/2026/10/22/canada-unveils-62bn-plan-to-shield-manufacturers-as-trump-trade-tariffs-bite"
+   },
+   {
+    "label": "money.ca, Carney and Ford unveil joint support package for Ontario's auto and steel sectors, 21 Oct 2026",
+    "url": "https://money.ca/news/economy/ontario-auto-steel-tariff-support-carney-ford"
+   },
+   {
+    "label": "Western Standard, Ford and Carney announce nearly $9 billion for Ontario steel, auto and Ring of Fire, 21 Oct 2026",
+    "url": "https://www.westernstandard.news/news/watch-ford-and-carney-announce-nearly-9-billion-for-ontario-steel-auto-and-ring-of-fire/78068"
+   },
+   {
+    "label": "Global Cold Chain Alliance, August 2026 Trade Updates: U.S.-Canada Talks Collapse",
+    "url": "https://www.gcca.org/news-announcements/august-2026-trade-updates-u-s-canada-talks-collapse/"
+   },
+   {
+    "label": "Russell Investments, What the new Section 338 tariffs mean for the U.S. and Canada, Aug 2026",
+    "url": "https://russellinvestments.com/content/ri/us/en/insights/russell-research/2026/08/338-tariffs-US-Canada.html"
+   },
+   {
+    "label": "DFAT, Latest on US tariffs and trade measures",
+    "url": "https://www.dfat.gov.au/trade/trade-and-investment/latest-us-tariffs"
+   }
+  ]
+ },
+ {
+  "id": "2026-10-18-developing-world-debt-squeeze",
+  "title": "Rich-country borrowing squeezes the developing world",
+  "date": "2026-10-18",
+  "dateText": "12–23 Oct 2026",
+  "type": "news",
+  "outlets": [
+   "Reuters",
+   "IMF",
+   "UNCTAD",
+   "IISD SDG Knowledge Hub"
+  ],
+  "summary": "Shows how higher bond yields in advanced economies and falling aid raise debt-service costs in developing countries, and gives both sides of the IMF and World Bank policy debate.",
+  "lede": "The IMF and World Bank meetings in Bangkok ended with a warning but no new plan. Debt repayments now take about 14% of low-income countries' government revenue while official aid falls to its lowest level since 2014.",
+  "about": {
+   "h09": [
+    "1B.2",
+    "1D.4",
+    "1D.5",
+    "1A.4"
+   ],
+   "y12": [
+    "Y3d.8",
+    "Y3b.4",
+    "Y3d.5",
+    "Y3d.4"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1D.6",
+    "4H.2",
+    "3D.1"
+   ],
+   "y12": [
+    "Y3d.2",
+    "Y3d.7",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "issues": [
+   "global",
+   "budget",
+   "inequality",
+   "growth"
+  ],
+  "levers": [
+   "global",
+   "fiscal"
+  ],
+  "diagrams": [
+   "flow",
+   "chart",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Developing-country debt service, share of government revenue",
+    "value": "14%",
+    "asAt": "Oct 2026 (low-income countries)",
+    "issue": "budget",
+    "source": "IMF (Georgieva) via Reuters"
+   },
+   {
+    "label": "Developing-economy growth",
+    "value": "3.6% (down from 4.4%)",
+    "asAt": "2026",
+    "issue": "growth",
+    "source": "World Bank via Reuters"
+   },
+   {
+    "label": "IMF forecast, world growth",
+    "value": "3.1% (3.4% in 2027)",
+    "asAt": "2026",
+    "issue": "global",
+    "source": "IMF World Economic Outlook"
+   },
+   {
+    "label": "IMF forecast, global inflation",
+    "value": "4.7% (4.1% in 2027)",
+    "asAt": "2026",
+    "issue": "inflation",
+    "source": "IMF World Economic Outlook"
+   },
+   {
+    "label": "Official development assistance",
+    "value": "US$152b (lowest since 2014)",
+    "asAt": "2026 projection",
+    "issue": "global",
+    "source": "UNCTAD"
+   },
+   {
+    "label": "Aid as a share of donors' gross national income",
+    "value": "0.23% (UN target 0.7%)",
+    "asAt": "2026 projection",
+    "issue": "global",
+    "source": "UNCTAD"
+   },
+   {
+    "label": "Change in aid from major donors",
+    "value": "−8.5%, −23.3%, −6.9% (proj.)",
+    "asAt": "2024, 2025, 2026",
+    "issue": "global",
+    "source": "UNCTAD"
+   },
+   {
+    "label": "World Bank private finance mobilised",
+    "value": "triple its 2022 level",
+    "asAt": "2026",
+    "issue": "investment",
+    "source": "World Bank via Reuters"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Debt service",
+    "def": "Interest and principal repayments a government must make on its debt each year."
+   },
+   {
+    "term": "Bond yield",
+    "def": "The return on a government bond; it rises when investors demand more to lend."
+   },
+   {
+    "term": "Official development assistance",
+    "def": "Government aid given to developing countries to promote economic development."
+   },
+   {
+    "term": "Development gap",
+    "def": "The difference in living standards and economic development between advanced and developing economies."
+   },
+   {
+    "term": "Sovereign debt restructuring",
+    "def": "Renegotiating a government's debts, for example with longer repayment times or reduced amounts."
+   }
+  ],
+  "angle": "Use the flow chart for the transmission of higher global interest rates, and the policy-debate table to give the IMF and World Bank view against the G-24 and academic criticism in an 'evaluate' answer.",
+  "questions": [
+   {
+    "q": "Explain how rising interest rates in advanced economies can affect economic development in low-income countries.",
+    "marks": 4
+   },
+   {
+    "q": "Outline TWO roles of the IMF or World Bank in the global economy.",
+    "marks": 4
+   },
+   {
+    "q": "'Cutting deficits and attracting private investment is the best path to development.' Discuss, with reference to recent evidence.",
+    "marks": 8
+   }
+  ],
+  "extended": "Evaluate the role and effectiveness of international organisations in promoting economic development.",
+  "note": "The 14% figure is for low-income countries' debt service. Reports differ on the earlier comparison (about 6% or 8%), so use 'more than doubled over a decade'. The Bloomberg source is a headline only. The IMF inflation forecast of 4.1% is dated 2027 here but 2025 in the other IMF meetings handout; check the WEO.",
+  "file": {
+   "path": "files/2026-10/2026-10-18-developing-world-debt-squeeze.pdf",
+   "label": "Student handout",
+   "pages": 2
+  },
+  "links": [
+   {
+    "label": "Reuters via Investing.com, Analysis: IMF/World Bank meetings leave developing countries with more questions than answers, 18 Oct 2026",
+    "url": "https://www.investing.com/news/economy-news/analysisimfworld-bank-meetings-leave-developing-countries-with-more-questions-than-answers-4955879"
+   },
+   {
+    "label": "Manila Times (republished Reuters analysis), 21 Oct 2026",
+    "url": "https://manilatimes.net/2026/10/21/opinion/columns/imf-world-bank-meetings-leave-developing-countries-with-more-questions-than-answers/2449927"
+   },
+   {
+    "label": "IMF, World Economic Outlook, October 2026",
+    "url": "https://www.imf.org/en/publications/weo/issues/2026/10/13/world-economic-outlook-october-2026"
+   },
+   {
+    "label": "IISD SDG Knowledge Hub, WBG/IMF Annual Meetings Respond to Tighter Fiscal Space, Rising Debt",
+    "url": "https://sdg.iisd.org/news/wbgimf-annual-meetings-respond-to-tighter-fiscal-space-rising-debt/"
+   },
+   {
+    "label": "Rio Times, IMF warns poor nations spend 14% on debt, 18 Oct 2026",
+    "url": "https://www.riotimesonline.com/imf-warns-poor-nations-debt-14-percent-revenue-2026/"
+   },
+   {
+    "label": "Down To Earth, Official development assistance to fall for third year in 2026, hitting $152 billion: UNCTAD",
+    "url": "https://www.downtoearth.org.in/economy/official-development-assistance-to-fall-for-third-year-in-2026-hitting-152-billion-unctad"
+   },
+   {
+    "label": "Bloomberg, Bond Selloff to Pressure Australia's Budget, Chalmers Says, 5 Oct 2026 (headline only)",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-05/higher-bond-yields-will-pressure-australia-budget-chalmers-says"
+   }
+  ]
+ },
+ {
+  "id": "2026-10-25-china-growth-iron-ore",
+  "title": "China beats growth forecasts, but its property slump weighs on iron ore",
+  "date": "2026-10-25",
+  "dateText": "19–25 Oct 2026",
+  "type": "news",
+  "outlets": [
+   "Free Press Journal",
+   "ABC News"
+  ],
+  "summary": "Shows why the composition of China's growth matters more to Australia than the headline rate: construction-led growth lifts iron ore demand and the terms of trade, export-led growth does not.",
+  "lede": "China's economy grew 4.5% in the year to the September quarter, above forecasts and helped by AI-linked exports. Property investment is down 20.6% and iron ore is near US$91 a tonne.",
+  "about": {
+   "h09": [
+    "1E.1",
+    "1A.8",
+    "2B.4"
+   ],
+   "y12": [
+    "Y3e.3",
+    "Y1a.7",
+    "Y3e.1"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "2A.1",
+    "3D.3"
+   ],
+   "y12": [
+    "Y3a.15",
+    "Y3c.4"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "issues": [
+   "global",
+   "growth",
+   "trade"
+  ],
+  "levers": [],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "China GDP growth, year on year",
+    "value": "4.5% (Q2 4.3%, forecast 4.4%)",
+    "asAt": "Sept qtr 2026",
+    "issue": "growth",
+    "source": "China NBS via Free Press Journal"
+   },
+   {
+    "label": "China GDP growth, Jan–Sept",
+    "value": "4.6% (target 4.5–5%)",
+    "asAt": "Jan–Sept 2026",
+    "issue": "growth",
+    "source": "China NBS via Free Press Journal"
+   },
+   {
+    "label": "China property investment",
+    "value": "−20.6%",
+    "asAt": "Jan–Sept 2026",
+    "issue": "growth",
+    "source": "China NBS via Free Press Journal"
+   },
+   {
+    "label": "China fixed-asset investment",
+    "value": "−7.2%",
+    "asAt": "Jan–Sept 2026",
+    "issue": "growth",
+    "source": "China NBS via Free Press Journal"
+   },
+   {
+    "label": "China industrial output",
+    "value": "5.5%",
+    "asAt": "Sept 2026",
+    "issue": "growth",
+    "source": "China NBS via Free Press Journal"
+   },
+   {
+    "label": "China retail sales",
+    "value": "1.1%",
+    "asAt": "Sept 2026",
+    "issue": "growth",
+    "source": "China NBS via Free Press Journal"
+   },
+   {
+    "label": "Iron ore price",
+    "value": "US$90.73 a tonne",
+    "asAt": "Fri 23 Oct 2026",
+    "issue": "trade",
+    "source": "ABC News markets blog"
+   },
+   {
+    "label": "China CSI 300 share index",
+    "value": "−20% from June peak (bear market)",
+    "asAt": "23 Oct 2026",
+    "issue": "global",
+    "source": "ABC News markets blog; Free Press Journal"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Export-led growth",
+    "def": "Growth driven mainly by selling goods and services to the rest of the world."
+   },
+   {
+    "term": "Derived demand",
+    "def": "Demand for an input, such as iron ore, that comes from demand for the final product, such as steel and buildings."
+   },
+   {
+    "term": "Terms of trade",
+    "def": "Export prices relative to import prices."
+   }
+  ],
+  "angle": "Pair the headline 4.5% with the −20.6% property figure, then trace the flow chart to Australia's terms of trade and tax revenue.",
+  "questions": [
+   {
+    "q": "Explain how changes in the composition of China's economic growth affect Australia's terms of trade.",
+    "marks": 4
+   }
+  ],
+  "extended": "Analyse the impact of changes in the global economy on Australia's external stability.",
+  "note": "Digest of 25 Oct 2026. The source for each figure is inferred from the two articles listed on the handout. Check the NBS release before quoting exact figures. Overlaps with the 19 Oct China GDP record.",
+  "file": {
+   "path": "files/2026-10/2026-10-25-china-growth-iron-ore.pdf",
+   "label": "Student handout",
+   "pages": 1
+  },
+  "links": [
+   {
+    "label": "Free Press Journal, China GDP growth beats estimates at 4.5% in Jul–Sep quarter, 19 Oct 2026",
+    "url": "https://www.freepressjournal.in/business/china-gdp-growth-beats-estimates-at-45-in-jul-sep-quarter"
+   },
+   {
+    "label": "ABC News, ASX edges up at close markets blog, 23 Oct 2026",
+    "url": "https://www.abc.net.au/news/2026-10-23/asx-markets-business-news-live-updates-oct-23/107291840"
+   }
+  ]
+ },
+ {
+  "id": "2026-10-25-global-central-bank-week",
+  "title": "Canada and New Zealand set to raise rates as the Fed holds",
+  "date": "2026-10-25",
+  "dateText": "Week of 26–30 Oct 2026",
+  "type": "news",
+  "outlets": [
+   "Newsquawk",
+   "ABC News"
+  ],
+  "summary": "A preview of five central bank decisions that illustrates the interest rate differential and how overseas rate rises reach the Australian dollar and import prices.",
+  "lede": "Canada and New Zealand are expected to raise rates this week while the US Fed, ECB and Bank of Japan are expected to hold. The RBA's cash rate is 4.60% for comparison.",
+  "about": {
+   "h09": [
+    "2C.2",
+    "1A.4",
+    "4D.3"
+   ],
+   "y12": [
+    "Y3c.4"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4H.2",
+    "3C.3",
+    "2C.6"
+   ],
+   "y12": [
+    "Y3c.5",
+    "Y2c.4",
+    "Y1c.4"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "issues": [
+   "rates",
+   "fx",
+   "global"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "flow",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "US Fed funds target (expected hold)",
+    "value": "3.75–4.00%",
+    "asAt": "decision due Wed 28 Oct 2026",
+    "issue": "rates",
+    "source": "Newsquawk"
+   },
+   {
+    "label": "Economists forecasting a Fed hold",
+    "value": "94 of 100",
+    "asAt": "Reuters poll, Oct 2026",
+    "issue": "rates",
+    "source": "Reuters poll via Newsquawk"
+   },
+   {
+    "label": "Bank of Canada rate (expected rise)",
+    "value": "2.25% → 2.50% (about 80% priced)",
+    "asAt": "decision due Wed 28 Oct 2026",
+    "issue": "rates",
+    "source": "Newsquawk"
+   },
+   {
+    "label": "RBNZ official cash rate (expected rise)",
+    "value": "2.75% → 3.00% (Westpac: hold)",
+    "asAt": "decision due Wed 28 Oct 2026",
+    "issue": "rates",
+    "source": "Newsquawk"
+   },
+   {
+    "label": "Bank of Japan policy rate (expected hold)",
+    "value": "1.25%",
+    "asAt": "decision due Fri 30 Oct 2026",
+    "issue": "rates",
+    "source": "Newsquawk"
+   },
+   {
+    "label": "RBA cash rate",
+    "value": "4.60%",
+    "asAt": "Oct 2026",
+    "issue": "rates",
+    "source": "Newsquawk digest"
+   },
+   {
+    "label": "US 10-year bond yield",
+    "value": "below 5%",
+    "asAt": "Fri 23 Oct 2026",
+    "issue": "rates",
+    "source": "ABC News markets blog"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Interest rate differential",
+    "def": "The gap between interest rates in Australia and overseas."
+   },
+   {
+    "term": "Capital flows",
+    "def": "Money moving between countries in search of higher returns."
+   },
+   {
+    "term": "Tightening cycle",
+    "def": "A series of interest rate rises to curb inflation."
+   }
+  ],
+  "angle": "If overseas rates rise faster than Australia's, the differential narrows, capital inflows fall and the AUD tends to depreciate, which raises import prices.",
+  "questions": [
+   {
+    "q": "Explain how interest rate rises overseas could affect the value of the Australian dollar and Australia's inflation.",
+    "marks": 4
+   }
+  ],
+  "note": "Preview, not results. Add the actual decisions after 28–30 Oct. Release days are local times and may fall overnight in Sydney. The RBA 4.60% figure is quoted by the handout and was not checked against the RBA.",
+  "file": {
+   "path": "files/2026-10/2026-10-25-global-central-bank-week.pdf",
+   "label": "Student handout",
+   "pages": 1
+  },
+  "links": [
+   {
+    "label": "Newsquawk, Week in Focus 26–30 October 2026",
+    "url": "https://newsquawk.com/headlines/week-in-focus-26-30th-october-2026-fomc-boc-rbnz-ecb-boj-policy-decisions-us-pce"
+   },
+   {
+    "label": "ABC News, ASX edges up at close markets blog, 23 Oct 2026",
+    "url": "https://www.abc.net.au/news/2026-10-23/asx-markets-business-news-live-updates-oct-23/107291840"
+   }
+  ]
+ },
+ {
+  "id": "2026-10-25-saudi-oil-attacks",
+  "title": "Houthi strikes on Saudi oil keep crude near a five-month high",
+  "date": "2026-10-25",
+  "type": "news",
+  "outlets": [
+   "Reuters",
+   "ABC News"
+  ],
+  "summary": "Explains why a supply scare sends oil prices up sharply when demand is price-inelastic, and how the shock reaches Australian petrol prices and the RBA.",
+  "lede": "Yemen's Houthis said on Saturday they attacked Saudi oil facilities and airports, with Brent crude closing the week at about US$113–114 a barrel. Oil was about US$102 at the RBA's late-September meeting.",
+  "about": {
+   "h09": [
+    "3C.3",
+    "1A.1"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y1c.5",
+    "Y1c.1"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3C.4",
+    "1A.8",
+    "4D.3"
+   ],
+   "y12": [
+    "Y1a.10",
+    "Y3e.3",
+    "Y2c.4"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "inflation",
+   "global",
+   "trade"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "ds",
+   "adas",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Brent crude close (five-month high)",
+    "value": "US$113–114 a barrel",
+    "asAt": "Fri 23 Oct 2026",
+    "issue": "inflation",
+    "source": "Reuters via Denver Gazette; ABC News"
+   },
+   {
+    "label": "Brent crude at RBA's late-Sept meeting",
+    "value": "US$102",
+    "asAt": "late Sept 2026",
+    "issue": "inflation",
+    "source": "Digest citing ABC News"
+   },
+   {
+    "label": "Brent above the RBA's August assumption",
+    "value": "35% or more",
+    "asAt": "Oct 2026",
+    "issue": "inflation",
+    "source": "Reuters via The Star"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Supply shock",
+    "def": "A sudden fall in supply that pushes prices up."
+   },
+   {
+    "term": "Price-inelastic demand",
+    "def": "Buyers cut back only a little when the price rises, as with fuel in the short run."
+   },
+   {
+    "term": "Imported inflation",
+    "def": "Higher world prices feeding into domestic prices through the cost of imports."
+   }
+  ],
+  "angle": "Use the steep-demand diagram to show a large price rise for a small fall in quantity, then switch to AD/AS (SRAS shifts left) to explain stagflation and the RBA's dilemma.",
+  "questions": [
+   {
+    "q": "Using a supply and demand diagram, explain why a disruption to Saudi oil supply could cause a large rise in world oil prices.",
+    "marks": 4
+   }
+  ],
+  "note": "Digest of 25 Oct 2026. Whether any target was hit is unclear in the reports. Overlaps with the 19 Oct oil price shock record.",
+  "file": {
+   "path": "files/2026-10/2026-10-25-saudi-oil-attacks.pdf",
+   "label": "Student handout",
+   "pages": 1
+  },
+  "links": [
+   {
+    "label": "Reuters via Denver Gazette, Houthis say they attacked Saudi oil sites, 25 Oct 2026",
+    "url": "https://www.denvergazette.com/2026/10/25/houthis-say-they-attacked-saudi-oil-sites-strikes-reported-in-aden/"
+   },
+   {
+    "label": "ABC News, ASX edges up at close markets blog, 23 Oct 2026",
+    "url": "https://www.abc.net.au/news/2026-10-23/asx-markets-business-news-live-updates-oct-23/107291840"
+   },
+   {
+    "label": "Reuters via The Star, Inflation outlook worsens for Australia, 22 Oct 2026",
+    "url": "https://www.thestar.com.my/business/business-news/2026/10/22/inflation-outlook-worsens-for-australia"
+   }
+  ]
+ },
+ {
+  "id": "2026-10-24-us-canada-tariff-changes",
+  "title": "US reshuffles its 50% tariffs on Canadian goods ahead of the midterms",
+  "date": "2026-10-24",
+  "dateText": "23–24 Oct 2026",
+  "type": "news",
+  "outlets": [
+   "CTV News",
+   "CP24"
+  ],
+  "summary": "Product-by-product tariff exemptions show the political economy of protection: concentrated benefits for a few producers, costs spread across all consumers.",
+  "lede": "The White House has taken a handful of Canadian products off its 50% tariff list and added others, from the end of October. Critics see the timing as aimed at the US midterm elections.",
+  "about": {
+   "h09": [
+    "1C.2",
+    "1C.1"
+   ],
+   "y12": [
+    "Y3a.7",
+    "Y3a.8",
+    "Y3a.11"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1B.4",
+    "2D.4"
+   ],
+   "y12": [
+    "Y3a.5",
+    "Y3a.13",
+    "Y3a.15"
+   ],
+   "y11": [
+    "P6a.1"
+   ]
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "ds",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "US tariff on listed Canadian goods",
+    "value": "50%",
+    "asAt": "Oct 2026",
+    "issue": "trade",
+    "source": "CP24/CTV News"
+   },
+   {
+    "label": "US imports covered by Canada's counter-tariffs",
+    "value": "C$27.6b",
+    "asAt": "Oct 2026",
+    "issue": "trade",
+    "source": "CP24/CTV News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Protectionism",
+    "def": "Policies that shield domestic producers from import competition."
+   },
+   {
+    "term": "Tariff",
+    "def": "A tax on imports that raises their domestic price."
+   },
+   {
+    "term": "Retaliation",
+    "def": "Counter-tariffs imposed by the targeted country."
+   }
+  ],
+  "angle": "Use the tariff diagram, then the winners and losers table to argue that protection helps concentrated groups at the expense of consumers.",
+  "questions": [
+   {
+    "q": "Explain the effects of a tariff on domestic consumers, domestic producers and the government. Use a diagram.",
+    "marks": 6
+   }
+  ],
+  "note": "Single-source report; the changes take effect at the end of October and the product lists come from a trade lawyer quoted by CTV. Pair with the Canada tariff shield record.",
+  "file": {
+   "path": "files/2026-10/2026-10-24-us-canada-tariff-changes.pdf",
+   "label": "Student handout",
+   "pages": 1
+  },
+  "links": [
+   {
+    "label": "CP24/CTV News, Trump to remove 50% tariffs on some Canadian goods: here's what we know, 23–24 Oct 2026",
+    "url": "https://cp24.com/news/world/2026/10/23/trump-to-remove-50-tariffs-on-some-canadian-goods-heres-what-we-know"
+   }
+  ]
  }
 ]
