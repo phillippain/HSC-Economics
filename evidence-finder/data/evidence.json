@@ -1050,6 +1050,1264 @@
   }
  },
  {
+  "id": "2026-10-26-hilda-household-income-sources",
+  "title": "Wages are 58% of household income; government benefits are 7%, but sole parents rely on them most",
+  "date": "2026-10-26",
+  "type": "report",
+  "outlets": [
+   "ABS",
+   "Melbourne Institute (HILDA)"
+  ],
+  "summary": "Shows where household income comes from, nationally (ABS) and by family type (HILDA), for answers on income distribution.",
+  "lede": "The ABS household income account puts compensation of employees at 58.1% of gross household income in the June quarter 2026 and social assistance benefits at 7.1%. HILDA 2026 shows that 6.8% of working-age people get more than half their income from benefits, and 26.3% of people in sole-parent families do.",
+  "about": {
+   "h09": [
+    "3E.2",
+    "3E.3"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y1d.9"
+   ],
+   "y11": [
+    "P3d.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.1",
+    "3E.5"
+   ],
+   "y12": [
+    "Y1d.2",
+    "Y1d.10",
+    "Y2b.10"
+   ],
+   "y11": [
+    "P2h.8"
+   ]
+  },
+  "issues": [
+   "inequality",
+   "employment"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "chart",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Compensation of employees, share of gross household income",
+    "value": "58.1% ($364.0b)",
+    "asAt": "June quarter 2026",
+    "issue": "inequality",
+    "source": "ABS, National Accounts (5206.0), table 20"
+   },
+   {
+    "label": "Social assistance benefits, share of gross household income",
+    "value": "7.1% ($44.3b)",
+    "asAt": "June quarter 2026",
+    "issue": "inequality",
+    "source": "ABS, National Accounts (5206.0), table 20"
+   },
+   {
+    "label": "Property income receivable, share",
+    "value": "12.5% ($78.0b)",
+    "asAt": "June quarter 2026",
+    "issue": "inequality",
+    "source": "ABS, National Accounts (5206.0), table 20"
+   },
+   {
+    "label": "Household net saving",
+    "value": "$12.2b (year earlier $9.0b)",
+    "asAt": "June quarter 2026",
+    "issue": "inequality",
+    "source": "ABS, National Accounts (5206.0), table 20"
+   },
+   {
+    "label": "Working-age people in households receiving income support",
+    "value": "24.2% (31.9% peak in 2020-21; 38.4% in 2001)",
+    "asAt": "2023-24",
+    "issue": "inequality",
+    "source": "HILDA Statistical Report 2026"
+   },
+   {
+    "label": "Working-age people getting over 50% of household income from benefits",
+    "value": "6.8% (13% in 2002)",
+    "asAt": "2024",
+    "issue": "inequality",
+    "source": "HILDA Statistical Report 2026"
+   },
+   {
+    "label": "Sole-parent families: share relying on benefits for over 50% of income",
+    "value": "26.3% (44.7% in 2002)",
+    "asAt": "2024",
+    "issue": "inequality",
+    "source": "HILDA Statistical Report 2026"
+   },
+   {
+    "label": "Median household disposable income",
+    "value": "$103,166 (December 2024 prices)",
+    "asAt": "2024",
+    "issue": "inequality",
+    "source": "HILDA Statistical Report 2026"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Gross mixed income",
+    "def": "Income of the self-employed and unincorporated businesses, which mixes returns to labour and to capital."
+   },
+   {
+    "term": "Social assistance benefits",
+    "def": "Government cash transfers such as the age pension and family payments."
+   },
+   {
+    "term": "Benefit reliance",
+    "def": "Getting more than half (or 90%) of household income from government cash benefits."
+   },
+   {
+    "term": "Disposable income",
+    "def": "Income after tax and transfers."
+   }
+  ],
+  "links": [
+   [
+    "Melbourne Institute, HILDA Statistical Report 2026 (chapters 2 and 8)",
+    "https://melbourneinstitute.unimelb.edu.au/hilda/publications/hilda-statistical-reports"
+   ],
+   [
+    "ABS, Australian National Accounts: Finance and Wealth (household income account)",
+    "https://www.abs.gov.au/statistics/economy/national-accounts"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-hilda-household-income-sources.pdf",
+   "label": "Two-page summary",
+   "pages": 2
+  },
+  "angle": "Use the ABS shares to show that wages dominate household income, then HILDA to show that benefits matter much more for particular groups. Link to taxation and transfers as the tools that change the distribution.",
+  "questions": [
+   {
+    "q": "Identify the largest source of household income.",
+    "marks": 1
+   },
+   {
+    "q": "Outline ONE reason why sole parent families are more likely to rely on benefits.",
+    "marks": 2
+   },
+   {
+    "q": "Explain how government benefits and taxes change the distribution of income.",
+    "marks": 4
+   }
+  ],
+  "note": "The full HILDA report is not filed here; use the link. ABS shares are calculated from the household income account (original series, current prices). Update the ABS shares after the September quarter accounts (early December)."
+ },
+ {
+  "id": "2026-10-26-government-spending-multipliers-handout",
+  "title": "How big is the multiplier? Australian evidence says it depends on the type of spending and the state of the economy",
+  "date": "2026-10-26",
+  "type": "report",
+  "outlets": [
+   "Applied Economics"
+  ],
+  "summary": "Explains the simple multiplier k = 1/(1 - MPC) and what a 2026 study of Australian data finds for government consumption and investment spending.",
+  "lede": "A study by Reynolds and Fisher of Australian data from 1984 to 2019 found government consumption spending has a multiplier of 0.94 after six quarters when unemployment is high, and a negligible effect otherwise. Government investment spending crowds out private activity (-0.95 on average, -2.54 when unemployment is low).",
+  "about": {
+   "h09": [
+    "3A.3",
+    "4C.2"
+   ],
+   "y12": [
+    "Y1a.8",
+    "Y1a.9",
+    "Y2b.13"
+   ],
+   "y11": [
+    "P1d.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3A.2",
+    "4C.1"
+   ],
+   "y12": [
+    "Y1a.11",
+    "Y2b.14"
+   ],
+   "y11": [
+    "P5c.1"
+   ]
+  },
+  "issues": [
+   "growth",
+   "budget"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Government consumption multiplier, high unemployment state",
+    "value": "0.94 at six quarters",
+    "asAt": "1984-2019 data",
+    "issue": "budget",
+    "source": "Reynolds and Fisher, Applied Economics 2026"
+   },
+   {
+    "label": "Government investment multiplier, average",
+    "value": "-0.95 at six quarters",
+    "asAt": "1984-2019 data",
+    "issue": "budget",
+    "source": "Reynolds and Fisher, Applied Economics 2026"
+   },
+   {
+    "label": "Government investment multiplier, low unemployment state",
+    "value": "-2.54 at six quarters",
+    "asAt": "1984-2019 data",
+    "issue": "budget",
+    "source": "Reynolds and Fisher, Applied Economics 2026"
+   },
+   {
+    "label": "Share of government spending that is consumption / investment",
+    "value": "81% / 12%",
+    "asAt": "1984-2019 average",
+    "issue": "budget",
+    "source": "Reynolds and Fisher, Applied Economics 2026"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Simple multiplier",
+    "def": "k = 1/(1 - MPC): the number of times an initial change in spending changes national income."
+   },
+   {
+    "term": "Crowding out",
+    "def": "Government spending reducing private sector spending and investment."
+   },
+   {
+    "term": "Cumulative multiplier",
+    "def": "The total dollars of GDP created per dollar of government spending over a number of quarters."
+   }
+  ],
+  "links": [
+   [
+    "Reynolds and Fisher, Estimates of government spending multipliers in Australian data, Applied Economics 58(5), 2026",
+    "https://doi.org/10.1080/00036846.2025.2461326"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-government-spending-multipliers-handout.pdf",
+   "label": "Two-page summary",
+   "pages": 2
+  },
+  "angle": "Calculate with the formula, then evaluate: real multipliers are smaller than the formula because of leakages, and fiscal stimulus works best when the economy has spare capacity.",
+  "questions": [
+   {
+    "q": "Calculate the multiplier when MPC is 0.8.",
+    "marks": 1
+   },
+   {
+    "q": "Explain why the multiplier in Australia is smaller than the formula predicts.",
+    "marks": 3
+   },
+   {
+    "q": "Assess the effectiveness of an increase in government spending when unemployment is high.",
+    "marks": 6
+   }
+  ],
+  "note": "Summary of a published paper. The data end in 2019 and exclude COVID."
+ },
+ {
+  "id": "2026-10-26-reynolds-fisher-multipliers-paper",
+  "title": "Estimates of government spending multipliers in Australian data (Reynolds and Fisher)",
+  "date": "2026-10-26",
+  "dateText": "Applied Economics 58(5), 2026",
+  "type": "report",
+  "outlets": [
+   "Applied Economics"
+  ],
+  "summary": "The original research paper behind the multiplier summary; technical, for extension reading.",
+  "lede": "Cumulative multipliers for government consumption and investment spending, estimated by local projections with instrumental variables on quarterly Australian data from 1984 to 2019, for high and low unemployment states.",
+  "about": {
+   "h09": [
+    "3A.3"
+   ],
+   "y12": [
+    "Y1a.9"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4C.2"
+   ],
+   "y12": [
+    "Y1a.8",
+    "Y2b.13"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "growth",
+   "budget"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Peak government investment multiplier, low unemployment",
+    "value": "-2.54 (six quarters)",
+    "asAt": "1984-2019",
+    "issue": "budget",
+    "source": "Reynolds and Fisher, Applied Economics 2026"
+   },
+   {
+    "label": "Government consumption multiplier, high unemployment",
+    "value": "0.94 (six quarters)",
+    "asAt": "1984-2019",
+    "issue": "budget",
+    "source": "Reynolds and Fisher, Applied Economics 2026"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Local projections",
+    "def": "A statistical method that estimates the effect of a policy change at each period after the change."
+   }
+  ],
+  "links": [
+   [
+    "Reynolds and Fisher (2026), Applied Economics",
+    "https://doi.org/10.1080/00036846.2025.2461326"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-reynolds-fisher-multipliers-paper.pdf",
+   "label": "Research paper",
+   "pages": 17
+  },
+  "note": "Technical paper. Read the two-page summary first."
+ },
+ {
+  "id": "2026-10-26-injections-withdrawals-june-qtr-2026",
+  "title": "Injections and withdrawals in the June quarter 2026: investment, government and exports against saving, tax and imports",
+  "date": "2026-10-26",
+  "type": "stats",
+  "outlets": [
+   "ABS"
+  ],
+  "summary": "Puts figures on each injection and withdrawal in the circular flow, from the June quarter 2026 national accounts.",
+  "lede": "In the June quarter 2026, exports of $173.5 billion exceeded imports of $169.2 billion in volume terms, government consumption rose 0.6% and machinery investment fell 6.6%. On the withdrawal side, households paid $112.3 billion in income tax and saved $12.2 billion.",
+  "about": {
+   "h09": [
+    "3A.2"
+   ],
+   "y12": [
+    "Y1a.11",
+    "Y1a.6"
+   ],
+   "y11": [
+    "P1d.2",
+    "P1d.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3A.3",
+    "3D.1"
+   ],
+   "y12": [
+    "Y1a.8"
+   ],
+   "y11": [
+    "P1d.1",
+    "P1d.3"
+   ]
+  },
+  "issues": [
+   "growth",
+   "trade",
+   "investment"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Investment (GFCF), all sectors",
+    "value": "$175.3b (chain volume)",
+    "asAt": "June quarter 2026",
+    "issue": "investment",
+    "source": "ABS, National Accounts (5206.0)"
+   },
+   {
+    "label": "General government final consumption",
+    "value": "$159.7b (+0.6%)",
+    "asAt": "June quarter 2026",
+    "issue": "growth",
+    "source": "ABS, National Accounts (5206.0)"
+   },
+   {
+    "label": "Exports of goods and services",
+    "value": "$173.5b (+0.8%)",
+    "asAt": "June quarter 2026",
+    "issue": "trade",
+    "source": "ABS, National Accounts (5206.0)"
+   },
+   {
+    "label": "Imports of goods and services",
+    "value": "$169.2b (+0.5%)",
+    "asAt": "June quarter 2026",
+    "issue": "trade",
+    "source": "ABS, National Accounts (5206.0)"
+   },
+   {
+    "label": "Household net saving",
+    "value": "$12.2b (year earlier $9.0b)",
+    "asAt": "June quarter 2026",
+    "issue": "growth",
+    "source": "ABS, National Accounts (5206.0), table 20"
+   },
+   {
+    "label": "Income tax payable by households",
+    "value": "$112.3b (year earlier $103.8b)",
+    "asAt": "June quarter 2026",
+    "issue": "budget",
+    "source": "ABS, National Accounts (5206.0), table 20"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Injection",
+    "def": "Spending that adds to the circular flow: investment, government spending and exports."
+   },
+   {
+    "term": "Withdrawal (leakage)",
+    "def": "Income not passed on as spending: saving, taxes and imports."
+   },
+   {
+    "term": "Chain volume measure",
+    "def": "A measure adjusted for price changes."
+   }
+  ],
+  "links": [
+   [
+    "ABS, Australian National Accounts: National Income, Expenditure and Product",
+    "https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product/latest-release"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-injections-withdrawals-june-qtr-2026.pdf",
+   "label": "Data handout (to update)",
+   "pages": 1
+  },
+  "angle": "Name a specific injection and withdrawal, give a figure for each, and link a change in either to the direction of national income.",
+  "questions": [
+   {
+    "q": "List the three injections into the circular flow.",
+    "marks": 3
+   },
+   {
+    "q": "Explain how an increase in income tax rates would change the level of national income.",
+    "marks": 3
+   },
+   {
+    "q": "Analyse the effect of a fall in exports on the circular flow.",
+    "marks": 4
+   }
+  ],
+  "note": "UPDATE DUE: September quarter national accounts (early December). Volume measures and current price measures are not additive."
+ },
+ {
+  "id": "2026-10-26-free-riders-handout",
+  "title": "Free riders in practice: 39% of eligible workers are not union members, and half of them say they get the benefits anyway",
+  "date": "2026-10-26",
+  "type": "report",
+  "outlets": [
+   "Haynes, Holland, Pyman and Teicher"
+  ],
+  "summary": "Defines public goods and the free rider problem and uses a survey of Australian workers as a real-world case.",
+  "lede": "A survey of Australian workers found 39.2% of those eligible to join a union had not, and 51.7% of those non-members said there is no point joining since they get the benefits anyway. The data are from 2004.",
+  "about": {
+   "h09": [
+    "3F.3"
+   ],
+   "y12": [
+    "Y2e.5"
+   ],
+   "y11": [
+    "P2h.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4F.2"
+   ],
+   "y12": [],
+   "y11": []
+  },
+  "issues": [
+   "employment"
+  ],
+  "levers": [
+   "micro",
+   "labour"
+  ],
+  "diagrams": [
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Eligible workers who are not union members",
+    "value": "39.2%",
+    "asAt": "2004 survey",
+    "issue": "employment",
+    "source": "Haynes et al., AWRPS 2004"
+   },
+   {
+    "label": "Non-members saying \"no point in joining since I get all the benefits anyway\"",
+    "value": "51.7%",
+    "asAt": "2004 survey",
+    "issue": "employment",
+    "source": "Haynes et al., AWRPS 2004"
+   },
+   {
+    "label": "Technical free riders: part-time / full-time workers",
+    "value": "48.5% / 35.2%",
+    "asAt": "2004 survey",
+    "issue": "employment",
+    "source": "Haynes et al., AWRPS 2004"
+   },
+   {
+    "label": "Technical free riders by tenure: under 1 year / 11-20 years",
+    "value": "64.2% / 20.8%",
+    "asAt": "2004 survey",
+    "issue": "employment",
+    "source": "Haynes et al., AWRPS 2004"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Public good",
+    "def": "A good that is non-excludable and non-rival."
+   },
+   {
+    "term": "Free rider",
+    "def": "A person who benefits from a good or service without paying for it."
+   },
+   {
+    "term": "Non-excludable",
+    "def": "People cannot be prevented from using the good."
+   },
+   {
+    "term": "Non-rival",
+    "def": "One person using the good does not reduce what is available to others."
+   }
+  ],
+  "links": [
+   [
+    "ABS, Trade union membership (current data, for comparison with the 2004 survey)",
+    "https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/trade-union-membership/latest-release"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-free-riders-handout.pdf",
+   "label": "Two-page summary",
+   "pages": 2
+  },
+  "angle": "Define public good and free rider, explain why the market under-supplies it, then use the union case as an example of a collective benefit with free riding.",
+  "questions": [
+   {
+    "q": "Define a public good.",
+    "marks": 2
+   },
+   {
+    "q": "Explain the free rider problem using an example.",
+    "marks": 4
+   },
+   {
+    "q": "Assess why governments rather than markets provide public goods.",
+    "marks": 6
+   }
+  ],
+  "note": "The survey data are from 2004, so treat them as an older source. The union example is a collective benefit, not a pure public good. The link is current ABS union membership data, for comparison."
+ },
+ {
+  "id": "2026-10-26-final-budget-outcome-2025-26",
+  "title": "The Final Budget Outcome: a $22.3 billion deficit in 2025-26, after surpluses of $22.1 billion and $15.8 billion",
+  "date": "2026-10-26",
+  "type": "stats",
+  "outlets": [
+   "Treasury",
+   "Department of Finance"
+  ],
+  "summary": "Compares the 2025-26 deficit with the 2022-23 and 2023-24 surpluses and sets out how a surplus is used.",
+  "lede": "The Final Budget Outcome released on 28 September 2026 showed an underlying cash deficit of $22.3 billion (0.8% of GDP), $6 billion better than the Budget estimate. In 2023-24 the surplus of $15.8 billion helped hold net debt $280.6 billion below the 2022 projection.",
+  "about": {
+   "h09": [
+    "4C.4",
+    "4C.1"
+   ],
+   "y12": [
+    "Y2b.2",
+    "Y2b.8"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4C.2",
+    "4C.3"
+   ],
+   "y12": [
+    "Y2b.3",
+    "Y2b.12"
+   ],
+   "y11": [
+    "P5c.1"
+   ]
+  },
+  "issues": [
+   "budget"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Underlying cash balance",
+    "value": "-$22.3b (0.8% of GDP)",
+    "asAt": "2025-26",
+    "issue": "budget",
+    "source": "Final Budget Outcome 2025-26"
+   },
+   {
+    "label": "Receipts / payments",
+    "value": "$764.4b / $786.6b",
+    "asAt": "2025-26",
+    "issue": "budget",
+    "source": "Final Budget Outcome 2025-26"
+   },
+   {
+    "label": "Net debt / gross debt",
+    "value": "$550.0b (18.8% of GDP) / $971.4b (33.2%)",
+    "asAt": "2025-26",
+    "issue": "budget",
+    "source": "Final Budget Outcome 2025-26"
+   },
+   {
+    "label": "Underlying cash balance",
+    "value": "+$15.8b (0.6% of GDP)",
+    "asAt": "2023-24",
+    "issue": "budget",
+    "source": "Final Budget Outcome 2023-24"
+   },
+   {
+    "label": "Underlying cash balance",
+    "value": "+$22.1b",
+    "asAt": "2022-23",
+    "issue": "budget",
+    "source": "Final Budget Outcome 2023-24"
+   },
+   {
+    "label": "Net debt, below the 2022 projection",
+    "value": "$491.5b, $280.6b lower",
+    "asAt": "2023-24",
+    "issue": "budget",
+    "source": "Final Budget Outcome 2023-24"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Underlying cash balance",
+    "def": "The main budget measure: cash receipts minus cash payments, excluding net investment in financial assets for policy purposes."
+   },
+   {
+    "term": "Budget surplus",
+    "def": "Receipts exceed payments: a contractionary stance."
+   },
+   {
+    "term": "Net debt",
+    "def": "Gross debt less financial assets held."
+   }
+  ],
+  "links": [
+   [
+    "Treasurer, Final Budget Outcome 2025-26",
+    "https://archive.budget.gov.au/2025-26/fbo/download/00_fbo_2025-26.pdf"
+   ],
+   [
+    "Treasurer, media release, 28 September 2026",
+    "https://ministers.treasury.gov.au/ministers/jim-chalmers-2022/media-releases/final-budget-outcome-2025-26"
+   ],
+   [
+    "Final Budget Outcome 2023-24",
+    "https://archive.budget.gov.au/2023-24/fbo/download/00_fbo_2023-24.pdf"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-final-budget-outcome-2025-26.pdf",
+   "label": "Two-page summary",
+   "pages": 2
+  },
+  "angle": "Contrast the surplus years with the deficit: a surplus reduces borrowing and eases inflation pressure, a deficit adds demand. The official statements do not say the surplus was spent on anything specific.",
+  "questions": [
+   {
+    "q": "Distinguish between a budget deficit and a budget surplus.",
+    "marks": 2
+   },
+   {
+    "q": "Explain TWO ways a government can use a budget surplus.",
+    "marks": 4
+   },
+   {
+    "q": "Assess the effects of a budget deficit on the economy.",
+    "marks": 6
+   }
+  ],
+  "note": "UPDATE DUE: 2027-28 Budget (May 2027)."
+ },
+ {
+  "id": "2026-10-26-who-is-affected-by-unemployment-sep-2026",
+  "title": "Who is affected by unemployment: youth rate 11.1%, teenagers 15.9% and almost one in four unemployed out of work for a year",
+  "date": "2026-10-26",
+  "type": "stats",
+  "outlets": [
+   "ABS"
+  ],
+  "summary": "Breaks the September 2026 unemployment rate down by age, sex and duration.",
+  "lede": "The ABS shows an unemployment rate of 4.72% in September 2026 but 11.12% for ages 15 to 24 and 15.92% for ages 15 to 19. Long-term unemployed (one year or more) were 167,700 people, 22.9% of the unemployed.",
+  "about": {
+   "h09": [
+    "3B.5",
+    "3B.3"
+   ],
+   "y12": [
+    "Y1b.10",
+    "Y1b.12"
+   ],
+   "y11": [
+    "P1e.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3B.6",
+    "4F.5"
+   ],
+   "y12": [
+    "Y1b.5",
+    "Y1b.11"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "employment"
+  ],
+  "levers": [
+   "labour"
+  ],
+  "diagrams": [
+   "chart",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Unemployment rate, all persons",
+    "value": "4.72% (4.43% a year earlier)",
+    "asAt": "September 2026",
+    "issue": "employment",
+    "source": "ABS, Labour Force (6202.0)"
+   },
+   {
+    "label": "Unemployment rate, ages 15 to 24",
+    "value": "11.12% (10.47%)",
+    "asAt": "September 2026",
+    "issue": "employment",
+    "source": "ABS, Labour Force (6202.0)"
+   },
+   {
+    "label": "Unemployment rate, ages 15 to 19",
+    "value": "15.92% (15.44%)",
+    "asAt": "September 2026",
+    "issue": "employment",
+    "source": "ABS, Labour Force (6202.0)"
+   },
+   {
+    "label": "Unemployment rate, males / females",
+    "value": "4.82% / 4.61%",
+    "asAt": "September 2026",
+    "issue": "employment",
+    "source": "ABS, Labour Force (6202.0)"
+   },
+   {
+    "label": "Long-term unemployed (one year or more)",
+    "value": "167,700 (22.9% of unemployed)",
+    "asAt": "September 2026",
+    "issue": "employment",
+    "source": "ABS, Labour Force (6202.0)"
+   },
+   {
+    "label": "Total unemployed",
+    "value": "732,000 (519,500 in September 2023)",
+    "asAt": "September 2026",
+    "issue": "employment",
+    "source": "ABS, Labour Force (6202.0)"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Long-term unemployment",
+    "def": "Being unemployed for 52 weeks or more."
+   },
+   {
+    "term": "Participation rate",
+    "def": "The labour force as a percentage of the civilian population aged 15 and over."
+   }
+  ],
+  "links": [
+   [
+    "ABS, Labour Force, Australia",
+    "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/latest-release"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-who-is-affected-by-unemployment-sep-2026.pdf",
+   "label": "Data handout (to update)",
+   "pages": 2
+  },
+  "angle": "Name the groups and give a figure for each; link youth rates to casual work and lack of experience, and long duration to structural unemployment and lost skills.",
+  "questions": [
+   {
+    "q": "Identify the group with the highest unemployment rate.",
+    "marks": 1
+   },
+   {
+    "q": "Outline TWO costs of long-term unemployment.",
+    "marks": 4
+   },
+   {
+    "q": "Explain why youth unemployment is higher than the average.",
+    "marks": 3
+   }
+  ],
+  "note": "UPDATE DUE: October 2026 Labour Force (mid-November, date to confirm). Seasonally adjusted figures from the ABS spreadsheets."
+ },
+ {
+  "id": "2026-10-26-growth-development-distribution",
+  "title": "Beyond GDP: Australia ranks 7th on the HDI, while the richest 10% own 75% of world wealth",
+  "date": "2026-10-26",
+  "type": "report",
+  "outlets": [
+   "UNDP",
+   "World Inequality Lab"
+  ],
+  "summary": "Separates economic growth from economic development using the HDI and shows how unequally income and wealth are distributed worldwide.",
+  "lede": "The 2025 Human Development Report puts Australia 7th with an HDI of 0.958, behind Iceland and Norway, and South Sudan last at 0.388. The World Inequality Report 2026 found the richest 10% hold 75% of global wealth and the poorest half hold 2%.",
+  "about": {
+   "h09": [
+    "1D.1",
+    "1D.2"
+   ],
+   "y12": [
+    "Y3d.2",
+    "Y3d.3",
+    "Y1d.2"
+   ],
+   "y11": [
+    "P2h.8"
+   ]
+  },
+  "also": {
+   "h09": [],
+   "y12": [
+    "Y1d.1",
+    "Y3d.5"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "global",
+   "inequality",
+   "growth"
+  ],
+  "levers": [
+   "global"
+  ],
+  "diagrams": [
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Australia, Human Development Index",
+    "value": "0.958 (rank 7 of 193)",
+    "asAt": "HDR 2025 (2023 data)",
+    "issue": "global",
+    "source": "UNDP, Human Development Report 2025"
+   },
+   {
+    "label": "Highest HDI: Iceland / Norway",
+    "value": "0.972 / 0.970",
+    "asAt": "HDR 2025 (2023 data)",
+    "issue": "global",
+    "source": "UNDP, Human Development Report 2025"
+   },
+   {
+    "label": "Lowest HDI: South Sudan",
+    "value": "0.388 (rank 193)",
+    "asAt": "HDR 2025 (2023 data)",
+    "issue": "global",
+    "source": "UNDP, Human Development Report 2025"
+   },
+   {
+    "label": "Share of global wealth: richest 10% / poorest 50%",
+    "value": "75% / 2%",
+    "asAt": "December 2025",
+    "issue": "inequality",
+    "source": "World Inequality Report 2026 (via The Guardian)"
+   },
+   {
+    "label": "Wealth of the top 0.001% (fewer than 60,000 people)",
+    "value": "about three times that of the poorest half; share up from almost 4% (1995) to over 6%",
+    "asAt": "December 2025",
+    "issue": "inequality",
+    "source": "World Inequality Report 2026 (via The Guardian)"
+   },
+   {
+    "label": "Women's hourly pay as a share of men's (excluding unpaid work)",
+    "value": "about 61%",
+    "asAt": "December 2025",
+    "issue": "inequality",
+    "source": "World Inequality Report 2026 (via The Guardian)"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Economic growth",
+    "def": "An increase in real GDP over time."
+   },
+   {
+    "term": "Economic development",
+    "def": "Improvement in living standards, health, education and opportunity."
+   },
+   {
+    "term": "Human Development Index (HDI)",
+    "def": "A composite index of life expectancy, education and income per person."
+   }
+  ],
+  "links": [
+   [
+    "UNDP, Human Development Report 2025",
+    "https://hdr.undp.org/content/human-development-report-2025"
+   ],
+   [
+    "World Inequality Report 2026",
+    "https://wir2026.wid.world/"
+   ],
+   [
+    "The Guardian (10 December 2025) via Share The World's Resources",
+    "https://sharing.org/information-centre/reports/just-0-001-hold-three-times-the-wealth-of-poorest-half-of-humanity-report-finds/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-growth-development-distribution.pdf",
+   "label": "Two-page handout",
+   "pages": 2
+  },
+  "angle": "Use the HDI to separate growth from development, then the inequality data to show that averages hide distribution.",
+  "questions": [
+   {
+    "q": "Distinguish between economic growth and economic development.",
+    "marks": 2
+   },
+   {
+    "q": "Explain why Australia's high HDI ranking does not mean income is equally distributed.",
+    "marks": 3
+   },
+   {
+    "q": "Assess the extent to which GDP per capita measures development.",
+    "marks": 6
+   }
+  ],
+  "note": "HDI values and ranks were read from a reproduction of the UNDP table, and the inequality figures from a republished Guardian article, not from the reports. Check the UNDP table before quoting the rank in an exam answer."
+ },
+ {
+  "id": "2026-10-26-international-business-cycle-oct-2026",
+  "title": "The international business cycle: IMF sees 3.1% world growth in 2026 but inflation at 4.7%",
+  "date": "2026-10-26",
+  "type": "report",
+  "outlets": [
+   "IMF",
+   "RBA"
+  ],
+  "summary": "Shows where the world economy is in the cycle in October 2026 and how it reaches Australia through oil prices and interest rates.",
+  "lede": "The IMF's October 2026 outlook projects world growth of 3.1% in 2026 and 3.4% in 2027, with global inflation of 4.7% this year. The RBA said on 29 September that the Middle East conflict is lifting energy prices while overseas growth has been stronger than expected, partly because of AI investment.",
+  "about": {
+   "h09": [
+    "1D.9"
+   ],
+   "y12": [
+    "Y3e.1",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P1e.6"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3D.1",
+    "4D.1"
+   ],
+   "y12": [],
+   "y11": []
+  },
+  "issues": [
+   "global",
+   "growth",
+   "inflation"
+  ],
+  "levers": [
+   "global",
+   "monetary"
+  ],
+  "diagrams": [
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "World growth forecast",
+    "value": "3.1% (2026), 3.4% (2027)",
+    "asAt": "13 October 2026",
+    "issue": "global",
+    "source": "IMF, World Economic Outlook, October 2026"
+   },
+   {
+    "label": "Global headline inflation forecast",
+    "value": "4.7% (2026), 4.1% (2027)",
+    "asAt": "13 October 2026",
+    "issue": "inflation",
+    "source": "IMF, World Economic Outlook, October 2026"
+   },
+   {
+    "label": "World growth forecast, July update",
+    "value": "3.0% (2026), 3.4% (2027)",
+    "asAt": "8 July 2026",
+    "issue": "global",
+    "source": "IMF, WEO Update July 2026"
+   },
+   {
+    "label": "RBA cash rate target",
+    "value": "4.60% (up 0.25 points; third rise this year)",
+    "asAt": "29 September 2026",
+    "issue": "rates",
+    "source": "RBA, Media Release 2026-27"
+   },
+   {
+    "label": "Brent crude oil",
+    "value": "US$113-114 (five-month high)",
+    "asAt": "23 October 2026",
+    "issue": "global",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "International business cycle",
+    "def": "The combined fluctuation of world output around its trend, transmitted between countries by trade, investment and finance."
+   },
+   {
+    "term": "Disinflation",
+    "def": "A fall in the rate of inflation."
+   }
+  ],
+  "links": [
+   [
+    "IMF, World Economic Outlook, October 2026",
+    "https://www.imf.org/en/publications/weo/issues/2026/10/13/world-economic-outlook-october-2026"
+   ],
+   [
+    "IMF, WEO Update, July 2026",
+    "https://www.imf.org/en/publications/weo/issues/2026/07/08/world-economic-outlook-update-july-2026"
+   ],
+   [
+    "RBA, Media Release 2026-27",
+    "https://www.rba.gov.au/media-releases/2026/mr-26-27.html"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-international-business-cycle-oct-2026.pdf",
+   "label": "Two-page handout (to update)",
+   "pages": 2
+  },
+  "angle": "Name the channel by which a world event reaches Australia and use a figure, then qualify with domestic conditions.",
+  "questions": [
+   {
+    "q": "Define the international business cycle.",
+    "marks": 2
+   },
+   {
+    "q": "Outline TWO ways a slowdown in world growth affects the Australian economy.",
+    "marks": 4
+   },
+   {
+    "q": "Assess the impact of changes in the global economy on Australia.",
+    "marks": 6
+   }
+  ],
+  "note": "UPDATE DUE: IMF January 2027 update. Only headline figures were available from the IMF pages; no regional breakdown is given."
+ },
+ {
+  "id": "2026-10-26-what-moves-the-australian-dollar",
+  "title": "What sets the Australian dollar, and what the RBA can do about it: US70c, a 4.60% cash rate and no intervention since 2007-08",
+  "date": "2026-10-26",
+  "type": "report",
+  "outlets": [
+   "RBA",
+   "ABC News"
+  ],
+  "summary": "Explains fixed, flexible and managed exchange rates, the drivers of the AUD and the two ways the RBA influences it.",
+  "lede": "The Australian dollar closed the week on 23 October at US70.08c. The RBA raised the cash rate to 4.60% on 29 September without mentioning the exchange rate, and its explainer says it can intervene only if the market becomes disorderly; it last did so in 2007-08.",
+  "about": {
+   "h09": [
+    "2C.4",
+    "2C.5"
+   ],
+   "y12": [
+    "Y3c.1",
+    "Y3c.2",
+    "Y3c.3"
+   ],
+   "y11": [
+    "P6c.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2C.1",
+    "3D.3"
+   ],
+   "y12": [
+    "Y2c.5",
+    "Y3c.5"
+   ],
+   "y11": [
+    "P6c.2"
+   ]
+  },
+  "issues": [
+   "fx",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "fx"
+  ],
+  "figures": [
+   {
+    "label": "Australian dollar",
+    "value": "US70.08c",
+    "asAt": "close 23 October 2026",
+    "issue": "fx",
+    "source": "ABC News"
+   },
+   {
+    "label": "RBA cash rate target",
+    "value": "4.60% (+0.25 points, unanimous)",
+    "asAt": "29 September 2026",
+    "issue": "rates",
+    "source": "RBA, Media Release 2026-27"
+   },
+   {
+    "label": "Iron ore price",
+    "value": "US$90.73/t",
+    "asAt": "23 October 2026",
+    "issue": "trade",
+    "source": "ABC News"
+   },
+   {
+    "label": "Last RBA intervention in the foreign exchange market",
+    "value": "2007-08 (bought Australian dollars)",
+    "asAt": "RBA explainer",
+    "issue": "fx",
+    "source": "RBA, Drivers of the Australian Dollar Exchange Rate"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Floating exchange rate",
+    "def": "A rate set by the supply and demand for the currency in the market."
+   },
+   {
+    "term": "Managed exchange rate",
+    "def": "A floating rate that the central bank influences by intervening."
+   },
+   {
+    "term": "Interest rate differential",
+    "def": "The gap between interest rates in two countries, which influences capital flows."
+   },
+   {
+    "term": "Terms of trade",
+    "def": "The ratio of export prices to import prices."
+   }
+  ],
+  "links": [
+   [
+    "RBA, Drivers of the Australian Dollar Exchange Rate",
+    "https://www.rba.gov.au/education/resources/explainers/drivers-of-the-aud-exchange-rate.html"
+   ],
+   [
+    "RBA, Media Release 2026-27, 29 September 2026",
+    "https://www.rba.gov.au/media-releases/2026/mr-26-27.html"
+   ],
+   [
+    "ABC News markets blog, 23 October 2026",
+    "https://www.abc.net.au/news/2026-10-23/asx-markets-business-news-live-updates-oct-23/107291840"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-what-moves-the-australian-dollar.pdf",
+   "label": "Two-page handout (to update)",
+   "pages": 2
+  },
+  "angle": "Explain the causal chain with a demand and supply diagram: a higher cash rate raises demand for the AUD, lower commodity prices reduce it. The RBA targets inflation, not the exchange rate.",
+  "questions": [
+   {
+    "q": "Distinguish between a fixed and a flexible exchange rate.",
+    "marks": 2
+   },
+   {
+    "q": "Explain how an increase in the cash rate affects the Australian dollar.",
+    "marks": 3
+   },
+   {
+    "q": "Assess the role of the RBA in influencing the exchange rate.",
+    "marks": 6
+   }
+  ],
+  "note": "UPDATE DUE: after the next RBA decision (check the RBA calendar). The exchange rate figure is a single close, so update before quoting."
+ },
+ {
   "id": "2026-10-25-western-sydney-airport-opens",
   "date": "2026-10-25",
   "added": "2026-10-25",
@@ -2268,6 +3526,143 @@
   ]
  },
  {
+  "id": "2026-10-23-conversation-snowy-2-megaprojects",
+  "title": "Snowy 2.0 is now expected to cost up to $25 billion: a warning for other megaprojects",
+  "date": "2026-10-23",
+  "type": "news",
+  "outlets": [
+   "The Conversation",
+   "Deloitte"
+  ],
+  "summary": "Public spending and resource allocation: a strategically useful project can still be poorly planned, which links cost overruns to government failure and the case for independent appraisal.",
+  "lede": "An official report confirmed Snowy 2.0 could cost up to $25 billion, more than 12 times the original $2 billion estimate, and will not be finished until late 2029. Dominic Ahiaga-Dagbui (Deakin University) argues both major parties have approved projects before understanding their costs and calls for an independent authority to validate estimates.",
+  "about": {
+   "h09": [
+    "4C.2"
+   ],
+   "y12": [
+    "Y2b.11",
+    "Y2b.14"
+   ],
+   "y11": [
+    "P5c.3",
+    "P2i.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4H.3",
+    "4C.1",
+    "3F.2"
+   ],
+   "y12": [
+    "Y2f.8",
+    "Y2b.13"
+   ],
+   "y11": [
+    "P5c.1",
+    "P2i.4"
+   ]
+  },
+  "issues": [
+   "budget",
+   "environment",
+   "productivity"
+  ],
+  "levers": [
+   "fiscal",
+   "environmental"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Expected cost of Snowy 2.0",
+    "value": "up to $25 billion",
+    "asAt": "official report, Oct 2026 (about 12 times the original)",
+    "issue": "budget",
+    "source": "Official report via The Conversation"
+   },
+   {
+    "label": "Original estimate, announced with no business case",
+    "value": "$2 billion",
+    "asAt": "2017",
+    "issue": "budget",
+    "source": "The Conversation (Dominic Ahiaga-Dagbui)"
+   },
+   {
+    "label": "Earlier revision of the cost",
+    "value": "$6 billion to $12 billion",
+    "asAt": "about three years ago",
+    "issue": "budget",
+    "source": "The Conversation (Dominic Ahiaga-Dagbui)"
+   },
+   {
+    "label": "Completion date (eight years after the first projection)",
+    "value": "late 2029",
+    "asAt": "Oct 2026",
+    "issue": "productivity",
+    "source": "Official report via The Conversation"
+   },
+   {
+    "label": "Cost blow-out across 13 publicly funded road, rail and energy projects",
+    "value": "$130 billion",
+    "asAt": "Deloitte, 2026",
+    "issue": "budget",
+    "source": "Deloitte via The Conversation"
+   },
+   {
+    "label": "Expected cost of High Speed Rail (Newcastle to Western Sydney airport)",
+    "value": "at least $93 billion",
+    "asAt": "Oct 2026",
+    "issue": "budget",
+    "source": "The Conversation (Dominic Ahiaga-Dagbui)"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Cost-benefit analysis",
+    "def": "A comparison of the full costs and benefits of a project to decide whether it is worth doing."
+   },
+   {
+    "term": "Cost overrun",
+    "def": "When the final cost of a project exceeds its original estimate."
+   },
+   {
+    "term": "Government failure",
+    "def": "When government intervention produces a worse outcome than intended, such as poor planning or wasted resources."
+   },
+   {
+    "term": "Pumped hydro",
+    "def": "Storing energy by pumping water to a higher dam and releasing it to generate electricity when demand is high."
+   }
+  ],
+  "angle": "Government spending and resource allocation: a project can be strategically necessary yet badly managed. Use it for government failure, transparency and the case for independent appraisal, alongside the 23 Oct renewables record on the energy-transition side.",
+  "questions": [
+   {
+    "q": "Explain how cost overruns on large public projects can be an example of government failure.",
+    "marks": 4
+   },
+   {
+    "q": "Outline why an independent cost-benefit analysis may improve decisions about public infrastructure.",
+    "marks": 3
+   }
+  ],
+  "extended": "Evaluate the case for an independent authority to assess the costs and benefits of major public projects.",
+  "note": "Analysis by an academic. The $25 billion figure comes from an official report cited in the article, so check the report for its scope; all cost figures are estimates. The article judges both the government's and the opposition's criticisms of each other to be fair.",
+  "links": [
+   {
+    "label": "The Conversation (Dominic Ahiaga-Dagbui, Deakin University), Why Snowy Hydro's $25 billion cost blowout is a warning sign for other megaprojects, 23 Oct 2026",
+    "url": "https://theconversation.com/why-snowy-hydros-25-billion-cost-blowout-is-a-warning-sign-for-other-megaprojects-295057"
+   }
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-23-conversation-snowy-2-megaprojects.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "added": "2026-10-26"
+ },
+ {
   "id": "2026-10-22-house-price-falls",
   "date": "2026-10-22",
   "added": "2026-10-25",
@@ -2997,6 +4392,141 @@
    "label": "Teacher handout",
    "pages": 12
   }
+ },
+ {
+  "id": "2026-10-20-conversation-card-surcharge-ban",
+  "title": "Card surcharge ban saves consumers $1.6 billion a year, but could push more trade into cash",
+  "date": "2026-10-20",
+  "type": "news",
+  "outlets": [
+   "The Conversation",
+   "RBA",
+   "ATO",
+   "CPA Australia"
+  ],
+  "summary": "A consumer-protection regulation with a possible unintended consequence: the shadow economy and lost tax revenue.",
+  "lede": "Surcharges on card payments were banned from 1 October. Md Akhtaruzzaman (Australian Catholic University) says consumers are forecast to save $1.6 billion a year, but businesses still pay card processing fees and some now offer cash discounts, which could widen the shadow economy and tax evasion.",
+  "about": {
+   "h09": [
+    "4E.3"
+   ],
+   "y12": [
+    "Y2d.2",
+    "Y2d.4"
+   ],
+   "y11": [
+    "P5a.5",
+    "P2i.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4E.1",
+    "4E.2"
+   ],
+   "y12": [
+    "Y2d.1",
+    "Y2d.5"
+   ],
+   "y11": [
+    "P2i.1",
+    "P2i.4",
+    "P5b.1"
+   ]
+  },
+  "issues": [
+   "budget"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Forecast consumer saving from the surcharge ban",
+    "value": "$1.6 billion a year",
+    "asAt": "ban from 1 Oct 2026",
+    "issue": "budget",
+    "source": "The Conversation (Md Akhtaruzzaman)"
+   },
+   {
+    "label": "Shadow economy, share of GDP",
+    "value": "about 3% (about $80 billion)",
+    "asAt": "2025",
+    "issue": "budget",
+    "source": "Official estimate via The Conversation"
+   },
+   {
+    "label": "Annual tax gap from undeclared income",
+    "value": "about $11 billion",
+    "asAt": "CPA Australia estimate",
+    "issue": "budget",
+    "source": "CPA Australia via The Conversation"
+   },
+   {
+    "label": "Cash share of consumer payments",
+    "value": "15% (69% in 2007)",
+    "asAt": "2025",
+    "issue": "budget",
+    "source": "RBA via The Conversation"
+   },
+   {
+    "label": "Card share of consumer payments",
+    "value": "73% (26% in 2007)",
+    "asAt": "2025",
+    "issue": "budget",
+    "source": "RBA via The Conversation"
+   },
+   {
+    "label": "Net GST collected from cafes, restaurants and takeaway",
+    "value": "$4.36 billion",
+    "asAt": "2024-25",
+    "issue": "budget",
+    "source": "ATO via The Conversation"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Card surcharge",
+    "def": "An extra fee a business adds to the price when a customer pays by card."
+   },
+   {
+    "term": "Shadow economy",
+    "def": "Economic activity that is not reported or taxed."
+   },
+   {
+    "term": "Tax evasion",
+    "def": "Illegally avoiding tax, such as by under-reporting sales."
+   },
+   {
+    "term": "Unintended consequence",
+    "def": "A side effect of a policy that its designers did not aim for."
+   }
+  ],
+  "angle": "Regulation to protect consumers and its trade-offs: a price rule that shifts costs to businesses, changes payment behaviour and may reduce tax revenue. Useful for evaluating microeconomic regulation, and for government failure at Year 11.",
+  "questions": [
+   {
+    "q": "Outline one intended and one unintended effect of banning card surcharges.",
+    "marks": 3
+   },
+   {
+    "q": "Explain how a rise in cash transactions could affect government revenue.",
+    "marks": 3
+   }
+  ],
+  "note": "The author says the evidence does not show the ban will raise tax evasion; it points to a risk. Analysis by an academic, so check RBA payments data and ATO figures for updates.",
+  "links": [
+   {
+    "label": "The Conversation (Md Akhtaruzzaman, Australian Catholic University), Could the ban on card surcharges lead to a rise in tax evasion?, 20 Oct 2026",
+    "url": "https://theconversation.com/could-the-ban-on-card-surcharges-lead-to-a-rise-in-tax-evasion-294139"
+   }
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-20-conversation-card-surcharge-ban.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "added": "2026-10-26"
  },
  {
   "id": "2026-10-19-rba-kent-neutral-rate",
@@ -3868,6 +5398,149 @@
   ]
  },
  {
+  "id": "2026-10-19-conversation-grattan-gst-states",
+  "title": "Grattan researchers say a higher, broader GST would repair state budgets and fund income tax cuts",
+  "date": "2026-10-19",
+  "type": "news",
+  "outlets": [
+   "The Conversation",
+   "Grattan Institute"
+  ],
+  "summary": "The federal-state side of the GST debate: why state budgets are under strain, how the GST base is narrowing, and a package designed to protect low-income households.",
+  "lede": "Matthew Bowes and Erin-Lea Brown of the Grattan Institute argue the GST no longer delivers what it was designed to for the states. Their package lifts the rate from 10% to 15% and covers all food, raising about $76 billion a year, with $33 billion for income tax cuts and $25 billion for welfare increases.",
+  "about": {
+   "h09": [
+    "3E.3",
+    "4C.2"
+   ],
+   "y12": [
+    "Y2b.10"
+   ],
+   "y11": [
+    "P5b.3",
+    "P5b.5",
+    "P5b.6",
+    "P5b.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4H.3",
+    "4C.1"
+   ],
+   "y12": [
+    "Y2b.12",
+    "Y2b.14"
+   ],
+   "y11": [
+    "P5a.4",
+    "P5b.2"
+   ]
+  },
+  "issues": [
+   "budget",
+   "inequality"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Proposed GST rate (and base)",
+    "value": "10% to 15% (all food included)",
+    "asAt": "Grattan report, 19 Oct 2026",
+    "issue": "budget",
+    "source": "Grattan Institute via The Conversation"
+   },
+   {
+    "label": "Extra GST revenue",
+    "value": "about $76 billion a year",
+    "asAt": "Grattan estimate, Oct 2026",
+    "issue": "budget",
+    "source": "Grattan Institute via The Conversation"
+   },
+   {
+    "label": "Use of the revenue: income tax cuts / welfare",
+    "value": "$33b / $25b a year",
+    "asAt": "Grattan package, Oct 2026",
+    "issue": "inequality",
+    "source": "Grattan Institute via The Conversation"
+   },
+   {
+    "label": "GST share of total tax revenue",
+    "value": "about 11%",
+    "asAt": "2026 (below the OECD average)",
+    "issue": "budget",
+    "source": "Grattan Institute via The Conversation"
+   },
+   {
+    "label": "Share of household consumption subject to GST",
+    "value": "about 54%",
+    "asAt": "2026 (and falling)",
+    "issue": "budget",
+    "source": "Grattan Institute via The Conversation"
+   },
+   {
+    "label": "GST revenue received by the states, share of the economy",
+    "value": "3.3% (3.7% in 2007)",
+    "asAt": "2025",
+    "issue": "budget",
+    "source": "Grattan Institute via The Conversation"
+   },
+   {
+    "label": "States' share of national debt, forecast",
+    "value": "about 38% (20% pre-pandemic)",
+    "asAt": "forecast for 2030",
+    "issue": "budget",
+    "source": "Grattan Institute via The Conversation"
+   }
+  ],
+  "terms": [
+   {
+    "term": "GST",
+    "def": "A broad tax on consumption, collected by the federal government and passed to the states."
+   },
+   {
+    "term": "Tax base",
+    "def": "The things a tax applies to; a broader base taxes more of spending, income or wealth."
+   },
+   {
+    "term": "Regressive tax",
+    "def": "A tax that takes a larger share of income from low-income earners than from high-income earners."
+   },
+   {
+    "term": "Vertical fiscal imbalance",
+    "def": "The gap between the revenue the states raise themselves and the spending they are responsible for, filled by federal transfers."
+   }
+  ],
+  "angle": "An argument for broadening the tax base while compensating low-income households: test it on equity, efficiency and political feasibility. Pair it with the 19 Oct Grattan record, which carries the government response.",
+  "questions": [
+   {
+    "q": "Explain why a broader GST base may be more efficient than exempting some foods.",
+    "marks": 4
+   },
+   {
+    "q": "Describe how the package is designed to protect low-income households.",
+    "marks": 3
+   }
+  ],
+  "extended": "Evaluate the case for raising the GST rate and using the revenue to cut income tax.",
+  "note": "Written by Grattan researchers advocating their own report, so treat the estimates as the authors' own. The proposal is not government policy; the government response and wider coverage are in the 19 Oct 2026 Grattan GST record.",
+  "links": [
+   {
+    "label": "The Conversation (Matthew Bowes and Erin-Lea Brown, Grattan Institute), If we want a better Australia, we need to raise the GST and cut income taxes, 19 Oct 2026",
+    "url": "https://theconversation.com/if-we-want-a-better-australia-we-need-to-raise-the-gst-and-cut-income-taxes-294156"
+   }
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-19-conversation-grattan-gst-states.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "added": "2026-10-26"
+ },
+ {
   "id": "2026-10-18-imf-world-bank-meetings",
   "date": "2026-10-18",
   "dateText": "13–18 Oct 2026",
@@ -4404,6 +6077,135 @@
   ]
  },
  {
+  "id": "2026-10-16-conversation-trusts-minimum-tax",
+  "title": "Government introduces a minimum 30% tax on discretionary trust income",
+  "date": "2026-10-16",
+  "type": "news",
+  "outlets": [
+   "The Conversation",
+   "Treasury"
+  ],
+  "summary": "A tax fairness case study: income from assets versus income from work, and how behaviour change can undercut forecast revenue.",
+  "lede": "The government introduced legislation this week for a minimum 30% tax rate on income from discretionary trusts, first announced in the May budget. Robert Whait (Adelaide University) and Connie Vitale (Western Sydney University) explain why trusts are used, who benefits, and how families could restructure to avoid the new rules.",
+  "about": {
+   "h09": [
+    "4C.1",
+    "4C.2",
+    "3E.3"
+   ],
+   "y12": [
+    "Y2b.10"
+   ],
+   "y11": [
+    "P5b.1",
+    "P5b.6",
+    "P5b.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4H.3",
+    "3E.4"
+   ],
+   "y12": [
+    "Y2b.13",
+    "Y2b.14"
+   ],
+   "y11": [
+    "P5b.3",
+    "P5b.4"
+   ]
+  },
+  "issues": [
+   "budget",
+   "inequality"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Proposed minimum tax rate on discretionary trust income",
+    "value": "30%",
+    "asAt": "bill introduced Oct 2026",
+    "issue": "budget",
+    "source": "The Conversation (Whait and Vitale)"
+   },
+   {
+    "label": "Forecast extra revenue",
+    "value": "over $4 billion (from 2029-30)",
+    "asAt": "government forecast, 2026",
+    "issue": "budget",
+    "source": "Government via The Conversation"
+   },
+   {
+    "label": "Average tax rate gap for families using trusts",
+    "value": "about 4 points lower",
+    "asAt": "Treasury analysis, 2026",
+    "issue": "inequality",
+    "source": "Treasury via The Conversation"
+   },
+   {
+    "label": "Government example: $200,000 income via a family trust",
+    "value": "$24,008 (12%)",
+    "asAt": "2026 (without a trust: $59,602)",
+    "issue": "inequality",
+    "source": "Budget papers via The Conversation"
+   },
+   {
+    "label": "Taxpayers who receive no trust income",
+    "value": "over 95%",
+    "asAt": "Treasurer's statement to parliament, Oct 2026",
+    "issue": "inequality",
+    "source": "Treasurer via The Conversation"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Discretionary trust",
+    "def": "A trust in which the trustee decides how income is split among beneficiaries each year."
+   },
+   {
+    "term": "Tax minimisation",
+    "def": "Using the rules legally to reduce the tax paid, such as splitting income across low-tax beneficiaries."
+   },
+   {
+    "term": "Tax-free threshold",
+    "def": "The amount of income a person can earn before paying income tax ($18,200)."
+   },
+   {
+    "term": "Horizontal equity",
+    "def": "The principle that people in similar circumstances should pay similar amounts of tax."
+   }
+  ],
+  "angle": "Tax fairness and efficiency: the reform lines up the tax on asset income with the tax on work income, but trustees have options (a company at about 25%, or fixed interests) that may cut the revenue. Good for the features of a good tax and the budget's effect on income distribution.",
+  "questions": [
+   {
+    "q": "Explain how a minimum tax on trust income could affect the distribution of income.",
+    "marks": 4
+   },
+   {
+    "q": "Outline one way taxpayers may respond to the new rules and the effect on government revenue.",
+    "marks": 3
+   }
+  ],
+  "extended": "Assess the extent to which reforms to the taxation of trusts improve equity and efficiency in the tax system.",
+  "note": "The article describes the bill as introduced to parliament, not passed, as at 16 October 2026; check its progress. The revenue figure is the government's forecast, which the authors question. Analysis by two academics.",
+  "links": [
+   {
+    "label": "The Conversation (Robert Whait, Adelaide University, and Connie Vitale, Western Sydney University), The government wants trusts to pay a minimum 30% tax. What's behind the changes?, 16 Oct 2026",
+    "url": "https://theconversation.com/the-government-wants-trusts-to-pay-a-minimum-30-tax-whats-behind-the-changes-294459"
+   }
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-16-conversation-trusts-minimum-tax.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "added": "2026-10-26"
+ },
+ {
   "id": "2026-10-15-unemployment-five-year-high",
   "date": "2026-10-15",
   "dateText": "15–17 Oct 2026",
@@ -4586,6 +6388,278 @@
   ]
  },
  {
+  "id": "2026-10-06-conversation-property-downturn",
+  "title": "Property prices are 5.2% below their March peak: how far could the downturn go?",
+  "date": "2026-10-06",
+  "type": "news",
+  "outlets": [
+   "The Conversation",
+   "Domain",
+   "Cotality",
+   "Treasury"
+  ],
+  "summary": "Falling house prices as an asset-price channel of monetary policy, with who is protected, who is exposed, and why states are reliant on stamp duty.",
+  "lede": "National property values were 5.2% lower in September than at their March peak, the sixth straight monthly fall. Hal Pawson (UNSW) argues rate rises, not the May budget's property tax changes, are the main driver, and that a fall of 10 to 15% would still leave prices around early-2024 levels.",
+  "about": {
+   "h09": [
+    "3E.4",
+    "4D.3"
+   ],
+   "y12": [
+    "Y2c.5",
+    "Y1d.1"
+   ],
+   "y11": [
+    "P4c.7",
+    "P2d.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4D.2",
+    "3A.7"
+   ],
+   "y12": [
+    "Y1d.6",
+    "Y2d.3",
+    "Y2c.7"
+   ],
+   "y11": [
+    "P5b.3",
+    "P2d.2"
+   ]
+  },
+  "issues": [
+   "housing",
+   "rates",
+   "inequality"
+  ],
+  "levers": [
+   "monetary",
+   "micro"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "National property values, change from March peak",
+    "value": "-5.2%",
+    "asAt": "September 2026 (six straight monthly falls)",
+    "issue": "housing",
+    "source": "Domain series via The Conversation (Hal Pawson)"
+   },
+   {
+    "label": "Expected peak-to-trough fall",
+    "value": "10 to 15%",
+    "asAt": "estimate by Cotality's Tim Lawless, Oct 2026",
+    "issue": "housing",
+    "source": "Cotality via The Conversation"
+   },
+   {
+    "label": "Usual peak-to-trough fall in earlier Australian downturns",
+    "value": "5 to 10%",
+    "asAt": "past downturns (fifth in 20 years)",
+    "issue": "housing",
+    "source": "The Conversation (Hal Pawson)"
+   },
+   {
+    "label": "Median national property price, rise since 2020",
+    "value": "78%",
+    "asAt": "one respected index, 2026",
+    "issue": "housing",
+    "source": "The Conversation (Hal Pawson)"
+   },
+   {
+    "label": "Property sales transactions, year on year",
+    "value": "-17%",
+    "asAt": "Westpac report, 2026",
+    "issue": "housing",
+    "source": "Westpac via The Conversation"
+   },
+   {
+    "label": "Stamp duty share of own-source revenue, NSW and Victoria",
+    "value": "18.5 to 22.5%",
+    "asAt": "2022-23",
+    "issue": "budget",
+    "source": "The Conversation (Hal Pawson)"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Negative equity",
+    "def": "When the mortgage owed is larger than the value of the home."
+   },
+   {
+    "term": "Wealth effect",
+    "def": "Households spend less when the value of their assets, such as housing, falls."
+   },
+   {
+    "term": "Stamp duty",
+    "def": "A state tax paid when property changes hands, so its revenue falls when sales volumes fall."
+   },
+   {
+    "term": "Land tax",
+    "def": "A tax on the value of land held, which is a steadier revenue source than stamp duty."
+   }
+  ],
+  "angle": "A balanced treatment of falling house prices: the monetary policy channel and wealth effect, but also who is protected (equity built up since 2020) and who is exposed (recent low-deposit buyers). The stamp duty section gives a micro-reform example on the tax mix.",
+  "questions": [
+   {
+    "q": "Explain how higher interest rates can lead to falling house prices.",
+    "marks": 4
+   },
+   {
+    "q": "Outline one reason falling house prices may not make housing more affordable for first home buyers.",
+    "marks": 2
+   }
+  ],
+  "extended": "Evaluate the effects of a sustained fall in house prices on households and on state government budgets.",
+  "note": "Figures are as at September 2026 (published 6 October); check Cotality, Domain or the ABS for later data. Analysis by an academic, and the 10 to 15% fall is a forecast, not an outcome. Later data sits in the 16 Oct housing-downturn and 22 Oct house-price-falls records.",
+  "links": [
+   {
+    "label": "The Conversation (Hal Pawson, UNSW), This chart tells you everything you need to know about the downturn in property prices, 6 Oct 2026",
+    "url": "https://theconversation.com/this-chart-tells-you-everything-you-need-to-know-about-the-downturn-in-property-prices-293426"
+   }
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-06-conversation-property-downturn.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "added": "2026-10-26"
+ },
+ {
+  "id": "2026-09-30-conversation-august-inflation",
+  "title": "Headline inflation jumps to 4.0% in August, but underlying inflation holds at 3.6%",
+  "date": "2026-09-30",
+  "type": "news",
+  "outlets": [
+   "The Conversation",
+   "ABS",
+   "RBA"
+  ],
+  "summary": "A clear example of why the RBA watches underlying inflation: a petrol-driven jump in the headline rate while the trimmed mean stays steady.",
+  "lede": "Annual headline inflation rose to 4.0% in August from 3.5%, driven by petrol, while trimmed mean inflation was unchanged at 3.6%. Isaac Gross (Monash University) argues the RBA, which had just lifted rates for the fourth time this year, could justify waiting before another rise at its 3 November meeting.",
+  "about": {
+   "h09": [
+    "3C.1",
+    "3C.2",
+    "3C.3"
+   ],
+   "y12": [
+    "Y1c.3",
+    "Y1c.4",
+    "Y1c.8"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4D.2",
+    "4D.3",
+    "4H.1",
+    "4I.3"
+   ],
+   "y12": [
+    "Y1c.9",
+    "Y2c.3",
+    "Y2c.4",
+    "Y2c.8"
+   ],
+   "y11": [
+    "P1e.5"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "rates",
+   "global"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Headline inflation, annual rate",
+    "value": "4.0% (up from 3.5%)",
+    "asAt": "year to August 2026",
+    "issue": "inflation",
+    "source": "ABS via The Conversation (Isaac Gross)"
+   },
+   {
+    "label": "Trimmed mean inflation, annual rate",
+    "value": "3.6% (unchanged)",
+    "asAt": "year to August 2026",
+    "issue": "inflation",
+    "source": "ABS via The Conversation (Isaac Gross)"
+   },
+   {
+    "label": "Automotive fuel prices, one-month rise",
+    "value": "almost 15%",
+    "asAt": "August 2026",
+    "issue": "inflation",
+    "source": "ABS via The Conversation (Isaac Gross)"
+   },
+   {
+    "label": "Housing costs, annual rise",
+    "value": "5.7%",
+    "asAt": "year to August 2026",
+    "issue": "inflation",
+    "source": "ABS via The Conversation (Isaac Gross)"
+   },
+   {
+    "label": "RBA rate rises so far in 2026",
+    "value": "4 (latest in September)",
+    "asAt": "30 Sep 2026",
+    "issue": "rates",
+    "source": "The Conversation (Isaac Gross)"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Headline inflation",
+    "def": "The annual change in the whole consumer price index, including volatile items such as petrol."
+   },
+   {
+    "term": "Trimmed mean",
+    "def": "The RBA's preferred underlying measure, which removes the largest price rises and falls each month to show the trend."
+   },
+   {
+    "term": "Cost-push inflation",
+    "def": "Price rises that start with higher production costs, such as fuel."
+   },
+   {
+    "term": "Policy lag",
+    "def": "The delay before an interest rate change works through the economy."
+   }
+  ],
+  "angle": "Use it to show why headline and underlying measures can diverge, and why a central bank with a 2 to 3% target may look through a supply-side price spike while watching for second-round effects. Pair it with the unemployment records to show the RBA's dual-mandate trade-off.",
+  "questions": [
+   {
+    "q": "Distinguish between headline inflation and trimmed mean inflation.",
+    "marks": 2
+   },
+   {
+    "q": "Explain why a rise in petrol prices can lift headline inflation without changing the RBA's view of underlying inflation.",
+    "marks": 4
+   }
+  ],
+  "extended": "To what extent should the RBA rely on underlying inflation rather than headline inflation when setting the cash rate?",
+  "note": "Written before the RBA's 3 November 2026 decision, so it is a preview: add the outcome and the next inflation release when available. Analysis by an academic economist, not the ABS release itself; check ABS data before quoting.",
+  "links": [
+   {
+    "label": "The Conversation (Isaac Gross, Monash University), Inflation lifts to 4.0% in August, keeping pressure on the RBA for another rate rise, 30 Sep 2026",
+    "url": "https://theconversation.com/inflation-lifts-to-4-0-in-august-keeping-pressure-on-the-rba-for-another-rate-rise-292366"
+   }
+  ],
+  "file": {
+   "path": "files/2026-09/2026-09-30-conversation-august-inflation.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "added": "2026-10-26"
+ },
+ {
   "id": "2026-09-16-vc-global-natural-resources",
   "date": "2026-09-16",
   "title": "Visual Capitalist: global natural resources (forests, water, oil, gas)",
@@ -4695,6 +6769,137 @@
    "label": "Data sheet",
    "pages": 5
   }
+ },
+ {
+  "id": "2026-09-14-conversation-australia-climate-targets",
+  "title": "Australia must double down to meet our climate targets: a fossil fuel phase-out pathway",
+  "date": "2026-09-14",
+  "type": "news",
+  "outlets": [
+   "The Conversation"
+  ],
+  "summary": "Sets out what the Paris Agreement and COP commitments require of Australia and where current policy, including the Safeguard Mechanism, falls short.",
+  "lede": "Bill Hare of Climate Analytics argues a Paris-aligned pathway needs net emissions 55% below 2005 levels by 2030 and net zero by 2050, while current policies will barely meet the 43% target. The Safeguard Mechanism cut covered facilities' emissions by just 0.4% because it allows unlimited offsets.",
+  "about": {
+   "h09": [
+    "4G.4",
+    "4G.1"
+   ],
+   "y12": [
+    "Y2f.6",
+    "Y2f.7",
+    "Y2f.8"
+   ],
+   "y11": [
+    "P5a.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4G.2",
+    "4G.3"
+   ],
+   "y12": [
+    "Y1e.8",
+    "Y1e.7",
+    "Y2f.3"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "environment",
+   "global"
+  ],
+  "levers": [
+   "environmental",
+   "global"
+  ],
+  "diagrams": [],
+  "figures": [
+   {
+    "label": "Australia's 2030 target (current)",
+    "value": "43% below 2005 levels",
+    "asAt": "2026",
+    "issue": "environment",
+    "source": "Bill Hare, The Conversation"
+   },
+   {
+    "label": "Suggested Paris-aligned 2030 target",
+    "value": "55% below 2005 levels; net zero by 2050",
+    "asAt": "2026",
+    "issue": "environment",
+    "source": "Bill Hare, The Conversation"
+   },
+   {
+    "label": "Renewables target for electricity",
+    "value": "82% by 2030 (non-binding); 96% by 2035 possible",
+    "asAt": "2026",
+    "issue": "environment",
+    "source": "Bill Hare, The Conversation"
+   },
+   {
+    "label": "Industrial emissions, 2025",
+    "value": "about -2.3% (4.9% a year needed)",
+    "asAt": "2025",
+    "issue": "environment",
+    "source": "Bill Hare, The Conversation"
+   },
+   {
+    "label": "Emissions of the 196 Safeguard facilities, 2023-24 to 2024-25",
+    "value": "-0.4%",
+    "asAt": "2024-25",
+    "issue": "environment",
+    "source": "Bill Hare, The Conversation"
+   },
+   {
+    "label": "Fossil fuel projects approved since the Government took office",
+    "value": "37 (42 more in the pipeline)",
+    "asAt": "2026",
+    "issue": "environment",
+    "source": "Bill Hare, The Conversation"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Safeguard Mechanism",
+    "def": "A federal regulation that sets legally binding limits on the emissions of large industrial facilities."
+   },
+   {
+    "term": "Paris Agreement",
+    "def": "The 2015 international agreement to limit global warming to well below 2C, aiming for 1.5C."
+   },
+   {
+    "term": "Overshoot",
+    "def": "Global temperatures exceeding the 1.5C limit, at least for a period."
+   }
+  ],
+  "links": [
+   [
+    "Bill Hare, The Conversation, 14 September 2026",
+    "https://theconversation.com/australia-must-double-down-to-meet-our-climate-targets-our-new-study-shows-how-291668"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-09/2026-09-14-conversation-australia-climate-targets.pdf",
+   "label": "Article",
+   "pages": 5
+  },
+  "angle": "Use the Paris Agreement and COP commitments for international agreements, and the Safeguard Mechanism for regulation, then evaluate effectiveness using the 0.4% figure.",
+  "questions": [
+   {
+    "q": "Identify ONE international agreement Australia has committed to on climate change.",
+    "marks": 1
+   },
+   {
+    "q": "Explain how regulation such as the Safeguard Mechanism can reduce emissions.",
+    "marks": 3
+   },
+   {
+    "q": "Assess the effectiveness of Australia's policies in meeting its emissions targets.",
+    "marks": 6
+   }
+  ],
+  "note": "An opinion piece by a researcher at Climate Analytics, so the policy recommendations are one view. Check the 2030 target figures against Government sources before quoting."
  },
  {
   "id": "2026-09-02-year11-economy-data-dashboard",
@@ -18713,5 +20918,66 @@
    "pages": 2
   },
   "links": []
+ },
+ {
+  "id": "2008-01-01-haynes-free-riding-in-australia",
+  "title": "Free-Riding in Australia (Haynes, Holland, Pyman and Teicher)",
+  "date": "2008-01-01",
+  "dateText": "Undated paper (cites 2007); survey data 2004",
+  "type": "report",
+  "outlets": [
+   "Haynes, Holland, Pyman and Teicher"
+  ],
+  "summary": "The original research paper behind the free rider summary.",
+  "lede": "Analyses free riding on Australian unions using the Australian Worker Representation and Participation Survey 2004: 39.2% of eligible workers were non-members and 51.7% of those showed some deliberate free riding.",
+  "about": {
+   "h09": [
+    "3F.3"
+   ],
+   "y12": [
+    "Y2e.5"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4F.2"
+   ],
+   "y12": [],
+   "y11": [
+    "P2h.5"
+   ]
+  },
+  "issues": [
+   "employment"
+  ],
+  "levers": [
+   "labour"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Eligible workers who are not union members",
+    "value": "39.2%",
+    "asAt": "2004 survey",
+    "issue": "employment",
+    "source": "Haynes et al., AWRPS 2004"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Technical free rider",
+    "def": "An eligible worker who benefits from union bargaining but is not a member."
+   }
+  ],
+  "links": [],
+  "file": {
+   "path": "files/2008-01/2008-01-01-haynes-free-riding-in-australia.pdf",
+   "label": "Research paper",
+   "pages": 10
+  },
+  "note": "Publication year and journal are not shown on the copy supplied; the date is an estimate from the latest source it cites. Read the two-page summary first."
  }
 ]
