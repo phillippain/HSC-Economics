@@ -1,0 +1,797 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Interactive HSC Economics explainer on consumer surplus, producer surplus and deadweight loss under a tariff, quota and subsidy, with live diagrams, a worked example, Australian cases, questions and an exam guide.">
+<title>Who Wins from Protection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600..800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light}
+[hidden]{display:none!important}
+img{max-width:100%}
+/* Layout concept: navy header band, then a working lab (diagram left, live numbers right), then worked example, Australian cases, questions and exam guide in one reading column. Colours follow the HSC booklet: navy D, blue S, red for the protected price, gold revenue, teal transfers. */
+:root{
+  --bg:#F2F5F9; --surface:#FFFFFF; --ink:#10253F; --muted:#4D5F78; --rule:#D3DBE6; --rule-strong:#A9B6C8;
+  --band:#10253F; --band-ink:#F2F5F9; --band-muted:#B7C5DA;
+  --gold:#E0A100; --gold-ink:#6B4A00; --pill-bg:#E0A100; --pill-ink:#10253F;
+  --d-line:#10253F; --s-line:#1E88E5; --w-line:#66768D; --red:#E53935; --red-ink:#B71C1C; --teal:#00897B; --teal-ink:#00695C;
+  --cs-fill:rgba(16,37,63,.15); --ps-fill:rgba(30,136,229,.26); --rev-fill:rgba(224,161,0,.5); --dwl-fill:rgba(229,57,53,.16); --dwl-hatch:#E53935; --tr-fill:rgba(0,137,123,.14); --tr-hatch:#00897B;
+  --good:#1B6E37; --good-bg:#E3F3E8; --bad:#A31515; --bad-bg:#FBE6E5; --focus:#1E88E5; --soft:#E8EDF4;
+  --display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif; --body:'Atkinson Hyperlegible','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0B1524; --surface:#12233A; --ink:#E6EDF7; --muted:#9DB0C9; --rule:#263A55; --rule-strong:#40587A;
+  --band:#16304F; --band-ink:#F2F5F9; --band-muted:#B7C5DA;
+  --gold:#F2B73A; --gold-ink:#F2C766; --pill-bg:#F2B73A; --pill-ink:#10253F;
+  --d-line:#C6D6EE; --s-line:#58AEF6; --w-line:#8EA0B8; --red:#FF6A64; --red-ink:#FF9A96; --teal:#3CC8B6; --teal-ink:#6FE0D2;
+  --cs-fill:rgba(198,214,238,.17); --ps-fill:rgba(88,174,246,.30); --rev-fill:rgba(242,183,58,.42); --dwl-fill:rgba(255,106,100,.18); --dwl-hatch:#FF6A64; --tr-fill:rgba(60,200,182,.16); --tr-hatch:#3CC8B6;
+  --good:#7FE0A2; --good-bg:#14301F; --bad:#FF9A96; --bad-bg:#3A1717; --focus:#58AEF6; --soft:#182D49; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0B1524; --surface:#12233A; --ink:#E6EDF7; --muted:#9DB0C9; --rule:#263A55; --rule-strong:#40587A;
+  --band:#16304F; --band-ink:#F2F5F9; --band-muted:#B7C5DA;
+  --gold:#F2B73A; --gold-ink:#F2C766; --pill-bg:#F2B73A; --pill-ink:#10253F;
+  --d-line:#C6D6EE; --s-line:#58AEF6; --w-line:#8EA0B8; --red:#FF6A64; --red-ink:#FF9A96; --teal:#3CC8B6; --teal-ink:#6FE0D2;
+  --cs-fill:rgba(198,214,238,.17); --ps-fill:rgba(88,174,246,.30); --rev-fill:rgba(242,183,58,.42); --dwl-fill:rgba(255,106,100,.18); --dwl-hatch:#FF6A64; --tr-fill:rgba(60,200,182,.16); --tr-hatch:#3CC8B6;
+  --good:#7FE0A2; --good-bg:#14301F; --bad:#FF9A96; --bad-bg:#3A1717; --focus:#58AEF6; --soft:#182D49; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;margin:0}
+h1,h2,h3{font-family:var(--display);line-height:1.12;text-wrap:balance;margin:0;font-weight:700}
+h2{font-size:clamp(1.55rem,3.2vw,2rem);letter-spacing:-.01em}
+h3{font-size:1.15rem}
+p{margin:0}
+.wrap{max-width:1120px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+section{padding-block:44px}
+section+section{border-top:1px solid var(--rule)}
+.lead{max-width:62ch;color:var(--muted);margin-top:10px}
+.prose{max-width:66ch}
+.sub{font-size:.78em;vertical-align:-.28em;line-height:0}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+
+/* header */
+header.band{background:var(--band);color:var(--band-ink);padding-block:34px 28px}
+.pill{display:inline-block;background:var(--pill-bg);color:var(--pill-ink);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:3px}
+header h1{font-size:clamp(2rem,5.6vw,3.4rem);letter-spacing:-.02em;margin-top:14px;max-width:18ch}
+header .lead{color:var(--band-muted);font-size:1.08rem}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.jump button{background:transparent;border:1px solid rgba(242,245,249,.45);color:var(--band-ink);padding:6px 12px;border-radius:999px;font-size:.92rem}
+.jump button:hover{background:rgba(242,245,249,.14)}
+
+/* setup */
+.defs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px 36px;margin-top:26px}
+.defs div{min-width:0;display:grid;grid-template-columns:22px 1fr;gap:0 12px;align-items:start}
+.defs dt{font-weight:700;grid-column:2}
+.defs dd{margin:2px 0 0;grid-column:2;color:var(--muted);font-size:.97rem}
+.defs .sw{grid-column:1;grid-row:1 / span 2;margin-top:4px}
+.sw{width:22px;height:22px;border:1.5px solid var(--rule-strong);border-radius:3px;display:block}
+.sw.cs{background:var(--cs-fill);border-color:var(--d-line)}
+.sw.ps{background:var(--ps-fill);border-color:var(--s-line)}
+.sw.rev{background:var(--rev-fill);border-color:var(--gold)}
+.sw.dwl{background:repeating-linear-gradient(45deg,var(--dwl-fill) 0 4px,var(--dwl-hatch) 4px 6px);border-color:var(--red)}
+.sw.tr{background:repeating-linear-gradient(135deg,var(--tr-fill) 0 4px,var(--tr-hatch) 4px 6px);border-color:var(--teal)}
+.sw.cost{background:transparent;border:2px dashed var(--gold)}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:30px;padding:14px 18px;background:var(--soft);border-radius:6px;font-size:.98rem}
+.facts span{white-space:nowrap}
+.facts b{font-variant-numeric:tabular-nums}
+
+/* lab */
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-top:22px;border-bottom:2px solid var(--rule)}
+.tabs button{background:transparent;border:0;border-bottom:4px solid transparent;margin-bottom:-2px;padding:10px 16px;font-weight:700;color:var(--muted)}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--red)}
+.tabs button[data-tool="free"][aria-selected="true"]{border-bottom-color:var(--d-line)}
+.labgrid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:28px 40px;margin-top:24px;align-items:start}
+@media (max-width:900px){.labgrid{grid-template-columns:minmax(0,1fr)}}
+.plot{margin:0;background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:8px}
+.plot svg{display:block;width:100%;height:auto}
+.plot text{font-family:var(--body);fill:var(--ink)}
+.plot .curve{fill:none;stroke-width:3.4;stroke-linecap:round}
+.plot .axis{stroke:var(--ink);stroke-width:2;fill:none}
+.plot .drop{stroke:var(--w-line);stroke-width:1.4;stroke-dasharray:5 5}
+.plot .drop.key{stroke-width:2;stroke-dasharray:8 4}
+.plot .reg{transition:opacity .15s}
+.plot.hl .reg{opacity:.2}
+.plot.hl .reg.on{opacity:1}
+.plot .sym{font-weight:700;font-size:16px}
+.plot .val{font-size:13.5px;fill:var(--muted)}
+.plot .cl{font-weight:700;font-size:19px}
+.plot .note{font-size:14px;font-style:italic}
+.plot .rl{font-size:14.5px;font-weight:700}
+.plot .tag{font-size:21px;font-weight:700;font-style:italic}
+.side{min-width:0;display:flex;flex-direction:column;gap:16px}
+.controls{display:flex;flex-direction:column;gap:14px;padding:16px;background:var(--surface);border:1px solid var(--rule);border-radius:8px}
+.ctl-row{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px}
+.ctl-row label{font-weight:700}
+.ctl-row output{font-variant-numeric:tabular-nums;font-weight:700;color:var(--red-ink)}
+input[type=range]{width:100%;accent-color:var(--red);margin:6px 0 0;height:28px}
+.hint{font-size:.92rem;color:var(--muted)}
+.seg{display:inline-flex;border:1.5px solid var(--rule-strong);border-radius:6px;overflow:hidden;align-self:flex-start}
+.seg button{background:transparent;border:0;padding:7px 14px;font-weight:700;color:var(--muted)}
+.seg button+button{border-left:1.5px solid var(--rule-strong)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.caption{font-size:1.02rem}
+.legend{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.legend li{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:2px 12px;align-items:start;padding:9px 6px;border-top:1px solid var(--rule);border-radius:4px}
+.legend li:last-child{border-bottom:1px solid var(--rule)}
+.legend li:hover,.legend li:focus-visible{background:var(--soft)}
+.legend .nm{font-weight:700}
+.legend .ds{grid-column:2;font-size:.9rem;color:var(--muted)}
+.legend .vl{font-variant-numeric:tabular-nums;font-weight:700;text-align:right;white-space:nowrap}
+.legend .was{display:block;font-weight:400;font-size:.85rem;color:var(--muted)}
+.legend .sw{margin-top:2px}
+.net{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 14px;padding:10px 14px;border-radius:6px;background:var(--soft);font-weight:700}
+.net .neg{color:var(--bad)} .net .zero{color:var(--good)}
+.net span:last-child{font-variant-numeric:tabular-nums}
+.extra{font-size:.97rem;padding-left:14px;border-left:4px solid var(--gold)}
+.try{font-size:.97rem;color:var(--muted)}
+.try b{color:var(--ink)}
+
+/* tables */
+.tablewrap{overflow-x:auto;margin-top:22px;border:1px solid var(--rule);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-variant-numeric:tabular-nums}
+th,td{padding:9px 14px;text-align:right;border-top:1px solid var(--rule);vertical-align:top}
+thead th{border-top:0;font-family:var(--display);font-size:.98rem;background:var(--soft)}
+th:first-child,td:first-child{text-align:left}
+tbody th{font-weight:400}
+td.pos{color:var(--good);font-weight:700} td.neg{color:var(--bad);font-weight:700}
+tr.emph th,tr.emph td{background:var(--soft);font-weight:700}
+.who{font-size:.9rem;color:var(--muted)}
+.worked td:nth-child(1),.worked th:nth-child(1){width:2.4em;text-align:center;color:var(--muted)}
+.worked td:nth-child(2),.worked td:nth-child(3){text-align:left}
+.worked td:nth-child(4){text-align:right;font-weight:700;white-space:nowrap}
+.worked.wide td:nth-child(1),.worked.wide th:nth-child(1){width:auto;text-align:left;color:inherit;white-space:nowrap}
+.cta{margin-top:18px;display:inline-block;background:var(--ink);color:var(--bg);border:0;padding:10px 18px;border-radius:6px;font-weight:700}
+.cta.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--rule-strong)}
+.warn{margin-top:16px;max-width:66ch;padding:10px 14px;border-left:4px solid var(--red);background:var(--bad-bg);font-size:.97rem}
+
+/* australia */
+.cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:30px 44px;margin-top:26px}
+.case{min-width:0;border-top:3px solid var(--ink);padding-top:12px;display:flex;flex-direction:column;gap:8px}
+.case .tool{font-size:.8rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--teal-ink)}
+.case .on{font-size:.97rem;padding:8px 12px;background:var(--soft);border-radius:5px}
+.case .on b{color:var(--red-ink)}
+.case button{align-self:flex-start;background:transparent;border:0;color:var(--s-line);font-weight:700;padding:2px 0;text-decoration:underline}
+
+/* quiz */
+.qs{display:flex;flex-direction:column;gap:28px;margin-top:26px;max-width:760px}
+.q{border:0;padding:0;margin:0;min-width:0}
+.q legend{font-weight:700;padding:0;margin-bottom:10px}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{text-align:left;background:var(--surface);border:1.5px solid var(--rule-strong);border-radius:6px;padding:10px 14px}
+.opt:hover:not(:disabled){border-color:var(--ink)}
+.opt.right{border-color:var(--good);background:var(--good-bg)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.opt:disabled{cursor:default;color:var(--ink)}
+.why{margin-top:10px;font-size:.97rem;padding-left:14px;border-left:4px solid var(--gold)}
+.score{font-weight:700;margin-top:6px}
+textarea{width:100%;min-height:110px;font:inherit;color:var(--ink);background:var(--surface);border:1.5px solid var(--rule-strong);border-radius:6px;padding:10px 12px;resize:vertical}
+details{margin-top:10px}
+summary{cursor:pointer;font-weight:700;padding:6px 0}
+details .body{padding:10px 0 4px;max-width:66ch;display:flex;flex-direction:column;gap:10px}
+
+/* exam */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:34px 48px;margin-top:26px}
+.two>div{min-width:0}
+.two h3{margin-bottom:10px}
+ul.plain,ol.plain{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:7px}
+.check{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
+.check label{display:grid;grid-template-columns:24px 1fr;gap:10px;align-items:start;cursor:pointer}
+.check input{width:20px;height:20px;margin-top:3px;accent-color:var(--teal)}
+.model{margin-top:12px;padding:16px 18px;background:var(--surface);border:1px solid var(--rule);border-radius:8px;max-width:70ch;display:flex;flex-direction:column;gap:10px}
+.model .tagline{font-size:.82rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+footer{padding-block:34px 60px;border-top:1px solid var(--rule);font-size:.93rem;color:var(--muted)}
+footer ul{margin:8px 0 0;padding-left:1.2em}
+footer a{color:var(--s-line)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <span class="pill">HSC Economics &middot; Topic 1 &middot; Protection</span>
+    <h1>Who wins and who loses when a market is protected</h1>
+    <p class="lead">Consumer surplus, producer surplus and deadweight loss, worked out step by step for a tariff, a quota and a subsidy. Drag the sliders and watch the areas change.</p>
+    <nav class="jump" aria-label="Jump to a section">
+      <button data-go="setup">Key ideas</button>
+      <button data-go="lab">Diagram lab</button>
+      <button data-go="compare">Compare the tools</button>
+      <button data-go="worked">Worked example</button>
+      <button data-go="australia">Australian cases</button>
+      <button data-go="check">Check yourself</button>
+      <button data-go="exam">Exam guide</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="setup">
+  <div class="wrap">
+    <h2>Four ideas, one market</h2>
+    <p class="lead">Every diagram on this page uses the same market for an imported good. Australia is small, so it takes the world price as given and cannot change it.</p>
+    <dl class="defs">
+      <div><span class="sw cs"></span><dt>Consumer surplus</dt><dd>What buyers would have paid minus what they do pay. On the diagram it is the area under the demand curve and above the price.</dd></div>
+      <div><span class="sw ps"></span><dt>Producer surplus</dt><dd>What sellers receive minus the least they would accept. It is the area above the supply curve and below the price they receive.</dd></div>
+      <div><span class="sw dwl"></span><dt>Deadweight loss</dt><dd>Surplus that no one gets. Trades that would have helped both sides stop happening, and resources go to less efficient uses.</dd></div>
+      <div><span class="sw rev"></span><dt>Revenue</dt><dd>Money collected by the government as tariff revenue, or kept by importers as the extra revenue from a higher price under a quota. It is a transfer, so it is not a loss.</dd></div>
+      <div><span class="sw tr"></span><dt>Transfer</dt><dd>Surplus that moves from one group to another, such as consumers to producers. The total is unchanged, so a transfer is not deadweight loss.</dd></div>
+      <div><span class="sw cost"></span><dt>Cost to government</dt><dd>What a subsidy costs taxpayers: the subsidy per unit times the units produced. It is outlined in gold on the subsidy diagram.</dd></div>
+    </dl>
+    <div class="facts" aria-label="The market used throughout">
+      <span>Demand: <b>Q = 100 &minus; P</b></span>
+      <span>Supply: <b>Q = P</b></span>
+      <span>World price: <b>$20</b></span>
+      <span>No-trade price: <b>$50</b>, quantity <b>50</b></span>
+      <span>Price in <b>$</b>, quantity in <b>millions</b>, surplus in <b>$ millions</b></span>
+    </div>
+  </div>
+</section>
+
+<section id="lab">
+  <div class="wrap">
+    <h2>The diagram lab</h2>
+    <p class="lead">Choose a market situation. Use the slider to change the size of the protection, then switch between the surpluses and the changes from free trade. Hover over a row in the list to light up its area on the diagram.</p>
+    <div class="tabs" role="tablist" aria-label="Market situation">
+      <button role="tab" id="tab-free" data-tool="free" aria-selected="false" tabindex="-1">Free trade</button>
+      <button role="tab" id="tab-tariff" data-tool="tariff" aria-selected="true">Tariff</button>
+      <button role="tab" id="tab-quota" data-tool="quota" aria-selected="false" tabindex="-1">Quota</button>
+      <button role="tab" id="tab-subsidy" data-tool="subsidy" aria-selected="false" tabindex="-1">Subsidy</button>
+    </div>
+    <div class="labgrid" role="tabpanel" aria-labelledby="tab-tariff" id="panel">
+      <figure class="plot" id="plotbox">
+        <svg id="plot" viewBox="0 0 568 582" role="img" aria-label="Supply and demand diagram"></svg>
+      </figure>
+      <div class="side">
+        <div class="controls">
+          <div id="slider-block">
+            <div class="ctl-row"><label for="amount" id="amount-label">Tariff per unit</label><output id="amount-out" for="amount"></output></div>
+            <input type="range" id="amount" min="0" max="30" step="1" value="15">
+            <p class="hint" id="amount-hint"></p>
+          </div>
+          <div class="seg" id="viewseg" role="group" aria-label="What the diagram shows">
+            <button type="button" data-view="surplus" aria-pressed="true">Surpluses</button>
+            <button type="button" data-view="change" aria-pressed="false">What changed</button>
+          </div>
+        </div>
+        <p class="caption" id="caption" aria-live="polite"></p>
+        <ul class="legend" id="legend"></ul>
+        <div class="net" id="net"></div>
+        <p class="extra" id="extra"></p>
+        <p class="try" id="try"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="compare">
+  <div class="wrap">
+    <h2>Same price, different winners</h2>
+    <p class="lead">A $15 tariff and a 30 million unit quota give consumers and producers the same result. The difference is who collects the revenue. A subsidy leaves consumers alone and sends the bill to taxpayers.</p>
+    <div class="tablewrap"><table id="cmp" aria-label="Comparison of tariff, quota and subsidy"></table></div>
+    <p class="hint" style="margin-top:10px">Figures are in $ millions unless stated. Green means a gain for that group, red a loss.</p>
+  </div>
+</section>
+
+<section id="worked">
+  <div class="wrap">
+    <h2>Worked example: a $15 tariff</h2>
+    <p class="lead">Follow the same eight steps in any tariff question. Each result matches what the lab shows at its starting setting.</p>
+    <div class="tablewrap"><table class="worked" id="wk">
+      <thead><tr><th scope="col">Step</th><th scope="col">What you do</th><th scope="col">Working</th><th scope="col">Result</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Find the free-trade quantities at the world price of $20.</td><td>Supply: Q<span class="sub">1</span> = 20. Demand: Q<span class="sub">2</span> = 100 &minus; 20 = 80. Imports = 80 &minus; 20.</td><td>Imports 60</td></tr>
+        <tr><td>2</td><td>Work out the surpluses under free trade.</td><td>CS = &frac12; &times; 80 &times; (100 &minus; 20). PS = &frac12; &times; 20 &times; 20.</td><td>CS 3,200<br>PS 200</td></tr>
+        <tr><td>3</td><td>Add the tariff to the world price and read off the new quantities.</td><td>P<span class="sub">1</span> = 20 + 15 = 35. Q<span class="sub">3</span> = 35. Q<span class="sub">4</span> = 100 &minus; 35 = 65.</td><td>Imports 30</td></tr>
+        <tr><td>4</td><td>Recalculate consumer surplus.</td><td>CS = &frac12; &times; 65 &times; (100 &minus; 35). Change = 2,112.5 &minus; 3,200.</td><td>&minus;1,087.5</td></tr>
+        <tr><td>5</td><td>Recalculate producer surplus. This gain is area a.</td><td>PS = &frac12; &times; 35 &times; 35. Change = 612.5 &minus; 200.</td><td>+412.5</td></tr>
+        <tr><td>6</td><td>Find the revenue (area c). Use imports after the tariff.</td><td>Tariff &times; imports = 15 &times; (65 &minus; 35).</td><td>$450m</td></tr>
+        <tr><td>7</td><td>Find the two deadweight loss triangles, b and d.</td><td>b = &frac12; &times; 15 &times; (35 &minus; 20) = 112.5. d = &frac12; &times; 15 &times; (80 &minus; 65) = 112.5.</td><td>DWL 225</td></tr>
+        <tr><td>8</td><td>Check that the changes add up.</td><td>&minus;1,087.5 + 412.5 + 450 = &minus;225, the same as &minus;(b + d).</td><td>&minus;225</td></tr>
+      </tbody></table></div>
+    <div class="warn"><b>The usual slip.</b> Revenue is $15 &times; 30 = $450m, not $15 &times; 60 = $900m. Only the imports that still arrive pay the tariff.</div>
+    <button class="cta" data-open="tariff|change|15">Open this example in the lab</button>
+    <h3 style="margin-top:34px">The same numbers with a quota and a subsidy</h3>
+    <div class="tablewrap"><table class="worked wide" aria-label="Quota and subsidy using the same numbers">
+      <thead><tr><th scope="col">Tool</th><th scope="col">What happens</th><th scope="col">Working</th><th scope="col">Result</th></tr></thead>
+      <tbody>
+        <tr><td>Quota of 30</td><td>Imports are capped at 30, so supply is S plus 30. It meets demand at $35.</td><td>P + 30 = 100 &minus; P gives P = 35. Extra revenue = (35 &minus; 20) &times; 30.</td><td>$450m to importers<br>DWL 225</td></tr>
+        <tr><td>Subsidy of $15</td><td>Producers receive $35, so output rises to 35. Consumers still pay $20.</td><td>Cost = 15 &times; 35 = 525. Producer gain = 612.5 &minus; 200 = 412.5. DWL = 525 &minus; 412.5.</td><td>Cost $525m<br>DWL 112.5</td></tr>
+      </tbody></table></div>
+    <button class="cta ghost" data-open="subsidy|change|15">See the subsidy in the lab</button>
+  </div>
+</section>
+
+<section id="australia">
+  <div class="wrap">
+    <h2>Where Australia has used these tools</h2>
+    <p class="lead">Each case links back to the diagram. Use these as examples in extended responses, with the figures.</p>
+    <div class="cases">
+      <article class="case">
+        <span class="tool">Tariff, then removal</span>
+        <h3>The car industry</h3>
+        <p>Tariffs on motor vehicles were around 60% at the start of the 1980s. The Button plan cut them step by step to 15% by 2000, and they were cut further to 5%. Ford stopped making cars in Australia in 2016, and Holden and Toyota followed in 2017.</p>
+        <p class="on"><b>On the diagram:</b> removing a tariff runs the lab backwards. The price falls from P<span class="sub">1</span> to P<span class="sub">w</span>, domestic output falls from Q<span class="sub">3</span> to Q<span class="sub">1</span>, and triangles b and d disappear. Consumers gain and local producers lose.</p>
+        <button data-open="tariff|surplus|20">Try a large tariff in the lab</button>
+      </article>
+      <article class="case">
+        <span class="tool">Tariff, today</span>
+        <h3>Very low average protection</h3>
+        <p>The average tariff fell from 36% in 1968&ndash;69 to 0.4% in 2025. About 90% of imports are tariff free and the general rate is 5% or less. Tariff revenue is $1.9bn, about 0.2% of government revenue.</p>
+        <p class="on"><b>On the diagram:</b> a small t means small triangles and a thin revenue rectangle. Set the tariff to $2 and the deadweight loss is only $4m, because it grows with the square of the tariff.</p>
+        <button data-open="tariff|surplus|2">Set the tariff to $2</button>
+      </article>
+      <article class="case">
+        <span class="tool">Subsidy and export incentives</span>
+        <h3>Whyalla and the EMDG</h3>
+        <p>Government support for the Whyalla steelworks is $2.4bn plus $223m. The Export Market Development Grants scheme provides $105m in 2026&ndash;27 and has helped more than 51,000 exporters since 1974.</p>
+        <p class="on"><b>On the diagram:</b> support that lowers a producer's costs works like a rightward shift of supply from S to S<span class="sub">1</span>. Taxpayers fund areas a and b, producers keep a, and b is lost.</p>
+        <button data-open="subsidy|change|15">See a subsidy in the lab</button>
+      </article>
+      <article class="case">
+        <span class="tool">Other countries&rsquo; protection</span>
+        <h3>Wine and farm support abroad</h3>
+        <p>China&rsquo;s anti-dumping duties on Australian wine, in place from 2021 to 2024, cut wine exports to China from $1.3bn to under $1m in 2023. They recovered to about $1bn in the year to March 2025. Farm support is under 3% in Australia, against 7% in the US, 16% in the EU and 41% in South Korea.</p>
+        <p class="on"><b>On the diagram:</b> read it from the exporter&rsquo;s side. A foreign tariff lowers the price Australian sellers receive and shrinks their producer surplus. A foreign subsidy lets rivals sell at lower prices.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="check">
+  <div class="wrap">
+    <h2>Check your understanding</h2>
+    <p class="lead">Choose an answer to see why it is right or wrong. The last question is for you to write, then compare.</p>
+    <div class="qs" id="qs"></div>
+    <p class="score" id="score" aria-live="polite"></p>
+    <button class="cta ghost" id="qreset" type="button">Start again</button>
+  </div>
+</section>
+
+<section id="exam">
+  <div class="wrap">
+    <h2>Writing it up in the exam</h2>
+    <p class="lead">Markers reward a correct diagram, a clear chain of cause and effect, numbers where you have them, and a judgement when the question asks for one.</p>
+    <div class="two">
+      <div>
+        <h3>Diagram checklist</h3>
+        <ul class="check" id="chk"></ul>
+        <p class="score" id="chkscore" aria-live="polite"></p>
+      </div>
+      <div>
+        <h3>Command words</h3>
+        <ul class="plain">
+          <li><b>Outline or describe.</b> State what happens to price, output, imports and revenue.</li>
+          <li><b>Explain.</b> Give the reason for each change, such as why the supply curve is climbed.</li>
+          <li><b>Analyse.</b> Split the effect by group: consumers, producers, government. Use areas or figures.</li>
+          <li><b>Assess or evaluate.</b> Weigh the gains (jobs, infant industries, defence, dumping) against the costs (higher prices, deadweight loss, retaliation) and reach a judgement.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="model">
+      <span class="tagline">Model answer &middot; Explain the effects of a tariff on an imported good (6 marks)</span>
+      <p>A tariff is a tax on imports. It raises the domestic price from the world price (P<span class="sub">w</span>) to P<span class="sub">w</span> + t, labelled P<span class="sub">1</span> on the diagram. At the higher price domestic producers move up their supply curve and raise output from Q<span class="sub">1</span> to Q<span class="sub">3</span>, while consumers move up their demand curve and cut purchases from Q<span class="sub">2</span> to Q<span class="sub">4</span>. Imports therefore fall from Q<span class="sub">2</span> &minus; Q<span class="sub">1</span> to Q<span class="sub">4</span> &minus; Q<span class="sub">3</span>.</p>
+      <p>Producers gain surplus (area a) and the government collects revenue equal to the tariff times the new level of imports (area c). Consumers lose surplus equal to a + b + c + d because they pay more and buy less. Triangles b and d are deadweight loss. Resources move into production that the world could supply more cheaply (b), and consumers give up purchases they value above the world price (d). Total welfare falls by b + d, so the tariff protects some firms and jobs at a net cost to the economy.</p>
+    </div>
+    <div class="two" style="margin-top:34px">
+      <div>
+        <h3>Lifting it to the top band</h3>
+        <ul class="plain">
+          <li>Use the figures from the stimulus. Show the working for revenue and for each triangle.</li>
+          <li>Compare tools: a quota gives the same price effect, but the revenue goes to importers. A subsidy leaves consumers&rsquo; price unchanged and has one triangle.</li>
+          <li>Name a reason for protection from the syllabus (infant industry, domestic employment, dumping, defence) and test it against the cost.</li>
+          <li>Add an Australian example with a figure, then finish with a judgement on who gains, who pays and whether the gain outweighs the loss.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Mistakes that cost marks</h3>
+        <ul class="plain">
+          <li>Costing tariff revenue on the imports before the tariff.</li>
+          <li>Drawing one deadweight triangle for a tariff or quota. There are two. A subsidy has one.</li>
+          <li>Placing triangle b to the left of the supply curve. It sits to the right of S, between Q<span class="sub">1</span> and Q<span class="sub">3</span>.</li>
+          <li>Costing a subsidy on the extra output only. The cost is the subsidy times all domestic output.</li>
+          <li>Saying a quota raises government revenue. It does only if the licences are sold.</li>
+          <li>Calling a transfer a loss. Areas a and c move between groups. Only b and d are lost.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Numbers in the lab come from the linear market above and are rounded to one decimal place. The diagrams are conceptual and not drawn to an exact scale. Australian figures are from the sources below.</p>
+    <p style="margin-top:10px">Sources:</p>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Button_car_plan" target="_blank" rel="noopener">Button car plan, Wikipedia</a> (vehicle tariffs and plant closures)</li>
+      <li>Pearson, <i>Australia in the Global Economy 2027</i>, Chapter 6 (average tariff, tariff revenue, EMDG, Whyalla, wine and farm support figures)</li>
+      <li>NESA, <i>Economics Stage 6 Syllabus</i> (reasons for protection and methods of protection)</li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+var PW=20;
+var state={tool:'tariff',view:'surplus',t:15,q:30,s:15};
+
+/* ---------- economics ---------- */
+function calc(tool){
+  if(tool==='free'){return {Pc:20,Pp:20,Qs:20,Qd:80,imp:60,CS:3200,PS:200,gov:0,dwl:0,W:3400,P1:20,t:0};}
+  if(tool==='tariff'){var t=state.t,P=20+t;
+    return {Pc:P,Pp:P,Qs:P,Qd:100-P,imp:100-2*P,CS:.5*(100-P)*(100-P),PS:.5*P*P,gov:t*(100-2*P),dwl:t*t,t:t,P1:P};}
+  if(tool==='quota'){var q=state.q,P2=q>=60?20:(100-q)/2,t2=P2-20;
+    return {Pc:P2,Pp:P2,Qs:P2,Qd:100-P2,imp:100-2*P2,CS:.5*(100-P2)*(100-P2),PS:.5*P2*P2,gov:t2*(100-2*P2),dwl:t2*t2,t:t2,P1:P2,q:q};}
+  var s=state.s,Pp=20+s;
+  return {Pc:20,Pp:Pp,Qs:Pp,Qd:80,imp:60-s,CS:3200,PS:.5*Pp*Pp,gov:-s*Pp,dwl:.5*s*s,s:s,P1:Pp};
+}
+function withW(r){r.W=r.CS+r.PS+r.gov;return r;}
+function num(n,d){var x=Math.round(n*10)/10;var s=Math.abs(x).toLocaleString('en-AU',{minimumFractionDigits:0,maximumFractionDigits:d===undefined?1:d});return (x<0?'−':'')+s;}
+function money(n){return (n<0?'−':'')+'$'+num(Math.abs(n))+'m';}
+function signed(n){var x=Math.round(n*10)/10;return (x>0?'+':x<0?'−':'')+'$'+num(Math.abs(x))+'m';}
+
+/* ---------- drawing ---------- */
+var OX=76,OY=444,K=4;
+function X(q){return OX+K*q;} function Y(p){return OY-K*p;}
+function pts(a){return a.map(function(v){return X(v[0]).toFixed(1)+','+Y(v[1]).toFixed(1);}).join(' ');}
+function sym(base,sub,rest){return base+(sub?'<tspan class="sub" dy="4">'+sub+'</tspan><tspan dy="-4">'+(rest||' ')+'</tspan>':'');}
+function poly(a,key,fill,extra){return '<polygon class="reg" data-key="'+key+'" points="'+pts(a)+'" style="fill:'+fill+';'+(extra||'')+'"/>';}
+function txt(x,y,cls,html,anchor,color){return '<text x="'+x.toFixed(1)+'" y="'+y.toFixed(1)+'" class="'+cls+'"'+(anchor?' text-anchor="'+anchor+'"':'')+(color?' style="fill:'+color+'"':'')+'>'+html+'</text>';}
+function area(a){var s=0;for(var i=0;i<a.length;i++){var j=(i+1)%a.length;s+=a[i][0]*a[j][1]-a[j][0]*a[i][1];}return Math.abs(s)/2*K*K;}
+function centroid(a){var x=0,y=0;a.forEach(function(v){x+=v[0];y+=v[1];});return [x/a.length,y/a.length];}
+function legsOK(a,min){var xs=a.map(function(v){return v[0];}),ys=a.map(function(v){return v[1];});return (Math.max.apply(null,xs)-Math.min.apply(null,xs))*K>=min && (Math.max.apply(null,ys)-Math.min.apply(null,ys))*K>=min;}
+function psLabel(Pp){
+  if(Pp>=32){var pl=0.8*Pp;return txt(X(pl/2),Y(pl)-2,'rl','Producer','middle')+txt(X(pl/2),Y(pl)+15,'rl','surplus','middle');}
+  return txt(X(Pp/3),Y(2*Pp/3)+6,'tag','PS','middle');
+}
+function tag(a,t,min){if(!legsOK(a,min||26))return '';var c=centroid(a);return txt(X(c[0]),Y(c[1])+7,'tag',t,'middle');}
+
+function drawPlot(){
+  var tool=state.tool,view=state.view,r=withW(calc(tool));
+  var Pc=r.Pc,Pp=r.Pp,Q1=20,Q2=80,Q3=r.Qs,Q4=r.Qd;
+  var s='';
+  s+='<defs>'+
+   '<pattern id="hRed" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" style="fill:var(--dwl-fill)"/><line x1="0" y1="0" x2="0" y2="8" style="stroke:var(--dwl-hatch);stroke-width:2.2"/></pattern>'+
+   '<pattern id="hTeal" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="8" height="8" style="fill:var(--tr-fill)"/><line x1="0" y1="0" x2="0" y2="8" style="stroke:var(--tr-hatch);stroke-width:2.2"/></pattern></defs>';
+  var regs='',tags='',lines='';
+  var hasT=(tool==='tariff'&&state.t>0)||(tool==='quota'&&r.t>0.0001);
+  var hasS=(tool==='subsidy'&&state.s>0);
+
+  /* regions */
+  if(tool==='free'){
+    regs+=poly([[0,100],[0,PW],[80,PW]],'cs','var(--cs-fill)');
+    regs+=poly([[0,0],[0,PW],[20,PW]],'ps','var(--ps-fill)');
+    tags+=txt(X(80/3),Y((100+2*PW)/3)-2,'rl','Consumer',  'middle')+txt(X(80/3),Y((100+2*PW)/3)+16,'rl','surplus','middle');
+    tags+=txt(X(20/3),Y(2*PW/3)+6,'tag','PS','middle');
+  }else if(tool==='tariff'||tool==='quota'){
+    var cs=[[0,100],[0,Pc],[Q4,Pc]],ps=[[0,0],[0,Pp],[Q3,Pp]];
+    var A=[[0,PW],[0,Pc],[Q3,Pc],[Q1,PW]],B=[[Q1,PW],[Q3,Pc],[Q3,PW]],C=[[Q3,PW],[Q3,Pc],[Q4,Pc],[Q4,PW]],D=[[Q4,Pc],[Q2,PW],[Q4,PW]];
+    var revName=tool==='tariff'?['Tariff','revenue']:['Importers’ extra','revenue'];
+    if(view==='surplus'){
+      regs+=poly(cs,'cs','var(--cs-fill)')+poly(ps,'ps','var(--ps-fill)');
+      if(hasT){regs+=poly(C,'rev','var(--rev-fill)')+poly(B,'dwl','url(#hRed)')+poly(D,'dwl','url(#hRed)');
+        tags+=tag(B,'DWL',30)+tag(D,'DWL',30);
+        var cw=(Q4-Q3)*K,ch=(Pc-PW)*K;
+        if(cw>=112&&ch>=36){var cc=centroid(C);tags+=txt(X(cc[0]),Y(cc[1])-2,'rl',revName[0],'middle')+txt(X(cc[0]),Y(cc[1])+14,'rl',revName[1],'middle');}
+        else if(cw>=30&&ch>=22){var c2=centroid(C);tags+=txt(X(c2[0]),Y(c2[1])+7,'tag','R','middle');}
+      }
+      var ccs=centroid(cs);tags+=txt(X(Q4/3),Y((100+2*Pc)/3)-2,'rl','Consumer','middle')+txt(X(Q4/3),Y((100+2*Pc)/3)+16,'rl','surplus','middle');
+      tags+=psLabel(Pp);
+    }else if(hasT){
+      regs+=poly(A,'a','url(#hTeal)')+poly(B,'b','url(#hRed)')+poly(C,'c','var(--rev-fill)')+poly(D,'d','url(#hRed)');
+      tags+=tag(A,'a',22)+tag(B,'b',22)+tag(C,'c',22)+tag(D,'d',22);
+    }
+  }else{ /* subsidy */
+    var Sc=[[0,100],[0,PW],[80,PW]],Sp=[[0,0],[0,Pp],[Q3,Pp]];
+    var rect=[[0,PW],[0,Pp],[Q3,Pp],[Q3,PW]];
+    var Aa=[[0,PW],[0,Pp],[Q3,Pp],[Q1,PW]],Bb=[[Q1,PW],[Q3,Pp],[Q3,PW]];
+    if(view==='surplus'){
+      regs+=poly(Sc,'cs','var(--cs-fill)')+poly(Sp,'ps','var(--ps-fill)');
+      if(hasS){regs+=poly(Bb,'dwl','url(#hRed)');tags+=tag(Bb,'DWL',30);
+        regs+=poly(rect,'cost','none','stroke:var(--gold);stroke-width:3;stroke-dasharray:9 5');}
+      tags+=txt(X(80/3),Y((100+2*PW)/3)-2,'rl','Consumer','middle')+txt(X(80/3),Y((100+2*PW)/3)+16,'rl','surplus','middle');
+      tags+=psLabel(Pp);
+      if(hasS&&(Pp-PW)*K>=30){tags+=txt(X(Q3)+8,Y((PW+Pp)/2)-2,'note','Cost to','start','var(--gold-ink)')+txt(X(Q3)+8,Y((PW+Pp)/2)+14,'note','government','start','var(--gold-ink)');}
+    }else if(hasS){
+      regs+=poly(Aa,'a','url(#hTeal)')+poly(Bb,'b','url(#hRed)')+poly(rect,'cost','none','stroke:var(--gold);stroke-width:3;stroke-dasharray:9 5');
+      tags+=tag(Aa,'a',22)+tag(Bb,'b',22);
+    }
+  }
+
+  /* guide lines */
+  function drop(q,p,key){return '<line class="drop'+(key?' key':'')+'" x1="'+X(q)+'" y1="'+Y(p)+'" x2="'+X(q)+'" y2="'+OY+'"/>';}
+  function hline(p,q,col,w,dash){return '<line x1="'+OX+'" y1="'+Y(p)+'" x2="'+X(q)+'" y2="'+Y(p)+'" style="stroke:'+col+';stroke-width:'+w+(dash?';stroke-dasharray:'+dash:'')+'"/>';}
+  var qlabels=[],plabels=[];
+
+  if(tool==='free'){
+    lines+=hline(PW,80,'var(--w-line)',2,'8 5')+hline(50,50,'var(--w-line)',1.4,'5 5')+drop(20,20,1)+drop(50,50,0)+drop(80,20,1);
+    plabels.push({p:50,s:sym('P','e'),v:'$50',c:'var(--w-line)'},{p:20,s:sym('P','w'),v:'$20',c:'var(--w-line)'});
+    qlabels.push({q:20,s:sym('Q','s'),v:'20'},{q:50,s:sym('Q','e'),v:'50'},{q:80,s:sym('Q','d'),v:'80'});
+  }else if(tool==='subsidy'){
+    lines+=hline(PW,80,'var(--w-line)',2,'8 5');
+    if(hasS){lines+=hline(Pp,Q3,'var(--red)',2.4,'')+drop(Q3,Pp,1)+drop(Q1,PW,0);}else{lines+=drop(Q1,PW,1);}
+    lines+=drop(Q2,PW,1);
+    plabels.push({p:PW,s:sym('P','w'),v:'$20',c:'var(--w-line)'});
+    if(hasS)plabels.push({p:Pp,s:sym('P','w','+s'),v:'$'+num(Pp),c:'var(--red-ink)'});
+    qlabels.push({q:Q1,s:sym('Q','1'),v:'20'},{q:Q2,s:sym('Q','2'),v:'80'});
+    if(hasS)qlabels.push({q:Q3,s:sym('Q','3'),v:num(Q3)});
+  }else{
+    lines+=hline(PW,80,'var(--w-line)',2,'8 5');
+    if(hasT){lines+=hline(Pc,Q4,'var(--red)',2.4,'')+drop(Q3,Pc,1)+drop(Q4,Pc,1);}
+    lines+=drop(Q1,PW,1)+drop(Q2,PW,1);
+    plabels.push({p:PW,s:sym('P','w'),v:'$20',c:'var(--w-line)'});
+    if(hasT)plabels.push({p:Pc,s:sym('P','1'),v:'$'+num(Pc),c:'var(--red-ink)'});
+    qlabels.push({q:Q1,s:sym('Q','1'),v:'20'},{q:Q2,s:sym('Q','2'),v:'80'});
+    if(hasT){qlabels.push({q:Q3,s:sym('Q','3'),v:num(Q3)},{q:Q4,s:sym('Q','4'),v:num(Q4)});}
+  }
+
+  /* curves */
+  var curves='';
+  curves+='<path class="curve" d="M'+X(0)+','+Y(100)+' L'+X(100)+','+Y(0)+'" style="stroke:var(--d-line)"/>';
+  curves+='<path class="curve" d="M'+X(0)+','+Y(0)+' L'+X(100)+','+Y(100)+'" style="stroke:var(--s-line)"/>';
+  if(tool==='quota'&&state.q<60){
+    var qq=state.q;
+    curves+='<path class="curve" d="M'+X(20)+','+Y(20)+' L'+X(20+qq)+','+Y(20)+' L'+X(100)+','+Y(100-qq)+'" style="stroke:var(--red);stroke-dasharray:10 6"/>';
+    if(qq>=8)curves+=txt(X(100)+6,Y(100-qq)+5,'rl','S+quota','start','var(--red-ink)');
+  }
+  if(tool==='subsidy'&&hasS){
+    curves+='<path class="curve" d="M'+X(state.s)+','+Y(0)+' L'+X(100)+','+Y(100-state.s)+'" style="stroke:var(--red)"/>';
+    if(state.s>=6)curves+=txt(X(100)+6,Y(100-state.s)+5,'cl',sym('S','1'),'start','var(--red-ink)');
+  }
+  curves+=txt(OX+16,Y(100)+10,'cl','D','start','var(--d-line)')+txt(X(100)+7,OY-8,'cl','D','start','var(--d-line)');
+  curves+=txt(OX+17,OY-9,'cl','S','start','var(--s-line)')+txt(X(100)+7,Y(100)+6,'cl','S','start','var(--s-line)');
+
+  /* axes and labels */
+  var axes='<path class="axis" d="M'+OX+','+(Y(100)-10)+' L'+OX+','+OY+' L'+(X(100)+14)+','+OY+'"/>';
+  axes+=txt(OX-10,Y(100)-14,'sym','Price','end')+txt(X(100)+20,OY+5,'sym','Quantity','start')+txt(OX-8,OY+17,'val','0','end');
+
+  /* price labels, nudged apart */
+  plabels.sort(function(a,b){return b.p-a.p;});
+  var last=-99,pl='';
+  plabels.forEach(function(l){var y=Y(l.p)+5;if(y<last+19)y=last+19;last=y;
+    pl+='<text x="'+(OX-9)+'" y="'+y.toFixed(1)+'" text-anchor="end"><tspan class="sym" style="fill:'+l.c+'">'+l.s+'</tspan><tspan class="val" dx="5">'+l.v+'</tspan></text>';});
+  /* quantity labels, staggered when close */
+  qlabels.sort(function(a,b){return a.q-b.q;});
+  var rowLast=[-99,-99],ql='',maxRow=0;
+  qlabels.forEach(function(l){var x=X(l.q),row=(x-rowLast[0]<34)?1:0;if(row===1&&x-rowLast[1]<34)row=0;rowLast[row]=x;if(row>maxRow)maxRow=row;
+    var y0=OY+20+row*36;
+    ql+=(row?'<line x1="'+x+'" y1="'+OY+'" x2="'+x+'" y2="'+(y0-15)+'" style="stroke:var(--w-line);stroke-width:1"/>':'')+
+      '<text x="'+x.toFixed(1)+'" y="'+y0+'" text-anchor="middle" class="sym">'+l.s+'</text><text x="'+x.toFixed(1)+'" y="'+(y0+15)+'" text-anchor="middle" class="val">'+l.v+'</text>';});
+
+  /* import brackets */
+  var by=OY+(maxRow?96:60);
+  function bracket(qa,qb,y,label,col){
+    var x1=X(qa),x2=X(qb),o='';
+    if(qb-qa>0.4){o+='<path d="M'+x1+','+(y-6)+' V'+(y+6)+' M'+x1+','+y+' H'+x2+' M'+x2+','+(y-6)+' V'+(y+6)+'" style="stroke:'+col+';stroke-width:2.2;fill:none"/>';}
+    return o+txt(x2+10,y+5,'note',label,'start',col);
+  }
+  var br='';
+  if(tool==='free'){br+=bracket(Q1,Q2,by,'Imports 60','var(--ink)');}
+  else if(tool==='subsidy'){br+=bracket(Q1,Q2,by,'Imports before: 60','var(--w-line)')+bracket(Q3,Q2,by+24,'Imports after: '+num(r.imp),'var(--red-ink)');}
+  else{br+=bracket(Q1,Q2,by,'Imports before: 60','var(--w-line)')+bracket(Q3,Q4,by+24,'Imports after: '+num(r.imp),'var(--red-ink)');}
+
+  document.getElementById('plot').innerHTML=s+regs+lines+curves+axes+pl+ql+br+tags;
+}
+
+/* ---------- legend and text ---------- */
+function rows(r){
+  var tool=state.tool,v=state.view,o=[];
+  if(tool==='free'){
+    o.push({k:'cs',sw:'cs',n:'Consumer surplus',d:'Area under D, above $20',v:money(r.CS)});
+    o.push({k:'ps',sw:'ps',n:'Producer surplus',d:'Area above S, below $20',v:money(r.PS)});
+    return o;
+  }
+  var rev=tool==='tariff'?'Tariff revenue':'Importers’ extra revenue';
+  var revD=tool==='tariff'?'Paid to the government on imports that still arrive':'Kept by importers who hold the licences';
+  if(tool==='subsidy'){
+    var cost=-r.gov;
+    if(v==='surplus'){
+      o.push({k:'cs',sw:'cs',n:'Consumer surplus',d:'Unchanged. Consumers still pay $20.',v:money(r.CS)});
+      o.push({k:'ps',sw:'ps',n:'Producer surplus',d:'Producers receive $'+num(r.Pp)+' per unit',v:money(r.PS),was:'was $200m'});
+      o.push({k:'cost',sw:'cost',n:'Cost to government',d:'$'+state.s+' per unit × '+num(r.Qs)+' units',v:money(cost)});
+      o.push({k:'dwl',sw:'dwl',n:'Deadweight loss (b)',d:'Output that costs more than the world price',v:money(r.dwl)});
+    }else{
+      var gain=r.PS-200;
+      o.push({k:'a',sw:'tr',n:'Transfer to producers (a)',d:'Taxpayers pay, producers keep',v:money(gain)});
+      o.push({k:'b',sw:'dwl',n:'Deadweight loss (b)',d:'Extra output costs more than $20 to make',v:money(r.dwl)});
+      o.push({k:'cost',sw:'cost',n:'Cost to government (a + b)',d:'The full outlined rectangle',v:money(cost)});
+    }
+    return o;
+  }
+  if(v==='surplus'){
+    o.push({k:'cs',sw:'cs',n:'Consumer surplus',d:'Area under D, above $'+num(r.Pc),v:money(r.CS),was:'was $3,200m'});
+    o.push({k:'ps',sw:'ps',n:'Producer surplus',d:'Area above S, below $'+num(r.Pp),v:money(r.PS),was:'was $200m'});
+    o.push({k:'rev',sw:'rev',n:rev,d:revD,v:money(r.gov)});
+    o.push({k:'dwl',sw:'dwl',n:'Deadweight loss (b + d)',d:'Two triangles of surplus that no one receives',v:money(r.dwl)});
+  }else{
+    var gain2=r.PS-200;
+    o.push({k:'a',sw:'tr',n:'Transfer to producers (a)',d:'Consumers lose it, producers gain it',v:money(gain2)});
+    o.push({k:'b',sw:'dwl',n:'Production loss (b)',d:'Domestic output that costs more than the world price',v:money(r.dwl/2)});
+    o.push({k:'c',sw:'rev',n:rev+' (c)',d:revD,v:money(r.gov)});
+    o.push({k:'d',sw:'dwl',n:'Consumption loss (d)',d:'Purchases consumers give up',v:money(r.dwl/2)});
+  }
+  return o;
+}
+function renderLegend(r){
+  var ul=document.getElementById('legend'),h='';
+  rows(r).forEach(function(x){
+    h+='<li tabindex="0" data-key="'+x.k+'"><span class="sw '+x.sw+'"></span><span class="nm">'+x.n+'</span><span class="vl">'+x.v+(x.was?'<span class="was">'+x.was+'</span>':'')+'</span><span class="ds">'+x.d+'</span></li>';
+  });
+  ul.innerHTML=h;
+  var plot=document.getElementById('plotbox');
+  Array.prototype.forEach.call(ul.children,function(li){
+    function on(){plot.classList.add('hl');var key=li.getAttribute('data-key');Array.prototype.forEach.call(plot.querySelectorAll('.reg'),function(g){if(g.getAttribute('data-key')===key)g.classList.add('on');});}
+    function off(){plot.classList.remove('hl');Array.prototype.forEach.call(plot.querySelectorAll('.reg.on'),function(g){g.classList.remove('on');});}
+    li.addEventListener('mouseenter',on);li.addEventListener('mouseleave',off);li.addEventListener('focus',on);li.addEventListener('blur',off);
+  });
+}
+function renderNet(r){
+  var n=document.getElementById('net'),d=r.W-3400;
+  if(state.tool==='free'){n.innerHTML='<span>Total surplus</span><span>'+money(r.W)+'</span>';return;}
+  n.innerHTML='<span>Net change in total welfare</span><span class="'+(Math.abs(d)<0.05?'zero':'neg')+'">'+(Math.abs(d)<0.05?'$0m':signed(d))+'</span>';
+}
+function caption(r){
+  var tool=state.tool;
+  if(tool==='free')return 'Under free trade Australia buys at the world price of $20. Domestic firms supply 20 million units and consumers demand 80 million, so imports fill the gap of 60 million. Consumers and producers keep $3,400m of surplus between them and nothing is lost.';
+  if(tool==='tariff'){
+    if(state.t===0)return 'With no tariff the market is the same as free trade. Drag the slider to add one.';
+    return 'A tariff of $'+state.t+' lifts the domestic price from $20 to $'+num(r.P1)+'. Domestic output rises from 20 to '+num(r.Qs)+', purchases fall from 80 to '+num(r.Qd)+', and imports drop from 60 to '+num(r.imp)+'.';
+  }
+  if(tool==='quota'){
+    if(state.q>=60)return 'A quota of 60 million units is the same as free trade imports, so it does not bind. Tighten it with the slider.';
+    return 'A quota of '+state.q+' million units caps imports at '+num(r.imp)+'. With less supply available, the domestic price rises to $'+num(r.P1)+', which is the same as a $'+num(r.t)+' tariff. Domestic output rises to '+num(r.Qs)+' and purchases fall to '+num(r.Qd)+'.';
+  }
+  if(state.s===0)return 'With no subsidy the market is the same as free trade. Drag the slider to add one.';
+  return 'A subsidy of $'+state.s+' per unit means producers receive $'+num(r.Pp)+' while consumers still pay the world price of $20. Domestic output rises from 20 to '+num(r.Qs)+', consumption stays at 80, and imports fall from 60 to '+num(r.imp)+'.';
+}
+function extra(r){
+  var tool=state.tool;
+  if(tool==='free')return 'Where the lines meet at $50 is the no-trade price. At the lower world price of $20, buyers gain far more than domestic sellers lose.';
+  if(tool==='tariff'){
+    if(state.t===0)return 'Revenue is zero when the tariff is zero, and also zero when it is high enough to stop all imports.';
+    if(state.t>=30)return 'This tariff is prohibitive. Imports are zero, the price is $50 (the no-trade price) and there is no revenue to collect.';
+    if(state.t===15)return 'Revenue is at its maximum here. Deadweight loss equals t × t = $'+num(r.dwl)+'m, so it grows with the square of the tariff.';
+    if(state.t>15)return 'Revenue is now falling because imports shrink faster than the tariff rises. It peaked at $450m with a $15 tariff. Deadweight loss equals t × t = $'+num(r.dwl)+'m.';
+    return 'Revenue is still rising with the tariff. Deadweight loss equals t × t = $'+num(r.dwl)+'m, so it grows with the square of the tariff.';
+  }
+  if(tool==='quota'){
+    if(state.q>=60)return 'No one earns extra revenue when imports are not restricted.';
+    return 'The $'+num(r.gov)+'m rectangle goes to whoever holds the import licences. If the government sells them it becomes revenue. If foreign exporters hold them, the money leaves Australia and the national loss is larger.';
+  }
+  if(state.s===0)return '';
+  return 'Consumers see no change in price. The whole cost of $'+num(-r.gov)+'m lands on taxpayers, and only one triangle is lost because consumption does not change.';
+}
+var TRY={
+  free:'<b>Try this:</b> look at the gap between Q<span class="sub">s</span> and Q<span class="sub">d</span>. That bracket is imports. Then open the Tariff tab.',
+  tariff:'<b>Try this:</b> move the slider from $10 to $20. Revenue stays at $400m but deadweight loss jumps from $100m to $400m.',
+  quota:'<b>Try this:</b> tighten the quota from 30 to 10. The price rises to $45, importers’ extra revenue is $250m and deadweight loss climbs to $625m.',
+  subsidy:'<b>Try this:</b> double the subsidy from $10 to $20. The cost to taxpayers goes from $300m to $800m, while deadweight loss goes from $50m to $200m.'
+};
+var CFG={
+  tariff:{label:'Tariff per unit',min:0,max:30,key:'t',out:function(v){return '$'+v+' per unit';},hint:function(v){return v+' on a world price of $20 is a tariff of '+Math.round(v/20*100)+'%.';}},
+  quota:{label:'Import quota (million units)',min:0,max:60,key:'q',out:function(v){return v+' million units';},hint:function(){return 'Free-trade imports are 60. A quota of 60 does not bind and 0 bans imports.';}},
+  subsidy:{label:'Subsidy per unit',min:0,max:30,key:'s',out:function(v){return '$'+v+' per unit';},hint:function(v){return 'Paid to producers on every unit they make. It is '+Math.round(v/20*100)+'% of the world price.';}}
+};
+function render(){
+  var tool=state.tool,r=withW(calc(tool));
+  var sb=document.getElementById('slider-block'),vs=document.getElementById('viewseg');
+  sb.hidden=(tool==='free');vs.hidden=(tool==='free');
+  if(tool==='free')state.view='surplus';
+  if(tool!=='free'){
+    var c=CFG[tool],inp=document.getElementById('amount');
+    document.getElementById('amount-label').textContent=c.label;
+    inp.min=c.min;inp.max=c.max;inp.value=state[c.key];
+    document.getElementById('amount-out').textContent=c.out(state[c.key]);
+    document.getElementById('amount-hint').textContent=c.hint(state[c.key]);
+  }
+  Array.prototype.forEach.call(vs.querySelectorAll('button'),function(b){b.setAttribute('aria-pressed',b.getAttribute('data-view')===state.view?'true':'false');});
+  drawPlot();renderLegend(r);renderNet(r);
+  document.getElementById('caption').textContent=caption(r);
+  document.getElementById('extra').textContent=extra(r);
+  document.getElementById('extra').hidden=!extra(r);
+  document.getElementById('try').innerHTML=TRY[tool];
+  document.getElementById('plot').setAttribute('aria-label',{free:'Free trade diagram showing consumer and producer surplus',tariff:'Tariff diagram, tariff $'+state.t,quota:'Quota diagram, quota '+state.q+' million units',subsidy:'Subsidy diagram, subsidy $'+state.s}[tool]);
+  var tabs=document.querySelectorAll('.tabs button');
+  Array.prototype.forEach.call(tabs,function(b){var on=b.getAttribute('data-tool')===tool;b.setAttribute('aria-selected',on?'true':'false');b.tabIndex=on?0:-1;});
+  document.getElementById('panel').setAttribute('aria-labelledby','tab-'+tool);
+}
+Array.prototype.forEach.call(document.querySelectorAll('.tabs button'),function(b,i,all){
+  b.addEventListener('click',function(){state.tool=b.getAttribute('data-tool');render();});
+  b.addEventListener('keydown',function(e){var n=-1;if(e.key==='ArrowRight')n=(i+1)%all.length;if(e.key==='ArrowLeft')n=(i-1+all.length)%all.length;if(n>=0){e.preventDefault();all[n].focus();state.tool=all[n].getAttribute('data-tool');render();}});
+});
+document.getElementById('amount').addEventListener('input',function(e){var c=CFG[state.tool];if(!c)return;state[c.key]=parseInt(e.target.value,10);render();});
+Array.prototype.forEach.call(document.querySelectorAll('#viewseg button'),function(b){b.addEventListener('click',function(){state.view=b.getAttribute('data-view');render();});});
+
+/* ---------- navigation helpers ---------- */
+function go(id){var el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth',block:'start'});}
+Array.prototype.forEach.call(document.querySelectorAll('[data-go]'),function(b){b.addEventListener('click',function(){go(b.getAttribute('data-go'));});});
+Array.prototype.forEach.call(document.querySelectorAll('[data-open]'),function(b){b.addEventListener('click',function(){
+  var p=b.getAttribute('data-open').split('|');state.tool=p[0];state.view=p[1];var c=CFG[p[0]];if(c)state[c.key]=parseInt(p[2],10);render();go('lab');});});
+
+/* ---------- comparison table ---------- */
+function buildCompare(){
+  var saveT=state.t,saveQ=state.q,saveS=state.s;state.t=15;state.q=30;state.s=15;
+  var f=withW(calc('free')),t=withW(calc('tariff')),q=withW(calc('quota')),s=withW(calc('subsidy'));
+  state.t=saveT;state.q=saveQ;state.s=saveS;
+  function cell(v,sign){var cls=sign?(v>0.04?'pos':v<-0.04?'neg':''):'';return '<td class="'+cls+'">'+(sign?(Math.abs(v)<0.05?'$0m':signed(v)):v)+'</td>';}
+  function row(h,a,b,c,d,sign,emph){return '<tr'+(emph?' class="emph"':'')+'><th scope="row">'+h+'</th>'+(sign?'<td>–</td>':'<td>'+a+'</td>')+cell(b,sign)+cell(c,sign)+cell(d,sign)+'</tr>';}
+  var h='<thead><tr><th scope="col">Measure</th><th scope="col">Free trade</th><th scope="col">Tariff $15</th><th scope="col">Quota 30m</th><th scope="col">Subsidy $15</th></tr></thead><tbody>';
+  h+=row('Price consumers pay','$20','$'+num(t.Pc),'$'+num(q.Pc),'$'+num(s.Pc));
+  h+=row('Price producers receive','$20','$'+num(t.Pp),'$'+num(q.Pp),'$'+num(s.Pp));
+  h+=row('Domestic output','20',num(t.Qs),num(q.Qs),num(s.Qs));
+  h+=row('Domestic consumption','80',num(t.Qd),num(q.Qd),num(s.Qd));
+  h+=row('Imports','60',num(t.imp),num(q.imp),num(s.imp));
+  h+=row('Change in consumer surplus',0,t.CS-3200,q.CS-3200,s.CS-3200,true);
+  h+=row('Change in producer surplus',0,t.PS-200,q.PS-200,s.PS-200,true);
+  h+='<tr><th scope="row">Revenue or cost</th><td>–</td>'+cell(t.gov,true).replace('</td>','<span class="who"><br>government</span></td>')+cell(q.gov,true).replace('</td>','<span class="who"><br>importers</span></td>')+cell(s.gov,true).replace('</td>','<span class="who"><br>taxpayers</span></td>')+'</tr>';
+  h+=row('Deadweight loss',0,-t.dwl,-q.dwl,-s.dwl,true);
+  h+='<tr><th scope="row">Triangles lost</th><td>–</td><td>2 (b and d)</td><td>2 (b and d)</td><td>1 (b)</td></tr>';
+  h+=row('Net change in welfare',0,t.W-3400,q.W-3400,s.W-3400,true,true);
+  h+='<tr><th scope="row">Who pays</th><td>–</td><td>Consumers</td><td>Consumers</td><td>Taxpayers</td></tr></tbody>';
+  document.getElementById('cmp').innerHTML=h;
+}
+
+/* ---------- quiz ---------- */
+var QUIZ=[
+ {q:'In the tariff diagram, which areas make up the deadweight loss?',o:['Area a only','Areas b and d','Area c only','Areas a and c'],a:1,
+  why:'b is the extra domestic output that costs more than the world price, and d is the purchases consumers give up. Areas a and c are transfers to producers and the government, so society does not lose them.'},
+ {q:'With a $15 tariff, imports fall from 60 to 30. How much tariff revenue does the government collect?',o:['$900m','$450m','$225m','$1,087.5m'],a:1,
+  why:'Revenue is the tariff times the imports that still arrive: $15 × 30 = $450m. $900m uses the imports before the tariff. $225m is the deadweight loss and $1,087.5m is the loss of consumer surplus.'},
+ {q:'A quota of 30 gives the same domestic price as a $15 tariff. What is the main difference?',o:['The quota has no deadweight loss','The extra revenue goes to importers holding the licences, unless the government sells them','Imports are higher under a quota','Domestic producers gain less under a quota'],a:1,
+  why:'Prices and quantities match, so consumers and producers are affected the same way and the deadweight loss is the same. Only the holder of the $450m rectangle differs.'},
+ {q:'A government pays producers a $15 subsidy in an import-competing market. What happens to the price consumers pay?',o:['It rises to $35','It falls below $20','It stays at the $20 world price','It rises to $50'],a:2,
+  why:'Australia takes the world price as given and imports still set the price at $20. The subsidy changes what producers receive, not what consumers pay, so taxpayers carry the cost.'},
+ {q:'Why does tariff revenue fall when the tariff rises from $15 to $25?',o:['The world price falls','Imports fall from 30 to 10, so the larger rate applies to far fewer units','Consumers gain more surplus','Domestic output falls'],a:1,
+  why:'At $25 the price is $45, so imports are 100 − 2 × 45 = 10. Revenue is $25 × 10 = $250m, down from $450m. A higher rate can shrink the tax base.'}
+];
+var answered={},correct=0;
+function buildQuiz(){
+  var h='';
+  QUIZ.forEach(function(x,i){
+    h+='<fieldset class="q" id="q'+i+'"><legend>Question '+(i+1)+'. '+x.q+'</legend><div class="opts">';
+    x.o.forEach(function(o,j){h+='<button type="button" class="opt" data-q="'+i+'" data-o="'+j+'">'+o+'</button>';});
+    h+='</div><p class="why" hidden></p></fieldset>';
+  });
+  h+='<fieldset class="q"><legend>Question '+(QUIZ.length+1)+'. Explain why a tariff creates a deadweight loss even though producers and the government both gain. (4 marks)</legend>'+
+     '<textarea id="sa" aria-label="Your answer" placeholder="Write your answer here, then reveal the model answer."></textarea>'+
+     '<details><summary>Show the model answer and marking points</summary><div class="body">'+
+     '<p>A tariff raises the domestic price above the world price. Domestic firms expand output into units that cost more to make than importing them (triangle b), and consumers cut purchases they value above the world price (triangle d). Those trades would have benefited both sides, but they no longer happen. Producers’ gain (a) and the government’s revenue (c) are transfers from consumers, so they cancel against the consumer loss. What remains is b + d, a net loss to society.</p>'+
+     '<ul class="plain"><li>Domestic price rises above the world price (1)</li><li>Production loss: resources used where a cheaper source exists (1)</li><li>Consumption loss: purchases given up (1)</li><li>Transfers are not losses, so the net loss is b + d (1)</li></ul></div></details></fieldset>';
+  document.getElementById('qs').innerHTML=h;
+  Array.prototype.forEach.call(document.querySelectorAll('.opt'),function(b){b.addEventListener('click',function(){
+    var i=+b.getAttribute('data-q'),j=+b.getAttribute('data-o'),x=QUIZ[i];
+    if(answered[i]!==undefined)return;answered[i]=j;
+    var set=document.querySelectorAll('#q'+i+' .opt');
+    Array.prototype.forEach.call(set,function(o,k){o.disabled=true;if(k===x.a)o.classList.add('right');else if(k===j)o.classList.add('wrong');});
+    if(j===x.a)correct++;
+    var w=document.querySelector('#q'+i+' .why');w.hidden=false;w.textContent=(j===x.a?'Correct. ':'Not quite. ')+x.why;
+    updScore();
+  });});
+  updScore();
+}
+function updScore(){
+  var n=Object.keys(answered).length;
+  document.getElementById('score').textContent=n===0?'':'You have answered '+n+' of '+QUIZ.length+' and got '+correct+' right.';
+}
+document.getElementById('qreset').addEventListener('click',function(){answered={};correct=0;buildQuiz();});
+
+/* ---------- checklist ---------- */
+var CHK=['Both axes labelled: Price on the vertical axis and Quantity on the horizontal axis.','Demand (D) and supply (S) drawn and labelled.','World price (Pᵥ) drawn as a horizontal line below the no-trade price.'.replace('Pᵥ','Pw'),
+ 'Protected price drawn and labelled: Pw + t for a tariff, or the quota price. For a subsidy, S shifted right to S1.','Quantities Q1 to Q4 marked on the axis with dashed guides up to the curves.','Imports before and after shown, or stated with figures.','Areas shaded and named: revenue, producer gain and the deadweight loss triangles.','A sentence under the diagram saying who gains, who loses and the net effect.'];
+function buildChk(){
+  var h='';CHK.forEach(function(c,i){h+='<li><label><input type="checkbox" data-c="'+i+'"><span>'+c+'</span></label></li>';});
+  document.getElementById('chk').innerHTML=h;
+  var boxes=document.querySelectorAll('#chk input');
+  function upd(){var n=0;Array.prototype.forEach.call(boxes,function(b){if(b.checked)n++;});document.getElementById('chkscore').textContent=n+' of '+CHK.length+' ticked';}
+  Array.prototype.forEach.call(boxes,function(b){b.addEventListener('change',upd);});upd();
+}
+
+buildCompare();buildQuiz();buildChk();render();
+})();
+</script>
+</body>
+</html>
