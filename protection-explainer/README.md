@@ -9,16 +9,22 @@ deadweight loss under a tariff, a quota and a subsidy.
 ## The market
 
 Demand `Q = 100 - P`, supply `Q = P`, world price `$20`, price in $, quantity in millions, surplus in $ millions.
-Notation follows the Topic 1 deck: P1, Pw, Q1 to Q4, areas a to d, and "importers keep the extra revenue from the higher price" (not "quota rent").
+Notation follows the Topic 1 deck: P1, Pw, Q1 to Q4, areas a to d. Quotas are taught without importers' extra revenue or an S+quota curve (not "quota rent").
 
 | Tool | Setting | Consumer loss | Producer gain | Revenue or cost | Deadweight loss |
 |---|---|---|---|---|---|
 | Tariff | $15 | 1,087.5 | 412.5 | +450 government | 225 (b and d) |
-| Quota | 30 | 1,087.5 | 412.5 | +450 importers | 225 (b and d) |
+| Quota | 30 | 1,087.5 | 412.5 | none shown | 225 (b and d) |
 | Subsidy | $15 | 0 | 412.5 | -525 taxpayers | 112.5 (b) |
 
 Formulas used in the script (`t` tariff, `s` subsidy, `P1` protected price): tariff DWL = t squared, revenue = t(100 - 2 x P1),
 quota price P1 = (100 - quota) / 2, subsidy cost = s(20 + s), subsidy DWL = s squared / 2.
+
+## Two ways to draw a quota
+
+The quota tab has a "Quota drawing" switch (state `qs`). **Price line** (default) draws the new price like the tariff diagram. **Vertical line** draws a vertical line at Q4
+(the total quantity once the quota applies) and reads the price where it meets D, adapted from the textbook figure with vertical supply lines.
+The quota diagram has no revenue rectangle (c) and the comparison table compares tools on prices, quantities and imports only.
 
 ## Editing
 
