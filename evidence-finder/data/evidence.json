@@ -1,5 +1,376 @@
 [
  {
+  "id": "2026-10-26-external-stability-june-qtr-2026",
+  "title": "Australia's current account deficit is $27.2 billion, and fuel and electric vehicles are pushing it wider",
+  "date": "2026-10-26",
+  "type": "stats",
+  "outlets": [
+   "ABS"
+  ],
+  "summary": "The latest official external stability figures, with the deficit broken into trade and primary income, ready to update when the September quarter data arrive on 1 December.",
+  "lede": "The ABS reported that the June quarter 2026 current account deficit widened to $27.2 billion, with goods and services in a second consecutive deficit. Net foreign debt is $1,486.0 billion and the net international investment position is a liability of $638.9 billion.",
+  "about": {
+   "h09": [
+    "3D.1",
+    "3D.2",
+    "3D.3",
+    "2B.1",
+    "2B.4"
+   ],
+   "y12": [
+    "Y3e.1",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P6d.1",
+    "P6a.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2B.3",
+    "2C.6",
+    "3C.3"
+   ],
+   "y12": [
+    "Y3c.4",
+    "Y1a.7"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "issues": [
+   "trade",
+   "global",
+   "inflation"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "flow",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Current account balance",
+    "value": "−$27.2b (March −$25.4b, revised)",
+    "asAt": "June qtr 2026",
+    "issue": "trade",
+    "source": "ABS Balance of Payments"
+   },
+   {
+    "label": "Current account as a share of GDP",
+    "value": "−3.7% (March −3.4%)",
+    "asAt": "June qtr 2026",
+    "issue": "trade",
+    "source": "Economy at a Glance (ABS 5302, RBA table I1)"
+   },
+   {
+    "label": "Trade balance, goods and services",
+    "value": "−$5.1b (March −$2.9b)",
+    "asAt": "June qtr 2026",
+    "issue": "trade",
+    "source": "ABS Balance of Payments"
+   },
+   {
+    "label": "Net primary income",
+    "value": "−$21.9b",
+    "asAt": "June qtr 2026",
+    "issue": "trade",
+    "source": "ABS Balance of Payments"
+   },
+   {
+    "label": "Terms of trade",
+    "value": "94.8 (down 1.6%)",
+    "asAt": "June qtr 2026",
+    "issue": "trade",
+    "source": "ABS Balance of Payments"
+   },
+   {
+    "label": "Net foreign debt",
+    "value": "$1,486.0b (up $63.3b)",
+    "asAt": "30 June 2026",
+    "issue": "trade",
+    "source": "ABS Balance of Payments"
+   },
+   {
+    "label": "Net international investment position",
+    "value": "−$638.9b (March −$761.7b)",
+    "asAt": "30 June 2026",
+    "issue": "trade",
+    "source": "ABS Balance of Payments"
+   },
+   {
+    "label": "Net foreign liabilities as a share of GDP",
+    "value": "about 21.8% (calculated)",
+    "asAt": "30 June 2026",
+    "issue": "trade",
+    "source": "Economy at a Glance, calculated"
+   },
+   {
+    "label": "Fuel and lubricant imports",
+    "value": "+42.5%",
+    "asAt": "June qtr 2026",
+    "issue": "inflation",
+    "source": "ABS media release"
+   },
+   {
+    "label": "Goods trade balance",
+    "value": "+$495m (July +$1,351m)",
+    "asAt": "Aug 2026",
+    "issue": "trade",
+    "source": "ABS International Trade in Goods"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Current account",
+    "def": "The balance on trade in goods and services, net primary income (interest, dividends) and net secondary income."
+   },
+   {
+    "term": "Net primary income",
+    "def": "Income earned by Australians overseas minus income paid to foreign investors; Australia runs a deficit."
+   },
+   {
+    "term": "Terms of trade",
+    "def": "Export prices divided by import prices."
+   },
+   {
+    "term": "Net foreign debt",
+    "def": "Debt liabilities owed to non-residents minus debt assets held abroad."
+   },
+   {
+    "term": "Net international investment position",
+    "def": "The value of foreign assets owned by Australians minus Australian assets owned by foreigners."
+   }
+  ],
+  "angle": "Use the bar chart to separate this quarter's change (trade balance, fuel and EV imports) from the level of the deficit (the primary income deficit), then judge whether the deficit is a problem.",
+  "questions": [
+   {
+    "q": "Outline TWO measures of external stability.",
+    "marks": 2
+   },
+   {
+    "q": "Using the data, explain why the current account deficit widened in the June quarter 2026.",
+    "marks": 4
+   },
+   {
+    "q": "Assess the extent to which a current account deficit is a problem for the Australian economy.",
+    "marks": 6
+   }
+  ],
+  "extended": "Evaluate the effectiveness of economic management in achieving external stability.",
+  "note": "UPDATE DUE: September quarter Balance of Payments, 1 December 2026 (and goods trade for September, 5 November). The red box on the handout is for the new figures. The percentage of GDP figures come from the Economy at a Glance page (the 21.8% is its own calculation). Secondary income on the bar chart is calculated from the total.",
+  "links": [
+   [
+    "ABS, Balance of Payments and International Investment Position, Australia, June 2026",
+    "https://www.abs.gov.au/statistics/economy/international-trade/balance-payments-and-international-investment-position-australia/latest-release"
+   ],
+   [
+    "ABS media release, Fuel and vehicle imports widen Australia's trade deficit, 1 Sept 2026",
+    "https://www.abs.gov.au/media-centre/media-releases/fuel-and-vehicle-imports-widen-australias-trade-deficit"
+   ],
+   [
+    "ABS, International Trade in Goods, August 2026",
+    "https://www.abs.gov.au/statistics/economy/international-trade/international-trade-goods/latest-release"
+   ],
+   {
+    "label": "Economy at a Glance, HSC Economics",
+    "url": "https://phillippain.github.io/HSC-Economics/economy-at-a-glance/"
+   }
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-external-stability-june-qtr-2026.pdf",
+   "label": "Data handout (to update)",
+   "pages": 2
+  }
+ },
+ {
+  "id": "2026-10-26-labour-market-policy-2026",
+  "title": "Wages, awards and skills: what the 2026 decisions show about labour market policy",
+  "date": "2026-10-26",
+  "type": "report",
+  "outlets": [
+   "Fair Work Commission",
+   "ABS",
+   "NSW IRC",
+   "DEWR"
+  ],
+  "summary": "Pulls together the 2026 wage decision, the NSW state tribunal, wage and union data and the skills and migration settings, so one handout covers national and state systems, bargaining methods and training.",
+  "lede": "The Fair Work Commission lifted the minimum wage 5.97% and award rates 4.75% from 1 July 2026, while the NSW Industrial Relations Commission awarded NSW nurses 16 to 28% over three years. Wages growth is 3.2% and Free TAFE has passed 814,000 enrolments.",
+  "about": {
+   "h09": [
+    "4F.1",
+    "4F.2",
+    "4F.4",
+    "4F.5"
+   ],
+   "y12": [
+    "Y2e.1",
+    "Y2e.2",
+    "Y2e.4",
+    "Y2e.5",
+    "Y2e.6"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3B.2",
+    "3C.3"
+   ],
+   "y12": [
+    "Y2e.7",
+    "Y1b.11"
+   ],
+   "y11": [
+    "P3b.1"
+   ]
+  },
+  "issues": [
+   "employment",
+   "inflation",
+   "productivity"
+  ],
+  "levers": [
+   "labour",
+   "fiscal"
+  ],
+  "diagrams": [
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "National minimum wage increase",
+    "value": "+5.97% (to $26.44 an hour)",
+    "asAt": "from 1 July 2026",
+    "issue": "employment",
+    "source": "Fair Work Commission via ABC News"
+   },
+   {
+    "label": "Modern award wage increase",
+    "value": "+4.75%",
+    "asAt": "from 1 July 2026",
+    "issue": "employment",
+    "source": "Fair Work Commission via ABC News"
+   },
+   {
+    "label": "Employees paid at an award minimum",
+    "value": "about 21% (2.8 million)",
+    "asAt": "2026",
+    "issue": "employment",
+    "source": "Fair Work Commission via ABC News"
+   },
+   {
+    "label": "Wage Price Index, annual",
+    "value": "3.2% (public 3.4%, private 3.1%)",
+    "asAt": "June qtr 2026",
+    "issue": "employment",
+    "source": "ABS"
+   },
+   {
+    "label": "NSW nurses and midwives pay rise, three years",
+    "value": "16% (enrolled nurses 18%, assistants 28%)",
+    "asAt": "NSW IRC, 16 April 2026",
+    "issue": "employment",
+    "source": "NSW Health; HR Leader"
+   },
+   {
+    "label": "Union membership, share of employees",
+    "value": "13.1% (1.6 million)",
+    "asAt": "Aug 2024",
+    "issue": "employment",
+    "source": "ABS"
+   },
+   {
+    "label": "Free TAFE enrolments",
+    "value": "over 814,000 (258,000 completions)",
+    "asAt": "to Q1 2026",
+    "issue": "employment",
+    "source": "Prime Minister, 13 July 2026"
+   },
+   {
+    "label": "Net overseas migration forecast",
+    "value": "295,000 → 245,000 → 225,000",
+    "asAt": "2025–26 to 2027–28",
+    "issue": "employment",
+    "source": "Chartered Accountants ANZ on the 2026–27 Budget"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Annual Wage Review",
+    "def": "The Fair Work Commission's yearly decision on the national minimum wage and modern award wages."
+   },
+   {
+    "term": "Modern award",
+    "def": "An industry or occupation instrument setting minimum pay and conditions."
+   },
+   {
+    "term": "Enterprise bargaining",
+    "def": "Negotiating pay and conditions between employers and employees at the workplace level."
+   },
+   {
+    "term": "Wage Price Index",
+    "def": "The ABS measure of changes in the price of labour, unaffected by changes in the quality or quantity of work."
+   }
+  ],
+  "angle": "Use the Annual Wage Review for the national system and safety net, the NSW IRC decision for the state system, and the union and WPI data to evaluate centralised against decentralised wage setting.",
+  "questions": [
+   {
+    "q": "Outline the role of the Fair Work Commission in setting minimum wages.",
+    "marks": 2
+   },
+   {
+    "q": "Explain ONE argument for and ONE against decentralised wage determination.",
+    "marks": 4
+   },
+   {
+    "q": "Assess the effectiveness of labour market policies in achieving full employment.",
+    "marks": 6
+   }
+  ],
+  "extended": "Evaluate the effectiveness of labour market policies in achieving Australia's economic objectives.",
+  "note": "UPDATE DUE: WPI September quarter and Labour Force October (mid-November, dates to confirm on the ABS calendar), ABS trade union membership August 2026 (expected around December, date to confirm), Free TAFE Quarter 3 snapshot, and the Annual Wage Review 2027. The ANZ and AMP comments are forecasts. Union data are from August 2024, so they are two years old.",
+  "links": [
+   [
+    "ABC News, Fair Work Commission annual ruling lifts minimum wage by 6 per cent and award rate by 4.75 per cent, 2 June 2026",
+    "https://www.abc.net.au/news/2026-06-02/minimum-wage-increase-june-2026-australia/106746542"
+   ],
+   [
+    "ABS, Annual wage growth of 3.2% in June quarter 2026",
+    "https://www.abs.gov.au/media-centre/media-releases/annual-wage-growth-32-june-quarter-2026"
+   ],
+   [
+    "ABS, Trade union membership, August 2024",
+    "https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/trade-union-membership/latest-release"
+   ],
+   [
+    "NSW Health, Nurses and midwives backpay payments commence following historic pay increase, 26 May 2026",
+    "https://www.health.nsw.gov.au/news/Pages/20260526_00.aspx"
+   ],
+   [
+    "HR Leader, Mixed emotions: record pay rise for NSW nurses and midwives, April 2026",
+    "https://www.hrleader.com.au/people/28058-mixed-emotions-record-pay-rise-for-nsw-nurses-and-midwives"
+   ],
+   [
+    "Prime Minister, Over 800,000 Free TAFE enrolments, 13 July 2026",
+    "https://www.pm.gov.au/media/over-800000-free-tafe-enrolments-delivering-skills-australians-want-jobs-we-need"
+   ],
+   [
+    "Chartered Accountants ANZ, Federal Budget 2026-27: Skills measures",
+    "https://www.charteredaccountantsanz.com/news-and-analysis/news/federal-budget-2026-27-key-skills-measures"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-labour-market-policy-2026.pdf",
+   "label": "Data handout (to update)",
+   "pages": 2
+  }
+ },
+ {
   "id": "2026-10-25-western-sydney-airport-opens",
   "date": "2026-10-25",
   "added": "2026-10-25",
