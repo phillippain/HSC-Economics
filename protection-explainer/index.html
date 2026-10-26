@@ -554,15 +554,18 @@ function drawPlot(){
   curves+='<path class="curve" d="M'+X(0)+','+Y(100)+' L'+X(100)+','+Y(0)+'" style="stroke:var(--d-line)"/>';
   curves+='<path class="curve" d="M'+X(0)+','+Y(0)+' L'+X(100)+','+Y(100)+'" style="stroke:var(--s-line)"/>';
   if(tool==='quota'&&hasT&&state.qs==='vertical'){
+    curves+='<path class="curve" d="M'+X(Q2)+','+OY+' L'+X(Q2)+','+Y(100)+'" style="stroke:var(--s-line)"/>';
+    curves+=txt(X(Q2)+7,Y(100)-8,'cl','S','start','var(--s-line)');
     curves+='<path class="curve" d="M'+X(Q4)+','+OY+' L'+X(Q4)+','+Y(100)+'" style="stroke:var(--red)"/>';
-    curves+=txt(X(Q4),Y(100)-8,'rl','Quota','middle','var(--red-ink)');
+    curves+=txt(X(Q4)-7,Y(100)-8,'cl',sym('S','1'),'end','var(--red-ink)');
   }
   if(tool==='subsidy'&&hasS){
     curves+='<path class="curve" d="M'+X(state.s)+','+Y(0)+' L'+X(100)+','+Y(100-state.s)+'" style="stroke:var(--red)"/>';
     if(state.s>=6)curves+=txt(X(100)+6,Y(100-state.s)+5,'cl',sym('S','1'),'start','var(--red-ink)');
   }
   curves+=txt(OX+16,Y(100)+10,'cl','D','start','var(--d-line)')+txt(X(100)+7,OY-8,'cl','D','start','var(--d-line)');
-  curves+=txt(OX+17,OY-9,'cl','S','start','var(--s-line)')+txt(X(100)+7,Y(100)+6,'cl','S','start','var(--s-line)');
+  var vq=(tool==='quota'&&hasT&&state.qs==='vertical'),sLab=vq?sym('S','d'):'S';
+  curves+=txt(OX+17,OY-9,'cl',sLab,'start','var(--s-line)')+txt(X(100)+7,Y(100)+6,'cl',sLab,'start','var(--s-line)');
 
   /* axes and labels */
   var axes='<path class="axis" d="M'+OX+','+(Y(100)-10)+' L'+OX+','+OY+' L'+(X(100)+14)+','+OY+'"/>';
@@ -680,7 +683,7 @@ function extra(r){
   }
   if(tool==='quota'){
     if(state.q>=60)return 'A quota that allows at least the free-trade imports does not restrict anything.';
-    if(state.qs==='vertical')return 'The vertical line at Q4 is the total quantity available once the quota applies. Tighten the quota and the line moves left, so the price where it meets D rises. It settles at $'+num(r.P1)+', the same price a $'+num(r.t)+' tariff would give.';
+    if(state.qs==='vertical')return 'The vertical lines show total quantity supplied: S before the quota (domestic output plus free imports, which equals consumption of 80) and S1 once the quota applies, at Q4. The sloped curve Sd is domestic supply alone. Tighten the quota and the line moves left, so the price where it meets D rises. It settles at $'+num(r.P1)+', the same price a $'+num(r.t)+' tariff would give.';
     return 'The price line is where a $'+num(r.t)+' tariff would put it. A quota fixes the quantity of imports and lets the price adjust, while a tariff fixes the price rise and lets the quantity adjust.';
   }
   if(state.s===0)return '';

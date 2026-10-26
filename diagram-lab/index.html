@@ -429,7 +429,7 @@ function drawDiagram(svg,m,sh,handle){
   if(act&&sh.prot){
     if(tool==='quota'&&qstyle==='vertical'){
       curves+='<path class="curve" d="M'+X(Q4)+','+OY+' L'+X(Q4)+','+Y(100)+'" style="stroke:var(--red)"/>';
-      curves+=T(X(Q4),Y(100)-8,'rl','Quota','middle','var(--red-ink)');
+      curves+=T(X(Q4)-7,Y(100)-8,'cl',sym('S','1'),'end','var(--red-ink)');
     }
     if(tool==='subsidy'){
       curves+='<path class="curve" d="M'+X(m.amt)+','+Y(0)+' L'+X(100)+','+Y(100-m.amt)+'" style="stroke:var(--red)"/>';
@@ -437,7 +437,9 @@ function drawDiagram(svg,m,sh,handle){
     }
   }
   curves+=T(OX+16,Y(100)+10,'cl','D','start','var(--d-line)')+T(X(100)+7,OY-8,'cl','D','start','var(--d-line)');
-  curves+=T(OX+28,OY-12,'cl','S','start','var(--s-line)')+T(X(100)+7,Y(100)+6,'cl','S','start','var(--s-line)');
+  var vq=(tool==='quota'&&qstyle==='vertical'),sLab=vq?sym('S','d'):'S';
+  if(vq){curves+='<path class="curve" d="M'+X(Q2)+','+OY+' L'+X(Q2)+','+Y(100)+'" style="stroke:var(--s-line)"/>'+T(X(Q2)+7,Y(100)-8,'cl','S','start','var(--s-line)');}
+  curves+=T(OX+28,OY-12,'cl',sLab,'start','var(--s-line)')+T(X(100)+7,Y(100)+6,'cl',sLab,'start','var(--s-line)');
 
   /* axes and tick numbers */
   var axes='<path class="axis" d="M'+OX+','+(Y(100)-10)+' L'+OX+','+OY+' L'+(X(100)+14)+','+OY+'"/>';
