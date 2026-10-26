@@ -2116,7 +2116,7 @@
    },
    {
     "label": "RBA cash rate target",
-    "value": "4.60% (up 0.25 points; third rise this year)",
+    "value": "4.60% (up 0.25 points; fourth rise this year)",
     "asAt": "29 September 2026",
     "issue": "rates",
     "source": "RBA, Media Release 2026-27"
@@ -2306,6 +2306,879 @@
    }
   ],
   "note": "UPDATE DUE: after the next RBA decision (check the RBA calendar). The exchange rate figure is a single close, so update before quoting."
+ },
+ {
+  "id": "2026-10-26-perfection-fresh-cartel-penalty",
+  "title": "Vegetable supplier admits price-fixing at Aldi, with a $12 million penalty proposed",
+  "date": "2026-10-26",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "A live example of cartel conduct and the role of the ACCC in competition policy, with a diagram of how price-fixing causes deadweight loss.",
+  "lede": "Perfection Fresh, Australia's second-largest vegetable company, admitted 11 instances of cartel conduct on broccoli, cauliflower and lettuce supplied to Aldi in 2019-20. The ACCC and the company propose a $12 million penalty, which the Federal Court must still approve.",
+  "about": {
+   "h09": [
+    "4E.3"
+   ],
+   "y12": [
+    "Y2d.2",
+    "Y2d.4"
+   ],
+   "y11": [
+    "P2g.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4E.1"
+   ],
+   "y12": [],
+   "y11": [
+    "P2d.3",
+    "P2i.2"
+   ]
+  },
+  "issues": [
+   "productivity",
+   "inflation"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Proposed penalty",
+    "value": "$12m (Federal Court approval pending)",
+    "asAt": "26 October 2026",
+    "issue": "productivity",
+    "source": "ABC News"
+   },
+   {
+    "label": "Admitted instances of cartel conduct",
+    "value": "11 (10 can be penalised)",
+    "asAt": "2019-20",
+    "issue": "productivity",
+    "source": "ABC News"
+   },
+   {
+    "label": "Period covered by the wider ACCC case",
+    "value": "2018 to 2024; four growers still defending",
+    "asAt": "2026",
+    "issue": "productivity",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Cartel",
+    "def": "Competing firms that secretly agree to fix prices, share markets or rig bids."
+   },
+   {
+    "term": "Competition policy",
+    "def": "Laws and agencies (the ACCC) that keep markets competitive and protect consumers."
+   },
+   {
+    "term": "Deadweight loss",
+    "def": "The loss of benefits from trades that no longer happen because the price is above the competitive level."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, Australia's second largest veggie company admits cartel conduct, 26 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-26/perfection-fresh-admits-to-aldi-vegetable-price-fixing/107308678"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-perfection-fresh-cartel-penalty.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Competition policy is a microeconomic reform: stronger enforcement lowers prices and lifts allocative efficiency, which matters most for essentials such as food.",
+  "questions": [
+   {
+    "q": "Using a diagram, explain how cartel conduct leads to higher prices and allocative inefficiency.",
+    "marks": 4
+   },
+   {
+    "q": "Assess how effective penalties like this are in deterring anti-competitive behaviour.",
+    "marks": 5
+   }
+  ],
+  "note": "The penalty is proposed, not yet approved. Add the Federal Court decision when it is made."
+ },
+ {
+  "id": "2026-10-26-coalition-31b-savings-fiscal-debate",
+  "title": "Coalition proposes $31 billion in spending cuts as the fiscal policy debate heats up",
+  "date": "2026-10-26",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "A current case on fiscal stance and how fiscal and monetary policy interact, with an opposition proposal costed by the Parliamentary Budget Office.",
+  "lede": "The Opposition released PBO costings for $31.3 billion of savings over four years to fund a $9.7 billion plan to index income tax brackets and scrap the $250 workers' tax offset. It argues government spending is keeping interest rates high, which the Treasurer rejects.",
+  "about": {
+   "h09": [
+    "4C.2",
+    "4B.1"
+   ],
+   "y12": [
+    "Y2b.3",
+    "Y2b.13",
+    "Y2b.14"
+   ],
+   "y11": [
+    "P5b.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4D.1"
+   ],
+   "y12": [
+    "Y2c.8",
+    "Y2b.10"
+   ],
+   "y11": [
+    "P5a.4"
+   ]
+  },
+  "issues": [
+   "budget",
+   "rates"
+  ],
+  "levers": [
+   "fiscal",
+   "monetary"
+  ],
+  "diagrams": [
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Proposed savings over four years",
+    "value": "$31.3b (PBO costed)",
+    "asAt": "26 October 2026",
+    "issue": "budget",
+    "source": "ABC News"
+   },
+   {
+    "label": "Cost of tax bracket indexation",
+    "value": "$9.7b",
+    "asAt": "26 October 2026",
+    "issue": "budget",
+    "source": "ABC News"
+   },
+   {
+    "label": "Largest savings: climate programs / tobacco excise / industry subsidies / housing",
+    "value": "$9.4b / $7.9b / $7.3b / $4.7b",
+    "asAt": "26 October 2026",
+    "issue": "budget",
+    "source": "ABC News"
+   },
+   {
+    "label": "RBA cash rate",
+    "value": "4.60% (RBA meets 3 November)",
+    "asAt": "26 October 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Fiscal stance",
+    "def": "Whether the budget adds to (expansionary) or subtracts from (contractionary) aggregate demand."
+   },
+   {
+    "term": "Bracket creep",
+    "def": "Inflation pushing taxpayers into higher tax brackets; indexing the brackets prevents it."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, Coalition says cuts to climate, housing and more would save $31b, 26 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-26/coalition-says-cuts-to-save-budget-31-billion/107310512"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-coalition-31b-savings-fiscal-debate.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "When fiscal policy is expansionary and monetary policy contractionary they work against each other. Here the savings fund tax cuts, so the net change in the budget balance, not the gross cut, is what matters for demand.",
+  "questions": [
+   {
+    "q": "Explain how an expansionary fiscal stance can reduce the effectiveness of monetary policy.",
+    "marks": 4
+   },
+   {
+    "q": "Should fiscal policy be tightened to help the RBA control inflation? Assess the trade-offs.",
+    "marks": 6
+   }
+  ],
+  "note": "These are an Opposition proposal and the Government's response; other Coalition policies are not yet costed. The Treasurer says more savings are coming in the December MYEFO."
+ },
+ {
+  "id": "2026-10-26-rba-hunter-not-done-yet",
+  "title": "RBA's Hunter says rate rises are 'not quite yet' done, with a fifth rise priced at 61 to 67%",
+  "date": "2026-10-26",
+  "type": "news",
+  "outlets": [
+   "RBA",
+   "ABC News"
+  ],
+  "summary": "The RBA's own explanation of why demand is still ahead of supply, with the transmission mechanism and an AD diagram.",
+  "lede": "In a 60 Minutes interview on 25 October, RBA Assistant Governor Sarah Hunter said demand is still sitting above what the economy can supply and the oil shock is spreading to costs such as construction materials. Markets price about a 61 to 67% chance of a rate rise on 3 November.",
+  "about": {
+   "h09": [
+    "4D.2",
+    "4D.3"
+   ],
+   "y12": [
+    "Y2c.4",
+    "Y2c.5",
+    "Y2c.8"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3C.3"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y2c.7"
+   ],
+   "y11": [
+    "P4c.7"
+   ]
+  },
+  "issues": [
+   "rates",
+   "inflation"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "adas",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Cash rate",
+    "value": "4.60% (four rises in 2026)",
+    "asAt": "26 October 2026",
+    "issue": "rates",
+    "source": "RBA, Hunter interview 25 Oct 2026"
+   },
+   {
+    "label": "Market odds of a rise on 3 November",
+    "value": "about 61 to 67%",
+    "asAt": "26 October 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Cash rate if the RBA raises again",
+    "value": "4.85%",
+    "asAt": "26 October 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Transmission mechanism",
+    "def": "The channels through which cash rate changes affect spending and inflation."
+   },
+   {
+    "term": "Contractionary monetary policy",
+    "def": "Raising interest rates to slow demand and inflation."
+   }
+  ],
+  "links": [
+   [
+    "RBA, Sarah Hunter, Interview on 60 Minutes, 25 Oct 2026",
+    "https://www.rba.gov.au/speeches/2026/sp-ag-2026-10-25.html"
+   ],
+   [
+    "ABC News markets blog, 26 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-26/asx-markets-business-live-news-october-26/107306820"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-rba-hunter-not-done-yet.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Monetary policy has long and variable lags and is blunt against a supply-side oil shock: it cannot lower oil prices, only stop the shock becoming entrenched in wages and expectations.",
+  "questions": [
+   {
+    "q": "Outline the transmission mechanism from a cash rate rise to lower inflation.",
+    "marks": 4
+   },
+   {
+    "q": "Evaluate how effective monetary policy is in responding to a supply-side oil shock.",
+    "marks": 6
+   }
+  ],
+  "note": "Market odds change daily. UPDATE DUE: RBA decision on 3 November 2026."
+ },
+ {
+  "id": "2026-10-26-real-wages-job-cuts-ai-boom",
+  "title": "Falling real wages, bank job cuts and a shaky AI boom: an ABC analysis of the 2027 outlook",
+  "date": "2026-10-26",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "Links real wages, technological change and structural unemployment, using wage offers below inflation and 2,500 bank job cuts.",
+  "lede": "An ABC analysis says wage offers below inflation of about 4% mean real pay cuts for many workers. NAB plans to cut 2,500 jobs citing technological change, and RBA staff rejected a 3.7% first-year offer.",
+  "about": {
+   "h09": [
+    "3B.3",
+    "3A.6"
+   ],
+   "y12": [
+    "Y1b.5",
+    "Y1b.6",
+    "Y1c.7"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3E.2",
+    "3C.3"
+   ],
+   "y12": [
+    "Y1c.8",
+    "Y1d.5"
+   ],
+   "y11": [
+    "P3c.5"
+   ]
+  },
+  "issues": [
+   "employment",
+   "inflation",
+   "productivity"
+  ],
+  "levers": [
+   "labour"
+  ],
+  "diagrams": [
+   "ds"
+  ],
+  "figures": [
+   {
+    "label": "Approximate annual inflation",
+    "value": "about 4%",
+    "asAt": "26 October 2026",
+    "issue": "inflation",
+    "source": "ABC News"
+   },
+   {
+    "label": "First-year wage offer rejected by RBA staff",
+    "value": "3.7% (then 3% and 2.8%)",
+    "asAt": "26 October 2026",
+    "issue": "employment",
+    "source": "ABC News"
+   },
+   {
+    "label": "NAB planned job cuts",
+    "value": "2,500 (most by Christmas)",
+    "asAt": "26 October 2026",
+    "issue": "employment",
+    "source": "ABC News"
+   },
+   {
+    "label": "NEXTDC value lost in a week",
+    "value": "about $3b",
+    "asAt": "26 October 2026",
+    "issue": "investment",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Real wage",
+    "def": "The nominal wage adjusted for inflation, roughly wage growth minus inflation."
+   },
+   {
+    "term": "Structural unemployment",
+    "def": "Joblessness caused by a mismatch of skills as technology and industries change."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, In 2027 ordinary workers and investors may be left in a downward spiral, 26 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-26/economic-outlook-for-2027-feels-shaky/107299778"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-real-wages-job-cuts-ai-boom.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Real wage is roughly wage growth minus inflation: a 3% rise with 4% inflation is about a 1% real cut. Technology can raise productivity over the long run while causing structural unemployment in the short run.",
+  "questions": [
+   {
+    "q": "Calculate the real wage change for a worker who gets a 3% pay rise when inflation is 4%, and explain what it means for their living standards.",
+    "marks": 3
+   },
+   {
+    "q": "Is job loss caused by AI an example of structural or cyclical unemployment? Justify your answer.",
+    "marks": 4
+   }
+  ],
+  "note": "An opinion and analysis piece, so treat it as one view."
+ },
+ {
+  "id": "2026-10-26-september-quarter-cpi-expectations",
+  "title": "Fuel-fuelled: inflation expected near 3.9% in Wednesday's September quarter CPI",
+  "date": "2026-10-26",
+  "type": "news",
+  "outlets": [
+   "CommBank",
+   "ABC News"
+  ],
+  "summary": "The expected September quarter CPI result, with the headline versus trimmed mean distinction and a cost-push diagram.",
+  "lede": "Economists expect headline CPI to rise 1.3% in the quarter and 3.9% over the year, with CBA expecting a trimmed mean rise of 1.0% (3.6% annual) against the RBA's August forecast of 0.8%. Fuel prices are up about 24% over the year.",
+  "about": {
+   "h09": [
+    "3C.1",
+    "3C.3"
+   ],
+   "y12": [
+    "Y1c.3",
+    "Y1c.4",
+    "Y1c.5"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4D.2"
+   ],
+   "y12": [
+    "Y1c.1",
+    "Y2c.4"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "inflation",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "adas"
+  ],
+  "figures": [
+   {
+    "label": "Expected headline CPI",
+    "value": "+1.3% in the quarter, 3.9% over the year",
+    "asAt": "September quarter 2026 (due 28 October)",
+    "issue": "inflation",
+    "source": "CommBank / ABC News"
+   },
+   {
+    "label": "Expected trimmed mean (CBA)",
+    "value": "+1.0% in the quarter, 3.6% over the year",
+    "asAt": "September quarter 2026 (due 28 October)",
+    "issue": "inflation",
+    "source": "CommBank"
+   },
+   {
+    "label": "RBA forecast for the trimmed mean (August)",
+    "value": "0.8% in the quarter",
+    "asAt": "August 2026",
+    "issue": "inflation",
+    "source": "CommBank"
+   },
+   {
+    "label": "Fuel prices",
+    "value": "up about 24% over the year",
+    "asAt": "2026",
+    "issue": "inflation",
+    "source": "CommBank / ABC News"
+   },
+   {
+    "label": "Market services inflation expected",
+    "value": "about 4.3%",
+    "asAt": "September quarter 2026",
+    "issue": "inflation",
+    "source": "CommBank"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Trimmed mean",
+    "def": "The RBA's preferred underlying measure, which drops the most extreme price changes each period."
+   },
+   {
+    "term": "Cost-push inflation",
+    "def": "Inflation caused by rising production costs such as fuel."
+   },
+   {
+    "term": "Stagflation",
+    "def": "Rising inflation combined with weak growth or rising unemployment."
+   }
+  ],
+  "links": [
+   [
+    "CommBank, September data will keep inflation pressure on RBA",
+    "https://www.commbank.com.au/articles/newsroom/2026/10/inflation-cpi-rba-interest-rates-november.html"
+   ],
+   [
+    "ABC News markets blog, 26 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-26/asx-markets-business-live-news-october-26/107306820"
+   ],
+   [
+    "ABS, Release calendar",
+    "https://www.abs.gov.au/release-calendar/future-releases"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-september-quarter-cpi-expectations.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "The RBA cannot lower world oil prices, so it watches whether the fuel shock spreads into wages and expectations. That is why underlying inflation matters more than the headline.",
+  "questions": [
+   {
+    "q": "Explain why the RBA focuses on the trimmed mean rather than headline CPI when fuel prices are driving inflation.",
+    "marks": 3
+   },
+   {
+    "q": "Assess whether Australia's current inflation is mainly cost-push or demand-pull. Use evidence from this story.",
+    "marks": 5
+   }
+  ],
+  "note": "A preview with forecasts, not the result. UPDATE DUE: add the actual September quarter CPI after the ABS release on 28 October 2026. This updates the earlier preview filed on 25 October."
+ },
+ {
+  "id": "2026-10-26-challenger-takeover-bid-tal-dai-ichi",
+  "title": "Challenger rejects an $11.80-a-share takeover bid from Japanese-owned TAL Dai-ichi",
+  "date": "2026-10-26",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "Reuters"
+  ],
+  "summary": "A live example of foreign direct investment and how it appears in the financial account and later in primary income debits.",
+  "lede": "Challenger's board rejected a bid of $11.80 a share, a 19.8% premium, from TAL Dai-ichi (owned by Japan's Dai-ichi Life), but is still talking with the bidder. Dai-ichi already owns about 20% of Challenger.",
+  "about": {
+   "h09": [
+    "2A.2",
+    "2B.2"
+   ],
+   "y12": [
+    "Y3b.1"
+   ],
+   "y11": [
+    "P6b.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2B.1",
+    "2B.4",
+    "3D.1"
+   ],
+   "y12": [
+    "Y3e.3"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "investment",
+   "trade"
+  ],
+  "levers": [
+   "global"
+  ],
+  "diagrams": [
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Offer per share",
+    "value": "$11.80 (19.8% premium to previous close)",
+    "asAt": "26 October 2026",
+    "issue": "investment",
+    "source": "ABC News"
+   },
+   {
+    "label": "Value of the bid",
+    "value": "about $7.9b (Reuters) to $8.4b (ABC)",
+    "asAt": "October 2026",
+    "issue": "investment",
+    "source": "Reuters / ABC News"
+   },
+   {
+    "label": "Dai-ichi existing stake",
+    "value": "about 20% (first bought 15.1% in 2025)",
+    "asAt": "October 2026",
+    "issue": "investment",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Foreign direct investment (FDI)",
+    "def": "Investment that gives a foreign owner 10% or more and a lasting say in a business."
+   },
+   {
+    "term": "Primary income",
+    "def": "The balance of payments item that records profits, dividends and interest."
+   }
+  ],
+  "links": [
+   [
+    "ABC News markets blog, 26 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-26/asx-markets-business-live-news-october-26/107306820"
+   ],
+   [
+    "Reuters via WHBL, Challenger gets takeover bid, Oct 2026",
+    "https://whbl.com/2026/10/18/australias-challenger-gets-takeover-bid-from-unit-of-japans-daiichi-life/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-challenger-takeover-bid-tal-dai-ichi.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "FDI is foreign equity, not debt, so it need not be repaid. The cost to Australia shows up later in the current account as dividends sent offshore.",
+  "questions": [
+   {
+    "q": "Explain how a completed takeover would affect Australia's financial account now and its current account in later years.",
+    "marks": 4
+   },
+   {
+    "q": "Discuss one benefit and one cost of foreign ownership of Australian financial companies.",
+    "marks": 4
+   }
+  ],
+  "note": "The bid is rejected but talks continue, so the outcome is not settled. Reuters and the ABC give different values for the bid, probably from different share counts."
+ },
+ {
+  "id": "2026-10-26-aud-interest-rate-differential",
+  "title": "Dollar holds near 70 US cents as Australian bond yields stay above US yields",
+  "date": "2026-10-26",
+  "type": "stats",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "Shows the interest rate differential driving demand for the Australian dollar, with a demand and supply diagram.",
+  "lede": "The Australian dollar closed at about 70.3 US cents on 26 October. Australia's 10-year bond yield was 5.17% against 4.97% in the US, and markets price about a 61% chance the RBA raises rates on 3 November while the Fed holds.",
+  "about": {
+   "h09": [
+    "2C.4",
+    "2C.5"
+   ],
+   "y12": [
+    "Y3c.1",
+    "Y3c.2"
+   ],
+   "y11": [
+    "P6c.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2C.3",
+    "4D.3"
+   ],
+   "y12": [
+    "Y3c.5"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "fx",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "fx"
+  ],
+  "figures": [
+   {
+    "label": "Australian dollar",
+    "value": "about US70.3c (close)",
+    "asAt": "26 October 2026",
+    "issue": "fx",
+    "source": "ABC News"
+   },
+   {
+    "label": "Australian / US 10-year bond yield",
+    "value": "5.17% / 4.97%",
+    "asAt": "26 October 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Market odds of an RBA rise on 3 November",
+    "value": "about 61%",
+    "asAt": "26 October 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Gold / Brent crude",
+    "value": "about US$4,017/oz / about US$114.50",
+    "asAt": "26 October 2026",
+    "issue": "global",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Interest rate differential",
+    "def": "The gap between Australian and overseas interest rates."
+   },
+   {
+    "term": "Appreciation",
+    "def": "A rise in the value of the AUD against another currency."
+   }
+  ],
+  "links": [
+   [
+    "ABC News markets blog, 26 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-26/asx-markets-business-live-news-october-26/107306820"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-aud-interest-rate-differential.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "An appreciation makes imports cheaper, which helps lower inflation, and makes exporters less competitive: this is the exchange rate channel of monetary policy.",
+  "questions": [
+   {
+    "q": "Using a diagram of the market for AUD, explain the likely effect of an RBA rate rise on 3 November.",
+    "marks": 4
+   },
+   {
+    "q": "Explain how a higher AUD affects inflation and the international competitiveness of Australian exporters.",
+    "marks": 4
+   }
+  ],
+  "note": "A single close, so update before quoting. This is the 26 October close; the 23 October close was US70.08c."
+ },
+ {
+  "id": "2026-10-26-mexico-tariffs-india-trade-talks",
+  "title": "Mexico's 50% tariff wall pushes India to the negotiating table",
+  "date": "2026-10-26",
+  "type": "news",
+  "outlets": [
+   "NewsTrack (India)"
+  ],
+  "summary": "A current case of protectionism by tariffs and the shift to bilateral preferential trade agreements.",
+  "lede": "Since 1 January 2026 Mexico has charged tariffs of up to 50% on 1,463 product categories from countries with no trade agreement with it. India, whose car exports are hit hardest, is about to start formal talks on a preferential trade agreement.",
+  "about": {
+   "h09": [
+    "1C.2",
+    "1B.4"
+   ],
+   "y12": [
+    "Y3a.6",
+    "Y3a.8",
+    "Y3a.13"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1C.1",
+    "2D.2",
+    "2D.4"
+   ],
+   "y12": [
+    "Y3a.7",
+    "Y3a.11"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade",
+   "global"
+  ],
+  "diagrams": [
+   "ds"
+  ],
+  "figures": [
+   {
+    "label": "Top Mexican tariff rate",
+    "value": "50% on 1,463 product categories",
+    "asAt": "since 1 January 2026",
+    "issue": "trade",
+    "source": "NewsTrack"
+   },
+   {
+    "label": "India's exports to Mexico",
+    "value": "US$5.73b (cars about US$1.92b)",
+    "asAt": "2025-26",
+    "issue": "trade",
+    "source": "NewsTrack"
+   },
+   {
+    "label": "India's imports from Mexico",
+    "value": "about US$2.1b",
+    "asAt": "2025-26",
+    "issue": "trade",
+    "source": "NewsTrack"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Protectionism",
+    "def": "Government measures that shield local producers from foreign competition."
+   },
+   {
+    "term": "Preferential trade agreement",
+    "def": "A deal giving members lower tariffs than other countries pay."
+   }
+  ],
+  "links": [
+   [
+    "NewsTrack, India-Mexico trade deal talks to begin this week as 50% tariffs threaten Indian exports",
+    "https://english.newstrack.com/india-news/india-mexico-trade-deal-talks-to-begin-this-week-as-50-tariffs-threaten-indian-exports-643515"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-26-mexico-tariffs-india-trade-talks.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Mexican car makers and the government gain, while Mexican consumers and Indian exporters lose. A bilateral deal is quicker than a WTO dispute but adds to the tangle of overlapping rules.",
+  "questions": [
+   {
+    "q": "Using a tariff diagram, explain the effects of Mexico's tariff on Mexican consumers, Mexican producers and the government.",
+    "marks": 4
+   },
+   {
+    "q": "Why might India choose a bilateral agreement rather than the WTO to deal with these tariffs?",
+    "marks": 3
+   }
+  ],
+  "note": "Single source, an Indian news outlet, and the trade figures have not been checked against Mexican or Indian government data. The tariffs stay until a deal is finalised."
  },
  {
   "id": "2026-10-25-western-sydney-airport-opens",
@@ -2927,6 +3800,107 @@
     "url": "https://www.thestar.com.my/business/business-news/2026/10/22/inflation-outlook-worsens-for-australia"
    }
   ]
+ },
+ {
+  "id": "2026-10-25-record-quarterly-house-price-fall",
+  "title": "House prices record their biggest quarterly fall: down 4.7% in the September quarter",
+  "date": "2026-10-25",
+  "type": "stats",
+  "outlets": [
+   "ABC News",
+   "Domain"
+  ],
+  "summary": "The largest quarterly fall in house prices on record, with the wealth effect and asset price channel of monetary policy.",
+  "lede": "Domain data show the national median house price fell 4.7% in the September quarter, the largest quarterly drop on record and the first time in 15 years that prices fell in every capital city. Regional South Australia rose 6.3% in the quarter and 19% over the year.",
+  "about": {
+   "h09": [
+    "3E.4",
+    "4D.3"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y2c.5"
+   ],
+   "y11": [
+    "P4c.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3A.1"
+   ],
+   "y12": [
+    "Y1d.6"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "housing",
+   "rates",
+   "inequality"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "ds"
+  ],
+  "figures": [
+   {
+    "label": "National median house price",
+    "value": "-4.7% (largest quarterly fall on record)",
+    "asAt": "September quarter 2026",
+    "issue": "housing",
+    "source": "Domain via ABC News"
+   },
+   {
+    "label": "Regional areas overall",
+    "value": "-1.1%",
+    "asAt": "September quarter 2026",
+    "issue": "housing",
+    "source": "Domain via ABC News"
+   },
+   {
+    "label": "Regional South Australia",
+    "value": "+6.3% in the quarter, +19% over 12 months",
+    "asAt": "September quarter 2026",
+    "issue": "housing",
+    "source": "Domain via ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Wealth effect",
+    "def": "People spend less when the value of their assets, such as homes, falls."
+   },
+   {
+    "term": "Asset price channel",
+    "def": "How interest rate changes flow through to house and share prices."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, Some regions still climbing as nation sees record drop in house prices, 25 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-25/sa-sees-nations-largest-increase-in-regional-house-prices/107300928"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-25-record-quarterly-house-price-fall.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Housing is most households' main asset, so falling prices reduce wealth. The effect on the distribution of wealth is not clear-cut: affordability improves for buyers who can still borrow at higher rates.",
+  "questions": [
+   {
+    "q": "Explain how falling house prices can reduce consumer spending through the wealth effect.",
+    "marks": 3
+   },
+   {
+    "q": "To what extent will falling house prices make the distribution of wealth in Australia more equal?",
+    "marks": 5
+   }
+  ],
+  "note": "Domain median prices are one measure of the market. One economist expects falls to continue for another 6 to 12 months. See also the monthly figures filed on 22 October."
  },
  {
   "id": "2026-10-24-us-canada-tariff-changes",
