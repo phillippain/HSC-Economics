@@ -22,9 +22,9 @@ quota price P1 = (100 - quota) / 2, subsidy cost = s(20 + s), subsidy DWL = s sq
 
 ## Two ways to draw a quota
 
-The quota tab has a "Quota drawing" switch (state `qs`). **Price line** (default) draws the new price like the tariff diagram. **Vertical line** draws a vertical line at Q4
-(the total quantity once the quota applies) and reads the price where it meets D, adapted from the textbook figure with vertical supply lines.
-The quota diagram has no revenue rectangle (c) and the comparison table compares tools on prices, quantities and imports only.
+The quota tab has a "Quota drawing" switch (state `qs`). **Price line** (default) draws the new price like the tariff diagram. **Vertical line** reproduces textbook Figure 2.8: only D and vertical supply lines S, S1 (increase in quota) and S2 (decrease in quota),
+with P, P1, P2 and Q, Q1, Q2. The quota is the whole supply, so price = 100 - quota (state `qv`, slider 38 to 70). This style shows prices and quantities only (no surplus or deadweight loss).
+The price-line quota diagram has no revenue rectangle (c) and the comparison table compares tools on prices, quantities and imports only.
 
 ## Editing
 

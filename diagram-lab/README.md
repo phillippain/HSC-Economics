@@ -33,7 +33,8 @@ Wording follows the Topic 1 deck: P1, Pw, Q1 to Q4. Quotas have no S+quota curve
 ## Two ways to draw a quota
 
 Every part that shows a quota has a "Quota drawing" switch (shared variable `qstyle`). **Price line** (default) draws the new price like a tariff; in Build it the handle moves up the price axis.
-**Vertical line** draws a vertical line at Q4, the total quantity once the quota applies, and the price is read where it meets D (adapted from the textbook figure with vertical supply lines); in Build the handle moves along the quantity axis.
+**Vertical line** reproduces textbook Figure 2.8: only D and vertical supply lines S, S1 (increase in quota) and S2 (decrease in quota). The quota is the whole supply, so price = 100 - quota (slider 38 to 70, world price not used).
+Predict uses a change in quota (cut or raise) with three questions, Challenges 5 and 6 use their own targets (`CHV`), and in Build the handle moves along the quantity axis. The drawing is `figDraw()`.
 Changing the switch in Build resets the quota drawing.
 
 ## Point letters (assumption to check)

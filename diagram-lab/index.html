@@ -214,7 +214,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 50px;font-size:.92rem
           <button type="button" data-tool="quota" aria-pressed="false">Quota</button>
           <button type="button" data-tool="subsidy" aria-pressed="false">Subsidy</button>
         </div>
-        <div class="qsw" data-qsw hidden><span class="qlbl">Quota drawing</span><div class="seg" role="group" aria-label="Quota drawing"><button type="button" data-qs="price" aria-pressed="true">Price line</button><button type="button" data-qs="vertical" aria-pressed="false">Vertical line</button></div><p class="hint">Textbooks draw a quota two ways. The price line is drawn like the tariff diagram. The vertical line marks the total quantity allowed once the quota applies, and the price is read where it meets D.</p></div>
+        <div class="qsw" data-qsw hidden><span class="qlbl">Quota drawing</span><div class="seg" role="group" aria-label="Quota drawing"><button type="button" data-qs="price" aria-pressed="true">Price line</button><button type="button" data-qs="vertical" aria-pressed="false">Vertical line</button></div><p class="hint">Textbooks draw a quota two ways. The price line is drawn like the tariff diagram. The vertical line follows the textbook figure, where the quota is the whole supply and the price is read where D meets the line. It shows prices and quantities only.</p></div>
         <div>
           <div class="ctl-row"><label for="ex-w">World price</label><output id="ex-w-out" class="w" for="ex-w"></output></div>
           <input type="range" id="ex-w" class="wr" min="10" max="40" step="1" value="20">
@@ -248,7 +248,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 50px;font-size:.92rem
   <h2>Predict</h2>
   <p class="intro">Read the scenario and predict each effect before you look at the diagram. Check your answers to see the finished diagram and the reason for each one.</p>
   <div class="chips" id="pr-chips" role="group" aria-label="Scenario"></div>
-  <div class="qsw qsw-top" data-qsw hidden><span class="qlbl">Quota drawing</span><div class="seg" role="group" aria-label="Quota drawing"><button type="button" data-qs="price" aria-pressed="true">Price line</button><button type="button" data-qs="vertical" aria-pressed="false">Vertical line</button></div><p class="hint">Textbooks draw a quota two ways. The price line is drawn like the tariff diagram. The vertical line marks the total quantity allowed once the quota applies, and the price is read where it meets D.</p></div>
+  <div class="qsw qsw-top" data-qsw hidden><span class="qlbl">Quota drawing</span><div class="seg" role="group" aria-label="Quota drawing"><button type="button" data-qs="price" aria-pressed="true">Price line</button><button type="button" data-qs="vertical" aria-pressed="false">Vertical line</button></div><p class="hint">Textbooks draw a quota two ways. The price line is drawn like the tariff diagram. The vertical line follows the textbook figure, where the quota is the whole supply and the price is read where D meets the line. It shows prices and quantities only.</p></div>
   <div class="grid">
     <div class="col">
       <p class="statement" id="pr-state"></p>
@@ -285,7 +285,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 50px;font-size:.92rem
     <div class="col">
       <div class="clist" id="ch-list"></div>
       <div class="panelbox">
-        <div class="qsw" data-qsw hidden><span class="qlbl">Quota drawing</span><div class="seg" role="group" aria-label="Quota drawing"><button type="button" data-qs="price" aria-pressed="true">Price line</button><button type="button" data-qs="vertical" aria-pressed="false">Vertical line</button></div><p class="hint">Textbooks draw a quota two ways. The price line is drawn like the tariff diagram. The vertical line marks the total quantity allowed once the quota applies, and the price is read where it meets D.</p></div>
+        <div class="qsw" data-qsw hidden><span class="qlbl">Quota drawing</span><div class="seg" role="group" aria-label="Quota drawing"><button type="button" data-qs="price" aria-pressed="true">Price line</button><button type="button" data-qs="vertical" aria-pressed="false">Vertical line</button></div><p class="hint">Textbooks draw a quota two ways. The price line is drawn like the tariff diagram. The vertical line follows the textbook figure, where the quota is the whole supply and the price is read where D meets the line. It shows prices and quantities only.</p></div>
         <div>
           <div class="ctl-row"><label for="ch-amt" id="ch-amt-label">Setting</label><output id="ch-amt-out" for="ch-amt"></output></div>
           <input type="range" id="ch-amt" min="0" max="30" step="1" value="0">
@@ -307,7 +307,7 @@ footer{border-top:1px solid var(--rule);padding-block:26px 50px;font-size:.92rem
   <h2>Build it</h2>
   <p class="intro">Draw the new line or curve yourself by dragging the gold handle (or use the buttons or arrow keys). When it is right, add the rest of the diagram one piece at a time and predict where each piece goes before you add it.</p>
   <div class="chips" id="bd-chips" role="group" aria-label="Scenario"></div>
-  <div class="qsw qsw-top" data-qsw hidden><span class="qlbl">Quota drawing</span><div class="seg" role="group" aria-label="Quota drawing"><button type="button" data-qs="price" aria-pressed="true">Price line</button><button type="button" data-qs="vertical" aria-pressed="false">Vertical line</button></div><p class="hint">Textbooks draw a quota two ways. The price line is drawn like the tariff diagram. The vertical line marks the total quantity allowed once the quota applies, and the price is read where it meets D.</p></div>
+  <div class="qsw qsw-top" data-qsw hidden><span class="qlbl">Quota drawing</span><div class="seg" role="group" aria-label="Quota drawing"><button type="button" data-qs="price" aria-pressed="true">Price line</button><button type="button" data-qs="vertical" aria-pressed="false">Vertical line</button></div><p class="hint">Textbooks draw a quota two ways. The price line is drawn like the tariff diagram. The vertical line follows the textbook figure, where the quota is the whole supply and the price is read where D meets the line. It shows prices and quantities only.</p></div>
   <div class="grid">
     <div class="col">
       <p class="statement" id="bd-state"></p>
@@ -365,7 +365,7 @@ var NAMES={tariff:'Tariff',quota:'Quota',subsidy:'Subsidy'};
 function ranges(tool,w){
   var free=100-2*w;
   if(tool==='tariff')return {min:0,max:50-w};
-  if(tool==='quota')return {min:0,max:free};
+  if(tool==='quota')return qstyle==='vertical'?{min:38,max:70}:{min:0,max:free};
   return {min:0,max:Math.min(40,free)};
 }
 function model(tool,w,amt){
@@ -381,6 +381,7 @@ function model(tool,w,amt){
     var s=Math.min(amt,free);
     if(s>0){m.active=true;m.Pp=w+s;m.Q3=w+s;m.imp=free-s;m.money=s*m.Q3;m.work=dol(s)+' × '+fmt(m.Q3)+' = '+mil(m.money);m.amt=s;}
   }
+  if(tool==='quota'&&qstyle==='vertical'){m.vert=true;m.q=amt;m.active=true;m.P1=100-amt;m.Pp=m.P1;m.Q3=amt;m.Q4=amt;m.imp=amt;}
   return m;
 }
 
@@ -391,7 +392,60 @@ function LN(x1,y1,x2,y2,cls,style){return '<line x1="'+x1.toFixed(1)+'" y1="'+y1
 var FULL={vals:true,letters:true,rect:true,brackets:true,qold:true,qnew:true,prot:true};
 var qstyle='price',curTab='experiment';
 
+/* Figure 2.8 style quota drawing: D with vertical supply lines S, S1, S2 */
+function figDraw(svg,o,g){
+  var ox=g.ox,oy=g.oy,kx=g.kx,ky=g.ky,T=g.T,gap=15,out='',i;
+  function fx(q){return ox+kx*q;}function fy(p){return oy-ky*p;}
+  function nm(b,n){return b+(n?'<tspan class="sub" dy="4">'+n+'</tspan><tspan dy="-4"> </tspan>':'');}
+  function ln(x1,y1,x2,y2,st){return '<line x1="'+x1.toFixed(1)+'" y1="'+y1.toFixed(1)+'" x2="'+x2.toFixed(1)+'" y2="'+y2.toFixed(1)+'" style="'+st+'"/>';}
+  var id=(svg.id||'fig')+'-ah',ink='var(--ink)',ytop=fy(100);
+  function arrow(x1,y1,x2,y2){return ln(x1,y1,x2,y2,'stroke:'+ink+';stroke-width:1.8').replace('/>',' marker-end="url(#'+id+')"/>');}
+  out+='<defs><marker id="'+id+'" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:'+ink+'"/></marker></defs>';
+  out+='<path class="axis" d="M'+ox+','+(ytop-10)+' L'+ox+','+oy+' L'+(fx(100)+14)+','+oy+'"/>';
+  out+=T(ox-10,ytop-14,'sym','Price','end')+T(fx(100)+20,oy+5,'sym','Quantity','start')+T(ox-9,oy+17,g.numCls,'0','end');
+  if(o.ticks){[20,40,60,80,100].forEach(function(v){
+    out+=ln(fx(v),oy,fx(v),oy+5,'stroke:var(--rule-strong);stroke-width:1.4')+T(fx(v),oy+19,g.numCls,String(v),'middle');
+    out+=ln(ox-5,fy(v),ox,fy(v),'stroke:var(--rule-strong);stroke-width:1.4')+T(ox-9,fy(v)+4,g.numCls,String(v),'end');
+  });}
+  out+='<path class="curve" d="M'+fx(20)+','+fy(80)+' L'+fx(100)+','+fy(0)+'" style="stroke:var(--d-line)"/>';
+  out+=T(fx(20)-6,fy(80)-8,'cl','D','end','var(--d-line)')+T(fx(100)+7,oy-8,'cl','D','start','var(--d-line)');
+  o.lines.forEach(function(l){
+    var x=fx(l.q),isS=l.nm==='S',col=isS?'var(--s-line)':'var(--red)',ink2=isS?'var(--s-line)':'var(--red-ink)',n=isS?'':l.nm.slice(1),P=100-l.q;
+    out+='<path class="curve" d="M'+x+','+oy+' L'+x+','+fy(96)+'" style="stroke:'+col+'"/>';
+    out+=T(x,fy(96)-8,'cl',nm('S',n),'middle',ink2);
+    if(o.read){
+      out+=ln(ox,fy(P),x,fy(P),'stroke:var(--w-line);stroke-width:1.4;stroke-dasharray:5 5');
+      var py=fy(P)+5,xe=o.vals?g.pv:g.ps0;
+      if(o.vals){out+=T(g.pv,py,'val','$'+P,'end');xe=g.ps;}
+      out+=T(xe,py,'sym',nm('P',n),'end',ink2);
+      var qy=o.vals?g.qyv:g.qy;
+      out+=T(x,qy,'sym',nm('Q',n),'middle',ink2);
+      if(o.vals)out+=T(x,qy+15,'val',String(l.q),'middle');
+    }
+  });
+  var q0=o.lines[0].q;
+  if(o.arrows==='both'){
+    var yh=Math.max(fy(115-q0)-22,ytop+84);
+    out+=T(fx(q0-gap)-10,fy(96)+12,'note','decrease in','end',ink)+T(fx(q0-gap)-10,fy(96)+28,'note','quota','end',ink);
+    out+=T(fx(q0+gap)+10,fy(96)+12,'note','increase in','start',ink)+T(fx(q0+gap)+10,fy(96)+28,'note','quota','start',ink);
+    out+=arrow(fx(q0-gap)-26,ytop+46,fx(q0)-16,ytop+64)+arrow(fx(q0+gap)+26,ytop+46,fx(q0)+16,ytop+64);
+    out+=arrow(fx(q0)-14,yh,fx(q0-gap)+12,yh)+arrow(fx(q0)+14,yh,fx(q0+gap)-12,yh);
+    out+='<path d="M'+g.ax+','+fy(100-(q0-gap))+' V'+fy(100-(q0+gap))+'" marker-start="url(#'+id+')" marker-end="url(#'+id+')" style="stroke:'+ink+';stroke-width:1.8;fill:none"/>';
+  }else if(o.arrows==='left'||o.arrows==='right'){
+    var d=o.arrows==='right'?1:-1,q1=o.lines[1].q,y2=Math.max(fy(100-Math.min(q0,q1))-22,ytop+60);
+    out+=arrow(fx(q0)+d*14,y2,fx(q1)-d*10,y2);
+  }
+  var hd='';
+  if(o.handle){var h=o.handle;hd='<g data-handle="1" tabindex="0" role="slider" aria-label="'+h.label+'" aria-valuemin="'+h.min+'" aria-valuemax="'+h.max+'" aria-valuenow="'+h.now+'" transform="translate('+h.x.toFixed(1)+','+h.y.toFixed(1)+')"><circle class="hbg" r="15"/><circle class="hdot" r="7"/></g>';}
+  svg.innerHTML=out+hd;
+}
+function figGeom(){return {ox:OX,oy:OY,kx:K,ky:K,T:T,numCls:'num',pv:OX-36,ps:OX-80,ps0:OX-36,qy:OY+32,qyv:OY+44,ax:OX-116};}
 function drawDiagram(svg,m,sh,handle){
+  if(m.vert){
+    var L=[];if(sh.prot)L.push({q:m.q,nm:'S'});
+    if(sh.brackets&&L.length)L.push({q:m.q+15,nm:'S1'},{q:m.q-15,nm:'S2'});
+    return figDraw(svg,{lines:L,read:!!sh.qnew,vals:!!sh.vals,ticks:!!sh.vals,arrows:(sh.brackets&&L.length)?'both':'',handle:handle},figGeom());
+  }
   var tool=m.tool,w=m.w,P1=m.P1,Pp=m.Pp,Q1=m.Q1,Q2=m.Q2,Q3=m.Q3,Q4=m.Q4,act=m.active;
   var back='',lines='',curves='',lab='',top='';
   function hline(p,q,col,wd,dash){return LN(OX,Y(p),X(q),Y(p),'','stroke:'+col+';stroke-width:'+wd+(dash?';stroke-dasharray:'+dash:''));}
@@ -514,8 +568,14 @@ function drawDiagram(svg,m,sh,handle){
 }
 
 /* ---------- shared HTML pieces ---------- */
+function vTable(rows){
+  var h='<table><thead><tr><th scope="col">Line</th><th scope="col">Quantity</th><th scope="col">Price from D</th></tr></thead><tbody>';
+  rows.forEach(function(r){h+='<tr><th scope="row">'+r[0]+'</th><td>'+fmt(r[1])+'</td><td>'+dol(100-r[1])+'</td></tr>';});
+  return h+'</tbody></table>';
+}
 function readoutHTML(m,nums){
   if(!nums)return '<p class="off">Numbers are hidden. Read the prices and quantities from the axes and the guide lines.</p>';
+  if(m.vert)return vTable([['S2 (quota cut)',m.q-15],['S (the quota)',m.q],['S1 (quota raised)',m.q+15]]);
   var rows=[
     ['Price consumers pay',dol(m.w),dol(m.P1),m.P1-m.w],
     ['Price producers receive',dol(m.w),dol(m.Pp),m.Pp-m.w],
@@ -567,11 +627,12 @@ Array.prototype.forEach.call(document.querySelectorAll('[data-qsw] button'),func
 /* ================= EXPERIMENT ================= */
 var ex={tool:'tariff',w:20,amt:{tariff:10,quota:40,subsidy:10},nums:true,drops:true,brackets:true,rect:true,letters:true};
 var EXAMT={tariff:{label:'Tariff per unit',out:function(v){return dol(v)+' per unit';},hint:function(v,w){return dol(v)+' on a world price of '+dol(w)+' is a tariff of '+Math.round(v/w*100)+'%. A tariff of '+dol(50-w)+' stops all imports.';}},
-  quota:{label:'Import quota (million units)',out:function(v){return v+' million units';},hint:function(v,w){return 'Free-trade imports are '+(100-2*w)+'. A quota at or above that does nothing, and a quota of 0 bans imports.';}},
+  quota:{label:'Import quota (million units)',out:function(v){return v+' million units';},hint:function(v,w){return qstyle==='vertical'?'The quota is the whole supply, so the price is read from D: P = 100 − Q.':'Free-trade imports are '+(100-2*w)+'. A quota at or above that does nothing, and a quota of 0 bans imports.';}},
   subsidy:{label:'Subsidy per unit',out:function(v){return dol(v)+' per unit';},hint:function(v,w){return 'Paid to domestic producers on every unit they make. The most this lab allows is '+dol(Math.min(40,100-2*w))+'.';}}};
 var EXTRY={
   tariff:'<b>Try this:</b> set the world price to $20, then raise the tariff from $10 to $20. Watch the revenue rectangle: it gets taller but narrower.',
   quota:'<b>Try this:</b> tighten the quota step by step. The price rises and domestic output rises. Then switch the quota drawing to the vertical line and watch it move left.',
+  quotaV:'<b>Try this:</b> drag the slider to the left. The quota gets smaller, the line moves left and the price read from D rises.',
   subsidy:'<b>Try this:</b> raise the subsidy and watch what stays the same. The price consumers pay does not move, but the price producers receive does.'
 };
 function renderEx(){
@@ -579,18 +640,20 @@ function renderEx(){
   ex.amt[tool]=clamp(ex.amt[tool],r.min,r.max);
   var amt=ex.amt[tool],m=model(tool,ex.w,amt);
   var sh={vals:ex.nums,letters:ex.letters,rect:ex.rect,brackets:ex.brackets,qold:ex.drops,qnew:ex.drops,prot:true};
+  if(m.vert){sh.brackets=true;sh.qnew=true;}
   drawDiagram($('ex-plot'),m,sh,null);
+  $('ex-w').parentNode.hidden=!!m.vert;document.querySelector('#panel-experiment fieldset.layers').hidden=!!m.vert;
   $('ex-key').innerHTML=keyHTML(m,sh);
   $('ex-w-out').textContent=dol(ex.w);
   $('ex-w-hint').textContent='Australia is a small economy, so it takes this price as given. The no-trade price is $50, so imports are '+(100-2*ex.w)+' million units under free trade.';
   var c=EXAMT[tool],inp=$('ex-amt');
-  $('ex-amt-label').textContent=c.label;inp.min=r.min;inp.max=r.max;inp.value=amt;
+  $('ex-amt-label').textContent=m.vert?'Quota (million units, the total quantity)':c.label;inp.min=r.min;inp.max=r.max;inp.value=amt;
   $('ex-amt-out').textContent=c.out(amt);$('ex-amt-hint').textContent=c.hint(amt,ex.w);
   $('ex-rect-lbl').textContent=tool==='tariff'?'Tariff revenue rectangle':'Cost to government rectangle';
   $('ex-rect').parentNode.hidden=(tool==='quota');
   syncQSw('panel-experiment',tool==='quota');
   $('ex-read').innerHTML=readoutHTML(m,ex.nums);
-  $('ex-try').innerHTML=EXTRY[tool];
+  $('ex-try').innerHTML=m.vert?EXTRY.quotaV:EXTRY[tool];
   Array.prototype.forEach.call($('ex-tool').querySelectorAll('button'),function(b){b.setAttribute('aria-pressed',b.getAttribute('data-tool')===tool?'true':'false');});
   $('ex-plot').setAttribute('aria-label',NAMES[tool]+' diagram, world price '+dol(ex.w)+', setting '+amt);
 }
@@ -608,16 +671,20 @@ $('ex-reset').addEventListener('click',function(){
 
 /* ================= PREDICT ================= */
 var SC=[
-  {tool:'tariff',w:20,amt:10},{tool:'quota',w:20,amt:30},{tool:'subsidy',w:20,amt:15},
-  {tool:'tariff',w:30,amt:8},{tool:'quota',w:15,amt:40},{tool:'subsidy',w:25,amt:20}
+  {tool:'tariff',w:20,amt:10},{tool:'quota',w:20,amt:30,vi:0},{tool:'subsidy',w:20,amt:15},
+  {tool:'tariff',w:30,amt:8},{tool:'quota',w:15,amt:40,vi:1},{tool:'subsidy',w:25,amt:20}
 ];
+var SCV=[{qa:50,qb:40},{qa:45,qb:58}];
+function isVQ(s){return s.tool==='quota'&&qstyle==='vertical';}
 function scText(s){
+  if(isVQ(s)&&s.vi===undefined)return 'The government sets a quota of '+s.amt+' million units. Treat the quota as the total quantity supplied to the market.';
+  if(isVQ(s)){var V=SCV[s.vi];return 'The government limits the quantity supplied to the market to '+V.qa+' million units (the quota). It then '+(V.qb<V.qa?'cuts':'raises')+' the quota to '+V.qb+' million units.';}
   var base='Australia can import a good at a world price of '+dol(s.w)+'. ';
   if(s.tool==='tariff')return base+'The government imposes a tariff of '+dol(s.amt)+' per unit.';
   if(s.tool==='quota')return base+'The government limits imports to a quota of '+s.amt+' million units.';
   return base+'The government pays domestic producers a subsidy of '+dol(s.amt)+' per unit.';
 }
-function scLabel(s,i){return NAMES[s.tool]+' '+(s.tool==='quota'?s.amt+'m':dol(s.amt))+(s.w!==20?', Pw '+dol(s.w):'');}
+function scLabel(s,i){if(isVQ(s)&&s.vi===undefined)return 'Quota '+s.amt+'m';if(isVQ(s)){var V=SCV[s.vi];return 'Quota '+V.qa+'m to '+V.qb+'m';}return NAMES[s.tool]+' '+(s.tool==='quota'?s.amt+'m':dol(s.amt))+(s.w!==20?', Pw '+dol(s.w):'');}
 var QS=[
   {k:'cp',label:'The price consumers pay',opts:[['up','Rises'],['same','Stays the same'],['down','Falls']]},
   {k:'pp',label:'The price domestic producers receive',opts:[['up','Rises'],['same','Stays the same'],['down','Falls']]},
@@ -655,7 +722,19 @@ function why(k,m){
 }
 var pr={i:0,ans:{},checked:false};
 function prModel(){var s=SC[pr.i];return model(s.tool,s.w,s.amt);}
-function qsFor(){return QS.filter(function(q){return !(q.k==='who'&&SC[pr.i].tool==='quota');});}
+var QSV=[
+  {k:'vp',label:'The price consumers pay',opts:[['up','Rises'],['same','Stays the same'],['down','Falls']]},
+  {k:'vq',label:'The quantity bought',opts:[['up','Rises'],['same','Stays the same'],['down','Falls']]},
+  {k:'vm',label:'The new quota line is drawn ... the old one',opts:[['left','To the left of'],['right','To the right of']]}
+];
+function truthV(V){return {vp:dir(100-V.qa,100-V.qb),vq:dir(V.qa,V.qb),vm:V.qb>V.qa?'right':'left'};}
+function whyV(k,V){
+  var up=V.qb>V.qa;
+  if(k==='vp')return 'The price is read where D meets the new line: $'+(100-V.qb)+', compared with $'+(100-V.qa)+' before. '+(up?'A bigger quota puts more on the market, so the price falls.':'A smaller quota puts less on the market, so the price rises.');
+  if(k==='vq')return 'The quota is the total quantity supplied, so the quantity bought goes from '+V.qa+' to '+V.qb+'.';
+  return 'The line is drawn at the quota quantity. '+(up?'A bigger quota moves it right (S1).':'A smaller quota moves it left (S2).');
+}
+function qsFor(){if(isVQ(SC[pr.i]))return QSV;return QS.filter(function(q){return !(q.k==='who'&&SC[pr.i].tool==='quota');});}
 function buildPrQs(){
   var h='';
   qsFor().forEach(function(q){
@@ -682,23 +761,29 @@ function renderPr(){
   $('pr-state').textContent=scText(s);
   buildPrQs();
   if(pr.checked){
-    var T=truth(m),n=0;
+    var V=isVQ(s)?SCV[s.vi]:null,T=V?truthV(V):truth(m),n=0;
     qsFor().forEach(function(q){
       var ok=pr.ans[q.k]===T[q.k];if(ok)n++;
       var r=$('pr-res-'+q.k);r.hidden=false;r.className='res '+(ok?'right':'wrong');
       var optLabel=null;q.opts.forEach(function(o){if(o[0]===T[q.k])optLabel=o[1];});
-      r.innerHTML=(ok?'<b class="r">Correct.</b> ':'<b class="w">Not quite'+(pr.ans[q.k]?'':' (no answer)')+'.</b> Answer: '+optLabel+'. ')+why(q.k,m);
+      r.innerHTML=(ok?'<b class="r">Correct.</b> ':'<b class="w">Not quite'+(pr.ans[q.k]?'':' (no answer)')+'.</b> Answer: '+optLabel+'. ')+(V?whyV(q.k,V):why(q.k,m));
     });
     $('pr-score').textContent='You got '+n+' of '+qsFor().length+' right.';
     $('pr-score').className='say '+(n===qsFor().length?'good':'note');
-    $('pr-readbox').hidden=false;$('pr-read').innerHTML=readoutHTML(m,true);
-    drawDiagram($('pr-plot'),m,FULL,null);$('pr-key').innerHTML=keyHTML(m,FULL);
+    $('pr-readbox').hidden=false;
+    if(V){
+      $('pr-read').innerHTML=vTable([['S (before)',V.qa],[V.qb>V.qa?'S1 (after)':'S2 (after)',V.qb]]);
+      figDraw($('pr-plot'),{lines:[{q:V.qa,nm:'S'},{q:V.qb,nm:V.qb>V.qa?'S1':'S2'}],read:true,vals:true,ticks:false,arrows:V.qb>V.qa?'right':'left'},figGeom());$('pr-key').innerHTML='';
+    }else{$('pr-read').innerHTML=readoutHTML(m,true);
+    drawDiagram($('pr-plot'),m,FULL,null);$('pr-key').innerHTML=keyHTML(m,FULL);}
     $('pr-check').disabled=true;
   }else{
     $('pr-score').textContent='';$('pr-score').className='say';
     $('pr-readbox').hidden=true;
-    drawDiagram($('pr-plot'),free,{vals:true,letters:false,rect:false,brackets:true,qold:true,qnew:false,prot:false},null);
-    $('pr-key').innerHTML='<span>The diagram shows free trade. Predict first, then check to see the protected diagram.</span>';
+    var V0=isVQ(s)?SCV[s.vi]:null;
+    if(V0){figDraw($('pr-plot'),{lines:[{q:V0.qa,nm:'S'}],read:true,vals:true,ticks:false,arrows:''},figGeom());$('pr-key').innerHTML='<span>The diagram shows the first quota. Predict first, then check to see the new line.</span>';}
+    else{drawDiagram($('pr-plot'),free,{vals:true,letters:false,rect:false,brackets:true,qold:true,qnew:false,prot:false},null);
+    $('pr-key').innerHTML='<span>The diagram shows free trade. Predict first, then check to see the protected diagram.</span>';}
     $('pr-check').disabled=false;
   }
   syncQSw('panel-predict',s.tool==='quota'&&pr.checked);
@@ -737,6 +822,12 @@ var CH=[
    ok:function(m){return m.money===525;},hint:'The cost is the subsidy times all domestic output, and output is 20 plus the subsidy.',
    done:'$15 × 35 = $525m. Output is 20 + 15 = 35 million units.'}
 ];
+var CHV={
+  4:{free:'amt',text:'Set the quota so that the price consumers pay is $50.',ok:function(m){return m.P1===50;},hint:'Read the price where D meets the line. On D, P = 100 − Q.',done:'At Q = 50, D gives a price of $50.'},
+  5:{free:'amt',text:'Set the quota so that the price falls to $40.',ok:function(m){return m.P1===40;},hint:'A bigger quota moves the line right and lowers the price. Use P = 100 − Q.',done:'At Q = 60, D gives a price of $40.'}
+};
+function chc(){var c=CH[ch.i];return (c.tool==='quota'&&qstyle==='vertical'&&CHV[ch.i])?CHV[ch.i]:c;}
+function chT(i){var c=CH[i];return (c.tool==='quota'&&qstyle==='vertical'&&CHV[i])?CHV[i].text:c.text;}
 var ch={i:0,v:[],solved:[]};
 CH.forEach(function(c,i){ch.v[i]=c.free==='w'?c.w:c.amt;});
 function chModel(){var c=CH[ch.i],v=ch.v[ch.i];return c.free==='w'?model(c.tool,v,c.amt):model(c.tool,c.w,v);}
@@ -745,15 +836,15 @@ function renderCh(){
   var c=CH[ch.i],r=chRange(),v=clamp(ch.v[ch.i],r.min,r.max);ch.v[ch.i]=v;
   var m=chModel(),nums=$('ch-nums').checked;
   var list='';
-  CH.forEach(function(x,i){list+='<button type="button" data-i="'+i+'" aria-pressed="'+(i===ch.i)+'" class="'+(ch.solved[i]?'done':'')+'"><span class="mk">'+(ch.solved[i]?'✓':(i+1))+'</span><span>'+NAMES[x.tool]+': '+x.text.split('. ')[0].replace(/\.$/,'')+'</span></button>';});
+  CH.forEach(function(x,i){list+='<button type="button" data-i="'+i+'" aria-pressed="'+(i===ch.i)+'" class="'+(ch.solved[i]?'done':'')+'"><span class="mk">'+(ch.solved[i]?'✓':(i+1))+'</span><span>'+NAMES[x.tool]+': '+chT(i).split('. ')[0].replace(/\.$/,'')+'</span></button>';});
   $('ch-list').innerHTML=list;
   Array.prototype.forEach.call($('ch-list').querySelectorAll('button'),function(b){b.addEventListener('click',function(){ch.i=+b.getAttribute('data-i');$('ch-say').textContent='';$('ch-say').className='say';renderCh();});});
   var n=ch.solved.filter(Boolean).length;
   $('ch-progress').textContent=n+' of '+CH.length+' solved.';
-  $('ch-text').textContent=c.text;
+  $('ch-text').textContent=chc().text;
   var inp=$('ch-amt');inp.min=r.min;inp.max=r.max;inp.value=v;
   var lbl=c.free==='w'?'World price':c.tool==='tariff'?'Tariff per unit':c.tool==='quota'?'Import quota (million units)':'Subsidy per unit';
-  $('ch-amt-label').textContent=lbl;
+  $('ch-amt-label').textContent=m.vert?'Quota (million units, the total quantity)':lbl;
   $('ch-amt-out').textContent=c.free==='w'?dol(v):c.tool==='quota'?v+' million units':dol(v)+' per unit';
   drawDiagram($('ch-plot'),m,{vals:nums,letters:true,rect:true,brackets:true,qold:true,qnew:true,prot:true},null);
   $('ch-key').innerHTML=keyHTML(m,FULL);
@@ -763,9 +854,9 @@ function renderCh(){
 }
 $('ch-amt').addEventListener('input',function(e){ch.v[ch.i]=parseInt(e.target.value,10);$('ch-say').textContent='';$('ch-say').className='say';renderCh();});
 $('ch-nums').addEventListener('change',renderCh);
-$('ch-hint').addEventListener('click',function(){$('ch-say').className='say note';$('ch-say').textContent='Hint: '+CH[ch.i].hint;});
+$('ch-hint').addEventListener('click',function(){$('ch-say').className='say note';$('ch-say').textContent='Hint: '+chc().hint;});
 $('ch-check').addEventListener('click',function(){
-  var c=CH[ch.i],m=chModel(),s=$('ch-say');
+  var c=chc(),m=chModel(),s=$('ch-say');
   if(c.ok(m)){ch.solved[ch.i]=true;s.className='say good';s.textContent='Solved. '+c.done;renderCh();s.className='say good';s.textContent='Solved. '+c.done;}
   else{s.className='say bad';s.textContent='Not yet. '+(c.free==='w'&&m.imp===0?'Imports are zero, but look for the lowest world price that does this. ':'')+'Move the slider and compare the readout with the target.';}
 });
@@ -797,23 +888,22 @@ var QSTEPS={
     ['Point letters','A to D mark the ends of the import gap, starting at the top left and going clockwise.',{letters:true}],
     ['Numbers','Now check the readings against the values.',{vals:true}]],
   vertical:[
-    ['New price and quantities','Where your quota line meets D gives the new price P1. Read across to the price axis, and across to S to find Q3. The line itself is Q4.',{qnew:true}],
-    ['Imports before and after','After the quota, imports are exactly the quota, which is the width from Q3 to Q4.',{brackets:true}],
-    ['Point letters','A to D mark the ends of the import gap, starting at the top left and going clockwise.',{letters:true}],
+    ['Price from D','Read across from where the line meets D to the price axis. That is the price P. The line itself is drawn at the quantity Q.',{qnew:true}],
+    ['Increase and decrease in quota','A bigger quota moves the line right (S1) and lowers the price (P1). A smaller quota moves it left (S2) and raises the price (P2).',{brackets:true}],
     ['Numbers','Now check the readings against the values.',{vals:true}]]
 };
 function stepsFor(t){return t==='quota'?QSTEPS[qstyle]:STEPS[t];}
 var bd={i:0,v:0,solved:false,step:0,focus:false,qs:null};
 function bdModel(s){
-  if(s.tool==='quota'){
-    var P=qstyle==='vertical'?100-bd.v:s.w+bd.v;
+  if(s.tool==='quota'&&qstyle!=='vertical'){
+    var P=s.w+bd.v;
     var q=model('tariff',s.w,P-s.w);q.tool='quota';q.kind='';q.money=0;q.work='';return q;
   }
   return model(s.tool,s.w,bd.v);
 }
-function bdTarget(s){return s.tool==='quota'?(qstyle==='vertical'?50+s.amt/2:(100-s.amt)/2-s.w):s.amt;}
-function bdStart(s){return s.tool==='quota'&&qstyle==='vertical'?100-s.w:0;}
-function bdRange(){var s=BS[bd.i];if(s.tool==='quota')return qstyle==='vertical'?{min:50,max:100-s.w}:{min:0,max:50-s.w};return ranges(s.tool,s.w);}
+function bdTarget(s){return s.tool==='quota'?(qstyle==='vertical'?s.amt:(100-s.amt)/2-s.w):s.amt;}
+function bdStart(s){return s.tool==='quota'&&qstyle==='vertical'?70:0;}
+function bdRange(){var s=BS[bd.i];if(s.tool==='quota')return qstyle==='vertical'?{min:38,max:70}:{min:0,max:50-s.w};return ranges(s.tool,s.w);}
 function bdAt(){
   var s=BS[bd.i];
   if(s.tool==='tariff')return {x:X(0),y:Y(s.w+bd.v)};
@@ -823,7 +913,7 @@ function bdAt(){
 function bdLabel(){
   var s=BS[bd.i],v=bd.v;
   if(s.tool==='tariff')return 'Your line: '+dol(s.w+v)+' (the world price plus '+dol(v)+')';
-  if(s.tool==='quota')return qstyle==='vertical'?'Your quota line: total quantity Q4 = '+v:'Your price line: '+dol(s.w+v)+' (the world price plus '+dol(v)+')';
+  if(s.tool==='quota')return qstyle==='vertical'?'Your quota line: Q = '+v:'Your price line: '+dol(s.w+v)+' (the world price plus '+dol(v)+')';
   return 'Your S moves right by '+v+' units';
 }
 function bdShow(){
@@ -841,11 +931,11 @@ function renderBd(){
   Array.prototype.forEach.call($('bd-chips').querySelectorAll('button'),function(b){b.addEventListener('click',function(){bd={i:+b.getAttribute('data-i'),v:0,solved:false,step:0,focus:false,qs:null};$('bd-say').textContent='';$('bd-say').className='say';renderBd();});});
   $('bd-state').textContent=scText(s);
   var task=s.tool==='tariff'?'Drag the handle up the price axis to draw the new price line, Pw + t, that the tariff creates.':
-           s.tool==='quota'?(qstyle==='vertical'?'Drag the handle along the quantity axis to place the quota line at Q4, the total quantity allowed once the quota applies. Where it meets D gives the price, and consumption minus domestic output at that price must equal the quota.':'Drag the handle up the price axis to draw the price line the quota creates. The price must rise until consumption minus domestic output equals the quota.'):
+           s.tool==='quota'?(qstyle==='vertical'?'Drag the handle along the quantity axis to draw the vertical supply line at the quota quantity. The price is then read where the line meets D.':'Drag the handle up the price axis to draw the price line the quota creates. The price must rise until consumption minus domestic output equals the quota.'):
            'Drag the handle along the quantity axis to shift S to S1. A subsidy shifts supply to the right.';
   $('bd-task').textContent=task;
   var m=bdModel(s),at=bdAt();
-  var hnd={x:at.x,y:at.y,min:r.min,max:r.max,now:bd.v,label:s.tool==='tariff'?'New price line, tariff in dollars':s.tool==='quota'?(qstyle==='vertical'?'Quota line, total quantity Q4':'Price line for the quota, in dollars above the world price'):'Subsidy shift in units'};
+  var hnd={x:at.x,y:at.y,min:r.min,max:r.max,now:bd.v,label:s.tool==='tariff'?'New price line, tariff in dollars':s.tool==='quota'?(qstyle==='vertical'?'Quota line, quantity in million units':'Price line for the quota, in dollars above the world price'):'Subsidy shift in units'};
   drawDiagram($('bd-plot'),m,bdShow(),hnd);
   $('bd-key').innerHTML=bd.solved?keyHTML(m,bdShow()):'';
   $('bd-live').textContent=bdLabel();
@@ -900,14 +990,14 @@ $('bd-check').addEventListener('click',function(){
     bd.solved=true;bd.step=0;bd.focus=false;renderBd();say=$('bd-say');
     say.className='say good';
     say.textContent=s.tool==='tariff'?'Correct. The line sits at Pw + t = '+dol(s.w)+' + '+dol(s.amt)+' = '+dol(s.w+s.amt)+'.':
-      s.tool==='quota'?(qstyle==='vertical'?'Correct. The line at Q4 = '+bdTarget(s)+' meets D at a price of '+dol(100-bdTarget(s))+'. At that price domestic firms supply '+fmt(100-bdTarget(s))+', so imports are '+bdTarget(s)+' − '+fmt(100-bdTarget(s))+' = '+s.amt+'.':'Correct. At '+dol(s.w+bdTarget(s))+' consumers buy '+fmt(100-s.w-bdTarget(s))+' and firms supply '+fmt(s.w+bdTarget(s))+', so imports are '+s.amt+', exactly the quota.'):
+      s.tool==='quota'?(qstyle==='vertical'?'Correct. The line sits at Q = '+s.amt+'. Where it meets D the price is '+dol(100-s.amt)+'.':'Correct. At '+dol(s.w+bdTarget(s))+' consumers buy '+fmt(100-s.w-bdTarget(s))+' and firms supply '+fmt(s.w+bdTarget(s))+', so imports are '+s.amt+', exactly the quota.'):
       'Correct. S moves right by '+s.amt+' units. Because S slopes at 45°, a shift right of '+s.amt+' is the same as a shift down of '+dol(s.amt)+'.';
   }else{
     var tooBig=diff>0;
     say.className='say bad';
     say.textContent='Not yet. Your '+(s.tool==='tariff'?'line':s.tool==='quota'?(qstyle==='vertical'?'quota line':'price line'):'shift')+' is too '+(s.tool==='quota'?(tooBig?(qstyle==='vertical'?'far right':'high'):(qstyle==='vertical'?'far left':'low')):tooBig?(s.tool==='tariff'?'high':'big'):(s.tool==='tariff'?'low':'small'))+'. '+
       (s.tool==='tariff'?'Add the tariff to the world price and read the result on the price axis.':
-       s.tool==='quota'?'Read the price where your '+(qstyle==='vertical'?'line meets D':'price line sits')+', then work out consumption minus domestic output at that price. It must equal the quota of '+s.amt+'.':
+       s.tool==='quota'?(qstyle==='vertical'?'The quota is '+s.amt+' million units, and the line is drawn at that quantity on the quantity axis.':'Read the price where your price line sits, then work out consumption minus domestic output at that price. It must equal the quota of '+s.amt+'.'):
        'A $1 subsidy shifts S right by 1 unit. Use the quantity axis to measure the shift.');
   }
 });
