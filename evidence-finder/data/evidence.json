@@ -371,6 +371,685 @@
   }
  },
  {
+  "id": "2026-10-26-vc-pisa-maths-leaders",
+  "title": "The world's maths leaders: Australia falls from 11th to 17th in PISA maths",
+  "date": "2026-10-26",
+  "type": "graph",
+  "outlets": [
+   "Visual Capitalist",
+   "OECD"
+  ],
+  "summary": "Australia's PISA maths score fell 46 points in 22 years, which gives a concrete link between school outcomes, the quality of labour and the productivity slowdown.",
+  "lede": "Visual Capitalist ranks countries by PISA maths score for 15-year-olds in 2003 and 2025. Australia dropped from 11th (524) to 17th (478), while Asian systems such as China, Singapore and Taiwan joined at the top.",
+  "about": {
+   "h09": [
+    "3A.6",
+    "1D.5"
+   ],
+   "y12": [
+    "Y1a.10",
+    "Y3d.5"
+   ],
+   "y11": [
+    "P3c.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4E.1"
+   ],
+   "y12": [
+    "Y2d.1"
+   ],
+   "y11": [
+    "P3c.4"
+   ]
+  },
+  "issues": [
+   "productivity",
+   "growth",
+   "global"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Australia PISA maths score and rank",
+    "value": "478 (17th)",
+    "asAt": "2025",
+    "issue": "productivity",
+    "source": "OECD PISA 2025 via Visual Capitalist"
+   },
+   {
+    "label": "Australia PISA maths score and rank",
+    "value": "524 (11th)",
+    "asAt": "2003",
+    "issue": "productivity",
+    "source": "OECD PISA 2003 via Visual Capitalist"
+   },
+   {
+    "label": "China PISA maths score (Beijing, Shanghai, Jiangsu, Zhejiang)",
+    "value": "612 (1st)",
+    "asAt": "2025",
+    "issue": "global",
+    "source": "OECD PISA 2025 via Visual Capitalist"
+   },
+   {
+    "label": "Singapore PISA maths score",
+    "value": "563 (2nd)",
+    "asAt": "2025",
+    "issue": "global",
+    "source": "OECD PISA 2025 via Visual Capitalist"
+   },
+   {
+    "label": "New Zealand PISA maths score",
+    "value": "523 (12th) → 480 (14th)",
+    "asAt": "2003 to 2025",
+    "issue": "global",
+    "source": "OECD PISA via Visual Capitalist"
+   },
+   {
+    "label": "United States PISA maths score",
+    "value": "483 (27th) → 463 (27th)",
+    "asAt": "2003 to 2025",
+    "issue": "global",
+    "source": "OECD PISA via Visual Capitalist"
+   },
+   {
+    "label": "Participating countries and economies",
+    "value": "41 → 91",
+    "asAt": "2003 to 2025",
+    "issue": "global",
+    "source": "OECD PISA via Visual Capitalist"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Human capital",
+    "def": "The knowledge, skills and health of the workforce, which raise labour productivity."
+   },
+   {
+    "term": "Productivity",
+    "def": "Output per unit of input, usually output per hour worked."
+   },
+   {
+    "term": "Aggregate supply",
+    "def": "The total goods and services firms are willing to produce at each price level."
+   }
+  ],
+  "angle": "Use the fall in Australia's score as evidence on the quality of labour as a driver of aggregate supply and productivity, then pair it with the productivity figures filed elsewhere on this site.",
+  "questions": [
+   {
+    "q": "Explain how the quality of labour affects aggregate supply.",
+    "marks": 3
+   },
+   {
+    "q": "Using the data, assess the extent to which education outcomes can explain Australia's productivity performance.",
+    "marks": 6
+   }
+  ],
+  "extended": "Evaluate the role of microeconomic policies in increasing productivity.",
+  "note": "Secondary chart by Visual Capitalist from OECD data. Publication date is not shown on the chart, so it is dated the day it was filed. Check the OECD release before quoting exact figures. Rankings compare 41 participants in 2003 with 91 in 2025, so part of the fall in rank reflects new participants, but the 46-point score fall does not.",
+  "links": [],
+  "file": {
+   "path": "files/2026-10/2026-10-26-vc-pisa-maths-leaders.pdf",
+   "label": "chart",
+   "pages": 1
+  }
+ },
+ {
+  "id": "2026-10-26-vc-gender-gap-teen-reading",
+  "title": "The gender gap in teen reading: girls outscore boys in all 43 systems shown",
+  "date": "2026-10-26",
+  "type": "graph",
+  "outlets": [
+   "Visual Capitalist",
+   "OECD"
+  ],
+  "summary": "Gives an education-based indicator of gender differences and a reminder that inequality in outcomes can run in different directions.",
+  "lede": "Visual Capitalist charts boys' and girls' PISA 2025 reading scores for OECD members and five partner economies above the OECD average. Girls outscored boys in every system shown, and Rwanda is the only one of the 90 systems tested where boys scored higher.",
+  "about": {
+   "h09": [
+    "1D.3"
+   ],
+   "y12": [
+    "Y3d.1"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1D.5",
+    "3E.5"
+   ],
+   "y12": [
+    "Y1d.5"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "inequality",
+   "global"
+  ],
+  "levers": [],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "OECD average reading score, boys",
+    "value": "446",
+    "asAt": "PISA 2025",
+    "issue": "inequality",
+    "source": "OECD PISA 2025 via Visual Capitalist"
+   },
+   {
+    "label": "OECD average reading score, girls",
+    "value": "476",
+    "asAt": "PISA 2025",
+    "issue": "inequality",
+    "source": "OECD PISA 2025 via Visual Capitalist"
+   },
+   {
+    "label": "Systems where girls outscored boys",
+    "value": "all 43 shown",
+    "asAt": "PISA 2025",
+    "issue": "inequality",
+    "source": "OECD PISA 2025 via Visual Capitalist"
+   },
+   {
+    "label": "Education systems tested worldwide",
+    "value": "90 (boys ahead only in Rwanda)",
+    "asAt": "PISA 2025",
+    "issue": "inequality",
+    "source": "OECD PISA 2025 via Visual Capitalist"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Quality of life indicators",
+    "def": "Measures such as education, health and life expectancy that show living standards beyond income."
+   },
+   {
+    "term": "Economic development",
+    "def": "Improvements in living standards, health, education and opportunity, not only higher income."
+   }
+  ],
+  "angle": "Use as an education indicator when discussing development, and for evidence that gender gaps in outcomes are not always in one direction.",
+  "questions": [
+   {
+    "q": "Outline why education is considered an indicator of economic development.",
+    "marks": 2
+   }
+  ],
+  "extended": "",
+  "note": "Secondary chart by Visual Capitalist from OECD data. Publication date is not shown on the chart, so it is dated the day it was filed. Check the OECD release before quoting exact figures. Only the headline claims and the two OECD averages are quoted; country scores are shown as dot positions and are not quoted. The chart marks some countries as having low participation.",
+  "links": [],
+  "file": {
+   "path": "files/2026-10/2026-10-26-vc-gender-gap-teen-reading.pdf",
+   "label": "chart",
+   "pages": 1
+  }
+ },
+ {
+  "id": "2026-10-26-vc-women-men-higher-education",
+  "title": "Women vs men in higher education: women have higher enrolment rates in 130 countries",
+  "date": "2026-10-26",
+  "type": "graph",
+  "outlets": [
+   "Visual Capitalist",
+   "OECD"
+  ],
+  "summary": "Shows how gender gaps in education vary across countries, and gives Australia's position for an inequality or development answer.",
+  "lede": "The map shows the ratio of women's to men's tertiary enrolment rates, with 0% representing parity. Australia's women are enrolled at a rate 31% higher than men's, and women have higher rates in 130 countries.",
+  "about": {
+   "h09": [
+    "3E.5"
+   ],
+   "y12": [
+    "Y3d.1"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1D.3"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y1d.7"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "inequality",
+   "global"
+  ],
+  "levers": [],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Women's tertiary enrolment rate relative to men's, Australia",
+    "value": "31% higher",
+    "asAt": "latest year 2022 to 2025",
+    "issue": "inequality",
+    "source": "World Bank/UNESCO via Visual Capitalist"
+   },
+   {
+    "label": "Women's tertiary enrolment rate relative to men's, New Zealand",
+    "value": "38% higher",
+    "asAt": "latest year 2022 to 2025",
+    "issue": "inequality",
+    "source": "World Bank/UNESCO via Visual Capitalist"
+   },
+   {
+    "label": "Women's tertiary enrolment rate relative to men's, United States",
+    "value": "32% higher (2022)",
+    "asAt": "latest year",
+    "issue": "inequality",
+    "source": "World Bank/UNESCO via Visual Capitalist"
+   },
+   {
+    "label": "Women's tertiary enrolment rate relative to men's, Japan",
+    "value": "3% higher",
+    "asAt": "latest year 2022 to 2025",
+    "issue": "inequality",
+    "source": "World Bank/UNESCO via Visual Capitalist"
+   },
+   {
+    "label": "Countries where women have higher enrolment rates",
+    "value": "130",
+    "asAt": "latest data as of Feb 2026",
+    "issue": "inequality",
+    "source": "World Bank/UNESCO via Visual Capitalist"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Gender parity index",
+    "def": "The ratio of female to male enrolment rates; 0% on this map means parity."
+   },
+   {
+    "term": "Tertiary education",
+    "def": "University and other post-secondary education."
+   }
+  ],
+  "angle": "Use to show that gender gaps in education can favour women, and then link to gender differences in pay and occupations in the labour market.",
+  "questions": [
+   {
+    "q": "Explain TWO reasons why education is important for economic development.",
+    "marks": 4
+   }
+  ],
+  "extended": "",
+  "note": "Secondary chart by Visual Capitalist from World Bank and UNESCO data. Publication date is not shown, so it is dated the day it was filed. Data years run from 2022 to 2025 (US 2022). Check the World Bank release before quoting.",
+  "links": [],
+  "file": {
+   "path": "files/2026-10/2026-10-26-vc-women-men-higher-education.pdf",
+   "label": "chart",
+   "pages": 1
+  }
+ },
+ {
+  "id": "2026-10-26-vc-educated-adults",
+  "title": "Countries with the most educated adults: 54% of Australians aged 25 to 64 hold tertiary qualifications",
+  "date": "2026-10-26",
+  "type": "graph",
+  "outlets": [
+   "Visual Capitalist",
+   "OECD"
+  ],
+  "summary": "Compares the skill level of the workforce across countries, which supports answers on human capital, labour supply and education and training policy.",
+  "lede": "Visual Capitalist ranks countries by the share of adults aged 25 to 64 with college or university qualifications. Canada leads at 64%, Australia is seventh at 54% (7.6 million people) and China's 18% still represents 152.4 million people.",
+  "about": {
+   "h09": [
+    "4F.5"
+   ],
+   "y12": [
+    "Y2e.6",
+    "Y1a.10"
+   ],
+   "y11": [
+    "P3c.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "1D.5",
+    "3A.6"
+   ],
+   "y12": [
+    "Y3d.5"
+   ],
+   "y11": [
+    "P3b.1"
+   ]
+  },
+  "issues": [
+   "productivity",
+   "employment"
+  ],
+  "levers": [
+   "labour",
+   "micro"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Share of adults 25 to 64 with tertiary qualifications, Australia",
+    "value": "54% (7.6 million)",
+    "asAt": "2023 to 2025",
+    "issue": "productivity",
+    "source": "OECD via Visual Capitalist"
+   },
+   {
+    "label": "Share, Canada",
+    "value": "64% (13.7 million)",
+    "asAt": "2023 to 2025",
+    "issue": "productivity",
+    "source": "OECD via Visual Capitalist"
+   },
+   {
+    "label": "Share, United Kingdom",
+    "value": "55% (19.6 million)",
+    "asAt": "2023 to 2025",
+    "issue": "productivity",
+    "source": "OECD via Visual Capitalist"
+   },
+   {
+    "label": "Share, United States",
+    "value": "52% (93.0 million)",
+    "asAt": "2023 to 2025",
+    "issue": "productivity",
+    "source": "OECD via Visual Capitalist"
+   },
+   {
+    "label": "Share, New Zealand",
+    "value": "44% (1.2 million)",
+    "asAt": "2023 to 2025",
+    "issue": "productivity",
+    "source": "OECD via Visual Capitalist"
+   },
+   {
+    "label": "Share, China",
+    "value": "18% (152.4 million)",
+    "asAt": "2020",
+    "issue": "productivity",
+    "source": "National Bureau of Statistics of China via Visual Capitalist"
+   },
+   {
+    "label": "Share, India",
+    "value": "16% (119.2 million)",
+    "asAt": "2023 to 2025",
+    "issue": "productivity",
+    "source": "OECD and UN via Visual Capitalist"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Human capital",
+    "def": "The knowledge, skills and health of the workforce."
+   },
+   {
+    "term": "Quality of labour",
+    "def": "The skills and productivity of workers, influenced by education and training."
+   }
+  ],
+  "angle": "Use the share against the number of people to show that a smaller share can still mean a large skilled workforce, then link to education and training policy.",
+  "questions": [
+   {
+    "q": "Explain how education and training policies can improve the quality of the labour force.",
+    "marks": 4
+   }
+  ],
+  "extended": "Evaluate the effectiveness of labour market policies in achieving Australia's economic objectives.",
+  "note": "Secondary chart by Visual Capitalist from OECD, UN and Chinese statistics data. Publication date is not shown on the chart, so it is dated the day it was filed. Check the OECD release before quoting exact figures. Data years vary from 2020 (China) to 2025.",
+  "links": [],
+  "file": {
+   "path": "files/2026-10/2026-10-26-vc-educated-adults.pdf",
+   "label": "chart",
+   "pages": 1
+  }
+ },
+ {
+  "id": "2026-10-26-vc-cost-of-bachelors-degree",
+  "title": "The cost of a bachelor's degree: Australia's public tuition is $5.1K a year in PPP terms",
+  "date": "2026-10-26",
+  "type": "graph",
+  "outlets": [
+   "Visual Capitalist",
+   "OECD"
+  ],
+  "summary": "Compares public tuition across countries, which gives context for HECS-HELP and for how governments fund education and manage equity.",
+  "lede": "The chart ranks annual public tuition for a bachelor's degree in US dollars at purchasing power parity. England is highest at $13.1K, the United States $9.6K, Australia $5.1K and New Zealand $4.7K, while Denmark, Finland, Norway, Sweden and Türkiye charge nothing.",
+  "about": {
+   "h09": [
+    "4F.5"
+   ],
+   "y12": [
+    "Y2e.6"
+   ],
+   "y11": [
+    "P2i.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.3"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y2d.1"
+   ],
+   "y11": [
+    "P5c.2"
+   ]
+  },
+  "issues": [
+   "inequality",
+   "budget"
+  ],
+  "levers": [
+   "fiscal",
+   "labour"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Annual public tuition for a bachelor's degree, Australia",
+    "value": "$5.1K (USD, PPP)",
+    "asAt": "OECD Education at a Glance 2025",
+    "issue": "budget",
+    "source": "OECD via Visual Capitalist"
+   },
+   {
+    "label": "Annual tuition, England",
+    "value": "$13.1K (USD, PPP)",
+    "asAt": "OECD Education at a Glance 2025",
+    "issue": "budget",
+    "source": "OECD via Visual Capitalist"
+   },
+   {
+    "label": "Annual tuition, United States",
+    "value": "$9.6K (USD, PPP)",
+    "asAt": "OECD Education at a Glance 2025",
+    "issue": "budget",
+    "source": "OECD via Visual Capitalist"
+   },
+   {
+    "label": "Annual tuition, New Zealand",
+    "value": "$4.7K (USD, PPP)",
+    "asAt": "OECD Education at a Glance 2025",
+    "issue": "budget",
+    "source": "OECD via Visual Capitalist"
+   },
+   {
+    "label": "Annual tuition, Germany",
+    "value": "$0.2K (USD, PPP)",
+    "asAt": "OECD Education at a Glance 2025",
+    "issue": "budget",
+    "source": "OECD via Visual Capitalist"
+   },
+   {
+    "label": "England three-year degree compared with US four-year degree",
+    "value": "$39.4K vs $38.4K",
+    "asAt": "OECD Education at a Glance 2025",
+    "issue": "budget",
+    "source": "OECD via Visual Capitalist"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Purchasing power parity (PPP)",
+    "def": "An exchange rate adjustment that compares what money can buy in different countries."
+   },
+   {
+    "term": "Subsidy",
+    "def": "A payment by government that lowers the price students or producers face."
+   }
+  ],
+  "angle": "Use to compare how governments share the cost of education between students and taxpayers, then to discuss equity and access.",
+  "questions": [
+   {
+    "q": "Explain ONE reason why a government might subsidise tertiary education.",
+    "marks": 3
+   }
+  ],
+  "extended": "",
+  "note": "Secondary chart by Visual Capitalist from OECD data. Publication date is not shown on the chart, so it is dated the day it was filed. Check the OECD release before quoting exact figures. The England figure covers government-dependent private institutions, and Germany's combines bachelor's, master's and doctoral fees and includes foreign students. The chart says over half of students in Norway, Sweden and Finland still borrow for living costs.",
+  "links": [],
+  "file": {
+   "path": "files/2026-10/2026-10-26-vc-cost-of-bachelors-degree.pdf",
+   "label": "chart",
+   "pages": 1
+  }
+ },
+ {
+  "id": "2026-10-26-vc-education-spending-per-student",
+  "title": "Education spending per student: Australia spends $17.5K, below the United States and Norway",
+  "date": "2026-10-26",
+  "type": "graph",
+  "outlets": [
+   "Visual Capitalist",
+   "OECD"
+  ],
+  "summary": "Compares government and private spending on education across countries, which links to government spending priorities and to why some countries are more productive.",
+  "lede": "The chart shows average spending per student from primary to tertiary level in US dollars at purchasing power parity. Luxembourg spends $31.4K, Norway $22.6K and the United States $20.4K, while Australia spends $17.5K and China $5.2K.",
+  "about": {
+   "h09": [
+    "1D.5",
+    "3A.6"
+   ],
+   "y12": [
+    "Y3d.5",
+    "Y1a.10"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4F.5"
+   ],
+   "y12": [
+    "Y2e.6"
+   ],
+   "y11": [
+    "P5c.2",
+    "P3c.5"
+   ]
+  },
+  "issues": [
+   "productivity",
+   "budget",
+   "global"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Education spending per student, Australia",
+    "value": "$17.5K (USD, PPP)",
+    "asAt": "2022",
+    "issue": "productivity",
+    "source": "OECD Education at a Glance 2025 via Visual Capitalist"
+   },
+   {
+    "label": "Education spending per student, Luxembourg",
+    "value": "$31.4K (USD, PPP)",
+    "asAt": "2022",
+    "issue": "productivity",
+    "source": "OECD Education at a Glance 2025 via Visual Capitalist"
+   },
+   {
+    "label": "Education spending per student, United States",
+    "value": "$20.4K (USD, PPP)",
+    "asAt": "2021",
+    "issue": "productivity",
+    "source": "OECD Education at a Glance 2025 via Visual Capitalist"
+   },
+   {
+    "label": "Education spending per student, Canada",
+    "value": "$18.7K (USD, PPP)",
+    "asAt": "2022",
+    "issue": "productivity",
+    "source": "OECD Education at a Glance 2025 via Visual Capitalist"
+   },
+   {
+    "label": "Education spending per student, New Zealand",
+    "value": "$12.4K (USD, PPP)",
+    "asAt": "2022",
+    "issue": "productivity",
+    "source": "OECD Education at a Glance 2025 via Visual Capitalist"
+   },
+   {
+    "label": "Education spending per student, China",
+    "value": "$5.2K (USD, PPP)",
+    "asAt": "2022",
+    "issue": "productivity",
+    "source": "OECD Education at a Glance 2025 via Visual Capitalist"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Human capital",
+    "def": "The knowledge, skills and health of the workforce."
+   },
+   {
+    "term": "Purchasing power parity (PPP)",
+    "def": "An exchange rate adjustment that compares what money can buy in different countries."
+   }
+  ],
+  "angle": "Pair with the PISA chart to ask whether higher spending produces better outcomes, a good evaluation point.",
+  "questions": [
+   {
+    "q": "Assess whether higher spending on education leads to higher productivity.",
+    "marks": 6
+   }
+  ],
+  "extended": "",
+  "note": "Secondary chart by Visual Capitalist from OECD data. Publication date is not shown on the chart, so it is dated the day it was filed. Check the OECD release before quoting exact figures. Expenditure on educational institutions from primary to tertiary level (2022; US 2021), including government and private expenditure. The OECD average line is shown but its value is not labelled.",
+  "links": [],
+  "file": {
+   "path": "files/2026-10/2026-10-26-vc-education-spending-per-student.pdf",
+   "label": "chart",
+   "pages": 1
+  }
+ },
+ {
   "id": "2026-10-25-western-sydney-airport-opens",
   "date": "2026-10-25",
   "added": "2026-10-25",
