@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="HSC Economics diagram lab: move the world price and the size of a tariff, quota or subsidy and read the effects from the lines, with a switch to hide the numbers, prediction questions, set challenges and a build-it-yourself mode.">
+<title>Protection Diagram Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600..800&display=swap" rel="stylesheet">
+<style>
+/* Layout concept: navy header band with four lab parts as tabs; each part is a diagram on the left and its controls on the right. Same palette as the protection explainer: navy D, blue S, red for the protected price, gold for revenue or cost. No surplus or deadweight loss shading anywhere. */
+:root{
+  color-scheme:light;
+  --bg:#F2F5F9; --surface:#FFFFFF; --ink:#10253F; --muted:#4D5F78; --rule:#D3DBE6; --rule-strong:#A9B6C8;
+  --band:#10253F; --band-ink:#F2F5F9; --band-muted:#B7C5DA;
+  --pill-bg:#E0A100; --pill-ink:#10253F; --gold:#E0A100; --gold-ink:#6B4A00;
+  --d-line:#10253F; --s-line:#1E88E5; --w-line:#66768D; --red:#E53935; --red-ink:#B71C1C;
+  --rev-fill:rgba(224,161,0,.5);
+  --good:#1B6E37; --good-bg:#E3F3E8; --bad:#A31515; --bad-bg:#FBE6E5; --focus:#1E88E5; --soft:#E8EDF4;
+  --display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif; --body:'Atkinson Hyperlegible','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0B1524; --surface:#12233A; --ink:#E6EDF7; --muted:#9DB0C9; --rule:#263A55; --rule-strong:#40587A;
+  --band:#16304F; --band-ink:#F2F5F9; --band-muted:#B7C5DA;
+  --pill-bg:#F2B73A; --pill-ink:#10253F; --gold:#F2B73A; --gold-ink:#F2C766;
+  --d-line:#C6D6EE; --s-line:#58AEF6; --w-line:#8EA0B8; --red:#FF6A64; --red-ink:#FF9A96;
+  --rev-fill:rgba(242,183,58,.42);
+  --good:#7FE0A2; --good-bg:#14301F; --bad:#FF9A96; --bad-bg:#3A1717; --focus:#58AEF6; --soft:#182D49; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0B1524; --surface:#12233A; --ink:#E6EDF7; --muted:#9DB0C9; --rule:#263A55; --rule-strong:#40587A;
+  --band:#16304F; --band-ink:#F2F5F9; --band-muted:#B7C5DA;
+  --pill-bg:#F2B73A; --pill-ink:#10253F; --gold:#F2B73A; --gold-ink:#F2C766;
+  --d-line:#C6D6EE; --s-line:#58AEF6; --w-line:#8EA0B8; --red:#FF6A64; --red-ink:#FF9A96;
+  --rev-fill:rgba(242,183,58,.42);
+  --good:#7FE0A2; --good-bg:#14301F; --bad:#FF9A96; --bad-bg:#3A1717; --focus:#58AEF6; --soft:#182D49; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;margin:0}
+h1,h2,h3{font-family:var(--display);line-height:1.12;text-wrap:balance;margin:0;font-weight:700}
+h2{font-size:clamp(1.45rem,3vw,1.85rem);letter-spacing:-.01em}
+h3{font-size:1.1rem}
+p{margin:0}
+.wrap{max-width:1120px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.sub{font-size:.78em;vertical-align:-.28em;line-height:0}
+button{font:inherit;color:inherit;cursor:pointer}
+button:disabled{cursor:default;opacity:.55}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+
+header.band{background:var(--band);color:var(--band-ink);padding-block:30px 0}
+.pill{display:inline-block;background:var(--pill-bg);color:var(--pill-ink);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:3px}
+header h1{font-size:clamp(2rem,5.4vw,3.2rem);letter-spacing:-.02em;margin-top:12px;max-width:20ch}
+header .lead{color:var(--band-muted);max-width:60ch;margin-top:10px}
+.facts{display:flex;flex-wrap:wrap;gap:6px 24px;margin-top:16px;font-size:.95rem;color:var(--band-muted)}
+.facts b{color:var(--band-ink);font-variant-numeric:tabular-nums}
+.tabs{display:flex;flex-wrap:wrap;gap:4px;margin-top:22px}
+.tabs button{background:transparent;border:0;border-bottom:5px solid transparent;padding:10px 16px 9px;font-weight:700;color:var(--band-muted)}
+.tabs button:hover{color:var(--band-ink)}
+.tabs button[aria-selected="true"]{color:var(--band-ink);border-bottom-color:var(--pill-bg)}
+.tabs button:focus-visible{outline-offset:-3px}
+
+main{padding-block:30px 60px}
+.intro{max-width:66ch;color:var(--muted);margin-top:8px}
+.grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:26px 36px;margin-top:22px;align-items:start}
+@media (max-width:900px){.grid{grid-template-columns:minmax(0,1fr)}}
+.col{min-width:0;display:flex;flex-direction:column;gap:14px}
+.plot{margin:0;background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:8px}
+.plot{overflow-x:auto}
+.plot svg{display:block;width:100%;min-width:540px;height:auto}
+@media (min-width:901px) and (min-height:760px){.grid>.col:first-child{position:sticky;top:14px}}
+.plot text{font-family:var(--body);fill:var(--ink)}
+.plot .curve{fill:none;stroke-width:3.4;stroke-linecap:round}
+.plot .axis{stroke:var(--ink);stroke-width:2;fill:none}
+.plot .tick{stroke:var(--ink);stroke-width:1.4}
+.plot .drop{stroke:var(--w-line);stroke-width:1.4;stroke-dasharray:5 5}
+.plot .drop.key{stroke-width:2;stroke-dasharray:8 4}
+.plot .sym{font-weight:700;font-size:16px}
+.plot .val{font-size:13.5px;fill:var(--muted)}
+.plot .num{font-size:12.5px;fill:var(--muted)}
+.plot .cl{font-weight:700;font-size:19px}
+.plot .note{font-size:14px;font-style:italic}
+.plot .rl{font-size:14.5px;font-weight:700}
+.plot .tag{font-size:21px;font-weight:700;font-style:italic}
+.plot .hbg{fill:var(--gold);fill-opacity:.35;stroke:var(--gold);stroke-width:2}
+.plot .hdot{fill:var(--gold);stroke:var(--ink);stroke-width:2}
+.plot [data-handle]{cursor:grab;touch-action:none}
+.plot [data-handle]:focus-visible{outline:none}
+.plot [data-handle]:focus-visible .hbg{stroke:var(--focus);stroke-width:4;fill-opacity:.55}
+.key{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:.93rem;color:var(--muted);min-height:1.5em}
+.key span{display:inline-flex;align-items:center;gap:8px}
+.sw{width:20px;height:14px;border:1.5px solid var(--gold);background:var(--rev-fill);border-radius:2px;display:inline-block}
+.sw.cost{background:transparent;border:2px dashed var(--gold)}
+
+.panelbox{padding:16px;background:var(--surface);border:1px solid var(--rule);border-radius:8px;display:flex;flex-direction:column;gap:14px}
+.ctl-row{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px}
+.ctl-row label,.ctl-row .lbl{font-weight:700}
+.ctl-row output{font-variant-numeric:tabular-nums;font-weight:700;color:var(--red-ink)}
+.ctl-row output.w{color:var(--ink)}
+input[type=range]{width:100%;accent-color:var(--red);margin:6px 0 0;height:28px}
+input[type=range].wr{accent-color:var(--w-line)}
+.hint{font-size:.92rem;color:var(--muted)}
+.seg{display:inline-flex;flex-wrap:wrap;border:1.5px solid var(--rule-strong);border-radius:6px;overflow:hidden;align-self:flex-start}
+.seg button{background:transparent;border:0;padding:7px 14px;font-weight:700;color:var(--muted)}
+.seg button+button{border-left:1.5px solid var(--rule-strong)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{background:var(--surface);border:1.5px solid var(--rule-strong);border-radius:999px;padding:6px 14px;font-size:.95rem;font-weight:700;color:var(--muted)}
+.chips button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.chips button .tick{margin-left:6px}
+.btn{background:var(--ink);color:var(--bg);border:0;padding:10px 18px;border-radius:6px;font-weight:700}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--rule-strong)}
+.btnrow{display:flex;flex-wrap:wrap;gap:10px}
+.layers{border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
+.layers legend{font-weight:700;padding:0;margin-bottom:6px}
+.chk{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;cursor:pointer}
+.chk input{width:20px;height:20px;margin-top:3px;accent-color:var(--ink)}
+.chk.main{padding:10px 12px;background:var(--soft);border-radius:6px;font-weight:700}
+
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{padding:7px 10px;text-align:right;border-top:1px solid var(--rule);vertical-align:top}
+thead th{border-top:0;font-size:.9rem;color:var(--muted);font-weight:700}
+th:first-child,td:first-child{text-align:left}
+tbody th{font-weight:400}
+td.chg{font-weight:700}
+.work{display:block;font-size:.85rem;font-weight:400;color:var(--muted)}
+.off{color:var(--muted);font-style:italic}
+.say{font-size:1.02rem}
+.say.good{padding:10px 14px;border-left:4px solid var(--good);background:var(--good-bg)}
+.say.bad{padding:10px 14px;border-left:4px solid var(--bad);background:var(--bad-bg)}
+.say.note{padding:10px 14px;border-left:4px solid var(--gold);background:var(--soft)}
+.statement{font-size:1.08rem;font-weight:700}
+.try{font-size:.95rem;color:var(--muted)}
+.try b{color:var(--ink)}
+
+/* predict */
+.qrow{border:0;padding:12px 0;margin:0;min-width:0;border-top:1px solid var(--rule)}
+.qrow:first-of-type{border-top:0;padding-top:0}
+.qrow legend{font-weight:700;padding:0;margin-bottom:8px;float:left;width:100%}
+.ans{display:flex;flex-wrap:wrap;gap:8px;clear:both}
+.ans label{position:relative}
+.ans input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.ans span{display:block;border:1.5px solid var(--rule-strong);border-radius:6px;padding:7px 12px;background:var(--surface)}
+.ans input:checked+span{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.ans input:focus-visible+span{outline:3px solid var(--focus);outline-offset:2px}
+.ans input:disabled{cursor:default}
+.res{margin-top:8px;font-size:.95rem;padding-left:12px;border-left:4px solid var(--rule-strong)}
+.res.right{border-left-color:var(--good)} .res.wrong{border-left-color:var(--bad)}
+.res b.r{color:var(--good)} .res b.w{color:var(--bad)}
+
+/* challenges */
+.clist{display:flex;flex-direction:column;gap:6px}
+.clist button{text-align:left;display:grid;grid-template-columns:24px 1fr;gap:8px;align-items:start;background:var(--surface);border:1.5px solid var(--rule-strong);border-radius:6px;padding:8px 12px}
+.clist button[aria-pressed="true"]{border-color:var(--ink);background:var(--soft)}
+.clist .mk{font-weight:700;color:var(--muted)}
+.clist .done .mk{color:var(--good)}
+.progress{font-weight:700}
+
+/* build */
+.stepper{display:flex;flex-direction:column;gap:6px;padding:0;margin:0;list-style:none}
+.stepper li{display:grid;grid-template-columns:24px 1fr;gap:8px;font-size:.97rem;color:var(--muted)}
+.stepper li.on{color:var(--ink)}
+.stepper li .mk{font-weight:700}
+.nudge{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.nudge button{width:44px;height:44px;font-size:1.3rem;font-weight:700;border:1.5px solid var(--rule-strong);background:var(--surface);border-radius:6px}
+.live{font-weight:700;font-variant-numeric:tabular-nums}
+.xlink{display:inline-block;margin-top:18px;color:var(--band-ink);font-weight:700;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px}
+.xlink:hover{text-decoration-color:var(--pill-bg)}
+.xlink:focus-visible{outline-color:var(--band-ink)}
+a.inl{color:var(--ink);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+footer{border-top:1px solid var(--rule);padding-block:26px 50px;font-size:.92rem;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <span class="pill">HSC Economics &middot; Protection</span>
+    <h1>Protection diagram lab</h1>
+    <p class="lead">Move the world price and the size of a tariff, quota or subsidy. Work out what happens to prices, output, consumption and imports from the lines on the diagram.</p>
+    <a class="xlink" href="../protection-explainer/index.html">New to surpluses and deadweight loss? Read the explainer first &rarr;</a>
+    <p class="facts" aria-label="The market used throughout">
+      <span>Demand <b>Q = 100 &minus; P</b></span>
+      <span>Supply <b>Q = P</b></span>
+      <span>Price in <b>$</b>, quantity in <b>millions</b></span>
+    </p>
+    <div class="tabs" role="tablist" aria-label="Parts of the lab">
+      <button role="tab" id="tab-experiment" data-tab="experiment" aria-controls="panel-experiment" aria-selected="true">Experiment</button>
+      <button role="tab" id="tab-predict" data-tab="predict" aria-controls="panel-predict" aria-selected="false" tabindex="-1">Predict</button>
+      <button role="tab" id="tab-challenges" data-tab="challenges" aria-controls="panel-challenges" aria-selected="false" tabindex="-1">Challenges</button>
+      <button role="tab" id="tab-build" data-tab="build" aria-controls="panel-build" aria-selected="false" tabindex="-1">Build it</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- EXPERIMENT -->
+<section id="panel-experiment" role="tabpanel" aria-labelledby="tab-experiment">
+  <h2>Experiment</h2>
+  <p class="intro">Choose a tool and drag the sliders. Turn the numbers off to practise reading values from the axes, and switch layers on or off to see how each part of the diagram is built.</p>
+  <div class="grid">
+    <div class="col">
+      <figure class="plot"><svg id="ex-plot" viewBox="0 0 632 616" role="img" aria-label="Supply and demand diagram"></svg></figure>
+      <div class="key" id="ex-key"></div>
+    </div>
+    <div class="col">
+      <div class="panelbox">
+        <div class="seg" id="ex-tool" role="group" aria-label="Protection tool">
+          <button type="button" data-tool="tariff" aria-pressed="true">Tariff</button>
+          <button type="button" data-tool="quota" aria-pressed="false">Quota</button>
+          <button type="button" data-tool="subsidy" aria-pressed="false">Subsidy</button>
+        </div>
+        <div>
+          <div class="ctl-row"><label for="ex-w">World price</label><output id="ex-w-out" class="w" for="ex-w"></output></div>
+          <input type="range" id="ex-w" class="wr" min="10" max="40" step="1" value="20">
+          <p class="hint" id="ex-w-hint"></p>
+        </div>
+        <div>
+          <div class="ctl-row"><label for="ex-amt" id="ex-amt-label">Tariff per unit</label><output id="ex-amt-out" for="ex-amt"></output></div>
+          <input type="range" id="ex-amt" min="0" max="30" step="1" value="10">
+          <p class="hint" id="ex-amt-hint"></p>
+        </div>
+        <label class="chk main"><input type="checkbox" id="ex-nums" checked><span>Show numbers</span></label>
+        <fieldset class="layers"><legend>Layers</legend>
+          <label class="chk"><input type="checkbox" id="ex-drops" checked><span>Quantity labels and guide lines</span></label>
+          <label class="chk"><input type="checkbox" id="ex-brackets" checked><span>Import brackets</span></label>
+          <label class="chk"><input type="checkbox" id="ex-rect" checked><span id="ex-rect-lbl">Revenue rectangle</span></label>
+          <label class="chk"><input type="checkbox" id="ex-letters" checked><span>Point letters</span></label>
+        </fieldset>
+        <div class="btnrow"><button type="button" class="btn ghost" id="ex-reset">Reset</button></div>
+      </div>
+      <div class="panelbox">
+        <h3>Before and after</h3>
+        <div id="ex-read" aria-live="polite"></div>
+      </div>
+      <p class="try" id="ex-try"></p>
+    </div>
+  </div>
+</section>
+
+<!-- PREDICT -->
+<section id="panel-predict" role="tabpanel" aria-labelledby="tab-predict" hidden>
+  <h2>Predict</h2>
+  <p class="intro">Read the scenario and predict each effect before you look at the diagram. Check your answers to see the finished diagram and the reason for each one.</p>
+  <div class="chips" id="pr-chips" role="group" aria-label="Scenario"></div>
+  <div class="grid">
+    <div class="col">
+      <p class="statement" id="pr-state"></p>
+      <figure class="plot"><svg id="pr-plot" viewBox="0 0 632 616" role="img" aria-label="Supply and demand diagram for the scenario"></svg></figure>
+      <div class="key" id="pr-key"></div>
+    </div>
+    <div class="col">
+      <div class="panelbox">
+        <div id="pr-qs"></div>
+        <div class="btnrow">
+          <button type="button" class="btn" id="pr-check">Check my predictions</button>
+          <button type="button" class="btn ghost" id="pr-next">Next scenario</button>
+        </div>
+        <p class="say" id="pr-score" aria-live="polite"></p>
+      </div>
+      <div class="panelbox" id="pr-readbox" hidden>
+        <h3>Before and after</h3>
+        <div id="pr-read"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHALLENGES -->
+<section id="panel-challenges" role="tabpanel" aria-labelledby="tab-challenges" hidden>
+  <h2>Challenges</h2>
+  <p class="intro">Each challenge sets a target. Move the slider until you hit it, then check. <span class="progress" id="ch-progress"></span></p>
+  <div class="grid">
+    <div class="col">
+      <p class="statement" id="ch-text"></p>
+      <figure class="plot"><svg id="ch-plot" viewBox="0 0 632 616" role="img" aria-label="Challenge diagram"></svg></figure>
+      <div class="key" id="ch-key"></div>
+    </div>
+    <div class="col">
+      <div class="clist" id="ch-list"></div>
+      <div class="panelbox">
+        <div>
+          <div class="ctl-row"><label for="ch-amt" id="ch-amt-label">Setting</label><output id="ch-amt-out" for="ch-amt"></output></div>
+          <input type="range" id="ch-amt" min="0" max="30" step="1" value="0">
+        </div>
+        <label class="chk"><input type="checkbox" id="ch-nums" checked><span>Show numbers</span></label>
+        <div id="ch-read" aria-live="polite"></div>
+        <div class="btnrow">
+          <button type="button" class="btn" id="ch-check">Check</button>
+          <button type="button" class="btn ghost" id="ch-hint">Show a hint</button>
+        </div>
+        <p class="say" id="ch-say" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUILD -->
+<section id="panel-build" role="tabpanel" aria-labelledby="tab-build" hidden>
+  <h2>Build it</h2>
+  <p class="intro">Draw the new line or curve yourself by dragging the gold handle (or use the buttons or arrow keys). When it is right, add the rest of the diagram one piece at a time and predict where each piece goes before you add it.</p>
+  <div class="chips" id="bd-chips" role="group" aria-label="Scenario"></div>
+  <div class="grid">
+    <div class="col">
+      <p class="statement" id="bd-state"></p>
+      <figure class="plot"><svg id="bd-plot" viewBox="0 0 632 616" role="img" aria-label="Blank supply and demand diagram with a draggable handle"></svg></figure>
+      <div class="key" id="bd-key"></div>
+    </div>
+    <div class="col">
+      <div class="panelbox">
+        <p id="bd-task"></p>
+        <div class="nudge">
+          <button type="button" id="bd-minus" aria-label="Move the handle down or left">&minus;</button>
+          <button type="button" id="bd-plus" aria-label="Move the handle up or right">+</button>
+          <span class="live" id="bd-live" aria-live="polite"></span>
+        </div>
+        <div class="btnrow">
+          <button type="button" class="btn" id="bd-check">Check my drawing</button>
+          <button type="button" class="btn ghost" id="bd-answer">Show me</button>
+        </div>
+        <p class="say" id="bd-say" aria-live="polite"></p>
+      </div>
+      <div class="panelbox" id="bd-stepbox" hidden>
+        <h3>Add the rest of the diagram</h3>
+        <ol class="stepper" id="bd-steps"></ol>
+        <p class="say note" id="bd-steptext" aria-live="polite"></p>
+        <div class="btnrow"><button type="button" class="btn" id="bd-next">Add the next piece</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Diagrams are conceptual and use one linear market. The letters follow the protection sheets: A to D are the corners of the revenue rectangle, and AB is the subsidy per unit at the new quantity. Numbers are in $ or millions of units and are rounded to one decimal place.</p>
+    <p style="margin-top:10px">Want the areas as well? The <a class="inl" href="../protection-explainer/index.html">protection explainer</a> shows consumer surplus, producer surplus and deadweight loss for the same market.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+var K=4,OX=128,OY=436;
+function X(q){return OX+K*q}
+function Y(p){return OY-K*p}
+function $(id){return document.getElementById(id)}
+function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
+function fmt(n){var x=Math.round(n*10)/10;return (x<0?'−':'')+Math.abs(x).toLocaleString('en-AU',{maximumFractionDigits:1})}
+function dol(n){return '$'+fmt(n)}
+function mil(n){return '$'+fmt(n)+'m'}
+function sgn(n){return n>0?'+':n<0?'−':''}
+
+/* ---------- model ---------- */
+var NAMES={tariff:'Tariff',quota:'Quota',subsidy:'Subsidy'};
+function ranges(tool,w){
+  var free=100-2*w;
+  if(tool==='tariff')return {min:0,max:50-w};
+  if(tool==='quota')return {min:0,max:free};
+  return {min:0,max:Math.min(40,free)};
+}
+function model(tool,w,amt){
+  var free=100-2*w;
+  var m={tool:tool,w:w,amt:amt,Q1:w,Q2:100-w,imp0:free,P1:w,Pp:w,Q3:w,Q4:100-w,imp:free,money:0,kind:'',active:false,work:''};
+  m.kind=tool==='tariff'?'Tariff revenue':tool==='quota'?'Importers’ extra revenue':'Cost to government';
+  if(tool==='tariff'){
+    var P=Math.min(w+amt,50),t=P-w;
+    if(t>0){m.active=true;m.P1=P;m.Pp=P;m.Q3=P;m.Q4=100-P;m.imp=100-2*P;m.money=t*m.imp;m.work=dol(t)+' × '+fmt(m.imp)+' = '+mil(m.money);}
+  }else if(tool==='quota'){
+    if(amt<free){var Pq=(100-amt)/2;m.active=true;m.P1=Pq;m.Pp=Pq;m.Q3=Pq;m.Q4=100-Pq;m.imp=amt;m.money=(Pq-w)*amt;m.work='('+dol(Pq)+' − '+dol(w)+') × '+fmt(amt)+' = '+mil(m.money);}
+  }else{
+    var s=Math.min(amt,free);
+    if(s>0){m.active=true;m.Pp=w+s;m.Q3=w+s;m.imp=free-s;m.money=s*m.Q3;m.work=dol(s)+' × '+fmt(m.Q3)+' = '+mil(m.money);m.amt=s;}
+  }
+  return m;
+}
+
+/* ---------- drawing ---------- */
+function sym(b,sub,rest){return b+'<tspan class="sub" dy="4">'+sub+'</tspan><tspan dy="-4">'+(rest||' ')+'</tspan>';}
+function T(x,y,cls,html,anchor,color){return '<text x="'+x.toFixed(1)+'" y="'+y.toFixed(1)+'" class="'+cls+'"'+(anchor?' text-anchor="'+anchor+'"':'')+(color?' style="fill:'+color+'"':'')+'>'+html+'</text>';}
+function LN(x1,y1,x2,y2,cls,style){return '<line x1="'+x1.toFixed(1)+'" y1="'+y1.toFixed(1)+'" x2="'+x2.toFixed(1)+'" y2="'+y2.toFixed(1)+'"'+(cls?' class="'+cls+'"':'')+(style?' style="'+style+'"':'')+'/>';}
+var FULL={vals:true,letters:true,rect:true,brackets:true,qold:true,qnew:true,prot:true};
+
+function drawDiagram(svg,m,sh,handle){
+  var tool=m.tool,w=m.w,P1=m.P1,Pp=m.Pp,Q1=m.Q1,Q2=m.Q2,Q3=m.Q3,Q4=m.Q4,act=m.active;
+  var back='',lines='',curves='',lab='',top='';
+  function hline(p,q,col,wd,dash){return LN(OX,Y(p),X(q),Y(p),'','stroke:'+col+';stroke-width:'+wd+(dash?';stroke-dasharray:'+dash:''));}
+  function drop(q,p,key){return LN(X(q),Y(p),X(q),OY,'drop'+(key?' key':''));}
+
+  /* revenue or cost rectangle */
+  if(act&&sh.rect){
+    if(tool==='subsidy'){
+      back+='<rect x="'+X(0)+'" y="'+Y(Pp)+'" width="'+(K*Q3)+'" height="'+(K*(Pp-w))+'" style="fill:none;stroke:var(--gold);stroke-width:3;stroke-dasharray:9 5"/>';
+      if((Pp-w)*K>=34){back+=T(OX+9,Y(Pp)+17,'note','Cost to','start','var(--gold-ink)')+T(OX+9,Y(Pp)+32,'note','government','start','var(--gold-ink)');}
+    }else{
+      back+='<rect x="'+X(Q3)+'" y="'+Y(P1)+'" width="'+(K*(Q4-Q3))+'" height="'+(K*(P1-w))+'" style="fill:var(--rev-fill);stroke:var(--gold);stroke-width:1.5"/>';
+      var cw=(Q4-Q3)*K,ch=(P1-w)*K,cx=(X(Q3)+X(Q4))/2,cy=(Y(P1)+Y(w))/2;
+      if(tool==='tariff'&&cw>=84&&ch>=38){back+=T(cx,cy-2,'rl','Tariff','middle')+T(cx,cy+14,'rl','revenue','middle');}
+      else if(tool==='quota'&&cw>=112&&ch>=38){back+=T(cx,cy-2,'rl','Importers’ extra','middle')+T(cx,cy+14,'rl','revenue','middle');}
+    }
+  }
+
+  /* world price line, protection lines, drop lines */
+  lines+=hline(w,Q2,'var(--w-line)',2,'8 5');
+  var showP1=false;
+  if(act&&sh.prot){
+    if(tool==='tariff'){lines+=hline(P1,Q4,'var(--red)',2.6,'');showP1=true;}
+    if(tool==='quota'&&sh.qnew){lines+=hline(P1,Q4,'var(--red)',2.6,'');showP1=true;}
+    if(tool==='subsidy'&&sh.qnew){lines+=hline(Pp,Q3,'var(--red)',2.6,'');showP1=true;}
+  }
+  if(sh.qold){lines+=drop(Q1,w,1)+drop(Q2,w,1);}
+  if(act&&sh.qnew){
+    if(tool==='subsidy'){lines+=drop(Q3,Pp,1);}
+    else{lines+=drop(Q3,P1,1)+drop(Q4,P1,1);}
+  }
+
+  /* curves */
+  curves+='<path class="curve" d="M'+X(0)+','+Y(100)+' L'+X(100)+','+Y(0)+'" style="stroke:var(--d-line)"/>';
+  curves+='<path class="curve" d="M'+X(0)+','+Y(0)+' L'+X(100)+','+Y(100)+'" style="stroke:var(--s-line)"/>';
+  if(act&&sh.prot){
+    if(tool==='quota'){
+      curves+='<path class="curve" d="M'+X(w)+','+Y(w)+' L'+X(w+m.amt)+','+Y(w)+' L'+X(100)+','+Y(100-m.amt)+'" style="stroke:var(--red);stroke-dasharray:10 6"/>';
+      if(m.amt>=7)curves+=T(X(100)+6,Y(100-m.amt)+5,'rl','S+quota','start','var(--red-ink)');
+    }
+    if(tool==='subsidy'){
+      curves+='<path class="curve" d="M'+X(m.amt)+','+Y(0)+' L'+X(100)+','+Y(100-m.amt)+'" style="stroke:var(--red)"/>';
+      if(m.amt>=7)curves+=T(X(100)+6,Y(100-m.amt)+5,'cl',sym('S','1'),'start','var(--red-ink)');
+    }
+  }
+  curves+=T(OX+16,Y(100)+10,'cl','D','start','var(--d-line)')+T(X(100)+7,OY-8,'cl','D','start','var(--d-line)');
+  curves+=T(OX+28,OY-12,'cl','S','start','var(--s-line)')+T(X(100)+7,Y(100)+6,'cl','S','start','var(--s-line)');
+
+  /* axes and tick numbers */
+  var axes='<path class="axis" d="M'+OX+','+(Y(100)-10)+' L'+OX+','+OY+' L'+(X(100)+14)+','+OY+'"/>';
+  axes+=T(OX-10,Y(100)-14,'sym','Price','end')+T(X(100)+20,OY+5,'sym','Quantity','start')+T(OX-9,OY+17,'num','0','end');
+  [20,40,60,80,100].forEach(function(v){
+    axes+=LN(X(v),OY,X(v),OY+5,'tick')+T(X(v),OY+19,'num',String(v),'middle');
+    axes+=LN(OX-5,Y(v),OX,Y(v),'tick')+T(OX-9,Y(v)+4,'num',String(v),'end');
+  });
+
+  /* price labels */
+  var pl=[{p:w,s:sym('P','w'),v:dol(w),c:'var(--w-line)'}];
+  if(showP1){
+    if(tool==='subsidy')pl.push({p:Pp,s:sym('P','w','+s'),v:dol(Pp),c:'var(--red-ink)'});
+    else pl.push({p:P1,s:sym('P','1'),v:dol(P1),c:'var(--red-ink)'});
+  }
+  pl.sort(function(a,b){return b.p-a.p;});
+  var last=-99;
+  pl.forEach(function(l){var y=Y(l.p)+5;if(y<last+19)y=last+19;last=y;
+    var xe=OX-36;
+    if(sh.vals){lab+=T(xe,y,'val',l.v,'end');xe-=44;}
+    lab+=T(xe,y,'sym',l.s,'end',l.c);});
+
+  /* quantity labels */
+  var ql=[];
+  if(sh.qold){ql.push({q:Q1,s:sym('Q','1'),v:fmt(Q1)},{q:Q2,s:sym('Q','2'),v:fmt(Q2)});}
+  if(act&&sh.qnew){
+    if(tool==='subsidy')ql.push({q:Q3,s:sym('Q','3'),v:fmt(Q3)});
+    else ql.push({q:Q3,s:sym('Q','3'),v:fmt(Q3)},{q:Q4,s:sym('Q','4'),v:fmt(Q4)});
+  }
+  ql.sort(function(a,b){return a.q-b.q;});
+  var rowLast=[-99,-99],maxRow=0;
+  ql.forEach(function(l){
+    var x=X(l.q),row=(x-rowLast[0]<34)?1:0;if(row===1&&x-rowLast[1]<34)row=0;rowLast[row]=x;if(row>maxRow)maxRow=row;
+    var y0=OY+44+row*38;
+    if(row)lab+=LN(x,OY+27,x,y0-16,'','stroke:var(--w-line);stroke-width:1');
+    lab+=T(x,y0,'sym',l.s,'middle');
+    if(sh.vals)lab+=T(x,y0+15,'val',l.v,'middle');
+  });
+
+  /* import brackets */
+  var by=OY+(maxRow?126:92);
+  function bracket(qa,qb,y,label,col){
+    var x1=X(qa),x2=X(qb),o='';
+    if(qb-qa>0.4)o+='<path d="M'+x1+','+(y-6)+' V'+(y+6)+' M'+x1+','+y+' H'+x2+' M'+x2+','+(y-6)+' V'+(y+6)+'" style="stroke:'+col+';stroke-width:2.2;fill:none"/>';
+    return o+T(x2+10,y+5,'note',label,'start',col);
+  }
+  var br='';
+  if(sh.brackets){
+    br+=bracket(Q1,Q2,by,'Imports before'+(sh.vals?': '+fmt(m.imp0):''),'var(--w-line)');
+    if(act&&sh.qnew)br+=bracket(Q3,tool==='subsidy'?Q2:Q4,by+26,'Imports after'+(sh.vals?': '+fmt(m.imp):''),'var(--red-ink)');
+  }
+
+  /* point letters */
+  var lt='';
+  if(act&&sh.letters&&sh.qnew){
+    if(tool==='subsidy'){
+      lt+=T(X(Q3)-14,Y(Pp)-9,'tag','A','middle')+T(X(Q3)+14,Y(w)+21,'tag','B','middle');
+      var hh=(Pp-w)*K;
+      lt+='<path d="M'+(X(Q3)+9)+','+Y(Pp)+' h6 V'+Y(w)+' h-6" style="stroke:var(--red);stroke-width:2.2;fill:none"/>';
+      if(hh>=30)lt+=T(X(Q3)+22,(Y(Pp)+Y(w))/2+5,'note','Subsidy (AB)','start','var(--red-ink)');
+    }else if((Q4-Q3)*K>=30&&(P1-w)*K>=20){
+      lt+=T(X(Q3)-13,Y(P1)-9,'tag','A','middle')+T(X(Q4)+13,Y(P1)-9,'tag','B','middle')+T(X(Q4)+13,Y(w)+21,'tag','C','middle')+T(X(Q3)-13,Y(w)+21,'tag','D','middle');
+    }
+  }
+
+  /* handle */
+  var hd='';
+  if(handle){
+    hd='<g data-handle="1" tabindex="0" role="slider" aria-label="'+handle.label+'" aria-valuemin="'+handle.min+'" aria-valuemax="'+handle.max+'" aria-valuenow="'+handle.now+'" transform="translate('+handle.x.toFixed(1)+','+handle.y.toFixed(1)+')"><circle class="hbg" r="15"/><circle class="hdot" r="7"/></g>';
+  }
+  svg.innerHTML=back+lines+curves+axes+lab+br+lt+hd;
+}
+
+/* ---------- shared HTML pieces ---------- */
+function readoutHTML(m,nums){
+  if(!nums)return '<p class="off">Numbers are hidden. Read the prices and quantities from the axes and the guide lines.</p>';
+  var rows=[
+    ['Price consumers pay',dol(m.w),dol(m.P1),m.P1-m.w],
+    ['Price producers receive',dol(m.w),dol(m.Pp),m.Pp-m.w],
+    ['Domestic output',fmt(m.Q1),fmt(m.Q3),m.Q3-m.Q1],
+    ['Domestic consumption',fmt(m.Q2),fmt(m.Q4),m.Q4-m.Q2],
+    ['Imports',fmt(m.imp0),fmt(m.imp),m.imp-m.imp0]
+  ];
+  var h='<table><thead><tr><th scope="col">Measure</th><th scope="col">Before</th><th scope="col">After</th><th scope="col">Change</th></tr></thead><tbody>';
+  rows.forEach(function(r){
+    var d=Math.round(r[3]*10)/10,txt=d===0?'none':(d>0?'up ':'down ')+fmt(Math.abs(d));
+    h+='<tr><th scope="row">'+r[0]+'</th><td>'+r[1]+'</td><td>'+r[2]+'</td><td class="chg">'+txt+'</td></tr>';
+  });
+  h+='<tr><th scope="row">'+m.kind+'</th><td>$0m</td><td>'+mil(m.money)+(m.active?'<span class="work">'+m.work+'</span>':'')+'</td><td class="chg">'+(m.money===0?'none':'up '+fmt(m.money))+'</td></tr>';
+  return h+'</tbody></table>';
+}
+function keyHTML(m,sh){
+  if(!m.active||!sh.rect)return '';
+  if(m.tool==='subsidy')return '<span><i class="sw cost"></i>Cost to government (subsidy × domestic output)</span>';
+  return '<span><i class="sw"></i>'+(m.tool==='tariff'?'Tariff revenue (tariff × imports after)':'Importers’ extra revenue (higher price × quota)')+'</span>';
+}
+
+/* ---------- tabs ---------- */
+var TABS=['experiment','predict','challenges','build'];
+var tabBtns=Array.prototype.slice.call(document.querySelectorAll('.tabs button'));
+function showTab(name,focus){
+  if(TABS.indexOf(name)<0)name='experiment';
+  TABS.forEach(function(t){$('panel-'+t).hidden=(t!==name);});
+  tabBtns.forEach(function(b){var on=b.getAttribute('data-tab')===name;b.setAttribute('aria-selected',on?'true':'false');b.tabIndex=on?0:-1;if(on&&focus)b.focus();});
+  try{history.replaceState(null,'','#'+name);}catch(e){}
+  ({experiment:renderEx,predict:renderPr,challenges:renderCh,build:renderBd})[name]();
+}
+tabBtns.forEach(function(b,i){
+  b.addEventListener('click',function(){showTab(b.getAttribute('data-tab'));});
+  b.addEventListener('keydown',function(e){var n=-1;if(e.key==='ArrowRight')n=(i+1)%tabBtns.length;if(e.key==='ArrowLeft')n=(i-1+tabBtns.length)%tabBtns.length;if(n>=0){e.preventDefault();showTab(tabBtns[n].getAttribute('data-tab'),true);}});
+});
+
+/* ================= EXPERIMENT ================= */
+var ex={tool:'tariff',w:20,amt:{tariff:10,quota:40,subsidy:10},nums:true,drops:true,brackets:true,rect:true,letters:true};
+var EXAMT={tariff:{label:'Tariff per unit',out:function(v){return dol(v)+' per unit';},hint:function(v,w){return dol(v)+' on a world price of '+dol(w)+' is a tariff of '+Math.round(v/w*100)+'%. A tariff of '+dol(50-w)+' stops all imports.';}},
+  quota:{label:'Import quota (million units)',out:function(v){return v+' million units';},hint:function(v,w){return 'Free-trade imports are '+(100-2*w)+'. A quota at or above that does nothing, and a quota of 0 bans imports.';}},
+  subsidy:{label:'Subsidy per unit',out:function(v){return dol(v)+' per unit';},hint:function(v,w){return 'Paid to domestic producers on every unit they make. The most this lab allows is '+dol(Math.min(40,100-2*w))+'.';}}};
+var EXTRY={
+  tariff:'<b>Try this:</b> set the world price to $20, then raise the tariff from $10 to $20. Watch the revenue rectangle: it gets taller but narrower.',
+  quota:'<b>Try this:</b> tighten the quota step by step. The price rises, domestic output rises, and the gold rectangle shows what importers keep.',
+  subsidy:'<b>Try this:</b> raise the subsidy and watch what stays the same. The price consumers pay does not move, but the price producers receive does.'
+};
+function renderEx(){
+  var tool=ex.tool,r=ranges(tool,ex.w);
+  ex.amt[tool]=clamp(ex.amt[tool],r.min,r.max);
+  var amt=ex.amt[tool],m=model(tool,ex.w,amt);
+  var sh={vals:ex.nums,letters:ex.letters,rect:ex.rect,brackets:ex.brackets,qold:ex.drops,qnew:ex.drops,prot:true};
+  drawDiagram($('ex-plot'),m,sh,null);
+  $('ex-key').innerHTML=keyHTML(m,sh);
+  $('ex-w-out').textContent=dol(ex.w);
+  $('ex-w-hint').textContent='Australia is a small economy, so it takes this price as given. The no-trade price is $50, so imports are '+(100-2*ex.w)+' million units under free trade.';
+  var c=EXAMT[tool],inp=$('ex-amt');
+  $('ex-amt-label').textContent=c.label;inp.min=r.min;inp.max=r.max;inp.value=amt;
+  $('ex-amt-out').textContent=c.out(amt);$('ex-amt-hint').textContent=c.hint(amt,ex.w);
+  $('ex-rect-lbl').textContent=tool==='tariff'?'Tariff revenue rectangle':tool==='quota'?'Importers’ extra revenue rectangle':'Cost to government rectangle';
+  $('ex-read').innerHTML=readoutHTML(m,ex.nums);
+  $('ex-try').innerHTML=EXTRY[tool];
+  Array.prototype.forEach.call($('ex-tool').querySelectorAll('button'),function(b){b.setAttribute('aria-pressed',b.getAttribute('data-tool')===tool?'true':'false');});
+  $('ex-plot').setAttribute('aria-label',NAMES[tool]+' diagram, world price '+dol(ex.w)+', setting '+amt);
+}
+Array.prototype.forEach.call($('ex-tool').querySelectorAll('button'),function(b){b.addEventListener('click',function(){ex.tool=b.getAttribute('data-tool');renderEx();});});
+$('ex-w').addEventListener('input',function(e){ex.w=parseInt(e.target.value,10);renderEx();});
+$('ex-amt').addEventListener('input',function(e){ex.amt[ex.tool]=parseInt(e.target.value,10);renderEx();});
+[['ex-nums','nums'],['ex-drops','drops'],['ex-brackets','brackets'],['ex-rect','rect'],['ex-letters','letters']].forEach(function(p){
+  $(p[0]).addEventListener('change',function(e){ex[p[1]]=e.target.checked;renderEx();});
+});
+$('ex-reset').addEventListener('click',function(){
+  ex={tool:ex.tool,w:20,amt:{tariff:10,quota:40,subsidy:10},nums:true,drops:true,brackets:true,rect:true,letters:true};
+  ['ex-nums','ex-drops','ex-brackets','ex-rect','ex-letters'].forEach(function(id){$(id).checked=true;});
+  $('ex-w').value=20;renderEx();
+});
+
+/* ================= PREDICT ================= */
+var SC=[
+  {tool:'tariff',w:20,amt:10},{tool:'quota',w:20,amt:30},{tool:'subsidy',w:20,amt:15},
+  {tool:'tariff',w:30,amt:8},{tool:'quota',w:15,amt:40},{tool:'subsidy',w:25,amt:20}
+];
+function scText(s){
+  var base='Australia can import a good at a world price of '+dol(s.w)+'. ';
+  if(s.tool==='tariff')return base+'The government imposes a tariff of '+dol(s.amt)+' per unit.';
+  if(s.tool==='quota')return base+'The government limits imports to a quota of '+s.amt+' million units.';
+  return base+'The government pays domestic producers a subsidy of '+dol(s.amt)+' per unit.';
+}
+function scLabel(s,i){return NAMES[s.tool]+' '+(s.tool==='quota'?s.amt+'m':dol(s.amt))+(s.w!==20?', Pw '+dol(s.w):'');}
+var QS=[
+  {k:'cp',label:'The price consumers pay',opts:[['up','Rises'],['same','Stays the same'],['down','Falls']]},
+  {k:'pp',label:'The price domestic producers receive',opts:[['up','Rises'],['same','Stays the same'],['down','Falls']]},
+  {k:'out',label:'Domestic output',opts:[['up','Rises'],['same','Stays the same'],['down','Falls']]},
+  {k:'con',label:'Domestic consumption',opts:[['up','Rises'],['same','Stays the same'],['down','Falls']]},
+  {k:'imp',label:'Imports',opts:[['up','Rise'],['same','Stay the same'],['down','Fall']]},
+  {k:'who',label:'Where does the money go?',opts:[['gov','Government revenue'],['imp','Importers keep it'],['tax','Taxpayers pay for it']]}
+];
+function dir(a,b){var d=Math.round((b-a)*10)/10;return d>0?'up':d<0?'down':'same';}
+function truth(m){
+  return {cp:dir(m.w,m.P1),pp:dir(m.w,m.Pp),out:dir(m.Q1,m.Q3),con:dir(m.Q2,m.Q4),imp:dir(m.imp0,m.imp),who:m.tool==='tariff'?'gov':m.tool==='quota'?'imp':'tax'};
+}
+function why(k,m){
+  var t=m.tool;
+  var T={
+   cp:{tariff:'The tariff is added to the world price, so buyers now pay '+dol(m.P1)+' instead of '+dol(m.w)+'.',
+       quota:'Capping imports cuts supply, so the price rises until buyers want only what is available. It settles at '+dol(m.P1)+'.',
+       subsidy:'Imports still set the price at '+dol(m.w)+', so consumers pay the same. The subsidy changes what producers receive, not what buyers pay.'},
+   pp:{tariff:'Domestic producers can sell at the higher domestic price of '+dol(m.P1)+'.',
+       quota:'Domestic producers can sell at the higher domestic price of '+dol(m.P1)+'.',
+       subsidy:'Producers receive the market price plus the subsidy: '+dol(m.w)+' + '+dol(m.Pp-m.w)+' = '+dol(m.Pp)+'.'},
+   out:{tariff:'At the higher price domestic firms move up the supply curve from Q1 = '+fmt(m.Q1)+' to Q3 = '+fmt(m.Q3)+'.',
+        quota:'At the higher price domestic firms move up the supply curve from Q1 = '+fmt(m.Q1)+' to Q3 = '+fmt(m.Q3)+'.',
+        subsidy:'With a higher price received, firms move up the supply curve from Q1 = '+fmt(m.Q1)+' to Q3 = '+fmt(m.Q3)+'.'},
+   con:{tariff:'At the higher price consumers move up the demand curve from Q2 = '+fmt(m.Q2)+' to Q4 = '+fmt(m.Q4)+'.',
+        quota:'At the higher price consumers move up the demand curve from Q2 = '+fmt(m.Q2)+' to Q4 = '+fmt(m.Q4)+'.',
+        subsidy:'Consumers face the same price, so they still buy Q2 = '+fmt(m.Q2)+'.'},
+   imp:{tariff:'Imports are consumption minus domestic output: '+fmt(m.Q4)+' − '+fmt(m.Q3)+' = '+fmt(m.imp)+', down from '+fmt(m.imp0)+'.',
+        quota:'The quota caps imports at '+fmt(m.imp)+', down from '+fmt(m.imp0)+'.',
+        subsidy:'Consumption is unchanged but domestic output rises, so imports shrink to '+fmt(m.Q2)+' − '+fmt(m.Q3)+' = '+fmt(m.imp)+'.'},
+   who:{tariff:'Tariff revenue is the tariff times the imports that still arrive: '+m.work+'. The government collects it.',
+        quota:'Importers buy at the world price and sell at the higher domestic price, so they keep the difference: '+m.work+'. If the government sells the licences, it becomes government revenue.',
+        subsidy:'The cost is the subsidy times all domestic output: '+m.work+'. It is paid from taxes.'}
+  };
+  return T[k][t];
+}
+var pr={i:0,ans:{},checked:false};
+function prModel(){var s=SC[pr.i];return model(s.tool,s.w,s.amt);}
+function buildPrQs(){
+  var h='';
+  QS.forEach(function(q){
+    var qq=q;
+    if(q.k==='who'){qq={k:'who',label:SC[pr.i].tool==='subsidy'?'Who pays for it?':'Where does the extra money go?',opts:q.opts};}
+    h+='<fieldset class="qrow" id="pq-'+q.k+'"><legend>'+qq.label+'</legend><div class="ans">';
+    qq.opts.forEach(function(o){
+      var ck=pr.ans[q.k]===o[0]?' checked':'';
+      h+='<label><input type="radio" name="pq-'+q.k+'" value="'+o[0]+'"'+ck+(pr.checked?' disabled':'')+'><span>'+o[1]+'</span></label>';
+    });
+    h+='</div><div class="res" id="pr-res-'+q.k+'" hidden></div></fieldset>';
+  });
+  $('pr-qs').innerHTML=h;
+  Array.prototype.forEach.call($('pr-qs').querySelectorAll('input'),function(inp){
+    inp.addEventListener('change',function(){pr.ans[inp.name.slice(3)]=inp.value;});
+  });
+}
+function renderPr(){
+  var s=SC[pr.i],m=prModel(),free=model(s.tool,s.w,0);
+  var chips='';
+  SC.forEach(function(x,i){chips+='<button type="button" data-i="'+i+'" aria-pressed="'+(i===pr.i)+'">'+scLabel(x,i)+'</button>';});
+  $('pr-chips').innerHTML=chips;
+  Array.prototype.forEach.call($('pr-chips').querySelectorAll('button'),function(b){b.addEventListener('click',function(){pr={i:+b.getAttribute('data-i'),ans:{},checked:false};renderPr();});});
+  $('pr-state').textContent=scText(s);
+  buildPrQs();
+  if(pr.checked){
+    var T=truth(m),n=0;
+    QS.forEach(function(q){
+      var ok=pr.ans[q.k]===T[q.k];if(ok)n++;
+      var r=$('pr-res-'+q.k);r.hidden=false;r.className='res '+(ok?'right':'wrong');
+      var optLabel=null;q.opts.forEach(function(o){if(o[0]===T[q.k])optLabel=o[1];});
+      r.innerHTML=(ok?'<b class="r">Correct.</b> ':'<b class="w">Not quite'+(pr.ans[q.k]?'':' (no answer)')+'.</b> Answer: '+optLabel+'. ')+why(q.k,m);
+    });
+    $('pr-score').textContent='You got '+n+' of '+QS.length+' right.';
+    $('pr-score').className='say '+(n===QS.length?'good':'note');
+    $('pr-readbox').hidden=false;$('pr-read').innerHTML=readoutHTML(m,true);
+    drawDiagram($('pr-plot'),m,FULL,null);$('pr-key').innerHTML=keyHTML(m,FULL);
+    $('pr-check').disabled=true;
+  }else{
+    $('pr-score').textContent='';$('pr-score').className='say';
+    $('pr-readbox').hidden=true;
+    drawDiagram($('pr-plot'),free,{vals:true,letters:false,rect:false,brackets:true,qold:true,qnew:false,prot:false},null);
+    $('pr-key').innerHTML='<span>The diagram shows free trade. Predict first, then check to see the protected diagram.</span>';
+    $('pr-check').disabled=false;
+  }
+}
+$('pr-check').addEventListener('click',function(){
+  var missing=QS.filter(function(q){return !pr.ans[q.k];});
+  if(missing.length){$('pr-score').className='say bad';$('pr-score').textContent='Answer every question first. Still to do: '+missing.length+'.';return;}
+  pr.checked=true;renderPr();
+});
+$('pr-next').addEventListener('click',function(){pr={i:(pr.i+1)%SC.length,ans:{},checked:false};renderPr();});
+
+/* ================= CHALLENGES ================= */
+var CH=[
+  {tool:'tariff',w:20,amt:0,free:'amt',text:'Free-trade imports at a world price of $20 are 60 million units. Set a tariff that cuts imports to 40 million.',
+   ok:function(m){return m.imp===40;},hint:'Each $1 of tariff lifts domestic output by 1 and cuts consumption by 1, so imports fall by 2. You need imports to fall by 20.',
+   done:'A $10 tariff lifts the price to $30. Output rises to 30 and consumption falls to 70, so imports are 70 − 30 = 40.'},
+  {tool:'tariff',w:20,amt:0,free:'amt',text:'Find the tariff that raises the most revenue. Try values either side of your answer before you check.',
+   ok:function(m){return m.money===450;},hint:'Revenue is the tariff times imports after. A small tariff taxes many imports at a low rate, a large one taxes few imports at a high rate.',
+   done:'$15 raises the most: $15 × 30 = $450m. At $14 revenue is $14 × 32 = $448m and at $16 it is $16 × 28 = $448m.'},
+  {tool:'tariff',w:30,amt:0,free:'amt',text:'The world price is now $30 and the no-trade price is $50. Find the smallest tariff that stops all imports.',
+   ok:function(m){return m.imp===0&&m.amt>=0&&m.P1===50;},hint:'Imports reach zero when the domestic price rises to the no-trade price.',
+   done:'A tariff of $20 lifts the price from $30 to $50, the no-trade price. Imports are zero and so is revenue.'},
+  {tool:'tariff',w:20,amt:15,free:'w',text:'A tariff of $15 is fixed. Move the world price to find the lowest world price at which this tariff stops all imports.',
+   ok:function(m){return m.w===35;},hint:'Imports stop when the world price plus the tariff reaches $50.',
+   done:'At a world price of $35 the tariff of $15 brings the domestic price to $50, so no imports remain.'},
+  {tool:'quota',w:20,amt:60,free:'amt',text:'A $10 tariff on this market raises the price to $30. Set the quota that gives the same domestic price.',
+   ok:function(m){return m.P1===30;},hint:'At a price of $30, consumers buy 70 and domestic firms supply 30. The quota must fill the gap.',
+   done:'A quota of 40 gives a price of $30. The two tools match on prices and quantities. They differ on who collects the money.'},
+  {tool:'quota',w:20,amt:60,free:'amt',text:'Restrict imports until the domestic price reaches $40.',
+   ok:function(m){return m.P1===40;},hint:'Find consumption and domestic output at $40. Imports are the difference.',
+   done:'At $40 consumers buy 60 and firms supply 40, so the quota is 20. Importers keep ($40 − $20) × 20 = $400m.'},
+  {tool:'subsidy',w:20,amt:0,free:'amt',text:'Set the subsidy so that domestic output reaches 50 million units.',
+   ok:function(m){return m.Q3===50;},hint:'Producers receive the world price plus the subsidy, and output is read off the original supply curve at that price.',
+   done:'A subsidy of $30 means producers receive $50, so they supply 50. Consumers still buy 80, so imports are 30.'},
+  {tool:'subsidy',w:20,amt:0,free:'amt',text:'Find the subsidy that costs the government exactly $525m.',
+   ok:function(m){return m.money===525;},hint:'The cost is the subsidy times all domestic output, and output is 20 plus the subsidy.',
+   done:'$15 × 35 = $525m. Output is 20 + 15 = 35 million units.'}
+];
+var ch={i:0,v:[],solved:[]};
+CH.forEach(function(c,i){ch.v[i]=c.free==='w'?c.w:c.amt;});
+function chModel(){var c=CH[ch.i],v=ch.v[ch.i];return c.free==='w'?model(c.tool,v,c.amt):model(c.tool,c.w,v);}
+function chRange(){var c=CH[ch.i];return c.free==='w'?{min:10,max:40}:ranges(c.tool,c.w);}
+function renderCh(){
+  var c=CH[ch.i],r=chRange(),v=clamp(ch.v[ch.i],r.min,r.max);ch.v[ch.i]=v;
+  var m=chModel(),nums=$('ch-nums').checked;
+  var list='';
+  CH.forEach(function(x,i){list+='<button type="button" data-i="'+i+'" aria-pressed="'+(i===ch.i)+'" class="'+(ch.solved[i]?'done':'')+'"><span class="mk">'+(ch.solved[i]?'✓':(i+1))+'</span><span>'+NAMES[x.tool]+': '+x.text.split('. ')[0].replace(/\.$/,'')+'</span></button>';});
+  $('ch-list').innerHTML=list;
+  Array.prototype.forEach.call($('ch-list').querySelectorAll('button'),function(b){b.addEventListener('click',function(){ch.i=+b.getAttribute('data-i');$('ch-say').textContent='';$('ch-say').className='say';renderCh();});});
+  var n=ch.solved.filter(Boolean).length;
+  $('ch-progress').textContent=n+' of '+CH.length+' solved.';
+  $('ch-text').textContent=c.text;
+  var inp=$('ch-amt');inp.min=r.min;inp.max=r.max;inp.value=v;
+  var lbl=c.free==='w'?'World price':c.tool==='tariff'?'Tariff per unit':c.tool==='quota'?'Import quota (million units)':'Subsidy per unit';
+  $('ch-amt-label').textContent=lbl;
+  $('ch-amt-out').textContent=c.free==='w'?dol(v):c.tool==='quota'?v+' million units':dol(v)+' per unit';
+  drawDiagram($('ch-plot'),m,{vals:nums,letters:true,rect:true,brackets:true,qold:true,qnew:true,prot:true},null);
+  $('ch-key').innerHTML=keyHTML(m,FULL);
+  $('ch-read').innerHTML=readoutHTML(m,nums);
+  $('ch-plot').setAttribute('aria-label',NAMES[c.tool]+' challenge diagram, world price '+dol(m.w));
+}
+$('ch-amt').addEventListener('input',function(e){ch.v[ch.i]=parseInt(e.target.value,10);$('ch-say').textContent='';$('ch-say').className='say';renderCh();});
+$('ch-nums').addEventListener('change',renderCh);
+$('ch-hint').addEventListener('click',function(){$('ch-say').className='say note';$('ch-say').textContent='Hint: '+CH[ch.i].hint;});
+$('ch-check').addEventListener('click',function(){
+  var c=CH[ch.i],m=chModel(),s=$('ch-say');
+  if(c.ok(m)){ch.solved[ch.i]=true;s.className='say good';s.textContent='Solved. '+c.done;renderCh();s.className='say good';s.textContent='Solved. '+c.done;}
+  else{s.className='say bad';s.textContent='Not yet. '+(c.free==='w'&&m.imp===0?'Imports are zero, but look for the lowest world price that does this. ':'')+'Move the slider and compare the readout with the target.';}
+});
+
+/* ================= BUILD ================= */
+var BS=[
+  {tool:'tariff',w:20,amt:10},{tool:'tariff',w:30,amt:5},
+  {tool:'quota',w:20,amt:40},{tool:'quota',w:15,amt:50},
+  {tool:'subsidy',w:20,amt:15},{tool:'subsidy',w:25,amt:10}
+];
+var STEPS={
+  tariff:[
+    ['New quantities Q3 and Q4','Where your new price line meets S, read down to Q3. Where it meets D, read down to Q4.',{qnew:true}],
+    ['Imports before and after','Imports are the gap between consumption and domestic output. Before: Q2 − Q1. After: Q4 − Q3.',{brackets:true}],
+    ['Revenue rectangle','The government collects the tariff on each unit still imported: the height is the tariff, the width is imports after.',{rect:true}],
+    ['Point letters','A to D are the corners of the revenue rectangle, starting at the top left and going clockwise.',{letters:true}],
+    ['Numbers','Now check the readings against the values.',{vals:true}]],
+  quota:[
+    ['New price and quantities','Where the S+quota curve meets D gives the new price P1. Read across to the price axis and down to Q3 and Q4.',{qnew:true}],
+    ['Imports before and after','After the quota, imports are exactly the quota, which is the width from Q3 to Q4.',{brackets:true}],
+    ['Importers’ extra revenue','Importers buy at the world price and sell at P1, so they keep the gap on each unit imported.',{rect:true}],
+    ['Point letters','A to D are the corners of the rectangle, starting at the top left and going clockwise.',{letters:true}],
+    ['Numbers','Now check the readings against the values.',{vals:true}]],
+  subsidy:[
+    ['New quantity and price received','Producers receive the world price plus the subsidy. Read across to S, then down to the new quantity Q3.',{qnew:true}],
+    ['Imports before and after','Consumption is unchanged at Q2, so imports fall by the rise in domestic output.',{brackets:true}],
+    ['Cost to government','The subsidy per unit times all domestic output: the height is the subsidy, the width is Q3.',{rect:true}],
+    ['Points A and B','A is on S at the new quantity and B is on S1 at the same quantity. The gap AB is the subsidy per unit.',{letters:true}],
+    ['Numbers','Now check the readings against the values.',{vals:true}]]
+};
+var bd={i:0,v:0,solved:false,step:0,focus:false};
+function bdRange(){var s=BS[bd.i];return ranges(s.tool,s.w);}
+function bdAt(){
+  var s=BS[bd.i];
+  if(s.tool==='tariff')return {x:X(0),y:Y(s.w+bd.v)};
+  if(s.tool==='quota')return {x:X(s.w+bd.v),y:Y(s.w)};
+  return {x:X(bd.v),y:OY};
+}
+function bdLabel(){
+  var s=BS[bd.i],v=bd.v;
+  if(s.tool==='tariff')return 'Your line: '+dol(s.w+v)+' (the world price plus '+dol(v)+')';
+  if(s.tool==='quota')return 'Your quota: '+v+' million units';
+  return 'Your S moves right by '+v+' units';
+}
+function bdShow(){
+  var sh={vals:false,letters:false,rect:false,brackets:false,qold:true,qnew:false,prot:true};
+  if(bd.solved){STEPS[BS[bd.i].tool].slice(0,bd.step).forEach(function(st){for(var k in st[2])sh[k]=st[2][k];});}
+  return sh;
+}
+function renderBd(){
+  var s=BS[bd.i],r=bdRange();bd.v=clamp(bd.v,r.min,r.max);
+  var chips='';
+  BS.forEach(function(x,i){chips+='<button type="button" data-i="'+i+'" aria-pressed="'+(i===bd.i)+'">'+scLabel(x,i)+'</button>';});
+  $('bd-chips').innerHTML=chips;
+  Array.prototype.forEach.call($('bd-chips').querySelectorAll('button'),function(b){b.addEventListener('click',function(){bd={i:+b.getAttribute('data-i'),v:0,solved:false,step:0,focus:false};$('bd-say').textContent='';$('bd-say').className='say';renderBd();});});
+  $('bd-state').textContent=scText(s);
+  var task=s.tool==='tariff'?'Drag the handle up the price axis to draw the new price line, Pw + t, that the tariff creates.':
+           s.tool==='quota'?'Drag the handle along the world price line. The horizontal part of the S+quota curve must be as long as the quota.':
+           'Drag the handle along the quantity axis to shift S to S1. A subsidy shifts supply to the right.';
+  $('bd-task').textContent=task;
+  var m=model(s.tool,s.w,bd.v),at=bdAt();
+  var hnd={x:at.x,y:at.y,min:r.min,max:r.max,now:bd.v,label:s.tool==='tariff'?'New price line, tariff in dollars':s.tool==='quota'?'Quota in million units':'Subsidy shift in units'};
+  drawDiagram($('bd-plot'),m,bdShow(),hnd);
+  $('bd-key').innerHTML=bd.solved?keyHTML(m,bdShow()):'';
+  $('bd-live').textContent=bdLabel();
+  $('bd-stepbox').hidden=!bd.solved;
+  if(bd.solved){
+    var st=STEPS[s.tool],h='';
+    st.forEach(function(x,i){h+='<li class="'+(i<bd.step?'on':'')+'"><span class="mk">'+(i<bd.step?'✓':'•')+'</span><span>'+x[0]+'</span></li>';});
+    $('bd-steps').innerHTML=h;
+    $('bd-steptext').textContent=bd.step>0?st[bd.step-1][1]:'Before you add each piece, picture where it goes on the diagram.';
+    var nx=$('bd-next');nx.disabled=bd.step>=st.length;nx.textContent=bd.step>=st.length?'Diagram complete':'Add the next piece: '+st[bd.step][0].toLowerCase();
+  }
+  if(bd.focus){var h2=$('bd-plot').querySelector('[data-handle]');if(h2)h2.focus();}
+}
+function bdSet(v,keepFocus){
+  var r=bdRange();v=clamp(Math.round(v),r.min,r.max);
+  if(v===bd.v)return;
+  bd.v=v;if(bd.solved){bd.solved=false;bd.step=0;}
+  $('bd-say').textContent='';$('bd-say').className='say';
+  bd.focus=!!keepFocus;renderBd();
+}
+$('bd-minus').addEventListener('click',function(){bdSet(bd.v-1,false);});
+$('bd-plus').addEventListener('click',function(){bdSet(bd.v+1,false);});
+$('bd-plot').addEventListener('keydown',function(e){
+  if(!e.target.closest||!e.target.closest('[data-handle]'))return;
+  var d=0,r=bdRange();
+  if(e.key==='ArrowUp'||e.key==='ArrowRight')d=1;else if(e.key==='ArrowDown'||e.key==='ArrowLeft')d=-1;
+  else if(e.key==='PageUp')d=5;else if(e.key==='PageDown')d=-5;
+  else if(e.key==='Home'){e.preventDefault();bdSet(r.min,true);return;}else if(e.key==='End'){e.preventDefault();bdSet(r.max,true);return;}
+  if(d){e.preventDefault();bdSet(bd.v+d,true);}
+});
+var dragging=false;
+function bdMove(e){
+  var svg=$('bd-plot');
+  if(!svg.createSVGPoint||!svg.getScreenCTM)return;
+  var pt=svg.createSVGPoint();pt.x=e.clientX;pt.y=e.clientY;
+  var p=pt.matrixTransform(svg.getScreenCTM().inverse()),s=BS[bd.i];
+  if(s.tool==='tariff')bdSet((OY-p.y)/K-s.w,true);
+  else if(s.tool==='quota')bdSet((p.x-OX)/K-s.w,true);
+  else bdSet((p.x-OX)/K,true);
+}
+$('bd-plot').addEventListener('pointerdown',function(e){
+  if(!e.target.closest||!e.target.closest('[data-handle]'))return;
+  dragging=true;e.preventDefault();bdMove(e);
+});
+window.addEventListener('pointermove',function(e){if(dragging)bdMove(e);});
+window.addEventListener('pointerup',function(){dragging=false;});
+window.addEventListener('pointercancel',function(){dragging=false;});
+$('bd-check').addEventListener('click',function(){
+  var s=BS[bd.i],say=$('bd-say'),diff=bd.v-s.amt;
+  if(diff===0){
+    bd.solved=true;bd.step=0;bd.focus=false;renderBd();say=$('bd-say');
+    say.className='say good';
+    say.textContent=s.tool==='tariff'?'Correct. The line sits at Pw + t = '+dol(s.w)+' + '+dol(s.amt)+' = '+dol(s.w+s.amt)+'.':
+      s.tool==='quota'?'Correct. The horizontal part runs for '+s.amt+' units, from Q1 to '+(s.w+s.amt)+'.':
+      'Correct. S moves right by '+s.amt+' units. Because S slopes at 45°, a shift right of '+s.amt+' is the same as a shift down of '+dol(s.amt)+'.';
+  }else{
+    var tooBig=diff>0;
+    say.className='say bad';
+    say.textContent='Not yet. Your '+(s.tool==='tariff'?'line':s.tool==='quota'?'quota':'shift')+' is too '+(tooBig?(s.tool==='tariff'?'high':'big'):(s.tool==='tariff'?'low':'small'))+'. '+
+      (s.tool==='tariff'?'Add the tariff to the world price and read the result on the price axis.':
+       s.tool==='quota'?'Measure the length of the horizontal part against the quota, using the numbers on the quantity axis.':
+       'A $1 subsidy shifts S right by 1 unit. Use the quantity axis to measure the shift.');
+  }
+});
+$('bd-answer').addEventListener('click',function(){
+  var s=BS[bd.i];bd.v=s.amt;bd.solved=true;bd.step=0;bd.focus=false;
+  renderBd();$('bd-say').className='say note';$('bd-say').textContent='This is the correct drawing. Now add the rest of the diagram a piece at a time.';
+});
+$('bd-next').addEventListener('click',function(){
+  var n=STEPS[BS[bd.i].tool].length;if(bd.step<n){bd.step++;renderBd();}
+});
+
+/* ---------- start ---------- */
+var start=(location.hash||'').replace('#','');
+showTab(TABS.indexOf(start)>=0?start:'experiment');
+window.addEventListener('hashchange',function(){var h=(location.hash||'').replace('#','');if(TABS.indexOf(h)>=0)showTab(h);});
+})();
+</script>
+</body>
+</html>

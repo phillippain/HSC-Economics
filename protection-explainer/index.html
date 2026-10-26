@@ -61,6 +61,11 @@ header .lead{color:var(--band-muted);font-size:1.08rem}
 .jump button{background:transparent;border:1px solid rgba(242,245,249,.45);color:var(--band-ink);padding:6px 12px;border-radius:999px;font-size:.92rem}
 .jump button:hover{background:rgba(242,245,249,.14)}
 
+.xlink{display:inline-block;margin-top:18px;color:var(--band-ink);font-weight:700;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px}
+.xlink:hover{text-decoration-color:var(--pill-bg)}
+.xlink:focus-visible{outline-color:var(--band-ink)}
+a.inl{color:var(--ink);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+
 /* setup */
 .defs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px 36px;margin-top:26px}
 .defs div{min-width:0;display:grid;grid-template-columns:22px 1fr;gap:0 12px;align-items:start}
@@ -195,6 +200,7 @@ footer a{color:var(--s-line)}
     <span class="pill">HSC Economics &middot; Topic 1 &middot; Protection</span>
     <h1>Who wins and who loses when a market is protected</h1>
     <p class="lead">Consumer surplus, producer surplus and deadweight loss, worked out step by step for a tariff, a quota and a subsidy. Drag the sliders and watch the areas change.</p>
+    <a class="xlink" href="../diagram-lab/index.html">Practise with no shading in the Protection diagram lab &rarr;</a>
     <nav class="jump" aria-label="Jump to a section">
       <button data-go="setup">Key ideas</button>
       <button data-go="lab">Diagram lab</button>
@@ -233,7 +239,7 @@ footer a{color:var(--s-line)}
 <section id="lab">
   <div class="wrap">
     <h2>The diagram lab</h2>
-    <p class="lead">Choose a market situation. Use the slider to change the size of the protection, then switch between the surpluses and the changes from free trade. Hover over a row in the list to light up its area on the diagram.</p>
+    <p class="lead">Choose a market situation. Use the slider to change the size of the protection, then switch between the surpluses and the changes from free trade. Hover over a row in the list to light up its area on the diagram. When you are ready to work from the lines alone, with no shading, use the <a class="inl" href="../diagram-lab/index.html">Protection diagram lab</a>.</p>
     <div class="tabs" role="tablist" aria-label="Market situation">
       <button role="tab" id="tab-free" data-tool="free" aria-selected="false" tabindex="-1">Free trade</button>
       <button role="tab" id="tab-tariff" data-tool="tariff" aria-selected="true">Tariff</button>
@@ -410,6 +416,7 @@ footer a{color:var(--s-line)}
       <li>Pearson, <i>Australia in the Global Economy 2027</i>, Chapter 6 (average tariff, tariff revenue, EMDG, Whyalla, wine and farm support figures)</li>
       <li>NESA, <i>Economics Stage 6 Syllabus</i> (reasons for protection and methods of protection)</li>
     </ul>
+    <p style="margin-top:10px">Next: <a class="inl" href="../diagram-lab/index.html">Protection diagram lab</a>, where you predict, build and test the same tariff, quota and subsidy diagrams without the shading.</p>
   </div>
 </footer>
 

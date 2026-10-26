@@ -25,3 +25,5 @@ quota price P1 = (100 - quota) / 2, subsidy cost = s(20 + s), subsidy DWL = s sq
 All text, the question bank (`QUIZ`), the exam checklist (`CHK`) and the Australian cases are in `index.html`.
 To change the market, edit `calc()` and the fixed values `20`, `80` and `100` in `drawPlot()` together, then re-check the
 comparison table, the worked-example table and the "Try this" lines, which quote results for the default numbers.
+
+- **Related page:** `../diagram-lab/` is the shading-free practice lab for the same market. The two pages link to each other from the header, the lab section (explainer) and the footer.
