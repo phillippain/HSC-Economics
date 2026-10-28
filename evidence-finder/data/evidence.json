@@ -1,35 +1,1188 @@
 [
  {
-  "id": "2026-10-28-cpi-day-banks-expect-above-rba",
-  "title": "CPI day: banks expect underlying inflation of 0.9 to 1.0%, above the RBA's 0.8% forecast",
-  "date": "2026-10-28",
+  "id": "2026-10-29-private-health-rebate-age-versus-need",
+  "title": "Who should get extra help with health insurance? Age versus need",
+  "date": "2026-10-29",
   "type": "news",
   "outlets": [
-   "CommBank",
-   "InvestingLive",
-   "ABS"
+   "The Conversation"
   ],
-  "summary": "The bank forecasts for the September quarter CPI, written before the release, with the headline versus underlying distinction and a cost-push diagram. Replaces the 26 October preview.",
-  "lede": "The ABS releases the September quarter CPI at 11:30am on 28 October. All four major banks expect trimmed mean inflation of 0.9 to 1.0% against the RBA's 0.8% forecast, and headline CPI of 1.2 to 1.3% for the quarter, about 3.9% for the year.",
+  "summary": "Shows why income alone can mislead as a measure of wellbeing, using the rebate for over-65s and HILDA data on wealth and hardship by age.",
+  "lede": "The government has reintroduced a bill to scrap the extra private health insurance rebate for over-65s. New analysis of HILDA 2022 data (not yet peer reviewed) argues a pensioner exemption would mostly protect comfortable part-pensioners and miss struggling younger families.",
   "about": {
    "h09": [
-    "3C.1",
-    "3C.3"
+    "3E.3",
+    "3E.5"
    ],
    "y12": [
-    "Y1c.3",
-    "Y1c.4",
-    "Y1c.5"
+    "Y1d.1",
+    "Y1d.2",
+    "Y2b.10"
    ],
    "y11": []
   },
   "also": {
    "h09": [
+    "3E.1",
+    "4C.2"
+   ],
+   "y12": [
+    "Y1d.6",
+    "Y1d.9"
+   ],
+   "y11": [
+    "P2h.8"
+   ]
+  },
+  "issues": [
+   "inequality",
+   "budget"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Private health rebate: lowest income tier under 65 / aged 65-69 / aged 70+",
+    "value": "about 24% / 28% / 32%",
+    "asAt": "2026",
+    "issue": "inequality",
+    "source": "The Conversation"
+   },
+   {
+    "label": "Pensioners with cover: help from an exemption",
+    "value": "about 560,000 full-rate and 540,000 part-rate",
+    "asAt": "HILDA 2022 data",
+    "issue": "inequality",
+    "source": "The Conversation"
+   },
+   {
+    "label": "Part-pensioners with more than $2 million in wealth (including home)",
+    "value": "one in seven",
+    "asAt": "HILDA 2022 data",
+    "issue": "inequality",
+    "source": "The Conversation"
+   },
+   {
+    "label": "Share of disposable income full-rate pensioners spend on premiums",
+    "value": "6.3%",
+    "asAt": "HILDA 2022 data",
+    "issue": "inequality",
+    "source": "The Conversation"
+   },
+   {
+    "label": "Median wealth of insured over-65s earning under $37,000",
+    "value": "$1.18 million",
+    "asAt": "HILDA 2022 data",
+    "issue": "inequality",
+    "source": "The Conversation"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Vertical equity",
+    "def": "Treating people with different abilities to pay differently."
+   },
+   {
+    "term": "Intergenerational equity",
+    "def": "Fairness between age groups."
+   },
+   {
+    "term": "Means testing",
+    "def": "Targeting a payment by income or assets."
+   },
+   {
+    "term": "Community rating",
+    "def": "Charging everyone the same premium regardless of age or health."
+   }
+  ],
+  "links": [
+   [
+    "The Conversation, Exempting pensioners from private health rebate changes won't make it fairer. Here's what would, 29 Oct 2026",
+    "https://theconversation.com/exempting-pensioners-from-private-health-rebate-changes-wont-make-it-fairerheres-what-would-294945"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-29-private-health-rebate-age-versus-need.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Use this to show the difference between income and wealth inequality, and between targeting help by age and by need. The authors favour concessions for low-income people of any age.",
+  "questions": [
+   {
+    "q": "Explain why income alone may be a misleading measure of economic wellbeing, using evidence about older and younger Australians.",
+    "marks": 4
+   }
+  ],
+  "note": "The HILDA analysis is not yet peer reviewed and uses 2022 data. The authors argue for one position in a live policy debate."
+ },
+ {
+  "id": "2026-10-29-inflation-4-3-perspectives-special",
+  "title": "Inflation at 4.3%: what is driving it, who says what, and what policy can do (six-page special)",
+  "date": "2026-10-29",
+  "type": "report",
+  "outlets": [
+   "ABS",
+   "ABC News",
+   "The Conversation",
+   "AAP"
+  ],
+  "summary": "Sets the supply-shock, demand and wait-and-see views of inflation side by side with the AD/AS, transmission, Phillips curve and LRAS diagrams, plus a 20-mark extended response plan.",
+  "lede": "September's CPI of 4.3% puts the RBA on track for a fifth rate rise on 3 November. The special compares what the Treasurer, RBA officials, the Opposition and commentators say about the causes of inflation, the cost of fighting it, and the roles of monetary policy, fiscal policy and productivity.",
+  "about": {
+   "h09": [
+    "3C.3",
+    "4D.3",
+    "3B.4",
+    "4B.1"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y1c.6",
+    "Y2c.5",
+    "Y2c.8"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3C.1",
+    "4C.2",
+    "4E.1",
+    "4D.2",
+    "2C.6"
+   ],
+   "y12": [
+    "Y1c.5",
+    "Y2b.14",
+    "Y2d.1",
+    "Y3c.5"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "inflation",
+   "rates",
+   "employment",
+   "productivity"
+  ],
+  "levers": [
+   "monetary",
+   "fiscal",
+   "micro"
+  ],
+  "diagrams": [
+   "adas",
+   "phillips",
+   "fx",
+   "flow",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Annual CPI",
+    "value": "4.3% (August 4.0%)",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "Trimmed mean",
+    "value": "1.0% in the quarter (RBA forecast 0.8%); 3.6% annual (3.7% quarterly measure)",
+    "asAt": "September quarter 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "Unemployment rate",
+    "value": "4.7% (4.1% in January)",
+    "asAt": "September 2026",
+    "issue": "employment",
+    "source": "ABS"
+   },
+   {
+    "label": "Cash rate / expected after 3 November",
+    "value": "4.60% / 4.85%; market odds about 80-90%",
+    "asAt": "28 October 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Automotive fuel / electricity, annual",
+    "value": "+23.6% / +12.8%",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Cost-push inflation",
+    "def": "Inflation caused by rising production costs, such as oil."
+   },
+   {
+    "term": "Demand-pull inflation",
+    "def": "Inflation caused by spending outrunning the economy's capacity."
+   },
+   {
+    "term": "NAIRU",
+    "def": "The rate of unemployment below which inflation tends to accelerate."
+   },
+   {
+    "term": "Policy mix",
+    "def": "The combination of monetary, fiscal and microeconomic policy in use."
+   }
+  ],
+  "links": [
+   [
+    "ABS, CPI rose 4.3% in the year to September 2026",
+    "https://www.abs.gov.au/media-centre/media-releases/cpi-rose-43-year-september-2026"
+   ],
+   [
+    "ABS, Consumer Price Index, Australia, September 2026",
+    "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release"
+   ],
+   [
+    "Isaac Gross, Inflation jumps to 4.3%, adding to pressure for RBA rate rise next week, The Conversation, 28 Oct 2026",
+    "https://theconversation.com/inflation-jumps-to-4-3-adding-to-pressure-for-rba-rate-rise-next-week-295162"
+   ],
+   [
+    "ABC News, Inflation rate rises to 4.3 per cent in September, raising rate hike expectations, 28 Oct 2026",
+    "https://abc.net.au/news/2026-10-28/inflation-september-cpi-ahead-of-november-interest-rate-call/107317382"
+   ],
+   [
+    "ABC News, ASX surrenders big gains as market puts chance of November hike near 90pc, 28 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-28/asx-markets-business-live-news/107316614"
+   ],
+   [
+    "ABC News, Jim Chalmers resists blame for another high inflation result, 28 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-28/chalmers-downplays-further-fuel-discounts-amid-high-inflation/107319372"
+   ],
+   [
+    "Tom Crowley, Bad inflation result lays bare the ugly truth: there is no easy way out, ABC News, 29 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-29/bad-inflation-result-political-pressure/107318484"
+   ],
+   [
+    "AAP via Junee Southern Cross, November rate hike a lock after ugly inflation result, 28 Oct 2026",
+    "https://www.juneesoutherncross.com.au/story/9381176/november-rate-hike-a-lock-after-ugly-inflation-result/"
+   ],
+   [
+    "Allora! News, RBA sees no near-term recession as Michele Bullock warns inflation is far too high, 28 Oct 2026",
+    "https://alloranews.com/economia/rba-sees-no-near-term-recession-as-michele-bullock-warns-inflation-is-far-too-high/"
+   ],
+   [
+    "Trading Economics via TradingView, RBNZ holds cash rate at 2.75% in split decision, 28 Oct 2026",
+    "https://www.tradingview.com/news/te_news:595574:0-rbnz-holds-cash-rate-at-2-75-in-split-decision/"
+   ],
+   [
+    "Fox Business, Federal Reserve holds rates steady, 28 Oct 2026",
+    "https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-october-28-2026"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-29-inflation-4-3-perspectives-special.pdf",
+   "label": "Six-page special",
+   "pages": 6
+  },
+  "angle": "Do not pick one cause. The strongest answers identify both cost-push and demand-pull pressures, use the trimmed mean to separate them, then explain why the mix matters for choosing a policy. Includes a 20-mark plan: evaluate the effectiveness of Australia's economic policies in managing inflation in 2026.",
+  "questions": [
+   {
+    "q": "Distinguish between headline and underlying inflation, using September 2026 data.",
+    "marks": 4
+   },
+   {
+    "q": "Using an AD/AS diagram, explain how a rise in world oil prices affects inflation and economic growth in Australia.",
+    "marks": 4
+   },
+   {
+    "q": "Using a Phillips curve, explain why rising inflation expectations make it harder to reduce inflation.",
+    "marks": 4
+   }
+  ],
+  "extended": "Evaluate the effectiveness of Australia's economic policies in managing inflation in 2026. (20 marks)",
+  "note": "UPDATE DUE: RBA decision on 3 November with new forecasts. Includes positions of political figures, reported as the parties put them. Some sources are smaller outlets (AAP via a regional paper, Allora! News); the key figures are from the ABS."
+ },
+ {
+  "id": "2026-10-29-no-easy-way-out-of-inflation",
+  "title": "Why there is no easy way out of high inflation",
+  "date": "2026-10-29",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "An ABC analysis of why the soft landing has failed and why productivity growth is the only lasting fix, with the LRAS diagram.",
+  "lede": "ABC analyst Tom Crowley argues the narrow path to a soft landing promised in 2022 has failed, with war-related supply constraints colliding with an AI and data-centre investment boom that is lifting demand. He expects policy to go harder for longer, holding back demand well into 2027, unless productivity improves.",
+  "about": {
+   "h09": [
+    "4E.1",
+    "3A.6"
+   ],
+   "y12": [
+    "Y2d.1",
+    "Y2d.2",
+    "Y1a.10"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4D.2",
+    "3C.3"
+   ],
+   "y12": [
+    "Y2c.8"
+   ],
+   "y11": [
+    "P3c.4"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "productivity",
+   "rates"
+  ],
+  "levers": [
+   "micro",
+   "monetary"
+  ],
+  "diagrams": [
+   "adas"
+  ],
+  "figures": [
+   {
+    "label": "Expected cash rate after 3 November",
+    "value": "4.85% (highest in 18 years)",
+    "asAt": "29 October 2026",
+    "issue": "rates",
+    "source": "ABC News analysis"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Soft landing",
+    "def": "Slowing inflation without causing a recession."
+   },
+   {
+    "term": "Productivity",
+    "def": "Output per unit of input, such as per hour worked."
+   },
+   {
+    "term": "Aggregate supply",
+    "def": "The total output the economy can produce at each price level."
+   }
+  ],
+  "links": [
+   [
+    "Tom Crowley, Bad inflation result lays bare the ugly truth: there is no easy way out, ABC News (analysis), 29 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-29/bad-inflation-result-political-pressure/107318484"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-29-no-easy-way-out-of-inflation.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Microeconomic reform is slow and uncertain, so in the short run macroeconomic policy carries the load: a strong answer to any limitations-of-policy question.",
+  "questions": [
+   {
+    "q": "Assess the role of productivity growth in achieving sustained low inflation in Australia.",
+    "marks": 5
+   }
+  ],
+  "note": "An analysis piece, so treat it as one view. It also criticises EV and home-battery discounts, which is the author's judgement."
+ },
+ {
+  "id": "2026-10-28-smh-inflation-4-3-cup-day-rate-rise",
+  "date": "2026-10-28",
+  "added": "2026-10-28",
+  "title": "Inflation jumps to 4.3% in September, fuelling the prospect of a Cup Day rate rise",
+  "outlets": [
+   "The Sydney Morning Herald",
+   "ABS"
+  ],
+  "summary": "The actual September inflation result: headline 4.3% against underlying 3.6%, with petrol and tradeable prices pushing headline inflation up, plus Treasury's evidence that fiscal policy is not the main driver. Gives the result behind the 25 and 28 October previews.",
+  "lede": "The ABS reported headline inflation of 4.3% in September, up from 4.0% in August, with underlying inflation at 3.6%. Petrol, home-building costs and tradeable prices drove the rise, and markets put the chance of a fifth RBA rate rise on 3 November at better than 60%.",
+  "type": "news",
+  "diagrams": [
+   "chart",
+   "flow"
+  ],
+  "issues": [
+   "inflation",
+   "rates",
+   "budget",
+   "global"
+  ],
+  "levers": [
+   "monetary",
+   "fiscal"
+  ],
+  "about": {
+   "h09": [
+    "3C.1",
+    "3C.2",
+    "3C.3",
     "4D.2"
    ],
    "y12": [
-    "Y1c.1",
+    "Y1c.3",
+    "Y1c.4",
+    "Y1c.8",
     "Y2c.4"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4C.1",
+    "4D.3",
+    "4H.2",
+    "4I.3"
+   ],
+   "y12": [
+    "Y1c.9",
+    "Y2b.2",
+    "Y2b.3",
+    "Y2c.5",
+    "Y2c.8"
+   ],
+   "y11": [
+    "P1e.5"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Underlying inflation",
+    "def": "A measure of inflation that removes the largest price swings to show the trend."
+   },
+   {
+    "term": "Tradeable goods and services",
+    "def": "Goods and services that can be traded across borders, so their prices follow world prices; fuel is an example."
+   },
+   {
+    "term": "Imported inflation",
+    "def": "Price rises that start with higher prices for imports, such as oil."
+   },
+   {
+    "term": "Cost-push inflation",
+    "def": "Higher production costs passed on as higher prices."
+   }
+  ],
+  "figures": [
+   {
+    "label": "Headline inflation, annual rate",
+    "value": "4.3% (up from 4.0%)",
+    "asAt": "year to September 2026 (highest since March, 4.6%)",
+    "issue": "inflation",
+    "source": "ABS via SMH"
+   },
+   {
+    "label": "Underlying inflation, annual rate",
+    "value": "3.6% (August revised to 3.5%)",
+    "asAt": "year to September 2026",
+    "issue": "inflation",
+    "source": "ABS via SMH"
+   },
+   {
+    "label": "Petrol prices",
+    "value": "almost 24% over the year",
+    "asAt": "year to September 2026 (September +9.4%, August +14.8%)",
+    "issue": "inflation",
+    "source": "ABS via SMH"
+   },
+   {
+    "label": "Housing costs, annual rate",
+    "value": "5.2% (5.4% to August)",
+    "asAt": "year to September 2026 (new dwellings +4.7%)",
+    "issue": "housing",
+    "source": "ABS via SMH"
+   },
+   {
+    "label": "Tradeable vs non-tradeable inflation",
+    "value": "1.2% vs 0.6%",
+    "asAt": "September 2026, in the month",
+    "issue": "inflation",
+    "source": "ABS via SMH"
+   },
+   {
+    "label": "Annual inflation by city",
+    "value": "Hobart 5.3%, Darwin 5.2%, Adelaide 5.0%, Sydney 4.3%, Melbourne 4.0%",
+    "asAt": "year to September 2026",
+    "issue": "inflation",
+    "source": "ABS via SMH"
+   },
+   {
+    "label": "Market chance of a further RBA rate rise",
+    "value": "better than 60% (fifth rise of 2026)",
+    "asAt": "28 Oct 2026, ahead of the 3 November meeting",
+    "issue": "rates",
+    "source": "SMH"
+   },
+   {
+    "label": "Budget deficit, 2025-26 outcome",
+    "value": "$22.3 billion (forecast $42.8 billion)",
+    "asAt": "2025-26 final outcome",
+    "issue": "budget",
+    "source": "Treasury Secretary Jenny Wilkinson via SMH"
+   },
+   {
+    "label": "Budget deficit, 2026-27",
+    "value": "$31 billion (originally forecast $36 billion)",
+    "asAt": "latest estimate, Oct 2026",
+    "issue": "budget",
+    "source": "Treasury Secretary Jenny Wilkinson via SMH"
+   },
+   {
+    "label": "Budget deficit, 2024-25 outcome",
+    "value": "$10 billion (December 2024 forecast $27 billion)",
+    "asAt": "2024-25 final outcome",
+    "issue": "budget",
+    "source": "Treasury Secretary Jenny Wilkinson via SMH"
+   }
+  ],
+  "angle": "Much of the jump is a supply shock (oil), which lifts headline inflation without a rise in demand. The RBA's concern is whether it spreads, which is why underlying inflation (above the 2 to 3% target) and the jump in tradeable inflation matter. For fiscal policy, Treasury argued that deficits have come in well below forecast, so changes in the net fiscal position are hard to blame for inflation; the Coalition and some economists argue for spending cuts, so give both views.",
+  "questions": [
+   {
+    "q": "Explain why the RBA might still raise the cash rate when much of the recent rise in headline inflation comes from petrol prices.",
+    "marks": 4
+   },
+   {
+    "q": "Assess the extent to which fiscal policy has contributed to Australia's recent inflation.",
+    "marks": 6
+   }
+  ],
+  "note": "Secondary report of the ABS release; check the ABS data before quoting. The article gives the monthly annual rates. It does not give the quarterly CPI or quarterly trimmed mean that the 25 and 28 October previews forecast (trimmed mean 0.9 to 1.0%), so add those from the ABS release. SMH says August underlying inflation was revised down to 3.5%; the 30 September and 19 October records on this site show 3.6%. UPDATE DUE: the RBA decision on 3 November 2026.",
+  "file": {
+   "path": "files/2026-10/2026-10-28-smh-inflation-4-3-cup-day-rate-rise.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "links": [
+   {
+    "label": "The Sydney Morning Herald (Shane Wright), Inflation jumps to 4.3 per cent, fuelling prospect of Cup Day rate rise, 28 Oct 2026",
+    "url": "https://www.smh.com.au/politics/federal/inflation-jumps-to-4-3-per-cent-fuelling-prospect-of-cup-day-rate-rise-20261028-p6196m.html"
+   },
+   {
+    "label": "ABS, Consumer Price Index, Australia",
+    "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia"
+   }
+  ]
+ },
+ {
+  "id": "2026-10-28-eu-trade-deal-ratification",
+  "title": "Why the EU trade deal is about far more than beef",
+  "date": "2026-10-28",
+  "type": "news",
+  "outlets": [
+   "The Conversation"
+  ],
+  "summary": "A current free trade agreement awaiting a divided Senate, with the tariff diagram and the case for diversifying trade partners.",
+  "lede": "Australia and the EU agreed a free trade agreement in March after nearly eight years of talks, but the laws to bring it into force must still pass a divided Senate. Two trade economists argue rejecting it would cost far more than the beef access farmers say is too small.",
+  "about": {
+   "h09": [
+    "2D.2",
+    "2D.1"
+   ],
+   "y12": [
+    "Y3a.13",
+    "Y3a.3"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1B.4",
+    "2D.3",
+    "1C.2"
+   ],
+   "y12": [
+    "Y3a.16",
+    "Y3a.7"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "ds"
+  ],
+  "figures": [
+   {
+    "label": "Australian goods exports covered by tariff cuts",
+    "value": "98%",
+    "asAt": "2026",
+    "issue": "trade",
+    "source": "Gray and Draper, The Conversation"
+   },
+   {
+    "label": "EU beef quota for Australia",
+    "value": "4,400 t rising to 35,000 t; 20% tariff removed from day one",
+    "asAt": "2026",
+    "issue": "trade",
+    "source": "Gray and Draper, The Conversation"
+   },
+   {
+    "label": "Value of new trade: industry wanted / deal delivers",
+    "value": "A$3 billion / A$2 billion (Farrell)",
+    "asAt": "2026",
+    "issue": "trade",
+    "source": "Gray and Draper, The Conversation"
+   },
+   {
+    "label": "Labor Senate seats",
+    "value": "30 of 76 (needs 9 more)",
+    "asAt": "2026",
+    "issue": "trade",
+    "source": "Gray and Draper, The Conversation"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Free trade agreement",
+    "def": "An agreement removing tariffs and other barriers between member countries."
+   },
+   {
+    "term": "Tariff-rate quota",
+    "def": "A limit on the volume of imports that receive a lower tariff."
+   },
+   {
+    "term": "Ratification",
+    "def": "Formal approval by a country's legislature so an agreement takes effect."
+   }
+  ],
+  "links": [
+   [
+    "Gray and Draper, Failure to ratify the EU trade deal would cost Australia far more than beef, The Conversation, 28 Oct 2026",
+    "https://theconversation.com/failure-to-ratify-the-eu-trade-deal-would-cost-australia-far-more-than-beef-294855"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-28-eu-trade-deal-ratification.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "The authors' wider argument is diversification: Australia is wedged between a protectionist ally (the US) and a coercive customer (China), and the EU deal adds options in trade, investment and critical minerals.",
+  "questions": [
+   {
+    "q": "Evaluate the potential impacts of the Australia-EU free trade agreement on the Australian economy.",
+    "marks": 5
+   }
+  ],
+  "note": "Argues for ratification, and the digest reports the authors' case. The Senate vote is still to come, and EU ratification needs 15 of 27 states representing 65% of the population. UPDATE DUE: Senate decision."
+ },
+ {
+  "id": "2026-10-28-aud-rises-on-rate-hike-bets",
+  "title": "Australian dollar climbs as markets bet on an RBA rate rise, reaching a 13-year high against the NZ dollar",
+  "date": "2026-10-28",
+  "type": "stats",
+  "outlets": [
+   "ABC News",
+   "Trading Economics"
+  ],
+  "summary": "Shows how a widening interest rate differential lifts the AUD, using the AUD/NZD move after the RBNZ held and the CPI came in hot. Replaces the 27 October edition.",
+  "lede": "After the CPI release the Australian dollar rose about 0.3% to around US70.45c, closing near US70.32c, and jumped about 2% to NZ$1.26, its highest since early 2013, after the RBNZ unexpectedly held rates. Australia's 10-year yield of 5.22% is above the US 5.02%.",
+  "about": {
+   "h09": [
+    "2C.4",
+    "2C.5"
+   ],
+   "y12": [
+    "Y3c.1",
+    "Y3c.2"
+   ],
+   "y11": [
+    "P6c.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2C.3",
+    "4D.3",
+    "2C.6"
+   ],
+   "y12": [
+    "Y3c.5"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "fx",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "fx"
+  ],
+  "figures": [
+   {
+    "label": "Australian dollar",
+    "value": "about US70.45c after the CPI; closed near US70.32c",
+    "asAt": "28 October 2026",
+    "issue": "fx",
+    "source": "ABC News"
+   },
+   {
+    "label": "AUD against the NZ dollar",
+    "value": "NZ$1.26 (about +2%; highest since early 2013)",
+    "asAt": "28 October 2026",
+    "issue": "fx",
+    "source": "Trading Economics via TradingView"
+   },
+   {
+    "label": "Australian / US 10-year bond yield",
+    "value": "5.22% / 5.02%",
+    "asAt": "28 October 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Market odds of an RBA hike on 3 November",
+    "value": "about 60% before the CPI, about 90% after",
+    "asAt": "28 October 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "RBNZ official cash rate",
+    "value": "held at 2.75% in a 4-3 vote (hike expected)",
+    "asAt": "28 October 2026",
+    "issue": "rates",
+    "source": "Trading Economics via TradingView"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Interest rate differential",
+    "def": "The gap between Australian and overseas interest rates."
+   },
+   {
+    "term": "Appreciation",
+    "def": "A rise in the value of the AUD against another currency."
+   },
+   {
+    "term": "Floating exchange rate",
+    "def": "A rate set by the supply and demand for the currency in the market."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, ASX surrenders big gains as market puts chance of November hike near 90pc, 28 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-28/asx-markets-business-live-news/107316614"
+   ],
+   [
+    "Trading Economics via TradingView, RBNZ holds cash rate at 2.75% in split decision, 28 Oct 2026",
+    "https://www.tradingview.com/news/te_news:595574:0-rbnz-holds-cash-rate-at-2-75-in-split-decision/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-28-aud-rises-on-rate-hike-bets.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Appreciation is part of the RBA's exchange rate channel: it makes imports cheaper, which helps lower inflation, but reduces the competitiveness of exporters such as tourism, education and agriculture.",
+  "questions": [
+   {
+    "q": "Explain how a widening interest rate differential between Australia and New Zealand affects the value of the Australian dollar and Australia's external sector.",
+    "marks": 4
+   }
+  ],
+  "note": "Single-day figures, so update before quoting. UPDATE DUE: RBA decision on 3 November. Replaces the 27 October edition."
+ },
+ {
+  "id": "2026-10-28-inflation-jumps-to-4-3-per-cent",
+  "title": "Inflation jumps to 4.3% as fuel and travel push prices higher",
+  "date": "2026-10-28",
+  "type": "stats",
+  "outlets": [
+   "ABS",
+   "The Conversation"
+  ],
+  "summary": "The September 2026 CPI result: headline 4.3%, trimmed mean 1.0% for the quarter, with fuel and electricity the fastest rising. Replaces the earlier CPI previews.",
+  "lede": "Annual CPI inflation rose to 4.3% in September from 4.0% in August. The trimmed mean rose 1.0% in the September quarter, in line with economists' forecasts but above the RBA's August forecast of 0.8%, which strengthens the case for a fifth rate rise on 3 November.",
+  "about": {
+   "h09": [
+    "3C.1",
+    "3C.3",
+    "3C.2"
+   ],
+   "y12": [
+    "Y1c.3",
+    "Y1c.4",
+    "Y1c.8"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3C.4",
+    "4D.2"
+   ],
+   "y12": [
+    "Y1c.9",
+    "Y2c.4"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "inflation",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "adas",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Annual CPI",
+    "value": "4.3% (August 4.0%)",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "Trimmed mean",
+    "value": "1.0% in the quarter (RBA forecast 0.8%); 3.6% annual on the monthly measure, 3.7% on the quarterly",
+    "asAt": "September quarter 2026",
+    "issue": "inflation",
+    "source": "ABS via The Conversation"
+   },
+   {
+    "label": "Automotive fuel",
+    "value": "+9.4% in the month; +23.6% over the year",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "Electricity",
+    "value": "+12.8% over the year (federal energy rebates expired)",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "Transport group / housing group, annual",
+    "value": "+8.7% / +5.2% (housing 5.7% in August)",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Trimmed mean",
+    "def": "The RBA's preferred underlying measure, which removes the largest price rises and falls each period."
+   },
+   {
+    "term": "Cost-push inflation",
+    "def": "Inflation caused by rising production costs such as fuel."
+   },
+   {
+    "term": "Seasonal adjustment",
+    "def": "Removing regular seasonal swings so data can be compared across periods."
+   }
+  ],
+  "links": [
+   [
+    "Isaac Gross, Inflation jumps to 4.3%, adding to pressure for RBA rate rise next week, The Conversation, 28 Oct 2026",
+    "https://theconversation.com/inflation-jumps-to-4-3-adding-to-pressure-for-rba-rate-rise-next-week-295162"
+   ],
+   [
+    "ABS, CPI rose 4.3% in the year to September 2026",
+    "https://www.abs.gov.au/media-centre/media-releases/cpi-rose-43-year-september-2026"
+   ],
+   [
+    "ABS, Consumer Price Index, Australia, September 2026",
+    "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-28-inflation-jumps-to-4-3-per-cent.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "As Gross puts it, a rate rise cannot produce more oil, but it can slow spending and make it harder for firms to pass higher costs on. The trimmed mean at 3.6% is still above the 2-3% target, which shows inflation is broad-based.",
+  "questions": [
+   {
+    "q": "Distinguish between headline and underlying inflation, using data from the September 2026 CPI release.",
+    "marks": 4
+   }
+  ],
+  "note": "The digest reports prices up 0.8% in September (0.6% seasonally adjusted, the figure The Conversation reports); check the ABS release before quoting the monthly figure. Card surcharges were banned from 1 October and the RBA estimates a one-off 0.1% lift to the price level. Replaces the 28 October CPI preview and the 25 October preview."
+ },
+ {
+  "id": "2026-10-28-no-recession-but-unemployment-rising",
+  "title": "No recession in sight, but the jobless rate is heading up",
+  "date": "2026-10-28",
+  "type": "news",
+  "outlets": [
+   "Allora! News",
+   "AAP",
+   "The Conversation"
+  ],
+  "summary": "The RBA's Senate estimates evidence on why unemployment must rise to bring down inflation, linking the NAIRU and the Phillips curve trade-off.",
+  "lede": "At Senate estimates RBA officials said none of their indicators point to a recession, but they still expect unemployment, already 4.7%, to keep rising as higher interest rates slow the economy. NAB suggested unemployment may need to reach 5.5%, not 5%, to return inflation to target.",
+  "about": {
+   "h09": [
+    "3B.4",
+    "3B.2"
+   ],
+   "y12": [
+    "Y1c.6",
+    "Y1b.11"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3B.6",
+    "4D.3",
+    "3C.3"
+   ],
+   "y12": [
+    "Y1b.6",
+    "Y2c.8"
+   ],
+   "y11": [
+    "P1e.5"
+   ]
+  },
+  "issues": [
+   "employment",
+   "inflation",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "phillips",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Unemployment rate",
+    "value": "4.7% (4.1% at the start of 2026)",
+    "asAt": "September 2026",
+    "issue": "employment",
+    "source": "ABS via digest"
+   },
+   {
+    "label": "Change in employment",
+    "value": "-39,300 in the month",
+    "asAt": "September 2026",
+    "issue": "employment",
+    "source": "ABS via digest"
+   },
+   {
+    "label": "Jobless rate NAB says may be needed",
+    "value": "5.5% (not 5%)",
+    "asAt": "28 October 2026",
+    "issue": "employment",
+    "source": "NAB (Sally Auld) via digest"
+   }
+  ],
+  "terms": [
+   {
+    "term": "NAIRU",
+    "def": "The rate of unemployment below which inflation tends to accelerate."
+   },
+   {
+    "term": "Spare capacity",
+    "def": "Unused labour and other resources in the economy."
+   }
+  ],
+  "links": [
+   [
+    "Allora! News, RBA sees no near-term recession as Michele Bullock warns inflation is far too high, 28 Oct 2026",
+    "https://alloranews.com/economia/rba-sees-no-near-term-recession-as-michele-bullock-warns-inflation-is-far-too-high/"
+   ],
+   [
+    "AAP via Junee Southern Cross, November rate hike a lock after ugly inflation result, 28 Oct 2026",
+    "https://www.juneesoutherncross.com.au/story/9381176/november-rate-hike-a-lock-after-ugly-inflation-result/"
+   ],
+   [
+    "Isaac Gross, Inflation jumps to 4.3%, adding to pressure for RBA rate rise next week, The Conversation, 28 Oct 2026",
+    "https://theconversation.com/inflation-jumps-to-4-3-adding-to-pressure-for-rba-rate-rise-next-week-295162"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-28-no-recession-but-unemployment-rising.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "If the labour market is tighter than thought, the NAIRU is higher than estimated, so unemployment must rise further to bring inflation down. The cost of disinflation falls on workers who lose jobs or hours.",
+  "questions": [
+   {
+    "q": "Explain why the RBA may need unemployment to rise in order to reduce inflation.",
+    "marks": 4
+   }
+  ],
+  "note": "Relies partly on a smaller outlet (Allora! News) and AAP via a regional paper for the Senate estimates evidence. The unemployment figures should be checked against the ABS release."
+ },
+ {
+  "id": "2026-10-28-melbourne-cup-rate-hike-expected",
+  "title": "Markets all but certain of a Melbourne Cup Day rate rise, with all four major banks tipping 4.85%",
+  "date": "2026-10-28",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "AAP",
+   "The Conversation"
+  ],
+  "summary": "After the hot CPI, markets price up to a 90% chance of a fifth rise on 3 November, with the case for hiking and for waiting. Replaces the 27 October edition.",
+  "lede": "Market pricing for a 25 basis point rise on 3 November rose from about 60% before the CPI to up to 90% after it, and NAB and CBA have switched from expecting a hold to a hike, joining Westpac and ANZ. A rise would be the fifth of 2026 and take the cash rate to its highest level in 18 years.",
+  "about": {
+   "h09": [
+    "4D.2",
+    "4D.3"
+   ],
+   "y12": [
+    "Y2c.4",
+    "Y2c.5",
+    "Y2c.8"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3C.3"
+   ],
+   "y12": [
+    "Y2c.7"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "rates",
+   "inflation"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "flow",
+   "adas"
+  ],
+  "figures": [
+   {
+    "label": "Cash rate / expected after 3 November",
+    "value": "4.60% / 4.85% (18-year high)",
+    "asAt": "28 October 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Market odds of a hike",
+    "value": "about 60% before the CPI, about 79% straight after, near 90% later",
+    "asAt": "28 October 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Rises so far in 2026",
+    "value": "four, totalling 100 basis points (latest in September)",
+    "asAt": "28 October 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "RBA decision",
+    "value": "2:30pm AEDT, Tuesday 3 November, with new forecasts",
+    "asAt": "3 November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Cash rate",
+    "def": "The interest rate on overnight loans between banks, which the RBA targets."
+   },
+   {
+    "term": "Transmission mechanism",
+    "def": "The channels through which a change in the cash rate affects spending and inflation."
+   },
+   {
+    "term": "Time lag",
+    "def": "The delay between a policy change and its full effect."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, ASX surrenders big gains as market puts chance of November hike near 90pc, 28 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-28/asx-markets-business-live-news/107316614"
+   ],
+   [
+    "AAP via Junee Southern Cross, November rate hike a lock after ugly inflation result, 28 Oct 2026",
+    "https://www.juneesoutherncross.com.au/story/9381176/november-rate-hike-a-lock-after-ugly-inflation-result/"
+   ],
+   [
+    "Isaac Gross, Inflation jumps to 4.3%, adding to pressure for RBA rate rise next week, The Conversation, 28 Oct 2026",
+    "https://theconversation.com/inflation-jumps-to-4-3-adding-to-pressure-for-rba-rate-rise-next-week-295162"
+   ],
+   [
+    "Allora! News, RBA sees no near-term recession as Michele Bullock warns inflation is far too high, 28 Oct 2026",
+    "https://alloranews.com/economia/rba-sees-no-near-term-recession-as-michele-bullock-warns-inflation-is-far-too-high/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-28-melbourne-cup-rate-hike-expected.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Monetary policy works with time lags of up to 18 months, so part of earlier rises has not yet fed through: that is the main argument for a hold, while persistent underlying inflation is the main argument for a hike.",
+  "questions": [
+   {
+    "q": "Explain how an increase in the cash rate is transmitted through the economy to reduce inflation.",
+    "marks": 5
+   }
+  ],
+  "note": "Market odds change daily. UPDATE DUE: RBA decision on 3 November 2026. Replaces the 27 October edition."
+ },
+ {
+  "id": "2026-10-28-bullock-supply-shocks-and-inflation",
+  "title": "Bullock: supply shocks make taming inflation harder",
+  "date": "2026-10-28",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "Allora! News"
+  ],
+  "summary": "The RBA Governor on why repeated negative supply shocks worsen the trade-off between inflation and jobs and risk lifting expectations.",
+  "lede": "RBA Governor Michele Bullock told Senate estimates inflation is far too high and that repeated negative supply shocks worsen the trade-off the bank faces between bringing inflation down and protecting jobs. She said Australia's inflation problem began before the latest energy shock.",
+  "about": {
+   "h09": [
+    "3C.3",
+    "4D.2"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y1c.6",
+    "Y2c.8"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3B.4",
+    "4B.1"
+   ],
+   "y12": [
+    "Y2c.7"
    ],
    "y11": []
   },
@@ -45,89 +1198,168 @@
   ],
   "figures": [
    {
-    "label": "Expected trimmed mean (CBA, NAB, ANZ / Westpac)",
-    "value": "1.0% / 0.9% in the quarter",
-    "asAt": "September quarter 2026 (due 28 October)",
+    "label": "Annual CPI",
+    "value": "4.3%",
+    "asAt": "September 2026",
     "issue": "inflation",
-    "source": "InvestingLive / CommBank"
+    "source": "ABS via digest"
    },
    {
-    "label": "RBA forecast for the trimmed mean",
-    "value": "0.8% in the quarter",
-    "asAt": "August 2026",
-    "issue": "inflation",
-    "source": "InvestingLive / CommBank"
+    "label": "Cash rate",
+    "value": "4.60% after four rises in 2026",
+    "asAt": "28 October 2026",
+    "issue": "rates",
+    "source": "ABC News"
    },
    {
-    "label": "Expected headline CPI",
-    "value": "+1.2% to 1.3% in the quarter, about 3.9% over the year",
-    "asAt": "September quarter 2026 (due 28 October)",
-    "issue": "inflation",
-    "source": "CommBank"
-   },
-   {
-    "label": "Fuel prices (CBA)",
-    "value": "+14.8% in August; +9.8% expected in September",
+    "label": "House prices relative to early 2020",
+    "value": "about 50% higher, although recently falling in most capitals",
     "asAt": "2026",
-    "issue": "inflation",
-    "source": "CommBank"
-   },
-   {
-    "label": "Market services inflation (CBA)",
-    "value": "4.1% rising to 4.3%",
-    "asAt": "September quarter 2026",
-    "issue": "inflation",
-    "source": "CommBank"
-   },
-   {
-    "label": "New dwelling price inflation (annual, CBA)",
-    "value": "5.4% easing to 4.9%; rents about 3.5%",
-    "asAt": "September quarter 2026",
     "issue": "housing",
-    "source": "CommBank"
+    "source": "Bullock, Senate estimates"
    }
   ],
   "terms": [
    {
-    "term": "Trimmed mean",
-    "def": "CPI with the largest and smallest price changes removed, used as a measure of underlying inflation."
-   },
-   {
-    "term": "Cost-push inflation",
-    "def": "Higher production costs passed on as higher prices."
+    "term": "Supply shock",
+    "def": "A sudden change in production costs or capacity, such as an oil price rise."
    },
    {
     "term": "Stagflation",
     "def": "Rising inflation combined with weak growth."
+   },
+   {
+    "term": "Inflation expectations",
+    "def": "What households and firms expect inflation to be, which affects wage and price setting."
    }
   ],
   "links": [
    [
-    "CommBank, September data will keep inflation pressure on RBA",
-    "https://www.commbank.com.au/articles/newsroom/2026/10/inflation-cpi-rba-interest-rates-november.html"
+    "ABC News, ASX surrenders big gains as market puts chance of November hike near 90pc, 28 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-28/asx-markets-business-live-news/107316614"
    ],
    [
-    "InvestingLive, Australia CPI preview: banks see 1.0% core rise above the RBA's 0.8% forecast",
-    "https://investinglive.com/news/australia-cpi-preview-banks-see-1-0-core-rise-above-the-rba-s-0-8-forecast/"
-   ],
-   [
-    "ABS, Consumer Price Index, Australia",
-    "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia"
+    "Allora! News, RBA sees no near-term recession as Michele Bullock warns inflation is far too high, 28 Oct 2026",
+    "https://alloranews.com/economia/rba-sees-no-near-term-recession-as-michele-bullock-warns-inflation-is-far-too-high/"
    ]
   ],
   "file": {
-   "path": "files/2026-10/2026-10-28-cpi-day-banks-expect-above-rba.pdf",
+   "path": "files/2026-10/2026-10-28-bullock-supply-shocks-and-inflation.pdf",
    "label": "One-page digest",
    "pages": 1
   },
-  "angle": "Fuel is volatile, so it mostly affects headline CPI. If the trimmed mean also comes in high, inflation is broad-based (second-round effects through market services), which is what the RBA watches most closely.",
+  "angle": "Monetary policy acts on demand, not supply, so it cannot fix the source of a supply shock: a key limitation to discuss in Topic 4 answers.",
   "questions": [
    {
-    "q": "Distinguish between headline and underlying inflation. Explain why the RBA focuses on underlying measures when setting the cash rate.",
-    "marks": 4
+    "q": "Using an AD/AS diagram, explain why a negative supply shock creates a policy dilemma for the Reserve Bank.",
+    "marks": 5
    }
   ],
-  "note": "A preview with forecasts, not the result. UPDATE DUE: add the actual September quarter CPI released at 11:30am on 28 October, then the RBA decision on 3 November. Replaces the 26 October expectations item; the earlier 25 October preview from a different source set is still on the site."
+  "note": "The Bullock and Hauser quotes come from a smaller outlet (Allora! News) and ABC live coverage rather than the Senate transcript."
+ },
+ {
+  "id": "2026-10-28-chalmers-fiscal-response-to-inflation",
+  "title": "Chalmers rules out fuel relief as inflation bites",
+  "date": "2026-10-28",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "AAP"
+  ],
+  "summary": "The Treasurer's and the Opposition's competing views on whether fiscal policy is fuelling inflation, for answers on the policy mix.",
+  "lede": "Treasurer Jim Chalmers called the 4.3% result too high but argued the budget is not the main cause of inflation, ruled out returning the fuel excise discount and flagged more savings in the December MYEFO. Shadow Treasurer Tim Wilson said the government is driving up underlying inflation and called for a fuel discount paid for by spending cuts.",
+  "about": {
+   "h09": [
+    "4C.2",
+    "4B.1"
+   ],
+   "y12": [
+    "Y2b.3",
+    "Y2b.13",
+    "Y2b.14"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4C.1",
+    "4D.1"
+   ],
+   "y12": [
+    "Y2b.9"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "budget",
+   "inflation"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Annual CPI",
+    "value": "4.3%",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "ABS via digest"
+   },
+   {
+    "label": "Cash rate",
+    "value": "4.60%, with a rise to 4.85% expected",
+    "asAt": "28 October 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "MYEFO",
+    "value": "December 2026: more savings flagged",
+    "asAt": "2026",
+    "issue": "budget",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Fiscal stance",
+    "def": "Whether the budget adds to (expansionary) or subtracts from (contractionary) aggregate demand."
+   },
+   {
+    "term": "MYEFO",
+    "def": "The Mid-Year Economic and Fiscal Outlook, the government's budget update."
+   },
+   {
+    "term": "Policy mix",
+    "def": "The combination of fiscal and monetary policy settings."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, Jim Chalmers resists blame for another high inflation result, 28 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-28/chalmers-downplays-further-fuel-discounts-amid-high-inflation/107319372"
+   ],
+   [
+    "AAP via Junee Southern Cross, November rate hike a lock after ugly inflation result, 28 Oct 2026",
+    "https://www.juneesoutherncross.com.au/story/9381176/november-rate-hike-a-lock-after-ugly-inflation-result/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-28-chalmers-fiscal-response-to-inflation.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "If fiscal policy stays expansionary while the RBA tightens, rates must rise further for the same fall in demand. A fuel discount lowers measured CPI only temporarily while it adds to demand.",
+  "questions": [
+   {
+    "q": "Discuss whether fiscal policy should be tightened to support the Reserve Bank in reducing inflation.",
+    "marks": 5
+   }
+  ],
+  "note": "Government and Opposition positions reported as each put them. Complements the 26 October item on the Coalition's $31 billion savings plan."
  },
  {
   "id": "2026-10-27-afr-everyday-price-rises-rba-test",
@@ -477,123 +1709,6 @@
   "note": "The extension is proposed, not final. The new end date is 9 January (the Splash247 headline places it in 2027). UPDATE DUE: USTR decision before the pause ends in early November."
  },
  {
-  "id": "2026-10-27-aud-interest-rate-differential",
-  "title": "The dollar sits near 70 US cents as Australian bond yields stay above US yields (27 October)",
-  "date": "2026-10-27",
-  "type": "stats",
-  "outlets": [
-   "ABC News"
-  ],
-  "summary": "Shows the interest rate differential and commodity prices pulling on the Australian dollar, with a demand and supply diagram. Replaces the 26 October edition.",
-  "lede": "The Australian dollar traded at about 70 US cents at Tuesday's close. Australia's 10-year bond yield was 5.16% against 4.99% in the US, iron ore was soft at US$90.60 and Brent oil stayed near US$115.",
-  "about": {
-   "h09": [
-    "2C.4",
-    "2C.5"
-   ],
-   "y12": [
-    "Y3c.1",
-    "Y3c.2"
-   ],
-   "y11": [
-    "P6c.1"
-   ]
-  },
-  "also": {
-   "h09": [
-    "2C.3",
-    "4D.3",
-    "2C.6"
-   ],
-   "y12": [
-    "Y3c.5",
-    "Y1a.7"
-   ],
-   "y11": []
-  },
-  "issues": [
-   "fx",
-   "rates"
-  ],
-  "levers": [
-   "monetary"
-  ],
-  "diagrams": [
-   "fx",
-   "flow"
-  ],
-  "figures": [
-   {
-    "label": "Australian dollar",
-    "value": "about US70c",
-    "asAt": "close Tuesday 27 October 2026",
-    "issue": "fx",
-    "source": "ABC News"
-   },
-   {
-    "label": "Australian / US 10-year bond yield",
-    "value": "5.16% / 4.99%",
-    "asAt": "27 October 2026",
-    "issue": "rates",
-    "source": "ABC News"
-   },
-   {
-    "label": "Iron ore price",
-    "value": "US$90.60 a tonne",
-    "asAt": "27 October 2026",
-    "issue": "trade",
-    "source": "ABC News"
-   },
-   {
-    "label": "Brent crude oil",
-    "value": "about US$115 a barrel",
-    "asAt": "27 October 2026",
-    "issue": "global",
-    "source": "ABC News"
-   },
-   {
-    "label": "RBA cash rate / US Fed funds target",
-    "value": "4.60% (four rises in 2026) / 3.75-4.00% (hold expected)",
-    "asAt": "27 October 2026",
-    "issue": "rates",
-    "source": "ABC News"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Interest rate differential",
-    "def": "The gap between Australian and overseas interest rates."
-   },
-   {
-    "term": "Terms of trade",
-    "def": "The index of export prices divided by the index of import prices, multiplied by 100."
-   }
-  ],
-  "links": [
-   [
-    "ABC News markets blog, 27 Oct 2026",
-    "https://www.abc.net.au/news/2026-10-27/asx-markets-business-live-news-anthropic/107312526"
-   ],
-   [
-    "ABS, Release calendar",
-    "https://www.abs.gov.au/release-calendar/future-releases"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-10/2026-10-27-aud-interest-rate-differential.pdf",
-   "label": "One-page digest",
-   "pages": 1
-  },
-  "angle": "Interest rates are only one influence. Weak iron ore reduces demand for the AUD from buyers of exports and can offset the support from higher yields, which helps explain a high-rate AUD of only about 70 cents.",
-  "questions": [
-   {
-    "q": "Explain two factors that influence the value of the Australian dollar. Refer to recent data in your answer.",
-    "marks": 4
-   }
-  ],
-  "note": "A single close, so update before quoting. The ABS releases International Trade Price Indexes on 29 October. Replaces the 26 October edition of this item."
- },
- {
   "id": "2026-10-27-price-gouging-abs-profits",
   "title": "Price gouging? ABS figures point to housing, transport and mining",
   "date": "2026-10-27",
@@ -913,111 +2028,6 @@
    }
   ],
   "note": "A party proposal, filed as reported. The Lorenz curve on the digest is illustrative only."
- },
- {
-  "id": "2026-10-27-rba-melbourne-cup-live-hike",
-  "title": "The RBA's Melbourne Cup meeting becomes a live chance for a fifth hike",
-  "date": "2026-10-27",
-  "type": "news",
-  "outlets": [
-   "ABC News",
-   "CommBank"
-  ],
-  "summary": "Explains why the 3 November RBA decision is live, the market odds, and the limits of monetary policy against a fuel-driven price shock.",
-  "lede": "The cash rate is 4.60% after four rises this year. Market odds of a November hike rose from about 24% to 56% after Deputy Governor Hauser warned the inflation outlook is materially worse, and were above 60% by 26 October; CBA's base case is still a hold.",
-  "about": {
-   "h09": [
-    "4D.2",
-    "4D.3"
-   ],
-   "y12": [
-    "Y2c.4",
-    "Y2c.5",
-    "Y2c.8"
-   ],
-   "y11": []
-  },
-  "also": {
-   "h09": [
-    "3C.3"
-   ],
-   "y12": [
-    "Y2c.7",
-    "Y1c.4"
-   ],
-   "y11": []
-  },
-  "issues": [
-   "rates",
-   "inflation"
-  ],
-  "levers": [
-   "monetary"
-  ],
-  "diagrams": [
-   "adas",
-   "flow"
-  ],
-  "figures": [
-   {
-    "label": "RBA cash rate",
-    "value": "4.60% after four rises in 2026",
-    "asAt": "27 October 2026",
-    "issue": "rates",
-    "source": "ABC News / CommBank"
-   },
-   {
-    "label": "Market odds of a November hike",
-    "value": "about 24% to 56% after Hauser's speech (CBA); above 60% by 26 October (ABC)",
-    "asAt": "21-26 October 2026",
-    "issue": "rates",
-    "source": "CommBank / ABC News"
-   },
-   {
-    "label": "RBA forecast vs bank forecasts for trimmed mean, September quarter",
-    "value": "0.8% vs 0.9-1.0%",
-    "asAt": "September quarter 2026",
-    "issue": "inflation",
-    "source": "CommBank"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Cash rate",
-    "def": "The interest rate on overnight loans between banks, which the RBA targets."
-   },
-   {
-    "term": "Transmission mechanism",
-    "def": "The channels through which a change in the cash rate affects spending and inflation."
-   }
-  ],
-  "links": [
-   [
-    "CommBank, September data will keep inflation pressure on RBA",
-    "https://www.commbank.com.au/articles/newsroom/2026/10/inflation-cpi-rba-interest-rates-november.html"
-   ],
-   [
-    "ABC News markets blog, 26 Oct 2026",
-    "https://www.abc.net.au/news/2026-10-26/asx-markets-business-live-news-october-26/107306820"
-   ],
-   [
-    "ABC News, RBA deputy warns the inflation outlook is materially worse, 21 Oct 2026",
-    "https://www.abc.net.au/news/2026-10-21/reserve-bank-hauser-warns-inflation-outlook-materially-worse/107288574"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-10/2026-10-27-rba-melbourne-cup-live-hike.pdf",
-   "label": "One-page digest",
-   "pages": 1
-  },
-  "angle": "Much of today's inflation is supply-side (fuel). Monetary policy works on demand, so it can only stop the price shock spreading by slowing the whole economy, and it acts with long lags.",
-  "questions": [
-   {
-    "q": "Discuss the limitations of monetary policy in responding to inflation driven by a rise in fuel prices.",
-    "marks": 6
-   }
-  ],
-  "note": "Market odds change daily. UPDATE DUE: RBA decision on 3 November 2026 and the September quarter CPI released 28 October."
  },
  {
   "id": "2026-10-27-startup-cgt-rnd-reform",
@@ -4164,134 +5174,6 @@
    {
     "label": "ABC N ews, 'Travellers weigh up the cost to get to Sydney's new airport', 21 Oct 2026",
     "url": "https://www.abc.net.au/news/2026-10-21/nsw-travel-western-sydney-international-airport-flight-savings/106785424"
-   }
-  ]
- },
- {
-  "id": "2026-10-25-september-quarter-cpi-preview",
-  "date": "2026-10-25",
-  "added": "2026-10-25",
-  "title": "This week's inflation figures will set up the RBA's Melbourne Cup Day decision",
-  "outlets": [
-   "ABC News",
-   "Reuters",
-   "Newsquawk"
-  ],
-  "summary": "A preview of the September quarter CPI (28 October): headline against trimmed mean, and why the RBA watches the underlying measure.",
-  "lede": "The ABS releases the September quarter CPI on Wednesday 28 October. Economists expect underlying inflation above the RBA's forecast, which would add to the case for a rate rise on 3 November.",
-  "type": "news",
-  "diagrams": [
-   "adas",
-   "flow"
-  ],
-  "issues": [
-   "inflation",
-   "rates",
-   "global"
-  ],
-  "levers": [
-   "monetary"
-  ],
-  "about": {
-   "h09": [
-    "3C.1",
-    "3C.2",
-    "3C.3"
-   ],
-   "y12": [
-    "Y1c.3",
-    "Y1c.4",
-    "Y1c.5"
-   ],
-   "y11": []
-  },
-  "also": {
-   "h09": [
-    "4A.3",
-    "4D.2",
-    "4D.3",
-    "4I.3"
-   ],
-   "y12": [
-    "Y1c.2",
-    "Y2c.3",
-    "Y2c.4"
-   ],
-   "y11": []
-  },
-  "terms": [
-   {
-    "term": "Headline CPI",
-    "def": "The change in the price of the whole CPI basket."
-   },
-   {
-    "term": "Trimmed mean",
-    "def": "An underlying measure that drops the largest price rises and falls."
-   },
-   {
-    "term": "Cost-push inflation",
-    "def": "Inflation caused by rising production costs, such as fuel."
-   }
-  ],
-  "figures": [
-   {
-    "label": "Expected trimmed mean inflation, September quarter",
-    "value": "about 1.0% (RBA August forecast 0.8%)",
-    "asAt": "Sept qtr 2026 (due 28 Oct)",
-    "issue": "inflation",
-    "source": "ABC News"
-   },
-   {
-    "label": "Headline inflation, year to August",
-    "value": "4.0%",
-    "asAt": "Aug 2026",
-    "issue": "inflation",
-    "source": "ABC News"
-   },
-   {
-    "label": "RBA deputy governor's view of September quarter headline inflation",
-    "value": "about 4% (core near 3.5%)",
-    "asAt": "Oct 2026",
-    "issue": "inflation",
-    "source": "Reuters via The Star"
-   },
-   {
-    "label": "RBA inflation target band",
-    "value": "2–3%",
-    "asAt": "ongoing",
-    "issue": "inflation",
-    "source": "RBA"
-   }
-  ],
-  "angle": "The RBA looks through one-off price spikes and acts when cost pressures spread into underlying inflation and expectations.",
-  "questions": [
-   {
-    "q": "Distinguish between headline and underlying inflation, and explain why the RBA focuses on underlying measures.",
-    "marks": 4
-   }
-  ],
-  "note": "A preview, filed before the release. Add the actual September quarter CPI result after 28 October.",
-  "file": {
-   "path": "files/2026-10/2026-10-25-september-quarter-cpi-preview.pdf",
-   "label": "One-page digest",
-   "pages": 1
-  },
-  "links": [
-   {
-    "label": "ABC News, 'RBA deputy warns inflation outlook materially worse', 21 Oct 2026",
-    "url": "https://www.abc.net.au/news/2026-10-21/reserve-bank-hauser-warns-inflation-outlook-materially-worse/107288574"
-   },
-   {
-    "label": "Reuters via The Star, 'Inflation outlook worsens for Australia', 22 Oct 2026",
-    "url": "https://www.thestar.com.my/business/business-news/2026/10/22/inflation-outlook-worsens-for-australia"
-   },
-   {
-    "label": "Newsquawk, 'Week in Focus 26–30 October 2026'",
-    "url": "https://newsquawk.com/headlines/week-in-focus-26-30th-october-2026-fomc-boc-rbnz-ecb-boj-policy-decisions-us-pce"
-   },
-   {
-    "label": "ABC News, 'ASX edges up at close…' markets blog, 23 Oct 2026",
-    "url": "https://www.abc.net.au/news/2026-10-23/asx-markets-business-news-live-updates-oct-23/107291840"
    }
   ]
  },
@@ -8070,6 +8952,124 @@
    "pages": 1
   },
   "added": "2026-10-26"
+ },
+ {
+  "id": "2026-10-16-coal-mine-methane-safeguard-mechanism",
+  "title": "Coal mine methane: the emissions at home we are undercounting",
+  "date": "2026-10-16",
+  "type": "news",
+  "outlets": [
+   "The Conversation",
+   "Grattan Institute"
+  ],
+  "summary": "A case study of the limits of a market-based environmental policy when emissions are poorly measured and baselines are set loosely.",
+  "lede": "A Grattan Institute analyst argues methane from Australian coal mines, about 5% of national emissions, is badly measured: aircraft found open-cut mines released about 3.6 times what they reported. Because every mine moves to the same Safeguard target, low-reporting open-cut mines earned about 700,000 credits (around $26 million) in 2024-25.",
+  "about": {
+   "h09": [
+    "4G.2",
+    "4G.1"
+   ],
+   "y12": [
+    "Y2f.3",
+    "Y2f.5",
+    "Y2f.8"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3F.2",
+    "3F.4",
+    "4G.3"
+   ],
+   "y12": [
+    "Y1e.3",
+    "Y1e.5",
+    "Y2f.7"
+   ],
+   "y11": [
+    "P5a.5"
+   ]
+  },
+  "issues": [
+   "environment"
+  ],
+  "levers": [
+   "environmental"
+  ],
+  "diagrams": [
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Share of Australia's emissions from coal-mine methane",
+    "value": "about 5%",
+    "asAt": "2026",
+    "issue": "environment",
+    "source": "Pring, The Conversation"
+   },
+   {
+    "label": "Methane measured by aircraft vs reported (open-cut mines)",
+    "value": "about 3.6 times",
+    "asAt": "2026",
+    "issue": "environment",
+    "source": "Pring, The Conversation"
+   },
+   {
+    "label": "Credits earned by low-reporting open-cut mines",
+    "value": "about 700,000 (around $26m)",
+    "asAt": "2024-25",
+    "issue": "environment",
+    "source": "Pring, The Conversation"
+   },
+   {
+    "label": "Reported emissions per tonne of coal: open-cut Qld / shared target / underground",
+    "value": "47 kg / 65 kg / 267 kg CO2-e",
+    "asAt": "2026",
+    "issue": "environment",
+    "source": "Pring, The Conversation"
+   },
+   {
+    "label": "Proposed cut to open-cut limits from separate limits",
+    "value": "about 1.3 Mt a year",
+    "asAt": "2026",
+    "issue": "environment",
+    "source": "Pring, The Conversation"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Safeguard Mechanism",
+    "def": "A federal baseline-and-credit scheme that sets a falling yearly emissions limit for big emitters; those that beat it earn credits and those that exceed it must buy them."
+   },
+   {
+    "term": "Negative externality",
+    "def": "A cost imposed on third parties that the producer does not pay."
+   },
+   {
+    "term": "Scope 3 emissions",
+    "def": "Emissions released when a product, such as exported coal, is burned elsewhere."
+   }
+  ],
+  "links": [
+   [
+    "Hayley Pring (Grattan Institute), The High Court looked at coal climate emissions overseas. But what about emissions at home?, The Conversation, 16 Oct 2026",
+    "https://theconversation.com/the-high-court-looked-at-coal-climate-emissions-overseas-but-what-about-emissions-at-home-294235"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-16-coal-mine-methane-safeguard-mechanism.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Market-based environmental policy only works if emissions are measured accurately and baselines are set sensibly. If methane is undercounted, polluters also avoid paying the full external cost.",
+  "questions": [
+   {
+    "q": "Evaluate the effectiveness of the Safeguard Mechanism as a policy to reduce Australia's greenhouse gas emissions.",
+    "marks": 5
+   }
+  ],
+  "note": "An analyst's argument published by The Conversation, so the policy proposals are one view. The High Court ruling on Mount Pleasant is reported second-hand. Complements the 14 September climate targets article."
  },
  {
   "id": "2026-10-15-unemployment-five-year-high",
