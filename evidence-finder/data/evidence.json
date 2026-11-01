@@ -1,5 +1,669 @@
 [
  {
+  "id": "2026-11-01-banks-zero-interest-savings",
+  "title": "Big banks hold about $332 billion that earns savers no interest as rates rise",
+  "date": "2026-11-01",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "Canstar",
+   "ACCC"
+  ],
+  "summary": "Shows how weak competition in banking can leak the savings channel of monetary policy, linking microeconomic and macroeconomic policy.",
+  "lede": "The RBA has raised the cash rate four times this year to 4.60%, but the big four banks lifted their top savings rates by only 0.20-0.25 percentage points and only on products with strict conditions. Savers who miss the conditions earn a base rate of 0.10%, and the four banks hold about $332 billion in deposits that earn no interest.",
+  "about": {
+   "h09": [
+    "4D.3",
+    "4D.2",
+    "4E.3"
+   ],
+   "y12": [
+    "Y2c.5",
+    "Y2c.8",
+    "Y2d.2"
+   ],
+   "y11": [
+    "P2h.6"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4H.1",
+    "4E.2",
+    "3E.3"
+   ],
+   "y12": [
+    "Y2c.7",
+    "Y2d.4"
+   ],
+   "y11": [
+    "P2h.1"
+   ]
+  },
+  "issues": [
+   "rates",
+   "inflation"
+  ],
+  "levers": [
+   "monetary",
+   "micro"
+  ],
+  "diagrams": [
+   "flow",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Big-four deposits earning no interest",
+    "value": "about $332b (CBA $122b, Westpac $82b, NAB $67b, ANZ $61b)",
+    "asAt": "latest annual reports (CBA June; others March)",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Rise in big-four top savings rates after the September hike",
+    "value": "0.20-0.25 percentage points",
+    "asAt": "September 2026",
+    "issue": "rates",
+    "source": "Canstar via ABC News"
+   },
+   {
+    "label": "Base savings rate if conditions are missed",
+    "value": "0.10% (unchanged)",
+    "asAt": "2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Customers who never meet bonus conditions",
+    "value": "more than 70%",
+    "asAt": "2023 inquiry",
+    "issue": "rates",
+    "source": "ACCC via ABC News"
+   },
+   {
+    "label": "Consumers who switched savings accounts in three years",
+    "value": "16%",
+    "asAt": "2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Interest paid to depositors last financial year (industry claim)",
+    "value": "more than $120b",
+    "asAt": "2025-26",
+    "issue": "rates",
+    "source": "Australian Banking Association"
+   },
+   {
+    "label": "Cash rate after four rises in 2026",
+    "value": "4.60%",
+    "asAt": "September 2026",
+    "issue": "rates",
+    "source": "RBA"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Interest rate pass-through",
+    "def": "How much of a change in the cash rate banks pass on to their savers and borrowers."
+   },
+   {
+    "term": "Savings channel",
+    "def": "The way higher interest rates reward saving and discourage spending."
+   },
+   {
+    "term": "Competition policy",
+    "def": "Laws and regulators (the ACCC) that promote rivalry between firms."
+   },
+   {
+    "term": "Market power",
+    "def": "The ability of firms to set prices or conditions without losing customers."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, Big banks hold about $330 billion that earns savers no interest, 1 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-01/rba-interest-hike-impact-on-high-interest-savings-accounts/107197290"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-01-banks-zero-interest-savings.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "If banks pass on only small rises, much of the incentive to save is lost and their interest margins widen instead, so transmission is weaker. Stronger competition, easier switching and ACCC scrutiny could make monetary policy work better.",
+  "questions": [
+   {
+    "q": "Explain how weak competition in banking can reduce the effectiveness of cash rate rises in curbing spending.",
+    "marks": 4
+   },
+   {
+    "q": "Evaluate whether stronger competition policy in banking could improve both consumer outcomes and the transmission of monetary policy.",
+    "marks": 6
+   }
+  ],
+  "note": "The $120 billion interest figure is the banking industry's claim, and the $330 billion headline is the sum of the four banks' reported figures at different dates. UPDATE DUE: RBA decision on 3 November."
+ },
+ {
+  "id": "2026-11-01-us-midterms-tariffs-likely-to-stay",
+  "title": "US midterms could shift Congress, but Trump's tariffs are likely to stay",
+  "date": "2026-11-01",
+  "type": "news",
+  "outlets": [
+   "Reuters"
+  ],
+  "summary": "Explains why a change of Congress is unlikely to remove US tariffs, with the tariff diagram showing who gains and loses from protection.",
+  "lede": "Democrats are favoured to win the House on 3 November and want to repeal the laws behind the Canada tariffs and the temporary 10% global tariff. Analysts say neither party will win the two-thirds majority needed to override a presidential veto, so tariffs are very likely to survive.",
+  "about": {
+   "h09": [
+    "1C.2",
+    "2D.4",
+    "1C.1"
+   ],
+   "y12": [
+    "Y3a.7",
+    "Y3a.8",
+    "Y3a.11"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1B.4",
+    "1B.1",
+    "4H.3"
+   ],
+   "y12": [
+    "Y3a.5",
+    "Y3a.15",
+    "Y3a.13"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "US House of Representatives (Republican-Democrat)",
+    "value": "218-214",
+    "asAt": "1 November 2026",
+    "issue": "trade",
+    "source": "Reuters via GV Wire"
+   },
+   {
+    "label": "US Senate (Republican-Democrat)",
+    "value": "53-47",
+    "asAt": "1 November 2026",
+    "issue": "trade",
+    "source": "Reuters via GV Wire"
+   },
+   {
+    "label": "Net seats Democrats need in each chamber",
+    "value": "4",
+    "asAt": "1 November 2026",
+    "issue": "trade",
+    "source": "Reuters via GV Wire"
+   },
+   {
+    "label": "Temporary US global tariff",
+    "value": "10%",
+    "asAt": "2026",
+    "issue": "trade",
+    "source": "Reuters via GV Wire"
+   },
+   {
+    "label": "Trade deals the White House says it has signed",
+    "value": "nearly 20",
+    "asAt": "1 November 2026",
+    "issue": "trade",
+    "source": "Reuters via GV Wire"
+   },
+   {
+    "label": "Partners facing a planned \"excess industrial capacity\" probe",
+    "value": "16",
+    "asAt": "1 November 2026",
+    "issue": "trade",
+    "source": "Reuters via GV Wire"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Tariff",
+    "def": "A tax on imports."
+   },
+   {
+    "term": "Deadweight loss",
+    "def": "The efficiency loss when a tariff or other distortion stops mutually beneficial trade."
+   },
+   {
+    "term": "Trade diversion",
+    "def": "Trade shifting from one source to another because of a tariff or agreement."
+   },
+   {
+    "term": "Veto",
+    "def": "The president's power to reject a bill passed by Congress."
+   }
+  ],
+  "links": [
+   [
+    "Reuters via GV Wire, Democratic wins would shift Congress trade debate but fall short of US tariff rollbacks, 1 Nov 2026",
+    "https://gvwire.com/2026/11/01/democratic-wins-would-shift-congress-trade-debate-but-fall-short-of-us-tariff-rollbacks/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-01-us-midterms-tariffs-likely-to-stay.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Use the tariff diagram to show consumers losing, domestic producers and government gaining, and deadweight losses. Then explain the political economy: a veto and no two-thirds majority mean tariffs persist, which matters for trade-exposed economies such as Australia.",
+  "questions": [
+   {
+    "q": "Using a diagram, explain the effects of a tariff on consumers, domestic producers and the government in the importing country.",
+    "marks": 6
+   },
+   {
+    "q": "Explain why US tariffs may continue even if the Democrats win control of Congress.",
+    "marks": 3
+   }
+  ],
+  "note": "A forecast made before the vote. UPDATE DUE: results of the 3 November midterms. The \"End Trump's Tariff Tax Act\" has 28 co-sponsors."
+ },
+ {
+  "id": "2026-11-01-opec-holds-december-output",
+  "title": "OPEC+ holds December output targets steady while the Iran war keeps supply tight",
+  "date": "2026-11-01",
+  "type": "news",
+  "outlets": [
+   "Reuters"
+  ],
+  "summary": "Shows why a cartel's quotas matter little when physical supply is already disrupted, and what an oversupply in 2027 could mean for Australia.",
+  "lede": "Seven core OPEC+ members agreed on 1 November to leave December production targets unchanged. The decision makes little difference because war disruptions have already pushed most producers well below their quotas, and the IEA warns of possible oversupply in 2027 if Gulf flows return to normal.",
+  "about": {
+   "h09": [
+    "1A.1"
+   ],
+   "y12": [
+    "Y3e.3",
+    "Y1a.7"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3C.3",
+    "2A.1",
+    "1A.8"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y1c.1"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "global",
+   "inflation",
+   "trade"
+  ],
+  "levers": [
+   "global"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Core OPEC+ members in the decision",
+    "value": "7",
+    "asAt": "1 November 2026",
+    "issue": "global",
+    "source": "Reuters via GV Wire"
+   },
+   {
+    "label": "2023 production cut",
+    "value": "1.65m barrels a day, fully unwound",
+    "asAt": "September 2026",
+    "issue": "global",
+    "source": "Reuters via GV Wire"
+   },
+   {
+    "label": "Other cuts still in place to end-2026",
+    "value": "about 2m barrels a day",
+    "asAt": "2026",
+    "issue": "global",
+    "source": "Reuters via GV Wire"
+   },
+   {
+    "label": "Full OPEC+ meeting on 2027 quotas",
+    "value": "29 November (21 members)",
+    "asAt": "November 2026",
+    "issue": "global",
+    "source": "Reuters via GV Wire"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Cartel",
+    "def": "A group of producers that coordinates output to influence price."
+   },
+   {
+    "term": "Production quota",
+    "def": "A limit on the amount a member may produce."
+   },
+   {
+    "term": "Supply-side shock",
+    "def": "A sudden change in production costs or capacity."
+   },
+   {
+    "term": "Oversupply",
+    "def": "Supply exceeding demand, which pushes prices down."
+   }
+  ],
+  "links": [
+   [
+    "Reuters via GV Wire, OPEC keeps December oil output targets steady ahead of tougher call for 2027, 1 Nov 2026",
+    "https://gvwire.com/2026/11/01/opec-keeps-december-oil-output-targets-steady-ahead-of-tougher-call-for-2027/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-01-opec-holds-december-output.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Quotas only matter when members can produce up to them. With Gulf exports disrupted, the price is set by the physical shock in Hormuz, not OPEC+. If the strait reopens, prices could fall sharply in 2027, easing Australian fuel inflation but lowering LNG export prices.",
+  "questions": [
+   {
+    "q": "Explain why an OPEC+ decision to hold output steady may have little effect on oil prices when members are already producing below quota.",
+    "marks": 3
+   },
+   {
+    "q": "Discuss how a world oil oversupply in 2027 could affect Australia's inflation rate and terms of trade.",
+    "marks": 5
+   }
+  ],
+  "note": "UPDATE DUE: OPEC+ meeting on 29 November and the mid-November capacity review. The UAE left OPEC in May, according to the report. Related to the 30 October Hormuz oil price item."
+ },
+ {
+  "id": "2026-10-31-china-factories-slip-into-contraction",
+  "title": "China's factories slip back into contraction as demand weakens",
+  "date": "2026-10-31",
+  "type": "stats",
+  "outlets": [
+   "National Bureau of Statistics",
+   "AFP",
+   "CGTN"
+  ],
+  "summary": "A leading indicator for Australia's biggest export market: both Chinese PMIs fell below 50 in October, with new orders weaker at home and abroad.",
+  "lede": "China's official manufacturing PMI fell to 49.3 in October from 50.1 in September, below forecasts of 49.9, and the non-manufacturing PMI fell to 49.7 from 50.2. The new orders index fell to 49.4, though high-tech and AI-related manufacturing kept growing.",
+  "about": {
+   "h09": [
+    "1A.8",
+    "2A.1"
+   ],
+   "y12": [
+    "Y3e.1",
+    "Y3e.3",
+    "Y1a.7"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "1E.1",
+    "3D.3",
+    "4H.2"
+   ],
+   "y12": [
+    "Y3a.15"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "global",
+   "growth",
+   "trade"
+  ],
+  "levers": [
+   "global"
+  ],
+  "diagrams": [
+   "chart",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Official manufacturing PMI",
+    "value": "49.3 (September 50.1; forecast 49.9)",
+    "asAt": "October 2026",
+    "issue": "global",
+    "source": "National Bureau of Statistics via AFP"
+   },
+   {
+    "label": "Non-manufacturing PMI (services and construction)",
+    "value": "49.7 (September 50.2)",
+    "asAt": "October 2026",
+    "issue": "global",
+    "source": "National Bureau of Statistics via CGTN"
+   },
+   {
+    "label": "New orders index",
+    "value": "49.4 (September about 50.5)",
+    "asAt": "October 2026",
+    "issue": "global",
+    "source": "National Bureau of Statistics via AFP"
+   },
+   {
+    "label": "Consumer goods PMI",
+    "value": "-1.9 points",
+    "asAt": "October 2026",
+    "issue": "global",
+    "source": "National Bureau of Statistics via AFP"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Purchasing managers' index (PMI)",
+    "def": "A survey of purchasing managers about output, orders and jobs; above 50 means expansion and below 50 means contraction."
+   },
+   {
+    "term": "Terms of trade",
+    "def": "Export prices divided by import prices, times 100."
+   },
+   {
+    "term": "Leading indicator",
+    "def": "A statistic that tends to change before the wider economy does."
+   }
+  ],
+  "links": [
+   [
+    "China-Global South Project (AFP), China manufacturing PMI October 2026: factory contraction, 31 Oct 2026",
+    "https://chinaglobalsouth.com/2026/10/31/china-manufacturing-pmi-october-2026-factory-contraction/"
+   ],
+   [
+    "CGTN, China's manufacturing PMI at 49.3, non-manufacturing PMI at 49.7, 31 Oct 2026",
+    "https://news.cgtn.com/news/2026-10-31/China-s-manufacturing-PMI-at-49-3-non-manufacturing-PMI-at-49-7-1RGwN3PBXpu/p.html"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-31-china-factories-slip-into-contraction.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Slower Chinese growth reduces demand for iron ore, coal and LNG, which can lower Australia's export prices and volumes, worsen the terms of trade and weaken the current account and the AUD. The 25 October and 27 October items give the earlier, stronger growth picture.",
+  "questions": [
+   {
+    "q": "China buys about a third of Australia's goods exports. Explain how a slowdown in Chinese manufacturing could affect Australia's terms of trade and current account balance.",
+    "marks": 5
+   },
+   {
+    "q": "What does a fall in China's new orders index suggest about the likely direction of Chinese output?",
+    "marks": 2
+   }
+  ],
+  "note": "One month's survey data, so it may reverse. The \"about a third\" share of Australia's goods exports is the digest's statement; check it against DFAT or the ABS before quoting. Contrasts with the earlier 4.5% growth figure for the third quarter."
+ },
+ {
+  "id": "2026-10-30-oil-six-month-high-hormuz-attacks",
+  "title": "Oil hits a six-month high as attacks in the Strait of Hormuz escalate",
+  "date": "2026-10-30",
+  "type": "news",
+  "outlets": [
+   "Investing.com",
+   "ABC News"
+  ],
+  "summary": "A live supply shock: Brent rose 13.6% in October on shipping attacks, shown with the inelastic demand diagram and the AD/AS stagflation effect on Australia.",
+  "lede": "Brent crude settled at US$117.64 on 30 October, up 13.6% across the month, as attacks on tankers in the Strait of Hormuz reached the highest monthly level since the war with Iran began in February. Traffic through the strait is still about 70% below pre-war levels.",
+  "about": {
+   "h09": [
+    "3C.3",
+    "1A.1"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y1c.5",
+    "Y3e.3"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3C.4",
+    "4D.3",
+    "1A.8"
+   ],
+   "y12": [
+    "Y1c.1",
+    "Y1a.10",
+    "Y1a.13",
+    "Y2c.8"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "inflation",
+   "global",
+   "trade",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "ds",
+   "adas",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Brent crude",
+    "value": "US$117.64 (+2.4% on the day; six-month high)",
+    "asAt": "30 October 2026",
+    "issue": "global",
+    "source": "Investing.com via Yahoo Finance"
+   },
+   {
+    "label": "Brent crude rise over October",
+    "value": "+13.6%",
+    "asAt": "October 2026",
+    "issue": "global",
+    "source": "Investing.com via Yahoo Finance"
+   },
+   {
+    "label": "WTI crude",
+    "value": "US$104.12",
+    "asAt": "30 October 2026",
+    "issue": "global",
+    "source": "Investing.com via Yahoo Finance"
+   },
+   {
+    "label": "Attacks on shipping",
+    "value": "at least 35 (the most in any month of the conflict)",
+    "asAt": "October 2026",
+    "issue": "global",
+    "source": "Investing.com via Yahoo Finance"
+   },
+   {
+    "label": "Hormuz traffic compared with pre-war",
+    "value": "about 70% lower",
+    "asAt": "October 2026",
+    "issue": "global",
+    "source": "Investing.com via Yahoo Finance"
+   },
+   {
+    "label": "Australian fuel prices",
+    "value": "+9.4%",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "ABS via digest"
+   },
+   {
+    "label": "Annual CPI",
+    "value": "4.3%",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Supply shock",
+    "def": "An unexpected change in the supply of a key input that shifts costs across the economy."
+   },
+   {
+    "term": "Price-inelastic demand",
+    "def": "Demand that changes little when the price changes."
+   },
+   {
+    "term": "Cost-push inflation",
+    "def": "Inflation caused by rising production costs."
+   },
+   {
+    "term": "Stagflation",
+    "def": "Rising inflation combined with weak growth."
+   }
+  ],
+  "links": [
+   [
+    "Investing.com via Yahoo Finance, Oil hits six-month highs",
+    "https://au.finance.yahoo.com/news/oil-hits-six-month-highs-064011112.html"
+   ],
+   [
+    "ABC News, Attacks on Iran should be met without restraint, Khamenei orders, 31 Oct 2026",
+    "https://www.abc.net.au/news/2026-10-31/attacks-on-iran-should-be-met-without-restraint-khamenei-orders/107332392"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-10/2026-10-30-oil-six-month-high-hormuz-attacks.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Short-run oil demand is inelastic, so a small fall in quantity brings a large rise in price. For an oil importer the shock shifts SRAS left: higher prices and lower output. The RBA may not \"look through\" the shock in 2026 because inflation is already high.",
+  "questions": [
+   {
+    "q": "Using an AD/AS diagram, explain how a sustained rise in world oil prices affects inflation, output and unemployment in Australia.",
+    "marks": 6
+   },
+   {
+    "q": "Explain why the RBA might \"look through\" an oil price shock, and why it may not in 2026.",
+    "marks": 4
+   }
+  ],
+  "note": "Iran's claim that four tankers hit mines, including a supertanker, was not independently verified. Overlaps with the 19 October and 28 October oil items; this one has the latest price. Qatar-mediated talks on reopening the strait were continuing."
+ },
+ {
   "id": "2026-10-29-private-health-rebate-age-versus-need",
   "title": "Who should get extra help with health insurance? Age versus need",
   "date": "2026-10-29",
