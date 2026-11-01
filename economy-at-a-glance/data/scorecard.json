@@ -186,12 +186,12 @@
   "section": "External stability",
   "measure": "AUD/USD",
   "unit": "US cents per A$",
-  "latest": "70.53",
-  "latestPeriod": "29 Oct 2026",
+  "latest": "70.40",
+  "latestPeriod": "30 Oct 2026",
   "previous": "69.77",
   "previousPeriod": "30 Sep 2026",
-  "earlier": "65.96",
-  "earlierPeriod": "29 Oct 2025",
+  "earlier": "65.95",
+  "earlierPeriod": "30 Oct 2025",
   "source": "RBA"
  },
  {
@@ -199,12 +199,12 @@
   "section": "External stability",
   "measure": "Trade-weighted index",
   "unit": "May 1970 = 100",
-  "latest": "65.4",
-  "latestPeriod": "29 Oct 2026",
+  "latest": "65.2",
+  "latestPeriod": "30 Oct 2026",
   "previous": "64.7",
   "previousPeriod": "30 Sep 2026",
   "earlier": "61.5",
-  "earlierPeriod": "29 Oct 2025",
+  "earlierPeriod": "30 Oct 2025",
   "source": "RBA"
  },
  {
