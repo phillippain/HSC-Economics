@@ -858,7 +858,10 @@ document.addEventListener('toggle', e=>{
 }, true);
 let qt; $('#q').addEventListener('input', e=>{ clearTimeout(qt); qt=setTimeout(()=>{ S.q=e.target.value.trim(); renderAll(); },160); });
 $('#resetBtn').onclick = resetAll;
-addEventListener('hashchange', ()=>{ readHash(); $('#q').value=S.q; renderAll(); });
+/* A link of the form #item=<record id> (optionally &fw=h09|y12|y11) opens that card. */
+function linkedItem(){ const id = new URLSearchParams(location.hash.slice(1)).get('item'); return id && ITEMS.some(x=>x.id===id) ? id : ''; }
+function openLinked(id){ goItem(id); setTimeout(()=>{ const el=document.getElementById('c-'+id); if(el) el.scrollIntoView({block:'start',behavior:'auto'}); },350); }
+addEventListener('hashchange', ()=>{ const li=linkedItem(); readHash(); $('#q').value=S.q; renderAll(); if(li) openLinked(li); });
 matchMedia('(max-width:900px)').addEventListener('change', renderRail);
 
 /* ---------- help ---------- */
@@ -879,7 +882,7 @@ $('#helpBtn').onclick = ()=>{
 };
 $('#help').addEventListener('click', e=>{ if(e.target.id==='help') e.target.close(); });
 
-readHash(); $('#q').value = S.q; renderAll();
+const li0 = linkedItem(); readHash(); $('#q').value = S.q; renderAll(); if(li0) openLinked(li0);
 })();
 </script>
 </body>
