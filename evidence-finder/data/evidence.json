@@ -1,5 +1,994 @@
 [
  {
+  "id": "2026-11-03-global-rates-government-debt",
+  "title": "Rates rise worldwide as government debt piles up",
+  "date": "2026-11-03",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "Connects rising global bond yields to deficits and sovereign debt, and separates the level of spending from the budget balance when judging inflation.",
+  "lede": "An ABC analysis argues investors are demanding higher returns to lend to governments, pushing up interest rates around the world, and that deficits, not just the size of spending, add to inflation. US interest payments on federal debt now exceed US$1 trillion a year and the Bank of England is tipped to raise its rate to 4.0%.",
+  "about": {
+   "h09": [
+    "1A.4",
+    "4C.3",
+    "4D.3"
+   ],
+   "y12": [
+    "Y2b.6",
+    "Y2b.12",
+    "Y2c.5"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4C.1",
+    "4H.2"
+   ],
+   "y12": [
+    "Y2b.13",
+    "Y3c.4",
+    "Y3b.3"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "global",
+   "rates",
+   "budget"
+  ],
+  "levers": [
+   "fiscal",
+   "monetary",
+   "global"
+  ],
+  "diagrams": [
+   "adas",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "US interest payments on federal debt",
+    "value": "more than US$1 trillion a year",
+    "asAt": "2026",
+    "issue": "global",
+    "source": "ABC News"
+   },
+   {
+    "label": "Bank of England rate if Thursday's hike goes ahead",
+    "value": "4.0%",
+    "asAt": "5 November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Australian government spending",
+    "value": "26.8% of GDP (pandemic peak 31.3%)",
+    "asAt": "2026",
+    "issue": "budget",
+    "source": "ABC News"
+   },
+   {
+    "label": "Australian budget deficit",
+    "value": "about 1% of GDP",
+    "asAt": "2026",
+    "issue": "budget",
+    "source": "ABC News"
+   },
+   {
+    "label": "Australian 10-year bond yield",
+    "value": "5.13%",
+    "asAt": "2 November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Capital raised by data centre operators this year",
+    "value": "record $35 billion",
+    "asAt": "2026",
+    "issue": "investment",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Budget deficit",
+    "def": "Government spending exceeds revenue in a year."
+   },
+   {
+    "term": "Sovereign debt",
+    "def": "Borrowing by a national government, usually through bonds."
+   },
+   {
+    "term": "Bond yield",
+    "def": "The return investors earn on a bond; a higher yield means a higher cost of borrowing."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, Interest rate hikes gather pace across the globe as deficits and debt pile up, 3 Nov 2026",
+    "https://abc.net.au/news/2026-11-03/rate-hikes-gather-pace-across-the-globe-as-deficits/107336008"
+   ],
+   [
+    "ABC News, ASX markets business live blog, 2 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-02/asx-markets-business-live-news-nov-2/107334212"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-03-global-rates-government-debt.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Higher global yields raise borrowing costs for households, firms and governments, shifting AD left and easing the price level but cutting real GDP. Separate the level of spending from the budget balance when judging whether fiscal policy adds to inflation.",
+  "questions": [
+   {
+    "q": "Discuss how rising global interest rates could affect Australia's economy and federal budget.",
+    "marks": 6
+   }
+  ],
+  "note": "An analysis piece, so the claim that deficits drive inflation is one view. UPDATE DUE: RBA decision (3 November) and the Bank of England decision (5 November). Private data centre investment is also cited as an inflation pressure."
+ },
+ {
+  "id": "2026-11-02-oil-eases-hormuz-talks",
+  "title": "Oil eases on Hormuz talks, but the supply shock is not over",
+  "date": "2026-11-02",
+  "type": "news",
+  "outlets": [
+   "Euronews",
+   "ABC News"
+  ],
+  "summary": "Shows how a possible reopening of the Strait of Hormuz shifts oil supply back, while a geopolitical risk premium keeps prices high. Replaces the 30 October edition.",
+  "lede": "Brent crude fell about 2-3% on 2 November to around US$108-111 a barrel after rising 14-15% in October and peaking near US$118, as Iran held talks in Qatar on reopening the strait. Goldman Sachs estimates about US$27 a barrel is a geopolitical risk premium.",
+  "about": {
+   "h09": [
+    "3C.3",
+    "1A.1"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y1c.5",
+    "Y3e.3"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3C.4",
+    "4D.3",
+    "1A.8"
+   ],
+   "y12": [
+    "Y1c.1",
+    "Y1a.10",
+    "Y1a.13",
+    "Y2c.8"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "inflation",
+   "global",
+   "trade"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "ds",
+   "adas",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Brent crude",
+    "value": "about US$110 (range US$108-111; down 2-3%)",
+    "asAt": "2 November 2026",
+    "issue": "global",
+    "source": "Euronews; ABC News"
+   },
+   {
+    "label": "Brent rise over October",
+    "value": "+14-15% (peak near US$118)",
+    "asAt": "October 2026",
+    "issue": "global",
+    "source": "Euronews; ABC News"
+   },
+   {
+    "label": "Risk premium in the oil price (Goldman Sachs)",
+    "value": "about US$27 a barrel",
+    "asAt": "2 November 2026",
+    "issue": "global",
+    "source": "Goldman Sachs via Euronews"
+   },
+   {
+    "label": "Goldman Sachs end-of-year Brent forecast",
+    "value": "US$105",
+    "asAt": "2026",
+    "issue": "global",
+    "source": "Goldman Sachs via Euronews"
+   },
+   {
+    "label": "Italy's inflation",
+    "value": "5.4%",
+    "asAt": "October 2026",
+    "issue": "inflation",
+    "source": "Euronews"
+   },
+   {
+    "label": "Australian fuel prices",
+    "value": "+9.4%",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Supply shock",
+    "def": "An unexpected event that cuts productive capacity or raises input costs."
+   },
+   {
+    "term": "Cost-push inflation",
+    "def": "Inflation driven by higher production costs rather than excess demand."
+   },
+   {
+    "term": "Price-inelastic demand",
+    "def": "Quantity demanded responds little to a price change, as for fuel in the short run."
+   }
+  ],
+  "links": [
+   [
+    "Euronews, Oil slides on Hormuz deal hopes but Trump keeps Iran strikes on the table, 2 Nov 2026",
+    "https://www.euronews.com/2026/11/02/oil-slides-on-hormuz-deal-hopes-but-trump-keeps-iran-strikes-on-the-table"
+   ],
+   [
+    "ABC News, ASX markets business live blog, 2 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-02/asx-markets-business-live-news-nov-2/107334212"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-02-oil-eases-hormuz-talks.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Short-run oil demand is inelastic, so a supply cut raises the price a lot. A deal that reopens the strait would shift supply back right. On an AD/AS diagram the shock shifts SRAS left: higher prices and lower output, or stagflation.",
+  "questions": [
+   {
+    "q": "Explain how a disruption to oil supply in the Middle East can affect inflation and economic growth in Australia.",
+    "marks": 4
+   }
+  ],
+  "note": "Replaces the 30 October item, which reported Brent settling at US$117.64 and at least 35 attacks on shipping in October; that report put the Hormuz traffic about 70% below pre-war levels. Iran set conditions for reopening, including an end to the US naval blockade. UPDATE DUE: outcome of the talks."
+ },
+ {
+  "id": "2026-11-02-uk-fta-backpacker-rules",
+  "title": "Albanese wants to rewrite part of the UK trade deal on backpackers",
+  "date": "2026-11-02",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "Shows how a free trade agreement can cover labour mobility as well as tariffs, with winners and losers in the regional farm labour market.",
+  "lede": "The Prime Minister will ask the UK to restore the regional work rule for British working holiday makers, which was waived under the Australia-UK free trade agreement. British backpackers rose from about 47,000 in 2024 to nearly 80,000 last financial year, and farmers warn of harvest labour shortages.",
+  "about": {
+   "h09": [
+    "2D.2",
+    "2D.3"
+   ],
+   "y12": [
+    "Y3a.13",
+    "Y3a.16"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1B.4",
+    "2D.1"
+   ],
+   "y12": [
+    "Y3a.3"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "trade",
+   "employment"
+  ],
+  "levers": [
+   "trade",
+   "labour"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "British working holiday makers",
+    "value": "nearly 80,000 (about 47,000 in 2024)",
+    "asAt": "last financial year",
+    "issue": "trade",
+    "source": "ABC News"
+   },
+   {
+    "label": "Harvest workers who come from overseas",
+    "value": "about 1 in 7",
+    "asAt": "2026",
+    "issue": "employment",
+    "source": "ABC News"
+   },
+   {
+    "label": "Proposed cap on second-year working holiday visas",
+    "value": "45,000",
+    "asAt": "2026",
+    "issue": "trade",
+    "source": "ABC News"
+   },
+   {
+    "label": "Stay allowed without regional work (British working holiday makers)",
+    "value": "up to three years",
+    "asAt": "2026",
+    "issue": "trade",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Free trade agreement",
+    "def": "A treaty lowering trade barriers, often also covering services, investment and labour mobility."
+   },
+   {
+    "term": "Working holiday maker",
+    "def": "A visa allowing young travellers to work, often in seasonal jobs."
+   },
+   {
+    "term": "Labour supply",
+    "def": "The number of workers willing and able to work at each wage."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, Albanese to discuss British backpacker changes with Burnham, 2 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-02/albanese-to-discuss-british-backpacker-changes-with-burnham/107208084"
+   ],
+   [
+    "ABC News, Federal politics live blog, 2 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-02/federal-politics-live-blog-albanese-chogm-nov-2/107334912"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-02-uk-fta-backpacker-rules.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Modern FTAs go beyond tariffs: services, investment and the movement of people all create winners and losers. The deal is already law, so changing it needs the UK's consent.",
+  "questions": [
+   {
+    "q": "Assess the costs and benefits of including labour-mobility provisions in Australia's free trade agreements.",
+    "marks": 6
+   }
+  ],
+  "note": "UPDATE DUE: outcome of the talks at CHOGM. The labour market diagram is the digest's illustration of a supply shift. The UK Prime Minister is named as Andy Burnham in the digest."
+ },
+ {
+  "id": "2026-11-02-commodity-prices-aud-softens",
+  "title": "Commodity prices slip and the dollar softens before the RBA",
+  "date": "2026-11-02",
+  "type": "stats",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "Shows how falling export prices lower demand for the AUD while a wider interest rate differential supports it. Replaces the 29 October edition.",
+  "lede": "The Australian dollar slipped 0.1% to 70.20 US cents on 2 November as iron ore held at US$90.80 a tonne and copper fell 1.5%, ahead of the expected RBA rate rise. Australia's 10-year bond yield of 5.13% is above the US 4.93%, which supports demand for AUD assets.",
+  "about": {
+   "h09": [
+    "2C.2",
+    "2C.3",
+    "2C.6"
+   ],
+   "y12": [
+    "Y3c.2",
+    "Y3c.4",
+    "Y3c.5",
+    "Y1a.7"
+   ],
+   "y11": [
+    "P6c.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2A.1",
+    "2C.4",
+    "3D.3",
+    "4D.3"
+   ],
+   "y12": [
+    "Y3c.1",
+    "Y3c.6",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P6a.2",
+    "P6c.2"
+   ]
+  },
+  "issues": [
+   "fx",
+   "trade",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "fx",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Australian dollar",
+    "value": "70.20 US cents (-0.1%)",
+    "asAt": "2 November 2026",
+    "issue": "fx",
+    "source": "ABC News"
+   },
+   {
+    "label": "Iron ore",
+    "value": "US$90.80 a tonne",
+    "asAt": "2 November 2026",
+    "issue": "trade",
+    "source": "ABC News"
+   },
+   {
+    "label": "Copper",
+    "value": "-1.5%",
+    "asAt": "2 November 2026",
+    "issue": "trade",
+    "source": "ABC News"
+   },
+   {
+    "label": "Gold",
+    "value": "near a one-year low (as reported)",
+    "asAt": "2 November 2026",
+    "issue": "trade",
+    "source": "ABC News"
+   },
+   {
+    "label": "ASX 200",
+    "value": "-0.6% to about 8,857 (BHP -1.4%, Northern Star -4.8%)",
+    "asAt": "2 November 2026",
+    "issue": "trade",
+    "source": "ABC News"
+   },
+   {
+    "label": "Australian / US 10-year yield",
+    "value": "5.13% / 4.93% (gap +0.20 points)",
+    "asAt": "2 November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Exchange rate",
+    "def": "The price of one currency in terms of another (AUD/USD)."
+   },
+   {
+    "term": "Interest rate differential",
+    "def": "The gap between Australian and overseas interest rates, which drives capital flows."
+   },
+   {
+    "term": "Terms of trade",
+    "def": "Export prices relative to import prices."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, ASX markets business live blog, 2 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-02/asx-markets-business-live-news-nov-2/107334212"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-02-commodity-prices-aud-softens.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Lower commodity prices mean foreign buyers need fewer Australian dollars for our exports, shifting AUD demand left. An RBA hike works the other way: a wider differential attracts capital inflows and shifts demand right.",
+  "questions": [
+   {
+    "q": "Explain two factors that influence the value of the Australian dollar, and how a change in its value affects the current account.",
+    "marks": 5
+   }
+  ],
+  "note": "Single-day figures, so update before quoting. UPDATE DUE: RBA decision on 3 November. Replaces the 29 October edition; the 28 October item on the NZ dollar is kept."
+ },
+ {
+  "id": "2026-11-02-house-prices-fastest-fall-40-years",
+  "title": "House prices fall at the fastest pace in 40 years",
+  "date": "2026-11-02",
+  "type": "stats",
+  "outlets": [
+   "Cotality",
+   "ABC News"
+  ],
+  "summary": "The October Cotality result: a seventh monthly fall, with the wealth effect and transmission of higher rates. Replaces the sixth-month edition.",
+  "lede": "National home values fell 1.2% in October, the seventh straight monthly fall, and are 6.7% below the March peak, about $63,400 off the median dwelling. Capital cities are down 8.1% in seven months and set to pass the 2017-19 record fall of 8.2%, and AMP now expects a 15% fall.",
+  "about": {
+   "h09": [
+    "3E.4",
+    "4D.3",
+    "3A.1"
+   ],
+   "y12": [
+    "Y2c.5",
+    "Y1d.1",
+    "Y1d.6"
+   ],
+   "y11": [
+    "P2d.1",
+    "P4c.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.5",
+    "4H.1"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y1a.14"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "housing",
+   "rates",
+   "inequality"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "National home values, monthly change",
+    "value": "-1.2% (seventh straight fall)",
+    "asAt": "October 2026",
+    "issue": "housing",
+    "source": "Cotality via ABC News"
+   },
+   {
+    "label": "Fall from the March peak",
+    "value": "-6.7% (about $63,400 off the median dwelling)",
+    "asAt": "October 2026",
+    "issue": "housing",
+    "source": "Cotality via ABC News"
+   },
+   {
+    "label": "Median dwelling value",
+    "value": "about $884,855",
+    "asAt": "October 2026",
+    "issue": "housing",
+    "source": "Cotality via ABC News"
+   },
+   {
+    "label": "Capital cities, fall over seven months",
+    "value": "-8.1% (record 2017-19 fall was 8.2%)",
+    "asAt": "October 2026",
+    "issue": "housing",
+    "source": "Cotality via ABC News"
+   },
+   {
+    "label": "AMP expected fall",
+    "value": "15%",
+    "asAt": "2026",
+    "issue": "housing",
+    "source": "AMP via ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Wealth effect",
+    "def": "Spending changes as household wealth, such as house prices, changes."
+   },
+   {
+    "term": "Transmission mechanism",
+    "def": "The channels through which the cash rate affects spending and inflation."
+   },
+   {
+    "term": "Distribution of wealth",
+    "def": "How net worth is shared across households."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, Largest property downturn in 40 years in sight, 2 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-02/house-prices-fall-in-october-biggest-downturn-40-years-cotality/107325214"
+   ],
+   [
+    "ABC News, ASX markets business live blog, 2 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-02/asx-markets-business-live-news-nov-2/107334212"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-02-house-prices-fastest-fall-40-years.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Higher rates cut borrowing capacity and investors have pulled back after property tax changes, shifting housing demand left. Falling prices hit recent buyers with small deposits hardest, which matters for wealth distribution as well as spending.",
+  "questions": [
+   {
+    "q": "Explain how rising interest rates affect house prices and consumer spending through the wealth effect.",
+    "marks": 4
+   }
+  ],
+  "note": "Replaces the sixth-month item, which reported HSBC's economist expecting falls of up to 13%. The AMP forecast is one institution's view. See also the 25 October Domain quarterly figures."
+ },
+ {
+  "id": "2026-11-02-banks-cut-growth-forecasts-stagflation",
+  "title": "Banks see slower growth and higher unemployment, but still expect a hike",
+  "date": "2026-11-02",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "NAB",
+   "CBA"
+  ],
+  "summary": "A current stagflation example: NAB and CBA cut growth to about 1% and lifted unemployment forecasts while inflation stays above target.",
+  "lede": "NAB cut its 2027 GDP growth forecast to 1.0% and expects unemployment to reach 5.4% by the end of 2027, while CBA cut growth to about 1% by mid-2027 from 1.8% and raised its unemployment forecast to 5.1% from 4.8%. CBA expects trimmed mean inflation to stay at or above 3.5% until at least mid-2027.",
+  "about": {
+   "h09": [
+    "4I.2",
+    "4I.3",
+    "3C.3"
+   ],
+   "y12": [
+    "Y1c.1",
+    "Y1c.6",
+    "Y2c.8"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3A.7",
+    "3B.2",
+    "4D.3"
+   ],
+   "y12": [
+    "Y1b.11",
+    "Y1a.14"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "growth",
+   "employment",
+   "inflation"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "adas",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "NAB GDP growth forecast",
+    "value": "1.0% (2027)",
+    "asAt": "2 November 2026",
+    "issue": "growth",
+    "source": "NAB via ABC News"
+   },
+   {
+    "label": "NAB unemployment forecast",
+    "value": "5.4% by end-2027",
+    "asAt": "2 November 2026",
+    "issue": "employment",
+    "source": "NAB via ABC News"
+   },
+   {
+    "label": "CBA growth forecast",
+    "value": "about 1% by mid-2027 (was 1.8%)",
+    "asAt": "2 November 2026",
+    "issue": "growth",
+    "source": "CBA via ABC News"
+   },
+   {
+    "label": "CBA unemployment forecast",
+    "value": "5.1% (was 4.8%)",
+    "asAt": "2 November 2026",
+    "issue": "employment",
+    "source": "CBA via ABC News"
+   },
+   {
+    "label": "CBA trimmed mean forecast",
+    "value": "3.5% or more until at least mid-2027",
+    "asAt": "2 November 2026",
+    "issue": "inflation",
+    "source": "CBA via ABC News"
+   },
+   {
+    "label": "CBA wage growth forecast",
+    "value": "2.9% by late 2028",
+    "asAt": "2 November 2026",
+    "issue": "employment",
+    "source": "CBA via ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Stagflation",
+    "def": "High inflation combined with weak growth or rising unemployment."
+   },
+   {
+    "term": "Internal balance",
+    "def": "Sustainable growth with full employment and low, stable inflation."
+   },
+   {
+    "term": "Trimmed mean",
+    "def": "An underlying inflation measure that removes extreme price changes."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, ASX markets business live blog, 2 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-02/asx-markets-business-live-news-nov-2/107334212"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-02-banks-cut-growth-forecasts-stagflation.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Higher fuel and construction costs shift SRAS left, so prices rise while output falls. Raising rates to fight supply-driven inflation deepens the slowdown, a key limitation of monetary policy.",
+  "questions": [
+   {
+    "q": "Explain why policymakers find it difficult to achieve internal balance when inflation rises while growth slows.",
+    "marks": 5
+   }
+  ],
+  "note": "Bank forecasts are projections, not outcomes, and the digest relies on an ABC live blog summary. The \"stagflation\" label is the digest's description. UPDATE DUE: RBA forecasts on 3 November."
+ },
+ {
+  "id": "2026-11-02-inflation-gauge-factories-contract",
+  "title": "Inflation pressures persist as factories contract",
+  "date": "2026-11-02",
+  "type": "stats",
+  "outlets": [
+   "ABC News",
+   "Melbourne Institute",
+   "ABS"
+  ],
+  "summary": "A timely monthly inflation gauge and PMI, with the Phillips curve diagram showing why rising expectations make disinflation costlier.",
+  "lede": "The Melbourne Institute Inflation Gauge rose 0.5% in October (September 0.3%), its fourth straight monthly rise, while the manufacturing PMI fell to 49.6, its second month of contraction. The ABS reported headline CPI of 4.3% and trimmed mean of 3.6% for the year to September.",
+  "about": {
+   "h09": [
+    "3C.1",
+    "3C.2",
+    "3C.3"
+   ],
+   "y12": [
+    "Y1c.3",
+    "Y1c.8",
+    "Y1c.9"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3C.4",
+    "3A.7"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y1c.6"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "inflation",
+   "growth"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "phillips",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Melbourne Institute Inflation Gauge, monthly",
+    "value": "+0.5% (September +0.3%; fourth straight rise)",
+    "asAt": "October 2026",
+    "issue": "inflation",
+    "source": "Melbourne Institute via ABC News"
+   },
+   {
+    "label": "Manufacturing PMI",
+    "value": "49.6 (second month of contraction)",
+    "asAt": "October 2026",
+    "issue": "growth",
+    "source": "ABC News"
+   },
+   {
+    "label": "Dwelling approvals",
+    "value": "+5.1% (apartments +16.6%, houses -5.3%)",
+    "asAt": "September 2026",
+    "issue": "housing",
+    "source": "ABS via ABC News"
+   },
+   {
+    "label": "Headline CPI, annual",
+    "value": "4.3%",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "Trimmed mean, annual",
+    "value": "3.6%",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Headline CPI",
+    "def": "The price change of the ABS's full basket of goods and services."
+   },
+   {
+    "term": "Trimmed mean",
+    "def": "Removes the largest price rises and falls; the RBA's preferred underlying measure."
+   },
+   {
+    "term": "Inflation expectations",
+    "def": "What people expect inflation to be, which feeds into wages and price-setting."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, ASX markets business live blog, 2 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-02/asx-markets-business-live-news-nov-2/107334212"
+   ],
+   [
+    "ABS, CPI rose 4.3% in the year to September 2026",
+    "https://www.abs.gov.au/media-centre/media-releases/cpi-rose-43-year-september-2026"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-02-inflation-gauge-factories-contract.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "If people expect higher inflation, the short-run Phillips curve shifts out, so inflation rises even as unemployment rises and getting back to 2-3% becomes more costly. This is why the RBA targets underlying inflation and acts early to anchor expectations.",
+  "questions": [
+   {
+    "q": "Distinguish between headline and underlying inflation, and explain why the RBA focuses on the trimmed mean.",
+    "marks": 4
+   }
+  ],
+  "note": "The Melbourne Institute gauge is a private monthly estimate, not an official statistic. UPDATE DUE: RBA decision on 3 November."
+ },
+ {
+  "id": "2026-11-02-spending-cuts-vs-rate-rises",
+  "title": "Could government spending cuts do the RBA's job?",
+  "date": "2026-11-02",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "Compares contractionary fiscal policy with a rate rise as ways to reduce inflation, with Chris Richardson's rule of thumb.",
+  "lede": "With a fifth rate rise for the year expected, economists and politicians are debating whether the budget should do more of the work of bringing inflation down. Chris Richardson estimates that $7-10 billion a year in spending cuts would have about the same effect as one rate rise.",
+  "about": {
+   "h09": [
+    "4B.1",
+    "4C.2",
+    "4D.2"
+   ],
+   "y12": [
+    "Y2b.3",
+    "Y2b.13",
+    "Y2b.14"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4H.1",
+    "4H.3"
+   ],
+   "y12": [
+    "Y2c.7",
+    "Y2c.8"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "budget",
+   "inflation",
+   "rates"
+  ],
+  "levers": [
+   "fiscal",
+   "monetary"
+  ],
+  "diagrams": [
+   "adas",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Spending cuts equal to one rate rise (Chris Richardson)",
+    "value": "$7-10 billion a year",
+    "asAt": "2 November 2026",
+    "issue": "budget",
+    "source": "ABC News"
+   },
+   {
+    "label": "Cash rate before the decision / if the hike is delivered",
+    "value": "4.60% / 4.85%",
+    "asAt": "3 November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Fuel tax credits",
+    "value": "more than $10 billion a year",
+    "asAt": "2026",
+    "issue": "budget",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Fiscal policy",
+    "def": "Using government spending and taxation to influence the economy."
+   },
+   {
+    "term": "Contractionary policy",
+    "def": "Settings that reduce aggregate demand."
+   },
+   {
+    "term": "Policy mix",
+    "def": "The combination of fiscal and monetary policy settings."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, Could government spending cuts help fight inflation?, 2 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-02/government-spending-cuts-to-control-inflation-explained/107337846"
+   ],
+   [
+    "ABC News, Federal politics live blog, 2 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-02/federal-politics-live-blog-albanese-chogm-nov-2/107334912"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-02-spending-cuts-vs-rate-rises.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Evaluate both arms: fiscal policy can be targeted but is slow and political, while monetary policy is flexible but blunt and falls mainly on borrowers. If the budget does more, the RBA may need to do less.",
+  "questions": [
+   {
+    "q": "Evaluate the effectiveness of contractionary fiscal policy, compared with monetary policy, in reducing inflation.",
+    "marks": 6
+   }
+  ],
+  "note": "The Richardson estimate is a rule of thumb, not a precise forecast. The Opposition named the home battery program and EV discount as possible cuts; that is its proposal. UPDATE DUE: RBA decision on 3 November."
+ },
+ {
   "id": "2026-11-01-banks-zero-interest-savings",
   "title": "Big banks hold about $332 billion that earns savers no interest as rates rise",
   "date": "2026-11-01",
@@ -395,21 +1384,138 @@
   "note": "UPDATE DUE: OPEC+ meeting on 29 November and the mid-November capacity review. The UAE left OPEC in May, according to the report. Related to the 30 October Hormuz oil price item."
  },
  {
-  "id": "2026-10-31-china-factories-slip-into-contraction",
-  "title": "China's factories slip back into contraction as demand weakens",
+  "id": "2026-11-01-myefo-no-promise-of-net-savings",
+  "title": "No promise of net savings in December's budget update",
+  "date": "2026-11-01",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "Shows why structural spending pressures make a contractionary budget hard, and why that leaves the RBA carrying more of the load.",
+  "lede": "Finance Minister Katy Gallagher would not commit to overall savings in December's Mid-Year Economic and Fiscal Outlook, citing rising costs in health, aged care and veterans' services. Treasurer Jim Chalmers has warned higher borrowing costs will add billions, while the Opposition says spending restraint would ease pressure on the RBA.",
+  "about": {
+   "h09": [
+    "4C.1",
+    "4C.2",
+    "4B.1"
+   ],
+   "y12": [
+    "Y2b.3",
+    "Y2b.5",
+    "Y2b.12",
+    "Y2b.14"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4C.3",
+    "4H.3",
+    "4D.1"
+   ],
+   "y12": [
+    "Y2b.13",
+    "Y2c.7"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "budget",
+   "inflation"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "adas",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Government spending",
+    "value": "26.8% of GDP",
+    "asAt": "2026",
+    "issue": "budget",
+    "source": "ABC News"
+   },
+   {
+    "label": "Budget deficit",
+    "value": "about 1% of GDP",
+    "asAt": "2026",
+    "issue": "budget",
+    "source": "ABC News"
+   },
+   {
+    "label": "Annual CPI",
+    "value": "4.3%",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "MYEFO release",
+    "value": "December 2026",
+    "asAt": "December 2026",
+    "issue": "budget",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "MYEFO",
+    "def": "The Mid-Year Economic and Fiscal Outlook, the December update of the May budget."
+   },
+   {
+    "term": "Structural balance",
+    "def": "The budget balance after removing the effects of the economic cycle."
+   },
+   {
+    "term": "Cyclical component",
+    "def": "Budget changes caused by the business cycle."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, Government will not promise net savings in budget update, 1 Nov 2026",
+    "https://abc.net.au/news/2026-11-01/katy-gallagher-wont-promise-myefo-net-savings/107333248"
+   ],
+   [
+    "ABC News, Interest rate hikes gather pace across the globe, 3 Nov 2026",
+    "https://abc.net.au/news/2026-11-03/rate-hikes-gather-pace-across-the-globe-as-deficits/107336008"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-01-myefo-no-promise-of-net-savings.pdf",
+   "label": "One-page digest",
+   "pages": 1
+  },
+  "angle": "Rising health, aged care and veterans' costs are structural pressures, not cyclical ones, so they do not fade as the economy slows. If new spending is not offset by savings, the fiscal stance stays supportive and the RBA carries more of the load.",
+  "questions": [
+   {
+    "q": "Explain what MYEFO is and how the fiscal stance it reveals could influence monetary policy decisions.",
+    "marks": 4
+   }
+  ],
+  "note": "Government and Opposition positions are reported as each put them. UPDATE DUE: MYEFO in December. Follows the 29 October item on Chalmers ruling out a fuel discount."
+ },
+ {
+  "id": "2026-10-31-china-factories-export-orders-fall",
+  "title": "China's factories slow as export orders fall",
   "date": "2026-10-31",
   "type": "stats",
   "outlets": [
+   "AP",
+   "Reuters",
    "National Bureau of Statistics",
-   "AFP",
    "CGTN"
   ],
-  "summary": "A leading indicator for Australia's biggest export market: both Chinese PMIs fell below 50 in October, with new orders weaker at home and abroad.",
-  "lede": "China's official manufacturing PMI fell to 49.3 in October from 50.1 in September, below forecasts of 49.9, and the non-manufacturing PMI fell to 49.7 from 50.2. The new orders index fell to 49.4, though high-tech and AI-related manufacturing kept growing.",
+  "summary": "China's official and private factory surveys diverge in October, with falling export orders and iron ore near US$91, a warning for Australia's biggest export market. Replaces the earlier PMI item.",
+  "lede": "China's official manufacturing PMI fell to 49.3 in October from 50.1, with new export orders dropping to 48.7 from 50.0, while the private RatingDog PMI held at 52.0. China's trade surplus was about US$800 billion by August, on track to beat 2025's record of US$1.2 trillion.",
   "about": {
    "h09": [
     "1A.8",
-    "2A.1"
+    "2A.1",
+    "1E.1"
    ],
    "y12": [
     "Y3e.1",
@@ -422,7 +1528,6 @@
   },
   "also": {
    "h09": [
-    "1E.1",
     "3D.3",
     "4H.2"
    ],
@@ -440,56 +1545,90 @@
    "global"
   ],
   "diagrams": [
+   "ds",
    "chart",
    "flow"
   ],
   "figures": [
    {
     "label": "Official manufacturing PMI",
-    "value": "49.3 (September 50.1; forecast 49.9)",
+    "value": "49.3 (September 50.1)",
     "asAt": "October 2026",
     "issue": "global",
-    "source": "National Bureau of Statistics via AFP"
+    "source": "National Bureau of Statistics via AP"
    },
    {
-    "label": "Non-manufacturing PMI (services and construction)",
+    "label": "New export orders index",
+    "value": "48.7 (September 50.0)",
+    "asAt": "October 2026",
+    "issue": "global",
+    "source": "National Bureau of Statistics via AP"
+   },
+   {
+    "label": "Production index",
+    "value": "49.8",
+    "asAt": "October 2026",
+    "issue": "global",
+    "source": "National Bureau of Statistics via AP"
+   },
+   {
+    "label": "Non-manufacturing PMI",
     "value": "49.7 (September 50.2)",
     "asAt": "October 2026",
     "issue": "global",
     "source": "National Bureau of Statistics via CGTN"
    },
    {
-    "label": "New orders index",
-    "value": "49.4 (September about 50.5)",
+    "label": "Private (RatingDog) PMI",
+    "value": "52.0",
     "asAt": "October 2026",
     "issue": "global",
-    "source": "National Bureau of Statistics via AFP"
+    "source": "Reuters"
    },
    {
-    "label": "Consumer goods PMI",
-    "value": "-1.9 points",
-    "asAt": "October 2026",
+    "label": "Iron ore",
+    "value": "US$90.80 a tonne",
+    "asAt": "31 October 2026",
+    "issue": "trade",
+    "source": "AP"
+   },
+   {
+    "label": "China's trade surplus",
+    "value": "about US$800b by August (2025 record US$1.2 trillion)",
+    "asAt": "August 2026",
     "issue": "global",
-    "source": "National Bureau of Statistics via AFP"
+    "source": "AP"
    }
   ],
   "terms": [
    {
     "term": "Purchasing managers' index (PMI)",
-    "def": "A survey of purchasing managers about output, orders and jobs; above 50 means expansion and below 50 means contraction."
+    "def": "A business survey where above 50 means expansion and below 50 means contraction."
+   },
+   {
+    "term": "Trade surplus",
+    "def": "Exports exceed imports in value."
    },
    {
     "term": "Terms of trade",
-    "def": "Export prices divided by import prices, times 100."
-   },
-   {
-    "term": "Leading indicator",
-    "def": "A statistic that tends to change before the wider economy does."
+    "def": "Export prices relative to import prices."
    }
   ],
   "links": [
    [
-    "China-Global South Project (AFP), China manufacturing PMI October 2026: factory contraction, 31 Oct 2026",
+    "AP via WPXI, China factory activity contracts in October, 31 Oct 2026",
+    "https://www.wpxi.com/news/business/chinas-factory/UAWDXJV27M6LZNHTN2G2DMEGTQ/"
+   ],
+   [
+    "Reuters, China private PMI, 1 Nov 2026",
+    "https://1027wbow.com/2026/11/01/china-factory-growth-slows-in-october-as-export-orders-ease-private-pmi-shows/"
+   ],
+   [
+    "AP/PBS, US and China release product lists for tariff cuts, 28 Sep 2026",
+    "https://www.pbs.org/newshour/world/u-s-and-china-release-product-lists-for-tariff-cuts-after-trump-xi-meeting"
+   ],
+   [
+    "China-Global South Project (AFP), China manufacturing PMI October 2026, 31 Oct 2026",
     "https://chinaglobalsouth.com/2026/10/31/china-manufacturing-pmi-october-2026-factory-contraction/"
    ],
    [
@@ -498,170 +1637,18 @@
    ]
   ],
   "file": {
-   "path": "files/2026-10/2026-10-31-china-factories-slip-into-contraction.pdf",
+   "path": "files/2026-10/2026-10-31-china-factories-export-orders-fall.pdf",
    "label": "One-page digest",
    "pages": 1
   },
-  "angle": "Slower Chinese growth reduces demand for iron ore, coal and LNG, which can lower Australia's export prices and volumes, worsen the terms of trade and weaken the current account and the AUD. The 25 October and 27 October items give the earlier, stronger growth picture.",
+  "angle": "If Chinese steel mills cut output, demand for iron ore shifts left, lowering Australia's export prices, terms of trade and national income. Link China's growth to Australia through export revenue, company tax receipts and the AUD. The two PMIs disagree, so avoid overstating one month.",
   "questions": [
    {
-    "q": "China buys about a third of Australia's goods exports. Explain how a slowdown in Chinese manufacturing could affect Australia's terms of trade and current account balance.",
-    "marks": 5
-   },
-   {
-    "q": "What does a fall in China's new orders index suggest about the likely direction of Chinese output?",
-    "marks": 2
-   }
-  ],
-  "note": "One month's survey data, so it may reverse. The \"about a third\" share of Australia's goods exports is the digest's statement; check it against DFAT or the ABS before quoting. Contrasts with the earlier 4.5% growth figure for the third quarter."
- },
- {
-  "id": "2026-10-30-oil-six-month-high-hormuz-attacks",
-  "title": "Oil hits a six-month high as attacks in the Strait of Hormuz escalate",
-  "date": "2026-10-30",
-  "type": "news",
-  "outlets": [
-   "Investing.com",
-   "ABC News"
-  ],
-  "summary": "A live supply shock: Brent rose 13.6% in October on shipping attacks, shown with the inelastic demand diagram and the AD/AS stagflation effect on Australia.",
-  "lede": "Brent crude settled at US$117.64 on 30 October, up 13.6% across the month, as attacks on tankers in the Strait of Hormuz reached the highest monthly level since the war with Iran began in February. Traffic through the strait is still about 70% below pre-war levels.",
-  "about": {
-   "h09": [
-    "3C.3",
-    "1A.1"
-   ],
-   "y12": [
-    "Y1c.4",
-    "Y1c.5",
-    "Y3e.3"
-   ],
-   "y11": []
-  },
-  "also": {
-   "h09": [
-    "3C.4",
-    "4D.3",
-    "1A.8"
-   ],
-   "y12": [
-    "Y1c.1",
-    "Y1a.10",
-    "Y1a.13",
-    "Y2c.8"
-   ],
-   "y11": []
-  },
-  "issues": [
-   "inflation",
-   "global",
-   "trade",
-   "rates"
-  ],
-  "levers": [
-   "monetary"
-  ],
-  "diagrams": [
-   "ds",
-   "adas",
-   "flow"
-  ],
-  "figures": [
-   {
-    "label": "Brent crude",
-    "value": "US$117.64 (+2.4% on the day; six-month high)",
-    "asAt": "30 October 2026",
-    "issue": "global",
-    "source": "Investing.com via Yahoo Finance"
-   },
-   {
-    "label": "Brent crude rise over October",
-    "value": "+13.6%",
-    "asAt": "October 2026",
-    "issue": "global",
-    "source": "Investing.com via Yahoo Finance"
-   },
-   {
-    "label": "WTI crude",
-    "value": "US$104.12",
-    "asAt": "30 October 2026",
-    "issue": "global",
-    "source": "Investing.com via Yahoo Finance"
-   },
-   {
-    "label": "Attacks on shipping",
-    "value": "at least 35 (the most in any month of the conflict)",
-    "asAt": "October 2026",
-    "issue": "global",
-    "source": "Investing.com via Yahoo Finance"
-   },
-   {
-    "label": "Hormuz traffic compared with pre-war",
-    "value": "about 70% lower",
-    "asAt": "October 2026",
-    "issue": "global",
-    "source": "Investing.com via Yahoo Finance"
-   },
-   {
-    "label": "Australian fuel prices",
-    "value": "+9.4%",
-    "asAt": "September 2026",
-    "issue": "inflation",
-    "source": "ABS via digest"
-   },
-   {
-    "label": "Annual CPI",
-    "value": "4.3%",
-    "asAt": "September 2026",
-    "issue": "inflation",
-    "source": "ABS"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Supply shock",
-    "def": "An unexpected change in the supply of a key input that shifts costs across the economy."
-   },
-   {
-    "term": "Price-inelastic demand",
-    "def": "Demand that changes little when the price changes."
-   },
-   {
-    "term": "Cost-push inflation",
-    "def": "Inflation caused by rising production costs."
-   },
-   {
-    "term": "Stagflation",
-    "def": "Rising inflation combined with weak growth."
-   }
-  ],
-  "links": [
-   [
-    "Investing.com via Yahoo Finance, Oil hits six-month highs",
-    "https://au.finance.yahoo.com/news/oil-hits-six-month-highs-064011112.html"
-   ],
-   [
-    "ABC News, Attacks on Iran should be met without restraint, Khamenei orders, 31 Oct 2026",
-    "https://www.abc.net.au/news/2026-10-31/attacks-on-iran-should-be-met-without-restraint-khamenei-orders/107332392"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-10/2026-10-30-oil-six-month-high-hormuz-attacks.pdf",
-   "label": "One-page digest",
-   "pages": 1
-  },
-  "angle": "Short-run oil demand is inelastic, so a small fall in quantity brings a large rise in price. For an oil importer the shock shifts SRAS left: higher prices and lower output. The RBA may not \"look through\" the shock in 2026 because inflation is already high.",
-  "questions": [
-   {
-    "q": "Using an AD/AS diagram, explain how a sustained rise in world oil prices affects inflation, output and unemployment in Australia.",
-    "marks": 6
-   },
-   {
-    "q": "Explain why the RBA might \"look through\" an oil price shock, and why it may not in 2026.",
+    "q": "Explain how a slowdown in China's manufacturing sector could affect Australia's terms of trade and current account.",
     "marks": 4
    }
   ],
-  "note": "Iran's claim that four tankers hit mines, including a supertanker, was not independently verified. Overlaps with the 19 October and 28 October oil items; this one has the latest price. Qatar-mediated talks on reopening the strait were continuing."
+  "note": "Replaces the 31 October PMI item, whose figures are carried over. Official and private surveys sample different firms, which explains the gap. One month's data may reverse."
  },
  {
   "id": "2026-10-29-private-health-rebate-age-versus-need",
@@ -1827,143 +2814,6 @@
    }
   ],
   "note": "The $10 billion figure is the Prime Minister's claim and differs from the A$2 billion of new trade quoted in the 28 October Conversation article; compare the two when evaluating claims. UPDATE DUE: parliamentary vote."
- },
- {
-  "id": "2026-10-29-aud-steady-iron-ore-flat-oil-high",
-  "title": "Dollar steady near 70.5 US cents as iron ore flatlines and oil stays high",
-  "date": "2026-10-29",
-  "type": "stats",
-  "outlets": [
-   "ABC News"
-  ],
-  "summary": "Combines terms of trade with the interest rate differential, showing why the AUD moves less when the Fed is also expected to hike. Replaces the 23 October edition.",
-  "lede": "The Australian dollar closed flat at 70.52 US cents on 29 October, iron ore was unchanged at US$90.70 a tonne and Brent crude stayed near US$114. Markets price about an 85% chance of an RBA rise on Tuesday and about an 80% chance of a US Fed hike in December, which pull the dollar in opposite directions.",
-  "about": {
-   "h09": [
-    "2C.2",
-    "2C.3",
-    "2C.6"
-   ],
-   "y12": [
-    "Y3c.2",
-    "Y3c.4",
-    "Y3c.5",
-    "Y1a.7"
-   ],
-   "y11": [
-    "P6c.1"
-   ]
-  },
-  "also": {
-   "h09": [
-    "2A.1",
-    "2C.4",
-    "3D.3",
-    "4D.3"
-   ],
-   "y12": [
-    "Y3c.1",
-    "Y3c.6",
-    "Y3e.3"
-   ],
-   "y11": [
-    "P6a.2",
-    "P6c.2"
-   ]
-  },
-  "issues": [
-   "fx",
-   "trade",
-   "rates"
-  ],
-  "levers": [
-   "monetary"
-  ],
-  "diagrams": [
-   "fx",
-   "flow"
-  ],
-  "figures": [
-   {
-    "label": "Australian dollar",
-    "value": "70.52 US cents (high about 70.70)",
-    "asAt": "close, 29 October 2026",
-    "issue": "fx",
-    "source": "ABC News"
-   },
-   {
-    "label": "Iron ore",
-    "value": "US$90.70 a tonne (unchanged)",
-    "asAt": "29 October 2026",
-    "issue": "trade",
-    "source": "ABC News"
-   },
-   {
-    "label": "Gold",
-    "value": "US$4,039 an ounce (-0.7%)",
-    "asAt": "29 October 2026",
-    "issue": "trade",
-    "source": "ABC News"
-   },
-   {
-    "label": "Brent crude",
-    "value": "near US$114",
-    "asAt": "29 October 2026",
-    "issue": "trade",
-    "source": "ABC News"
-   },
-   {
-    "label": "Market odds: RBA hike Tuesday / US Fed hike in December",
-    "value": "about 85% / about 80%",
-    "asAt": "29 October 2026",
-    "issue": "rates",
-    "source": "ABC News"
-   },
-   {
-    "label": "RBA cash rate before Tuesday",
-    "value": "4.60%",
-    "asAt": "29 October 2026",
-    "issue": "rates",
-    "source": "RBA"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Terms of trade",
-    "def": "Export prices divided by import prices, times 100."
-   },
-   {
-    "term": "Interest rate differential",
-    "def": "The gap between Australian and overseas rates, which drives short-term capital flows."
-   },
-   {
-    "term": "Commodity prices",
-    "def": "The prices of raw materials such as iron ore and oil."
-   }
-  ],
-  "links": [
-   [
-    "ABC News, ASX markets business live blog, 29 Oct 2026",
-    "https://www.abc.net.au/news/2026-10-29/asx-markets-business-live-news-29-october-2026/107321622"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-10/2026-10-29-aud-steady-iron-ore-flat-oil-high.pdf",
-   "label": "One-page digest",
-   "pages": 1
-  },
-  "angle": "Exchange rates depend on relative, not absolute, interest rates, so combine the differential with commodity prices. Flat iron ore receipts and expensive oil imports put downward pressure on the terms of trade.",
-  "questions": [
-   {
-    "q": "Explain how an increase in the RBA cash rate, with US rates unchanged, would be expected to affect the value of the AUD.",
-    "marks": 3
-   },
-   {
-    "q": "Explain how high oil prices combined with flat iron ore prices affect Australia's terms of trade.",
-    "marks": 4
-   }
-  ],
-  "note": "Single-day figures, so update before quoting. UPDATE DUE: RBA decision on 3 November. Overlaps with the 28 October item on the AUD and rate hike bets, which is kept because it covers the NZ dollar move."
  },
  {
   "id": "2026-10-29-central-banks-split-on-oil-shock",
@@ -7162,7 +8012,7 @@
     "marks": 5
    }
   ],
-  "note": "Domain median prices are one measure of the market. One economist expects falls to continue for another 6 to 12 months. See also the monthly figures filed on 22 October."
+  "note": "Domain median prices are one measure of the market. One economist expects falls to continue for another 6 to 12 months. See also the monthly Cotality figures filed on 2 November."
  },
  {
   "id": "2026-10-24-us-canada-tariff-changes",
@@ -7768,140 +8618,6 @@
    "pages": 1
   },
   "added": "2026-10-26"
- },
- {
-  "id": "2026-10-22-house-price-falls",
-  "date": "2026-10-22",
-  "added": "2026-10-25",
-  "title": "House prices fall for a sixth month as rate rises bite",
-  "outlets": [
-   "Cotality",
-   "ABC News",
-   "Guardian Australia"
-  ],
-  "summary": "Falling asset prices as a channel of monetary policy and a hit to household wealth, with a demand and supply diagram.",
-  "lede": "National home values have now fallen for six months in a row, and HSBC's chief economist thinks the slide could reach 13%, which would be a large hit to household wealth.",
-  "type": "news",
-  "diagrams": [
-   "ds",
-   "flow"
-  ],
-  "issues": [
-   "housing",
-   "rates",
-   "inequality"
-  ],
-  "levers": [
-   "monetary"
-  ],
-  "about": {
-   "h09": [
-    "3E.4",
-    "4D.3",
-    "3A.1"
-   ],
-   "y12": [
-    "Y2c.5",
-    "Y1d.1",
-    "Y1d.6"
-   ],
-   "y11": [
-    "P2d.1",
-    "P4c.7"
-   ]
-  },
-  "also": {
-   "h09": [
-    "3E.5",
-    "3A.7",
-    "4D.2"
-   ],
-   "y12": [
-    "Y1a.6",
-    "Y2c.7",
-    "Y1d.10"
-   ],
-   "y11": [
-    "P2d.2"
-   ]
-  },
-  "terms": [
-   {
-    "term": "Wealth effect",
-    "def": "Households spend less when the value of their assets falls."
-   },
-   {
-    "term": "Asset price",
-    "def": "The market value of property, shares and similar assets."
-   },
-   {
-    "term": "Distribution of wealth",
-    "def": "How assets are shared across households."
-   }
-  ],
-  "figures": [
-   {
-    "label": "National home values, monthly change",
-    "value": "−1.1%",
-    "asAt": "Sept 2026 (−3.7% over the quarter)",
-    "issue": "housing",
-    "source": "Cotality"
-   },
-   {
-    "label": "National home values, below March 2026 peak",
-    "value": "−5.2%",
-    "asAt": "Sept 2026",
-    "issue": "housing",
-    "source": "Cotality"
-   },
-   {
-    "label": "Sydney home values, below February peak",
-    "value": "−8.6%",
-    "asAt": "Sept 2026",
-    "issue": "housing",
-    "source": "Cotality"
-   },
-   {
-    "label": "ANZ forecast fall in home prices, peak to trough",
-    "value": "13.5% (a record; HSBC says up to 13%)",
-    "asAt": "Oct 2026",
-    "issue": "housing",
-    "source": "ABC The Business"
-   },
-   {
-    "label": "Rents",
-    "value": "+0.5% over the quarter; vacancy rate 2.0%",
-    "asAt": "Sept qtr 2026",
-    "issue": "housing",
-    "source": "Cotality"
-   }
-  ],
-  "angle": "Falling house prices are a channel of monetary policy; lower household wealth weakens consumption and helps cool inflation, but recent buyers with large loans are hit hardest.",
-  "questions": [
-   {
-    "q": "Explain how rising interest rates affect the distribution of wealth in Australia.",
-    "marks": 4
-   }
-  ],
-  "file": {
-   "path": "files/2026-10/2026-10-22-house-price-falls.pdf",
-   "label": "One-page digest",
-   "pages": 1
-  },
-  "links": [
-   {
-    "label": "Cotality, 'Monthly Housing Chart Pack – October 2026'",
-    "url": "https://www.cotality.com/au/insights/articles/monthly-housing-chart-pack-october-2026"
-   },
-   {
-    "label": "ABC The Business, 'Property prices set to slum p as much as 13 per cent', 22 Oct 2026",
-    "url": "https://www.abc.net.au/news/programs/the-business/2026-10-22/property-prices-set-to-slump-as-much-as-13-per-cent-says-hsbc-s-/107297378"
-   },
-   {
-    "label": "CathNews (r epublishing Guardian Australia), 'Budget update projects weaker growth and higher unemployment', 23 Oct 2026",
-    "url": "https://cathnews.com/2026/10/23/budget-update-projects-weaker-growth-and-higher-unemployment/"
-   }
-  ]
  },
  {
   "id": "2026-10-21-rba-hauser-inflation-warning",
