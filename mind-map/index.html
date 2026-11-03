@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"></head><body>
+<title>HSC Economics Link Map</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: full-height tool. Top bar (title, search, mode), map canvas left, detail panel right (stacks below on phones). */
+:root{
+  --bg:#f4f6f8; --surface:#ffffff; --fg:#14202b; --muted:#566573; --line:#cfd8e0;
+  --cluster:#e9eef2; --titlebar:#22313f; --titletext:#ffffff; --pillbase:#ffffff;
+  --accent:#8b3fa8; --ink2:#22313f; --hubfill:#22313f; --hubtext:#ffffff;
+  --t1:#1f6fb4; --t2:#2a9a3a; --t3:#d68a00; --t4:#d1302f;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif; --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e151c; --surface:#16202a; --fg:#e8eef3; --muted:#9db0c0; --line:#2b3a47;
+  --cluster:#141d26; --titlebar:#2c3e50; --titletext:#ffffff; --pillbase:#16202a;
+  --accent:#c58be0; --ink2:#d3dee8; --hubfill:#2c3e50; --hubtext:#ffffff;
+  --t1:#4f9bdc; --t2:#4fbf5f; --t3:#f0a830; --t4:#ee6a68; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e151c; --surface:#16202a; --fg:#e8eef3; --muted:#9db0c0; --line:#2b3a47;
+  --cluster:#141d26; --titlebar:#2c3e50; --titletext:#ffffff; --pillbase:#16202a;
+  --accent:#c58be0; --ink2:#d3dee8; --hubfill:#2c3e50; --hubtext:#ffffff;
+  --t1:#4f9bdc; --t2:#4fbf5f; --t3:#f0a830; --t4:#ee6a68; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:10px;display:flex;flex-direction:column;gap:10px;overflow-x:hidden}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px}
+h1{font:800 22px/1.1 var(--display);letter-spacing:-.01em;margin:0;text-wrap:balance}
+h1 small{display:block;font:500 12px/1.3 var(--body);color:var(--muted);letter-spacing:0;margin-top:3px}
+.tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-left:auto;min-width:0}
+.search{position:relative}
+input[type=search]{font:inherit;width:230px;max-width:100%;padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--fg)}
+.sug{position:absolute;z-index:20;top:100%;left:0;right:0;margin-top:3px;background:var(--surface);border:1px solid var(--line);border-radius:6px;max-height:280px;overflow:auto;min-width:260px}
+.sug button{display:flex;gap:8px;align-items:center;width:100%;text-align:left;border:0;background:none;color:var(--fg);font:inherit;padding:6px 10px;cursor:pointer}
+.sug button:hover,.sug button:focus-visible{background:var(--cluster)}
+.dot{width:10px;height:10px;border-radius:50%;flex:none}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.seg button{font:inherit;border:0;background:var(--surface);color:var(--fg);padding:7px 11px;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--titlebar);color:#fff}
+.btn{font:inherit;border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:7px 11px;border-radius:6px;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+main{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:10px}
+.stage{position:relative;min-height:0;min-width:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface);touch-action:none}
+svg{display:block;width:100%;height:100%;cursor:grab;user-select:none}
+svg.drag{cursor:grabbing}
+.zoom{position:absolute;right:10px;bottom:10px;display:flex;flex-direction:column;gap:6px}
+.zoom .btn{width:34px;height:34px;padding:0;font-size:18px}
+aside{min-width:0;min-height:0;overflow:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:14px;display:flex;flex-direction:column;gap:12px}
+aside h2{font:800 17px/1.2 var(--display);margin:0;text-wrap:balance}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)}
+.lab{font:600 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+ul.links{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
+ul.links button{width:100%;text-align:left;font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-left:5px solid var(--c);border-radius:5px;padding:6px 8px;cursor:pointer;display:flex;gap:8px;align-items:baseline}
+ul.links button:hover{background:var(--cluster)}
+.sg{font-weight:700;min-width:1.2em;text-align:center;color:var(--c)}
+.hint{color:var(--muted);font-size:13px}
+.key{display:grid;gap:6px;font-size:12.5px;color:var(--muted)}
+.key div{display:flex;gap:8px;align-items:center}
+.sw{width:22px;height:0;border-top:3px solid var(--fg);flex:none}
+/* svg parts */
+.cl{fill:var(--cluster);stroke:var(--line);stroke-width:.03}
+.tb{fill:var(--titlebar)}
+.hubbg{fill:var(--cluster);stroke:var(--line);stroke-width:.04}
+.pill rect{fill:color-mix(in srgb,var(--c) 17%,var(--pillbase));stroke:var(--c);stroke-width:.045;transition:opacity .15s}
+.pill text{fill:var(--fg);text-anchor:middle}
+.pill{cursor:pointer;transition:opacity .15s}
+.pill.hub rect{fill:var(--hubfill);stroke:var(--surface)}
+.pill.hub text{fill:var(--hubtext);font-weight:700}
+.pill.sel rect{stroke:var(--fg);stroke-width:.14}
+.pill:hover rect{stroke-width:.1}
+.pill:focus{outline:none}
+.pill:focus-visible rect{stroke:var(--accent);stroke-width:.14}
+.edge{transition:opacity .15s}
+.halo{fill:none;stroke:var(--surface);stroke-linejoin:round;stroke-linecap:round}
+.ln{fill:none;stroke-linejoin:round}
+.bd circle{fill:var(--surface);stroke-width:.04}
+.bd text{text-anchor:middle;font-weight:700}
+.dim .pill:not(.on){opacity:.22}
+.dim .edge:not(.on){opacity:.05}
+.dim .cl,.dim .hubbg{opacity:.6}
+.conf{stroke:var(--accent);fill:none;stroke-dasharray:.25 .15}
+.hdr{fill:var(--muted);font-weight:700;letter-spacing:.04em}
+@media (max-width:820px){
+  main{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+  aside{max-height:38vh}
+  .tools{margin-left:0}
+  h1{font-size:19px}
+}
+@media (prefers-reduced-motion:reduce){.pill,.edge,.pill rect{transition:none}}
+</style>
+
+<header>
+  <h1>HSC Economics Link Map<small>Tap or click any dot point to see only the links that touch it.</small></h1>
+  <div class="tools">
+    <div class="search"><input id="q" type="search" placeholder="Find a dot point" aria-label="Find a dot point" autocomplete="off"><div class="sug" id="sug" hidden></div></div>
+    <div class="seg" role="group" aria-label="Which links to show">
+      <button id="m1" aria-pressed="true">Direct links</button>
+      <button id="m2" aria-pressed="false">Whole chain</button>
+    </div>
+    <button class="btn" id="fit">Show everything</button>
+  </div>
+</header>
+<main>
+  <div class="stage" id="stage">
+    <svg id="svg" role="img" aria-label="Mind map of all HSC Economics dot points and the cause and effect links between them"></svg>
+    <div class="zoom"><button class="btn" id="zi" aria-label="Zoom in">+</button><button class="btn" id="zo" aria-label="Zoom out">–</button></div>
+  </div>
+  <aside id="panel"></aside>
+</main>
+
+<script>
+const D = {"PW": 46.81, "PH": 33.11, "pts_per_unit": 144.0, "FK": 1.5, "FS": 15.0, "pills": [{"id": "AD", "tp": 3, "x0": 1.1, "x1": 6.1, "y1": 28.660000000000004, "y0": 28.160000000000004, "text": "Y = C + I + G + X \u2013 M"}, {"id": "INJ", "tp": 3, "x0": 1.1, "x1": 6.1, "y1": 27.860000000000003, "y0": 27.360000000000003, "text": "Injections (I+G+X) & withdrawals (S+T+M)"}, {"id": "MULT", "tp": 3, "x0": 1.1, "x1": 6.1, "y1": 27.060000000000002, "y0": 26.560000000000002, "text": "Simple multiplier: k = 1/(1\u2013MPC)"}, {"id": "GDP", "tp": 3, "x0": 7.7, "x1": 12.7, "y1": 28.660000000000004, "y0": 28.160000000000004, "text": "Real GDP: measuring growth"}, {"id": "SRC", "tp": 3, "x0": 7.7, "x1": 12.7, "y1": 27.860000000000003, "y0": 27.360000000000003, "text": "Sources & effects of growth"}, {"id": "AS", "tp": 3, "x0": 7.7, "x1": 12.7, "y1": 27.060000000000002, "y0": 26.560000000000002, "text": "Higher AS: efficiency & technology"}, {"id": "BC", "tp": 3, "x0": 7.7, "x1": 12.7, "y1": 26.26, "y0": 25.76, "text": "Trends in the business cycle"}, {"id": "GE", "tp": 1, "x0": 14.3, "x1": 19.3, "y1": 28.660000000000004, "y0": 28.160000000000004, "text": "The global economy"}, {"id": "GWP", "tp": 1, "x0": 14.3, "x1": 19.3, "y1": 27.860000000000003, "y0": 27.360000000000003, "text": "Gross World Product"}, {"id": "TTC", "tp": 1, "x0": 14.3, "x1": 19.3, "y1": 27.060000000000002, "y0": 26.560000000000002, "text": "Technology, transport & communication"}, {"id": "IBC", "tp": 1, "x0": 14.3, "x1": 19.3, "y1": 26.26, "y0": 25.76, "text": "International & regional business cycles"}, {"id": "GLOBEFF", "tp": 1, "x0": 14.3, "x1": 19.3, "y1": 25.46, "y0": 24.96, "text": "Effects of globalisation"}, {"id": "BLOCS", "tp": 1, "x0": 20.900000000000002, "x1": 25.900000000000002, "y1": 28.660000000000004, "y0": 28.160000000000004, "text": "Trading blocs & monetary unions"}, {"id": "FTA", "tp": 1, "x0": 20.900000000000002, "x1": 25.900000000000002, "y1": 27.860000000000003, "y0": 27.360000000000003, "text": "Multilateral & bilateral FTAs"}, {"id": "AUFTA", "tp": 2, "x0": 20.900000000000002, "x1": 25.900000000000002, "y1": 27.060000000000002, "y0": 26.560000000000002, "text": "Australia's multilateral & bilateral FTAs"}, {"id": "ORGS", "tp": 1, "x0": 20.900000000000002, "x1": 25.900000000000002, "y1": 26.26, "y0": 25.76, "text": "WTO, IMF, World Bank, UN, OECD"}, {"id": "G20", "tp": 1, "x0": 20.900000000000002, "x1": 25.900000000000002, "y1": 25.46, "y0": 24.96, "text": "G20 & G7/8 forums"}, {"id": "GVD", "tp": 1, "x0": 27.5, "x1": 32.5, "y1": 28.660000000000004, "y0": 28.160000000000004, "text": "Economic growth vs development"}, {"id": "QOL", "tp": 1, "x0": 27.5, "x1": 32.5, "y1": 27.860000000000003, "y0": 27.360000000000003, "text": "Income & quality-of-life indicators"}, {"id": "DEV", "tp": 1, "x0": 27.5, "x1": 32.5, "y1": 27.060000000000002, "y0": 26.560000000000002, "text": "Developing, emerging & advanced economies"}, {"id": "DIFF", "tp": 1, "x0": 27.5, "x1": 32.5, "y1": 26.26, "y0": 25.76, "text": "Reasons for differences between nations"}, {"id": "CASE", "tp": 1, "x0": 27.5, "x1": 32.5, "y1": 25.46, "y0": 24.96, "text": "Case study: economy other than Australia"}, {"id": "STAB", "tp": 4, "x0": 34.1, "x1": 39.1, "y1": 28.660000000000004, "y0": 28.160000000000004, "text": "Rationale: stabilisation & shifts in AD"}, {"id": "BUD", "tp": 4, "x0": 34.1, "x1": 39.1, "y1": 27.860000000000003, "y0": 27.360000000000003, "text": "Federal budgets & budget outcomes"}, {"id": "BUDEFF", "tp": 4, "x0": 34.1, "x1": 39.1, "y1": 27.060000000000002, "y0": 26.560000000000002, "text": "Budget effects: resources & activity"}, {"id": "DEF", "tp": 4, "x0": 34.1, "x1": 39.1, "y1": 26.26, "y0": 25.76, "text": "Methods of financing deficits"}, {"id": "SURP", "tp": 4, "x0": 34.1, "x1": 39.1, "y1": 25.46, "y0": 24.96, "text": "Use of a surplus"}, {"id": "MICRO", "tp": 4, "x0": 40.7, "x1": 45.7, "y1": 28.660000000000004, "y0": 28.160000000000004, "text": "Rationale: shifts in AS & efficiency"}, {"id": "MICEFF", "tp": 4, "x0": 40.7, "x1": 45.7, "y1": 27.860000000000003, "y0": 27.360000000000003, "text": "Effects on markets, industries & economy"}, {"id": "COMPOL", "tp": 4, "x0": 40.7, "x1": 45.7, "y1": 27.060000000000002, "y0": 26.560000000000002, "text": "Regulation, deregulation & competition policy"}, {"id": "RESP_G", "tp": 4, "x0": 40.7, "x1": 45.7, "y1": 26.26, "y0": 25.76, "text": "Policy response: growth & quality of life"}, {"id": "LF", "tp": 3, "x0": 1.1, "x1": 4.7, "y1": 21.76, "y0": 21.26, "text": "Labour force"}, {"id": "PART", "tp": 3, "x0": 1.1, "x1": 4.7, "y1": 20.96, "y0": 20.46, "text": "Participation rate"}, {"id": "UR", "tp": 3, "x0": 1.1, "x1": 4.7, "y1": 20.16, "y0": 19.66, "text": "Unemployment rate"}, {"id": "UTR", "tp": 3, "x0": 1.1, "x1": 4.7, "y1": 19.36, "y0": 18.86, "text": "Trends in unemployment"}, {"id": "NAIRU", "tp": 3, "x0": 1.1, "x1": 4.7, "y1": 17.86, "y0": 17.36, "text": "NAIRU"}, {"id": "GROUPS", "tp": 3, "x0": 1.1, "x1": 4.7, "y1": 17.06, "y0": 16.56, "text": "Main groups affected"}, {"id": "UCOST", "tp": 3, "x0": 1.1, "x1": 4.7, "y1": 16.259999999999998, "y0": 15.759999999999998, "text": "Economic & social costs"}, {"id": "CYC", "tp": 3, "x0": 6.300000000000001, "x1": 9.9, "y1": 21.76, "y0": 21.26, "text": "Cyclical"}, {"id": "STRUCU", "tp": 3, "x0": 6.300000000000001, "x1": 9.9, "y1": 20.96, "y0": 20.46, "text": "Structural"}, {"id": "FRIC", "tp": 3, "x0": 6.300000000000001, "x1": 9.9, "y1": 20.16, "y0": 19.66, "text": "Frictional"}, {"id": "SEAS", "tp": 3, "x0": 6.300000000000001, "x1": 9.9, "y1": 19.36, "y0": 18.86, "text": "Seasonal"}, {"id": "UNDER", "tp": 3, "x0": 6.300000000000001, "x1": 9.9, "y1": 18.56, "y0": 18.06, "text": "Underemployment"}, {"id": "HID", "tp": 3, "x0": 6.300000000000001, "x1": 9.9, "y1": 17.759999999999998, "y0": 17.259999999999998, "text": "Hidden"}, {"id": "LONG", "tp": 3, "x0": 6.300000000000001, "x1": 9.9, "y1": 16.959999999999997, "y0": 16.459999999999997, "text": "Long term"}, {"id": "DOL", "tp": 1, "x0": 6.300000000000001, "x1": 9.9, "y1": 15.459999999999996, "y0": 14.959999999999996, "text": "Division of labour & migration"}, {"id": "NSS", "tp": 4, "x0": 11.5, "x1": 15.1, "y1": 21.76, "y0": 21.26, "text": "National & state systems"}, {"id": "MES", "tp": 4, "x0": 11.5, "x1": 15.1, "y1": 20.96, "y0": 20.46, "text": "Minimum employment standards"}, {"id": "MINW", "tp": 4, "x0": 11.5, "x1": 15.1, "y1": 20.16, "y0": 19.66, "text": "Minimum wages"}, {"id": "AWARD", "tp": 4, "x0": 11.5, "x1": 15.1, "y1": 19.36, "y0": 18.86, "text": "Awards"}, {"id": "EA", "tp": 4, "x0": 11.5, "x1": 15.1, "y1": 18.56, "y0": 18.06, "text": "Enterprise agreements"}, {"id": "HIC", "tp": 4, "x0": 11.5, "x1": 15.1, "y1": 17.759999999999998, "y0": 17.259999999999998, "text": "Contracts for high income earners"}, {"id": "DISP", "tp": 4, "x0": 11.5, "x1": 15.1, "y1": 16.959999999999997, "y0": 16.459999999999997, "text": "Dispute resolution"}, {"id": "CENT", "tp": 4, "x0": 11.5, "x1": 15.1, "y1": 16.159999999999997, "y0": 15.659999999999997, "text": "Centralised vs individualised contracts"}, {"id": "EDU", "tp": 4, "x0": 11.5, "x1": 15.1, "y1": 15.359999999999996, "y0": 14.859999999999996, "text": "Education, training & job programs"}, {"id": "RESP_E", "tp": 4, "x0": 11.5, "x1": 15.1, "y1": 14.559999999999995, "y0": 14.059999999999995, "text": "Policy response: full employment"}, {"id": "TRADE1", "tp": 1, "x0": 29.5, "x1": 33.9, "y1": 21.76, "y0": 21.26, "text": "Trade in goods & services"}, {"id": "FLOWS", "tp": 1, "x0": 29.5, "x1": 33.9, "y1": 20.96, "y0": 20.46, "text": "Financial flows"}, {"id": "TNC", "tp": 1, "x0": 29.5, "x1": 33.9, "y1": 20.16, "y0": 19.66, "text": "Investment & TNCs"}, {"id": "TRP", "tp": 2, "x0": 29.5, "x1": 33.9, "y1": 19.36, "y0": 18.86, "text": "Trends in Australia's trade pattern"}, {"id": "FTR", "tp": 2, "x0": 29.5, "x1": 33.9, "y1": 18.56, "y0": 18.06, "text": "Trends in financial flows: debt & equity"}, {"id": "FT", "tp": 1, "x0": 29.5, "x1": 33.9, "y1": 17.06, "y0": 16.56, "text": "Basis of free trade"}, {"id": "REASON", "tp": 1, "x0": 29.5, "x1": 33.9, "y1": 16.259999999999998, "y0": 15.759999999999998, "text": "Reasons for protection"}, {"id": "PROTM", "tp": 1, "x0": 29.5, "x1": 33.9, "y1": 15.459999999999997, "y0": 14.959999999999997, "text": "Methods of protection"}, {"id": "AUPOL", "tp": 2, "x0": 29.5, "x1": 33.9, "y1": 14.659999999999997, "y0": 14.159999999999997, "text": "Australia's free trade & protection policies"}, {"id": "IMPL", "tp": 2, "x0": 29.5, "x1": 33.9, "y1": 13.859999999999996, "y0": 13.359999999999996, "text": "Implications: individuals, firms, governments"}, {"id": "OTHERP", "tp": 2, "x0": 29.5, "x1": 33.9, "y1": 13.059999999999995, "y0": 12.559999999999995, "text": "Protectionism of other countries & blocs"}, {"id": "CA", "tp": 2, "x0": 35.5, "x1": 39.9, "y1": 21.76, "y0": 21.26, "text": "Current Account: debits & credits"}, {"id": "KFA", "tp": 2, "x0": 35.5, "x1": 39.9, "y1": 20.96, "y0": 20.46, "text": "Capital & Financial Account"}, {"id": "LINKS", "tp": 2, "x0": 35.5, "x1": 39.9, "y1": 20.16, "y0": 19.66, "text": "Links between key BoP categories"}, {"id": "BOPTR", "tp": 2, "x0": 35.5, "x1": 39.9, "y1": 19.36, "y0": 18.86, "text": "Trends: competitiveness, borrowing"}, {"id": "BOPEFF", "tp": 2, "x0": 35.5, "x1": 39.9, "y1": 18.56, "y0": 18.06, "text": "Effects of BoP trends"}, {"id": "TWI", "tp": 2, "x0": 35.5, "x1": 39.9, "y1": 17.06, "y0": 16.56, "text": "Relative rates & Trade Weighted Index"}, {"id": "FACT", "tp": 2, "x0": 35.5, "x1": 39.9, "y1": 16.259999999999998, "y0": 15.759999999999998, "text": "Factors affecting demand & supply of A$"}, {"id": "DEPREC", "tp": 2, "x0": 35.5, "x1": 39.9, "y1": 15.459999999999997, "y0": 14.959999999999997, "text": "Value of A$: appreciation & depreciation"}, {"id": "REGIME", "tp": 2, "x0": 35.5, "x1": 39.9, "y1": 14.659999999999997, "y0": 14.159999999999997, "text": "Fixed, flexible & managed rates"}, {"id": "RBAX", "tp": 2, "x0": 35.5, "x1": 39.9, "y1": 13.859999999999996, "y0": 13.359999999999996, "text": "RBA influence on exchange rates"}, {"id": "XEFF", "tp": 2, "x0": 35.5, "x1": 39.9, "y1": 13.059999999999995, "y0": 12.559999999999995, "text": "Effects of exchange rate fluctuations"}, {"id": "CAD", "tp": 3, "x0": 41.5, "x1": 45.9, "y1": 21.76, "y0": 21.26, "text": "CAD as % of GDP"}, {"id": "NFD", "tp": 3, "x0": 41.5, "x1": 45.9, "y1": 20.96, "y0": 20.46, "text": "Net foreign debt as % of GDP"}, {"id": "NFL", "tp": 3, "x0": 41.5, "x1": 45.9, "y1": 20.16, "y0": 19.66, "text": "Net foreign liabilities as % of GDP"}, {"id": "TOT", "tp": 3, "x0": 41.5, "x1": 45.9, "y1": 19.36, "y0": 18.86, "text": "Terms of trade"}, {"id": "XR3", "tp": 3, "x0": 41.5, "x1": 45.9, "y1": 18.56, "y0": 18.06, "text": "Exchange rate"}, {"id": "COMP", "tp": 3, "x0": 41.5, "x1": 45.9, "y1": 17.759999999999998, "y0": 17.259999999999998, "text": "International competitiveness"}, {"id": "XTR", "tp": 3, "x0": 41.5, "x1": 45.9, "y1": 16.959999999999997, "y0": 16.459999999999997, "text": "Trends, causes & effects"}, {"id": "RESP_X", "tp": 4, "x0": 41.5, "x1": 45.9, "y1": 15.459999999999996, "y0": 14.959999999999996, "text": "Policy response: external stability"}, {"id": "ENV1", "tp": 1, "x0": 1.1, "x1": 4.7, "y1": 8.66, "y0": 8.16, "text": "Environmental sustainability"}, {"id": "ESD", "tp": 3, "x0": 1.1, "x1": 4.7, "y1": 7.16, "y0": 6.66, "text": "Ecologically sustainable development"}, {"id": "PSC", "tp": 3, "x0": 1.1, "x1": 4.7, "y1": 6.36, "y0": 5.86, "text": "Private & social costs and benefits"}, {"id": "EXT", "tp": 3, "x0": 1.1, "x1": 4.7, "y1": 5.5600000000000005, "y0": 5.0600000000000005, "text": "Externalities & market failure"}, {"id": "PUB", "tp": 3, "x0": 1.1, "x1": 4.7, "y1": 4.760000000000001, "y0": 4.260000000000001, "text": "Public & private goods: free riders"}, {"id": "PRES", "tp": 3, "x0": 6.300000000000001, "x1": 9.9, "y1": 8.66, "y0": 8.16, "text": "Preserving natural environments"}, {"id": "POLL", "tp": 3, "x0": 6.300000000000001, "x1": 9.9, "y1": 7.86, "y0": 7.36, "text": "Pollution & climate change"}, {"id": "DEPL", "tp": 3, "x0": 6.300000000000001, "x1": 9.9, "y1": 7.0600000000000005, "y0": 6.5600000000000005, "text": "Resource depletion"}, {"id": "REG", "tp": 4, "x0": 11.5, "x1": 15.1, "y1": 8.66, "y0": 8.16, "text": "Regulations"}, {"id": "MKT", "tp": 4, "x0": 11.5, "x1": 15.1, "y1": 7.86, "y0": 7.36, "text": "Market-based policies"}, {"id": "TARG", "tp": 4, "x0": 11.5, "x1": 15.1, "y1": 7.0600000000000005, "y0": 6.5600000000000005, "text": "Targets"}, {"id": "INTAGR", "tp": 4, "x0": 11.5, "x1": 15.1, "y1": 6.260000000000001, "y0": 5.760000000000001, "text": "International agreements"}, {"id": "RESP_V", "tp": 4, "x0": 11.5, "x1": 15.1, "y1": 5.460000000000001, "y0": 4.760000000000001, "text": "Policy response: environmental\nsustainability"}, {"id": "HEAD", "tp": 3, "x0": 16.400000000000002, "x1": 19.300000000000004, "y1": 8.66, "y0": 8.16, "text": "Headline inflation"}, {"id": "UNDERL", "tp": 3, "x0": 16.400000000000002, "x1": 19.300000000000004, "y1": 7.86, "y0": 7.36, "text": "Underlying inflation"}, {"id": "ITR", "tp": 3, "x0": 16.400000000000002, "x1": 19.300000000000004, "y1": 7.0600000000000005, "y0": 6.5600000000000005, "text": "Trends in inflation"}, {"id": "IEFF", "tp": 3, "x0": 16.400000000000002, "x1": 19.300000000000004, "y1": 5.5600000000000005, "y0": 5.0600000000000005, "text": "Positive & negative effects"}, {"id": "DEMINF", "tp": 3, "x0": 20.900000000000002, "x1": 23.800000000000004, "y1": 8.66, "y0": 8.16, "text": "Demand inflation"}, {"id": "COSTINF", "tp": 3, "x0": 20.900000000000002, "x1": 23.800000000000004, "y1": 7.86, "y0": 7.36, "text": "Cost inflation"}, {"id": "IMPINF", "tp": 3, "x0": 20.900000000000002, "x1": 23.800000000000004, "y1": 7.0600000000000005, "y0": 6.5600000000000005, "text": "Imported inflation"}, {"id": "EXPECT", "tp": 3, "x0": 20.900000000000002, "x1": 23.800000000000004, "y1": 6.260000000000001, "y0": 5.760000000000001, "text": "Inflationary expectations"}, {"id": "MONP", "tp": 4, "x0": 25.400000000000002, "x1": 28.300000000000004, "y1": 8.66, "y0": 8.16, "text": "Purpose of monetary policy"}, {"id": "RBA", "tp": 4, "x0": 25.400000000000002, "x1": 28.300000000000004, "y1": 7.86, "y0": 7.36, "text": "Implementation by the RBA"}, {"id": "INTR", "tp": 4, "x0": 25.400000000000002, "x1": 28.300000000000004, "y1": 7.0600000000000005, "y0": 6.36, "text": "Interest rates: activity & exchange\nrate"}, {"id": "RESP_P", "tp": 4, "x0": 25.400000000000002, "x1": 28.300000000000004, "y1": 6.0600000000000005, "y0": 5.5600000000000005, "text": "Policy response: price stability"}, {"id": "GDIST", "tp": 1, "x0": 29.5, "x1": 33.9, "y1": 8.66, "y0": 8.16, "text": "Distribution of income & wealth (global)"}, {"id": "GINI", "tp": 3, "x0": 29.5, "x1": 33.9, "y1": 7.16, "y0": 6.66, "text": "Lorenz curve & Gini coefficient"}, {"id": "SOURCES", "tp": 3, "x0": 29.5, "x1": 33.9, "y1": 6.36, "y0": 5.86, "text": "Sources of income & wealth"}, {"id": "DIMS", "tp": 3, "x0": 29.5, "x1": 33.9, "y1": 5.5600000000000005, "y0": 5.0600000000000005, "text": "Trends by gender, age, occupation & family"}, {"id": "TAX", "tp": 3, "x0": 35.5, "x1": 39.9, "y1": 8.66, "y0": 8.16, "text": "Taxation, transfers & other assistance"}, {"id": "INEQC", "tp": 3, "x0": 35.5, "x1": 39.9, "y1": 7.16, "y0": 6.66, "text": "Economic & social costs & benefits"}, {"id": "FISCDIST", "tp": 4, "x0": 41.5, "x1": 45.9, "y1": 8.66, "y0": 8.16, "text": "Budget effects on income distribution"}, {"id": "RESP_D", "tp": 4, "x0": 41.5, "x1": 45.9, "y1": 7.86, "y0": 7.36, "text": "Policy response: distribution of income"}, {"id": "TL", "tp": 4, "x0": 16.400000000000002, "x1": 19.300000000000004, "y1": 12.360000000000001, "y0": 11.860000000000001, "text": "Time lags"}, {"id": "GI", "tp": 4, "x0": 20.900000000000002, "x1": 23.800000000000004, "y1": 12.360000000000001, "y0": 11.860000000000001, "text": "Global influences"}, {"id": "PC", "tp": 4, "x0": 25.400000000000002, "x1": 28.300000000000004, "y1": 12.360000000000001, "y0": 11.860000000000001, "text": "Political constraints"}, {"id": "OBJ_G", "tp": 0, "x0": 19.6, "x1": 24.900000000000002, "y1": 21.5, "y0": 20.3, "text": "ECONOMIC GROWTH &\nQUALITY OF LIFE", "hub": true, "num": 1}, {"id": "OBJ_E", "tp": 0, "x0": 16.2, "x1": 21.5, "y1": 20.0, "y0": 18.8, "text": "FULL\nEMPLOYMENT", "hub": true, "num": 2}, {"id": "OBJ_X", "tp": 0, "x0": 23.1, "x1": 28.400000000000002, "y1": 20.0, "y0": 18.8, "text": "EXTERNAL\nSTABILITY", "hub": true, "num": 4}, {"id": "OBJ_V", "tp": 0, "x0": 16.2, "x1": 21.5, "y1": 18.400000000000002, "y0": 17.200000000000003, "text": "ENVIRONMENTAL\nSUSTAINABILITY", "hub": true, "num": 6}, {"id": "OBJ_D", "tp": 0, "x0": 23.1, "x1": 28.400000000000002, "y1": 18.400000000000002, "y0": 17.200000000000003, "text": "DISTRIBUTION\nOF INCOME", "hub": true, "num": 5}, {"id": "OBJ_P", "tp": 0, "x0": 19.6, "x1": 24.900000000000002, "y1": 16.900000000000002, "y0": 15.700000000000003, "text": "PRICE\nSTABILITY", "hub": true, "num": 3}], "headers": [{"x": 1.1, "yt": 29.060000000000002, "text": "Aggregate demand", "w": 5.0}, {"x": 7.7, "yt": 29.060000000000002, "text": "Growth & the cycle", "w": 5.0}, {"x": 14.3, "yt": 29.060000000000002, "text": "Globalisation", "w": 5.0}, {"x": 20.900000000000002, "yt": 29.060000000000002, "text": "Trade blocs & institutions", "w": 5.0}, {"x": 27.5, "yt": 29.060000000000002, "text": "Development", "w": 5.0}, {"x": 34.1, "yt": 29.060000000000002, "text": "Macro policy", "w": 5.0}, {"x": 40.7, "yt": 29.060000000000002, "text": "Micro policy & response", "w": 5.0}, {"x": 1.1, "yt": 22.16, "text": "Measuring unemployment", "w": 3.6}, {"x": 1.1, "yt": 18.259999999999998, "text": "Effects", "w": 3.6}, {"x": 6.300000000000001, "yt": 22.16, "text": "Types & causes", "w": 3.6}, {"x": 6.300000000000001, "yt": 15.859999999999996, "text": "Globalisation", "w": 3.6}, {"x": 11.5, "yt": 22.16, "text": "Labour market policy", "w": 3.6}, {"x": 29.5, "yt": 22.16, "text": "Trade & financial flows", "w": 4.4}, {"x": 29.5, "yt": 17.459999999999997, "text": "Free trade & protection", "w": 4.4}, {"x": 35.5, "yt": 22.16, "text": "Balance of payments", "w": 4.4}, {"x": 35.5, "yt": 17.459999999999997, "text": "Exchange rates", "w": 4.4}, {"x": 41.5, "yt": 22.16, "text": "Measuring external stability", "w": 4.4}, {"x": 41.5, "yt": 15.859999999999996, "text": "Policy", "w": 4.4}, {"x": 1.1, "yt": 9.06, "text": "Globalisation", "w": 3.6}, {"x": 1.1, "yt": 7.5600000000000005, "text": "Sustainability & market failure", "w": 3.6}, {"x": 6.300000000000001, "yt": 9.06, "text": "Environmental issues", "w": 3.6}, {"x": 11.5, "yt": 9.06, "text": "National & global management", "w": 3.6}, {"x": 16.400000000000002, "yt": 9.06, "text": "Measuring inflation", "w": 2.9000000000000004}, {"x": 16.400000000000002, "yt": 5.960000000000001, "text": "Effects", "w": 2.9000000000000004}, {"x": 20.900000000000002, "yt": 9.06, "text": "Causes", "w": 2.9000000000000004}, {"x": 25.400000000000002, "yt": 9.06, "text": "Monetary policy", "w": 2.9000000000000004}, {"x": 29.5, "yt": 9.06, "text": "Global", "w": 4.4}, {"x": 29.5, "yt": 7.5600000000000005, "text": "Measuring", "w": 4.4}, {"x": 35.5, "yt": 9.06, "text": "Taxes & transfers", "w": 4.4}, {"x": 35.5, "yt": 7.5600000000000005, "text": "Inequality", "w": 4.4}, {"x": 41.5, "yt": 9.06, "text": "Policy", "w": 4.4}], "clusters": [{"key": "G", "num": 1, "title": "ECONOMIC GROWTH & QUALITY OF LIFE", "x0": 0.7, "ytop": 30.400000000000002, "w": 45.4, "H": 6.120000000000003}, {"key": "E", "num": 2, "title": "FULL EMPLOYMENT", "x0": 0.7, "ytop": 23.5, "w": 14.7, "H": 12.320000000000002}, {"key": "X", "num": 4, "title": "EXTERNAL STABILITY", "x0": 29.1, "ytop": 23.5, "w": 17.0, "H": 12.320000000000002}, {"key": "V", "num": 6, "title": "ENVIRONMENTAL SUSTAINABILITY", "x0": 0.7, "ytop": 10.4, "w": 14.7, "H": 6.819999999999999}, {"key": "P", "num": 3, "title": "PRICE STABILITY", "x0": 16.0, "ytop": 10.4, "w": 12.6, "H": 6.819999999999999}, {"key": "D", "num": 5, "title": "DISTRIBUTION OF INCOME", "x0": 29.1, "ytop": 10.4, "w": 17.0, "H": 6.819999999999999}, {"key": "L", "num": null, "title": "POLICY LIMITATIONS", "x0": 16.0, "ytop": 13.700000000000001, "w": 12.6, "H": 2.5200000000000014}], "hub": {"x0": 16.0, "y0": 14.5, "w": 12.6, "h": 9.0}, "edges": [{"a": "PUB", "b": "EXT", "sg": "+", "kind": "n", "poly": [[4.65, 4.760000000000001], [4.65, 5.0600000000000005]]}, {"a": "INJ", "b": "MULT", "sg": "+", "kind": "n", "poly": [[6.050000000000001, 27.360000000000003], [6.050000000000001, 27.060000000000002]]}, {"a": "FACT", "b": "DEPREC", "sg": "+", "kind": "n", "poly": [[39.85, 15.759999999999998], [39.85, 15.459999999999997]]}, {"a": "TNC", "b": "FLOWS", "sg": "+", "kind": "n", "poly": [[33.85, 20.16], [33.85, 20.46]]}, {"a": "CA", "b": "KFA", "sg": "\u2013", "kind": "n", "poly": [[39.85, 21.26], [39.85, 20.96]]}, {"a": "CAD", "b": "NFD", "sg": "+", "kind": "n", "poly": [[45.85, 21.26], [45.85, 20.96]]}, {"a": "RBA", "b": "INTR", "sg": "\u00b1", "kind": "n", "poly": [[28.25, 7.36], [28.25, 7.0600000000000005]]}, {"a": "EXPECT", "b": "COSTINF", "sg": "+", "kind": "n", "poly": [[23.800000000000004, 6.25], [23.85, 6.25], [23.85, 7.45], [23.800000000000004, 7.45]]}, {"a": "AS", "b": "GDP", "sg": "+", "kind": "n", "poly": [[12.7, 27.05], [12.75, 27.05], [12.75, 28.25], [12.7, 28.25]]}, {"a": "RBAX", "b": "DEPREC", "sg": "\u00b1", "kind": "n", "poly": [[39.9, 13.850000000000001], [39.95, 13.850000000000001], [39.95, 15.05], [39.9, 15.05]]}, {"a": "PROTM", "b": "TRP", "sg": "\u2013", "kind": "n", "poly": [[33.9, 15.450000000000001], [33.95, 15.450000000000001], [33.95, 18.95], [33.9, 18.95]]}, {"a": "DOL", "b": "STRUCU", "sg": "+", "kind": "n", "poly": [[9.9, 15.450000000000001], [9.950000000000001, 15.450000000000001], [9.950000000000001, 20.55], [9.9, 20.55]]}, {"a": "TARG", "b": "POLL", "sg": "\u2013", "kind": "n", "poly": [[11.5, 7.050000000000001], [10.05, 7.050000000000001], [10.05, 7.45], [9.9, 7.45]]}, {"a": "KFA", "b": "NFD", "sg": "+", "kind": "n", "poly": [[39.9, 20.950000000000003], [41.5, 20.950000000000003]]}, {"a": "FLOWS", "b": "KFA", "sg": "+", "kind": "n", "poly": [[33.9, 20.950000000000003], [35.5, 20.950000000000003]]}, {"a": "GINI", "b": "INEQC", "sg": "+", "kind": "n", "poly": [[33.9, 7.15], [35.5, 7.15]]}, {"a": "AD", "b": "GDP", "sg": "+", "kind": "n", "poly": [[6.1, 28.650000000000002], [7.7, 28.650000000000002]]}, {"a": "TTC", "b": "AS", "sg": "+", "kind": "n", "poly": [[14.3, 26.950000000000003], [12.7, 26.950000000000003]]}, {"a": "IBC", "b": "BC", "sg": "+", "kind": "n", "poly": [[14.3, 26.25], [12.7, 26.25]]}, {"a": "INTAGR", "b": "POLL", "sg": "\u2013", "kind": "n", "poly": [[11.5, 6.25], [9.950000000000001, 6.25], [9.950000000000001, 7.45], [9.9, 7.45]]}, {"a": "EXT", "b": "POLL", "sg": "+", "kind": "n", "poly": [[4.7, 5.550000000000001], [6.15, 5.550000000000001], [6.15, 7.45], [6.300000000000001, 7.45]]}, {"a": "TAX", "b": "GINI", "sg": "\u2013", "kind": "n", "poly": [[35.5, 8.25], [33.95, 8.25], [33.95, 7.15], [33.9, 7.15]]}, {"a": "MULT", "b": "GDP", "sg": "+", "kind": "n", "poly": [[6.1, 27.05], [7.550000000000001, 27.05], [7.550000000000001, 28.25], [7.7, 28.25]]}, {"a": "DEPREC", "b": "COMP", "sg": "\u2013", "kind": "n", "poly": [[39.9, 15.450000000000001], [41.35, 15.450000000000001], [41.35, 17.35], [41.5, 17.35]]}, {"a": "TOT", "b": "CA", "sg": "+", "kind": "n", "poly": [[41.5, 19.35], [40.050000000000004, 19.35], [40.050000000000004, 21.35], [39.9, 21.35]]}, {"a": "TRP", "b": "CA", "sg": "\u00b1", "kind": "n", "poly": [[33.9, 19.35], [35.35, 19.35], [35.35, 21.35], [35.5, 21.35]]}, {"a": "FTR", "b": "KFA", "sg": "+", "kind": "n", "poly": [[33.85, 18.56], [33.85, 18.85], [35.45, 18.85], [35.45, 20.55], [35.5, 20.55]]}, {"a": "GI", "b": "INTR", "sg": "\u2013", "kind": "n", "poly": [[23.75, 11.860000000000001], [23.75, 10.450000000000001], [28.650000000000002, 10.450000000000001], [28.650000000000002, 7.050000000000001], [28.300000000000004, 7.050000000000001]]}, {"a": "COMP", "b": "CA", "sg": "+", "kind": "n", "poly": [[41.5, 17.75], [39.95, 17.75], [39.95, 21.35], [39.9, 21.35]]}, {"a": "RESP_E", "b": "OBJ_E", "sg": "+", "kind": "r", "poly": [[15.1, 14.55], [16.05, 14.55], [16.05, 18.85], [16.2, 18.85]]}, {"a": "INTR", "b": "HEAD", "sg": "\u2013", "kind": "n", "poly": [[25.400000000000002, 7.050000000000001], [23.950000000000003, 7.050000000000001], [23.950000000000003, 8.05], [19.25, 8.05], [19.25, 8.16]]}, {"a": "EDU", "b": "STRUCU", "sg": "\u2013", "kind": "n", "poly": [[11.5, 15.350000000000001], [10.05, 15.350000000000001], [10.05, 20.650000000000002], [9.9, 20.650000000000002]]}, {"a": "DEF", "b": "NFD", "sg": "+", "kind": "n", "poly": [[39.050000000000004, 25.76], [39.050000000000004, 25.55], [46.150000000000006, 25.55], [46.150000000000006, 20.950000000000003], [45.9, 20.950000000000003]]}, {"a": "MKT", "b": "EXT", "sg": "\u2013", "kind": "n", "poly": [[11.5, 7.45], [10.15, 7.45], [10.15, 5.45], [4.7, 5.45]]}, {"a": "REG", "b": "EXT", "sg": "\u2013", "kind": "n", "poly": [[11.55, 8.16], [11.55, 7.95], [4.75, 7.95], [4.75, 5.550000000000001], [4.7, 5.550000000000001]]}, {"a": "FISCDIST", "b": "GINI", "sg": "\u2013", "kind": "n", "poly": [[41.5, 8.25], [39.95, 8.25], [39.95, 6.65], [33.85, 6.65], [33.85, 6.66]]}, {"a": "OTHERP", "b": "CA", "sg": "\u2013", "kind": "n", "poly": [[33.9, 13.05], [35.25, 13.05], [35.25, 21.450000000000003], [35.5, 21.450000000000003]]}, {"a": "TTC", "b": "STRUCU", "sg": "+", "kind": "n", "poly": [[14.3, 26.650000000000002], [14.25, 26.650000000000002], [14.25, 23.55], [15.450000000000001, 23.55], [15.450000000000001, 21.150000000000002], [9.850000000000001, 21.150000000000002], [9.850000000000001, 20.96]]}, {"a": "RESP_P", "b": "OBJ_P", "sg": "+", "kind": "r", "poly": [[28.300000000000004, 6.050000000000001], [28.75, 6.050000000000001], [28.75, 15.75], [24.900000000000002, 15.75]]}, {"a": "GDP", "b": "UR", "sg": "\u2013", "kind": "n", "poly": [[7.75, 28.160000000000004], [7.75, 27.950000000000003], [0.65, 27.950000000000003], [0.65, 20.150000000000002], [1.1, 20.150000000000002]]}, {"a": "AUFTA", "b": "TRP", "sg": "+", "kind": "n", "poly": [[25.900000000000002, 26.650000000000002], [27.450000000000003, 26.650000000000002], [27.450000000000003, 23.55], [29.05, 23.55], [29.05, 19.35], [29.5, 19.35]]}, {"a": "FTA", "b": "TRP", "sg": "+", "kind": "n", "poly": [[25.900000000000002, 27.450000000000003], [27.35, 27.450000000000003], [27.35, 23.650000000000002], [28.950000000000003, 23.650000000000002], [28.950000000000003, 19.25], [29.5, 19.25]]}, {"a": "BLOCS", "b": "TRP", "sg": "+", "kind": "n", "poly": [[25.900000000000002, 28.25], [27.25, 28.25], [27.25, 23.75], [28.85, 23.75], [28.85, 19.150000000000002], [29.5, 19.150000000000002]]}, {"a": "RESP_V", "b": "OBJ_V", "sg": "+", "kind": "r", "poly": [[15.1, 5.45], [15.950000000000001, 5.45], [15.950000000000001, 14.450000000000001], [16.25, 14.450000000000001], [16.25, 17.200000000000003]]}, {"a": "INTR", "b": "FACT", "sg": "+", "kind": "n", "poly": [[28.300000000000004, 6.95], [29.05, 6.95], [29.05, 12.55], [35.35, 12.55], [35.35, 15.850000000000001], [35.5, 15.850000000000001]]}, {"a": "MINW", "b": "COSTINF", "sg": "+", "kind": "n", "poly": [[15.1, 19.75], [15.850000000000001, 19.75], [15.850000000000001, 7.95], [20.950000000000003, 7.95], [20.950000000000003, 7.86]]}, {"a": "RESP_X", "b": "OBJ_X", "sg": "+", "kind": "r", "poly": [[41.5, 15.450000000000001], [41.45, 15.450000000000001], [41.45, 17.650000000000002], [28.55, 17.650000000000002], [28.55, 18.85], [28.400000000000002, 18.85]]}, {"a": "GDP", "b": "POLL", "sg": "+", "kind": "n", "poly": [[12.7, 28.35], [14.15, 28.35], [14.15, 23.650000000000002], [15.55, 23.650000000000002], [15.55, 8.05], [9.850000000000001, 8.05], [9.850000000000001, 7.86]]}, {"a": "GDP", "b": "DEPL", "sg": "+", "kind": "n", "poly": [[7.7, 28.35], [6.15, 28.35], [6.15, 28.05], [0.55, 28.05], [0.55, 6.65], [6.300000000000001, 6.65]]}, {"a": "DEPREC", "b": "IMPINF", "sg": "\u2013", "kind": "n", "poly": [[35.5, 15.05], [35.45, 15.05], [35.45, 10.450000000000001], [28.85, 10.450000000000001], [28.85, 7.25], [23.75, 7.25], [23.75, 7.0600000000000005]]}, {"a": "RESP_G", "b": "OBJ_G", "sg": "+", "kind": "r", "poly": [[40.75, 25.76], [40.75, 23.85], [28.35, 23.85], [28.35, 21.450000000000003], [24.900000000000002, 21.450000000000003]]}, {"a": "RESP_D", "b": "OBJ_D", "sg": "+", "kind": "r", "poly": [[41.5, 7.8500000000000005], [28.950000000000003, 7.8500000000000005], [28.950000000000003, 17.25], [28.400000000000002, 17.25]]}, {"a": "UR", "b": "DEMINF", "sg": "\u2013", "kind": "n", "poly": [[4.7, 19.75], [6.25, 19.75], [6.25, 10.450000000000001], [15.75, 10.450000000000001], [15.75, 9.15], [20.75, 9.15], [20.75, 8.65], [20.900000000000002, 8.65]]}, {"a": "PC", "b": "MICRO", "sg": "\u2013", "kind": "n", "poly": [[28.300000000000004, 12.350000000000001], [28.650000000000002, 12.350000000000001], [28.650000000000002, 24.950000000000003], [40.550000000000004, 24.950000000000003], [40.550000000000004, 28.25], [40.7, 28.25]]}, {"a": "STAB", "b": "AD", "sg": "\u00b1", "kind": "n", "poly": [[34.1, 28.650000000000002], [32.550000000000004, 28.650000000000002], [32.550000000000004, 29.150000000000002], [6.15, 29.150000000000002], [6.15, 28.650000000000002], [6.1, 28.650000000000002]]}, {"a": "BUD", "b": "AD", "sg": "\u00b1", "kind": "n", "poly": [[34.15, 27.860000000000003], [34.15, 28.150000000000002], [6.050000000000001, 28.150000000000002], [6.050000000000001, 28.160000000000004]]}, {"a": "TL", "b": "BUD", "sg": "\u2013", "kind": "n", "poly": [[19.25, 12.360000000000001], [19.25, 12.65], [28.85, 12.65], [28.85, 19.05], [28.75, 19.05], [28.75, 24.85], [33.95, 24.85], [33.95, 27.450000000000003], [34.1, 27.450000000000003]]}, {"a": "MICRO", "b": "AS", "sg": "+", "kind": "n", "poly": [[40.7, 28.35], [39.150000000000006, 28.35], [39.150000000000006, 27.25], [12.65, 27.25], [12.65, 27.060000000000002]]}, {"a": "AD", "b": "DEMINF", "sg": "+", "kind": "n", "poly": [[6.1, 28.450000000000003], [7.65, 28.450000000000003], [7.65, 23.75], [15.65, 23.75], [15.65, 8.15], [20.950000000000003, 8.15], [20.950000000000003, 8.16]]}, {"a": "GDP", "b": "CAD", "sg": "+", "kind": "n", "poly": [[12.7, 28.650000000000002], [14.25, 28.650000000000002], [14.25, 29.25], [46.25, 29.25], [46.25, 21.75], [45.9, 21.75]]}, {"a": "INTR", "b": "AD", "sg": "\u2013", "kind": "n", "poly": [[25.400000000000002, 6.550000000000001], [0.45, 6.550000000000001], [0.45, 28.25], [1.1, 28.25]]}], "conflicts": [["OBJ_G", "OBJ_P"], ["OBJ_G", "OBJ_X"], ["OBJ_E", "OBJ_P"]], "labels": {}};
+const NS = "http://www.w3.org/2000/svg";
+const TCOL = {0:"var(--ink2)",1:"var(--t1)",2:"var(--t2)",3:"var(--t3)",4:"var(--t4)"};
+const TNAME = {0:"Economic objective",1:"Topic 1 The Global Economy",2:"Topic 2 Australia's Place in the Global Economy",3:"Topic 3 Economic Issues",4:"Topic 4 Economic Policies & Management"};
+const PW = D.PW, PH = D.PH, K = D.FK / D.pts_per_unit;       // pt -> map units
+const Y = y => PH - y;
+const svg = document.getElementById("svg");
+const el = (n, a = {}, p) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+const flat = t => t.replace(/\s*\n\s*/g, " ");
+
+const root = el("g", {}, svg);
+const gBack = el("g", {}, root), gEdges = el("g", {}, root), gPills = el("g", {}, root);
+const pillById = {}; D.pills.forEach(p => pillById[p.id] = p);
+const label = id => flat(pillById[id].text);
+
+// clusters
+D.clusters.forEach(c => {
+  const yt = Y(c.ytop);
+  el("rect", {class: "cl", x: c.x0, y: yt, width: c.w, height: c.H, rx: .35}, gBack);
+  el("rect", {class: "tb", x: c.x0, y: yt, width: c.w, height: 1.0, rx: .35}, gBack);
+  let tx = c.x0 + .3;
+  if (c.num) {
+    el("circle", {cx: c.x0 + .7, cy: yt + .5, r: .38, fill: "#fff"}, gBack);
+    const t = el("text", {x: c.x0 + .7, y: yt + .5, "text-anchor": "middle", "dominant-baseline": "central", "font-size": 27 * K, "font-weight": 800, fill: "#22313f", "font-family": "var(--display)"}, gBack); t.textContent = c.num;
+    tx = c.x0 + 1.4;
+  }
+  const t = el("text", {x: tx, y: yt + .5, "dominant-baseline": "central", "font-size": 29 * K, "font-weight": 800, fill: "#fff", "font-family": "var(--display)"}, gBack); t.textContent = c.title;
+});
+el("rect", {class: "hubbg", x: D.hub.x0, y: Y(D.hub.y0 + D.hub.h), width: D.hub.w, height: D.hub.h, rx: .35}, gBack);
+{ const t = el("text", {x: D.hub.x0 + D.hub.w / 2, y: Y(D.hub.y0 + D.hub.h) + .6, "text-anchor": "middle", "dominant-baseline": "central", "font-size": 28 * K, "font-weight": 800, fill: "var(--fg)", "font-family": "var(--display)"}, gBack); t.textContent = "THE SIX ECONOMIC OBJECTIVES"; }
+D.headers.forEach(h => { const t = el("text", {class: "hdr", x: h.x + .02, y: Y(h.yt) + .2, "dominant-baseline": "central", "font-size": (D.FS - 2.5) * K}, gBack); t.textContent = h.text.toUpperCase(); });
+
+// conflict arrows (between objective pills)
+D.conflicts.forEach(([a, b]) => {
+  const A = pillById[a], B = pillById[b];
+  const ca = [(A.x0 + A.x1) / 2, (A.y0 + A.y1) / 2], cb = [(B.x0 + B.x1) / 2, (B.y0 + B.y1) / 2];
+  el("line", {class: "conf", x1: ca[0], y1: Y(ca[1]), x2: cb[0], y2: Y(cb[1]), "stroke-width": .09}, gBack);
+});
+
+// edges
+const edges = D.edges.map((e, i) => {
+  const g = el("g", {class: "edge", "data-i": i}, gEdges);
+  const col = e.kind === "r" ? "var(--ink2)" : TCOL[pillById[e.a].tp];
+  const w = e.kind === "r" ? .1 : .06;
+  const pts = e.poly.map(p => p[0] + "," + Y(p[1])).join(" ");
+  el("polyline", {class: "halo", points: pts, "stroke-width": w + .08}, g);
+  el("polyline", {class: "ln", points: pts, stroke: col, "stroke-width": w}, g);
+  const n = e.poly.length, p0 = e.poly[n - 2], p1 = e.poly[n - 1];
+  const dx = Math.sign(p1[0] - p0[0]), dy = -Math.sign(p1[1] - p0[1]), s = e.kind === "r" ? .42 : .32;
+  const tip = [p1[0], Y(p1[1])], px = -dy, py = dx;
+  el("polygon", {points: `${tip[0]},${tip[1]} ${tip[0] - dx * s + px * s * .5},${tip[1] - dy * s + py * s * .5} ${tip[0] - dx * s - px * s * .5},${tip[1] - dy * s - py * s * .5}`, fill: col}, g);
+  // sign badge on the longest segment, away from the ends
+  let best = null, bl = 0;
+  for (let k = 0; k < n - 1; k++) { const L = Math.abs(e.poly[k][0] - e.poly[k + 1][0]) + Math.abs(e.poly[k][1] - e.poly[k + 1][1]); if (L > bl) { bl = L; best = k; } }
+  const a = e.poly[best], b = e.poly[best + 1];
+  const bd = el("g", {class: "bd"}, g);
+  el("circle", {cx: (a[0] + b[0]) / 2, cy: Y((a[1] + b[1]) / 2), r: .27, stroke: col}, bd);
+  const t = el("text", {x: (a[0] + b[0]) / 2, y: Y((a[1] + b[1]) / 2), "dominant-baseline": "central", "font-size": 19 * K, fill: col}, bd); t.textContent = e.sg;
+  return {g, e};
+});
+
+// pills
+const pillEls = {};
+D.pills.forEach(p => {
+  const g = el("g", {class: "pill" + (p.hub ? " hub" : ""), tabindex: 0, role: "button", "aria-label": flat(p.text), style: `--c:${TCOL[p.tp]}`}, gPills);
+  const w = p.x1 - p.x0, h = p.y1 - p.y0, top = Y(p.y1);
+  el("rect", {x: p.x0, y: top, width: w, height: h, rx: p.hub ? .28 : .14}, g);
+  const lines = p.text.split("\n"), fs = (p.hub ? 20.5 : D.FS) * K, lh = fs * 1.12;
+  let cx = (p.x0 + p.x1) / 2;
+  if (p.hub) {
+    el("circle", {cx: p.x0 + .6, cy: top + h / 2, r: .38, fill: "#fff"}, g);
+    const nt = el("text", {x: p.x0 + .6, y: top + h / 2, "dominant-baseline": "central", "font-size": 25 * K, fill: "#22313f"}, g); nt.textContent = p.num; nt.style.fill = "#22313f";
+    cx = p.x0 + 1.2 + (w - 1.2) / 2;
+  }
+  const t = el("text", {x: cx, "font-size": fs}, g);
+  lines.forEach((ln, i) => { const s = el("tspan", {x: cx, y: top + h / 2 + (i - (lines.length - 1) / 2) * lh, "dominant-baseline": "central"}, t); s.textContent = ln; });
+  g.addEventListener("click", ev => { ev.stopPropagation(); select(p.id, true); });
+  g.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); select(p.id, true); } });
+  pillEls[p.id] = g;
+});
+
+// graph
+const out = {}, inn = {};
+D.edges.forEach((e, i) => { (out[e.a] = out[e.a] || []).push(i); (inn[e.b] = inn[e.b] || []).push(i); });
+let mode = 1, sel = null;
+
+function trace(id) {
+  const eset = new Set(), nset = new Set([id]);
+  if (mode === 1) { (out[id] || []).concat(inn[id] || []).forEach(i => { eset.add(i); nset.add(D.edges[i].a); nset.add(D.edges[i].b); }); return {eset, nset}; }
+  [[out, "b"], [inn, "a"]].forEach(([map, nxt]) => {
+    const seen = new Set([id]), q = [id];
+    while (q.length) { const x = q.shift(); (map[x] || []).forEach(i => { eset.add(i); const y = D.edges[i][nxt]; nset.add(y); if (!seen.has(y)) { seen.add(y); q.push(y); } }); }
+  });
+  return {eset, nset};
+}
+
+// view box
+let vb = {x: 0, y: 0, w: PW, h: PH}, anim = null;
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+function applyVB() { svg.setAttribute("viewBox", `${vb.x} ${vb.y} ${vb.w} ${vb.h}`); }
+function fitBox(b, pad) {
+  const r = svg.getBoundingClientRect(), ar = r.width / Math.max(r.height, 1);
+  let w = b.w + pad * 2, h = b.h + pad * 2;
+  if (w / h < ar) w = h * ar; else h = w / ar;
+  return {x: b.x + b.w / 2 - w / 2, y: b.y + b.h / 2 - h / 2, w, h};
+}
+function goTo(t) {
+  if (reduce) { vb = t; applyVB(); return; }
+  const s = {...vb}, t0 = performance.now(); cancelAnimationFrame(anim);
+  const step = now => { const k = Math.min(1, (now - t0) / 450), e = 1 - Math.pow(1 - k, 3);
+    vb = {x: s.x + (t.x - s.x) * e, y: s.y + (t.y - s.y) * e, w: s.w + (t.w - s.w) * e, h: s.h + (t.h - s.h) * e}; applyVB(); if (k < 1) anim = requestAnimationFrame(step); };
+  anim = requestAnimationFrame(step);
+}
+const fitAll = () => goTo(fitBox({x: 0, y: 0, w: PW, h: PH}, 0));
+
+function select(id, zoom) {
+  sel = id;
+  if (id == null) {
+    svg.classList.remove("dim");
+    Object.values(pillEls).forEach(g => g.classList.remove("on", "sel"));
+    edges.forEach(o => o.g.classList.remove("on"));
+    renderPanel(); return;
+  }
+  const {eset, nset} = trace(id);
+  svg.classList.add("dim");
+  Object.entries(pillEls).forEach(([k, g]) => { g.classList.toggle("on", nset.has(k)); g.classList.toggle("sel", k === id); });
+  edges.forEach((o, i) => o.g.classList.toggle("on", eset.has(i)));
+  // bring highlighted edges to front
+  eset.forEach(i => gEdges.appendChild(edges[i].g));
+  renderPanel();
+  if (zoom) {
+    let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+    const add = (x, y) => { x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y); };
+    nset.forEach(k => { const p = pillById[k]; add(p.x0, Y(p.y0)); add(p.x1, Y(p.y1)); });
+    eset.forEach(i => D.edges[i].poly.forEach(q => add(q[0], Y(q[1]))));
+    goTo(fitBox({x: x0, y: y0, w: x1 - x0, h: y1 - y0}, 1.5));
+  }
+}
+
+function item(id, sg, cls) {
+  const li = document.createElement("li"), b = document.createElement("button");
+  b.style.setProperty("--c", TCOL[pillById[id].tp]);
+  b.innerHTML = `<span class="sg">${sg}</span><span></span>`; b.lastChild.textContent = label(id);
+  b.onclick = () => select(id, true); li.appendChild(b); return li;
+}
+function renderPanel() {
+  const P = document.getElementById("panel"); P.innerHTML = "";
+  if (sel == null) {
+    P.innerHTML = `<h2>How to read this map</h2>
+    <p class="hint">Every syllabus dot point is a box, grouped around the six economic objectives. Click one to dim everything except the arrows into and out of it. Use Whole chain to follow effects all the way through.</p>
+    <div class="key">
+      <div><span class="sw"></span>cause → effect (colour is the topic of the cause)</div>
+      <div><span class="sw" style="border-top-width:5px"></span>policy response → objective</div>
+      <div><span class="sw" style="border-top:3px dashed var(--accent)"></span>potential conflict between objectives</div>
+      <div><b>+</b> same direction &nbsp; <b>–</b> opposite direction &nbsp; <b>±</b> depends on the change</div>
+    </div>
+    <div class="key">${[1,2,3,4].map(t => `<div><span class="dot" style="background:${TCOL[t]}"></span>${TNAME[t]}</div>`).join("")}</div>
+    <p class="hint">Drag to pan, scroll or use + / – to zoom.</p>`;
+    return;
+  }
+  const p = pillById[sel], h = document.createElement("div");
+  h.innerHTML = `<span class="tag"><span class="dot" style="background:${TCOL[p.tp]}"></span>${TNAME[p.tp]}</span>`;
+  const t = document.createElement("h2"); t.textContent = label(sel); h.appendChild(t); P.appendChild(h);
+  const sec = (title, idxs, key) => {
+    const d = document.createElement("div"); d.innerHTML = `<p class="lab">${title}</p>`;
+    if (!idxs.length) { d.insertAdjacentHTML("beforeend", `<p class="hint">None on this map.</p>`); }
+    else { const ul = document.createElement("ul"); ul.className = "links"; idxs.forEach(i => ul.appendChild(item(D.edges[i][key], D.edges[i].sg, ""))); d.appendChild(ul); }
+    P.appendChild(d);
+  };
+  sec("Caused by", inn[sel] || [], "a");
+  sec("Leads to", out[sel] || [], "b");
+  if (mode === 2) { const {nset} = trace(sel); const n = document.createElement("p"); n.className = "hint"; n.textContent = `Whole chain: ${nset.size - 1} connected dot points are lit.`; P.appendChild(n); }
+  const r = document.createElement("button"); r.className = "btn"; r.textContent = "Clear selection"; r.onclick = () => { select(null); fitAll(); }; P.appendChild(r);
+}
+
+// background click, pan, zoom
+const stage = document.getElementById("stage");
+let drag = null, moved = false;
+svg.addEventListener("pointerdown", e => { drag = {x: e.clientX, y: e.clientY, vb: {...vb}}; moved = false; });
+addEventListener("pointermove", e => {
+  if (!drag) return;
+  const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+  if (Math.abs(dx) + Math.abs(dy) > 4) { moved = true; svg.classList.add("drag"); cancelAnimationFrame(anim); }
+  if (!moved) return;
+  const r = svg.getBoundingClientRect(), sc = drag.vb.w / r.width;
+  vb = {...drag.vb, x: drag.vb.x - dx * sc, y: drag.vb.y - dy * sc}; applyVB();
+});
+addEventListener("pointerup", () => { drag = null; svg.classList.remove("drag"); });
+svg.addEventListener("click", () => { if (!moved && sel != null) { select(null); } });
+function zoomAt(f, cx, cy) {
+  const r = svg.getBoundingClientRect(), fx = cx == null ? .5 : (cx - r.left) / r.width, fy = cy == null ? .5 : (cy - r.top) / r.height;
+  const nw = Math.min(PW * 1.2, Math.max(4, vb.w * f)), nh = vb.h * nw / vb.w;
+  vb = {x: vb.x + (vb.w - nw) * fx, y: vb.y + (vb.h - nh) * fy, w: nw, h: nh}; applyVB();
+}
+svg.addEventListener("wheel", e => { e.preventDefault(); zoomAt(e.deltaY > 0 ? 1.15 : 1 / 1.15, e.clientX, e.clientY); }, {passive: false});
+document.getElementById("zi").onclick = () => zoomAt(1 / 1.3);
+document.getElementById("zo").onclick = () => zoomAt(1.3);
+document.getElementById("fit").onclick = () => { select(null); fitAll(); };
+["m1", "m2"].forEach((id, i) => document.getElementById(id).onclick = () => {
+  mode = i + 1; document.getElementById("m1").setAttribute("aria-pressed", mode === 1); document.getElementById("m2").setAttribute("aria-pressed", mode === 2);
+  if (sel != null) select(sel, true);
+});
+
+// search
+const q = document.getElementById("q"), sug = document.getElementById("sug");
+const all = D.pills.map(p => ({id: p.id, t: flat(p.text), tp: p.tp}));
+q.addEventListener("input", () => {
+  const v = q.value.trim().toLowerCase(); sug.innerHTML = "";
+  if (!v) { sug.hidden = true; return; }
+  const m = all.filter(a => a.t.toLowerCase().includes(v)).slice(0, 8);
+  m.forEach(a => { const b = document.createElement("button"); b.innerHTML = `<span class="dot" style="background:${TCOL[a.tp]}"></span><span></span>`; b.lastChild.textContent = a.t;
+    b.onclick = () => { select(a.id, true); q.value = ""; sug.hidden = true; }; sug.appendChild(b); });
+  if (!m.length) sug.innerHTML = `<button disabled>No dot point matches</button>`;
+  sug.hidden = false;
+});
+q.addEventListener("keydown", e => { if (e.key === "Enter") { const b = sug.querySelector("button:not([disabled])"); if (b) b.click(); } if (e.key === "Escape") { sug.hidden = true; } });
+document.addEventListener("click", e => { if (!e.target.closest(".search")) sug.hidden = true; });
+
+applyVB(); renderPanel();
+addEventListener("resize", () => { if (sel == null) fitAll(); });
+requestAnimationFrame(fitAll);
+</script>
+
+</body></html>
