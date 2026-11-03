@@ -3,6 +3,7 @@
   "id": "2026-11-03-global-rates-government-debt",
   "title": "Rates rise worldwide as government debt piles up",
   "date": "2026-11-03",
+  "added": "2026-11-03",
   "type": "news",
   "outlets": [
    "ABC News"
@@ -134,6 +135,7 @@
   "id": "2026-11-02-oil-eases-hormuz-talks",
   "title": "Oil eases on Hormuz talks, but the supply shock is not over",
   "date": "2026-11-02",
+  "added": "2026-11-02",
   "type": "news",
   "outlets": [
    "Euronews",
@@ -266,6 +268,7 @@
   "id": "2026-11-02-uk-fta-backpacker-rules",
   "title": "Albanese wants to rewrite part of the UK trade deal on backpackers",
   "date": "2026-11-02",
+  "added": "2026-11-02",
   "type": "news",
   "outlets": [
    "ABC News"
@@ -377,6 +380,7 @@
   "id": "2026-11-02-commodity-prices-aud-softens",
   "title": "Commodity prices slip and the dollar softens before the RBA",
   "date": "2026-11-02",
+  "added": "2026-11-02",
   "type": "stats",
   "outlets": [
    "ABC News"
@@ -510,6 +514,7 @@
   "id": "2026-11-02-house-prices-fastest-fall-40-years",
   "title": "House prices fall at the fastest pace in 40 years",
   "date": "2026-11-02",
+  "added": "2026-11-02",
   "type": "stats",
   "outlets": [
    "Cotality",
@@ -635,6 +640,7 @@
   "id": "2026-11-02-banks-cut-growth-forecasts-stagflation",
   "title": "Banks see slower growth and higher unemployment, but still expect a hike",
   "date": "2026-11-02",
+  "added": "2026-11-02",
   "type": "news",
   "outlets": [
    "ABC News",
@@ -762,6 +768,7 @@
   "id": "2026-11-02-inflation-gauge-factories-contract",
   "title": "Inflation pressures persist as factories contract",
   "date": "2026-11-02",
+  "added": "2026-11-02",
   "type": "stats",
   "outlets": [
    "ABC News",
@@ -884,6 +891,7 @@
   "id": "2026-11-02-spending-cuts-vs-rate-rises",
   "title": "Could government spending cuts do the RBA's job?",
   "date": "2026-11-02",
+  "added": "2026-11-02",
   "type": "news",
   "outlets": [
    "ABC News"
@@ -992,6 +1000,7 @@
   "id": "2026-11-01-banks-zero-interest-savings",
   "title": "Big banks hold about $332 billion that earns savers no interest as rates rise",
   "date": "2026-11-01",
+  "added": "2026-11-01",
   "type": "news",
   "outlets": [
    "ABC News",
@@ -1138,6 +1147,7 @@
   "id": "2026-11-01-us-midterms-tariffs-likely-to-stay",
   "title": "US midterms could shift Congress, but Trump's tariffs are likely to stay",
   "date": "2026-11-01",
+  "added": "2026-11-01",
   "type": "news",
   "outlets": [
    "Reuters"
@@ -1271,6 +1281,7 @@
   "id": "2026-11-01-opec-holds-december-output",
   "title": "OPEC+ holds December output targets steady while the Iran war keeps supply tight",
   "date": "2026-11-01",
+  "added": "2026-11-01",
   "type": "news",
   "outlets": [
    "Reuters"
@@ -1387,6 +1398,7 @@
   "id": "2026-11-01-myefo-no-promise-of-net-savings",
   "title": "No promise of net savings in December's budget update",
   "date": "2026-11-01",
+  "added": "2026-11-01",
   "type": "news",
   "outlets": [
    "ABC News"
@@ -1502,6 +1514,7 @@
   "id": "2026-10-31-china-factories-export-orders-fall",
   "title": "China's factories slow as export orders fall",
   "date": "2026-10-31",
+  "added": "2026-10-31",
   "type": "stats",
   "outlets": [
    "AP",
@@ -1654,6 +1667,7 @@
   "id": "2026-10-29-private-health-rebate-age-versus-need",
   "title": "Who should get extra help with health insurance? Age versus need",
   "date": "2026-10-29",
+  "added": "2026-10-29",
   "type": "news",
   "outlets": [
    "The Conversation"
@@ -1774,6 +1788,7 @@
   "id": "2026-10-29-inflation-4-3-perspectives-special",
   "title": "Inflation at 4.3%: what is driving it, who says what, and what policy can do (six-page special)",
   "date": "2026-10-29",
+  "added": "2026-10-29",
   "type": "report",
   "outlets": [
    "ABS",
@@ -1960,6 +1975,7 @@
   "id": "2026-10-29-fair-work-ombudsman-record-recoveries",
   "title": "Wage watchdog recovers a record $453m for underpaid workers",
   "date": "2026-10-29",
+  "added": "2026-10-29",
   "type": "news",
   "outlets": [
    "Fair Work Ombudsman",
@@ -2096,6 +2112,7 @@
   "id": "2026-10-29-trusts-housing-grocery-price-caps",
   "title": "Trust tax, housing claims and talk of grocery price caps",
   "date": "2026-10-29",
+  "added": "2026-10-29",
   "type": "news",
   "outlets": [
    "ABC News"
@@ -2216,6 +2233,7 @@
   "id": "2026-10-29-gas-reservation-bill-passes-house",
   "title": "Gas reservation bill passes the House: up to 20% of exports for local users",
   "date": "2026-10-29",
+  "added": "2026-10-29",
   "type": "news",
   "outlets": [
    "ABC News",
@@ -2336,6 +2354,7 @@
   "id": "2026-10-29-chalmers-rules-out-fuel-discount",
   "title": "Chalmers rules out a new fuel discount and promises budget savings",
   "date": "2026-10-29",
+  "added": "2026-10-29",
   "type": "news",
   "outlets": [
    "ABC News"
@@ -2456,6 +2475,7 @@
   "id": "2026-10-29-small-business-slowdown-nairu",
   "title": "Small business sales slow as banks debate how tight the labour market is",
   "date": "2026-10-29",
+  "added": "2026-10-29",
   "type": "stats",
   "outlets": [
    "Xero Small Business Insights",
@@ -2575,6 +2595,7 @@
   "id": "2026-10-29-no-painless-way-out-on-inflation",
   "title": "Inflation at 4.3%: why there is no painless way out",
   "date": "2026-10-29",
+  "added": "2026-10-29",
   "type": "news",
   "outlets": [
    "ABC News",
@@ -2699,6 +2720,7 @@
   "id": "2026-10-29-australia-eu-fta-stalls-in-parliament",
   "title": "Australia-EU free trade deal stalls in Parliament",
   "date": "2026-10-29",
+  "added": "2026-10-29",
   "type": "news",
   "outlets": [
    "ABC News",
@@ -2819,6 +2841,7 @@
   "id": "2026-10-29-central-banks-split-on-oil-shock",
   "title": "One oil shock, three answers: Canada hikes while Europe and New Zealand hold",
   "date": "2026-10-29",
+  "added": "2026-10-29",
   "type": "news",
   "outlets": [
    "Bank of Canada",
@@ -3140,6 +3163,7 @@
   "id": "2026-10-28-eu-trade-deal-ratification",
   "title": "Why the EU trade deal is about far more than beef",
   "date": "2026-10-28",
+  "added": "2026-10-28",
   "type": "news",
   "outlets": [
    "The Conversation"
@@ -3247,6 +3271,7 @@
   "id": "2026-10-28-aud-rises-on-rate-hike-bets",
   "title": "Australian dollar climbs as markets bet on an RBA rate rise, reaching a 13-year high against the NZ dollar",
   "date": "2026-10-28",
+  "added": "2026-10-28",
   "type": "stats",
   "outlets": [
    "ABC News",
@@ -3367,6 +3392,7 @@
   "id": "2026-10-28-inflation-jumps-to-4-3-per-cent",
   "title": "Inflation jumps to 4.3% as fuel and travel push prices higher",
   "date": "2026-10-28",
+  "added": "2026-10-28",
   "type": "stats",
   "outlets": [
    "ABS",
@@ -3492,6 +3518,7 @@
   "id": "2026-10-28-no-recession-but-unemployment-rising",
   "title": "No recession in sight, but the jobless rate is heading up",
   "date": "2026-10-28",
+  "added": "2026-10-28",
   "type": "news",
   "outlets": [
    "Allora! News",
@@ -3602,6 +3629,7 @@
   "id": "2026-10-28-melbourne-cup-rate-hike-expected",
   "title": "Markets all but certain of a Melbourne Cup Day rate rise, with all four major banks tipping 4.85%",
   "date": "2026-10-28",
+  "added": "2026-10-28",
   "type": "news",
   "outlets": [
    "ABC News",
@@ -3722,6 +3750,7 @@
   "id": "2026-10-28-bullock-supply-shocks-and-inflation",
   "title": "Bullock: supply shocks make taming inflation harder",
   "date": "2026-10-28",
+  "added": "2026-10-28",
   "type": "news",
   "outlets": [
    "ABC News",
@@ -3826,6 +3855,7 @@
   "id": "2026-10-28-saudi-refinery-strike-oil-near-115",
   "title": "Missile strike on Saudi refinery keeps oil near US$115",
   "date": "2026-10-28",
+  "added": "2026-10-28",
   "type": "news",
   "outlets": [
    "Reuters via RTE",
@@ -3956,6 +3986,7 @@
   "id": "2026-10-27-afr-everyday-price-rises-rba-test",
   "title": "Six everyday items are up more than 40% since the pandemic as the CPI tests the RBA",
   "date": "2026-10-27",
+  "added": "2026-10-27",
   "type": "news",
   "outlets": [
    "Australian Financial Review",
@@ -4091,6 +4122,7 @@
   "id": "2026-10-27-china-growth-despite-us-tariffs",
   "title": "China grows 4.5% as exports surge 36.3% despite US tariffs averaging 35%",
   "date": "2026-10-27",
+  "added": "2026-10-27",
   "type": "news",
   "outlets": [
    "Fortune"
@@ -4209,6 +4241,7 @@
   "id": "2026-10-27-us-china-port-fee-truce",
   "title": "The US moves to extend its port-fee truce with China to 9 January",
   "date": "2026-10-27",
+  "added": "2026-10-27",
   "type": "news",
   "outlets": [
    "Bloomberg",
@@ -4303,6 +4336,7 @@
   "id": "2026-10-27-price-gouging-abs-profits",
   "title": "Price gouging? ABS figures point to housing, transport and mining",
   "date": "2026-10-27",
+  "added": "2026-10-27",
   "type": "news",
   "outlets": [
    "Katherine Times (ACM)"
@@ -4400,6 +4434,7 @@
   "id": "2026-10-27-small-business-squeeze",
   "title": "Small businesses squeezed between rising costs and weaker sales",
   "date": "2026-10-27",
+  "added": "2026-10-27",
   "type": "news",
   "outlets": [
    "ABC News"
@@ -4507,6 +4542,7 @@
   "id": "2026-10-27-greens-tax-free-threshold",
   "title": "The Greens pitch a $26,000 tax-free threshold and a matching welfare boost",
   "date": "2026-10-27",
+  "added": "2026-10-27",
   "type": "news",
   "outlets": [
    "ABC News"
@@ -4624,6 +4660,7 @@
   "id": "2026-10-27-startup-cgt-rnd-reform",
   "title": "New tax break for startup investors and a refocused R&D incentive",
   "date": "2026-10-27",
+  "added": "2026-10-27",
   "type": "news",
   "outlets": [
    "Treasurer",
@@ -4729,6 +4766,7 @@
   "id": "2026-10-26-external-stability-june-qtr-2026",
   "title": "Australia's current account deficit is $27.2 billion, and fuel and electric vehicles are pushing it wider",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "stats",
   "outlets": [
    "ABS"
@@ -4917,6 +4955,7 @@
   "id": "2026-10-26-labour-market-policy-2026",
   "title": "Wages, awards and skills: what the 2026 decisions show about labour market policy",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "report",
   "outlets": [
    "Fair Work Commission",
@@ -5100,6 +5139,7 @@
   "id": "2026-10-26-vc-pisa-maths-leaders",
   "title": "The world's maths leaders: Australia falls from 11th to 17th in PISA maths",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "graph",
   "outlets": [
    "Visual Capitalist",
@@ -5231,6 +5271,7 @@
   "id": "2026-10-26-vc-gender-gap-teen-reading",
   "title": "The gender gap in teen reading: girls outscore boys in all 43 systems shown",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "graph",
   "outlets": [
    "Visual Capitalist",
@@ -5325,6 +5366,7 @@
   "id": "2026-10-26-vc-women-men-higher-education",
   "title": "Women vs men in higher education: women have higher enrolment rates in 130 countries",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "graph",
   "outlets": [
    "Visual Capitalist",
@@ -5426,6 +5468,7 @@
   "id": "2026-10-26-vc-educated-adults",
   "title": "Countries with the most educated adults: 54% of Australians aged 25 to 64 hold tertiary qualifications",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "graph",
   "outlets": [
    "Visual Capitalist",
@@ -5549,6 +5592,7 @@
   "id": "2026-10-26-vc-cost-of-bachelors-degree",
   "title": "The cost of a bachelor's degree: Australia's public tuition is $5.1K a year in PPP terms",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "graph",
   "outlets": [
    "Visual Capitalist",
@@ -5664,6 +5708,7 @@
   "id": "2026-10-26-vc-education-spending-per-student",
   "title": "Education spending per student: Australia spends $17.5K, below the United States and Norway",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "graph",
   "outlets": [
    "Visual Capitalist",
@@ -5779,6 +5824,7 @@
   "id": "2026-10-26-hilda-household-income-sources",
   "title": "Wages are 58% of household income; government benefits are 7%, but sole parents rely on them most",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "report",
   "outlets": [
    "ABS",
@@ -5936,6 +5982,7 @@
   "id": "2026-10-26-government-spending-multipliers-handout",
   "title": "How big is the multiplier? Australian evidence says it depends on the type of spending and the state of the economy",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "report",
   "outlets": [
    "Applied Economics"
@@ -6055,6 +6102,7 @@
   "id": "2026-10-26-reynolds-fisher-multipliers-paper",
   "title": "Estimates of government spending multipliers in Australian data (Reynolds and Fisher)",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "dateText": "Applied Economics 58(5), 2026",
   "type": "report",
   "outlets": [
@@ -6130,6 +6178,7 @@
   "id": "2026-10-26-injections-withdrawals-june-qtr-2026",
   "title": "Injections and withdrawals in the June quarter 2026: investment, government and exports against saving, tax and imports",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "stats",
   "outlets": [
    "ABS"
@@ -6263,6 +6312,7 @@
   "id": "2026-10-26-free-riders-handout",
   "title": "Free riders in practice: 39% of eligible workers are not union members, and half of them say they get the benefits anyway",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "report",
   "outlets": [
    "Haynes, Holland, Pyman and Teicher"
@@ -6377,6 +6427,7 @@
   "id": "2026-10-26-final-budget-outcome-2025-26",
   "title": "The Final Budget Outcome: a $22.3 billion deficit in 2025-26, after surpluses of $22.1 billion and $15.8 billion",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "stats",
   "outlets": [
    "Treasury",
@@ -6515,6 +6566,7 @@
   "id": "2026-10-26-who-is-affected-by-unemployment-sep-2026",
   "title": "Who is affected by unemployment: youth rate 11.1%, teenagers 15.9% and almost one in four unemployed out of work for a year",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "stats",
   "outlets": [
    "ABS"
@@ -6641,6 +6693,7 @@
   "id": "2026-10-26-growth-development-distribution",
   "title": "Beyond GDP: Australia ranks 7th on the HDI, while the richest 10% own 75% of world wealth",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "report",
   "outlets": [
    "UNDP",
@@ -6779,6 +6832,7 @@
   "id": "2026-10-26-international-business-cycle-oct-2026",
   "title": "The international business cycle: IMF sees 3.1% world growth in 2026 but inflation at 4.7%",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "report",
   "outlets": [
    "IMF",
@@ -6905,6 +6959,7 @@
   "id": "2026-10-26-what-moves-the-australian-dollar",
   "title": "What sets the Australian dollar, and what the RBA can do about it: US70c, a 4.60% cash rate and no intervention since 2007-08",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "report",
   "outlets": [
    "RBA",
@@ -7037,6 +7092,7 @@
   "id": "2026-10-26-perfection-fresh-cartel-penalty",
   "title": "Vegetable supplier admits price-fixing at Aldi, with a $12 million penalty proposed",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "news",
   "outlets": [
    "ABC News"
@@ -7140,6 +7196,7 @@
   "id": "2026-10-26-coalition-31b-savings-fiscal-debate",
   "title": "Coalition proposes $31 billion in spending cuts as the fiscal policy debate heats up",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "news",
   "outlets": [
    "ABC News"
@@ -7251,6 +7308,7 @@
   "id": "2026-10-26-rba-hunter-not-done-yet",
   "title": "RBA's Hunter says rate rises are 'not quite yet' done, with a fifth rise priced at 61 to 67%",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "news",
   "outlets": [
    "RBA",
@@ -7360,6 +7418,7 @@
   "id": "2026-10-26-real-wages-job-cuts-ai-boom",
   "title": "Falling real wages, bank job cuts and a shaky AI boom: an ABC analysis of the 2027 outlook",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "news",
   "outlets": [
    "ABC News"
@@ -7470,6 +7529,7 @@
   "id": "2026-10-26-challenger-takeover-bid-tal-dai-ichi",
   "title": "Challenger rejects an $11.80-a-share takeover bid from Japanese-owned TAL Dai-ichi",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "news",
   "outlets": [
    "ABC News",
@@ -7575,6 +7635,7 @@
   "id": "2026-10-26-mexico-tariffs-india-trade-talks",
   "title": "Mexico's 50% tariff wall pushes India to the negotiating table",
   "date": "2026-10-26",
+  "added": "2026-10-26",
   "type": "news",
   "outlets": [
    "NewsTrack (India)"
@@ -7772,6 +7833,7 @@
   "id": "2026-10-25-china-growth-iron-ore",
   "title": "China beats growth forecasts, but its property slump weighs on iron ore",
   "date": "2026-10-25",
+  "added": "2026-10-25",
   "dateText": "19–25 Oct 2026",
   "type": "news",
   "outlets": [
@@ -7917,6 +7979,7 @@
   "id": "2026-10-25-record-quarterly-house-price-fall",
   "title": "House prices record their biggest quarterly fall: down 4.7% in the September quarter",
   "date": "2026-10-25",
+  "added": "2026-10-25",
   "type": "stats",
   "outlets": [
    "ABC News",
@@ -8018,6 +8081,7 @@
   "id": "2026-10-24-us-canada-tariff-changes",
   "title": "US reshuffles its 50% tariffs on Canadian goods ahead of the midterms",
   "date": "2026-10-24",
+  "added": "2026-10-24",
   "dateText": "23–24 Oct 2026",
   "type": "news",
   "outlets": [
@@ -8742,6 +8806,7 @@
   "id": "2026-10-21-canada-tariff-shield",
   "title": "Canada spends billions to shield steel and autos from US tariffs",
   "date": "2026-10-21",
+  "added": "2026-10-21",
   "dateText": "21–23 Oct 2026",
   "type": "news",
   "outlets": [
@@ -9050,6 +9115,7 @@
  {
   "id": "2026-10-20-the-economy-this-week-20-oct",
   "date": "2026-10-20",
+  "added": "2026-10-20",
   "title": "The Economy This Week, 20 October 2026",
   "type": "news",
   "outlets": [
@@ -10539,6 +10605,7 @@
   "id": "2026-10-18-developing-world-debt-squeeze",
   "title": "Rich-country borrowing squeezes the developing world",
   "date": "2026-10-18",
+  "added": "2026-10-18",
   "dateText": "12–23 Oct 2026",
   "type": "news",
   "outlets": [
@@ -11032,6 +11099,7 @@
   "id": "2026-10-16-coal-mine-methane-safeguard-mechanism",
   "title": "Coal mine methane: the emissions at home we are undercounting",
   "date": "2026-10-16",
+  "added": "2026-10-16",
   "type": "news",
   "outlets": [
    "The Conversation",
@@ -11603,6 +11671,7 @@
  {
   "id": "2026-09-16-vc-global-natural-resources",
   "date": "2026-09-16",
+  "added": "2026-09-16",
   "title": "Visual Capitalist: global natural resources (forests, water, oil, gas)",
   "type": "graph",
   "outlets": [
@@ -11715,6 +11784,7 @@
   "id": "2026-09-14-conversation-australia-climate-targets",
   "title": "Australia must double down to meet our climate targets: a fossil fuel phase-out pathway",
   "date": "2026-09-14",
+  "added": "2026-09-14",
   "type": "news",
   "outlets": [
    "The Conversation"
@@ -11846,6 +11916,7 @@
   "id": "2026-09-02-year11-economy-data-dashboard",
   "title": "Australian economy data dashboard for Year 11, September 2026",
   "date": "2026-09-02",
+  "added": "2026-09-02",
   "type": "stats",
   "outlets": [
    "ABS",
@@ -12625,6 +12696,7 @@
   "id": "2026-08-01-bocsar-petrol-thefts-price-elasticity",
   "title": "Petrol thefts and petrol prices: a BOCSAR study turned into an elasticity lesson",
   "date": "2026-08-01",
+  "added": "2026-08-01",
   "dateText": "August 2026",
   "type": "report",
   "outlets": [
@@ -12750,6 +12822,7 @@
   "id": "2026-06-29-rba-additional-tools-framework-explainer",
   "title": "RBA's new framework for additional monetary policy tools: illustrated explainer",
   "date": "2026-06-29",
+  "added": "2026-06-29",
   "type": "report",
   "outlets": [
    "Reserve Bank of Australia",
@@ -12866,6 +12939,7 @@
   "id": "2026-06-19-reform-aftershocks-budget-rollback",
   "title": "Reform aftershocks: how the 2026 federal Budget plans were rolled back",
   "date": "2026-06-19",
+  "added": "2026-06-19",
   "type": "case",
   "outlets": [
    "Australian Financial Review (source pack)",
@@ -12998,6 +13072,7 @@
   "id": "2026-05-21-ken-henry-tax-reform-speech-article",
   "title": "Ken Henry's warning on tax reform, fairness and growth (student article)",
   "date": "2026-05-21",
+  "added": "2026-05-21",
   "type": "report",
   "outlets": [
    "Teacher article (HSC Economics)",
@@ -14914,6 +14989,7 @@
  {
   "id": "2025-08-12-rba-cuts-rates-productivity-warning",
   "date": "2025-08-12",
+  "added": "2025-08-12",
   "title": "RBA cuts rates to 3.6% and downgrades long-term productivity growth",
   "type": "news",
   "outlets": [
@@ -15052,6 +15128,7 @@
  {
   "id": "2025-08-12-rba-productivity-primer",
   "date": "2025-08-12",
+  "added": "2025-08-12",
   "title": "A productivity primer: explaining the RBA's reality check",
   "type": "news",
   "outlets": [
@@ -15478,6 +15555,7 @@
   "id": "2025-08-05-millionaire-migration-2025",
   "title": "Millionaire migration in 2025: projected net flows by country",
   "date": "2025-08-05",
+  "added": "2025-08-05",
   "type": "graph",
   "outlets": [
    "Visual Capitalist",
@@ -15721,6 +15799,7 @@
   "id": "2025-08-04-division-296-microeconomic-reform",
   "title": "Division 296 super tax as a microeconomic reform case study",
   "date": "2025-08-04",
+  "added": "2025-08-04",
   "type": "case",
   "outlets": [
    "Teacher notes (HSC Economics)"
@@ -15840,6 +15919,7 @@
   "id": "2025-08-04-age-pension-to-self-funded-retirement",
   "title": "Age Pension means tests: from part pension to self-funded retirement",
   "date": "2025-08-04",
+  "added": "2025-08-04",
   "type": "stats",
   "outlets": [
    "Teacher handout (HSC Economics)"
@@ -15950,6 +16030,7 @@
  {
   "id": "2025-07-30-june-qtr-cpi-sets-up-rba-cut",
   "date": "2025-07-30",
+  "added": "2025-07-30",
   "title": "Lower inflation sets up an August RBA rate cut",
   "type": "news",
   "outlets": [
@@ -16318,6 +16399,7 @@
  {
   "id": "2025-07-24-bullock-anika-dual-mandate",
   "date": "2025-07-24",
+  "added": "2025-07-24",
   "title": "Bullock defends the RBA's slow and steady strategy",
   "type": "news",
   "outlets": [
@@ -16452,6 +16534,7 @@
  {
   "id": "2025-07-21-deloitte-tariff-reality-emerges",
   "date": "2025-07-21",
+  "added": "2025-07-21",
   "title": "Deloitte Access Economics: tariff reality starts to emerge",
   "type": "report",
   "outlets": [
@@ -16700,6 +16783,7 @@
  {
   "id": "2025-07-08-rba-holds-3-85-split-vote",
   "date": "2025-07-08",
+  "added": "2025-07-08",
   "title": "Split Reserve Bank holds the cash rate at 3.85 per cent",
   "type": "news",
   "outlets": [
@@ -16958,6 +17042,7 @@
   "id": "2025-06-22-chalmers-red-tape-supply-side",
   "title": "Good ideas strangled by red tape: Treasurer to crack down on bureaucracy",
   "date": "2025-06-22",
+  "added": "2025-06-22",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -17064,6 +17149,7 @@
   "id": "2025-06-18-afr-chalmers-tax-reform-crucial",
   "title": "Chalmers says tax reform is 'crucial' to budget sustainability",
   "date": "2025-06-18",
+  "added": "2025-06-18",
   "type": "news",
   "outlets": [
    "Australian Financial Review"
@@ -17181,6 +17267,7 @@
   "id": "2025-06-04-afr-march-qtr-gdp-barely-growing",
   "title": "Economy barely grows in March quarter as business investment falters",
   "date": "2025-06-04",
+  "added": "2025-06-04",
   "type": "news",
   "outlets": [
    "Australian Financial Review",
@@ -17319,6 +17406,7 @@
   "id": "2025-06-04-afr-markets-live-gdp-q1",
   "title": "Markets Live: March quarter GDP grew 0.2%, missing forecasts",
   "date": "2025-06-04",
+  "added": "2025-06-04",
   "type": "news",
   "outlets": [
    "Australian Financial Review",
@@ -17787,6 +17875,7 @@
   "id": "2025-05-25-world-financial-markets-graphics",
   "title": "World financial markets: centres, shareholders, exchanges and companies",
   "date": "2025-05-25",
+  "added": "2025-05-25",
   "type": "graph",
   "outlets": [
    "Visual Capitalist",
@@ -17897,6 +17986,7 @@
  {
   "id": "2025-05-20-rba-trade-war-worse-than-gfc",
   "date": "2025-05-20",
+  "added": "2025-05-20",
   "title": "RBA modelling: a trade war could be worse than the GFC",
   "type": "news",
   "outlets": [
@@ -18018,6 +18108,7 @@
  {
   "id": "2025-05-19-gittins-wages-3-5-productivity",
   "date": "2025-05-19",
+  "added": "2025-05-19",
   "title": "Gittins: want greater productivity? Set wages to rise 3.5 per cent a year",
   "type": "news",
   "outlets": [
@@ -18119,6 +18210,7 @@
   "id": "2025-05-19-super-tax-productivity-clash",
   "title": "Super tax hike may force early retirement of skilled workers",
   "date": "2025-05-19",
+  "added": "2025-05-19",
   "type": "news",
   "outlets": [
    "Australian Financial Review"
@@ -18460,6 +18552,7 @@
  {
   "id": "2025-05-15-smsf-sell-assets-3m-super-tax",
   "date": "2025-05-15",
+  "added": "2025-05-15",
   "title": "SMSFs 'panic' sell assets to avoid Labor's $3m super tax",
   "type": "news",
   "outlets": [
@@ -18591,6 +18684,7 @@
   "id": "2025-05-15-afr-chalmers-super-tax-opinion",
   "title": "Opinion: Chalmers' tax on unrealised super gains is clever, and cruel to the unadvised",
   "date": "2025-05-15",
+  "added": "2025-05-15",
   "type": "news",
   "outlets": [
    "Australian Financial Review"
@@ -18943,6 +19037,7 @@
  {
   "id": "2025-05-13-us-china-trade-deadlock-broken",
   "date": "2025-05-13",
+  "added": "2025-05-13",
   "title": "Who blinked first? How the US and China broke their trade deadlock",
   "type": "news",
   "outlets": [
@@ -19061,6 +19156,7 @@
   "id": "2025-05-12-elders-delta-farmers-fear-duopoly",
   "title": "Farmers fear Coles, Woolworths-style duopoly in Elders' $475m buyout",
   "date": "2025-05-12",
+  "added": "2025-05-12",
   "type": "news",
   "outlets": [
    "Australian Financial Review"
@@ -19306,6 +19402,7 @@
   "id": "2025-05-07-deloitte-three-more-years",
   "title": "Deloitte Access Economics: Labor's second term needs a bolder reform agenda",
   "date": "2025-05-07",
+  "added": "2025-05-07",
   "type": "report",
   "outlets": [
    "Deloitte Access Economics"
@@ -19427,6 +19524,7 @@
  {
   "id": "2025-05-04-vc-government-debt-around-the-world",
   "date": "2025-05-04",
+  "added": "2025-05-04",
   "title": "Visual Capitalist: government debt around the world",
   "type": "graph",
   "outlets": [
@@ -19522,6 +19620,7 @@
   "id": "2025-05-04-imf-gdp-growth-forecasts-2025",
   "title": "IMF real GDP growth projections for 2025, January versus April",
   "date": "2025-05-04",
+  "added": "2025-05-04",
   "type": "graph",
   "outlets": [
    "Visual Capitalist",
@@ -19643,6 +19742,7 @@
   "id": "2025-04-10-smh-bartholomeusz-bond-vigilantes",
   "title": "Bond markets forced Trump to pause his reciprocal tariffs",
   "date": "2025-04-10",
+  "added": "2025-04-10",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -19763,6 +19863,7 @@
   "id": "2025-04-10-visual-capitalist-trump-tariffs-charts",
   "title": "Visual Capitalist: Trump's tariffs in charts",
   "date": "2025-04-10",
+  "added": "2025-04-10",
   "type": "graph",
   "outlets": [
    "Visual Capitalist"
@@ -19954,6 +20055,7 @@
   "id": "2025-04-03-afr-trump-tariffs-hit-australia-charts",
   "title": "How Trump's 'Liberation Day' tariffs will hit Australia, in four charts",
   "date": "2025-04-03",
+  "added": "2025-04-03",
   "type": "news",
   "outlets": [
    "Australian Financial Review"
@@ -20082,6 +20184,7 @@
   "id": "2025-04-02-rba-kent-ample-reserves-speech",
   "title": "RBA speech: monetary policy implementation and the move to ample reserves",
   "date": "2025-04-02",
+  "added": "2025-04-02",
   "type": "report",
   "outlets": [
    "Reserve Bank of Australia"
@@ -20183,6 +20286,7 @@
   "id": "2025-03-25-budget-speech-2025-26",
   "title": "Treasurer's 2025-26 Budget Speech",
   "date": "2025-03-25",
+  "added": "2025-03-25",
   "type": "report",
   "outlets": [
    "Treasury Ministers (Dr Jim Chalmers)"
@@ -20314,6 +20418,7 @@
   "id": "2025-03-25-deloitte-federal-budget-2025-26-report",
   "title": "Federal Budget 2025-26: A platform for the next election (Deloitte)",
   "date": "2025-03-25",
+  "added": "2025-03-25",
   "type": "report",
   "outlets": [
    "Deloitte Access Economics"
@@ -20438,6 +20543,7 @@
   "id": "2025-03-24-guardian-budget-where-money-goes",
   "title": "Budget 101: where Australia's tax revenue comes from and where it goes",
   "date": "2025-03-24",
+  "added": "2025-03-24",
   "type": "news",
   "outlets": [
    "The Guardian Australia",
@@ -20577,6 +20683,7 @@
   "id": "2025-03-24-smh-gittins-supermarket-overcharging",
   "title": "Gittins: ACCC report shows supermarkets are overcharging",
   "date": "2025-03-24",
+  "added": "2025-03-24",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -20671,6 +20778,7 @@
   "id": "2025-03-23-smh-budget-tax-burden-lowest",
   "title": "Budget to reveal tax burden at its lowest since the pandemic",
   "date": "2025-03-23",
+  "added": "2025-03-23",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -20793,6 +20901,7 @@
  {
   "id": "2025-02-21-asx-one-month-low-strong-jobs",
   "date": "2025-02-21",
+  "added": "2025-02-21",
   "title": "ASX falls to one-month low as strong jobs data and bank earnings weigh",
   "type": "news",
   "outlets": [
@@ -20921,6 +21030,7 @@
   "id": "2025-02-21-newscomau-cba-rba-neutral-rate",
   "title": "CBA analysts see a clue the RBA may cut rates further",
   "date": "2025-02-21",
+  "added": "2025-02-21",
   "type": "news",
   "outlets": [
    "news.com.au",
@@ -21040,6 +21150,7 @@
  {
   "id": "2025-02-20-whyalla-bailout-does-it-deserve-rescue",
   "date": "2025-02-20",
+  "added": "2025-02-20",
   "title": "Pre-election bailout: does Whyalla deserve to be rescued?",
   "type": "case",
   "outlets": [
@@ -21154,6 +21265,7 @@
   "id": "2025-02-17-smh-building-productivity-slump",
   "title": "Home-building productivity has halved since 1995, Productivity Commission finds",
   "date": "2025-02-17",
+  "added": "2025-02-17",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald",
@@ -21277,6 +21389,7 @@
   "id": "2025-02-17-smh-short-term-rentals-sydney",
   "title": "Councils press NSW to tighten short-term rental rules to free up homes",
   "date": "2025-02-17",
+  "added": "2025-02-17",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -21390,6 +21503,7 @@
   "id": "2025-02-17-smh-news-bargaining-incentive-tariff-threat",
   "title": "Trump tariff threat leads Australia to pause its big-tech levy",
   "date": "2025-02-17",
+  "added": "2025-02-17",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -21706,6 +21820,7 @@
  {
   "id": "2025-02-10-gittins-everyone-hates-wasteful-spending",
   "date": "2025-02-10",
+  "added": "2025-02-10",
   "title": "Gittins: everyone hates 'wasteful' government spending until someone tries to cut it",
   "type": "news",
   "outlets": [
@@ -22406,6 +22521,7 @@
  {
   "id": "2025-02-04-us-trade-war-hits-local-firms",
   "date": "2025-02-04",
+  "added": "2025-02-04",
   "title": "US trade war hits local firms",
   "type": "news",
   "outlets": [
@@ -22540,6 +22656,7 @@
   "id": "2025-01-30-cpi-sense-inflation-is-off",
   "title": "If you get the sense inflation is a little off, you're probably right",
   "date": "2025-01-30",
+  "added": "2025-01-30",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -22789,6 +22906,7 @@
  {
   "id": "2024-10-26-bank-of-mum-and-dad-sydney-suburbs",
   "date": "2024-10-26",
+  "added": "2024-10-26",
   "title": "How much you need from the bank of mum and dad to buy a Sydney home",
   "type": "news",
   "outlets": [
@@ -22920,6 +23038,7 @@
   "id": "2024-08-28-smh-wade-trump-tariffs-take-a-toll",
   "title": "Trump's tariffs will take a toll on Australia",
   "date": "2024-08-28",
+  "added": "2024-08-28",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -23037,6 +23156,7 @@
  {
   "id": "2024-04-02-aud-falls-strong-us-data",
   "date": "2024-04-02",
+  "added": "2024-04-02",
   "title": "Australian dollar hit as strong US data dents rate cut hopes",
   "type": "news",
   "outlets": [
@@ -23164,6 +23284,7 @@
  {
   "id": "2024-03-29-solar-sunshot-manufacturing-could-go-offshore",
   "date": "2024-03-29",
+  "added": "2024-03-29",
   "title": "Australia invented solar panels. Now 99 per cent of ours are made in China",
   "type": "case",
   "outlets": [
@@ -23286,6 +23407,7 @@
  {
   "id": "2024-03-28-solar-sunshot-bad-old-days-warning",
   "date": "2024-03-28",
+  "added": "2024-03-28",
   "title": "'Bad old days are back': Albanese warned about his $1b solar push",
   "type": "case",
   "outlets": [
@@ -23408,6 +23530,7 @@
   "id": "2024-02-01-senate-poverty-inquiry-final-report",
   "title": "Senate inquiry final report: The extent and nature of poverty in Australia",
   "date": "2024-02-01",
+  "added": "2024-02-01",
   "dateText": "February 2024",
   "type": "report",
   "outlets": [
@@ -23535,6 +23658,7 @@
   "id": "2023-01-01-mccrindle-income-wealth-distribution",
   "title": "Australia's income and wealth distribution infographic (McCrindle, 2023)",
   "date": "2023-01-01",
+  "added": "2023-01-01",
   "type": "graph",
   "outlets": [
    "McCrindle",
@@ -23661,6 +23785,7 @@
   "id": "2023-01-01-mccrindle-australia-population-map",
   "title": "Australia's population map and generational profile (McCrindle, 2023)",
   "date": "2023-01-01",
+  "added": "2023-01-01",
   "type": "stats",
   "outlets": [
    "McCrindle",
@@ -23762,6 +23887,7 @@
  {
   "id": "2022-04-30-burnout-economics-rates-and-inflation",
   "date": "2022-04-30",
+  "added": "2022-04-30",
   "title": "Interest rate and inflation strategy could lead to 'economic burnout'",
   "type": "news",
   "outlets": [
@@ -23896,6 +24022,7 @@
   "id": "2021-04-29-treasury-estimating-the-nairu",
   "title": "Treasury working paper: Estimating the NAIRU in Australia",
   "date": "2021-04-29",
+  "added": "2021-04-29",
   "type": "report",
   "outlets": [
    "The Treasury"
@@ -24013,6 +24140,7 @@
   "id": "2020-12-09-gittins-learning-to-live-without-inflation",
   "title": "Learning to live without inflation",
   "date": "2020-12-09",
+  "added": "2020-12-09",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -24119,6 +24247,7 @@
   "id": "2020-12-03-irvine-why-a-trade-war-would-be-dumb",
   "title": "Why a trade war would be dumb",
   "date": "2020-12-03",
+  "added": "2020-12-03",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -24212,6 +24341,7 @@
   "id": "2020-09-02-australia-june-qtr-recession",
   "title": "Australia in recession: biggest contraction since the Great Depression, ABS confirms",
   "date": "2020-09-02",
+  "added": "2020-09-02",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -24356,6 +24486,7 @@
   "id": "2020-08-03-gittins-weak-inflation-demand-side",
   "title": "Weak inflation tells us: it's the demand side, stupid",
   "date": "2020-08-03",
+  "added": "2020-08-03",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -24467,6 +24598,7 @@
   "id": "2020-06-18-hewson-seize-the-day-tax-reform",
   "title": "Seize the day for tax reform",
   "date": "2020-06-18",
+  "added": "2020-06-18",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -24575,6 +24707,7 @@
   "id": "2020-05-01-riley-sustained-budget-deficits",
   "title": "Economic brief: the effects of sustained budget deficits",
   "date": "2020-05-01",
+  "added": "2020-05-01",
   "type": "report",
   "outlets": [
    "Tim Riley Publications (Current Economics)"
@@ -24702,6 +24835,7 @@
   "id": "2020-05-01-economic-forecasts-covid-snapshot",
   "title": "Economic forecasts, April/May 2020: key indicators at the start of the COVID-19 recession",
   "date": "2020-05-01",
+  "added": "2020-05-01",
   "type": "stats",
   "outlets": [
    "Tim Riley Publications (Current Economics)",
@@ -24851,6 +24985,7 @@
   "id": "2020-05-01-riley-covid-fiscal-measures",
   "title": "Fiscal measures in response to the COVID-19 pandemic",
   "date": "2020-05-01",
+  "added": "2020-05-01",
   "type": "report",
   "outlets": [
    "Tim Riley Publications (Current Economics)",
@@ -24995,6 +25130,7 @@
   "id": "2020-05-01-riley-microeconomic-reform",
   "title": "Microeconomic reform policies",
   "date": "2020-05-01",
+  "added": "2020-05-01",
   "type": "report",
   "outlets": [
    "Tim Riley Publications (Current Economics)"
@@ -25119,6 +25255,7 @@
   "id": "2020-05-01-riley-rba-monetary-policy-2020",
   "title": "The Reserve Bank's recent conduct of monetary policy",
   "date": "2020-05-01",
+  "added": "2020-05-01",
   "type": "report",
   "outlets": [
    "Tim Riley Publications (Current Economics)",
@@ -25259,6 +25396,7 @@
   "id": "2020-03-17-china-economy-may-be-shrinking",
   "title": "Far from bouncing back, China's economy may be shrinking",
   "date": "2020-03-17",
+  "added": "2020-03-17",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -25389,6 +25527,7 @@
   "id": "2020-03-13-what-is-a-recession",
   "title": "What is a recession?",
   "date": "2020-03-13",
+  "added": "2020-03-13",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -25515,6 +25654,7 @@
   "id": "2020-02-17-millennials-fed-job-harder",
   "title": "How millennials could make the Fed's job harder",
   "date": "2020-02-17",
+  "added": "2020-02-17",
   "type": "news",
   "outlets": [
    "New York Times"
@@ -25640,6 +25780,7 @@
   "id": "2020-02-07-economy-had-more-momentum",
   "title": "Economy had more momentum: stronger retail growth in December quarter",
   "date": "2020-02-07",
+  "added": "2020-02-07",
   "type": "news",
   "outlets": [
    "Australian Financial Review"
@@ -25750,6 +25891,7 @@
   "id": "2020-01-29-afr-businesses-not-raising-prices",
   "title": "60pc of businesses don't plan to raise prices",
   "date": "2020-01-29",
+  "added": "2020-01-29",
   "type": "news",
   "outlets": [
    "Australian Financial Review",
@@ -25864,6 +26006,7 @@
   "id": "2008-01-01-haynes-free-riding-in-australia",
   "title": "Free-Riding in Australia (Haynes, Holland, Pyman and Teicher)",
   "date": "2008-01-01",
+  "added": "2008-01-01",
   "dateText": "Undated paper (cites 2007); survey data 2004",
   "type": "report",
   "outlets": [
