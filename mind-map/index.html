@@ -296,10 +296,19 @@ ul.links button:hover{background:var(--panel)}
 body.openpath{padding-bottom:46vh}
 .ov .hit{fill:none;stroke:transparent;pointer-events:stroke;cursor:pointer}
 .ov .bd{pointer-events:all;cursor:pointer}
+#rlab{min-width:118px;justify-content:center}
+body:not(.adv) .advrow{display:none}
+header .grp{margin-bottom:0}
+#plab{min-width:170px;justify-content:center}
+header #adv{height:40px;margin-bottom:0}header #adv svg{width:18px;height:18px}header #adv[aria-pressed=true]{background:var(--band);color:#fff}
 .lvlab{display:inline-flex;align-items:center;padding:0 12px;font-size:13.5px;font-weight:600;background:var(--panel);color:var(--fg);border-left:1px solid var(--line);border-right:1px solid var(--line);min-width:150px;justify-content:center;white-space:nowrap}
 .seg button:disabled{opacity:.45;cursor:default}
 .tagpair{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
 .tagpair span{font-size:11.5px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:1px 8px;color:var(--fg);background:var(--panel)}
+.dirb{flex:none;width:21px;height:21px;border-radius:50%;display:inline-grid;place-items:center;font:800 14px/1 var(--body);background:var(--surface);border:2.5px solid currentColor;margin-right:2px;pointer-events:auto}
+.dirb.u{color:var(--raise)}.dirb.d{color:var(--lower)}.dirb.q,.dirb.m{color:var(--vary)}.dirb.up{border-style:dashed}
+.node:has(.dirb){gap:6px;justify-content:flex-start}.node:has(.dirb) .ob{margin-left:auto}
+.mixbar{padding:7px 16px;font-size:13px;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--vary) 10%,var(--surface));display:flex;flex-wrap:wrap;gap:4px 18px}.mixbar b{color:var(--vary)}
 .whybar{padding:7px 16px;font-size:13.5px;border-bottom:1px solid var(--line);background:var(--surface);min-height:2.6em;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
 .whybar b{font-weight:800}
 .whybar .wt{font-size:11.5px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:1px 8px;background:var(--panel)}
@@ -320,17 +329,15 @@ ul.links .why2{display:block;color:var(--muted);font-size:12px;margin-top:2px;fl
   <div class="top">
     <h1>HSC Economics Topic Map<small>View the course by the four HSC topics or by the six economic objectives. Click any dot point to see where it leads and what leads to it.</small></h1>
     <div class="tools">
-      <div class="trow"><div class="grp" id="grpView"><span class="gl">Map view</span><div class="seg" role="group" aria-label="Map view"><button id="vt" title="Group the dot points under the four HSC topics. Best for seeing how the course is organised." aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="4.5" height="16" rx="1"/><rect x="9.75" y="4" width="4.5" height="16" rx="1"/><rect x="16.5" y="4" width="4.5" height="16" rx="1"/></svg>By topic</button><button id="vo" title="Group the dot points under the six economic objectives. Also shows which objectives can conflict (dashed arrows)." aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2.5"/><circle cx="5" cy="5" r="1.8"/><circle cx="19" cy="5" r="1.8"/><circle cx="5" cy="19" r="1.8"/><circle cx="19" cy="19" r="1.8"/><path d="M6.4 6.4l4 4M17.6 6.4l-4 4M6.4 17.6l4-4M17.6 17.6l-4-4"/></svg>By objective</button></div></div><div class="grp" id="grpLinks"><span class="gl">Links shown</span><div class="seg" role="group" aria-label="How far to follow links">
-        <button id="r1" aria-pressed="false" title="Direct: show only the arrows going straight into and out of the dot point you click (one step)."><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><path d="M7.5 12h9M14 9l3 3-3 3"/></svg>Direct</button>
-        <button id="r2" aria-pressed="false" title="2 steps: follow links up to two steps away in each direction.">2 steps</button>
-        <button id="r3" aria-pressed="false" title="3 steps: follow links up to three steps away in each direction.">3 steps</button>
-        <button id="r0" aria-pressed="true" title="Whole chain: follow every connection onward and backward from the dot point you click. Use Open chain to read it in order in a breakout box."><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="4" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="20" cy="12" r="1.8"/><path d="M6 12h4M14 12h4"/></svg>Whole chain</button>
+      <div class="trow"><div class="grp" id="grpView"><span class="gl">Map view</span><div class="seg" role="group" aria-label="Map view"><button id="vt" title="Group the dot points under the four HSC topics. Best for seeing how the course is organised." aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="4.5" height="16" rx="1"/><rect x="9.75" y="4" width="4.5" height="16" rx="1"/><rect x="16.5" y="4" width="4.5" height="16" rx="1"/></svg>By topic</button><button id="vo" title="Group the dot points under the six economic objectives. Also shows which objectives can conflict (dashed arrows)." aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2.5"/><circle cx="5" cy="5" r="1.8"/><circle cx="19" cy="5" r="1.8"/><circle cx="5" cy="19" r="1.8"/><circle cx="19" cy="19" r="1.8"/><path d="M6.4 6.4l4 4M17.6 6.4l-4 4M6.4 17.6l4-4M17.6 17.6l-4-4"/></svg>By objective</button></div></div><div class="grp" id="grpDir"><span class="gl">If the selected dot point…</span><div class="seg" role="group" aria-label="Direction of change of the selected dot point"><button id="dU" disabled aria-pressed="false" title="Assume the selected dot point rises, then show whether every dot point upstream and downstream rises, falls or depends. Select a dot point first.">↑ Rises</button><button id="dD" disabled aria-pressed="false" title="Assume the selected dot point falls, then show whether every dot point upstream and downstream rises, falls or depends. Select a dot point first.">↓ Falls</button><button id="dO" disabled aria-pressed="true" title="Show the links only, without a direction of change">Off</button></div></div><div class="grp" id="grpPreset"><span class="gl">How much to show</span><div class="seg" role="group" aria-label="How much of the map to show"><button id="pm" title="Show less: fewer steps or fewer links">− Fewer</button><span class="lvlab" id="plab" aria-live="polite"></span><button id="pp" title="Show more: further steps or more links">+ More</button></div></div><button class="btn" id="adv" aria-pressed="false" title="Show or hide the separate Links shown and Link detail controls, for fine control over how far and how many links are drawn."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>Advanced</button></div>
+      <div class="trow advrow"><div class="grp" id="grpLinks"><span class="gl">Links shown</span><div class="seg" role="group" aria-label="How far to follow links">
+        <button id="rm" title="Fewer steps: follow the links a shorter distance from the dot point (down to Direct, one step)">− Fewer</button><span class="lvlab" id="rlab" aria-live="polite"></span><button id="rp" title="More steps: follow the links further from the dot point (Direct, 2 steps, 3 steps, then the Whole chain)">+ More</button>
       </div></div><div class="grp" id="grpDetail"><span class="gl">Link detail</span><div class="seg" role="group" aria-label="How many links to include">
         <button id="lm" title="Fewer links: remove the most recently added batch">− Fewer</button><span class="lvlab" id="lvlab" aria-live="polite"></span><button id="lp" title="More links: add the next batch of links">+ More</button>
-      </div></div><button class="btn" id="clear" title="Clear the selection, close the breakout box and show the whole map normally"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Clear</button></div>
-      <div class="trow r2"><button class="btn" id="chainbtn" disabled title="Open the chain in a breakout box, in order from causes to effects: for the selected dot point, or for the pathway you are following. Select a dot point or start a pathway first (or double-click a dot point)."><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 9h8M8 12h8M8 15h5"/></svg>Open chain</button>
+      </div></div><button class="btn" id="all" aria-pressed="false" title="Draw every link on the map at once (faint). Shows the whole web of connections, but is busy. Click again to hide.">Show all links</button></div>
+      <div class="trow r2"><button class="btn" id="clear" title="Clear the selection, close the breakout box and show the whole map normally"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Clear</button><button class="btn" id="chainbtn" disabled title="Open the chain in a breakout box, in order from causes to effects: for the selected dot point, or for the pathway you are following. Select a dot point or start a pathway first (or double-click a dot point)."><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 9h8M8 12h8M8 15h5"/></svg>Open Flow Viewer</button>
       <button class="btn" id="pathbtn" aria-expanded="false" title="Pathways: curated step-by-step chains, such as how a rate rise reaches inflation. Pick one to follow it with an explanation of each step."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18c4 0 4-12 8-12s4 12 8 12"/><circle cx="4" cy="18" r="1.6"/><circle cx="20" cy="18" r="1.6"/></svg>Pathways</button>
-      <button class="btn" id="all" aria-pressed="false" title="Draw every link on the map at once (faint). Shows the whole web of connections, but is busy. Click again to hide.">Show all links</button><button class="btn" id="pal" aria-pressed="false" title="Swap the colours for a set that is easier to tell apart with colour-blindness">Colour-blind safe colours</button><button class="btn" id="helpbtn" title="Open the quick guide, with an optional guided tour"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7M12 17h.01"/></svg>Help</button></div>
+      <button class="btn" id="pal" aria-pressed="false" title="Swap the colours for a set that is easier to tell apart with colour-blindness">Colour-blind safe colours</button><button class="btn" id="helpbtn" title="Open the quick guide, with an optional guided tour"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7M12 17h.01"/></svg>Help</button></div>
       <div class="trow r2"><div class="search"><input id="q" title="Type part of a dot point's name to find it and select it" type="search" placeholder="Find a dot point" aria-label="Find a dot point" autocomplete="off"><div class="sug" id="sug" hidden></div></div></div>
     </div>
   </div>
@@ -376,7 +383,7 @@ function mkNode(id) {
   const s = document.createElement("span"); s.textContent = n.label; b.appendChild(s);
   if (n.obj) b.appendChild(objBadge(n.obj));
   b.onclick = ev => { ev.stopPropagation(); if (ev.detail >= 2) { if (sel !== id) selectNode(id); openChainNow(); return; } if (sel === id) clearAll(); else selectNode(id); };
-  b.title = "Click to follow this dot point's links. Click again to clear. Double-click to open its chain in order.";
+  b.title = "Click to follow this dot point's links. Click again to clear. Double-click to open it in the Flow Viewer.";
   if (id.startsWith("OBJ_")) { const f = () => cfFocus(D.edges.map((e, i) => e.kind === "c" && (e.a === id || e.b === id) ? i : -1).filter(i => i >= 0)); b.onmouseenter = b.onfocus = f; b.onmouseleave = b.onblur = () => cfFocus(null); }
   node[id] = b; return b;
 }
@@ -440,6 +447,29 @@ function buildAdj() {
 }
 buildAdj();
 const EIDX = {}; D.edges.forEach((e, i) => { if (e.kind !== "c") EIDX[e.a + "|" + e.b] = i; });
+let dirSel = null;
+const PRESETS = [
+  {n: "Direct links", r: 1, l: 1, t: "Only the arrows going straight into and out of the dot point, using the original, simplest links."},
+  {n: "Two steps", r: 2, l: 1, t: "Follow the original links up to two steps away in each direction."},
+  {n: "Simple chain", r: 0, l: 1, t: "The whole chain, using only the original, simplest links. A good place to start."},
+  {n: "Main links", r: 0, l: 3, t: "The whole chain, adding the main short-run and main longer-run links."},
+  {n: "More links", r: 0, l: 4, t: "The whole chain, also adding the weaker short-run links."},
+  {n: "All links", r: 0, l: 5, t: "The whole chain with every link, including the weaker longer-run ones. The most complex view."}];
+const rScore = r => r === 1 ? 0 : r === 0 ? 2 : 1, pScore = (r, l) => (l - 1) * 3 + rScore(r);
+const curPreset = () => PRESETS.findIndex(p => p.r === reach && p.l === lvl);
+function setPreset(i) { const p = PRESETS[i]; if (!p) return; reach = p.r; mode = reach === 1 ? 1 : 2; lvl = p.l; buildAdj(); cfpop.hidden = true; if (sel != null) renderDrawer(); applyHighlight(); renderChain(); }
+function stepPreset(dir) { const cs = pScore(reach, lvl); let best = -1, bs = null;
+  PRESETS.forEach((p, i) => { const ps = pScore(p.r, p.l); if (dir < 0 ? ps < cs : ps > cs) { if (bs === null || (dir < 0 ? ps > bs : ps < bs)) { bs = ps; best = i; } } });
+  if (best >= 0) setPreset(best); }
+function updPreset() { const i = curPreset(), lb = document.getElementById("plab"), cs = pScore(reach, lvl);
+  lb.textContent = i >= 0 ? `${i + 1} of ${PRESETS.length} · ${PRESETS[i].n}` : "Custom (see Advanced)"; lb.title = i >= 0 ? PRESETS[i].t : "You have chosen a combination in Advanced that is not one of the standard levels.";
+  document.getElementById("pm").disabled = !PRESETS.some(p => pScore(p.r, p.l) < cs); document.getElementById("pp").disabled = !PRESETS.some(p => pScore(p.r, p.l) > cs); }
+document.getElementById("pm").onclick = () => stepPreset(-1); document.getElementById("pp").onclick = () => stepPreset(1);
+const advBtn = document.getElementById("adv");
+function setAdv(on, save) { document.body.classList.toggle("adv", on); advBtn.setAttribute("aria-pressed", String(on)); if (save) { try { localStorage.setItem("hscmm-adv", on ? "1" : "0"); } catch (e) {} } if (typeof renderChain === "function" && chainOpen) renderChain(); }
+advBtn.onclick = () => setAdv(!document.body.classList.contains("adv"), true);
+try { if (localStorage.getItem("hscmm-adv") === "1") setAdv(true); } catch (e) {}
+const REACHES = [1, 2, 3, 0], REACHN = ["Direct", "2 steps", "3 steps", "Whole chain"], REACHT = ["Direct: only the arrows going straight into and out of the dot point (one step).", "2 steps: links up to two steps away in each direction.", "3 steps: links up to three steps away in each direction.", "Whole chain: every connection onward and backward from the dot point."];
 let mode = 2, sel = null, objSel = null, topSel = null, showAll = false;
 const RUNW = {s: "Short-run", l: "Longer-run"}, STRW = {s: "Main link", w: "Weaker or conditional"};
 
@@ -625,11 +655,49 @@ function applyHighlight() {
   document.querySelectorAll(".chip[data-t]").forEach(c => c.setAttribute("aria-pressed", String(+c.dataset.t === topSel)));
   document.querySelectorAll(".panel>h2[data-g]").forEach(h => { const [k, n] = [h.dataset.g[0], +h.dataset.g.slice(1)]; h.setAttribute("aria-pressed", String(k === "o" ? n === objSel : n === topSel)); });
   document.getElementById("all").setAttribute("aria-pressed", String(showAll));
-  [["r1", 1], ["r2", 2], ["r3", 3], ["r0", 0]].forEach(([id, v]) => document.getElementById(id).setAttribute("aria-pressed", String(reach === v)));
+  { const ri = REACHES.indexOf(reach), rl = document.getElementById("rlab"); rl.textContent = REACHN[ri]; rl.title = REACHT[ri]; document.getElementById("rm").disabled = ri <= 0; document.getElementById("rp").disabled = ri >= REACHES.length - 1; }
   { const n = lvCount(lvl), lab = document.getElementById("lvlab"); lab.textContent = `Step ${lvl} of 5 \u00b7 ${n} links`; lab.title = LVN[lvl];
     document.getElementById("lm").disabled = lvl <= 1; document.getElementById("lp").disabled = lvl >= 5; document.getElementById("chainbtn").disabled = sel == null && !pathSel; }
+  if (typeof applyDir === "function") applyDir();
+  if (typeof updPreset === "function") updPreset();
   draw();
 }
+
+const flipD = d => d === "u" ? "d" : "u";
+function impactOf(root, dir) {
+  const lv = levelsFor(root), E = [...trace(root).eset].map(i => D.edges[i]).filter(e => e.kind !== "c" && e.a in lv && e.b in lv);
+  const outE = {}, inE = {}; E.forEach(e => { (outE[e.a] = outE[e.a] || []).push(e); (inE[e.b] = inE[e.b] || []).push(e); });
+  const res = {}; res[root] = {c: dir, root: true};
+  [false, true].forEach(up => {
+    const memo = {}, via = {};
+    const get = n => { if (memo[n]) return memo[n]; const st = memo[n] = new Set(); via[n] = {};
+      if (n === root) { st.add(dir); return st; }
+      ((up ? outE[n] : inE[n]) || []).forEach(e => { const nb = up ? e.b : e.a; if (!(nb === root || (up ? lv[nb] < 0 : lv[nb] > 0))) return;
+        const sg = e.sg || "+"; get(nb).forEach(d => { if (d === "?") return; const nd = sg === "±" ? "?" : sg === "–" ? flipD(d) : d; st.add(nd); (via[n][nd] = via[n][nd] || []).push(info[nb].label); }); });
+      return st; };
+    Object.keys(lv).forEach(n => { if (n === root || (up ? lv[n] >= 0 : lv[n] <= 0)) return;
+      const st = get(n), u = st.has("u"), d = st.has("d"), q = st.has("?"), v = via[n], nm = a => [...new Set(a)].slice(0, 2).join(" and ");
+      let c, note;
+      if (u && d) { c = "m"; note = `Mixed: ${up ? "would need to rise" : "rises"} via ${nm(v.u)}, ${up ? "would need to fall" : "falls"} via ${nm(v.d)}`; }
+      else if (u || d) { c = u ? "u" : "d"; note = (up ? (u ? "Would need to rise" : "Would need to fall") : (u ? "Rises" : "Falls")) + (q ? ` (but may also depend, via ${nm(v["?"])})` : ""); }
+      else if (q) { c = "q"; note = `Depends on the size of the change (via ${nm(v["?"])})`; }
+      else return;
+      res[n] = {c, up, note}; });
+  });
+  return res;
+}
+function dirBadge(r) { const b = document.createElement("span"); b.className = "dirb " + r.c + (r.up ? " up" : ""); b.textContent = r.c === "u" ? "↑" : r.c === "d" ? "↓" : "↕";
+  b.title = r.root ? "The change you chose for this dot point" : r.note; b.setAttribute("aria-label", b.title); return b; }
+function applyDir() {
+  document.querySelectorAll(".node .dirb").forEach(b => b.remove());
+  const on = sel != null && dirSel;
+  if (on) { const imp = impactOf(sel, dirSel); Object.keys(imp).forEach(k => { const b = node[k]; if (b) b.insertBefore(dirBadge(imp[k]), b.firstChild); }); }
+  [["dU", "u"], ["dD", "d"], ["dO", null]].forEach(([id, v]) => { const b = document.getElementById(id); b.disabled = sel == null; b.setAttribute("aria-pressed", String(sel == null ? v === null : dirSel === v)); });
+}
+function setDir(v) { dirSel = v; if (v) chainRise = v === "u"; applyDir(); renderChain(); }
+document.getElementById("dU").onclick = () => setDir(dirSel === "u" ? null : "u");
+document.getElementById("dD").onclick = () => setDir(dirSel === "d" ? null : "d");
+document.getElementById("dO").onclick = () => setDir(null);
 
 function li(id, sg, edge) {
   const l = document.createElement("li"), b = document.createElement("button");
@@ -644,7 +712,7 @@ function renderDrawer() {
   const head = document.createElement("div"); head.className = "head";
   head.innerHTML = `<h2></h2><span class="tag"><span class="dot" style="background:${TC[n.tp]}"></span>${TNAME[n.tp]} · ${n.group}</span>${n.obj ? `<span class="tag"><span class="ob" style="--oc:var(--o${n.obj})">${icon(n.obj)}</span>Objective: ${OBJN[n.obj]}</span>` : ""}`;
   head.firstChild.textContent = n.label;
-  const x = document.createElement("button"); x.className = "btn x"; x.textContent = "Close"; x.onclick = clearAll; const tg = document.createElement("button"); tg.className = "btn tg"; tg.textContent = drawerOpen ? "Hide links list \u25BE" : "Show links list \u25B4"; tg.title = "Open or close the list of what causes this dot point and what it leads to"; tg.setAttribute("aria-expanded", String(drawerOpen)); tg.onclick = ev => { ev.stopPropagation(); drawerOpen = !drawerOpen; renderDrawer(); requestAnimationFrame(draw); }; const oc = document.createElement("button"); oc.className = "btn tg2"; oc.textContent = "Open chain in order"; oc.title = "Open the full chain for this dot point in a breakout box, in order from causes to effects"; oc.onclick = ev => { ev.stopPropagation(); openChainNow(); };
+  const x = document.createElement("button"); x.className = "btn x"; x.textContent = "Close"; x.onclick = clearAll; const tg = document.createElement("button"); tg.className = "btn tg"; tg.textContent = drawerOpen ? "Hide links list \u25BE" : "Show links list \u25B4"; tg.title = "Open or close the list of what causes this dot point and what it leads to"; tg.setAttribute("aria-expanded", String(drawerOpen)); tg.onclick = ev => { ev.stopPropagation(); drawerOpen = !drawerOpen; renderDrawer(); requestAnimationFrame(draw); }; const oc = document.createElement("button"); oc.className = "btn tg2"; oc.textContent = "Open Flow Viewer"; oc.title = "Open the full chain for this dot point in a breakout box, in order from causes to effects"; oc.onclick = ev => { ev.stopPropagation(); openChainNow(); };
   head.appendChild(oc); head.appendChild(tg); head.appendChild(x); drawer.appendChild(head);
   if (!drawerOpen) return;
   const cols = document.createElement("div"); cols.className = "cols";
@@ -658,7 +726,7 @@ function renderDrawer() {
   if (cf.length) { const d = document.createElement("div"); d.innerHTML = `<p class="lab2">May conflict with</p>`; const ul = document.createElement("ul"); ul.className = "links";
     cf.forEach(i => { const e = D.edges[i], it = li(e.a === sel ? e.b : e.a, "↔"); if (e.reason) { const w = document.createElement("div"); w.className = "why"; w.textContent = e.reason; it.appendChild(w); } ul.appendChild(it); }); d.appendChild(ul); cols.appendChild(d); }
   drawer.appendChild(cols);
-  if (mode === 2) { const p = document.createElement("p"); p.className = "hint"; p.textContent = `${trace(sel).nset.size - 1} connected dot points are lit${reach ? ` (up to ${reach} step${reach === 1 ? "" : "s"} away)` : ""}. Use "Open chain" to read them in order.`;
+  if (mode === 2) { const p = document.createElement("p"); p.className = "hint"; p.textContent = `${trace(sel).nset.size - 1} connected dot points are lit${reach ? ` (up to ${reach} step${reach === 1 ? "" : "s"} away)` : ""}. Use "Open Flow Viewer" to read them in order.`;
     drawer.appendChild(p); }
 }
 let chainPath = null, chainRect = null, chainAuto = true;
@@ -677,7 +745,7 @@ function pickGroup(kind, n) {
   const cur = kind === "o" ? objSel : topSel, nv = cur === n ? null : n;
   if (pathSel) endPath(); sel = null; objSel = kind === "o" ? nv : null; topSel = kind === "t" ? nv : null; chainOpen = false; chainPath = null; chainHist = []; chainPos = -1; renderDrawer(); applyHighlight(); renderChain();
 }
-function clearAll() { if (pathSel) endPath(); sel = null; objSel = null; topSel = null; chainOpen = false; chainPath = null; chainHist = []; chainPos = -1; renderDrawer(); applyHighlight(); renderChain(); }
+function clearAll() { dirSel = null; if (pathSel) endPath(); sel = null; objSel = null; topSel = null; chainOpen = false; chainPath = null; chainHist = []; chainPos = -1; renderDrawer(); applyHighlight(); renderChain(); }
 
 function levelsFor(id) {
   const lv = {}; lv[id] = 0;
@@ -700,6 +768,7 @@ function renderChain() {
   chainEl.hidden = false; chainEl.innerHTML = "";
   let lv; if (chainPath) { lv = {}; chainPath.ids.forEach((k, j) => lv[k] = j); } else lv = levelsFor(csel);
   const ids = Object.keys(lv);
+  const imp = (!chainPath && dirSel) ? impactOf(csel, dirSel) : null;
   const lo = Math.min(...ids.map(k => lv[k])), hi = Math.max(...ids.map(k => lv[k]));
   const eidx = chainPath ? chainPath.ids.slice(1).map((k, j) => EIDX[chainPath.ids[j] + "|" + k]) : [...trace(csel).eset].filter(i => { const e = D.edges[i]; return e.kind !== "c" && e.a in lv && e.b in lv; });
   // order within columns: topic then barycentre of neighbours in the previous column
@@ -740,6 +809,8 @@ function renderChain() {
   const box = document.createElement("div"); box.className = "chainbox"; box.setAttribute("role", "dialog"); box.setAttribute("aria-label", "Full chain");
   const hd = document.createElement("header"); hd.innerHTML = `<h2></h2><button class="btn" id="cclose">Close</button><button class="btn" id="cfit" title="Resize the box to fit the chain being shown. You can also drag its edges or bottom-right corner to resize, and drag the title bar to move it.">Fit to chain</button><span class="sub"></span>`;
   hd.querySelector(".sub").textContent = chainPath ? `${chainPath.ids.length - 1} steps in this pathway. Drag the edges or corner to resize the box.` : `${nUp} cause${nUp === 1 ? "" : "s"} upstream · ${nDown} effect${nDown === 1 ? "" : "s"} downstream · drag the edges or corner to resize`;
+  if (imp) { const c = {u: 0, d: 0, o: 0}, cu = {u: 0, d: 0, o: 0}; Object.keys(imp).forEach(k => { const r = imp[k]; if (r.root) return; (r.up ? cu : c)[r.c === "u" ? "u" : r.c === "d" ? "d" : "o"]++; });
+    hd.querySelector(".sub").textContent = `If ${info[csel].label} ${dirSel === "u" ? "rises" : "falls"}: ${c.u} effect${c.u === 1 ? "" : "s"} rise, ${c.d} fall, ${c.o} mixed or depend. For that to happen, ${cu.u} cause${cu.u === 1 ? "" : "s"} would need to rise and ${cu.d} to fall${cu.o ? `, ${cu.o} mixed or depend` : ""}. Dashed badges mark causes.`; }
   hd.firstChild.textContent = chainPath ? "Pathway: " + chainPath.title : "Full chain: " + info[csel].label; box.appendChild(hd);
   const nav = document.createElement("div"); nav.className = "nav";
   const bk = document.createElement("button"); bk.className = "btn"; bk.textContent = "← Back"; bk.disabled = chainPos <= 0; bk.onclick = () => { chainPos--; showSel(chainHist[chainPos]); };
@@ -751,7 +822,8 @@ function renderChain() {
   const opts = document.createElement("div"); opts.className = "opts";
   const TIPS = {"dir:across": "Draw the chain left to right, one column per step", "dir:down": "Draw the chain top to bottom, one row per step", "words:1": "Label each arrow in words: raises, lowers, raises or lowers", "words:0": "Label each arrow with the symbols + \u2013 \u00b1", "rise:1": "Written chain: assume the starting dot point rises", "rise:0": "Written chain: assume the starting dot point falls", "wl:lines": "Written chains: one long line per path", "wl:cols": "Written chains: several paths side by side in columns", "reach:2": "Follow links up to 2 steps from the selected dot point", "reach:3": "Follow links up to 3 steps from the selected dot point", "reach:0": "Follow every link as far as it goes", "detail:1": "Step 1: the original, simplest links", "detail:2": "Step 2: add main short-run links", "detail:3": "Step 3: add main longer-run links", "detail:4": "Step 4: add weaker short-run links", "detail:5": "Step 5: all links, including weaker longer-run links"};
   const segHtml = (label, id, items, cur) => `<div class="og"><span>${label}</span><div class="seg" role="group" aria-label="${label}">${items.map(([v, t]) => `<button data-o="${id}" data-v="${v}" title="${TIPS[id + ":" + v] || ""}" aria-pressed="${cur === v}">${t}</button>`).join("")}</div></div>`;
-  opts.innerHTML = segHtml("Layout", "dir", [["across", "Across"], ["down", "Down"]], chainDir) + segHtml("Link labels", "words", [["1", "Words"], ["0", "Symbols"]], wordLabels ? "1" : "0") + segHtml("Written chain starts", "rise", [["1", "Rising"], ["0", "Falling"]], chainRise ? "1" : "0") + segHtml("Written layout", "wl", [["lines", "Lines"], ["cols", "Columns"]], chainWL) + (chainPath ? "" : segHtml("Steps", "reach", [["2", "2"], ["3", "3"], ["0", "All"]], String(reach === 1 ? 2 : reach)) + segHtml("Link detail", "detail", [["1", "1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"]], String(lvl)));
+  PRESETS.forEach((p, i) => { TIPS["preset:" + (i + 1)] = p.n + ": " + p.t; });
+  opts.innerHTML = (chainPath ? "" : segHtml("How much to show", "preset", PRESETS.map((p, i) => [String(i + 1), String(i + 1)]), String(curPreset() + 1) === "0" ? "" : String(curPreset() + 1))) + (chainPath ? "" : segHtml("If the selected dot point", "dirsel", [["u", "↑ Rises"], ["d", "↓ Falls"], ["", "Off"]], dirSel || "")) + segHtml("Layout", "dir", [["across", "Across"], ["down", "Down"]], chainDir) + segHtml("Link labels", "words", [["1", "Words"], ["0", "Symbols"]], wordLabels ? "1" : "0") + segHtml("Written chain starts", "rise", [["1", "Rising"], ["0", "Falling"]], chainRise ? "1" : "0") + segHtml("Written layout", "wl", [["lines", "Lines"], ["cols", "Columns"]], chainWL) + (chainPath || !document.body.classList.contains("adv") ? "" : segHtml("Steps", "reach", [["2", "2"], ["3", "3"], ["0", "All"]], String(reach === 1 ? 2 : reach)) + segHtml("Link detail", "detail", [["1", "1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"]], String(lvl)));
   const kb = document.createElement("button"); kb.className = "btn"; kb.textContent = keyShown ? "Hide key" : "Show key"; kb.title = keyShown ? "Hide the key to give the chain more room" : "Show the key explaining the colours and patterns"; kb.onclick = () => { keyShown = !keyShown; renderChain(); }; opts.appendChild(kb);
   box.appendChild(opts);
   const tbar = document.createElement("div"); tbar.className = "tracebar"; tbar.hidden = true; tbar.innerHTML = `<span></span><button class="btn">Clear trace</button>`; box.appendChild(tbar);
@@ -759,6 +831,8 @@ function renderChain() {
   const setWhy = e => { wbar.innerHTML = ""; wbar.classList.toggle("idle", !e); if (!e) { wbar.textContent = "Hover over or click an arrow to see why that link exists."; return; }
     const b = document.createElement("b"); b.textContent = `${info[e.a].label} \u2192 ${info[e.b].label}`; wbar.appendChild(b); [edgeWord0(e), RUNW[e.rn], STRW[e.st]].forEach(t => { if (!t) return; const sp = document.createElement("span"); sp.className = "wt"; sp.textContent = t; wbar.appendChild(sp); }); const w = document.createElement("span"); w.textContent = e.why; wbar.appendChild(w); };
   setWhy(null);
+  if (imp) { const mx = Object.keys(imp).filter(k => imp[k].c === "m" || (imp[k].c === "q" && !imp[k].up)); if (mx.length) { const mb = document.createElement("div"); mb.className = "mixbar"; const mh = document.createElement("b"); mh.textContent = "Mixed or uncertain: "; mb.appendChild(mh);
+    mx.slice(0, 6).forEach(k => { const sp = document.createElement("span"); sp.textContent = info[k].label + " — " + imp[k].note.replace(/^Mixed: /, ""); mb.appendChild(sp); }); if (mx.length > 6) { const sp = document.createElement("span"); sp.textContent = `and ${mx.length - 6} more (hover a badge)`; mb.appendChild(sp); } box.appendChild(mb); } }
   const cbody = document.createElement("div"); cbody.className = "cbody"; const cmain = document.createElement("div"); cmain.className = "cmain";
   const sc = document.createElement("div"); sc.className = "chainscroll"; const wrap = document.createElement("div"); wrap.className = "chainwrap" + (chainDir === "down" ? " down" : ""); sc.appendChild(wrap); cmain.appendChild(sc);
   const cn = {}, cols_ = {};
@@ -769,6 +843,7 @@ function renderChain() {
     cols[l].forEach(k => { const b = document.createElement("button"); b.className = "node" + (k.startsWith("OBJ_") ? " objn" : "") + (k === csel ? " sel" : ""); b.style.setProperty("--c", TC[info[k].tp]); if (k.startsWith("OBJ_")) b.style.setProperty("--oc", `var(--o${ONUM[k[4]]})`);
       const t = document.createElement("span"); const rl = document.createElement("small"); rl.className = "role"; rl.textContent = roleOf(k); t.appendChild(rl); t.appendChild(document.createTextNode(info[k].label)); b.appendChild(t);
       if (info[k].obj) b.appendChild(objBadge(info[k].obj));
+      if (imp && imp[k]) { b.insertBefore(dirBadge(imp[k]), b.firstChild); }
       b.onclick = ev => { ev.stopPropagation(); selectNode(k, true); };
       b.onmouseenter = b.onfocus = () => { if (!pinned) applyTrace(tNode(k)); };
       b.onmouseleave = b.onblur = () => { if (!pinned) applyTrace(null); };
@@ -874,8 +949,10 @@ function renderChain() {
     const o = b.dataset.o, v = b.dataset.v;
     if (o === "dir") chainDir = v;
     if (o === "words") wordLabels = v === "1";
-    if (o === "rise") chainRise = v === "1";
+    if (o === "rise") { chainRise = v === "1"; if (dirSel) { dirSel = chainRise ? "u" : "d"; applyDir(); } }
+    if (o === "dirsel") { dirSel = v || null; if (dirSel) chainRise = dirSel === "u"; applyDir(); }
     if (o === "wl") chainWL = v;
+    if (o === "preset") { const p = PRESETS[+v - 1]; reach = p.r; mode = reach === 1 ? 1 : 2; lvl = p.l; buildAdj(); applyHighlight(); renderDrawer(); }
     if (o === "reach") { reach = +v; mode = 2; applyHighlight(); }
     if (o === "detail") { lvl = +v; buildAdj(); applyHighlight(); renderDrawer(); }
     renderChain(); });
@@ -895,7 +972,8 @@ D.topics.forEach(t => { const c = document.createElement("button"); c.className 
 function setReach(v) { reach = v; mode = v === 1 ? 1 : 2; if (sel != null) renderDrawer(); applyHighlight(); renderChain(); }
 function openChainNow() { if (sel == null && !pathSel) return; if (sel == null) { chainPath = pathSel; chainHist = [pathSel.ids[0]]; chainPos = 0; } else { chainPath = null; if (!chainHist.length || chainHist[chainPos] !== sel) { chainHist = [sel]; chainPos = 0; } } openChain(); renderDrawer(); renderChain(); }
 document.getElementById("chainbtn").onclick = openChainNow;
-[["r1", 1], ["r2", 2], ["r3", 3], ["r0", 0]].forEach(([id, v]) => { document.getElementById(id).onclick = () => setReach(v); });
+document.getElementById("rm").onclick = () => setReach(REACHES[Math.max(0, REACHES.indexOf(reach) - 1)]);
+document.getElementById("rp").onclick = () => setReach(REACHES[Math.min(REACHES.length - 1, REACHES.indexOf(reach) + 1)]);
 function setDetail(v) { lvl = Math.max(1, Math.min(5, v)); buildAdj(); cfpop.hidden = true; if (sel != null) renderDrawer(); applyHighlight(); renderChain(); }
 document.getElementById("lm").onclick = () => setDetail(lvl - 1); document.getElementById("lp").onclick = () => setDetail(lvl + 1);
 // ---- pathways
@@ -944,11 +1022,12 @@ document.addEventListener("click", e => { if (!e.target.isConnected) return; if 
 
 const helpEl = document.createElement("div"); helpEl.id = "help"; helpEl.hidden = true; document.body.appendChild(helpEl);
 const HELP = [
+  ["If the selected dot point rises or falls", "Select a dot point, then choose Rises or Falls under \"If the selected dot point\". Every dot point it reaches gets an ↑ (rises), ↓ (falls) or ↕ badge, following the + and – signs along the links. Solid badges are effects downstream; dashed badges on causes show what would have to rise or fall to produce that change. ↕ means the result depends on the size of the change, or that two routes pull in opposite directions (hover the badge, or open the chain, to see why). Choose Off to remove the badges."],
   ["What this map shows", "Every dot point in the HSC Economics syllabus, and how one leads to another (cause \u2192 effect). Each dot point's icon shows the economic objective it belongs to; its border colour shows the topic."],
   ["Two ways to view it", "By topic arranges the dot points in the four HSC topics. By objective arranges them under the six economic objectives and adds dashed arrows between objectives that can conflict."],
-  ["Click a dot point", "It lights up and the links to and from it are drawn. Click it again to clear. Links shown controls how far to follow: Direct is one step, 2 steps and 3 steps go further, and Whole chain (the default) follows every connection. To read the chain in order, press Open chain (top controls or bottom bar), or double-click the dot point, to open it in a breakout box."],
+  ["Click a dot point", "It lights up and the links to and from it are drawn. Click it again to clear. How much to show (Fewer / More) takes you from the simplest view to every link. Under Advanced, Links shown controls how far to follow: Direct is one step, then 2 steps, 3 steps and the Whole chain (the default), follows every connection. To read the chain in order, press Open Flow Viewer (top controls or bottom bar), or double-click the dot point, to open it in a breakout box."],
   ["Why does a link exist?", "Hover over or click any arrow to read a one-sentence explanation, with whether it is a short-run or longer-run effect and whether it is a main or a weaker link. The lists under a selected dot point give the explanation for every link."],
-  ["More links, step by step", "The map starts with the original, simplest links (step 1). Link detail > + More adds the next batch each time: main short-run links, main longer-run links, weaker short-run links, and finally all links (step 5). Line colour shows the effect (blue raises, red lowers, purple depends), paler lines are further from the dot point you chose, and the line pattern shows the type of link: solid, dashed, dotted or dash-dot."],
+  ["More links, step by step", "The map starts with the original, simplest links (step 1). Under Advanced, Link detail > + More adds the next batch each time: main short-run links, main longer-run links, weaker short-run links, and finally all links (step 5). Line colour shows the effect (blue raises, red lowers, purple depends), paler lines are further from the dot point you chose, and the line pattern shows the type of link: solid, dashed, dotted or dash-dot."],
   ["Pathways", "Pathways are ready-made chains, such as how a rise in interest rates reaches inflation, the exchange rate and unemployment. Pick one, then step through it one link at a time with an explanation of each step."],
   ["The breakout box", "Shows the chain in order, from causes to effects. Use Across / Down to change the layout, Words / Symbols for the arrow labels, Back and Forward to revisit earlier views, and the key on the right to read the colours and patterns (Hide key gives the chain more room). The written chains underneath give the same story as short sentences."],
   ["Highlighting a group", "The objective buttons (and, in By objective view, the topic buttons) highlight every dot point in that group. Clicking a panel heading does the same. Click again to clear."],
@@ -964,9 +1043,11 @@ document.getElementById("helpbtn").onclick = openHelp;
 const tourEl = document.createElement("div"), tourHl = document.createElement("div"); tourEl.id = "tour"; tourHl.id = "tourhl"; tourEl.hidden = tourHl.hidden = true; document.body.append(tourHl, tourEl);
 const TOUR = [
   ["#grpView", "Map view", "Switch between the four HSC topics and the six economic objectives. Your selection stays when you switch."],
+  ["#grpPreset", "How much to show", "Start simple, then press + More to reveal more of the chain: first the original links, then further steps, then the main links, then every link. Fewer steps back."],
+  ["#adv", "Advanced", "Shows two separate controls: Links shown (how many steps to follow) and Link detail (which links to include), for exact combinations."],
   ["#grpLinks", "Links shown", "How far to follow links from a dot point: Direct (one step), 2 steps, 3 steps, or the whole chain."],
   ["#grpDetail", "Link detail", "Start with the original, simplest links. Press + More to add further links in five steps until all are shown; Fewer takes the last batch away."],
-  ["#chainbtn", "Open chain", "With a dot point selected, opens its chain in order in a breakout box. You can also double-click a dot point."],
+  ["#chainbtn", "Open Flow Viewer", "With a dot point selected, opens its chain in order in a breakout box. You can also double-click a dot point."],
   ["#pathbtn", "Pathways", "Curated chains you can step through, with an explanation of each link."],
   ["#q", "Search", "Type part of a dot point's name to jump straight to it."],
   ["#all", "Show all links", "Draws every link on the map at once. Busy, but shows the whole web."],
@@ -978,7 +1059,7 @@ const TOUR = [
   ["#helpbtn", "Help", "Reopen this guide or the tour whenever you need it."]];
 let tourI = -1;
 function showTour(i) {
-  tourI = i; const [sel_, t, d] = TOUR[i]; const tg = document.querySelector(sel_); if (!tg) { if (i < TOUR.length - 1) return showTour(i + 1); return endTour(); }
+  tourI = i; const [sel_, t, d] = TOUR[i]; const tg = document.querySelector(sel_); if (!tg || !tg.offsetParent) { if (i < TOUR.length - 1) return showTour(i + 1); return endTour(); }
   tg.scrollIntoView({block: "center", behavior: "instant"});
   requestAnimationFrame(() => {
     const r = tg.getBoundingClientRect(), pad = 6;
