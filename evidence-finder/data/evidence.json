@@ -1,5 +1,234 @@
 [
  {
+  "id": "2026-11-03-rba-raises-cash-rate-board-factors",
+  "date": "2026-11-03",
+  "added": "2026-11-03",
+  "title": "RBA raises the cash rate to 4.85%: the factors the Board weighed",
+  "outlets": [
+   "Reserve Bank of Australia"
+  ],
+  "summary": "A primary-source account of why the Monetary Policy Board raised the cash rate on 3 November: broad-based inflation, tighter capacity, energy prices and expectations, weighed against slowing growth, falling house prices and rising unemployment. Pages 3–4 link the decision to Topic 1: oil, international business cycle, financial flows and the exchange rate.",
+  "lede": "On 3 November 2026 the RBA's Monetary Policy Board raised the cash rate target by 25 basis points to 4.85%, by six votes to three. The Statement on Monetary Policy says inflation is broadly based, capacity pressures are a little tighter than assessed in August, and the inflation outlook has been revised materially higher on fuel and other conflict-related costs.",
+  "type": "report",
+  "diagrams": [
+   "chart",
+   "flow",
+   "ds"
+  ],
+  "issues": [
+   "inflation",
+   "rates",
+   "employment",
+   "housing",
+   "global",
+   "trade",
+   "fx",
+   "investment"
+  ],
+  "levers": [
+   "monetary",
+   "global"
+  ],
+  "about": {
+   "h09": [
+    "4D.2",
+    "4D.3",
+    "4H.1",
+    "3C.3",
+    "3B.4",
+    "1A.3",
+    "1A.4",
+    "1A.8",
+    "S1.1"
+   ],
+   "y12": [
+    "Y2c.4",
+    "Y2c.5",
+    "Y2c.7",
+    "Y2c.8",
+    "Y1c.6",
+    "Y3c.4",
+    "Y3e.3"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "3C.1",
+    "4H.2",
+    "4I.2",
+    "4I.3",
+    "1A.5",
+    "1A.6",
+    "1B.2",
+    "1D.9"
+   ],
+   "y12": [
+    "Y1c.3",
+    "Y1c.4",
+    "Y2c.2",
+    "Y2c.3",
+    "Y3b.1",
+    "Y3c.2",
+    "Y3c.5",
+    "Y3e.1"
+   ],
+   "y11": [
+    "P4a.2",
+    "P4c.3",
+    "P1e.5",
+    "P1d.1"
+   ]
+  },
+  "terms": [
+   {
+    "term": "Monetary Policy Board",
+    "def": "The RBA board that sets the cash rate target."
+   },
+   {
+    "term": "NAIRU",
+    "def": "The non-accelerating inflation rate of unemployment: the unemployment rate consistent with low and stable inflation."
+   },
+   {
+    "term": "Output gap",
+    "def": "The difference between actual GDP and potential GDP; a positive gap means demand is running ahead of supply."
+   },
+   {
+    "term": "Neutral interest rate",
+    "def": "The interest rate that neither stimulates nor dampens demand once temporary shocks have passed."
+   },
+   {
+    "term": "Trimmed mean",
+    "def": "An underlying inflation measure that removes the largest price rises and falls."
+   },
+   {
+    "term": "Inflation expectations",
+    "def": "What households, firms and markets expect inflation to be, which can influence wage and price setting."
+   }
+  ],
+  "figures": [
+   {
+    "label": "RBA cash rate target",
+    "value": "4.85% (up 25 basis points from 4.60%)",
+    "asAt": "3 Nov 2026",
+    "issue": "rates",
+    "source": "RBA media release"
+   },
+   {
+    "label": "Board vote",
+    "value": "6–3 (three voted to hold at 4.60%)",
+    "asAt": "3 Nov 2026",
+    "issue": "rates",
+    "source": "RBA media release"
+   },
+   {
+    "label": "Trimmed mean inflation",
+    "value": "3.7% year-ended (1.0% in the quarter, 0.8% in June)",
+    "asAt": "Sept quarter 2026",
+    "issue": "inflation",
+    "source": "RBA Statement on Monetary Policy, Nov 2026"
+   },
+   {
+    "label": "Headline inflation",
+    "value": "3.9% year-ended (unchanged); 4.3% in the month of September",
+    "asAt": "Sept quarter 2026",
+    "issue": "inflation",
+    "source": "RBA Statement on Monetary Policy, Nov 2026"
+   },
+   {
+    "label": "Contribution of automotive fuel to year-ended headline inflation",
+    "value": "about 0.4 percentage points",
+    "asAt": "Sept quarter 2026",
+    "issue": "inflation",
+    "source": "RBA Statement on Monetary Policy, Nov 2026"
+   },
+   {
+    "label": "Market services inflation (excluding telecommunications and domestic travel)",
+    "value": "1.3% in the quarter (4.2% year-ended)",
+    "asAt": "Sept quarter 2026",
+    "issue": "inflation",
+    "source": "RBA Statement on Monetary Policy, Nov 2026"
+   },
+   {
+    "label": "RBA staff assessment of the NAIRU",
+    "value": "about 4¾% (raised a little since August)",
+    "asAt": "Nov 2026",
+    "issue": "employment",
+    "source": "RBA Statement on Monetary Policy, Nov 2026"
+   },
+   {
+    "label": "Unemployment rate",
+    "value": "4.6% (forecast 5.1% by Dec 2028; August forecast 4.8%)",
+    "asAt": "Sept quarter 2026 average",
+    "issue": "employment",
+    "source": "RBA Statement on Monetary Policy, Nov 2026"
+   },
+   {
+    "label": "Brent crude oil futures (front month)",
+    "value": "about US$115 a barrel (about 25% above August)",
+    "asAt": "28 Oct 2026",
+    "issue": "global",
+    "source": "RBA Statement on Monetary Policy, Nov 2026"
+   },
+   {
+    "label": "Forecast peak in headline CPI",
+    "value": "4.5% in the Dec 2026 quarter (August forecast 3.6%)",
+    "asAt": "Forecast, finalised 28 Oct 2026",
+    "issue": "inflation",
+    "source": "RBA Statement on Monetary Policy, Nov 2026"
+   },
+   {
+    "label": "Forecast trimmed mean inflation",
+    "value": "2.9% by Dec 2027, 2.5% by Jun 2028 (above 3% until end-2027)",
+    "asAt": "Forecast, finalised 28 Oct 2026",
+    "issue": "inflation",
+    "source": "RBA Statement on Monetary Policy, Nov 2026"
+   },
+   {
+    "label": "Housing prices",
+    "value": "almost 5% below the March peak",
+    "asAt": "Sept 2026",
+    "issue": "housing",
+    "source": "RBA Statement on Monetary Policy, Nov 2026"
+   },
+   {
+    "label": "Cash rate path assumed in the forecasts",
+    "value": "peaks near 4.9% in 2027, then 4.8% (up to 50 basis points above the August path)",
+    "asAt": "Market pricing at 28 Oct 2026, before the decision",
+    "issue": "rates",
+    "source": "RBA Statement on Monetary Policy, Nov 2026"
+   }
+  ],
+  "angle": "Use the decision to show how the Board weighs inflation, capacity and expectations against slowing growth, falling house prices and rising unemployment. Monetary policy works on demand and with a lag, so it answers an energy supply shock by slowing the whole economy. The 6–3 vote shows the judgement involved, and the Statement stresses uncertainty about the neutral rate and the NAIRU. Topic 1 link: Australia is a small open economy and a price taker, so world energy prices, partner growth and global interest rates reach domestic inflation and the cash rate; the exchange rate has not added tightening because other central banks also raised rates.",
+  "questions": [
+   {
+    "q": "Explain TWO factors that the RBA's Monetary Policy Board considered in deciding to raise the cash rate to 4.85% in November 2026.",
+    "marks": 4
+   },
+   {
+    "q": "Assess the limitations of monetary policy in responding to inflation that is partly caused by higher global energy prices.",
+    "marks": 6
+   },
+   {
+    "q": "Explain how developments in the global economy influenced the RBA's decision to raise the cash rate in November 2026.",
+    "marks": 6
+   }
+  ],
+  "extended": "To what extent can monetary policy achieve both price stability and full employment in the current economic conditions?",
+  "note": "Based on primary sources: the RBA media release of 3 November 2026 and the November 2026 Statement on Monetary Policy (forecasts finalised 28 October). The 6–3 vote is from the media release; the three members who voted to hold are not identified in the material used, and the cautions listed in the digest are those the Statement sets out, not attributed to them. The cash rate chart shows the market-based path assumed in the forecasts, which was set before the decision. On 28 October SMH reported underlying inflation of 3.6%; the Statement gives quarterly trimmed mean as 3.7% year-ended, so use 3.7% for the quarterly figure. UPDATE DUE: the minutes of this meeting when released, and the next RBA decision.",
+  "file": {
+   "path": "files/2026-11/2026-11-03-rba-raises-cash-rate-board-factors.pdf",
+   "label": "Four-page summary (pages 3–4: Topic 1 links, with diagrams)",
+   "pages": 4
+  },
+  "links": [
+   {
+    "label": "RBA, media release 2026-30: decision on the cash rate target, 3 Nov 2026",
+    "url": "https://www.rba.gov.au/media-releases/2026/mr-26-30.html"
+   }
+  ]
+ },
+ {
   "id": "2026-11-03-global-rates-government-debt",
   "title": "Rates rise worldwide as government debt piles up",
   "date": "2026-11-03",
@@ -3142,7 +3371,7 @@
     "marks": 6
    }
   ],
-  "note": "Secondary report of the ABS release; check the ABS data before quoting. The article gives the monthly annual rates. It does not give the quarterly CPI or quarterly trimmed mean that the 25 and 28 October previews forecast (trimmed mean 0.9 to 1.0%), so add those from the ABS release. SMH says August underlying inflation was revised down to 3.5%; the 30 September and 19 October records on this site show 3.6%. UPDATE DUE: the RBA decision on 3 November 2026.",
+  "note": "Secondary report of the ABS release; check the ABS data before quoting. The article gives the monthly annual rates. It does not give the quarterly CPI or quarterly trimmed mean that the 25 and 28 October previews forecast (trimmed mean 0.9 to 1.0%), so add those from the ABS release. SMH says August underlying inflation was revised down to 3.5%; the 30 September and 19 October records on this site show 3.6%. UPDATE DUE: the RBA decision on 3 November 2026. DECISION NOW FILED: see 2026-11-03-rba-raises-cash-rate-board-factors. CORRECTION TO CHECK: the RBA's Statement gives quarterly trimmed mean as 3.7% year-ended for the September quarter, not the 3.6% reported here.",
   "file": {
    "path": "files/2026-10/2026-10-28-smh-inflation-4-3-cup-day-rate-rise.pdf",
    "label": "One-page digest",
