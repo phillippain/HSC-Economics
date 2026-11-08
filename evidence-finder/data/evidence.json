@@ -1,5 +1,282 @@
 [
  {
+  "id": "2026-11-08-ai-data-centres-opportunity-or-problem",
+  "title": "AI data centres: an economic opportunity or a political problem?",
+  "date": "2026-11-08",
+  "added": "2026-11-09",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "A live negative externality and a policy choice: data centres bring investment and growth, but their energy and water costs fall on others, so the government is weighing regulation against a levy.",
+  "lede": "Data centres became a cost-of-living and local planning issue in the US midterms, and with multibillion-dollar projects planned across Australia the government must weigh investment and growth against energy, water and community costs. Labor's draft national AI standards would require operators to bring their own energy, manage water and consult communities, while Senator David Pocock wants a 5% levy.",
+  "about": {
+   "h09": [
+    "3F.2",
+    "4G.1",
+    "4G.2"
+   ],
+   "y12": [
+    "Y1e.5",
+    "Y1e.6",
+    "Y2f.2",
+    "Y2f.3",
+    "Y2f.5"
+   ],
+   "y11": [
+    "P2h.3",
+    "P2h.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3F.1",
+    "3F.4",
+    "4E.1",
+    "4I.6"
+   ],
+   "y12": [
+    "Y1e.4",
+    "Y2f.4",
+    "Y2f.8"
+   ],
+   "y11": [
+    "P5a.1",
+    "P5a.5",
+    "P5a.6"
+   ]
+  },
+  "issues": [
+   "environment",
+   "investment"
+  ],
+  "levers": [
+   "environmental",
+   "micro"
+  ],
+  "diagrams": [
+   "ds",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Western Downs Digital Park, Queensland (first of four centres leased by Anthropic from 2027)",
+    "value": "$32 billion",
+    "asAt": "8 November 2026",
+    "issue": "investment",
+    "source": "ABC News"
+   },
+   {
+    "label": "Proposed Plumpton, Victoria facility (350 hectares)",
+    "value": "2.4 gigawatts",
+    "asAt": "8 November 2026",
+    "issue": "investment",
+    "source": "ABC News"
+   },
+   {
+    "label": "Possible share of Sydney's drinking water used by the industry by 2035 (Sydney Water warning)",
+    "value": "up to 25%",
+    "asAt": "8 November 2026",
+    "issue": "environment",
+    "source": "Sydney Water via ABC News"
+   },
+   {
+    "label": "Levy on data centres proposed by Senator David Pocock",
+    "value": "5%",
+    "asAt": "8 November 2026",
+    "issue": "environment",
+    "source": "ABC News"
+   },
+   {
+    "label": "Share of planned US data centre capacity in Texas",
+    "value": "about 25%",
+    "asAt": "8 November 2026",
+    "issue": "investment",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Negative externality",
+    "def": "A cost imposed on third parties that is not reflected in the market price."
+   },
+   {
+    "term": "Market-based instrument",
+    "def": "A levy or price that changes incentives."
+   },
+   {
+    "term": "Regulation",
+    "def": "Rules such as 'bring your own energy'."
+   }
+  ],
+  "links": [
+   [
+    "ABC News (Clare Armstrong), report on AI data centres and community objection, 8 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-08/data-centres-australia-community-objection/107356606"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-08-ai-data-centres-opportunity-or-problem.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "Use it as evidence for environmental management policy. Compare regulation ('bring your own energy') with a market-based levy, and link it to ecologically sustainable development: balancing growth now against resources for future generations. On a diagram, operators base decisions on marginal private cost, so output at Q1 is more than is socially efficient; a levy or rule makes them bear the social cost and moves output to Q2 at a higher price.",
+  "questions": [
+   {
+    "q": "Identify two negative externalities of data centres.",
+    "marks": 2
+   },
+   {
+    "q": "Using a diagram, explain how a 5% levy could correct the market failure caused by data centres.",
+    "marks": 5
+   }
+  ],
+  "note": "One news report. The diagram is illustrative, not to scale. The Queensland Premier says coal-powered centres can comply while Energy Minister Chris Bowen says only renewables will do. UPDATE DUE: the parliamentary committee reports within weeks. See also the 5 November items on US voters rejecting data centres and NSW data centre electricity demand."
+ },
+ {
+  "id": "2026-11-09-alternatives-to-rate-rises",
+  "title": "Are there any good alternatives to raising interest rates?",
+  "date": "2026-11-09",
+  "added": "2026-11-09",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "Weighs a tax levy, spending cuts and a higher super guarantee against the cash rate, and concludes interest rates are still the blunt instrument we have.",
+  "lede": "After five rate rises in 2026 took the cash rate to an 18-year high of 4.85%, Jessica Irvine asks whether governments have better tools to cool inflation. She concludes that the blunt instrument of interest rates is still the one we have, since each alternative slows demand too and has its own limits.",
+  "about": {
+   "h09": [
+    "4D.2",
+    "4D.3",
+    "4H.1",
+    "4C.2"
+   ],
+   "y12": [
+    "Y2c.5",
+    "Y2c.8",
+    "Y2b.3",
+    "Y2b.14"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4B.1",
+    "4C.1",
+    "4I.3",
+    "S4.11"
+   ],
+   "y12": [
+    "Y2c.4",
+    "Y2c.7",
+    "Y2b.13",
+    "Y1c.6"
+   ],
+   "y11": [
+    "P4a.3",
+    "P5b.1"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "rates",
+   "budget"
+  ],
+  "levers": [
+   "monetary",
+   "fiscal"
+  ],
+  "diagrams": [
+   "adas",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "RBA cash rate after the 3 November rise (an 18-year high)",
+    "value": "4.85%",
+    "asAt": "3 November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Rate rises so far in 2026",
+    "value": "5",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Time for a rate rise to take its full effect",
+    "value": "12-18 months",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Projected budget deficit each year over the four-year outlook",
+    "value": "about 1% of GDP",
+    "asAt": "November 2026",
+    "issue": "budget",
+    "source": "ABC News"
+   },
+   {
+    "label": "Compulsory superannuation guarantee",
+    "value": "12%",
+    "asAt": "November 2026",
+    "issue": "budget",
+    "source": "ABC News"
+   },
+   {
+    "label": "2014 budget repair levy on incomes over $180,000",
+    "value": "2%",
+    "asAt": "2014",
+    "issue": "budget",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Transmission mechanism",
+    "def": "The channels through which a cash rate change affects spending and inflation."
+   },
+   {
+    "term": "Contractionary policy",
+    "def": "Policy that slows aggregate demand."
+   },
+   {
+    "term": "Policy mix",
+    "def": "How monetary and fiscal policy work together."
+   }
+  ],
+  "links": [
+   [
+    "ABC News (Jessica Irvine), report on alternatives to interest rate rises, 9 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-09/are-there-alternatives-to-interest-rate-rises/107360716"
+   ],
+   [
+    "ABC News, RBA lifts interest rates, November 2026, 3 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-03/rba-lifts-interest-rates-november-2026-highest-rate-in-18-years/107340050"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-09-alternatives-to-rate-rises.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "Use it to evaluate the limitations of monetary policy: time lags, uneven effects across households, and a blunt instrument. Contrast it with fiscal policy, which can be targeted but is slower to change and politically harder. On an AD/AS diagram every option shifts AD left, so the price level falls but real output falls too; the tools differ in who bears the burden (borrowers, taxpayers or all workers).",
+  "questions": [
+   {
+    "q": "Explain two channels of the monetary policy transmission mechanism.",
+    "marks": 4
+   },
+   {
+    "q": "Evaluate raising the superannuation guarantee as an alternative to a cash rate increase for reducing inflation.",
+    "marks": 6
+   }
+  ],
+  "note": "An analysis piece by a money correspondent. The author says raising the super guarantee needs more research, and that no country hands tax-setting to an independent body as it does interest rates. The diagrams are illustrative, not to scale. See also the 2 November item on spending cuts versus rate rises and the 5 November item on the budget versus inflation."
+ },
+ {
   "id": "2026-11-06-business-urges-fast-ai-policy",
   "title": "Wesfarmers, Telstra and BHP urge Canberra to move fast on AI",
   "date": "2026-11-06",
@@ -712,11 +989,12 @@
    "Macquarie University",
    "Climate Council"
   ],
-  "summary": "A case of import dependence and imported cost-push inflation: Australia buys almost as much diesel but pays far more for it.",
-  "lede": "Australia is the world's largest buyer of seaborne diesel, importing about 28 billion litres last year, and war in the Gulf and drone strikes on Russian refineries have reshaped the global diesel trade. Diesel peaked at A$3.20 a litre and is still about A$2.79, almost $1 higher than a year ago, with the Climate Council estimating an extra $9 billion paid for imports between March and August.",
+  "summary": "A supply shock meeting inelastic demand: Australia imports almost as much diesel as before but pays far more, which worsens the terms of trade, widens the import bill and adds to cost-push inflation.",
+  "lede": "Australia is the world's largest buyer of seaborne diesel, importing about 28 billion litres last year, and war in the Gulf and drone strikes on Russian refineries have redrawn the global diesel trade. Diesel peaked at A$3.20 a litre and is still about A$2.79, almost $1 higher than a year ago, with an extra $9 billion paid for imports between March and August.",
   "about": {
    "h09": [
     "2A.1",
+    "2B.4",
     "3C.3"
    ],
    "y12": [
@@ -730,9 +1008,10 @@
   },
   "also": {
    "h09": [
+    "2B.1",
     "3D.3",
-    "2B.4",
-    "1A.1"
+    "1A.1",
+    "1A.3"
    ],
    "y12": [
     "Y1a.7",
@@ -750,11 +1029,11 @@
   ],
   "diagrams": [
    "ds",
-   "flow"
+   "chart"
   ],
   "figures": [
    {
-    "label": "Diesel imported",
+    "label": "Diesel imported by Australia",
     "value": "about 28 billion litres (almost 8% of seaborne diesel)",
     "asAt": "last year",
     "issue": "trade",
@@ -769,30 +1048,51 @@
    },
    {
     "label": "Extra paid for diesel imports",
-    "value": "about $9 billion",
+    "value": "about $9 billion (about $324 per person)",
     "asAt": "March to August 2026",
     "issue": "trade",
     "source": "Climate Council via The Conversation"
    },
    {
-    "label": "Russia's share of world diesel shipments",
+    "label": "Russia's share of global diesel arrivals",
     "value": "12% to 2%",
     "asAt": "2026",
     "issue": "global",
     "source": "Lurion De Mello, The Conversation"
    },
    {
-    "label": "Share of Australia's diesel from South Korea",
-    "value": "almost half (Indian supply stopped)",
+    "label": "Share of Australia's diesel imports from South Korea",
+    "value": "29% to almost half (Indian supply has not arrived since July)",
     "asAt": "2026",
     "issue": "trade",
     "source": "Lurion De Mello, The Conversation"
    },
    {
-    "label": "US diesel exports",
-    "value": "49% above the 2025 average",
+    "label": "Asia's share of seaborne diesel",
+    "value": "28% to almost 40%",
     "asAt": "2026",
     "issue": "global",
+    "source": "Lurion De Mello, The Conversation"
+   },
+   {
+    "label": "US seaborne diesel exports",
+    "value": "+49% (now the top exporter)",
+    "asAt": "2025 average to April-October 2026",
+    "issue": "global",
+    "source": "LSEG vessel tracking, analysis by Lurion De Mello"
+   },
+   {
+    "label": "Kuwait, UAE, Qatar and Bahrain seaborne diesel exports",
+    "value": "-75% to -79%",
+    "asAt": "2025 average to April-October 2026",
+    "issue": "global",
+    "source": "LSEG vessel tracking, analysis by Lurion De Mello"
+   },
+   {
+    "label": "Australia's diesel imports",
+    "value": "about 488,000 barrels a day (similar volumes at a much higher price)",
+    "asAt": "2026",
+    "issue": "trade",
     "source": "Lurion De Mello, The Conversation"
    }
   ],
@@ -804,6 +1104,14 @@
    {
     "term": "Fuel security",
     "def": "The ability to keep reliable fuel supplies flowing during disruptions."
+   },
+   {
+    "term": "Price-inelastic demand",
+    "def": "Quantity demanded changes little when the price changes, because there are few substitutes."
+   },
+   {
+    "term": "Terms of trade",
+    "def": "The index of export prices divided by import prices, multiplied by 100."
    }
   ],
   "links": [
@@ -814,21 +1122,21 @@
   ],
   "file": {
    "path": "files/2026-11/2026-11-05-diesel-import-dependence.pdf",
-   "label": "One-page digest",
+   "label": "Topic 2 news summary",
    "pages": 1
   },
-  "angle": "Link to external stability: a higher fuel import bill widens the trade deficit on fuels and feeds imported cost-push inflation, part of why the RBA revised its inflation forecasts up. Korean refineries still depend on Middle East crude, so the diversification is partial.",
+  "angle": "Higher import prices for fuel worsen Australia's terms of trade and add to the import bill in the current account. They also feed into cost-push inflation (Topic 3) and show a risk of globalisation: reliance on a few suppliers threatens fuel security. South Korean refiners still rely on Middle Eastern crude, so the diversification is only partial.",
   "questions": [
    {
-    "q": "Explain how a rise in world diesel prices affects Australia's balance on goods and its CPI.",
+    "q": "Explain how higher world diesel prices affect Australia's terms of trade and current account balance.",
     "marks": 4
    },
    {
-    "q": "Does relying on fewer suppliers make Australia more vulnerable to global shocks? Discuss.",
-    "marks": 6
+    "q": "Using a supply and demand diagram, explain why diesel prices rose so sharply in 2026.",
+    "marks": 4
    }
   ],
-  "note": "An analysis by an academic. The $9 billion is a Climate Council estimate. The Strait of Hormuz closure date (28 February) is as stated in the article."
+  "note": "An analysis by an academic. The $9 billion is a Climate Council estimate and the Strait of Hormuz closure date (28 February) is as stated in the article. The supply and demand diagram is illustrative, not to scale. Replaces the earlier one-page digest of the same article."
  },
  {
   "id": "2026-11-05-farrell-midterms-vindicate-anti-tariff-stance",
