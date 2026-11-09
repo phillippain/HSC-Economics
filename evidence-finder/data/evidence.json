@@ -1,5 +1,951 @@
 [
  {
+  "id": "2026-11-09-oil-steepest-weekly-fall-since-covid",
+  "title": "Oil has its steepest weekly fall since COVID",
+  "date": "2026-11-09",
+  "added": "2026-11-10",
+  "type": "news",
+  "outlets": [
+   "The National",
+   "The Private Banker",
+   "ABC News"
+  ],
+  "summary": "Shows how a likely reopening of the Strait of Hormuz shifts world oil supply right and cuts the price before any extra barrels arrive, and how cheaper fuel would ease headline CPI and the pressure for rate rises.",
+  "lede": "Brent crude fell about 16-17% in the week to Friday 6 November, its biggest weekly drop since the pandemic began, and kept falling on Monday on hopes that a deal will reopen the Strait of Hormuz. Reported terms of a Qatar-brokered deal, not confirmed by either government, have Iran reopening the strait and stopping tanker attacks while the US lifts its blockade and releases about US$8 billion of Iranian funds frozen in Qatar.",
+  "about": {
+   "h09": [
+    "3C.3",
+    "1A.1"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y1c.5",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P2d.1",
+    "P2d.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3C.4",
+    "4D.3",
+    "1A.8"
+   ],
+   "y12": [
+    "Y1c.8",
+    "Y2c.5"
+   ],
+   "y11": [
+    "P2e.4"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "global",
+   "trade"
+  ],
+  "levers": [
+   "global",
+   "monetary"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Brent crude, weekly change",
+    "value": "about -16% (some reports say -17%)",
+    "asAt": "week to 6 November 2026",
+    "issue": "global",
+    "source": "ABC News; The National; The Private Banker"
+   },
+   {
+    "label": "Brent crude, Friday close",
+    "value": "US$98.32 a barrel",
+    "asAt": "6 November 2026",
+    "issue": "global",
+    "source": "ABC News; The National; The Private Banker"
+   },
+   {
+    "label": "Brent crude, Monday (down almost 5%)",
+    "value": "about US$93 a barrel",
+    "asAt": "9 November 2026",
+    "issue": "global",
+    "source": "ABC News; The National; The Private Banker"
+   },
+   {
+    "label": "US benchmark (WTI) crude",
+    "value": "about US$88 a barrel",
+    "asAt": "9 November 2026",
+    "issue": "global",
+    "source": "ABC News; The National; The Private Banker"
+   },
+   {
+    "label": "Share of global oil and LNG shipments through the Strait of Hormuz before the war began on 28 February",
+    "value": "about 20%",
+    "asAt": "2026",
+    "issue": "global",
+    "source": "ABC News; The National; The Private Banker"
+   },
+   {
+    "label": "Iranian funds frozen in Qatar that the US would release under the reported deal",
+    "value": "about US$8 billion",
+    "asAt": "9 November 2026",
+    "issue": "global",
+    "source": "ABC News; The National; The Private Banker"
+   },
+   {
+    "label": "Global oil surplus (JPMorgan estimate)",
+    "value": "1.1 to 1.4 million barrels a day",
+    "asAt": "September to October 2026",
+    "issue": "global",
+    "source": "ABC News; The National; The Private Banker"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Supply shock",
+    "def": "An unexpected change in supply that shifts the supply curve."
+   },
+   {
+    "term": "Cost-push inflation",
+    "def": "Inflation caused by rising input costs such as fuel."
+   }
+  ],
+  "links": [
+   [
+    "The National, Oil edges lower as Trump plays down prospect of new US attacks on Iran, 9 Nov 2026",
+    "https://www.thenationalnews.com/business/energy/2026/11/09/oil-edges-lower-as-trump-plays-down-prospect-of-new-us-attacks-on-iran/"
+   ],
+   [
+    "The Private Banker, Brent falls almost 5% toward US$93 on reports of a Qatar-brokered Hormuz deal, 9 Nov 2026",
+    "https://leprivatebanker.com/2026/11/09/brent-falls-almost-5-toward-93-on-reports-of-a-qatar-brokered-hormuz-deal-extending-a-16-weekly-rout/"
+   ],
+   [
+    "ABC News markets blog, 9 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-09/asx-markets-business-live-news/107361534"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-09-oil-steepest-weekly-fall-since-covid.pdf",
+   "label": "Topic 1 news summary",
+   "pages": 1
+  },
+  "angle": "Short-run demand for oil is price-inelastic, so even a modest change in supply causes large price swings, which helps explain a 16% fall in one week. If the strait reopens, supply shifts from S1 to S2, the world price falls and the quantity traded rises; markets are pricing this in already. A lower oil price reduces petrol and freight costs, so headline CPI eases and there is less pressure for further RBA rate rises.",
+  "questions": [
+   {
+    "q": "Using a demand and supply diagram, explain how reopening the Strait of Hormuz would affect the world price of oil, and outline one effect on Australia's inflation rate.",
+    "marks": 4
+   }
+  ],
+  "note": "The deal terms are reported, not confirmed by either government: Secretary of State Rubio played down any breakthrough and Iran's Revolutionary Guard said three tankers caught fire in the strait on Sunday. President Trump told CNN another US war with Iran was 'highly unlikely'. Reports differ on the weekly fall (16% or 17%). The diagrams are illustrative, not to scale. UPDATE DUE: outcome of the talks. Replaces the 5 November item (Brent US$94.62, down 8.7% and the lowest since 31 August; WTI US$88.12; Gulf crude and product exports 17.1 million barrels a day in October against 18.9 million in September; ASX 200 up 2.6% to 9,065; Woodside, Viva, Santos and Ampol shares down 5.6%, 5.2%, 4.8% and 3.8%)."
+ },
+ {
+  "id": "2026-11-09-china-us-tariff-truce-extended",
+  "title": "China extends its US tariff truce by two months",
+  "date": "2026-11-09",
+  "added": "2026-11-10",
+  "type": "news",
+  "outlets": [
+   "Bloomberg",
+   "Gulf News",
+   "AFP"
+  ],
+  "summary": "A live US-China trade truce that keeps a tariff from rising, shown on a tariff diagram, though a two-month horizon leaves traders uncertain.",
+  "lede": "Bloomberg reports that China has extended its pause on US tariffs and trade curbs for another two months. The article is paywalled, so only the headline and web address were read; the address indicates that the extra 24% tariff on US goods stays suspended until January and the 10% rate stays in place.",
+  "about": {
+   "h09": [
+    "1C.2"
+   ],
+   "y12": [
+    "Y3a.6",
+    "Y3a.7",
+    "Y3a.8",
+    "Y3a.11"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1A.3",
+    "1B.1",
+    "2D.4"
+   ],
+   "y12": [
+    "Y3a.3",
+    "Y3a.15"
+   ],
+   "y11": [
+    "P6a.1"
+   ]
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade",
+   "global"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Extra tariff on US goods, still suspended",
+    "value": "24%",
+    "asAt": "9 November 2026",
+    "issue": "trade",
+    "source": "Bloomberg (headline and web address)"
+   },
+   {
+    "label": "Tariff on US goods that stays in place",
+    "value": "10%",
+    "asAt": "9 November 2026",
+    "issue": "trade",
+    "source": "Bloomberg (headline and web address)"
+   },
+   {
+    "label": "Length of the extension (to January)",
+    "value": "2 months",
+    "asAt": "9 November 2026",
+    "issue": "trade",
+    "source": "Bloomberg (headline and web address)"
+   },
+   {
+    "label": "US extra tariff on Chinese goods, cut as part of the 2025 truce",
+    "value": "20% to 10%",
+    "asAt": "November 2025",
+    "issue": "trade",
+    "source": "AFP via Gulf News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Tariff",
+    "def": "A tax on imported goods that raises their domestic price."
+   },
+   {
+    "term": "Trade truce",
+    "def": "A temporary agreement to pause new or higher trade barriers."
+   }
+  ],
+  "links": [
+   [
+    "Bloomberg, China extends pause on 24% US tariffs to January, keeps 10% rate, 9 Nov 2026 (paywalled; headline only)",
+    "https://bloomberg.com/news/articles/2026-11-09/china-extends-pause-on-24-us-tariffs-to-january-keeps-10-rate"
+   ],
+   [
+    "Gulf News (AFP), China says it extends suspension of extra 24% tariff on US goods, 5 Nov 2025 (background)",
+    "https://gulfnews.com/business/markets/china-says-extends-suspension-of-extra-24-tariff-on-us-goods-1.500334167"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-09-china-us-tariff-truce-extended.pdf",
+   "label": "Topic 1 news summary",
+   "pages": 1
+  },
+  "angle": "Background: in November 2025 China suspended the extra 24% tariff for one year from 10 November 2025 and kept a 10% tariff on US goods, while the US cut its extra tariff on Chinese goods from 20% to 10% and China lifted some tariffs on US farm goods such as soybeans. On a tariff diagram a tariff lifts the domestic price from Pw to Pw+t, raises domestic output, cuts consumption and imports, and raises government revenue, with deadweight losses; if the truce lapsed the tariff would rise and these effects would grow. A two-month extension avoids a tariff jump for now but leaves traders with a short planning horizon.",
+  "questions": [
+   {
+    "q": "Using a tariff diagram, explain the effects of a tariff on domestic consumers, domestic producers and government revenue.",
+    "marks": 4
+   }
+  ],
+  "note": "Paywalled: only the headline and web address were read, plus background from the 2025 truce. The January end date and the 10% rate come from the web address, so check the full article before quoting. The diagram is conceptual and not drawn to scale. If the full Bloomberg article is supplied this record can be rewritten with its details. See also the 27 October item on the US-China port-fee truce."
+ },
+ {
+  "id": "2026-11-09-china-producer-prices-surge",
+  "title": "China's factory-gate inflation jumps to 5.7%",
+  "date": "2026-11-09",
+  "added": "2026-11-10",
+  "type": "stats",
+  "outlets": [
+   "ABC News",
+   "Reuters"
+  ],
+  "summary": "Chinese producer prices are rising much faster than consumer prices, an early warning of imported inflation for countries that buy Chinese goods, including Australia.",
+  "lede": "China's producer price index rose 5.7% over the year to October, up from 5.0% in September and above the 5.3% forecast, while consumer price inflation slowed to 0.7% from 0.9%. The widening gap suggests firms face higher costs while household demand stays weak.",
+  "about": {
+   "h09": [
+    "3C.3",
+    "2A.1"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y3e.3"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1A.1",
+    "1A.8",
+    "3C.1"
+   ],
+   "y12": [
+    "Y1c.3",
+    "Y1c.9",
+    "Y3e.1"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "global",
+   "trade",
+   "growth"
+  ],
+  "levers": [
+   "global"
+  ],
+  "diagrams": [
+   "chart",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "China producer price index, year on year (forecast 5.3%)",
+    "value": "5.7% (September 5.0%)",
+    "asAt": "October 2026",
+    "issue": "inflation",
+    "source": "ABC News citing Reuters"
+   },
+   {
+    "label": "China consumer price index, year on year (forecast 0.8%)",
+    "value": "0.7% (September 0.9%)",
+    "asAt": "October 2026",
+    "issue": "inflation",
+    "source": "ABC News citing Reuters"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Producer price index (PPI)",
+    "def": "Measures changes in prices received by producers (factory-gate prices)."
+   },
+   {
+    "term": "Imported inflation",
+    "def": "Inflation caused by rising prices of imported goods."
+   }
+  ],
+  "links": [
+   [
+    "ABC News markets blog (citing Reuters), 9 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-09/asx-markets-business-live-news/107361534"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-09-china-producer-prices-surge.pdf",
+   "label": "Topic 1 news summary",
+   "pages": 1
+  },
+  "angle": "Rising producer prices can be an early sign of future consumer inflation, both in China and in countries that import Chinese goods. Firms' costs are rising, but weak consumer demand stops them passing those costs on to shoppers in full. China is Australia's largest trading partner, so its prices and growth matter for Australian imports and resource exports.",
+  "questions": [
+   {
+    "q": "Distinguish between the producer price index and the consumer price index, and explain how rising producer prices in China could affect inflation in Australia.",
+    "marks": 4
+   }
+  ],
+  "note": "China's economy also grew faster than expected in the September quarter, but the report gave no figure. The link from Chinese factory prices to Australian prices is a possible channel, not a forecast. The bar chart and flow chart are illustrative. See also the 31 October item on China's factory PMIs."
+ },
+ {
+  "id": "2026-11-07-budget-tightening-december-update",
+  "title": "Should the budget be tightened in December's update?",
+  "date": "2026-11-07",
+  "added": "2026-11-10",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "The Nightly"
+  ],
+  "summary": "Weighs the case for and against cutting spending in the December MYEFO while the RBA raises rates, and shows how tightening both policies would shift AD further left.",
+  "lede": "With the RBA raising rates, some commentators want the government to cut spending in the December mid-year economic update, and ABC political editor Jacob Greber argues it is the right prescription at the wrong time. Minister Clare O'Neil has confirmed a savings package for the update that she called a 'mini budget', with priorities of lower spending, cost-of-living relief that does not add to inflation, and productivity.",
+  "about": {
+   "h09": [
+    "4C.1",
+    "4C.2",
+    "4B.1"
+   ],
+   "y12": [
+    "Y2b.3",
+    "Y2b.13",
+    "Y2b.14",
+    "Y2g.1"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4D.2",
+    "4H.3",
+    "4I.3",
+    "S4.11"
+   ],
+   "y12": [
+    "Y2c.8",
+    "Y2b.12"
+   ],
+   "y11": [
+    "P5a.4",
+    "P5c.3"
+   ]
+  },
+  "issues": [
+   "budget",
+   "inflation",
+   "rates"
+  ],
+  "levers": [
+   "fiscal",
+   "monetary"
+  ],
+  "diagrams": [
+   "adas",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Government spending as a share of GDP (before the pandemic: under 25%)",
+    "value": "over 26%",
+    "asAt": "2026",
+    "issue": "budget",
+    "source": "ABC News (Jacob Greber)"
+   },
+   {
+    "label": "RBA cash rate after the 3 November rise",
+    "value": "4.85%",
+    "asAt": "3 November 2026",
+    "issue": "rates",
+    "source": "ABC News (Jacob Greber)"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Fiscal stance",
+    "def": "Whether the budget is adding to demand (expansionary) or subtracting from it (contractionary)."
+   },
+   {
+    "term": "MYEFO",
+    "def": "The Mid-Year Economic and Fiscal Outlook, a mid-year update of the federal budget."
+   }
+  ],
+  "links": [
+   [
+    "ABC News (Jacob Greber), the RBA outlook and why it is not the time to slam the budget brakes, 7 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-07/rba-outlook-not-time-slam-budget-breaks-midterms-albanese/107356846"
+   ],
+   [
+    "The Nightly, government promises fresh spending cuts before Christmas, 4 Nov 2026",
+    "https://thenightly.com.au/politics/government-promises-fresh-spending-cuts-before-christmas-as-aussies-warned-coming-months-will-feel-like-a-recession-c-23114061"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-07-budget-tightening-december-update.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "The policy mix matters: if fiscal and monetary policy both tighten into a slowdown, the combined effect on growth and jobs could be larger than intended. Higher rates already reduce consumption and investment, and spending cuts would reduce G as well, shifting AD from AD1 to AD2, so the price level eases but real GDP falls and unemployment rises. Case for cutting: spending is above pre-pandemic levels, it would help the RBA reduce inflation, and fiscal policy could share the load with mortgage holders. Case against (Greber): the deficit is already narrowing faster than forecast, the RBA expects business investment to collapse in the second half of 2027, and house prices have fallen more than Treasury expected.",
+  "questions": [
+   {
+    "q": "Evaluate whether both fiscal and monetary policy should be contractionary in Australia in late 2026.",
+    "marks": 6
+   }
+  ],
+  "note": "The case against tightening is Greber's argument. Former RBA board member Warwick McKibbin told 7.30 this level of spending is not a problem while inflation and interest rates are low, and Governor Bullock says monetary policy cannot affect global oil prices so the RBA is targeting domestic capacity pressures. The savings package details are not yet known. The diagram is illustrative. UPDATE DUE: the December MYEFO. See also the 2 November item on spending cuts versus rate rises and the 5 November item on the budget versus inflation."
+ },
+ {
+  "id": "2026-11-06-consumer-sentiment-job-fears",
+  "title": "Consumers deeply pessimistic as job fears rise",
+  "date": "2026-11-06",
+  "added": "2026-11-10",
+  "type": "stats",
+  "outlets": [
+   "Westpac IQ",
+   "Melbourne Institute",
+   "CommBank"
+  ],
+  "summary": "Households expect higher unemployment and mortgage rates after five rate rises, and expectations can become self-fulfilling by cutting consumption and shifting aggregate demand left.",
+  "lede": "The Westpac-Melbourne Institute consumer sentiment index fell 4.2% over the three months to October to 80.4, among the 40 weakest readings since the survey began in 1973, and the unemployment expectations index jumped 9.3% to 142.2. CommBank now expects GDP growth to slow to 1% by mid-2027 (previously 1.8%) and unemployment to peak at 5.1% at the end of 2027, up from 4.7% now.",
+  "about": {
+   "h09": [
+    "3A.1",
+    "3A.7",
+    "3B.3"
+   ],
+   "y12": [
+    "Y1a.6",
+    "Y1a.13",
+    "Y1b.6"
+   ],
+   "y11": [
+    "P3a.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3B.2",
+    "3B.6",
+    "4D.3",
+    "4I.2"
+   ],
+   "y12": [
+    "Y1a.14",
+    "Y1b.5",
+    "Y1b.11",
+    "Y2c.5"
+   ],
+   "y11": [
+    "P3a.6"
+   ]
+  },
+  "issues": [
+   "growth",
+   "employment",
+   "housing",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "adas",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Consumer sentiment index (100 = neutral; fell 4.2% over three months)",
+    "value": "80.4",
+    "asAt": "October 2026",
+    "issue": "growth",
+    "source": "Westpac-Melbourne Institute"
+   },
+   {
+    "label": "Unemployment expectations index (+9.3% over three months)",
+    "value": "142.2",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "Westpac-Melbourne Institute"
+   },
+   {
+    "label": "Mortgage rate expectations index (+5.5%; May peak 181)",
+    "value": "179",
+    "asAt": "October 2026",
+    "issue": "rates",
+    "source": "Westpac-Melbourne Institute"
+   },
+   {
+    "label": "House price expectations index (-2.4%, after a 25% drop in the previous three months)",
+    "value": "115.6",
+    "asAt": "October 2026",
+    "issue": "housing",
+    "source": "Westpac-Melbourne Institute"
+   },
+   {
+    "label": "CommBank forecast peak unemployment rate (4.7% now)",
+    "value": "5.1% at the end of 2027",
+    "asAt": "2 November 2026",
+    "issue": "employment",
+    "source": "CommBank Research"
+   },
+   {
+    "label": "CommBank GDP growth forecast (previously 1.8%)",
+    "value": "1% by mid-2027",
+    "asAt": "2 November 2026",
+    "issue": "growth",
+    "source": "CommBank Research"
+   },
+   {
+    "label": "CommBank household spending growth forecast",
+    "value": "1.8% to 0.7% by mid-2027",
+    "asAt": "2 November 2026",
+    "issue": "growth",
+    "source": "CommBank Research"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Consumer sentiment",
+    "def": "How confident households feel about the economy and their finances."
+   },
+   {
+    "term": "Aggregate demand (AD)",
+    "def": "Total spending: C + I + G + (X - M)."
+   }
+  ],
+  "links": [
+   [
+    "Westpac IQ, The Red Book, October 2026",
+    "https://www.westpaciq.com.au/economics/2026/11/the-red-book-october-2026"
+   ],
+   [
+    "CommBank Newsroom, CommBank economists: households face a sharper, longer slowdown, 2 Nov 2026",
+    "https://www.commbank.com.au/articles/newsroom/2026/11/commbank-economists-households-sharper-longer-slowdown.html"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-06-consumer-sentiment-job-fears.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Expectations can be self-fulfilling: if households fear job losses they save more and spend less, which reduces aggregate demand and can lead to the job losses they feared. Lower consumer confidence and higher interest rates reduce consumption, so AD shifts from AD1 to AD2; the price level eases, which helps bring inflation down, but real GDP falls and unemployment rises.",
+  "questions": [
+   {
+    "q": "Explain how a fall in consumer confidence could affect economic growth and unemployment in Australia. Use an AD/AS diagram.",
+    "marks": 6
+   }
+  ],
+  "note": "The sentiment indices come from a household survey, so they measure expectations, not outcomes, and bank forecasts are projections. Below 100 means pessimists outnumber optimists. The diagram and bar chart are illustrative."
+ },
+ {
+  "id": "2026-11-09-ai-shares-household-wealth",
+  "title": "How exposed is household wealth to an AI share crash?",
+  "date": "2026-11-09",
+  "added": "2026-11-10",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "IBTimes UK"
+  ],
+  "summary": "RBA research shows more household financial wealth is exposed to AI-related shares than in 2022, so the wealth effect of a share market fall on consumption is now about twice as large.",
+  "lede": "RBA researchers Iris Chan and Marcus Miller estimate that 5.3% of household financial wealth was exposed to AI-related shares in June 2026, up from 2% at the end of 2022. A 30% fall in AI share prices would cut household financial wealth by only about 1.6%, but the effect on consumer spending would now be about twice as large as in 2022.",
+  "about": {
+   "h09": [
+    "1A.4",
+    "3A.1",
+    "3E.4"
+   ],
+   "y12": [
+    "Y1a.6",
+    "Y3b.3"
+   ],
+   "y11": [
+    "P4b.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "1A.1",
+    "1D.6",
+    "3A.7"
+   ],
+   "y12": [
+    "Y1d.1",
+    "Y1a.14",
+    "Y2c.5",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P4b.1",
+    "P3a.4"
+   ]
+  },
+  "issues": [
+   "growth",
+   "investment",
+   "global"
+  ],
+  "levers": [
+   "global"
+  ],
+  "diagrams": [
+   "chart",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Share of household financial wealth exposed to AI-related shares (end 2022: 2.0%)",
+    "value": "5.3%",
+    "asAt": "June 2026",
+    "issue": "growth",
+    "source": "RBA research via ABC News"
+   },
+   {
+    "label": "Fall in household financial wealth if AI share prices fell 30%",
+    "value": "about 1.6%",
+    "asAt": "June 2026",
+    "issue": "growth",
+    "source": "RBA research via ABC News"
+   },
+   {
+    "label": "Nasdaq fall in a single session (S&P 500 fell 4%)",
+    "value": "-5.4%",
+    "asAt": "5 November 2026",
+    "issue": "investment",
+    "source": "ABC News; IBTimes UK"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Wealth effect",
+    "def": "Households spend more when their assets rise in value, and less when they fall."
+   },
+   {
+    "term": "Financial contagion",
+    "def": "When a shock in one financial market spreads to others."
+   }
+  ],
+  "links": [
+   [
+    "ABC News markets blog (RBA research), 9 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-09/asx-markets-business-live-news/107361534"
+   ],
+   [
+    "IBTimes UK, Australian dollar falls on AI and rate expectations, 9 Nov 2026",
+    "https://www.ibtimes.co.uk/australian-dollar-falls-ai-rate-expectations-1831130"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-09-ai-shares-household-wealth.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Globalisation of financial markets means a sell-off on Wall Street can quickly reduce Australian household wealth through super funds and share portfolios. A crash would still hit only a small part of total wealth, but exposure has more than doubled since 2022, so the effect on consumption would now be about twice as large: AI shares fall, household wealth falls, the wealth effect cuts spending, aggregate demand falls and growth slows.",
+  "questions": [
+   {
+    "q": "Explain how a fall in global share prices could affect consumption and economic growth in Australia.",
+    "marks": 4
+   }
+  ],
+  "note": "RBA research as reported by ABC News; the 1.6% is an estimate for a hypothetical 30% fall, not an outcome. Markets partly recovered on Friday and Monday after the 5 November sell-off. The bar chart and flow chart are illustrative."
+ },
+ {
+  "id": "2026-11-09-anz-exits-oil-and-gas-finance",
+  "title": "ANZ makes $7.3b profit and will stop financing new oil and gas",
+  "date": "2026-11-09",
+  "added": "2026-11-10",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "A private-sector response to climate change: a major bank withdrawing finance for new oil and gas shifts the supply of finance left and raises the cost of capital for new projects, though other lenders may fill the gap.",
+  "lede": "ANZ posted a $7.3 billion full-year profit that beat expectations, but its shares closed down 3.2% on Monday. In its annual report the bank said it will no longer finance new or upstream oil and gas projects, including LNG plants, and will not finance coal-fired power, expecting its existing coal power loans to run off by September 2030.",
+  "about": {
+   "h09": [
+    "3F.2",
+    "3F.4"
+   ],
+   "y12": [
+    "Y1e.2",
+    "Y1e.5"
+   ],
+   "y11": [
+    "P4a.1",
+    "P4a.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3F.1",
+    "4G.1",
+    "4I.6",
+    "1A.4"
+   ],
+   "y12": [
+    "Y1e.4",
+    "Y1e.7",
+    "Y2f.8"
+   ],
+   "y11": [
+    "P2h.3"
+   ]
+  },
+  "issues": [
+   "environment",
+   "investment"
+  ],
+  "levers": [
+   "environmental"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "ANZ full-year profit",
+    "value": "$7.3 billion",
+    "asAt": "November 2026",
+    "issue": "investment",
+    "source": "ABC News markets blog"
+   },
+   {
+    "label": "ANZ share price at Monday's close (down as much as 4.3% to $38.59 during the day)",
+    "value": "-3.2%",
+    "asAt": "9 November 2026",
+    "issue": "investment",
+    "source": "ABC News markets blog"
+   },
+   {
+    "label": "Increase in ANZ non-performing loans (UBS)",
+    "value": "about $800 million",
+    "asAt": "November 2026",
+    "issue": "investment",
+    "source": "UBS via ABC News"
+   },
+   {
+    "label": "Year ANZ expects its coal power loans to run off",
+    "value": "2030 (by September)",
+    "asAt": "November 2026",
+    "issue": "environment",
+    "source": "ABC News markets blog"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Negative externality",
+    "def": "A cost imposed on third parties (such as pollution) that is not reflected in the market price."
+   },
+   {
+    "term": "Cost of capital",
+    "def": "What firms must pay to borrow or raise funds for investment."
+   }
+  ],
+  "links": [
+   [
+    "ABC News markets blog, 9 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-09/asx-markets-business-live-news/107361534"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-09-anz-exits-oil-and-gas-finance.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "A conceptual diagram: when major banks withdraw lending, the supply of finance for new oil and gas projects shifts from S1 to S2, the cost of finance rises from r1 to r2 and the amount of finance used falls, so fewer projects go ahead and future emissions are lower. Other lenders may fill the gap, so one bank's decision may have a limited effect on its own.",
+  "questions": [
+   {
+    "q": "To what extent can private-sector decisions, such as banks refusing to finance new fossil fuel projects, help achieve environmental sustainability?",
+    "marks": 6
+   }
+  ],
+  "note": "From a markets blog report. UBS said lower expenses largely offset weaker revenue, with lighter credit charges despite the rise in non-performing loans, and environment groups welcomed the move. The pull-out is stated on page 111 of ANZ's annual report. The diagram is conceptual."
+ },
+ {
+  "id": "2026-11-09-ev-sales-overtake-petrol",
+  "title": "Oil shock speeds up Australia's switch to electric vehicles",
+  "date": "2026-11-09",
+  "added": "2026-11-10",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "Ember"
+  ],
+  "summary": "A real-world substitutes example: dearer petrol makes electric vehicles relatively cheaper to run, shifting demand for EVs right, so price signals can drive environmental change without new regulation.",
+  "lede": "Battery electric cars outsold petrol cars in Australia in both September and October 2026, and EVs now make up close to a quarter of new car sales. Researchers say high oil prices from the Iran war are pushing consumers toward electric transport.",
+  "about": {
+   "h09": [
+    "3F.4"
+   ],
+   "y12": [
+    "Y1e.2"
+   ],
+   "y11": [
+    "P2b.4",
+    "P2d.1",
+    "P2a.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3F.1",
+    "3F.2",
+    "1D.8"
+   ],
+   "y12": [
+    "Y1e.4",
+    "Y1e.8",
+    "Y2f.3"
+   ],
+   "y11": [
+    "P2b.5"
+   ]
+  },
+  "issues": [
+   "environment",
+   "trade"
+  ],
+  "levers": [
+   "environmental"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Electric vehicle share of new car sales in Australia",
+    "value": "close to a quarter",
+    "asAt": "October 2026",
+    "issue": "environment",
+    "source": "ABC News"
+   },
+   {
+    "label": "Electric vehicle share of cars on Australian roads",
+    "value": "about 5%",
+    "asAt": "2026",
+    "issue": "environment",
+    "source": "ABC News"
+   },
+   {
+    "label": "Crude oil costs saved by the global EV fleet in the six months after the war began",
+    "value": "about $20 billion",
+    "asAt": "2026",
+    "issue": "environment",
+    "source": "Ember via ABC News"
+   },
+   {
+    "label": "Share of the growth in global electricity demand supplied by solar",
+    "value": "about three-quarters",
+    "asAt": "last year",
+    "issue": "environment",
+    "source": "Ember via ABC News"
+   },
+   {
+    "label": "Share of world final energy use still supplied by coal, oil and gas",
+    "value": "about 60%",
+    "asAt": "2026",
+    "issue": "environment",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Substitutes",
+    "def": "Goods that can replace each other; when one gets dearer, demand for the other rises."
+   },
+   {
+    "term": "Relative prices",
+    "def": "The price of one good compared with another."
+   }
+  ],
+  "links": [
+   [
+    "ABC News (Nathan Morris), report on the Iran conflict and the case for electrification, 9 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-09/iran-conflict-strengthens-case-or-electrification/107351224"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-09-ev-sales-overtake-petrol.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Price signals can drive environmental change: higher fossil fuel prices act like a carbon price, encouraging people to switch to cleaner substitutes without new regulation. Petrol cars and EVs are substitutes, so dearer petrol shifts demand for EVs from D1 to D2, raising quantity sold and, other things equal, the market price.",
+  "questions": [
+   {
+    "q": "Using a demand and supply diagram, explain how a rise in petrol prices affects the market for electric vehicles. Discuss one environmental implication.",
+    "marks": 6
+   }
+  ],
+  "note": "An ABC News report with an Ember estimate. The shift is still early: coal, oil and gas still supply about 60% of the world's final energy use and EVs are only about 5% of cars on Australian roads. The diagram is illustrative, not to scale."
+ },
+ {
   "id": "2026-11-08-ai-data-centres-opportunity-or-problem",
   "title": "AI data centres: an economic opportunity or a political problem?",
   "date": "2026-11-08",
@@ -142,39 +1088,40 @@
   "outlets": [
    "ABC News"
   ],
-  "summary": "Weighs a tax levy, spending cuts and a higher super guarantee against the cash rate, and concludes interest rates are still the blunt instrument we have.",
-  "lede": "After five rate rises in 2026 took the cash rate to an 18-year high of 4.85%, Jessica Irvine asks whether governments have better tools to cool inflation. She concludes that the blunt instrument of interest rates is still the one we have, since each alternative slows demand too and has its own limits.",
+  "summary": "Asks whether anything beats a rate rise for cooling inflation, weighing temporary taxes and the super guarantee against the cash rate, with the transmission mechanism, time lags and weaker transmission this cycle.",
+  "lede": "The RBA raised the cash rate from 4.60% to 4.85% on 3 November, its fifth rise this year and the highest since 2008, with three of the nine Board members wanting to hold. ABC money correspondent Jessica Irvine asks whether there is a better way to bring inflation down and concludes rate hikes are crude, but they are the tool we have.",
   "about": {
    "h09": [
     "4D.2",
     "4D.3",
-    "4H.1",
-    "4C.2"
+    "4H.1"
    ],
    "y12": [
+    "Y2c.3",
     "Y2c.5",
-    "Y2c.8",
-    "Y2b.3",
-    "Y2b.14"
+    "Y2c.8"
    ],
    "y11": []
   },
   "also": {
    "h09": [
-    "4B.1",
     "4C.1",
+    "4C.2",
+    "4B.1",
     "4I.3",
     "S4.11"
    ],
    "y12": [
     "Y2c.4",
     "Y2c.7",
-    "Y2b.13",
+    "Y2b.3",
+    "Y2b.14",
+    "Y2g.1",
     "Y1c.6"
    ],
    "y11": [
     "P4a.3",
-    "P5b.1"
+    "P4c.3"
    ]
   },
   "issues": [
@@ -187,65 +1134,68 @@
    "fiscal"
   ],
   "diagrams": [
-   "adas",
-   "flow"
+   "flow",
+   "compare"
   ],
   "figures": [
    {
-    "label": "RBA cash rate after the 3 November rise (an 18-year high)",
-    "value": "4.85%",
+    "label": "RBA cash rate after the 3 November rise (highest since 2008)",
+    "value": "4.85% (previously 4.60%)",
     "asAt": "3 November 2026",
     "issue": "rates",
-    "source": "ABC News"
+    "source": "ABC News (Jessica Irvine)"
    },
    {
     "label": "Rate rises so far in 2026",
     "value": "5",
     "asAt": "November 2026",
     "issue": "rates",
-    "source": "ABC News"
+    "source": "ABC News (Jessica Irvine)"
    },
    {
-    "label": "Time for a rate rise to take its full effect",
+    "label": "Board members who wanted to hold on 3 November",
+    "value": "3 of 9",
+    "asAt": "3 November 2026",
+    "issue": "rates",
+    "source": "ABC News (Jessica Irvine)"
+   },
+   {
+    "label": "Time for a rate rise to have its full effect",
     "value": "12-18 months",
     "asAt": "November 2026",
     "issue": "rates",
-    "source": "ABC News"
+    "source": "ABC News (Jessica Irvine)"
    },
    {
-    "label": "Projected budget deficit each year over the four-year outlook",
+    "label": "Projected budget deficit over the forward estimates",
     "value": "about 1% of GDP",
     "asAt": "November 2026",
     "issue": "budget",
-    "source": "ABC News"
+    "source": "ABC News (Jessica Irvine)"
+   },
+   {
+    "label": "Housing debt as a share of income (CBA's Ashwin Clarke)",
+    "value": "about 115% (about 9 points lower than in 2022)",
+    "asAt": "November 2026",
+    "issue": "housing",
+    "source": "CBA via ABC News"
    },
    {
     "label": "Compulsory superannuation guarantee",
     "value": "12%",
     "asAt": "November 2026",
     "issue": "budget",
-    "source": "ABC News"
-   },
-   {
-    "label": "2014 budget repair levy on incomes over $180,000",
-    "value": "2%",
-    "asAt": "2014",
-    "issue": "budget",
-    "source": "ABC News"
+    "source": "ABC News (Jessica Irvine)"
    }
   ],
   "terms": [
    {
     "term": "Transmission mechanism",
-    "def": "The channels through which a cash rate change affects spending and inflation."
+    "def": "The channels through which cash rate changes affect spending and inflation."
    },
    {
-    "term": "Contractionary policy",
-    "def": "Policy that slows aggregate demand."
-   },
-   {
-    "term": "Policy mix",
-    "def": "How monetary and fiscal policy work together."
+    "term": "Time lag",
+    "def": "The delay between a policy change and its full effect."
    }
   ],
   "links": [
@@ -256,6 +1206,14 @@
    [
     "ABC News, RBA lifts interest rates, November 2026, 3 Nov 2026",
     "https://www.abc.net.au/news/2026-11-03/rba-lifts-interest-rates-november-2026-highest-rate-in-18-years/107340050"
+   ],
+   [
+    "ABC News, Andrew Hauser on trust in the RBA, 5 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-05/rba-andrew-hauser-trust-in-the-rba-is-deteriorating/107351696"
+   ],
+   [
+    "ABC News markets blog, 9 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-09/asx-markets-business-live-news/107361534"
    ]
   ],
   "file": {
@@ -263,23 +1221,20 @@
    "label": "Topic 4 news summary",
    "pages": 1
   },
-  "angle": "Use it to evaluate the limitations of monetary policy: time lags, uneven effects across households, and a blunt instrument. Contrast it with fiscal policy, which can be targeted but is slower to change and politically harder. On an AD/AS diagram every option shifts AD left, so the price level falls but real output falls too; the tools differ in who bears the burden (borrowers, taxpayers or all workers).",
+  "angle": "Use it to evaluate monetary policy: the transmission mechanism, time lags, limitations and the importance of credibility. Each step takes time and the effect depends on how indebted households are; lower debt-to-income and borrowers who kept repayments high after the 2025 cuts mean weaker transmission this time. Irvine compares rate hikes (an independent RBA can act quickly, but they are crude and hit mortgage holders hardest) with temporary taxes set by an independent body (which would spread the burden more widely, though no country uses this today) and adjusting the 12% super guarantee, which she says needs more investigation.",
   "questions": [
    {
-    "q": "Explain two channels of the monetary policy transmission mechanism.",
-    "marks": 4
-   },
-   {
-    "q": "Evaluate raising the superannuation guarantee as an alternative to a cash rate increase for reducing inflation.",
+    "q": "Evaluate the effectiveness of monetary policy in reducing inflation that is partly caused by a global oil supply shock.",
     "marks": 6
    }
   ],
-  "note": "An analysis piece by a money correspondent. The author says raising the super guarantee needs more research, and that no country hands tax-setting to an independent body as it does interest rates. The diagrams are illustrative, not to scale. See also the 2 November item on spending cuts versus rate rises and the 5 November item on the budget versus inflation."
+  "note": "An analysis piece by a money correspondent, so the conclusion is her view. Deputy Governor Andrew Hauser said trust in the RBA's ability to bring inflation down soon has 'fallen materially'. Irvine argues deficits of about 1% of GDP are not a large stimulus, so they are not the main cause of inflation. The diagram is illustrative, not to scale. Replaces the earlier digest of the same article (it also cited the 2014 budget repair levy on incomes over $180,000). See also the 2 November item on spending cuts versus rate rises and the 7 November item on the December budget update."
  },
  {
   "id": "2026-11-06-business-urges-fast-ai-policy",
   "title": "Wesfarmers, Telstra and BHP urge Canberra to move fast on AI",
   "date": "2026-11-06",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "Australian Financial Review"
@@ -383,6 +1338,7 @@
   "id": "2026-11-06-pc-chair-calls-for-review-of-ir-laws",
   "title": "Productivity chief says Labor's workplace laws should be reviewed",
   "date": "2026-11-06",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "Sydney Morning Herald"
@@ -487,138 +1443,10 @@
   "note": "The compliance and $14,000 figures are the Commission chair's claims as reported. Economists also suggested cutting the EV tax concession and a road user charge, and Hauser warned of a fusillade of shocks. Pairs with the item on the inquiry being barred from examining tax and IR."
  },
  {
-  "id": "2026-11-05-oil-plunge-after-midterms",
-  "title": "Oil falls almost 9% as markets bet on an end to the Iran war",
-  "date": "2026-11-05",
-  "type": "news",
-  "outlets": [
-   "ABC News"
-  ],
-  "summary": "Shows how expected supply recovery moves the oil price before any extra barrels arrive, and who gains and loses in Australia. Replaces the 4 November edition.",
-  "lede": "Brent crude fell US$8.98 (8.7%) to US$94.62 a barrel, its lowest since 31 August, after the US midterm result raised hopes of an earlier end to the war with Iran. Australian energy shares were sold off while the ASX 200 closed 2.6% higher at 9,065.",
-  "about": {
-   "h09": [
-    "3C.3",
-    "1A.1"
-   ],
-   "y12": [
-    "Y1c.4",
-    "Y1c.5",
-    "Y3e.3"
-   ],
-   "y11": []
-  },
-  "also": {
-   "h09": [
-    "3C.4",
-    "4D.3",
-    "1A.8",
-    "2C.6"
-   ],
-   "y12": [
-    "Y1c.1",
-    "Y1a.10",
-    "Y1a.13",
-    "Y2c.8",
-    "Y3c.5"
-   ],
-   "y11": []
-  },
-  "issues": [
-   "inflation",
-   "global",
-   "trade"
-  ],
-  "levers": [
-   "monetary"
-  ],
-  "diagrams": [
-   "ds",
-   "adas",
-   "flow"
-  ],
-  "figures": [
-   {
-    "label": "Brent crude",
-    "value": "US$94.62 (-US$8.98, -8.7%; lowest since 31 August)",
-    "asAt": "5 November 2026",
-    "issue": "global",
-    "source": "ABC News live blog"
-   },
-   {
-    "label": "US crude (WTI)",
-    "value": "US$88.12 (-8.3%)",
-    "asAt": "5 November 2026",
-    "issue": "global",
-    "source": "ABC News live blog"
-   },
-   {
-    "label": "Gulf crude and product exports",
-    "value": "17.1m barrels a day in October (September 18.9m)",
-    "asAt": "October 2026",
-    "issue": "global",
-    "source": "ABC News live blog"
-   },
-   {
-    "label": "ASX 200",
-    "value": "+2.6% to 9,065 (Dow about +3%)",
-    "asAt": "5 November 2026",
-    "issue": "global",
-    "source": "ABC News live blog"
-   },
-   {
-    "label": "Woodside / Viva / Santos / Ampol shares",
-    "value": "-5.6% / -5.2% / -4.8% / -3.8%",
-    "asAt": "5 November 2026",
-    "issue": "trade",
-    "source": "ABC News live blog"
-   },
-   {
-    "label": "Gold",
-    "value": "about US$4,135 an ounce",
-    "asAt": "5 November 2026",
-    "issue": "global",
-    "source": "ABC News live blog"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Supply shock",
-    "def": "A sudden change in the cost or availability of a key input that shifts supply."
-   },
-   {
-    "term": "Price-inelastic demand",
-    "def": "Quantity demanded changes little when price changes, as with fuel in the short run."
-   }
-  ],
-  "links": [
-   [
-    "ABC News, ASX markets business live blog, 5 Nov 2026",
-    "https://www.abc.net.au/news/2026-11-05/asx-markets-business-live-news-november-5-2026/107347286"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-05-oil-plunge-after-midterms.pdf",
-   "label": "One-page digest",
-   "pages": 1
-  },
-  "angle": "For an oil importer like Australia, cheaper oil shifts SRAS right: lower cost-push inflation and a boost to real incomes. For energy exporters it means lower export income.",
-  "questions": [
-   {
-    "q": "Explain how a sustained fall in world oil prices would affect Australia's inflation rate.",
-    "marks": 4
-   },
-   {
-    "q": "Discuss why lower oil prices could hurt some parts of the Australian economy.",
-    "marks": 4
-   }
-  ],
-  "note": "Replaces the 4 November item (Brent US$100.40, WTI US$93.08, ING expecting eurozone inflation near 4%, Australian fuel spending +5.4% in September). Traders' expectation of an earlier end to the war is a market view, not an agreed deal. UPDATE DUE: any Hormuz agreement."
- },
- {
   "id": "2026-11-05-us-midterms-democrats-win-tariffs-stay",
   "title": "Democrats take Congress, but America's tariffs are likely to stay",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "Baker McKenzie",
@@ -740,6 +1568,7 @@
   "id": "2026-11-05-us-voters-reject-data-centres",
   "title": "US voters say no to data centres in their backyard",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "ABC News",
@@ -852,6 +1681,7 @@
   "id": "2026-11-05-aud-steady-near-70-cents",
   "title": "Dollar holds near 70 US cents as rates rise and commodities shift",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "stats",
   "outlets": [
    "ABC News",
@@ -983,6 +1813,7 @@
   "id": "2026-11-05-diesel-import-dependence",
   "title": "Diesel squeeze: Australia pays more to find new suppliers",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "The Conversation",
@@ -1142,6 +1973,7 @@
   "id": "2026-11-05-farrell-midterms-vindicate-anti-tariff-stance",
   "title": "Farrell: Trump's defeat proves tariffs hurt consumers",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "Australian Financial Review"
@@ -1244,6 +2076,7 @@
   "id": "2026-11-05-goods-trade-surplus-september",
   "title": "Goods trade surplus jumps to $2.8 billion as imports fall",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "stats",
   "outlets": [
    "ABS"
@@ -1373,6 +2206,7 @@
   "id": "2026-11-05-tech-giants-news-levy-ausfta",
   "title": "US tech giants push for trade retaliation over Australia's news levy",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "Australian Financial Review"
@@ -1472,6 +2306,7 @@
   "id": "2026-11-05-woodside-job-cuts-dividend-reset",
   "title": "Woodside cuts 500 jobs and its dividend as energy prices slide",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "ABC News",
@@ -1599,6 +2434,7 @@
   "id": "2026-11-05-cost-of-living-decided-us-midterms",
   "title": "Cost of living decided the US midterms. Is Labor next?",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "Australian Financial Review (opinion)"
@@ -1699,6 +2535,7 @@
   "id": "2026-11-05-david-jones-collapse",
   "title": "David Jones collapses after 188 years as spending slows",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "ABC News",
@@ -1832,6 +2669,7 @@
   "id": "2026-11-05-home-grown-inflation",
   "title": "Home-grown inflation: the RBA says the problem is here, not just overseas",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "AFR",
@@ -2015,6 +2853,7 @@
   "id": "2026-11-05-nab-profit-fall-bad-debts",
   "title": "NAB profit falls as bad debts surge and 2,500 jobs go",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "ABC News",
@@ -2134,6 +2973,7 @@
   "id": "2026-11-05-nsw-data-centre-electricity-demand",
   "title": "Data centres could use twice the power of every home in Sydney",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "Australian Financial Review"
@@ -2257,6 +3097,7 @@
   "id": "2026-11-05-rates-and-tax-hit-households",
   "title": "How the squeeze lands: mortgages, investors, shop floors and tech jobs",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "AFR",
@@ -2416,6 +3257,7 @@
   "id": "2026-11-05-accc-sets-armaguard-cash-prices",
   "title": "ACCC steps in to set prices for Armaguard's cash transport",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "Australian Financial Review"
@@ -2523,6 +3365,7 @@
   "id": "2026-11-05-budget-versus-inflation",
   "title": "Budget versus inflation: when fiscal and monetary policy pull in different directions",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "AFR"
@@ -2676,6 +3519,7 @@
   "id": "2026-11-05-hauser-denies-pressuring-rba-board",
   "title": "RBA deputy denies pre-empting the board's rate decision",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "Australian Financial Review"
@@ -2779,6 +3623,7 @@
   "id": "2026-11-05-pc-barred-from-tax-and-ir",
   "title": "Productivity inquiry barred from looking at tax and workplace laws",
   "date": "2026-11-05",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "Australian Financial Review"
@@ -2887,6 +3732,7 @@
   "id": "2026-11-04-uk-fta-backpacker-rules-migration",
   "title": "Albanese wants backpacker rules in the UK free trade deal changed to help cut migration",
   "date": "2026-11-04",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "ABC News"
@@ -2999,6 +3845,7 @@
   "id": "2026-11-04-household-spending-nominal-vs-real",
   "title": "Household spending rose 0.6% in September, but much of it was higher prices rather than more goods",
   "date": "2026-11-04",
+  "added": "2026-11-05",
   "type": "stats",
   "outlets": [
    "ABS",
@@ -3129,6 +3976,7 @@
   "id": "2026-11-04-job-vacancies-fall-ai",
   "title": "Job vacancies fall to 325,000, now 31% below their peak, and few businesses blame AI",
   "date": "2026-11-04",
+  "added": "2026-11-05",
   "type": "stats",
   "outlets": [
    "ABS",
@@ -3267,6 +4115,7 @@
   "id": "2026-11-04-inflation-politics-fiscal-reset",
   "title": "Analysis: after years of inflation pain, the political debate over the economy needs a reset",
   "date": "2026-11-04",
+  "added": "2026-11-05",
   "type": "news",
   "outlets": [
    "ABC News"

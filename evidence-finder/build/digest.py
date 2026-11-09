@@ -209,7 +209,8 @@ def cmd_collect(a):
     reported = state.get("reported", {})
     t = today()
     prefix = git("rev-parse", "--show-prefix").strip()
-    path_rel = prefix + "data/evidence.json"
+    path_rel = prefix + "data/evidence.json"          # repo-root path, for `git show <sha>:<path>`
+    log_path = "data/evidence.json"                    # path relative to evidence-finder, for `git -C ROOT log`
     base = a.site or os.environ.get("EVIDENCE_SITE_URL") or DEFAULT_SITE
     if not base.endswith("/"):
         base += "/"
@@ -232,7 +233,7 @@ def cmd_collect(a):
             added[r["id"]], added_from[r["id"]] = r["added"], "record"
     probe_from = (start - datetime.timedelta(days=45)).isoformat()
     probe = [r["id"] for r in missing if r.get("date", "") >= probe_from]
-    gd = git_added_dates(probe, path_rel) if probe else {}
+    gd = git_added_dates(probe, log_path) if probe else {}
     for rid, d in gd.items():
         added[rid], added_from[rid] = d, "git"
     if missing:
@@ -410,7 +411,7 @@ def cmd_stamp(a):
     recs = json.loads(text)
     prefix = git("rev-parse", "--show-prefix").strip()
     missing = [r for r in recs if not r.get("added")]
-    gd = git_added_dates([r["id"] for r in missing], prefix + "data/evidence.json")
+    gd = git_added_dates([r["id"] for r in missing], "data/evidence.json")
     plan = {}
     for r in missing:
         plan[r["id"]] = gd.get(r["id"]) or a.date or r.get("date")
