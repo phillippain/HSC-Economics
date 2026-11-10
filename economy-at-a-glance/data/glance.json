@@ -75,19 +75,19 @@
   "id": "cpi",
   "panel": "I",
   "label": "Headline CPI",
-  "display": "4.0%",
-  "period": "Aug 2026",
+  "display": "4.3%",
+  "period": "Sep 2026",
   "source": "ABS 6401",
-  "note": "Annual; up from **3.5%** in Jul. Above the 2–3% target band."
+  "note": "Annual; up from **4.0%** in Aug. Above the 2–3% target band."
  },
  {
   "id": "tmean",
   "panel": "I",
   "label": "Trimmed mean",
   "display": "3.6%",
-  "period": "Aug 2026",
+  "period": "Sep 2026",
   "source": "ABS 6401",
-  "note": "Underlying annual inflation; unchanged from **3.6%** in Jul (three months running)."
+  "note": "Underlying annual inflation; up from **3.5%** in Aug (revised down from 3.6%)."
  },
  {
   "id": "cash",
@@ -129,10 +129,10 @@
   "id": "bconf",
   "panel": "I",
   "label": "Business confidence",
-  "display": "−13",
-  "period": "Sep 2026",
+  "display": "−15",
+  "period": "Oct 2026",
   "source": "NAB Monthly Business Survey",
-  "note": "Index, down 4 pts from **−9**; conditions −1; capacity use 82.3%."
+  "note": "Index, down 1 pt from **−14** (Sep, revised from −13); conditions −2; capacity use 82.1%."
  },
  {
   "id": "profits",
@@ -255,10 +255,10 @@
   "id": "china",
   "panel": "XM",
   "label": "China growth",
-  "display": "4.3%",
-  "period": "Jun qtr 2026 (y/y)",
+  "display": "4.5%",
+  "period": "Sep qtr 2026 (y/y)",
   "source": "NBS",
-  "note": "Down from **5.0%** in Mar qtr; weakest since Dec 2022. IMF forecasts 4.5% for 2026."
+  "note": "Up from **4.3%** in Jun qtr; 4.6% over the first three quarters. IMF forecasts 4.5% for 2026."
  },
  {
   "id": "world",

@@ -9,24 +9,24 @@
   "bank": "United States (Fed, top of range)",
   "rate": 4.0,
   "label": "3.75–4.00%",
-  "date": "16 Sep 2026"
+  "date": "28 Oct 2026"
  },
  {
   "bank": "United Kingdom (BoE)",
-  "rate": 3.75,
-  "label": "3.75%",
-  "date": "17 Sep 2026"
+  "rate": 4.0,
+  "label": "4.00%",
+  "date": "5 Nov 2026"
  },
  {
   "bank": "Euro area (ECB)",
   "rate": 2.5,
   "label": "2.50%",
-  "date": "10 Sep 2026"
+  "date": "29 Oct 2026"
  },
  {
   "bank": "Japan (BoJ)",
   "rate": 1.25,
   "label": "1.25%",
-  "date": "18 Sep 2026"
+  "date": "30 Oct 2026"
  }
 ]
