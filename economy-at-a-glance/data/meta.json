@@ -1,6 +1,6 @@
 {
  "title": "Economy at a glance",
- "updated": "2026-11-11T15:27:45+00:00",
+ "updated": "2026-11-12T16:03:58+00:00",
  "weeklyCheck": "2026-11-11",
  "auto": {
   "unemp": {
@@ -60,19 +60,19 @@
    "by": "RBA statistical tables"
   },
   "audchg": {
-   "asOf": "2026-11-11",
+   "asOf": "2026-11-12",
    "by": "RBA statistical tables"
   },
   "audsc": {
-   "asOf": "2026-11-11",
+   "asOf": "2026-11-12",
    "by": "RBA statistical tables"
   },
   "twi": {
-   "asOf": "2026-11-11",
+   "asOf": "2026-11-12",
    "by": "RBA statistical tables"
   },
   "twisc": {
-   "asOf": "2026-11-11",
+   "asOf": "2026-11-12",
    "by": "RBA statistical tables"
   },
   "debtinc": {
