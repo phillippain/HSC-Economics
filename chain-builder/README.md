@@ -23,7 +23,7 @@ the booklet's economics paragraph ("a chain of cause and effect, in precise econ
 `data/chains.json` holds the twelve chains. Each has a `trigger`, an optional `stem` (links before the channels
 split), `strands` (the channels), an optional `tail` (links after they join) and an optional `overall` line.
 A link is `v` (what changes), `d` (`1` rises, `-1` falls, `0` neither) and `why`. `reverse` names the opposite
-trigger, or is `null` when the chain does not simply run backwards. `codes` are 2009 syllabus dot points.
+trigger, or is `null` when the chain does not simply run backwards. `codes` are 2009 syllabus dot points. `lab` names the matching diagram in the Macro Diagram Lab (`adas`, `fx`, `labour`, `lorenz`, `extern`) or `protection` for the Protection Diagram Lab.
 
 ```
 python3 chain-builder/build.py           # write index.html

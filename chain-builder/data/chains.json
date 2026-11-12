@@ -143,7 +143,8 @@
     "The exchange rate channel depends on what other central banks do with their rates.",
     "If people expect high inflation to continue, wages and prices keep rising for longer."
    ],
-   "diagram": "AD–AS diagram: AD shifts left from AD to AD₁, so the price level and real GDP both fall."
+   "diagram": "AD–AS diagram: AD shifts left from AD to AD₁, so the price level and real GDP both fall.",
+   "lab": "adas"
   },
   {
    "id": "fiscal-expansion",
@@ -234,7 +235,8 @@
     "When inflation is high, stimulus works against the RBA's monetary policy.",
     "Political constraints: spending is easy to start and hard to withdraw."
    ],
-   "diagram": "AD–AS diagram: AD shifts right from AD to AD₁, so real GDP and the price level both rise."
+   "diagram": "AD–AS diagram: AD shifts right from AD to AD₁, so real GDP and the price level both rise.",
+   "lab": "adas"
   },
   {
    "id": "depreciation",
@@ -346,7 +348,8 @@
     "If the depreciation was caused by lower commodity prices, the loss of export income can outweigh the benefit.",
     "Higher imported inflation may lead the RBA to raise interest rates."
    ],
-   "diagram": "Market for the Australian dollar: the supply of A$ shifts right (or demand shifts left), so the exchange rate falls from ER to ER₁."
+   "diagram": "Market for the Australian dollar: the supply of A$ shifts right (or demand shifts left), so the exchange rate falls from ER to ER₁.",
+   "lab": "fx"
   },
   {
    "id": "terms-of-trade-fall",
@@ -450,7 +453,8 @@
     "The size of the effect depends on how much of Australia's export base is commodities.",
     "Global influences are outside the control of Australian policy."
    ],
-   "diagram": "Market for the Australian dollar: demand for A$ shifts left, so the exchange rate falls from ER to ER₁."
+   "diagram": "Market for the Australian dollar: demand for A$ shifts left, so the exchange rate falls from ER to ER₁.",
+   "lab": "fx"
   },
   {
    "id": "tariff-cut",
@@ -554,7 +558,8 @@
     "Some industries may be kept for strategic or security reasons.",
     "Political constraints: the workers who lose are easy to see and the consumers who gain are not."
    ],
-   "diagram": "Tariff diagram: the price falls from Pw+t to Pw. Domestic output falls, consumption rises and imports increase."
+   "diagram": "Tariff diagram: the price falls from Pw+t to Pw. Domestic output falls, consumption rises and imports increase.",
+   "lab": "protection"
   },
   {
    "id": "wages-above-productivity",
@@ -651,7 +656,8 @@
     "After a period of falling real wages, a rise may only restore lost purchasing power.",
     "The RBA may raise the cash rate if wages growth threatens the inflation target."
    ],
-   "diagram": "AD–AS diagram: AS shifts left from AS to AS₁, so the price level rises and real GDP falls."
+   "diagram": "AD–AS diagram: AS shifts left from AS to AS₁, so the price level rises and real GDP falls.",
+   "lab": "adas"
   },
   {
    "id": "global-downturn",
@@ -754,7 +760,8 @@
     "The effect depends on which trading partner slows: China matters most for resource exports.",
     "Global influences limit what domestic policy can achieve."
    ],
-   "diagram": "AD–AS diagram: AD shifts left. Or the business cycle: Australia moving from an upswing into a downswing."
+   "diagram": "AD–AS diagram: AD shifts left. Or the business cycle: Australia moving from an upswing into a downswing.",
+   "lab": "adas"
   },
   {
    "id": "productivity-rise",
@@ -848,7 +855,8 @@
     "The gains may go to profits instead of wages or lower prices if markets are not competitive.",
     "Political constraints: the groups that lose from reform resist it."
    ],
-   "diagram": "AD–AS diagram: AS shifts right from AS to AS₁, so real GDP rises and the price level falls."
+   "diagram": "AD–AS diagram: AS shifts right from AS to AS₁, so real GDP rises and the price level falls.",
+   "lab": "adas"
   },
   {
    "id": "inflation-rise",
@@ -955,7 +963,8 @@
     "If trading partners have similar inflation, competitiveness is little changed.",
     "Low, stable inflation is the aim. Deflation carries costs of its own."
    ],
-   "diagram": "Phillips curve, or AD–AS showing the cause: AD shifting right (demand-pull) or AS shifting left (cost-push)."
+   "diagram": "Phillips curve, or AD–AS showing the cause: AD shifting right (demand-pull) or AS shifting left (cost-push).",
+   "lab": "adas"
   },
   {
    "id": "sustained-cad",
@@ -1186,7 +1195,8 @@
     "Demand for energy is not very responsive to price in the short run.",
     "Climate change is a global problem, so one country's action has limited effect alone."
    ],
-   "diagram": "Negative externality diagram: the carbon price lifts the private cost curve (MPC) up to the social cost curve (MSC), so output falls to the socially efficient level."
+   "diagram": "Negative externality diagram: the carbon price lifts the private cost curve (MPC) up to the social cost curve (MSC), so output falls to the socially efficient level.",
+   "lab": "extern"
   },
   {
    "id": "unemployment-rise",
@@ -1308,7 +1318,8 @@
     "Welfare payments and automatic stabilisers cushion the fall in consumption.",
     "Below the NAIRU, lower unemployment adds to inflation, which is a conflict between objectives."
    ],
-   "diagram": "AD–AS diagram: AD shifts left and real GDP falls below full-employment output. Or a production possibility frontier with a point inside it."
+   "diagram": "AD–AS diagram: AD shifts left and real GDP falls below full-employment output. Or a production possibility frontier with a point inside it.",
+   "lab": "adas"
   }
  ]
 }

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HSC Economics Macro Diagram Lab</title>
+<meta name="description" content="Interactive HSC Economics diagrams: AD–AS, the market for the Australian dollar, the labour market, the Lorenz curve and externalities. Shift the curves, predict the result, and write the sentence that explains it.">
+<style>
+/*__FONTS__*/
+:root{
+  --bg:#e8ecf4; --grid:rgba(36,71,214,.075); --grid2:rgba(36,71,214,.12);
+  --card:#ffffff; --card2:#f4f6fb; --ink:#0e1526; --mut:#4a5468; --rule:#d3d9e6; --rule2:#b9c2d6;
+  --acc:#2447d6; --acc-ink:#ffffff; --acc-soft:#e3e9fd;
+  --hl:#ffe14d; --hl-ink:#1b1600; --gap:#c93a22; --ok:#1c7d52;
+  --old:#8793a8; --new:#dc2626; --gold:#b7791f; --shade:rgba(220,38,38,.16); --shadeA:rgba(217,119,6,.20); --shadeB:rgba(36,71,214,.10);
+  --shadow:0 1px 0 rgba(14,21,38,.06),0 8px 24px -14px rgba(14,21,38,.25);
+  --head:'Bricolage Grotesque','Avenir Next','Segoe UI',system-ui,sans-serif;
+  --body:'Public Sans','Segoe UI',system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --bg:#0c1120; --grid:rgba(140,165,255,.06); --grid2:rgba(140,165,255,.10);
+  --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+  --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52;
+  --hl:#c9a900; --hl-ink:#fff7c8; --gap:#ff8b72; --ok:#59d39b;
+  --old:#7d8aa6; --new:#ff7a6b; --gold:#e6bd45; --shade:rgba(255,122,107,.2); --shadeA:rgba(230,189,69,.2); --shadeB:rgba(143,166,255,.12);
+  --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.6);
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0c1120; --grid:rgba(140,165,255,.06); --grid2:rgba(140,165,255,.10);
+    --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+    --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52;
+    --hl:#c9a900; --hl-ink:#fff7c8; --gap:#ff8b72; --ok:#59d39b;
+    --old:#7d8aa6; --new:#ff7a6b; --gold:#e6bd45; --shade:rgba(255,122,107,.2); --shadeA:rgba(230,189,69,.2); --shadeB:rgba(143,166,255,.12);
+    --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.6);
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:400 1rem/1.5 var(--body);color:var(--ink);background-color:var(--bg);
+  background-image:linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid2) 1px,transparent 1px),
+  linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:120px 120px,120px 120px,24px 24px,24px 24px;background-position:-1px -1px}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--acc)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px 60px}
+h1,h2,h3{font-family:var(--head);letter-spacing:-.015em;margin:0}
+p{margin:0}
+.mast{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;padding:18px 0 10px}
+.school{font-size:.78rem;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.mast h1{font-size:clamp(1.5rem,3.2vw,2.1rem);line-height:1.1}
+.mast .tag{color:var(--mut);font-size:.95rem;margin-top:2px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:9px;overflow:hidden;background:var(--card);flex-wrap:wrap}
+.seg button{border:0;background:none;padding:.42rem .75rem;font-size:.88rem;font-weight:600;color:var(--mut);border-right:1px solid var(--rule)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--acc);color:var(--acc-ink)}
+.tabs{display:flex;gap:4px;border-bottom:2px solid var(--rule2);margin:6px 0 16px;flex-wrap:wrap}
+.tab{border:0;background:none;padding:.55rem .9rem;font-family:var(--head);font-weight:700;font-size:1rem;color:var(--mut);border-bottom:3px solid transparent;margin-bottom:-2px}
+.tab[aria-selected="true"]{color:var(--acc);border-color:var(--acc)}
+.btn{display:inline-flex;gap:6px;align-items:center;border:1px solid var(--acc);background:var(--acc);color:var(--acc-ink);border-radius:8px;padding:.45rem .85rem;font-weight:600;font-size:.9rem;text-decoration:none}
+.btn.ghost{background:var(--card);color:var(--ink);border-color:var(--rule2)}
+.btn.ghost:hover{border-color:var(--acc);color:var(--acc)}
+.btn.sm{padding:.25rem .6rem;font-size:.82rem}
+.btn:disabled{opacity:.45;cursor:default}
+.sub{color:var(--mut);font-size:.93rem}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
+.pick{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px;margin-bottom:16px}
+.pk{text-align:left;background:var(--card);border:1px solid var(--rule);border-left:6px solid var(--tc);border-radius:10px;padding:.55rem .75rem}
+.pk:hover{border-color:var(--acc)}
+.pk[aria-pressed="true"]{background:var(--acc-soft);border-color:var(--acc)}
+.pk b{display:block;font-family:var(--head);line-height:1.2}
+.pk small{color:var(--mut);font-size:.78rem}
+.cols{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.9fr);gap:16px;align-items:start}
+.cols>*{min-width:0}
+@media (max-width:920px){.cols{grid-template-columns:1fr}}
+figure{margin:0}
+svg.dg{width:100%;height:auto;display:block;background:var(--card);border-radius:10px}
+svg.dg text{font-family:var(--body);fill:var(--ink)}
+svg.dg .ax{stroke:var(--ink);stroke-width:2;fill:none}
+svg.dg .axt{font-size:14px;font-weight:600;fill:var(--mut)}
+svg.dg .cv{stroke-width:3;fill:none;stroke-linecap:round}
+svg.dg .c-main{stroke:var(--tc)}.c-old{stroke:var(--old)}.c-new{stroke:var(--new)}.c-ink{stroke:var(--ink)}.c-gold{stroke:var(--gold)}
+svg.dg .gd{stroke-width:1.4;stroke-dasharray:5 4;fill:none}
+svg.dg .lb{font-size:15px;font-weight:700}
+svg.dg .al{font-size:14px;font-weight:700}
+svg.dg .f-main{fill:var(--tc)}.f-old{fill:var(--old)}.f-new{fill:var(--new)}.f-ink{fill:var(--ink)}.f-gold{fill:var(--gold)}
+svg.dg .nt{font-size:12.5px;font-weight:600}
+svg.dg circle.pt{stroke:var(--card);stroke-width:2}
+.sent{border-left:5px solid var(--ok);background:var(--card2);border-radius:0 10px 10px 0;padding:10px 14px;margin-top:12px}
+.sent small{display:block;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:.72rem;color:var(--mut);margin-bottom:2px}
+.ctl{display:grid;gap:12px}
+.ctl h3{font-size:1rem}
+.sl{display:grid;gap:2px}
+.sl label{display:flex;justify-content:space-between;gap:10px;font-weight:600;font-size:.9rem}
+.sl label span{color:var(--mut);font-weight:400}
+.sl input[type=range]{width:100%;accent-color:var(--acc)}
+.sl .ends{display:flex;justify-content:space-between;font-size:.74rem;color:var(--mut)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.row label{font-size:.88rem;display:inline-flex;gap:6px;align-items:center}
+.fac{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:.84rem}
+@media (max-width:520px){.fac{grid-template-columns:1fr}}
+.fac div{border:1px solid var(--rule);border-radius:8px;padding:6px 9px}
+.fac b{display:block;font-size:.8rem}
+.fac ul{margin:2px 0 0;padding-left:1.05em}
+details{border:1px solid var(--rule);border-radius:10px;padding:8px 12px;font-size:.9rem}
+details summary{cursor:pointer;font-weight:700;font-family:var(--head)}
+details ul{margin:6px 0 2px;padding-left:1.1em}
+.links{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.86rem;margin-top:10px}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+td,th{border-bottom:1px solid var(--rule);padding:4px 6px;text-align:left}
+th{font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mut)}
+td.n{text-align:right;font-variant-numeric:tabular-nums}
+/* scenarios */
+.sc{border-left:6px solid var(--tc);background:var(--card2);border-radius:10px;padding:12px 14px;font-size:1.08rem;margin:8px 0 12px}
+.q{margin-bottom:10px}
+.q>b{display:block;font-size:.9rem;margin-bottom:4px}
+.q .seg button.right{background:var(--ok);color:#fff}
+.q .seg button.wrong{background:var(--gap);color:#fff}
+.fb{margin-top:10px;font-size:.95rem}
+.score{font:800 1.8rem var(--head)}
+.dots{display:flex;gap:5px;flex-wrap:wrap;margin:4px 0 10px}
+.dots i{width:12px;height:12px;border-radius:50%;background:var(--rule2)}
+.dots i.y{background:var(--ok)}.dots i.n{background:var(--gap)}.dots i.cur{outline:2px solid var(--acc);outline-offset:2px}
+.foot{color:var(--mut);font-size:.82rem;margin-top:26px;border-top:1px solid var(--rule2);padding-top:12px}
+.view{display:none}.view.on{display:block}
+body.embed .school{display:none}
+@media print{.tabs,.pick,.smbar,.foot,.ctl,.noprint{display:none!important} body{background:#fff} .cols{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<!-- SITEMENU:START built by build/build_sitemenu.py; edit the list of tools there, not here -->
+<style>
+.smbar{display:flex;justify-content:flex-end;padding:10px 20px 0;font-family:'Public Sans','Segoe UI',system-ui,-apple-system,sans-serif}
+.smw{display:inline-flex;gap:8px;align-items:center;font-size:13px;line-height:1.3}
+.sm{position:relative;display:inline-block;text-align:left}
+.smw svg{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sm-btn{list-style:none;cursor:pointer;display:inline-flex;gap:7px;align-items:center;background:#ffd24a;color:#1a1d2b;border-radius:999px;padding:6px 13px;font-weight:700;white-space:nowrap;text-decoration:none;user-select:none;-webkit-user-select:none}
+.sm-btn::-webkit-details-marker{display:none}
+.sm-btn:hover{background:#ffe07a}
+.sm-btn:focus-visible{outline:3px solid #2447d6;outline-offset:2px}
+.sm[open] .sm-caret{transform:rotate(180deg)}
+.sm-list{position:fixed;top:0;left:0;z-index:1000;width:min(340px,calc(100vw - 16px));max-height:calc(100vh - 90px);overflow:auto;background:#fff;color:#1a1d2b;border:1px solid #dcdfea;border-radius:14px;box-shadow:0 12px 34px rgba(10,14,40,.3);padding:8px;display:flex;flex-direction:column;gap:1px;font-weight:400}
+.sm:not([open]) .sm-list{display:none}
+.sm-h{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#5a6072;padding:8px 10px 3px}
+.sm-a{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:center;padding:7px 10px;border-radius:9px;color:inherit;text-decoration:none}
+.sm-a svg{font-size:18px;color:#2447d6}
+.sm-a b{display:block;font-size:14px;font-weight:700;color:inherit}
+.sm-a em{display:block;font-style:normal;font-size:12px;color:#5a6072}
+a.sm-a:hover,a.sm-a:focus-visible{background:#e3e9fd;outline:none}
+.sm-cur{background:#fff3c9}
+.sm-cur em{color:#7d5f00;font-weight:700}
+.sm-ext{border-top:1px solid #dcdfea;margin-top:6px;padding-top:10px;border-radius:0 0 9px 9px}
+@media print{.smbar{display:none !important}}
+:root[data-theme="dark"] .sm-list{background:#151c30;color:#e9eefb;border-color:#27304b}
+:root[data-theme="dark"] .sm-h,:root[data-theme="dark"] .sm-a em{color:#a2aec9}
+:root[data-theme="dark"] .sm-a svg{color:#8fa6ff}
+:root[data-theme="dark"] a.sm-a:hover,:root[data-theme="dark"] a.sm-a:focus-visible{background:#212c52}
+:root[data-theme="dark"] .sm-cur{background:#3a3010}
+:root[data-theme="dark"] .sm-cur em{color:#e6bd45}
+:root[data-theme="dark"] .sm-ext{border-color:#27304b}
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]) .sm-list{background:#151c30;color:#e9eefb;border-color:#27304b}
+:root:not([data-theme="light"]) .sm-h,:root:not([data-theme="light"]) .sm-a em{color:#a2aec9}
+:root:not([data-theme="light"]) .sm-a svg{color:#8fa6ff}
+:root:not([data-theme="light"]) a.sm-a:hover,:root:not([data-theme="light"]) a.sm-a:focus-visible{background:#212c52}
+:root:not([data-theme="light"]) .sm-cur{background:#3a3010}
+:root:not([data-theme="light"]) .sm-cur em{color:#e6bd45}
+:root:not([data-theme="light"]) .sm-ext{border-color:#27304b}
+}
+</style>
+<div class="smbar"><span class="smw"><a class="sm-btn sm-home" href="https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/home" aria-label="Home: back to the HSC Economics website"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg>Home</a>
+<details class="sm" id="sitemenu"><summary class="sm-btn" aria-label="Other tools: open the list of HSC Economics tools"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>Other tools<svg class="sm-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="sm-list">
+  <span class="sm-h">Finders</span>
+  <a class="sm-a" href="../hsc-question-finder-site/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.5 12h6M9.5 16h6"/></svg><span><b>Question Finder</b><em>Every HSC question, 2002 to 2025</em></span></a>
+  <a class="sm-a" href="../evidence-finder/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></svg><span><b>Evidence Finder</b><em>News, statistics and reports by dot point</em></span></a>
+  <span class="sm-h">Writing and skills</span>
+  <a class="sm-a" href="../essay-builder/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/></svg><span><b>Extended Response Builder</b><em>Plan a Section II, III or IV answer</em></span></a>
+  <a class="sm-a" href="../chain-builder/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="12" r="2.5"/><path d="M7.5 12h9M13.5 9l3 3-3 3"/></svg><span><b>Chain Builder</b><em>Cause and effect, one link at a time</em></span></a>
+  <span class="sm-a sm-cur" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7 7l11 9M7 17l11-9"/><circle cx="12.5" cy="12" r="1.6"/></svg><span><b>Macro Diagram Lab</b><em>You are here</em></span></span>
+  <a class="sm-a" href="../protection-explainer/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M7.5 20h9M5 7h14M5 7l-3 7a3 3 0 006 0zM19 7l-3 7a3 3 0 006 0z"/></svg><span><b>Who Wins from Protection</b><em>Tariffs, quotas and subsidies explained</em></span></a>
+  <a class="sm-a" href="../diagram-lab/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7 8l10 9M7 17l10-9"/></svg><span><b>Protection Diagram Lab</b><em>Experiment, predict and build the diagram</em></span></a>
+  <span class="sm-h">Reference</span>
+  <a class="sm-a" href="../economy-at-a-glance/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M21 20H3"/></svg><span><b>Economy at a Glance</b><em>The latest Australian indicators</em></span></a>
+  <a class="sm-a" href="../glossary/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5c3-1 6-1 8 1 2-2 5-2 8-1v13c-3-1-6-1-8 1-2-2-5-2-8-1zM12 6v13"/></svg><span><b>Economics Glossary</b><em>Key terms, flashcards and a quiz</em></span></a>
+  <a class="sm-a" href="../mind-map/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 000-6H9a3 3 0 010-6h6.5"/></svg><span><b>Topic Map</b><em>See how the course fits together</em></span></a>
+  <a class="sm-a sm-ext" href="https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg><span><b>HSC Economics website</b><em>Back to the main class site</em></span></a>
+</div></details></span></div>
+<script>(function(){var d=document.getElementById('sitemenu');if(!d)return;var s=d.querySelector('summary'),l=d.querySelector('.sm-list');var framed=false;try{framed=window.self!==window.top}catch(e){framed=true}if(framed)d.parentNode.querySelectorAll('a').forEach(function(a){a.target='_blank';a.rel='noopener'});function place(){var b=s.getBoundingClientRect(),w=l.offsetWidth,x=Math.min(Math.max(8,b.right-w),window.innerWidth-w-8),y=b.bottom+8;l.style.left=x+'px';l.style.top=y+'px';l.style.maxHeight=Math.max(160,window.innerHeight-y-12)+'px'}function shut(){if(d.open)d.open=false}d.addEventListener('toggle',function(){if(d.open)place()});document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))shut()});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){shut();s.focus()}});window.addEventListener('scroll',shut,{passive:true});window.addEventListener('resize',shut)})();</script>
+<!-- SITEMENU:END -->
+<div class="wrap">
+<header class="mast">
+  <div>
+    <p class="school">Sydney Secondary College, Blackwattle Bay Campus</p>
+    <h1>Macro Diagram Lab</h1>
+    <p class="tag">Shift the curves, predict the result, and write the sentence that explains the diagram</p>
+  </div>
+  <div class="row"><span class="sub" id="lsl">Curve labels</span><div class="seg" id="lstyle" role="group" aria-labelledby="lsl"></div></div>
+</header>
+<nav class="tabs" role="tablist" aria-label="Views">
+  <button class="tab" role="tab" data-view="experiment">Experiment</button>
+  <button class="tab" role="tab" data-view="scenarios">Scenarios</button>
+</nav>
+<main>
+<div class="pick" id="pick" role="group" aria-label="Choose a diagram"></div>
+<section class="view" id="v-experiment"></section>
+<section class="view" id="v-scenarios"></section>
+</main>
+<p class="foot">These diagrams are conceptual and not to scale: the numbers behind them only keep the curves consistent. In an exam, draw large, give the diagram a title, label both axes and every curve, mark the before and after points, and refer to the diagram in your writing before you draw it. For tariffs, quotas and subsidies use the <a href="../diagram-lab/">Protection Diagram Lab</a>.</p>
+</div>
+<script>
+(function(){
+'use strict';
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const params = new URLSearchParams(location.search);
+if (params.get('embed') === '1') document.body.classList.add('embed');
+if (['light','dark'].includes(params.get('theme'))) document.documentElement.dataset.theme = params.get('theme');
+const framed = (() => { try { return window.self !== window.top; } catch (e) { return true; } })();
+const ext = framed ? ' target="_blank" rel="noopener"' : '';
+const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
+const TC = { T2: '#0d9488', T3: '#d97706', T4: '#7c3aed' };
+
+/* ---------- labels: AD₁ → AD₂ (house diagram style) or AD → AD₁ ---------- */
+let LS = store.get('econ-mdl-labels') === 'plain' ? 'plain' : 'num';
+const SUBS = ['', '₁', '₂', '₃'];
+const L = (base, n) => base + (LS === 'num' ? SUBS[n] : SUBS[n - 1]);
+
+/* ---------- geometry: data space 0–100 on both axes ---------- */
+const GM = { l: 70, t: 34, w: 430, h: 330, W: 580, H: 440 };
+const fmt = t => { const i = String(t).indexOf('_'); return i < 0 ? esc(t) : esc(t.slice(0, i)) + `<tspan dy="4" font-size="11">${esc(t.slice(i + 1))}</tspan>`; };
+const X = v => GM.l + v / 100 * GM.w, Y = v => GM.t + GM.h - v / 100 * GM.h;
+const M = 0.8;
+const down = s => x => 90 - M * (x - s);
+const up = (s, yo) => x => 10 + (yo || 0) + M * (x - s);
+const meet = (sD, sS, yo) => { const x = (80 - (yo || 0)) / (2 * M) + (sD + sS) / 2; return { x, y: 90 - M * (x - sD) }; };
+const r1 = v => Math.round(v * 10) / 10;
+function seg(f) { let a = 2, b = 98; const k = (f(100) - f(0)) / 100, y0 = f(0), lo = 4, hi = 97;
+  if (k !== 0) { const x1 = (lo - y0) / k, x2 = (hi - y0) / k; a = Math.max(a, Math.min(x1, x2)); b = Math.min(b, Math.max(x1, x2)); }
+  return [a, f(a), b, f(b)]; }
+function Svg(title, ylab, xlab) { const parts = [], ylabels = [], xlabels = []; let spanUsed = false;
+  const api = {
+    raw: s => parts.push(s),
+    line(f, label, c, opt) { const [a, ya, b, yb] = seg(f), o = opt || {}; parts.push(`<path class="cv c-${c}" d="M${r1(X(a))} ${r1(Y(ya))}L${r1(X(b))} ${r1(Y(yb))}"${o.dash ? ' stroke-dasharray="9 6"' : ''}/>`);
+      if (label) { const rising = yb > ya, lx = X(b) + (o.lx || 6), ly = Y(yb) + (rising ? -6 : 16) + (o.ly || 0); parts.push(`<text class="lb f-${c}" x="${r1(lx)}" y="${r1(ly)}" text-anchor="${o.anchor || 'start'}">${esc(label)}</text>`); } },
+    vline(x, label, c, anchor) { parts.push(`<path class="cv c-${c}" d="M${r1(X(x))} ${Y(3)}V${Y(98)}"/><text class="lb f-${c}" x="${r1(X(x)) + (anchor === 'end' ? -5 : anchor === 'start' ? 5 : 0)}" y="${Y(98) - 7}" text-anchor="${anchor || 'middle'}">${esc(label)}</text>`); },
+    hline(y, x1, label, c, dash) { parts.push(`<path class="cv c-${c}" d="M${X(0)} ${r1(Y(y))}H${r1(X(x1))}" ${dash ? 'stroke-dasharray="9 6"' : ''} style="stroke-width:2.4"/>` + (label ? `<text class="nt f-${c}" x="${r1(X(x1)) + 6}" y="${r1(Y(y)) + 4}">${esc(label)}</text>` : '')); },
+    point(p, xl, yl, c) { parts.push(`<path class="gd c-${c}" d="M${X(0)} ${r1(Y(p.y))}H${r1(X(p.x))}V${Y(0)}"/><circle class="pt f-${c}" cx="${r1(X(p.x))}" cy="${r1(Y(p.y))}" r="5.5"/>`); if (yl) ylabels.push({ v: Y(p.y), t: yl, c }); if (xl) xlabels.push({ v: X(p.x), t: xl, c }); },
+    drop(x, y, xl, c) { parts.push(`<path class="gd c-${c}" d="M${r1(X(x))} ${r1(Y(y))}V${Y(0)}"/>`); if (xl) xlabels.push({ v: X(x), t: xl, c }); },
+    ylab(y, t, c) { ylabels.push({ v: Y(y), t, c }); },
+    arrow(x1, y1, x2, y2, c) { const dx = X(x2) - X(x1), dy = Y(y2) - Y(y1), len = Math.hypot(dx, dy); if (len < 16) return; const ux = dx / len, uy = dy / len, ex = X(x2), ey = Y(y2), hx = ex - ux * 9, hy = ey - uy * 9;
+      parts.push(`<path class="c-${c}" style="stroke-width:2.2;fill:none" d="M${r1(X(x1))} ${r1(Y(y1))}L${r1(hx)} ${r1(hy)}"/><path class="f-${c}" d="M${r1(ex)} ${r1(ey)}L${r1(hx - uy * 5)} ${r1(hy + ux * 5)}L${r1(hx + uy * 5)} ${r1(hy - ux * 5)}Z"/>`); },
+    span(x1, x2, label, c) { const a = X(Math.min(x1, x2)), b = X(Math.max(x1, x2)), y = Y(0) + 34; if (b - a < 14) return; spanUsed = true;
+      parts.push(`<path class="c-${c}" style="stroke-width:2;fill:none" d="M${r1(a) + 6} ${y}H${r1(b) - 6}"/><path class="f-${c}" d="M${r1(a)} ${y}l8 -4.5v9zM${r1(b)} ${y}l-8 -4.5v9z"/><text class="nt f-${c}" x="${r1((a + b) / 2)}" y="${y + 16}" text-anchor="middle">${esc(label)}</text>`); },
+    poly(pts, fill) { parts.unshift(`<path d="M${pts.map(p => r1(X(p[0])) + ' ' + r1(Y(p[1]))).join('L')}Z" style="fill:${fill};stroke:none"/>`); },
+    note(x, y, t, c, anchor) { parts.push(`<text class="nt f-${c || 'ink'}" x="${r1(X(x))}" y="${r1(Y(y))}" text-anchor="${anchor || 'middle'}">${esc(t)}</text>`); },
+    out(aria) { const spread = (arr, gap) => { arr.sort((a, b) => a.v - b.v); for (let k = 0; k < 4; k++) for (let i = 1; i < arr.length; i++) { const d = arr[i].v - arr[i - 1].v; if (d < gap) { const m = (gap - d) / 2; arr[i - 1].v -= m; arr[i].v += m; } } return arr; };
+      const yl = spread(ylabels, 17).map(a => `<text class="al f-${a.c}" x="${X(0) - 9}" y="${r1(a.v) + 5}" text-anchor="end">${fmt(a.t)}</text>`).join('');
+      const xl = spread(xlabels, 30).map(a => `<text class="al f-${a.c}" x="${r1(a.v)}" y="${Y(0) + 20}" text-anchor="middle">${fmt(a.t)}</text>`).join('');
+      return `<svg class="dg" viewBox="0 0 ${GM.W} ${GM.H}" role="img" aria-label="${esc(aria || title)}"><path class="ax" d="M${X(0)} ${Y(100)}V${Y(0)}H${X(100)}"/>
+        <text class="axt" x="10" y="${Y(100) - 14}">${esc(ylab)}</text><text class="axt" x="${X(100)}" y="${Y(0) + (spanUsed ? 70 : 44)}" text-anchor="end">${esc(xlab)}</text>${parts.join('')}${yl}${xl}</svg>`; } };
+  return api; }
+
+/* ---------- diagram definitions ---------- */
+const word = (d, up_, dn) => d > 0 ? up_ : dn;
+const DG = {
+  adas: { name: 'AD–AS', sub: 'Growth, inflation and policy', topic: 'T4', tl: 'Topics 3 and 4', kind: 'shift', ylab: 'Price level', xlab: 'Real GDP', yv: 'P', xv: 'Y', yname: 'the price level', xname: 'real GDP', dn: 'AD', un: 'SRAS',
+    chain: ['cash-rate-rise', 'The RBA raises the cash rate'], terms: ['aggregate-demand', 'aggregate-supply'],
+    fac: { dn: { r: ['Lower interest rates', 'Tax cuts or higher government spending', 'Stronger consumer or business confidence', 'Stronger export demand or a lower dollar'], l: ['Higher interest rates', 'Tax rises or spending cuts', 'Weaker confidence', 'A global downturn or a higher dollar'] },
+           up: { r: ['Lower wages or input costs', 'Higher productivity', 'Lower oil and energy prices', 'A higher dollar cutting import costs'], l: ['Wages rising faster than productivity', 'Higher oil and energy prices', 'A lower dollar raising import costs', 'Supply disruptions'] } },
+    check: ['Title: for example “Figure 1: A fall in aggregate demand”.', 'Vertical axis: Price level. Horizontal axis: Real GDP (or Output, Y).', 'Label AD and SRAS, and number the curve that shifts.', 'Mark both equilibrium points with dashed lines to both axes.', 'Add LRAS when the question is about capacity, full employment or long-run growth.'],
+    sc: [
+      ['The RBA cuts the cash rate, and households and firms borrow and spend more.', 'dn', 1, 'Lower interest rates lift consumption and investment, which are components of AD.'],
+      ['A conflict overseas doubles the world price of oil.', 'up', -1, 'Higher energy costs raise the cost of production across the economy: a negative supply shock.'],
+      ['The government cuts its spending to return the budget to surplus.', 'dn', -1, 'Government spending is a component of AD, so contractionary fiscal policy shifts AD left.'],
+      ['Microeconomic reform raises productivity and lowers firms’ unit costs.', 'up', 1, 'Lower costs let firms supply more at each price level.'],
+      ['A recession in China cuts demand for Australian exports.', 'dn', -1, 'Net exports are a component of AD.'],
+      ['Wages rise much faster than productivity.', 'up', -1, 'Higher unit labour costs reduce what firms will supply at each price level: cost-push inflation.'],
+      ['Consumer confidence jumps after a run of good economic news.', 'dn', 1, 'Households spend more of their income, raising consumption.']] },
+  fx: { name: 'Market for the Australian dollar', sub: 'Appreciation and depreciation', topic: 'T2', tl: 'Topic 2', kind: 'shift', ylab: 'Price of A$ (in US$)', xlab: 'Quantity of A$', yv: 'ER', xv: 'Q', yname: 'the exchange rate', xname: 'the quantity of A$ traded', dn: 'D', un: 'S',
+    chain: ['depreciation', 'The Australian dollar depreciates'], terms: ['appreciation', 'depreciation', 'floating-exchange-rate'],
+    fac: { dn: { r: ['Higher commodity prices or export volumes', 'Australian interest rates rise relative to overseas', 'More foreign investment in Australia', 'Speculators expect the dollar to rise'], l: ['Lower commodity prices or export volumes', 'Australian interest rates fall relative to overseas', 'Less foreign investment in Australia', 'Speculators expect the dollar to fall'] },
+           up: { r: ['Australians buy more imports', 'Australians invest more overseas', 'More income paid to overseas lenders and owners', 'Speculators sell the dollar'], l: ['Australians buy fewer imports', 'Australians invest less overseas', 'Less overseas travel by Australians', 'Speculators hold on to the dollar'] } },
+    check: ['Title: for example “Figure 1: A depreciation of the Australian dollar”.', 'Vertical axis: Price of A$ in terms of US$ (or the TWI). Horizontal axis: Quantity of A$.', 'Demand for A$ comes from people who need A$: buyers of exports and foreign investors.', 'Supply of A$ comes from people selling A$: buyers of imports and Australians investing overseas.', 'A higher exchange rate is an appreciation; a lower one is a depreciation.'],
+    sc: [
+      ['The world price of iron ore rises sharply.', 'dn', 1, 'Overseas buyers need more Australian dollars to pay for the same exports.'],
+      ['Australian households buy many more imported cars.', 'up', 1, 'Importers sell Australian dollars to buy foreign currency.'],
+      ['Overseas investors rush to buy Australian shares and bonds.', 'dn', 1, 'Foreign investors must buy Australian dollars first: capital inflow.'],
+      ['Far fewer international students enrol at Australian universities.', 'dn', -1, 'Education is an export of services, so fewer students means less demand for the dollar.'],
+      ['Australian superannuation funds move more of their money into US shares.', 'up', 1, 'The funds sell Australian dollars to buy US dollars: capital outflow.'],
+      ['Australians cut back on overseas holidays.', 'up', -1, 'Fewer Australian dollars are sold for foreign currency.'],
+      ['Speculators expect the dollar to fall and sell it now.', 'up', 1, 'Selling ahead of an expected fall increases the supply of the dollar.']] },
+  labour: { name: 'Labour market', sub: 'Wages, employment and the minimum wage', topic: 'T3', tl: 'Topics 3 and 4', kind: 'shift', ylab: 'Wage rate', xlab: 'Quantity of labour', yv: 'W', xv: 'Q', yname: 'the wage rate', xname: 'employment', dn: 'D', un: 'S',
+    chain: ['wages-above-productivity', 'Wages grow faster than productivity'], terms: ['unemployment', 'participation-rate', 'national-minimum-wage'],
+    fac: { dn: { r: ['Economic growth: demand for labour is derived from demand for output', 'Higher labour productivity', 'Lower on-costs such as payroll tax'], l: ['A recession', 'Technology replacing workers', 'Higher on-costs'] },
+           up: { r: ['Immigration of working-age people', 'A higher participation rate', 'Population growth'], l: ['An ageing population and retirements', 'A lower participation rate', 'Longer time spent in education'] } },
+    check: ['Title: for example “Figure 1: A minimum wage above the equilibrium wage”.', 'Vertical axis: Wage rate. Horizontal axis: Quantity of labour.', 'Demand for labour comes from firms; supply of labour comes from households.', 'A minimum wage is a horizontal line above the equilibrium wage.', 'Unemployment is the gap between the quantity supplied and the quantity demanded at that wage.'],
+    sc: [
+      ['Strong economic growth lifts demand for goods and services.', 'dn', 1, 'The demand for labour is derived from the demand for what labour produces.'],
+      ['Immigration of working-age people increases.', 'up', 1, 'More people are available to work at each wage.'],
+      ['The economy falls into recession.', 'dn', -1, 'Firms need fewer workers when sales fall: cyclical unemployment.'],
+      ['A large share of the workforce reaches retirement age.', 'up', -1, 'Fewer people are available to work at each wage.'],
+      ['Cheaper childcare lifts the participation rate.', 'up', 1, 'More parents are able to offer their labour.'],
+      ['Firms adopt software that does the work of clerical staff.', 'dn', -1, 'In the market for clerical workers, firms need fewer people: structural unemployment.']] },
+  lorenz: { name: 'Lorenz curve', sub: 'Distribution of income and wealth', topic: 'T3', tl: 'Topic 3', kind: 'lorenz', chain: null, terms: ['lorenz-curve', 'gini-coefficient'],
+    check: ['Title: for example “Figure 1: Lorenz curves for income and wealth in Australia”.', 'Horizontal axis: Cumulative % of households (or population). Vertical axis: Cumulative % of income (or wealth).', 'Draw the 45° line of equality first.', 'Label the area between the line and the curve A, and the area under the curve B.', 'Gini coefficient = A ÷ (A + B). 0 is perfect equality; 1 is perfect inequality.', 'The further the curve bows from the line, the more unequal the distribution.'],
+    sc: [
+      ['The income tax scales are made more progressive.', -1, 'Higher earners pay a larger share of their income, so disposable income is spread more evenly.'],
+      ['The government raises the JobSeeker payment.', -1, 'Transfer payments lift the incomes of the lowest quintile.'],
+      ['Unemployment rises sharply in a recession.', 1, 'Job losses fall mainly on lower-income households.'],
+      ['Share and property prices boom.', 1, 'Assets are owned mostly by the highest quintile, so their income and wealth grow fastest.'],
+      ['The minimum wage is raised and employment does not fall.', -1, 'The lowest-paid workers receive a larger share of total income.']] },
+  extern: { name: 'Negative externality', sub: 'Market failure and the environment', topic: 'T4', tl: 'Topics 3 and 4', kind: 'extern', chain: ['carbon-price', 'A price is put on carbon emissions'], terms: ['externalities', 'market-failure', 'social-cost'],
+    check: ['Title: for example “Figure 1: A negative externality in production”.', 'Vertical axis: Price / cost. Horizontal axis: Quantity.', 'Label demand (D), the private cost curve (MPC, the market supply) and the social cost curve (MSC).', 'MSC sits above MPC by the size of the external cost.', 'Mark the market output and the smaller socially efficient output.', 'A tax equal to the external cost moves the market to the efficient output.'],
+    sc: [
+      ['Coal-fired electricity causes pollution, and there is no government policy.', { e: 24, t: 0 }, 'above', 'below', 'Producers ignore the external cost, so the market price is too low and too much is produced.'],
+      ['The government sets a tax exactly equal to the external cost.', { e: 24, t: 24 }, 'equal', 'equal', 'The tax makes producers pay the full social cost: the externality is internalised.'],
+      ['The government sets a tax of half the external cost.', { e: 24, t: 12 }, 'above', 'below', 'Output falls, but not far enough: part of the external cost is still ignored.'],
+      ['The government sets a tax larger than the external cost.', { e: 16, t: 30 }, 'below', 'above', 'The tax over-corrects: output is cut below the efficient level.']] }
+};
+const IDS = Object.keys(DG);
+const S = { view: 'experiment', d: 'adas', st: {} };
+const fresh = id => DG[id].kind === 'shift' ? { sD: 0, sS: 0, lras: id === 'adas' ? false : undefined, sL: 0, mw: 0 } : DG[id].kind === 'lorenz' ? { g: 0.31, g0: null } : { e: 24, t: 0, dwl: true };
+IDS.forEach(id => S.st[id] = fresh(id));
+
+/* ---------- drawing ---------- */
+function drawShift(id, st, opt) { const d = DG[id], o = opt || {}, sv = Svg(d.name, d.ylab, d.xlab), e1 = meet(0, 0), e2 = meet(st.sD, st.sS), moved = st.sD !== 0 || st.sS !== 0, hide = o.hideNew;
+  sv.raw(`<g style="--tc:${TC[d.topic]}">`);
+  if (st.lras) { if (st.sL) { sv.vline(50, L('LRAS', 1), 'old', st.sL > 0 ? 'end' : 'start'); sv.vline(50 + st.sL, L('LRAS', 2), 'new', st.sL > 0 ? 'start' : 'end'); sv.arrow(50 + Math.sign(st.sL) * 2, 88, 50 + st.sL - Math.sign(st.sL) * 2, 88, 'new'); } else sv.vline(50, 'LRAS', 'ink'); }
+  const showD2 = st.sD && !hide, showS2 = st.sS && !hide;
+  sv.line(down(0), showD2 ? L(d.dn, 1) : d.dn, showD2 ? 'old' : 'main'); sv.line(up(0), showS2 ? L(d.un, 1) : d.un, showS2 ? 'old' : 'main');
+  if (showD2) { sv.line(down(st.sD), L(d.dn, 2), 'new'); const y = 72, x0 = (90 - y) / M; sv.arrow(x0 + Math.sign(st.sD) * 2.5, y, x0 + st.sD - Math.sign(st.sD) * 2.5, y, 'new'); }
+  if (showS2) { sv.line(up(st.sS), L(d.un, 2), 'new'); const y = 28, x0 = (y - 10) / M; sv.arrow(x0 + Math.sign(st.sS) * 2.5, y, x0 + st.sS - Math.sign(st.sS) * 2.5, y, 'new'); }
+  const two = moved && !hide;
+  sv.point(e1, two ? L(d.xv, 1) : d.xv, two ? L(d.yv, 1) : d.yv, two ? 'old' : 'ink');
+  if (two) sv.point(e2, L(d.xv, 2), L(d.yv, 2), 'new');
+  if (st.mw && !hide) { const eq = two ? e2 : e1, w = eq.y + st.mw, qd = st.sD + (90 - w) / M, qs = st.sS + (w - 10) / M;
+    sv.hline(w, Math.min(qs + 4, 98), 'Minimum wage', 'gold'); sv.ylab(w, 'W_min', 'gold'); sv.drop(qd, w, 'Q_d', 'gold'); sv.drop(qs, w, 'Q_s', 'gold'); sv.span(qd, qs, 'Unemployment', 'gold'); }
+  sv.raw('</g>'); return sv.out(o.aria); }
+function shiftSentence(id, st) { const d = DG[id], e1 = meet(0, 0), e2 = meet(st.sD, st.sS), parts = [];
+  const mv = (n, s) => `${n} shifts ${s > 0 ? 'right' : 'left'} from ${L(n, 1)} to ${L(n, 2)}`;
+  if (!st.sD && !st.sS) { parts.push(st.mw ? `Without a minimum wage the market would settle at ${d.yv} and ${d.xv}.` : `Nothing has shifted yet. The market is in equilibrium at ${d.yv} and ${d.xv}.`); }
+  else { parts.push([st.sD ? mv(d.dn, st.sD) : '', st.sS ? mv(d.un, st.sS) : ''].filter(Boolean).join(' and ') + '.');
+    const dy = e2.y - e1.y, dx = e2.x - e1.x, ch = (v, nm, a, b) => Math.abs(v) < 0.01 ? `${nm} is unchanged` : `${nm} ${v > 0 ? 'rises' : 'falls'} from ${a} to ${b}`;
+    let s = ch(dy, d.yname, L(d.yv, 1), L(d.yv, 2)) + ' and ' + ch(dx, d.xname, L(d.xv, 1), L(d.xv, 2)) + '.'; parts.push(s[0].toUpperCase() + s.slice(1));
+    if (id === 'fx') parts.push(dy > 0.01 ? 'The Australian dollar appreciates.' : dy < -0.01 ? 'The Australian dollar depreciates.' : ''); }
+  if (st.lras) { const y = (st.sD || st.sS) ? e2.x : e1.x, f = 50 + st.sL; if (st.sL) parts.push(`LRAS shifts ${st.sL > 0 ? 'right' : 'left'} from ${L('LRAS', 1)} to ${L('LRAS', 2)}: the economy's productive capacity ${st.sL > 0 ? 'grows' : 'shrinks'}.`);
+    parts.push(Math.abs(y - f) < 0.6 ? 'Output is at its full-employment level.' : y > f ? 'Output is above its full-employment level, so there is pressure on prices (an inflationary gap).' : 'Output is below its full-employment level, so there is spare capacity and unemployment.'); }
+  if (st.mw) parts.push(`At the minimum wage (Wmin), firms demand Qd workers but Qs want to work. The gap between Qd and Qs is unemployment.`);
+  return parts.filter(Boolean).join(' '); }
+const kOf = g => (1 + g) / (1 - g);
+/* A smooth curve with the chosen Gini: the average of x^k and its mirror image, which both have Gini (k-1)/(k+1). */
+const LZ = (x, g) => { const k = kOf(g); return 0.5 * Math.pow(x, k) + 0.5 * (1 - Math.pow(1 - x, 1 / k)); };
+function drawLorenz(st, opt) { const d = DG.lorenz, sv = Svg(d.name, 'Cumulative % of income', 'Cumulative % of households'), o = opt || {};
+  const curve = g => { let p = ''; for (let i = 0; i <= 100; i++) { p += (i ? 'L' : 'M') + r1(X(i)) + ' ' + r1(Y(100 * LZ(i / 100, g))); } return p; };
+  const two = st.g0 !== null && Math.abs(st.g0 - st.g) > 0.004 && !o.hideNew, g = o.hideNew && st.g0 !== null ? st.g0 : st.g;
+  sv.raw(`<g style="--tc:${TC.T3}">`);
+  if (!two) { sv.raw(`<path d="${curve(g)}L${X(0)} ${Y(0)}Z" style="fill:var(--shadeA)" transform=""/>`); sv.raw(`<path d="${curve(g)}L${X(100)} ${Y(0)}L${X(0)} ${Y(0)}Z" style="fill:var(--shadeB)"/>`); }
+  sv.raw(`<path class="cv c-ink" style="stroke-width:2.2" d="M${X(0)} ${Y(0)}L${X(100)} ${Y(100)}"/><path class="gd c-old" d="M${X(100)} ${Y(0)}V${Y(100)}"/>`);
+  sv.note(40, 47, 'Line of equality', 'ink', 'end');
+  if (two) { sv.raw(`<path class="cv c-old" d="${curve(st.g0)}"/><path class="cv c-new" d="${curve(st.g)}"/>`);
+    const hi = Math.min(st.g0, st.g), lab = (gg, t, c) => { const x = gg === hi ? 52 : 76, y = 100 * LZ(x / 100, gg); sv.note(gg === hi ? x - 2 : x + 3, gg === hi ? y + 6 : y - 7, t, c, gg === hi ? 'end' : 'start'); }; lab(st.g0, L('LC', 1), 'old'); lab(st.g, L('LC', 2), 'new'); }
+  else { sv.raw(`<path class="cv c-main" d="${curve(g)}"/>`); const xa = 56, ya = (xa + 100 * LZ(xa / 100, g)) / 2; if (g > 0.12) sv.note(xa, ya - 1, 'A', 'ink'); sv.note(78, Math.max(6, 100 * LZ(0.78, g) / 2 - 2), 'B', 'ink'); sv.note(70, 100 * LZ(0.7, g) - 8, 'Lorenz curve', 'main', 'start'); }
+  [0, 20, 40, 60, 80, 100].forEach(v => { sv.raw(`<text class="nt f-old" x="${X(v)}" y="${Y(0) + 18}" text-anchor="middle">${v}</text><text class="nt f-old" x="${X(0) - 8}" y="${Y(v) + 4}" text-anchor="end">${v}</text>`); });
+  sv.raw('</g>'); return sv.out(o.aria); }
+const shares = g => [1, 2, 3, 4, 5].map(i => 100 * (LZ(i / 5, g) - LZ((i - 1) / 5, g)));
+function lorenzSentence(st) { const sh = shares(st.g), two = st.g0 !== null && Math.abs(st.g0 - st.g) > 0.004;
+  return (two ? `The Lorenz curve moves ${st.g > st.g0 ? 'further from' : 'closer to'} the line of equality, from ${L('LC', 1)} to ${L('LC', 2)}, and the Gini coefficient ${st.g > st.g0 ? 'rises' : 'falls'} from ${st.g0.toFixed(2)} to ${st.g.toFixed(2)}: the distribution becomes ${st.g > st.g0 ? 'less' : 'more'} equal. ` : `The Gini coefficient is ${st.g.toFixed(2)} (area A ÷ areas A + B). `)
+    + `The lowest 20% of households receive about ${sh[0].toFixed(0)}% of the total and the highest 20% receive about ${sh[4].toFixed(0)}%.`; }
+function drawExtern(st, opt) { const d = DG.extern, sv = Svg(d.name, 'Price / cost', 'Quantity'), o = opt || {}, m0 = meet(0, 0, st.t), so = meet(0, 0, st.e), hide = o.hideNew;
+  sv.raw(`<g style="--tc:${TC.T4}">`);
+  if (st.dwl && !hide && Math.abs(m0.x - so.x) > 0.8) { const q = m0.x; sv.poly([[so.x, so.y], [q, up(0, st.e)(q)], [q, down(0)(q)]], 'var(--shade)'); if (Math.abs(q - so.x) > 5) sv.note(q + (q > so.x ? 3 : -3), (up(0, st.e)(q) + down(0)(q)) / 2 - 1, 'Welfare loss', 'new', q > so.x ? 'start' : 'end'); }
+  sv.line(down(0), 'D', 'main'); sv.line(up(0, 0), 'MPC', 'main'); if (st.e) sv.line(up(0, st.e), 'MSC', 'new');
+  if (!hide) { if (st.t) sv.line(up(0, st.t), 'MPC + tax', 'gold', { dash: true, ly: (Math.abs(st.t - st.e) < 5 ? (st.t >= st.e ? -14 : 14) : 0) });
+    const same = Math.abs(m0.x - so.x) < 0.5; if (st.e && !same) sv.point(so, 'Q*', 'P*', 'new'); sv.point(m0, same ? 'Q_m = Q*' : 'Q_m', same ? 'P_m = P*' : 'P_m', same ? 'new' : 'ink');
+    if (st.e) { const xq = 15, my = (up(0, 0)(xq) + up(0, st.e)(xq)) / 2; sv.arrow(xq, up(0, 0)(xq) + 1.5, xq, up(0, st.e)(xq) - 1.5, 'new'); sv.note(xq - 2, up(0, 0)(xq) - 7, 'External cost', 'new', 'start'); } }
+  sv.raw('</g>'); return sv.out(o.aria); }
+function externSentence(st) { const m0 = meet(0, 0, st.t), so = meet(0, 0, st.e), diff = m0.x - so.x;
+  if (!st.e) return 'With no external cost, private cost equals social cost (MPC = MSC) and the market output is efficient.';
+  return `MSC sits above MPC by the external cost. ` + (st.t ? `With the tax, producers face MPC + tax. ` : `Producers consider only their private cost. `)
+    + (Math.abs(diff) < 0.5 ? 'The market output Qm now equals the socially efficient output Q*: the externality is internalised and there is no welfare loss.' : diff > 0 ? `The market produces Qm at price Pm: more output, at a lower price, than the socially efficient Q* and P*. The shaded triangle is the welfare loss from over-production.${st.t ? ' The tax is too small to remove it.' : ''}` : 'The tax is larger than the external cost, so output Qm is below the efficient Q*: the policy over-corrects, and there is a welfare loss from under-production.'); }
+const draw = (id, st, opt) => DG[id].kind === 'shift' ? drawShift(id, st, opt) : DG[id].kind === 'lorenz' ? drawLorenz(st, opt) : drawExtern(st, opt);
+const sentence = (id, st) => DG[id].kind === 'shift' ? shiftSentence(id, st) : DG[id].kind === 'lorenz' ? lorenzSentence(st) : externSentence(st);
+
+/* ---------- experiment ---------- */
+const slider = (k, label, min, max, step, v, lo, hi, show) => `<div class="sl"><label for="s-${k}">${label}<span>${show}</span></label><input type="range" id="s-${k}" data-k="${k}" min="${min}" max="${max}" step="${step}" value="${v}"><div class="ends"><span>${lo}</span><span>${hi}</span></div></div>`;
+const shiftWord = v => v === 0 ? 'no shift' : (v > 0 ? 'right' : 'left');
+function controls(id) { const d = DG[id], st = S.st[id];
+  if (d.kind === 'shift') return slider('sD', `Shift ${d.dn}`, -24, 24, 4, st.sD, '← left (decrease)', 'right (increase) →', shiftWord(st.sD)) + slider('sS', `Shift ${d.un}`, -24, 24, 4, st.sS, '← left (decrease)', 'right (increase) →', shiftWord(st.sS))
+    + (id === 'adas' ? `<div class="row"><label><input type="checkbox" data-c="lras" ${st.lras ? 'checked' : ''}> Show LRAS (full-employment output)</label></div>${st.lras ? slider('sL', 'Shift LRAS', -16, 16, 4, st.sL, '← capacity shrinks', 'capacity grows →', shiftWord(st.sL)) : ''}` : '')
+    + (id === 'labour' ? slider('mw', 'Minimum wage above the equilibrium wage', 0, 24, 4, st.mw, 'none', 'high', st.mw ? 'binding' : 'off') : '')
+    + `<details><summary>What shifts each curve?</summary><div class="fac" style="margin-top:8px">${[['dn', 'r', `${d.dn} shifts right`], ['dn', 'l', `${d.dn} shifts left`], ['up', 'r', `${d.un} shifts right`], ['up', 'l', `${d.un} shifts left`]].map(([c, s, t]) => `<div><b>${t}</b><ul>${d.fac[c][s].map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>`).join('')}</div></details>`;
+  if (d.kind === 'lorenz') { const sh = shares(st.g); return slider('g', 'Gini coefficient', 0.05, 0.7, 0.01, st.g, '0 = perfect equality', '1 = perfect inequality', st.g.toFixed(2))
+    + `<div class="row"><button class="btn ghost sm" data-g="0.307">Australia: income (0.307)</button><button class="btn ghost sm" data-g="0.606">Australia: wealth (0.606)</button></div><p class="sub" style="font-size:.8rem">ABS, 2022–23, as in the booklet's data bank. Check for a newer release before you quote them.</p>
+      <div class="row"><label><input type="checkbox" data-c="cmp" ${st.g0 !== null ? 'checked' : ''}> Keep this curve as ${L('LC', 1)} and compare</label></div>
+      <table><thead><tr><th>Quintile of households</th><th style="text-align:right">Share of total</th></tr></thead><tbody>${['Lowest 20%', 'Second', 'Third', 'Fourth', 'Highest 20%'].map((n, i) => `<tr><td>${n}</td><td class="n">${sh[i].toFixed(1)}%</td></tr>`).join('')}</tbody></table><p class="sub" style="font-size:.8rem">Shares are from the smooth curve drawn here, to show the idea. They are not ABS figures.</p>`; }
+  return slider('e', 'External cost per unit (the gap between MSC and MPC)', 0, 32, 4, st.e, 'none', 'large', st.e ? 'shown' : 'none') + slider('t', 'Tax per unit on producers', 0, 40, 4, st.t, 'no tax', 'large tax', !st.t ? 'no tax' : Math.abs(st.t - st.e) < 0.5 ? 'equal to the external cost' : st.t < st.e ? 'less than the external cost' : 'more than the external cost')
+    + `<div class="row"><label><input type="checkbox" data-c="dwl" ${st.dwl ? 'checked' : ''}> Shade the welfare loss</label></div>`; }
+function renderExperiment() { const id = S.d, d = DG[id], st = S.st[id], sen = sentence(id, st);
+  $('#v-experiment').innerHTML = `<div class="cols"><div class="panel" style="--tc:${TC[d.topic]}"><h2>${esc(d.name)}</h2><p class="sub" style="margin-bottom:8px">${esc(d.sub)} · ${esc(d.tl)}</p>
+      <figure id="fig">${draw(id, st, { aria: sen })}</figure>
+      <div class="sent" aria-live="polite"><small>The sentence that earns the mark</small><span id="sen">${esc(sen)}</span></div>
+      <div class="row noprint" style="margin-top:10px"><button class="btn ghost sm" id="copy">Copy the sentence</button><button class="btn ghost sm" id="reset">Reset the diagram</button><button class="btn sm" data-go="scenarios">Try the scenarios</button></div></div>
+    <aside class="panel ctl"><h3>Change the diagram</h3><div id="ctl" class="ctl">${controls(id)}</div>
+      <details><summary>Exam checklist</summary><ul>${d.check.map(c => `<li>${esc(c)}</li>`).join('')}</ul></details>
+      <div class="links">${d.chain ? `<a href="../chain-builder/#chain=${d.chain[0]}"${ext}>Chain: ${esc(d.chain[1])}</a>` : ''}${d.terms.map(t => `<a href="../glossary/#term=${t}"${ext}>Glossary: ${esc(t.replace(/-/g, ' '))}</a>`).join('')}<a href="../essay-builder/"${ext}>Plan a response with this diagram</a></div></aside></div>`; }
+function refresh() { const id = S.d, st = S.st[id], sen = sentence(id, st); $('#fig').innerHTML = draw(id, st, { aria: sen }); $('#sen').textContent = sen; }
+
+/* ---------- scenarios ---------- */
+let Z = null;
+const YN = [[1, 'Rises ↑'], [-1, 'Falls ↓']];
+function questions(id) { const d = DG[id];
+  if (d.kind === 'shift') return [['curve', 'Which curve shifts?', [['dn', d.dn], ['up', d.un]]], ['dir', 'Which way?', [[1, 'Right (increase)'], [-1, 'Left (decrease)']]], ['y', `What happens to ${d.yname}?`, YN], ['x', `What happens to ${d.xname}?`, YN]];
+  if (d.kind === 'lorenz') return [['dir', 'Which way does the Lorenz curve move?', [[-1, 'Closer to the line of equality'], [1, 'Further from the line of equality']]], ['g', 'What happens to the Gini coefficient?', YN]];
+  return [['q', 'Market output compared with the socially efficient output is:', [['above', 'Too high'], ['equal', 'Equal to it'], ['below', 'Too low']]], ['p', 'The price buyers pay compared with the efficient price is:', [['below', 'Too low'], ['equal', 'Equal to it'], ['above', 'Too high']]]]; }
+function answer(id, sc) { const d = DG[id];
+  if (d.kind === 'shift') { const [, c, dir] = sc; return { curve: c, dir, y: c === 'dn' ? dir : -dir, x: dir }; }
+  if (d.kind === 'lorenz') return { dir: sc[1], g: sc[1] };
+  return { q: sc[2], p: sc[3] }; }
+function scState(id, sc, shown) { const d = DG[id];
+  if (d.kind === 'shift') return { sD: sc[1] === 'dn' ? sc[2] * 16 : 0, sS: sc[1] === 'up' ? sc[2] * 16 : 0, lras: false, sL: 0, mw: 0 };
+  if (d.kind === 'lorenz') return { g0: 0.31, g: 0.31 + sc[1] * 0.12 };
+  return { e: sc[1].e, t: sc[1].t, dwl: true }; }
+function startSc() { const id = S.d; Z = { id, i: 0, pick: {}, checked: false, res: [], order: DG[id].sc.map((_, i) => i).sort(() => Math.random() - 0.5) }; }
+function renderScenarios() { const id = S.d, d = DG[id]; if (!Z || Z.id !== id) startSc();
+  if (Z.i >= Z.order.length) { const n = Z.res.filter(Boolean).length;
+    $('#v-scenarios').innerHTML = `<div class="panel" style="max-width:720px;margin:0 auto"><h2>${esc(d.name)}: your score</h2><p class="score" style="margin:6px 0">${n} of ${Z.res.length} scenarios fully correct</p><div class="dots">${Z.res.map(r => `<i class="${r ? 'y' : 'n'}"></i>`).join('')}</div><div class="row"><button class="btn" id="zagain">Try them again</button><button class="btn ghost" data-go="experiment">Back to the experiment</button></div></div>`; return; }
+  const sc = d.sc[Z.order[Z.i]], qs = questions(id), ans = answer(id, sc), allSet = qs.every(q => Z.pick[q[0]] !== undefined), st = scState(id, sc), ok = Z.checked && qs.every(q => String(Z.pick[q[0]]) === String(ans[q[0]]));
+  const sen = sentence(id, st);
+  $('#v-scenarios').innerHTML = `<div class="cols"><div class="panel" style="--tc:${TC[d.topic]}"><h2>${esc(d.name)}</h2><div class="dots" aria-hidden="true" style="margin-top:6px">${Z.order.map((_, i) => `<i class="${i < Z.res.length ? (Z.res[i] ? 'y' : 'n') : ''} ${i === Z.i ? 'cur' : ''}"></i>`).join('')}</div>
+      <figure>${draw(id, st, { hideNew: !Z.checked, aria: Z.checked ? sen : d.name + ' before the change' })}</figure>
+      ${Z.checked ? `<div class="sent"><small>The sentence that earns the mark</small>${esc(sen)}</div>` : `<p class="sub" style="margin-top:8px">The diagram shows the starting position. Make your predictions, then check to see what happens.</p>`}</div>
+    <aside class="panel"><p class="sub">Scenario ${Z.i + 1} of ${Z.order.length}</p><p class="sc" style="--tc:${TC[d.topic]}">${esc(sc[0])}</p>
+      ${qs.map(q => `<div class="q"><b>${esc(q[1])}</b><div class="seg" role="group" aria-label="${esc(q[1])}">${q[2].map(o => { const on = String(Z.pick[q[0]]) === String(o[0]), right = String(ans[q[0]]) === String(o[0]); return `<button data-q="${q[0]}" data-v="${o[0]}" aria-pressed="${on}" ${Z.checked ? 'disabled' : ''} class="${Z.checked && right ? 'right' : Z.checked && on ? 'wrong' : ''}">${esc(o[1])}</button>`; }).join('')}</div></div>`).join('')}
+      ${Z.checked ? `<p class="fb" role="status"><b>${ok ? 'All correct.' : 'Not quite. The right answers are in green.'}</b> ${esc(sc[sc.length - 1])}</p><button class="btn" id="znext" style="margin-top:10px">${Z.i + 1 < Z.order.length ? 'Next scenario' : 'See your score'}</button>` : `<button class="btn" id="zcheck" ${allSet ? '' : 'disabled'}>Check and show the diagram</button>`}</aside></div>`;
+  if (Z.checked) $('#znext').focus(); }
+
+/* ---------- shell ---------- */
+const VIEWS = ['experiment', 'scenarios'];
+function writeHash() { const h = new URLSearchParams(); h.set('d', S.d); if (S.view !== 'experiment') h.set('view', S.view); try { history.replaceState(null, '', location.pathname + location.search + '#' + h.toString()); } catch (e) {} }
+function readHash() { const h = new URLSearchParams(location.hash.slice(1)); if (DG[h.get('d')]) S.d = h.get('d'); if (VIEWS.includes(h.get('view'))) S.view = h.get('view'); }
+function render() { VIEWS.forEach(v => { $('#v-' + v).classList.toggle('on', v === S.view); $(`.tab[data-view="${v}"]`).setAttribute('aria-selected', v === S.view); });
+  $('#lstyle').innerHTML = [['num', 'AD₁ → AD₂'], ['plain', 'AD → AD₁']].map(o => `<button data-ls="${o[0]}" aria-pressed="${LS === o[0]}">${o[1]}</button>`).join('');
+  $('#pick').innerHTML = IDS.map(id => `<button class="pk" data-d="${id}" aria-pressed="${S.d === id}" style="--tc:${TC[DG[id].topic]}"><b>${esc(DG[id].name)}</b><small>${esc(DG[id].sub)}</small></button>`).join('');
+  S.view === 'experiment' ? renderExperiment() : renderScenarios(); writeHash(); }
+$$('.tab').forEach(b => b.onclick = () => { S.view = b.dataset.view; render(); });
+$('#pick').onclick = e => { const b = e.target.closest('[data-d]'); if (!b) return; S.d = b.dataset.d; Z = null; render(); };
+$('#lstyle').onclick = e => { const b = e.target.closest('[data-ls]'); if (!b) return; LS = b.dataset.ls; store.set('econ-mdl-labels', LS); render(); };
+const main = document.querySelector('main');
+main.addEventListener('input', e => { const k = e.target.dataset && e.target.dataset.k; if (!k) return; const st = S.st[S.d]; st[k] = +e.target.value; const sp = e.target.closest('.sl').querySelector('label span');
+  if (S.d === 'extern' || k === 'mw' || k === 'g') { const y = scrollY, a = document.activeElement && document.activeElement.id; $('#ctl').innerHTML = controls(S.d); if (a) { const n = document.getElementById(a); if (n) n.focus({ preventScroll: true }); } scrollTo(0, y); } else if (sp) sp.textContent = shiftWord(st[k]);
+  refresh(); });
+main.addEventListener('change', e => { const c = e.target.dataset && e.target.dataset.c; if (!c) return; const st = S.st[S.d];
+  if (c === 'cmp') st.g0 = e.target.checked ? st.g : null; else { st[c] = e.target.checked; if (c === 'lras' && !st.lras) st.sL = 0; }
+  $('#ctl').innerHTML = controls(S.d); refresh(); });
+main.addEventListener('click', e => { const q = s => e.target.closest(s); let b;
+  if (b = q('[data-go]')) { S.view = b.dataset.go; render(); $('.tabs').scrollIntoView({ block: 'start' }); return; }
+  if (b = q('[data-g]')) { S.st.lorenz.g = +b.dataset.g; $('#ctl').innerHTML = controls('lorenz'); return refresh(); }
+  if (q('#reset')) { S.st[S.d] = fresh(S.d); return renderExperiment(); }
+  if (b = q('#copy')) { const done = ok => { b.textContent = ok ? 'Copied' : 'Could not copy'; }; try { navigator.clipboard.writeText(sentence(S.d, S.st[S.d])).then(() => done(true), () => done(false)); } catch (err) { done(false); } return; }
+  if (b = q('[data-q]')) { const v = b.dataset.v; Z.pick[b.dataset.q] = isNaN(+v) ? v : +v; return renderScenarios(); }
+  if (q('#zcheck')) { const sc = DG[S.d].sc[Z.order[Z.i]], ans = answer(S.d, sc); Z.checked = true; Z.res.push(questions(S.d).every(x => String(Z.pick[x[0]]) === String(ans[x[0]]))); return renderScenarios(); }
+  if (q('#znext')) { Z.i++; Z.pick = {}; Z.checked = false; return renderScenarios(); }
+  if (q('#zagain')) { Z = null; return renderScenarios(); } });
+addEventListener('hashchange', () => { readHash(); render(); });
+readHash(); render();
+})();
+</script>
+</body>
+</html>
