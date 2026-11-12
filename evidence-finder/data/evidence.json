@@ -1,5 +1,814 @@
 [
  {
+  "id": "2026-11-13-apra-system-risk-outlook",
+  "title": "APRA warns house prices are falling and AI risks are rising",
+  "date": "2026-11-13",
+  "type": "news",
+  "outlets": [
+   "Financial Standard",
+   "ABC News"
+  ],
+  "summary": "Financial stability limits on monetary policy: falling house prices, high bond yields, private credit and AI-related risk.",
+  "lede": "The prudential regulator's November System Risk Outlook says banks and insurers are well capitalised, but warns that resilience \"cannot be taken for granted\". National house prices have fallen about 6% since March, and APRA's 2027 stress test will model AI-driven disruption and a sharp fall in technology valuations.",
+  "about": {
+   "h09": [
+    "4D.3",
+    "4G.1"
+   ],
+   "y12": [
+    "Y2c.5",
+    "Y2c.8"
+   ],
+   "y11": [
+    "P4c.3",
+    "P5a.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3A.7",
+    "4H.3"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y2c.7"
+   ],
+   "y11": [
+    "P2h.7"
+   ]
+  },
+  "issues": [
+   "housing",
+   "rates",
+   "investment"
+  ],
+  "levers": [
+   "monetary",
+   "micro"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "National house prices since March",
+    "value": "about -6%",
+    "asAt": "March-November 2026",
+    "issue": "housing",
+    "source": "APRA via Financial Standard"
+   },
+   {
+    "label": "Long-term bond yields in advanced economies",
+    "value": "near their highest in at least 15 years",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "APRA via Financial Standard"
+   },
+   {
+    "label": "Australian private credit market",
+    "value": "estimated $250 billion (under 4% of the banking system)",
+    "asAt": "November 2026",
+    "issue": "investment",
+    "source": "APRA via Financial Standard"
+   },
+   {
+    "label": "Key service providers based offshore",
+    "value": "80 of 100",
+    "asAt": "November 2026",
+    "issue": "investment",
+    "source": "APRA via ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Wealth effect",
+    "def": "Spending changes as household wealth, such as house prices, changes."
+   },
+   {
+    "term": "Prudential regulation",
+    "def": "Rules that keep banks and insurers financially sound."
+   }
+  ],
+  "links": [
+   [
+    "Financial Standard, APRA warns financial system faces mounting risks",
+    "https://www.financialstandard.com.au/news/apra-warns-financial-system-faces-mounting-risks-179814566"
+   ],
+   [
+    "ABC News, Regulator warns of 'interruptions' as frontier AI evolves",
+    "https://www.abc.net.au/news/2026-11-13/regulator-apra-warns-of-interruptions-as-frontier-ai-evolves/107378944"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-13-apra-system-risk-outlook.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "Higher rates reduce borrowing capacity, so housing demand and prices fall, and the fall in household wealth reduces consumer spending, which helps monetary policy slow inflation. APRA's job is to make sure the fall does not threaten the banks, so financial stability limits how far and how fast rates can rise.",
+  "questions": [
+   {
+    "q": "Explain how falling house prices can help monetary policy reduce inflation.",
+    "marks": 4
+   }
+  ],
+  "note": "Most borrowers are supported by equity and repayment buffers, according to the outlook. A 6% fall since March is APRA's figure and differs from the faster monthly falls in other releases, so quote the source. UPDATE DUE: APRA's 2027 stress test.",
+  "added": "2026-11-13"
+ },
+ {
+  "id": "2026-11-12-bank-ceos-urge-spending-cuts",
+  "title": "Bank chiefs urge Canberra to cut spending to bring rates down",
+  "date": "2026-11-12",
+  "type": "news",
+  "outlets": [
+   "The Nightly",
+   "ABC News"
+  ],
+  "summary": "The policy mix debate heard at a parliamentary inquiry: lower government spending so the RBA can cut sooner.",
+  "lede": "At a parliamentary inquiry, ANZ chief Nuno Matos and Westpac chief Anthony Miller argued that high government spending is adding to inflation and keeping interest rates higher for longer. Matos called the AI data-centre boom an \"unprecedented inflation danger\" and noted Commonwealth spending is at its highest in four decades outside the COVID years.",
+  "about": {
+   "h09": [
+    "4B.1",
+    "4C.1",
+    "4H.3",
+    "4I.1"
+   ],
+   "y12": [
+    "Y2g.1",
+    "Y2b.3",
+    "Y2b.13"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "4D.3",
+    "4I.2"
+   ],
+   "y12": [
+    "Y2c.7",
+    "Y2b.14"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "budget",
+   "inflation",
+   "rates"
+  ],
+  "levers": [
+   "fiscal",
+   "monetary"
+  ],
+  "diagrams": [
+   "adas",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Inflation, September",
+    "value": "4.3% (14th straight month above the 2-3% target)",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "The Nightly"
+   },
+   {
+    "label": "RBA cash rate",
+    "value": "4.85% (the latest 25 basis point hike flows into variable mortgages from Friday)",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "The Nightly"
+   },
+   {
+    "label": "Commonwealth spending",
+    "value": "highest in four decades outside the COVID years (ANZ's claim)",
+    "asAt": "2026",
+    "issue": "budget",
+    "source": "The Nightly"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Policy mix",
+    "def": "How fiscal and monetary policy are combined."
+   },
+   {
+    "term": "Contractionary fiscal policy",
+    "def": "Cutting spending or raising taxes to slow aggregate demand."
+   }
+  ],
+  "links": [
+   [
+    "The Nightly, Big bank CEOs plead with Labor to cut spending",
+    "https://thenightly.com.au/politics/anz-ceo-nuno-matos-and-westpac-chief-anthony-miller-call-for-government-spending-cuts-c-23151576"
+   ],
+   [
+    "ABC News, ANZ boss says global markets in 'dangerous situation'",
+    "https://www.abc.net.au/news/2026-11-12/anz-boss-says-global-markets-in-dangerous-situation/107377392"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-12-bank-ceos-urge-spending-cuts.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "Lower government spending shifts AD left and eases the price level, which would let the RBA lower the cash rate sooner, but the short-run cost is lower output and possibly higher unemployment. When fiscal policy is expansionary while monetary policy is contractionary the RBA must lift rates higher; a coordinated mix spreads the burden.",
+  "questions": [
+   {
+    "q": "Discuss the view that contractionary fiscal policy would allow the Reserve Bank to lower interest rates sooner.",
+    "marks": 6
+   }
+  ],
+  "note": "The bank CEOs' views are those of lenders to households and have their own interests; Westpac's Miller says spending cuts would lead to lower rates once inflation is back in the target band, which is a conditional claim, not a forecast. See the 5 November budget versus inflation and Burshtein opinion items.",
+  "added": "2026-11-13"
+ },
+ {
+  "id": "2026-11-12-anz-slowdown-not-recession",
+  "title": "ANZ boss: \"dangerous\" markets, but no recession for Australia",
+  "date": "2026-11-12",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "The Nightly"
+  ],
+  "summary": "Uses the business cycle to judge whether the RBA can achieve a soft landing, and names a global share-market risk.",
+  "lede": "ANZ chief executive Nuno Matos told a parliamentary inquiry that record share prices combined with rising interest rates are a \"dangerous situation\" for the world, but he expects Australia to slow noticeably rather than shrink, in line with the RBA, which is not forecasting a recession.",
+  "about": {
+   "h09": [
+    "3A.7",
+    "4D.3"
+   ],
+   "y12": [
+    "Y1a.5",
+    "Y1a.15",
+    "Y2c.7"
+   ],
+   "y11": [
+    "P1e.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3B.2",
+    "4H.3"
+   ],
+   "y12": [
+    "Y1a.14",
+    "Y1a.12"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "growth",
+   "rates",
+   "global"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "chart",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "RBA cash rate",
+    "value": "4.85% (18-year high)",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Inflation, September",
+    "value": "4.3%",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "ABC News"
+   },
+   {
+    "label": "ANZ full-year cash profit",
+    "value": "$7.59 billion (+31%)",
+    "asAt": "2026",
+    "issue": "growth",
+    "source": "ABC News"
+   },
+   {
+    "label": "Recession forecast by the RBA",
+    "value": "none",
+    "asAt": "November 2026",
+    "issue": "growth",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Recession",
+    "def": "A fall in real GDP, commonly two consecutive negative quarters."
+   },
+   {
+    "term": "Soft landing",
+    "def": "Bringing inflation down without causing a recession."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, ANZ boss says global markets in 'dangerous situation'",
+    "https://www.abc.net.au/news/2026-11-12/anz-boss-says-global-markets-in-dangerous-situation/107377392"
+   ],
+   [
+    "The Nightly, Big bank CEOs plead with Labor to cut spending",
+    "https://thenightly.com.au/politics/anz-ceo-nuno-matos-and-westpac-chief-anthony-miller-call-for-government-spending-cuts-c-23151576"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-12-anz-slowdown-not-recession.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Higher interest rates slow household spending, so actual growth falls below trend: a slowdown. A recession would mean real GDP actually falling. Judge whether the RBA can reach a soft landing, inflation back to 2-3% without a large rise in unemployment, and note that a global shock such as a share-market fall could change the outlook.",
+  "questions": [
+   {
+    "q": "Distinguish between an economic slowdown and a recession, and explain one risk to Australia's growth outlook.",
+    "marks": 4
+   }
+  ],
+  "note": "An opinion from a bank chief executive, not a forecast by the RBA. The digest gives ANZ's cash profit as $7.59 billion (+31%), while the 9 November item on ANZ reports $7.3 billion, which is probably a different measure (statutory against cash); check ANZ's results release before quoting either. Matos said a global \"AI blip\" would be a big problem, though he does not expect one.",
+  "added": "2026-11-13"
+ },
+ {
+  "id": "2026-11-12-westpac-housing-construction-drought",
+  "title": "Westpac warns of a housing construction drought",
+  "date": "2026-11-12",
+  "type": "news",
+  "outlets": [
+   "Yahoo Finance AU",
+   "ABC News"
+  ],
+  "summary": "Rising costs cut housing supply, worsening affordability even while high rates hold demand back.",
+  "lede": "Westpac CEO Anthony Miller told a parliamentary committee that the bank funds 30% fewer housing construction projects than about 18 months ago, because each dollar is now \"delivering fewer houses\", mainly due to cost pressures. The HIA forecasts new home starts falling from 199,520 in 2026 to 191,040 in 2027, well short of the Housing Accord goal.",
+  "about": {
+   "h09": [
+    "3E.4",
+    "4E.2"
+   ],
+   "y12": [
+    "Y2d.3",
+    "Y1d.5",
+    "Y2d.6"
+   ],
+   "y11": [
+    "P4c.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4G.1"
+   ],
+   "y12": [
+    "Y2d.2"
+   ],
+   "y11": [
+    "P2h.8"
+   ]
+  },
+  "issues": [
+   "housing",
+   "inequality",
+   "productivity"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Housing construction projects funded by Westpac",
+    "value": "about 30% fewer than 18 months ago",
+    "asAt": "2026",
+    "issue": "housing",
+    "source": "Westpac CEO via Yahoo Finance AU"
+   },
+   {
+    "label": "Forecast new home starts, 2026 / 2027",
+    "value": "199,520 / 191,040",
+    "asAt": "2026-2027",
+    "issue": "housing",
+    "source": "HIA via ABC News"
+   },
+   {
+    "label": "Housing Accord target",
+    "value": "1.2 million new homes over five years",
+    "asAt": "five years",
+    "issue": "housing",
+    "source": "Housing Accord"
+   },
+   {
+    "label": "Investor home loans",
+    "value": "record fall of 30.6%",
+    "asAt": "to September 2026",
+    "issue": "housing",
+    "source": "Yahoo Finance AU"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Housing starts",
+    "def": "New dwellings on which construction has begun."
+   },
+   {
+    "term": "Housing Accord",
+    "def": "The national target of 1.2 million new homes over five years."
+   }
+  ],
+  "links": [
+   [
+    "Yahoo Finance AU, Big bank spells out major housing construction drought",
+    "https://au.finance.yahoo.com/news/bank-bosses-face-inquiry-over-163000982.html"
+   ],
+   [
+    "ABC News, markets live blog, 12 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-12/asx-markets-business-news-live-updates-thursday-12-november/107374826"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-12-westpac-housing-construction-drought.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Higher building and finance costs make fewer projects viable, shifting supply left: fewer homes are built and prices are pushed up, which worsens affordability for future buyers even if high interest rates hold demand back today. Housing supply links distribution of wealth with microeconomic reform on planning, construction productivity and tax settings.",
+  "questions": [
+   {
+    "q": "Explain how higher interest rates can make a housing shortage worse in the short run.",
+    "marks": 4
+   }
+  ],
+  "note": "The digest describes the 30.6% investor fall as \"in the year to September\", while the ABS and other digests describe it as the September quarter, so use the ABS wording. A lender's view at an inquiry, with the HIA forecast from an industry body. See the record fall in new home loans item filed on 11 November.",
+  "added": "2026-11-13"
+ },
+ {
+  "id": "2026-11-12-aud-falls-strong-us-dollar",
+  "title": "Aussie dollar slips as the US dollar hits a 19-month high",
+  "date": "2026-11-12",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "Westpac IQ"
+  ],
+  "summary": "Shows how hotter US inflation lifts the US dollar and pulls the AUD down, with a thin yield advantage and softer commodity prices. Replaces the 11 November oil and AUD item.",
+  "lede": "Hotter US inflation sent the US dollar to its strongest level since April 2025, pushing the AUD down to about 68 US cents while key commodity prices eased. The AUD fell 0.2% to 68.31 US cents on Thursday afternoon, after starting the day just under 69 cents.",
+  "about": {
+   "h09": [
+    "2C.2",
+    "2C.3",
+    "2C.6"
+   ],
+   "y12": [
+    "Y3c.2",
+    "Y3c.4",
+    "Y3c.5"
+   ],
+   "y11": [
+    "P6c.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3C.3",
+    "2A.1",
+    "2B.4"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "issues": [
+   "fx",
+   "global",
+   "inflation"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "fx",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "US dollar index",
+    "value": "+0.7%, highest since April 2025",
+    "asAt": "12 November 2026",
+    "issue": "fx",
+    "source": "Westpac IQ"
+   },
+   {
+    "label": "Australian dollar",
+    "value": "68.31 US cents (-0.2%; opened just under 69)",
+    "asAt": "12 November 2026",
+    "issue": "fx",
+    "source": "ABC News"
+   },
+   {
+    "label": "Iron ore / Brent crude",
+    "value": "US$92 a tonne (-0.6%) / US$91.67 a barrel (-1.2%)",
+    "asAt": "12 November 2026",
+    "issue": "trade",
+    "source": "ABC News"
+   },
+   {
+    "label": "10-year bond yield: Australia / US",
+    "value": "5.04% / 4.99%",
+    "asAt": "12 November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "RBA cash rate",
+    "value": "4.85%",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Depreciation",
+    "def": "A fall in the value of a floating currency against others."
+   },
+   {
+    "term": "Interest rate differential",
+    "def": "The gap between Australian and overseas interest rates."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, markets live blog, 12 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-12/asx-markets-business-news-live-updates-thursday-12-november/107374826"
+   ],
+   [
+    "Westpac IQ, Morning Report, 12 Nov 2026",
+    "https://www.westpaciq.com.au/economics/2026/11/Morning-report-12-Nov-2026"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-12-aud-falls-strong-us-dollar.pdf",
+   "label": "Topic 2 news summary",
+   "pages": 1
+  },
+  "angle": "Expected US rate rises make US assets more attractive, so investors want fewer Australian dollars and demand shifts left; softer iron ore also reduces demand from export earnings. The yield advantage for holding AUD is thin. A lower AUD makes exports more competitive but raises import prices, which is a concern for the RBA while inflation is above target.",
+  "questions": [
+   {
+    "q": "Explain two factors that caused the Australian dollar to depreciate and outline one effect on Australia's economy.",
+    "marks": 4
+   }
+  ],
+  "note": "Single-day market prices. Replaces the 11 November item \"Oil swings and the dollar firms\" (Brent US$92.43 and WTI US$86.60 after US officials played down further military action against Iran; AUD 68.78 US cents, up 0.2%; iron ore US$92.40, copper -1.2%, gold about +0.5%; 37 ships attacked in the Gulf in October, the most in any month since the war began, and 10 so far in November; petrol near $2.40 a litre per Westpac; energy shares Karoon +1.9% and Ampol +1.8%). See also the AFR weak-dollar item filed on 11 November.",
+  "added": "2026-11-13"
+ },
+ {
+  "id": "2026-11-12-mexico-tariff-threat",
+  "title": "Trump threatens to double tariffs on Mexico over a migrant caravan",
+  "date": "2026-11-12",
+  "type": "news",
+  "outlets": [
+   "Forbes",
+   "Reuters",
+   "BNN Bloomberg"
+  ],
+  "summary": "A tariff used as leverage on a non-trade issue, with the tariff diagram and the uncertain future of USMCA.",
+  "lede": "On 12 November (US time) President Trump threatened to double tariffs on Mexican goods unless a migrant caravan heading north is stopped. Reuters reported more than 1,000 migrants in a caravan that left Tapachula, near the Guatemalan border.",
+  "about": {
+   "h09": [
+    "1C.1",
+    "1C.2",
+    "2D.4",
+    "1B.1"
+   ],
+   "y12": [
+    "Y3a.5",
+    "Y3a.6",
+    "Y3a.7",
+    "Y3a.8",
+    "Y3a.11"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1A.3"
+   ],
+   "y12": [
+    "Y3a.13",
+    "Y3a.15"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Threatened tariff increase on Mexican goods",
+    "value": "double (current rate not stated in the digest)",
+    "asAt": "12 November 2026 (US time)",
+    "issue": "trade",
+    "source": "Forbes"
+   },
+   {
+    "label": "Migrants in the caravan",
+    "value": "more than 1,000",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "Reuters"
+   },
+   {
+    "label": "USMCA",
+    "value": "US declined in July to extend it beyond its 2036 expiry; trade talks with Mexico under way",
+    "asAt": "July 2026",
+    "issue": "trade",
+    "source": "Forbes"
+   },
+   {
+    "label": "US-Canada",
+    "value": "USTR Jamieson Greer says the US has spoken with Canada in recent days and is working towards a trade deal",
+    "asAt": "12 November 2026",
+    "issue": "trade",
+    "source": "Reuters via BNN Bloomberg"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Tariff",
+    "def": "A tax on imports that raises their domestic price."
+   },
+   {
+    "term": "Deadweight loss",
+    "def": "Output and consumption lost because resources are used less efficiently."
+   }
+  ],
+  "links": [
+   [
+    "Forbes, Trump threatens Mexico with doubled tariffs, reprising migrant caravan warnings after midterms",
+    "https://www.forbes.com/sites/saradorn/2026/11/12/trump-threatens-mexico-with-doubled-tariffs-reprising-migrant-caravan-warnings-after-midterms/"
+   ],
+   [
+    "Reuters via BNN Bloomberg, US spoke with Canada about trade deal in past few days, USTR says",
+    "https://bnnbloomberg.ca/tariffs/2026/11/12/us-spoke-with-canada-about-trade-deal-in-past-few-days-ustr-says"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-12-mexico-tariff-threat.pdf",
+   "label": "Topic 1 news summary",
+   "pages": 1
+  },
+  "angle": "A tariff lifts the US price from Pw to Pw+t, so US producers gain, US consumers lose, imports shrink and hurt Mexican exporters, the government collects revenue and there is a deadweight loss. Using tariffs for non-economic goals such as migration is a modern twist on protectionism: weigh the political aim against the efficiency costs and the risk of retaliation.",
+  "questions": [
+   {
+    "q": "Using a diagram, analyse the effects of a tariff increase on US consumers, US producers and Mexican exporters.",
+    "marks": 6
+   }
+  ],
+  "note": "A threat, not an implemented tariff. UPDATE DUE: whether the tariff is imposed. See the 26 October Mexico tariff item (Mexico's own tariffs on India) and the 24 October US-Canada tariff item.",
+  "added": "2026-11-13"
+ },
+ {
+  "id": "2026-11-12-us-inflation-fed-hike",
+  "title": "Hot US inflation puts a December Fed rate hike on the table",
+  "date": "2026-11-12",
+  "type": "news",
+  "outlets": [
+   "ING",
+   "Westpac IQ",
+   "ABC News"
+  ],
+  "summary": "Shows how US inflation data and rate expectations spread to Australia through capital flows and the exchange rate. Replaces the 11 November ABC item.",
+  "lede": "US consumer prices rose 0.4% in October and core prices 0.3%, both 0.1 percentage point above forecasts, and markets now fully price a 25 basis point rise by the Federal Reserve in December. Fed Governor Chris Waller backs a 25bp hike in December and could favour 50bp.",
+  "about": {
+   "h09": [
+    "1A.1",
+    "2C.2",
+    "3C.3"
+   ],
+   "y12": [
+    "Y3c.4",
+    "Y1c.4"
+   ],
+   "y11": [
+    "P6c.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2C.6",
+    "4D.3"
+   ],
+   "y12": [
+    "Y3c.5",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "rates",
+   "fx",
+   "global"
+  ],
+  "levers": [
+   "monetary",
+   "global"
+  ],
+  "diagrams": [
+   "adas",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "US CPI / core CPI, October (month on month)",
+    "value": "+0.4% / +0.3% (each 0.1 point above forecasts)",
+    "asAt": "October 2026",
+    "issue": "inflation",
+    "source": "ING THINK"
+   },
+   {
+    "label": "Market pricing for a December Fed hike",
+    "value": "25 basis points fully priced",
+    "asAt": "12 November 2026",
+    "issue": "rates",
+    "source": "ING THINK; Westpac IQ"
+   },
+   {
+    "label": "US dollar index",
+    "value": "+0.7%, highest since April 2025",
+    "asAt": "12 November 2026",
+    "issue": "fx",
+    "source": "Westpac IQ"
+   },
+   {
+    "label": "US 10-year bond yield",
+    "value": "4.99% (about 5%)",
+    "asAt": "12 November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Core inflation",
+    "def": "CPI excluding volatile items such as food and energy."
+   },
+   {
+    "term": "Demand-pull inflation",
+    "def": "Prices rising because spending outpaces the economy's capacity."
+   }
+  ],
+  "links": [
+   [
+    "ING THINK, Hotter US inflation strengthens the case for a December Fed hike",
+    "https://think.ing.com/articles/us-cpi-october-2026"
+   ],
+   [
+    "Westpac IQ, Morning Report, 12 Nov 2026",
+    "https://www.westpaciq.com.au/economics/2026/11/Morning-report-12-Nov-2026"
+   ],
+   [
+    "ABC News, markets live blog, 12 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-12/asx-markets-business-news-live-updates-thursday-12-november/107374826"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-12-us-inflation-fed-hike.pdf",
+   "label": "Topic 1 news summary",
+   "pages": 1
+  },
+  "angle": "Strong US spending lifts the price level (demand-pull); a Fed hike raises borrowing costs so AD shifts back left, easing price pressure at the cost of slower growth. Higher US interest rates pull global capital towards the US, which links this to the AUD story: the AUD fell as the US dollar rose.",
+  "questions": [
+   {
+    "q": "Explain how a rise in US interest rates could affect financial flows into Australia and the value of the Australian dollar.",
+    "marks": 4
+   }
+  ],
+  "note": "No annual US inflation rate was published for October, because the 2025 government shutdown meant no October 2025 price data was collected. \"Fully priced\" is a market expectation, not a Fed decision. Replaces the 11 November item (CPI +0.4% against 0.3% expected, the third month in a row at 0.4% or higher; September +0.6%; US 10-year yield about 5%; S&P 500 -0.4%; AUD recovering to 68.78 US cents). UPDATE DUE: the Fed's December meeting.",
+  "added": "2026-11-13"
+ },
+ {
   "id": "2026-11-11-electrification-35-by-35-pledge",
   "title": "Why COP31 wants 35% of the world's energy to be electric by 2035",
   "date": "2026-11-11",
@@ -851,130 +1660,6 @@
   "added": "2026-11-12"
  },
  {
-  "id": "2026-11-11-oil-aud-commodities-shipping-attacks",
-  "title": "Oil swings and the dollar firms: what it means for Australia",
-  "date": "2026-11-11",
-  "type": "news",
-  "outlets": [
-   "ABC News",
-   "Westpac IQ"
-  ],
-  "summary": "Links Gulf shipping attacks, oil and iron ore prices to the terms of trade and the AUD.",
-  "lede": "Brent crude hit two-month lows after US officials played down further military action against Iran, then rose about 1% to US$92.43 a barrel as attacks on Gulf shipping continued, while the Australian dollar edged up 0.2% to 68.78 US cents. Iron ore slipped 0.4% to US$92.40 a tonne.",
-  "about": {
-   "h09": [
-    "2B.4",
-    "2A.1",
-    "3C.3"
-   ],
-   "y12": [
-    "Y3e.3",
-    "Y3c.5",
-    "Y1c.4"
-   ],
-   "y11": [
-    "P6a.2"
-   ]
-  },
-  "also": {
-   "h09": [
-    "2C.2",
-    "1A.1"
-   ],
-   "y12": [
-    "Y3c.4",
-    "Y1a.7"
-   ],
-   "y11": [
-    "P6c.1"
-   ]
-  },
-  "issues": [
-   "trade",
-   "fx",
-   "inflation",
-   "global"
-  ],
-  "levers": [
-   "global"
-  ],
-  "diagrams": [
-   "ds",
-   "flow"
-  ],
-  "figures": [
-   {
-    "label": "Brent crude / WTI",
-    "value": "US$92.43 (about +1%) / US$86.60",
-    "asAt": "11 November 2026",
-    "issue": "global",
-    "source": "ABC News"
-   },
-   {
-    "label": "Australian dollar",
-    "value": "68.78 US cents (+0.2%)",
-    "asAt": "11 November 2026",
-    "issue": "fx",
-    "source": "ABC News"
-   },
-   {
-    "label": "Iron ore",
-    "value": "US$92.40 a tonne (-0.4%); copper -1.2%; gold about +0.5%",
-    "asAt": "11 November 2026",
-    "issue": "trade",
-    "source": "ABC News"
-   },
-   {
-    "label": "Ships attacked in the Gulf",
-    "value": "37 in October (the most in any month since the war began); 10 so far in November",
-    "asAt": "to 11 November 2026",
-    "issue": "global",
-    "source": "ABC News"
-   },
-   {
-    "label": "Petrol price",
-    "value": "near $2.40 a litre",
-    "asAt": "November 2026",
-    "issue": "inflation",
-    "source": "Westpac IQ"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Terms of trade",
-    "def": "The ratio of export prices to import prices; it rises when export prices rise relative to import prices."
-   },
-   {
-    "term": "Price-inelastic demand",
-    "def": "Quantity demanded changes little when price changes, such as fuel in the short run."
-   }
-  ],
-  "links": [
-   [
-    "ABC News, markets live blog, 11 Nov 2026",
-    "https://www.abc.net.au/news/2026-11-11/asx-markets-business-live-news-nov-11/107370848"
-   ],
-   [
-    "Westpac IQ, Consumer sentiment, November 2026",
-    "https://westpaciq.com.au/economics/2026/11/consumer-sentiment-november-2026"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-11-oil-aud-commodities-shipping-attacks.pdf",
-   "label": "Topic 2 news summary",
-   "pages": 1
-  },
-  "angle": "Attacks on tankers shift oil supply left and, because short-run demand is inelastic, the price jumps while quantity barely falls. Australia imports most of its refined fuel, so dearer oil raises import prices, but it also exports LNG and coal, so whether the terms of trade improve depends on which prices move more.",
-  "questions": [
-   {
-    "q": "Explain how changes in global commodity prices affect Australia's terms of trade and current account balance.",
-    "marks": 4
-   }
-  ],
-  "note": "Single-day market prices. Complements the 10 November oil and petrol item and the AUD item filed today.",
-  "added": "2026-11-12"
- },
- {
   "id": "2026-11-11-cop31-electrification-target-row",
   "title": "COP31: arguments over a global electricity target",
   "date": "2026-11-11",
@@ -1077,118 +1762,6 @@
    }
   ],
   "note": "Replaces the 10 November ABC item, which reported COP31 accepting for the first time that warming will exceed 1.5°C, Chris Bowen saying projected warming fell from nearly 4°C before Paris to about 2.6°C, Türkiye getting 55% of its electricity from coal and gas, fossil fuel cuts not formally on the agenda, and criticism of Australia over coal expansion and extending the North West Shelf gas project. The digest gives the solar pledge as 300 million households, which should be checked against the ABC article before quoting. Partners with Australia on that pledge include Bangladesh, Kenya, Nigeria, Palau and Vanuatu. See also the Conversation explainer filed on 11 November.",
-  "added": "2026-11-12"
- },
- {
-  "id": "2026-11-11-us-inflation-fed-hike-expected",
-  "title": "Hot US inflation puts a Fed rate hike on the table",
-  "date": "2026-11-11",
-  "type": "news",
-  "outlets": [
-   "ABC News"
-  ],
-  "summary": "Shows how US inflation and interest rate expectations reach Australia through the exchange rate and imported inflation.",
-  "lede": "US consumer prices rose 0.4% in October, above the 0.3% expected and the third month in a row at 0.4% or higher, and markets now fully price a Federal Reserve rate hike at its December meeting. The US 10-year bond yield rose to about 5%, the US dollar strengthened and the Australian dollar dipped overnight before recovering to 68.78 US cents.",
-  "about": {
-   "h09": [
-    "1A.1",
-    "2C.2",
-    "3C.3"
-   ],
-   "y12": [
-    "Y3c.4",
-    "Y1c.4"
-   ],
-   "y11": [
-    "P6c.1"
-   ]
-  },
-  "also": {
-   "h09": [
-    "2C.6",
-    "4D.3"
-   ],
-   "y12": [
-    "Y3c.5",
-    "Y3e.3"
-   ],
-   "y11": [
-    "P4c.3"
-   ]
-  },
-  "issues": [
-   "inflation",
-   "rates",
-   "fx",
-   "global"
-  ],
-  "levers": [
-   "monetary",
-   "global"
-  ],
-  "diagrams": [
-   "adas",
-   "flow"
-  ],
-  "figures": [
-   {
-    "label": "US CPI, October (month on month)",
-    "value": "+0.4% (0.3% expected; September 0.6%)",
-    "asAt": "October 2026",
-    "issue": "inflation",
-    "source": "ABC News"
-   },
-   {
-    "label": "Market pricing for a Fed hike in December",
-    "value": "fully priced",
-    "asAt": "11 November 2026",
-    "issue": "rates",
-    "source": "ABC News"
-   },
-   {
-    "label": "US 10-year bond yield",
-    "value": "about 5%",
-    "asAt": "11 November 2026",
-    "issue": "rates",
-    "source": "ABC News"
-   },
-   {
-    "label": "Australian dollar",
-    "value": "68.78 US cents (Wednesday afternoon)",
-    "asAt": "11 November 2026",
-    "issue": "fx",
-    "source": "ABC News"
-   }
-  ],
-  "terms": [
-   {
-    "term": "CPI",
-    "def": "The Consumer Price Index, which measures changes in the prices of a basket of household goods and services."
-   },
-   {
-    "term": "Interest rate differential",
-    "def": "The gap between interest rates in two countries, which influences capital flows and exchange rates."
-   }
-  ],
-  "links": [
-   [
-    "ABC News, markets live blog, 11 Nov 2026",
-    "https://www.abc.net.au/news/2026-11-11/asx-markets-business-live-news-nov-11/107370848"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-11-us-inflation-fed-hike-expected.pdf",
-   "label": "Topic 1 news summary",
-   "pages": 1
-  },
-  "angle": "A Fed rate rise widens the gap between US and Australian rates, drawing capital to the US, which tends to depreciate the AUD, raise import prices and add to Australian inflation. A Fed hike also aims to shift US AD left, slowing inflation at the cost of real GDP.",
-  "questions": [
-   {
-    "q": "Explain how a rise in US interest rates could affect the Australian dollar and inflation in Australia.",
-    "marks": 4
-   }
-  ],
-  "note": "US figures as reported in an ABC live blog. \"Fully priced\" is a market expectation, not a Fed decision. See the AFR weak-dollar item filed today.",
   "added": "2026-11-12"
  },
  {
@@ -1641,6 +2214,118 @@
   ],
   "note": "Replaces the 10 November item (AUD about 69.2 US cents; swaps giving an 82% chance of an RBA peak at 4.85% with a quarter-point cut fully priced by end-2027; 10-year yield about 4.99%, lowest since late August; iron ore about US$93; support near the June low of 0.6867). The Fed official's suggestion of a 0.5-point hike (Christopher Waller) and the market odds are as reported by the AFR. See the US inflation item filed today.",
   "added": "2026-11-12"
+ },
+ {
+  "id": "2026-11-11-bracket-creep",
+  "title": "Bracket creep bites hardest at the bottom and near the top",
+  "date": "2026-11-11",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "e61 Institute"
+  ],
+  "summary": "Shows how fixed tax brackets quietly raise average tax rates and the budget surplus, and what indexing brackets would cost.",
+  "lede": "Analysis by the e61 Institute and Richard Holden finds that, without tax cuts, a $45,000 earner's average tax rate would rise from 11% to 16% over a decade from 2028, and a $190,000 earner's from 29% to 34%. In both cases more than half of real income growth is taxed away.",
+  "about": {
+   "h09": [
+    "4C.1",
+    "4C.2"
+   ],
+   "y12": [
+    "Y2b.3",
+    "Y2b.5",
+    "Y2b.12"
+   ],
+   "y11": [
+    "P5b.1",
+    "P5b.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.3",
+    "4B.1"
+   ],
+   "y12": [
+    "Y2b.13",
+    "Y1d.3"
+   ],
+   "y11": [
+    "P5a.4"
+   ]
+  },
+  "issues": [
+   "budget",
+   "inequality",
+   "inflation"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "chart",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Average tax rate, $45,000 earner, with no tax cuts for a decade from 2028",
+    "value": "11% to 16%",
+    "asAt": "2028-2038",
+    "issue": "budget",
+    "source": "e61 Institute / Richard Holden, via ABC News"
+   },
+   {
+    "label": "Average tax rate, $190,000 earner, with no tax cuts for a decade",
+    "value": "29% to 34%",
+    "asAt": "2028-2038",
+    "issue": "budget",
+    "source": "e61 Institute / Richard Holden, via ABC News"
+   },
+   {
+    "label": "Budget balance without bracket creep (PBO)",
+    "value": "deficit of 0.7% of GDP by the end of the decade, not the projected 1% surplus",
+    "asAt": "end of decade",
+    "issue": "budget",
+    "source": "Parliamentary Budget Office via ABC News"
+   },
+   {
+    "label": "Opposition pledge",
+    "value": "Angus Taylor to index tax brackets to inflation from 2028",
+    "asAt": "from 2028",
+    "issue": "budget",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Bracket creep",
+    "def": "Inflation pushes nominal incomes into higher tax brackets."
+   },
+   {
+    "term": "Fiscal drag",
+    "def": "Rising tax revenue that automatically slows the economy."
+   }
+  ],
+  "links": [
+   [
+    "ABC News, Bracket creep worst for minimum wage earners and those entering top bracket, 11 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-11/how-much-bracket-creep-costs-you-based-on-your-income/107372442"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-11-bracket-creep.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "Tax brackets are fixed in dollars, so as wages rise with inflation more income is taxed at higher marginal rates and average tax rates rise even when real pay is barely higher. It is a hidden contractionary force and a source of revenue growth; indexing brackets would protect equity but cost the budget.",
+  "questions": [
+   {
+    "q": "Explain how bracket creep affects the budget outcome and the distribution of income in Australia.",
+    "marks": 4
+   }
+  ],
+  "note": "The analysis assumes no tax cuts, though governments usually cut taxes every few years, so it shows a direction, not a forecast. The digest chart also shows $75k, $100k and $300k earners, which are not copied here, so check the ABC article before quoting those. Pairs with the 5 November budget versus inflation item.",
+  "added": "2026-11-13"
  },
  {
   "id": "2026-11-10-cost-of-living-politics-australia",
