@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HSC Economics Glossary</title>
+<meta name="description" content="Key terms for HSC Economics: look up a term, practise with flashcards, test yourself with a quiz, or print the list.">
+<style>
+/*__FONTS__*/
+:root{
+  --bg:#e8ecf4; --grid:rgba(36,71,214,.075); --grid2:rgba(36,71,214,.12);
+  --card:#ffffff; --card2:#f4f6fb; --ink:#0e1526; --mut:#4a5468; --rule:#d3d9e6; --rule2:#b9c2d6;
+  --acc:#2447d6; --acc-ink:#ffffff; --acc-soft:#e3e9fd;
+  --hl:#ffe14d; --hl-ink:#1b1600; --gap:#c93a22; --ok:#1c7d52;
+  --shadow:0 1px 0 rgba(14,21,38,.06),0 8px 24px -14px rgba(14,21,38,.25);
+  --head:'Bricolage Grotesque','Avenir Next','Segoe UI',system-ui,sans-serif;
+  --body:'Public Sans','Segoe UI',system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --bg:#0c1120; --grid:rgba(140,165,255,.06); --grid2:rgba(140,165,255,.10);
+  --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+  --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52;
+  --hl:#c9a900; --hl-ink:#fff7c8; --gap:#ff8b72; --ok:#59d39b;
+  --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.6);
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0c1120; --grid:rgba(140,165,255,.06); --grid2:rgba(140,165,255,.10);
+    --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+    --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52;
+    --hl:#c9a900; --hl-ink:#fff7c8; --gap:#ff8b72; --ok:#59d39b;
+    --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.6);
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:400 1rem/1.55 var(--body);color:var(--ink);background-color:var(--bg);
+  background-image:linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid2) 1px,transparent 1px),
+  linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:120px 120px,120px 120px,24px 24px,24px 24px;background-position:-1px -1px}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--acc)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px 60px}
+h1,h2,h3{font-family:var(--head);letter-spacing:-.015em;margin:0}
+p{margin:0}
+.mast{padding:18px 0 10px}
+.school{font-size:.78rem;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.mast h1{font-size:clamp(1.5rem,3.2vw,2.1rem);line-height:1.1}
+.mast .tag{color:var(--mut);font-size:.95rem;margin-top:2px}
+.tabs{display:flex;gap:4px;border-bottom:2px solid var(--rule2);margin:6px 0 16px;flex-wrap:wrap}
+.tab{border:0;background:none;padding:.55rem .9rem;font-family:var(--head);font-weight:700;font-size:1rem;color:var(--mut);border-bottom:3px solid transparent;margin-bottom:-2px}
+.tab[aria-selected="true"]{color:var(--acc);border-color:var(--acc)}
+.view{display:none}.view.on{display:block}
+.btn{display:inline-flex;gap:6px;align-items:center;border:1px solid var(--acc);background:var(--acc);color:var(--acc-ink);border-radius:8px;padding:.45rem .85rem;font-weight:600;font-size:.92rem;text-decoration:none}
+.btn.ghost{background:var(--card);color:var(--ink);border-color:var(--rule2)}
+.btn.ghost:hover{border-color:var(--acc);color:var(--acc)}
+.btn:disabled{opacity:.45;cursor:default}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+.bar input[type=search]{flex:1;min-width:200px;border:1px solid var(--rule2);border-radius:8px;background:var(--card);padding:.5rem .7rem}
+.tf{display:flex;flex-wrap:wrap;gap:6px}
+.tf button{border:1px solid var(--rule2);background:var(--card);border-radius:999px;padding:.3rem .8rem;font-size:.86rem;font-weight:600;color:var(--mut);display:inline-flex;gap:6px;align-items:center}
+.tf button i{width:.65em;height:.65em;border-radius:50%;background:var(--tc)}
+.tf button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.az{display:flex;flex-wrap:wrap;gap:2px;margin-bottom:12px}
+.az a{font:700 .85rem var(--head);text-decoration:none;width:1.75em;height:1.75em;display:grid;place-items:center;border-radius:6px;color:var(--acc);background:var(--card);border:1px solid var(--rule)}
+.az a.off{color:var(--rule2);pointer-events:none;background:none;border-color:transparent}
+.count{color:var(--mut);font-size:.88rem;margin-bottom:8px}
+.letter{font:800 1.3rem var(--head);color:var(--acc);margin:18px 0 6px;scroll-margin-top:12px}
+.terms{display:grid;gap:8px}
+.term{background:var(--card);border:1px solid var(--rule);border-left:6px solid var(--tc);border-radius:10px;padding:10px 14px;box-shadow:var(--shadow);scroll-margin-top:12px}
+.term.hit{outline:3px solid var(--hl)}
+.term h3{font-size:1.08rem;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.term p{margin-top:3px}
+.chip{display:inline-flex;gap:5px;align-items:center;font:600 .72rem var(--body);border-radius:999px;padding:.05rem .55rem;border:1px solid var(--tc);color:var(--ink);letter-spacing:0}
+.chip::before{content:"";width:.55em;height:.55em;border-radius:50%;background:var(--tc)}
+.tl{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:6px;font-size:.82rem}
+.tl button{border:0;background:none;padding:0;color:var(--acc);text-decoration:underline;font-size:.82rem}
+mark{background:var(--hl);color:var(--hl-ink);border-radius:3px;padding:0 1px}
+.empty{color:var(--mut);padding:16px 4px}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+.sub{color:var(--mut);font-size:.93rem;margin-bottom:10px}
+/* flashcards */
+.fc{max-width:640px;margin:0 auto}
+.card{display:grid;place-items:center;text-align:center;min-height:260px;width:100%;background:var(--card);border:2px solid var(--tc,var(--rule2));border-radius:16px;padding:24px;box-shadow:var(--shadow);font-size:1.05rem}
+.card small{display:block;color:var(--mut);font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:.72rem;margin-bottom:8px}
+.card b{font:800 1.7rem/1.2 var(--head)}
+.card.back b{font:400 1.08rem/1.5 var(--body)}
+.fcb{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+.prog{height:8px;background:var(--card2);border:1px solid var(--rule);border-radius:999px;overflow:hidden;margin:10px 0}
+.prog i{display:block;height:100%;background:var(--ok)}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:9px;overflow:hidden;background:var(--card)}
+.seg button{border:0;background:none;padding:.4rem .75rem;font-size:.86rem;font-weight:600;color:var(--mut);border-right:1px solid var(--rule)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--acc);color:var(--acc-ink)}
+/* quiz */
+.qz{max-width:700px;margin:0 auto}
+.qdef{font-size:1.1rem;background:var(--card2);border-left:6px solid var(--tc,var(--acc));border-radius:10px;padding:14px 16px;margin:10px 0 12px}
+.opts{display:grid;gap:8px}
+.opts button{text-align:left;border:1px solid var(--rule2);background:var(--card);border-radius:10px;padding:.65rem .9rem;font-weight:600}
+.opts button:hover:not(:disabled){border-color:var(--acc)}
+.opts button.right{background:color-mix(in srgb,var(--ok) 18%,var(--card));border-color:var(--ok)}
+.opts button.wrong{background:color-mix(in srgb,var(--gap) 16%,var(--card));border-color:var(--gap)}
+.score{font:800 2.2rem var(--head)}
+.rev{display:grid;gap:6px;margin-top:12px;font-size:.92rem}
+.rev div{border-left:4px solid var(--gap);padding-left:10px}
+/* list */
+table{border-collapse:collapse;width:100%;font-size:.9rem;background:var(--card)}
+th,td{border:1px solid var(--rule2);padding:5px 9px;text-align:left;vertical-align:top}
+th{background:var(--card2)}
+td:first-child{font-weight:700;width:26%}
+.lh{font:800 1.15rem var(--head);margin:18px 0 6px;display:flex;gap:8px;align-items:center}
+.lh i{width:.7em;height:.7em;border-radius:50%;background:var(--tc)}
+.foot{color:var(--mut);font-size:.82rem;margin-top:26px;border-top:1px solid var(--rule2);padding-top:12px}
+body.embed .school{display:none}
+@media print{
+  body{background:#fff;color:#000;font-size:9.5pt}
+  .tabs,.bar,.az,.smbar,.foot,.noprint{display:none!important}
+  .view{display:none!important}
+  #v-list{display:block!important}
+  .wrap{max-width:none;padding:0}
+  tr{break-inside:avoid}
+  .lh{break-after:avoid}
+}
+</style>
+</head>
+<body>
+<!-- SITEMENU:START built by build/build_sitemenu.py; edit the list of tools there, not here -->
+<style>
+.smbar{display:flex;justify-content:flex-end;padding:10px 20px 0;font-family:'Public Sans','Segoe UI',system-ui,-apple-system,sans-serif}
+.smw{display:inline-flex;gap:8px;align-items:center;font-size:13px;line-height:1.3}
+.sm{position:relative;display:inline-block;text-align:left}
+.smw svg{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sm-btn{list-style:none;cursor:pointer;display:inline-flex;gap:7px;align-items:center;background:#ffd24a;color:#1a1d2b;border-radius:999px;padding:6px 13px;font-weight:700;white-space:nowrap;text-decoration:none;user-select:none;-webkit-user-select:none}
+.sm-btn::-webkit-details-marker{display:none}
+.sm-btn:hover{background:#ffe07a}
+.sm-btn:focus-visible{outline:3px solid #2447d6;outline-offset:2px}
+.sm[open] .sm-caret{transform:rotate(180deg)}
+.sm-list{position:fixed;top:0;left:0;z-index:1000;width:min(340px,calc(100vw - 16px));max-height:calc(100vh - 90px);overflow:auto;background:#fff;color:#1a1d2b;border:1px solid #dcdfea;border-radius:14px;box-shadow:0 12px 34px rgba(10,14,40,.3);padding:8px;display:flex;flex-direction:column;gap:1px;font-weight:400}
+.sm:not([open]) .sm-list{display:none}
+.sm-h{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#5a6072;padding:8px 10px 3px}
+.sm-a{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:center;padding:7px 10px;border-radius:9px;color:inherit;text-decoration:none}
+.sm-a svg{font-size:18px;color:#2447d6}
+.sm-a b{display:block;font-size:14px;font-weight:700;color:inherit}
+.sm-a em{display:block;font-style:normal;font-size:12px;color:#5a6072}
+a.sm-a:hover,a.sm-a:focus-visible{background:#e3e9fd;outline:none}
+.sm-cur{background:#fff3c9}
+.sm-cur em{color:#7d5f00;font-weight:700}
+.sm-ext{border-top:1px solid #dcdfea;margin-top:6px;padding-top:10px;border-radius:0 0 9px 9px}
+@media print{.smbar{display:none !important}}
+:root[data-theme="dark"] .sm-list{background:#151c30;color:#e9eefb;border-color:#27304b}
+:root[data-theme="dark"] .sm-h,:root[data-theme="dark"] .sm-a em{color:#a2aec9}
+:root[data-theme="dark"] .sm-a svg{color:#8fa6ff}
+:root[data-theme="dark"] a.sm-a:hover,:root[data-theme="dark"] a.sm-a:focus-visible{background:#212c52}
+:root[data-theme="dark"] .sm-cur{background:#3a3010}
+:root[data-theme="dark"] .sm-cur em{color:#e6bd45}
+:root[data-theme="dark"] .sm-ext{border-color:#27304b}
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]) .sm-list{background:#151c30;color:#e9eefb;border-color:#27304b}
+:root:not([data-theme="light"]) .sm-h,:root:not([data-theme="light"]) .sm-a em{color:#a2aec9}
+:root:not([data-theme="light"]) .sm-a svg{color:#8fa6ff}
+:root:not([data-theme="light"]) a.sm-a:hover,:root:not([data-theme="light"]) a.sm-a:focus-visible{background:#212c52}
+:root:not([data-theme="light"]) .sm-cur{background:#3a3010}
+:root:not([data-theme="light"]) .sm-cur em{color:#e6bd45}
+:root:not([data-theme="light"]) .sm-ext{border-color:#27304b}
+}
+</style>
+<div class="smbar"><span class="smw"><a class="sm-btn sm-home" href="https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/home" aria-label="Home: back to the HSC Economics website"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg>Home</a>
+<details class="sm" id="sitemenu"><summary class="sm-btn" aria-label="Other tools: open the list of HSC Economics tools"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>Other tools<svg class="sm-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="sm-list">
+  <span class="sm-h">Finders</span>
+  <a class="sm-a" href="../hsc-question-finder-site/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.5 12h6M9.5 16h6"/></svg><span><b>Question Finder</b><em>Every HSC question, 2002 to 2025</em></span></a>
+  <a class="sm-a" href="../evidence-finder/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></svg><span><b>Evidence Finder</b><em>News, statistics and reports by dot point</em></span></a>
+  <span class="sm-h">Writing and skills</span>
+  <a class="sm-a" href="../essay-builder/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/></svg><span><b>Extended Response Builder</b><em>Plan a Section II, III or IV answer</em></span></a>
+  <a class="sm-a" href="../protection-explainer/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M7.5 20h9M5 7h14M5 7l-3 7a3 3 0 006 0zM19 7l-3 7a3 3 0 006 0z"/></svg><span><b>Who Wins from Protection</b><em>Tariffs, quotas and subsidies explained</em></span></a>
+  <a class="sm-a" href="../diagram-lab/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7 8l10 9M7 17l10-9"/></svg><span><b>Protection Diagram Lab</b><em>Experiment, predict and build the diagram</em></span></a>
+  <span class="sm-h">Reference</span>
+  <a class="sm-a" href="../economy-at-a-glance/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M21 20H3"/></svg><span><b>Economy at a Glance</b><em>The latest Australian indicators</em></span></a>
+  <span class="sm-a sm-cur" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5c3-1 6-1 8 1 2-2 5-2 8-1v13c-3-1-6-1-8 1-2-2-5-2-8-1zM12 6v13"/></svg><span><b>Economics Glossary</b><em>You are here</em></span></span>
+  <a class="sm-a" href="../mind-map/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 000-6H9a3 3 0 010-6h6.5"/></svg><span><b>Topic Map</b><em>See how the course fits together</em></span></a>
+  <a class="sm-a sm-ext" href="https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg><span><b>HSC Economics website</b><em>Back to the main class site</em></span></a>
+</div></details></span></div>
+<script>(function(){var d=document.getElementById('sitemenu');if(!d)return;var s=d.querySelector('summary'),l=d.querySelector('.sm-list');var framed=false;try{framed=window.self!==window.top}catch(e){framed=true}if(framed)d.parentNode.querySelectorAll('a').forEach(function(a){a.target='_blank';a.rel='noopener'});function place(){var b=s.getBoundingClientRect(),w=l.offsetWidth,x=Math.min(Math.max(8,b.right-w),window.innerWidth-w-8),y=b.bottom+8;l.style.left=x+'px';l.style.top=y+'px';l.style.maxHeight=Math.max(160,window.innerHeight-y-12)+'px'}function shut(){if(d.open)d.open=false}d.addEventListener('toggle',function(){if(d.open)place()});document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))shut()});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){shut();s.focus()}});window.addEventListener('scroll',shut,{passive:true});window.addEventListener('resize',shut)})();</script>
+<!-- SITEMENU:END -->
+<div class="wrap">
+<header class="mast">
+  <p class="school">Sydney Secondary College, Blackwattle Bay Campus</p>
+  <h1>Economics Glossary</h1>
+  <p class="tag" id="tag"></p>
+</header>
+<nav class="tabs" role="tablist" aria-label="Views">
+  <button class="tab" role="tab" data-view="look">Look up</button>
+  <button class="tab" role="tab" data-view="cards">Flashcards</button>
+  <button class="tab" role="tab" data-view="quiz">Quiz</button>
+  <button class="tab" role="tab" data-view="list">Print list</button>
+</nav>
+<div class="bar" id="bar">
+  <div class="tf" id="tf" role="group" aria-label="Topic"></div>
+</div>
+<main>
+<section class="view" id="v-look">
+  <div class="bar"><input type="search" id="q" placeholder="Search terms and definitions, e.g. tariff" aria-label="Search the glossary" autocomplete="off"></div>
+  <nav class="az" id="az" aria-label="Jump to a letter"></nav>
+  <p class="count" id="count" role="status"></p>
+  <div id="terms"></div>
+</section>
+<section class="view" id="v-cards"><div class="panel fc" id="fc"></div></section>
+<section class="view" id="v-quiz"><div class="panel qz" id="qz"></div></section>
+<section class="view" id="v-list">
+  <div class="bar noprint"><button class="btn" id="print">Print or save as PDF</button><span class="sub" style="margin:0">Prints the topics chosen above, in alphabetical order.</span></div>
+  <div id="list"></div>
+</section>
+</main>
+<p class="foot" id="foot"></p>
+</div>
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function(){
+'use strict';
+const D = JSON.parse(document.getElementById('data').textContent), T = D.terms, TOP = Object.fromEntries(D.topics.map(t => [t.id, t]));
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const params = new URLSearchParams(location.search);
+if (params.get('embed') === '1') document.body.classList.add('embed');
+if (['light','dark'].includes(params.get('theme'))) document.documentElement.dataset.theme = params.get('theme');
+const framed = (() => { try { return window.self !== window.top; } catch (e) { return true; } })();
+const store = { get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+const BY = Object.fromEntries(T.map(t => [t.id, t]));
+const VIEWS = ['look', 'cards', 'quiz', 'list'];
+const S = { view: 'look', top: '', q: '', term: '' };
+const known = new Set((store.get('econ-gloss-known') || []).filter(id => BY[id]));
+const color = t => TOP[t.topics[0]].color;
+const pool = () => T.filter(t => !S.top || t.topics.includes(S.top));
+const chips = t => t.topics.map(x => `<span class="chip" style="--tc:${TOP[x].color}">${esc(TOP[x].label)}</span>`).join('');
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+
+/* ---------- hash: #term=  #t=T3  #q=  #view= ---------- */
+function readHash() { const h = new URLSearchParams(location.hash.slice(1));
+  S.view = VIEWS.includes(h.get('view')) ? h.get('view') : 'look'; S.top = TOP[h.get('t')] ? h.get('t') : ''; S.q = h.get('q') || ''; S.term = BY[h.get('term')] ? h.get('term') : '';
+  if (S.term) { S.view = 'look'; S.q = ''; S.top = ''; } }
+function writeHash() { const h = new URLSearchParams(); if (S.view !== 'look') h.set('view', S.view); if (S.top) h.set('t', S.top); if (S.q && S.view === 'look') h.set('q', S.q); if (S.term) h.set('term', S.term);
+  const s = h.toString(); try { history.replaceState(null, '', location.pathname + location.search + (s ? '#' + s : '')); } catch (e) {} }
+
+/* ---------- look up ---------- */
+function hl(text, q) { const e = esc(text); if (!q) return e; const re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'ig'); return e.replace(re, '<mark>$1</mark>'); }
+function renderLook() { const q = S.q.trim().toLowerCase();
+  let list = pool().filter(t => !q || t.term.toLowerCase().includes(q) || t.def.toLowerCase().includes(q));
+  if (q) list.sort((a, b) => (b.term.toLowerCase().includes(q) - a.term.toLowerCase().includes(q)) || a.term.localeCompare(b.term));
+  const letters = new Set(list.map(t => t.term[0].toUpperCase()));
+  $('#az').innerHTML = q ? '' : 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(l => `<a href="#" data-l="${l}" class="${letters.has(l) ? '' : 'off'}">${l}</a>`).join('');
+  $('#count').textContent = `${list.length} term${list.length === 1 ? '' : 's'}${S.top ? ' in ' + TOP[S.top].label + ': ' + TOP[S.top].name : ''}${q ? ' matching “' + S.q.trim() + '”' : ''}`;
+  let last = '', html = '';
+  list.forEach(t => { const l = t.term[0].toUpperCase(); if (!q && l !== last) { html += `${last ? '</div>' : ''}<h2 class="letter" id="L-${l}">${l}</h2><div class="terms">`; last = l; } else if (q && !last) { html += '<div class="terms">'; last = '*'; }
+    html += `<article class="term ${S.term === t.id ? 'hit' : ''}" id="t-${t.id}" style="--tc:${color(t)}"><h3>${hl(t.term, q)} ${chips(t)}</h3><p>${hl(t.def, q)}</p>
+      <div class="tl"><a href="../evidence-finder/#q=${encodeURIComponent(t.term.replace(/\s*\(.*?\)/g, ''))}"${framed ? ' target="_blank" rel="noopener"' : ''}>Find it in the Evidence Finder</a><button data-copy="${t.id}">Copy link to this term</button></div></article>`; });
+  $('#terms').innerHTML = list.length ? html + '</div>' : '<p class="empty">No term matches. Check the spelling, try a shorter word, or choose All topics.</p>'; }
+
+/* ---------- flashcards ---------- */
+let F = null;
+function startCards(keep) { const p = pool(), todo = p.filter(t => !known.has(t.id));
+  F = { deck: shuffle(keep === 'all' ? p : todo).map(t => t.id), i: 0, back: false, dir: F ? F.dir : 'term', total: p.length }; }
+function renderCards() { if (!F) startCards(); const p = pool(), nk = p.filter(t => known.has(t.id)).length, t = BY[F.deck[F.i]];
+  const head = `<p class="sub">${S.top ? esc(TOP[S.top].label + ': ' + TOP[S.top].name) : 'All topics'}. You know <b>${nk}</b> of <b>${p.length}</b> terms.</p><div class="prog" role="progressbar" aria-valuemin="0" aria-valuemax="${p.length}" aria-valuenow="${nk}"><i style="width:${p.length ? nk / p.length * 100 : 0}%"></i></div>
+    <div class="bar"><div class="seg" role="group" aria-label="Card front"><button data-dir="term" aria-pressed="${F.dir === 'term'}">Show the term first</button><button data-dir="def" aria-pressed="${F.dir === 'def'}">Show the definition first</button></div></div>`;
+  if (!t) { $('#fc').innerHTML = head + `<div class="card"><div><b>${nk === p.length && p.length ? 'You know every term here.' : 'End of the deck.'}</b></div></div><div class="fcb"><button class="btn" data-fc="again">${nk === p.length ? 'Go through them all again' : 'Keep going with the ones still to learn'}</button>${nk ? '<button class="btn ghost" data-fc="forget">Reset what I know</button>' : ''}</div>`; return; }
+  const front = F.dir === 'term' ? t.term : mask(t), back = F.dir === 'term' ? t.def : t.term, showBack = F.back;
+  $('#fc').innerHTML = head + `<button class="card ${(showBack ? F.dir === 'term' : F.dir === 'def') ? 'back' : ''}" data-fc="flip" style="--tc:${color(t)}" aria-live="polite"><div><small>${showBack ? (F.dir === 'term' ? 'Definition' : 'Term') : (F.dir === 'term' ? 'Term' : 'Which term is this?')} · card ${F.i + 1} of ${F.deck.length}</small><b>${esc(showBack ? back : front)}</b>${showBack ? '' : '<small style="margin-top:14px">Say your answer, then tap to check</small>'}</div></button>
+    <div class="fcb">${showBack ? '<button class="btn ghost" data-fc="no">Still learning</button><button class="btn" data-fc="yes">I know it</button>' : '<button class="btn" data-fc="flip">Show the answer</button>'}</div>`; }
+
+/* ---------- quiz ---------- */
+function mask(t) { let d = t.def; const names = [t.term, t.term.replace(/\s*\(.*?\)/g, '')].concat((t.term.match(/\(([^)]+)\)/g) || []).map(x => x.slice(1, -1))).filter(x => x.length > 1).sort((a, b) => b.length - a.length);
+  names.forEach(n => { d = d.replace(new RegExp(n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(e?s)?', 'ig'), '_____'); }); return d; }
+let Z = null;
+function startQuiz() { const p = pool(), qs = shuffle(p).slice(0, Math.min(10, p.length)).map(t => { const same = shuffle(p.filter(x => x.id !== t.id && x.topics.some(y => t.topics.includes(y)))), other = shuffle(p.filter(x => x.id !== t.id));
+    const ds = []; same.concat(other).forEach(x => { if (ds.length < 3 && !ds.includes(x.id)) ds.push(x.id); }); return { id: t.id, opts: shuffle([t.id].concat(ds)), pick: null }; });
+  Z = { qs, i: 0 }; }
+function renderQuiz() { if (!Z) { $('#qz').innerHTML = `<h2>Test yourself</h2><p class="sub" style="margin-top:4px">Ten definitions from ${S.top ? esc(TOP[S.top].label + ': ' + TOP[S.top].name) : 'all topics'}. Choose the term each one defines. The term itself is blanked out of the definition.</p><button class="btn" data-qz="start">Start the quiz</button>`; return; }
+  if (Z.i >= Z.qs.length) { const right = Z.qs.filter(q => q.pick === q.id).length, wrong = Z.qs.filter(q => q.pick !== q.id);
+    $('#qz').innerHTML = `<h2>Your score</h2><p class="score">${right} out of ${Z.qs.length}</p>${wrong.length ? `<p class="sub">Go over these:</p><div class="rev">${wrong.map(q => `<div><b>${esc(BY[q.id].term)}</b>: ${esc(BY[q.id].def)}</div>`).join('')}</div>` : '<p class="sub">Every answer correct.</p>'}<div class="fcb" style="justify-content:flex-start"><button class="btn" data-qz="start">Try another ten</button></div>`; return; }
+  const q = Z.qs[Z.i], t = BY[q.id], done = q.pick !== null;
+  $('#qz').innerHTML = `<p class="sub">Question ${Z.i + 1} of ${Z.qs.length} · ${chips(t)}</p><h2>Which term is this?</h2><p class="qdef" style="--tc:${color(t)}">${esc(mask(t))}</p>
+    <div class="opts">${q.opts.map(id => `<button data-opt="${id}" ${done ? 'disabled' : ''} class="${done && id === q.id ? 'right' : done && id === q.pick ? 'wrong' : ''}">${esc(BY[id].term)}</button>`).join('')}</div>
+    ${done ? `<p style="margin-top:12px" role="status"><b>${q.pick === q.id ? 'Correct.' : 'Not quite. It is ' + esc(t.term) + '.'}</b></p><div class="fcb" style="justify-content:flex-start"><button class="btn" data-qz="next">${Z.i + 1 < Z.qs.length ? 'Next question' : 'See your score'}</button></div>` : ''}`;
+  if (done) { const n = $('[data-qz="next"]'); if (n) n.focus(); } }
+
+/* ---------- print list ---------- */
+function renderList() { $('#list').innerHTML = D.topics.filter(tp => !S.top || tp.id === S.top).map(tp => { const ts = T.filter(t => t.topics.includes(tp.id));
+    return `<h2 class="lh" style="--tc:${tp.color}"><i></i>${esc(tp.label)}: ${esc(tp.name)} <span class="sub" style="margin:0;font:400 .85rem var(--body)">${ts.length} terms</span></h2><table><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>${ts.map(t => `<tr><td>${esc(t.term)}</td><td>${esc(t.def)}</td></tr>`).join('')}</tbody></table>`; }).join(''); }
+
+/* ---------- shell ---------- */
+function render() { VIEWS.forEach(v => { $('#v-' + v).classList.toggle('on', v === S.view); $(`.tab[data-view="${v}"]`).setAttribute('aria-selected', v === S.view); });
+  $('#tf').innerHTML = `<button data-t="" aria-pressed="${!S.top}">All topics <span>${T.length}</span></button>` + D.topics.map(t => `<button data-t="${t.id}" aria-pressed="${S.top === t.id}" style="--tc:${t.color}" title="${esc(t.name)}"><i></i>${esc(t.label)} <span>${T.filter(x => x.topics.includes(t.id)).length}</span></button>`).join('');
+  if (S.view === 'look') renderLook(); else if (S.view === 'cards') renderCards(); else if (S.view === 'quiz') renderQuiz(); else renderList();
+  writeHash(); }
+$$('.tab').forEach(b => b.onclick = () => { S.view = b.dataset.view; S.term = ''; render(); });
+$('#tf').onclick = e => { const b = e.target.closest('[data-t]'); if (!b) return; S.top = b.dataset.t; S.term = ''; F = null; Z = null; render(); };
+$('#q').oninput = e => { S.q = e.target.value; S.term = ''; renderLook(); writeHash(); };
+$('#az').onclick = e => { const a = e.target.closest('[data-l]'); if (!a) return; e.preventDefault(); const h = $('#L-' + a.dataset.l); if (h) h.scrollIntoView({ block: 'start' }); };
+$('#terms').onclick = e => { const b = e.target.closest('[data-copy]'); if (!b) return; const url = location.origin + location.pathname + '#term=' + b.dataset.copy;
+  const done = ok => { b.textContent = ok ? 'Link copied' : url; }; try { navigator.clipboard.writeText(url).then(() => done(true), () => done(false)); } catch (err) { done(false); } };
+$('#fc').onclick = e => { const b = e.target.closest('[data-fc],[data-dir]'); if (!b) return; const a = b.dataset.fc;
+  if (b.dataset.dir) { F.dir = b.dataset.dir; F.back = false; }
+  else if (a === 'flip') F.back = !F.back;
+  else if (a === 'yes' || a === 'no') { const id = F.deck[F.i]; if (a === 'yes') known.add(id); else { known.delete(id); F.deck.push(id); } store.set('econ-gloss-known', [...known]); F.i++; F.back = false; }
+  else if (a === 'again') { const all = pool().every(t => known.has(t.id)); startCards(all ? 'all' : ''); }
+  else if (a === 'forget') { pool().forEach(t => known.delete(t.id)); store.set('econ-gloss-known', [...known]); startCards(); }
+  renderCards(); const c = $('#fc .card'); if (c && c.tagName === 'BUTTON' && a === 'flip') c.focus(); };
+$('#qz').onclick = e => { const o = e.target.closest('[data-opt]'), b = e.target.closest('[data-qz]');
+  if (o && Z && Z.qs[Z.i].pick === null) Z.qs[Z.i].pick = o.dataset.opt; else if (b && b.dataset.qz === 'start') startQuiz(); else if (b && b.dataset.qz === 'next') Z.i++; else return; renderQuiz(); };
+$('#print').onclick = () => { try { window.print(); } catch (e) {} };
+if (framed) $('#print').hidden = true;
+addEventListener('hashchange', () => { readHash(); $('#q').value = S.q; render(); jump(); });
+function jump() { if (S.term) { const el = $('#t-' + S.term); if (el) el.scrollIntoView({ block: 'center' }); } }
+$('#tag').textContent = `${T.length} key terms for HSC Economics: look one up, practise with flashcards, or test yourself`;
+$('#foot').innerHTML = `Terms and definitions are based on the topic glossaries in the Year 12 Economics Booklet 2027, with terms added and updated since. Last updated ${new Date(D.updated + 'T00:00:00').toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })}. A term taught in more than one topic is listed once and tagged with each topic. The flashcards remember what you know in this browser only.`;
+readHash(); $('#q').value = S.q; render(); jump();
+})();
+</script>
+</body>
+</html>

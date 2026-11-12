@@ -1,0 +1,4 @@
+{
+ "note": "Draft terms proposed for the glossary go here. They are NOT shown on the site. To accept one, move it into glossary.json and run python3 glossary/build.py. The 45 terms proposed on 13 November 2026 were all accepted.",
+ "terms": []
+}
