@@ -285,6 +285,7 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#e3e9fd;outline:none}
   <a class="sm-a" href="../evidence-finder/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></svg><span><b>Evidence Finder</b><em>News, statistics and reports by dot point</em></span></a>
   <span class="sm-h">Writing and skills</span>
   <span class="sm-a sm-cur" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/></svg><span><b>Extended Response Builder</b><em>You are here</em></span></span>
+  <a class="sm-a" href="../chain-builder/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="12" r="2.5"/><path d="M7.5 12h9M13.5 9l3 3-3 3"/></svg><span><b>Chain Builder</b><em>Cause and effect, one link at a time</em></span></a>
   <a class="sm-a" href="../protection-explainer/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M7.5 20h9M5 7h14M5 7l-3 7a3 3 0 006 0zM19 7l-3 7a3 3 0 006 0z"/></svg><span><b>Who Wins from Protection</b><em>Tariffs, quotas and subsidies explained</em></span></a>
   <a class="sm-a" href="../diagram-lab/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7 8l10 9M7 17l10-9"/></svg><span><b>Protection Diagram Lab</b><em>Experiment, predict and build the diagram</em></span></a>
   <span class="sm-h">Reference</span>
@@ -705,7 +706,11 @@ $('#reset').onclick = () => { if (!S.q) { scrollTo(0, 0); return; } const key = 
 const VIEWS = ['build', 'guide'];
 function show(v, push) { if (!VIEWS.includes(v)) v = 'build'; VIEWS.forEach(x => { $('#v-' + x).classList.toggle('on', x === v); $(`.tab[data-view="${x}"]`).setAttribute('aria-selected', x === v); }); if (push) { try { history.replaceState(null, '', v === 'build' ? location.pathname + location.search : '#' + v); } catch (e) {} } }
 $$('.tab').forEach(t => t.onclick = () => show(t.dataset.view, true));
-addEventListener('hashchange', () => { const h = location.hash.slice(1); if (VIEWS.includes(h)) show(h); });
+/* A link such as #q=IV-2025-28 (from the Chain Builder) opens that question. */
+function fromHash() { const k = new URLSearchParams(location.hash.slice(1)).get('q'); if (!k || !EK[k]) return false;
+  S.q = k; S.qf.s = EK[k].s; if (!S.plans[k]) S.plans[k] = newPlan(EK[k]); save(); show('build'); renderAll();
+  try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {} $('#s2').scrollIntoView({ block: 'start' }); return true; }
+addEventListener('hashchange', () => { const h = location.hash.slice(1); if (VIEWS.includes(h)) show(h); else fromHash(); });
 
 /* ---------- guide ---------- */
 $('#movel').innerHTML = MOVES.map(m => `<div><i class="lt ${m[1]}">${m[0]}</i><span><b>${m[2]}</b> ${m[3]}<q>${m[4]}</q></span></div>`).join('');
@@ -715,6 +720,7 @@ $('#foot').innerHTML = `Questions and marking criteria are from the HSC Economic
 
 renderAll();
 show(location.hash.slice(1));
+fromHash();
 
 /* Pick up evidence filed since this page was built. */
 (async () => { try { const r = await fetch(new URL('../evidence-finder/data/evidence.json', location.href), { cache: 'no-store' }); if (!r.ok) return; const f = await r.json();

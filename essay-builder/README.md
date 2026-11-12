@@ -6,6 +6,7 @@ diagram, then checks, copies or prints the plan. It plans a response; it does no
 
 - **Page:** `index.html` is one self-contained file (built, do not edit by hand).
 - **Published at:** `/essay-builder/` on the GitHub Pages site, which deploys the whole repo on every push to `main`.
+- **Links in:** `#q=IV-2025-28` (section, year, question number) opens that question; the Chain Builder uses this.
 - **Embedding:** same pattern as the other tools: `…/essay-builder/?embed=1`, with `theme=light|dark` and `fw=h09|y12`.
 
 ## The four steps

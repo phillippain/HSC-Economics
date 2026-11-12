@@ -1,0 +1,1314 @@
+{
+ "updated": "2026-11-13",
+ "chains": [
+  {
+   "id": "cash-rate-rise",
+   "title": "The RBA raises the cash rate",
+   "short": "Contractionary monetary policy",
+   "reverse": "The RBA cuts the cash rate",
+   "topic": "T4",
+   "codes": [
+    "4D.3",
+    "4D.2",
+    "4I.3",
+    "3C.3"
+   ],
+   "trigger": "The RBA Monetary Policy Board raises its cash rate target to bring inflation back to the 2–3% target band.",
+   "stem": [
+    {
+     "v": "Cash rate",
+     "d": 1,
+     "why": "The Board lifts its target for the interest rate on overnight loans between banks."
+    },
+    {
+     "v": "Market interest rates on loans and deposits",
+     "d": 1,
+     "why": "Banks' funding costs rise, so they pass the increase on to mortgages, business loans and savings accounts."
+    }
+   ],
+   "strands": [
+    {
+     "name": "Saving and spending",
+     "links": [
+      {
+       "v": "Cost of borrowing and reward for saving",
+       "d": 1,
+       "why": "Credit is dearer and saving earns more, so households and firms have a reason to spend less now."
+      },
+      {
+       "v": "Household consumption",
+       "d": -1,
+       "why": "Households put off spending, especially on items bought with credit such as cars and renovations."
+      },
+      {
+       "v": "Business investment",
+       "d": -1,
+       "why": "Fewer projects earn enough to cover the higher cost of borrowing."
+      }
+     ]
+    },
+    {
+     "name": "Cash flow",
+     "links": [
+      {
+       "v": "Repayments on variable-rate mortgages",
+       "d": 1,
+       "why": "Lenders raise the rates on existing loans, so required repayments increase."
+      },
+      {
+       "v": "Disposable income of borrowers",
+       "d": -1,
+       "why": "More of each pay goes to the bank. Savers earn more interest, but households in total owe more than they hold in deposits."
+      },
+      {
+       "v": "Household consumption",
+       "d": -1,
+       "why": "With less left over after repayments, indebted households cut back."
+      }
+     ]
+    },
+    {
+     "name": "Asset prices and wealth",
+     "links": [
+      {
+       "v": "Demand for housing and shares",
+       "d": -1,
+       "why": "Buyers can borrow less, and safer interest-bearing assets now look more attractive."
+      },
+      {
+       "v": "House and share prices",
+       "d": -1,
+       "why": "Weaker demand lowers asset prices, or slows their growth."
+      },
+      {
+       "v": "Household consumption",
+       "d": -1,
+       "why": "Households that feel less wealthy spend less: the wealth effect."
+      }
+     ]
+    },
+    {
+     "name": "Exchange rate",
+     "links": [
+      {
+       "v": "Return on Australian assets compared with overseas",
+       "d": 1,
+       "why": "Australian interest rates rise relative to those in other countries."
+      },
+      {
+       "v": "Demand for Australian dollars",
+       "d": 1,
+       "why": "Foreign investors buy Australian dollars to earn the higher return."
+      },
+      {
+       "v": "Value of the Australian dollar",
+       "d": 1,
+       "why": "More demand for the currency causes an appreciation."
+      },
+      {
+       "v": "Net exports",
+       "d": -1,
+       "why": "Exports become less competitive and imports cheaper. Cheaper imports also lower inflation directly."
+      }
+     ]
+    }
+   ],
+   "tail": [
+    {
+     "v": "Aggregate demand",
+     "d": -1,
+     "why": "Consumption, investment and net exports are all weaker."
+    },
+    {
+     "v": "Economic growth",
+     "d": -1,
+     "why": "Firms cut production as spending slows."
+    },
+    {
+     "v": "Unemployment",
+     "d": 1,
+     "why": "Firms need fewer workers, so spare capacity opens up in the labour market."
+    },
+    {
+     "v": "Inflation",
+     "d": -1,
+     "why": "Weaker demand and slower wages growth give firms less room to raise prices."
+    }
+   ],
+   "lag": "Interest rates change quickly, but the full effect on inflation can take one to two years.",
+   "limits": [
+    "It works on demand. It cannot remove inflation that comes from supply shocks, such as higher oil prices.",
+    "Fixed-rate loans and savings buffers delay the cash flow channel.",
+    "It is a blunt tool: borrowers and interest-sensitive industries such as housing bear most of the cost.",
+    "The exchange rate channel depends on what other central banks do with their rates.",
+    "If people expect high inflation to continue, wages and prices keep rising for longer."
+   ],
+   "diagram": "AD–AS diagram: AD shifts left from AD to AD₁, so the price level and real GDP both fall."
+  },
+  {
+   "id": "fiscal-expansion",
+   "title": "The government runs an expansionary budget",
+   "short": "Expansionary fiscal policy",
+   "reverse": "The government runs a contractionary budget",
+   "topic": "T4",
+   "codes": [
+    "4C.2",
+    "4B.1",
+    "3A.1",
+    "3A.3",
+    "4I.1",
+    "4I.2"
+   ],
+   "trigger": "The Australian Government raises its spending or cuts taxes to lift economic activity.",
+   "stem": [
+    {
+     "v": "Budget deficit",
+     "d": 1,
+     "why": "Discretionary decisions raise spending or lower revenue, so the budget moves towards deficit."
+    }
+   ],
+   "strands": [
+    {
+     "name": "Government spending",
+     "links": [
+      {
+       "v": "Government spending (G)",
+       "d": 1,
+       "why": "Spending on infrastructure, services or payments is an injection into the circular flow."
+      },
+      {
+       "v": "Output and employment in supplying firms",
+       "d": 1,
+       "why": "Firms that win the work produce more and hire more workers."
+      }
+     ]
+    },
+    {
+     "name": "Tax cuts and transfers",
+     "links": [
+      {
+       "v": "Household disposable income",
+       "d": 1,
+       "why": "Households keep more of their pay or receive larger payments."
+      },
+      {
+       "v": "Household consumption (C)",
+       "d": 1,
+       "why": "Part of the extra income is spent and part is saved. The share spent is the marginal propensity to consume."
+      }
+     ]
+    }
+   ],
+   "tail": [
+    {
+     "v": "Aggregate demand",
+     "d": 1,
+     "why": "G and C are both components of AD = C + I + G + (X − M)."
+    },
+    {
+     "v": "Further rounds of spending",
+     "d": 1,
+     "why": "One person's spending is another's income, so the first increase is multiplied: k = 1 ÷ (1 − MPC)."
+    },
+    {
+     "v": "Economic growth",
+     "d": 1,
+     "why": "Firms raise production to meet the extra demand."
+    },
+    {
+     "v": "Cyclical unemployment",
+     "d": -1,
+     "why": "Demand for labour is derived from demand for goods and services."
+    },
+    {
+     "v": "Inflationary pressure",
+     "d": 1,
+     "why": "If the economy is near full capacity, extra demand pulls prices up."
+    }
+   ],
+   "lag": "There is an implementation lag: budgets are annual and most measures need legislation. Once the money is spent, the effect is fairly fast.",
+   "limits": [
+    "Some of the extra income leaks into saving, tax and imports, which weakens the multiplier and widens the current account deficit.",
+    "Government borrowing can push up interest rates and crowd out private investment.",
+    "Deficits add to public debt, which limits what future budgets can do.",
+    "When inflation is high, stimulus works against the RBA's monetary policy.",
+    "Political constraints: spending is easy to start and hard to withdraw."
+   ],
+   "diagram": "AD–AS diagram: AD shifts right from AD to AD₁, so real GDP and the price level both rise."
+  },
+  {
+   "id": "depreciation",
+   "title": "The Australian dollar depreciates",
+   "short": "A fall in the exchange rate",
+   "reverse": "The Australian dollar appreciates",
+   "topic": "T2",
+   "codes": [
+    "2C.6",
+    "2C.3",
+    "3D.3",
+    "3C.3"
+   ],
+   "trigger": "The value of the Australian dollar falls against other currencies.",
+   "stem": [],
+   "strands": [
+    {
+     "name": "Exports",
+     "links": [
+      {
+       "v": "Price of Australian exports in foreign currency",
+       "d": -1,
+       "why": "Overseas buyers need less of their own currency to buy the same Australian goods and services."
+      },
+      {
+       "v": "International competitiveness",
+       "d": 1,
+       "why": "Australian goods and services are cheaper than rival products."
+      },
+      {
+       "v": "Export volumes",
+       "d": 1,
+       "why": "Overseas buyers purchase more, and tourists and students find Australia cheaper."
+      },
+      {
+       "v": "Net exports and aggregate demand",
+       "d": 1,
+       "why": "Exports are an injection, so growth and employment rise."
+      }
+     ]
+    },
+    {
+     "name": "Imports",
+     "links": [
+      {
+       "v": "Price of imports in Australian dollars",
+       "d": 1,
+       "why": "Each Australian dollar buys less foreign currency."
+      },
+      {
+       "v": "Import volumes",
+       "d": -1,
+       "why": "Households and firms switch to local substitutes where they can."
+      },
+      {
+       "v": "Output of import-competing firms",
+       "d": 1,
+       "why": "Local producers win sales from dearer imports."
+      }
+     ]
+    },
+    {
+     "name": "Inflation",
+     "links": [
+      {
+       "v": "Cost of imported goods and inputs",
+       "d": 1,
+       "why": "Fuel, machinery and consumer goods priced in foreign currency cost more in Australian dollars."
+      },
+      {
+       "v": "Imported inflation",
+       "d": 1,
+       "why": "Firms pass higher import costs on to consumers, raising the CPI."
+      },
+      {
+       "v": "Real incomes",
+       "d": -1,
+       "why": "Wages buy less when prices rise faster than pay."
+      }
+     ]
+    },
+    {
+     "name": "Foreign debt",
+     "links": [
+      {
+       "v": "Australian-dollar value of debt owed in foreign currencies",
+       "d": 1,
+       "why": "The same foreign-currency debt converts into more Australian dollars: the valuation effect."
+      },
+      {
+       "v": "Cost of servicing foreign debt",
+       "d": 1,
+       "why": "Interest payments in foreign currency take more Australian dollars."
+      },
+      {
+       "v": "Net primary income deficit",
+       "d": 1,
+       "why": "Larger interest payments are debits on the current account."
+      }
+     ]
+    }
+   ],
+   "tail": [],
+   "overall": "A depreciation helps exporters and import-competing firms but raises inflation and the cost of foreign debt.",
+   "lag": "Volumes respond slowly. The current account can worsen at first because import bills rise before export volumes do: the J-curve.",
+   "limits": [
+    "The gain depends on how responsive buyers are to price. Commodity exports are priced in US dollars and limited by supply.",
+    "Firms that rely on imported inputs face higher costs, which offsets their competitive gain.",
+    "If the depreciation was caused by lower commodity prices, the loss of export income can outweigh the benefit.",
+    "Higher imported inflation may lead the RBA to raise interest rates."
+   ],
+   "diagram": "Market for the Australian dollar: the supply of A$ shifts right (or demand shifts left), so the exchange rate falls from ER to ER₁."
+  },
+  {
+   "id": "terms-of-trade-fall",
+   "title": "Commodity prices fall",
+   "short": "A fall in the terms of trade",
+   "reverse": "Commodity prices rise",
+   "topic": "T2",
+   "codes": [
+    "2A.1",
+    "2C.2",
+    "3D.3",
+    "4H.2",
+    "3A.5"
+   ],
+   "trigger": "World prices for Australia's main exports, such as iron ore, coal and gas, fall.",
+   "stem": [
+    {
+     "v": "Terms of trade",
+     "d": -1,
+     "why": "Export prices fall relative to import prices, so a given volume of exports buys fewer imports."
+    }
+   ],
+   "strands": [
+    {
+     "name": "Balance of payments",
+     "links": [
+      {
+       "v": "Export income",
+       "d": -1,
+       "why": "The same volume of exports earns less."
+      },
+      {
+       "v": "Balance on goods and services",
+       "d": -1,
+       "why": "Export credits fall while import debits are unchanged."
+      },
+      {
+       "v": "Current account balance",
+       "d": -1,
+       "why": "A smaller trade surplus moves the current account towards deficit."
+      }
+     ]
+    },
+    {
+     "name": "Exchange rate",
+     "links": [
+      {
+       "v": "Demand for Australian dollars",
+       "d": -1,
+       "why": "Overseas buyers need fewer Australian dollars to pay for exports."
+      },
+      {
+       "v": "Value of the Australian dollar",
+       "d": -1,
+       "why": "Lower demand for the currency causes a depreciation."
+      },
+      {
+       "v": "Competitiveness of other exports",
+       "d": 1,
+       "why": "The lower dollar helps farmers, manufacturers, tourism and education. The floating exchange rate acts as a shock absorber."
+      }
+     ]
+    },
+    {
+     "name": "Income and the budget",
+     "links": [
+      {
+       "v": "Mining profits and national income",
+       "d": -1,
+       "why": "Resource companies earn less for each tonne sold."
+      },
+      {
+       "v": "Mining investment and jobs",
+       "d": -1,
+       "why": "Lower prices make new projects less profitable."
+      },
+      {
+       "v": "Company tax revenue",
+       "d": -1,
+       "why": "Lower profits mean less tax collected."
+      },
+      {
+       "v": "Budget balance",
+       "d": -1,
+       "why": "Revenue falls short of forecasts, so the deficit widens or the surplus shrinks."
+      }
+     ]
+    }
+   ],
+   "tail": [
+    {
+     "v": "Growth in real national income",
+     "d": -1,
+     "why": "Australia earns less from the rest of the world for the same work, so living standards grow more slowly."
+    }
+   ],
+   "lag": "The exchange rate reacts within days. Investment, jobs and the budget take months to years.",
+   "limits": [
+    "The depreciation offsets part of the income loss.",
+    "Export volumes may rise as earlier mining investment comes into production.",
+    "The size of the effect depends on how much of Australia's export base is commodities.",
+    "Global influences are outside the control of Australian policy."
+   ],
+   "diagram": "Market for the Australian dollar: demand for A$ shifts left, so the exchange rate falls from ER to ER₁."
+  },
+  {
+   "id": "tariff-cut",
+   "title": "Australia cuts its tariffs",
+   "short": "Trade liberalisation",
+   "reverse": "Australia raises its tariffs",
+   "topic": "T2",
+   "codes": [
+    "2D.3",
+    "1C.2",
+    "2D.1",
+    "4E.2",
+    "3B.3"
+   ],
+   "trigger": "The Australian Government lowers or removes tariffs on imported goods.",
+   "stem": [
+    {
+     "v": "Price of imports in Australia",
+     "d": -1,
+     "why": "The tax on imports is lower, so the landed price falls towards the world price."
+    }
+   ],
+   "strands": [
+    {
+     "name": "Consumers and firms that use imports",
+     "links": [
+      {
+       "v": "Prices paid by consumers",
+       "d": -1,
+       "why": "Imports are cheaper, and local firms must match them."
+      },
+      {
+       "v": "Input costs for firms",
+       "d": -1,
+       "why": "Imported machinery and components cost less."
+      },
+      {
+       "v": "Real incomes",
+       "d": 1,
+       "why": "The same income buys more, and inflation is lower."
+      }
+     ]
+    },
+    {
+     "name": "Protected industries",
+     "links": [
+      {
+       "v": "Competition from imports",
+       "d": 1,
+       "why": "Local producers lose the price advantage the tariff gave them."
+      },
+      {
+       "v": "Output of less efficient local firms",
+       "d": -1,
+       "why": "Firms that cannot match the world price lose sales or close."
+      },
+      {
+       "v": "Structural unemployment",
+       "d": 1,
+       "why": "Workers in those industries and regions lose jobs, and their skills may not match the jobs available."
+      }
+     ]
+    },
+    {
+     "name": "Resources and efficiency",
+     "links": [
+      {
+       "v": "Resources moving to industries with a comparative advantage",
+       "d": 1,
+       "why": "Labour and capital shift to where Australia produces at a lower opportunity cost."
+      },
+      {
+       "v": "Productivity and international competitiveness",
+       "d": 1,
+       "why": "Competition forces firms to cut costs and innovate."
+      },
+      {
+       "v": "Exports",
+       "d": 1,
+       "why": "More efficient firms with cheaper inputs can sell more overseas."
+      }
+     ]
+    },
+    {
+     "name": "Government",
+     "links": [
+      {
+       "v": "Tariff revenue",
+       "d": -1,
+       "why": "A lower rate is collected on each import."
+      }
+     ]
+    }
+   ],
+   "tail": [],
+   "overall": "The costs are immediate and fall on particular industries and regions. The gains are spread widely and build over time.",
+   "lag": "Prices fall quickly. The shift of resources into more efficient industries takes years.",
+   "limits": [
+    "Adjustment costs are concentrated, so displaced workers need retraining and support.",
+    "Other countries may keep their own protection, so Australian exporters do not gain equal access.",
+    "Some industries may be kept for strategic or security reasons.",
+    "Political constraints: the workers who lose are easy to see and the consumers who gain are not."
+   ],
+   "diagram": "Tariff diagram: the price falls from Pw+t to Pw. Domestic output falls, consumption rises and imports increase."
+  },
+  {
+   "id": "wages-above-productivity",
+   "title": "Wages grow faster than productivity",
+   "short": "Wage pressure",
+   "reverse": "Wages grow more slowly than productivity",
+   "topic": "T3",
+   "codes": [
+    "3C.3",
+    "4F.4",
+    "3B.3",
+    "4A.7"
+   ],
+   "trigger": "Nominal wages rise faster than output per worker.",
+   "stem": [],
+   "strands": [
+    {
+     "name": "Costs and prices",
+     "links": [
+      {
+       "v": "Unit labour costs",
+       "d": 1,
+       "why": "Firms pay more for each unit of output because pay has risen faster than output per worker."
+      },
+      {
+       "v": "Prices",
+       "d": 1,
+       "why": "Firms raise prices to protect their profit margins."
+      },
+      {
+       "v": "Cost-push inflation",
+       "d": 1,
+       "why": "Higher costs of production shift aggregate supply to the left."
+      },
+      {
+       "v": "Inflationary expectations",
+       "d": 1,
+       "why": "Workers expect higher prices and seek higher pay again: the wage–price spiral."
+      }
+     ]
+    },
+    {
+     "name": "Demand",
+     "links": [
+      {
+       "v": "Household incomes",
+       "d": 1,
+       "why": "Workers take home more pay."
+      },
+      {
+       "v": "Household consumption",
+       "d": 1,
+       "why": "Most of the extra income is spent."
+      },
+      {
+       "v": "Demand-pull inflation",
+       "d": 1,
+       "why": "If the economy is near capacity, the extra spending pulls prices up."
+      }
+     ]
+    },
+    {
+     "name": "Jobs and competitiveness",
+     "links": [
+      {
+       "v": "Cost of labour compared with capital",
+       "d": 1,
+       "why": "Workers become more expensive relative to machines and software."
+      },
+      {
+       "v": "Demand for labour",
+       "d": -1,
+       "why": "Firms substitute capital for labour or hire fewer workers."
+      },
+      {
+       "v": "International competitiveness",
+       "d": -1,
+       "why": "Australian costs rise relative to those of trading partners."
+      },
+      {
+       "v": "Unemployment",
+       "d": 1,
+       "why": "Fewer jobs are offered at the higher wage, especially for low-skilled workers."
+      }
+     ]
+    }
+   ],
+   "tail": [],
+   "overall": "Wage rises are sustainable when matched by productivity. When they are not, they add to inflation and can cost jobs.",
+   "lag": "Wage decisions flow through over one to two years as awards and enterprise agreements are renewed.",
+   "limits": [
+    "If productivity grows as fast as wages, unit labour costs do not rise.",
+    "Firms may absorb higher wages in lower profit margins instead of raising prices.",
+    "After a period of falling real wages, a rise may only restore lost purchasing power.",
+    "The RBA may raise the cash rate if wages growth threatens the inflation target."
+   ],
+   "diagram": "AD–AS diagram: AS shifts left from AS to AS₁, so the price level rises and real GDP falls."
+  },
+  {
+   "id": "global-downturn",
+   "title": "Growth slows in Australia's major trading partners",
+   "short": "A global downturn",
+   "reverse": "Growth picks up in Australia's major trading partners",
+   "topic": "T1",
+   "codes": [
+    "1A.8",
+    "1D.9",
+    "4H.2",
+    "3A.7",
+    "2A.1"
+   ],
+   "trigger": "Economic growth falls in economies such as China, Japan and the United States.",
+   "stem": [],
+   "strands": [
+    {
+     "name": "Trade",
+     "links": [
+      {
+       "v": "Overseas demand for Australian exports",
+       "d": -1,
+       "why": "Trading partners with lower incomes buy fewer resources, services and manufactured goods."
+      },
+      {
+       "v": "Export volumes and commodity prices",
+       "d": -1,
+       "why": "Weaker world demand lowers both the quantity sold and its price."
+      },
+      {
+       "v": "Export income",
+       "d": -1,
+       "why": "Lower prices and volumes cut what exporters earn."
+      }
+     ]
+    },
+    {
+     "name": "Confidence and investment",
+     "links": [
+      {
+       "v": "Business and consumer confidence",
+       "d": -1,
+       "why": "Bad news from overseas and falling share prices make firms and households cautious."
+      },
+      {
+       "v": "Investment and consumption",
+       "d": -1,
+       "why": "Firms delay projects and households save more."
+      }
+     ]
+    },
+    {
+     "name": "Financial flows",
+     "links": [
+      {
+       "v": "Investors' willingness to take risks",
+       "d": -1,
+       "why": "In a downturn investors move funds to safe assets such as US government bonds."
+      },
+      {
+       "v": "Value of the Australian dollar",
+       "d": -1,
+       "why": "Less capital inflow and lower commodity prices reduce demand for the currency."
+      },
+      {
+       "v": "Competitiveness of Australian exports",
+       "d": 1,
+       "why": "The lower dollar cushions exporters and import-competing firms."
+      }
+     ]
+    }
+   ],
+   "tail": [
+    {
+     "v": "Aggregate demand",
+     "d": -1,
+     "why": "Exports, investment and consumption are all weaker."
+    },
+    {
+     "v": "Economic growth",
+     "d": -1,
+     "why": "The Australian business cycle follows the international business cycle."
+    },
+    {
+     "v": "Cyclical unemployment",
+     "d": 1,
+     "why": "Firms need fewer workers when demand falls."
+    },
+    {
+     "v": "Budget deficit",
+     "d": 1,
+     "why": "Automatic stabilisers: tax revenue falls and welfare payments rise without any new decision."
+    }
+   ],
+   "lag": "Share prices and the dollar react at once. Exports, jobs and the budget follow over the next few quarters.",
+   "limits": [
+    "Expansionary monetary and fiscal policy can offset part of the fall in demand.",
+    "The floating exchange rate absorbs some of the shock.",
+    "The effect depends on which trading partner slows: China matters most for resource exports.",
+    "Global influences limit what domestic policy can achieve."
+   ],
+   "diagram": "AD–AS diagram: AD shifts left. Or the business cycle: Australia moving from an upswing into a downswing."
+  },
+  {
+   "id": "productivity-rise",
+   "title": "Productivity rises",
+   "short": "Successful microeconomic reform",
+   "reverse": "Productivity falls",
+   "topic": "T4",
+   "codes": [
+    "4E.1",
+    "4E.2",
+    "3A.6",
+    "4I.1",
+    "4I.3"
+   ],
+   "trigger": "Microeconomic reform, new technology or better skills raise output per unit of input.",
+   "stem": [
+    {
+     "v": "Unit costs of production",
+     "d": -1,
+     "why": "Firms produce more from the same labour and capital."
+    }
+   ],
+   "strands": [
+    {
+     "name": "Prices",
+     "links": [
+      {
+       "v": "Prices charged by firms",
+       "d": -1,
+       "why": "Competition pushes firms to pass lower costs on to buyers."
+      },
+      {
+       "v": "Inflation",
+       "d": -1,
+       "why": "The economy can grow without the same pressure on prices."
+      }
+     ]
+    },
+    {
+     "name": "Competitiveness",
+     "links": [
+      {
+       "v": "International competitiveness",
+       "d": 1,
+       "why": "Australian goods and services become cheaper relative to rivals."
+      },
+      {
+       "v": "Exports and import-competing output",
+       "d": 1,
+       "why": "Local firms win sales at home and overseas."
+      },
+      {
+       "v": "Current account deficit",
+       "d": -1,
+       "why": "A stronger trade balance improves the current account."
+      }
+     ]
+    },
+    {
+     "name": "Incomes",
+     "links": [
+      {
+       "v": "Firms' capacity to pay higher wages",
+       "d": 1,
+       "why": "Each worker produces more, so higher pay does not raise unit labour costs."
+      },
+      {
+       "v": "Real incomes and living standards",
+       "d": 1,
+       "why": "Wages can rise faster than prices."
+      }
+     ]
+    }
+   ],
+   "tail": [
+    {
+     "v": "Aggregate supply",
+     "d": 1,
+     "why": "The economy's productive capacity grows: the AS curve shifts right."
+    },
+    {
+     "v": "Sustainable rate of economic growth",
+     "d": 1,
+     "why": "The economy can grow faster without causing inflation."
+    }
+   ],
+   "lag": "Long. The benefits of reform can take many years to appear.",
+   "limits": [
+    "Time lags: governments bear the political cost long before the gains arrive.",
+    "Reform causes structural unemployment in the short run as inefficient firms close.",
+    "The gains may go to profits instead of wages or lower prices if markets are not competitive.",
+    "Political constraints: the groups that lose from reform resist it."
+   ],
+   "diagram": "AD–AS diagram: AS shifts right from AS to AS₁, so real GDP rises and the price level falls."
+  },
+  {
+   "id": "inflation-rise",
+   "title": "Inflation rises above the target band",
+   "short": "The effects of high inflation",
+   "reverse": null,
+   "topic": "T3",
+   "codes": [
+    "3C.4",
+    "4A.3",
+    "4A.7",
+    "3C.3"
+   ],
+   "trigger": "The general level of prices rises faster than the RBA's 2–3% target.",
+   "stem": [],
+   "strands": [
+    {
+     "name": "Households",
+     "links": [
+      {
+       "v": "Prices compared with wages",
+       "d": 1,
+       "why": "Prices rise faster than most pay packets."
+      },
+      {
+       "v": "Real wages and purchasing power",
+       "d": -1,
+       "why": "The same income buys fewer goods and services."
+      },
+      {
+       "v": "Inequality",
+       "d": 1,
+       "why": "People on low or fixed incomes spend most of their income on essentials and are hit hardest."
+      }
+     ]
+    },
+    {
+     "name": "Savers and borrowers",
+     "links": [
+      {
+       "v": "Real value of savings",
+       "d": -1,
+       "why": "Money in the bank buys less each year unless interest rates keep up."
+      },
+      {
+       "v": "Real value of existing debts",
+       "d": -1,
+       "why": "Borrowers repay with dollars that are worth less, so wealth shifts from lenders to borrowers."
+      }
+     ]
+    },
+    {
+     "name": "Competitiveness",
+     "links": [
+      {
+       "v": "Australian prices compared with trading partners",
+       "d": 1,
+       "why": "Local costs and prices rise faster than those overseas."
+      },
+      {
+       "v": "International competitiveness",
+       "d": -1,
+       "why": "Exports are dearer and imports relatively cheaper."
+      },
+      {
+       "v": "Net exports",
+       "d": -1,
+       "why": "Export volumes fall and import volumes rise."
+      }
+     ]
+    },
+    {
+     "name": "Expectations and policy",
+     "links": [
+      {
+       "v": "Inflationary expectations",
+       "d": 1,
+       "why": "People come to expect that prices will keep rising."
+      },
+      {
+       "v": "Wage claims",
+       "d": 1,
+       "why": "Workers seek pay rises to cover expected inflation."
+      },
+      {
+       "v": "Cash rate",
+       "d": 1,
+       "why": "The RBA tightens monetary policy to return inflation to target."
+      },
+      {
+       "v": "Economic growth",
+       "d": -1,
+       "why": "Higher interest rates slow spending, and unemployment rises."
+      }
+     ]
+    }
+   ],
+   "tail": [],
+   "overall": "High inflation redistributes income, erodes competitiveness and forces a policy response that slows growth.",
+   "lag": "Real incomes fall straight away. The policy response and its effect on growth follow over one to two years.",
+   "limits": [
+    "The effect on households depends on whether wages and welfare payments are indexed to prices.",
+    "Borrowers gain only if interest rates do not rise by as much as inflation.",
+    "If trading partners have similar inflation, competitiveness is little changed.",
+    "Low, stable inflation is the aim. Deflation carries costs of its own."
+   ],
+   "diagram": "Phillips curve, or AD–AS showing the cause: AD shifting right (demand-pull) or AS shifting left (cost-push)."
+  },
+  {
+   "id": "sustained-cad",
+   "title": "Australia runs a current account deficit year after year",
+   "short": "External stability",
+   "reverse": null,
+   "topic": "T3",
+   "codes": [
+    "3D.3",
+    "2B.3",
+    "3D.1",
+    "4A.4"
+   ],
+   "trigger": "Payments to the rest of the world on the current account exceed receipts for many years.",
+   "stem": [
+    {
+     "v": "Financial account surplus",
+     "d": 1,
+     "why": "A current account deficit must be funded by borrowing from overseas or selling assets to foreign investors."
+    }
+   ],
+   "strands": [
+    {
+     "name": "Debt",
+     "links": [
+      {
+       "v": "Net foreign debt",
+       "d": 1,
+       "why": "Each year's borrowing adds to the stock of debt."
+      },
+      {
+       "v": "Interest payments to overseas lenders",
+       "d": 1,
+       "why": "A larger debt costs more to service."
+      },
+      {
+       "v": "Net primary income deficit",
+       "d": 1,
+       "why": "Interest payments are debits on the current account."
+      },
+      {
+       "v": "Current account deficit",
+       "d": 1,
+       "why": "The deficit feeds itself: the debt trap."
+      }
+     ]
+    },
+    {
+     "name": "Equity",
+     "links": [
+      {
+       "v": "Foreign ownership of Australian assets",
+       "d": 1,
+       "why": "Foreign investors buy shares, companies and property."
+      },
+      {
+       "v": "Profits and dividends paid overseas",
+       "d": 1,
+       "why": "Owners take their returns out of Australia."
+      },
+      {
+       "v": "Net primary income deficit",
+       "d": 1,
+       "why": "Dividends are also debits on the current account."
+      }
+     ]
+    },
+    {
+     "name": "Vulnerability",
+     "links": [
+      {
+       "v": "Reliance on foreign lenders",
+       "d": 1,
+       "why": "Australia needs a steady inflow of funds to cover the gap."
+      },
+      {
+       "v": "Exposure to changes in investor confidence",
+       "d": 1,
+       "why": "If lenders lose confidence they demand higher returns or withdraw funds."
+      },
+      {
+       "v": "Risk of a sharp depreciation and higher interest rates",
+       "d": 1,
+       "why": "A sudden fall in capital inflow lowers the dollar and raises the cost of borrowing."
+      }
+     ]
+    },
+    {
+     "name": "The other view",
+     "links": [
+      {
+       "v": "Funds available for investment",
+       "d": 1,
+       "why": "Foreign saving lets Australia invest more than it saves."
+      },
+      {
+       "v": "Productive capacity",
+       "d": 1,
+       "why": "Investment in mines, infrastructure and technology expands what the economy can produce."
+      },
+      {
+       "v": "Future export income",
+       "d": 1,
+       "why": "The extra output can service the debt. On this view a deficit from private decisions is not a problem: the Pitchford thesis."
+      }
+     ]
+    }
+   ],
+   "tail": [],
+   "overall": "A current account deficit is sustainable when the borrowing funds productive investment and lenders stay confident.",
+   "lag": "The stock of liabilities builds slowly, but a loss of confidence can happen within days.",
+   "limits": [
+    "Most foreign debt is private, taken on by firms and banks that expect to repay it.",
+    "Much of the debt is hedged or in Australian dollars, which reduces the valuation risk.",
+    "A floating exchange rate adjusts gradually, which lowers the chance of a crisis.",
+    "The debt servicing ratio shows whether export income can cover the interest."
+   ],
+   "diagram": "Flow chart of the debt trap cycle: CAD → foreign borrowing → net foreign debt → interest payments → net primary income deficit → CAD."
+  },
+  {
+   "id": "carbon-price",
+   "title": "A price is put on carbon emissions",
+   "short": "Market-based environmental policy",
+   "reverse": null,
+   "topic": "T4",
+   "codes": [
+    "4G.2",
+    "3F.2",
+    "4I.6",
+    "3F.4"
+   ],
+   "trigger": "The government makes polluters pay for each tonne of greenhouse gas they emit, through a tax or tradable permits.",
+   "stem": [
+    {
+     "v": "Private cost of emissions-intensive production",
+     "d": 1,
+     "why": "The external cost of pollution is added to the firm's own costs: the externality is internalised."
+    }
+   ],
+   "strands": [
+    {
+     "name": "Producers",
+     "links": [
+      {
+       "v": "Supply of emissions-intensive goods",
+       "d": -1,
+       "why": "Higher costs shift the supply curve to the left."
+      },
+      {
+       "v": "Price of those goods",
+       "d": 1,
+       "why": "Firms pass on part of the cost."
+      },
+      {
+       "v": "Quantity produced and consumed",
+       "d": -1,
+       "why": "Buyers respond to the higher price."
+      },
+      {
+       "v": "Emissions",
+       "d": -1,
+       "why": "Less of the polluting good is made."
+      }
+     ]
+    },
+    {
+     "name": "Switching",
+     "links": [
+      {
+       "v": "Cost of clean technology compared with polluting technology",
+       "d": -1,
+       "why": "Renewables and energy efficiency become relatively cheaper."
+      },
+      {
+       "v": "Investment in clean technology",
+       "d": 1,
+       "why": "Firms have a lasting incentive to cut the emissions they must pay for."
+      },
+      {
+       "v": "Emissions over time",
+       "d": -1,
+       "why": "Production methods change, not only the quantity produced."
+      }
+     ]
+    },
+    {
+     "name": "Households",
+     "links": [
+      {
+       "v": "Energy prices",
+       "d": 1,
+       "why": "Electricity and gas producers pass on the carbon cost."
+      },
+      {
+       "v": "Cost of living",
+       "d": 1,
+       "why": "Low-income households spend a larger share of income on energy, so the effect is regressive."
+      }
+     ]
+    },
+    {
+     "name": "Trade-exposed firms",
+     "links": [
+      {
+       "v": "Costs compared with overseas rivals that face no carbon price",
+       "d": 1,
+       "why": "Australian producers pay a cost their competitors do not."
+      },
+      {
+       "v": "International competitiveness",
+       "d": -1,
+       "why": "Exports and import-competing firms lose sales."
+      },
+      {
+       "v": "Risk of production moving offshore",
+       "d": 1,
+       "why": "Emissions shift to another country instead of falling: carbon leakage."
+      }
+     ]
+    }
+   ],
+   "tail": [],
+   "overall": "A carbon price cuts emissions at the lowest cost to the economy, but raises prices and needs compensation and international co-operation.",
+   "lag": "Prices change at once. Investment in new technology takes years.",
+   "limits": [
+    "Political constraints: higher energy prices are unpopular, and policy has changed with governments.",
+    "Carbon leakage, unless other countries act or trade-exposed firms are shielded.",
+    "Demand for energy is not very responsive to price in the short run.",
+    "Climate change is a global problem, so one country's action has limited effect alone."
+   ],
+   "diagram": "Negative externality diagram: the carbon price lifts the private cost curve (MPC) up to the social cost curve (MSC), so output falls to the socially efficient level."
+  },
+  {
+   "id": "unemployment-rise",
+   "title": "Unemployment rises",
+   "short": "The effects of unemployment",
+   "reverse": null,
+   "topic": "T3",
+   "codes": [
+    "3B.6",
+    "4A.2",
+    "3E.6",
+    "4C.1"
+   ],
+   "trigger": "The unemployment rate increases as the economy slows.",
+   "stem": [],
+   "strands": [
+    {
+     "name": "Lost output",
+     "links": [
+      {
+       "v": "Number of people producing goods and services",
+       "d": -1,
+       "why": "Workers who want jobs are idle."
+      },
+      {
+       "v": "Real GDP compared with its potential",
+       "d": -1,
+       "why": "The economy operates inside its production possibility frontier. The lost output is an opportunity cost."
+      }
+     ]
+    },
+    {
+     "name": "Households and demand",
+     "links": [
+      {
+       "v": "Household incomes",
+       "d": -1,
+       "why": "Wages are replaced by much lower welfare payments."
+      },
+      {
+       "v": "Household consumption",
+       "d": -1,
+       "why": "Unemployed households spend less, and employed households save more in case they are next."
+      },
+      {
+       "v": "Aggregate demand",
+       "d": -1,
+       "why": "Lower spending leads firms to cut more jobs: a downward multiplier."
+      }
+     ]
+    },
+    {
+     "name": "The budget",
+     "links": [
+      {
+       "v": "Income tax revenue",
+       "d": -1,
+       "why": "Fewer people earn taxable income."
+      },
+      {
+       "v": "Welfare payments",
+       "d": 1,
+       "why": "More people qualify for JobSeeker."
+      },
+      {
+       "v": "Budget deficit",
+       "d": 1,
+       "why": "These automatic stabilisers widen the deficit without any new decision."
+      }
+     ]
+    },
+    {
+     "name": "Skills and inequality",
+     "links": [
+      {
+       "v": "Long-term unemployment",
+       "d": 1,
+       "why": "The longer people are out of work, the harder it is to return."
+      },
+      {
+       "v": "Skills of the unemployed",
+       "d": -1,
+       "why": "Skills and work habits fade, so cyclical unemployment can become structural."
+      },
+      {
+       "v": "Inequality and social costs",
+       "d": 1,
+       "why": "Income losses fall on particular groups and regions, with poorer health and family stress."
+      }
+     ]
+    },
+    {
+     "name": "Wages and prices",
+     "links": [
+      {
+       "v": "Spare capacity in the labour market",
+       "d": 1,
+       "why": "More people compete for each job."
+      },
+      {
+       "v": "Wages growth",
+       "d": -1,
+       "why": "Workers have less bargaining power."
+      },
+      {
+       "v": "Inflation",
+       "d": -1,
+       "why": "Slower growth in labour costs and weaker demand ease price pressure."
+      }
+     ]
+    }
+   ],
+   "tail": [],
+   "overall": "Unemployment wastes resources, widens the budget deficit and inequality, and eases inflation.",
+   "lag": "Jobs are lost quickly in a downturn. Long-term unemployment and skill loss last for years after growth returns.",
+   "limits": [
+    "The costs depend on how long people stay unemployed, not only on the unemployment rate.",
+    "Underemployment and hidden unemployment mean the rate understates the spare capacity.",
+    "Welfare payments and automatic stabilisers cushion the fall in consumption.",
+    "Below the NAIRU, lower unemployment adds to inflation, which is a conflict between objectives."
+   ],
+   "diagram": "AD–AS diagram: AD shifts left and real GDP falls below full-employment output. Or a production possibility frontier with a point inside it."
+  }
+ ]
+}

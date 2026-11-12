@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HSC Economics Chain Builder</title>
+<meta name="description" content="Cause and effect chains for HSC Economics: explore how an event flows through the economy, build the chain yourself, and predict each effect.">
+<style>
+/*__FONTS__*/
+:root{
+  --bg:#e8ecf4; --grid:rgba(36,71,214,.075); --grid2:rgba(36,71,214,.12);
+  --card:#ffffff; --card2:#f4f6fb; --ink:#0e1526; --mut:#4a5468; --rule:#d3d9e6; --rule2:#b9c2d6;
+  --acc:#2447d6; --acc-ink:#ffffff; --acc-soft:#e3e9fd;
+  --hl:#ffe14d; --hl-ink:#1b1600; --gap:#c93a22; --ok:#1c7d52;
+  --up:#1c7d52; --dn:#c93a22;
+  --shadow:0 1px 0 rgba(14,21,38,.06),0 8px 24px -14px rgba(14,21,38,.25);
+  --head:'Bricolage Grotesque','Avenir Next','Segoe UI',system-ui,sans-serif;
+  --body:'Public Sans','Segoe UI',system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --bg:#0c1120; --grid:rgba(140,165,255,.06); --grid2:rgba(140,165,255,.10);
+  --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+  --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52;
+  --hl:#c9a900; --hl-ink:#fff7c8; --gap:#ff8b72; --ok:#59d39b; --up:#59d39b; --dn:#ff8b72;
+  --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.6);
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0c1120; --grid:rgba(140,165,255,.06); --grid2:rgba(140,165,255,.10);
+    --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+    --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52;
+    --hl:#c9a900; --hl-ink:#fff7c8; --gap:#ff8b72; --ok:#59d39b; --up:#59d39b; --dn:#ff8b72;
+    --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.6);
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:400 1rem/1.5 var(--body);color:var(--ink);background-color:var(--bg);
+  background-image:linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid2) 1px,transparent 1px),
+  linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:120px 120px,120px 120px,24px 24px,24px 24px;background-position:-1px -1px}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--acc)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px 60px}
+h1,h2,h3{font-family:var(--head);letter-spacing:-.015em;margin:0}
+p{margin:0}
+.mast{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;padding:18px 0 10px}
+.school{font-size:.78rem;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.mast h1{font-size:clamp(1.5rem,3.2vw,2.1rem);line-height:1.1}
+.mast .tag{color:var(--mut);font-size:.95rem;margin-top:2px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:9px;overflow:hidden;background:var(--card);flex-wrap:wrap}
+.seg button{border:0;background:none;padding:.42rem .75rem;font-size:.88rem;font-weight:600;color:var(--mut);border-right:1px solid var(--rule)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--acc);color:var(--acc-ink)}
+.seg small{display:block;font-weight:400;font-size:.7rem;opacity:.85}
+.tabs{display:flex;gap:4px;border-bottom:2px solid var(--rule2);margin:6px 0 16px;flex-wrap:wrap}
+.tab{border:0;background:none;padding:.55rem .9rem;font-family:var(--head);font-weight:700;font-size:1rem;color:var(--mut);border-bottom:3px solid transparent;margin-bottom:-2px}
+.tab[aria-selected="true"]{color:var(--acc);border-color:var(--acc)}
+.btn{display:inline-flex;gap:6px;align-items:center;border:1px solid var(--acc);background:var(--acc);color:var(--acc-ink);border-radius:8px;padding:.45rem .85rem;font-weight:600;font-size:.9rem;text-decoration:none}
+.btn.ghost{background:var(--card);color:var(--ink);border-color:var(--rule2)}
+.btn.ghost:hover{border-color:var(--acc);color:var(--acc)}
+.btn.sm{padding:.25rem .6rem;font-size:.82rem}
+.sub{color:var(--mut);font-size:.93rem}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
+/* chain picker */
+.pick{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px;margin-bottom:18px}
+.pk{text-align:left;background:var(--card);border:1px solid var(--rule);border-left:6px solid var(--tc);border-radius:10px;padding:.55rem .75rem}
+.pk:hover{border-color:var(--acc)}
+.pk[aria-pressed="true"]{background:var(--acc-soft);border-color:var(--acc)}
+.pk b{display:block;font-family:var(--head);line-height:1.2}
+.pk small{color:var(--mut);font-size:.78rem}
+.cols{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(280px,.8fr);gap:16px;align-items:start}
+.cols>*{min-width:0}
+@media (max-width:960px){.cols{grid-template-columns:1fr}}
+.chead{display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
+.chead h2{font-size:1.35rem}
+.chips{display:flex;flex-wrap:wrap;gap:4px}
+.chip{display:inline-block;font-size:.74rem;border-radius:999px;padding:.08rem .55rem;background:var(--card2);border:1px solid var(--tc,var(--rule));color:var(--ink)}
+.chip::before{content:"";display:inline-block;width:.55em;height:.55em;border-radius:50%;background:var(--tc,var(--rule2));margin-right:5px}
+/* flow chart */
+.flow{display:flex;flex-direction:column;align-items:center;gap:0}
+.trig{background:var(--ink);color:var(--bg);border-radius:12px;padding:.6rem 1rem;max-width:560px;text-align:center;font-weight:600}
+.trig small{display:block;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:.7rem;opacity:.75}
+.arr{width:2px;height:16px;background:var(--rule2);position:relative;margin:2px 0 7px}
+.arr::after{content:"";position:absolute;left:-4px;bottom:-6px;border:5px solid transparent;border-top-color:var(--rule2)}
+.col{display:flex;flex-direction:column;align-items:center;width:100%}
+.strands{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;width:100%;align-items:start}
+.strand{background:var(--card2);border:1px dashed var(--rule2);border-radius:12px;padding:8px;display:flex;flex-direction:column;align-items:center}
+.strand>h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);font-family:var(--body);font-weight:700;margin-bottom:8px;text-align:center}
+.lk{width:100%;max-width:420px;text-align:left;background:var(--card);border:1px solid var(--rule2);border-left:5px solid var(--dc,var(--rule2));border-radius:9px;padding:.4rem .6rem;font-size:.9rem;line-height:1.3;display:grid;grid-template-columns:1fr auto;gap:2px 8px;align-items:center}
+button.lk:hover{border-color:var(--acc)}
+.lk i{font-style:normal;font-weight:800;font-size:1.15rem;color:var(--dc)}
+.lk.up{--dc:var(--up)}.lk.dn{--dc:var(--dn)}
+.lk p{grid-column:1/-1;font-size:.84rem;color:var(--mut);margin-top:3px}
+.lk.new{animation:pop .35s ease}
+@keyframes pop{from{transform:scale(.92);opacity:.3}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.lk.new{animation:none}}
+.overall{margin-top:12px;border-left:4px solid var(--acc);background:var(--card2);border-radius:0 8px 8px 0;padding:8px 12px;font-size:.93rem;width:100%}
+.tools{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
+/* side */
+.side h3{font-size:.98rem;margin:14px 0 4px}
+.side h3:first-child{margin-top:0}
+.side ul{margin:0;padding-left:1.1em;font-size:.9rem;display:grid;gap:3px}
+.side p{font-size:.9rem}
+.fig{font-size:.86rem;border-bottom:1px solid var(--rule);padding:4px 0}
+.fig b{font-family:var(--head);font-size:.98rem}
+.fig small{display:block;color:var(--mut)}
+.pq{display:block;font-size:.86rem;border:1px solid var(--rule);border-radius:8px;padding:5px 8px;margin-top:5px;text-decoration:none;color:var(--ink)}
+.pq:hover{border-color:var(--acc)}
+.pq b{color:var(--acc);font-size:.78rem;display:block}
+a.gt{color:inherit;text-decoration:underline dotted var(--acc);text-underline-offset:2px;cursor:help}
+/* build + predict */
+.game{max-width:900px;margin:0 auto}
+.ask{background:var(--card);border:2px solid var(--acc);border-radius:12px;padding:12px 14px;margin:12px 0;width:100%}
+.ask h3{font-size:1.02rem;margin-bottom:8px}
+.opts{display:grid;gap:7px}
+.opts button{text-align:left;border:1px solid var(--rule2);background:var(--card);border-radius:9px;padding:.5rem .8rem;font-weight:600;font-size:.93rem}
+.opts button:hover:not(:disabled){border-color:var(--acc)}
+.opts button.right{background:color-mix(in srgb,var(--ok) 18%,var(--card));border-color:var(--ok)}
+.opts button.wrong{background:color-mix(in srgb,var(--gap) 16%,var(--card));border-color:var(--gap)}
+.fb{margin-top:8px;font-size:.92rem}
+.score{font:800 1.6rem var(--head)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+td,th{border-bottom:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:middle}
+th{font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mut)}
+tr.grp td{background:var(--card2);font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;color:var(--mut)}
+.ud{display:inline-flex;gap:4px}
+.ud button{width:2.3em;height:2.1em;border:1px solid var(--rule2);background:var(--card);border-radius:7px;font-weight:800;font-size:1.05rem}
+.ud button[aria-pressed="true"].u{background:var(--up);color:#fff;border-color:var(--up)}
+.ud button[aria-pressed="true"].d{background:var(--dn);color:#fff;border-color:var(--dn)}
+td.res{font-weight:700;white-space:nowrap}
+td.res.y{color:var(--ok)}td.res.n{color:var(--gap)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.cmp>*{min-width:0}
+@media (max-width:820px){.cmp{grid-template-columns:1fr}}
+.cmp select{width:100%;border:1px solid var(--rule2);border-radius:8px;background:var(--card);padding:.45rem .6rem;margin-bottom:10px;font-weight:600}
+.foot{color:var(--mut);font-size:.82rem;margin-top:26px;border-top:1px solid var(--rule2);padding-top:12px}
+.view{display:none}.view.on{display:block}
+body.embed .school{display:none}
+@media print{.tabs,.pick,.tools,.smbar,.foot,#fw{display:none!important} body{background:#fff}}
+</style>
+</head>
+<body>
+<!-- SITEMENU:START built by build/build_sitemenu.py; edit the list of tools there, not here -->
+<style>
+.smbar{display:flex;justify-content:flex-end;padding:10px 20px 0;font-family:'Public Sans','Segoe UI',system-ui,-apple-system,sans-serif}
+.smw{display:inline-flex;gap:8px;align-items:center;font-size:13px;line-height:1.3}
+.sm{position:relative;display:inline-block;text-align:left}
+.smw svg{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sm-btn{list-style:none;cursor:pointer;display:inline-flex;gap:7px;align-items:center;background:#ffd24a;color:#1a1d2b;border-radius:999px;padding:6px 13px;font-weight:700;white-space:nowrap;text-decoration:none;user-select:none;-webkit-user-select:none}
+.sm-btn::-webkit-details-marker{display:none}
+.sm-btn:hover{background:#ffe07a}
+.sm-btn:focus-visible{outline:3px solid #2447d6;outline-offset:2px}
+.sm[open] .sm-caret{transform:rotate(180deg)}
+.sm-list{position:fixed;top:0;left:0;z-index:1000;width:min(340px,calc(100vw - 16px));max-height:calc(100vh - 90px);overflow:auto;background:#fff;color:#1a1d2b;border:1px solid #dcdfea;border-radius:14px;box-shadow:0 12px 34px rgba(10,14,40,.3);padding:8px;display:flex;flex-direction:column;gap:1px;font-weight:400}
+.sm:not([open]) .sm-list{display:none}
+.sm-h{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#5a6072;padding:8px 10px 3px}
+.sm-a{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:center;padding:7px 10px;border-radius:9px;color:inherit;text-decoration:none}
+.sm-a svg{font-size:18px;color:#2447d6}
+.sm-a b{display:block;font-size:14px;font-weight:700;color:inherit}
+.sm-a em{display:block;font-style:normal;font-size:12px;color:#5a6072}
+a.sm-a:hover,a.sm-a:focus-visible{background:#e3e9fd;outline:none}
+.sm-cur{background:#fff3c9}
+.sm-cur em{color:#7d5f00;font-weight:700}
+.sm-ext{border-top:1px solid #dcdfea;margin-top:6px;padding-top:10px;border-radius:0 0 9px 9px}
+@media print{.smbar{display:none !important}}
+:root[data-theme="dark"] .sm-list{background:#151c30;color:#e9eefb;border-color:#27304b}
+:root[data-theme="dark"] .sm-h,:root[data-theme="dark"] .sm-a em{color:#a2aec9}
+:root[data-theme="dark"] .sm-a svg{color:#8fa6ff}
+:root[data-theme="dark"] a.sm-a:hover,:root[data-theme="dark"] a.sm-a:focus-visible{background:#212c52}
+:root[data-theme="dark"] .sm-cur{background:#3a3010}
+:root[data-theme="dark"] .sm-cur em{color:#e6bd45}
+:root[data-theme="dark"] .sm-ext{border-color:#27304b}
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]) .sm-list{background:#151c30;color:#e9eefb;border-color:#27304b}
+:root:not([data-theme="light"]) .sm-h,:root:not([data-theme="light"]) .sm-a em{color:#a2aec9}
+:root:not([data-theme="light"]) .sm-a svg{color:#8fa6ff}
+:root:not([data-theme="light"]) a.sm-a:hover,:root:not([data-theme="light"]) a.sm-a:focus-visible{background:#212c52}
+:root:not([data-theme="light"]) .sm-cur{background:#3a3010}
+:root:not([data-theme="light"]) .sm-cur em{color:#e6bd45}
+:root:not([data-theme="light"]) .sm-ext{border-color:#27304b}
+}
+</style>
+<div class="smbar"><span class="smw"><a class="sm-btn sm-home" href="https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/home" aria-label="Home: back to the HSC Economics website"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg>Home</a>
+<details class="sm" id="sitemenu"><summary class="sm-btn" aria-label="Other tools: open the list of HSC Economics tools"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>Other tools<svg class="sm-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="sm-list">
+  <span class="sm-h">Finders</span>
+  <a class="sm-a" href="../hsc-question-finder-site/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.5 12h6M9.5 16h6"/></svg><span><b>Question Finder</b><em>Every HSC question, 2002 to 2025</em></span></a>
+  <a class="sm-a" href="../evidence-finder/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></svg><span><b>Evidence Finder</b><em>News, statistics and reports by dot point</em></span></a>
+  <span class="sm-h">Writing and skills</span>
+  <a class="sm-a" href="../essay-builder/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/></svg><span><b>Extended Response Builder</b><em>Plan a Section II, III or IV answer</em></span></a>
+  <span class="sm-a sm-cur" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="12" r="2.5"/><path d="M7.5 12h9M13.5 9l3 3-3 3"/></svg><span><b>Chain Builder</b><em>You are here</em></span></span>
+  <a class="sm-a" href="../protection-explainer/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M7.5 20h9M5 7h14M5 7l-3 7a3 3 0 006 0zM19 7l-3 7a3 3 0 006 0z"/></svg><span><b>Who Wins from Protection</b><em>Tariffs, quotas and subsidies explained</em></span></a>
+  <a class="sm-a" href="../diagram-lab/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7 8l10 9M7 17l10-9"/></svg><span><b>Protection Diagram Lab</b><em>Experiment, predict and build the diagram</em></span></a>
+  <span class="sm-h">Reference</span>
+  <a class="sm-a" href="../economy-at-a-glance/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M21 20H3"/></svg><span><b>Economy at a Glance</b><em>The latest Australian indicators</em></span></a>
+  <a class="sm-a" href="../glossary/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5c3-1 6-1 8 1 2-2 5-2 8-1v13c-3-1-6-1-8 1-2-2-5-2-8-1zM12 6v13"/></svg><span><b>Economics Glossary</b><em>Key terms, flashcards and a quiz</em></span></a>
+  <a class="sm-a" href="../mind-map/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 000-6H9a3 3 0 010-6h6.5"/></svg><span><b>Topic Map</b><em>See how the course fits together</em></span></a>
+  <a class="sm-a sm-ext" href="https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg><span><b>HSC Economics website</b><em>Back to the main class site</em></span></a>
+</div></details></span></div>
+<script>(function(){var d=document.getElementById('sitemenu');if(!d)return;var s=d.querySelector('summary'),l=d.querySelector('.sm-list');var framed=false;try{framed=window.self!==window.top}catch(e){framed=true}if(framed)d.parentNode.querySelectorAll('a').forEach(function(a){a.target='_blank';a.rel='noopener'});function place(){var b=s.getBoundingClientRect(),w=l.offsetWidth,x=Math.min(Math.max(8,b.right-w),window.innerWidth-w-8),y=b.bottom+8;l.style.left=x+'px';l.style.top=y+'px';l.style.maxHeight=Math.max(160,window.innerHeight-y-12)+'px'}function shut(){if(d.open)d.open=false}d.addEventListener('toggle',function(){if(d.open)place()});document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))shut()});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){shut();s.focus()}});window.addEventListener('scroll',shut,{passive:true});window.addEventListener('resize',shut)})();</script>
+<!-- SITEMENU:END -->
+<div class="wrap">
+<header class="mast">
+  <div>
+    <p class="school">Sydney Secondary College, Blackwattle Bay Campus</p>
+    <h1>Chain Builder</h1>
+    <p class="tag">Cause and effect in the economy: follow a chain, build it yourself, predict each effect</p>
+  </div>
+  <div class="seg" id="fw" role="group" aria-label="Choose your syllabus"></div>
+</header>
+<nav class="tabs" role="tablist" aria-label="Views">
+  <button class="tab" role="tab" data-view="explore">Explore</button>
+  <button class="tab" role="tab" data-view="build">Build it</button>
+  <button class="tab" role="tab" data-view="predict">Predict</button>
+  <button class="tab" role="tab" data-view="compare">Compare</button>
+</nav>
+<main>
+<div class="pick" id="pick" role="group" aria-label="Choose a chain"></div>
+<section class="view" id="v-explore"></section>
+<section class="view" id="v-build"><div class="panel game" id="build"></div></section>
+<section class="view" id="v-predict"><div class="panel game" id="predict"></div></section>
+<section class="view" id="v-compare"><p class="sub" style="margin-bottom:10px">Put two chains side by side. Useful pairs: monetary against fiscal policy, a depreciation against a fall in commodity prices, wages against productivity.</p><div class="cmp" id="cmp"></div></section>
+</main>
+<p class="foot" id="foot"></p>
+</div>
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function(){
+'use strict';
+const D = JSON.parse(document.getElementById('data').textContent), CH = D.chains, BY = Object.fromEntries(CH.map(c => [c.id, c])), TOP = Object.fromEntries(D.topics.map(t => [t.id, t]));
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const params = new URLSearchParams(location.search);
+if (params.get('embed') === '1') document.body.classList.add('embed');
+if (['light','dark'].includes(params.get('theme'))) document.documentElement.dataset.theme = params.get('theme');
+const framed = (() => { try { return window.self !== window.top; } catch (e) { return true; } })();
+const ext = framed ? ' target="_blank" rel="noopener"' : '';
+const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
+const VIEWS = ['explore', 'build', 'predict', 'compare'];
+const S = { view: 'explore', chain: CH[0].id, fw: store.get('econ-chain-fw') === 'y12' ? 'y12' : 'h09', why: false, open: new Set(), cmp: [CH[0].id, CH[1].id] };
+if (['h09', 'y12'].includes(params.get('fw'))) S.fw = params.get('fw');
+const C = () => BY[S.chain];
+const ARROW = d => d > 0 ? '↑' : d < 0 ? '↓' : '';
+const cls = d => d > 0 ? 'up' : d < 0 ? 'dn' : '';
+const all = c => c.stem.concat(c.strands.flatMap(s => s.links), c.tail);
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const XW = {}; D.xwalk.forEach(([a, bs]) => XW[a] = bs.filter(b => b[0] === 'Y'));
+
+/* ---------- glossary hover definitions ---------- */
+const GL = D.gloss.map(g => ({ id: g.id, def: g.def, name: g.term.replace(/\s*\(.*?\)/g, '').trim() })).filter(g => g.name.length >= 5).sort((a, b) => b.name.length - a.name.length);
+const GLRE = GL.length ? new RegExp('\\b(' + GL.map(g => g.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')\\b', 'gi') : null;
+const GLBY = Object.fromEntries(GL.map(g => [g.name.toLowerCase(), g]));
+function gloss(text) { const seen = new Set(); let out = '', last = 0, m; if (!GLRE) return esc(text); GLRE.lastIndex = 0;
+  while ((m = GLRE.exec(text))) { const g = GLBY[m[1].toLowerCase()]; if (!g || seen.has(g.id)) continue; seen.add(g.id);
+    out += esc(text.slice(last, m.index)) + `<a class="gt" href="../glossary/#term=${g.id}"${ext} title="${esc(g.def)}">${esc(m[1])}</a>`; last = m.index + m[1].length; }
+  return out + esc(text.slice(last)); }
+
+/* ---------- syllabus chips ---------- */
+function tags(c) { if (S.fw === 'h09') return c.codes.map(k => `<span class="chip" style="--tc:${D.points[k].color}">${k} ${esc(D.points[k].t)}</span>`).join('');
+  return [...new Set(c.codes.flatMap(k => XW[k.split('.')[0]] || []))].map(y => D.secs[y] ? `<span class="chip" style="--tc:${D.secs[y].color}">${esc(D.secs[y].name)}</span>` : '').join(''); }
+
+/* ---------- flow chart ---------- */
+const link = (l, key, opt) => { const o = opt || {}, open = o.why || S.open.has(key);
+  return `<${o.static ? 'div' : 'button'} class="lk ${cls(l.d)} ${o.fresh ? 'new' : ''}" ${o.static ? '' : `data-k="${key}" aria-expanded="${open}"`}><span>${esc(l.v)}</span><i aria-label="${l.d > 0 ? 'rises' : l.d < 0 ? 'falls' : ''}">${ARROW(l.d)}</i>${open && !o.bare ? `<p>${gloss(l.why)}</p>` : ''}</${o.static ? 'div' : 'button'}>`; };
+const ARR = '<div class="arr" aria-hidden="true"></div>';
+function flow(c, opt) { const o = opt || {}, lk = (l, k) => link(l, c.id + k, { why: o.why, static: o.static, bare: o.bare });
+  return `<div class="flow"><div class="trig"><small>Trigger</small>${esc(c.title)}</div>${ARR}
+    ${c.stem.length ? `<div class="col">${c.stem.map((l, i) => lk(l, 's' + i)).join(ARR)}</div>${ARR}` : ''}
+    <div class="strands">${c.strands.map((s, si) => `<div class="strand"><h3>${esc(s.name)}</h3>${s.links.map((l, i) => lk(l, 'x' + si + '-' + i)).join(ARR)}</div>`).join('')}</div>
+    ${c.tail.length ? `${ARR}<div class="col">${c.tail.map((l, i) => lk(l, 't' + i)).join(ARR)}</div>` : ''}
+    ${c.overall && !o.bare ? `<p class="overall"><b>Overall:</b> ${gloss(c.overall)}</p>` : ''}</div>`; }
+function chainText(c) { const line = ls => ls.map(l => l.v + (l.d ? ' ' + ARROW(l.d) : '')).join(' → '); const st = line(c.stem), tl = line(c.tail);
+  return c.title + '\n' + c.strands.map(s => `${s.name}: ${[st, line(s.links), tl].filter(Boolean).join(' → ')}`).join('\n'); }
+
+/* ---------- evidence ---------- */
+let EV = D.ev, LIVE = false;
+function figs(c) { const cs = new Set(c.codes), out = [];
+  EV.map(r => [r.about.filter(k => cs.has(k)).length * 2 + r.also.filter(k => cs.has(k)).length, r]).filter(x => x[0] >= 2).sort((a, b) => (b[1].date || '').localeCompare(a[1].date || '') || b[0] - a[0])
+    .forEach(([s, r]) => r.figures.slice(0, 2).forEach(f => { if (out.length < 6 && f.value) out.push({ f, id: r.id }); }));
+  return out; }
+
+/* ---------- explore ---------- */
+function renderExplore() { const c = C(), fg = figs(c), t = TOP[c.topic];
+  $('#v-explore').innerHTML = `<div class="cols"><div class="panel">
+      <div class="chead"><div><h2>${esc(c.title)}</h2><p class="sub">${esc(c.short)} · ${esc(t.label)}: ${esc(t.name)}</p></div></div>
+      <p style="margin-bottom:10px">${gloss(c.trigger)}</p>
+      <div class="tools"><button class="btn ghost sm" id="whyall" aria-pressed="${S.why}">${S.why ? 'Hide the reasons' : 'Show every reason'}</button><button class="btn ghost sm" id="copy">Copy the chain as text</button><button class="btn sm" data-go="build">Build it yourself</button><button class="btn sm" data-go="predict">Predict the effects</button></div>
+      <p class="sub" style="margin-bottom:10px">Select any box to see why that step happens. Each column is one channel; in an essay, each channel can be one Explain step.</p>
+      ${flow(c, { why: S.why })}</div>
+    <aside class="panel side">
+      <h3>What it examines${S.fw === 'y12' ? ' (2025 syllabus)' : ''}</h3><div class="chips">${tags(c)}</div>
+      <h3>How long it takes</h3><p>${gloss(c.lag)}</p>
+      <h3>Where the chain can break</h3><p class="sub" style="font-size:.84rem;margin-bottom:4px">Use these in your Link &amp; judge sentence.</p><ul>${c.limits.map(l => `<li>${gloss(l)}</li>`).join('')}</ul>
+      <h3>Diagram to draw</h3><p>${esc(c.diagram)}</p>
+      <h3>Latest evidence</h3>${fg.length ? fg.map(x => `<div class="fig"><b>${esc(x.f.value)}</b> ${esc(x.f.label)}<small>${esc([x.f.asAt, x.f.source].filter(Boolean).join(' · '))} · <a href="../evidence-finder/#item=${encodeURIComponent(x.id)}&fw=${S.fw}"${ext}>open</a></small></div>`).join('') : '<p class="sub">Nothing filed against these dot points yet.</p>'}
+      <p class="sub" style="font-size:.78rem;margin-top:4px">${LIVE ? 'Up to date with the Evidence Finder.' : 'From the saved copy of the Evidence Finder.'} Check a figure against its source before you quote it.</p>
+      ${c.qs.length ? `<h3>Past questions that need this chain</h3>${c.qs.map(q => `<a class="pq" href="../essay-builder/#q=${q.k}"${ext} title="Plan this question in the Extended Response Builder"><b>${q.y} ${esc(q.l)} · Section ${q.s} · ${q.m} marks</b>${esc(q.t)}</a>`).join('')}<p class="sub" style="font-size:.78rem;margin-top:4px">Each opens in the Extended Response Builder.</p>` : ''}
+    </aside></div>`; }
+
+/* ---------- build it ---------- */
+let B = null;
+function startBuild() { const c = C(), seq = []; c.stem.forEach(l => seq.push({ l, where: 'First' })); c.strands.forEach(s => s.links.forEach(l => seq.push({ l, where: s.name }))); c.tail.forEach(l => seq.push({ l, where: 'All channels then lead to' }));
+  B = { id: c.id, seq, i: 0, right: 0, tried: false, pick: null, opts: null }; }
+function buildOpts() { const c = C(), cur = B.seq[B.i].l, text = l => l.v + (l.d ? ' ' + ARROW(l.d) : ''), right = text(cur), opts = [right];
+  if (cur.d) opts.push(cur.v + ' ' + ARROW(-cur.d));
+  const placed = new Set(B.seq.slice(0, B.i).map(x => x.l)), others = shuffle(all(c).filter(l => l !== cur && !placed.has(l) && l !== (B.seq[B.i + 1] || {}).l).map(text).concat(shuffle(CH.filter(x => x.id !== c.id).flatMap(all)).slice(0, 6).map(text)));
+  others.forEach(t => { if (opts.length < 3 && !opts.includes(t) && !opts.some(o => o.replace(/ [↑↓]$/, '') === t.replace(/ [↑↓]$/, ''))) opts.push(t); });
+  B.opts = shuffle(opts); B.right = B.right || 0; B.answer = right; }
+function builtFlow() { const c = C(), done = B.seq.slice(0, B.i + (B.pick === B.answer ? 1 : 0)), isDone = l => done.some(x => x.l === l), fresh = l => B.pick === B.answer && B.seq[B.i].l === l;
+  const lk = l => link(l, '', { static: true, why: false, fresh: fresh(l), bare: true });
+  const stem = c.stem.filter(isDone), tail = c.tail.filter(isDone), strands = c.strands.map(s => ({ name: s.name, links: s.links.filter(isDone) })).filter(s => s.links.length);
+  return `<div class="flow"><div class="trig"><small>Trigger</small>${esc(c.title)}</div>${stem.length ? ARR + `<div class="col">${stem.map(lk).join(ARR)}</div>` : ''}
+    ${strands.length ? ARR + `<div class="strands">${strands.map(s => `<div class="strand"><h3>${esc(s.name)}</h3>${s.links.map(lk).join(ARR)}</div>`).join('')}</div>` : ''}
+    ${tail.length ? ARR + `<div class="col">${tail.map(lk).join(ARR)}</div>` : ''}</div>`; }
+function renderBuild() { const c = C(); if (!B || B.id !== c.id) startBuild();
+  if (B.i >= B.seq.length) { $('#build').innerHTML = `<h2>${esc(c.title)}</h2><p class="score" style="margin:8px 0">${B.right} of ${B.seq.length} right first time</p>${flow(c, { static: true, bare: true })}
+      <div class="tools" style="margin-top:14px"><button class="btn" id="bagain">Build it again</button><button class="btn ghost" data-go="predict">Now predict the effects</button><button class="btn ghost" data-go="explore">See the reasons</button></div>`; return; }
+  if (!B.opts) buildOpts(); const step = B.seq[B.i], ok = B.pick === B.answer, prev = B.i ? B.seq[B.i - 1] : null, newStrand = !prev || prev.where !== step.where;
+  $('#build').innerHTML = `<h2>Build the chain: ${esc(c.title)}</h2><p class="sub" style="margin:2px 0 12px">Step ${B.i + 1} of ${B.seq.length}. Choose what happens next. The flow chart grows with each right answer.</p>${builtFlow()}
+    <div class="ask"><h3>${step.where === 'First' ? 'What happens first?' : step.where === 'All channels then lead to' ? 'The channels come together. What happens next?' : newStrand ? `New channel: ${esc(step.where)}. What happens first?` : `${esc(step.where)}: what happens next?`}</h3>
+      <div class="opts">${B.opts.map(o => `<button data-o="${esc(o)}" ${ok ? 'disabled' : ''} class="${ok && o === B.answer ? 'right' : B.wrong && B.wrong.includes(o) ? 'wrong' : ''}" ${B.wrong && B.wrong.includes(o) ? 'disabled' : ''}>${esc(o)}</button>`).join('')}</div>
+      ${ok ? `<p class="fb" role="status"><b>Yes.</b> ${gloss(step.l.why)}</p><button class="btn" id="bnext" style="margin-top:8px">${B.i + 1 < B.seq.length ? 'Next step' : 'See your score'}</button>` : B.wrong && B.wrong.length ? '<p class="fb" role="status"><b>Not that one.</b> Think about what the step before it changes, then try again.</p>' : ''}</div>`;
+  if (ok) $('#bnext').focus(); }
+
+/* ---------- predict ---------- */
+let P = null;
+function startPredict(rev) { const c = C(); P = { id: c.id, rev: !!rev && !!c.reverse, ans: {}, checked: false }; }
+function renderPredict() { const c = C(); if (!P || P.id !== c.id) startPredict(false);
+  const m = P.rev ? -1 : 1, groups = [], add = (name, ls, pre) => { const rows = ls.map((l, i) => ({ l, k: pre + i })).filter(x => x.l.d); if (rows.length) groups.push({ name, rows }); };
+  add('First', c.stem, 's'); c.strands.forEach((s, i) => add(s.name, s.links, 'x' + i + '-')); add('Then', c.tail, 't');
+  const rows = groups.flatMap(g => g.rows), nRight = rows.filter(r => P.ans[r.k] === r.l.d * m).length, allSet = rows.every(r => P.ans[r.k]);
+  $('#predict').innerHTML = `<h2>Predict: ${esc(P.rev ? c.reverse : c.title)}</h2>
+    <p class="sub" style="margin:2px 0 10px">For each item, choose whether it rises or falls. Then check your answers.</p>
+    ${c.reverse ? `<div class="seg" role="group" aria-label="Direction" style="margin-bottom:12px"><button data-rev="0" aria-pressed="${!P.rev}">${esc(c.title)}</button><button data-rev="1" aria-pressed="${P.rev}">Reverse it: ${esc(c.reverse)}</button></div>` : ''}
+    <table><thead><tr><th>What changes</th><th>Your prediction</th>${P.checked ? '<th>Result</th>' : ''}</tr></thead><tbody>
+    ${groups.map(g => `<tr class="grp"><td colspan="${P.checked ? 3 : 2}">${esc(g.name)}</td></tr>` + g.rows.map(r => { const a = P.ans[r.k], right = r.l.d * m;
+      return `<tr><td>${esc(r.l.v)}${P.checked && !P.rev ? `<div class="sub" style="font-size:.82rem">${gloss(r.l.why)}</div>` : ''}</td><td><span class="ud" role="group" aria-label="${esc(r.l.v)}"><button class="u" data-a="${r.k}|1" aria-pressed="${a === 1}" aria-label="Rises" ${P.checked ? 'disabled' : ''}>↑</button><button class="d" data-a="${r.k}|-1" aria-pressed="${a === -1}" aria-label="Falls" ${P.checked ? 'disabled' : ''}>↓</button></span></td>${P.checked ? `<td class="res ${a === right ? 'y' : 'n'}">${a === right ? 'Correct' : 'It ' + (right > 0 ? 'rises ↑' : 'falls ↓')}</td>` : ''}</tr>`; }).join('')).join('')}
+    </tbody></table>
+    <div class="tools" style="margin-top:14px">${P.checked ? `<p class="score" role="status">${nRight} of ${rows.length}</p><button class="btn" id="pagain">Try again</button>${c.reverse && !P.rev ? '<button class="btn ghost" id="prev">Now reverse it</button>' : ''}` : `<button class="btn" id="pcheck" ${allSet ? '' : 'disabled'}>Check my predictions</button>${allSet ? '' : `<span class="sub">${rows.filter(r => P.ans[r.k]).length} of ${rows.length} chosen</span>`}`}</div>
+    ${P.checked && P.rev ? '<p class="sub" style="margin-top:8px">The reasons are the same as in Explore, running the other way.</p>' : ''}`; }
+
+/* ---------- compare ---------- */
+function renderCompare() { $('#cmp').innerHTML = [0, 1].map(i => `<div class="panel"><select data-cmp="${i}" aria-label="Chain ${i + 1}">${CH.map(c => `<option value="${c.id}" ${S.cmp[i] === c.id ? 'selected' : ''}>${esc(c.title)}</option>`).join('')}</select>
+    ${flow(BY[S.cmp[i]], { static: true, bare: true })}<p class="sub" style="margin-top:10px"><b>Takes:</b> ${esc(BY[S.cmp[i]].lag)}</p><p class="sub" style="margin-top:4px"><b>Main limit:</b> ${esc(BY[S.cmp[i]].limits[0])}</p></div>`).join(''); }
+
+/* ---------- shell ---------- */
+function writeHash() { const h = new URLSearchParams(); if (S.view !== 'explore') h.set('view', S.view); h.set('chain', S.chain); try { history.replaceState(null, '', location.pathname + location.search + '#' + h.toString()); } catch (e) {} }
+function readHash() { const h = new URLSearchParams(location.hash.slice(1)); if (VIEWS.includes(h.get('view'))) S.view = h.get('view'); if (BY[h.get('chain')]) S.chain = h.get('chain'); }
+function render() { VIEWS.forEach(v => { $('#v-' + v).classList.toggle('on', v === S.view); $(`.tab[data-view="${v}"]`).setAttribute('aria-selected', v === S.view); });
+  $('#fw').innerHTML = [['h09', '2009 syllabus', 'HSC to 2027'], ['y12', '2025 syllabus', 'HSC from 2028']].map(f => `<button data-fw="${f[0]}" aria-pressed="${S.fw === f[0]}">${f[1]}<small>${f[2]}</small></button>`).join('');
+  $('#pick').hidden = S.view === 'compare';
+  $('#pick').innerHTML = CH.map(c => `<button class="pk" data-c="${c.id}" aria-pressed="${S.chain === c.id}" style="--tc:${TOP[c.topic].color}"><b>${esc(c.title)}</b><small>${esc(c.short)} · ${esc(TOP[c.topic].label)}</small></button>`).join('');
+  if (S.view === 'explore') renderExplore(); else if (S.view === 'build') renderBuild(); else if (S.view === 'predict') renderPredict(); else renderCompare();
+  writeHash(); }
+const go = v => { S.view = v; render(); $('.tabs').scrollIntoView({ block: 'start' }); };
+$$('.tab').forEach(b => b.onclick = () => { S.view = b.dataset.view; render(); });
+$('#fw').onclick = e => { const b = e.target.closest('[data-fw]'); if (!b) return; S.fw = b.dataset.fw; store.set('econ-chain-fw', S.fw); render(); };
+$('#pick').onclick = e => { const b = e.target.closest('[data-c]'); if (!b) return; S.chain = b.dataset.c; S.open.clear(); B = null; P = null; render(); };
+document.querySelector('main').addEventListener('click', e => { const q = s => e.target.closest(s); let b;
+  if (e.target.closest('a')) return;
+  if (b = q('[data-go]')) return go(b.dataset.go);
+  if (q('#whyall')) { S.why = !S.why; S.open.clear(); return renderExplore(); }
+  if (b = q('#copy')) { const done = ok => { b.textContent = ok ? 'Copied' : 'Could not copy'; }; try { navigator.clipboard.writeText(chainText(C())).then(() => done(true), () => done(false)); } catch (err) { done(false); } return; }
+  if ((b = q('button.lk[data-k]')) && S.view === 'explore') { const k = b.dataset.k; S.open.has(k) ? S.open.delete(k) : S.open.add(k); const y = scrollY; renderExplore(); scrollTo(0, y); const n = document.querySelector(`button.lk[data-k="${k}"]`); if (n) n.focus({ preventScroll: true }); return; }
+  if (b = q('[data-o]')) { if (b.dataset.o === B.answer) { B.pick = B.answer; if (!B.tried) B.right++; } else { B.tried = true; B.wrong = (B.wrong || []).concat(b.dataset.o); } return renderBuild(); }
+  if (q('#bnext')) { B.i++; B.pick = null; B.opts = null; B.tried = false; B.wrong = null; return renderBuild(); }
+  if (q('#bagain')) { B = null; return renderBuild(); }
+  if (b = q('[data-a]')) { const [k, v] = b.dataset.a.split('|'); P.ans[k] = +v; return renderPredict(); }
+  if (b = q('[data-rev]')) { startPredict(b.dataset.rev === '1'); return renderPredict(); }
+  if (q('#pcheck')) { P.checked = true; return renderPredict(); }
+  if (q('#pagain')) { startPredict(P.rev); return renderPredict(); }
+  if (q('#prev')) { startPredict(true); return renderPredict(); } });
+$('#cmp').addEventListener('change', e => { const s = e.target.closest('[data-cmp]'); if (s) { S.cmp[+s.dataset.cmp] = s.value; renderCompare(); } });
+addEventListener('hashchange', () => { readHash(); render(); });
+$('#foot').innerHTML = `Each chain is a simplified model of how the economy usually responds; real outcomes depend on what else is happening at the time. Dotted words open in the class <a href="../glossary/"${ext}>Glossary</a>. Statistics are from the class <a href="../evidence-finder/"${ext}>Evidence Finder</a> and are as reported when filed. Past questions are from the HSC papers held in the class <a href="../hsc-question-finder-site/"${ext}>Question Finder</a>.`;
+readHash(); render();
+
+/* Pick up evidence filed since this page was built. */
+(async () => { try { const r = await fetch(new URL('../evidence-finder/data/evidence.json', location.href), { cache: 'no-store' }); if (!r.ok) return; const f = await r.json();
+  if (!Array.isArray(f) || !f.length || !f.every(x => x && x.id && x.about && Array.isArray(x.figures))) return;
+  EV = f.map(x => ({ id: x.id, date: x.date || '', about: (x.about && x.about.h09) || [], also: (x.also && x.also.h09) || [], figures: x.figures.map(g => ({ label: g.label || '', value: g.value || '', asAt: g.asAt || '', source: g.source || '' })) }));
+  LIVE = true; if (S.view === 'explore') renderExplore(); } catch (e) {} })();
+})();
+</script>
+</body>
+</html>
