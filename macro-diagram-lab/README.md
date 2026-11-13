@@ -21,6 +21,12 @@ the Protection Diagram Lab (`../diagram-lab/`), which keeps tariffs, quotas and 
 The switch in the masthead chooses between `AD₁ → AD₂` (the style of the class diagram sheets and news explainers)
 and `AD → AD₁` (the style of the worked example on booklet page 43). The choice is remembered in the browser.
 
+## AS and SRAS
+
+The upward-sloping curve in the AD–AS diagram is labelled **AS**, as in the syllabus and the HSC papers. It is
+relabelled **SRAS** only while the LRAS line is switched on, with a one-line note explaining that they are the
+same curve. The rule is the `UN()` function in `template.html`.
+
 ## The models
 
 The diagrams are conceptual and not to scale. Curves are straight lines in a 0 to 100 space with slope 0.8, so a

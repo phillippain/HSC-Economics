@@ -271,11 +271,11 @@ function Svg(title, ylab, xlab) { const parts = [], ylabels = [], xlabels = []; 
 /* ---------- diagram definitions ---------- */
 const word = (d, up_, dn) => d > 0 ? up_ : dn;
 const DG = {
-  adas: { name: 'AD–AS', sub: 'Growth, inflation and policy', topic: 'T4', tl: 'Topics 3 and 4', kind: 'shift', ylab: 'Price level', xlab: 'Real GDP', yv: 'P', xv: 'Y', yname: 'the price level', xname: 'real GDP', dn: 'AD', un: 'SRAS',
+  adas: { name: 'AD–AS', sub: 'Growth, inflation and policy', topic: 'T4', tl: 'Topics 3 and 4', kind: 'shift', ylab: 'Price level', xlab: 'Real GDP', yv: 'P', xv: 'Y', yname: 'the price level', xname: 'real GDP', dn: 'AD', un: 'AS',
     chain: ['cash-rate-rise', 'The RBA raises the cash rate'], terms: ['aggregate-demand', 'aggregate-supply'],
     fac: { dn: { r: ['Lower interest rates', 'Tax cuts or higher government spending', 'Stronger consumer or business confidence', 'Stronger export demand or a lower dollar'], l: ['Higher interest rates', 'Tax rises or spending cuts', 'Weaker confidence', 'A global downturn or a higher dollar'] },
            up: { r: ['Lower wages or input costs', 'Higher productivity', 'Lower oil and energy prices', 'A higher dollar cutting import costs'], l: ['Wages rising faster than productivity', 'Higher oil and energy prices', 'A lower dollar raising import costs', 'Supply disruptions'] } },
-    check: ['Title: for example “Figure 1: A fall in aggregate demand”.', 'Vertical axis: Price level. Horizontal axis: Real GDP (or Output, Y).', 'Label AD and SRAS, and number the curve that shifts.', 'Mark both equilibrium points with dashed lines to both axes.', 'Add LRAS when the question is about capacity, full employment or long-run growth.'],
+    check: ['Title: for example “Figure 1: A fall in aggregate demand”.', 'Vertical axis: Price level. Horizontal axis: Real GDP (or Output, Y).', 'Label AD and AS, and number the curve that shifts.', 'Mark both equilibrium points with dashed lines to both axes.', 'Add LRAS when the question is about capacity, full employment or long-run growth. With LRAS on the diagram, label the upward-sloping curve SRAS.'],
     sc: [
       ['The RBA cuts the cash rate, and households and firms borrow and spend more.', 'dn', 1, 'Lower interest rates lift consumption and investment, which are components of AD.'],
       ['A conflict overseas doubles the world price of oil.', 'up', -1, 'Higher energy costs raise the cost of production across the economy: a negative supply shock.'],
@@ -325,6 +325,8 @@ const DG = {
       ['The government sets a tax of half the external cost.', { e: 24, t: 12 }, 'above', 'below', 'Output falls, but not far enough: part of the external cost is still ignored.'],
       ['The government sets a tax larger than the external cost.', { e: 16, t: 30 }, 'below', 'above', 'The tax over-corrects: output is cut below the efficient level.']] }
 };
+/* AS is the default name. It becomes SRAS only while the LRAS line is on the diagram. */
+const UN = (id, st) => id === 'adas' && st && st.lras ? 'SRAS' : DG[id].un;
 const IDS = Object.keys(DG);
 const S = { view: 'experiment', d: 'adas', st: {} };
 const fresh = id => DG[id].kind === 'shift' ? { sD: 0, sS: 0, lras: id === 'adas' ? false : undefined, sL: 0, mw: 0 } : DG[id].kind === 'lorenz' ? { g: 0.31, g0: null } : { e: 24, t: 0, dwl: true };
@@ -335,9 +337,9 @@ function drawShift(id, st, opt) { const d = DG[id], o = opt || {}, sv = Svg(d.na
   sv.raw(`<g style="--tc:${TC[d.topic]}">`);
   if (st.lras) { if (st.sL) { sv.vline(50, L('LRAS', 1), 'old', st.sL > 0 ? 'end' : 'start'); sv.vline(50 + st.sL, L('LRAS', 2), 'new', st.sL > 0 ? 'start' : 'end'); sv.arrow(50 + Math.sign(st.sL) * 2, 88, 50 + st.sL - Math.sign(st.sL) * 2, 88, 'new'); } else sv.vline(50, 'LRAS', 'ink'); }
   const showD2 = st.sD && !hide, showS2 = st.sS && !hide;
-  sv.line(down(0), showD2 ? L(d.dn, 1) : d.dn, showD2 ? 'old' : 'main'); sv.line(up(0), showS2 ? L(d.un, 1) : d.un, showS2 ? 'old' : 'main');
+  sv.line(down(0), showD2 ? L(d.dn, 1) : d.dn, showD2 ? 'old' : 'main'); sv.line(up(0), showS2 ? L(UN(id, st), 1) : UN(id, st), showS2 ? 'old' : 'main');
   if (showD2) { sv.line(down(st.sD), L(d.dn, 2), 'new'); const y = 72, x0 = (90 - y) / M; sv.arrow(x0 + Math.sign(st.sD) * 2.5, y, x0 + st.sD - Math.sign(st.sD) * 2.5, y, 'new'); }
-  if (showS2) { sv.line(up(st.sS), L(d.un, 2), 'new'); const y = 28, x0 = (y - 10) / M; sv.arrow(x0 + Math.sign(st.sS) * 2.5, y, x0 + st.sS - Math.sign(st.sS) * 2.5, y, 'new'); }
+  if (showS2) { sv.line(up(st.sS), L(UN(id, st), 2), 'new'); const y = 28, x0 = (y - 10) / M; sv.arrow(x0 + Math.sign(st.sS) * 2.5, y, x0 + st.sS - Math.sign(st.sS) * 2.5, y, 'new'); }
   const two = moved && !hide;
   sv.point(e1, two ? L(d.xv, 1) : d.xv, two ? L(d.yv, 1) : d.yv, two ? 'old' : 'ink');
   if (two) sv.point(e2, L(d.xv, 2), L(d.yv, 2), 'new');
@@ -347,7 +349,7 @@ function drawShift(id, st, opt) { const d = DG[id], o = opt || {}, sv = Svg(d.na
 function shiftSentence(id, st) { const d = DG[id], e1 = meet(0, 0), e2 = meet(st.sD, st.sS), parts = [];
   const mv = (n, s) => `${n} shifts ${s > 0 ? 'right' : 'left'} from ${L(n, 1)} to ${L(n, 2)}`;
   if (!st.sD && !st.sS) { parts.push(st.mw ? `Without a minimum wage the market would settle at ${d.yv} and ${d.xv}.` : `Nothing has shifted yet. The market is in equilibrium at ${d.yv} and ${d.xv}.`); }
-  else { parts.push([st.sD ? mv(d.dn, st.sD) : '', st.sS ? mv(d.un, st.sS) : ''].filter(Boolean).join(' and ') + '.');
+  else { parts.push([st.sD ? mv(d.dn, st.sD) : '', st.sS ? mv(UN(id, st), st.sS) : ''].filter(Boolean).join(' and ') + '.');
     const dy = e2.y - e1.y, dx = e2.x - e1.x, ch = (v, nm, a, b) => Math.abs(v) < 0.01 ? `${nm} is unchanged` : `${nm} ${v > 0 ? 'rises' : 'falls'} from ${a} to ${b}`;
     let s = ch(dy, d.yname, L(d.yv, 1), L(d.yv, 2)) + ' and ' + ch(dx, d.xname, L(d.xv, 1), L(d.xv, 2)) + '.'; parts.push(s[0].toUpperCase() + s.slice(1));
     if (id === 'fx') parts.push(dy > 0.01 ? 'The Australian dollar appreciates.' : dy < -0.01 ? 'The Australian dollar depreciates.' : ''); }
@@ -393,10 +395,10 @@ const sentence = (id, st) => DG[id].kind === 'shift' ? shiftSentence(id, st) : D
 const slider = (k, label, min, max, step, v, lo, hi, show) => `<div class="sl"><label for="s-${k}">${label}<span>${show}</span></label><input type="range" id="s-${k}" data-k="${k}" min="${min}" max="${max}" step="${step}" value="${v}"><div class="ends"><span>${lo}</span><span>${hi}</span></div></div>`;
 const shiftWord = v => v === 0 ? 'no shift' : (v > 0 ? 'right' : 'left');
 function controls(id) { const d = DG[id], st = S.st[id];
-  if (d.kind === 'shift') return slider('sD', `Shift ${d.dn}`, -24, 24, 4, st.sD, '← left (decrease)', 'right (increase) →', shiftWord(st.sD)) + slider('sS', `Shift ${d.un}`, -24, 24, 4, st.sS, '← left (decrease)', 'right (increase) →', shiftWord(st.sS))
-    + (id === 'adas' ? `<div class="row"><label><input type="checkbox" data-c="lras" ${st.lras ? 'checked' : ''}> Show LRAS (full-employment output)</label></div>${st.lras ? slider('sL', 'Shift LRAS', -16, 16, 4, st.sL, '← capacity shrinks', 'capacity grows →', shiftWord(st.sL)) : ''}` : '')
+  if (d.kind === 'shift') return slider('sD', `Shift ${d.dn}`, -24, 24, 4, st.sD, '← left (decrease)', 'right (increase) →', shiftWord(st.sD)) + slider('sS', `Shift ${UN(id, st)}`, -24, 24, 4, st.sS, '← left (decrease)', 'right (increase) →', shiftWord(st.sS))
+    + (id === 'adas' ? `<div class="row"><label><input type="checkbox" data-c="lras" ${st.lras ? 'checked' : ''}> Show LRAS (full-employment output)</label></div>${st.lras ? slider('sL', 'Shift LRAS', -16, 16, 4, st.sL, '← capacity shrinks', 'capacity grows →', shiftWord(st.sL)) : ''}<p class="sub" style="font-size:.82rem">AS and SRAS are the same curve. Write SRAS (short-run aggregate supply) when your diagram also shows LRAS; otherwise AS is enough.</p>` : '')
     + (id === 'labour' ? slider('mw', 'Minimum wage above the equilibrium wage', 0, 24, 4, st.mw, 'none', 'high', st.mw ? 'binding' : 'off') : '')
-    + `<details><summary>What shifts each curve?</summary><div class="fac" style="margin-top:8px">${[['dn', 'r', `${d.dn} shifts right`], ['dn', 'l', `${d.dn} shifts left`], ['up', 'r', `${d.un} shifts right`], ['up', 'l', `${d.un} shifts left`]].map(([c, s, t]) => `<div><b>${t}</b><ul>${d.fac[c][s].map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>`).join('')}</div></details>`;
+    + `<details><summary>What shifts each curve?</summary><div class="fac" style="margin-top:8px">${[['dn', 'r', `${d.dn} shifts right`], ['dn', 'l', `${d.dn} shifts left`], ['up', 'r', `${UN(id, st)} shifts right`], ['up', 'l', `${UN(id, st)} shifts left`]].map(([c, s, t]) => `<div><b>${t}</b><ul>${d.fac[c][s].map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>`).join('')}</div></details>`;
   if (d.kind === 'lorenz') { const sh = shares(st.g); return slider('g', 'Gini coefficient', 0.05, 0.7, 0.01, st.g, '0 = perfect equality', '1 = perfect inequality', st.g.toFixed(2))
     + `<div class="row"><button class="btn ghost sm" data-g="0.307">Australia: income (0.307)</button><button class="btn ghost sm" data-g="0.606">Australia: wealth (0.606)</button></div><p class="sub" style="font-size:.8rem">ABS, 2022–23, as in the booklet's data bank. Check for a newer release before you quote them.</p>
       <div class="row"><label><input type="checkbox" data-c="cmp" ${st.g0 !== null ? 'checked' : ''}> Keep this curve as ${L('LC', 1)} and compare</label></div>
@@ -417,7 +419,7 @@ function refresh() { const id = S.d, st = S.st[id], sen = sentence(id, st); $('#
 let Z = null;
 const YN = [[1, 'Rises ↑'], [-1, 'Falls ↓']];
 function questions(id) { const d = DG[id];
-  if (d.kind === 'shift') return [['curve', 'Which curve shifts?', [['dn', d.dn], ['up', d.un]]], ['dir', 'Which way?', [[1, 'Right (increase)'], [-1, 'Left (decrease)']]], ['y', `What happens to ${d.yname}?`, YN], ['x', `What happens to ${d.xname}?`, YN]];
+  if (d.kind === 'shift') return [['curve', 'Which curve shifts?', [['dn', d.dn], ['up', UN(id)]]], ['dir', 'Which way?', [[1, 'Right (increase)'], [-1, 'Left (decrease)']]], ['y', `What happens to ${d.yname}?`, YN], ['x', `What happens to ${d.xname}?`, YN]];
   if (d.kind === 'lorenz') return [['dir', 'Which way does the Lorenz curve move?', [[-1, 'Closer to the line of equality'], [1, 'Further from the line of equality']]], ['g', 'What happens to the Gini coefficient?', YN]];
   return [['q', 'Market output compared with the socially efficient output is:', [['above', 'Too high'], ['equal', 'Equal to it'], ['below', 'Too low']]], ['p', 'The price buyers pay compared with the efficient price is:', [['below', 'Too low'], ['equal', 'Equal to it'], ['above', 'Too high']]]]; }
 function answer(id, sc) { const d = DG[id];

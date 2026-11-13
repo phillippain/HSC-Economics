@@ -52,7 +52,7 @@ The glossary began as the 219 terms in the Year 12 Economics Booklet 2027 (pages
 | Valuation effect | Topic 2 | The change in the Australian-dollar value of foreign debt and assets caused by a movement in the exchange rate, with no new borrowing or lending. |
 | Wage Price Index (WPI) | Topic 3 | The ABS measure of the change in hourly rates of pay, used as the main indicator of wages growth. |
 
-## 8 entries revised
+## 9 entries revised
 
 Kyoto Protocol and G7/8 are kept, and now say what replaced them.
 
@@ -66,6 +66,8 @@ Kyoto Protocol and G7/8 are kept, and now say what replaced them.
 | Hardcore unemployment | People who have been out of work for a long time and find it very hard to get and keep a job because of personal barriers, such as poor health, disability or a lack of basic skills. They are unlikely to be hired even when jobs are available. |
 | Kyoto Protocol | An international treaty on climate change, adopted in 1997 and in force from 2005, that set binding targets for developed countries to reduce their greenhouse gas emissions. Australia ratified it in 2007. It has been superseded by the Paris Agreement (2015), under which every country sets its own emissions target. |
 | G7/8 | The Group of Seven (G7) is a forum of the leaders of seven major advanced economies: Canada, France, Germany, Italy, Japan, the United Kingdom and the United States. The European Union also takes part. It began in 1975 as a group of six and became the G7 when Canada joined in 1976. Russia joined in 1997, making it the Group of Eight (G8), but was suspended in 2014 after its annexation of Crimea, so the group is the G7 again. The leaders meet at an annual summit to discuss and co-ordinate international policies. |
+
+Aggregate supply also gained a closing sentence on AS, SRAS and LRAS: "On an AD–AS diagram this is the upward-sloping curve, labelled AS. It is also called short-run aggregate supply (SRAS) when the diagram shows the vertical long-run aggregate supply curve (LRAS) as well."
 
 ## Kept as the booklet has them
 
