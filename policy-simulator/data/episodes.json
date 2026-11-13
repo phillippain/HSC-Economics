@@ -1,0 +1,746 @@
+{
+ "updated": "2026-11-13",
+ "episodes": [
+  {
+   "id": "gfc",
+   "title": "The Global Financial Crisis",
+   "period": "October 2008",
+   "color": "#2447d6",
+   "date": "7 October 2008",
+   "situation": "Three weeks ago the US investment bank Lehman Brothers collapsed. Banks around the world have stopped lending to each other, share markets are falling sharply and Australia's trading partners are heading into recession. At home, inflation is still well above the target after a long mining boom, and unemployment is close to its lowest in a generation.",
+   "indicators": [
+    [
+     "Cash rate",
+     "7.00%",
+     "Cut by 0.25 in September, the first cut since 2001",
+     "warn"
+    ],
+    [
+     "Inflation (CPI)",
+     "4.5%",
+     "Year to the June quarter 2008. Target: 2–3%",
+     "high"
+    ],
+    [
+     "Unemployment",
+     "Just over 4%",
+     "Near its lowest in more than 30 years",
+     "ok"
+    ],
+    [
+     "Budget",
+     "$21.7b surplus",
+     "Forecast for 2008–09 in the May 2008 Budget",
+     "ok"
+    ],
+    [
+     "Global economy",
+     "Financial crisis",
+     "Credit markets frozen; major economies entering recession",
+     "high"
+    ],
+    [
+     "Australian dollar",
+     "Falling sharply",
+     "Commodity prices and the dollar have dropped since mid-2008",
+     "warn"
+    ]
+   ],
+   "diag": {
+    "threat": "growth",
+    "source": "weak",
+    "stance": "exp",
+    "why": {
+     "threat": "Inflation was high, but it reflected the boom that had just ended. The collapse in global demand and confidence was about to cut growth and jobs, and would bring inflation down with it.",
+     "source": "The shock came from outside: a global financial crisis that cut spending, lending and confidence. Demand was about to fall well short of the economy's capacity.",
+     "stance": "With demand collapsing, policy needed to support spending, even though inflation was still above the target on the day."
+    }
+   },
+   "monetary": {
+    "options": [
+     "Cut by 1.00 point, to 6.00%",
+     "Cut by 0.50, to 6.50%",
+     "Cut by 0.25, to 6.75%",
+     "Hold at 7.00%",
+     "Raise by 0.25, to 7.25%"
+    ],
+    "actual": 0,
+    "did": "The Board cut the cash rate by a full percentage point, to 6.00%. It then kept cutting: 4.25 percentage points in six steps, to 3.00% by April 2009.",
+    "why": [
+     "Financial conditions had worsened suddenly and global growth forecasts were being cut.",
+     "Weaker demand was expected to bring inflation down, so high inflation today was not a reason to wait.",
+     "A large cut would flow quickly to borrowers, because most Australian mortgages are variable-rate.",
+     "Starting from 7.00%, the Board had plenty of room to cut."
+    ]
+   },
+   "fiscal": {
+    "options": [
+     "Large stimulus: big new spending or tax cuts, straight away",
+     "Moderate, targeted support for the people hit hardest",
+     "Leave the budget settings as they are",
+     "Tighten: save extra revenue or cut spending"
+    ],
+    "actual": 0,
+    "did": "The government announced the $10.4 billion Economic Security Strategy within a week (payments to pensioners and families, and a larger First Home Owner grant), then the $42 billion Nation Building and Jobs Plan in February 2009 (cash payments, school buildings, social housing, home insulation). It also guaranteed bank deposits.",
+    "why": [
+     "The budget was in surplus and government debt was very low, so there was room to act.",
+     "Cash payments reach households within weeks, before interest rate cuts have their full effect.",
+     "Treasury's advice was to act early, on a large scale and through households.",
+     "Infrastructure spending was added to support jobs once the first payments had been spent."
+    ]
+   },
+   "path": [
+    [
+     "Aug 08",
+     7.25
+    ],
+    [
+     "Sep 08",
+     7.0
+    ],
+    [
+     "Oct 08",
+     6.0
+    ],
+    [
+     "Nov 08",
+     5.25
+    ],
+    [
+     "Dec 08",
+     4.25
+    ],
+    [
+     "Feb 09",
+     3.25
+    ],
+    [
+     "Apr 09",
+     3.0
+    ],
+    [
+     "Oct 09",
+     3.25
+    ],
+    [
+     "Nov 09",
+     3.5
+    ],
+    [
+     "Dec 09",
+     3.75
+    ]
+   ],
+   "next": [
+    [
+     "Economic growth",
+     "One negative quarter",
+     "GDP fell in the December quarter 2008 and grew again in the March quarter 2009, so Australia avoided a technical recession"
+    ],
+    [
+     "Unemployment",
+     "Peak of 5.8%",
+     "Around the middle of 2009, far below the peaks in the United States and Europe"
+    ],
+    [
+     "Budget",
+     "Deficits of $27.1b and $54.8b",
+     "2008–09 (2.3% of GDP) and 2009–10 (4.2% of GDP), after a forecast surplus"
+    ],
+    [
+     "Cash rate",
+     "3.00%, then rising",
+     "The RBA began raising rates again in October 2009"
+    ]
+   ],
+   "judge": {
+    "worked": [
+     "Monetary and fiscal policy moved in the same direction, quickly and on a large scale.",
+     "Fiscal policy filled the gap while lower interest rates took effect: a way around the time lag of monetary policy.",
+     "Strong starting positions mattered: a budget surplus, low debt, a high cash rate to cut from and well-regulated banks."
+    ],
+    "limits": [
+     "Policy was not the only cause: China's own stimulus kept demand for Australian resources strong, and the lower dollar helped exporters.",
+     "The speed of the spending led to waste and poor delivery in some programs, such as home insulation.",
+     "The budget stayed in deficit for many years afterwards, which reduced the room to respond to later shocks."
+    ]
+   },
+   "chain": "cash-rate-rise",
+   "lab": "adas",
+   "sources": [
+    [
+     "RBA: Cash Rate Target (table of every change)",
+     "https://www.rba.gov.au/statistics/cash-rate/"
+    ],
+    [
+     "RBA: The Global Financial Crisis (explainer)",
+     "https://www.rba.gov.au/education/resources/explainers/the-global-financial-crisis.html"
+    ],
+    [
+     "RBA: Statement on Monetary Policy, August 2009",
+     "https://www.rba.gov.au/publications/smp/2009/aug/intro.html"
+    ],
+    [
+     "Treasury: Final Budget Outcome 2008–09",
+     "https://ministers.treasury.gov.au/ministers/wayne-swan-2007/media-releases/final-budget-outcome-2008-09"
+    ],
+    [
+     "Treasury: Final Budget Outcome 2009–10",
+     "https://ministers.treasury.gov.au/ministers/wayne-swan-2007/media-releases/final-budget-outcome-2009-10"
+    ]
+   ]
+  },
+  {
+   "id": "covid",
+   "title": "The COVID-19 pandemic",
+   "period": "March 2020",
+   "color": "#0e8a8a",
+   "date": "19 March 2020",
+   "situation": "The World Health Organization declared a pandemic eight days ago. Australia is closing its borders, and governments are about to shut restaurants, travel and much of retail to slow the virus. Share prices have fallen by about a third and even government bond markets are not working normally. The cash rate is already at a record low.",
+   "indicators": [
+    [
+     "Cash rate",
+     "0.50%",
+     "A record low, after a cut on 3 March",
+     "warn"
+    ],
+    [
+     "Inflation (CPI)",
+     "1.8%",
+     "Year to the December quarter 2019. Below the 2–3% target",
+     "low"
+    ],
+    [
+     "Unemployment",
+     "5.1%",
+     "February 2020, before the shutdowns",
+     "warn"
+    ],
+    [
+     "Budget",
+     "$5b surplus",
+     "Forecast for 2019–20 in the mid-year update",
+     "ok"
+    ],
+    [
+     "Global economy",
+     "Pandemic",
+     "Lockdowns spreading; world trade and travel collapsing",
+     "high"
+    ],
+    [
+     "Financial markets",
+     "Under severe stress",
+     "Share prices down sharply; bond markets disrupted",
+     "high"
+    ]
+   ],
+   "diag": {
+    "threat": "growth",
+    "source": "shutdown",
+    "stance": "exp",
+    "why": {
+     "threat": "Inflation was already below target. The danger was a sudden, very large fall in output and jobs.",
+     "source": "This was unlike a normal downturn: governments were deliberately closing parts of the economy, so both production and spending fell at once.",
+     "stance": "Policy could not restart closed industries, but it could keep households and firms afloat until they reopened."
+    }
+   },
+   "monetary": {
+    "options": [
+     "Cut to 0.25% and add new measures: a bond yield target and cheap funding for banks",
+     "Cut to 0.25% only",
+     "Hold at 0.50%",
+     "Raise the cash rate"
+    ],
+    "actual": 0,
+    "did": "At an emergency meeting the Board cut the cash rate to 0.25% and, for the first time, used unconventional monetary policy: a target of about 0.25% for the three-year government bond yield, low-cost three-year funding for banks, and a commitment not to raise rates until progress was made towards full employment and inflation was sustainably in the target band. In November 2020 it cut again to 0.10% and began buying government bonds.",
+    "why": [
+     "The cash rate was almost at zero, so a cut alone would do little.",
+     "The new measures lowered borrowing costs across the economy and kept credit flowing to businesses.",
+     "Promising to keep rates low for years gave households and firms confidence to borrow."
+    ]
+   },
+   "fiscal": {
+    "options": [
+     "Large stimulus: big new spending or tax cuts, straight away",
+     "Moderate, targeted support for the people hit hardest",
+     "Leave the budget settings as they are",
+     "Tighten: save extra revenue or cut spending"
+    ],
+    "actual": 0,
+    "did": "The government delivered the largest fiscal support since the Second World War. JobKeeper, a wage subsidy paid through employers, was the biggest measure (estimated in July 2020 to cost $85.7 billion). The Coronavirus Supplement temporarily about doubled the JobSeeker payment, and businesses received cash flow payments. Total support was put at about $289 billion, or 14.6% of GDP.",
+    "why": [
+     "With the cash rate near zero, fiscal policy had to do most of the work.",
+     "Wage subsidies kept workers attached to their employers, so firms could reopen quickly.",
+     "Income support replaced the spending power that the shutdowns removed."
+    ]
+   },
+   "path": [
+    [
+     "Feb 20",
+     0.75
+    ],
+    [
+     "3 Mar 20",
+     0.5
+    ],
+    [
+     "19 Mar 20",
+     0.25
+    ],
+    [
+     "Nov 20",
+     0.1
+    ],
+    [
+     "Dec 21",
+     0.1
+    ]
+   ],
+   "next": [
+    [
+     "Economic growth",
+     "GDP fell 7.0%",
+     "June quarter 2020: the largest fall on record. GDP was back above its pre-pandemic level by the March quarter 2021"
+    ],
+    [
+     "Unemployment",
+     "Peak of 7.5%",
+     "Mid-2020. It was below its pre-pandemic level by the middle of 2021"
+    ],
+    [
+     "Budget",
+     "Deficits of $85.3b and $134.2b",
+     "2019–20 (4.3% of GDP) and 2020–21 (6.5% of GDP)"
+    ],
+    [
+     "Inflation",
+     "Negative, then rising",
+     "Prices fell in the June quarter 2020. By early 2022 inflation was above 5%"
+    ]
+   ],
+   "judge": {
+    "worked": [
+     "The recovery was much faster than forecast: output and jobs were back within about a year.",
+     "JobKeeper limited the rise in unemployment and kept firms and workers together.",
+     "Fiscal and monetary policy again worked in the same direction."
+    ],
+    "limits": [
+     "Support stayed in place as the economy recovered, which is widely judged to have added to the inflation of 2022–23.",
+     "Some JobKeeper payments went to firms whose revenue did not fall as expected.",
+     "Public debt rose sharply, and record-low interest rates pushed house prices up.",
+     "The RBA's guidance that rates would stay low until 2024 proved wrong and hurt its credibility."
+    ]
+   },
+   "chain": "fiscal-expansion",
+   "lab": "adas",
+   "sources": [
+    [
+     "RBA: Cash Rate Target (table of every change)",
+     "https://www.rba.gov.au/statistics/cash-rate/"
+    ],
+    [
+     "RBA: The COVID-19 Pandemic: 2020 to 2021 (explainer)",
+     "https://www.rba.gov.au/education/resources/explainers/the-covid-19-pandemic-2020-to-2021.html"
+    ],
+    [
+     "RBA: Statement on Monetary Policy, May 2020",
+     "https://www.rba.gov.au/publications/smp/2020/may/overview.html"
+    ],
+    [
+     "Parliamentary Library: Budget Review 2020–21, fiscal overview",
+     "https://aph.gov.au/About_Parliament/Parliamentary_Departments/Parliamentary_Library/pubs/rp/BudgetReview202021/FiscalOverview"
+    ],
+    [
+     "Treasury: Final Budget Outcome 2020–21",
+     "https://archive.budget.gov.au/2020-21/fbo/download/01_part_1.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "tightening",
+   "title": "The 2022–23 inflation surge",
+   "period": "May 2022",
+   "color": "#d9822b",
+   "date": "3 May 2022",
+   "situation": "The economy has recovered strongly from the pandemic. The cash rate is still at its emergency level of 0.10%, where it has been since November 2020. Russia's invasion of Ukraine has pushed up world energy and food prices, supply chains are still disrupted, and inflation has just jumped. The RBA had earlier said rates were unlikely to rise before 2024.",
+   "indicators": [
+    [
+     "Cash rate",
+     "0.10%",
+     "The emergency setting, unchanged since November 2020",
+     "warn"
+    ],
+    [
+     "Inflation (CPI)",
+     "5.1%",
+     "Year to the March quarter 2022. Underlying inflation 3.7%. Target: 2–3%",
+     "high"
+    ],
+    [
+     "Unemployment",
+     "About 4%",
+     "The lowest in almost 50 years",
+     "ok"
+    ],
+    [
+     "Economic growth",
+     "Strong",
+     "GDP about 4½% above its pre-pandemic level",
+     "ok"
+    ],
+    [
+     "Budget",
+     "$78b deficit",
+     "Forecast for 2022–23 in the March 2022 Budget",
+     "warn"
+    ],
+    [
+     "Global economy",
+     "Energy and supply shocks",
+     "War in Ukraine; other central banks are raising rates",
+     "high"
+    ]
+   ],
+   "diag": {
+    "threat": "inflation",
+    "source": "both",
+    "stance": "con",
+    "why": {
+     "threat": "Inflation was well above the target and rising, while unemployment was at a 50-year low.",
+     "source": "Global supply shocks started it, but strong demand after the stimulus let firms pass higher costs on, and inflation spread across most goods and services.",
+     "stance": "An emergency-level cash rate no longer fitted an economy at full employment with rising inflation."
+    }
+   },
+   "monetary": {
+    "options": [
+     "Hold at 0.10% until wages are growing faster",
+     "Raise by 0.15, to 0.25%",
+     "Raise by 0.25, to 0.35%",
+     "Raise by 0.40, to 0.50%",
+     "Raise by 0.65 or more"
+    ],
+    "actual": 2,
+    "did": "The Board raised the cash rate by 0.25, to 0.35%: the first rise since 2010. It then raised it at 12 more meetings, including four rises of 0.50, to reach 4.35% in November 2023: the fastest tightening since inflation targeting began.",
+    "why": [
+     "Inflation had risen faster and higher than the Bank expected.",
+     "The emergency settings of the pandemic were no longer needed.",
+     "Waiting risked higher inflation becoming built into wages and expectations.",
+     "Monetary policy cannot fix supply shocks, but it can stop strong demand from spreading them."
+    ]
+   },
+   "fiscal": {
+    "options": [
+     "Large stimulus: big new spending or tax cuts, straight away",
+     "Moderate, targeted support for the people hit hardest",
+     "Leave the budget settings as they are",
+     "Tighten: save extra revenue or cut spending"
+    ],
+    "actual": 3,
+    "did": "As high commodity prices and strong employment lifted tax revenue, the government saved most of the extra revenue instead of spending it. The budget recorded a surplus of $22.1 billion in 2022–23, the first in 15 years, against a forecast deficit of about $78 billion. Cost-of-living relief was targeted, such as energy bill rebates.",
+    "why": [
+     "Spending the extra revenue would have added to demand and worked against the RBA.",
+     "Relief was designed to lower measured prices (energy rebates) instead of adding to incomes.",
+     "A surplus reduced the debt built up during the pandemic."
+    ]
+   },
+   "path": [
+    [
+     "Apr 22",
+     0.1
+    ],
+    [
+     "May 22",
+     0.35
+    ],
+    [
+     "Jun 22",
+     0.85
+    ],
+    [
+     "Jul 22",
+     1.35
+    ],
+    [
+     "Aug 22",
+     1.85
+    ],
+    [
+     "Sep 22",
+     2.35
+    ],
+    [
+     "Oct 22",
+     2.6
+    ],
+    [
+     "Nov 22",
+     2.85
+    ],
+    [
+     "Dec 22",
+     3.1
+    ],
+    [
+     "Feb 23",
+     3.35
+    ],
+    [
+     "Mar 23",
+     3.6
+    ],
+    [
+     "May 23",
+     3.85
+    ],
+    [
+     "Jun 23",
+     4.1
+    ],
+    [
+     "Nov 23",
+     4.35
+    ],
+    [
+     "Feb 25",
+     4.1
+    ]
+   ],
+   "next": [
+    [
+     "Inflation",
+     "Peak of 7.8%",
+     "Year to the December quarter 2022, the highest since 1990. Underlying inflation peaked at 6.9%"
+    ],
+    [
+     "Cash rate",
+     "4.35% by November 2023",
+     "Thirteen rises in 18 months. The first cut came in February 2025"
+    ],
+    [
+     "Unemployment",
+     "About 3½%",
+     "It stayed near a 50-year low through mid-2023, then rose gradually"
+    ],
+    [
+     "Budget",
+     "$22.1b surplus",
+     "2022–23: the first surplus in 15 years"
+    ]
+   ],
+   "judge": {
+    "worked": [
+     "Inflation came down from its peak without the sharp rise in unemployment that past disinflations needed.",
+     "Fiscal policy supported monetary policy by saving the revenue windfall.",
+     "Expectations of future inflation stayed anchored near the target."
+    ],
+    "limits": [
+     "The RBA started late: its earlier guidance that rates would not rise before 2024 delayed the first move.",
+     "Monetary policy works with a lag of one to two years, so inflation kept rising for months after the first rise.",
+     "The cost fell unevenly, on mortgage holders and renters, while it took years for inflation to return to the target band.",
+     "Part of the fall in inflation came from global supply recovering, not from policy."
+    ]
+   },
+   "chain": "cash-rate-rise",
+   "lab": "adas",
+   "sources": [
+    [
+     "RBA: Cash Rate Target (table of every change)",
+     "https://www.rba.gov.au/statistics/cash-rate/"
+    ],
+    [
+     "RBA Annual Report 2023: Annual Performance Statement",
+     "https://www.rba.gov.au/publications/annual-reports/rba/2023/annual-performance-statement.html"
+    ],
+    [
+     "RBA: Statement on Monetary Policy, February 2023",
+     "https://www.rba.gov.au/publications/smp/2023/feb/overview.html"
+    ],
+    [
+     "The New Daily (AAP): 2022–23 budget surplus of $22.1 billion",
+     "https://thenewdaily.com.au/news/2023/09/22/federal-budget-in-the-black-jim-chalmers/"
+    ]
+   ]
+  },
+  {
+   "id": "now",
+   "title": "The 2026 inflation episode",
+   "period": "November 2026",
+   "color": "#8a3fb0",
+   "date": "3 November 2026",
+   "live": true,
+   "situation": "After three cuts in 2025 took the cash rate to 3.60%, inflation picked up again and the RBA has raised rates four times this year. A conflict in the Middle East has pushed oil above US$110 a barrel. But the economy is now slowing: unemployment is rising and house prices have fallen. This is the hardest kind of decision, because the two goals pull in opposite directions.",
+   "indicators": [
+    [
+     "Cash rate",
+     "4.60%",
+     "After four rises in 2026, from 3.60%",
+     "warn"
+    ],
+    [
+     "Inflation (CPI)",
+     "3.9%",
+     "Year to the September quarter 2026; 4.3% in the month of September. Target: 2–3%",
+     "high"
+    ],
+    [
+     "Underlying inflation",
+     "3.7%",
+     "Trimmed mean, year to the September quarter 2026",
+     "high"
+    ],
+    [
+     "Unemployment",
+     "4.7%",
+     "September 2026, up from 4.1% in January",
+     "high"
+    ],
+    [
+     "Budget",
+     "About $31b deficit",
+     "Latest estimate for 2026–27, about 1% of GDP",
+     "warn"
+    ],
+    [
+     "Global economy",
+     "Oil price shock",
+     "Brent crude about US$115 a barrel in late October",
+     "high"
+    ]
+   ],
+   "diag": {
+    "threat": "both",
+    "source": "both",
+    "stance": "con",
+    "why": {
+     "threat": "Inflation is well above the target and unemployment is rising at the same time. Fixing one makes the other worse in the short run.",
+     "source": "Oil is a supply shock, but the RBA said domestic capacity pressures were evident before oil prices rose, which is why it began raising rates in February.",
+     "stance": "The Board judged that inflation was the bigger risk and tightened further. Three of its nine members disagreed."
+    }
+   },
+   "monetary": {
+    "options": [
+     "Cut by 0.25, to 4.35%",
+     "Hold at 4.60%",
+     "Raise by 0.25, to 4.85%",
+     "Raise by 0.50, to 5.10%"
+    ],
+    "actual": 2,
+    "did": "The Board raised the cash rate by 0.25, to 4.85%: the fifth rise of 2026 and the highest cash rate since 2008. The vote was 6 to 3, with three members voting to hold at 4.60%.",
+    "why": [
+     "Underlying inflation was higher than the Bank had forecast and price pressures were broadly based.",
+     "The RBA said monetary policy cannot change world oil prices; the tightening was aimed at domestic capacity pressures.",
+     "Higher inflation expectations risked becoming built into wages and prices.",
+     "The split vote shows the case for holding was strong: growth was slowing and unemployment rising."
+    ]
+   },
+   "fiscal": {
+    "options": [
+     "Large stimulus: big new spending or tax cuts, straight away",
+     "Moderate, targeted support for the people hit hardest",
+     "Leave the budget settings as they are",
+     "Tighten: save extra revenue or cut spending"
+    ],
+    "actual": 2,
+    "did": "There was no major change in the budget stance. The budget remains in deficit by about 1% of GDP ($22.3 billion in 2025–26; about $31 billion estimated for 2026–27). The $75 a quarter energy bill rebate ended on 31 December 2025.",
+    "why": [
+     "A deficit of about 1% of GDP adds a little to demand while the RBA is trying to reduce it.",
+     "Tightening the budget would help with inflation but add to rising unemployment.",
+     "New cost-of-living payments would ease pressure on households but could add to demand and inflation."
+    ]
+   },
+   "path": [
+    [
+     "Jan 25",
+     4.35
+    ],
+    [
+     "Feb 25",
+     4.1
+    ],
+    [
+     "May 25",
+     3.85
+    ],
+    [
+     "Aug 25",
+     3.6
+    ],
+    [
+     "Feb 26",
+     3.85
+    ],
+    [
+     "Mar 26",
+     4.1
+    ],
+    [
+     "May 26",
+     4.35
+    ],
+    [
+     "Sep 26",
+     4.6
+    ],
+    [
+     "Nov 26",
+     4.85
+    ]
+   ],
+   "next": [
+    [
+     "Inflation",
+     "Forecast to peak at 4.5%",
+     "RBA forecast for the December quarter 2026; underlying inflation back under 3% by late 2027"
+    ],
+    [
+     "Unemployment",
+     "Forecast to rise to about 5.1%",
+     "RBA forecast for the end of 2028"
+    ],
+    [
+     "Economic growth",
+     "Forecast to slow to 1.3%",
+     "RBA forecast for late 2027"
+    ],
+    [
+     "What happened next",
+     "Not known yet",
+     "This episode is still unfolding. Follow it in the Evidence Finder"
+    ]
+   ],
+   "judge": {
+    "worked": [
+     "The RBA acted on inflation early in 2026 instead of waiting, a lesson from 2022.",
+     "A clear commitment to the target helps keep inflation expectations anchored."
+    ],
+    "limits": [
+     "Interest rates cannot lower oil prices: monetary policy is a poor tool against a supply shock.",
+     "Raising rates while unemployment is rising risks a deeper slowdown than needed.",
+     "With a time lag of one to two years, the rises of 2026 will still be slowing the economy in 2027 and 2028.",
+     "Monetary and fiscal policy are not pulling in the same direction while the budget is in deficit."
+    ]
+   },
+   "chain": "cash-rate-rise",
+   "lab": "adas",
+   "sources": [
+    [
+     "RBA: Cash Rate Target (table of every change)",
+     "https://www.rba.gov.au/statistics/cash-rate/"
+    ],
+    [
+     "RBA: Monetary Policy Decision, 3 November 2026",
+     "https://www.rba.gov.au/media-releases/2026/mr-26-30.html"
+    ],
+    [
+     "RBA: Statement on Monetary Policy, November 2026",
+     "https://www.rba.gov.au/publications/smp/2026/nov/"
+    ],
+    [
+     "Class Evidence Finder: latest items on interest rates",
+     "../evidence-finder/#q=cash%20rate"
+    ]
+   ]
+  }
+ ]
+}
