@@ -75,6 +75,30 @@ def build():
     return html, out
 
 
+def review(out):
+    """Teacher review sheet: every written explanation on one printable page."""
+    import html as H
+    e = H.escape
+    rows = []
+    for q in out["q"]:
+        if "e" not in q:
+            continue
+        opts = "".join(f'<li class="{"k" if l in q["k"] else ""}"><b>{l}</b> {e(o)}'
+                       + (f'<span>{e(q["e"]["why"])}</span>' if l in q["k"] else f'<span>{e(q["e"]["not"][l])}</span>') + "</li>"
+                       for l, o in zip("ABCD", q["o"]))
+        fig = " <i>(has a table or figure: see the drill or the Question Finder)</i>" if q.get("f") or q.get("m") else ""
+        rows.append(f'<section><h2>HSC {q["y"]} Q{q["n"]} <small>answer {" or ".join(q["k"])} · {" ".join(q["c"])}</small></h2><p>{e(q["q"])}{fig}</p><ol>{opts}</ol></section>')
+    n = len(rows)
+    return ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1">'
+            '<title>Multiple Choice Drill: explanations for review</title><style>body{font:16px/1.5 system-ui,sans-serif;max-width:860px;margin:24px auto;padding:0 16px;color:#101a3a}'
+            'h1{font-size:1.5rem}h2{font-size:1.05rem;margin:22px 0 4px;border-top:1px solid #d8deee;padding-top:14px}small{font-weight:400;color:#4a5578}'
+            'ol{list-style:none;padding:0;margin:8px 0}li{margin:6px 0;padding:6px 10px;border:1px solid #d8deee;border-radius:8px}li.k{border-color:#17693a;background:#eef8f1}'
+            'li span{display:block;color:#33405f;font-size:.93rem}section{break-inside:avoid}</style></head><body>'
+            f'<h1>Multiple Choice Drill: explanations for review</h1><p>{n} of {len(out["q"])} questions have an explanation. The green option is the NESA answer; the note under it is the '
+            '"why", and the note under each other option says why it is wrong. These were written for the site, not by NESA. To change one, edit <code>multiple-choice-drill/data/explanations.json</code> '
+            'and run <code>python3 multiple-choice-drill/build.py</code>.</p>' + "".join(rows) + "</body></html>")
+
+
 if __name__ == "__main__":
     html, out = build()
     target = HERE / "index.html"
@@ -83,6 +107,7 @@ if __name__ == "__main__":
         print("multiple-choice-drill/index.html is up to date" if ok else "multiple-choice-drill/index.html is OUT OF DATE: run multiple-choice-drill/build.py")
         sys.exit(0 if ok else 1)
     target.write_text(html, encoding="utf8")
+    (HERE / "review.html").write_text(review(out), encoding="utf8")
     q = out["q"]
     print(f'Wrote {target} ({len(html)//1024} KB): {len(q)} questions from {len({x["y"] for x in q})} papers, '
           f'{sum(1 for x in q if x.get("f"))} with a table or figure, {sum(1 for x in q if x.get("m"))} with an option table, '
