@@ -1,0 +1,588 @@
+{
+ "note": "The transactions and the shock effects are a teaching model written for the site; their dollar figures are illustrative. The history chart is real data.",
+ "tx": [
+  {
+   "t": "An Australian miner sells iron ore to a steel mill in China",
+   "a": "goods",
+   "s": "cr",
+   "v": 30,
+   "why": "Selling a good overseas is an export. Money flows into Australia, so it is a credit."
+  },
+  {
+   "t": "An Australian retailer imports televisions from South Korea",
+   "a": "goods",
+   "s": "dr",
+   "v": 30,
+   "why": "Buying a good from overseas is an import. Money flows out, so it is a debit."
+  },
+  {
+   "t": "Australian wheat farmers export grain to Indonesia",
+   "a": "goods",
+   "s": "cr",
+   "v": 12,
+   "why": "An export of a good: money flows in, a credit."
+  },
+  {
+   "t": "A student from China pays tuition fees to an Australian university",
+   "a": "services",
+   "s": "cr",
+   "v": 9,
+   "why": "Education sold to an overseas resident is an export of a service: a credit."
+  },
+  {
+   "t": "An Australian family holidays in Japan and pays for hotels and tours",
+   "a": "services",
+   "s": "dr",
+   "v": 7,
+   "why": "Tourism bought overseas is an import of a service: a debit."
+  },
+  {
+   "t": "An Australian exporter pays a Danish shipping line to carry its cargo",
+   "a": "services",
+   "s": "dr",
+   "v": 2,
+   "why": "Freight bought from a foreign firm is an import of a service: a debit."
+  },
+  {
+   "t": "A US technology company pays an Australian firm for consulting work",
+   "a": "services",
+   "s": "cr",
+   "v": 3,
+   "why": "Consulting sold to an overseas client is an export of a service: a credit."
+  },
+  {
+   "t": "An Australian company pays dividends to its shareholders in the United States",
+   "a": "primary",
+   "s": "dr",
+   "v": 8,
+   "why": "Dividends are income earned on an investment. Paying them to foreign owners is a primary income debit."
+  },
+  {
+   "t": "An Australian superannuation fund receives dividends on shares it owns in a British company",
+   "a": "primary",
+   "s": "cr",
+   "v": 4,
+   "why": "Income earned on Australian-owned assets overseas is a primary income credit."
+  },
+  {
+   "t": "An Australian bank pays interest on money it borrowed in London",
+   "a": "primary",
+   "s": "dr",
+   "v": 6,
+   "why": "Interest paid on foreign debt is income paid to overseas lenders: a primary income debit."
+  },
+  {
+   "t": "A foreign company that owns an Australian mine sends its profits home",
+   "a": "primary",
+   "s": "dr",
+   "v": 9,
+   "why": "Profits paid to foreign owners are primary income debits."
+  },
+  {
+   "t": "An Australian engineer on a six-month contract in Singapore is paid by her Singaporean employer",
+   "a": "primary",
+   "s": "cr",
+   "v": 1,
+   "why": "Wages earned from a foreign employer by a resident working abroad for under a year are compensation of employees: a primary income credit."
+  },
+  {
+   "t": "A worker living in Australia sends money to family in the Philippines",
+   "a": "secondary",
+   "s": "dr",
+   "v": 2,
+   "why": "A gift with nothing received in return is a transfer: a secondary income debit."
+  },
+  {
+   "t": "The Australian government sends emergency food aid to a Pacific neighbour",
+   "a": "secondary",
+   "s": "dr",
+   "v": 1,
+   "why": "Aid for immediate needs is a current transfer: a secondary income debit."
+  },
+  {
+   "t": "A retiree living in Australia receives a pension from the British government",
+   "a": "secondary",
+   "s": "cr",
+   "v": 1,
+   "why": "A pension paid from overseas is a transfer into Australia: a secondary income credit."
+  },
+  {
+   "t": "The Australian government pays for a new hospital to be built in Papua New Guinea",
+   "a": "capital",
+   "s": "dr",
+   "v": 1,
+   "why": "Aid tied to building an asset is a capital transfer: a debit on the capital account."
+  },
+  {
+   "t": "An overseas firm buys the trademark rights to an Australian brand",
+   "a": "capital",
+   "s": "cr",
+   "v": 1,
+   "why": "The sale of a non-produced, non-financial asset such as a trademark is a credit on the capital account."
+  },
+  {
+   "t": "A Japanese company buys all of an Australian food manufacturer",
+   "a": "financial",
+   "s": "cr",
+   "v": 10,
+   "why": "Foreign ownership of 10% or more is direct investment. Money flows in to buy an Australian asset: a financial account credit."
+  },
+  {
+   "t": "A US investment fund buys 2% of the shares in an Australian bank",
+   "a": "financial",
+   "s": "cr",
+   "v": 4,
+   "why": "A holding under 10% is portfolio investment. Money flows in: a financial account credit."
+  },
+  {
+   "t": "An Australian superannuation fund buys shares on the New York Stock Exchange",
+   "a": "financial",
+   "s": "dr",
+   "v": 8,
+   "why": "Australians buying foreign shares is portfolio investment abroad. Money flows out: a financial account debit."
+  },
+  {
+   "t": "An Australian bank borrows from a group of foreign banks",
+   "a": "financial",
+   "s": "cr",
+   "v": 5,
+   "why": "Borrowing from overseas brings money in (other investment): a financial account credit. The interest paid later is a primary income debit."
+  },
+  {
+   "t": "An Australian mining company builds a new mine in Chile",
+   "a": "financial",
+   "s": "dr",
+   "v": 7,
+   "why": "Australian direct investment abroad: money flows out, a financial account debit."
+  },
+  {
+   "t": "The Reserve Bank sells Australian dollars and adds US dollars to its reserves",
+   "a": "financial",
+   "s": "dr",
+   "v": 2,
+   "why": "An increase in reserve assets is recorded as a financial account debit."
+  },
+  {
+   "t": "The Australian government sells bonds to investors in Japan",
+   "a": "financial",
+   "s": "cr",
+   "v": 3,
+   "why": "Foreigners buying Australian government bonds is portfolio investment (debt): a financial account credit."
+  }
+ ],
+ "shocks": [
+  {
+   "id": "tot",
+   "name": "Export prices rise (the terms of trade improve)",
+   "rate": "up",
+   "now": {
+    "bogs": 6,
+    "primary": -1,
+    "why": {
+     "bogs": "Each tonne exported earns more, so export credits rise and the balance on goods and services improves.",
+     "primary": "Much of the mining industry is foreign owned, so higher profits mean larger dividend debits.",
+     "rate": "More export income means more demand for the Australian dollar, so it appreciates."
+    }
+   },
+   "later": {
+    "bogs": 3,
+    "primary": -2,
+    "why": {
+     "bogs": "The higher dollar makes other exports less competitive and imports cheaper, giving back part of the gain.",
+     "primary": "Dividends paid overseas stay high while mining profits are high.",
+     "rate": "The dollar stays high while export prices do."
+    }
+   }
+  },
+  {
+   "id": "down",
+   "name": "A global downturn",
+   "rate": "down",
+   "now": {
+    "bogs": -6,
+    "primary": 1,
+    "why": {
+     "bogs": "Trading partners buy fewer exports and commodity prices fall, so export credits fall.",
+     "primary": "Lower profits for foreign-owned exporters mean smaller dividend debits.",
+     "rate": "Less demand for exports means less demand for the dollar, so it depreciates."
+    }
+   },
+   "later": {
+    "bogs": -3,
+    "primary": 0,
+    "why": {
+     "bogs": "The lower dollar makes exports cheaper and imports dearer, which recovers part of the loss.",
+     "primary": "A lower dollar raises the cost of servicing debt owed in foreign currencies, offsetting the lower dividends.",
+     "rate": "The dollar stays low until world demand recovers."
+    }
+   }
+  },
+  {
+   "id": "dep",
+   "name": "The Australian dollar depreciates",
+   "rate": "down",
+   "now": {
+    "bogs": -1,
+    "primary": -1,
+    "why": {
+     "bogs": "Volumes take time to respond, but imports already cost more in Australian dollars, so the balance can worsen at first (the J-curve).",
+     "primary": "Interest on debt owed in foreign currencies now costs more Australian dollars.",
+     "rate": "This is the starting change."
+    }
+   },
+   "later": {
+    "bogs": 4,
+    "primary": -1,
+    "why": {
+     "bogs": "Exports are cheaper for foreign buyers and imports are dearer, so export volumes rise and import volumes fall.",
+     "primary": "Servicing foreign-currency debt remains more expensive.",
+     "rate": "A better trade balance later supports the dollar."
+    }
+   }
+  },
+  {
+   "id": "rates",
+   "name": "Australian interest rates rise relative to overseas",
+   "rate": "up",
+   "now": {
+    "bogs": 0,
+    "primary": -2,
+    "fin": "Foreign savers move funds into Australia for the higher return, so financial account credits rise.",
+    "why": {
+     "primary": "Higher interest rates mean larger interest payments to overseas lenders.",
+     "rate": "Capital inflow raises demand for the dollar, so it appreciates."
+    }
+   },
+   "later": {
+    "bogs": -3,
+    "primary": -2,
+    "fin": "The inflow continues while the interest rate gap lasts.",
+    "why": {
+     "bogs": "The higher dollar makes exports dearer and imports cheaper. Slower domestic spending reduces imports a little, but the dollar effect is larger here.",
+     "primary": "Interest payments overseas stay higher.",
+     "rate": "The dollar stays high while the rate gap lasts."
+    }
+   }
+  },
+  {
+   "id": "boom",
+   "name": "Strong growth in domestic spending",
+   "rate": "down",
+   "now": {
+    "bogs": -5,
+    "primary": 0,
+    "why": {
+     "bogs": "Households and firms buy more of everything, including imports, so import debits rise.",
+     "rate": "More imports mean more Australian dollars supplied, which pushes the dollar down."
+    }
+   },
+   "later": {
+    "bogs": -5,
+    "primary": -1,
+    "why": {
+     "bogs": "Imports stay high while spending is strong.",
+     "primary": "The larger deficit was financed from overseas, so interest and dividend payments grow.",
+     "rate": "Pressure on the dollar continues while imports are high."
+    }
+   }
+  },
+  {
+   "id": "invest",
+   "name": "A mining investment boom funded from overseas",
+   "rate": "up",
+   "now": {
+    "bogs": -4,
+    "primary": 0,
+    "fin": "Foreign companies bring in funds to build mines and gas plants: direct investment credits rise.",
+    "why": {
+     "bogs": "The projects need imported machinery and equipment, so import debits rise.",
+     "rate": "The investment inflow raises demand for the dollar."
+    }
+   },
+   "later": {
+    "bogs": 7,
+    "primary": -4,
+    "fin": "Once the projects are built the inflow of investment slows.",
+    "why": {
+     "bogs": "The new mines begin exporting, so export credits rise strongly.",
+     "primary": "The foreign owners are paid dividends on their investment.",
+     "rate": "Higher export income supports the dollar."
+    }
+   }
+  },
+  {
+   "id": "save",
+   "name": "National saving rises",
+   "rate": "same",
+   "now": {
+    "bogs": 3,
+    "primary": 0,
+    "fin": "With more saving at home, Australia needs to borrow less from overseas, so financial account credits fall.",
+    "why": {
+     "bogs": "Higher saving means lower spending, including on imports.",
+     "rate": "Less capital inflow lowers demand for the dollar, but fewer imports lower its supply: little net change."
+    }
+   },
+   "later": {
+    "bogs": 3,
+    "primary": 2,
+    "fin": "Less new borrowing each year.",
+    "why": {
+     "bogs": "Lower spending on imports continues.",
+     "primary": "With less borrowing, foreign liabilities grow more slowly and servicing costs fall.",
+     "rate": "Little net change."
+    }
+   }
+  },
+  {
+   "id": "world",
+   "name": "World interest rates rise",
+   "rate": "down",
+   "now": {
+    "bogs": 0,
+    "primary": -3,
+    "why": {
+     "primary": "Australia is a net borrower, so higher world rates raise the interest paid on foreign debt.",
+     "rate": "Funds are attracted overseas, lowering demand for the dollar."
+    }
+   },
+   "later": {
+    "bogs": 2,
+    "primary": -3,
+    "why": {
+     "bogs": "The lower dollar makes exports more competitive and imports dearer.",
+     "primary": "Debt servicing stays more expensive.",
+     "rate": "The dollar stays lower while world rates are high."
+    }
+   }
+  }
+ ],
+ "base": {
+  "bogs": 15,
+  "primary": -18,
+  "secondary": -2,
+  "capital": 0
+ },
+ "history": {
+  "rows": [
+   [
+    1984,
+    -1.5,
+    -3.4
+   ],
+   [
+    1985,
+    -2.1,
+    -4.4
+   ],
+   [
+    1986,
+    -3.1,
+    -5.6
+   ],
+   [
+    1987,
+    -1.6,
+    -4
+   ],
+   [
+    1988,
+    -0.7,
+    -3.3
+   ],
+   [
+    1989,
+    -1.8,
+    -5
+   ],
+   [
+    1990,
+    -1.9,
+    -5.8
+   ],
+   [
+    1991,
+    -0.1,
+    -4
+   ],
+   [
+    1992,
+    0.2,
+    -3.1
+   ],
+   [
+    1993,
+    -0.3,
+    -3.3
+   ],
+   [
+    1994,
+    -0.5,
+    -3.4
+   ],
+   [
+    1995,
+    -1.9,
+    -5.4
+   ],
+   [
+    1996,
+    -0.5,
+    -3.9
+   ],
+   [
+    1997,
+    0.3,
+    -3.1
+   ],
+   [
+    1998,
+    -0.9,
+    -4
+   ],
+   [
+    1999,
+    -2.4,
+    -5.5
+   ],
+   [
+    2000,
+    -2.2,
+    -5
+   ],
+   [
+    2001,
+    0.1,
+    -2.8
+   ],
+   [
+    2002,
+    0.1,
+    -2.6
+   ],
+   [
+    2003,
+    -2.1,
+    -4.8
+   ],
+   [
+    2004,
+    -2.7,
+    -5.5
+   ],
+   [
+    2005,
+    -2.7,
+    -6.5
+   ],
+   [
+    2006,
+    -1.9,
+    -5.8
+   ],
+   [
+    2007,
+    -1.6,
+    -6.1
+   ],
+   [
+    2008,
+    -2.6,
+    -6.7
+   ],
+   [
+    2009,
+    0.3,
+    -3.3
+   ],
+   [
+    2010,
+    -1,
+    -5
+   ],
+   [
+    2011,
+    1,
+    -3.2
+   ],
+   [
+    2012,
+    -0.2,
+    -3.5
+   ],
+   [
+    2013,
+    -1.3,
+    -4
+   ],
+   [
+    2014,
+    -0.3,
+    -3
+   ],
+   [
+    2015,
+    -1.6,
+    -3.8
+   ],
+   [
+    2016,
+    -2.4,
+    -4.8
+   ],
+   [
+    2017,
+    0.3,
+    -2.5
+   ],
+   [
+    2018,
+    0.1,
+    -3.1
+   ],
+   [
+    2019,
+    2.1,
+    -1.3
+   ],
+   [
+    2020,
+    3.4,
+    0.9
+   ],
+   [
+    2021,
+    3.7,
+    2.3
+   ],
+   [
+    2022,
+    5.3,
+    1.2
+   ],
+   [
+    2023,
+    4.4,
+    0
+   ],
+   [
+    2024,
+    2.1,
+    -1.4
+   ],
+   [
+    2025,
+    0.5,
+    -2.4
+   ],
+   [
+    2026,
+    -0.2,
+    -3.3
+   ]
+  ],
+  "source": "Reserve Bank of Australia, Statistical Table I1 International Trade and Balance of Payments (ABS data), published 3 September 2026",
+  "method": "Each financial year is the average of its four quarterly figures (seasonally adjusted, per cent of nominal GDP). Net income is the current account balance minus the trade balance, so it combines primary and secondary income.",
+  "retrieved": "13 November 2026"
+ }
+}

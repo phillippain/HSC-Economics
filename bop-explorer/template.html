@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HSC Economics Balance of Payments Explorer</title>
+<meta name="description" content="Sort transactions into the accounts of the balance of payments, trace how a shock moves each account, and read Australia's record since 1983.">
+<style>
+/*__FONTS__*/
+:root{
+  --bg:#f3f5fa; --grid:transparent; --grid2:transparent;
+  --card:#ffffff; --card2:#e9eef8; --ink:#0b1330; --mut:#3b4663; --rule:#c9d2e4; --rule2:#a7b3cd;
+  --acc:#1c3fb0; --acc-ink:#ffffff; --acc-soft:#e3eafb;
+  --hl:#ffe14d; --hl-ink:#1b1600; --gap:#c93a22; --ok:#1c7d52; --warn:#b7791f;
+  --shadow:0 1px 0 rgba(14,21,38,.06),0 8px 24px -14px rgba(14,21,38,.25);
+  --head:'Manrope','Avenir Next','Segoe UI',system-ui,sans-serif;
+  --body:'Manrope','Segoe UI',system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --bg:#0c1120; --grid:transparent; --grid2:transparent;
+  --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+  --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52;
+  --hl:#c9a900; --hl-ink:#fff7c8; --gap:#ff8b72; --ok:#59d39b; --warn:#e6bd45;
+  --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.6);
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0c1120; --grid:transparent; --grid2:transparent;
+    --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+    --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52;
+    --hl:#c9a900; --hl-ink:#fff7c8; --gap:#ff8b72; --ok:#59d39b; --warn:#e6bd45;
+    --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.6);
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;font:400 1rem/1.5 var(--body);color:var(--ink);background-color:var(--bg);
+  background-image:linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid2) 1px,transparent 1px),
+  linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:120px 120px,120px 120px,24px 24px,24px 24px;background-position:-1px -1px}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--acc)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px 60px}
+h1,h2,h3{font-family:var(--head);letter-spacing:-.015em;margin:0}
+p{margin:0}
+.mast{padding:18px 0 10px}
+/* look:white-cobalt */
+/* look:softened */
+body{font-weight:500}
+.mast{border-bottom:2px solid var(--acc);padding-bottom:14px;margin-bottom:16px}
+.mast h1{font-weight:800;letter-spacing:-.01em}
+.school{font-size:.78rem;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.mast h1{font-size:clamp(1.5rem,3.2vw,2.1rem);line-height:1.1}
+.mast .tag{color:var(--mut);font-size:.95rem;margin-top:2px}
+.tabs{display:flex;gap:4px;border-bottom:2px solid var(--rule2);margin:6px 0 16px;flex-wrap:wrap}
+.tab{border:0;background:none;padding:.55rem .9rem;font-family:var(--head);font-weight:700;font-size:1rem;color:var(--mut);border-bottom:3px solid transparent;margin-bottom:-2px}
+.tab[aria-selected="true"]{color:var(--acc);border-color:var(--acc)}
+.view{display:none}.view.on{display:block}
+.btn{display:inline-flex;gap:6px;align-items:center;border:1px solid var(--acc);background:var(--acc);color:var(--acc-ink);border-radius:8px;padding:.5rem .9rem;font-weight:600;font-size:.92rem;text-decoration:none}
+.btn.ghost{background:var(--card);color:var(--ink);border-color:var(--rule2)}
+.btn.ghost:hover{border-color:var(--acc);color:var(--acc)}
+.btn:disabled{opacity:.45;cursor:default}
+.sub{color:var(--mut);font-size:.93rem}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
+.pick{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;margin-bottom:18px}
+.pk{text-align:left;background:var(--card);border:1px solid var(--rule);border-left:6px solid var(--tc);border-radius:10px;padding:.6rem .8rem}
+.pk:hover{border-color:var(--acc)}
+.pk[aria-pressed="true"]{background:var(--acc-soft);border-color:var(--acc)}
+.pk b{display:block;font-family:var(--head);line-height:1.2}
+.cols{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:16px;align-items:start}
+@media(max-width:860px){.cols{grid-template-columns:1fr}}
+.panel h2{font-size:1.15rem;margin-bottom:4px}.panel h3{font-size:1rem;margin:12px 0 4px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.tx{font-family:var(--head);font-weight:700;font-size:1.15rem;line-height:1.35;margin:8px 0 12px}
+.ch{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:6px}
+.ch button{background:var(--card);border:1px solid var(--rule2);border-radius:8px;padding:.5rem .6rem;font-weight:600;text-align:left}
+.ch button[aria-pressed="true"]{background:var(--acc-soft);border-color:var(--acc);box-shadow:inset 0 0 0 1px var(--acc)}
+.ch button.ok{border-color:var(--ok);box-shadow:inset 0 0 0 2px var(--ok)}.ch button.no{border-color:var(--gap);text-decoration:line-through}
+.lab{font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;font-weight:700;color:var(--mut);margin:10px 0 4px}
+.fb{border-left:5px solid var(--ok);background:var(--card2);border-radius:0 10px 10px 0;padding:.6rem .8rem;margin-top:12px}.fb.bad{border-color:var(--gap)}
+table.t{width:100%;border-collapse:collapse;font-size:.93rem}table.t th,table.t td{text-align:left;vertical-align:top;padding:.4rem .5rem;border-bottom:1px solid var(--rule)}
+table.t td.n,table.t th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+table.t tr.sum td,table.t tr.sum th{font-weight:800;background:var(--card2)}table.t tr.in th{font-weight:500;padding-left:1.3rem}
+.neg{color:var(--gap)}.pos{color:var(--ok)}
+.scroll{overflow-x:auto}
+.shk{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:6px;margin-bottom:12px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:8px;overflow:hidden}.seg button{border:0;background:var(--card);padding:.4rem .8rem;font-weight:600}.seg button[aria-pressed="true"]{background:var(--acc);color:var(--acc-ink)}
+.bar{display:grid;grid-template-columns:150px 1fr;gap:8px;align-items:center;margin-top:6px;font-size:.9rem}.bar .trk{position:relative;height:22px;background:var(--card2);border-radius:4px}
+.bar .trk i{position:absolute;top:3px;bottom:3px;border-radius:3px}.bar .trk .z{position:absolute;left:50%;top:0;bottom:0;width:2px;background:var(--rule2)}
+.why{margin:6px 0 0;padding-left:1.1rem}.why li{margin:4px 0}
+svg.dg{width:100%;height:auto;display:block}svg text{font-family:var(--body);fill:var(--ink)}
+.read{background:var(--card2);border-radius:10px;padding:.5rem .8rem;margin-top:8px;min-height:2.6em}
+.tree{margin:8px 0 0;padding:0;list-style:none}.tree ul{list-style:none;margin:4px 0 4px 14px;padding-left:12px;border-left:3px solid var(--rule2)}.tree li{margin:5px 0}.tree b{font-family:var(--head)}
+.q{border:1px solid var(--rule);border-radius:10px;padding:.5rem .7rem;margin-top:6px;background:var(--card)}.q small{color:var(--mut);font-weight:700}
+.foot{color:var(--mut);font-size:.85rem;margin-top:22px;border-top:1px solid var(--rule2);padding-top:12px}
+body.embed .school{display:none}
+@media print{.tabs,.btn,.shk{display:none!important}}
+</style>
+</head>
+<body>
+<!-- SITEMENU:START built by build/build_sitemenu.py; edit the list of tools there, not here -->
+<style>
+.smbar{display:flex;justify-content:flex-end;padding:10px 20px 0;font-family:'Manrope','Public Sans','Segoe UI',system-ui,-apple-system,sans-serif}
+.smw{display:inline-flex;gap:8px;align-items:center;font-size:13px;line-height:1.3}
+.sm{position:relative;display:inline-block;text-align:left}
+.smw svg{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sm-btn{list-style:none;cursor:pointer;display:inline-flex;gap:7px;align-items:center;background:#ffd24a;color:#1a1d2b;border:1px solid #d9ad16;border-radius:999px;padding:6px 13px;font-weight:700;white-space:nowrap;text-decoration:none;user-select:none;-webkit-user-select:none}
+.sm-btn::-webkit-details-marker{display:none}
+.sm-btn:hover{background:#ffe07a}
+.sm-btn:focus-visible{outline:3px solid #1746d1;outline-offset:2px}
+.sm[open] .sm-caret{transform:rotate(180deg)}
+.sm-list{position:fixed;top:0;left:0;z-index:1000;width:min(340px,calc(100vw - 16px));max-height:calc(100vh - 90px);overflow:auto;background:#fff;color:#1a1d2b;border:1px solid #dcdfea;border-radius:14px;box-shadow:0 12px 34px rgba(10,14,40,.3);padding:8px;display:flex;flex-direction:column;gap:1px;font-weight:400}
+.sm:not([open]) .sm-list{display:none}
+.sm-h{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#5a6072;padding:8px 10px 3px}
+.sm-a{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:center;padding:7px 10px;border-radius:9px;color:inherit;text-decoration:none}
+.sm-a svg{font-size:18px;color:#1746d1}
+.sm-a b{display:block;font-size:14px;font-weight:700;color:inherit}
+.sm-a em{display:block;font-style:normal;font-size:12px;color:#5a6072}
+a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
+.sm-cur{background:#fff3c9}
+.sm-cur em{color:#7d5f00;font-weight:700}
+.sm-ext{border-top:1px solid #dcdfea;margin-top:6px;padding-top:10px;border-radius:0 0 9px 9px}
+@media print{.smbar{display:none !important}}
+:root[data-theme="dark"] .sm-list{background:#151c30;color:#e9eefb;border-color:#27304b}
+:root[data-theme="dark"] .sm-h,:root[data-theme="dark"] .sm-a em{color:#a2aec9}
+:root[data-theme="dark"] .sm-a svg{color:#8fa6ff}
+:root[data-theme="dark"] a.sm-a:hover,:root[data-theme="dark"] a.sm-a:focus-visible{background:#212c52}
+:root[data-theme="dark"] .sm-cur{background:#3a3010}
+:root[data-theme="dark"] .sm-cur em{color:#e6bd45}
+:root[data-theme="dark"] .sm-ext{border-color:#27304b}
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]) .sm-list{background:#151c30;color:#e9eefb;border-color:#27304b}
+:root:not([data-theme="light"]) .sm-h,:root:not([data-theme="light"]) .sm-a em{color:#a2aec9}
+:root:not([data-theme="light"]) .sm-a svg{color:#8fa6ff}
+:root:not([data-theme="light"]) a.sm-a:hover,:root:not([data-theme="light"]) a.sm-a:focus-visible{background:#212c52}
+:root:not([data-theme="light"]) .sm-cur{background:#3a3010}
+:root:not([data-theme="light"]) .sm-cur em{color:#e6bd45}
+:root:not([data-theme="light"]) .sm-ext{border-color:#27304b}
+}
+</style>
+<div class="smbar"><span class="smw"><a class="sm-btn sm-home" href="https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/home" aria-label="Home: back to the HSC Economics website"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg>Home</a>
+<details class="sm" id="sitemenu"><summary class="sm-btn" aria-label="Other tools: open the list of HSC Economics tools"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>Other tools<svg class="sm-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="sm-list">
+  <span class="sm-h">Finders</span>
+  <a class="sm-a" href="../hsc-question-finder-site/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.5 12h6M9.5 16h6"/></svg><span><b>Question Finder</b><em>Every HSC question, 2002 to 2025</em></span></a>
+  <a class="sm-a" href="../evidence-finder/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></svg><span><b>Evidence Finder</b><em>News, statistics and reports by dot point</em></span></a>
+  <span class="sm-h">Writing and skills</span>
+  <a class="sm-a" href="../essay-builder/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/></svg><span><b>Extended Response Builder</b><em>Plan a Section II, III or IV answer</em></span></a>
+  <a class="sm-a" href="../chain-builder/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="12" r="2.5"/><path d="M7.5 12h9M13.5 9l3 3-3 3"/></svg><span><b>Chain Builder</b><em>Cause and effect, one link at a time</em></span></a>
+  <a class="sm-a" href="../macro-diagram-lab/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7 7l11 9M7 17l11-9"/><circle cx="12.5" cy="12" r="1.6"/></svg><span><b>Macro Diagram Lab</b><em>AD–AS, the dollar, labour, Lorenz, externalities</em></span></a>
+  <a class="sm-a" href="../policy-simulator/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V10M10 20V10M14 20V10M18 20V10M3 10l9-6 9 6z"/></svg><span><b>Policy Simulator</b><em>You set the cash rate and the budget</em></span></a>
+  <a class="sm-a" href="../calculation-trainer/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M12 12h0M16 12h0M8 16h2M12 16h0M16 16h0"/></svg><span><b>Calculation Trainer</b><em>Every HSC calculation, with the working</em></span></a>
+  <a class="sm-a" href="../multiple-choice-drill/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="M11 7h9M11 17h9M5 17l1 1 2-2"/></svg><span><b>Multiple Choice Drill</b><em>All 340 Section I questions, 2009 to 2025</em></span></a>
+  <a class="sm-a" href="../exchange-rate-explorer/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg><span><b>Exchange Rate Explorer</b><em>Floating, managed, flexible peg and fixed rates</em></span></a>
+  <span class="sm-a sm-cur" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6h5zM19 8l-2.5 6h5z"/></svg><span><b>Balance of Payments Explorer</b><em>You are here</em></span></span>
+  <a class="sm-a" href="../protection-explainer/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M7.5 20h9M5 7h14M5 7l-3 7a3 3 0 006 0zM19 7l-3 7a3 3 0 006 0z"/></svg><span><b>Who Wins from Protection</b><em>Tariffs, quotas and subsidies explained</em></span></a>
+  <a class="sm-a" href="../diagram-lab/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7 8l10 9M7 17l10-9"/></svg><span><b>Protection Diagram Lab</b><em>Experiment, predict and build the diagram</em></span></a>
+  <span class="sm-h">Reference</span>
+  <a class="sm-a" href="../economy-at-a-glance/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M21 20H3"/></svg><span><b>Economy at a Glance</b><em>The latest Australian indicators</em></span></a>
+  <a class="sm-a" href="../glossary/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5c3-1 6-1 8 1 2-2 5-2 8-1v13c-3-1-6-1-8 1-2-2-5-2-8-1zM12 6v13"/></svg><span><b>Economics Glossary</b><em>Key terms, flashcards and a quiz</em></span></a>
+  <a class="sm-a" href="../mind-map/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 000-6H9a3 3 0 010-6h6.5"/></svg><span><b>Topic Map</b><em>See how the course fits together</em></span></a>
+  <a class="sm-a sm-ext" href="https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg><span><b>HSC Economics website</b><em>Back to the main class site</em></span></a>
+</div></details></span></div>
+<script>(function(){var d=document.getElementById('sitemenu');if(!d)return;var s=d.querySelector('summary'),l=d.querySelector('.sm-list');var framed=false;try{framed=window.self!==window.top}catch(e){framed=true}if(framed)d.parentNode.querySelectorAll('a').forEach(function(a){a.target='_blank';a.rel='noopener'});function place(){var b=s.getBoundingClientRect(),w=l.offsetWidth,x=Math.min(Math.max(8,b.right-w),window.innerWidth-w-8),y=b.bottom+8;l.style.left=x+'px';l.style.top=y+'px';l.style.maxHeight=Math.max(160,window.innerHeight-y-12)+'px'}function shut(){if(d.open)d.open=false}d.addEventListener('toggle',function(){if(d.open)place()});document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))shut()});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){shut();s.focus()}});window.addEventListener('scroll',shut,{passive:true});window.addEventListener('resize',shut)})();</script>
+<!-- SITEMENU:END -->
+<div class="wrap">
+<header class="mast">
+  <p class="school">Sydney Secondary College, Blackwattle Bay Campus</p>
+  <h1>Balance of Payments Explorer</h1>
+  <p class="tag">Sort the transactions, trace a shock through the accounts, and read Australia's record</p>
+</header>
+<nav class="tabs" role="tablist" aria-label="Views">
+  <button class="tab" role="tab" data-view="sort">Sort and build</button>
+  <button class="tab" role="tab" data-view="shock">Shock and trace</button>
+  <button class="tab" role="tab" data-view="hist">Australia's record</button>
+  <button class="tab" role="tab" data-view="guide">How it fits together</button>
+</nav>
+<main>
+<section class="view" id="v-sort"><div class="cols"><div class="panel" id="sortL"></div><div class="panel"><h2>The balance of payments you are building</h2><p class="sub">$ billion. Each transaction is added once you have checked it.</p><div class="scroll" id="ledger"></div></div></div></section>
+<section class="view" id="v-shock"><p class="sub" style="margin-bottom:10px">Choose something that changes. The table shows which accounts move, in which direction and why. Australia starts with the balance of payments built in Sort and build.</p><div class="shk" id="shk"></div><div id="shockOut"></div></section>
+<section class="view" id="v-hist"><div class="panel"><h2>Australia's current account, years to June 1984 to 2026</h2><p class="sub">Per cent of GDP. Bars show the two parts of the current account; the line is their sum. Point at a year, or use the arrow keys after clicking the chart.</p><div id="hchart" tabindex="0" aria-label="Chart of Australia's current account. Use left and right arrow keys to read each year."></div><div class="read" id="hread" aria-live="polite"></div><div id="hnotes"></div><details style="margin-top:10px"><summary>Show the figures as a table</summary><div class="scroll" id="htable"></div></details></div></section>
+<section class="view" id="v-guide"><div class="cols"><div><div class="panel"><h2>The structure</h2><div id="tree"></div></div><div class="panel" style="margin-top:12px"><h2>Three rules that answer most questions</h2><div id="rules"></div></div></div><div class="panel"><h2>Past HSC questions</h2><p class="sub">Short-answer and extended questions tagged to the balance of payments (2009 syllabus 2B.1 to 2B.4). The multiple-choice ones are in the Multiple Choice Drill.</p><div id="hsc"></div></div></div></section>
+</main>
+<p class="foot" id="foot"></p>
+</div>
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function(){
+'use strict';
+const D = JSON.parse(document.getElementById('data').textContent), TX = D.tx, B = D.base, HR = D.history.rows;
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const params = new URLSearchParams(location.search);
+if (params.get('embed') === '1') document.body.classList.add('embed');
+if (['light','dark'].includes(params.get('theme'))) document.documentElement.dataset.theme = params.get('theme');
+const framed = (() => { try { return window.self !== window.top; } catch (e) { return true; } })();
+const ext = framed ? ' target="_blank" rel="noopener"' : '';
+const ACC = [['goods', 'Goods'], ['services', 'Services'], ['primary', 'Primary income'], ['secondary', 'Secondary income'], ['capital', 'Capital account'], ['financial', 'Financial account']], AN = Object.fromEntries(ACC);
+const sg = n => (n > 0 ? '+' : n < 0 ? '−' : '') + Math.abs(n), cl = n => n < 0 ? 'neg' : n > 0 ? 'pos' : '';
+const f1 = n => (n < 0 ? '−' : '') + Math.abs(n).toFixed(1);
+let view = 'sort';
+
+/* ---------- sort and build ---------- */
+let S = null;
+function start(n) { const o = TX.map((_, i) => i); for (let i = o.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [o[i], o[j]] = [o[j], o[i]]; } S = { order: o.slice(0, n), i: 0, a: null, s: null, checked: false, done: [], right: 0 }; drawSort(); }
+function ledger() { const done = S ? S.done : [], t = Object.fromEntries(ACC.map(a => [a[0], { cr: 0, dr: 0 }])); done.forEach(i => { t[TX[i].a][TX[i].s] += TX[i].v; });
+  const bal = k => t[k].cr - t[k].dr, row = (k, lab, cls) => `<tr class="${cls || ''}"><th>${lab}</th><td class="n">${t[k].cr || ''}</td><td class="n">${t[k].dr ? '−' + t[k].dr : ''}</td><td class="n ${cl(bal(k))}">${t[k].cr || t[k].dr ? sg(bal(k)) : ''}</td></tr>`;
+  const sum = (lab, v, show) => `<tr class="sum"><th colspan="3">${lab}</th><td class="n ${cl(v)}">${show ? sg(v) || '0' : ''}</td></tr>`;
+  const bogs = bal('goods') + bal('services'), ca = bogs + bal('primary') + bal('secondary'), kf = bal('capital') + bal('financial'), any = done.length > 0;
+  $('#ledger').innerHTML = `<table class="t"><thead><tr><th></th><th class="n">Credits</th><th class="n">Debits</th><th class="n">Balance</th></tr></thead><tbody>${row('goods', 'Goods', 'in')}${row('services', 'Services', 'in')}${sum('Balance on goods and services', bogs, any)}${row('primary', 'Primary income', 'in')}${row('secondary', 'Secondary income', 'in')}${sum('Current account balance', ca, any)}${row('capital', 'Capital account', 'in')}${row('financial', 'Financial account', 'in')}${sum('Capital and financial account balance', kf, any)}</tbody></table>`
+   + (S && done.length === TX.length ? `<p class="fb" style="margin-top:10px"><b>All 24 are in.</b> The current account (${sg(ca)}) and the capital and financial account (${sg(kf)}) add to zero. A current account deficit is always matched by a capital and financial account surplus of the same size.</p>` : any ? `<p class="sub" style="margin-top:8px">${done.length} of ${TX.length} transactions entered. The two halves only balance once every transaction is in.</p>` : ''); }
+function drawSort() { const L = $('#sortL');
+  if (!S) { L.innerHTML = `<h2>Where does each transaction go?</h2><p>You are the statistician. For each transaction decide which account records it and whether it is a credit or a debit for Australia.</p><p class="sub" style="margin:8px 0">Rule of thumb: money flowing <b>into</b> Australia is a credit; money flowing <b>out</b> is a debit.</p><div class="row"><button class="btn" data-n="8">Sort 8 transactions</button><button class="btn ghost" data-n="24">Sort all 24 and build the whole balance</button></div>`; ledger(); return; }
+  if (S.i >= S.order.length) { L.innerHTML = `<h2>Finished</h2><p class="tx">${S.right} of ${S.order.length} placed correctly first time.</p><p>${S.order.length < TX.length ? 'Sort all 24 to see the two halves of the balance of payments add to zero.' : 'Now see how the accounts respond when something changes, in Shock and trace.'}</p><div class="row" style="margin-top:10px"><button class="btn" data-n="8">Sort another 8</button><button class="btn ghost" data-n="24">Sort all 24</button></div>`; ledger(); return; }
+  const x = TX[S.order[S.i]], c = S.checked, okA = S.a === x.a, okS = S.s === x.s;
+  L.innerHTML = `<div class="row" style="justify-content:space-between"><h2>Transaction ${S.i + 1} of ${S.order.length}</h2><span class="sub">$${x.v} billion</span></div><p class="tx">${esc(x.t)}</p>
+  <p class="lab">Which account?</p><div class="ch">${ACC.map(([k, n]) => `<button data-a="${k}" aria-pressed="${S.a === k}" class="${c ? (k === x.a ? 'ok' : S.a === k ? 'no' : '') : ''}" ${c ? 'disabled' : ''}>${n}</button>`).join('')}</div>
+  <p class="lab">Credit or debit for Australia?</p><div class="ch">${[['cr', 'Credit (money in)'], ['dr', 'Debit (money out)']].map(([k, n]) => `<button data-s="${k}" aria-pressed="${S.s === k}" class="${c ? (k === x.s ? 'ok' : S.s === k ? 'no' : '') : ''}" ${c ? 'disabled' : ''}>${n}</button>`).join('')}</div>
+  ${c ? `<div class="fb ${okA && okS ? '' : 'bad'}" role="status"><p><b>${okA && okS ? 'Correct.' : okA ? 'Right account, wrong side.' : okS ? 'Right side, wrong account.' : 'Not this time.'}</b> ${AN[x.a]}, ${x.s === 'cr' ? 'credit' : 'debit'}. ${esc(x.why)}</p></div><button class="btn" id="next" style="margin-top:10px">${S.i + 1 < S.order.length ? 'Next transaction' : 'See the result'}</button>` : `<button class="btn" id="check" style="margin-top:12px" ${S.a && S.s ? '' : 'disabled'}>Check</button>`}`; ledger(); }
+
+/* ---------- shock and trace ---------- */
+let SK = null, STAGE = 'now';
+function drawShock() { $('#shk').innerHTML = D.shocks.map(s => `<button class="pk" style="--tc:var(--acc)" data-k="${s.id}" aria-pressed="${SK === s.id}"><b>${esc(s.name)}</b></button>`).join('');
+  const s = D.shocks.find(z => z.id === SK); if (!s) { $('#shockOut').innerHTML = '<div class="panel"><p class="sub">Nothing selected yet.</p></div>'; return; }
+  const st = s[STAGE], b0 = { bogs: B.bogs, primary: B.primary, secondary: B.secondary }, b1 = { bogs: B.bogs + st.bogs, primary: B.primary + st.primary, secondary: B.secondary };
+  const ca0 = b0.bogs + b0.primary + b0.secondary, ca1 = b1.bogs + b1.primary + b1.secondary, kf0 = -ca0, kf1 = -ca1;
+  const rows = [['Balance on goods and services', b0.bogs, b1.bogs, 0], ['Primary income', b0.primary, b1.primary, 0], ['Secondary income', b0.secondary, b1.secondary, 0], ['Current account balance', ca0, ca1, 1], ['Capital and financial account balance', kf0, kf1, 1]];
+  const arrow = d => d > 0 ? '<span class="pos">▲ ' + sg(d) + '</span>' : d < 0 ? '<span class="neg">▼ ' + sg(d) + '</span>' : 'no change';
+  const bar = (lab, a, b) => { const w = v => Math.min(48, Math.abs(v) * 2), pos = v => v >= 0 ? `left:50%;width:${w(v)}%` : `right:50%;width:${w(v)}%`; return `<div class="bar"><span>${lab}</span><div class="trk"><i style="${pos(a)};background:#8a93a8;opacity:.45"></i><i style="${pos(b)};top:8px;bottom:8px;background:${b < 0 ? 'var(--gap)' : 'var(--ok)'}"></i><span class="z"></span></div></div>`; };
+  const d = ca1 - ca0, rate = { up: 'appreciates ▲', down: 'depreciates ▼', same: 'little change' }[s.rate];
+  const fin = st.fin || (d < 0 ? 'A larger current account deficit has to be financed, so Australia borrows more or sells more assets to foreigners: the capital and financial account surplus grows by the same amount.' : d > 0 ? 'A smaller current account deficit needs less financing, so the capital and financial account surplus shrinks by the same amount.' : 'The current account balance is unchanged, so the capital and financial account balance is too.');
+  $('#shockOut').innerHTML = `<div class="cols"><div class="panel"><div class="row" style="justify-content:space-between"><h2>${esc(s.name)}</h2><span class="seg" role="group" aria-label="Time frame"><button data-st="now" aria-pressed="${STAGE === 'now'}">At first</button><button data-st="later" aria-pressed="${STAGE === 'later'}">Later</button></span></div>
+   <div class="scroll"><table class="t"><thead><tr><th>$ billion</th><th class="n">Before</th><th class="n">After</th><th class="n">Change</th></tr></thead><tbody>${rows.map(r => `<tr class="${r[3] ? 'sum' : 'in'}"><th>${r[0]}</th><td class="n ${cl(r[1])}">${sg(r[1])}</td><td class="n ${cl(r[2])}">${sg(r[2])}</td><td class="n">${arrow(r[2] - r[1])}</td></tr>`).join('')}<tr><th>Australian dollar</th><td colspan="3" class="n"><b>${rate}</b></td></tr></tbody></table></div>
+   <h3>Before (grey) and after</h3>${bar('Goods and services', b0.bogs, b1.bogs)}${bar('Primary income', b0.primary, b1.primary)}${bar('Current account', ca0, ca1)}${bar('Capital and financial', kf0, kf1)}</div>
+   <div class="panel"><h2>Why each account moves</h2><ul class="why">${st.why.bogs ? `<li><b>Goods and services:</b> ${esc(st.why.bogs)}</li>` : '<li><b>Goods and services:</b> no direct effect at this stage.</li>'}${st.why.primary ? `<li><b>Primary income:</b> ${esc(st.why.primary)}</li>` : '<li><b>Primary income:</b> no direct effect at this stage.</li>'}<li><b>Current account:</b> the deficit ${d < 0 ? 'widens' : d > 0 ? 'narrows' : 'is unchanged'} (${sg(ca0)} to ${sg(ca1)}).</li><li><b>Capital and financial account:</b> ${esc(fin)}</li><li><b>Exchange rate:</b> ${esc(st.why.rate || '')}</li></ul>
+   <p class="sub" style="margin-top:10px">${STAGE === 'now' ? 'Switch to Later to see what happens once prices, volumes and income payments have had time to respond.' : 'These are the effects once volumes and income payments have responded. Changes are measured from the starting position, not from the first stage.'}</p></div></div>`; }
+
+/* ---------- Australia's record ---------- */
+let HI = HR.length - 1;
+const fy = y => (y - 1) + '–' + String(y).slice(2);
+function drawHist() { const W = 760, H = 330, x0 = 44, x1 = W - 10, lo = -8, hi = 6, bw = (x1 - x0) / HR.length, y = v => 16 + (hi - v) / (hi - lo) * (H - 56), TB = '#0e8a8a', NI = '#d9822b';
+  let s = `<svg class="dg" viewBox="0 0 ${W} ${H}" role="img" aria-label="Australia's trade balance, net income and current account balance as a per cent of GDP, 1983–84 to 2025–26">`;
+  for (let v = lo; v <= hi; v += 2) s += `<line x1="${x0}" x2="${x1}" y1="${y(v)}" y2="${y(v)}" stroke="${v === 0 ? 'currentColor' : 'var(--rule)'}" stroke-width="${v === 0 ? 1.5 : 1}"/><text x="${x0 - 6}" y="${y(v) + 4}" text-anchor="end" font-size="11" style="fill:var(--mut)">${v}</text>`;
+  HR.forEach((r, i) => { const ni = +(r[2] - r[1]).toFixed(1), x = x0 + i * bw; let up = 0, dn = 0; const seg = (v, col) => { if (!v) return ''; const a = v > 0 ? up : dn, b = a + v; if (v > 0) up = b; else dn = b; return `<rect x="${x + 2}" width="${bw - 4}" y="${y(Math.max(a, b))}" height="${Math.abs(y(a) - y(b))}" fill="${col}"/>`; };
+    s += (i === HI ? `<rect x="${x}" y="16" width="${bw}" height="${H - 56}" fill="var(--acc-soft)"/>` : '') + seg(r[1], TB) + seg(ni, NI) + (((r[0] - 1984) % 6 === 0 && i < HR.length - 3) || i === HR.length - 1 ? `<text x="${i === HR.length - 1 ? x + bw : x + bw / 2}" y="${H - 22}" text-anchor="${i === HR.length - 1 ? 'end' : 'middle'}" font-size="11" style="fill:var(--mut)">${fy(r[0])}</text>` : '') + `<rect data-i="${i}" x="${x}" y="16" width="${bw}" height="${H - 56}" fill="transparent"/>`; });
+  s += `<polyline fill="none" stroke="currentColor" stroke-width="2.5" points="${HR.map((r, i) => (x0 + i * bw + bw / 2) + ',' + y(r[2])).join(' ')}"/>` + HR.map((r, i) => `<circle cx="${x0 + i * bw + bw / 2}" cy="${y(r[2])}" r="${i === HI ? 5 : 2.5}" fill="currentColor" pointer-events="none"/>`).join('');
+  s += `<rect x="${x0 + 8}" y="${H - 14}" width="12" height="10" fill="${TB}"/><text x="${x0 + 24}" y="${H - 5}" font-size="11">Trade balance (goods and services)</text><rect x="${x0 + 220}" y="${H - 14}" width="12" height="10" fill="${NI}"/><text x="${x0 + 236}" y="${H - 5}" font-size="11">Net income (primary and secondary)</text><line x1="${x0 + 440}" x2="${x0 + 462}" y1="${H - 9}" y2="${H - 9}" stroke="currentColor" stroke-width="2.5"/><text x="${x0 + 468}" y="${H - 5}" font-size="11">Current account balance</text></svg>`;
+  $('#hchart').innerHTML = s; const r = HR[HI], ni = +(r[2] - r[1]).toFixed(1);
+  $('#hread').innerHTML = `<b>${fy(r[0])}:</b> trade balance <span class="${cl(r[1])}">${f1(r[1])}%</span> + net income <span class="${cl(ni)}">${f1(ni)}%</span> = current account <b class="${cl(r[2])}">${f1(r[2])}% of GDP</b> (${r[2] < 0 ? 'deficit' : r[2] > 0 ? 'surplus' : 'balance'}).`; }
+function histNotes() { const ni = HR.map(r => r[2] - r[1]), avg = a => a.reduce((p, q) => p + q, 0) / a.length, worst = HR.reduce((a, b) => b[2] < a[2] ? b : a), best = HR.reduce((a, b) => b[2] > a[2] ? b : a), sur = HR.filter(r => r[2] > 0), tbs = HR.filter(r => r[1] > 0), bt = HR.reduce((a, b) => b[1] > a[1] ? b : a), lastR = HR[HR.length - 1];
+  $('#hnotes').innerHTML = `<h3>What to notice</h3><ul class="why"><li><b>The income deficit is always there.</b> Net income has been negative in ${ni.every(v => v < 0) ? 'every year shown' : ni.filter(v => v < 0).length + ' of the ' + HR.length + ' years'}, averaging ${f1(avg(ni))}% of GDP. It is the cost of servicing Australia's foreign liabilities, which is why the current account deficit is called structural.</li><li><b>The trade balance does the swinging.</b> It ranges from ${f1(Math.min(...HR.map(r => r[1])))}% to ${f1(bt[1])}% (${fy(bt[0])}), moving with the terms of trade, the dollar and the business cycle. It was in surplus in ${tbs.length} of the ${HR.length} years.</li><li><b>Deficits are the norm.</b> The largest deficit was ${f1(worst[2])}% in ${fy(worst[0])}. ${sur.length ? `The current account was in surplus only in ${sur.map(r => fy(r[0])).join(', ')}, when record trade surpluses outweighed the income deficit; the largest was ${f1(best[2])}% in ${fy(best[0])}.` : ''}</li><li><b>Latest year.</b> In ${fy(lastR[0])} the current account balance was ${f1(lastR[2])}% of GDP, with a trade balance of ${f1(lastR[1])}%.</li></ul><p class="sub" style="margin-top:8px">${esc(D.history.source)}. ${esc(D.history.method)}</p>`;
+  $('#htable').innerHTML = `<table class="t"><thead><tr><th>Year</th><th class="n">Trade balance</th><th class="n">Net income</th><th class="n">Current account</th></tr></thead><tbody>${HR.slice().reverse().map(r => `<tr><th>${fy(r[0])}</th><td class="n ${cl(r[1])}">${f1(r[1])}</td><td class="n neg">${f1(r[2] - r[1])}</td><td class="n ${cl(r[2])}">${f1(r[2])}</td></tr>`).join('')}</tbody></table>`; }
+
+/* ---------- guide ---------- */
+function drawGuide() { $('#tree').innerHTML = `<ul class="tree"><li><b>Current account</b>: trade in goods and services, and income. Not reversible: once paid, no claim remains.<ul><li><b>Goods</b>: exports are credits, imports are debits.</li><li><b>Services</b>: tourism, education, freight, consulting.<br><span class="sub">Goods + services = balance on goods and services (BOGS), the trade balance.</span></li><li><b>Primary income</b>: income earned from work and investment: wages, interest, dividends, profits.</li><li><b>Secondary income</b>: transfers with nothing received in return: aid for current needs, pensions, gifts.</li></ul></li><li><b>Capital and financial account</b>: transactions in assets and liabilities. Reversible: they create a claim that can be repaid or sold.<ul><li><b>Capital account</b>: capital transfers (aid for building assets, debt forgiveness) and sales of non-produced, non-financial assets such as trademarks.</li><li><b>Financial account</b><ul><li>Direct investment: 10% or more of a business.</li><li>Portfolio investment: shares under 10%, and bonds.</li><li>Other investment: loans, deposits, trade credit.</li><li>Financial derivatives.</li><li>Reserve assets: the Reserve Bank's holdings of foreign currency and gold.</li></ul></li></ul></li></ul>`;
+  $('#rules').innerHTML = `<ol class="why"><li><b>Money in is a credit, money out is a debit.</b> Ask which way the payment flows across the border, from Australia's point of view.</li><li><b>The two halves offset.</b> With a floating exchange rate, current account balance + capital and financial account balance = 0 (apart from net errors and omissions). A current account deficit of $5 billion means a capital and financial account surplus of $5 billion.</li><li><b>Today's financial inflow is tomorrow's income outflow.</b> Borrowing and foreign investment are credits on the financial account now, but the interest and dividends they generate are primary income debits in later years. That link is why a run of deficits raises net foreign liabilities and makes the next deficit harder to shrink.</li></ol>`;
+  $('#hsc').innerHTML = D.hsc.map(q => `<div class="q"><small>HSC ${q.y} · Section ${q.s} · ${esc(q.l)} · ${q.m} mark${q.m > 1 ? 's' : ''}</small><div>${esc(q.t)}</div></div>`).join('') + `<p class="sub" style="margin-top:8px"><a href="../hsc-question-finder-site/"${ext}>Open the Question Finder</a> for stimulus and marking criteria, or plan an answer in the <a href="../essay-builder/"${ext}>Extended Response Builder</a>.</p>`; }
+function draw() { $$('.tab').forEach(t => t.setAttribute('aria-selected', t.dataset.view === view)); $$('.view').forEach(v => v.classList.toggle('on', v.id === 'v-' + view)); if (view === 'sort') drawSort(); if (view === 'shock') drawShock(); if (view === 'hist') drawHist(); }
+document.addEventListener('click', ev => { const r = ev.target.closest('rect[data-i]'); if (r) { HI = +r.dataset.i; drawHist(); return; } const t = ev.target.closest('button'); if (!t) return;
+  if (t.classList.contains('tab')) { view = t.dataset.view; draw(); }
+  else if (t.dataset.n) start(+t.dataset.n);
+  else if (t.dataset.a && S && !S.checked) { S.a = t.dataset.a; drawSort(); }
+  else if (t.dataset.s && S && !S.checked) { S.s = t.dataset.s; drawSort(); }
+  else if (t.id === 'check') { const i = S.order[S.i]; S.checked = true; if (S.a === TX[i].a && S.s === TX[i].s) S.right++; S.done.push(i); drawSort(); $('#next').focus(); }
+  else if (t.id === 'next') { S.i++; S.a = S.s = null; S.checked = false; drawSort(); }
+  else if (t.dataset.k) { SK = t.dataset.k; STAGE = 'now'; drawShock(); }
+  else if (t.dataset.st) { STAGE = t.dataset.st; drawShock(); } });
+$('#hchart').addEventListener('mousemove', ev => { const r = ev.target.closest('rect[data-i]'); if (r && +r.dataset.i !== HI) { HI = +r.dataset.i; drawHist(); } });
+$('#hchart').addEventListener('keydown', ev => { if (ev.key === 'ArrowLeft' || ev.key === 'ArrowRight') { HI = Math.max(0, Math.min(HR.length - 1, HI + (ev.key === 'ArrowLeft' ? -1 : 1))); drawHist(); ev.preventDefault(); } });
+$('#foot').innerHTML = esc(D.note) + ' Real effects depend on what else is happening at the time. For the exchange rate side of these stories see the <a href="../exchange-rate-explorer/"' + ext + '>Exchange Rate Explorer</a>; to practise the calculations see the <a href="../calculation-trainer/#skill=bop"' + ext + '>Calculation Trainer</a>.';
+view = ['sort', 'shock', 'hist', 'guide'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'sort'; drawGuide(); histNotes(); draw();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+{
+ "note": "Teaching model written for the site. Starting point: A$1 = US 70 cents, reserves US$60 billion. Numbers are illustrative, not real data.",
+ "systems": [
+  {
+   "id": "float",
+   "name": "Floating",
+   "short": "The market sets the rate",
+   "col": "#0e8a8a",
+   "who": "Demand and supply in the foreign exchange market, minute by minute.",
+   "bank": "Normally nothing. It keeps reserves but does not use them to steer the rate.",
+   "reserves": "Small: reserves are not needed to defend a rate.",
+   "money": "Full independence: the central bank can set interest rates for domestic goals such as inflation.",
+   "pros": [
+    "The rate adjusts by itself to shocks, acting as a shock absorber for the economy",
+    "Monetary policy is free to target inflation and employment",
+    "No need to hold large reserves; speculators have no fixed rate to attack"
+   ],
+   "cons": [
+    "The rate can be volatile, creating uncertainty for exporters, importers and borrowers",
+    "A falling currency raises import prices and the cost of foreign-currency debt",
+    "The rate can overshoot what the fundamentals justify"
+   ],
+   "examples": "Australia since December 1983; the United States, Japan, the United Kingdom, the euro area."
+  },
+  {
+   "id": "managed",
+   "name": "Managed float",
+   "short": "The market sets the rate, the central bank smooths it",
+   "col": "#d9822b",
+   "who": "Mostly the market, but the central bank buys or sells its currency to slow large or disorderly moves. Also called a dirty float.",
+   "bank": "Leans against the wind: buys its own currency when it is falling fast and sells it when it is rising fast.",
+   "reserves": "Moderate: enough to intervene from time to time.",
+   "money": "Mostly independent, although heavy intervention affects the money supply unless it is offset (sterilised).",
+   "pros": [
+    "Keeps most of the shock-absorbing benefit of a float",
+    "Reduces sharp swings that damage confidence and trade",
+    "Buys time for exporters, importers and borrowers to adjust"
+   ],
+   "cons": [
+    "Intervention only delays an adjustment that the fundamentals require",
+    "Uses up reserves if the central bank fights a persistent trend",
+    "It can be unclear what the central bank is aiming for"
+   ],
+   "examples": "Many emerging economies, such as India and Indonesia. The Reserve Bank of Australia has intervened occasionally, for example when the market became disorderly in 2008."
+  },
+  {
+   "id": "flex",
+   "name": "Flexible peg",
+   "short": "A fixed rate that the authorities reset when pressure builds",
+   "col": "#8a3fb0",
+   "who": "The government or central bank announces a rate (the peg) and defends it, but changes the peg when it is clearly out of line with the market.",
+   "bank": "Buys or sells its currency every day to hold the peg, then devalues or revalues to a new peg when the gap becomes too large.",
+   "reserves": "Large: needed to hold the peg between adjustments.",
+   "money": "Limited: defending the peg changes the money supply, and interest rates may have to be used to protect the currency.",
+   "pros": [
+    "More certainty for trade and investment than a float, most of the time",
+    "The peg can be moved, so a serious misalignment does not have to last",
+    "Less risk of running out of reserves than a rigid fixed rate"
+   ],
+   "cons": [
+    "Adjustments come as sudden jumps (devaluations or revaluations) rather than gradual moves",
+    "Speculators can profit by betting on the next adjustment, which adds to the pressure",
+    "Between adjustments the economy carries the cost of the wrong exchange rate"
+   ],
+   "examples": "Australia before the float: pegged to the US dollar from 1971, to a trade-weighted basket from 1974, and adjusted daily (a crawling peg) from 1976 to 1983."
+  },
+  {
+   "id": "fixed",
+   "name": "Fixed",
+   "short": "The authorities hold one rate whatever happens",
+   "col": "#c93a22",
+   "who": "The government or central bank sets the rate and commits to keeping it.",
+   "bank": "Buys or sells whatever amount of its currency is needed to hold the rate, for as long as it has the reserves to do so.",
+   "reserves": "Very large: the rate lasts only as long as the reserves do.",
+   "money": "Almost none: the money supply and interest rates must follow whatever is needed to hold the rate.",
+   "pros": [
+    "Certainty for exporters, importers and investors",
+    "Can anchor inflation if the currency is fixed to a low-inflation currency",
+    "Removes exchange rate speculation while the rate is credible"
+   ],
+   "cons": [
+    "The rate cannot absorb shocks, so output and jobs adjust instead",
+    "Monetary policy cannot be used for domestic goals",
+    "If reserves run out the rate collapses in a currency crisis"
+   ],
+   "examples": "Hong Kong (to the US dollar since 1983), Saudi Arabia and other Gulf states (to the US dollar), Denmark (to the euro)."
+  }
+ ],
+ "shocks": [
+  {
+   "id": "tot",
+   "name": "Commodity prices rise",
+   "dD": 8,
+   "dS": 0,
+   "why": "Foreign buyers need more Australian dollars to pay for dearer exports, so demand for the dollar increases."
+  },
+  {
+   "id": "down",
+   "name": "Global downturn",
+   "dD": -8,
+   "dS": 0,
+   "why": "Trading partners buy fewer Australian exports, so demand for the dollar decreases."
+  },
+  {
+   "id": "rup",
+   "name": "Australian interest rates rise relative to overseas",
+   "dD": 5,
+   "dS": -3,
+   "why": "Foreign savers buy Australian dollars to earn the higher return (demand increases) and Australians keep more funds at home (supply decreases)."
+  },
+  {
+   "id": "rdown",
+   "name": "Overseas interest rates rise relative to Australia",
+   "dD": -5,
+   "dS": 3,
+   "why": "Funds move overseas for the higher return: demand for the dollar decreases and supply increases."
+  },
+  {
+   "id": "imp",
+   "name": "Australians buy more imports",
+   "dD": 0,
+   "dS": 7,
+   "why": "Importers sell Australian dollars to buy foreign currency, so the supply of the dollar increases."
+  },
+  {
+   "id": "spec",
+   "name": "Speculators expect the dollar to fall",
+   "dD": -4,
+   "dS": 6,
+   "why": "Speculators sell Australian dollars now and buyers hold off, so supply increases and demand decreases."
+  },
+  {
+   "id": "fdi",
+   "name": "Foreign investment boom",
+   "dD": 7,
+   "dS": 0,
+   "why": "Foreign firms buy Australian dollars to invest in Australia, so demand for the dollar increases."
+  },
+  {
+   "id": "infl",
+   "name": "Higher inflation in Australia than overseas",
+   "dD": -4,
+   "dS": 4,
+   "why": "Australian goods become less competitive: exports fall (demand decreases) and imports rise (supply increases)."
+  },
+  {
+   "id": "wait",
+   "name": "Let a period pass with no new shock",
+   "dD": 0,
+   "dS": 0,
+   "why": "Nothing new happens. Watch what continues to change under each system."
+  }
+ ],
+ "timeline": [
+  {
+   "when": "To 1971",
+   "what": "Fixed to the British pound",
+   "detail": "The Australian currency was fixed to sterling, and through it to the US dollar under the Bretton Woods system of fixed rates."
+  },
+  {
+   "when": "1971",
+   "what": "Pegged to the US dollar",
+   "detail": "As Bretton Woods broke down, the peg was moved from sterling to the US dollar."
+  },
+  {
+   "when": "1974",
+   "what": "Pegged to a trade-weighted basket",
+   "detail": "The dollar was pegged to a basket of trading partners' currencies (the origin of the Trade Weighted Index) rather than to one currency."
+  },
+  {
+   "when": "1976",
+   "what": "Crawling peg",
+   "detail": "After a large devaluation in November 1976, the peg was reviewed and adjusted frequently by a small group of officials. This was a flexible peg."
+  },
+  {
+   "when": "December 1983",
+   "what": "The float",
+   "detail": "With large capital flows making the peg impossible to manage, the government floated the dollar and removed most exchange controls."
+  },
+  {
+   "when": "Since 1983",
+   "what": "Floating, with occasional intervention",
+   "detail": "The market sets the rate. The Reserve Bank has intervened at times when the market was disorderly, for example in 2008, but does not target a level."
+  }
+ ]
+}
