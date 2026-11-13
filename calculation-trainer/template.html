@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HSC Economics Calculation Trainer</title>
+<meta name="description" content="Practise every calculation in HSC Economics with fresh numbers each time: the multiplier, balance of payments, real GDP, unemployment and participation rates, inflation, terms of trade, tariff revenue and more, with worked solutions.">
+<style>
+/*__FONTS__*/
+:root{
+  --bg:#e8ecf4; --grid:rgba(36,71,214,.075); --grid2:rgba(36,71,214,.12);
+  --card:#ffffff; --card2:#f4f6fb; --ink:#0e1526; --mut:#4a5468; --rule:#d3d9e6; --rule2:#b9c2d6;
+  --acc:#2447d6; --acc-ink:#ffffff; --acc-soft:#e3e9fd;
+  --hl:#ffe14d; --hl-ink:#1b1600; --gap:#c93a22; --ok:#1c7d52;
+  --shadow:0 1px 0 rgba(14,21,38,.06),0 8px 24px -14px rgba(14,21,38,.25);
+  --head:'Bricolage Grotesque','Avenir Next','Segoe UI',system-ui,sans-serif;
+  --body:'Public Sans','Segoe UI',system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --bg:#0c1120; --grid:rgba(140,165,255,.06); --grid2:rgba(140,165,255,.10);
+  --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+  --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52;
+  --hl:#c9a900; --hl-ink:#fff7c8; --gap:#ff8b72; --ok:#59d39b;
+  --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.6);
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0c1120; --grid:rgba(140,165,255,.06); --grid2:rgba(140,165,255,.10);
+    --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+    --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52;
+    --hl:#c9a900; --hl-ink:#fff7c8; --gap:#ff8b72; --ok:#59d39b;
+    --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.6);
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:400 1rem/1.5 var(--body);color:var(--ink);background-color:var(--bg);
+  background-image:linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid2) 1px,transparent 1px),
+  linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:120px 120px,120px 120px,24px 24px,24px 24px;background-position:-1px -1px}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--acc)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px 60px}
+h1,h2,h3{font-family:var(--head);letter-spacing:-.015em;margin:0}
+p{margin:0}
+.mast{padding:18px 0 10px}
+.school{font-size:.78rem;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.mast h1{font-size:clamp(1.5rem,3.2vw,2.1rem);line-height:1.1}
+.mast .tag{color:var(--mut);font-size:.95rem;margin-top:2px}
+.tabs{display:flex;gap:4px;border-bottom:2px solid var(--rule2);margin:6px 0 16px;flex-wrap:wrap}
+.tab{border:0;background:none;padding:.55rem .9rem;font-family:var(--head);font-weight:700;font-size:1rem;color:var(--mut);border-bottom:3px solid transparent;margin-bottom:-2px}
+.tab[aria-selected="true"]{color:var(--acc);border-color:var(--acc)}
+.view{display:none}.view.on{display:block}
+.btn{display:inline-flex;gap:6px;align-items:center;border:1px solid var(--acc);background:var(--acc);color:var(--acc-ink);border-radius:8px;padding:.5rem .9rem;font-weight:600;font-size:.92rem;text-decoration:none}
+.btn.ghost{background:var(--card);color:var(--ink);border-color:var(--rule2)}
+.btn.ghost:hover{border-color:var(--acc);color:var(--acc)}
+.btn:disabled{opacity:.45;cursor:default}
+.sub{color:var(--mut);font-size:.93rem}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
+.cols{display:grid;grid-template-columns:minmax(240px,300px) minmax(0,1fr);gap:16px;align-items:start}
+.cols>*{min-width:0}
+@media (max-width:860px){.cols{grid-template-columns:1fr}}
+.skills{display:grid;gap:4px}
+.skills h3{font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);font-family:var(--body);margin:10px 0 2px;display:flex;gap:6px;align-items:center}
+.skills h3:first-child{margin-top:0}
+.skills h3 i{width:.7em;height:.7em;border-radius:50%;background:var(--tc)}
+.sk{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;text-align:left;background:var(--card);border:1px solid var(--rule);border-left:5px solid var(--tc);border-radius:9px;padding:.4rem .65rem;font-size:.9rem}
+.sk:hover{border-color:var(--acc)}
+.sk[aria-pressed="true"]{background:var(--acc-soft);border-color:var(--acc);font-weight:600}
+.sk small{font-size:.74rem;color:var(--mut);font-variant-numeric:tabular-nums;white-space:nowrap}
+.sk small.good{color:var(--ok);font-weight:700}
+.qhead{display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:space-between;align-items:baseline;margin-bottom:8px}
+.qhead h2{font-size:1.25rem}
+.qtext{font-size:1.05rem;border-left:6px solid var(--tc);background:var(--card2);border-radius:10px;padding:12px 14px}
+.qtext p+p{margin-top:8px}
+table{border-collapse:collapse;margin:10px 0 2px;font-size:.95rem;background:var(--card)}
+td,th{border:1px solid var(--rule2);padding:4px 12px;text-align:left}
+th{background:var(--card2);font-size:.8rem}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.ans{display:grid;gap:10px;margin-top:14px}
+.part{display:grid;gap:4px}
+.part label{font-weight:600;font-size:.93rem}
+.inp{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.inp input{width:11em;border:2px solid var(--rule2);border-radius:8px;background:var(--card);padding:.45rem .6rem;font-size:1.05rem;font-variant-numeric:tabular-nums}
+.inp input.y,.inp select.y{border-color:var(--ok)}.inp input.n,.inp select.n{border-color:var(--gap)}
+.inp select{border:2px solid var(--rule2);border-radius:8px;background:var(--card);padding:.45rem .6rem;font-size:1rem}
+.inp span{color:var(--mut);font-size:.9rem}
+.res{font-weight:700}.res.y{color:var(--ok)}.res.n{color:var(--gap)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px}
+.hint{margin-top:12px;border:1px dashed var(--rule2);border-radius:10px;padding:8px 12px;font-size:.93rem}
+.work{margin-top:14px;border-left:5px solid var(--ok);background:var(--card2);border-radius:0 10px 10px 0;padding:10px 14px}
+.work.bad{border-color:var(--gap)}
+.work h3{font-size:1rem;margin-bottom:4px}
+.work ol{margin:4px 0 0;padding-left:1.3em;display:grid;gap:3px}
+.work .watch{margin-top:8px;font-size:.9rem;color:var(--mut)}
+.fm{font-family:var(--body);font-weight:600;font-variant-numeric:tabular-nums}
+.streak{font-size:.86rem;color:var(--mut)}
+.streak b{color:var(--ink);font-family:var(--head)}
+.score{font:800 2rem var(--head)}
+.dots{display:flex;gap:5px;flex-wrap:wrap;margin:6px 0 10px}
+.dots i{width:12px;height:12px;border-radius:50%;background:var(--rule2)}
+.dots i.y{background:var(--ok)}.dots i.n{background:var(--gap)}.dots i.cur{outline:2px solid var(--acc);outline-offset:2px}
+.fs{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:12px}
+.fcard{background:var(--card);border:1px solid var(--rule);border-left:6px solid var(--tc);border-radius:12px;padding:12px 14px;box-shadow:var(--shadow);break-inside:avoid}
+.fcard h3{font-size:1.02rem;margin-bottom:4px}
+.fcard p.f{font-weight:600;margin-top:4px}
+.fcard small{display:block;color:var(--mut);margin-top:6px;font-size:.8rem}
+.fcard button{margin-top:8px}
+.tips{font-size:.92rem;margin:0 0 14px;padding-left:1.15em;display:grid;gap:3px}
+.foot{color:var(--mut);font-size:.82rem;margin-top:26px;border-top:1px solid var(--rule2);padding-top:12px}
+body.embed .school{display:none}
+@media print{.tabs,.smbar,.foot,.noprint,.fcard button{display:none!important} body{background:#fff} .view{display:none!important} #v-sheet{display:block!important} .fcard{box-shadow:none}}
+</style>
+</head>
+<body>
+<!-- SITEMENU:START built by build/build_sitemenu.py; edit the list of tools there, not here -->
+<style>
+.smbar{display:flex;justify-content:flex-end;padding:10px 20px 0;font-family:'Public Sans','Segoe UI',system-ui,-apple-system,sans-serif}
+.smw{display:inline-flex;gap:8px;align-items:center;font-size:13px;line-height:1.3}
+.sm{position:relative;display:inline-block;text-align:left}
+.smw svg{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sm-btn{list-style:none;cursor:pointer;display:inline-flex;gap:7px;align-items:center;background:#ffd24a;color:#1a1d2b;border-radius:999px;padding:6px 13px;font-weight:700;white-space:nowrap;text-decoration:none;user-select:none;-webkit-user-select:none}
+.sm-btn::-webkit-details-marker{display:none}
+.sm-btn:hover{background:#ffe07a}
+.sm-btn:focus-visible{outline:3px solid #2447d6;outline-offset:2px}
+.sm[open] .sm-caret{transform:rotate(180deg)}
+.sm-list{position:fixed;top:0;left:0;z-index:1000;width:min(340px,calc(100vw - 16px));max-height:calc(100vh - 90px);overflow:auto;background:#fff;color:#1a1d2b;border:1px solid #dcdfea;border-radius:14px;box-shadow:0 12px 34px rgba(10,14,40,.3);padding:8px;display:flex;flex-direction:column;gap:1px;font-weight:400}
+.sm:not([open]) .sm-list{display:none}
+.sm-h{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#5a6072;padding:8px 10px 3px}
+.sm-a{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:center;padding:7px 10px;border-radius:9px;color:inherit;text-decoration:none}
+.sm-a svg{font-size:18px;color:#2447d6}
+.sm-a b{display:block;font-size:14px;font-weight:700;color:inherit}
+.sm-a em{display:block;font-style:normal;font-size:12px;color:#5a6072}
+a.sm-a:hover,a.sm-a:focus-visible{background:#e3e9fd;outline:none}
+.sm-cur{background:#fff3c9}
+.sm-cur em{color:#7d5f00;font-weight:700}
+.sm-ext{border-top:1px solid #dcdfea;margin-top:6px;padding-top:10px;border-radius:0 0 9px 9px}
+@media print{.smbar{display:none !important}}
+:root[data-theme="dark"] .sm-list{background:#151c30;color:#e9eefb;border-color:#27304b}
+:root[data-theme="dark"] .sm-h,:root[data-theme="dark"] .sm-a em{color:#a2aec9}
+:root[data-theme="dark"] .sm-a svg{color:#8fa6ff}
+:root[data-theme="dark"] a.sm-a:hover,:root[data-theme="dark"] a.sm-a:focus-visible{background:#212c52}
+:root[data-theme="dark"] .sm-cur{background:#3a3010}
+:root[data-theme="dark"] .sm-cur em{color:#e6bd45}
+:root[data-theme="dark"] .sm-ext{border-color:#27304b}
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]) .sm-list{background:#151c30;color:#e9eefb;border-color:#27304b}
+:root:not([data-theme="light"]) .sm-h,:root:not([data-theme="light"]) .sm-a em{color:#a2aec9}
+:root:not([data-theme="light"]) .sm-a svg{color:#8fa6ff}
+:root:not([data-theme="light"]) a.sm-a:hover,:root:not([data-theme="light"]) a.sm-a:focus-visible{background:#212c52}
+:root:not([data-theme="light"]) .sm-cur{background:#3a3010}
+:root:not([data-theme="light"]) .sm-cur em{color:#e6bd45}
+:root:not([data-theme="light"]) .sm-ext{border-color:#27304b}
+}
+</style>
+<div class="smbar"><span class="smw"><a class="sm-btn sm-home" href="https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/home" aria-label="Home: back to the HSC Economics website"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg>Home</a>
+<details class="sm" id="sitemenu"><summary class="sm-btn" aria-label="Other tools: open the list of HSC Economics tools"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>Other tools<svg class="sm-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="sm-list">
+  <span class="sm-h">Finders</span>
+  <a class="sm-a" href="../hsc-question-finder-site/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.5 12h6M9.5 16h6"/></svg><span><b>Question Finder</b><em>Every HSC question, 2002 to 2025</em></span></a>
+  <a class="sm-a" href="../evidence-finder/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></svg><span><b>Evidence Finder</b><em>News, statistics and reports by dot point</em></span></a>
+  <span class="sm-h">Writing and skills</span>
+  <a class="sm-a" href="../essay-builder/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/></svg><span><b>Extended Response Builder</b><em>Plan a Section II, III or IV answer</em></span></a>
+  <a class="sm-a" href="../chain-builder/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="12" r="2.5"/><path d="M7.5 12h9M13.5 9l3 3-3 3"/></svg><span><b>Chain Builder</b><em>Cause and effect, one link at a time</em></span></a>
+  <a class="sm-a" href="../macro-diagram-lab/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7 7l11 9M7 17l11-9"/><circle cx="12.5" cy="12" r="1.6"/></svg><span><b>Macro Diagram Lab</b><em>AD–AS, the dollar, labour, Lorenz, externalities</em></span></a>
+  <a class="sm-a" href="../policy-simulator/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V10M10 20V10M14 20V10M18 20V10M3 10l9-6 9 6z"/></svg><span><b>Policy Simulator</b><em>You set the cash rate and the budget</em></span></a>
+  <span class="sm-a sm-cur" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M12 12h0M16 12h0M8 16h2M12 16h0M16 16h0"/></svg><span><b>Calculation Trainer</b><em>You are here</em></span></span>
+  <a class="sm-a" href="../protection-explainer/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M7.5 20h9M5 7h14M5 7l-3 7a3 3 0 006 0zM19 7l-3 7a3 3 0 006 0z"/></svg><span><b>Who Wins from Protection</b><em>Tariffs, quotas and subsidies explained</em></span></a>
+  <a class="sm-a" href="../diagram-lab/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7 8l10 9M7 17l10-9"/></svg><span><b>Protection Diagram Lab</b><em>Experiment, predict and build the diagram</em></span></a>
+  <span class="sm-h">Reference</span>
+  <a class="sm-a" href="../economy-at-a-glance/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M21 20H3"/></svg><span><b>Economy at a Glance</b><em>The latest Australian indicators</em></span></a>
+  <a class="sm-a" href="../glossary/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5c3-1 6-1 8 1 2-2 5-2 8-1v13c-3-1-6-1-8 1-2-2-5-2-8-1zM12 6v13"/></svg><span><b>Economics Glossary</b><em>Key terms, flashcards and a quiz</em></span></a>
+  <a class="sm-a" href="../mind-map/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 000-6H9a3 3 0 010-6h6.5"/></svg><span><b>Topic Map</b><em>See how the course fits together</em></span></a>
+  <a class="sm-a sm-ext" href="https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg><span><b>HSC Economics website</b><em>Back to the main class site</em></span></a>
+</div></details></span></div>
+<script>(function(){var d=document.getElementById('sitemenu');if(!d)return;var s=d.querySelector('summary'),l=d.querySelector('.sm-list');var framed=false;try{framed=window.self!==window.top}catch(e){framed=true}if(framed)d.parentNode.querySelectorAll('a').forEach(function(a){a.target='_blank';a.rel='noopener'});function place(){var b=s.getBoundingClientRect(),w=l.offsetWidth,x=Math.min(Math.max(8,b.right-w),window.innerWidth-w-8),y=b.bottom+8;l.style.left=x+'px';l.style.top=y+'px';l.style.maxHeight=Math.max(160,window.innerHeight-y-12)+'px'}function shut(){if(d.open)d.open=false}d.addEventListener('toggle',function(){if(d.open)place()});document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))shut()});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){shut();s.focus()}});window.addEventListener('scroll',shut,{passive:true});window.addEventListener('resize',shut)})();</script>
+<!-- SITEMENU:END -->
+<div class="wrap">
+<header class="mast">
+  <p class="school">Sydney Secondary College, Blackwattle Bay Campus</p>
+  <h1>Calculation Trainer</h1>
+  <p class="tag">Every HSC Economics calculation, with new numbers each time and the working shown</p>
+</header>
+<nav class="tabs" role="tablist" aria-label="Views">
+  <button class="tab" role="tab" data-view="practise">Practise</button>
+  <button class="tab" role="tab" data-view="quiz">Mixed quiz</button>
+  <button class="tab" role="tab" data-view="sheet">Formula sheet</button>
+</nav>
+<main>
+<section class="view" id="v-practise"><div class="cols"><aside class="panel"><div class="skills" id="skills"></div><button class="btn ghost noprint" id="clear" style="margin-top:12px;font-size:.8rem">Reset my tallies</button></aside><div class="panel" id="card"></div></div></section>
+<section class="view" id="v-quiz"><div class="panel" id="quiz" style="max-width:820px;margin:0 auto"></div></section>
+<section class="view" id="v-sheet">
+  <div class="row noprint" style="margin:0 0 12px"><button class="btn" id="print">Print or save as PDF</button><span class="sub">The formulas are set out as in the course booklet's “Calculations in Economics” pages.</span></div>
+  <ul class="tips"><li><b>Show all working</b> when a question asks you to calculate: write the formula, substitute, then answer.</li><li><b>Do the calculation twice</b> to catch calculator errors.</li><li><b>Give units</b> ($, %, index points) and say whether it is an increase or a decrease, a surplus or a deficit.</li></ul>
+  <div class="fs" id="sheet"></div>
+</section>
+</main>
+<p class="foot">Every question uses invented figures for a hypothetical economy, as HSC questions do. The “examined” lists are from the HSC papers held in the class <a href="../hsc-question-finder-site/">Question Finder</a>. For tariff, quota and subsidy diagrams use the <a href="../diagram-lab/">Protection Diagram Lab</a>. Your tallies are kept in this browser only.</p>
+</div>
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function(){
+'use strict';
+const D = JSON.parse(document.getElementById('data').textContent);
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const params = new URLSearchParams(location.search);
+if (params.get('embed') === '1') document.body.classList.add('embed');
+if (['light','dark'].includes(params.get('theme'))) document.documentElement.dataset.theme = params.get('theme');
+const framed = (() => { try { return window.self !== window.top; } catch (e) { return true; } })();
+const TOPICS = [['T1', 'Topic 1: The Global Economy', '#2447d6'], ['T2', "Topic 2: Australia's Place in the Global Economy", '#0e8a8a'], ['T3', 'Topic 3: Economic Issues', '#d9822b'], ['T4', 'Topic 4: Economic Policies', '#8a3fb0']];
+const TC = Object.fromEntries(TOPICS.map(t => [t[0], t[2]]));
+
+/* ---------- helpers ---------- */
+let RNG = Math.random;
+const pick = a => a[Math.floor(RNG() * a.length)];
+const ri = (lo, hi, step) => lo + Math.floor(RNG() * (Math.floor((hi - lo) / (step || 1)) + 1)) * (step || 1);
+const rd = (x, dp) => Math.round(x * Math.pow(10, dp) + 1e-9 * Math.sign(x)) / Math.pow(10, dp);
+const f = (x, dp) => { const v = dp === undefined ? rd(x, 4) : rd(x, dp); return (v < 0 ? '−' : '') + Math.abs(v).toLocaleString('en-AU', { minimumFractionDigits: dp === undefined ? 0 : dp, maximumFractionDigits: dp === undefined ? 4 : dp }); };
+const tbl = (head, rows) => `<table><thead><tr>${head.map((h, i) => `<th class="${i ? 'n' : ''}">${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map((c, i) => `<td class="${i ? 'n' : ''}">${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+const num = (label, value, dp, unit, note) => ({ type: 'num', label, value: rd(value, dp), dp, unit: unit || '', note: note || '' });
+const sel = (label, value, options) => ({ type: 'sel', label, value, options });
+const dpNote = dp => dp === 0 ? '' : dp === 1 ? 'to one decimal place' : 'to two decimal places';
+const NEG = 'Write a deficit or a fall as a negative number.';
+const sg = n => n < 0 ? `(${f(n)})` : f(n);          /* brackets round a negative term */
+const md = n => (n < 0 ? '−$' : '$') + f(Math.abs(n)); /* −$2, not $−2 */
+
+/* ---------- the skills ---------- */
+const SK = [
+ { id: 'growth', topic: 'T1', name: 'Real growth rate', formula: ['Real growth rate = (Real GDP in given year − Real GDP in previous year) ÷ Real GDP in previous year × 100'],
+   gen() { const prev = ri(400, 1600, 200), r = pick([-1.5, -1, -0.5, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4]), now = prev * (1 + r / 100);
+     return { q: `<p>Real GDP in a hypothetical economy:</p>${tbl(['', 'Real GDP ($ billion)'], [['Year 1', f(prev)], ['Year 2', f(now)]])}<p>Calculate the real growth rate from Year 1 to Year 2.</p>`,
+       parts: [num('Real growth rate', r, 1, '%', NEG)], steps: [`Real growth rate = (Year 2 − Year 1) ÷ Year 1 × 100`, `= (${f(now)} − ${f(prev)}) ÷ ${f(prev)} × 100`, `= ${f(now - prev)} ÷ ${f(prev)} × 100`, `= ${f(r, 1)}%`], watch: 'Divide by the earlier year, not the later one.' }; } },
+ { id: 'percap', topic: 'T1', name: 'Real GDP per capita', formula: ['Real GDP per capita = Total real GDP ÷ Total population'],
+   gen() { const gdp = ri(500, 2500, 100), pop = pick([20, 25, 40, 50]), a = gdp * 1000 / pop;
+     return { q: `<p>An economy has real GDP of <b>$${f(gdp)} billion</b> and a population of <b>${pop} million</b>. Calculate real GDP per capita.</p>`,
+       parts: [num('Real GDP per capita', a, 0, 'dollars')], steps: [`Real GDP per capita = Total real GDP ÷ Total population`, `= $${f(gdp)} billion ÷ ${pop} million`, `= $${f(gdp)},000 million ÷ ${pop} million`, `= $${f(a)}`], watch: 'Put both figures in the same units first: a billion is 1,000 million.' }; } },
+ { id: 'realgdp', topic: 'T3', name: 'Real GDP and real growth from nominal GDP', formula: ['Real GDP = Money (nominal) GDP × CPI in base year ÷ CPI in given year', 'Then: real growth rate = change in real GDP ÷ real GDP in previous year × 100'],
+   gen() { const two = RNG() < 0.55, c = pick([105, 110, 120, 125]);
+     if (!two) { const real = ri(400, 900, 20), nom = real * c / 100;
+       return { q: `<p>In Year 2 an economy has nominal GDP of <b>$${f(nom)} billion</b>. The CPI was 100 in the base year and is <b>${c}</b> in Year 2. Calculate real GDP in Year 2.</p>`,
+         parts: [num('Real GDP in Year 2', real, 0, '$ billion')], steps: [`Real GDP = Nominal GDP × CPI in base year ÷ CPI in given year`, `= ${f(nom)} × 100 ÷ ${c}`, `= $${f(real)} billion`], watch: 'Deflating removes the effect of price rises, so real GDP must be smaller than nominal GDP when the CPI is above 100.' }; }
+     const r1 = ri(400, 1200, 400), g = pick([-2, -1, 1, 2, 3, 4, 5]), r2 = r1 * (1 + g / 100), n2 = rd(r2 * c / 100, 1);
+     return { q: `<p>Data for a hypothetical economy:</p>${tbl(['', 'Nominal GDP ($ billion)', 'CPI'], [['Year 1 (base year)', f(r1), '100'], ['Year 2', f(n2), String(c)]])}<p>Calculate the rate of real economic growth from Year 1 to Year 2.</p>`,
+       parts: [num('Real growth rate', g, 1, '%', NEG)], steps: [`First deflate Year 2: Real GDP = Nominal GDP × 100 ÷ CPI = ${f(n2)} × 100 ÷ ${c} = $${f(r2)} billion`, `Year 1 is the base year, so its real GDP is $${f(r1)} billion`, `Real growth rate = (${f(r2)} − ${f(r1)}) ÷ ${f(r1)} × 100`, `= ${f(g, 1)}%`], watch: `The trap is to use nominal GDP: that would give ${f((n2 - r1) / r1 * 100, 1)}%, which includes inflation.` }; } },
+ { id: 'tariff', topic: 'T1', name: 'Tariff: imports and revenue', formula: ['Imports = Quantity demanded − Quantity supplied by domestic producers', 'Tariff revenue = Tariff per unit × Quantity of imports after the tariff'],
+   gen() { const pw = pick([10, 20, 30]), t = pick([5, 10, 15].filter(x => pw + x < 50)), q1 = pw, q2 = 100 - pw, q3 = pw + t, q4 = 100 - pw - t, m0 = q2 - q1, m1 = q4 - q3, v = pick(['rev', 'imp', 'chg']);
+     const T = `<p>A market for an imported good. The world price is <b>$${pw}</b> and the government imposes a tariff of <b>$${t}</b> per unit.</p>${tbl(['', 'Price ($)', 'Domestic supply (million)', 'Domestic demand (million)'], [['Free trade', pw, q1, q2], ['With the tariff', pw + t, q3, q4]])}`;
+     if (v === 'imp') return { q: T + `<p>Calculate the quantity of imports after the tariff.</p>`, parts: [num('Imports after the tariff', m1, 0, 'million units')], steps: [`Imports = Domestic demand − Domestic supply`, `= ${q4} − ${q3}`, `= ${m1} million units`], watch: `Use the row with the tariff. Under free trade imports were ${m0} million.` };
+     if (v === 'chg') return { q: T + `<p>Calculate the change in the quantity of imports caused by the tariff.</p>`, parts: [num('Change in imports', m1 - m0, 0, 'million units', NEG)], steps: [`Imports under free trade = ${q2} − ${q1} = ${m0} million`, `Imports with the tariff = ${q4} − ${q3} = ${m1} million`, `Change = ${m1} − ${m0} = ${f(m1 - m0)} million units`], watch: 'Imports fall from both sides: domestic supply rises and domestic demand falls.' };
+     return { q: T + `<p>Calculate the government's revenue from the tariff.</p>`, parts: [num('Tariff revenue', t * m1, 0, '$ million')], steps: [`Imports with the tariff = ${q4} − ${q3} = ${m1} million units`, `Tariff revenue = Tariff per unit × Imports after the tariff`, `= $${t} × ${m1} million`, `= $${f(t * m1)} million`], watch: `Use imports after the tariff. Using free-trade imports (${m0} million) gives $${f(t * m0)} million, the most common error.` }; } },
+ { id: 'cab', topic: 'T2', name: 'Current account balance', formula: ['Net goods + Net services = Balance on goods and services (BOGS)', 'Balance on current account = BOGS + Net primary income + Net secondary income'],
+   gen() { const gx = ri(250, 450, 10), gm = ri(240, 440, 10), sx = ri(60, 120, 5), sm = ri(60, 130, 5), npi = -ri(20, 90, 5), nsi = pick([-3, -2, -1, 1, 2]), bogs = gx - gm + sx - sm, cab = bogs + npi + nsi, v = pick(['cab', 'cab', 'bogs', 'nsi']);
+     const rows = [['Exports of goods', f(gx)], ['Imports of goods', f(gm)], ['Exports of services', f(sx)], ['Imports of services', f(sm)], ['Net primary income', f(npi)]];
+     if (v === 'nsi') return { q: `<p>Balance of payments data for an economy ($ billion):</p>${tbl(['Item', '$ billion'], rows.concat([['Balance on current account', f(cab)]]))}<p>Calculate net secondary income.</p>`, parts: [num('Net secondary income', nsi, 0, '$ billion', NEG)],
+       steps: [`BOGS = (${f(gx)} − ${f(gm)}) + (${f(sx)} − ${f(sm)}) = ${f(bogs)}`, `Current account = BOGS + Net primary income + Net secondary income`, `${f(cab)} = ${f(bogs)} + ${sg(npi)} + Net secondary income`, `Net secondary income = ${f(cab)} − ${sg(bogs)} − ${sg(npi)} = ${f(nsi)}, or ${md(nsi)} billion`], watch: 'Rearrange the current account formula, and take care with the negative signs.' };
+     const all = rows.concat([['Net secondary income', f(nsi)]]);
+     if (v === 'bogs') return { q: `<p>Balance of payments data for an economy ($ billion):</p>${tbl(['Item', '$ billion'], all)}<p>Calculate the balance on goods and services (BOGS).</p>`, parts: [num('BOGS', bogs, 0, '$ billion', NEG)], steps: [`Net goods = ${f(gx)} − ${f(gm)} = ${f(gx - gm)}`, `Net services = ${f(sx)} − ${f(sm)} = ${f(sx - sm)}`, `BOGS = ${f(gx - gm)} + ${sg(sx - sm)} = ${f(bogs)}, or ${md(bogs)} billion`], watch: 'BOGS leaves out the two income items.' };
+     return { q: `<p>Balance of payments data for an economy ($ billion):</p>${tbl(['Item', '$ billion'], all)}<p>Calculate the balance on current account.</p>`, parts: [num('Balance on current account', cab, 0, '$ billion', NEG), sel('This is a', cab < 0 ? 'deficit' : 'surplus', ['surplus', 'deficit'])],
+       steps: [`BOGS = (${f(gx)} − ${f(gm)}) + (${f(sx)} − ${f(sm)}) = ${f(bogs)}`, `Current account = BOGS + Net primary income + Net secondary income`, `= ${f(bogs)} + ${sg(npi)} + ${sg(nsi)}`, `= ${f(cab)}, a current account ${cab < 0 ? 'deficit' : 'surplus'} of $${f(Math.abs(cab))} billion`], watch: 'Net primary income is usually negative for Australia: add it with its sign.' }; } },
+ { id: 'bop', topic: 'T2', name: 'Balance of payments identity', formula: ['Current account + Capital and financial account = 0 (ignoring net errors and omissions)', 'Capital and financial account = Balance on capital account + Balance on financial account'],
+   gen() { const cab = -ri(15, 80, 5), cap = pick([-2, -1, 1, 2, 3]), fin = -cab - cap, v = pick(['fin', 'kafa', 'cap']);
+     if (v === 'kafa') return { q: `<p>An economy records a balance on current account of <b>${f(cab)}</b> ($ billion). Net errors and omissions are zero. What is the balance on the capital and financial account?</p>`, parts: [num('Capital and financial account', -cab, 0, '$ billion', NEG)], steps: [`Current account + Capital and financial account = 0`, `${f(cab)} + Capital and financial account = 0`, `Capital and financial account = ${f(-cab)}: a surplus of $${f(-cab)} billion`], watch: 'A deficit on one account is offset by an equal surplus on the other.' };
+     if (v === 'cap') return { q: `<p>Balance of payments data ($ billion). Net errors and omissions are zero.</p>${tbl(['Item', '$ billion'], [['Balance on current account', f(cab)], ['Balance on financial account', f(fin)]])}<p>Calculate the balance on the capital account.</p>`, parts: [num('Balance on capital account', cap, 0, '$ billion', NEG)], steps: [`Current account + Capital account + Financial account = 0`, `${f(cab)} + Capital account + ${f(fin)} = 0`, `Capital account = ${f(-cab)} − ${sg(fin)} = ${f(cap)}, or ${md(cap)} billion`], watch: 'The capital account is small. The financial account does most of the offsetting.' };
+     return { q: `<p>Balance of payments data ($ billion). Net errors and omissions are zero.</p>${tbl(['Item', '$ billion'], [['Balance on current account', f(cab)], ['Balance on capital account', f(cap)]])}<p>Calculate the balance on the financial account.</p>`, parts: [num('Balance on financial account', fin, 0, '$ billion', NEG)], steps: [`Current account + Capital account + Financial account = 0`, `${f(cab)} + ${sg(cap)} + Financial account = 0`, `Financial account = ${f(-cab)} − ${sg(cap)} = ${f(fin)}, or ${md(fin)} billion`], watch: 'The three balances must sum to zero.' }; } },
+ { id: 'tot', topic: 'T2', name: 'Terms of trade', formula: ['Terms of trade = Export price index ÷ Import price index × 100'], note: 'The booklet lists this calculation as not needed in the current syllabus, but it was examined in 2020 and 2025.',
+   gen() { const v = pick(['two', 'two', 'xpi']);
+     if (v === 'xpi') { const mpi = pick([80, 100, 120]), tot = pick([85, 90, 95, 105, 110, 115, 125]), xpi = tot * mpi / 100;
+       return { q: `<p>An economy's terms of trade index is <b>${tot}</b> and its import price index is <b>${mpi}</b>. Calculate the export price index.</p>`, parts: [num('Export price index', xpi, 0, '')], steps: [`Terms of trade = Export price index ÷ Import price index × 100`, `${tot} = Export price index ÷ ${mpi} × 100`, `Export price index = ${tot} × ${mpi} ÷ 100`, `= ${f(xpi)}`], watch: 'Rearrange the formula: multiply the terms of trade by the import price index, then divide by 100.' }; }
+     const x1 = ri(90, 130, 5), m1 = ri(90, 125, 5); let x2 = x1 + pick([-15, -10, -5, 5, 10, 15, 20]), m2 = m1 + pick([-5, 0, 5, 10]); const t1 = x1 / m1 * 100; let t2 = x2 / m2 * 100; if (Math.abs(rd(t2, 1) - rd(t1, 1)) < 0.2) { x2 += 10; t2 = x2 / m2 * 100; }
+     return { q: `<p>Price indexes for an economy:</p>${tbl(['', 'Export price index', 'Import price index'], [['Year 1', x1, m1], ['Year 2', x2, m2]])}<p>Calculate the terms of trade for Year 2 and identify the trend from Year 1.</p>`,
+       parts: [num('Terms of trade in Year 2', t2, 1, '', dpNote(1)), sel('From Year 1 the terms of trade have', t2 > t1 ? 'improved' : 'deteriorated', ['improved', 'deteriorated'])],
+       steps: [`Terms of trade = Export price index ÷ Import price index × 100`, `Year 2 = ${x2} ÷ ${m2} × 100 = ${f(t2, 1)}`, `Year 1 = ${x1} ÷ ${m1} × 100 = ${f(t1, 1)}`, `The index ${t2 > t1 ? 'rose' : 'fell'}, so the terms of trade ${t2 > t1 ? 'improved: a given volume of exports buys more imports' : 'deteriorated: a given volume of exports buys fewer imports'}`], watch: 'Exports go on top. A rise in the index is an improvement.' }; } },
+ { id: 'nfl', topic: 'T3', name: 'Net foreign liabilities', formula: ['Net foreign liabilities = Net foreign debt + Net foreign equity', 'As a percentage of GDP = Net foreign liabilities ÷ GDP × 100'],
+   gen() { const gdp = pick([1000, 2000, 2500]), pct = pick([30, 36, 40, 44, 50, 56]), nfl = gdp * pct / 100, eq = pick([-200, -150, -100, 50, 100, 150]), debt = nfl - eq, v = pick(['nfl', 'pct', 'eq']);
+     const neg = eq < 0 ? ' Negative net foreign equity means residents own more equity overseas than foreigners own here.' : '';
+     if (v === 'eq') return { q: `<p>An economy has net foreign liabilities of <b>$${f(nfl)} billion</b> and net foreign debt of <b>$${f(debt)} billion</b>. Calculate net foreign equity.</p>`, parts: [num('Net foreign equity', eq, 0, '$ billion', 'Write a negative number if it is negative.')], steps: [`Net foreign liabilities = Net foreign debt + Net foreign equity`, `${f(nfl)} = ${f(debt)} + Net foreign equity`, `Net foreign equity = ${f(nfl)} − ${f(debt)} = ${f(eq)}, or ${md(eq)} billion`], watch: 'Liabilities are debt plus equity.' + neg };
+     if (v === 'pct') return { q: `<p>Data for an economy ($ billion):</p>${tbl(['Item', '$ billion'], [['Net foreign debt', f(debt)], ['Net foreign equity', f(eq)], ['GDP', f(gdp)]])}<p>Calculate net foreign liabilities as a percentage of GDP.</p>`, parts: [num('Net foreign liabilities as a percentage of GDP', pct, 1, '%')], steps: [`Net foreign liabilities = ${f(debt)} + ${sg(eq)} = $${f(nfl)} billion`, `As a percentage of GDP = ${f(nfl)} ÷ ${f(gdp)} × 100`, `= ${f(pct)}%`], watch: 'Add debt and equity first, then divide by GDP.' + neg };
+     return { q: `<p>An economy has net foreign debt of <b>$${f(debt)} billion</b> and net foreign equity of <b>${md(eq)} billion</b>. Calculate net foreign liabilities.</p>`, parts: [num('Net foreign liabilities', nfl, 0, '$ billion')], steps: [`Net foreign liabilities = Net foreign debt + Net foreign equity`, `= ${f(debt)} + ${sg(eq)}`, `= $${f(nfl)} billion`], watch: 'Debt is what is owed; equity is what is owned.' + neg }; } },
+ { id: 'fx', topic: 'T2', name: 'Exchange rate changes', formula: ['Percentage change = (New rate − Old rate) ÷ Old rate × 100', 'Value in A$ = Value in US$ ÷ Exchange rate (US$ per A$)'],
+   gen() { const [e1, p] = pick([[0.64, 25], [0.80, -10], [0.60, 10], [0.50, 20], [0.80, -25], [0.75, -20], [0.60, 25], [0.72, -12.5]]), e2 = rd(e1 * (1 + p / 100), 4), v = pick(['pct', 'pct', 'conv']);
+     if (v === 'conv') { const a = pick([5, 7.5, 10, 12.5]), us = rd(a * e1, 2), a2 = us / e2;
+       return { q: `<p>An Australian exporter has a contract worth <b>US$${f(us)} million</b>. The exchange rate moves from <b>A$1 = US$${e1.toFixed(2)}</b> to <b>A$1 = US$${e2.toFixed(2)}</b>. Calculate the value of the contract in Australian dollars at the new exchange rate.</p>`, parts: [num('Value at the new rate', a2, 2, 'A$ million', dpNote(2))],
+         steps: [`Value in A$ = Value in US$ ÷ Exchange rate`, `= ${f(us)} ÷ ${e2.toFixed(2)}`, `= A$${f(a2, 2)} million`, `At the old rate it was ${f(us)} ÷ ${e1.toFixed(2)} = A$${f(a, 2)} million, so the ${e2 > e1 ? 'appreciation cut' : 'depreciation raised'} the exporter's income in A$`], watch: 'Divide by the rate when it is quoted as US$ per A$1. An appreciation lowers the A$ value of export income.' }; }
+     return { q: `<p>The Australian dollar moves from <b>US$${e1.toFixed(2)}</b> to <b>US$${e2.toFixed(2)}</b>. Calculate the percentage change in the exchange rate.</p>`, parts: [num('Percentage change', p, 1, '%', NEG), sel('This is', p > 0 ? 'an appreciation' : 'a depreciation', ['an appreciation', 'a depreciation'])],
+       steps: [`Percentage change = (New rate − Old rate) ÷ Old rate × 100`, `= (${e2.toFixed(2)} − ${e1.toFixed(2)}) ÷ ${e1.toFixed(2)} × 100`, `= ${f(e2 - e1, 2)} ÷ ${e1.toFixed(2)} × 100`, `= ${f(p, 1)}%, ${p > 0 ? 'an appreciation' : 'a depreciation'}`], watch: `Divide by the old rate. Dividing by the new rate gives ${f((e2 - e1) / e2 * 100, 1)}%, which is wrong.` }; } },
+ { id: 'mult', topic: 'T3', name: 'The simple multiplier', formula: ['MPC = Change in consumption ÷ Change in income', 'MPS = Change in savings ÷ Change in income', 'MPC + MPS = 1', 'k = 1 ÷ (1 − MPC) or 1 ÷ MPS', 'Change in income (ΔY) = Change in injection × k'],
+   gen() { const mpc = pick([0.5, 0.6, 0.75, 0.8, 0.9]), mps = rd(1 - mpc, 2), k = rd(1 / mps, 2), v = pick(['k', 'ks', 'dy', 'dy', 'mpc', 'need', 'back']);
+     if (v === 'k') return { q: `<p>In a hypothetical economy the marginal propensity to consume (MPC) is <b>${mpc}</b>. Calculate the simple multiplier.</p>`, parts: [num('Multiplier (k)', k, 1, '')], steps: [`k = 1 ÷ (1 − MPC)`, `= 1 ÷ (1 − ${mpc})`, `= 1 ÷ ${mps}`, `= ${f(k)}`], watch: 'Subtract the MPC from 1 before you divide.' };
+     if (v === 'ks') return { q: `<p>Calculate the simple multiplier for an economy in which the marginal propensity to save (MPS) is <b>${mps}</b>.</p>`, parts: [num('Multiplier (k)', k, 1, '')], steps: [`k = 1 ÷ MPS`, `= 1 ÷ ${mps}`, `= ${f(k)}`], watch: 'With the MPS, divide 1 by it directly.' };
+     if (v === 'dy') { const inj = pick([-200, -100, -50, 20, 50, 100, 200]), what = pick(['investment', 'government spending', 'exports']), dy = inj * k;
+       return { q: `<p>In a hypothetical economy the ${RNG() < 0.5 ? `MPC is <b>${mpc}</b>` : `MPS is <b>${mps}</b>`}. Calculate the change in national income if ${what} ${inj > 0 ? 'increases' : 'falls'} by <b>$${Math.abs(inj)} million</b>.</p>`, parts: [num('Change in national income', dy, 0, '$ million', NEG)], steps: [`k = 1 ÷ (1 − MPC) = 1 ÷ ${mps} = ${f(k)}`, `ΔY = Change in injection × k`, `= ${f(inj)} × ${f(k)}`, `= ${f(dy)}: national income ${dy > 0 ? 'rises' : 'falls'} by $${f(Math.abs(dy))} million`], watch: 'Find the multiplier first. Say whether income rises or falls.' }; }
+     if (v === 'mpc') { const dY = ri(100, 500, 100), dC = dY * mpc, give = pick(['c', 's']);
+       return { q: `<p>When national income rises by <b>$${dY} million</b>, ${give === 'c' ? `consumption rises by <b>$${f(dC)} million</b>` : `saving rises by <b>$${f(dY - dC)} million</b>`}. Calculate the MPC and the simple multiplier.</p>`, parts: [num('MPC', mpc, 2, ''), num('Multiplier (k)', k, 1, '')], steps: [give === 'c' ? `MPC = Change in consumption ÷ Change in income = ${f(dC)} ÷ ${dY} = ${mpc}` : `MPS = Change in savings ÷ Change in income = ${f(dY - dC)} ÷ ${dY} = ${mps}, so MPC = 1 − ${mps} = ${mpc}`, `k = 1 ÷ (1 − MPC) = 1 ÷ ${mps}`, `= ${f(k)}`], watch: 'MPC + MPS = 1, so one gives you the other.' }; }
+     if (v === 'need') { const inj = pick([20, 40, 50, 100]), dy = inj * k, what = pick(['investment', 'government spending', 'exports']);
+       return { q: `<p>An economy has an MPC of <b>${mpc}</b>. The government wants national income to rise by <b>$${f(dy)} million</b>. Calculate the increase in ${what} needed.</p>`, parts: [num(`Increase in ${what} needed`, inj, 0, '$ million')], steps: [`k = 1 ÷ (1 − ${mpc}) = ${f(k)}`, `ΔY = Change in injection × k, so Change in injection = ΔY ÷ k`, `= ${f(dy)} ÷ ${f(k)}`, `= $${f(inj)} million`], watch: 'Divide the target change in income by the multiplier.' }; }
+     const inj = pick([20, 50, 100]), dy = inj * k;
+     return { q: `<p>Government spending rises by <b>$${inj} million</b> and, as a result, national income eventually rises by <b>$${f(dy)} million</b>. Calculate the multiplier and the MPC.</p>`, parts: [num('Multiplier (k)', k, 1, ''), num('MPC', mpc, 2, '')], steps: [`k = Change in income ÷ Change in injection = ${f(dy)} ÷ ${inj} = ${f(k)}`, `k = 1 ÷ MPS, so MPS = 1 ÷ ${f(k)} = ${mps}`, `MPC = 1 − MPS = 1 − ${mps} = ${mpc}`], watch: 'Work backwards: multiplier first, then the MPS, then the MPC.' }; } },
+ { id: 'leak', topic: 'T3', name: 'Leakages and injections', formula: ['Leakages = S + T + M', 'Injections = I + G + X', 'Leakages < Injections: the economy is expanding. Leakages > Injections: contracting', 'Budget: G > T is a deficit; G < T is a surplus', 'Trade balance = X − M'],
+   gen() { const S = ri(40, 120, 10), T = ri(60, 140, 10), M = ri(40, 110, 10), G = ri(60, 140, 10), X = ri(40, 110, 10); let I = ri(40, 120, 10); if (I + G + X === S + T + M) I += 10; const L = S + T + M, J = I + G + X, v = pick(['state', 'state', 'budget', 'trade']);
+     const T0 = `<p>Data for a hypothetical economy ($ billion):</p>${tbl(['Item', '$ billion'], [['Savings (S)', S], ['Taxation (T)', T], ['Imports (M)', M], ['Investment (I)', I], ['Government spending (G)', G], ['Exports (X)', X]])}`;
+     if (v === 'budget') return { q: T0 + `<p>Calculate the budget outcome.</p>`, parts: [num('Budget outcome (T − G)', T - G, 0, '$ billion', NEG), sel('The budget is in', T > G ? 'surplus' : T < G ? 'deficit' : 'balance', ['surplus', 'deficit', 'balance'])], steps: [`Budget outcome = Taxation − Government spending`, `= ${T} − ${G}`, `= ${f(T - G)}: ${T > G ? 'a surplus' : T < G ? 'a deficit' : 'a balanced budget'}${T === G ? '' : ' of $' + Math.abs(T - G) + ' billion'}`], watch: 'G greater than T is a deficit, which is expansionary.' };
+     if (v === 'trade') return { q: T0 + `<p>Calculate the trade balance.</p>`, parts: [num('Trade balance (X − M)', X - M, 0, '$ billion', NEG)], steps: [`Trade balance = Exports − Imports`, `= ${X} − ${M}`, `= ${f(X - M)}: ${X > M ? 'a surplus' : X < M ? 'a deficit' : 'balanced trade'}`], watch: 'Exports are an injection and imports are a leakage.' };
+     return { q: T0 + `<p>Calculate total leakages and total injections, and state whether the economy is expanding or contracting.</p>`, parts: [num('Total leakages', L, 0, '$ billion'), num('Total injections', J, 0, '$ billion'), sel('The economy is', J > L ? 'expanding' : 'contracting', ['expanding', 'contracting'])], steps: [`Leakages = S + T + M = ${S} + ${T} + ${M} = ${L}`, `Injections = I + G + X = ${I} + ${G} + ${X} = ${J}`, `${J > L ? 'Injections are greater than leakages, so the economy is expanding' : 'Leakages are greater than injections, so the economy is contracting'}`], watch: 'Leakages take money out of the circular flow; injections put it in.' }; } },
+ { id: 'labour', topic: 'T3', name: 'Unemployment and participation rates', formula: ['Labour force = Employed full-time + Employed part-time + Unemployed', 'Unemployment rate = Unemployed ÷ Labour force × 100', 'Participation rate = Labour force ÷ Working age population × 100'],
+   gen() { const ft = ri(60, 90, 5) * 100, pt = ri(25, 45, 5) * 100, u = ri(4, 7, 1) * 100, lf = ft + pt + u, wap = Math.ceil(lf / pick([0.6, 0.625, 0.64, 0.66, 0.7]) / 500) * 500, ur = u / lf * 100, pr = lf / wap * 100, v = pick(['ur', 'ur', 'pr', 'pr', 'lf']);
+     const T0 = `<p>Labour market data for a hypothetical economy (thousands of people):</p>${tbl(['Group', "'000"], [['Employed full-time', f(ft)], ['Employed part-time', f(pt)], ['Unemployed', f(u)], ['Working age population', f(wap)]])}`;
+     if (v === 'lf') return { q: T0 + `<p>Calculate the size of the labour force.</p>`, parts: [num('Labour force', lf, 0, "thousand")], steps: [`Labour force = Employed full-time + Employed part-time + Unemployed`, `= ${f(ft)} + ${f(pt)} + ${f(u)}`, `= ${f(lf)} thousand`], watch: 'The unemployed are part of the labour force. The working age population is not the labour force.' };
+     if (v === 'pr') return { q: T0 + `<p>Calculate the labour force participation rate.</p>`, parts: [num('Participation rate', pr, 1, '%', dpNote(1))], steps: [`Labour force = ${f(ft)} + ${f(pt)} + ${f(u)} = ${f(lf)}`, `Participation rate = Labour force ÷ Working age population × 100`, `= ${f(lf)} ÷ ${f(wap)} × 100`, `= ${f(pr, 1)}%`], watch: 'Include the unemployed in the labour force before dividing.' };
+     return { q: T0 + `<p>Calculate the unemployment rate.</p>`, parts: [num('Unemployment rate', ur, 1, '%', dpNote(1))], steps: [`Labour force = ${f(ft)} + ${f(pt)} + ${f(u)} = ${f(lf)}`, `Unemployment rate = Unemployed ÷ Labour force × 100`, `= ${f(u)} ÷ ${f(lf)} × 100`, `= ${f(ur, 1)}%`], watch: `Divide by the labour force, not the working age population (that would give ${f(u / wap * 100, 1)}%).` }; } },
+ { id: 'infl', topic: 'T3', name: 'Inflation rate', formula: ['Inflation rate = (Current CPI − Previous year’s CPI) ÷ Previous year’s CPI × 100', 'Contribution of an item = its weighting × its percentage price change'],
+   gen() { if (RNG() < 0.6) { let prev, r, cur; do { prev = pick([100, 110, 120, 125, 150, 160]); r = pick([2, 2.5, 3, 4, 5, 6, 7.5]); cur = prev * (1 + r / 100); } while (Math.abs(rd(cur, 1) - cur) > 1e-9);
+       return { q: `<p>The consumer price index (CPI) is <b>${f(prev)}</b> in Year 1 and <b>${f(cur)}</b> in Year 2. Calculate the inflation rate between Year 1 and Year 2.</p>`, parts: [num('Inflation rate', r, 1, '%')], steps: [`Inflation rate = (Current CPI − Previous CPI) ÷ Previous CPI × 100`, `= (${f(cur)} − ${f(prev)}) ÷ ${f(prev)} × 100`, `= ${f(cur - prev)} ÷ ${f(prev)} × 100`, `= ${f(r, 1)}%`], watch: `The answer is not the difference in index points (${f(cur - prev)}) unless the earlier CPI is 100.` }; }
+     const ws = pick([[40, 35, 25], [50, 30, 20], [30, 45, 25], [20, 50, 30]]), names = pick([['Food', 'Housing', 'Transport'], ['Food', 'Housing', 'Health'], ['Housing', 'Transport', 'Recreation']]), ch = [pick([2, 4, 5, 10]), pick([0, 5, 10, 20]), pick([-4, 0, 4, 8])], con = ws.map((w, i) => w * ch[i] / 100), tot = con.reduce((a, b) => a + b, 0);
+     return { q: `<p>A simplified CPI has three expenditure groups. Each group's index was 100 last year.</p>${tbl(['Group', 'Weighting (%)', 'Index this year'], names.map((n, i) => [n, ws[i], 100 + ch[i]]))}<p>Calculate the inflation rate for the year.</p>`, parts: [num('Inflation rate', tot, 1, '%', NEG)],
+       steps: names.map((n, i) => `${n}: weighting × change = ${ws[i] / 100} × ${f(ch[i])} = ${f(con[i], 2)}`).concat([`Inflation rate = ${con.map(c => f(c, 2)).join(' + ').replace(/\+ −/g, '− ')} = ${f(tot, 1)}%`]), watch: 'Weight each price change before adding. A simple average of the three changes ignores the weightings.' }; } },
+ { id: 'gini', topic: 'T3', name: 'Gini coefficient', formula: ['Gini coefficient = A ÷ (A + B)', 'A is the area between the line of equality and the Lorenz curve; B is the area under the Lorenz curve', '0 is perfect equality; 1 is perfect inequality'],
+   gen() { if (RNG() < 0.65) { const tot = 5000, A = pick([1000, 1250, 1500, 1600, 1750, 2000, 2250, 3000]), B = tot - A, g = A / tot;
+       return { q: `<p>On a Lorenz curve diagram, area <b>A</b> (between the line of equality and the Lorenz curve) is <b>${f(A)}</b> square units and area <b>B</b> (under the Lorenz curve) is <b>${f(B)}</b> square units. Calculate the Gini coefficient.</p>`, parts: [num('Gini coefficient', g, 2, '', dpNote(2))], steps: [`Gini coefficient = A ÷ (A + B)`, `= ${f(A)} ÷ (${f(A)} + ${f(B)})`, `= ${f(A)} ÷ ${f(tot)}`, `= ${f(g, 2)}`], watch: `Divide by A + B, not by B (that would give ${f(A / B, 2)}).` }; }
+     const sh = pick([[7, 12, 17, 23, 41], [5, 10, 16, 23, 46], [8, 13, 18, 23, 38], [4, 9, 15, 22, 50], [6, 11, 17, 24, 42]]), ratio = sh[4] / sh[0];
+     return { q: `<p>Shares of total income by household quintile:</p>${tbl(['Quintile', 'Share of income (%)'], ['Lowest', 'Second', 'Third', 'Fourth', 'Highest'].map((n, i) => [n, sh[i]]))}<p>Calculate the ratio of the highest quintile's share to the lowest quintile's share.</p>`, parts: [num('Ratio of highest to lowest', ratio, 1, 'to 1', dpNote(1))], steps: [`Ratio = Share of the highest quintile ÷ Share of the lowest quintile`, `= ${sh[4]} ÷ ${sh[0]}`, `= ${f(ratio, 1)}: the highest quintile receives ${f(ratio, 1)} times the income of the lowest`], watch: 'A higher ratio means a less equal distribution.' }; } },
+ { id: 'budget', topic: 'T4', name: 'Budget outcome', formula: ['Budget outcome = Revenue − Expenditure', 'Positive is a surplus; negative is a deficit', 'As a percentage of GDP = Budget outcome ÷ GDP × 100'],
+   gen() { const gdp = pick([2000, 2500, 3000]), rev = ri(600, 760, 10); let exp = rev + pick([-40, -30, -20, 20, 30, 40, 50, 60]); const out = rev - exp, v = pick(['out', 'out', 'pct']);
+     if (v === 'pct') return { q: `<p>Data for a hypothetical economy ($ billion):</p>${tbl(['Item', '$ billion'], [['Government revenue', f(rev)], ['Government expenditure', f(exp)], ['GDP', f(gdp)]])}<p>Calculate the budget outcome as a percentage of GDP.</p>`, parts: [num('Budget outcome as a percentage of GDP', out / gdp * 100, 1, '%', NEG + ' Answer ' + dpNote(1) + '.')], steps: [`Budget outcome = Revenue − Expenditure = ${f(rev)} − ${f(exp)} = ${f(out)}`, `As a percentage of GDP = ${f(out)} ÷ ${f(gdp)} × 100`, `= ${f(out / gdp * 100, 1)}%: a ${out > 0 ? 'surplus' : 'deficit'} of ${f(Math.abs(out / gdp * 100), 1)}% of GDP`], watch: 'Find the outcome in dollars first, then divide by GDP.' };
+     return { q: `<p>In a hypothetical economy government revenue is <b>$${f(rev)} billion</b> and government expenditure is <b>$${f(exp)} billion</b>. Calculate the budget outcome.</p>`, parts: [num('Budget outcome', out, 0, '$ billion', NEG), sel('The budget is in', out > 0 ? 'surplus' : 'deficit', ['surplus', 'deficit'])], steps: [`Budget outcome = Revenue − Expenditure`, `= ${f(rev)} − ${f(exp)}`, `= ${f(out)}: a ${out > 0 ? 'surplus' : 'deficit'} of $${f(Math.abs(out))} billion`], watch: `A ${out > 0 ? 'surplus is contractionary' : 'deficit is expansionary'}: say so if the question asks for the stance.` }; } }
+];
+const BY = Object.fromEntries(SK.map(s => [s.id, s]));
+window.__SK = SK; window.__setRNG = fn => { RNG = fn; };
+
+/* ---------- checking ---------- */
+function parse(s) { const t = String(s).replace(/[−–]/g, '-').replace(/[$%,\s]/g, '').replace(/(million|billion|thousand|m|b|bn)$/i, ''); if (t === '' || isNaN(+t)) return null; return +t; }
+function checkPart(p, v) { if (p.type === 'sel') return v === p.value; const n = parse(v); if (n === null) return false; return Math.abs(n - p.value) <= (p.dp > 0 ? 0.51 * Math.pow(10, -p.dp) : 0.01); }
+const show = p => p.type === 'sel' ? p.value : f(p.value, p.dp > 0 ? p.dp : 0) + (p.unit ? ' ' + p.unit : '');
+
+/* ---------- tallies ---------- */
+const KEY = 'econ-calc-trainer-v1'; let TL = {}; try { TL = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) {}
+const saveT = () => { try { localStorage.setItem(KEY, JSON.stringify(TL)); } catch (e) {} };
+const tally = id => TL[id] || (TL[id] = { r: 0, n: 0, s: 0 });
+
+/* ---------- a question card (shared by Practise and the quiz) ---------- */
+function qHTML(Q, st) { const sk = BY[Q.skill];
+  return `<div class="qtext" style="--tc:${TC[sk.topic]}">${Q.q}</div>
+    <div class="ans">${Q.parts.map((p, i) => { const got = st.ans[i], ok = st.checked ? checkPart(p, got) : null, cls = ok === null ? '' : ok ? 'y' : 'n';
+      return `<div class="part"><label for="a${i}">${esc(p.label)}${p.note ? ` <span class="sub" style="font-weight:400">(${esc(p.note)})</span>` : ''}</label><div class="inp">${p.type === 'sel' ? `<select id="a${i}" data-i="${i}" class="${cls}" ${st.checked ? 'disabled' : ''}><option value="">Choose…</option>${p.options.map(o => `<option ${got === o ? 'selected' : ''}>${esc(o)}</option>`).join('')}</select>` : `<input id="a${i}" data-i="${i}" inputmode="decimal" autocomplete="off" value="${esc(got || '')}" class="${cls}" ${st.checked ? 'disabled' : ''}>${p.unit ? `<span>${esc(p.unit)}</span>` : ''}`}${ok === null ? '' : `<span class="res ${cls}">${ok ? '✓' : '✗ ' + esc(show(p))}</span>`}</div></div>`; }).join('')}</div>
+    ${st.hint && !st.checked ? `<div class="hint"><b>Formula:</b><br>${sk.formula.map(esc).join('<br>')}</div>` : ''}
+    ${st.checked ? `<div class="work ${st.right ? '' : 'bad'}" role="status"><h3>${st.right ? 'Correct.' : 'Not quite. Here is the working.'}</h3><ol>${Q.steps.map(s => `<li class="fm">${esc(s)}</li>`).join('')}</ol><p class="watch"><b>Watch for:</b> ${esc(Q.watch)}</p></div>` : ''}`; }
+const newQ = id => Object.assign(BY[id].gen(), { skill: id });
+const allSet = (Q, st) => Q.parts.every((p, i) => st.ans[i] !== undefined && String(st.ans[i]).trim() !== '');
+
+/* ---------- practise ---------- */
+const S = { view: 'practise', skill: SK[0].id };
+let P = null;
+function startP() { P = { Q: newQ(S.skill), st: { ans: {}, checked: false, hint: false, right: false } }; }
+function renderSkills() { $('#skills').innerHTML = TOPICS.map(t => { const list = SK.filter(s => s.topic === t[0]); return list.length ? `<h3 style="--tc:${t[2]}"><i></i>${esc(t[1])}</h3>` + list.map(s => { const x = TL[s.id]; return `<button class="sk" data-sk="${s.id}" aria-pressed="${S.skill === s.id}" style="--tc:${t[2]}"><span>${esc(s.name)}</span><small class="${x && x.s >= 3 ? 'good' : ''}">${x && x.n ? x.r + '/' + x.n : ''}</small></button>`; }).join('') : ''; }).join(''); }
+function renderCard() { if (!P || P.Q.skill !== S.skill) startP(); const sk = BY[S.skill], x = tally(S.skill), ex = D.examined[S.skill] || [];
+  $('#card').innerHTML = `<div class="qhead"><h2>${esc(sk.name)}</h2><span class="streak">In a row: <b>${x.s}</b> · Right: <b>${x.r}</b> of <b>${x.n}</b></span></div>
+    ${qHTML(P.Q, P.st)}
+    <div class="row">${P.st.checked ? '<button class="btn" id="next">Another one</button>' : `<button class="btn" id="check" ${allSet(P.Q, P.st) ? '' : 'disabled'}>Check my answer</button><button class="btn ghost" id="hint">${P.st.hint ? 'Hide the formula' : 'Show the formula'}</button><button class="btn ghost" id="skip">Skip</button>`}</div>
+    ${sk.note ? `<p class="sub" style="margin-top:12px">${esc(sk.note)}</p>` : ''}
+    ${ex.length ? `<p class="sub" style="margin-top:12px"><b>Examined:</b> ${ex.map(esc).join(', ')}. Find them in the <a href="../hsc-question-finder-site/"${framed ? ' target="_blank" rel="noopener"' : ''}>Question Finder</a>.</p>` : ''}`; }
+
+/* ---------- quiz ---------- */
+let Z = null;
+function startZ() { const ids = SK.map(s => s.id).sort(() => RNG() - 0.5).slice(0, 10); Z = { qs: ids.map(id => ({ Q: newQ(id), st: { ans: {}, checked: false, hint: false, right: false } })), i: 0 }; }
+function renderQuiz() { if (!Z) { $('#quiz').innerHTML = `<h2>Mixed quiz</h2><p class="sub" style="margin:4px 0 12px">Ten calculations drawn from across the course, one of each type, with no formula hints. Have your calculator ready and show your working on paper.</p><button class="btn" id="zstart">Start the quiz</button>`; return; }
+  if (Z.i >= Z.qs.length) { const n = Z.qs.filter(x => x.st.right).length, wrong = Z.qs.filter(x => !x.st.right);
+    $('#quiz').innerHTML = `<h2>Your score</h2><p class="score">${n} out of ${Z.qs.length}</p><div class="dots">${Z.qs.map(x => `<i class="${x.st.right ? 'y' : 'n'}"></i>`).join('')}</div>${wrong.length ? `<p class="sub">Practise these next:</p><div class="row" style="margin-top:6px">${[...new Set(wrong.map(x => x.Q.skill))].map(id => `<button class="btn ghost" data-goto="${id}">${esc(BY[id].name)}</button>`).join('')}</div>` : '<p class="sub">Every answer correct.</p>'}<div class="row"><button class="btn" id="zstart">Try another ten</button></div>`; return; }
+  const cur = Z.qs[Z.i], sk = BY[cur.Q.skill];
+  $('#quiz').innerHTML = `<div class="qhead"><h2>Question ${Z.i + 1} of ${Z.qs.length}: ${esc(sk.name)}</h2></div><div class="dots" aria-hidden="true">${Z.qs.map((x, i) => `<i class="${i < Z.i || x.st.checked ? (x.st.right ? 'y' : 'n') : ''} ${i === Z.i ? 'cur' : ''}"></i>`).join('')}</div>${qHTML(cur.Q, cur.st)}
+    <div class="row">${cur.st.checked ? `<button class="btn" id="znext">${Z.i + 1 < Z.qs.length ? 'Next question' : 'See your score'}</button>` : `<button class="btn" id="zcheck" ${allSet(cur.Q, cur.st) ? '' : 'disabled'}>Check my answer</button>`}</div>`; }
+
+/* ---------- formula sheet ---------- */
+function renderSheet() { $('#sheet').innerHTML = SK.map(s => { const ex = D.examined[s.id] || []; return `<div class="fcard" style="--tc:${TC[s.topic]}"><h3>${esc(s.name)}</h3>${s.formula.map(x => `<p class="f">${esc(x)}</p>`).join('')}${s.note ? `<small>${esc(s.note)}</small>` : ''}${ex.length ? `<small><b>Examined:</b> ${ex.map(esc).join(', ')}</small>` : ''}<button class="btn ghost" data-goto="${s.id}">Practise this</button></div>`; }).join(''); }
+
+/* ---------- shell ---------- */
+const VIEWS = ['practise', 'quiz', 'sheet'];
+function writeHash() { const h = new URLSearchParams(); if (S.view !== 'practise') h.set('view', S.view); else h.set('skill', S.skill); try { history.replaceState(null, '', location.pathname + location.search + '#' + h.toString()); } catch (e) {} }
+function readHash() { const h = new URLSearchParams(location.hash.slice(1)); if (VIEWS.includes(h.get('view'))) S.view = h.get('view'); if (BY[h.get('skill')]) { S.skill = h.get('skill'); S.view = 'practise'; } }
+function render() { VIEWS.forEach(v => { $('#v-' + v).classList.toggle('on', v === S.view); $(`.tab[data-view="${v}"]`).setAttribute('aria-selected', v === S.view); });
+  if (S.view === 'practise') { renderSkills(); renderCard(); } else if (S.view === 'quiz') renderQuiz(); else renderSheet(); writeHash(); }
+function focusFirst(root) { const el = root.querySelector('input:not([disabled]),select:not([disabled])'); if (el) el.focus({ preventScroll: true }); }
+function mark(Q, st, count) { st.checked = true; st.right = Q.parts.every((p, i) => checkPart(p, st.ans[i])); if (count) { const x = tally(Q.skill); x.n++; if (st.right) { x.r++; x.s++; } else x.s = 0; saveT(); } }
+$$('.tab').forEach(b => b.onclick = () => { S.view = b.dataset.view; render(); });
+document.querySelector('main').addEventListener('input', e => { const i = e.target.dataset && e.target.dataset.i; if (i === undefined) return; const st = S.view === 'quiz' ? Z.qs[Z.i].st : P.st, Q = S.view === 'quiz' ? Z.qs[Z.i].Q : P.Q; st.ans[i] = e.target.value; const b = $(S.view === 'quiz' ? '#zcheck' : '#check'); if (b) b.disabled = !allSet(Q, st); });
+document.querySelector('main').addEventListener('keydown', e => { if (e.key !== 'Enter' || !e.target.matches('input')) return; e.preventDefault(); /* or the same key press would also activate the newly focused Next button */ const b = $(S.view === 'quiz' ? '#zcheck' : '#check'); if (b && !b.disabled) b.click(); });
+document.querySelector('main').addEventListener('click', e => { const q = s => e.target.closest(s); let b;
+  if (b = q('[data-sk]')) { S.skill = b.dataset.sk; P = null; render(); focusFirst($('#card')); return; }
+  if (b = q('[data-goto]')) { S.skill = b.dataset.goto; S.view = 'practise'; P = null; render(); scrollTo(0, 0); return; }
+  if (q('#check')) { mark(P.Q, P.st, true); renderSkills(); renderCard(); $('#next').focus(); return; }
+  if (q('#next') || q('#skip')) { startP(); renderCard(); focusFirst($('#card')); return; }
+  if (q('#hint')) { P.st.hint = !P.st.hint; renderCard(); return; }
+  if (q('#clear')) { TL = {}; saveT(); render(); return; }
+  if (q('#zstart')) { startZ(); renderQuiz(); focusFirst($('#quiz')); return; }
+  if (q('#zcheck')) { const c = Z.qs[Z.i]; mark(c.Q, c.st, true); renderQuiz(); $('#znext').focus(); return; }
+  if (q('#znext')) { Z.i++; renderQuiz(); focusFirst($('#quiz')); return; }
+  if (q('#print')) { try { window.print(); } catch (err) {} } });
+if (framed) $('#print').hidden = true;
+addEventListener('hashchange', () => { readHash(); render(); });
+readHash(); render();
+})();
+</script>
+</body>
+</html>
