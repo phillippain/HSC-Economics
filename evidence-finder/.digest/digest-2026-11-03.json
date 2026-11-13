@@ -1,0 +1,1496 @@
+{
+ "generated": "2026-11-03T11:11:55",
+ "today": "2026-11-03",
+ "window_start": "2026-11-02",
+ "basis": "first run: from the last school day, Monday 2 November",
+ "site_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/",
+ "counts": {
+  "new": 8,
+  "updated": 1
+ },
+ "topic_labels": {
+  "h09:T1": "HSC 2009 · Topic 1: The Global Economy",
+  "h09:T2": "HSC 2009 · Topic 2: Australia's Place in the Global Economy",
+  "h09:T3": "HSC 2009 · Topic 3: Economic Issues",
+  "h09:T4": "HSC 2009 · Topic 4: Economic Policies and Management",
+  "y12:Y1": "HSC 2025 · Focus area 1: Economic issues in the Australian economy",
+  "y12:Y2": "HSC 2025 · Focus area 2: Economic management of the Australian economy",
+  "y12:Y3": "HSC 2025 · Focus area 3: Australia and the global economy",
+  "y11:P1": "Year 11 · Focus area 1: Introduction to economics",
+  "y11:P2": "Year 11 · Focus area 2: Markets",
+  "y11:P3": "Year 11 · Focus area 3: Household and business sector",
+  "y11:P4": "Year 11 · Focus area 4: Financial sector",
+  "y11:P5": "Year 11 · Focus area 5: Government sector",
+  "y11:P6": "Year 11 · Focus area 6: International sector"
+ },
+ "groups": [
+  {
+   "key": "h09:T1",
+   "fw": "h09",
+   "course": "hsc",
+   "course_label": "HSC · 2009 syllabus",
+   "label": "The Global Economy",
+   "part": "Topic 1",
+   "color": "#2447d6",
+   "items": [
+    {
+     "id": "2026-11-03-global-rates-government-debt",
+     "status": "new",
+     "type": "news",
+     "type_label": "News",
+     "title": "Rates rise worldwide as government debt piles up",
+     "added": "2026-11-03",
+     "added_from": "record",
+     "date": "2026-11-03",
+     "date_text": "",
+     "outlets": [
+      "ABC News"
+     ],
+     "summary": "Connects rising global bond yields to deficits and sovereign debt, and separates the level of spending from the budget balance when judging inflation.",
+     "lede": "An ABC analysis argues investors are demanding higher returns to lend to governments, pushing up interest rates around the world, and that deficits, not just the size of spending, add to inflation. US interest payments on federal debt now exceed US$1 trillion a year and the Bank of England is tipped to raise its rate to 4.0%.",
+     "angle": "Higher global yields raise borrowing costs for households, firms and governments, shifting AD left and easing the price level but cutting real GDP. Separate the level of spending from the budget balance when judging whether fiscal policy adds to inflation.",
+     "note": "An analysis piece, so the claim that deficits drive inflation is one view. UPDATE DUE: RBA decision (3 November) and the Bank of England decision (5 November). Private data centre investment is also cited as an inflation pressure.",
+     "questions": [
+      {
+       "q": "Discuss how rising global interest rates could affect Australia's economy and federal budget.",
+       "marks": 6
+      }
+     ],
+     "figures": [
+      {
+       "i": 0,
+       "label": "US interest payments on federal debt",
+       "value": "more than US$1 trillion a year",
+       "asAt": "2026",
+       "issue": "global",
+       "source": "ABC News"
+      },
+      {
+       "i": 1,
+       "label": "Bank of England rate if Thursday's hike goes ahead",
+       "value": "4.0%",
+       "asAt": "5 November 2026",
+       "issue": "rates",
+       "source": "ABC News"
+      },
+      {
+       "i": 2,
+       "label": "Australian government spending",
+       "value": "26.8% of GDP (pandemic peak 31.3%)",
+       "asAt": "2026",
+       "issue": "budget",
+       "source": "ABC News"
+      },
+      {
+       "i": 3,
+       "label": "Australian budget deficit",
+       "value": "about 1% of GDP",
+       "asAt": "2026",
+       "issue": "budget",
+       "source": "ABC News"
+      },
+      {
+       "i": 4,
+       "label": "Australian 10-year bond yield",
+       "value": "5.13%",
+       "asAt": "2 November 2026",
+       "issue": "rates",
+       "source": "ABC News"
+      },
+      {
+       "i": 5,
+       "label": "Capital raised by data centre operators this year",
+       "value": "record $35 billion",
+       "asAt": "2026",
+       "issue": "investment",
+       "source": "ABC News"
+      }
+     ],
+     "terms": [
+      {
+       "term": "Budget deficit",
+       "def": "Government spending exceeds revenue in a year."
+      },
+      {
+       "term": "Sovereign debt",
+       "def": "Borrowing by a national government, usually through bonds."
+      },
+      {
+       "term": "Bond yield",
+       "def": "The return investors earn on a bond; a higher yield means a higher cost of borrowing."
+      }
+     ],
+     "tags": {
+      "h09": {
+       "about": [
+        {
+         "code": "1A.4",
+         "text": "globalisation — financial flows"
+        },
+        {
+         "code": "4C.3",
+         "text": "methods of financing deficits"
+        },
+        {
+         "code": "4D.3",
+         "text": "impact of changes in interest rates on economic activity and the exchange rate"
+        }
+       ],
+       "also": [
+        {
+         "code": "4C.1",
+         "text": "Federal Government budgets and budget outcomes"
+        },
+        {
+         "code": "4H.2",
+         "text": "global influences"
+        }
+       ]
+      },
+      "y12": {
+       "about": [
+        {
+         "code": "Y2b.6",
+         "text": "Limitations of financing a budget deficit through debt financing, monetary financing and asset sales, including servicing costs, the crowding-out effect, inflation and loss of future revenue"
+        },
+        {
+         "code": "Y2b.12",
+         "text": "Effects of budget outcomes and fiscal stances on Australian Government debt and fiscal sustainability, including Australian Government debt as a proportion of GDP"
+        },
+        {
+         "code": "Y2c.5",
+         "text": "Effects of monetary policy on the economy, including the saving and investment channel, cash-flow channel, asset price and wealth channel and exchange rate channel"
+        }
+       ],
+       "also": [
+        {
+         "code": "Y2b.13",
+         "text": "Effectiveness of fiscal policy in achieving Australia’s economic objectives, including reference to relevant data"
+        },
+        {
+         "code": "Y3c.4",
+         "text": "Domestic and global factors affecting demand and supply of the Australian dollar"
+        },
+        {
+         "code": "Y3b.3",
+         "text": "Costs and benefits of international portfolio investment to the global economy, including liquidity, access to capital, volatility and financial crisis contagion"
+        }
+       ]
+      },
+      "y11": {
+       "about": [],
+       "also": []
+      }
+     },
+     "home": [
+      "h09",
+      "T1"
+     ],
+     "also_topics": [
+      "h09:T4"
+     ],
+     "card_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/#item=2026-11-03-global-rates-government-debt&fw=h09",
+     "pdf_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/files/2026-11/2026-11-03-global-rates-government-debt.pdf",
+     "pdf_label": "One-page digest",
+     "pdf_pages": 1,
+     "pdf_path": "files/2026-11/2026-11-03-global-rates-government-debt.pdf",
+     "source_label": "ABC News, Interest rate hikes gather pace across the globe as deficits and debt pile up, 3 Nov 2026",
+     "source_url": "https://abc.net.au/news/2026-11-03/rate-hikes-gather-pace-across-the-globe-as-deficits/107336008",
+     "n_links": 2
+    }
+   ]
+  },
+  {
+   "key": "h09:T2",
+   "fw": "h09",
+   "course": "hsc",
+   "course_label": "HSC · 2009 syllabus",
+   "label": "Australia's Place in the Global Economy",
+   "part": "Topic 2",
+   "color": "#0e8a8a",
+   "items": [
+    {
+     "id": "2026-11-02-uk-fta-backpacker-rules",
+     "status": "new",
+     "type": "news",
+     "type_label": "News",
+     "title": "Albanese wants to rewrite part of the UK trade deal on backpackers",
+     "added": "2026-11-02",
+     "added_from": "record",
+     "date": "2026-11-02",
+     "date_text": "",
+     "outlets": [
+      "ABC News"
+     ],
+     "summary": "Shows how a free trade agreement can cover labour mobility as well as tariffs, with winners and losers in the regional farm labour market.",
+     "lede": "The Prime Minister will ask the UK to restore the regional work rule for British working holiday makers, which was waived under the Australia-UK free trade agreement. British backpackers rose from about 47,000 in 2024 to nearly 80,000 last financial year, and farmers warn of harvest labour shortages.",
+     "angle": "Modern FTAs go beyond tariffs: services, investment and the movement of people all create winners and losers. The deal is already law, so changing it needs the UK's consent.",
+     "note": "UPDATE DUE: outcome of the talks at CHOGM. The labour market diagram is the digest's illustration of a supply shift. The UK Prime Minister is named as Andy Burnham in the digest.",
+     "questions": [
+      {
+       "q": "Assess the costs and benefits of including labour-mobility provisions in Australia's free trade agreements.",
+       "marks": 6
+      }
+     ],
+     "figures": [
+      {
+       "i": 0,
+       "label": "British working holiday makers",
+       "value": "nearly 80,000 (about 47,000 in 2024)",
+       "asAt": "last financial year",
+       "issue": "trade",
+       "source": "ABC News"
+      },
+      {
+       "i": 1,
+       "label": "Harvest workers who come from overseas",
+       "value": "about 1 in 7",
+       "asAt": "2026",
+       "issue": "employment",
+       "source": "ABC News"
+      },
+      {
+       "i": 2,
+       "label": "Proposed cap on second-year working holiday visas",
+       "value": "45,000",
+       "asAt": "2026",
+       "issue": "trade",
+       "source": "ABC News"
+      },
+      {
+       "i": 3,
+       "label": "Stay allowed without regional work (British working holiday makers)",
+       "value": "up to three years",
+       "asAt": "2026",
+       "issue": "trade",
+       "source": "ABC News"
+      }
+     ],
+     "terms": [
+      {
+       "term": "Free trade agreement",
+       "def": "A treaty lowering trade barriers, often also covering services, investment and labour mobility."
+      },
+      {
+       "term": "Working holiday maker",
+       "def": "A visa allowing young travellers to work, often in seasonal jobs."
+      },
+      {
+       "term": "Labour supply",
+       "def": "The number of workers willing and able to work at each wage."
+      }
+     ],
+     "tags": {
+      "h09": {
+       "about": [
+        {
+         "code": "2D.2",
+         "text": "Australia's multilateral and bilateral free trade agreements"
+        },
+        {
+         "code": "2D.3",
+         "text": "the implications of Australia's policies for individuals, firms and governments"
+        }
+       ],
+       "also": [
+        {
+         "code": "1B.4",
+         "text": "trading blocs, monetary unions and free trade agreements — advantages and disadvantages of multilateral and bilateral agreements"
+        },
+        {
+         "code": "2D.1",
+         "text": "Australia's policies regarding free trade and protection"
+        }
+       ]
+      },
+      "y12": {
+       "about": [
+        {
+         "code": "Y3a.13",
+         "text": "Arguments for and against the use of bilateral and multilateral trade agreements, including regional trading blocs"
+        },
+        {
+         "code": "Y3a.16",
+         "text": "Extent to which Australian Government policies promote free trade"
+        }
+       ],
+       "also": [
+        {
+         "code": "Y3a.3",
+         "text": "Benefits of free trade, including greater access to resources, specialisation, development of economies of scale, increased competition, lower prices, wider choice, higher living standards"
+        }
+       ]
+      },
+      "y11": {
+       "about": [],
+       "also": []
+      }
+     },
+     "home": [
+      "h09",
+      "T2"
+     ],
+     "also_topics": [
+      "h09:T1"
+     ],
+     "card_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/#item=2026-11-02-uk-fta-backpacker-rules&fw=h09",
+     "pdf_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/files/2026-11/2026-11-02-uk-fta-backpacker-rules.pdf",
+     "pdf_label": "One-page digest",
+     "pdf_pages": 1,
+     "pdf_path": "files/2026-11/2026-11-02-uk-fta-backpacker-rules.pdf",
+     "source_label": "ABC News, Albanese to discuss British backpacker changes with Burnham, 2 Nov 2026",
+     "source_url": "https://www.abc.net.au/news/2026-11-02/albanese-to-discuss-british-backpacker-changes-with-burnham/107208084",
+     "n_links": 2
+    },
+    {
+     "id": "2026-11-02-commodity-prices-aud-softens",
+     "status": "new",
+     "type": "stats",
+     "type_label": "Statistics",
+     "title": "Commodity prices slip and the dollar softens before the RBA",
+     "added": "2026-11-02",
+     "added_from": "record",
+     "date": "2026-11-02",
+     "date_text": "",
+     "outlets": [
+      "ABC News"
+     ],
+     "summary": "Shows how falling export prices lower demand for the AUD while a wider interest rate differential supports it. Replaces the 29 October edition.",
+     "lede": "The Australian dollar slipped 0.1% to 70.20 US cents on 2 November as iron ore held at US$90.80 a tonne and copper fell 1.5%, ahead of the expected RBA rate rise. Australia's 10-year bond yield of 5.13% is above the US 4.93%, which supports demand for AUD assets.",
+     "angle": "Lower commodity prices mean foreign buyers need fewer Australian dollars for our exports, shifting AUD demand left. An RBA hike works the other way: a wider differential attracts capital inflows and shifts demand right.",
+     "note": "Single-day figures, so update before quoting. UPDATE DUE: RBA decision on 3 November. Replaces the 29 October edition; the 28 October item on the NZ dollar is kept.",
+     "questions": [
+      {
+       "q": "Explain two factors that influence the value of the Australian dollar, and how a change in its value affects the current account.",
+       "marks": 5
+      }
+     ],
+     "figures": [
+      {
+       "i": 0,
+       "label": "Australian dollar",
+       "value": "70.20 US cents (-0.1%)",
+       "asAt": "2 November 2026",
+       "issue": "fx",
+       "source": "ABC News"
+      },
+      {
+       "i": 1,
+       "label": "Iron ore",
+       "value": "US$90.80 a tonne",
+       "asAt": "2 November 2026",
+       "issue": "trade",
+       "source": "ABC News"
+      },
+      {
+       "i": 2,
+       "label": "Copper",
+       "value": "-1.5%",
+       "asAt": "2 November 2026",
+       "issue": "trade",
+       "source": "ABC News"
+      },
+      {
+       "i": 3,
+       "label": "Gold",
+       "value": "near a one-year low (as reported)",
+       "asAt": "2 November 2026",
+       "issue": "trade",
+       "source": "ABC News"
+      },
+      {
+       "i": 4,
+       "label": "ASX 200",
+       "value": "-0.6% to about 8,857 (BHP -1.4%, Northern Star -4.8%)",
+       "asAt": "2 November 2026",
+       "issue": "trade",
+       "source": "ABC News"
+      },
+      {
+       "i": 5,
+       "label": "Australian / US 10-year yield",
+       "value": "5.13% / 4.93% (gap +0.20 points)",
+       "asAt": "2 November 2026",
+       "issue": "rates",
+       "source": "ABC News"
+      }
+     ],
+     "terms": [
+      {
+       "term": "Exchange rate",
+       "def": "The price of one currency in terms of another (AUD/USD)."
+      },
+      {
+       "term": "Interest rate differential",
+       "def": "The gap between Australian and overseas interest rates, which drives capital flows."
+      },
+      {
+       "term": "Terms of trade",
+       "def": "Export prices relative to import prices."
+      }
+     ],
+     "tags": {
+      "h09": {
+       "about": [
+        {
+         "code": "2C.2",
+         "text": "factors affecting the demand for and supply of Australian dollars"
+        },
+        {
+         "code": "2C.3",
+         "text": "changes in exchange rates — appreciation/depreciation"
+        },
+        {
+         "code": "2C.6",
+         "text": "the effects of fluctuations in exchange rates on the Australian economy"
+        }
+       ],
+       "also": [
+        {
+         "code": "2A.1",
+         "text": "value, composition and direction of Australia's trade and financial flows — trends in Australia's trade pattern"
+        },
+        {
+         "code": "2C.4",
+         "text": "determination of exchange rates including fixed, flexible and managed rates"
+        },
+        {
+         "code": "3D.3",
+         "text": "positive and negative causes and effects"
+        },
+        {
+         "code": "4D.3",
+         "text": "impact of changes in interest rates on economic activity and the exchange rate"
+        }
+       ]
+      },
+      "y12": {
+       "about": [
+        {
+         "code": "Y3c.2",
+         "text": "Construct and interpret demand and supply graphs to demonstrate how the value of a currency is determined under a floating exchange rate system"
+        },
+        {
+         "code": "Y3c.4",
+         "text": "Domestic and global factors affecting demand and supply of the Australian dollar"
+        },
+        {
+         "code": "Y3c.5",
+         "text": "Effects of exchange rate movements on households, businesses, the government and the Australian economy"
+        },
+        {
+         "code": "Y1a.7",
+         "text": "Effect of changes in the terms of trade (export price index ÷ import price index × 100) on net exports and aggregate demand"
+        }
+       ],
+       "also": [
+        {
+         "code": "Y3c.1",
+         "text": "Features of Australia’s floating exchange rate system, including currency appreciation and depreciation"
+        },
+        {
+         "code": "Y3c.6",
+         "text": "Reasons for major trends in the value of the Australian dollar"
+        },
+        {
+         "code": "Y3e.3",
+         "text": "Effects of changes in the global economy on the performance and structure of Australia’s economy"
+        }
+       ]
+      },
+      "y11": {
+       "about": [
+        {
+         "code": "P6c.1",
+         "text": "Role of exchange rates in facilitating international trade and investment flows"
+        }
+       ],
+       "also": [
+        {
+         "code": "P6a.2",
+         "text": "Value, direction and composition of Australia’s international trade"
+        },
+        {
+         "code": "P6c.2",
+         "text": "Measurement of the relative value of the Australian dollar using bilateral exchange rates"
+        }
+       ]
+      }
+     },
+     "home": [
+      "h09",
+      "T2"
+     ],
+     "also_topics": [
+      "h09:T3",
+      "h09:T4"
+     ],
+     "card_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/#item=2026-11-02-commodity-prices-aud-softens&fw=h09",
+     "pdf_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/files/2026-11/2026-11-02-commodity-prices-aud-softens.pdf",
+     "pdf_label": "One-page digest",
+     "pdf_pages": 1,
+     "pdf_path": "files/2026-11/2026-11-02-commodity-prices-aud-softens.pdf",
+     "source_label": "ABC News, ASX markets business live blog, 2 Nov 2026",
+     "source_url": "https://www.abc.net.au/news/2026-11-02/asx-markets-business-live-news-nov-2/107334212",
+     "n_links": 1
+    }
+   ]
+  },
+  {
+   "key": "h09:T3",
+   "fw": "h09",
+   "course": "hsc",
+   "course_label": "HSC · 2009 syllabus",
+   "label": "Economic Issues",
+   "part": "Topic 3",
+   "color": "#d9822b",
+   "items": [
+    {
+     "id": "2026-11-02-house-prices-fastest-fall-40-years",
+     "status": "new",
+     "type": "stats",
+     "type_label": "Statistics",
+     "title": "House prices fall at the fastest pace in 40 years",
+     "added": "2026-11-02",
+     "added_from": "record",
+     "date": "2026-11-02",
+     "date_text": "",
+     "outlets": [
+      "Cotality",
+      "ABC News"
+     ],
+     "summary": "The October Cotality result: a seventh monthly fall, with the wealth effect and transmission of higher rates. Replaces the sixth-month edition.",
+     "lede": "National home values fell 1.2% in October, the seventh straight monthly fall, and are 6.7% below the March peak, about $63,400 off the median dwelling. Capital cities are down 8.1% in seven months and set to pass the 2017-19 record fall of 8.2%, and AMP now expects a 15% fall.",
+     "angle": "Higher rates cut borrowing capacity and investors have pulled back after property tax changes, shifting housing demand left. Falling prices hit recent buyers with small deposits hardest, which matters for wealth distribution as well as spending.",
+     "note": "Replaces the sixth-month item, which reported HSBC's economist expecting falls of up to 13%. The AMP forecast is one institution's view. See also the 25 October Domain quarterly figures.",
+     "questions": [
+      {
+       "q": "Explain how rising interest rates affect house prices and consumer spending through the wealth effect.",
+       "marks": 4
+      }
+     ],
+     "figures": [
+      {
+       "i": 0,
+       "label": "National home values, monthly change",
+       "value": "-1.2% (seventh straight fall)",
+       "asAt": "October 2026",
+       "issue": "housing",
+       "source": "Cotality via ABC News"
+      },
+      {
+       "i": 1,
+       "label": "Fall from the March peak",
+       "value": "-6.7% (about $63,400 off the median dwelling)",
+       "asAt": "October 2026",
+       "issue": "housing",
+       "source": "Cotality via ABC News"
+      },
+      {
+       "i": 2,
+       "label": "Median dwelling value",
+       "value": "about $884,855",
+       "asAt": "October 2026",
+       "issue": "housing",
+       "source": "Cotality via ABC News"
+      },
+      {
+       "i": 3,
+       "label": "Capital cities, fall over seven months",
+       "value": "-8.1% (record 2017-19 fall was 8.2%)",
+       "asAt": "October 2026",
+       "issue": "housing",
+       "source": "Cotality via ABC News"
+      },
+      {
+       "i": 4,
+       "label": "AMP expected fall",
+       "value": "15%",
+       "asAt": "2026",
+       "issue": "housing",
+       "source": "AMP via ABC News"
+      }
+     ],
+     "terms": [
+      {
+       "term": "Wealth effect",
+       "def": "Spending changes as household wealth, such as house prices, changes."
+      },
+      {
+       "term": "Transmission mechanism",
+       "def": "The channels through which the cash rate affects spending and inflation."
+      },
+      {
+       "term": "Distribution of wealth",
+       "def": "How net worth is shared across households."
+      }
+     ],
+     "tags": {
+      "h09": {
+       "about": [
+        {
+         "code": "3E.4",
+         "text": "sources of wealth"
+        },
+        {
+         "code": "4D.3",
+         "text": "impact of changes in interest rates on economic activity and the exchange rate"
+        },
+        {
+         "code": "3A.1",
+         "text": "aggregate demand and its components: Y = C + I + G + X – M"
+        }
+       ],
+       "also": [
+        {
+         "code": "3E.5",
+         "text": "dimensions and trends, according to gender, age, occupation, ethnic background and family structure"
+        },
+        {
+         "code": "4H.1",
+         "text": "time lags"
+        }
+       ]
+      },
+      "y12": {
+       "about": [
+        {
+         "code": "Y2c.5",
+         "text": "Effects of monetary policy on the economy, including the saving and investment channel, cash-flow channel, asset price and wealth channel and exchange rate channel"
+        },
+        {
+         "code": "Y1d.1",
+         "text": "Relationship between income and wealth"
+        },
+        {
+         "code": "Y1d.6",
+         "text": "Factors contributing to inequities in health and housing outcomes in Australia"
+        }
+       ],
+       "also": [
+        {
+         "code": "Y1d.5",
+         "text": "Causes of economic inequality, including educational disparities, asset price inflation, wealth transfers, structural changes to the economy and government policies"
+        },
+        {
+         "code": "Y1a.14",
+         "text": "Effects of economic growth and economic decline on households, businesses and the government"
+        }
+       ]
+      },
+      "y11": {
+       "about": [
+        {
+         "code": "P2d.1",
+         "text": "Effects of changes in demand and supply on equilibrium market price and equilibrium quantity"
+        },
+        {
+         "code": "P4c.7",
+         "text": "Effects of interest rate changes on housing affordability"
+        }
+       ],
+       "also": []
+      }
+     },
+     "home": [
+      "h09",
+      "T3"
+     ],
+     "also_topics": [
+      "h09:T4"
+     ],
+     "card_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/#item=2026-11-02-house-prices-fastest-fall-40-years&fw=h09",
+     "pdf_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/files/2026-11/2026-11-02-house-prices-fastest-fall-40-years.pdf",
+     "pdf_label": "One-page digest",
+     "pdf_pages": 1,
+     "pdf_path": "files/2026-11/2026-11-02-house-prices-fastest-fall-40-years.pdf",
+     "source_label": "ABC News, Largest property downturn in 40 years in sight, 2 Nov 2026",
+     "source_url": "https://www.abc.net.au/news/2026-11-02/house-prices-fall-in-october-biggest-downturn-40-years-cotality/107325214",
+     "n_links": 2
+    },
+    {
+     "id": "2026-11-02-inflation-gauge-factories-contract",
+     "status": "new",
+     "type": "stats",
+     "type_label": "Statistics",
+     "title": "Inflation pressures persist as factories contract",
+     "added": "2026-11-02",
+     "added_from": "record",
+     "date": "2026-11-02",
+     "date_text": "",
+     "outlets": [
+      "ABC News",
+      "Melbourne Institute",
+      "ABS"
+     ],
+     "summary": "A timely monthly inflation gauge and PMI, with the Phillips curve diagram showing why rising expectations make disinflation costlier.",
+     "lede": "The Melbourne Institute Inflation Gauge rose 0.5% in October (September 0.3%), its fourth straight monthly rise, while the manufacturing PMI fell to 49.6, its second month of contraction. The ABS reported headline CPI of 4.3% and trimmed mean of 3.6% for the year to September.",
+     "angle": "If people expect higher inflation, the short-run Phillips curve shifts out, so inflation rises even as unemployment rises and getting back to 2-3% becomes more costly. This is why the RBA targets underlying inflation and acts early to anchor expectations.",
+     "note": "The Melbourne Institute gauge is a private monthly estimate, not an official statistic. UPDATE DUE: RBA decision on 3 November.",
+     "questions": [
+      {
+       "q": "Distinguish between headline and underlying inflation, and explain why the RBA focuses on the trimmed mean.",
+       "marks": 4
+      }
+     ],
+     "figures": [
+      {
+       "i": 0,
+       "label": "Melbourne Institute Inflation Gauge, monthly",
+       "value": "+0.5% (September +0.3%; fourth straight rise)",
+       "asAt": "October 2026",
+       "issue": "inflation",
+       "source": "Melbourne Institute via ABC News"
+      },
+      {
+       "i": 1,
+       "label": "Manufacturing PMI",
+       "value": "49.6 (second month of contraction)",
+       "asAt": "October 2026",
+       "issue": "growth",
+       "source": "ABC News"
+      },
+      {
+       "i": 2,
+       "label": "Dwelling approvals",
+       "value": "+5.1% (apartments +16.6%, houses -5.3%)",
+       "asAt": "September 2026",
+       "issue": "housing",
+       "source": "ABS via ABC News"
+      },
+      {
+       "i": 3,
+       "label": "Headline CPI, annual",
+       "value": "4.3%",
+       "asAt": "September 2026",
+       "issue": "inflation",
+       "source": "ABS"
+      },
+      {
+       "i": 4,
+       "label": "Trimmed mean, annual",
+       "value": "3.6%",
+       "asAt": "September 2026",
+       "issue": "inflation",
+       "source": "ABS"
+      }
+     ],
+     "terms": [
+      {
+       "term": "Headline CPI",
+       "def": "The price change of the ABS's full basket of goods and services."
+      },
+      {
+       "term": "Trimmed mean",
+       "def": "Removes the largest price rises and falls; the RBA's preferred underlying measure."
+      },
+      {
+       "term": "Inflation expectations",
+       "def": "What people expect inflation to be, which feeds into wages and price-setting."
+      }
+     ],
+     "tags": {
+      "h09": {
+       "about": [
+        {
+         "code": "3C.1",
+         "text": "measurement — headline and underlying"
+        },
+        {
+         "code": "3C.2",
+         "text": "trends"
+        },
+        {
+         "code": "3C.3",
+         "text": "causes — demand inflation, cost inflation, imported inflation, inflationary expectations"
+        }
+       ],
+       "also": [
+        {
+         "code": "3C.4",
+         "text": "positive and negative effects"
+        },
+        {
+         "code": "3A.7",
+         "text": "trends in business cycle"
+        }
+       ]
+      },
+      "y12": {
+       "about": [
+        {
+         "code": "Y1c.3",
+         "text": "Distinction between the headline inflation rate and underlying inflation rate"
+        },
+        {
+         "code": "Y1c.8",
+         "text": "Reasons for trends in inflation and the cost of living in Australia"
+        },
+        {
+         "code": "Y1c.9",
+         "text": "Interpret and analyse inflation data through tables, time series line graphs, column charts and bar charts"
+        }
+       ],
+       "also": [
+        {
+         "code": "Y1c.4",
+         "text": "Types and causes of inflation, including demand-pull, cost-push, inflationary expectations, imported inflation"
+        },
+        {
+         "code": "Y1c.6",
+         "text": "Relationship between inflation, unemployment and potential output"
+        }
+       ]
+      },
+      "y11": {
+       "about": [],
+       "also": []
+      }
+     },
+     "home": [
+      "h09",
+      "T3"
+     ],
+     "also_topics": [],
+     "card_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/#item=2026-11-02-inflation-gauge-factories-contract&fw=h09",
+     "pdf_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/files/2026-11/2026-11-02-inflation-gauge-factories-contract.pdf",
+     "pdf_label": "One-page digest",
+     "pdf_pages": 1,
+     "pdf_path": "files/2026-11/2026-11-02-inflation-gauge-factories-contract.pdf",
+     "source_label": "ABC News, ASX markets business live blog, 2 Nov 2026",
+     "source_url": "https://www.abc.net.au/news/2026-11-02/asx-markets-business-live-news-nov-2/107334212",
+     "n_links": 2
+    },
+    {
+     "id": "2026-11-02-oil-eases-hormuz-talks",
+     "status": "new",
+     "type": "news",
+     "type_label": "News",
+     "title": "Oil eases on Hormuz talks, but the supply shock is not over",
+     "added": "2026-11-02",
+     "added_from": "record",
+     "date": "2026-11-02",
+     "date_text": "",
+     "outlets": [
+      "Euronews",
+      "ABC News"
+     ],
+     "summary": "Shows how a possible reopening of the Strait of Hormuz shifts oil supply back, while a geopolitical risk premium keeps prices high. Replaces the 30 October edition.",
+     "lede": "Brent crude fell about 2-3% on 2 November to around US$108-111 a barrel after rising 14-15% in October and peaking near US$118, as Iran held talks in Qatar on reopening the strait. Goldman Sachs estimates about US$27 a barrel is a geopolitical risk premium.",
+     "angle": "Short-run oil demand is inelastic, so a supply cut raises the price a lot. A deal that reopens the strait would shift supply back right. On an AD/AS diagram the shock shifts SRAS left: higher prices and lower output, or stagflation.",
+     "note": "Replaces the 30 October item, which reported Brent settling at US$117.64 and at least 35 attacks on shipping in October; that report put the Hormuz traffic about 70% below pre-war levels. Iran set conditions for reopening, including an end to the US naval blockade. UPDATE DUE: outcome of the talks.",
+     "questions": [
+      {
+       "q": "Explain how a disruption to oil supply in the Middle East can affect inflation and economic growth in Australia.",
+       "marks": 4
+      }
+     ],
+     "figures": [
+      {
+       "i": 0,
+       "label": "Brent crude",
+       "value": "about US$110 (range US$108-111; down 2-3%)",
+       "asAt": "2 November 2026",
+       "issue": "global",
+       "source": "Euronews; ABC News"
+      },
+      {
+       "i": 1,
+       "label": "Brent rise over October",
+       "value": "+14-15% (peak near US$118)",
+       "asAt": "October 2026",
+       "issue": "global",
+       "source": "Euronews; ABC News"
+      },
+      {
+       "i": 2,
+       "label": "Risk premium in the oil price (Goldman Sachs)",
+       "value": "about US$27 a barrel",
+       "asAt": "2 November 2026",
+       "issue": "global",
+       "source": "Goldman Sachs via Euronews"
+      },
+      {
+       "i": 3,
+       "label": "Goldman Sachs end-of-year Brent forecast",
+       "value": "US$105",
+       "asAt": "2026",
+       "issue": "global",
+       "source": "Goldman Sachs via Euronews"
+      },
+      {
+       "i": 4,
+       "label": "Italy's inflation",
+       "value": "5.4%",
+       "asAt": "October 2026",
+       "issue": "inflation",
+       "source": "Euronews"
+      },
+      {
+       "i": 5,
+       "label": "Australian fuel prices",
+       "value": "+9.4%",
+       "asAt": "September 2026",
+       "issue": "inflation",
+       "source": "ABS"
+      }
+     ],
+     "terms": [
+      {
+       "term": "Supply shock",
+       "def": "An unexpected event that cuts productive capacity or raises input costs."
+      },
+      {
+       "term": "Cost-push inflation",
+       "def": "Inflation driven by higher production costs rather than excess demand."
+      },
+      {
+       "term": "Price-inelastic demand",
+       "def": "Quantity demanded responds little to a price change, as for fuel in the short run."
+      }
+     ],
+     "tags": {
+      "h09": {
+       "about": [
+        {
+         "code": "3C.3",
+         "text": "causes — demand inflation, cost inflation, imported inflation, inflationary expectations"
+        },
+        {
+         "code": "1A.1",
+         "text": "the global economy"
+        }
+       ],
+       "also": [
+        {
+         "code": "3C.4",
+         "text": "positive and negative effects"
+        },
+        {
+         "code": "4D.3",
+         "text": "impact of changes in interest rates on economic activity and the exchange rate"
+        },
+        {
+         "code": "1A.8",
+         "text": "the international and regional business cycles"
+        }
+       ]
+      },
+      "y12": {
+       "about": [
+        {
+         "code": "Y1c.4",
+         "text": "Types and causes of inflation, including demand-pull, cost-push, inflationary expectations, imported inflation"
+        },
+        {
+         "code": "Y1c.5",
+         "text": "Interpret aggregate demand and supply graphs that demonstrate demand–pull inflation and cost–push inflation"
+        },
+        {
+         "code": "Y3e.3",
+         "text": "Effects of changes in the global economy on the performance and structure of Australia’s economy"
+        }
+       ],
+       "also": [
+        {
+         "code": "Y1c.1",
+         "text": "Distinctions between inflation, deflation, disinflation and stagflation"
+        },
+        {
+         "code": "Y1a.10",
+         "text": "Factors influencing the components of aggregate supply, including productivity, quality and quantity of inputs"
+        },
+        {
+         "code": "Y1a.13",
+         "text": "Construct and interpret aggregate demand and aggregate supply (AD-AS) graphs to demonstrate changes in GDP"
+        },
+        {
+         "code": "Y2c.8",
+         "text": "Limitations to the effectiveness of monetary policy, including policy lags, the zero lower bound and inability to target specific areas of the economy"
+        }
+       ]
+      },
+      "y11": {
+       "about": [],
+       "also": []
+      }
+     },
+     "home": [
+      "h09",
+      "T3"
+     ],
+     "also_topics": [
+      "h09:T1",
+      "h09:T4"
+     ],
+     "card_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/#item=2026-11-02-oil-eases-hormuz-talks&fw=h09",
+     "pdf_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/files/2026-11/2026-11-02-oil-eases-hormuz-talks.pdf",
+     "pdf_label": "One-page digest",
+     "pdf_pages": 1,
+     "pdf_path": "files/2026-11/2026-11-02-oil-eases-hormuz-talks.pdf",
+     "source_label": "Euronews, Oil slides on Hormuz deal hopes but Trump keeps Iran strikes on the table, 2 Nov 2026",
+     "source_url": "https://www.euronews.com/2026/11/02/oil-slides-on-hormuz-deal-hopes-but-trump-keeps-iran-strikes-on-the-table",
+     "n_links": 2
+    },
+    {
+     "id": "2026-10-25-record-quarterly-house-price-fall",
+     "status": "updated",
+     "type": "stats",
+     "type_label": "Statistics",
+     "title": "House prices record their biggest quarterly fall: down 4.7% in the September quarter",
+     "added": "2026-10-25",
+     "added_from": "record",
+     "date": "2026-10-25",
+     "date_text": "",
+     "outlets": [
+      "ABC News",
+      "Domain"
+     ],
+     "summary": "The largest quarterly fall in house prices on record, with the wealth effect and asset price channel of monetary policy.",
+     "lede": "Domain data show the national median house price fell 4.7% in the September quarter, the largest quarterly drop on record and the first time in 15 years that prices fell in every capital city. Regional South Australia rose 6.3% in the quarter and 19% over the year.",
+     "angle": "Housing is most households' main asset, so falling prices reduce wealth. The effect on the distribution of wealth is not clear-cut: affordability improves for buyers who can still borrow at higher rates.",
+     "note": "Domain median prices are one measure of the market. One economist expects falls to continue for another 6 to 12 months. See also the monthly Cotality figures filed on 2 November.",
+     "questions": [
+      {
+       "q": "Explain how falling house prices can reduce consumer spending through the wealth effect.",
+       "marks": 3
+      },
+      {
+       "q": "To what extent will falling house prices make the distribution of wealth in Australia more equal?",
+       "marks": 5
+      }
+     ],
+     "figures": [
+      {
+       "i": 0,
+       "label": "National median house price",
+       "value": "-4.7% (largest quarterly fall on record)",
+       "asAt": "September quarter 2026",
+       "issue": "housing",
+       "source": "Domain via ABC News"
+      },
+      {
+       "i": 1,
+       "label": "Regional areas overall",
+       "value": "-1.1%",
+       "asAt": "September quarter 2026",
+       "issue": "housing",
+       "source": "Domain via ABC News"
+      },
+      {
+       "i": 2,
+       "label": "Regional South Australia",
+       "value": "+6.3% in the quarter, +19% over 12 months",
+       "asAt": "September quarter 2026",
+       "issue": "housing",
+       "source": "Domain via ABC News"
+      }
+     ],
+     "terms": [
+      {
+       "term": "Wealth effect",
+       "def": "People spend less when the value of their assets, such as homes, falls."
+      },
+      {
+       "term": "Asset price channel",
+       "def": "How interest rate changes flow through to house and share prices."
+      }
+     ],
+     "tags": {
+      "h09": {
+       "about": [
+        {
+         "code": "3E.4",
+         "text": "sources of wealth"
+        },
+        {
+         "code": "4D.3",
+         "text": "impact of changes in interest rates on economic activity and the exchange rate"
+        }
+       ],
+       "also": [
+        {
+         "code": "3A.1",
+         "text": "aggregate demand and its components: Y = C + I + G + X – M"
+        }
+       ]
+      },
+      "y12": {
+       "about": [
+        {
+         "code": "Y1d.5",
+         "text": "Causes of economic inequality, including educational disparities, asset price inflation, wealth transfers, structural changes to the economy and government policies"
+        },
+        {
+         "code": "Y2c.5",
+         "text": "Effects of monetary policy on the economy, including the saving and investment channel, cash-flow channel, asset price and wealth channel and exchange rate channel"
+        }
+       ],
+       "also": [
+        {
+         "code": "Y1d.6",
+         "text": "Factors contributing to inequities in health and housing outcomes in Australia"
+        }
+       ]
+      },
+      "y11": {
+       "about": [
+        {
+         "code": "P4c.7",
+         "text": "Effects of interest rate changes on housing affordability"
+        }
+       ],
+       "also": []
+      }
+     },
+     "home": [
+      "h09",
+      "T3"
+     ],
+     "also_topics": [
+      "h09:T4"
+     ],
+     "card_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/#item=2026-10-25-record-quarterly-house-price-fall&fw=h09",
+     "pdf_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/files/2026-10/2026-10-25-record-quarterly-house-price-fall.pdf",
+     "pdf_label": "One-page digest",
+     "pdf_pages": 1,
+     "pdf_path": "files/2026-10/2026-10-25-record-quarterly-house-price-fall.pdf",
+     "source_label": "ABC News, Some regions still climbing as nation sees record drop in house prices, 25 Oct 2026",
+     "source_url": "https://www.abc.net.au/news/2026-10-25/sa-sees-nations-largest-increase-in-regional-house-prices/107300928",
+     "n_links": 1,
+     "update": {
+      "fields": [
+       "note"
+      ],
+      "text": {
+       "note": {
+        "before": "Domain median prices are one measure of the market. One economist expects falls to continue for another 6 to 12 months. See also the monthly figures filed on 22 October.",
+        "after": "Domain median prices are one measure of the market. One economist expects falls to continue for another 6 to 12 months. See also the monthly Cotality figures filed on 2 November."
+       }
+      },
+      "figures_added": [],
+      "figures_changed": [],
+      "links_added": []
+     }
+    }
+   ]
+  },
+  {
+   "key": "h09:T4",
+   "fw": "h09",
+   "course": "hsc",
+   "course_label": "HSC · 2009 syllabus",
+   "label": "Economic Policies and Management",
+   "part": "Topic 4",
+   "color": "#8a3fb0",
+   "items": [
+    {
+     "id": "2026-11-02-banks-cut-growth-forecasts-stagflation",
+     "status": "new",
+     "type": "news",
+     "type_label": "News",
+     "title": "Banks see slower growth and higher unemployment, but still expect a hike",
+     "added": "2026-11-02",
+     "added_from": "record",
+     "date": "2026-11-02",
+     "date_text": "",
+     "outlets": [
+      "ABC News",
+      "NAB",
+      "CBA"
+     ],
+     "summary": "A current stagflation example: NAB and CBA cut growth to about 1% and lifted unemployment forecasts while inflation stays above target.",
+     "lede": "NAB cut its 2027 GDP growth forecast to 1.0% and expects unemployment to reach 5.4% by the end of 2027, while CBA cut growth to about 1% by mid-2027 from 1.8% and raised its unemployment forecast to 5.1% from 4.8%. CBA expects trimmed mean inflation to stay at or above 3.5% until at least mid-2027.",
+     "angle": "Higher fuel and construction costs shift SRAS left, so prices rise while output falls. Raising rates to fight supply-driven inflation deepens the slowdown, a key limitation of monetary policy.",
+     "note": "Bank forecasts are projections, not outcomes, and the digest relies on an ABC live blog summary. The \"stagflation\" label is the digest's description. UPDATE DUE: RBA forecasts on 3 November.",
+     "questions": [
+      {
+       "q": "Explain why policymakers find it difficult to achieve internal balance when inflation rises while growth slows.",
+       "marks": 5
+      }
+     ],
+     "figures": [
+      {
+       "i": 0,
+       "label": "NAB GDP growth forecast",
+       "value": "1.0% (2027)",
+       "asAt": "2 November 2026",
+       "issue": "growth",
+       "source": "NAB via ABC News"
+      },
+      {
+       "i": 1,
+       "label": "NAB unemployment forecast",
+       "value": "5.4% by end-2027",
+       "asAt": "2 November 2026",
+       "issue": "employment",
+       "source": "NAB via ABC News"
+      },
+      {
+       "i": 2,
+       "label": "CBA growth forecast",
+       "value": "about 1% by mid-2027 (was 1.8%)",
+       "asAt": "2 November 2026",
+       "issue": "growth",
+       "source": "CBA via ABC News"
+      },
+      {
+       "i": 3,
+       "label": "CBA unemployment forecast",
+       "value": "5.1% (was 4.8%)",
+       "asAt": "2 November 2026",
+       "issue": "employment",
+       "source": "CBA via ABC News"
+      },
+      {
+       "i": 4,
+       "label": "CBA trimmed mean forecast",
+       "value": "3.5% or more until at least mid-2027",
+       "asAt": "2 November 2026",
+       "issue": "inflation",
+       "source": "CBA via ABC News"
+      },
+      {
+       "i": 5,
+       "label": "CBA wage growth forecast",
+       "value": "2.9% by late 2028",
+       "asAt": "2 November 2026",
+       "issue": "employment",
+       "source": "CBA via ABC News"
+      }
+     ],
+     "terms": [
+      {
+       "term": "Stagflation",
+       "def": "High inflation combined with weak growth or rising unemployment."
+      },
+      {
+       "term": "Internal balance",
+       "def": "Sustainable growth with full employment and low, stable inflation."
+      },
+      {
+       "term": "Trimmed mean",
+       "def": "An underlying inflation measure that removes extreme price changes."
+      }
+     ],
+     "tags": {
+      "h09": {
+       "about": [
+        {
+         "code": "4I.2",
+         "text": "full employment"
+        },
+        {
+         "code": "4I.3",
+         "text": "price stability"
+        },
+        {
+         "code": "3C.3",
+         "text": "causes — demand inflation, cost inflation, imported inflation, inflationary expectations"
+        }
+       ],
+       "also": [
+        {
+         "code": "3A.7",
+         "text": "trends in business cycle"
+        },
+        {
+         "code": "3B.2",
+         "text": "trends"
+        },
+        {
+         "code": "4D.3",
+         "text": "impact of changes in interest rates on economic activity and the exchange rate"
+        }
+       ]
+      },
+      "y12": {
+       "about": [
+        {
+         "code": "Y1c.1",
+         "text": "Distinctions between inflation, deflation, disinflation and stagflation"
+        },
+        {
+         "code": "Y1c.6",
+         "text": "Relationship between inflation, unemployment and potential output"
+        },
+        {
+         "code": "Y2c.8",
+         "text": "Limitations to the effectiveness of monetary policy, including policy lags, the zero lower bound and inability to target specific areas of the economy"
+        }
+       ],
+       "also": [
+        {
+         "code": "Y1b.11",
+         "text": "Reasons for trends in employment and unemployment in Australia"
+        },
+        {
+         "code": "Y1a.14",
+         "text": "Effects of economic growth and economic decline on households, businesses and the government"
+        }
+       ]
+      },
+      "y11": {
+       "about": [],
+       "also": []
+      }
+     },
+     "home": [
+      "h09",
+      "T4"
+     ],
+     "also_topics": [
+      "h09:T3"
+     ],
+     "card_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/#item=2026-11-02-banks-cut-growth-forecasts-stagflation&fw=h09",
+     "pdf_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/files/2026-11/2026-11-02-banks-cut-growth-forecasts-stagflation.pdf",
+     "pdf_label": "One-page digest",
+     "pdf_pages": 1,
+     "pdf_path": "files/2026-11/2026-11-02-banks-cut-growth-forecasts-stagflation.pdf",
+     "source_label": "ABC News, ASX markets business live blog, 2 Nov 2026",
+     "source_url": "https://www.abc.net.au/news/2026-11-02/asx-markets-business-live-news-nov-2/107334212",
+     "n_links": 1
+    },
+    {
+     "id": "2026-11-02-spending-cuts-vs-rate-rises",
+     "status": "new",
+     "type": "news",
+     "type_label": "News",
+     "title": "Could government spending cuts do the RBA's job?",
+     "added": "2026-11-02",
+     "added_from": "record",
+     "date": "2026-11-02",
+     "date_text": "",
+     "outlets": [
+      "ABC News"
+     ],
+     "summary": "Compares contractionary fiscal policy with a rate rise as ways to reduce inflation, with Chris Richardson's rule of thumb.",
+     "lede": "With a fifth rate rise for the year expected, economists and politicians are debating whether the budget should do more of the work of bringing inflation down. Chris Richardson estimates that $7-10 billion a year in spending cuts would have about the same effect as one rate rise.",
+     "angle": "Evaluate both arms: fiscal policy can be targeted but is slow and political, while monetary policy is flexible but blunt and falls mainly on borrowers. If the budget does more, the RBA may need to do less.",
+     "note": "The Richardson estimate is a rule of thumb, not a precise forecast. The Opposition named the home battery program and EV discount as possible cuts; that is its proposal. UPDATE DUE: RBA decision on 3 November.",
+     "questions": [
+      {
+       "q": "Evaluate the effectiveness of contractionary fiscal policy, compared with monetary policy, in reducing inflation.",
+       "marks": 6
+      }
+     ],
+     "figures": [
+      {
+       "i": 0,
+       "label": "Spending cuts equal to one rate rise (Chris Richardson)",
+       "value": "$7-10 billion a year",
+       "asAt": "2 November 2026",
+       "issue": "budget",
+       "source": "ABC News"
+      },
+      {
+       "i": 1,
+       "label": "Cash rate before the decision / if the hike is delivered",
+       "value": "4.60% / 4.85%",
+       "asAt": "3 November 2026",
+       "issue": "rates",
+       "source": "ABC News"
+      },
+      {
+       "i": 2,
+       "label": "Fuel tax credits",
+       "value": "more than $10 billion a year",
+       "asAt": "2026",
+       "issue": "budget",
+       "source": "ABC News"
+      }
+     ],
+     "terms": [
+      {
+       "term": "Fiscal policy",
+       "def": "Using government spending and taxation to influence the economy."
+      },
+      {
+       "term": "Contractionary policy",
+       "def": "Settings that reduce aggregate demand."
+      },
+      {
+       "term": "Policy mix",
+       "def": "The combination of fiscal and monetary policy settings."
+      }
+     ],
+     "tags": {
+      "h09": {
+       "about": [
+        {
+         "code": "4B.1",
+         "text": "rationale for macroeconomic policies — stabilisation and shifts in aggregate demand"
+        },
+        {
+         "code": "4C.2",
+         "text": "effects of budgetary changes on resource use, income distribution and economic activity"
+        },
+        {
+         "code": "4D.2",
+         "text": "implementation of monetary policy by the Reserve Bank of Australia"
+        }
+       ],
+       "also": [
+        {
+         "code": "4H.1",
+         "text": "time lags"
+        },
+        {
+         "code": "4H.3",
+         "text": "political constraints"
+        }
+       ]
+      },
+      "y12": {
+       "about": [
+        {
+         "code": "Y2b.3",
+         "text": "Fiscal stance, including neutral, contractionary and expansionary"
+        },
+        {
+         "code": "Y2b.13",
+         "text": "Effectiveness of fiscal policy in achieving Australia’s economic objectives, including reference to relevant data"
+        },
+        {
+         "code": "Y2b.14",
+         "text": "Limitations to the effectiveness of fiscal policy, including policy lags, political considerations, global influences, the relative size of Australian Government debt and credit ratings"
+        }
+       ],
+       "also": [
+        {
+         "code": "Y2c.7",
+         "text": "Effectiveness of monetary policy in achieving the RBA’s economic objectives of price stability and full employment, including reference to relevant data"
+        },
+        {
+         "code": "Y2c.8",
+         "text": "Limitations to the effectiveness of monetary policy, including policy lags, the zero lower bound and inability to target specific areas of the economy"
+        }
+       ]
+      },
+      "y11": {
+       "about": [],
+       "also": []
+      }
+     },
+     "home": [
+      "h09",
+      "T4"
+     ],
+     "also_topics": [],
+     "card_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/#item=2026-11-02-spending-cuts-vs-rate-rises&fw=h09",
+     "pdf_url": "https://phillippain.github.io/HSC-Economics/evidence-finder/files/2026-11/2026-11-02-spending-cuts-vs-rate-rises.pdf",
+     "pdf_label": "One-page digest",
+     "pdf_pages": 1,
+     "pdf_path": "files/2026-11/2026-11-02-spending-cuts-vs-rate-rises.pdf",
+     "source_label": "ABC News, Could government spending cuts help fight inflation?, 2 Nov 2026",
+     "source_url": "https://www.abc.net.au/news/2026-11-02/government-spending-cuts-to-control-inflation-explained/107337846",
+     "n_links": 2
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "data/evidence.json has uncommitted changes: commit and push before sending, or the card and PDF links will not exist on the site yet.",
+  "These items say an update is due (see their note): 2026-11-03-global-rates-government-debt, 2026-11-02-oil-eases-hormuz-talks, 2026-11-02-uk-fta-backpacker-rules, 2026-11-02-commodity-prices-aud-softens, 2026-11-02-banks-cut-growth-forecasts-stagflation, 2026-11-02-inflation-gauge-factories-contract, 2026-11-02-spending-cuts-vs-rate-rises"
+ ]
+}
