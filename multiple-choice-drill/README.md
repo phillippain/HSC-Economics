@@ -40,8 +40,10 @@ Rebuild after the Question Finder changes (for example when the 2026 paper and i
 correct option and a `not` note for each wrong option. NESA publishes keys only, so these
 were written for the site and should be reviewed by a teacher; the page labels them as not
 from NESA. The build checks that every entry matches a real question and covers exactly the
-wrong options. Questions without an entry simply show no explanation. Written so far: the
-2025 and 2024 papers (40 of 340 questions).
+wrong options. Questions without an entry simply show no explanation. All 340 questions
+(2009 to 2025) have one. An optional `check` field holds a note for the teacher: it appears
+on `review.html` only, never in the drill. `review.html` is rebuilt with the drill and lists
+every explanation on one printable page, with the flagged ones first.
 
 Papers added before NESA publishes the marking guidelines (2026 at the time of writing) have
 no key in the Question Finder, so the build leaves them out and the page says so.

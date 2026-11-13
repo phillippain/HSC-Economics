@@ -318,5 +318,2402 @@
    "C": "12.5% is nominal GDP growth, and 10 is index points, not the inflation rate.",
    "D": "Inflation is right, but 12.5% is nominal growth with price rises still included."
   }
+ },
+ "2023-1": {
+  "why": "The OECD is a group of mostly advanced economies that share research and coordinate policy to support sustainable growth, employment and living standards in its members.",
+  "not": {
+   "A": "Low-interest and interest-free development loans come from the World Bank.",
+   "C": "Supporting liquidity in a financial crisis is the role of the IMF.",
+   "D": "A forum of the seven largest advanced economies is the G7."
+  }
+ },
+ "2023-2": {
+  "why": "Mining (iron ore, coal, gas) is by far Australia's largest export earner by value.",
+  "not": {
+   "A": "Manufacturing is a small and declining share of Australia's exports.",
+   "C": "Rural exports are significant but far smaller than mining.",
+   "D": "Services (education, tourism) are important but well below mining in value."
+  }
+ },
+ "2023-3": {
+  "why": "Keeping 16 and 17 year olds at school removes them from the labour force while they are still counted in the working age population (15 and over), so the participation rate falls.",
+  "not": {
+   "A": "Higher GDP creates jobs and draws people into the labour force.",
+   "B": "More childcare places make it easier for parents to work, raising participation.",
+   "D": "A later retirement age keeps older workers in the labour force, raising participation."
+  }
+ },
+ "2023-4": {
+  "why": "AD has shifted to the right. Lower taxes raise disposable income and consumption, increasing aggregate demand.",
+  "not": {
+   "B": "Imports are a leakage: more imports reduce aggregate demand.",
+   "C": "Lower consumption shifts AD to the left.",
+   "D": "Capacity constraints limit aggregate supply; they do not shift AD to the right."
+  }
+ },
+ "2023-5": {
+  "why": "A tariff raises the price of imported farm products for Country A's consumers. Country B's farmers sell less to Country A, so their income falls.",
+  "not": {
+   "A": "Prices do rise in Country A, but exporters in Country B lose sales and income.",
+   "C": "A tariff makes imports dearer, not cheaper, and it does not help Country B's producers.",
+   "D": "Country B's producers do lose income, but prices in Country A rise."
+  }
+ },
+ "2023-6": {
+  "why": "Free trade lets resources move to industries where Australia has a comparative advantage and opens larger markets, lifting productivity and long-run real GDP.",
+  "not": {
+   "A": "Agreements favour members, so trade can be diverted away from non-members.",
+   "B": "Removing tariffs reduces tariff revenue.",
+   "D": "Less competitive industries shrink at first, which raises structural unemployment in the short term."
+  }
+ },
+ "2023-7": {
+  "why": "A public good is non-excludable and non-rival: no one can be stopped from breathing clean air, and one person's use does not reduce another's.",
+  "not": {
+   "B": "Public housing is excludable and rival: a home given to one family is not available to another.",
+   "C": "Internet access is excludable (you pay for a connection).",
+   "D": "Bus travel is excludable by fare and seats are rival, even when the government provides it."
+  }
+ },
+ "2023-8": {
+  "why": "A contractionary stance takes more out of the economy than before. Moving from a $10 million to a $20 million surplus does that.",
+  "not": {
+   "A": "A smaller surplus means the budget is taking less out of the economy: expansionary.",
+   "B": "The outcome has not changed, so the stance is unchanged.",
+   "C": "A larger deficit is more expansionary."
+  }
+ },
+ "2023-9": {
+  "why": "A rising HDI means better health, education and income. Greater access to transport and communication is a mark of development and of integration with the global economy.",
+  "not": {
+   "A": "More protection cuts an economy off from trade and usually slows development.",
+   "B": "Less access to technology would hold back education and income.",
+   "D": "Lower financial flows mean less investment, which slows development."
+  }
+ },
+ "2023-10": {
+  "why": "A smaller quota lets in fewer imports. One reason to restrict imports is to stop foreign firms dumping goods at below-cost prices on the local market.",
+  "not": {
+   "B": "Fewer imports would increase a current account surplus, not reduce it.",
+   "C": "Protection raises prices and reduces choice, lowering living standards.",
+   "D": "Protection shelters less efficient industries; it works against specialisation by comparative advantage."
+  }
+ },
+ "2023-11": {
+  "why": "The supply of Australian dollars has decreased (S1 to S2 is a shift left). Australians supply dollars when they buy imports, so lower demand for imports reduces supply.",
+  "not": {
+   "A": "Higher commodity prices increase the demand for Australian dollars; they do not reduce supply.",
+   "B": "Lower Australian interest rates send funds overseas, which increases the supply of dollars.",
+   "D": "Fewer investment opportunities reduce foreign demand for dollars, and may increase supply as Australians invest abroad."
+  }
+ },
+ "2023-12": {
+  "why": "A lower cash rate lowers borrowing costs. Cheaper credit raises demand for assets such as houses and shares, lifting their prices, and makes more business investment worthwhile.",
+  "not": {
+   "A": "Both are the wrong direction: these are the effects of a higher cash rate.",
+   "B": "Investment does rise, but cheaper credit pushes asset prices up, not down.",
+   "C": "Asset prices do rise, but lower borrowing costs increase investment."
+  }
+ },
+ "2023-13": {
+  "why": "Net foreign liabilities = all foreign liabilities minus all foreign assets. Liabilities: loans owed to foreigners 1200 + Country X assets owned by foreigners 500 = 1700. Assets: loans owed by foreigners 300 + foreign assets owned 200 = 500. 1700 − 500 = $1200 billion.",
+  "not": {
+   "A": "$600 billion does not come from the four items: all the liabilities must be added before all the assets are taken away.",
+   "B": "$800 billion subtracts items that should be added: foreign-owned assets in Country X are a liability.",
+   "C": "$900 billion is net foreign debt only (1200 − 300). Net foreign equity (500 − 200) has been left out."
+  }
+ },
+ "2023-14": {
+  "why": "Producers ignore the external cost they impose on others. A tax adds that cost to their own costs, raising marginal private cost towards marginal social cost so that less is produced.",
+  "not": {
+   "B": "Lowering private cost would encourage even more production.",
+   "C": "The tax is on producers' costs; it does not change the benefit buyers receive.",
+   "D": "The problem is on the cost side of production, not the benefit side."
+  }
+ },
+ "2023-15": {
+  "why": "Terms of trade = export price index ÷ import price index × 100. Export prices falling while import prices rise makes the ratio fall sharply.",
+  "not": {
+   "B": "If both fall by the same percentage the ratio does not change.",
+   "C": "Export prices up and import prices down is an improvement.",
+   "D": "If both rise by the same percentage the ratio does not change."
+  }
+ },
+ "2023-16": {
+  "why": "The rate is fixed at 0.50, below the market equilibrium of 0.75. At 0.50 demand for the currency exceeds supply, so the central bank must supply more of its own currency by selling it and buying foreign currency.",
+  "not": {
+   "A": "Higher interest rates would attract funds and push the currency further above the fixed rate.",
+   "C": "Buying the domestic currency adds to demand and pushes its value up.",
+   "D": "Restricting outflows reduces the supply of the currency, pushing its value up."
+  }
+ },
+ "2023-17": {
+  "why": "Contribution = weight × price rise. Education 15 × 15 = 225; Food 35 × 10 = 350; Health 20 × 25 = 500; Housing 16 × 30 = 480. Health is the largest.",
+  "not": {
+   "A": "Education has the smallest contribution (225).",
+   "B": "Food has the largest weight but the smallest price rise (350).",
+   "D": "Housing has the largest price rise but a smaller weight than Health (480)."
+  }
+ },
+ "2023-18": {
+  "why": "Income rose by 100 and consumption by 80, so MPC = 0.8 and the multiplier is 1 ÷ (1 − 0.8) = 5. Extra income = 5 × 50 = 250, so national income = 1100 + 250 = $1350 million.",
+  "not": {
+   "A": "$1150 million just adds the $50 million with no multiplier.",
+   "B": "$1200 million uses a multiplier of 2.",
+   "D": "$1600 million uses a multiplier of 10."
+  }
+ },
+ "2023-19": {
+  "why": "At the world price of $5, domestic supply is 50 000 and demand is 150 000, so imports are 100 000. A subsidy does not change the price consumers pay, so to cut imports by 50 000 domestic supply must rise to 100 000. Producers supply 100 000 only at $15, so the subsidy is $15 − $5 = $10.",
+  "not": {
+   "A": "A $5 subsidy gives producers $10, at which they supply 75 000: imports fall by only 25 000.",
+   "C": "$15 is the price producers need to receive, not the subsidy on top of the $5 world price.",
+   "D": "A $20 subsidy would lift supply to 150 000 and end imports altogether."
+  }
+ },
+ "2023-20": {
+  "why": "The TWI weights each currency by its share of trade. A 10% fall against the yen (weight 13) outweighs a 10% rise against the US dollar (weight 8), so the index falls.",
+  "not": {
+   "A": "The rise against the renminbi (31) far outweighs the fall against the euro (9): the TWI rises.",
+   "B": "The rise against the yen (13) outweighs the fall against the won (7): the TWI rises.",
+   "C": "The rise against the euro (9) slightly outweighs the fall against the US dollar (8): the TWI rises a little."
+  }
+ },
+ "2022-1": {
+  "why": "The IMF oversees the international monetary system and lends to countries in financial difficulty to keep the global financial system stable.",
+  "not": {
+   "A": "The World Bank funds development projects to reduce poverty.",
+   "B": "The United Nations deals with peace, security and development, not financial stability.",
+   "D": "The OECD researches and coordinates economic policy among its members."
+  }
+ },
+ "2022-2": {
+  "why": "To be unemployed a person must be actively looking for work. Someone who has given up looking is a discouraged (hidden unemployed) worker: not counted as unemployed and not in the labour force.",
+  "not": {
+   "B": "The labour force is the employed plus the unemployed; this person is neither.",
+   "C": "A person cannot be unemployed without being in the labour force.",
+   "D": "They are no longer actively seeking work, so they are not counted as unemployed."
+  }
+ },
+ "2022-3": {
+  "why": "Transnational corporations drive trade and investment across borders, so a decline in their significance would slow globalisation.",
+  "not": {
+   "A": "Migration moves labour between economies, which is part of globalisation.",
+   "B": "Larger financial flows link economies more closely.",
+   "C": "Lower protection increases trade."
+  }
+ },
+ "2022-4": {
+  "why": "Full employment is the lowest rate of unemployment that does not cause inflation to accelerate (the NAIRU). Some frictional and structural unemployment remains.",
+  "not": {
+   "A": "There are always people between jobs, so unemployment is never zero.",
+   "B": "At full employment there is no cyclical unemployment.",
+   "C": "Frictional unemployment also remains, not only structural."
+  }
+ },
+ "2022-5": {
+  "why": "A lower currency means more local currency is needed to buy the same imports, so import prices rise and feed into inflation.",
+  "not": {
+   "A": "Imports become dearer, not cheaper.",
+   "C": "Exports do become cheaper for foreign buyers, but dearer imports and stronger demand add to inflation.",
+   "D": "A depreciation makes exports cheaper for foreign buyers, not more expensive."
+  }
+ },
+ "2022-6": {
+  "why": "Tradable permits create a market for the right to use water, so the price of permits rations use. That is a market-based policy.",
+  "not": {
+   "A": "A target is a goal, such as an emissions level by a set year.",
+   "B": "A regulation is a direct rule or ban, with no buying and selling.",
+   "D": "This is a domestic scheme, not an agreement between countries."
+  }
+ },
+ "2022-7": {
+  "why": "Buying shares worth $1 million in a large bank is well under 10% of the company, so it is not direct investment. NESA accepted both portfolio investment and other investment for this question.",
+  "not": {
+   "A": "Direct investment needs a holding of 10% or more, giving a say in running the company.",
+   "C": "Financial derivatives are contracts such as futures and options, not shares."
+  }
+ },
+ "2022-8": {
+  "why": "AD has shifted to the left. Exports are an injection: an increase in exports would shift AD to the right, so it cannot be the cause.",
+  "not": {
+   "B": "More imports are a leakage that reduces AD, so this could cause the shift.",
+   "C": "Lower business investment reduces AD, so this could cause the shift.",
+   "D": "Lower government spending reduces AD, so this could cause the shift."
+  }
+ },
+ "2022-9": {
+  "why": "A wage subsidy is government spending. Ending it lowers spending and so reduces the budget deficit.",
+  "not": {
+   "A": "Removing support is contractionary; it does not expand the economy.",
+   "C": "Ending a spending program would increase a surplus, not reduce it.",
+   "D": "Discouraging hiring is a side effect a government would want to avoid, not a reason."
+  }
+ },
+ "2022-10": {
+  "why": "Blocking a merger is a rule applied by government (regulation), and airlines sell a service to consumers, so the market is a product market.",
+  "not": {
+   "A": "Factor markets are for inputs such as labour and capital, not air travel.",
+   "C": "Stopping a merger is regulation, and this is not a factor market.",
+   "D": "It is a product market, but the government is intervening, which is regulation rather than deregulation."
+  }
+ },
+ "2022-11": {
+  "why": "Current account = net goods + net services + primary income + secondary income = 80.5 + 10.2 − 63.8 − 4.3 = $22.6 billion (a surplus).",
+  "not": {
+   "B": "The size is right but the sign is wrong: the positive goods and services balance is larger than the income deficits.",
+   "C": "$30.7 billion is the size of the capital and financial account (13.2 + 17.5).",
+   "D": "−$30.7 billion is the capital and financial account, not the current account."
+  }
+ },
+ "2022-12": {
+  "why": "The GST is regressive: lower-income households spend a larger share of their income, so a higher rate takes proportionally more from them. Inequality rises, which is a higher Gini coefficient.",
+  "not": {
+   "A": "A higher GST widens inequality; it does not reduce it.",
+   "B": "A lower Gini coefficient means more equality, so this option contradicts itself.",
+   "C": "A higher Gini coefficient means more inequality, so this option contradicts itself."
+  }
+ },
+ "2022-13": {
+  "why": "Cheaper childcare makes paid work worthwhile for more parents, so more of them join the labour force.",
+  "not": {
+   "A": "A lower tax-free threshold means tax is paid on more income, reducing the reward for working.",
+   "C": "A higher top marginal rate reduces the incentive to work.",
+   "D": "Keeping young people at school longer takes them out of the labour force."
+  }
+ },
+ "2022-14": {
+  "why": "AD shifting left and AS shifting left both reduce output, so GDP falls for certain.",
+  "not": {
+   "A": "Both shifts to the right raise GDP.",
+   "B": "AD right raises output while AS left lowers it: the result is uncertain.",
+   "C": "AD left lowers output while AS right raises it: the result is uncertain."
+  }
+ },
+ "2022-15": {
+  "why": "The NAIRU depends on structural and frictional unemployment. Training gives the unemployed the skills employers want, lowering structural unemployment.",
+  "not": {
+   "A": "Interest rates affect cyclical unemployment, not the NAIRU.",
+   "B": "Higher company tax discourages investment and hiring.",
+   "C": "Higher welfare payments can reduce the incentive to seek work, which may raise the NAIRU."
+  }
+ },
+ "2022-16": {
+  "why": "Real GDP = nominal GDP ÷ CPI × 100. Country C: 23 ÷ 118 × 100 = 19.5, below the $20 billion of Year 1, so real growth is negative.",
+  "not": {
+   "A": "18 ÷ 90 × 100 = 20: no change.",
+   "B": "22 ÷ 110 × 100 = 20: no change.",
+   "D": "27 ÷ 130 × 100 = 20.8: positive growth."
+  }
+ },
+ "2022-17": {
+  "why": "Income rose by 400 and consumption by 320, so MPC = 0.8 and the multiplier is 5. A $30 million fall in investment lowers income by 5 × 30 = 150, to 2400 − 150 = $2250 million.",
+  "not": {
+   "A": "$1970 million does not come from the multiplier of 5.",
+   "C": "$2370 million just subtracts the $30 million with no multiplier.",
+   "D": "$2400 million assumes income does not change."
+  }
+ },
+ "2022-18": {
+  "why": "Terms of trade: Year 2 = 115 ÷ 105 × 100 = 109.5; Year 3 = 110 ÷ 85 × 100 = 129.4, an improvement. It came from a large fall in import prices, which lower foreign labour costs would explain.",
+  "not": {
+   "B": "The terms of trade do improve, but export prices fell (115 to 110); stronger global demand would have raised them.",
+   "C": "The terms of trade improved; they did not deteriorate.",
+   "D": "A greater supply of foreign raw materials would lower import prices, but that improves the terms of trade."
+  }
+ },
+ "2022-19": {
+  "why": "With the $6 tariff the price is $14, the no-trade equilibrium, so there are no imports and no revenue. With the $4 tariff the price is $12: supply 30 million, demand 50 million, imports 20 million. Revenue = 20 million × $4 = $80 million, up from zero.",
+  "not": {
+   "B": "Revenue was zero before, so it cannot decrease.",
+   "C": "$240 million is total spending on imports at the new price (20 million × $12), not tariff revenue.",
+   "D": "Revenue rises, and $240 million is import spending, not revenue."
+  }
+ },
+ "2022-20": {
+  "why": "Before, there were no imports. After, 20 million units are imported and foreign producers receive the world price of $8 each: 20 million × $8 = $160 million.",
+  "not": {
+   "A": "$40 million does not match any area on the diagram for the new imports.",
+   "B": "$80 million is the tariff revenue, which goes to the government.",
+   "D": "$240 million is what consumers pay for imports including the tariff (20 million × $12)."
+  }
+ },
+ "2021-1": {
+  "why": "The WTO administers the rules of world trade and runs a dispute settlement process for members.",
+  "not": {
+   "B": "Low-interest loans come from the World Bank and the IMF.",
+   "C": "Countries set their own tariffs and subsidies; the WTO provides a forum to negotiate limits on them.",
+   "D": "Trading blocs are formed by the countries themselves."
+  }
+ },
+ "2021-2": {
+  "why": "High income per person and a diversified (wide) export base are features of an advanced economy. Population size is not part of the classification.",
+  "not": {
+   "A": "Emerging economies are industrialising quickly but have middle incomes.",
+   "C": "Developing economies have low incomes and usually a narrow export base.",
+   "D": "An economic forum is a group of countries, such as the G20, not a type of economy."
+  }
+ },
+ "2021-3": {
+  "why": "The national minimum wage is set each year by the Fair Work Commission. It is not one of the National Employment Standards, which cover leave, hours and similar conditions.",
+  "not": {
+   "A": "Annual leave is one of the National Employment Standards.",
+   "B": "Public holidays are one of the National Employment Standards.",
+   "D": "The right to request flexible working arrangements is one of the National Employment Standards."
+  }
+ },
+ "2021-4": {
+  "why": "Lower economic activity means lower incomes, profits and spending, so tax revenue falls. Welfare spending also rises, so the deficit is larger than planned.",
+  "not": {
+   "B": "Revenue does fall, but less revenue makes a deficit bigger.",
+   "C": "Tax revenue falls in a downturn; it does not rise.",
+   "D": "Both are the wrong direction."
+  }
+ },
+ "2021-5": {
+  "why": "The structural component is what the budget balance would be with the effect of the business cycle removed, so it shows the government's deliberate decisions.",
+  "not": {
+   "A": "The cyclical component changes automatically with the level of economic activity.",
+   "C": "The headline cash balance is a measure of the total outcome, including both components.",
+   "D": "The underlying cash balance is also a measure of the total outcome, not of policy decisions alone."
+  }
+ },
+ "2021-6": {
+  "why": "A higher Gini coefficient means more inequality. A consumption tax is regressive: it takes a larger share of income from low-income earners.",
+  "not": {
+   "A": "A higher tax-free threshold helps low-income earners most, reducing inequality.",
+   "C": "Training raises workers' skills and wages, which tends to reduce inequality.",
+   "D": "Welfare spending goes mostly to low-income households, reducing inequality."
+  }
+ },
+ "2021-7": {
+  "why": "Automatic stabilisers work without a new decision. As incomes rise in an upswing, taxpayers move into higher brackets and pay more tax, which slows growth.",
+  "not": {
+   "A": "Changing tax rates is a deliberate (discretionary) decision.",
+   "B": "Infrastructure spending is a discretionary decision.",
+   "C": "Changing benefit rates is a discretionary decision. The stabiliser is the number of people receiving benefits."
+  }
+ },
+ "2021-8": {
+  "why": "A larger quota allows more imports and lower tariffs make them cheaper: both reduce protection.",
+  "not": {
+   "A": "Higher tariffs increase protection.",
+   "B": "Export incentives are a form of protection, so increasing them moves away from free trade.",
+   "D": "A smaller quota allows fewer imports, which is more protection."
+  }
+ },
+ "2021-9": {
+  "why": "Cheaper imports reduce import payments, and a depreciation makes exports more competitive and imports less attractive. Both improve the current account.",
+  "not": {
+   "A": "Lower net saving means more borrowing from overseas, which worsens the current account.",
+   "C": "Higher export prices help, but higher debt servicing costs enlarge the primary income deficit.",
+   "D": "More business investment usually means more imports of capital goods and more foreign borrowing."
+  }
+ },
+ "2021-10": {
+  "why": "From X to Y the economy is slowing. Contractionary policy does that: higher taxes (fiscal) and a higher cash rate (monetary) both reduce spending.",
+  "not": {
+   "A": "Higher taxes are contractionary, but a lower cash rate is expansionary.",
+   "B": "Both are expansionary and would lift GDP.",
+   "C": "A higher cash rate is contractionary, but lower taxes are expansionary."
+  }
+ },
+ "2021-11": {
+  "why": "Inflation = (148 − 140) ÷ 140 × 100 = 5.7%.",
+  "not": {
+   "A": "5.4% divides by the new index (8 ÷ 148) instead of the previous year's.",
+   "C": "6.2% does not use the Year 2 index as the base.",
+   "D": "8 is the rise in index points, not a percentage."
+  }
+ },
+ "2021-12": {
+  "why": "A higher MPS means more of each extra dollar leaks into saving. The multiplier, 1 ÷ MPS, is smaller, and with less consumption national income falls.",
+  "not": {
+   "A": "More saving is a larger leakage; neither income nor the multiplier rises.",
+   "B": "The multiplier does fall, but so does income.",
+   "C": "Income does fall, but the multiplier falls too."
+  }
+ },
+ "2021-13": {
+  "why": "Public goods are non-excludable, so people can use them without paying directly. This is why they are funded from taxation.",
+  "not": {
+   "A": "Public goods are non-rival: one person's use does not reduce what is left for others.",
+   "B": "Private firms cannot charge users, so they have no profit incentive to supply public goods.",
+   "D": "No one is charged directly, so low-income earners are not shut out."
+  }
+ },
+ "2021-14": {
+  "why": "Money sent home by migrant workers is a transfer with nothing received in return, so it is secondary income. Money leaving Australia is a debit.",
+  "not": {
+   "A": "Primary income is earnings such as wages, interest and dividends, not gifts.",
+   "B": "It is neither primary income nor an inflow.",
+   "D": "It is secondary income, but an outflow is a debit."
+  }
+ },
+ "2021-15": {
+  "why": "A higher minimum wage attracts more people into the labour force (participation rises), but employers demand less labour at the higher wage, so more of them are unemployed.",
+  "not": {
+   "B": "Higher government spending creates jobs and lowers the unemployment rate.",
+   "C": "Hidden unemployed people have left the labour force, so participation falls.",
+   "D": "A higher school leaving age takes young people out of the labour force."
+  }
+ },
+ "2021-16": {
+  "why": "An externality falls on people outside the transaction. Faster trips are the benefit drivers pay the toll for, so they are a private benefit.",
+  "not": {
+   "A": "Noise affects nearby residents who are not users: a negative externality.",
+   "B": "Traffic diverted to local streets affects third parties: a negative externality.",
+   "C": "Higher land values benefit owners who did not pay for the road: a positive externality."
+  }
+ },
+ "2021-17": {
+  "why": "Unemployment rate: 2.5 ÷ 13.6 = 18.4% in Year 1, 2.3 ÷ 14.3 = 16.1% in Year 2 (decreased). Participation rate: 13.6 ÷ 25 = 54.4%, then 14.3 ÷ 26 = 55.0% (increased).",
+  "not": {
+   "B": "Both are the wrong direction.",
+   "C": "The unemployment rate did fall, but the participation rate rose.",
+   "D": "The participation rate did rise, but the unemployment rate fell."
+  }
+ },
+ "2021-18": {
+  "why": "BOGS = exports − imports = 125 − 110 = $15 billion. Current account = 15 − 30 − 20 = −35, so the capital and financial account must be +35. With a capital account of −45, Z = 35 + 45 = $80 billion.",
+  "not": {
+   "A": "BOGS is exports minus imports, which is positive, and Z must offset the current account deficit.",
+   "B": "Z is right, but BOGS is +15 because exports exceed imports.",
+   "C": "BOGS is right, but −95 adds the deficits together instead of balancing the accounts."
+  }
+ },
+ "2021-19": {
+  "why": "Stronger demand has pushed the currency above the range. Lowering the cash rate makes the currency less attractive to foreign savers, reducing demand and bringing its value down.",
+  "not": {
+   "A": "The currency needs to fall, not rise further.",
+   "C": "Selling foreign currency means buying the domestic currency, which pushes it higher.",
+   "D": "Buying the domestic currency raises its value; it does not depreciate it."
+  }
+ },
+ "2021-20": {
+  "why": "Real GDP = nominal ÷ CPI × 100. Year 2: 250 ÷ 115 × 100 = 217.4. Year 3: 300 ÷ 125 × 100 = 240. Growth = (240 − 217.4) ÷ 217.4 = 10.4%.",
+  "not": {
+   "A": "8.7% is the inflation rate (125 − 115) ÷ 115, not real growth.",
+   "B": "9.6% does not use real GDP in Year 2 as the base.",
+   "D": "20% is nominal growth (250 to 300), with price rises still included."
+  }
+ },
+ "2020-1": {
+  "why": "The Reserve Bank's objectives include the stability of the currency (low inflation) and the maintenance of full employment.",
+  "not": {
+   "B": "External stability is not an objective of monetary policy.",
+   "C": "Distribution of income is pursued mainly through fiscal policy.",
+   "D": "Environmental sustainability is not an objective of monetary policy."
+  }
+ },
+ "2020-2": {
+  "why": "The IMF monitors the global financial system and lends to countries in crisis to maintain financial stability.",
+  "not": {
+   "A": "The World Bank funds long-term development.",
+   "B": "The WTO deals with the rules of trade.",
+   "D": "APEC is a regional forum promoting trade and cooperation in the Asia-Pacific."
+  }
+ },
+ "2020-3": {
+  "why": "In a decentralised system wages and conditions are negotiated at each workplace, so agreements differ between workplaces.",
+  "not": {
+   "A": "Decentralised bargaining tends to widen wage differences.",
+   "B": "Linking wages to inflation (indexation) is a feature of centralised wage fixing.",
+   "C": "Government or tribunal determination of wages is the centralised system."
+  }
+ },
+ "2020-4": {
+  "why": "Developing economies lack the income and tax base to fund schools and public goods such as roads, sanitation and power.",
+  "not": {
+   "A": "Productivity is low, but population growth is usually high.",
+   "B": "Infant mortality is high in developing economies.",
+   "D": "Health care is inadequate, but their GDP is usually dominated by agriculture, not services."
+  }
+ },
+ "2020-5": {
+  "why": "A smaller quota means less wheat can be imported. Total supply in the country falls, so the price rises.",
+  "not": {
+   "B": "Foreign exporters sell less wheat, so their revenue falls.",
+   "C": "Local producers sell more at a higher price, so their income rises.",
+   "D": "A quota is a limit on quantity; unlike a tariff it does not raise revenue from each unit imported."
+  }
+ },
+ "2020-6": {
+  "why": "Terms of trade = export price index ÷ import price index × 100. Year 1: 100 ÷ 125 × 100 = 80. Year 2: 80 ÷ 160 × 100 = 50. It has decreased.",
+  "not": {
+   "A": "50 is right, but that is a fall from 80.",
+   "C": "200 puts import prices on top: the formula is export prices over import prices.",
+   "D": "The trend is a decrease, but 200 has the formula upside down."
+  }
+ },
+ "2020-7": {
+  "why": "Selling rights such as licences and franchises is the sale of a non-produced, non-financial asset, which is recorded in the capital account; money coming into Australia is a credit. NESA accepted both B and C for this question.",
+  "not": {
+   "A": "Australia is selling the rights and receiving payment, which is a credit, not a debit.",
+   "D": "NESA did not accept this option: the sale of the rights itself is recorded as a credit in the capital account, not the financial account."
+  }
+ },
+ "2020-8": {
+  "why": "Hidden unemployed people have stopped looking for work, so they are no longer in the labour force. More of them means a lower participation rate.",
+  "not": {
+   "A": "Lower unemployment signals that jobs are available and tends to draw people into the labour force.",
+   "B": "Fewer discouraged workers means more people are back in the labour force.",
+   "D": "To receive unemployment payments people must be looking for work, which keeps them in the labour force."
+  }
+ },
+ "2020-9": {
+  "why": "AD2 is to the left of AD1, so aggregate demand has fallen. A higher cash rate raises borrowing costs and reduces consumption and investment.",
+  "not": {
+   "A": "A higher tax-free threshold leaves households more income, raising AD.",
+   "B": "More business investment raises AD.",
+   "D": "More employment in a trading partner raises its demand for exports, raising AD."
+  }
+ },
+ "2020-10": {
+  "why": "The CPI rose 3% and the unemployment rate fell from 10% (200 ÷ 2000) to 5.9% (125 ÷ 2125). Stronger consumer confidence raises spending and prices. A higher currency in a trading partner makes this economy's exports cheaper there, creating jobs.",
+  "not": {
+   "A": "A lower cash rate could raise the CPI, but removing training programs would raise unemployment.",
+   "B": "An appreciation makes imports cheaper, which lowers the CPI.",
+   "C": "A global downturn would raise unemployment, not lower it."
+  }
+ },
+ "2020-11": {
+  "why": "Lower interest rates (an expansionary stance) reduce demand for the currency, so it depreciates. Loans in foreign currencies then cost more to service and repay in local currency.",
+  "not": {
+   "A": "The stance is right, but a weaker currency makes buying assets overseas more expensive.",
+   "C": "A contractionary stance raises interest rates and appreciates the currency.",
+   "D": "A contractionary stance would appreciate the currency, not depreciate it."
+  }
+ },
+ "2020-12": {
+  "why": "Growth rose but the unemployment rate stayed at 5.2%, the NAIRU. Stronger demand was met by existing workers getting more hours, so underemployment fell without changing the unemployment rate.",
+  "not": {
+   "A": "Lower aggregate supply would not produce faster growth.",
+   "B": "Lower aggregate supply would not produce faster growth.",
+   "D": "A fall in structural unemployment would have lowered the unemployment rate, which did not change."
+  }
+ },
+ "2020-13": {
+  "why": "Higher returns on Australian-owned investments overseas increase income from abroad and the value of foreign assets, which reduces net foreign liabilities.",
+  "not": {
+   "A": "Higher debt servicing costs add to the current account deficit and to liabilities.",
+   "B": "Exchange rate volatility does not in itself reduce liabilities.",
+   "C": "More foreign investment into the economy increases foreign liabilities."
+  }
+ },
+ "2020-14": {
+  "why": "With a floating rate the two accounts offset. A current account surplus of $3.5 bn in Year 2 means a capital and financial account deficit of $3.5 bn. Moving from +10.6 to −3.5 is a change of 14.1.",
+  "not": {
+   "A": "It is a deficit, but 7.1 ignores the change of sign (10.6 − 3.5).",
+   "C": "A current account surplus is matched by a capital and financial account deficit.",
+   "D": "The change is 14.1, but the account is in deficit in Year 2."
+  }
+ },
+ "2020-15": {
+  "why": "Headline inflation is below underlying. A temporary glut of petrol lowers its price; petrol is a volatile item that is counted in headline inflation but removed from underlying.",
+  "not": {
+   "A": "A higher minimum wage raises costs across the economy, lifting both measures.",
+   "C": "A drought raises fruit prices, which would push headline above underlying.",
+   "D": "Stronger demand for the currency appreciates it, lowering import prices broadly and affecting both measures."
+  }
+ },
+ "2020-16": {
+  "why": "Real GDP: Year 1 = 400 ÷ 100 × 100 = 400; Year 2 = 420 ÷ 105 × 100 = 400. Output is unchanged; nominal GDP rose only because prices rose 5%, which higher production costs would explain.",
+  "not": {
+   "A": "Real GDP is unchanged, but a global downturn does not explain a 5% rise in prices.",
+   "B": "An appreciation makes imports cheaper and lowers prices.",
+   "C": "Lower tariffs reduce prices; they do not raise them."
+  }
+ },
+ "2020-17": {
+  "why": "The multiplier is 25 ÷ 10 = 2.5. Since k = 1 ÷ (1 − MPC), 1 − MPC = 0.4 and MPC = 0.6.",
+  "not": {
+   "A": "An MPC of 0.25 gives a multiplier of 1.33.",
+   "B": "0.4 is the MPS (1 ÷ 2.5).",
+   "D": "An MPC of 0.75 gives a multiplier of 4."
+  }
+ },
+ "2020-18": {
+  "why": "With no trade, local production equals consumption: 30 000 kg. With trade, consumption is 35 000 kg and imports are 10 000 kg, so local production is 25 000 kg, a fall of 5 000 kg. Revenue = 10 000 kg × $5 = $50 000.",
+  "not": {
+   "B": "$200 000 is imports × the world price ($20), which is paid to foreign producers.",
+   "C": "10 000 kg is the volume of imports, not the fall in local production.",
+   "D": "Both figures are imports-based: production fell by 5 000 kg and revenue is $50 000."
+  }
+ },
+ "2020-19": {
+  "why": "In Year 1, A$1 buys US$0.90. In Year 2, A$0.90 buys US$1, so A$1 buys about US$1.11. The Australian dollar has risen and the US dollar has fallen. Higher Australian interest rates relative to US rates attract funds into Australia.",
+  "not": {
+   "A": "The Australian dollar appreciated; it did not depreciate.",
+   "B": "The Australian dollar appreciated; it did not depreciate.",
+   "D": "The US dollar did depreciate, but a smaller US income deficit would support the US dollar, not weaken it."
+  }
+ },
+ "2020-20": {
+  "why": "A minimum wage above equilibrium reduces the quantity of labour demanded, so some workers lose their jobs and their wage income. Inequality rises and the Lorenz curve moves outwards, away from the line of equality.",
+  "not": {
+   "A": "Not all employees gain: some lose their jobs. A shift inwards would mean less inequality.",
+   "B": "Employment falls when the wage is set above equilibrium.",
+   "C": "The curve does move outwards, but not because everyone is paid more: it is because some become unemployed."
+  }
+ },
+ "2019-1": {
+  "why": "Globalisation lets firms split production across countries, with each stage done where it is cheapest: the international division of labour.",
+  "not": {
+   "B": "Globalisation is associated with lower, not higher, protection.",
+   "C": "More integrated markets are generally more efficient.",
+   "D": "Globalisation is increased economic integration."
+  }
+ },
+ "2019-2": {
+  "why": "The G20 brings together leaders, finance ministers and central bank governors of major economies to coordinate economic policy.",
+  "not": {
+   "A": "It has no preferential trade arrangements, so it is not a trading bloc.",
+   "B": "It is global, not regional, and is not a trade agreement.",
+   "C": "Its members keep their own currencies."
+  }
+ },
+ "2019-3": {
+  "why": "A higher dollar means fewer Australian dollars are needed to service and repay debt owed in foreign currencies.",
+  "not": {
+   "A": "A larger trade deficit is a cost of an appreciation, not a benefit.",
+   "B": "Imports become cheaper, so import volumes rise.",
+   "D": "An appreciation makes exports dearer, reducing competitiveness."
+  }
+ },
+ "2019-4": {
+  "why": "Monetary policy is set by the Reserve Bank, which is independent of the government, so it is the least exposed to political pressure.",
+  "not": {
+   "A": "Budgets must pass Parliament and are shaped by elections.",
+   "C": "Labour market policy is legislated and strongly contested politically.",
+   "D": "Microeconomic reform needs legislation and often faces opposition from affected groups."
+  }
+ },
+ "2019-5": {
+  "why": "Parents returning to work move from outside the labour force into it, raising the participation rate.",
+  "not": {
+   "A": "Early retirees leave the labour force.",
+   "C": "Unemployed people are already in the labour force, so taking a job does not change participation.",
+   "D": "Full-time students are generally not in the labour force."
+  }
+ },
+ "2019-6": {
+  "why": "Higher interest rates raise borrowing costs and the reward for saving, so households spend less and growth slows.",
+  "not": {
+   "B": "Higher rates are associated with tighter money, not a larger money supply.",
+   "C": "Consumer spending falls, but higher borrowing costs also reduce business investment.",
+   "D": "Growth does slow, but slower growth raises unemployment."
+  }
+ },
+ "2019-7": {
+  "why": "Low unemployment means employers compete for scarce workers, which pushes wages up. It is a reason for faster, not slower, wage growth.",
+  "not": {
+   "A": "With low inflation, workers need and seek smaller pay rises.",
+   "C": "Weak growth means weak demand for labour.",
+   "D": "Without productivity gains firms cannot afford larger pay rises."
+  }
+ },
+ "2019-8": {
+  "why": "Mining (iron ore, coal, gas) is the largest export sector and services (education, tourism) the next largest.",
+  "not": {
+   "B": "Agriculture earns less than services.",
+   "C": "This leaves out mining, the largest exporter.",
+   "D": "Manufacturing is a small share of exports, and mining is missing."
+  }
+ },
+ "2019-9": {
+  "why": "Trade balance = X − M = 250 − 350 = −100, a deficit. Injections (I + G + X = 1000) exceed leakages (S + T + M = 850), so national income rises.",
+  "not": {
+   "A": "Imports exceed exports, so the trade balance is a deficit.",
+   "B": "Imports exceed exports, and injections exceed leakages.",
+   "D": "The deficit is right, but injections exceed leakages so growth is positive."
+  }
+ },
+ "2019-10": {
+  "why": "A lower cash rate makes borrowing cheaper, which raises demand for assets such as housing and shares and lifts their prices.",
+  "not": {
+   "A": "Cheaper credit increases consumer spending.",
+   "B": "More spending creates jobs, lowering unemployment.",
+   "C": "Lower interest rates reduce demand for the currency, so it depreciates."
+  }
+ },
+ "2019-11": {
+  "why": "In Year 2 the Lorenz curve is closer to the line of equality, so income is more evenly shared. A higher top marginal rate takes more from high earners, and a lower GST helps low-income earners most.",
+  "not": {
+   "A": "A higher GST is regressive and would widen inequality.",
+   "C": "Both changes would increase inequality.",
+   "D": "A lower top marginal rate benefits high-income earners, widening inequality."
+  }
+ },
+ "2019-12": {
+  "why": "Net foreign liabilities = net foreign debt + net foreign equity = 900 + 100 = $1000 billion. As a share of GDP: 1000 ÷ 1800 = 55.6%.",
+  "not": {
+   "A": "2.8% is the CAD as a percentage of GDP (50 ÷ 1800).",
+   "B": "44.4% subtracts equity from debt (800 ÷ 1800) instead of adding it.",
+   "C": "50% uses net foreign debt only (900 ÷ 1800)."
+  }
+ },
+ "2019-13": {
+  "why": "Inflation of 2% is still positive: prices are rising, only more slowly than before (disinflation).",
+  "not": {
+   "B": "Falling prices would need a negative inflation rate (deflation).",
+   "C": "Nothing is said about unemployment; if inflation is falling, unemployment is more likely above the NAIRU.",
+   "D": "Unemployment below the NAIRU would make inflation accelerate, not slow."
+  }
+ },
+ "2019-14": {
+  "why": "Labour force = 50% × 10 000 000 = 5 000 000. Unemployed = 10% × 5 000 000 = 500 000, so employed = 4 500 000. Part time = 4 500 000 − 4 000 000 full time = 500 000.",
+  "not": {
+   "B": "1 000 000 takes 10% of the working age population rather than of the labour force.",
+   "C": "4 000 000 is the number employed full time.",
+   "D": "4 500 000 is total employment, full time and part time."
+  }
+ },
+ "2019-15": {
+  "why": "Income rose by 200 and saving by 50, so MPS = 0.25 and the multiplier is 1 ÷ 0.25 = 4. Extra income = 4 × 35 = 140, so Y = 450 + 140 = $590 billion.",
+  "not": {
+   "A": "$497 billion uses a multiplier of 1.33, treating 0.25 as the MPC.",
+   "C": "$600 billion does not come from a multiplier of 4.",
+   "D": "$650 billion adds the 200 rise in income from the table, not the effect of the investment."
+  }
+ },
+ "2019-16": {
+  "why": "Lowering the tax-free threshold is a deliberate decision (discretionary) that collects more tax and reduces spending (contractionary).",
+  "not": {
+   "B": "This is discretionary but expansionary.",
+   "C": "This is an automatic stabiliser, and it is expansionary.",
+   "D": "This is contractionary but automatic, not a decision."
+  }
+ },
+ "2019-17": {
+  "why": "Aid to build a road is a capital transfer, recorded as a debit in the capital account. Pensions received from overseas are transfers, recorded as a credit in secondary income.",
+  "not": {
+   "A": "Aid for a capital project goes in the capital account, and pensions are not primary income.",
+   "B": "The debit is right, but pensions are a transfer (secondary income), not income earned from work or investment.",
+   "D": "The credit is right, but aid tied to building a road is a capital transfer."
+  }
+ },
+ "2019-18": {
+  "why": "Higher terms of trade mean more export income and more demand for Australian dollars. Lower global interest rates relative to Australia's attract funds into Australia. Both raise the TWI.",
+  "not": {
+   "A": "Higher global interest rates draw funds out of Australia, lowering the dollar.",
+   "C": "Both changes reduce demand for the dollar.",
+   "D": "Relatively lower global rates help, but lower terms of trade reduce demand for the dollar."
+  }
+ },
+ "2019-19": {
+  "why": "A quota of 20 000 means demand exceeds domestic supply by 20 000, which happens at a price of $4 (demand 50 000, supply 30 000). The equivalent tariff is $4 − $3 = $1. Revenue = $1 × 20 000 = $20 000.",
+  "not": {
+   "A": "Unlike a quota, a tariff does raise revenue.",
+   "B": "$10 000 would need imports of only 10 000.",
+   "D": "$40 000 would be a $2 tariff on 20 000 imports, but a $2 tariff takes the price to $5, where there are no imports."
+  }
+ },
+ "2019-20": {
+  "why": "At the world price of $3 consumers demand 60 000. For no imports, local producers must supply all 60 000, which they do only if they receive $7. The subsidy is $7 − $3 = $4.",
+  "not": {
+   "A": "With no subsidy, producers supply only 20 000 at $3.",
+   "B": "A $2 subsidy gives producers $5, at which they supply 40 000: imports continue.",
+   "C": "$3 is the world price, not the gap between it and the $7 producers need."
+  }
+ },
+ "2018-1": {
+  "why": "Enterprise bargaining lets pay rises be traded for changes in work practices at each workplace, with the aim of lifting labour productivity.",
+  "not": {
+   "A": "Work-life balance may be bargained over but is not the key objective.",
+   "B": "Decentralised bargaining tends to widen pay differences.",
+   "D": "Full-time employment is not a direct objective of the wage system."
+  }
+ },
+ "2018-2": {
+  "why": "The World Bank lends to developing economies for infrastructure and other development projects.",
+  "not": {
+   "B": "The WTO oversees trade rules and does not lend.",
+   "C": "The IMF lends to stabilise economies in financial crisis, not to build infrastructure.",
+   "D": "The OECD is a policy forum of mostly advanced economies."
+  }
+ },
+ "2018-3": {
+  "why": "A free trade agreement with B makes B's goods cheaper in A, so A trades more with B and diverts some trade away from C.",
+  "not": {
+   "B": "An agreement with C would increase trade with C.",
+   "C": "Higher tariffs on both would reduce trade with both.",
+   "D": "Lower tariffs on both would increase trade with both."
+  }
+ },
+ "2018-4": {
+  "why": "A lower company tax rate raises after-tax returns, making the country more attractive to foreign firms deciding where to invest.",
+  "not": {
+   "A": "More investment inflow raises demand for the currency, appreciating it.",
+   "B": "Lower tax increases after-tax profit.",
+   "C": "Company tax has no direct link to people moving between jobs."
+  }
+ },
+ "2018-5": {
+  "why": "Exports become more competitive when the currency falls. Buying foreign currency means selling the domestic currency (more supply), and lower interest rates reduce demand for it.",
+  "not": {
+   "A": "Selling the currency lowers it, but higher interest rates push it back up.",
+   "B": "Both actions raise the currency.",
+   "C": "Lower rates help, but selling foreign currency means buying the domestic currency, which raises it."
+  }
+ },
+ "2018-6": {
+  "why": "Each extra user reduces the speed available to others. That is rivalry in consumption.",
+  "not": {
+   "A": "Free riding is using something without paying; these households are connected customers.",
+   "C": "Internet access is excludable: you must pay to be connected.",
+   "D": "A public good is non-rival and non-excludable; the internet service here is neither."
+  }
+ },
+ "2018-7": {
+  "why": "Higher US interest rates attract funds to the US, increasing demand for US dollars. Investors sell Australian dollars to buy them, so the Australian dollar depreciates.",
+  "not": {
+   "B": "Demand for US dollars rises, not falls.",
+   "C": "The Australian dollar falls, and the main effect is on demand for US dollars.",
+   "D": "The Australian dollar depreciates against a stronger US dollar."
+  }
+ },
+ "2018-8": {
+  "why": "Country A is more equal. Cutting A's top marginal tax rate leaves high earners with more, increasing inequality and moving A's curve out towards B's.",
+  "not": {
+   "A": "A curve closer to the line of equality means a smaller Gini coefficient.",
+   "B": "Country B's curve is further from equality, so its distribution is less equitable.",
+   "D": "Cutting B's top rate would make B more unequal, moving its curve further from A's."
+  }
+ },
+ "2018-9": {
+  "why": "Buying a foreign company sends money overseas to acquire an asset: a debit on the financial account. Dividends received are primary income: a credit on the current account.",
+  "not": {
+   "B": "This describes a foreign company buying an Australian one.",
+   "C": "Purchases of companies are recorded in the financial account, not the capital account, and dividends are in the current account.",
+   "D": "The dividend is right, but the purchase belongs in the financial account."
+  }
+ },
+ "2018-10": {
+  "why": "The National Employment Standards guarantee leave, notice of termination and redundancy pay. Protection from unfair dismissal is a separate part of the Fair Work Act with its own eligibility rules, so it is not guaranteed to every employee.",
+  "not": {
+   "A": "Redundancy pay is one of the National Employment Standards.",
+   "B": "Four weeks annual leave is one of the National Employment Standards.",
+   "C": "Notice of termination is one of the National Employment Standards."
+  }
+ },
+ "2018-11": {
+  "why": "Moving from a $10 billion surplus to a $5 billion deficit means the budget is now adding to demand: an expansionary stance.",
+  "not": {
+   "A": "A larger surplus is contractionary.",
+   "B": "A smaller deficit is less expansionary than before: a contractionary change.",
+   "C": "Moving from deficit to surplus is contractionary."
+  }
+ },
+ "2018-12": {
+  "why": "Firms that operate across state borders faced a different set of rules in each state. One national system gives them a single set.",
+  "not": {
+   "A": "Reducing union power was not the justification for a national system.",
+   "B": "The costs that mattered were those of businesses, not of state governments.",
+   "D": "State public sector workers were not the reason; many remained in state systems."
+  }
+ },
+ "2018-13": {
+  "why": "Rules such as competition law stop firms abusing market power, which makes markets work more efficiently.",
+  "not": {
+   "A": "Many regulations improve efficiency by correcting market failure.",
+   "C": "Reform often replaces or improves regulation rather than removing all of it.",
+   "D": "Regulation is not generally aimed at keeping transnational corporations out."
+  }
+ },
+ "2018-14": {
+  "why": "Most people earn wages as employees. Returns to enterprise (profit) go to the smaller number who run businesses, and many small businesses earn little.",
+  "not": {
+   "A": "Tax rates do not explain where household income comes from.",
+   "B": "Interest is a return to capital, not to enterprise.",
+   "D": "Having a worker in most households explains why wages are large, but the size of the employer is not the reason profit is small."
+  }
+ },
+ "2018-15": {
+  "why": "In Year 2 households consume less at every level of income. Higher interest rates reward saving and raise loan repayments, reducing consumption.",
+  "not": {
+   "A": "Higher asset prices make households feel wealthier and spend more.",
+   "C": "Lower unemployment raises confidence and spending.",
+   "D": "A lower GST makes goods cheaper and raises consumption."
+  }
+ },
+ "2018-16": {
+  "why": "Stronger world demand for this economy's exports raises export prices relative to import prices (terms of trade up) and raises demand for its currency (TWI up).",
+  "not": {
+   "A": "If demand rose for both exports and imports, the terms of trade would not clearly improve.",
+   "B": "A higher cash rate would lift the TWI but would not change the terms of trade.",
+   "C": "Stronger demand for the goods it imports would raise import prices and worsen the terms of trade."
+  }
+ },
+ "2018-17": {
+  "why": "More oil production lowers petrol prices. Petrol is a volatile item counted in headline inflation but excluded from underlying, so headline falls below underlying.",
+  "not": {
+   "A": "Less electricity production raises power prices.",
+   "C": "A depreciation raises import prices broadly, lifting both measures.",
+   "D": "A higher minimum wage raises costs broadly, lifting both measures."
+  }
+ },
+ "2018-18": {
+  "why": "The multiplier is 1 ÷ (1 − 0.8) = 5, so $1 billion of spending raises income by $5 billion, exactly the amount needed for full employment. Unemployment then equals the NAIRU.",
+  "not": {
+   "A": "This ignores the multiplier: income rises by $5 billion.",
+   "C": "Unemployment falls to the NAIRU, not below it.",
+   "D": "The economy reaches full employment but does not go beyond it."
+  }
+ },
+ "2018-19": {
+  "why": "Country B's boom would have meant a strong currency. The shared currency reflects both economies, so it is weaker than B's was, making B's assets cheaper for foreign buyers.",
+  "not": {
+   "A": "A weaker currency for B makes its imports dearer, raising imported inflation.",
+   "B": "The shared currency is stronger than A's recession-weakened currency was, so visiting A costs more.",
+   "D": "A stronger currency for A makes its exports less competitive."
+  }
+ },
+ "2018-20": {
+  "why": "With a quota of zero the price is $10 and local firms sell 300 (revenue $3000). With a $2 tariff the price is $8: local firms sell 200 (revenue $1600, down $1400) and 200 units are imported. Government revenue is 200 × $2 = $400, which only a tariff can produce. The 200 imports sell for $1600 in total.",
+  "not": {
+   "A": "Starting from free trade at $6, a $2 tariff would raise local producers' revenue, not reduce it.",
+   "B": "A quota raises no government revenue.",
+   "D": "A quota raises no government revenue."
+  }
+ },
+ "2017-1": {
+  "why": "Transnational corporations operate in many countries. Being able to move skilled staff between them easily lowers their costs.",
+  "not": {
+   "A": "Trade barriers make it harder and dearer to move goods between a firm's operations.",
+   "B": "Differences in business cycles are not something a firm benefits from directly.",
+   "C": "Restrictions on financial flows make it harder to invest and move profits across borders."
+  }
+ },
+ "2017-2": {
+  "why": "A public good cannot be withheld from people who do not pay (non-excludable), and one person's use does not reduce the amount left for others (non-rival).",
+  "not": {
+   "A": "Excludable and rival describes a private good.",
+   "B": "Excludable but non-rival describes goods such as pay television.",
+   "C": "Non-excludable but rival describes common resources such as fish stocks."
+  }
+ },
+ "2017-3": {
+  "why": "Fiscal changes usually wait for the annual Budget and must pass Parliament. The Reserve Bank can change the cash rate at any board meeting.",
+  "not": {
+   "B": "Microeconomic reforms take years to affect the economy, longer than fiscal policy.",
+   "C": "Microeconomic policies have the longest impact lag of all.",
+   "D": "Microeconomic reforms need legislation and consultation, so they take far longer to implement."
+  }
+ },
+ "2017-4": {
+  "why": "High unemployment and low inflation both point to weak demand. Both arms of macroeconomic policy should stimulate spending.",
+  "not": {
+   "B": "Contractionary policy would raise unemployment further.",
+   "C": "The two policies would work against each other.",
+   "D": "The two policies would work against each other."
+  }
+ },
+ "2017-5": {
+  "why": "Greater aggregate supply means higher productivity and lower costs, so Australian goods are cheaper relative to those of other countries.",
+  "not": {
+   "A": "Higher inflation makes Australian goods dearer.",
+   "C": "More government spending adds to demand and can add to inflation.",
+   "D": "A higher dollar makes exports dearer for foreign buyers."
+  }
+ },
+ "2017-6": {
+  "why": "Tradable permits put a price on pollution and let the market decide which firms cut emissions.",
+  "not": {
+   "A": "Fines are penalties set under regulation.",
+   "C": "This is regulation, not a market.",
+   "D": "This is an international agreement, not a market-based policy."
+  }
+ },
+ "2017-7": {
+  "why": "Company profits fall in a downturn, so company tax receipts fall automatically with the cycle.",
+  "not": {
+   "A": "Changing the GST rate is a deliberate policy decision.",
+   "B": "Changing the tax-free threshold is a deliberate policy decision.",
+   "D": "Changing a tax rate is a deliberate policy decision."
+  }
+ },
+ "2017-8": {
+  "why": "Government borrowing adds to the demand for the limited pool of domestic savings, which pushes interest rates up (crowding out).",
+  "not": {
+   "B": "Borrowing existing savings does not create new money.",
+   "C": "Higher interest rates attract foreign funds, which would appreciate the dollar.",
+   "D": "Borrowing at home does not add to foreign debt."
+  }
+ },
+ "2017-9": {
+  "why": "A smaller quota means fewer imports, so total supply in the market falls and the price rises.",
+  "not": {
+   "A": "Foreign producers sell fewer units.",
+   "C": "A higher price leads local firms to produce more.",
+   "D": "Foreign producers' share of the market falls."
+  }
+ },
+ "2017-10": {
+  "why": "The National Minimum Wage is the legal floor for all adult employees in the national system, including those not covered by an award or agreement.",
+  "not": {
+   "B": "Union membership is not required.",
+   "C": "The National Minimum Wage exists for employees not covered by an award.",
+   "D": "It applies whether or not there is an enterprise agreement."
+  }
+ },
+ "2017-11": {
+  "why": "Terms of trade = export price index ÷ import price index × 100. A fall means import prices have risen relative to export prices.",
+  "not": {
+   "A": "The terms of trade measure prices, not the value (price × quantity) of trade.",
+   "B": "The terms of trade measure prices, not values, and this is the wrong direction.",
+   "D": "Higher export prices would raise the terms of trade."
+  }
+ },
+ "2017-12": {
+  "why": "Wages and salaries are by far the largest source, followed by government transfer payments, then rent, interest and dividends, with profit from unincorporated businesses the smallest.",
+  "not": {
+   "A": "Transfer payments are the second largest source, not the smallest.",
+   "C": "Returns to land and capital are larger than returns to enterprise.",
+   "D": "Returns to enterprise are the smallest of the four."
+  }
+ },
+ "2017-13": {
+  "why": "A downturn in a major buyer reduces demand for Australian exports and so for Australian dollars, lowering the dollar's value.",
+  "not": {
+   "B": "Lower demand for the dollar reduces its value.",
+   "C": "Revaluation is a decision by a government with a fixed exchange rate, not a market outcome.",
+   "D": "Devaluation is a decision by a government with a fixed exchange rate, not a market outcome."
+  }
+ },
+ "2017-14": {
+  "why": "Injections = I + G + X = 20 + 25 + 70 = 115. Leakages = S + T + M = 35 + 30 + 60 = 125. Leakages are greater, so national income falls.",
+  "not": {
+   "A": "Exports do exceed imports, but total leakages still exceed total injections.",
+   "B": "Comparing savings with taxation says nothing about the direction of the economy.",
+   "C": "Injections (115) are less than leakages (125)."
+  }
+ },
+ "2017-15": {
+  "why": "Year 2: labour force = 3 + 2 = 5 million. Unemployment rate = 2 ÷ 5 = 40%. Participation rate = 5 ÷ 8 = 62.5%.",
+  "not": {
+   "A": "Year 1: unemployment 1 ÷ 3 = 33%, participation 3 ÷ 5 = 60%.",
+   "C": "Year 3: participation is 62.5% but unemployment is 3 ÷ 10 = 30%.",
+   "D": "Year 4: unemployment is 40% but participation is 15 ÷ 20 = 75%."
+  }
+ },
+ "2017-16": {
+  "why": "Prices rise by 5% in Year 2 (100 to 105) and by 4.8% in Year 3 (105 to 110). They are still rising, but more slowly.",
+  "not": {
+   "A": "The CPI rises each year.",
+   "B": "The index rises by the same number of points, but 5 points on a base of 105 is a smaller percentage.",
+   "D": "The rate of increase falls from 5% to 4.8%."
+  }
+ },
+ "2017-17": {
+  "why": "Year 1: current account = −10 − 20 − 80 + 10 = −100; capital and financial = 95; errors and omissions = 5. Year 2: current account = −10 − 30 − 85 − 5 = −130; capital and financial = 120; errors and omissions = 10.",
+  "not": {
+   "A": "The balance on goods and services goes from −30 to −40.",
+   "B": "The current account deficit grows from 100 to 130.",
+   "D": "The capital and financial account surplus grows from 95 to 120."
+  }
+ },
+ "2017-18": {
+  "why": "A public good must be non-rival. While one person has the book, no one else can read it, so it is rival.",
+  "not": {
+   "A": "The availability of other books does not affect whether this book is rival.",
+   "C": "Open membership suggests it is non-excludable, which supports calling it a public good.",
+   "D": "Unchanged content suggests it is non-rival over time, which supports calling it a public good."
+  }
+ },
+ "2017-19": {
+  "why": "A multiplier of 2.5 means MPC = 0.6. Consumption is 100 when income is zero, so C = 100 + 0.6Y. At Y = 1000, Z = 700. When C = 1300, 0.6Y = 1200 and X = 2000.",
+  "not": {
+   "A": "These values do not fit an MPC of 0.6.",
+   "B": "Z of 1100 would mean consumption above income of 1000 and an MPC of 1.",
+   "C": "X is right, but 600 leaves out the 100 of consumption that occurs at zero income."
+  }
+ },
+ "2017-20": {
+  "why": "In 2019, US$1 = A$1.25, so A$1 = US$0.80. In 2020, A$1 = US$0.75. The Australian dollar has fallen, so Australian exports cost Americans less.",
+  "not": {
+   "A": "The rate fell from US$0.80 to US$0.75.",
+   "C": "US goods are dearer for Australians in 2020, after the depreciation, not in 2019.",
+   "D": "A lower Australian dollar makes Australian assets cheaper for US investors."
+  }
+ },
+ "2016-1": {
+  "why": "Of these, only the EU has members sharing a common currency, the euro, and a common monetary policy.",
+  "not": {
+   "B": "APEC is a forum for economic cooperation.",
+   "C": "ASEAN is a trading bloc whose members keep their own currencies.",
+   "D": "NAFTA was a free trade agreement."
+  }
+ },
+ "2016-2": {
+  "why": "The Reserve Bank uses the cash rate to keep inflation within its 2–3% target.",
+  "not": {
+   "A": "Fiscal policy mainly affects growth, employment and income distribution.",
+   "C": "Competition policy is a microeconomic policy aimed at efficiency.",
+   "D": "Labour market policy deals with wages and employment conditions."
+  }
+ },
+ "2016-3": {
+  "why": "A surplus is revenue minus spending. Less spending and more tax revenue both make it larger.",
+  "not": {
+   "A": "Lower spending helps but lower tax revenue works against it.",
+   "B": "Both changes reduce the surplus.",
+   "D": "Higher revenue helps but higher spending works against it."
+  }
+ },
+ "2016-4": {
+  "why": "A slowdown overseas reduces demand for Australian exports, so output falls and unemployment rises.",
+  "not": {
+   "A": "Lower export demand reduces GDP growth.",
+   "C": "Demand for exports falls.",
+   "D": "Weaker demand reduces inflationary pressure."
+  }
+ },
+ "2016-5": {
+  "why": "Lower tariffs make imports cheaper, so sales and income shift from protected local producers to importers.",
+  "not": {
+   "A": "Each import is taxed at a lower rate, so revenue is unlikely to rise.",
+   "B": "A change in the tariff rate changes revenue.",
+   "C": "This is the effect of raising tariffs."
+  }
+ },
+ "2016-6": {
+  "why": "A higher Gini coefficient means more inequality. The GST is regressive: it takes a larger share of income from low-income earners.",
+  "not": {
+   "A": "Company tax falls on profits, which go mostly to higher-income households.",
+   "C": "Higher rates on high incomes reduce inequality.",
+   "D": "Capital gains are earned mostly by wealthier households, so taxing them more reduces inequality."
+  }
+ },
+ "2016-7": {
+  "why": "Frictional unemployment is the time people spend moving between jobs or businesses.",
+  "not": {
+   "A": "Unemployment caused by a recession is cyclical.",
+   "B": "A person in full-time training is not looking for work, so is not in the labour force.",
+   "D": "A part-time worker who wants more hours is underemployed."
+  }
+ },
+ "2016-8": {
+  "why": "In Year 2 the Lorenz curve is closer to the line of equality. Lower-income households spend a larger share of their income, so a more even distribution raises consumption.",
+  "not": {
+   "B": "Labour mobility is encouraged by wage differences, which have narrowed.",
+   "C": "Risk-taking is encouraged by the prospect of high rewards, which is weaker with more equality.",
+   "D": "Higher-income earners save more, so more equality tends to reduce saving."
+  }
+ },
+ "2016-9": {
+  "why": "People work for longer, so more of the working age population is in the labour force and more income is earned and taxed.",
+  "not": {
+   "A": "More people working means more tax revenue.",
+   "C": "Participation rises, not falls.",
+   "D": "Both are the wrong direction."
+  }
+ },
+ "2016-10": {
+  "why": "Demand for labour has increased. Workplace bargaining links pay to productivity, and more productive labour is worth more to employers.",
+  "not": {
+   "A": "A global downturn reduces demand for labour.",
+   "B": "Higher participation shifts the supply of labour, not the demand.",
+   "C": "Minimum standards raise the cost of labour; they do not increase demand for it."
+  }
+ },
+ "2016-11": {
+  "why": "Interest on overseas borrowing is paid to foreigners, which increases the primary income deficit and so the current account deficit.",
+  "not": {
+   "A": "Borrowing from overseas adds to foreign debt.",
+   "B": "The size of the deficit is not changed by how it is financed.",
+   "D": "Less government borrowing at home eases pressure on domestic interest rates."
+  }
+ },
+ "2016-12": {
+  "why": "Higher interest rates raise the incomes of savers and the costs of borrowers. Savers are those with a high marginal propensity to save.",
+  "not": {
+   "A": "A higher cash rate attracts funds and appreciates the currency.",
+   "B": "A higher cash rate lowers inflationary expectations.",
+   "D": "Borrowers, who tend to spend more of their income, lose from higher rates."
+  }
+ },
+ "2016-13": {
+  "why": "Repayment of a loan is a financial transaction, and money coming into Australia is a credit.",
+  "not": {
+   "A": "Secondary income records gifts and transfers, not loan repayments.",
+   "B": "A loan repayment is not a transfer.",
+   "C": "It belongs in this account, but an inflow is a credit."
+  }
+ },
+ "2016-14": {
+  "why": "Lower demand and greater supply both push export prices down, which lowers the terms of trade.",
+  "not": {
+   "B": "Both changes raise export prices.",
+   "C": "The two changes pull export prices in opposite directions.",
+   "D": "The two changes pull export prices in opposite directions."
+  }
+ },
+ "2016-15": {
+  "why": "Recognising overseas qualifications lets a new industry draw on skilled workers from the global labour market.",
+  "not": {
+   "A": "A larger quota lets in more competing imports.",
+   "B": "Less protection exposes the industry before it is competitive.",
+   "C": "Less regulation of transnational corporations brings stronger competitors."
+  }
+ },
+ "2016-16": {
+  "why": "Real GDP rises from 1000 to 1500 ÷ 110 × 100 = 1364. But real GDP per person falls from $10.00 to about $9.09, and income per person is a component of the HDI.",
+  "not": {
+   "A": "Real GDP rises, but income per person falls.",
+   "B": "Real GDP rises.",
+   "C": "Both are the wrong direction."
+  }
+ },
+ "2016-17": {
+  "why": "Better infrastructure raises productivity and helps workers reach jobs, reducing structural unemployment and so the NAIRU.",
+  "not": {
+   "A": "The cash rate affects cyclical unemployment.",
+   "B": "Higher government spending affects cyclical unemployment.",
+   "D": "Centralised wage fixing makes wages less flexible, which tends to raise the NAIRU."
+  }
+ },
+ "2016-18": {
+  "why": "The dollar rose from US$0.70 to US$0.75, so it buys more overseas. At home prices still rose (by 1%), so each dollar buys slightly less.",
+  "not": {
+   "A": "Inflation is positive, so domestic purchasing power fell.",
+   "B": "Both are the wrong direction.",
+   "D": "A higher dollar buys more overseas."
+  }
+ },
+ "2016-19": {
+  "why": "Net foreign liabilities = foreign liabilities − foreign assets = (600 + 100) − (150 + 250) = $300 billion.",
+  "not": {
+   "B": "$400 billion is the total of foreign assets only.",
+   "C": "$600 billion is one liability only.",
+   "D": "$1100 billion adds all four items."
+  }
+ },
+ "2016-20": {
+  "why": "When more cars use a road, congestion slows everyone. One driver's use reduces the benefit to others, so the road is rival.",
+  "not": {
+   "B": "Who builds a good does not decide whether it is a public good.",
+   "C": "This describes non-rivalry, which supports calling it a public good.",
+   "D": "The type of vehicle has nothing to do with rivalry or excludability."
+  }
+ },
+ "2015-1": {
+  "why": "Selling in another country below the cost of production is dumping. A tariff raises the price of the dumped goods so local producers are not driven out unfairly.",
+  "not": {
+   "B": "Canned tomatoes are not a defence industry.",
+   "C": "An infant industry is new and still growing; nothing says this one is.",
+   "D": "Jobs may be protected as a result, but the request is prompted by the below-cost pricing."
+  }
+ },
+ "2015-2": {
+  "why": "The Reserve Bank can change the cash rate at a single board meeting, with effect the next day.",
+  "not": {
+   "A": "Fiscal measures usually wait for the Budget and need to pass Parliament.",
+   "C": "Labour market changes need legislation and consultation.",
+   "D": "Microeconomic reform takes years to legislate and put in place."
+  }
+ },
+ "2015-3": {
+  "why": "Investment by transnational corporations brings capital, technology and jobs to developing countries, raising their output and so world output.",
+  "not": {
+   "A": "Higher interest rates slow spending and growth.",
+   "B": "Migration to developing countries does not in itself raise world output.",
+   "C": "Protection reduces trade and world output."
+  }
+ },
+ "2015-4": {
+  "why": "Large foreign firms can pressure governments to weaken labour, tax or environmental rules in their favour.",
+  "not": {
+   "A": "More public goods is a benefit.",
+   "B": "Better transport infrastructure is a benefit.",
+   "C": "A higher HDI is an improvement in development."
+  }
+ },
+ "2015-5": {
+  "why": "Aid tied to a capital project such as building schools is a capital transfer, recorded in the capital account. Money leaving Australia is a debit.",
+  "not": {
+   "B": "Primary income is earnings such as interest, dividends and wages.",
+   "C": "Aid is not an investment, and an outflow is not a credit.",
+   "D": "It is a debit, but secondary income records unconditional transfers, not aid for capital works."
+  }
+ },
+ "2015-6": {
+  "why": "A larger quota lets in more imports and a smaller subsidy removes support. Both expose local firms to competition, forcing them to become more efficient.",
+  "not": {
+   "A": "A smaller quota is more protection.",
+   "B": "A larger subsidy shelters firms from competition.",
+   "D": "Both changes increase protection."
+  }
+ },
+ "2015-7": {
+  "why": "Growth is strong, unemployment is falling and inflation (3.8%) is above the 2–3% target. Demand needs to be slowed by both policies.",
+  "not": {
+   "A": "Stimulating demand would push inflation higher.",
+   "B": "The two policies would work against each other.",
+   "C": "The two policies would work against each other."
+  }
+ },
+ "2015-8": {
+  "why": "Income tax is progressive. As incomes rise in an upswing, people pay a higher share in tax, which automatically slows the growth of spending.",
+  "not": {
+   "B": "Company tax is charged at a flat rate, so it does not take a rising share of profits.",
+   "C": "Tariff revenue is small and not designed to respond to the cycle.",
+   "D": "The GST is a flat 10%, so it does not take a rising share of spending."
+  }
+ },
+ "2015-9": {
+  "why": "Demand for Australian dollars has shifted to the left, lowering the equilibrium value. Higher interest rates overseas draw funds away from Australia, reducing demand for the dollar.",
+  "not": {
+   "A": "The dollar has depreciated, and stronger export demand would raise demand for it.",
+   "B": "The dollar has depreciated, but less reform in the US would not reduce demand for Australian dollars.",
+   "C": "The dollar has depreciated, and more tourists would raise demand for it."
+  }
+ },
+ "2015-10": {
+  "why": "Terms of trade fall from 100 to 100 ÷ 110 × 100 = 90.9. The TWI rises from 60 to 70, an appreciation, which makes exports dearer and reduces competitiveness.",
+  "not": {
+   "A": "Import prices rose while export prices did not, so the terms of trade fell.",
+   "C": "Both are the wrong direction.",
+   "D": "The terms of trade did fall, but an appreciation reduces competitiveness."
+  }
+ },
+ "2015-11": {
+  "why": "A lower Gini coefficient means less inequality. Childcare subsidies raise the incomes of low earners and a higher top tax rate takes more from high earners.",
+  "not": {
+   "A": "A lower GST helps, but cutting transfer payments hurts low-income households.",
+   "B": "Both changes increase inequality.",
+   "D": "A higher tax-free threshold helps, but lower superannuation contributions reduce workers' income."
+  }
+ },
+ "2015-12": {
+  "why": "Recycling benefits the wider community through less waste and less mining, a positive externality, and it lowers the costs society bears.",
+  "not": {
+   "B": "The effect on third parties is beneficial, not harmful.",
+   "C": "A positive externality adds to social benefits.",
+   "D": "The externality is positive."
+  }
+ },
+ "2015-13": {
+  "why": "Policies that raise efficiency (microeconomic reform) lower costs and increase productive capacity, shifting AS to the right and raising output.",
+  "not": {
+   "A": "AS shifting left means higher costs and lower output.",
+   "B": "AD shifting left lowers output and is not about efficiency.",
+   "D": "AD shifting right raises output but through demand, not efficiency."
+  }
+ },
+ "2015-14": {
+  "why": "Unemployment fell: stronger consumer confidence means more spending and more jobs. Participation fell: more young people staying at school means fewer in the labour force.",
+  "not": {
+   "A": "A global recession would raise unemployment.",
+   "B": "Fewer incentives to hire the long-term unemployed would raise unemployment.",
+   "C": "Infrastructure spending would lower unemployment, but childcare subsidies would raise participation."
+  }
+ },
+ "2015-15": {
+  "why": "Higher net foreign liabilities mean larger interest and dividend payments overseas every year, a long-term (structural) addition to the primary income deficit.",
+  "not": {
+   "B": "A change in portfolio investment is in the financial account.",
+   "C": "A weak global economy is a cyclical influence.",
+   "D": "A change in the terms of trade is a cyclical influence."
+  }
+ },
+ "2015-16": {
+  "why": "Saving rises by 100 for each 500 of income, so MPS = 0.2 and the multiplier is 5. To raise income by $1000, investment must rise by 1000 ÷ 5 = $200.",
+  "not": {
+   "A": "$100 would need a multiplier of 10.",
+   "C": "$500 would need a multiplier of 2.",
+   "D": "$800 is the MPC (0.8) × $1000, the extra consumption, not the investment needed."
+  }
+ },
+ "2015-17": {
+  "why": "Buying securities puts more cash into the banking system, lowering the cash rate. Lower rates reduce demand for the dollar (it depreciates) and raise spending (GDP rises).",
+  "not": {
+   "A": "These are the effects of a higher cash rate.",
+   "B": "The dollar does depreciate, but lower rates raise GDP.",
+   "D": "GDP does rise, but lower rates depreciate the dollar."
+  }
+ },
+ "2015-18": {
+  "why": "GDP = C + I + G + X − M. Year 1 = 1000; Year 2 = 550 + 250 + 300 + 200 − 200 = 1100. Real GDP in Year 2 = 1100 ÷ 110 × 100 = 1000, so real growth is 0%.",
+  "not": {
+   "B": "There is no real growth once the 10% rise in prices is removed.",
+   "C": "10% is the growth in nominal GDP.",
+   "D": "14% does not come from these figures."
+  }
+ },
+ "2015-19": {
+  "why": "Headline inflation rises while underlying falls. Floods push up food prices, a volatile item in headline only. Microeconomic reform lowers costs across the economy, reducing underlying inflation.",
+  "not": {
+   "A": "Lower oil production would raise headline, but expansionary fiscal policy would raise underlying inflation.",
+   "C": "Tariffs and a higher minimum wage raise costs broadly, lifting underlying inflation.",
+   "D": "More oil production would lower headline inflation."
+  }
+ },
+ "2015-20": {
+  "why": "Current account = 50 − 200 + 25 = −125. Financial account = 5 + 50 + 10 + 45 = 110. The capital and financial account must total +125, so the capital account = 125 − 110 = $15 billion surplus.",
+  "not": {
+   "A": "The size is right, but a surplus is needed to offset the current account deficit.",
+   "C": "$25 billion is net secondary income, not the capital account.",
+   "D": "$25 billion is net secondary income, not the capital account."
+  }
+ },
+ "2014-1": {
+  "why": "A trading bloc is a group of countries that reduce trade barriers among themselves. The EU is the largest example.",
+  "not": {
+   "B": "The WTO is a global organisation that oversees trade rules.",
+   "C": "The GATT was the global agreement that preceded the WTO.",
+   "D": "The OECD is a policy forum, not a trade arrangement."
+  }
+ },
+ "2014-2": {
+  "why": "Australia is one of the 19 countries (plus the EU) in the G20.",
+  "not": {
+   "A": "The G8 was made up of the largest advanced economies and Russia; Australia was not a member.",
+   "C": "NAFTA covered the United States, Canada and Mexico.",
+   "D": "ASEAN is made up of South-East Asian nations; Australia is a partner, not a member."
+  }
+ },
+ "2014-3": {
+  "why": "In a recession incomes and employment fall, so less income tax is collected.",
+  "not": {
+   "A": "Defence spending is not linked to the business cycle.",
+   "B": "Transfer payments rise as more people become unemployed.",
+   "C": "Spending falls, so GST receipts fall."
+  }
+ },
+ "2014-4": {
+  "why": "The IMF lends to countries that cannot meet their international payments and helps stabilise them in a financial crisis.",
+  "not": {
+   "A": "Trade disputes are handled by the WTO.",
+   "C": "Investment disputes are not the IMF's role.",
+   "D": "Infrastructure funding is the role of the World Bank."
+  }
+ },
+ "2014-5": {
+  "why": "A floating rate moves with demand and supply every day, creating uncertainty for exporters, importers and borrowers.",
+  "not": {
+   "A": "Needing fewer reserves is an advantage of floating.",
+   "B": "A floating rate does not require higher reserves.",
+   "D": "Volatility increased, and less volatility would not be a disadvantage."
+  }
+ },
+ "2014-6": {
+  "why": "A positive externality is a benefit to people outside the project. Diverting flights reduces congestion for people near the existing airport.",
+  "not": {
+   "A": "Fewer jobs would be a cost, and the new airport creates jobs.",
+   "B": "More congestion is a negative externality.",
+   "D": "Jobs around the existing airport are more likely to fall than rise."
+  }
+ },
+ "2014-7": {
+  "why": "More flexible labour markets match workers to jobs more easily, lowering structural unemployment, and offer working arrangements that draw more people into the labour force.",
+  "not": {
+   "A": "Flexibility lowers the natural rate of unemployment.",
+   "C": "Both are the wrong direction.",
+   "D": "Unemployment does fall, but participation rises."
+  }
+ },
+ "2014-8": {
+  "why": "Nominal GDP rose 5% but real GDP rose 3%. The difference, about 2%, is the rise in prices, which is less than the 5% rise in nominal GDP.",
+  "not": {
+   "A": "Nominal GDP grew faster than real GDP, so prices rose.",
+   "B": "Prices rose; they did not fall.",
+   "D": "Prices rose by about 2%, less than the 5% rise in nominal GDP."
+  }
+ },
+ "2014-9": {
+  "why": "Government funding acts like a subsidy that increases supply. Removing it shifts supply left, so the price rises and the quantity falls.",
+  "not": {
+   "A": "This is what happens when funding is increased.",
+   "B": "A fall in supply raises the price.",
+   "C": "A fall in supply reduces the quantity."
+  }
+ },
+ "2014-10": {
+  "why": "Lower demand for the dollar and greater supply of it both push its value down, so the result is certain.",
+  "not": {
+   "B": "Demand left lowers the value but supply left raises it: the result is uncertain.",
+   "C": "Both shifts raise the value of the dollar.",
+   "D": "Demand right raises the value but supply right lowers it: the result is uncertain."
+  }
+ },
+ "2014-11": {
+  "why": "With fewer competitors, firms have more market power: they can restrict output and charge more.",
+  "not": {
+   "A": "This is the effect of more competition.",
+   "B": "Less competition raises prices.",
+   "C": "Less competition reduces the quantity sold."
+  }
+ },
+ "2014-12": {
+  "why": "Inflation = (156 − 150) ÷ 150 × 100 = 4%.",
+  "not": {
+   "A": "3% does not come from these figures.",
+   "C": "5 is the rise in index points in 2012.",
+   "D": "6 is the rise in index points, not a percentage."
+  }
+ },
+ "2014-13": {
+  "why": "Foreign investment flowing in is a credit on the capital and financial account. The profits and interest later paid to the foreign investors are debits on the primary income account.",
+  "not": {
+   "A": "Inflows of investment are credits, and the income paid out is a debit.",
+   "B": "Income paid to foreign investors is a debit.",
+   "C": "Investment flowing into Australia is a credit."
+  }
+ },
+ "2014-14": {
+  "why": "To lower the cash rate the Reserve Bank buys government securities from the banks. Banks hold fewer securities and more cash in their exchange settlement accounts.",
+  "not": {
+   "B": "The banks sell securities to the Reserve Bank, so their holdings fall.",
+   "C": "The banks receive cash for the securities, so their cash rises.",
+   "D": "This is what happens when monetary policy is tightened."
+  }
+ },
+ "2014-15": {
+  "why": "Curve B is further from the line of equality, so inequality has increased. A lower top tax rate and higher business profits both raise the incomes of high earners.",
+  "not": {
+   "B": "Lower business profits reduce the incomes of high earners.",
+   "C": "A higher top tax rate reduces inequality.",
+   "D": "Both changes would reduce inequality."
+  }
+ },
+ "2014-16": {
+  "why": "Current account = 10 − 20 − 5 = −15. The capital and financial account must be +15. With a capital account of 1, the financial account is 15 − 1 = $14 billion surplus.",
+  "not": {
+   "A": "A deficit on the current account is offset by a surplus on the financial account.",
+   "B": "The financial account is in surplus, and 16 adds the capital account instead of subtracting it.",
+   "D": "$16 billion adds the capital account instead of subtracting it."
+  }
+ },
+ "2014-17": {
+  "why": "If the youth wage rises and the adult wage does not, young workers become more expensive relative to adults, so employers hire fewer of them.",
+  "not": {
+   "A": "A higher adult wage makes young workers relatively cheaper.",
+   "B": "No change in wages gives no reason for a change.",
+   "C": "If both rise, the relative cost of young workers changes less."
+  }
+ },
+ "2014-18": {
+  "why": "Income rose by 50 and consumption by 40, so MPC = 0.8 and the multiplier is 5. The rise in exports = 100 ÷ 5 = $20 million.",
+  "not": {
+   "B": "$25 million would need a multiplier of 4.",
+   "C": "$75 million does not come from the multiplier.",
+   "D": "$80 million is the extra consumption (0.8 × 100), not the initial rise in exports."
+  }
+ },
+ "2014-19": {
+  "why": "With a $15 tariff the price is $25, the no-trade equilibrium, so there are no imports and no revenue. With a $10 tariff the price is $20: supply 40 million, demand 60 million, imports 20 million. Revenue = 20 million × $10 = $200 million, a rise of $200 million.",
+  "not": {
+   "A": "$100 million would be a $5 tariff on 20 million imports.",
+   "C": "$400 million is total spending on imports (20 million × $20).",
+   "D": "$600 million is not tariff revenue at either tariff."
+  }
+ },
+ "2014-20": {
+  "why": "A $5 tariff makes the price $15, at which local firms produce 30 million and consumers buy 70 million. Imports are 40 million, so a quota of 40 million gives the same domestic output.",
+  "not": {
+   "A": "20 million is the level of imports at a price of $20.",
+   "B": "30 million is domestic output at $15, not the import quota.",
+   "D": "60 million is the level of imports under free trade (80 − 20)."
+  }
+ },
+ "2013-1": {
+  "why": "The World Bank lends to developing countries for infrastructure and development projects such as dams.",
+  "not": {
+   "B": "The WTO oversees trade rules and does not lend.",
+   "C": "The IMF lends to stabilise economies in financial crisis.",
+   "D": "The OECD is a policy forum of mostly advanced economies."
+  }
+ },
+ "2013-2": {
+  "why": "Governments most often justify tariffs as protecting local jobs from import competition.",
+  "not": {
+   "A": "Tariffs reduce trade volumes.",
+   "C": "Tariffs raise prices, adding to inflation.",
+   "D": "Tariffs have no direct effect on interest rates."
+  }
+ },
+ "2013-3": {
+  "why": "Country A's curve is closer to the line of equality, so its income is more evenly shared. Higher welfare spending redistributes income to lower-income households.",
+  "not": {
+   "A": "Saving rates do not explain a more equal distribution.",
+   "B": "Average income says nothing about how income is shared.",
+   "D": "Stronger incentives for entrepreneurs usually go with wider income differences."
+  }
+ },
+ "2013-4": {
+  "why": "Preferential treatment can lead members to buy from each other even when a non-member produces more cheaply. This is trade diversion.",
+  "not": {
+   "A": "They increase trade between members.",
+   "B": "Members receive preferential treatment over non-members.",
+   "D": "Members are free to sign other agreements."
+  }
+ },
+ "2013-5": {
+  "why": "Hidden unemployed people want to work but are not looking. Cheaper childcare removes a barrier for parents, so they start looking for work.",
+  "not": {
+   "B": "Higher unemployment discourages more people from looking.",
+   "C": "Higher tax rates reduce the reward for working.",
+   "D": "Less funding for traineeships removes a path into work."
+  }
+ },
+ "2013-6": {
+  "why": "Lower taxes and higher transfer payments both raise household disposable income and spending.",
+  "not": {
+   "A": "Higher taxes offset the higher transfers.",
+   "B": "Lower transfers offset the lower taxes.",
+   "D": "Both changes are contractionary."
+  }
+ },
+ "2013-7": {
+  "why": "Higher compulsory contributions raise the cost of employing each worker. Firms pass higher costs on as higher prices: cost inflation.",
+  "not": {
+   "B": "Labour costs rise; they do not fall.",
+   "C": "The change works through firms' costs, not through extra spending.",
+   "D": "The main effect is on costs, not demand."
+  }
+ },
+ "2013-8": {
+  "why": "The NAIRU reflects structural unemployment. Retraining gives job seekers the skills employers need, reducing the mismatch.",
+  "not": {
+   "B": "Higher benefits can reduce the incentive to take a job.",
+   "C": "Protection slows structural change; it does not make workers more employable.",
+   "D": "Infrastructure spending mainly reduces cyclical unemployment."
+  }
+ },
+ "2013-9": {
+  "why": "Producers ignore the external cost, so the market price is below the true social cost and too much is produced.",
+  "not": {
+   "A": "The price is too low because it leaves out the external cost.",
+   "B": "Output is too high, not too low.",
+   "D": "This describes a positive externality."
+  }
+ },
+ "2013-10": {
+  "why": "Current account = 100 − 120 − 140 − 40 = −200. With a floating exchange rate a current account deficit of $200 billion is matched by a surplus of $200 billion on the capital and financial account.",
+  "not": {
+   "A": "$160 billion leaves out net secondary income, and the balance is a surplus.",
+   "B": "$160 billion leaves out net secondary income (−40).",
+   "C": "The size is right, but a current account deficit is offset by a surplus."
+  }
+ },
+ "2013-11": {
+  "why": "Seasonal unemployment follows the time of year, such as fruit picking. It is not affected by the long-term shift from manufacturing to mining.",
+  "not": {
+   "B": "Workers moving between industries spend time between jobs.",
+   "C": "A change in the structure of industry is the cause of structural unemployment.",
+   "D": "Displaced manufacturing workers without the right skills can be out of work for long periods."
+  }
+ },
+ "2013-12": {
+  "why": "More and better machinery lets each worker produce more.",
+  "not": {
+   "A": "Income tax rates do not change what a firm's workers can produce.",
+   "C": "Lower demand reduces sales, not output per worker.",
+   "D": "A smaller quota gives more protection and less pressure to improve."
+  }
+ },
+ "2013-13": {
+  "why": "Selling foreign currency means buying Australian dollars, adding to demand. A higher cash rate attracts foreign funds, also adding to demand.",
+  "not": {
+   "A": "Buying foreign currency means selling Australian dollars, which lowers the dollar.",
+   "B": "A lower cash rate reduces demand for the dollar.",
+   "D": "Both actions lower the dollar."
+  }
+ },
+ "2013-14": {
+  "why": "Lower interest rates raise consumption and investment. A lower dollar makes exports cheaper and imports dearer, raising net exports.",
+  "not": {
+   "A": "Both changes reduce aggregate demand.",
+   "C": "Lower rates help, but an appreciation reduces net exports.",
+   "D": "A depreciation helps, but higher rates reduce spending."
+  }
+ },
+ "2013-15": {
+  "why": "The multiplier is 1 ÷ (1 − MPC). A lower MPC means a smaller multiplier, and with less consumption equilibrium income falls.",
+  "not": {
+   "A": "Both are the wrong direction.",
+   "C": "The multiplier does fall, but so does income.",
+   "D": "A lower MPC reduces the multiplier."
+  }
+ },
+ "2013-16": {
+  "why": "Lower Australian rates lead investors to sell Australian dollars and move funds overseas. The supply of dollars rises and the dollar falls against trading partners' currencies.",
+  "not": {
+   "A": "A greater supply of dollars lowers the TWI.",
+   "B": "The TWI does fall, but because supply increases.",
+   "C": "Both are the wrong direction."
+  }
+ },
+ "2013-17": {
+  "why": "Selling securities takes cash out of the banking system, reducing the money supply and pushing interest rates up.",
+  "not": {
+   "A": "Buying securities adds cash: expansionary.",
+   "C": "Selling securities reduces the money supply.",
+   "D": "Buying securities increases the money supply."
+  }
+ },
+ "2013-18": {
+  "why": "More oil lowers petrol prices. Petrol is a volatile item that is counted in headline inflation but excluded from underlying.",
+  "not": {
+   "A": "Established house prices are not in the CPI.",
+   "B": "Established house prices are not in the CPI.",
+   "C": "Less oil would raise petrol prices and headline inflation."
+  }
+ },
+ "2013-19": {
+  "why": "Terms of trade = export prices ÷ import prices × 100 = 110 ÷ 105 × 100 = 104.8, a rise from 100. Net export volume goes from 100 − 100 = 0 to 105 − 110 = −5, a decrease.",
+  "not": {
+   "A": "The terms of trade rose, but import volumes grew faster than export volumes.",
+   "B": "Export prices rose more than import prices, so the terms of trade rose.",
+   "C": "Both are the wrong direction."
+  }
+ },
+ "2013-20": {
+  "why": "With a $10 tariff the price is $30, the no-trade equilibrium: no imports, no revenue, and local output of 100. With a $5 tariff the price is $25: local output falls to 90 and imports are 20, so revenue rises to 20 × $5 = $100.",
+  "not": {
+   "A": "Revenue rises, but a lower price reduces local output.",
+   "B": "Local output falls, but revenue rises from zero.",
+   "C": "Both are the wrong direction."
+  }
+ },
+ "2012-1": {
+  "why": "The EU is a group of countries with free trade among members and common barriers to others.",
+  "not": {
+   "A": "The UN is concerned with peace, security and development.",
+   "C": "The G20 is a forum for policy coordination.",
+   "D": "The OECD is a policy research forum."
+  }
+ },
+ "2012-2": {
+  "why": "The Fair Work system replaced thousands of state and federal awards with a much smaller number of modern awards.",
+  "not": {
+   "B": "Enterprise agreements remain central to the system.",
+   "C": "The minimum wage is reviewed each year and was not reduced.",
+   "D": "The safety net was kept through the National Employment Standards and modern awards."
+  }
+ },
+ "2012-3": {
+  "why": "Development brings better education, health and capital, all of which raise output per worker.",
+  "not": {
+   "A": "Education levels rise with development.",
+   "C": "Reliance on aid falls as incomes rise.",
+   "D": "Agriculture shrinks as a share of GDP as industry and services grow."
+  }
+ },
+ "2012-4": {
+  "why": "The Reserve Bank's charter refers to the stability of the currency, full employment and the economic prosperity and welfare of the people.",
+  "not": {
+   "B": "National debt is a matter for fiscal policy.",
+   "C": "National savings are not an objective of monetary policy.",
+   "D": "Income distribution is addressed mainly through fiscal policy."
+  }
+ },
+ "2012-5": {
+  "why": "Output has fallen and unemployment has risen to 8%. Both policies should stimulate demand to create jobs.",
+  "not": {
+   "B": "Contractionary fiscal policy would cost jobs.",
+   "C": "Contractionary monetary policy would cost jobs.",
+   "D": "Both would raise unemployment further."
+  }
+ },
+ "2012-6": {
+  "why": "Labour force = employed + unemployed. Year 1: 200 000 + 600 000 + 100 000 = 900 000. Year 2: 210 000 + 640 000 + 110 000 = 960 000. The change is 60 000.",
+  "not": {
+   "A": "40 000 is the change in full-time employment only.",
+   "B": "50 000 is the change in total employment; the unemployed are also in the labour force.",
+   "D": "70 000 is the change in the working age population."
+  }
+ },
+ "2012-7": {
+  "why": "Taxation (60) is greater than government expenditure (50), so the budget is in surplus.",
+  "not": {
+   "A": "Exports (80) exceed imports (70): a trade surplus.",
+   "C": "Injections (40 + 50 + 80 = 170) equal leakages (40 + 60 + 70 = 170).",
+   "D": "Injections and leakages are equal at 170."
+  }
+ },
+ "2012-8": {
+  "why": "Fewer people in work means less income tax, and more people out of work means more unemployment benefits.",
+  "not": {
+   "A": "Income tax revenue falls when fewer people have jobs.",
+   "B": "Social security payments rise with unemployment.",
+   "C": "Both are the wrong direction."
+  }
+ },
+ "2012-9": {
+  "why": "Lower interest rates make borrowing cheaper and saving less rewarding, so households spend more and save a smaller share of income.",
+  "not": {
+   "A": "Spending rises when rates fall.",
+   "B": "A lower return on saving reduces the saving rate.",
+   "C": "Both are the wrong direction."
+  }
+ },
+ "2012-10": {
+  "why": "Banks pay for the securities from their exchange settlement accounts, so cash becomes scarcer and the cash rate rises.",
+  "not": {
+   "A": "Less cash pushes interest rates up.",
+   "B": "Selling securities removes cash.",
+   "D": "Selling securities removes cash from the accounts."
+  }
+ },
+ "2012-11": {
+  "why": "A capital and financial account surplus of 200 means a current account deficit of 200. Current account = X − 700 + 100 − 150 + 50 = X − 700, so X − 700 = −200 and X = $500bn.",
+  "not": {
+   "A": "$900bn would give a current account surplus of 200.",
+   "B": "$700bn would give a current account balance of zero.",
+   "D": "$300bn would give a deficit of 400."
+  }
+ },
+ "2012-12": {
+  "why": "A subsidy encourages activities with benefits to others, and a tax makes polluters pay for the costs they impose.",
+  "not": {
+   "A": "Taxing a positive externality discourages a beneficial activity.",
+   "B": "Subsidising a negative externality encourages a harmful activity.",
+   "C": "This rewards harm and penalises benefit."
+  }
+ },
+ "2012-13": {
+  "why": "Public goods are non-excludable: people cannot be charged at the point of use, so they are funded from taxation.",
+  "not": {
+   "A": "They are not priced in a market at all.",
+   "B": "Their supply is decided by government and is not fixed.",
+   "C": "People cannot be made to pay directly, which is why markets do not provide them."
+  }
+ },
+ "2012-14": {
+  "why": "AS has shifted to the right. Higher labour productivity lowers the cost of each unit of output and raises productive capacity.",
+  "not": {
+   "A": "The budget balance affects aggregate demand.",
+   "C": "A higher minimum wage raises costs, shifting AS to the left.",
+   "D": "Interest rates affect aggregate demand."
+  }
+ },
+ "2012-15": {
+  "why": "Year 1: labour force 24 million; participation 24 ÷ 30 = 80%; unemployment 3 ÷ 24 = 12.5%. Year 2: labour force 30 million; participation 30 ÷ 40 = 75%; unemployment 3 ÷ 30 = 10%. Both are lower.",
+  "not": {
+   "B": "Unemployment falls from 12.5% to 10%.",
+   "C": "Participation falls from 80% to 75%.",
+   "D": "Both rates fall."
+  }
+ },
+ "2012-16": {
+  "why": "When national savings fall short of investment, the gap is funded from overseas, and the cost of servicing that borrowing adds to the current account deficit.",
+  "not": {
+   "B": "Less aid means smaller secondary income debits, reducing the deficit.",
+   "C": "A larger budget surplus adds to national savings.",
+   "D": "Overseas students are an export of services."
+  }
+ },
+ "2012-17": {
+  "why": "One Australian dollar buys more euros (0.7 to 0.8), so it appreciated against the euro. It buys fewer US dollars (1.10 to 1.00), so it depreciated against the US dollar.",
+  "not": {
+   "A": "It buys more yen (80 to 90), so it appreciated against the yen.",
+   "B": "It appreciated against the euro.",
+   "D": "It appreciated against the euro and depreciated against the US dollar."
+  }
+ },
+ "2012-18": {
+  "why": "The subsidy is the vertical gap between the two supply curves. At the quantity of 20, producers need $12 without the subsidy (S1) but accept $10 with it (S2): a subsidy of $2.",
+  "not": {
+   "B": "$4 is the gap between $12 and $8, two prices on the axis, not the gap between the curves at one quantity.",
+   "C": "$8 is a price on the axis.",
+   "D": "$12 is a price on the axis."
+  }
+ },
+ "2012-19": {
+  "why": "The multiplier is 20 000 ÷ 5000 = 4. Since k = 1 ÷ (1 − MPC), 1 − MPC = 0.25 and MPC = 0.75.",
+  "not": {
+   "A": "An MPC of 0.2 gives a multiplier of 1.25.",
+   "B": "0.25 is the MPS.",
+   "D": "An MPC of 0.8 gives a multiplier of 5."
+  }
+ },
+ "2012-20": {
+  "why": "In a recession households and firms buy less of everything, including imports. A depreciation makes imports dearer.",
+  "not": {
+   "A": "A recession reduces imports, but an appreciation makes them cheaper.",
+   "B": "A depreciation reduces imports, but an expansion raises demand for them.",
+   "C": "Both changes increase imports."
+  }
+ },
+ "2011-1": {
+  "why": "Dearer oil raises the cost of transporting goods around the world, which discourages trade.",
+  "not": {
+   "A": "Workers moving more freely between countries speeds up globalisation.",
+   "B": "Cheaper communication speeds up globalisation.",
+   "D": "Lower export subsidies are a reduction in protection, which frees up trade."
+  }
+ },
+ "2011-2": {
+  "why": "A higher minimum wage lifts the incomes of the lowest-paid workers, narrowing the gap with higher earners.",
+  "not": {
+   "B": "Lower benefits reduce the incomes of the poorest households.",
+   "C": "Decentralised bargaining tends to widen wage differences.",
+   "D": "Less education and training reduces the earning power of lower-income people."
+  }
+ },
+ "2011-3": {
+  "why": "More competition in labour and other factor markets makes wages and employment more flexible, reducing structural unemployment and so the NAIRU.",
+  "not": {
+   "A": "Fiscal policy acts on cyclical unemployment, not the NAIRU.",
+   "B": "Monetary policy acts on cyclical unemployment, not the NAIRU.",
+   "D": "Less competition makes the economy less efficient."
+  }
+ },
+ "2011-4": {
+  "why": "Injections = G + I + X = 30 + 25 + 30 = 85. Withdrawals = S + T + M = 30 + 20 + 35 = 85. They are equal, so income is in equilibrium.",
+  "not": {
+   "A": "Income contracts only when withdrawals exceed injections.",
+   "B": "Both total 85.",
+   "C": "Both total 85."
+  }
+ },
+ "2011-5": {
+  "why": "AS has shifted to the left. Higher labour costs per unit of output make production dearer at every price level.",
+  "not": {
+   "B": "Lower inflationary expectations restrain wage claims, shifting AS right.",
+   "C": "A change in national income is a movement along the curves, not a shift of AS.",
+   "D": "An appreciation lowers the cost of imported inputs, shifting AS right."
+  }
+ },
+ "2011-6": {
+  "why": "An appreciation makes Australian exports dearer for foreign buyers, and a US recession reduces their demand.",
+  "not": {
+   "A": "A depreciation makes exports cheaper, working against the effect of the recession.",
+   "C": "Both changes increase exports.",
+   "D": "An appreciation hurts, but a US expansion raises demand."
+  }
+ },
+ "2011-7": {
+  "why": "The terms of trade have fallen (110 to 105), reducing export income and economic activity. Higher government spending offsets the fall in demand.",
+  "not": {
+   "A": "Higher interest rates would slow the economy further.",
+   "B": "Higher taxes would slow the economy further.",
+   "D": "A higher currency would make exports even less competitive."
+  }
+ },
+ "2011-8": {
+  "why": "Asset prices such as property and shares tend to rise with inflation, so the owners' wealth keeps its real value or grows.",
+  "not": {
+   "B": "A fixed income buys less as prices rise.",
+   "C": "The real value of money in the bank falls.",
+   "D": "Pensioners are on low, largely fixed incomes that lag behind price rises."
+  }
+ },
+ "2011-9": {
+  "why": "More inequality means more low-income households needing support, which costs the government more.",
+  "not": {
+   "A": "Faster growth would be a benefit, not a cost.",
+   "B": "Greater mobility of labour is a benefit of wider wage differences.",
+   "C": "More risk-taking is a benefit of larger rewards."
+  }
+ },
+ "2011-10": {
+  "why": "Supply of Australian dollars has decreased. A smaller net income deficit means fewer dollars are sold to pay interest and dividends overseas.",
+  "not": {
+   "A": "More imports mean more dollars are supplied.",
+   "B": "Foreign investment in Australia changes the demand for dollars, not the supply.",
+   "D": "Less competitive firms mean more imports, increasing supply."
+  }
+ },
+ "2011-11": {
+  "why": "Higher returns in Australia attract foreign funds. Investors must buy Australian dollars, so demand rises and the dollar appreciates.",
+  "not": {
+   "A": "More capital inflow raises the dollar.",
+   "C": "Higher relative rates attract investment.",
+   "D": "The dollar does appreciate, but because foreign investment rises."
+  }
+ },
+ "2011-12": {
+  "why": "In an expansion incomes rise, so more income tax is collected, and unemployment falls, so fewer benefits are paid.",
+  "not": {
+   "A": "Unemployment benefits fall when more people have jobs.",
+   "B": "Tax receipts rise with incomes.",
+   "C": "This describes a downturn."
+  }
+ },
+ "2011-13": {
+  "why": "Income rose by 150 and consumption by 90, so MPC = 0.6 and the multiplier is 1 ÷ 0.4 = 2.5. Extra income = 2.5 × 40 = 100, so Y = 300 + 100 = $400bn.",
+  "not": {
+   "A": "$360bn uses a multiplier of 1.5.",
+   "B": "$367bn uses a multiplier of 1 ÷ 0.6 instead of 1 ÷ 0.4.",
+   "D": "$420bn uses a multiplier of 3."
+  }
+ },
+ "2011-14": {
+  "why": "A current account deficit is financed by borrowing or selling assets, adding to liabilities. A depreciation raises the Australian dollar value of debt owed in foreign currencies.",
+  "not": {
+   "A": "An appreciation reduces the value of foreign currency debt.",
+   "C": "A surplus reduces liabilities.",
+   "D": "A surplus reduces liabilities."
+  }
+ },
+ "2011-15": {
+  "why": "Current account = −15 + 5 − 50 + 5 = −55. The capital and financial account must be +55. With a capital account of 5, the financial account is 55 − 5 = $50bn.",
+  "not": {
+   "A": "$45bn leaves out one of the current account items.",
+   "C": "$55bn is the whole capital and financial account.",
+   "D": "$60bn adds the capital account instead of subtracting it."
+  }
+ },
+ "2011-16": {
+  "why": "Lower government spending reduces demand, and selling securities takes cash out of the system and raises interest rates. Both are contractionary.",
+  "not": {
+   "A": "Lower taxes increase spending.",
+   "C": "Buying securities lowers interest rates.",
+   "D": "Both would add to inflation."
+  }
+ },
+ "2011-17": {
+  "why": "At $10: demand 400, local supply 100, imports 300, so foreign revenue is 300 × $10 = $3000. With the tariff the price is $15: demand 300, local supply 200, imports 100. Foreign producers still receive $10, so revenue is $1000. The fall is $2000.",
+  "not": {
+   "A": "$500 is the tariff revenue (100 × $5).",
+   "B": "$1000 is foreign producers' revenue after the tariff, not the fall.",
+   "C": "$1500 is what consumers pay for imports after the tariff (100 × $15)."
+  }
+ },
+ "2011-18": {
+  "why": "The HDI combines income, life expectancy and education. Country A has a lower income but a higher HDI, so it must score higher on health and education.",
+  "not": {
+   "A": "The HDI says nothing about how income is distributed.",
+   "B": "The HDI says nothing about how income is distributed.",
+   "C": "With lower income and lower health and education, A's HDI would be lower."
+  }
+ },
+ "2011-19": {
+  "why": "Borrowing from the central bank creates new money to pay for the spending, adding directly to demand.",
+  "not": {
+   "A": "Selling assets raises funds without creating money.",
+   "C": "Borrowing existing savings does not add to the money supply and pushes interest rates up.",
+   "D": "Borrowing overseas does not create new money at home."
+  }
+ },
+ "2011-20": {
+  "why": "Adding the social cost to firms' costs shifts supply to the left: less is produced and the price is higher.",
+  "not": {
+   "A": "Higher costs raise the price.",
+   "B": "Higher costs reduce output.",
+   "D": "This would happen if costs fell."
+  }
+ },
+ "2010-1": {
+  "why": "Producing more output needs more workers, so growth and employment rise together.",
+  "not": {
+   "A": "Strong growth tends to push prices up.",
+   "B": "Strong growth draws in imports, worsening the external balance.",
+   "D": "More production usually means more resource use and pollution."
+  }
+ },
+ "2010-2": {
+  "why": "National Competition Policy increased competition among firms selling goods and services.",
+  "not": {
+   "A": "Labour is a factor of production, so this is a factor market.",
+   "B": "Income tax changes affect incentives to work, a labour market matter.",
+   "C": "Finance (capital) is a factor market."
+  }
+ },
+ "2010-3": {
+  "why": "Current account = (500 − 540) − 70 − 115 + 85 = −140. With a floating rate this is matched by a $140bn surplus on the capital and financial account.",
+  "not": {
+   "A": "Goods and services = −40 − 70 = −$110bn; $225bn also includes net income.",
+   "C": "The current account is in deficit by $140bn.",
+   "D": "Capital transfers of +30 are a surplus on the capital account."
+  }
+ },
+ "2010-4": {
+  "why": "At W1, above the equilibrium wage, more people want to work than firms want to employ. The gap is unemployment.",
+  "not": {
+   "A": "A higher wage reduces the quantity of labour demanded.",
+   "B": "A higher wage attracts more people into the labour force.",
+   "D": "The demand curve does not shift; firms move along it to a lower quantity."
+  }
+ },
+ "2010-5": {
+  "why": "Removing protection forces uncompetitive manufacturers to close. Their workers' skills do not match the jobs available, raising structural unemployment.",
+  "not": {
+   "A": "Interest rates affect cyclical unemployment.",
+   "B": "Government spending affects cyclical unemployment.",
+   "C": "A change in how wages are set does not displace workers in the way that removing protection does."
+  }
+ },
+ "2010-6": {
+  "why": "The IMF oversees the international monetary system and lends to countries in financial crisis.",
+  "not": {
+   "A": "The World Bank funds development.",
+   "B": "The WTO oversees trade rules.",
+   "D": "The OECD is a policy forum."
+  }
+ },
+ "2010-7": {
+  "why": "Contribution = weight × price rise. Food 30 × 10 = 300; Health 10 × 30 = 300; Housing 15 × 25 = 375; Clothing 20 × 20 = 400. Clothing is the largest.",
+  "not": {
+   "A": "Food has the largest weight but the smallest price rise (300).",
+   "B": "Health has the largest price rise but the smallest weight (300).",
+   "C": "Housing contributes 375, less than Clothing."
+  }
+ },
+ "2010-8": {
+  "why": "Lower labour costs and better infrastructure both reduce the cost of producing and moving Australian goods.",
+  "not": {
+   "A": "Higher interest rates raise firms' costs and push the dollar up.",
+   "C": "Smaller import quotas are more protection, which reduces pressure to be efficient.",
+   "D": "An appreciation makes exports dearer, offsetting the productivity gain."
+  }
+ },
+ "2010-9": {
+  "why": "Cheap city parking encourages driving. Removing the tax concession makes driving in dearer, reducing congestion and pollution.",
+  "not": {
+   "A": "Cheaper petrol encourages more driving.",
+   "B": "Free entry increases visitor numbers and damage to parks.",
+   "C": "Smaller rebates discourage clean energy."
+  }
+ },
+ "2010-10": {
+  "why": "From X to Y the economy is heading into a downturn. Buying securities lowers interest rates and an expansionary budget adds to demand.",
+  "not": {
+   "B": "Selling securities raises interest rates, working against the budget.",
+   "C": "A contractionary budget would deepen the downturn.",
+   "D": "Both would deepen the downturn."
+  }
+ },
+ "2010-11": {
+  "why": "Less discretionary spending reduces demand. A depreciation makes imported goods and inputs dearer, raising costs.",
+  "not": {
+   "A": "Loose monetary policy adds to demand inflation.",
+   "B": "More government spending adds to demand inflation.",
+   "C": "More discretionary spending adds to demand inflation."
+  }
+ },
+ "2010-12": {
+  "why": "Each year consumption rises by 100 and saving by 100, so income rises by 200 and MPC = 0.5. Multiplier = 1 ÷ (1 − 0.5) = 2.",
+  "not": {
+   "A": "0.2 does not come from these figures.",
+   "B": "0.5 is the MPC, not the multiplier.",
+   "C": "A multiplier of 1 would mean nothing is re-spent."
+  }
+ },
+ "2010-13": {
+  "why": "The government competes with firms for the same pool of savings, pushing interest rates up (crowding out).",
+  "not": {
+   "A": "Borrowing existing savings does not create money.",
+   "B": "Selling securities at home does not directly raise the current account deficit.",
+   "D": "Higher borrowing costs reduce private investment."
+  }
+ },
+ "2010-14": {
+  "why": "A larger budget deficit adds to demand (AD right). Cheaper labour lowers production costs (AS right).",
+  "not": {
+   "A": "Lower subsidies raise producers' costs, shifting AS left.",
+   "C": "Higher interest rates shift AD left.",
+   "D": "Both shift the curves to the left."
+  }
+ },
+ "2010-15": {
+  "why": "Public goods are non-rival: once provided, an extra user adds nothing to the cost.",
+  "not": {
+   "B": "No one can be excluded, so property rights are hard to define.",
+   "C": "They are not sold, so they have no price.",
+   "D": "They are non-rival and non-excludable."
+  }
+ },
+ "2010-16": {
+  "why": "NESA accepted both A and D. In A, tying the currency to one with low interest rates brings lower rates to an economy in recession. In D, a rate held below equilibrium keeps exports competitive.",
+  "not": {
+   "B": "Tying a booming economy to one in recession would bring lower interest rates and add to the boom.",
+   "C": "A rate above equilibrium makes exports dearer, deepening the recession."
+  }
+ },
+ "2010-17": {
+  "why": "Countries with a low HDI are less developed, and less developed countries typically have high birth rates.",
+  "not": {
+   "A": "Literacy is part of the HDI, so it is lower in Country A.",
+   "B": "Urbanisation is higher in developed countries.",
+   "D": "Institutions are weaker in less developed countries."
+  }
+ },
+ "2010-18": {
+  "why": "Services have grown as finance and other services became globally integrated, and manufacturing has shrunk as tariffs were removed.",
+  "not": {
+   "A": "Stronger commodity demand would raise mining's share, not lower it.",
+   "C": "Poorer tourism infrastructure would not produce a rise in services.",
+   "D": "Stronger demand for farm products would raise agriculture's share."
+  }
+ },
+ "2010-19": {
+  "why": "The wealth curve is further from the line of equality than the income curve. A curve further out means more inequality and a higher Gini coefficient.",
+  "not": {
+   "B": "The income curve is closer to the line of equality.",
+   "C": "A more unequal distribution has a higher, not lower, Gini coefficient.",
+   "D": "Income is more equal, so it has the lower Gini coefficient."
+  }
+ },
+ "2010-20": {
+  "why": "A larger quota lets more imported cars in, so local producers hold a smaller share of the market.",
+  "not": {
+   "A": "More supply lowers the price.",
+   "C": "The supply of cars increases.",
+   "D": "A larger quota makes access easier."
+  }
+ },
+ "2009-1": {
+  "why": "Higher taxes leave households and firms with less to spend, reducing demand and the pressure on prices.",
+  "not": {
+   "B": "A deficit adds to demand.",
+   "C": "A depreciation makes imports dearer, adding to inflation, and the government does not set a floating exchange rate.",
+   "D": "More government spending adds to demand."
+  }
+ },
+ "2009-2": {
+  "why": "Dividends are income from investment, recorded in the income part of the current account. Money flowing into Australia is a credit.",
+  "not": {
+   "A": "Money received is a credit, not a debit.",
+   "C": "Dividends are income, not a capital or financial transaction.",
+   "D": "It is a credit, but income belongs in the current account."
+  }
+ },
+ "2009-3": {
+  "why": "The HDI combines health (life expectancy), education (years of schooling) and income per person.",
+  "not": {
+   "A": "Population growth is not part of the HDI.",
+   "B": "None of these three is used in the HDI.",
+   "D": "The current account balance and infant mortality are not used in the HDI."
+  }
+ },
+ "2009-4": {
+  "why": "Buying securities puts cash into the banking system, lowering the cash rate and encouraging borrowing and spending.",
+  "not": {
+   "A": "Selling securities removes cash and raises interest rates.",
+   "C": "Selling foreign currency means buying Australian dollars, which raises the dollar and hurts exporters.",
+   "D": "Buying foreign currency affects the exchange rate; the main tool for stimulating the economy is the cash rate."
+  }
+ },
+ "2009-5": {
+  "why": "Terms of trade = export price index ÷ import price index × 100. Year 1 = 100; Year 2 = 110 ÷ 106 × 100 = 103.8; Year 3 = 115 ÷ 110 × 100 = 104.5. It rises each year.",
+  "not": {
+   "B": "Export prices rose faster than import prices throughout.",
+   "C": "There was no deterioration in either period.",
+   "D": "The index rose again from Year 2 (103.8) to Year 3 (104.5)."
+  }
+ },
+ "2009-6": {
+  "why": "Inflation fell from 8.3% (120 to 130) to 3.8% (130 to 135). The terms of trade index fell each year, so export prices were falling relative to import prices.",
+  "not": {
+   "A": "Inflation did fall, but the terms of trade measure prices, not the volume of exports.",
+   "B": "Inflation decreased.",
+   "C": "Inflation decreased, and falling terms of trade mean export prices lagged import prices."
+  }
+ },
+ "2009-7": {
+  "why": "The Reserve Bank can change the cash rate at a monthly meeting, but it takes 6 to 18 months to work through to spending. Fiscal changes are slower to pass but act on demand more directly.",
+  "not": {
+   "A": "Microeconomic reform is slow and is not mainly delivered through the Budget.",
+   "B": "Microeconomic policy works on aggregate supply.",
+   "D": "This is the reverse of the true pattern."
+  }
+ },
+ "2009-8": {
+  "why": "Net foreign liabilities = net foreign debt + net foreign equity, so equity = 780 − 550 = $230bn. As a share of GDP: 230 ÷ 1120 = 20.5%.",
+  "not": {
+   "B": "30.3% does not come from these figures.",
+   "C": "49.1% is net foreign debt as a share of GDP (550 ÷ 1120).",
+   "D": "69.6% is net foreign liabilities as a share of GDP (780 ÷ 1120)."
+  }
+ },
+ "2009-9": {
+  "why": "Structural change moves resources into more efficient industries, lowering costs and raising productivity.",
+  "not": {
+   "B": "Higher interest rates raise costs and push the dollar up.",
+   "C": "The terms of trade measure prices received, not how competitive firms are.",
+   "D": "A higher dollar makes exports dearer."
+  }
+ },
+ "2009-10": {
+  "why": "The tariff raises the price from P to P1. Local production expands from Q to Q2 and imports shrink from QQ1 to Q2Q3, so resources move towards local producers.",
+  "not": {
+   "A": "Tariff revenue is the tariff (P to P1) times imports (Q2 to Q3): the rectangle EFHG.",
+   "B": "Protecting less efficient producers worsens the allocation of resources.",
+   "C": "Consumers pay a higher price, so their real income falls."
+  }
+ },
+ "2009-11": {
+  "why": "A higher dollar makes Australian assets dearer for foreign investors and Australian goods dearer for foreign buyers.",
+  "not": {
+   "A": "Import prices do fall, but an appreciation reduces the value of foreign currency debt.",
+   "B": "The terms of trade are measured from price indexes and do not deteriorate because of an appreciation.",
+   "C": "An appreciation tends to worsen the current account and lower inflation."
+  }
+ },
+ "2009-12": {
+  "why": "Real GDP: Year 1 = 6000 ÷ 130 × 100 = 4615; Year 2 = 6800 ÷ 150 × 100 = 4533. It decreased. The HDI rose from 0.61 to 0.76, so quality of life improved.",
+  "not": {
+   "A": "Real GDP fell once the rise in prices is removed.",
+   "B": "Real GDP fell and the HDI rose.",
+   "D": "The HDI rose."
+  }
+ },
+ "2009-13": {
+  "why": "A higher Gini coefficient means a Lorenz curve further from the line of equality. Country B's coefficient is higher than Country A's in every year.",
+  "not": {
+   "A": "Country A's coefficient is rising, so its curve is moving away from equality.",
+   "B": "Country B's coefficient is falling, so its curve is moving closer to equality.",
+   "C": "Country A's coefficient is lower in every year."
+  }
+ },
+ "2009-14": {
+  "why": "AS has shifted to the right. Deregulating labour markets makes labour more flexible and productive, lowering production costs.",
+  "not": {
+   "B": "More regulation raises firms' costs.",
+   "C": "Higher company tax reduces investment and supply.",
+   "D": "Less support for research slows productivity growth."
+  }
+ },
+ "2009-15": {
+  "why": "Interest on overseas borrowing is paid to foreigners, adding to the income deficit on the current account.",
+  "not": {
+   "A": "Borrowing overseas avoids pressure on domestic interest rates.",
+   "B": "The money supply does not fall.",
+   "D": "Funds flowing in raise demand for the dollar, which would appreciate."
+  }
+ },
+ "2009-16": {
+  "why": "The multiplier is 1 ÷ (1 − MPC). A higher MPC means more of each dollar is re-spent, so the multiplier and equilibrium income both rise.",
+  "not": {
+   "A": "A larger multiplier raises income.",
+   "C": "A higher MPC increases the multiplier.",
+   "D": "Both are the wrong direction."
+  }
+ },
+ "2009-17": {
+  "why": "Supply of Australian dollars has increased. Australians buying foreign assets must sell dollars to obtain foreign currency.",
+  "not": {
+   "B": "Fewer imports reduce the supply of dollars.",
+   "C": "Foreigners' demand for Australian assets affects the demand for dollars.",
+   "D": "Export demand affects the demand for dollars."
+  }
+ },
+ "2009-18": {
+  "why": "Each 100 of extra income raises consumption by 50, so MPC = 0.5. Consumption rises by 100 (200 to 300), which needs income to rise by 200: Y = 600 + 200 = $800m.",
+  "not": {
+   "A": "$200m is the rise in income, not its new level.",
+   "B": "$600m is the Year 3 level.",
+   "C": "$700m adds only 100, which would mean an MPC of 1."
+  }
+ },
+ "2009-19": {
+  "why": "People who do not look for work are not counted as unemployed or in the labour force, so the labour force shrinks by the jobs lost. The number unemployed is unchanged but is now a larger share of a smaller labour force.",
+  "not": {
+   "A": "The rate rises because the labour force is smaller.",
+   "C": "The labour force shrinks because these people have left it.",
+   "D": "The same number of unemployed in a smaller labour force is a higher rate."
+  }
+ },
+ "2009-20": {
+  "why": "In a decentralised system disputes and pay claims are settled at the workplace, which allows more flexible arrangements.",
+  "not": {
+   "B": "Automatic cost-of-living adjustments belong to centralised wage fixing.",
+   "C": "Bargaining between unions and government is centralised.",
+   "D": "National benchmarks are a feature of a centralised system."
+  }
  }
 }

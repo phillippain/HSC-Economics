@@ -31,7 +31,7 @@ def build():
     points = {p["id"] for f in ("h09",) for t in fw[f]["topics"] for sec in t["sections"] for p in sec["points"]}
     qs, nokey = [], set()
     EX = json.loads((HERE / "data" / "explanations.json").read_text(encoding="utf8")) if (HERE / "data" / "explanations.json").exists() else {}
-    used = set()
+    used, checks = set(), {}
     for it in D["items"]:
         if it["s"] != "I":
             continue
@@ -61,7 +61,9 @@ def build():
         if e:
             wrong = [l for l in "ABCD" if l not in q["k"]]
             assert e.get("why") and sorted(e.get("not", {})) == wrong, f"{q['id']}: explanation must have 'why' and a note for each wrong option {wrong}"
-            q["e"] = e; used.add(q["id"])
+            q["e"] = {"why": e["why"], "not": e["not"]}; used.add(q["id"])
+            if e.get("check"):
+                checks[q["id"]] = e["check"]  # teacher note: shown on review.html only, never in the drill
         qs.append(q)
     fws = [{"id": f["id"], "sub": f["sub"], "topics": [
         {"id": t["id"], "label": t.get("label", ""), "name": t["name"], "color": t["color"],
@@ -72,6 +74,7 @@ def build():
     html = (HERE / "template.html").read_text(encoding="utf8")
     html = html.replace("/*__FONTS__*/", FONTS.read_text(encoding="utf8") if FONTS.exists() else "")
     html = html.replace("__DATA__", json.dumps(out, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/"))
+    build.checks = checks
     return html, out
 
 
@@ -79,7 +82,7 @@ def review(out):
     """Teacher review sheet: every written explanation on one printable page."""
     import html as H
     e = H.escape
-    rows = []
+    rows, flagged = [], []
     for q in out["q"]:
         if "e" not in q:
             continue
@@ -87,16 +90,21 @@ def review(out):
                        + (f'<span>{e(q["e"]["why"])}</span>' if l in q["k"] else f'<span>{e(q["e"]["not"][l])}</span>') + "</li>"
                        for l, o in zip("ABCD", q["o"]))
         fig = " <i>(has a table or figure: see the drill or the Question Finder)</i>" if q.get("f") or q.get("m") else ""
-        rows.append(f'<section><h2>HSC {q["y"]} Q{q["n"]} <small>answer {" or ".join(q["k"])} · {" ".join(q["c"])}</small></h2><p>{e(q["q"])}{fig}</p><ol>{opts}</ol></section>')
+        chk = build.checks.get(q["id"])
+        if chk:
+            flagged.append(f'<li><a href="#q{q["id"]}">HSC {q["y"]} Q{q["n"]}</a>: {e(chk)}</li>')
+        fig += f'</p><p class="chk"><b>Please check:</b> {e(chk)}' if chk else ""
+        rows.append(f'<section id="q{q["id"]}"><h2>HSC {q["y"]} Q{q["n"]} <small>answer {" or ".join(q["k"])} · {" ".join(q["c"])}</small></h2><p>{e(q["q"])}{fig}</p><ol>{opts}</ol></section>')
     n = len(rows)
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1">'
             '<title>Multiple Choice Drill: explanations for review</title><style>body{font:16px/1.5 system-ui,sans-serif;max-width:860px;margin:24px auto;padding:0 16px;color:#101a3a}'
             'h1{font-size:1.5rem}h2{font-size:1.05rem;margin:22px 0 4px;border-top:1px solid #d8deee;padding-top:14px}small{font-weight:400;color:#4a5578}'
             'ol{list-style:none;padding:0;margin:8px 0}li{margin:6px 0;padding:6px 10px;border:1px solid #d8deee;border-radius:8px}li.k{border-color:#17693a;background:#eef8f1}'
-            'li span{display:block;color:#33405f;font-size:.93rem}section{break-inside:avoid}</style></head><body>'
+            'li span{display:block;color:#33405f;font-size:.93rem}.chk{background:#fff3c9;border:1px solid #d9ad16;border-radius:8px;padding:6px 10px;font-size:.93rem}section{break-inside:avoid}</style></head><body>'
             f'<h1>Multiple Choice Drill: explanations for review</h1><p>{n} of {len(out["q"])} questions have an explanation. The green option is the NESA answer; the note under it is the '
             '"why", and the note under each other option says why it is wrong. These were written for the site, not by NESA. To change one, edit <code>multiple-choice-drill/data/explanations.json</code> '
-            'and run <code>python3 multiple-choice-drill/build.py</code>.</p>' + "".join(rows) + "</body></html>")
+            'and run <code>python3 multiple-choice-drill/build.py</code>.</p>'
+            + (f'<h2>Flagged for your check ({len(flagged)})</h2><ul>{"".join(flagged)}</ul>' if flagged else "") + "".join(rows) + "</body></html>")
 
 
 if __name__ == "__main__":
