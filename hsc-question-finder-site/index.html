@@ -12,7 +12,7 @@
 :root{
   --bg:#ffffff; --surface:#ffffff; --surface-2:#f3f6fd; --line:#d8deee; --line-soft:#e6ebf7;
   --ink:#101a3a; --ink-2:#4a5578; --ink-3:#77828f;
-  --accent:#1746d1; --accent-soft:#eaf0fe; --on-accent:#ffffff;
+  --accent:#1c3fb0; --accent-soft:#eaf0fe; --on-accent:#ffffff;
   --t1:#1f4e79; --t1b:#dfe9f5; --t2:#13664f; --t2b:#dcefe6; --t3:#8f4d00; --t3b:#fbe8d2; --t4:#54328a; --t4b:#e9e0f6;
   --warn:#a8401f; --warn-bg:#fbeae4; --ok:#1f6b4d; --ok-bg:#e0f0e8;
   --focus:#1f6feb;
@@ -305,9 +305,9 @@ table.stim td.ol{font-family:"IBM Plex Mono",monospace; font-weight:600; text-al
    interface and the numbers. The booklet's rainbow rule runs under the band.
    Colour means TOPIC here; the four paper sections are told apart in ink. */
 :root{
-  --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#F3F6FD; --line:#D8DEEE; --line-soft:#E6EBF7;
-  --ink:#101A3A; --ink-2:#4A5578; --ink-3:#6A7493;
-  --accent:#1746D1; --accent-soft:#EAF0FE; --on-accent:#FFFFFF; --focus:#1746D1;
+  --bg:#F3F5FA; --surface:#FFFFFF; --surface-2:#E9EEF8; --line:#C9D2E4; --line-soft:#DCE3F0;
+  --ink:#0B1330; --ink-2:#3B4663; --ink-3:#5A6585;
+  --accent:#1C3FB0; --accent-soft:#E3EAFB; --on-accent:#FFFFFF; --focus:#1C3FB0;
   --band:#22211F; --band-2:#2E2C29;
   --t1:#2B5FA6; --t1b:#E8EFF8; --t2:#157A6E; --t2b:#E3F2EF; --t3:#B95C17; --t3b:#FBEEE2; --t4:#7A3F8F; --t4b:#F3E9F6;
   --k1:#22211F; --k2:#4A4743; --k3:#6C6862; --k4:#8C877F;
@@ -431,34 +431,35 @@ ul.qs li.done{background:var(--ok-bg); box-shadow:inset 3px 0 0 var(--ok)}
 
 </style>
 <style>
+body{font-weight:500}
 /* White and cobalt look: light-theme masthead. The dark theme keeps the dark band. */
-:root[data-theme="light"] .masthead{background:#fff;color:var(--ink);background-image:none;border-bottom:4px solid #1746d1}
+:root[data-theme="light"] .masthead{background:#fff;color:var(--ink);background-image:none;border-bottom:2px solid #1c3fb0}
 :root[data-theme="light"] .masthead::after{display:none}
 :root[data-theme="light"] .mast-in h1{color:var(--ink);font-weight:800}
 :root[data-theme="light"] .masthead .school{color:#4a5578}
-:root[data-theme="light"] .kicker{color:#1746d1}
+:root[data-theme="light"] .kicker{color:#1c3fb0}
 :root[data-theme="light"] .mast-meta{color:#4a5578}
 :root[data-theme="light"] .mast-meta > span,:root[data-theme="light"] .mast-meta > a{border-color:#d8deee;background:#f3f6fd;color:#101a3a}
 :root[data-theme="light"] .mast-meta b{color:#101a3a}
-:root[data-theme="light"] .mast-meta a:hover{border-color:#1746d1;color:#1746d1}
-:root[data-theme="light"] .mast-meta .ic{color:#1746d1}
+:root[data-theme="light"] .mast-meta a:hover{border-color:#1c3fb0;color:#1c3fb0}
+:root[data-theme="light"] .mast-meta .ic{color:#1c3fb0}
 :root[data-theme="light"] .mast-chart g{fill:rgba(23,70,209,.10)}
-:root[data-theme="light"] .mast-chart polyline{stroke:#1746d1}
-:root[data-theme="light"] .mast-chart circle{fill:#1746d1}
+:root[data-theme="light"] .mast-chart polyline{stroke:#1c3fb0}
+:root[data-theme="light"] .mast-chart circle{fill:#1c3fb0}
 @media (prefers-color-scheme:light){
-:root:not([data-theme="dark"]) .masthead{background:#fff;color:var(--ink);background-image:none;border-bottom:4px solid #1746d1}
+:root:not([data-theme="dark"]) .masthead{background:#fff;color:var(--ink);background-image:none;border-bottom:4px solid #1c3fb0}
 :root:not([data-theme="dark"]) .masthead::after{display:none}
 :root:not([data-theme="dark"]) .mast-in h1{color:var(--ink);font-weight:800}
 :root:not([data-theme="dark"]) .masthead .school{color:#4a5578}
-:root:not([data-theme="dark"]) .kicker{color:#1746d1}
+:root:not([data-theme="dark"]) .kicker{color:#1c3fb0}
 :root:not([data-theme="dark"]) .mast-meta{color:#4a5578}
 :root:not([data-theme="dark"]) .mast-meta > span,:root:not([data-theme="dark"]) .mast-meta > a{border-color:#d8deee;background:#f3f6fd;color:#101a3a}
 :root:not([data-theme="dark"]) .mast-meta b{color:#101a3a}
-:root:not([data-theme="dark"]) .mast-meta a:hover{border-color:#1746d1;color:#1746d1}
-:root:not([data-theme="dark"]) .mast-meta .ic{color:#1746d1}
+:root:not([data-theme="dark"]) .mast-meta a:hover{border-color:#1c3fb0;color:#1c3fb0}
+:root:not([data-theme="dark"]) .mast-meta .ic{color:#1c3fb0}
 :root:not([data-theme="dark"]) .mast-chart g{fill:rgba(23,70,209,.10)}
-:root:not([data-theme="dark"]) .mast-chart polyline{stroke:#1746d1}
-:root:not([data-theme="dark"]) .mast-chart circle{fill:#1746d1}
+:root:not([data-theme="dark"]) .mast-chart polyline{stroke:#1c3fb0}
+:root:not([data-theme="dark"]) .mast-chart circle{fill:#1c3fb0}
 }
 </style>
 </head>
