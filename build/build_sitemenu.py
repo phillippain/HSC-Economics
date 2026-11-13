@@ -76,23 +76,23 @@ BODY = re.compile(r"<body[^>]*>\n?")
 FIRST_HEADER = re.compile(r"<header\b")   # the Topic Map has no <body> tag
 
 CSS = """
-.smbar{display:flex;justify-content:flex-end;padding:10px 20px 0;font-family:'Public Sans','Segoe UI',system-ui,-apple-system,sans-serif}
+.smbar{display:flex;justify-content:flex-end;padding:10px 20px 0;font-family:'Manrope','Public Sans','Segoe UI',system-ui,-apple-system,sans-serif}
 .smw{display:inline-flex;gap:8px;align-items:center;font-size:13px;line-height:1.3}
 .sm{position:relative;display:inline-block;text-align:left}
 .smw svg{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
-.sm-btn{list-style:none;cursor:pointer;display:inline-flex;gap:7px;align-items:center;background:#ffd24a;color:#1a1d2b;border-radius:999px;padding:6px 13px;font-weight:700;white-space:nowrap;text-decoration:none;user-select:none;-webkit-user-select:none}
+.sm-btn{list-style:none;cursor:pointer;display:inline-flex;gap:7px;align-items:center;background:#ffd24a;color:#1a1d2b;border:1px solid #d9ad16;border-radius:999px;padding:6px 13px;font-weight:700;white-space:nowrap;text-decoration:none;user-select:none;-webkit-user-select:none}
 .sm-btn::-webkit-details-marker{display:none}
 .sm-btn:hover{background:#ffe07a}
-.sm-btn:focus-visible{outline:3px solid #2447d6;outline-offset:2px}
+.sm-btn:focus-visible{outline:3px solid #1746d1;outline-offset:2px}
 .sm[open] .sm-caret{transform:rotate(180deg)}
 .sm-list{position:fixed;top:0;left:0;z-index:1000;width:min(340px,calc(100vw - 16px));max-height:calc(100vh - 90px);overflow:auto;background:#fff;color:#1a1d2b;border:1px solid #dcdfea;border-radius:14px;box-shadow:0 12px 34px rgba(10,14,40,.3);padding:8px;display:flex;flex-direction:column;gap:1px;font-weight:400}
 .sm:not([open]) .sm-list{display:none}
 .sm-h{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#5a6072;padding:8px 10px 3px}
 .sm-a{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:center;padding:7px 10px;border-radius:9px;color:inherit;text-decoration:none}
-.sm-a svg{font-size:18px;color:#2447d6}
+.sm-a svg{font-size:18px;color:#1746d1}
 .sm-a b{display:block;font-size:14px;font-weight:700;color:inherit}
 .sm-a em{display:block;font-style:normal;font-size:12px;color:#5a6072}
-a.sm-a:hover,a.sm-a:focus-visible{background:#e3e9fd;outline:none}
+a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
 .sm-cur{background:#fff3c9}
 .sm-cur em{color:#7d5f00;font-weight:700}
 .sm-ext{border-top:1px solid #dcdfea;margin-top:6px;padding-top:10px;border-radius:0 0 9px 9px}

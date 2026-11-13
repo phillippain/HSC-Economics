@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Find past HSC Economics questions by syllabus dot point, topic or skill.">
 <meta name="theme-color" content="#22211F">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
 <title>HSC Economics Question Finder</title>
+<!-- /* look:white-cobalt */ -->
 <style>
 :root{
-  --bg:#f4f6f9; --surface:#ffffff; --surface-2:#eef1f6; --line:#dbe0e8; --line-soft:#e8ecf2;
-  --ink:#141922; --ink-2:#48525f; --ink-3:#77828f;
-  --accent:#1f3864; --accent-soft:#e5ebf5; --on-accent:#ffffff;
+  --bg:#ffffff; --surface:#ffffff; --surface-2:#f3f6fd; --line:#d8deee; --line-soft:#e6ebf7;
+  --ink:#101a3a; --ink-2:#4a5578; --ink-3:#77828f;
+  --accent:#1746d1; --accent-soft:#eaf0fe; --on-accent:#ffffff;
   --t1:#1f4e79; --t1b:#dfe9f5; --t2:#13664f; --t2b:#dcefe6; --t3:#8f4d00; --t3b:#fbe8d2; --t4:#54328a; --t4b:#e9e0f6;
   --warn:#a8401f; --warn-bg:#fbeae4; --ok:#1f6b4d; --ok-bg:#e0f0e8;
   --focus:#1f6feb;
@@ -42,11 +43,11 @@
 html{-webkit-text-size-adjust:100%}
 body{
   margin:0; background:var(--bg); color:var(--ink);
-  font-family:"IBM Plex Sans","Segoe UI",Roboto,-apple-system,Helvetica,Arial,sans-serif;
+  font-family:"Manrope","Segoe UI",Roboto,-apple-system,Helvetica,Arial,sans-serif;
   font-size:15px; line-height:1.5;
 }
 .mono{font-family:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace}
-h1,h2,h3{font-family:"IBM Plex Serif",Georgia,"Times New Roman",serif; text-wrap:balance; margin:0}
+h1,h2,h3{font-family:"Manrope","Segoe UI",system-ui,sans-serif; text-wrap:balance; margin:0}
 a{color:var(--accent)}
 button{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--focus); outline-offset:2px; border-radius:3px}
@@ -113,7 +114,7 @@ button{font:inherit;color:inherit}
   border-radius:var(--r); padding:13px 14px}
 .topic-card:hover{border-color:var(--tc)}
 .topic-card[aria-current="true"]{border-color:var(--tc); box-shadow:inset 0 0 0 1px var(--tc)}
-.topic-card .tn{display:block; font-family:"IBM Plex Serif",Georgia,serif; font-weight:600;
+.topic-card .tn{display:block; font-family:"Manrope","Segoe UI",system-ui,sans-serif; font-weight:600;
   font-size:.98rem; color:var(--tc); line-height:1.28}
 .topic-card .meta{display:flex; align-items:baseline; gap:12px; margin-top:7px}
 .topic-card .go{margin-left:auto; font-size:.76rem; font-weight:600; color:var(--tc)}
@@ -142,7 +143,7 @@ button{font:inherit;color:inherit}
 .stats{background:var(--surface); border:1px solid var(--line); border-radius:var(--r);
   padding:12px 13px 13px; flex:none}
 .stats h3{font-size:.72rem; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-3);
-  font-family:"IBM Plex Sans",sans-serif; font-weight:600; margin-bottom:9px}
+  font-family:"Manrope",sans-serif; font-weight:600; margin-bottom:9px}
 .tally{display:grid; grid-template-columns:repeat(3,1fr); gap:7px}
 .tally div{border:1px solid var(--line-soft); border-radius:var(--r); padding:6px 8px; background:var(--bg)}
 .tally .n{font-family:"IBM Plex Mono",monospace; font-size:1.1rem; font-weight:600;
@@ -175,7 +176,7 @@ button.tool:hover{border-color:var(--ink-3)}
 .mglink{font-size:.72rem; color:var(--ink-3); margin-left:8px}
 .panel{margin-top:8px; border:1px solid var(--line-soft); border-left:3px solid var(--gc);
   border-radius:var(--r); background:var(--surface-2); padding:10px 12px}
-.panel h4{font-family:"IBM Plex Sans",sans-serif; font-size:.68rem; letter-spacing:.09em;
+.panel h4{font-family:"Manrope",sans-serif; font-size:.68rem; letter-spacing:.09em;
   text-transform:uppercase; color:var(--ink-3); font-weight:600; margin:0 0 7px}
 .band{display:flex; gap:10px; padding:5px 0; border-top:1px solid var(--line-soft)}
 .band:first-of-type{border-top:0}
@@ -192,7 +193,7 @@ button.tool:hover{border-color:var(--ink-3)}
 .group{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); margin-bottom:14px; overflow:hidden}
 .group > header{display:flex; align-items:baseline; gap:10px; padding:11px 16px;
   border-bottom:1px solid var(--line-soft); background:var(--surface-2); border-left:3px solid var(--gc)}
-.group > header .sec{font-family:"IBM Plex Serif",Georgia,serif; font-weight:600; font-size:.95rem; color:var(--gc)}
+.group > header .sec{font-family:"Manrope","Segoe UI",system-ui,sans-serif; font-weight:600; font-size:.95rem; color:var(--gc)}
 .group > header .desc{font-size:.78rem; color:var(--ink-3)}
 .group > header .cnt{margin-left:auto}
 ul.qs{list-style:none; margin:0; padding:0}
@@ -304,16 +305,16 @@ table.stim td.ol{font-family:"IBM Plex Mono",monospace; font-weight:600; text-al
    interface and the numbers. The booklet's rainbow rule runs under the band.
    Colour means TOPIC here; the four paper sections are told apart in ink. */
 :root{
-  --bg:#F5F3EE; --surface:#FFFFFF; --surface-2:#F3F0EA; --line:#E2DED6; --line-soft:#ECE9E2;
-  --ink:#1F1E1C; --ink-2:#55524C; --ink-3:#7A766F;
-  --accent:#C93B2D; --accent-soft:#FBE9E6; --on-accent:#FFFFFF; --focus:#C93B2D;
+  --bg:#FFFFFF; --surface:#FFFFFF; --surface-2:#F3F6FD; --line:#D8DEEE; --line-soft:#E6EBF7;
+  --ink:#101A3A; --ink-2:#4A5578; --ink-3:#6A7493;
+  --accent:#1746D1; --accent-soft:#EAF0FE; --on-accent:#FFFFFF; --focus:#1746D1;
   --band:#22211F; --band-2:#2E2C29;
   --t1:#2B5FA6; --t1b:#E8EFF8; --t2:#157A6E; --t2b:#E3F2EF; --t3:#B95C17; --t3b:#FBEEE2; --t4:#7A3F8F; --t4b:#F3E9F6;
   --k1:#22211F; --k2:#4A4743; --k3:#6C6862; --k4:#8C877F;
   --ok:#157A6E; --ok-bg:#E6F3EF; --warn:#B03A1E; --warn-bg:#FBEAE4;
   --r:6px; --shadow:0 1px 0 rgba(31,30,28,.04);
-  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
-  --plex:"IBM Plex Sans","Segoe UI",Roboto,-apple-system,Helvetica,Arial,sans-serif;
+  --serif:"Manrope","Segoe UI",system-ui,sans-serif;
+  --plex:"Manrope","Segoe UI",Roboto,-apple-system,Helvetica,Arial,sans-serif;
 }
 @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
   --bg:#1C1B19; --surface:#252421; --surface-2:#2D2B28; --line:#3A3834; --line-soft:#312F2C;
@@ -429,27 +430,58 @@ ul.qs li.done{background:var(--ok-bg); box-shadow:inset 3px 0 0 var(--ok)}
 }
 
 </style>
+<style>
+/* White and cobalt look: light-theme masthead. The dark theme keeps the dark band. */
+:root[data-theme="light"] .masthead{background:#fff;color:var(--ink);background-image:none;border-bottom:4px solid #1746d1}
+:root[data-theme="light"] .masthead::after{display:none}
+:root[data-theme="light"] .mast-in h1{color:var(--ink);font-weight:800}
+:root[data-theme="light"] .masthead .school{color:#4a5578}
+:root[data-theme="light"] .kicker{color:#1746d1}
+:root[data-theme="light"] .mast-meta{color:#4a5578}
+:root[data-theme="light"] .mast-meta > span,:root[data-theme="light"] .mast-meta > a{border-color:#d8deee;background:#f3f6fd;color:#101a3a}
+:root[data-theme="light"] .mast-meta b{color:#101a3a}
+:root[data-theme="light"] .mast-meta a:hover{border-color:#1746d1;color:#1746d1}
+:root[data-theme="light"] .mast-meta .ic{color:#1746d1}
+:root[data-theme="light"] .mast-chart g{fill:rgba(23,70,209,.10)}
+:root[data-theme="light"] .mast-chart polyline{stroke:#1746d1}
+:root[data-theme="light"] .mast-chart circle{fill:#1746d1}
+@media (prefers-color-scheme:light){
+:root:not([data-theme="dark"]) .masthead{background:#fff;color:var(--ink);background-image:none;border-bottom:4px solid #1746d1}
+:root:not([data-theme="dark"]) .masthead::after{display:none}
+:root:not([data-theme="dark"]) .mast-in h1{color:var(--ink);font-weight:800}
+:root:not([data-theme="dark"]) .masthead .school{color:#4a5578}
+:root:not([data-theme="dark"]) .kicker{color:#1746d1}
+:root:not([data-theme="dark"]) .mast-meta{color:#4a5578}
+:root:not([data-theme="dark"]) .mast-meta > span,:root:not([data-theme="dark"]) .mast-meta > a{border-color:#d8deee;background:#f3f6fd;color:#101a3a}
+:root:not([data-theme="dark"]) .mast-meta b{color:#101a3a}
+:root:not([data-theme="dark"]) .mast-meta a:hover{border-color:#1746d1;color:#1746d1}
+:root:not([data-theme="dark"]) .mast-meta .ic{color:#1746d1}
+:root:not([data-theme="dark"]) .mast-chart g{fill:rgba(23,70,209,.10)}
+:root:not([data-theme="dark"]) .mast-chart polyline{stroke:#1746d1}
+:root:not([data-theme="dark"]) .mast-chart circle{fill:#1746d1}
+}
+</style>
 </head>
 <body>
 <!-- SITEMENU:START built by build/build_sitemenu.py; edit the list of tools there, not here -->
 <style>
-.smbar{display:flex;justify-content:flex-end;padding:10px 20px 0;font-family:'Public Sans','Segoe UI',system-ui,-apple-system,sans-serif}
+.smbar{display:flex;justify-content:flex-end;padding:10px 20px 0;font-family:'Manrope','Public Sans','Segoe UI',system-ui,-apple-system,sans-serif}
 .smw{display:inline-flex;gap:8px;align-items:center;font-size:13px;line-height:1.3}
 .sm{position:relative;display:inline-block;text-align:left}
 .smw svg{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
-.sm-btn{list-style:none;cursor:pointer;display:inline-flex;gap:7px;align-items:center;background:#ffd24a;color:#1a1d2b;border-radius:999px;padding:6px 13px;font-weight:700;white-space:nowrap;text-decoration:none;user-select:none;-webkit-user-select:none}
+.sm-btn{list-style:none;cursor:pointer;display:inline-flex;gap:7px;align-items:center;background:#ffd24a;color:#1a1d2b;border:1px solid #d9ad16;border-radius:999px;padding:6px 13px;font-weight:700;white-space:nowrap;text-decoration:none;user-select:none;-webkit-user-select:none}
 .sm-btn::-webkit-details-marker{display:none}
 .sm-btn:hover{background:#ffe07a}
-.sm-btn:focus-visible{outline:3px solid #2447d6;outline-offset:2px}
+.sm-btn:focus-visible{outline:3px solid #1746d1;outline-offset:2px}
 .sm[open] .sm-caret{transform:rotate(180deg)}
 .sm-list{position:fixed;top:0;left:0;z-index:1000;width:min(340px,calc(100vw - 16px));max-height:calc(100vh - 90px);overflow:auto;background:#fff;color:#1a1d2b;border:1px solid #dcdfea;border-radius:14px;box-shadow:0 12px 34px rgba(10,14,40,.3);padding:8px;display:flex;flex-direction:column;gap:1px;font-weight:400}
 .sm:not([open]) .sm-list{display:none}
 .sm-h{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#5a6072;padding:8px 10px 3px}
 .sm-a{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:center;padding:7px 10px;border-radius:9px;color:inherit;text-decoration:none}
-.sm-a svg{font-size:18px;color:#2447d6}
+.sm-a svg{font-size:18px;color:#1746d1}
 .sm-a b{display:block;font-size:14px;font-weight:700;color:inherit}
 .sm-a em{display:block;font-style:normal;font-size:12px;color:#5a6072}
-a.sm-a:hover,a.sm-a:focus-visible{background:#e3e9fd;outline:none}
+a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
 .sm-cur{background:#fff3c9}
 .sm-cur em{color:#7d5f00;font-weight:700}
 .sm-ext{border-top:1px solid #dcdfea;margin-top:6px;padding-top:10px;border-radius:0 0 9px 9px}
