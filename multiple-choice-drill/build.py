@@ -29,7 +29,7 @@ def build():
     syl = json.loads(SYL.read_text(encoding="utf8"))
     fw = {f["id"]: f for f in syl["frameworks"]}
     points = {p["id"] for f in ("h09",) for t in fw[f]["topics"] for sec in t["sections"] for p in sec["points"]}
-    qs = []
+    qs, nokey = [], set()
     for it in D["items"]:
         if it["s"] != "I":
             continue
@@ -37,7 +37,10 @@ def build():
         m = D["mcq"].get(y, {}).get(n)
         key = D["key"].get(y, {}).get(n)
         assert m and len(m["o"]) == 4, f"{y} Q{n}: no question text or not four options"
-        assert key and re.fullmatch(r"[A-D]( and [A-D])?", key), f"{y} Q{n}: bad answer key {key!r}"
+        if not key:  # paper added before NESA published its marking guidelines: leave it out until there is a key
+            nokey.add(it["y"])
+            continue
+        assert re.fullmatch(r"[A-D]( and [A-D])?", key), f"{y} Q{n}: bad answer key {key!r}"
         figs = D["figs"].get(y, {}).get("I", {}).get(n, [])
         q = {"id": f"{y}-{n}", "y": it["y"], "n": it["q"], "q": m["q"], "o": [o[1] for o in m["o"]], "k": key.split(" and "),
              "c": [c for c in it["c"] if c in points], "t": it["t"]}
@@ -57,7 +60,7 @@ def build():
         {"id": t["id"], "label": t.get("label", ""), "name": t["name"], "color": t["color"],
          "sections": [{"id": x["id"], "name": x["name"], "points": x["points"]} for x in t["sections"] if not x.get("skills")]}
         for t in f["topics"]]} for f in (fw["h09"], fw["y12"])]
-    out = {"q": qs, "fw": fws, "xwalk": syl["xwalk"]}
+    out = {"q": qs, "fw": fws, "xwalk": syl["xwalk"], "nokey": sorted(nokey)}
     html = (HERE / "template.html").read_text(encoding="utf8")
     html = html.replace("/*__FONTS__*/", FONTS.read_text(encoding="utf8") if FONTS.exists() else "")
     html = html.replace("__DATA__", json.dumps(out, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/"))
@@ -75,4 +78,5 @@ if __name__ == "__main__":
     q = out["q"]
     print(f'Wrote {target} ({len(html)//1024} KB): {len(q)} questions from {len({x["y"] for x in q})} papers, '
           f'{sum(1 for x in q if x.get("f"))} with a table or figure, {sum(1 for x in q if x.get("m"))} with an option table, '
-          f'{sum(1 for x in q if len(x["k"]) > 1)} with two accepted answers, {sum(1 for x in q if not x["c"])} untagged.')
+          f'{sum(1 for x in q if len(x["k"]) > 1)} with two accepted answers, {sum(1 for x in q if not x["c"])} untagged.'
+          + (f' Left out (no answer key yet): {out["nokey"]}.' if out['nokey'] else ''))

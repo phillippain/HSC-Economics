@@ -211,7 +211,7 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#e3e9fd;outline:none}
 <section class="view" id="v-paper"></section>
 <section class="view" id="v-results"></section>
 </main>
-<p class="foot">Questions, options and answers are from the NESA HSC Economics papers and marking guidelines for 2009 to 2025, as recorded in the class <a href="../hsc-question-finder-site/">Question Finder</a>. NESA publishes the correct option but no explanation, so the feedback shows what each question tested, not why the other options are wrong. Dot-point tags are a reading of the questions, not an official NESA mapping. Your results are kept in this browser only.</p>
+<p class="foot">Questions, options and answers are from the NESA HSC Economics papers and marking guidelines for 2009 to 2025, as recorded in the class <a href="../hsc-question-finder-site/">Question Finder</a>. NESA publishes the correct option but no explanation, so the feedback shows what each question tested, not why the other options are wrong. Dot-point tags are a reading of the questions, not an official NESA mapping. Your results are kept in this browser only.<span id="nokey"></span></p>
 </div>
 <script type="application/json" id="data">__DATA__</script>
 <script>
@@ -356,6 +356,7 @@ document.querySelector('main').addEventListener('change', e => { const id = e.ta
   if (id === 'sec') { S.sec = e.target.value; renderDrill(); } else if (id === 'calc') { S.calc = e.target.checked; renderDrill(); } else if (id === 'from') { S.from = +e.target.value; renderDrill(); } else if (id === 'timed') S.timed = e.target.checked; });
 addEventListener('keydown', e => { if (e.target.matches('input,select,textarea') || e.metaKey || e.ctrlKey || e.altKey) return; const k = e.key.toUpperCase(); if (L.includes(k)) { e.preventDefault(); answer(k); } });
 addEventListener('hashchange', () => { const v = new URLSearchParams(location.hash.slice(1)).get('view'); if (VIEWS.includes(v)) go(v); });
+if ((D.nokey || []).length) $('#nokey').textContent = ' The ' + D.nokey.join(' and ') + ' paper is in the Question Finder but not here yet: it joins the drill when NESA publishes the answers.';
 $('#tag').textContent = `All ${QS.length} Section I questions from the ${YEARS[YEARS.length - 1]} to ${YEARS[0]} HSC papers: drill a topic, sit a timed paper, find your weak dot points`;
 { const v = new URLSearchParams(location.hash.slice(1)).get('view'); if (VIEWS.includes(v)) S.view = v; }
 render();
