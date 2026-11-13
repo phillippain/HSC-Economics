@@ -157,7 +157,8 @@
    "A": "P0 to P1 is only part of the gap between the curves.",
    "B": "P1 to P2 is the rise in the market price after the tax, which is smaller than the tax because producers bear part of it.",
    "C": "P2 to P3 is only part of the gap between the curves."
-  }
+  },
+  "check": "The key is recorded as 'P1 − P3'. I have read it as the vertical gap between the private and social cost curves (P1 up to P3). Worth checking against the paper."
  },
  "2024-1": {
   "why": "The World Bank lends for development projects to reduce poverty and raise living standards in developing countries.",
@@ -532,7 +533,8 @@
   "not": {
    "A": "Direct investment needs a holding of 10% or more, giving a say in running the company.",
    "C": "Financial derivatives are contracts such as futures and options, not shares."
-  }
+  },
+  "check": "NESA accepted two answers (B and D). I have explained why A and C are wrong but not why D was also accepted."
  },
  "2022-8": {
   "why": "AD has shifted to the left. Exports are an injection: an increase in exports would shift AD to the right, so it cannot be the cause.",
@@ -851,7 +853,8 @@
   "not": {
    "A": "Australia is selling the rights and receiving payment, which is a credit, not a debit.",
    "D": "NESA did not accept this option: the sale of the rights itself is recorded as a credit in the capital account, not the financial account."
-  }
+  },
+  "check": "NESA accepted B and C. The reasoning for accepting C (a debit in the financial account) and not D is my own; please check."
  },
  "2020-8": {
   "why": "Hidden unemployed people have stopped looking for work, so they are no longer in the labour force. More of them means a lower participation rate.",
@@ -1043,7 +1046,8 @@
    "A": "A higher GST is regressive and would widen inequality.",
    "C": "Both changes would increase inequality.",
    "D": "A lower top marginal rate benefits high-income earners, widening inequality."
-  }
+  },
+  "check": "Which curve is Year 2 was hard to read from the image, so I relied on the key: Year 2 is taken as the more equal curve."
  },
  "2019-12": {
   "why": "Net foreign liabilities = net foreign debt + net foreign equity = 900 + 100 = $1000 billion. As a share of GDP: 1000 ÷ 1800 = 55.6%.",
@@ -1195,7 +1199,8 @@
    "A": "Redundancy pay is one of the National Employment Standards.",
    "B": "Four weeks annual leave is one of the National Employment Standards.",
    "C": "Notice of termination is one of the National Employment Standards."
-  }
+  },
+  "check": "The explanation rests on unfair dismissal protection sitting outside the National Employment Standards. Please check it matches how you teach this."
  },
  "2018-11": {
   "why": "Moving from a $10 billion surplus to a $5 billion deficit means the budget is now adding to demand: an expansionary stance.",
@@ -1275,7 +1280,8 @@
    "A": "Starting from free trade at $6, a $2 tariff would raise local producers' revenue, not reduce it.",
    "B": "A quota raises no government revenue.",
    "D": "A quota raises no government revenue."
-  }
+  },
+  "check": "Reading the diagram, a $2 tariff gives foreign producers 200 × $6 = $1200, but the question says $1600 (200 × $8, the price including the tariff). The explanation follows the key (C) and describes the $1600 as the total paid for imports."
  },
  "2017-1": {
   "why": "Transnational corporations operate in many countries. Being able to move skilled staff between them easily lowers their costs.",
@@ -1371,7 +1377,8 @@
    "A": "Transfer payments are the second largest source, not the smallest.",
    "C": "Returns to land and capital are larger than returns to enterprise.",
    "D": "Returns to enterprise are the smallest of the four."
-  }
+  },
+  "check": "The ranking is taken from the NESA key for 2017; current ABS figures may rank the sources differently."
  },
  "2017-13": {
   "why": "A downturn in a major buyer reduces demand for Australian exports and so for Australian dollars, lowering the dollar's value.",
@@ -1443,7 +1450,8 @@
    "B": "APEC is a forum for economic cooperation.",
    "C": "ASEAN is a trading bloc whose members keep their own currencies.",
    "D": "NAFTA was a free trade agreement."
-  }
+  },
+  "check": "The key treats the EU as a monetary union, although only the euro area shares a currency."
  },
  "2016-2": {
   "why": "The Reserve Bank uses the cash rate to keep inflation within its 2–3% target.",
@@ -1499,7 +1507,8 @@
    "B": "Labour mobility is encouraged by wage differences, which have narrowed.",
    "C": "Risk-taking is encouraged by the prospect of high rewards, which is weaker with more equality.",
    "D": "Higher-income earners save more, so more equality tends to reduce saving."
-  }
+  },
+  "check": "Which curve is Year 2 was hard to read from the image, so I relied on the key: Year 2 is taken as the more equal curve."
  },
  "2016-9": {
   "why": "People work for longer, so more of the working age population is in the labour force and more income is earned and taxed.",
@@ -2435,7 +2444,8 @@
    "A": "Interest rates affect cyclical unemployment.",
    "B": "Government spending affects cyclical unemployment.",
    "C": "A change in how wages are set does not displace workers in the way that removing protection does."
-  }
+  },
+  "check": "Option C (less emphasis on wage decentralisation) could also be argued to raise the natural rate. My note on it is cautious."
  },
  "2010-6": {
   "why": "The IMF oversees the international monetary system and lends to countries in financial crisis.",
@@ -2522,7 +2532,8 @@
   "not": {
    "B": "Tying a booming economy to one in recession would bring lower interest rates and add to the boom.",
    "C": "A rate above equilibrium makes exports dearer, deepening the recession."
-  }
+  },
+  "check": "NESA accepted A and D. The case for D (a boom economy fixing below equilibrium) is weak in theory; my wording may need changing."
  },
  "2010-17": {
   "why": "Countries with a low HDI are less developed, and less developed countries typically have high birth rates.",
@@ -2706,7 +2717,8 @@
    "A": "The rate rises because the labour force is smaller.",
    "C": "The labour force shrinks because these people have left it.",
    "D": "The same number of unemployed in a smaller labour force is a higher rate."
-  }
+  },
+  "check": "The rise in the unemployment rate depends on comparing with the position before the retrenchments. Please check the wording."
  },
  "2009-20": {
   "why": "In a decentralised system disputes and pay claims are settled at the workplace, which allows more flexible arrangements.",
