@@ -350,6 +350,15 @@
    "def": "In Australia, inflation is measured by the Consumer Price Index (CPI). This is the price of a basket of the normal goods and services people buy in Australia."
   },
   {
+   "id": "crawling-peg",
+   "term": "Crawling peg",
+   "topics": [
+    "T2"
+   ],
+   "def": "A flexible peg that is adjusted frequently in small steps. Australia used a crawling peg against a trade-weighted basket of currencies from 1976 to 1983.",
+   "added": "2026-11-13"
+  },
+  {
    "id": "credit",
    "term": "Credit",
    "topics": [
@@ -364,6 +373,15 @@
     "T4"
    ],
    "def": "When government borrowing to finance a budget deficit raises interest rates and so reduces private sector investment and consumption."
+  },
+  {
+   "id": "currency-crisis",
+   "term": "Currency crisis",
+   "topics": [
+    "T2"
+   ],
+   "def": "A sudden, sharp fall in a currency's value, often when a central bank runs out of the reserves it needs to defend a fixed or pegged exchange rate.",
+   "added": "2026-11-13"
   },
   {
    "id": "current-account",
@@ -765,6 +783,15 @@
     "T2"
    ],
    "def": "An exchange rate that is pegged by the country's central bank."
+  },
+  {
+   "id": "flexible-peg",
+   "term": "Flexible peg",
+   "topics": [
+    "T2"
+   ],
+   "def": "An exchange rate system in which the authorities peg the currency at a set rate and defend it, but adjust the peg when it moves too far from the market rate. Australia used flexible pegs from 1971 until the float in December 1983.",
+   "added": "2026-11-13"
   },
   {
    "id": "floating-exchange-rate",
@@ -1778,6 +1805,15 @@
     "T4"
    ],
    "def": "A repurchase agreement is an agreement, between the Reserve Bank and a bank, that the Reserve Bank buys or sells a security on the understanding that the dealers agree to repurchase or sell the security at a specified date and at an agreed price. It is used to cover temporary fluctuations in the supply of cash. This is the most common form of transaction in the cash market."
+  },
+  {
+   "id": "reserve-assets",
+   "term": "Reserve assets",
+   "topics": [
+    "T2"
+   ],
+   "def": "Foreign currency and gold held by the central bank. They can be sold to buy the domestic currency when the central bank intervenes in the foreign exchange market. Changes in them are recorded in the financial account.",
+   "added": "2026-11-13"
   },
   {
    "id": "reserve-bank",

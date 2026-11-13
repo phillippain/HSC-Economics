@@ -72,3 +72,8 @@ Aggregate supply also gained a closing sentence on AS, SRAS and LRAS: "On an ADâ
 ## Kept as the booklet has them
 
 Cash rate, Foreign exchange market and Structural change each had slightly different wording in two topics; the site keeps the fuller version.
+
+
+## Added with the Exchange Rate Explorer (13 November 2026)
+
+Flexible peg, Crawling peg, Reserve assets, Currency crisis. Written for the site; not in the printed booklet.
