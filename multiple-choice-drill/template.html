@@ -402,7 +402,7 @@ function pump(){if(busy||!queue.length)return;busy=true;setTimeout(function(){va
 var obs=new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType===1){if(!n.classList.contains('gdef')&&!n.classList.contains('gdtip'))collect(n)}else if(n.nodeType===3&&n.parentElement&&!n.parentElement.closest('.gdef,.gdtip'))queue.push(n)})});pump()});
 function show(sp){var hit=null,id=sp.getAttribute('data-g');for(var k in MAP)if(MAP[k].t.i===id){hit=MAP[k].t;break}if(!hit)return;clearTimeout(hideT);cur=sp;
  if(!tip){tip=document.createElement('div');tip.className='gdtip';tip.setAttribute('role','tooltip');document.body.appendChild(tip);tip.addEventListener('mouseenter',function(){clearTimeout(hideT)});tip.addEventListener('mouseleave',hide)}
- tip.innerHTML='<b>'+esc(hit.t)+'</b>'+esc(hit.d)+'<br><a href="'+BASE+'glossary/#term='+id+'"'+(framed?' target="_blank" rel="noopener"':'')+'>Open in the Glossary</a>';tip.style.display='block';
+ tip.innerHTML='<b>'+esc(hit.t)+'</b>'+esc(hit.d)+'<br><a href="'+BASE+'glossary/#term='+id+'" target="_blank" rel="noopener">Open in the Glossary (new tab)</a>';tip.style.display='block';
  var r=sp.getBoundingClientRect(),w=tip.offsetWidth,h=tip.offsetHeight,x=Math.max(8,Math.min(r.left,window.innerWidth-w-8)),y=r.bottom+6;if(y+h>window.innerHeight-8&&r.top-h-6>8)y=r.top-h-6;tip.style.left=x+'px';tip.style.top=y+'px'}
 function hide(){hideT=setTimeout(function(){if(tip)tip.style.display='none';cur=null},180)}
 document.addEventListener('mouseover',function(e){var s=e.target.closest&&e.target.closest('.gdef');if(s)show(s)});

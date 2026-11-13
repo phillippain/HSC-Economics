@@ -272,7 +272,7 @@ const GLRE = GL.length ? new RegExp('\\b(' + GL.map(g => g.name.replace(/[.*+?^$
 const GLBY = Object.fromEntries(GL.map(g => [g.name.toLowerCase(), g]));
 function gloss(text) { const seen = new Set(); let out = '', last = 0, m; if (!GLRE) return esc(text); GLRE.lastIndex = 0;
   while ((m = GLRE.exec(text))) { const g = GLBY[m[1].toLowerCase()]; if (!g || seen.has(g.id)) continue; seen.add(g.id);
-    out += esc(text.slice(last, m.index)) + `<a class="gt" href="../glossary/#term=${g.id}"${ext} title="${esc(g.def)}">${esc(m[1])}</a>`; last = m.index + m[1].length; }
+    out += esc(text.slice(last, m.index)) + `<a class="gt" href="../glossary/#term=${g.id}" target="_blank" rel="noopener" title="${esc(g.def)}">${esc(m[1])}</a>`; last = m.index + m[1].length; }
   return out + esc(text.slice(last)); }
 
 /* ---------- syllabus chips ---------- */
