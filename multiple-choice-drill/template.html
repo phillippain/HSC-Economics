@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HSC Economics Multiple Choice Drill</title>
+<meta name="description" content="Practise every HSC Economics Section I question from 2009 to 2025: drill by topic, sit a timed past paper, and see which dot points to revise.">
+<style>
+/*__FONTS__*/
+:root{
+  --bg:#e8ecf4; --grid:rgba(36,71,214,.075); --grid2:rgba(36,71,214,.12);
+  --card:#ffffff; --card2:#f4f6fb; --ink:#0e1526; --mut:#4a5468; --rule:#d3d9e6; --rule2:#b9c2d6;
+  --acc:#2447d6; --acc-ink:#ffffff; --acc-soft:#e3e9fd;
+  --hl:#ffe14d; --hl-ink:#1b1600; --gap:#c93a22; --ok:#1c7d52;
+  --shadow:0 1px 0 rgba(14,21,38,.06),0 8px 24px -14px rgba(14,21,38,.25);
+  --head:'Bricolage Grotesque','Avenir Next','Segoe UI',system-ui,sans-serif;
+  --body:'Public Sans','Segoe UI',system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --bg:#0c1120; --grid:rgba(140,165,255,.06); --grid2:rgba(140,165,255,.10);
+  --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+  --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52;
+  --hl:#c9a900; --hl-ink:#fff7c8; --gap:#ff8b72; --ok:#59d39b;
+  --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.6);
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0c1120; --grid:rgba(140,165,255,.06); --grid2:rgba(140,165,255,.10);
+    --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+    --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52;
+    --hl:#c9a900; --hl-ink:#fff7c8; --gap:#ff8b72; --ok:#59d39b;
+    --shadow:0 1px 0 rgba(0,0,0,.4),0 8px 24px -14px rgba(0,0,0,.6);
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:400 1rem/1.5 var(--body);color:var(--ink);background-color:var(--bg);
+  background-image:linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid2) 1px,transparent 1px),
+  linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:120px 120px,120px 120px,24px 24px,24px 24px;background-position:-1px -1px}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--acc)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px;border-radius:4px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px 60px}
+h1,h2,h3{font-family:var(--head);letter-spacing:-.015em;margin:0}
+p{margin:0}
+.mast{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;padding:18px 0 10px}
+.school{font-size:.78rem;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.mast h1{font-size:clamp(1.5rem,3.2vw,2.1rem);line-height:1.1}
+.mast .tag{color:var(--mut);font-size:.95rem;margin-top:2px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:9px;overflow:hidden;background:var(--card);flex-wrap:wrap}
+.seg button{border:0;background:none;padding:.42rem .75rem;font-size:.88rem;font-weight:600;color:var(--mut);border-right:1px solid var(--rule)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--acc);color:var(--acc-ink)}
+.seg small{display:block;font-weight:400;font-size:.7rem;opacity:.85}
+.tabs{display:flex;gap:4px;border-bottom:2px solid var(--rule2);margin:6px 0 16px;flex-wrap:wrap}
+.tab{border:0;background:none;padding:.55rem .9rem;font-family:var(--head);font-weight:700;font-size:1rem;color:var(--mut);border-bottom:3px solid transparent;margin-bottom:-2px}
+.tab[aria-selected="true"]{color:var(--acc);border-color:var(--acc)}
+.view{display:none}.view.on{display:block}
+.btn{display:inline-flex;gap:6px;align-items:center;border:1px solid var(--acc);background:var(--acc);color:var(--acc-ink);border-radius:8px;padding:.5rem .9rem;font-weight:600;font-size:.92rem;text-decoration:none}
+.btn.ghost{background:var(--card);color:var(--ink);border-color:var(--rule2)}
+.btn.ghost:hover{border-color:var(--acc);color:var(--acc)}
+.btn.sm{padding:.25rem .6rem;font-size:.82rem}
+.btn:disabled{opacity:.45;cursor:default}
+.sub{color:var(--mut);font-size:.93rem}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
+.set{display:grid;gap:14px}
+.set h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);font-family:var(--body);margin-bottom:5px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips button{border:1px solid var(--rule2);background:var(--card);border-radius:999px;padding:.32rem .8rem;font-size:.88rem;font-weight:600;color:var(--mut);display:inline-flex;gap:6px;align-items:center}
+.chips button i{width:.65em;height:.65em;border-radius:50%;background:var(--tc)}
+.chips button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chips button span{font-weight:400;opacity:.8}
+select{border:1px solid var(--rule2);border-radius:8px;background:var(--card);padding:.42rem .6rem;max-width:100%}
+.row{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+.row label{font-size:.9rem;display:inline-flex;gap:6px;align-items:center}
+.qhead{display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.qhead b{font-family:var(--head);font-size:1.05rem}
+.timer{font:800 1.05rem var(--head);font-variant-numeric:tabular-nums}
+.timer.low{color:var(--gap)}
+.dots{display:flex;gap:4px;flex-wrap:wrap;margin:4px 0 12px}
+.dots button,.dots i{width:26px;height:26px;border-radius:7px;border:1px solid var(--rule2);background:var(--card);font:700 .74rem var(--body);color:var(--mut);display:grid;place-items:center;font-style:normal;padding:0}
+.dots .y{background:var(--ok);border-color:var(--ok);color:#fff}.dots .n{background:var(--gap);border-color:var(--gap);color:#fff}
+.dots .a{background:var(--acc-soft);border-color:var(--acc);color:var(--ink)}
+.dots .cur{outline:2px solid var(--acc);outline-offset:2px}
+.stem{font-size:1.08rem;border-left:6px solid var(--tc,var(--acc));background:var(--card2);border-radius:10px;padding:12px 14px}
+.figs{margin:12px 0 0;display:grid;gap:10px;justify-items:start}
+.figs img{max-width:100%;height:auto;background:#fff;border:1px solid var(--rule);border-radius:8px;padding:6px}
+table{border-collapse:collapse;font-size:.95rem;background:var(--card);max-width:100%}
+td,th{border:1px solid var(--rule2);padding:5px 12px;text-align:left;vertical-align:top}
+th{background:var(--card2);font-size:.84rem}
+.opts{display:grid;gap:8px;margin-top:14px}
+.opt{display:grid;grid-template-columns:2.1em 1fr;gap:10px;align-items:start;text-align:left;border:1px solid var(--rule2);background:var(--card);border-radius:10px;padding:.55rem .8rem;font-size:1rem}
+.opt:hover:not(:disabled){border-color:var(--acc)}
+.opt>i{font-style:normal;display:grid;place-items:center;width:1.9em;height:1.9em;border-radius:50%;background:var(--card2);border:1px solid var(--rule2);font-family:var(--head);font-weight:800}
+.opt[aria-pressed="true"]{border-color:var(--acc);background:var(--acc-soft)}
+.opt.right{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 14%,var(--card))}
+.opt.right>i{background:var(--ok);color:#fff;border-color:var(--ok)}
+.opt.wrong{border-color:var(--gap);background:color-mix(in srgb,var(--gap) 12%,var(--card))}
+.opt.wrong>i{background:var(--gap);color:#fff;border-color:var(--gap)}
+.opt .cells{display:grid;gap:4px 14px}
+.opt .cells small{display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--mut)}
+.fb{margin-top:14px;border-left:5px solid var(--ok);background:var(--card2);border-radius:0 10px 10px 0;padding:10px 14px}
+.fb.bad{border-color:var(--gap)}
+.fb h3{font-size:1rem}
+.fb p{margin-top:4px;font-size:.93rem}
+.tagc{display:inline-block;font-size:.76rem;border-radius:999px;padding:.08rem .55rem;background:var(--card);border:1px solid var(--tc,var(--rule2));margin:2px 4px 0 0}
+.score{font:800 2.2rem var(--head)}
+.bars{display:grid;gap:6px;margin:8px 0}
+.bar{display:grid;grid-template-columns:minmax(120px,220px) 1fr auto;gap:10px;align-items:center;font-size:.9rem}
+.bar .tr{height:12px;background:var(--card2);border:1px solid var(--rule);border-radius:999px;overflow:hidden}
+.bar .tr i{display:block;height:100%;background:var(--tc,var(--acc))}
+.bar b{font-variant-numeric:tabular-nums;font-size:.86rem}
+.rev{display:grid;gap:8px;margin-top:10px}
+.rev div{border:1px solid var(--rule);border-left:5px solid var(--gap);border-radius:9px;padding:7px 10px;font-size:.92rem}
+.rev div.y{border-left-color:var(--ok)}
+.rev small{display:block;color:var(--mut)}
+.wk td,.wk th{font-size:.88rem;padding:4px 8px}
+.wk{width:100%}
+.wk td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.foot{color:var(--mut);font-size:.82rem;margin-top:26px;border-top:1px solid var(--rule2);padding-top:12px}
+body.embed .school{display:none}
+@media print{.tabs,.smbar,.foot,#fw{display:none!important} body{background:#fff}}
+</style>
+</head>
+<body>
+<!-- SITEMENU:START built by build/build_sitemenu.py; edit the list of tools there, not here -->
+<style>
+.smbar{display:flex;justify-content:flex-end;padding:10px 20px 0;font-family:'Public Sans','Segoe UI',system-ui,-apple-system,sans-serif}
+.smw{display:inline-flex;gap:8px;align-items:center;font-size:13px;line-height:1.3}
+.sm{position:relative;display:inline-block;text-align:left}
+.smw svg{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sm-btn{list-style:none;cursor:pointer;display:inline-flex;gap:7px;align-items:center;background:#ffd24a;color:#1a1d2b;border-radius:999px;padding:6px 13px;font-weight:700;white-space:nowrap;text-decoration:none;user-select:none;-webkit-user-select:none}
+.sm-btn::-webkit-details-marker{display:none}
+.sm-btn:hover{background:#ffe07a}
+.sm-btn:focus-visible{outline:3px solid #2447d6;outline-offset:2px}
+.sm[open] .sm-caret{transform:rotate(180deg)}
+.sm-list{position:fixed;top:0;left:0;z-index:1000;width:min(340px,calc(100vw - 16px));max-height:calc(100vh - 90px);overflow:auto;background:#fff;color:#1a1d2b;border:1px solid #dcdfea;border-radius:14px;box-shadow:0 12px 34px rgba(10,14,40,.3);padding:8px;display:flex;flex-direction:column;gap:1px;font-weight:400}
+.sm:not([open]) .sm-list{display:none}
+.sm-h{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#5a6072;padding:8px 10px 3px}
+.sm-a{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:center;padding:7px 10px;border-radius:9px;color:inherit;text-decoration:none}
+.sm-a svg{font-size:18px;color:#2447d6}
+.sm-a b{display:block;font-size:14px;font-weight:700;color:inherit}
+.sm-a em{display:block;font-style:normal;font-size:12px;color:#5a6072}
+a.sm-a:hover,a.sm-a:focus-visible{background:#e3e9fd;outline:none}
+.sm-cur{background:#fff3c9}
+.sm-cur em{color:#7d5f00;font-weight:700}
+.sm-ext{border-top:1px solid #dcdfea;margin-top:6px;padding-top:10px;border-radius:0 0 9px 9px}
+@media print{.smbar{display:none !important}}
+:root[data-theme="dark"] .sm-list{background:#151c30;color:#e9eefb;border-color:#27304b}
+:root[data-theme="dark"] .sm-h,:root[data-theme="dark"] .sm-a em{color:#a2aec9}
+:root[data-theme="dark"] .sm-a svg{color:#8fa6ff}
+:root[data-theme="dark"] a.sm-a:hover,:root[data-theme="dark"] a.sm-a:focus-visible{background:#212c52}
+:root[data-theme="dark"] .sm-cur{background:#3a3010}
+:root[data-theme="dark"] .sm-cur em{color:#e6bd45}
+:root[data-theme="dark"] .sm-ext{border-color:#27304b}
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]) .sm-list{background:#151c30;color:#e9eefb;border-color:#27304b}
+:root:not([data-theme="light"]) .sm-h,:root:not([data-theme="light"]) .sm-a em{color:#a2aec9}
+:root:not([data-theme="light"]) .sm-a svg{color:#8fa6ff}
+:root:not([data-theme="light"]) a.sm-a:hover,:root:not([data-theme="light"]) a.sm-a:focus-visible{background:#212c52}
+:root:not([data-theme="light"]) .sm-cur{background:#3a3010}
+:root:not([data-theme="light"]) .sm-cur em{color:#e6bd45}
+:root:not([data-theme="light"]) .sm-ext{border-color:#27304b}
+}
+</style>
+<div class="smbar"><span class="smw"><a class="sm-btn sm-home" href="https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/home" aria-label="Home: back to the HSC Economics website"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg>Home</a>
+<details class="sm" id="sitemenu"><summary class="sm-btn" aria-label="Other tools: open the list of HSC Economics tools"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>Other tools<svg class="sm-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="sm-list">
+  <span class="sm-h">Finders</span>
+  <a class="sm-a" href="../hsc-question-finder-site/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.5 12h6M9.5 16h6"/></svg><span><b>Question Finder</b><em>Every HSC question, 2002 to 2025</em></span></a>
+  <a class="sm-a" href="../evidence-finder/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></svg><span><b>Evidence Finder</b><em>News, statistics and reports by dot point</em></span></a>
+  <span class="sm-h">Writing and skills</span>
+  <a class="sm-a" href="../essay-builder/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/></svg><span><b>Extended Response Builder</b><em>Plan a Section II, III or IV answer</em></span></a>
+  <a class="sm-a" href="../chain-builder/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="12" r="2.5"/><path d="M7.5 12h9M13.5 9l3 3-3 3"/></svg><span><b>Chain Builder</b><em>Cause and effect, one link at a time</em></span></a>
+  <a class="sm-a" href="../macro-diagram-lab/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7 7l11 9M7 17l11-9"/><circle cx="12.5" cy="12" r="1.6"/></svg><span><b>Macro Diagram Lab</b><em>AD–AS, the dollar, labour, Lorenz, externalities</em></span></a>
+  <a class="sm-a" href="../policy-simulator/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V10M10 20V10M14 20V10M18 20V10M3 10l9-6 9 6z"/></svg><span><b>Policy Simulator</b><em>You set the cash rate and the budget</em></span></a>
+  <a class="sm-a" href="../calculation-trainer/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M12 12h0M16 12h0M8 16h2M12 16h0M16 16h0"/></svg><span><b>Calculation Trainer</b><em>Every HSC calculation, with the working</em></span></a>
+  <span class="sm-a sm-cur" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="M11 7h9M11 17h9M5 17l1 1 2-2"/></svg><span><b>Multiple Choice Drill</b><em>You are here</em></span></span>
+  <a class="sm-a" href="../protection-explainer/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M7.5 20h9M5 7h14M5 7l-3 7a3 3 0 006 0zM19 7l-3 7a3 3 0 006 0z"/></svg><span><b>Who Wins from Protection</b><em>Tariffs, quotas and subsidies explained</em></span></a>
+  <a class="sm-a" href="../diagram-lab/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7 8l10 9M7 17l10-9"/></svg><span><b>Protection Diagram Lab</b><em>Experiment, predict and build the diagram</em></span></a>
+  <span class="sm-h">Reference</span>
+  <a class="sm-a" href="../economy-at-a-glance/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M21 20H3"/></svg><span><b>Economy at a Glance</b><em>The latest Australian indicators</em></span></a>
+  <a class="sm-a" href="../glossary/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5c3-1 6-1 8 1 2-2 5-2 8-1v13c-3-1-6-1-8 1-2-2-5-2-8-1zM12 6v13"/></svg><span><b>Economics Glossary</b><em>Key terms, flashcards and a quiz</em></span></a>
+  <a class="sm-a" href="../mind-map/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 000-6H9a3 3 0 010-6h6.5"/></svg><span><b>Topic Map</b><em>See how the course fits together</em></span></a>
+  <a class="sm-a sm-ext" href="https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg><span><b>HSC Economics website</b><em>Back to the main class site</em></span></a>
+</div></details></span></div>
+<script>(function(){var d=document.getElementById('sitemenu');if(!d)return;var s=d.querySelector('summary'),l=d.querySelector('.sm-list');var framed=false;try{framed=window.self!==window.top}catch(e){framed=true}if(framed)d.parentNode.querySelectorAll('a').forEach(function(a){a.target='_blank';a.rel='noopener'});function place(){var b=s.getBoundingClientRect(),w=l.offsetWidth,x=Math.min(Math.max(8,b.right-w),window.innerWidth-w-8),y=b.bottom+8;l.style.left=x+'px';l.style.top=y+'px';l.style.maxHeight=Math.max(160,window.innerHeight-y-12)+'px'}function shut(){if(d.open)d.open=false}d.addEventListener('toggle',function(){if(d.open)place()});document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))shut()});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){shut();s.focus()}});window.addEventListener('scroll',shut,{passive:true});window.addEventListener('resize',shut)})();</script>
+<!-- SITEMENU:END -->
+<div class="wrap">
+<header class="mast">
+  <div>
+    <p class="school">Sydney Secondary College, Blackwattle Bay Campus</p>
+    <h1>Multiple Choice Drill</h1>
+    <p class="tag" id="tag"></p>
+  </div>
+  <div class="seg" id="fw" role="group" aria-label="Choose your syllabus"></div>
+</header>
+<nav class="tabs" role="tablist" aria-label="Views">
+  <button class="tab" role="tab" data-view="drill">Drill</button>
+  <button class="tab" role="tab" data-view="paper">Past paper</button>
+  <button class="tab" role="tab" data-view="results">My results</button>
+</nav>
+<main>
+<section class="view" id="v-drill"></section>
+<section class="view" id="v-paper"></section>
+<section class="view" id="v-results"></section>
+</main>
+<p class="foot">Questions, options and answers are from the NESA HSC Economics papers and marking guidelines for 2009 to 2025, as recorded in the class <a href="../hsc-question-finder-site/">Question Finder</a>. NESA publishes the correct option but no explanation, so the feedback shows what each question tested, not why the other options are wrong. Dot-point tags are a reading of the questions, not an official NESA mapping. Your results are kept in this browser only.</p>
+</div>
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function(){
+'use strict';
+const D = JSON.parse(document.getElementById('data').textContent), QS = D.q, QBY = Object.fromEntries(QS.map(q => [q.id, q]));
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const params = new URLSearchParams(location.search);
+if (params.get('embed') === '1') document.body.classList.add('embed');
+if (['light','dark'].includes(params.get('theme'))) document.documentElement.dataset.theme = params.get('theme');
+const framed = (() => { try { return window.self !== window.top; } catch (e) { return true; } })();
+const ext = framed ? ' target="_blank" rel="noopener"' : '';
+const L = ['A', 'B', 'C', 'D'];
+const FW = Object.fromEntries(D.fw.map(f => [f.id, f]));
+const PT = {}, SEC = {}; D.fw.forEach(f => f.topics.forEach(t => t.sections.forEach(s => { SEC[s.id] = { id: s.id, name: s.name, top: t, fw: f.id }; s.points.forEach(p => PT[p.id] = { t: p.t, sec: s.id, top: t }); })));
+const XW = {}; D.xwalk.forEach(([a, bs]) => XW[a] = bs.filter(b => b[0] === 'Y'));
+const secOf = c => c.split('.')[0];
+QS.forEach(q => { q.secs = { h09: [...new Set(q.c.map(secOf))], y12: [...new Set(q.c.flatMap(c => XW[secOf(c)] || []))] }; q.tops = { h09: [...new Set(q.secs.h09.map(s => SEC[s].top.id))], y12: [...new Set(q.secs.y12.filter(s => SEC[s]).map(s => SEC[s].top.id))] }; });
+const YEARS = [...new Set(QS.map(q => q.y))].sort((a, b) => b - a);
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+
+/* ---------- results kept in the browser ---------- */
+const KEY = 'econ-mc-drill-v1'; let R = {}; try { R = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) {}
+const saveR = () => { try { localStorage.setItem(KEY, JSON.stringify(R)); } catch (e) {} };
+function record(q, ok) { const r = R[q.id] || (R[q.id] = { n: 0, r: 0, last: 0 }); r.n++; if (ok) r.r++; r.last = ok ? 1 : 0; saveR(); }
+const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
+const S = { view: 'drill', fw: store.get('econ-mc-fw') === 'y12' ? 'y12' : 'h09', top: '', sec: '', only: 'all', calc: false, from: YEARS[YEARS.length - 1], len: 10, point: '' };
+if (FW[params.get('fw')]) S.fw = params.get('fw');
+const isRight = (q, a) => q.k.includes(a);
+const keyText = q => q.k.length > 1 ? q.k.join(' or ') + ' (NESA accepted either)' : q.k[0];
+
+/* ---------- rendering a question ---------- */
+function figs(q) { if (!q.f) return ''; return `<div class="figs">${q.f.map(b => b.t === 'img' ? `<img src="../hsc-question-finder-site/figs/${esc(b.f)}" width="${b.w}" height="${b.h}" alt="Figure for HSC ${q.y} Question ${q.n}, shown as printed in the paper" loading="lazy">` : `<table>${b.rows.map((r, i) => `<tr>${r.map(c => i === 0 ? `<th>${esc(c)}</th>` : `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</table>`).join('')}</div>`; }
+function options(q, pick, reveal) { return `<div class="opts" role="group" aria-label="Options">${L.map((l, i) => { const cls = reveal ? (isRight(q, l) ? 'right' : pick === l ? 'wrong' : '') : '';
+    const body = q.m ? `<span class="cells" style="grid-template-columns:repeat(${q.m.head.length},minmax(0,1fr))">${q.m.rows[i].map((c, j) => `<span><small>${esc(q.m.head[j])}</small>${esc(c)}</span>`).join('')}</span>` : `<span>${esc(q.o[i])}</span>`;
+    return `<button class="opt ${cls}" data-o="${l}" aria-pressed="${pick === l}" ${reveal ? 'disabled' : ''}><i>${l}</i>${body}</button>`; }).join('')}</div>`; }
+function tags(q) { if (S.fw === 'h09') return q.c.map(c => `<span class="tagc" style="--tc:${PT[c].top.color}">${c} ${esc(PT[c].t)}</span>`).join('');
+  return q.secs.y12.filter(s => SEC[s]).map(s => `<span class="tagc" style="--tc:${SEC[s].top.color}">${esc(SEC[s].name)}</span>`).join(''); }
+function feedback(q, pick) { const ok = isRight(q, pick);
+  return `<div class="fb ${ok ? '' : 'bad'}" role="status"><h3>${ok ? 'Correct.' : `Not quite. The answer is ${esc(keyText(q))}.`}${ok && q.k.length > 1 ? ` NESA accepted ${q.k.join(' or ')}.` : ''}</h3>
+    <p><b>What it tested:</b> ${esc(q.t)}</p><p>${tags(q)}</p>
+    <p>${q.calc ? `<a href="../calculation-trainer/#skill=${q.calc}"${ext}>Practise this calculation</a> · ` : ''}${q.c.length ? `<a href="../evidence-finder/#fw=h09&sel=point:${encodeURIComponent(q.c[0])}"${ext}>See evidence for this dot point</a> · ` : ''}<a href="../glossary/"${ext}>Look up a term</a></p></div>`; }
+function qCard(q, pick, reveal, head) { const col = q.c.length ? PT[q.c[0]].top.color : 'var(--acc)';
+  return `<div class="qhead"><b>${head}</b><span class="sub">HSC ${q.y}, Question ${q.n}</span></div><div class="stem" style="--tc:${col}">${esc(q.q)}${figs(q)}</div>${options(q, pick, reveal)}`; }
+
+/* ---------- drill ---------- */
+let DR = null;
+function pool() { return QS.filter(q => q.y >= S.from && (!S.top || q.tops[S.fw].includes(S.top)) && (!S.sec || q.secs[S.fw].includes(S.sec)) && (!S.point || q.c.includes(S.point)) && (!S.calc || q.calc !== undefined)
+    && (S.only === 'all' || (S.only === 'new' ? !R[q.id] : S.only === 'wrong' ? R[q.id] && !R[q.id].last : !R[q.id] || !R[q.id].last))); }
+function setup() { const f = FW[S.fw], p = pool(), top = f.topics.find(t => t.id === S.top);
+  const count = id => QS.filter(q => q.tops[S.fw].includes(id)).length;
+  return `<div class="panel set">
+    <div><h3>Topic</h3><div class="chips"><button data-top="" aria-pressed="${!S.top}">All topics <span>${QS.length}</span></button>${f.topics.map(t => `<button data-top="${t.id}" aria-pressed="${S.top === t.id}" style="--tc:${t.color}" title="${esc(t.name)}"><i></i>${esc(t.label || t.name)} <span>${count(t.id)}</span></button>`).join('')}</div>
+      ${top ? `<div class="row" style="margin-top:8px"><label for="sec">Part of ${esc(top.label || 'the topic')}</label><select id="sec"><option value="">All of ${esc(top.name)}</option>${top.sections.map(s => `<option value="${s.id}" ${S.sec === s.id ? 'selected' : ''}>${esc(s.name)} (${QS.filter(q => q.secs[S.fw].includes(s.id)).length})</option>`).join('')}</select></div>` : ''}
+      ${S.point ? `<p class="sub" style="margin-top:8px">Dot point: <b>${S.point} ${esc(PT[S.point].t)}</b> <button class="btn ghost sm" id="clearpt">Clear</button></p>` : ''}</div>
+    <div><h3>Which questions</h3><div class="chips">${[['all', 'All of them'], ['todo', 'Not yet right'], ['new', 'Never tried'], ['wrong', 'Wrong last time']].map(o => `<button data-only="${o[0]}" aria-pressed="${S.only === o[0]}">${o[1]}</button>`).join('')}</div>
+      <div class="row" style="margin-top:8px"><label><input type="checkbox" id="calc" ${S.calc ? 'checked' : ''}> Calculations only</label><label for="from">Papers from</label><select id="from">${YEARS.slice().reverse().map(y => `<option ${S.from === y ? 'selected' : ''}>${y}</option>`).join('')}</select></div></div>
+    <div><h3>How many</h3><div class="chips">${[5, 10, 20, 40].map(n => `<button data-len="${n}" aria-pressed="${S.len === n}">${n}</button>`).join('')}</div></div>
+    <div class="row"><button class="btn" id="start" ${p.length ? '' : 'disabled'}>Start ${Math.min(S.len, p.length)} question${Math.min(S.len, p.length) === 1 ? '' : 's'}</button><span class="sub">${p.length} question${p.length === 1 ? '' : 's'} match${p.length === 1 ? 'es' : ''}. They are drawn at random, with the answer shown after each one.</span></div></div>`; }
+function summary(list, title, again) { const n = list.filter(x => isRight(QBY[x.id], x.pick)).length, tops = {};
+  list.forEach(x => { const q = QBY[x.id]; (q.tops.h09.length ? q.tops.h09 : ['?']).forEach(t => { const o = tops[t] || (tops[t] = { r: 0, n: 0 }); o.n++; if (isRight(q, x.pick)) o.r++; }); });
+  const wrong = list.filter(x => !isRight(QBY[x.id], x.pick));
+  return `<div class="panel"><h2>${title}</h2><p class="score">${n} out of ${list.length}</p>
+    <div class="bars">${FW.h09.topics.filter(t => tops[t.id]).map(t => `<div class="bar" style="--tc:${t.color}"><span>${esc(t.label)}: ${esc(t.name)}</span><span class="tr"><i style="width:${tops[t.id].r / tops[t.id].n * 100}%"></i></span><b>${tops[t.id].r}/${tops[t.id].n}</b></div>`).join('')}</div>
+    ${wrong.length ? `<h3 style="margin-top:12px;font-size:1rem">To go over</h3><div class="rev">${wrong.map(x => { const q = QBY[x.id]; return `<div><b>HSC ${q.y} Q${q.n}</b>: ${esc(q.q.length > 150 ? q.q.slice(0, 150) + '…' : q.q)}<small>You chose ${x.pick || 'nothing'}. Answer: ${esc(keyText(q))}. Tested: ${esc(q.t)}</small></div>`; }).join('')}</div>` : '<p class="sub">Every answer correct.</p>'}
+    <div class="row" style="margin-top:14px">${again}${wrong.length ? '<button class="btn ghost" id="redo">Redo the ones I missed</button>' : ''}<button class="btn ghost" data-view="results">See my results</button></div></div>`; }
+function renderDrill() { if (!DR) { $('#v-drill').innerHTML = setup(); return; }
+  if (DR.i >= DR.list.length) { $('#v-drill').innerHTML = summary(DR.list, 'Drill finished', '<button class="btn" id="newdrill">New drill</button>'); return; }
+  const x = DR.list[DR.i], q = QBY[x.id];
+  $('#v-drill').innerHTML = `<div class="panel"><div class="dots" aria-hidden="true">${DR.list.map((y, i) => `<i class="${y.done ? (isRight(QBY[y.id], y.pick) ? 'y' : 'n') : ''} ${i === DR.i ? 'cur' : ''}">${i + 1}</i>`).join('')}</div>
+    ${qCard(q, x.pick, x.done, `Question ${DR.i + 1} of ${DR.list.length}`)}${x.done ? feedback(q, x.pick) : ''}
+    <div class="row" style="margin-top:14px">${x.done ? `<button class="btn" id="dnext">${DR.i + 1 < DR.list.length ? 'Next question' : 'See my score'}</button>` : '<span class="sub">Choose an option, or press A, B, C or D.</span>'}<button class="btn ghost sm" id="quit" style="margin-left:auto">End this drill</button></div></div>`;
+  if (x.done) $('#dnext').focus(); }
+
+/* ---------- past paper ---------- */
+let PP = null, TICK = null;
+const fmtT = s => { const m = Math.floor(Math.abs(s) / 60), ss = Math.abs(s) % 60; return (s < 0 ? '+' : '') + m + ':' + String(ss).padStart(2, '0'); };
+function startPaper(y, timed) { const list = QS.filter(q => q.y === y).sort((a, b) => a.n - b.n).map(q => ({ id: q.id, pick: null })); PP = { y, list, i: 0, done: false, timed, left: 35 * 60, used: 0 };
+  clearInterval(TICK); TICK = setInterval(() => { if (!PP || PP.done) return clearInterval(TICK); PP.used++; PP.left--; const t = $('#timer'); if (t) { t.textContent = PP.timed ? fmtT(PP.left) : fmtT(PP.used); t.classList.toggle('low', PP.timed && PP.left < 300); } }, 1000); }
+function renderPaper() { if (!PP) { $('#v-paper').innerHTML = `<div class="panel set"><div><h2>Sit a past Section I</h2><p class="sub" style="margin-top:4px">Twenty questions in the order of the paper. Answers are shown only when you hand it in, as in the exam. NESA suggests about 35 minutes for Section I.</p></div>
+      <div><h3>Paper</h3><div class="chips">${YEARS.map(y => { const d = QS.filter(q => q.y === y && R[q.id]).length; return `<button data-year="${y}" aria-pressed="${S.year === y}">${y}${d ? ` <span>${d === 20 ? '✓' : d + '/20'}</span>` : ''}</button>`; }).join('')}</div></div>
+      <div class="row"><label><input type="checkbox" id="timed" ${S.timed !== false ? 'checked' : ''}> Count down from 35 minutes</label></div>
+      <div class="row"><button class="btn" id="pstart" ${S.year ? '' : 'disabled'}>${S.year ? 'Start the ' + S.year + ' paper' : 'Choose a paper'}</button></div></div>`; return; }
+  if (PP.done) { $('#v-paper').innerHTML = summary(PP.list, `HSC ${PP.y} Section I`, '<button class="btn" id="newpaper">Choose another paper</button>').replace('</h2>', `</h2><p class="sub">Time taken: ${fmtT(PP.used)}${PP.timed && PP.left < 0 ? ', which is ' + fmtT(-PP.left).replace('+', '') + ' over the 35 minutes' : ''}.</p>`); return; }
+  const x = PP.list[PP.i], q = QBY[x.id], nA = PP.list.filter(y => y.pick).length;
+  $('#v-paper').innerHTML = `<div class="panel"><div class="qhead"><b>HSC ${PP.y} Section I</b><span class="timer ${PP.timed && PP.left < 300 ? 'low' : ''}" id="timer" aria-label="${PP.timed ? 'Time left' : 'Time used'}">${PP.timed ? fmtT(PP.left) : fmtT(PP.used)}</span></div>
+    <div class="dots" role="group" aria-label="Go to a question">${PP.list.map((y, i) => `<button data-go="${i}" class="${y.pick ? 'a' : ''} ${i === PP.i ? 'cur' : ''}" aria-label="Question ${i + 1}${y.pick ? ', answered ' + y.pick : ''}">${i + 1}</button>`).join('')}</div>
+    ${qCard(q, x.pick, false, `Question ${PP.i + 1} of 20`)}
+    <div class="row" style="margin-top:14px"><button class="btn ghost" id="pprev" ${PP.i ? '' : 'disabled'}>Back</button><button class="btn ghost" id="pnext" ${PP.i < 19 ? '' : 'disabled'}>Next</button><span class="sub">${nA} of 20 answered</span><button class="btn" id="hand" style="margin-left:auto">Hand in</button></div>
+    <p class="sub" id="confirm" hidden style="margin-top:8px">You have left ${20 - nA} unanswered. <button class="btn sm" id="hand2">Hand in anyway</button></p></div>`; }
+
+/* ---------- my results ---------- */
+function renderResults() { const tried = QS.filter(q => R[q.id]), right = tried.filter(q => R[q.id].last), f = FW[S.fw];
+  if (!tried.length) { $('#v-results').innerHTML = `<div class="panel"><h2>My results</h2><p class="sub" style="margin-top:6px">Nothing yet. Answer some questions in Drill or Past paper and your results by topic and dot point will appear here.</p></div>`; return; }
+  const byTop = f.topics.map(t => { const qs = tried.filter(q => q.tops[S.fw].includes(t.id)); return { t, n: qs.length, r: qs.filter(q => R[q.id].last).length, all: QS.filter(q => q.tops[S.fw].includes(t.id)).length }; });
+  const pts = {}; tried.forEach(q => q.c.forEach(c => { const o = pts[c] || (pts[c] = { n: 0, r: 0 }); o.n++; if (R[q.id].last) o.r++; }));
+  const weak = Object.entries(pts).map(([c, o]) => ({ c, n: o.n, r: o.r, p: o.r / o.n })).sort((a, b) => a.p - b.p || b.n - a.n);
+  $('#v-results').innerHTML = `<div class="panel"><h2>My results</h2><p class="sub" style="margin:4px 0 10px">You have tried <b>${tried.length}</b> of ${QS.length} questions and your latest answer is right on <b>${right.length}</b> (${Math.round(right.length / tried.length * 100)}%).</p>
+    <div class="bars">${byTop.map(x => `<div class="bar" style="--tc:${x.t.color}"><span>${esc((x.t.label ? x.t.label + ': ' : '') + x.t.name)}</span><span class="tr"><i style="width:${x.n ? x.r / x.n * 100 : 0}%"></i></span><b>${x.n ? x.r + '/' + x.n : '–'} <span class="sub" style="font-weight:400">of ${x.all}</span></b></div>`).join('')}</div>
+    <h3 style="margin-top:16px;font-size:1.05rem">Dot points, weakest first</h3><p class="sub" style="margin-bottom:6px">Based on your latest answer to each question. Dot points use the 2009 syllabus codes the papers were set under.</p>
+    <table class="wk"><thead><tr><th>Dot point</th><th>Right</th><th></th></tr></thead><tbody>${weak.slice(0, 40).map(w => `<tr><td><span class="tagc" style="--tc:${PT[w.c].top.color}">${w.c}</span> ${esc(PT[w.c].t)}</td><td class="n">${w.r}/${w.n}</td><td class="n"><button class="btn ghost sm" data-point="${w.c}">Drill it</button></td></tr>`).join('')}</tbody></table>
+    <div class="row" style="margin-top:14px"><button class="btn" id="weakgo">Drill everything I have not got right</button><button class="btn ghost" id="wipe">Clear my results</button></div><p class="sub" id="wipeq" hidden style="margin-top:8px">This removes every result saved in this browser. <button class="btn sm" id="wipe2">Clear them</button></p></div>`; }
+
+/* ---------- shell ---------- */
+const VIEWS = ['drill', 'paper', 'results'];
+function render() { VIEWS.forEach(v => { $('#v-' + v).classList.toggle('on', v === S.view); $(`.tab[data-view="${v}"]`).setAttribute('aria-selected', v === S.view); });
+  $('#fw').innerHTML = D.fw.map(f => `<button data-fw="${f.id}" aria-pressed="${S.fw === f.id}">${esc(f.sub)}<small>${f.id === 'h09' ? 'HSC to 2027' : 'HSC from 2028'}</small></button>`).join('');
+  S.view === 'drill' ? renderDrill() : S.view === 'paper' ? renderPaper() : renderResults();
+  try { history.replaceState(null, '', location.pathname + location.search + (S.view === 'drill' ? '' : '#view=' + S.view)); } catch (e) {} }
+function go(v) { S.view = v; render(); }
+function startDrill(ids) { DR = { list: ids.map(id => ({ id, pick: null, done: false })), i: 0 }; S.view = 'drill'; render(); scrollTo(0, 0); }
+$$('.tab').forEach(b => b.onclick = () => go(b.dataset.view));
+$('#fw').onclick = e => { const b = e.target.closest('[data-fw]'); if (!b) return; S.fw = b.dataset.fw; store.set('econ-mc-fw', S.fw); S.top = ''; S.sec = ''; render(); };
+function answer(l) { if (S.view === 'drill' && DR && DR.i < DR.list.length) { const x = DR.list[DR.i]; if (x.done) return; x.pick = l; x.done = true; record(QBY[x.id], isRight(QBY[x.id], l)); renderDrill(); }
+  else if (S.view === 'paper' && PP && !PP.done) { const x = PP.list[PP.i]; x.pick = x.pick === l ? null : l; renderPaper(); } }
+function handIn() { PP.done = true; clearInterval(TICK); PP.list.forEach(x => record(QBY[x.id], isRight(QBY[x.id], x.pick))); renderPaper(); scrollTo(0, 0); }
+document.querySelector('main').addEventListener('click', e => { const q = s => e.target.closest(s); let b;
+  if (b = q('.opt[data-o]')) return answer(b.dataset.o);
+  if (b = q('[data-view]')) return go(b.dataset.view);
+  if (b = q('[data-top]')) { S.top = b.dataset.top; S.sec = ''; S.point = ''; return renderDrill(); }
+  if (b = q('[data-only]')) { S.only = b.dataset.only; return renderDrill(); }
+  if (b = q('[data-len]')) { S.len = +b.dataset.len; return renderDrill(); }
+  if (q('#clearpt')) { S.point = ''; return renderDrill(); }
+  if (q('#start')) return startDrill(shuffle(pool()).slice(0, S.len).map(x => x.id));
+  if (q('#dnext')) { DR.i++; renderDrill(); return scrollTo(0, 0); }
+  if (q('#quit') || q('#newdrill')) { DR = null; return renderDrill(); }
+  if (q('#redo')) { const src = S.view === 'paper' ? PP.list : DR.list; return startDrill(src.filter(x => !isRight(QBY[x.id], x.pick)).map(x => x.id)); }
+  if (b = q('[data-year]')) { S.year = +b.dataset.year; return renderPaper(); }
+  if (q('#pstart')) { startPaper(S.year, S.timed !== false); return renderPaper(); }
+  if (b = q('[data-go]')) { PP.i = +b.dataset.go; return renderPaper(); }
+  if (q('#pprev')) { PP.i--; return renderPaper(); }
+  if (q('#pnext')) { PP.i++; return renderPaper(); }
+  if (q('#hand')) { if (PP.list.every(x => x.pick)) return handIn(); $('#confirm').hidden = false; return; }
+  if (q('#hand2')) return handIn();
+  if (q('#newpaper')) { PP = null; return renderPaper(); }
+  if (b = q('[data-point]')) { Object.assign(S, { point: b.dataset.point, top: '', sec: '', only: 'all', calc: false, from: YEARS[YEARS.length - 1] }); DR = null; return go('drill'); }
+  if (q('#weakgo')) { Object.assign(S, { point: '', top: '', sec: '', only: 'todo', calc: false, from: YEARS[YEARS.length - 1] }); const ids = shuffle(QS.filter(x => R[x.id] && !R[x.id].last)).slice(0, 20).map(x => x.id); if (ids.length) return startDrill(ids); DR = null; return go('drill'); }
+  if (q('#wipe')) { $('#wipeq').hidden = false; return; }
+  if (q('#wipe2')) { R = {}; saveR(); return renderResults(); } });
+document.querySelector('main').addEventListener('change', e => { const id = e.target.id;
+  if (id === 'sec') { S.sec = e.target.value; renderDrill(); } else if (id === 'calc') { S.calc = e.target.checked; renderDrill(); } else if (id === 'from') { S.from = +e.target.value; renderDrill(); } else if (id === 'timed') S.timed = e.target.checked; });
+addEventListener('keydown', e => { if (e.target.matches('input,select,textarea') || e.metaKey || e.ctrlKey || e.altKey) return; const k = e.key.toUpperCase(); if (L.includes(k)) { e.preventDefault(); answer(k); } });
+addEventListener('hashchange', () => { const v = new URLSearchParams(location.hash.slice(1)).get('view'); if (VIEWS.includes(v)) go(v); });
+$('#tag').textContent = `All ${QS.length} Section I questions from the ${YEARS[YEARS.length - 1]} to ${YEARS[0]} HSC papers: drill a topic, sit a timed paper, find your weak dot points`;
+{ const v = new URLSearchParams(location.hash.slice(1)).get('view'); if (VIEWS.includes(v)) S.view = v; }
+render();
+})();
+</script>
+</body>
+</html>
