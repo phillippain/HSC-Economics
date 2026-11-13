@@ -1,0 +1,322 @@
+{
+ "2025-1": {
+  "why": "A monetary union is a group of countries that share one currency and one monetary policy, as the euro area does.",
+  "not": {
+   "B": "A free trade area removes trade barriers between members; each keeps its own currency.",
+   "C": "A bilateral trade agreement is about trade between two countries, not their currency.",
+   "D": "A multilateral trade agreement involves three or more countries and is about trade, not a shared currency."
+  }
+ },
+ "2025-2": {
+  "why": "Cheaper energy lowers the cost of transport and production, which makes trading goods across borders cheaper and speeds up integration.",
+  "not": {
+   "A": "Less labour mobility means fewer workers moving between countries, which slows globalisation.",
+   "B": "Dearer communication makes it harder to trade and invest across borders.",
+   "D": "Higher tariffs are protection: they reduce trade."
+  }
+ },
+ "2025-3": {
+  "why": "X is the education indicator for a developing economy (low literacy) and Y is the health indicator for an advanced economy (high life expectancy).",
+  "not": {
+   "A": "Low literacy fits X, but an advanced economy has high, not low, life expectancy.",
+   "B": "High life expectancy fits Y, but a developing economy has low literacy.",
+   "C": "Both are the wrong way around."
+  }
+ },
+ "2025-4": {
+  "why": "In a downturn households spend less, so revenue from taxes on spending such as the GST falls automatically.",
+  "not": {
+   "A": "Interest rates are set by the Reserve Bank and are not a component of the budget outcome.",
+   "C": "Unemployment benefit payments rise in a downturn as more people lose work.",
+   "D": "Lower revenue and higher welfare spending push the budget towards deficit, so borrowing rises."
+  }
+ },
+ "2025-5": {
+  "why": "A private good is excludable and rival. A fare excludes people who do not pay, and a seat taken by one passenger cannot be used by another.",
+  "not": {
+   "A": "Public transport is excludable: you need a ticket. Being funded from tax does not decide the type of good.",
+   "C": "It is rival, but it is excludable by price, not non-excludable.",
+   "D": "Who provides a good does not decide whether it is public or private; excludability and rivalry do."
+  }
+ },
+ "2025-6": {
+  "why": "Macroeconomic policy (fiscal and monetary) works on aggregate demand to smooth the business cycle.",
+  "not": {
+   "A": "Productivity and efficiency are the aim of microeconomic policy.",
+   "B": "Shifting aggregate supply is the rationale for microeconomic policy.",
+   "D": "Environmental sustainability is pursued through environmental policies, and it is not the main rationale for macroeconomic policy."
+  }
+ },
+ "2025-7": {
+  "why": "The multiplier is 50 ÷ 10 = 5. Since k = 1 ÷ (1 − MPC), 1 − MPC = 0.2, so MPC = 0.8.",
+  "not": {
+   "A": "0.2 is the MPS (1 ÷ 5), not the MPC.",
+   "B": "An MPC of 0.4 gives a multiplier of about 1.7, not 5.",
+   "C": "An MPC of 0.5 gives a multiplier of 2, not 5."
+  }
+ },
+ "2025-8": {
+  "why": "A regional business cycle is the pattern of economic activity shared by neighbouring countries whose economies are closely linked by trade and investment.",
+  "not": {
+   "A": "Regional here means a region of the world, not rural areas within a country.",
+   "B": "It describes fluctuations, not stability, and a region rather than the whole globe.",
+   "C": "It is about a group of countries, not the states inside one economy."
+  }
+ },
+ "2025-9": {
+  "why": "Injections are I + G + X = 20 + 80 + 60 = 160. Leakages are S + T + M = 10 + 70 + 50 = 130. Injections are greater.",
+  "not": {
+   "A": "Exports (60) are greater than imports (50), so there is a trade surplus.",
+   "B": "Government spending (80) is greater than taxation (70), so the budget is in deficit.",
+   "D": "Leakages (130) are less than injections (160)."
+  }
+ },
+ "2025-10": {
+  "why": "Aid with no conditions attached is a transfer with nothing received in return, recorded in secondary income on the current account. Money leaving Australia is a debit.",
+  "not": {
+   "A": "The money is leaving Australia, so it is a debit, not a credit.",
+   "C": "Only conditional (capital) aid goes in the capital account, and an outflow is not a credit.",
+   "D": "It is a debit, but unconditional aid belongs in the current account. The capital account records conditional aid for capital projects."
+  }
+ },
+ "2025-11": {
+  "why": "Automatic stabilisers (progressive income tax and unemployment benefits) change with the business cycle without any new decision, so they move the cyclical component.",
+  "not": {
+   "B": "External is not a component of the budget outcome.",
+   "C": "The structural component reflects deliberate policy, with the effect of the cycle removed.",
+   "D": "Discretionary changes are deliberate decisions by the government, the opposite of automatic."
+  }
+ },
+ "2025-12": {
+  "why": "An emissions trading scheme puts a price on pollution and lets firms buy and sell permits, so the market decides where emissions are cut.",
+  "not": {
+   "B": "A tax on electric and hybrid cars would discourage cleaner cars and make outcomes worse.",
+   "C": "Closing power stations is direct regulation, not the use of market forces.",
+   "D": "Fines are a penalty set by regulation; they are not a market in which prices are set by trading."
+  }
+ },
+ "2025-13": {
+  "why": "Current account = (150 − 130) + (60 − 50) − 50 + 10 = −10. With a floating rate the current account and the capital and financial account sum to zero, so capital and financial must be +10. With a capital account of 70, the financial account is 10 − 70 = −60.",
+  "not": {
+   "A": "−80 comes from treating the current account as +10: the two sides must offset, not match.",
+   "C": "$10 billion is the whole capital and financial account, before taking out the capital account of 70.",
+   "D": "$280 billion comes from adding items together rather than balancing the accounts."
+  }
+ },
+ "2025-14": {
+  "why": "Headline inflation rose (4.5% to 5%) while underlying fell (3.8% to 3.4%). A drought raises food prices, a volatile item that affects headline but is removed from underlying. Lower freight costs reduce prices across the economy, lowering underlying inflation.",
+  "not": {
+   "B": "Higher tariffs and a higher minimum wage raise costs broadly, so underlying inflation would rise, not fall.",
+   "C": "Microeconomic reform lowers costs, so it does not explain higher headline inflation, and an oil conflict would not lower underlying inflation.",
+   "D": "A fuel excise discount lowers fuel prices, which would reduce headline inflation."
+  }
+ },
+ "2025-15": {
+  "why": "Real GDP = nominal GDP ÷ CPI × 100. Year 1: 18 ÷ 90 × 100 = 20. Year 2: 22 ÷ 110 × 100 = 20. Real GDP did not change, so growth is 0%.",
+  "not": {
+   "B": "4 is the rise in nominal GDP in dollars ($22b − $18b), not a growth rate.",
+   "C": "20 is the level of real GDP in both years, not its growth.",
+   "D": "22% is the growth in nominal GDP (and in prices). Once inflation is removed nothing is left."
+  }
+ },
+ "2025-16": {
+  "why": "Net foreign liabilities = what the country owes the world minus what the world owes it. Liabilities: 3.0 + 1.8 = 4.8. Assets: 1.2 + 0.5 = 1.7. 4.8 − 1.7 = $3.1 million.",
+  "not": {
+   "A": "$6.5 million adds all four items together instead of subtracting assets.",
+   "B": "$4.8 million is the liabilities only; foreign assets have not been subtracted.",
+   "D": "$500 000 is just one line of the table."
+  }
+ },
+ "2025-17": {
+  "why": "A smaller quota lets in fewer imports, so supply falls and the price rises above X. Because the quota still exists, the price stays below P1, the price with no imports at all. P2 is the only price between X and P1.",
+  "not": {
+   "A": "P1 is the price with no imports at all. The quota is reduced, not eliminated in favour of a total ban.",
+   "C": "P3 is below X. A tighter quota raises the price; it does not lower it.",
+   "D": "P4 is the world price, which applies only with no quota at all."
+  }
+ },
+ "2025-18": {
+  "why": "Before the tariff the price is $20: demand 600, domestic supply 200, imports 400, so foreign revenue is 400 × $20 = $8000. With the tariff the price is $30: demand 500, domestic supply 300, imports 200. Foreign producers still receive only the world price, so revenue is 200 × $20 = $4000. The fall is $4000.",
+  "not": {
+   "A": "$2000 is the tariff revenue collected by the government (200 × $10).",
+   "C": "$8000 is foreign producers' revenue before the tariff, not the decrease.",
+   "D": "$16 000 is too large: total import spending was only $8000 to begin with."
+  }
+ },
+ "2025-19": {
+  "why": "Terms of trade = export price index ÷ import price index × 100. Year 1: 110 × 100 ÷ 100 = 110. Year 2: 90 × 110 ÷ 100 = 99.",
+  "not": {
+   "A": "90 and 110 are read straight off the table (the Year 2 terms of trade and import price index), not calculated.",
+   "B": "99 is the Year 2 export price index, not Year 1.",
+   "C": "110 is right for Year 1, but 90 is the Year 2 terms of trade, not the export price index."
+  }
+ },
+ "2025-20": {
+  "why": "The tax must equal the external cost: the vertical gap between the social cost and private cost curves. At Q3 that gap runs from P1 (private cost) up to P3 (social cost). The same gap can be seen at Q2, from P0 to P2.",
+  "not": {
+   "A": "P0 to P1 is only part of the gap between the curves.",
+   "B": "P1 to P2 is the rise in the market price after the tax, which is smaller than the tax because producers bear part of it.",
+   "C": "P2 to P3 is only part of the gap between the curves."
+  }
+ },
+ "2024-1": {
+  "why": "The World Bank lends for development projects to reduce poverty and raise living standards in developing countries.",
+  "not": {
+   "B": "The WTO sets and enforces the rules of world trade.",
+   "C": "The IMF looks after the stability of the international financial system and helps countries in financial crisis.",
+   "D": "The OECD is a forum of mostly advanced economies that researches and coordinates policy."
+  }
+ },
+ "2024-2": {
+  "why": "Centralised wage fixing sets minimum pay and conditions for everyone, which protects workers with little bargaining power.",
+  "not": {
+   "A": "Uniform wages make it harder for labour to move to growing industries, so structural change is slower.",
+   "B": "Wage flexibility is a feature of decentralised bargaining, not a centralised system.",
+   "D": "Centralised systems compress wage differences, and greater inequality would not be a benefit."
+  }
+ },
+ "2024-3": {
+  "why": "In the short term, stronger demand lowers unemployment but pushes prices up, and slowing inflation costs jobs (the Phillips curve trade-off).",
+  "not": {
+   "B": "Economic growth creates jobs, so growth and low unemployment go together.",
+   "C": "There is no direct short-term trade-off between these two.",
+   "D": "Inflation is not an objective (price stability is), and it has no clear short-term conflict with sustainability."
+  }
+ },
+ "2024-4": {
+  "why": "With open markets, foreign firms can sell goods below cost (dumping), which can drive efficient local firms out of business.",
+  "not": {
+   "A": "Greater competition is usually counted as an advantage: it lifts efficiency and lowers prices.",
+   "B": "Free trade lowers domestic prices by letting in cheaper imports.",
+   "D": "Access to bigger markets lets firms gain economies of scale, an advantage."
+  }
+ },
+ "2024-5": {
+  "why": "A holding below 10% of a company is portfolio investment. Foreign money flowing into Australia is a credit on the financial account.",
+  "not": {
+   "A": "Direct investment needs 10% or more of the company, and an inflow is not a debit.",
+   "B": "It is a credit, but 5% is too small to be direct investment.",
+   "C": "It is portfolio investment, but money coming in is a credit, not a debit."
+  }
+ },
+ "2024-6": {
+  "why": "Labour force = employed + unemployed = 7 + 2 = 9 million. Participation rate = 9 ÷ 11 (working age population) × 100 = 82%.",
+  "not": {
+   "A": "44% is employed people as a share of the total population (7 ÷ 16).",
+   "B": "56% uses the total population (9 ÷ 16) instead of the working age population.",
+   "C": "78% is employed ÷ labour force (7 ÷ 9), the employment rate."
+  }
+ },
+ "2024-7": {
+  "why": "Income rose by 100 (375 to 475) and savings rose by 40 (160 to 200), so MPS = 0.4 and MPC = 1 − 0.4 = 0.6.",
+  "not": {
+   "A": "0.34 does not come from the changes in income and saving; the marginal propensity uses changes, not levels.",
+   "B": "0.40 is the MPS, the share of extra income saved.",
+   "D": "0.8 would need savings to rise by only 20 for each extra 100 of income."
+  }
+ },
+ "2024-8": {
+  "why": "The Reserve Bank Board can decide and announce a change in the cash rate on the day it meets. The lag for monetary policy is in its effect, not its implementation.",
+  "not": {
+   "A": "Fiscal changes usually wait for the Budget and must pass Parliament.",
+   "C": "Environmental policies need legislation, negotiation and long phase-in periods.",
+   "D": "Microeconomic reforms take years to legislate and put in place."
+  }
+ },
+ "2024-9": {
+  "why": "Frictional unemployment is people between jobs. Better job matching shortens the time it takes them to find work.",
+  "not": {
+   "A": "Better job search services would, if anything, encourage people to look for work, raising participation.",
+   "B": "Faster matching would not reduce full-time employment.",
+   "C": "Cyclical unemployment is caused by weak demand in a downturn, not by slow job matching."
+  }
+ },
+ "2024-10": {
+  "why": "A higher cash rate attracts foreign savings, raising demand for the dollar, and buying Australian dollars in the foreign exchange market also raises demand. Both push the dollar up.",
+  "not": {
+   "A": "Selling Australian dollars increases their supply and pushes the dollar down.",
+   "C": "Both actions push the dollar down.",
+   "D": "Buying dollars supports the currency, but a lower cash rate reduces demand for it."
+  }
+ },
+ "2024-11": {
+  "why": "Lower university fees lead to more people gaining skills. A more skilled workforce raises productive capacity, shifting aggregate supply to the right.",
+  "not": {
+   "B": "A higher GST raises prices and reduces spending; it does not increase productive capacity.",
+   "C": "Fewer migrants means a smaller labour force, which would shift aggregate supply left.",
+   "D": "Pension spending adds to consumption, which is aggregate demand, not supply."
+  }
+ },
+ "2024-12": {
+  "why": "Capital account + financial account = 24 + 66 = 90, so the current account must be −90. Current account = (X − 36) + 12 − 120 − 6 = X − 150. Setting X − 150 = −90 gives X = $60 billion.",
+  "not": {
+   "A": "−$60 billion has the right size but exports of goods cannot be negative.",
+   "B": "−$12 billion is not possible for exports and ignores the balancing of the accounts.",
+   "C": "$54 billion leaves out net secondary income (−6)."
+  }
+ },
+ "2024-13": {
+  "why": "Local content rules require more locally made programs, so fewer foreign programs are imported and more local production jobs are created in the short term.",
+  "not": {
+   "A": "More local content replaces imported content, so imports fall rather than rise.",
+   "B": "Imports fall, and local production needs more workers, not fewer.",
+   "D": "Imports do fall, but short-term job opportunities in local production rise."
+  }
+ },
+ "2024-14": {
+  "why": "A higher Gini coefficient means more inequality. Cutting childcare subsidies and lowering the tax-free threshold both take proportionally more from low-income households.",
+  "not": {
+   "B": "Raising the tax-free threshold helps low-income earners most, which reduces inequality.",
+   "C": "Higher childcare subsidies help lower-income families work and earn more.",
+   "D": "Both changes would reduce inequality, lowering the Gini coefficient."
+  }
+ },
+ "2024-15": {
+  "why": "Net primary income is mostly interest and dividends paid overseas. Interest rates move with the cycle and change the cost of servicing foreign debt. Low national savings is the long-term (structural) reason Australia borrows from overseas at all.",
+  "not": {
+   "A": "The terms of trade mainly affect the balance on goods and services, and are not a structural factor.",
+   "C": "The domestic business cycle is a cyclical factor, not a structural one.",
+   "D": "A narrow export base and competitiveness are both structural, and they affect the goods and services balance."
+  }
+ },
+ "2024-16": {
+  "why": "A cyclone that destroys fruit crops pushes fruit prices up sharply. Fruit is a volatile item: it is counted in headline inflation but removed from underlying inflation.",
+  "not": {
+   "A": "More oil production lowers fuel prices, which would pull headline inflation down.",
+   "B": "Rising house prices are not a temporary, one-off price shock of the kind underlying inflation strips out.",
+   "C": "A new shipping route lowers transport costs and prices."
+  }
+ },
+ "2024-17": {
+  "why": "Paying more for imports means more Australian dollars are sold to buy foreign currency, which depreciates the dollar. Dearer inputs also raise firms' costs, so domestic prices rise.",
+  "not": {
+   "A": "Prices do rise, but a bigger import bill increases the supply of dollars, which lowers their value.",
+   "B": "Both are the wrong direction.",
+   "D": "The dollar does depreciate, but higher input costs raise prices, not lower them."
+  }
+ },
+ "2024-18": {
+  "why": "The current account deficit was 35 ÷ 1200 = 2.92% of GDP in Year 1 and 36 ÷ 1250 = 2.88% in Year 2. A smaller deficit as a share of GDP is an improvement in external stability.",
+  "not": {
+   "A": "Net foreign liabilities did fall (900 to 850, or 75% to 68% of GDP), but that is an improvement, not a deterioration.",
+   "B": "Net foreign liabilities as a share of GDP fell; they did not rise.",
+   "D": "The deficit grew in dollars but shrank as a percentage of GDP."
+  }
+ },
+ "2024-19": {
+  "why": "Weaker world demand for exports lowers export prices (terms of trade fall from 110 to 100) and lowers demand for the currency (TWI falls from 65 to 60).",
+  "not": {
+   "A": "Lower global inflation would make imports cheaper, which improves the terms of trade.",
+   "B": "Higher domestic interest rates attract foreign funds and push the TWI up.",
+   "C": "Domestic unemployment does not directly change export or import prices."
+  }
+ },
+ "2024-20": {
+  "why": "Real GDP: Year 1 = 600 ÷ 110 × 100 = 545.5; Year 2 = 675 ÷ 120 × 100 = 562.5. Growth = 17 ÷ 545.5 = 3.1%. Inflation = (120 − 110) ÷ 110 = 9.1%.",
+  "not": {
+   "A": "Growth is right, but 10 is the rise in index points; as a percentage of 110 it is 9.1%.",
+   "C": "12.5% is nominal GDP growth, and 10 is index points, not the inflation rate.",
+   "D": "Inflation is right, but 12.5% is nominal growth with price rises still included."
+  }
+ }
+}

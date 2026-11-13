@@ -109,6 +109,7 @@ th{background:var(--card2);font-size:.84rem}
 .fb.bad{border-color:var(--gap)}
 .fb h3{font-size:1rem}
 .fb p{margin-top:4px;font-size:.93rem}
+.why{margin:8px 0;padding:8px 12px;background:var(--card);border:1px solid var(--rule);border-radius:8px}.why ul{margin:6px 0 0 0;padding:0;list-style:none}.why li{font-size:.93rem;margin-top:4px;padding-left:4px}.why li.mine{font-weight:600}.why li i{font-weight:400;color:var(--mut)}.why .whynote{font-size:.8rem;color:var(--mut);margin-top:8px}
 .tagc{display:inline-block;font-size:.76rem;border-radius:999px;padding:.08rem .55rem;background:var(--card);border:1px solid var(--tc,var(--rule2));margin:2px 4px 0 0}
 .score{font:800 2.2rem var(--head)}
 .bars{display:grid;gap:6px;margin:8px 0}
@@ -211,7 +212,7 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#e3e9fd;outline:none}
 <section class="view" id="v-paper"></section>
 <section class="view" id="v-results"></section>
 </main>
-<p class="foot">Questions, options and answers are from the NESA HSC Economics papers and marking guidelines for 2009 to 2025, as recorded in the class <a href="../hsc-question-finder-site/">Question Finder</a>. NESA publishes the correct option but no explanation, so the feedback shows what each question tested, not why the other options are wrong. Dot-point tags are a reading of the questions, not an official NESA mapping. Your results are kept in this browser only.<span id="nokey"></span></p>
+<p class="foot">Questions, options and answers are from the NESA HSC Economics papers and marking guidelines for 2009 to 2025, as recorded in the class <a href="../hsc-question-finder-site/">Question Finder</a>. NESA publishes the correct option but no explanation. Where the feedback explains why an option is right or wrong, that explanation was written for this site and is not from NESA<span id="ecount"></span>. Dot-point tags are a reading of the questions, not an official NESA mapping. Your results are kept in this browser only.<span id="nokey"></span></p>
 </div>
 <script type="application/json" id="data">__DATA__</script>
 <script>
@@ -251,9 +252,12 @@ function options(q, pick, reveal) { return `<div class="opts" role="group" aria-
     return `<button class="opt ${cls}" data-o="${l}" aria-pressed="${pick === l}" ${reveal ? 'disabled' : ''}><i>${l}</i>${body}</button>`; }).join('')}</div>`; }
 function tags(q) { if (S.fw === 'h09') return q.c.map(c => `<span class="tagc" style="--tc:${PT[c].top.color}">${c} ${esc(PT[c].t)}</span>`).join('');
   return q.secs.y12.filter(s => SEC[s]).map(s => `<span class="tagc" style="--tc:${SEC[s].top.color}">${esc(SEC[s].name)}</span>`).join(''); }
+function explain(q, pick) { const e = q.e; if (!e) return '';
+  const wrong = 'ABCD'.split('').filter(l => e.not[l]);
+  return `<div class="why"><p><b>Why ${q.k.join(' or ')}:</b> ${esc(e.why)}</p>${wrong.length ? `<ul>${wrong.map(l => `<li class="${l === pick ? 'mine' : ''}"><b>${l}</b> ${esc(e.not[l])}${l === pick ? ' <i>(your answer)</i>' : ''}</li>`).join('')}</ul>` : ''}<p class="whynote">Explanation written for this site, not by NESA. Tell your teacher if one looks wrong.</p></div>`; }
 function feedback(q, pick) { const ok = isRight(q, pick);
   return `<div class="fb ${ok ? '' : 'bad'}" role="status"><h3>${ok ? 'Correct.' : `Not quite. The answer is ${esc(keyText(q))}.`}${ok && q.k.length > 1 ? ` NESA accepted ${q.k.join(' or ')}.` : ''}</h3>
-    <p><b>What it tested:</b> ${esc(q.t)}</p><p>${tags(q)}</p>
+    <p><b>What it tested:</b> ${esc(q.t)}</p>${explain(q, pick)}<p>${tags(q)}</p>
     <p>${q.calc ? `<a href="../calculation-trainer/#skill=${q.calc}"${ext}>Practise this calculation</a> · ` : ''}${q.c.length ? `<a href="../evidence-finder/#fw=h09&sel=point:${encodeURIComponent(q.c[0])}"${ext}>See evidence for this dot point</a> · ` : ''}<a href="../glossary/"${ext}>Look up a term</a></p></div>`; }
 function qCard(q, pick, reveal, head) { const col = q.c.length ? PT[q.c[0]].top.color : 'var(--acc)';
   return `<div class="qhead"><b>${head}</b><span class="sub">HSC ${q.y}, Question ${q.n}</span></div><div class="stem" style="--tc:${col}">${esc(q.q)}${figs(q)}</div>${options(q, pick, reveal)}`; }
@@ -356,6 +360,7 @@ document.querySelector('main').addEventListener('change', e => { const id = e.ta
   if (id === 'sec') { S.sec = e.target.value; renderDrill(); } else if (id === 'calc') { S.calc = e.target.checked; renderDrill(); } else if (id === 'from') { S.from = +e.target.value; renderDrill(); } else if (id === 'timed') S.timed = e.target.checked; });
 addEventListener('keydown', e => { if (e.target.matches('input,select,textarea') || e.metaKey || e.ctrlKey || e.altKey) return; const k = e.key.toUpperCase(); if (L.includes(k)) { e.preventDefault(); answer(k); } });
 addEventListener('hashchange', () => { const v = new URLSearchParams(location.hash.slice(1)).get('view'); if (VIEWS.includes(v)) go(v); });
+{ const ne = QS.filter(q => q.e).length; if (ne < QS.length) $('#ecount').textContent = ' (' + ne + ' of ' + QS.length + ' questions have one so far)'; }
 if ((D.nokey || []).length) $('#nokey').textContent = ' The ' + D.nokey.join(' and ') + ' paper is in the Question Finder but not here yet: it joins the drill when NESA publishes the answers.';
 $('#tag').textContent = `All ${QS.length} Section I questions from the ${YEARS[YEARS.length - 1]} to ${YEARS[0]} HSC papers: drill a topic, sit a timed paper, find your weak dot points`;
 { const v = new URLSearchParams(location.hash.slice(1)).get('view'); if (VIEWS.includes(v)) S.view = v; }

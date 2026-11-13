@@ -30,6 +30,8 @@ def build():
     fw = {f["id"]: f for f in syl["frameworks"]}
     points = {p["id"] for f in ("h09",) for t in fw[f]["topics"] for sec in t["sections"] for p in sec["points"]}
     qs, nokey = [], set()
+    EX = json.loads((HERE / "data" / "explanations.json").read_text(encoding="utf8")) if (HERE / "data" / "explanations.json").exists() else {}
+    used = set()
     for it in D["items"]:
         if it["s"] != "I":
             continue
@@ -55,11 +57,17 @@ def build():
         if "calc" in it["k"]:
             sk = next((CALC[c] for c in it["c"] if c in CALC), None)
             q["calc"] = sk or ""
+        e = EX.get(q["id"])
+        if e:
+            wrong = [l for l in "ABCD" if l not in q["k"]]
+            assert e.get("why") and sorted(e.get("not", {})) == wrong, f"{q['id']}: explanation must have 'why' and a note for each wrong option {wrong}"
+            q["e"] = e; used.add(q["id"])
         qs.append(q)
     fws = [{"id": f["id"], "sub": f["sub"], "topics": [
         {"id": t["id"], "label": t.get("label", ""), "name": t["name"], "color": t["color"],
          "sections": [{"id": x["id"], "name": x["name"], "points": x["points"]} for x in t["sections"] if not x.get("skills")]}
         for t in f["topics"]]} for f in (fw["h09"], fw["y12"])]
+    assert not set(EX) - used, f"explanations for unknown questions: {sorted(set(EX) - used)}"
     out = {"q": qs, "fw": fws, "xwalk": syl["xwalk"], "nokey": sorted(nokey)}
     html = (HERE / "template.html").read_text(encoding="utf8")
     html = html.replace("/*__FONTS__*/", FONTS.read_text(encoding="utf8") if FONTS.exists() else "")
@@ -79,4 +87,5 @@ if __name__ == "__main__":
     print(f'Wrote {target} ({len(html)//1024} KB): {len(q)} questions from {len({x["y"] for x in q})} papers, '
           f'{sum(1 for x in q if x.get("f"))} with a table or figure, {sum(1 for x in q if x.get("m"))} with an option table, '
           f'{sum(1 for x in q if len(x["k"]) > 1)} with two accepted answers, {sum(1 for x in q if not x["c"])} untagged.'
+          + f' {sum(1 for x in q if x.get("e"))} with an explanation.'
           + (f' Left out (no answer key yet): {out["nokey"]}.' if out['nokey'] else ''))
