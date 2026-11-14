@@ -46,7 +46,7 @@ def linechart(pts, c, ymax, band=None, unit="%", w=376, h=180):
     for i, (lab, x, y) in enumerate(pts):
         o.append('<circle cx="%.1f" cy="%.1f" r="3.5" fill="%s"/>' % (X(x), Y(y), c))
         if lab:
-            o.append('<text x="%.1f" y="%.1f" font-size="10" font-weight="800" text-anchor="middle" fill="%s">%g%s</text>' % (X(x), Y(y) - 7, INK, y, unit))
+            o.append('<text x="%.1f" y="%.1f" font-size="10" font-weight="800" text-anchor="%s" fill="%s">%g%s</text>' % (X(x) + (6 if i == 0 else 0), Y(y) - (2 if i == 0 else 7), "start" if i == 0 else "middle", INK, y, unit))
             o.append('<text x="%.1f" y="%d" font-size="9.5" text-anchor="%s" fill="%s">%s</text>' % (X(x), h - 7, "end" if i == len(pts) - 1 else "middle", GREY, e(lab)))
     return "".join(o) + "</svg>"
 def bars(items, vmax=None, fmt="%g", sub=None):
