@@ -36,7 +36,7 @@ def linechart(pts, c, ymax, band=None, unit="%", w=376, h=180):
     x0, x1 = pts[0][1], pts[-1][1]; L, R, T, B = 28, 14, 14, 24
     X = lambda x: L + (w - L - R) * (x - x0) / (x1 - x0); Y = lambda y: T + (h - T - B) * (1 - y / ymax)
     o = ['<svg viewBox="0 0 %d %d" role="img" aria-label="line chart">' % (w, h)]
-    if band: o.append('<rect x="%d" y="%.1f" width="%d" height="%.1f" fill="#cfe8d6"/><text x="%d" y="%.1f" font-size="9.5" font-weight="700" text-anchor="end" fill="#256b3a">%s</text>' % (L, Y(band[1]), w - L - R, Y(band[0]) - Y(band[1]), w - R - 4, (Y(band[0]) + Y(band[1])) / 2 + 3.5, e(band[2])))
+    if band: o.append('<rect x="%d" y="%.1f" width="%d" height="%.1f" fill="#cfe8d6"/><text x="%d" y="%.1f" font-size="9.5" font-weight="700" text-anchor="end" fill="#256b3a">%s</text>' % (L, Y(band[1]), w - L - R, Y(band[0]) - Y(band[1]), w - R - 4, Y(band[0]) + 11, e(band[2])))
     for k in range(5):
         yv = ymax * k / 4
         o.append('<line x1="%d" x2="%d" y1="%.1f" y2="%.1f" stroke="#d7deec"/><text x="%d" y="%.1f" font-size="9.5" text-anchor="end" fill="%s">%g</text>' % (L, w - R, Y(yv), Y(yv), L - 4, Y(yv) + 3, GREY, yv))
