@@ -17,3 +17,7 @@ figures file appears on the site after a push, with no edit in Google Sites. The
 'Practise with the tools' buttons, which reuse the icons from `build/build_sitemenu.py`.
 
 Pilot page: Inflation (Topic 3), 14 November 2026.
+
+## More resources heading
+
+`more-resources.html` is the icon heading (gold folder on a cobalt square, "MORE RESOURCES") used above the slides, textbook chapter and other links at the foot of every explainer page. Paste its code into Insert > Embed > Embed code, set it to half width (6 columns) and drag the height down as far as it goes. It is self-contained, so it does not need a push to work.
