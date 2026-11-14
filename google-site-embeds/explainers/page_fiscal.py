@@ -1,0 +1,52 @@
+def make(B):
+    c, cd = "#8a3fb0", "#6a2a8a"
+    ed = B.ed
+    text = (
+    "<h3>What fiscal policy is</h3>"
+    "<p><b>Fiscal policy</b> is the government's use of its budget, meaning government spending and taxation, to influence the level of economic activity and to achieve its economic objectives: strong and sustainable growth, low unemployment, low inflation, external stability, a fairer distribution of income and ecological sustainability. It is set by the Federal Government and announced each year in the Federal Budget, usually in May.</p>"
+    "<h3>The budget and budget outcomes</h3>"
+    "<p>The budget is a statement of the government's expected <b>revenue</b> (mainly income tax, company tax and the GST) and <b>expenditure</b> (social security, health, education, defence and interest on debt). The difference is the budget outcome (Figure 3).</p>"
+    "<ul><li><b>Budget deficit:</b> spending is greater than revenue.</li>"
+    "<li><b>Budget surplus:</b> revenue is greater than spending.</li>"
+    "<li><b>Balanced budget:</b> revenue equals spending.</li></ul>"
+    "<p>The headline measure used by the Government is the <b>underlying cash balance</b>. The 2026&ndash;27 Budget, delivered on 12 May 2026, forecasts an underlying cash deficit of $28.3 billion for 2025&ndash;26 and $31.5 billion for 2026&ndash;27, about 1 per cent of GDP. A return to balance is not projected until 2034&ndash;35 (Figure 2). The wider headline cash deficit, which includes investment outside the budget such as naval infrastructure, is about $64 billion, or 2.1 per cent of GDP.</p>"
+    "<h3>Stance of fiscal policy</h3>"
+    "<p>The <b>stance</b> shows whether the budget is adding to or reducing aggregate demand.</p>"
+    "<ul><li><b>Expansionary:</b> higher spending or lower taxes, so the budget moves towards deficit. It is used when growth is weak and unemployment is rising.</li>"
+    "<li><b>Contractionary:</b> lower spending or higher taxes, so the budget moves towards surplus. It is used when demand is too strong and inflation is high.</li>"
+    "<li><b>Neutral:</b> the budget has no net effect on demand.</li></ul>"
+    "<p>Expansionary policy shifts aggregate demand to the right (Figure 4). Real output rises from Y<sub>1</sub> to Y<sub>2</sub>, and so does the price level (P<sub>1</sub> to P<sub>2</sub>). Output rises by a multiple of the initial spending because of the <b>multiplier</b>: one person's spending is another's income, so each round of spending creates further spending (Figure 6). A contractionary stance does the opposite.</p>"
+    "<h3>Automatic stabilisers and discretionary policy</h3>"
+    "<p><b>Automatic stabilisers</b> are parts of the budget that change without any new decision. In a downturn, income tax revenue falls and spending on unemployment benefits rises, so the deficit widens and supports demand. In a boom the reverse happens (Figure 5). <b>Discretionary policy</b> is a deliberate change in tax rates or spending programs, such as the stage 3 tax cuts or the energy bill relief payments.</p>"
+    "<h3>Effects of the budget</h3>"
+    "<ul><li><b>Economic activity:</b> spending and tax changes shift aggregate demand, which affects growth, employment and inflation.</li>"
+    "<li><b>Resource use:</b> spending priorities determine how resources are allocated between public and private use, and between sectors such as health, defence and infrastructure.</li>"
+    "<li><b>Income distribution:</b> a progressive tax system and means-tested transfers redistribute income from higher to lower income households.</li>"
+    "<li><b>Productive capacity:</b> spending on infrastructure, education and training raises potential output and the long-run growth rate.</li></ul>"
+    "<h3>Financing a deficit and using a surplus</h3>"
+    "<p>The government finances a deficit mainly by <b>borrowing</b>: it sells Treasury bonds to domestic and foreign investors. The 2026&ndash;27 Budget shows gross debt passing $1 trillion for the first time in 2026&ndash;27, and net debt of about $617 billion, or 19.9 per cent of GDP, rising to 21.9 per cent in 2029&ndash;30. Net interest payments are forecast to rise from about $20 billion to $32 billion by 2029&ndash;30. Large borrowing can <b>crowd out</b> private investment if it raises interest rates, and the cost of the debt must be met by future taxpayers.</p>"
+    "<p>A surplus can be used to repay debt, which reduces interest costs, to fund assets such as the Future Fund, or to finance tax cuts and new spending.</p>"
+    "<h3>The 2026&ndash;27 Budget in context</h3>"
+    "<p>The Budget was handed down during an oil price shock caused by the war in the Middle East. Headline inflation was forecast to reach about 5 per cent in the year to June 2026, and growth was revised down from 2&frac14; per cent in 2025&ndash;26 to 1&frac34; per cent in 2026&ndash;27. The Government stressed restraint: real spending growth was forecast to fall from 4.3 per cent in 2025&ndash;26 to 1.3 per cent in 2026&ndash;27, with $63.8 billion in identified savings. Payments are still forecast to reach 26.8 per cent of GDP, the highest share since 1987 outside the pandemic. Supporters say this limits inflation and rebuilds budget room. Critics say it relies on higher than expected revenue rather than lasting reform. With the Reserve Bank raising rates to fight inflation, the Budget and monetary policy are working in the same direction.</p>"
+    "<h3>Limitations of fiscal policy</h3>"
+    "<ul><li><b>Time lags:</b> it takes time to recognise a problem, pass a decision and for spending to reach the economy.</li>"
+    "<li><b>Crowding out:</b> borrowing may reduce private investment.</li>"
+    "<li><b>Political pressure:</b> tax rises and spending cuts are unpopular, and governments may time budgets for elections.</li>"
+    "<li><b>Debt and interest costs:</b> a large debt limits future choices.</li>"
+    "<li><b>Leakages and imports:</b> some extra income is saved or spent on imports, which weakens the multiplier and affects the current account.</li></ul>"
+    "<p><b>Use it in an exam:</b> state the budget outcome and stance with a figure, draw the AD shift, link it to the multiplier, then evaluate with lags, crowding out and its effect on the other objectives.</p>"
+    "<p>Sources: <a href=\"https://budget.gov.au/\">Australian Government, Budget 2026&ndash;27</a>; <a href=\"https://www.ey.com/en_au/insights/economics/federal-budget-2026-27\">EY, Federal Budget 2026&ndash;27</a>; <a href=\"https://www.commbank.com.au/articles/newsroom/2026/05/2026-federal-budget-analysis-australian-economy.html\">CommBank, 2026&ndash;27 Budget analysis</a>; <a href=\"https://www.deloitte.com/au/en/services/tax/analysis/federal-budget.html\">Deloitte, Federal Budget 2026&ndash;27</a>.</p>")
+    tiles = ('<div class="k"><div><b>$31.5bn</b><i>Underlying cash deficit</i><u>2026&ndash;27 Budget (1% of GDP)</u></div><div><b>19.9%</b><i>Net debt, % of GDP</i><u>2026&ndash;27 forecast</u></div>'
+             '<div><b>26.8%</b><i>Payments, % of GDP</i><u>2026&ndash;27, highest since 1987*</u></div><div><b>1&frac34;%</b><i>GDP growth forecast</i><u>2026&ndash;27, down from 2&frac14;%</u></div></div>')
+    figs = [
+      B.fig(1, "Key numbers", tiles, "*Excluding the pandemic years."),
+      B.fig(2, "Underlying cash balance ($ billion)", B.colchart([("25–26", -28.3), ("26–27", -31.5), ("27–28", -31.0), ("28–29", -34.4), ("29–30", -25.3)], c, -40, 5, unit="") , "2026–27 Budget forecasts. Deficits are shown in red. Balance is not projected until 2034–35. Source: Budget papers."),
+      B.fig(3, "Budget outcomes", B.table(["Outcome", "Condition"], [["Deficit", "Spending &gt; revenue"], ["Surplus", "Revenue &gt; spending"], ["Balanced", "Revenue = spending"]]) + "<small>The 2026&ndash;27 Budget is a deficit.</small>"),
+      B.fig(4, "Expansionary fiscal policy", ed.ad_as("AD right", ed.TOPIC[4]).svg(), "More government spending or lower taxes shifts AD to the right: real GDP rises (Y<sub>1</sub> to Y<sub>2</sub>) and the price level rises (P<sub>1</sub> to P<sub>2</sub>). Not to scale."),
+      B.fig(5, "Automatic stabilisers", B.table(["", "Downturn", "Boom"], [["Income tax revenue", "Falls", "Rises"], ["Unemployment benefits", "Rise", "Fall"], ["Budget balance", "Towards deficit", "Towards surplus"], ["Effect on demand", "Supports it", "Restrains it"]])),
+      B.fig(6, "Worked example: the multiplier", B.table(["Item", "Value"], [["Marginal propensity to consume (MPC)", "0.8"], ["Multiplier = 1 &divide; (1 &minus; MPC)", "1 &divide; 0.2 = 5"], ["Extra government spending", "$2 billion"], ["<b>Rise in national income</b>", "<b>2 &times; 5 = $10 billion</b>"]]), "Made-up figures for practice."),
+      B.fig(7, "Chain: expansionary budget", B.chain(["Government spends more or cuts taxes", "Aggregate demand rises (multiplier)", "Firms raise output and hire", "Unemployment falls, growth rises", "Inflation and imports may rise"])),
+      B.tools([("policy", "Change spending and tax and see the effects"), ("macro", "Draw AD shifts and the multiplier"), ("calc", "Practise multiplier calculations"), ("chain", "Build the chain from budget to objectives"),
+               ("qf", "Past HSC questions on fiscal policy"), ("mcq", "Section I questions with explanations"), ("ef", "Find budget evidence"), ("gloss", "Stance, stabilisers, crowding out")]),
+    ]
+    B.build("fiscal-policy", c, cd, text, figs, "")
