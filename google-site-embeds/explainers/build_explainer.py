@@ -19,6 +19,9 @@ def css(c, cd):
     ".k b{display:block;font-size:20px;font-weight:800;color:D;line-height:1.15}.k i{font-style:normal;font-size:11.5px;font-weight:700;color:#3b4663;display:block;line-height:1.25}.k u{text-decoration:none;font-size:10.5px;color:%s;display:block}"
     "table{border-collapse:collapse;width:100%%;font-size:12.5px}th{background:D;color:#fff;text-align:left;padding:5px 7px}td{border-bottom:1px solid #d7deec;padding:5px 7px;vertical-align:top;background:#fff}"
     ".ch{display:flex;flex-direction:column;align-items:stretch;gap:0}.ch div{background:#fff;border:1px solid #c9d2e4;border-radius:8px;padding:6px 9px;font-size:12.5px;font-weight:700;text-align:center}.ch span{text-align:center;color:D;font-weight:800;line-height:1.1;font-size:15px}"
+    ".tw{margin-top:4px}.tw h4{margin:0 0 8px;font-size:14px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#1c3fb0;border-bottom:2px solid #1c3fb0;padding-bottom:5px}.tg{display:grid;grid-template-columns:1fr 1fr;gap:8px}"
+    ".tb{display:flex;align-items:center;gap:8px;text-decoration:none;background:#1c3fb0;border-radius:10px;padding:9px 10px;min-height:56px}.tb:hover,.tb:focus{background:#122a7a}.tb svg{flex:0 0 26px;width:26px;height:26px;fill:none;stroke:#ffd24a;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}"
+    ".tb b{display:block;font-size:12.5px;font-weight:800;color:#fff;line-height:1.2}.tb i{display:block;font-style:normal;font-size:10.5px;font-weight:500;color:#dfe6fb;line-height:1.25;margin-top:1px}"
     "</style>" % (INK, GREY, GREY, GREY)).replace("C", c).replace("D", cd)
 e = html.escape
 def fig(n, title, body, note=""):
@@ -47,6 +50,29 @@ def linechart(pts, c, ymax, band=None, unit="%", w=376, h=180):
 def chain(steps): return '<div class="ch">' + '<span>&#8595;</span>'.join("<div>%s</div>" % s for s in steps) + "</div>"
 def table(head, rows): return "<table><tr>" + "".join("<th>%s</th>" % h for h in head) + "</tr>" + "".join("<tr>" + "".join("<td>%s</td>" % c for c in r) + "</tr>" for r in rows) + "</table>"
 def diagram(d): return d.svg(standalone=False) if 'standalone' in d.svg.__code__.co_varnames else d.svg()
+# Tool buttons: icons are the same 24 x 24 stroke paths as the tools' own "Other tools" menu (build/build_sitemenu.py).
+ICONS = {
+ "qf": ("Question Finder", "hsc-question-finder-site/", '<path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.5 12h6M9.5 16h6"/>'),
+ "ef": ("Evidence Finder", "evidence-finder/", '<path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/>'),
+ "essay": ("Extended Response Builder", "essay-builder/", '<path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/>'),
+ "chain": ("Chain Builder", "chain-builder/", '<circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="12" r="2.5"/><path d="M7.5 12h9M13.5 9l3 3-3 3"/>'),
+ "macro": ("Macro Diagram Lab", "macro-diagram-lab/", '<path d="M4 4v16h16"/><path d="M7 7l11 9M7 17l11-9"/><circle cx="12.5" cy="12" r="1.6"/>'),
+ "policy": ("Policy Simulator", "policy-simulator/", '<path d="M4 20h16M6 20V10M10 20V10M14 20V10M18 20V10M3 10l9-6 9 6z"/>'),
+ "calc": ("Calculation Trainer", "calculation-trainer/", '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M12 12h0M16 12h0M8 16h2M12 16h0M16 16h0"/>'),
+ "mcq": ("Multiple Choice Drill", "multiple-choice-drill/", '<circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="M11 7h9M11 17h9M5 17l1 1 2-2"/>'),
+ "fx": ("Exchange Rate Explorer", "exchange-rate-explorer/", '<path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/>'),
+ "bop": ("Balance of Payments Explorer", "bop-explorer/", '<path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6h5zM19 8l-2.5 6h5z"/>'),
+ "explain": ("Who Wins from Protection", "protection-explainer/", '<path d="M12 4v16M7.5 20h9M5 7h14M5 7l-3 7a3 3 0 006 0zM19 7l-3 7a3 3 0 006 0z"/>'),
+ "lab": ("Protection Diagram Lab", "diagram-lab/", '<path d="M4 4v16h16"/><path d="M7 8l10 9M7 17l10-9"/>'),
+ "glance": ("Economy at a Glance", "economy-at-a-glance/", '<path d="M4 20V10M10 20V4M16 20v-7M21 20H3"/>'),
+ "gloss": ("Glossary", "glossary/", '<path d="M4 5c3-1 6-1 8 1 2-2 5-2 8-1v13c-3-1-6-1-8 1-2-2-5-2-8-1zM12 6v13"/>'),
+ "map": ("Topic Map", "mind-map/", '<circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 000-6H9a3 3 0 010-6h6.5"/>'),
+}
+def tools(items):
+    """items: [(key, what to do there)] -> 'Practise with the tools' block of buttons, two per row."""
+    b = "".join('<a class="tb" target="_blank" rel="noopener" href="%s%s"><svg viewBox="0 0 24 24" aria-hidden="true">%s</svg><span><b>%s</b><i>%s</i></span></a>'
+                % (TOOLS, ICONS[k][1], ICONS[k][2], e(ICONS[k][0]), e(d)) for k, d in items)
+    return '<div class="tw"><h4>Practise with the tools</h4><div class="tg">%s</div></div>' % b
 def tool(name, path): return '<a href="%s%s">%s</a>' % (TOOLS, path, name)
 
 def build(slug, c, cd, text, figs, js):

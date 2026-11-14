@@ -37,13 +37,6 @@ def make(B):
     "<li><b>Monetary policy:</b> price stability is the RBA's main objective, and the cash rate is its main tool.</li>"
     "<li><b>Exchange rates:</b> a depreciation causes imported inflation. Higher interest rates can attract capital and lift the dollar.</li></ul>"
     "<p><b>Use it in an exam:</b> define inflation, quote the latest headline and underlying rates against the 2 to 3 per cent target, name the type of inflation and explain its cause with a diagram, then weigh the effects on households, firms and the wider economy.</p>"
-    "<h3>Practise with the tools</h3>"
-    "<ul><li>" + T("Economy at a Glance", "economy-at-a-glance/") + ": the latest inflation, wages and cash rate figures.</li>"
-    "<li>" + T("Macro Diagram Lab", "macro-diagram-lab/") + ": shift AD and AS yourself and watch the price level change.</li>"
-    "<li>" + T("Chain Builder", "chain-builder/") + ": build the cause-and-effect chain from a cost shock to higher prices.</li>"
-    "<li>" + T("Question Finder", "hsc-question-finder-site/") + " and " + T("Multiple Choice Drill", "multiple-choice-drill/") + ": past HSC questions on inflation.</li>"
-    "<li>" + T("Evidence Finder", "evidence-finder/") + ": recent news and statistics to quote in essays.</li>"
-    "<li>" + T("Glossary", "glossary/") + ": key terms such as CPI, trimmed mean and NAIRU.</li></ul>"
     "<p>Sources: <a href=\"https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release\">ABS, Consumer Price Index, Australia</a>; <a href=\"https://www.rba.gov.au/inflation/\">Reserve Bank of Australia, inflation</a>.</p>")
     tiles, js = B.live([("cpi", "Headline CPI, annual", "4.3%", "Sep 2026"), ("tmean", "Trimmed mean, annual", "3.6%", "Sep 2026"),
                         ("cash", "Cash rate target", "4.85%", "4 Nov 2026"), ("wpi", "Wages growth (WPI)", "3.2%", "Jun qtr 2026")])
@@ -55,5 +48,7 @@ def make(B):
       B.fig(4, "Cost inflation: aggregate supply shifts left", B.ed.ad_as("SRAS left", B.ed.TOPIC[3]).svg(), "SRAS<sub>1</sub> to SRAS<sub>2</sub> lifts the price level from P<sub>1</sub> to P<sub>2</sub> while output falls from Y<sub>1</sub> to Y<sub>2</sub>. Not to scale."),
       B.fig(5, "How imported inflation spreads", B.chain(["World oil price rises, or the Australian dollar falls", "Imports cost more in Australian dollars", "Fuel and input costs rise for firms", "Firms pass costs on as higher prices", "Headline CPI rises", "Workers seek higher wages, so expectations rise"])),
       B.fig(6, "Who gains and who loses from high inflation", B.table(["Loses", "Gains"], [["Workers whose wages rise more slowly than prices", "Borrowers with fixed-rate debt"], ["Savers and people on fixed incomes", "Owners of property and other real assets"], ["Exporters and firms that compete with imports", "Firms that can raise prices faster than their costs"], ["Lenders repaid in money that buys less", "Governments, as tax receipts rise with prices"]])),
+      B.tools([("glance", "Latest inflation, wages and cash rate"), ("macro", "Shift AD and AS and watch prices"), ("chain", "Build the chain from cost shock to prices"), ("qf", "Past HSC questions on inflation"),
+               ("mcq", "Section I questions with explanations"), ("ef", "News and statistics for essays"), ("gloss", "CPI, trimmed mean, NAIRU and more"), ("policy", "Set the cash rate and see inflation respond")]),
     ]
     B.build("inflation", c, cd, text, figs, js)

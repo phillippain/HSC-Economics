@@ -12,4 +12,8 @@ with the daily data update. The values written into the HTML are only a fallback
 Build: `python3 build_explainer.py inflation` (needs the hsc-econ-diagrams script on the path). Content for each
 page lives in `page_<name>.py`.
 
+The Sites embed is only a small loader: it fetches `<page>-figures.html` from GitHub Pages, so a new or changed
+figures file appears on the site after a push, with no edit in Google Sites. The last block of the figures file is the
+'Practise with the tools' buttons, which reuse the icons from `build/build_sitemenu.py`.
+
 Pilot page: Inflation (Topic 3), 14 November 2026.
