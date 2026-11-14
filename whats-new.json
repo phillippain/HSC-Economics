@@ -1,0 +1,29 @@
+{
+ "_how_to": "Newest first. Add a line at the top: date as YYYY-MM-DD, text under about 110 characters, plain words for students. The Home page shows the five newest. Push to GitHub and the site updates by itself within a few minutes.",
+ "items": [
+  {
+   "date": "2026-11-14",
+   "text": "New look: the site now uses the cobalt and gold colours of the course tools."
+  },
+  {
+   "date": "2026-11-14",
+   "text": "Reference notes with data and charts on eight sub-topics in Topics 1, 2 and 4."
+  },
+  {
+   "date": "2026-11-14",
+   "text": "Notes and activities for external stability, labour market policies and limitations of policies."
+  },
+  {
+   "date": "2026-11-14",
+   "text": "All past papers page under Exam prep: HSC papers from 2009 to 2025 and 37 trial papers."
+  },
+  {
+   "date": "2026-11-13",
+   "text": "Every topic page rebuilt with slides, workbooks, practice questions and tools."
+  },
+  {
+   "date": "2026-11-13",
+   "text": "Tools page with all 15 tools. The menu has moved to the top of the page."
+  }
+ ]
+}
