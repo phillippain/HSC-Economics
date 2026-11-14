@@ -31,8 +31,9 @@ def fig(n, title, body, note=""):
 def live(tiles):
     """tiles: [(glance id, label, fallback value, fallback period)]"""
     h = '<div class="k">' + "".join('<div><b data-id="%s">%s</b><i>%s</i><u data-p="%s">%s</u></div>' % (i, v, e(l), i, e(p)) for i, l, v, p in tiles) + "</div>"
-    js = ("<script>fetch('%s?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(d){if(!d)return;d.forEach(function(x){"
-          "var b=document.querySelector('[data-id=\"'+x.id+'\"]'),p=document.querySelector('[data-p=\"'+x.id+'\"]');if(b&&x.display)b.textContent=x.display;if(p&&x.period)p.textContent=x.period})}).catch(function(){})</script>") % GLANCE
+    js = ("<script>function U(d,v,p){if(!d)return;d.forEach(function(x){var b=document.querySelector('[data-id=\"'+x.id+'\"]'),q=document.querySelector('[data-p=\"'+x.id+'\"]');if(b&&x[v])b.textContent=x[v];if(q&&x[p])q.textContent=x[p]})}"
+          "function G(u,v,p){fetch(u+'?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(d){U(d,v,p)}).catch(function(){})}"
+          "G('%s','display','period');G('%s','latest','latestPeriod')</script>") % (GLANCE, GLANCE.replace("glance.json", "scorecard.json"))
     return h, js
 def linechart(pts, c, ymax, band=None, unit="%", w=376, h=180):
     x0, x1 = pts[0][1], pts[-1][1]; L, R, T, B = 28, 14, 14, 24
