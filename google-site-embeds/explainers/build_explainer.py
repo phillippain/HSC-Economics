@@ -19,6 +19,8 @@ def css(c, cd):
     ".k b{display:block;font-size:20px;font-weight:800;color:D;line-height:1.15}.k i{font-style:normal;font-size:11.5px;font-weight:700;color:#3b4663;display:block;line-height:1.25}.k u{text-decoration:none;font-size:10.5px;color:%s;display:block}"
     "table{border-collapse:collapse;width:100%%;font-size:12.5px}th{background:D;color:#fff;text-align:left;padding:5px 7px}td{border-bottom:1px solid #d7deec;padding:5px 7px;vertical-align:top;background:#fff}"
     ".ch{display:flex;flex-direction:column;align-items:stretch;gap:0}.ch div{background:#fff;border:1px solid #c9d2e4;border-radius:8px;padding:6px 9px;font-size:12.5px;font-weight:700;text-align:center}.ch span{text-align:center;color:D;font-weight:800;line-height:1.1;font-size:15px}"
+    ".br{display:grid;grid-template-columns:118px 1fr 46px;align-items:center;gap:6px;font-size:12px;font-weight:700;margin:3px 0}.br s{display:block;height:13px;border-radius:3px;background:C;text-decoration:none}.br s.g{background:#9aa6c0}.br u{text-decoration:none;text-align:right;font-weight:800}.br i{font-style:normal;line-height:1.2}"
+    ".sub{font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:D;margin:8px 0 3px}.sub:first-of-type{margin-top:0}.lg{font-size:11px;font-weight:700;color:#3b4663;margin-bottom:5px}.lg s{display:inline-block;width:10px;height:10px;border-radius:2px;background:C;margin:0 4px 0 0;vertical-align:-1px}.lg s.g{background:#9aa6c0;margin-left:10px}"
     ".tw{margin-top:4px}.tw h4{margin:0 0 8px;font-size:14px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#1c3fb0;border-bottom:2px solid #1c3fb0;padding-bottom:5px}.tg{display:grid;grid-template-columns:1fr 1fr;gap:8px}"
     ".tb{display:flex;align-items:center;gap:8px;text-decoration:none;background:#1c3fb0;border-radius:10px;padding:9px 10px;min-height:56px}.tb:hover,.tb:focus{background:#122a7a}.tb svg{flex:0 0 26px;width:26px;height:26px;fill:none;stroke:#ffd24a;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}"
     ".tb b{display:block;font-size:12.5px;font-weight:800;color:#fff;line-height:1.2}.tb i{display:block;font-style:normal;font-size:10.5px;font-weight:500;color:#dfe6fb;line-height:1.25;margin-top:1px}"
@@ -46,6 +48,28 @@ def linechart(pts, c, ymax, band=None, unit="%", w=376, h=180):
         if lab:
             o.append('<text x="%.1f" y="%.1f" font-size="10" font-weight="800" text-anchor="middle" fill="%s">%g%s</text>' % (X(x), Y(y) - 7, INK, y, unit))
             o.append('<text x="%.1f" y="%d" font-size="9.5" text-anchor="%s" fill="%s">%s</text>' % (X(x), h - 7, "end" if i == len(pts) - 1 else "middle", GREY, e(lab)))
+    return "".join(o) + "</svg>"
+def bars(items, vmax=None, fmt="%g", sub=None):
+    """items: [(label, value)] -> horizontal bars in the topic colour."""
+    vmax = vmax or max(v for _, v in items)
+    return ('<div class="sub">%s</div>' % e(sub) if sub else "") + "".join('<div class="br"><i>%s</i><span><s style="width:%.1f%%"></s></span><u>%s</u></div>' % (e(l), 100 * v / vmax, fmt % v) for l, v in items)
+def bars2(items, names, fmt="%g"):
+    """items: [(label, a, b)] -> paired bars (topic colour, grey) with a legend."""
+    vmax = max(max(a, b) for _, a, b in items)
+    lg = '<div class="lg"><s></s>%s<s class="g"></s>%s</div>' % (e(names[0]), e(names[1]))
+    return lg + "".join('<div class="br"><i>%s</i><span><s style="width:%.1f%%"></s></span><u>%s</u></div><div class="br" style="margin-top:-1px"><i></i><span><s class="g" style="width:%.1f%%"></s></span><u>%s</u></div>'
+                        % (e(l), 100 * a / vmax, fmt % a, 100 * b / vmax, fmt % b) for l, a, b in items)
+def colchart(pts, c, lo, hi, unit="%", w=376, h=190):
+    """pts: [(label, value)] -> columns above and below a zero line (negatives in red)."""
+    L, R, T, B = 8, 8, 16, 22; n = len(pts); bw = (w - L - R) / n
+    Y = lambda v: T + (h - T - B) * (hi - v) / (hi - lo)
+    o = ['<svg viewBox="0 0 %d %d" role="img" aria-label="column chart">' % (w, h)]
+    for i, (lab, v) in enumerate(pts):
+        x = L + i * bw + bw * .18; y0, y1 = sorted((Y(0), Y(v)))
+        o.append('<rect x="%.1f" y="%.1f" width="%.1f" height="%.1f" rx="2" fill="%s"/>' % (x, y0, bw * .64, max(y1 - y0, 1), c if v >= 0 else "#c0392b"))
+        o.append('<text x="%.1f" y="%.1f" font-size="10" font-weight="800" text-anchor="middle" fill="%s">%s%.1f%s</text>' % (x + bw * .32, (y0 - 4) if v >= 0 else (y1 + 11), INK, "\u2212" if v < 0 else "", abs(v), unit))
+        o.append('<text x="%.1f" y="%d" font-size="9.5" text-anchor="middle" fill="%s">%s</text>' % (x + bw * .32, h - 6, GREY, e(lab)))
+    o.append('<line x1="%d" x2="%d" y1="%.1f" y2="%.1f" stroke="%s" stroke-width="1.2"/>' % (L, w - R, Y(0), Y(0), INK))
     return "".join(o) + "</svg>"
 def chain(steps): return '<div class="ch">' + '<span>&#8595;</span>'.join("<div>%s</div>" % s for s in steps) + "</div>"
 def table(head, rows): return "<table><tr>" + "".join("<th>%s</th>" % h for h in head) + "</tr>" + "".join("<tr>" + "".join("<td>%s</td>" % c for c in r) + "</tr>" for r in rows) + "</table>"

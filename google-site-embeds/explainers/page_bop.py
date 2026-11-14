@@ -1,0 +1,72 @@
+def make(B):
+    c, cd = "#0e8a8a", "#0a6666"
+    text = (
+    "<h3>What the balance of payments is</h3>"
+    "<p>The balance of payments (BOP) is the record of all economic transactions between Australia and the rest of the world over a period of time. The Australian Bureau of Statistics (ABS) publishes it every quarter. It has two parts: the <b>current account</b> and the <b>capital and financial account</b>.</p>"
+    "<p>Every transaction is entered as a credit or a debit.</p>"
+    "<ul><li><b>Credits</b> are money flowing into Australia, such as payment for exports. They are positive.</li>"
+    "<li><b>Debits</b> are money flowing out of Australia, such as payment for imports. They are negative.</li></ul>"
+    "<h3>The current account</h3>"
+    "<p>The current account records transactions that cannot be reversed: trade and income. It has four parts (Figure 2).</p>"
+    "<ul><li><b>Net goods:</b> exports of goods minus imports of goods.</li>"
+    "<li><b>Net services:</b> exports of services, such as education and tourism, minus imports of services, such as Australians' travel overseas. Net goods plus net services is the <b>balance on goods and services</b> (BOGS).</li>"
+    "<li><b>Net primary income:</b> earnings on investments and labour. Credits are interest, dividends and wages received from overseas. Debits are interest paid on foreign debt and dividends and profits paid to foreign owners.</li>"
+    "<li><b>Net secondary income:</b> transfers with nothing given in return, such as foreign aid, gifts and money migrants send home.</li></ul>"
+    "<p><b>Current account balance = net goods + net services + net primary income + net secondary income</b></p>"
+    "<p>A negative total is a current account deficit (CAD).</p>"
+    "<h3>The capital and financial account</h3>"
+    "<p>This account records transactions in assets and liabilities, which can be reversed later.</p>"
+    "<ul><li>The <b>capital account</b> is small. It covers capital transfers, such as money migrants bring with them, and the sale of non-produced assets such as patents and trademarks.</li>"
+    "<li>The <b>financial account</b> records investment flows. Its categories are direct investment, portfolio investment, financial derivatives, other investment and reserve assets held by the Reserve Bank.</li></ul>"
+    "<p>When foreigners invest in or lend to Australia, money flows in, so it is a credit. Australia usually runs a surplus on this account.</p>"
+    "<h3>Links between the accounts</h3>"
+    "<p>With a floating exchange rate the two accounts balance. A current account deficit means Australia spends more overseas than it earns, and the difference must be paid for by an inflow of foreign money:</p>"
+    "<p><b>Current account balance + capital and financial account balance = 0</b></p>"
+    "<p>In the published figures a balancing item called net errors and omissions covers any gap in measurement.</p>"
+    "<p>The second link runs through time (Figure 5). A financial account surplus today adds to Australia's foreign liabilities. Those liabilities must be serviced: debt earns interest for the lender and equity earns dividends for the owner. Both are debits on net primary income, so the inflow of capital today widens the current account deficit in later years.</p>"
+    "<p>The underlying cause is the saving and investment gap. Australia invests more than it saves, and foreign saving fills the gap.</p>"
+    "<h3>Trends in the size and composition</h3>"
+    "<p>Australia has run a current account deficit in most years. It has averaged about 3.6 per cent of GDP since 1989 and was more than 7 per cent of GDP in 2007. The largest part has nearly always been the net primary income deficit.</p>"
+    "<p>From 2020 to 2022 Australia recorded current account surpluses, which was highly unusual (Figure 3). Commodity prices were very high, so the balance on goods and services moved into a large surplus.</p>"
+    "<p>The deficit has returned since 2023 and is widening (Figure 4). In the June quarter of 2026 it was $27.2 billion. Net primary income was a deficit of $21.9 billion: Australia received about $30.7 billion in income from overseas but paid about $52.6 billion. Higher interest payments on foreign debt were the main reason debits rose. The balance on goods and services also moved into deficit as imports grew faster than exports.</p>"
+    "<h3>What drives the trends</h3>"
+    "<p>The syllabus names four influences (Figure 7).</p>"
+    "<ul><li><b>International competitiveness:</b> if Australian firms have lower costs, higher productivity or better quality than rivals, exports rise and imports fall. Higher inflation than trading partners, or an appreciation of the dollar, reduces competitiveness.</li>"
+    "<li><b>Terms of trade:</b> higher export prices relative to import prices raise export income and improve the balance on goods and services. Australia's terms of trade depend mostly on world prices for iron ore, coal and gas.</li>"
+    "<li><b>International borrowing:</b> more foreign debt means more interest paid overseas. Higher world interest rates raise the cost of servicing that debt.</li>"
+    "<li><b>Foreign investment:</b> foreign ownership of Australian businesses means profits and dividends flow overseas. In a mining boom, higher profits for foreign-owned miners raise primary income debits.</li></ul>"
+    "<h3>Effects of these trends</h3>"
+    "<ul><li><b>Growing foreign liabilities:</b> each deficit must be financed, which adds to net foreign debt or foreign ownership.</li>"
+    "<li><b>The exchange rate:</b> credits create demand for Australian dollars and debits create supply (Figure 6). A wider deficit raises supply, which tends to depreciate the currency. A depreciation makes exports cheaper and imports dearer, which helps to correct the deficit.</li>"
+    "<li><b>Constraint on growth:</b> strong growth draws in imports and widens the deficit, which can limit how fast the economy can grow.</li>"
+    "<li><b>Is it a problem?</b> One view is that a deficit caused by private firms borrowing to invest will pay for itself, because the investment raises future output and exports. The risk is a loss of confidence by foreign lenders if the debt looks hard to service.</li></ul>"
+    "<h3>Calculating the balance of payments</h3>"
+    "<p>You must be able to calculate the main components (Figure 8). Take care with signs: add credits and subtract debits. If you are given the current account balance, the capital and financial account balance is the same number with the opposite sign.</p>"
+    "<h3>Links to other parts of the course</h3>"
+    "<ul><li><b>Trade and financial flows:</b> the flows described on the page above are what the accounts record.</li>"
+    "<li><b>Exchange rates:</b> each credit is a demand for Australian dollars and each debit is a supply.</li>"
+    "<li><b>External stability:</b> the CAD as a share of GDP and net foreign liabilities are the main measures.</li></ul>"
+    "<p><b>Use it in an exam:</b> name the component, say whether the item is a credit or a debit, quote the latest current account balance in dollars and as a share of GDP, and explain the link from the financial account to net primary income.</p>"
+    "<p>Sources: <a href=\"https://www.abs.gov.au/statistics/economy/international-trade/balance-payments-and-international-investment-position-australia/latest-release\">ABS, Balance of Payments and International Investment Position, June 2026</a>; <a href=\"https://www.rba.gov.au/\">Reserve Bank of Australia</a>, The Balance of Payments explainer; World Bank, current account balance (% of GDP).</p>")
+    tiles, js = B.live([("ca", "Current account balance", "−$27.2b", "Jun qtr 2026"), ("capct", "Current account, % of GDP", "−3.7%", "Jun qtr 2026"),
+                        ("tot", "Terms of trade, change in the quarter", "−1.6%", "Jun qtr 2026"), ("nfl", "Net foreign liabilities", "$638.9b", "Jun qtr 2026")])
+    m = "−"
+    figs = [
+      B.fig(1, "Latest figures", tiles, "These update by themselves from Economy at a Glance."),
+      B.fig(2, "Australia's balance of payments, June quarter 2026 ($ billion)", B.table(["Component", "Balance"], [
+            ["Net goods (138.1 credits, 135.9 debits)", "+2.2"], ["Net services (36.4 credits, 43.7 debits)", m + "7.3"], ["<b>Balance on goods and services</b>", "<b>" + m + "5.1</b>"],
+            ["Net primary income", m + "21.9"], ["Net secondary income", m + "0.3"], ["<b>Current account balance</b>", "<b>" + m + "27.2</b>"],
+            ["Capital account", m + "2.3"], ["Financial account", "+7.6"], ["<b>Capital and financial account balance</b>", "<b>+5.3</b>"]]),
+            "Current account figures are seasonally adjusted and may not add exactly because of rounding. Net errors and omissions were unusually large this quarter, so the two balances do not offset. Source: ABS."),
+      B.fig(3, "Current account balance, 2018 to 2025 (% of GDP)", B.colchart([("2018", -2.59), ("2019", -0.08), ("2020", 1.64), ("2021", 2.45), ("2022", 0.25), ("2023", -0.43), ("2024", -2.31), ("2025", -2.68)], c, -3.6, 3.2),
+            "Calendar years. Surpluses in teal, deficits in red. Source: World Bank."),
+      B.fig(4, "The deficit is widening ($ billion a quarter)", B.bars([("Sep qtr 2025", 19.0), ("Dec qtr 2025", 22.8), ("Mar qtr 2026", 25.4), ("Jun qtr 2026", 27.2)], vmax=30, fmt=m + "%.1f"), "Current account deficit, seasonally adjusted. Source: ABS."),
+      B.fig(5, "How today's capital inflow becomes tomorrow's deficit", B.chain(["Australia invests more than it saves", "Foreign lenders and investors fill the gap", "Surplus on the capital and financial account", "Net foreign liabilities grow", "More interest and dividends are paid overseas", "Net primary income deficit widens the current account deficit"])),
+      B.fig(6, "The market for Australian dollars", B.ed.fx_market(B.ed.TOPIC[2], show_counterfactual=False).svg(), "Credits create demand for Australian dollars and debits create supply. A rise in demand, such as higher export income, appreciates the dollar. Not to scale."),
+      B.fig(7, "Four influences on the balance of payments", B.table(["If this rises", "Main effect"], [["International competitiveness", "Exports rise and imports fall, so BOGS improves"], ["Terms of trade", "Export income rises, so BOGS improves"], ["International borrowing", "Interest debits rise, so net primary income worsens"], ["Foreign investment", "Dividend and profit debits rise, so net primary income worsens"]])),
+      B.fig(8, "Worked example ($ billion)", B.table(["Item", "Amount"], [["Exports of goods", "120"], ["Imports of goods", "110"], ["Net services", m + "8"], ["Net primary income", m + "20"], ["Net secondary income", m + "1"]])
+            + "<small><b>BOGS</b> = (120 " + m + " 110) " + m + " 8 = +2<br><b>Current account</b> = 2 " + m + " 20 " + m + " 1 = " + m + "19<br><b>Capital and financial account</b> = +19</small>", "Made-up figures for practice."),
+      B.tools([("bop", "Sort items into the right account"), ("calc", "Practise BOP calculations"), ("glance", "Latest current account figures"), ("fx", "How the BOP moves the dollar"),
+               ("chain", "Build the chain from borrowing to the CAD"), ("qf", "Past HSC questions on the BOP"), ("mcq", "Section I questions with explanations"), ("gloss", "Credits, debits, primary income and more")]),
+    ]
+    B.build("balance-of-payments", c, cd, text, figs, js)
