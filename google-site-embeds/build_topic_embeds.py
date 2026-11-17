@@ -61,8 +61,24 @@ for n,t in (('1',t1),('3',t3),('4',t4)): open('topic-%s.html'%n,'w').write(t); p
 # ---- related-resources strips for the explainer pages (Topic 4) ----
 RCSS='<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">'
 def related(colour,title,cards):
-    body=page(colour,[(title,[c for c in cards if c[0]!='Explainer']+[('Topic page','All Topic 4 resources',SITE+'topic-4')])],icons=True)
-    return body.replace('body{margin:0;','body{margin:0;width:460px;padding:2px;box-sizing:border-box;',1)+'<script>function z(){document.body.style.zoom=innerWidth/460}addEventListener("resize",z);z()</script>'
+    """Compact strip matching the 'Practise with the tools' buttons: 2 tiles per row, 56px tall, drawn at 400px and scaled to the embed width."""
+    cs=[c for c in cards if c[0]!='Explainer']+[('Topic page','All Topic 4 resources',SITE+'topic-4')]
+    css=('<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet"><style>'
+     'html,body{margin:0}body{width:400px;font-family:Manrope,Arial,sans-serif;background:#fff;color:#0b1330}'
+     'h4{margin:0 0 8px;font-size:14px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:%(c)s;border-bottom:2px solid %(c)s;padding-bottom:5px}'
+     '.g{display:grid;grid-template-columns:1fr 1fr;gap:8px}'
+     'a{display:flex;align-items:center;gap:8px;text-decoration:none;background:#f3f5fa;border:1px solid #c9d2e4;border-left:5px solid %(c)s;border-radius:10px;padding:8px 9px;min-height:56px;box-sizing:border-box}'
+     'a.x{background:#fff;border:2px solid %(c)s;border-left-width:5px}a.t{border-left-color:#ffd24a}a:hover,a:focus{background:#e3eafb}'
+     '.ic{flex:0 0 26px;width:26px;height:26px;border-radius:7px;background:%(c)s;display:flex;align-items:center;justify-content:center}.ic svg{width:16px;height:16px}'
+     '.tx{min-width:0}i{display:block;font-style:normal;font-size:9.5px;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:%(c)s;white-space:nowrap}a.t i{color:#8a6a00}'
+     'b{display:block;font-size:12.5px;font-weight:800;line-height:1.2}</style>')%{'c':colour}
+    o=[css,'<h4>%s</h4><div class="g">'%html.escape(title)]
+    for kind,label,url in cs:
+        if not url.startswith('http'): url='https://drive.google.com/file/d/%s/view'%url
+        cls=' class="t"' if kind=='Tool' else (' class="x"' if kind=='Topic page' else '')
+        o.append('<a%s target="_blank" rel="noopener" href="%s"><span class="ic">%s</span><span class="tx"><i>%s</i><b>%s</b></span></a>'%(cls,url,ICON.get(kind,''),tag(kind),html.escape(label)))
+    o.append('</div><script>function z(){document.body.style.zoom=innerWidth/400}addEventListener("resize",z);z()</script>')
+    return ''.join(o)
 def grp(name): return [c for t,cs in T4 if t==name for c in cs]
 REL={'macro-policies-overview':'Whole topic','tax-models':'Fiscal policy','fiscal-policy':'Fiscal policy','budget-2026-27':'Fiscal policy','monetary-policy':'Monetary policy','micro-policies-overview':'Microeconomic policies','labour-market-policies':'Labour market policies','limitations-of-economic-policies':'Effectiveness and limitations of policy'}
 import os
