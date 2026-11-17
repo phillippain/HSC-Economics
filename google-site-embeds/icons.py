@@ -16,7 +16,10 @@ ICON={
  'Topic page':P%'<rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/>',
 }
 PURPOSE={'Explainer':'Learn','Slides':'Learn','Notes':'Learn','Workbook':'Practise','Worksheet':'Practise','Practice':'Practise','Tool':'Explore','Chart':'Explore','Diagram':'Explore','Topic page':'Browse'}
-def tag(kind): return '%s · %s'%(kind,PURPOSE[kind]) if kind in PURPOSE else kind
+def tag(kind):
+    if kind not in PURPOSE: return kind
+    if kind=='Practice': return 'Practise · questions'
+    return '%s · %s'%(kind,PURPOSE[kind])
 def legend():
     items=[('Explainer','Learn','read or watch to understand'),('Workbook','Practise','questions and tasks'),('Tool','Explore','tools and data')]
     return '<div class="lg">'+''.join('<span><em class="ic">%s</em><b>%s</b> %s</span>'%(ICON[k],p,d) for k,p,d in items)+'</div>'
