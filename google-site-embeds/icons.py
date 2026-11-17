@@ -23,3 +23,7 @@ def tag(kind):
 def legend():
     items=[('Explainer','Learn','read or watch to understand'),('Workbook','Practise','questions and tasks'),('Tool','Explore','tools and data')]
     return '<div class="lg">'+''.join('<span><em class="ic">%s</em><b>%s</b> %s</span>'%(ICON[k],p,d) for k,p,d in items)+'</div>'
+
+# extra kinds used on Topics 1-3
+ICON['Activity']=ICON['Worksheet']; PURPOSE['Activity']='Practise'
+ICON['Case study']=ICON['Notes']; PURPOSE['Case study']='Learn'

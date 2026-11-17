@@ -18,33 +18,36 @@ def page(colour,sections,icons=False,key=False):
         o.append('</div>')
     return ''.join(o)
 G='https://phillippain.github.io/HSC-Economics/'
-t2=page('#0e8a8a',[
+SITE='https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/'
+def EX(label,path): return ('Explainer',label,SITE+path)
+T2=[
  ('Whole topic',[('Slides','Topic 2 slides 2026','1HPpjkN5gi1n8hmtCkxmlMXvHsk8cUNoV'),('Practice','Past HSC questions: Topic 2 booklet','14hfU1CKiN-r0X0OYx9iznaBwDD_5KeDd'),('Tool','Question Finder',G+'hsc-question-finder-site/'),('Tool','Glossary',G+'glossary/')]),
- ('Trade and financial flows',[('Worksheet','Trade and financial flows worksheet','1-0PILlyynTVNmiJjfQR2csZTRNbyY1dD'),('Tool','Economy at a Glance',G+'economy-at-a-glance/')]),
- ('Balance of payments',[('Tool','Balance of Payments Explorer',G+'bop-explorer/'),('Notes','Balance of payments class summary','1aek6aiT8QglOBDf51nWKKOPvj5oD-pW0'),('Notes','Structure of the BOP and its transactions','1WBGuI5SH2b0XieK10iBQpfhVYWhogaF9'),('Activity','BOP classification activity','1I8XJht3zAR0WlE30qlEav2SASD2AYO_O'),('Diagram','Trends in the balance of payments','1E3ZB9s6r_TglS3u-ZwTePeH_1wH22pn7'),('Diagram','The CAD continuum','1eXzWhszzq0OAU5ASN1Q_vS5KsTa3gPGt'),('Diagram','The BOP and the exchange rate','1Zubc1iE-j7pxDq2PYZEo-oerUsXK_vF6')]),
- ('Exchange rates',[('Tool','Exchange Rate Explorer',G+'exchange-rate-explorer/'),('Tool','Macro Diagram Lab',G+'macro-diagram-lab/'),('Slides','Exchange rates slides 2026','1qiJKH61hJITXafmMgsg58QJDXo7G8A66'),('Diagram','Floating exchange rate','14Te1Bz7jTxwxo0LtwoANlvL0xj-4ud7t'),('Diagram','Fixed exchange rate','1V-8JEnAPPlCuqoGjD-Q9mS3ZYr8aE8HB'),('Diagram','RBA dirty float','1xa4qc4_6FFkSOX1duaFiKPY-ILhR4AeO'),('Diagram','RBA intervention: appreciation','1dl396zTdJlAvouNDUVDRkDit0hy3Svux'),('Diagram','Currency appreciation','1QlsoetGjh0uCcq_8TG6IDPwAgk6aYOE5'),('Diagram','Currency depreciation','1Uq48izCLo8ijMIfa3-JIPd3QusSt9BZf')]),
- ('Free trade and protection',[('Tool','Protection Diagram Lab',G+'diagram-lab/'),('Tool','Who Wins from Protection',G+'protection-explainer/'),('Slides','Protection slides 2026','1CiEDHfYCdcAHhylErzne_gMzfE1SUubR'),('Worksheet','Free trade and protection worksheet','1dbxoDfuHhY-a87hdnXBO58oMQFc-9Az_'),('Practice','Protection: past HSC questions','1AHS60m7bPJGTELwI1Kaq4bHXOewZXMNz'),('Diagram','Effect of a tariff reduction','1MDRNC0GIB_p0MvW0oYWdiL_CzAj2CeVt')]),
-])
+ ('Trade and financial flows',[EX('Trade and financial flows explainer','topic-2/trade-financial-flows/vcd'),('Worksheet','Trade and financial flows worksheet','1-0PILlyynTVNmiJjfQR2csZTRNbyY1dD'),('Tool','Economy at a Glance',G+'economy-at-a-glance/')]),
+ ('Balance of payments',[EX('Balance of payments explainer','topic-2/trade-financial-flows/balance-of-payments'),('Tool','Balance of Payments Explorer',G+'bop-explorer/'),('Notes','Balance of payments class summary','1aek6aiT8QglOBDf51nWKKOPvj5oD-pW0'),('Notes','Structure of the BOP and its transactions','1WBGuI5SH2b0XieK10iBQpfhVYWhogaF9'),('Activity','BOP classification activity','1I8XJht3zAR0WlE30qlEav2SASD2AYO_O'),('Diagram','Trends in the balance of payments','1E3ZB9s6r_TglS3u-ZwTePeH_1wH22pn7'),('Diagram','The CAD continuum','1eXzWhszzq0OAU5ASN1Q_vS5KsTa3gPGt'),('Diagram','The BOP and the exchange rate','1Zubc1iE-j7pxDq2PYZEo-oerUsXK_vF6')]),
+ ('Exchange rates',[EX('Exchange rates explainer','topic-2/exchange-rates'),('Tool','Exchange Rate Explorer',G+'exchange-rate-explorer/'),('Tool','Macro Diagram Lab',G+'macro-diagram-lab/'),('Slides','Exchange rates slides 2026','1qiJKH61hJITXafmMgsg58QJDXo7G8A66'),('Diagram','Floating exchange rate','14Te1Bz7jTxwxo0LtwoANlvL0xj-4ud7t'),('Diagram','Fixed exchange rate','1V-8JEnAPPlCuqoGjD-Q9mS3ZYr8aE8HB'),('Diagram','RBA dirty float','1xa4qc4_6FFkSOX1duaFiKPY-ILhR4AeO'),('Diagram','RBA intervention: appreciation','1dl396zTdJlAvouNDUVDRkDit0hy3Svux'),('Diagram','Currency appreciation','1QlsoetGjh0uCcq_8TG6IDPwAgk6aYOE5'),('Diagram','Currency depreciation','1Uq48izCLo8ijMIfa3-JIPd3QusSt9BZf')]),
+ ('Free trade and protection',[EX('Protection explainer','topic-2/free-trade-protection/protection-overview'),('Tool','Protection Diagram Lab',G+'diagram-lab/'),('Tool','Who Wins from Protection',G+'protection-explainer/'),('Slides','Protection slides 2026','1CiEDHfYCdcAHhylErzne_gMzfE1SUubR'),('Worksheet','Free trade and protection worksheet','1dbxoDfuHhY-a87hdnXBO58oMQFc-9Az_'),('Practice','Protection: past HSC questions','1AHS60m7bPJGTELwI1Kaq4bHXOewZXMNz'),('Diagram','Effect of a tariff reduction','1MDRNC0GIB_p0MvW0oYWdiL_CzAj2CeVt')]),
+]
+t2=page('#0e8a8a',T2,icons=True,key=True)
 open('topic-2.html','w').write(t2)
 QF=('Tool','Question Finder',G+'hsc-question-finder-site/'); GL=('Tool','Glossary',G+'glossary/'); EF=('Tool','Evidence Finder',G+'evidence-finder/'); MD=('Tool','Macro Diagram Lab',G+'macro-diagram-lab/'); CH=('Tool','Chain Builder',G+'chain-builder/'); CT=('Tool','Calculation Trainer',G+'calculation-trainer/'); PS=('Tool','Policy Simulator',G+'policy-simulator/'); EG=('Tool','Economy at a Glance',G+'economy-at-a-glance/')
-t1=page('#2447d6',[
+T1=[
  ('Whole topic',[('Slides','Topic 1 slides 2027','1uRh4vYEgJJ9VBx3dept6wnSKJJM1L-FN'),('Workbook','Topic 1 student workbook 2027','1xbE-JsIcnLGCGrjw_HvrsnLbv1oAe690'),('Workbook','Plain English workbook 2027','1BEuwPpEqwrHVaVEYqOm8JPkn3cJd-anY'),('Notes','Paff booklet: The Global Economy','1mTSMPPiEow13-j__JpF3FLybFvmXc7zz'),('Practice','Topic 1 check-in multiple choice quiz','1tD-Jxb7pLLJXIPgYQm8Hq0hjrZiDcBAp'),QF,GL,('Tool','Topic Map',G+'mind-map/')]),
  ('International economic integration',[('Notes','International economic integration booklet','1R43oVdZ0gvAIVY4Kh47N9SYzExC9cz6o'),('Chart','The world economy in 2025','1rwFFhF4qU9fNbaSKq53pwVAVJ8Uq07hA'),('Chart','IMF real GDP growth projections 2025','1fVjQrD03Gk2zat0SiJEfNOgtrLFPP9NP'),('Chart','World financial markets','1RF3AftbTLxH_xF4Ym9CH7ROvEXgYqpXj'),('Chart','Biggest stock exchanges','1QAM9VlnAlyGYWkJpeAIvPEBMllW-2ORq'),('Chart','Top financial centres','1Ec7kZJfbNj6x60H6Od6bqMvz5CrbKV9y'),('Chart','Billion dollar companies','1jyX48M2dpMaLVGMR37uOY4fVurv6ngi5'),('Chart','Stock market participation','1SE6kL8vbTHKOe3iOTPuCbtf6pPdPUhrl')]),
  ('Trade, financial flows and foreign investment',[('Activity','Opportunity cost activity: the basis of free trade','1wOTxN4ft2dSqpMN046rP5QJtsidq5exo'),('Notes','Trade agreements','1E724QumKrhMbo7wRc-8U4LD_YRSZcJBp'),EF]),
  ('Protection',[('Tool','Protection Diagram Lab',G+'diagram-lab/'),('Tool','Who Wins from Protection',G+'protection-explainer/'),('Notes','Trade, tariffs and the global economy','1ltULLjW6ty_nkuw3V2_GHXTPU_yY-MtQ'),('Diagram','Imposition of a tariff','14M0YuJ9VXPTBr5NBkfL3arH8La07WIKz'),('Diagram','Imposition of a subsidy','1kvy8OSTvd51yA2B5157iqauhJewBB_12'),('Diagram','Imposition of a quota','14wrgRl4ll-CBJ3NnrGaJGbz2VRTDk-Vr'),('Diagram','Tariff, subsidy and quota combined','1cMdrVZ-cTzeNXE6bwYLQTkjqa8Z6Kgch'),('Diagram','Blank protection curves to practise on','13d0nEedhFlbrztQXyz4MLl7K8m6Ne0UY'),('Notes','Local content quotas','1yuwam8GTgvJ9jU4xk9IvpmZu2FMM-y1m'),('Practice','Protection practice questions','1rE4fu8aU2eqw893T6SKnwIIR3BlxRUC7'),('Practice','Protection questions from trial exams','1DNgCMwuNHIhuWd4bFy6M7OuNc4eGqXcn')]),
  ('Globalisation, development and case studies',[('Case study','China case study update','1uMoxqxoqoXaNOGF0PqHsc7U3gWAdOyyA'),('Chart','The size of China\'s economy','12Yg0ZrN28H4j8pAP-NCXhiH8RqehRisn'),CH]),
-])
-t3=page('#d9822b',[
+]
+t1=page('#2447d6',T1,icons=True,key=True)
+T3=[
  ('Whole topic',[('Notes','Paff booklet: Economic Issues','1MKbOyKwWomh1Y9B4HqLiTMcBIlkZcDr6'),('Practice','Section III practice question','1oXXOwzrAR6eQZxOuV1cOY1TFQTmMWa1-'),QF,GL,EF,EG]),
- ('Economic growth',[MD,CT,('Slides','Economic growth slides','1l22nlEbb1P3YLrRlOuy-Oy3op8Y4Kbgt'),('Activity','Sources of economic growth','1xxpE53y8McFYUwsqhvkAi511miTrlMZ1'),('Activity','Circular flow of income: AD, k and the change in Y','1FYVraJqjZwHBPwo8P9ot5FS_kj82RBmO'),('Worksheet','The multiplier worksheet','1pFIyGD7UdYhINqEHnQqCWl-T1qOQlLYm'),('Notes','Calculating the simple multiplier','1BKbb4Pxkxrl1MjmDAvtQ9evsiYKq3i3G'),('Notes','Solving for income: worked example','1Jhv8TmSlcsYsZVj4OWbdG1HdXB2x9rq_'),('Diagram','Aggregate supply and economic growth','1xLHChPgj4ZyKRaMf_UobIMHYDGTn9JoW'),('Practice','Economic growth practice questions','1FlSVISqi9gFieJgAN9bZI3GMSryr-AUX')]),
+ ('Economic growth',[EX('Economic growth explainer','topic-3/economic-growth'),MD,CT,('Slides','Economic growth slides','1l22nlEbb1P3YLrRlOuy-Oy3op8Y4Kbgt'),('Activity','Sources of economic growth','1xxpE53y8McFYUwsqhvkAi511miTrlMZ1'),('Activity','Circular flow of income: AD, k and the change in Y','1FYVraJqjZwHBPwo8P9ot5FS_kj82RBmO'),('Worksheet','The multiplier worksheet','1pFIyGD7UdYhINqEHnQqCWl-T1qOQlLYm'),('Notes','Calculating the simple multiplier','1BKbb4Pxkxrl1MjmDAvtQ9evsiYKq3i3G'),('Notes','Solving for income: worked example','1Jhv8TmSlcsYsZVj4OWbdG1HdXB2x9rq_'),('Diagram','Aggregate supply and economic growth','1xLHChPgj4ZyKRaMf_UobIMHYDGTn9JoW'),('Practice','Economic growth practice questions','1FlSVISqi9gFieJgAN9bZI3GMSryr-AUX')]),
  ('Unemployment',[('Slides','Unemployment slides','1iizFjMtvHQ9kI1VMBUKXuvIZwGXAv_yz'),('Worksheet','Economic and social impacts of unemployment','1ixt5g42IfeQ407ZkXpvsyuKPqhCNfMDN'),('Practice','Unemployment, labour markets and growth: multiple choice','1aMo4tXfenXcszwUp9LZXlKHg4qe42Wpn'),('Practice','Full employment and external stability practice question','18CMBcFznUpYN9qP0VxxXN_UeLu61dR3G')]),
- ('Inflation',[('Slides','Inflation slides 2026','1rOmb1GhvhfSQZO2cwWtFriMz0I45-jNs'),('Diagram','Demand-pull inflation','17ymTEyCzJRUYpQZwlZN_JuGLh3lL-dQm'),('Diagram','Cost-push inflation','1z3-1Zw8xLQQ01sriFe6WnGLfNgBcpolQ'),('Practice','Inflation multiple choice and short answer','13ST4cIIfc-H20XRcr3RHF2Sl6qXeqWP3')]),
- ('External stability',[('Notes','External stability: notes and activities','1bNFPjWgRYSrytXEqHeqWX7jZK07dftXj'),('Worksheet','External stability worksheet','1cfP8pLj11AjHTFvVSiX0v2nt2forCT1x'),('Tool','Balance of Payments Explorer',G+'bop-explorer/'),('Tool','Exchange Rate Explorer',G+'exchange-rate-explorer/')]),
- ('Distribution of income and wealth',[('Slides','Income and wealth distribution slides 2026','1jynBvZcA4QNXlhhM-CsaxGmJPHtfgLsS'),('Worksheet','Income and wealth distribution worksheet','1Ph_Z6aCAlb11nwtxRlsX0zIAoph0-lmT'),('Notes','Distribution of income and wealth notes','1jh5haurf5VFqBA_80WoxPXTgzw39f3Rb'),('Chart','Australian income and wealth distribution 2023','1u56hLGRusc8iEW8G9fIGtwIV1G_J4lv5')]),
- ('Environmental sustainability',[('Slides','Environmental management slides','1lHR-bimX2HcX7GKvwxRKSu98yGNXC7g9'),('Worksheet','Environmental management worksheet 2026','1vktbiI-7vKNzzRcMXbhIRtj06wyx4Jir'),('Practice','Environment practice short answer','1tbwhU8uzjH3-uRZQjGZ2P5L3wmg0hZbh')]),
-])
-SITE='https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/'
-def EX(label,path): return ('Explainer',label,SITE+path)
+ ('Inflation',[EX('Inflation explainer','topic-3/inflation'),('Slides','Inflation slides 2026','1rOmb1GhvhfSQZO2cwWtFriMz0I45-jNs'),('Diagram','Demand-pull inflation','17ymTEyCzJRUYpQZwlZN_JuGLh3lL-dQm'),('Diagram','Cost-push inflation','1z3-1Zw8xLQQ01sriFe6WnGLfNgBcpolQ'),('Practice','Inflation multiple choice and short answer','13ST4cIIfc-H20XRcr3RHF2Sl6qXeqWP3')]),
+ ('External stability',[EX('External stability explainer','topic-3/external-stability'),('Notes','External stability: notes and activities','1bNFPjWgRYSrytXEqHeqWX7jZK07dftXj'),('Worksheet','External stability worksheet','1cfP8pLj11AjHTFvVSiX0v2nt2forCT1x'),('Tool','Balance of Payments Explorer',G+'bop-explorer/'),('Tool','Exchange Rate Explorer',G+'exchange-rate-explorer/')]),
+ ('Distribution of income and wealth',[EX('Income and wealth distribution explainer','topic-3/distribution-of-income-wealth'),('Slides','Income and wealth distribution slides 2026','1jynBvZcA4QNXlhhM-CsaxGmJPHtfgLsS'),('Worksheet','Income and wealth distribution worksheet','1Ph_Z6aCAlb11nwtxRlsX0zIAoph0-lmT'),('Notes','Distribution of income and wealth notes','1jh5haurf5VFqBA_80WoxPXTgzw39f3Rb'),('Chart','Australian income and wealth distribution 2023','1u56hLGRusc8iEW8G9fIGtwIV1G_J4lv5')]),
+ ('Environmental sustainability',[EX('Environmental sustainability explainer','topic-3/environmental-sustainability'),('Slides','Environmental management slides','1lHR-bimX2HcX7GKvwxRKSu98yGNXC7g9'),('Worksheet','Environmental management worksheet 2026','1vktbiI-7vKNzzRcMXbhIRtj06wyx4Jir'),('Practice','Environment practice short answer','1tbwhU8uzjH3-uRZQjGZ2P5L3wmg0hZbh')]),
+]
+t3=page('#d9822b',T3,icons=True,key=True)
 M4='topic-4/macroeconomic-policies/'; N4='topic-4/microeconomic-policies/'
 T4=[
  ('Whole topic',[EX('Macroeconomic policies explainer',M4+'macro-policies-overview'),EX('Microeconomic policies explainer',N4+'micro-policies-overview'),('Workbook','Macroeconomic policies student booklet','1AhZNQBMvwkoU68WPK1iJ0KLNJAEeqSA8'),PS,CH,QF,GL,EF]),
@@ -60,9 +63,9 @@ for n,t in (('1',t1),('3',t3),('4',t4)): open('topic-%s.html'%n,'w').write(t); p
 
 # ---- related-resources strips for the explainer pages (Topic 4) ----
 RCSS='<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">'
-def related(colour,title,cards):
+def related(colour,title,cards,n='4'):
     """Compact strip matching the 'Practise with the tools' buttons: 2 tiles per row, 56px tall, drawn at 400px and scaled to the embed width."""
-    cs=[c for c in cards if c[0]!='Explainer']+[('Topic page','All Topic 4 resources',SITE+'topic-4')]
+    cs=[c for c in cards if c[0]!='Explainer']+[('Topic page','All Topic %s resources'%n,SITE+'topic-'+n)]
     css=('<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet"><style>'
      'html,body{margin:0}body{width:400px;font-family:Manrope,Arial,sans-serif;background:#fff;color:#0b1330}'
      'h4{margin:0 0 8px;font-size:14px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:%(c)s;border-bottom:2px solid %(c)s;padding-bottom:5px}'
@@ -79,8 +82,14 @@ def related(colour,title,cards):
         o.append('<a%s target="_blank" rel="noopener" href="%s"><span class="ic">%s</span><span class="tx"><i>%s</i><b>%s</b></span></a>'%(cls,url,ICON.get(kind,''),tag(kind),html.escape(label)))
     o.append('</div><script>function z(){document.body.style.zoom=innerWidth/400}addEventListener("resize",z);z()</script>')
     return ''.join(o)
-def grp(name): return [c for t,cs in T4 if t==name for c in cs]
+def grp(name,T=None): return [c for t,cs in (T or T4) if t==name for c in cs]
 REL={'macro-policies-overview':'Whole topic','tax-models':'Fiscal policy','fiscal-policy':'Fiscal policy','budget-2026-27':'Fiscal policy','monetary-policy':'Monetary policy','micro-policies-overview':'Microeconomic policies','labour-market-policies':'Labour market policies','limitations-of-economic-policies':'Effectiveness and limitations of policy'}
 import os
 for slug,g in REL.items():
     cs=grp(g); open('explainers/related-%s.html'%slug,'w').write(related('#8a3fb0','Related resources',cs)); print(slug,len([c for c in cs if c[0]!='Explainer'])+1,'cards')
+
+REL23=[('2','#0e8a8a',T2,{'vcd':'Trade and financial flows','balance-of-payments':'Balance of payments','exchange-rates':'Exchange rates','protection-overview':'Free trade and protection'}),
+ ('3','#d9822b',T3,{'economic-growth':'Economic growth','inflation':'Inflation','external-stability':'External stability','distribution-of-income-wealth':'Distribution of income and wealth','environmental-sustainability':'Environmental sustainability'})]
+for n,col,T,m in REL23:
+    for slug,g in m.items():
+        cs=grp(g,T); open('explainers/related-t%s-%s.html'%(n,slug),'w').write(related(col,'Related resources',cs,n)); print('T'+n,slug,len([c for c in cs if c[0]!='Explainer'])+1,'cards')
