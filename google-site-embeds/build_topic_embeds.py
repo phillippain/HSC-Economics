@@ -1,13 +1,20 @@
 import html,sys
-CSS='<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet"><style>body{margin:0;font-family:Manrope,Arial,sans-serif;color:#0b1330;background:#fff}h2{font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:%(c)s;margin:22px 4px 10px;border-bottom:2px solid %(c)s;padding-bottom:6px}h2:first-child{margin-top:4px}.g{display:grid;grid-template-columns:1fr 1fr;gap:10px}a{display:block;text-decoration:none;background:#f3f5fa;border:1px solid #c9d2e4;border-left:6px solid %(c)s;border-radius:10px;padding:11px 14px}a.t{border-left-color:#ffd24a}a:hover,a:focus{background:#e3eafb;border-color:#1c3fb0}b{display:block;font-size:15px;font-weight:800;color:#0b1330}i{display:block;font-style:normal;font-size:12px;font-weight:700;color:%(c)s;text-transform:uppercase;letter-spacing:.06em}a.t i{color:#8a6a00}a.x{background:#fff;border:2px solid %(c)s;border-left-width:6px;padding:10px 13px}a.x i{color:%(c)s}a.x:hover,a.x:focus{background:#f1e7f8}</style>'
-def page(colour,sections):
+from icons import ICON,tag,legend
+CSS='<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet"><style>body{margin:0;font-family:Manrope,Arial,sans-serif;color:#0b1330;background:#fff}h2{font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:%(c)s;margin:22px 4px 10px;border-bottom:2px solid %(c)s;padding-bottom:6px}h2:first-child{margin-top:4px}.g{display:grid;grid-template-columns:1fr 1fr;gap:10px}a{display:block;text-decoration:none;background:#f3f5fa;border:1px solid #c9d2e4;border-left:6px solid %(c)s;border-radius:10px;padding:11px 14px}a.t{border-left-color:#ffd24a}a:hover,a:focus{background:#e3eafb;border-color:#1c3fb0}b{display:block;font-size:15px;font-weight:800;color:#0b1330}i{display:block;font-style:normal;font-size:12px;font-weight:700;color:%(c)s;text-transform:uppercase;letter-spacing:.06em}a.t i{color:#8a6a00}a.x{background:#fff;border:2px solid %(c)s;border-left-width:6px;padding:10px 13px}a.x i{color:%(c)s}a.x:hover,a.x:focus{background:#f1e7f8}a.k{display:flex;align-items:center;gap:9px;padding:9px 10px}a.k i{font-size:10.5px;letter-spacing:.02em;white-space:nowrap}a.k b{font-size:14px;line-height:1.25}.ic{flex:0 0 30px;width:30px;height:30px;border-radius:8px;background:%(c)s;display:flex;align-items:center;justify-content:center;font-style:normal}.ic svg{width:18px;height:18px}.tx{min-width:0}.lg{display:flex;flex-wrap:wrap;gap:6px 18px;margin:2px 4px 14px;font-size:12px;color:#334}.lg span{display:flex;align-items:center;gap:7px}.lg .ic{flex:0 0 26px;width:26px;height:26px;border-radius:7px}.lg .ic svg{width:15px;height:15px}.lg b{color:%(c)s;text-transform:uppercase;letter-spacing:.06em}</style>'
+def page(colour,sections,icons=False,key=False):
     o=[CSS%{'c':colour}]
+    if key: o.append(legend())
     for title,cards in sections:
         o.append('<h2>%s</h2><div class="g">'%html.escape(title))
         for kind,label,url in cards:
             cls=' class="t"' if kind=='Tool' else (' class="x"' if kind in ('Explainer','Topic page') else '')
             if not url.startswith('http'): url='https://drive.google.com/file/d/%s/view'%url
-            o.append('<a%s target="_blank" href="%s"><i>%s</i><b>%s</b></a>'%(cls,url,kind,html.escape(label)))
+            if icons and kind in ICON:
+                cls=(cls[:-1]+' k"') if cls else ' class="k"'
+                if kind in ('Explainer','Topic page'): cls=' class="x k"'
+                o.append('<a%s target="_blank" href="%s"><span class="ic">%s</span><span class="tx"><i>%s</i><b>%s</b></span></a>'%(cls,url,ICON[kind],tag(kind),html.escape(label)))
+            else:
+                o.append('<a%s target="_blank" href="%s"><i>%s</i><b>%s</b></a>'%(cls,url,kind,html.escape(label)))
         o.append('</div>')
     return ''.join(o)
 G='https://phillippain.github.io/HSC-Economics/'
@@ -48,13 +55,13 @@ T4=[
  ('Environmental management',[EX('National and global context explainer',N4+'national-global-context-for-environmental-management'),('Slides','Environmental management slides','1lHR-bimX2HcX7GKvwxRKSu98yGNXC7g9'),('Worksheet','Environmental management worksheet 2026','1vktbiI-7vKNzzRcMXbhIRtj06wyx4Jir'),('Practice','Environment practice short answer','1tbwhU8uzjH3-uRZQjGZ2P5L3wmg0hZbh')]),
  ('Effectiveness and limitations of policy',[EX('Limitations of economic policies explainer',N4+'limitations-of-economic-policies'),('Notes','Limitations of economic policies: notes and activities','1j9DmQNDUSfhoyyAehxqenoZ-eJpRnYP8'),('Workbook','Workbook chapter 18: effectiveness and limitations','1461dJ3Ks_kj0f-Oa2ePaCYmLk_FeAwDk')]),
 ]
-t4=page('#8a3fb0',T4)
+t4=page('#8a3fb0',T4,icons=True,key=True)
 for n,t in (('1',t1),('3',t3),('4',t4)): open('topic-%s.html'%n,'w').write(t); print(n,len(t))
 
 # ---- related-resources strips for the explainer pages (Topic 4) ----
 RCSS='<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">'
 def related(colour,title,cards):
-    body=page(colour,[(title,[c for c in cards if c[0]!='Explainer']+[('Topic page','All Topic 4 resources',SITE+'topic-4')])])
+    body=page(colour,[(title,[c for c in cards if c[0]!='Explainer']+[('Topic page','All Topic 4 resources',SITE+'topic-4')])],icons=True)
     return body.replace('body{margin:0;','body{margin:0;width:460px;padding:2px;box-sizing:border-box;',1)+'<script>function z(){document.body.style.zoom=innerWidth/460}addEventListener("resize",z);z()</script>'
 def grp(name): return [c for t,cs in T4 if t==name for c in cs]
 REL={'macro-policies-overview':'Whole topic','tax-models':'Fiscal policy','fiscal-policy':'Fiscal policy','budget-2026-27':'Fiscal policy','monetary-policy':'Monetary policy','micro-policies-overview':'Microeconomic policies','labour-market-policies':'Labour market policies','limitations-of-economic-policies':'Effectiveness and limitations of policy'}
