@@ -1,5 +1,2191 @@
 [
  {
+  "id": "2026-11-19-house-prices-fall-recovery-hinges-on-rates",
+  "title": "House prices: how far they will fall, and what it will take to recover",
+  "date": "2026-11-19",
+  "type": "news",
+  "outlets": [
+   "SMH",
+   "AFR",
+   "CommBank"
+  ],
+  "summary": "Collects forecasts of the housing downturn and links it to monetary policy, investor tax changes and the wealth effect.",
+  "lede": "Capital-city home values have lost more than 8% since peaking in March and forecasters expect total falls of 11-15%, among the steepest on record. Higher interest rates and the investor tax changes are driving the downturn, and the recovery depends on when the RBA starts cutting.",
+  "about": {
+   "h09": [
+    "4D.3",
+    "4H.1",
+    "3E.4"
+   ],
+   "y12": [
+    "Y2c.5",
+    "Y2c.8",
+    "Y1d.9"
+   ],
+   "y11": [
+    "P4c.7",
+    "P2d.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3A.7",
+    "4C.2",
+    "4D.2"
+   ],
+   "y12": [
+    "Y1a.14",
+    "Y2b.10"
+   ],
+   "y11": [
+    "P4c.3",
+    "P5b.7"
+   ]
+  },
+  "issues": [
+   "housing",
+   "rates"
+  ],
+  "levers": [
+   "monetary",
+   "fiscal"
+  ],
+  "diagrams": [
+   "ds",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Capital-city home values since the March peak",
+    "value": "Down more than 8% (Sydney about 10%, over $100,000; Perth, Brisbane and Melbourne about 8%)",
+    "asAt": "November 2026",
+    "issue": "housing",
+    "source": "Cotality, via SMH"
+   },
+   {
+    "label": "Forecast peak-to-trough falls",
+    "value": "CBA 15% (capitals); AMP 15%; NAB 14%; Domain up to 13% (Sydney); Westpac nearly 11%",
+    "asAt": "November 2026",
+    "issue": "housing",
+    "source": "SMH; AFR"
+   },
+   {
+    "label": "Investor lending",
+    "value": "-32.3% in the September quarter",
+    "asAt": "September quarter 2026",
+    "issue": "housing",
+    "source": "CBA"
+   },
+   {
+    "label": "New listings",
+    "value": "-9% in October",
+    "asAt": "October 2026",
+    "issue": "housing",
+    "source": "Cotality, via SMH"
+   },
+   {
+    "label": "First rate cut expected",
+    "value": "CBA August 2027 (and November 2027); Domain December 2027",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "CBA; Domain"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Peak-to-trough",
+    "def": "The total fall from the highest price to the lowest before recovery."
+   },
+   {
+    "term": "Wealth effect",
+    "def": "Falling asset prices make households feel poorer, so they spend less."
+   }
+  ],
+  "links": [
+   [
+    "SMH: How far property prices will fall and when they will rebound (Melissa Heagney-Bayliss), 19 Nov 2026",
+    "https://www.smh.com.au/"
+   ],
+   [
+    "AFR: Are we there yet? Pace of property downturn leaves economists divided (Lucy Slade), 19 Nov 2026",
+    "https://www.afr.com/"
+   ],
+   [
+    "CommBank: RBA pause increasingly likely after November's split vote",
+    "https://www.commbank.com.au/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-19-house-prices-fall-recovery-hinges-on-rates.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "Five rate rises cut borrowing capacity and the May CGT and negative gearing changes cut investor returns, shifting housing demand left. Shows monetary policy lags and its effect on the distribution of wealth: owners and investors lose, first-home buyers with finance gain affordability. CBA warns persistent inflation could mean a higher cash rate before any cuts; Domain sees capital-city houses +2.5% by end-2027.",
+  "questions": [
+   {
+    "q": "Explain how monetary policy affects the housing market, and discuss the effect of falling house prices on the distribution of wealth.",
+    "marks": 6
+   }
+  ],
+  "note": "Forecasts differ by institution, region and basis (capital cities versus national), so quote the source. Related: 2 November (fastest fall in 40 years, which also gave AMP's 15% forecast), 14 November (buyers' market) and 17 November (CBA December hold). SMH, AFR and CommBank links are site pages because the digest gives titles only.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-19-startup-share-scheme-cgt-hit",
+  "title": "The big tax hit coming for start-up workers",
+  "date": "2026-11-19",
+  "type": "news",
+  "outlets": [
+   "AFR (Rebecca Pike)"
+  ],
+  "summary": "Quantifies how the replacement of the 50% CGT discount affects start-up employee share schemes, with equity and efficiency arguments.",
+  "lede": "From July 2027 the 50% capital gains tax discount will be replaced by an inflation-adjusted method. A proposed carve-out for 'innovative' businesses is hard to qualify for, so many start-up workers paid partly in shares could face a much bigger tax bill.",
+  "about": {
+   "h09": [
+    "4C.2",
+    "4E.1",
+    "3E.4"
+   ],
+   "y12": [
+    "Y2b.10",
+    "Y2b.11",
+    "Y2d.4"
+   ],
+   "y11": [
+    "P5b.7",
+    "P5b.6",
+    "P5b.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4C.1",
+    "3E.6"
+   ],
+   "y12": [
+    "Y2d.1",
+    "Y1d.9"
+   ],
+   "y11": [
+    "P2h.8"
+   ]
+  },
+  "issues": [
+   "budget",
+   "inequality",
+   "productivity"
+  ],
+  "levers": [
+   "fiscal",
+   "micro"
+  ],
+  "diagrams": [
+   "chart",
+   "flow",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Take-home pay from $50,000 of start-up shares at IPO (top tax rate)",
+    "value": "$38,173.50 if the firm qualifies; $26,447 if not",
+    "asAt": "November 2026",
+    "issue": "budget",
+    "source": "Grant Thornton modelling, via AFR"
+   },
+   {
+    "label": "Extra tax if the firm does not qualify",
+    "value": "$11,726.50",
+    "asAt": "November 2026",
+    "issue": "budget",
+    "source": "Grant Thornton modelling, via AFR"
+   },
+   {
+    "label": "Employees who would consider swapping pay for equity",
+    "value": "76%",
+    "asAt": "November 2026",
+    "issue": "productivity",
+    "source": "Sharesies survey, via AFR"
+   },
+   {
+    "label": "Start of the new CGT method",
+    "value": "July 2027",
+    "asAt": "2027",
+    "issue": "budget",
+    "source": "AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Capital gains tax (CGT)",
+    "def": "Tax on the profit from selling an asset."
+   },
+   {
+    "term": "Inflation indexation",
+    "def": "Adjusting the purchase price for inflation so only the real gain is taxed."
+   }
+  ],
+  "links": [
+   [
+    "AFR: The big tax hit coming for start-up workers (Rebecca Pike), 19 Nov 2026",
+    "https://www.afr.com/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-19-startup-share-scheme-cgt-hit.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "For the reform: taxes real gains consistently across assets and reduces a concession that mostly benefits high-wealth taxpayers, helping equity and revenue. Against: hurts assets that start low and grow fast, and complex, uncertain rules may discourage innovation. The innovative business concession bill is in the Senate and needs Greens support.",
+  "questions": [
+   {
+    "q": "Evaluate the effects of removing the 50% capital gains tax discount on equity, efficiency and innovation.",
+    "marks": 6
+   }
+  ],
+  "note": "The example is one adviser's modelling. The replacement of the discount is already law (May Budget); the carve-out is a proposal. Kept alongside the 27 October card on the start-up investor tax break and R&D incentive (a related bill). AFR link is the site home page because the digest gives the headline only.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-albanese-apec-shenzhen-xi-barriers",
+  "title": "Albanese heads to APEC in Shenzhen as Xi calls for lower trade barriers",
+  "date": "2026-11-18",
+  "type": "news",
+  "outlets": [
+   "CGTN",
+   "ABC News",
+   "CNBC"
+  ],
+  "summary": "Gives a current example of a regional trade forum with voluntary commitments, and Australia's stake in lower Asia-Pacific barriers.",
+  "lede": "Anthony Albanese arrived in Shenzhen on 18 November for the 33rd APEC Economic Leaders' Meeting, where the Business Council of Australia is co-hosting an Australia-China CEO roundtable. Host Xi Jinping has called for trade and investment barriers to be removed, as the WTO reports a surge in new trade restrictions.",
+  "about": {
+   "h09": [
+    "1B.3",
+    "1B.1",
+    "2D.2"
+   ],
+   "y12": [
+    "Y3a.3",
+    "Y3a.13",
+    "Y3a.16"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1A.3",
+    "2A.1"
+   ],
+   "y12": [
+    "Y3a.15",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "APEC member economies",
+    "value": "21 (including Australia, China and the US)",
+    "asAt": "18 November 2026",
+    "issue": "trade",
+    "source": "CGTN"
+   },
+   {
+    "label": "China's share of Australia's total trade",
+    "value": "More than 25%",
+    "asAt": "18 November 2026",
+    "issue": "trade",
+    "source": "Business Council of Australia, via ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "APEC",
+    "def": "Asia-Pacific Economic Cooperation, a forum of 21 economies; its commitments are voluntary, not binding."
+   },
+   {
+    "term": "Trade liberalisation",
+    "def": "Reducing tariffs and other barriers to trade between countries."
+   }
+  ],
+  "links": [
+   [
+    "CGTN: Australian PM arrives in Shenzhen for APEC meeting",
+    "https://www.cgtn.com/"
+   ],
+   [
+    "ABC News: business live, 18 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "CNBC: China's Xi calls for removing trade and investment barriers (headline)",
+    "https://www.cnbc.com/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-albanese-apec-shenzhen-xi-barriers.pdf",
+   "label": "Topic 1 news summary",
+   "pages": 1
+  },
+  "angle": "Lower barriers lift demand for Australian exports (D shifts right), raising export prices, volumes, income and jobs. APEC works through voluntary commitments, unlike enforceable WTO rules or an FTA; that is its flexibility and its main limitation.",
+  "questions": [
+   {
+    "q": "Discuss the benefits and limitations for Australia of regional forums such as APEC in promoting trade liberalisation.",
+    "marks": 6
+   }
+  ],
+  "note": "UPDATE DUE: add the outcome of the 18-19 November summit, including the Trump-Xi-Putin meeting previewed in the 14 November card. The CGTN, ABC and CNBC links are to the outlets' sites because the digest gives titles only; CNBC is cited by headline only.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-china-slowdown-deepens-reuters",
+  "title": "China's slowdown deepens as spending, output and investment all miss forecasts",
+  "date": "2026-11-18",
+  "type": "stats",
+  "outlets": [
+   "Reuters via Business Standard",
+   "ABC News"
+  ],
+  "summary": "Gives October Chinese activity data and links weaker Chinese construction to iron ore, the terms of trade and the Budget.",
+  "lede": "October data from China's National Bureau of Statistics showed factory output and retail spending growing more slowly than forecast and investment falling further. China is Australia's largest trading partner and the main buyer of its iron ore.",
+  "about": {
+   "h09": [
+    "1A.8",
+    "1E.1",
+    "2B.4"
+   ],
+   "y12": [
+    "Y3e.3",
+    "Y1a.7",
+    "Y3a.15"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2A.1",
+    "3D.3",
+    "1D.9"
+   ],
+   "y12": [
+    "Y3c.4",
+    "Y3e.1"
+   ],
+   "y11": [
+    "P1e.6"
+   ]
+  },
+  "issues": [
+   "global",
+   "growth",
+   "trade"
+  ],
+  "levers": [],
+  "diagrams": [
+   "ds",
+   "chart",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "China industrial output, year to October",
+    "value": "+4.8% (September 5.5%; forecast 5.3%)",
+    "asAt": "October 2026",
+    "issue": "growth",
+    "source": "National Bureau of Statistics via Reuters"
+   },
+   {
+    "label": "China retail sales, year to October",
+    "value": "+0.4% (September 1.1%; forecast 0.8%)",
+    "asAt": "October 2026",
+    "issue": "growth",
+    "source": "National Bureau of Statistics via Reuters"
+   },
+   {
+    "label": "China fixed-asset investment, January-October",
+    "value": "-8.1% (first nine months: -7.2%)",
+    "asAt": "October 2026",
+    "issue": "investment",
+    "source": "National Bureau of Statistics via Reuters"
+   },
+   {
+    "label": "China urban unemployment",
+    "value": "5.1% (from 5.2%)",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "National Bureau of Statistics via Reuters"
+   },
+   {
+    "label": "Iron ore",
+    "value": "About US$89.85 a tonne",
+    "asAt": "18 November 2026",
+    "issue": "trade",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Fixed-asset investment",
+    "def": "Spending on buildings, infrastructure and machinery; in China it drives demand for steel and so iron ore."
+   },
+   {
+    "term": "Terms of trade",
+    "def": "Export prices divided by import prices; it falls when commodity export prices fall."
+   }
+  ],
+  "links": [
+   [
+    "Business Standard (Reuters): China's economy slows in Oct as factory output, retail sales miss forecasts",
+    "https://www.business-standard.com/"
+   ],
+   [
+    "ABC News: business live, 18 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-china-slowdown-deepens-reuters.pdf",
+   "label": "Topic 1 news summary",
+   "pages": 1
+  },
+  "angle": "Weaker Chinese property and infrastructure investment means less steel, shifting world iron ore demand left and lowering the price. Chain: slower Chinese growth, lower commodity prices, lower terms of trade, lower export income, weaker AUD and less company tax revenue. Analysts expect 4.5-5% growth for 2026 unless major stimulus is announced.",
+  "questions": [
+   {
+    "q": "Explain how a slowdown in China's economic growth could affect Australia's terms of trade and current account balance.",
+    "marks": 4
+   }
+  ],
+  "note": "Replaces the 17 November Reuters/JournalArta card on the same October data (which also gave September-quarter GDP growth of 4.5%, ING blaming weak consumer confidence, ANZ expecting no new stimulus this year, and officials saying AI-linked exports will keep supporting growth). Business Standard link is the site home page because the digest gives the headline only.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-wto-trade-restrictions-surge",
+  "title": "Trade barriers pile up faster than ever, warns the WTO",
+  "date": "2026-11-18",
+  "type": "report",
+  "outlets": [
+   "WTO"
+  ],
+  "summary": "Gives WTO monitoring data on rising protection and the limits of the WTO in restraining it.",
+  "lede": "The WTO's trade monitoring report, released 17 November, shows governments brought in more trade-restrictive measures in the first half of 2026 than in all of 2025. Import restrictions in force since 2009 now cover a record share of world trade, even as trade-facilitating measures also rose.",
+  "about": {
+   "h09": [
+    "1C.2",
+    "1B.2",
+    "1C.1"
+   ],
+   "y12": [
+    "Y3a.6",
+    "Y3a.7",
+    "Y3a.14",
+    "Y3a.15"
+   ],
+   "y11": []
+  },
+  "also": {
+   "h09": [
+    "1A.3",
+    "1B.1"
+   ],
+   "y12": [
+    "Y3a.8",
+    "Y3a.5"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "ds",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "New trade-restrictive measures",
+    "value": "333 in January-June 2026 (300 in all of 2025)",
+    "asAt": "H1 2026",
+    "issue": "trade",
+    "source": "WTO"
+   },
+   {
+    "label": "World imports covered by import restrictions in force since 2009",
+    "value": "US$5.4 trillion (21.3%, a record)",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "WTO"
+   },
+   {
+    "label": "New trade remedy investigations",
+    "value": "218 (36.3 a month, up from 32.6 in 2025)",
+    "asAt": "H1 2026",
+    "issue": "trade",
+    "source": "WTO"
+   },
+   {
+    "label": "New trade-facilitating measures",
+    "value": "466 in H1 2026 (391 in all of 2025)",
+    "asAt": "H1 2026",
+    "issue": "trade",
+    "source": "WTO"
+   },
+   {
+    "label": "WTO forecast, 2026 merchandise trade volume growth",
+    "value": "3.9% (up from 1.9% in March); services growth cut to 3.3%",
+    "asAt": "17 November 2026",
+    "issue": "trade",
+    "source": "WTO"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Trade remedies",
+    "def": "Anti-dumping and countervailing duties used against imports judged unfairly priced or subsidised."
+   },
+   {
+    "term": "Trade facilitation",
+    "def": "Measures that cut the cost and time of trading."
+   }
+  ],
+  "links": [
+   [
+    "WTO: New trade-restrictive measures surge but WTO members step up trade facilitation efforts",
+    "https://www.wto.org/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-wto-trade-restrictions-surge.pdf",
+   "label": "Topic 1 news summary",
+   "pages": 1
+  },
+  "angle": "A tariff raises the domestic price, lifts local output, cuts consumption and imports, raises revenue and creates deadweight losses. Each measure is small but together they cover over a fifth of world imports: evidence of the limits of the WTO's ability to restrain protectionism.",
+  "questions": [
+   {
+    "q": "Using a diagram, explain the effects of a tariff on domestic producers, consumers and the government.",
+    "marks": 6
+   }
+  ],
+  "note": "The WTO link is the organisation's home page because the digest gives the report title only. Mixed picture: restrictive measures and facilitating measures both rose.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-aud-iron-ore-slip-wall-st",
+  "title": "Aussie dollar slips to 67 US cents as commodities and shares fall",
+  "date": "2026-11-18",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "MacroBusiness"
+  ],
+  "summary": "Shows how weaker commodity prices and risk-off selling lower the AUD, and why a high cash rate only partly supports it.",
+  "lede": "A sharp Wall Street sell-off flowed through to Australian markets on Wednesday 18 November. The AUD fell 0.19% to US67.18 cents, gold fell and iron ore stayed below US$90 a tonne amid weak Chinese steel demand.",
+  "about": {
+   "h09": [
+    "2C.2",
+    "2C.3",
+    "2B.4",
+    "3D.1"
+   ],
+   "y12": [
+    "Y3c.2",
+    "Y3c.4",
+    "Y1a.7"
+   ],
+   "y11": [
+    "P6c.1",
+    "P6a.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2C.6",
+    "2A.1",
+    "4D.3"
+   ],
+   "y12": [
+    "Y3c.5",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P2d.1"
+   ]
+  },
+  "issues": [
+   "fx",
+   "trade",
+   "global"
+  ],
+  "levers": [],
+  "diagrams": [
+   "fx",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "AUD / USD",
+    "value": "US67.18c (-0.19%)",
+    "asAt": "18 November 2026",
+    "issue": "fx",
+    "source": "ABC News"
+   },
+   {
+    "label": "Iron ore (Singapore)",
+    "value": "US$89.85 a tonne (+0.16%)",
+    "asAt": "18 November 2026",
+    "issue": "trade",
+    "source": "ABC News"
+   },
+   {
+    "label": "Brent crude / gold",
+    "value": "US$92.50 a barrel (-0.69%) / US$3,788 an ounce (-1.6%)",
+    "asAt": "18 November 2026",
+    "issue": "trade",
+    "source": "ABC News"
+   },
+   {
+    "label": "ASX 200",
+    "value": "-0.69% to 8,821.8 (Dow -1.6%, S&P 500 -1%)",
+    "asAt": "18 November 2026",
+    "issue": "global",
+    "source": "ABC News"
+   },
+   {
+    "label": "RBA cash rate",
+    "value": "4.85%, highest since 2008",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Commodity currency",
+    "def": "A currency, such as the AUD, that tends to move with the prices of the country's main exports."
+   },
+   {
+    "term": "Risk-off",
+    "def": "Investors sell riskier assets such as shares and commodity currencies and buy safer ones."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: business live, 18 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "MacroBusiness: Iron ore R.I.P., 15 Nov 2026",
+    "https://www.macrobusiness.com.au/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-aud-iron-ore-slip-wall-st.pdf",
+   "label": "Topic 2 news summary",
+   "pages": 1
+  },
+  "angle": "Weaker commodity prices mean foreign buyers need fewer AUD, and risk-off investors sell AUD assets, so demand shifts left and the AUD depreciates. A depreciation partly stabilises the economy by cheapening exports but adds imported inflation, a concern for the RBA. The high cash rate tends to support the AUD through capital inflows.",
+  "questions": [
+   {
+    "q": "Explain two factors that influence the value of the Australian dollar, and outline one effect of a depreciation on the Australian economy.",
+    "marks": 5
+   }
+  ],
+  "note": "Replaces the 17 November card on the same series (AUD US67.40c, -0.5%; iron ore US$88.15 a tonne, -2.5%; Brent US$92.32, -3.7%; gold US$3,865; Nasdaq -2.5% and S&P 500 -2.0% on Monday 16 November). Single-day market prices. Links are to the outlets' pages because the digest gives titles only.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-bhp-copper-chile-codelco-investment-choice",
+  "title": "Chile's copper scandal: a test of Australia's pull for mining investment",
+  "date": "2026-11-18",
+  "type": "news",
+  "outlets": [
+   "AFR (Peter Ker, opinion)"
+  ],
+  "summary": "Shows global competition for mining investment and why higher returns abroad can divert capital inflows from Australia.",
+  "lede": "Chile's state-owned Codelco overstated its copper output and is struggling financially, and Chile may open its deposits to private miners. AFR columnist Peter Ker argues this gives BHP an alternative to its South Australian copper expansion, so governments here should consider support.",
+  "about": {
+   "h09": [
+    "2A.2",
+    "2B.2",
+    "2B.4"
+   ],
+   "y12": [
+    "Y3b.2",
+    "Y3e.1",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P6b.1",
+    "P6b.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2A.1",
+    "4E.1",
+    "1A.5"
+   ],
+   "y12": [
+    "Y2d.1",
+    "Y3a.15"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "issues": [
+   "investment",
+   "trade"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [
+   "ds",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Copper falsely added to Codelco output",
+    "value": "27,600 t in 2024 (about $537m) and 18,100 t in 2025",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "AFR"
+   },
+   {
+    "label": "Codelco net debt",
+    "value": "US$24.3 billion (output at a 27-year low)",
+    "asAt": "November 2026",
+    "issue": "investment",
+    "source": "AFR"
+   },
+   {
+    "label": "BHP's copper growth options in South Australia",
+    "value": "US$17.4 billion (including a US$4.1 billion Olympic Dam smelter expansion)",
+    "asAt": "November 2026",
+    "issue": "investment",
+    "source": "AFR"
+   },
+   {
+    "label": "Return on capital: Escondida (Chile) vs South Australia",
+    "value": "About 50% vs about 10%",
+    "asAt": "Last year",
+    "issue": "investment",
+    "source": "AFR"
+   },
+   {
+    "label": "Chile's share of world copper supply",
+    "value": "About one quarter",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Foreign direct investment",
+    "def": "Investment that gives an investor a lasting interest in a business, such as building a mine."
+   },
+   {
+    "term": "Return on capital",
+    "def": "Profit as a percentage of capital invested; firms invest where it is highest."
+   }
+  ],
+  "links": [
+   [
+    "AFR: Opinion: Copper cheating scandal gives BHP an Olympic-sized opportunity (Peter Ker), 18 Nov 2026",
+    "https://www.afr.com/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-bhp-copper-chile-codelco-investment-choice.pdf",
+   "label": "Topic 2 news summary",
+   "pages": 1
+  },
+  "angle": "Electrification lifts world copper demand and prices, so countries compete to host new mines. Australia competes globally for capital inflows, so higher returns abroad can divert investment. Ker suggests government funding for a $5-7 billion desalination plant near Whyalla rather than propping up loss-making assets such as the Mount Isa smelter ($600 million rescue).",
+  "questions": [
+   {
+    "q": "Explain how global competition for investment can affect Australia's mining sector and capital inflows.",
+    "marks": 4
+   }
+  ],
+  "note": "OPINION column by one writer; return-on-capital figures are approximate as printed. The AFR link is the site home page because the digest gives the headline only.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-china-iron-ore-price-haggle-cmrg",
+  "title": "China's iron ore haggling is a price fight, not a trade war",
+  "date": "2026-11-18",
+  "type": "news",
+  "outlets": [
+   "AFR (Jon Yuan Jiang, opinion)"
+  ],
+  "summary": "Shows the risks of exporting to a single dominant buyer and how monopsony power can lower export prices.",
+  "lede": "China's single state iron ore buyer, China Mineral Resources Group (CMRG), is pushing Australian miners for lower prices. Analyst Jon Yuan Jiang argues Canberra should leave negotiations to the companies rather than turn a commercial dispute into a state-to-state one.",
+  "about": {
+   "h09": [
+    "2A.1",
+    "2B.4",
+    "2D.4"
+   ],
+   "y12": [
+    "Y3e.1",
+    "Y3e.3",
+    "Y1a.7"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3D.1",
+    "3D.3"
+   ],
+   "y12": [
+    "Y3a.15",
+    "Y3c.4"
+   ],
+   "y11": [
+    "P2h.6"
+   ]
+  },
+  "issues": [
+   "trade"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "chart",
+   "flow",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Share of Australia's iron ore exports sent to China",
+    "value": "About 85%",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "AFR"
+   },
+   {
+    "label": "Lithium sent to China for processing",
+    "value": "More than 90%",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "AFR"
+   },
+   {
+    "label": "Chinese steel profits, first eight months",
+    "value": "-62.4%",
+    "asAt": "2026",
+    "issue": "trade",
+    "source": "AFR"
+   },
+   {
+    "label": "Effective discounts won by CMRG (Goldman Sachs)",
+    "value": "Up to 3% (about 1% of earnings)",
+    "asAt": "2026",
+    "issue": "trade",
+    "source": "Goldman Sachs, via AFR"
+   },
+   {
+    "label": "May Budget deficit forecast",
+    "value": "$31.5 billion; no surplus until 2034-35",
+    "asAt": "May 2026",
+    "issue": "budget",
+    "source": "AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Monopsony power",
+    "def": "When one buyer dominates a market and can push prices down."
+   },
+   {
+    "term": "Trade coercion",
+    "def": "Using trade restrictions to pressure another government, such as China's 2020 barriers on barley and wine."
+   }
+  ],
+  "links": [
+   [
+    "AFR: Opinion: China's haggling over iron ore prices is not a trade war (Jon Yuan Jiang), 18 Nov 2026",
+    "https://www.afr.com/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-china-iron-ore-price-haggle-cmrg.pdf",
+   "label": "Topic 2 news summary",
+   "pages": 1
+  },
+  "angle": "Chain: China's steel profits collapse, CMRG pushes for discounts, lower iron ore prices, lower export income and Budget revenue. The author recommends letting miners negotiate commercially (BHP settled in April, Rio Tinto in October, Fortescue still negotiating), allowing ACCC-approved collective bargaining, and cutting costs, adding value and finding more buyers.",
+  "questions": [
+   {
+    "q": "Explain why the concentration of Australia's exports in a single market creates economic risks.",
+    "marks": 4
+   }
+  ],
+  "note": "OPINION piece by one analyst. The author's recommendations are one view. AFR link is the site home page because the digest gives the headline only.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-climate-policy-bob-each-way-gittins",
+  "title": "Climate change: is the government having a bob each way?",
+  "date": "2026-11-18",
+  "type": "news",
+  "outlets": [
+   "SMH (Ross Gittins, opinion)"
+  ],
+  "summary": "Links climate externalities to coal and gas approvals, stranded assets and the long-run risk to Australia's export income.",
+  "lede": "SMH economics editor Ross Gittins praises Australia's renewables progress, highlighted at COP31, but argues that approving new coal and gas projects undercuts climate action and exposes the economy when world fossil-fuel demand falls.",
+  "about": {
+   "h09": [
+    "3F.2",
+    "3F.4",
+    "1D.8",
+    "4G.3"
+   ],
+   "y12": [
+    "Y1e.5",
+    "Y1e.7",
+    "Y1e.8",
+    "Y2f.6"
+   ],
+   "y11": [
+    "P2h.3",
+    "P2h.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4G.4",
+    "4I.6",
+    "2A.1"
+   ],
+   "y12": [
+    "Y2f.7",
+    "Y3e.1"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "environment"
+  ],
+  "levers": [
+   "environmental"
+  ],
+  "diagrams": [
+   "ds"
+  ],
+  "figures": [
+   {
+    "label": "Global fossil-fuel emissions this year",
+    "value": "-0.4% (mainly less oil use during the Iran war and Hormuz blockage); total emissions still about +1%",
+    "asAt": "2026",
+    "issue": "environment",
+    "source": "SMH"
+   },
+   {
+    "label": "Share of Australia's electricity from renewables",
+    "value": "About 50% (600,000+ home batteries installed in the past year)",
+    "asAt": "November 2026",
+    "issue": "environment",
+    "source": "SMH"
+   },
+   {
+    "label": "Australian emissions targets",
+    "value": "43% below 2005 by 2030; 62-70% by 2035",
+    "asAt": "November 2026",
+    "issue": "environment",
+    "source": "SMH"
+   },
+   {
+    "label": "Time to 1.5 degrees C of warming at current rates",
+    "value": "About four years",
+    "asAt": "November 2026",
+    "issue": "environment",
+    "source": "SMH"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Stranded assets",
+    "def": "Investments that lose value early because of changing demand or policy, such as coal mines."
+   },
+   {
+    "term": "Market failure",
+    "def": "When the free market produces an inefficient outcome, such as too much pollution."
+   }
+  ],
+  "links": [
+   [
+    "SMH: Opinion: On our greatest threat, Albo is having a bob each way (Ross Gittins), 18 Nov 2026",
+    "https://www.smh.com.au/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-climate-policy-bob-each-way-gittins.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Fossil-fuel users pay private costs but not climate damage, so the market produces Q1 above the social optimum Q2 (deadweight loss); carbon pricing or the Safeguard Mechanism aim to move output towards Q2. As other countries decarbonise, demand and prices for coal and gas exports fall, making diversification a long-term growth issue.",
+  "questions": [
+   {
+    "q": "Using a diagram, explain why the market overproduces goods that generate negative externalities, and assess one policy response.",
+    "marks": 6
+   }
+  ],
+  "note": "OPINION column by one writer. Gittins says the 2030 target will be hard to meet. He cites approval of BHP's Saraji coal expansion and a NSW Hunter Valley mine extension to 2045. SMH link is the site home page because the digest gives the headline only. Related: 16 November COP31 draft deal and 11 November COP31 cards.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-gender-pay-gap-below-20-wgea",
+  "title": "Gender pay gap falls below 20% for the first time",
+  "date": "2026-11-18",
+  "type": "stats",
+  "outlets": [
+   "WGEA via ABC News"
+  ],
+  "summary": "Gives the latest gender pay gap statistic, its causes and the policies and limits for narrowing it.",
+  "lede": "The Workplace Gender Equality Agency reports that the average gender pay gap in total remuneration has fallen to 19.7%, the first time it has been below 20%. Women are still paid substantially less than men on average.",
+  "about": {
+   "h09": [
+    "3E.5",
+    "3E.6",
+    "3E.2"
+   ],
+   "y12": [
+    "Y1d.7",
+    "Y1d.2",
+    "Y1d.9"
+   ],
+   "y11": [
+    "P2h.8",
+    "P3d.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3E.3",
+    "4F.2"
+   ],
+   "y12": [
+    "Y1d.5",
+    "Y2d.3"
+   ],
+   "y11": [
+    "P3d.1"
+   ]
+  },
+  "issues": [
+   "inequality",
+   "employment"
+  ],
+  "levers": [
+   "labour"
+  ],
+  "diagrams": [
+   "chart",
+   "flow",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Average gender pay gap, total remuneration",
+    "value": "19.7% (first time below 20%)",
+    "asAt": "November 2026",
+    "issue": "inequality",
+    "source": "WGEA via ABC News"
+   },
+   {
+    "label": "Women's average total remuneration per $100 earned by men",
+    "value": "About $80.30 (calculated from the 19.7% gap)",
+    "asAt": "November 2026",
+    "issue": "inequality",
+    "source": "WGEA via ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Gender pay gap",
+    "def": "The difference between men's and women's average earnings, as a percentage of men's earnings."
+   },
+   {
+    "term": "Occupational segregation",
+    "def": "The concentration of women and men in different industries and jobs, often with different pay."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: business live, 18 Nov 2026 (WGEA item)",
+    "https://www.abc.net.au/news/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-gender-pay-gap-below-20-wgea.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Total remuneration includes base pay, overtime, bonuses and super, so it captures more than hourly rates. Causes: occupational segregation, more part-time work and career breaks for caring. Policies: pay transparency, award decisions lifting pay in female-dominated sectors, childcare and paid parental leave; limits: structural factors change slowly, higher awards raise employer and Budget costs, and an average hides differences.",
+  "questions": [
+   {
+    "q": "Outline two causes of the gender pay gap in Australia and explain one policy that could reduce it.",
+    "marks": 4
+   }
+  ],
+  "note": "The $80.30 figure is the digest's own calculation. The ABC link is to the live blog only; the WGEA report itself was not read.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-labour-market-cooling-job-ads-layoffs",
+  "title": "Job ads fall and layoffs mount as the labour market cools",
+  "date": "2026-11-18",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "SEEK"
+  ],
+  "summary": "Gives leading indicators of a softening labour market, with a mix of cyclical and structural causes.",
+  "lede": "Ahead of Thursday's Labour Force release, SEEK job advertisements are falling and several big employers are cutting staff. Higher interest rates are slowing demand, and technology is reshaping some jobs.",
+  "about": {
+   "h09": [
+    "3B.2",
+    "3B.3",
+    "3B.6",
+    "4D.3"
+   ],
+   "y12": [
+    "Y1b.5",
+    "Y1b.6",
+    "Y1b.11"
+   ],
+   "y11": [
+    "P1e.7",
+    "P3d.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3A.7",
+    "4F.5"
+   ],
+   "y12": [
+    "Y1b.10",
+    "Y2c.5"
+   ],
+   "y11": [
+    "P1e.4"
+   ]
+  },
+  "issues": [
+   "employment",
+   "rates"
+  ],
+  "levers": [
+   "monetary",
+   "labour"
+  ],
+  "diagrams": [
+   "adas",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "SEEK job ads",
+    "value": "-0.8% in October; -6.4% over the year (ACT the only region with growth)",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "SEEK, via ABC News"
+   },
+   {
+    "label": "Advertised salaries",
+    "value": "+4.1% over the year",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "SEEK, via ABC News"
+   },
+   {
+    "label": "Unemployment rate",
+    "value": "4.7% last; September quarter average 4.6% (June quarter 4.4%)",
+    "asAt": "September 2026",
+    "issue": "employment",
+    "source": "ABC News"
+   },
+   {
+    "label": "David Jones jobs expected to go",
+    "value": "About 1,500 of 1,689 direct jobs at risk",
+    "asAt": "November 2026",
+    "issue": "employment",
+    "source": "ABC News"
+   },
+   {
+    "label": "KPMG roles being cut",
+    "value": "About 230",
+    "asAt": "November 2026",
+    "issue": "employment",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Cyclical unemployment",
+    "def": "Unemployment caused by weaker aggregate demand during a downturn."
+   },
+   {
+    "term": "Leading indicator",
+    "def": "A measure, such as job ads, that tends to change before the wider economy."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: business live, 18 Nov 2026 (SEEK, David Jones, KPMG, Bunnings items)",
+    "https://www.abc.net.au/news/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-labour-market-cooling-job-ads-layoffs.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Five rate rises in 2026 have shifted AD left, cutting output and raising cyclical unemployment. David Jones' collapse is cyclical; Bunnings' AI-linked offshoring is structural, so they need different policy responses (macroeconomic policy versus training and labour market programs).",
+  "questions": [
+   {
+    "q": "Using examples from this week's news, distinguish between cyclical and structural unemployment and suggest one policy response to each.",
+    "marks": 6
+   }
+  ],
+  "note": "UPDATE DUE: October Labour Force data released Thursday 19 November. Related: 16 November Labour Force preview (RBA week) and 4 November job vacancies and AI card.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-peak-boomer-generational-income",
+  "title": "Has the rich world passed \"peak Boomer\"?",
+  "date": "2026-11-18",
+  "type": "report",
+  "outlets": [
+   "The Economist via AFR"
+  ],
+  "summary": "Gives evidence on the distribution of income between age groups and how inflation and budgets shift it.",
+  "lede": "An analysis by The Economist, republished in the AFR, argues that the long rise in older people's incomes and wealth relative to the young is reversing across most rich countries. Labour markets, inflation and government budgets are shifting the balance towards the young.",
+  "about": {
+   "h09": [
+    "3E.4",
+    "3E.5",
+    "3E.6"
+   ],
+   "y12": [
+    "Y1d.2",
+    "Y1d.9",
+    "Y1d.10"
+   ],
+   "y11": [
+    "P2h.8"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3C.4",
+    "4C.2"
+   ],
+   "y12": [
+    "Y1c.7",
+    "Y1d.5"
+   ],
+   "y11": [
+    "P5a.1"
+   ]
+  },
+  "issues": [
+   "inequality"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "chart",
+   "flow",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Rich countries where pensioners' incomes are falling relative to working-age people",
+    "value": "26 of 32",
+    "asAt": "November 2026",
+    "issue": "inequality",
+    "source": "The Economist, via AFR"
+   },
+   {
+    "label": "US median elderly household income relative to other households",
+    "value": "57% (1979) to 90% (2012); no gain on the non-elderly for over a decade",
+    "asAt": "1979-2012",
+    "issue": "inequality",
+    "source": "The Economist, via AFR"
+   },
+   {
+    "label": "Cost-of-living crisis impact on pension-age households (EU study)",
+    "value": "Nearly three times as hard",
+    "asAt": "November 2026",
+    "issue": "inequality",
+    "source": "The Economist, via AFR"
+   },
+   {
+    "label": "US federal spending per older person vs younger people",
+    "value": "10x falling to about 6x by 2024",
+    "asAt": "2024",
+    "issue": "inequality",
+    "source": "The Economist, via AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Intergenerational equity",
+    "def": "Fairness in the distribution of income, wealth and public spending between generations."
+   },
+   {
+    "term": "Defined-benefit pension",
+    "def": "A pension paid as a set amount, often based on final salary; it can lose real value to inflation."
+   }
+  ],
+  "links": [
+   [
+    "AFR (The Economist): For Boomers, the economic boom times are over, 18 Nov 2026",
+    "https://www.afr.com/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-peak-boomer-generational-income.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Strong labour demand lifts young workers' wages, inflation erodes fixed pensions and governments contain age-related spending. For Australia: less fiscal pressure from ageing if spending is better targeted, but retirees on fixed incomes become more vulnerable to inflation and older Australians still hold much of the property and financial wealth.",
+  "questions": [
+   {
+    "q": "Explain how inflation can affect the distribution of income between workers and retirees.",
+    "marks": 4
+   }
+  ],
+  "note": "ANALYSIS about rich-country averages, not Australian data; the Australian implications are the digest's discussion points. AFR link is the site home page because the digest gives the headline only.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-rental-listings-fall-sydney-melbourne",
+  "title": "Rental listings fall by 23,000 in five years across Sydney and Melbourne",
+  "date": "2026-11-18",
+  "type": "stats",
+  "outlets": [
+   "AFR (Sarah Petty)",
+   "Cotality"
+  ],
+  "summary": "Shows how shrinking rental supply and population growth push rents up, and how tax changes may affect supply.",
+  "lede": "Cotality data show Sydney and Melbourne have tens of thousands fewer homes available to rent than five years ago, and rents are up more than 35% in each city. Strong population growth and slower home building are the main causes.",
+  "about": {
+   "h09": [
+    "4E.2",
+    "3E.6"
+   ],
+   "y12": [
+    "Y1d.6",
+    "Y2d.4",
+    "Y2d.6"
+   ],
+   "y11": [
+    "P2d.1",
+    "P2c.4",
+    "P2d.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3C.2",
+    "4C.2"
+   ],
+   "y12": [
+    "Y1c.8",
+    "Y2b.10"
+   ],
+   "y11": [
+    "P5b.7",
+    "P2h.8"
+   ]
+  },
+  "issues": [
+   "housing",
+   "inequality"
+  ],
+  "levers": [
+   "micro",
+   "fiscal"
+  ],
+  "diagrams": [
+   "ds",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Sydney available rentals",
+    "value": "41,883 to 30,192 (-27.9%), October 2021 to October 2026",
+    "asAt": "October 2026",
+    "issue": "housing",
+    "source": "Cotality, via AFR"
+   },
+   {
+    "label": "Melbourne available rentals",
+    "value": "38,126 to 26,476 (-30.6%)",
+    "asAt": "October 2026",
+    "issue": "housing",
+    "source": "Cotality, via AFR"
+   },
+   {
+    "label": "Rent rise over five years",
+    "value": "Sydney +36.4%; Melbourne +35.1% (about 4-4.5% in the past year)",
+    "asAt": "October 2026",
+    "issue": "housing",
+    "source": "Cotality, via AFR"
+   },
+   {
+    "label": "Peak average rent increase for tenants who got one vs CPI rent inflation",
+    "value": "12.4% vs 7.8%",
+    "asAt": "November 2026",
+    "issue": "housing",
+    "source": "e61 Institute, via AFR"
+   },
+   {
+    "label": "New investor loans",
+    "value": "Down about a third in the September quarter",
+    "asAt": "September quarter 2026",
+    "issue": "housing",
+    "source": "AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Vacancy rate",
+    "def": "The share of rental properties that are empty and available; a low rate signals a tight market."
+   },
+   {
+    "term": "Negative gearing",
+    "def": "Deducting rental property losses from other income to reduce tax."
+   }
+  ],
+  "links": [
+   [
+    "AFR: Rental listings fall 23,000 in five years across Sydney and Melbourne (Sarah Petty), 18 Nov 2026",
+    "https://www.afr.com/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-rental-listings-fall-sydney-melbourne.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Fewer new homes and investors selling up shift rental supply left while population growth adds demand, so rents rise and the number of homes rented falls. A policy trade-off: tax changes that help first-home buyers may cut investor-owned rental supply, raising rents for lower-income tenants: evidence for a limitations-of-policy paragraph.",
+  "questions": [
+   {
+    "q": "Explain how population growth and housing tax changes could affect rents, and discuss the effect on income inequality.",
+    "marks": 6
+   }
+  ],
+  "note": "Analysts' warning that the negative gearing and CGT changes could shrink rental supply further is a forecast, not an outcome. AFR link is the site home page because the digest gives the headline only. Related: 14 November housing market and 12 November construction drought cards.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-wage-price-index-real-wages-fall",
+  "title": "Wages grow at their fastest pace since 2023, but real wages fall for a fourth quarter",
+  "date": "2026-11-18",
+  "type": "stats",
+  "outlets": [
+   "ABS",
+   "SMH",
+   "ABC News"
+  ],
+  "summary": "Gives the September-quarter Wage Price Index result and the nominal versus real wage distinction, with the cost-push link to RBA decisions.",
+  "lede": "The Wage Price Index rose 1.1% in the September quarter, driven by the 4.75% minimum wage rise and state public sector pay deals. With inflation at 3.9%, real wages fell 0.4% over the year, the fourth negative result in a row.",
+  "about": {
+   "h09": [
+    "3C.3",
+    "3E.2",
+    "4F.2",
+    "4D.3"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y1c.8",
+    "Y2e.4",
+    "Y2c.4"
+   ],
+   "y11": [
+    "P3d.1",
+    "P3d.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3C.4",
+    "3E.6"
+   ],
+   "y12": [
+    "Y1d.9",
+    "Y1c.7"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "employment",
+   "inequality"
+  ],
+  "levers": [
+   "labour",
+   "monetary"
+  ],
+  "diagrams": [
+   "adas",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Wage Price Index, September quarter",
+    "value": "+1.1% (RBA expected 0.9%); +3.5% over the year (expected 3.4%)",
+    "asAt": "September quarter 2026",
+    "issue": "employment",
+    "source": "ABS"
+   },
+   {
+    "label": "Real wages over the year",
+    "value": "-0.4% (fourth negative result in a row; inflation 3.9% as used by the digest)",
+    "asAt": "September quarter 2026",
+    "issue": "inflation",
+    "source": "SMH"
+   },
+   {
+    "label": "Private / public sector wage growth over the year",
+    "value": "3.4% / 3.9%",
+    "asAt": "September quarter 2026",
+    "issue": "employment",
+    "source": "ABS"
+   },
+   {
+    "label": "Wage growth for the lowest-paid 20%",
+    "value": "4.7%",
+    "asAt": "September quarter 2026",
+    "issue": "inequality",
+    "source": "SMH"
+   },
+   {
+    "label": "Prices vs wages since mid-2022",
+    "value": "+18.2% vs +16.2%",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "SMH"
+   },
+   {
+    "label": "Wage growth by industry over the year",
+    "value": "Hospitality 4.1%; professional services 2.7%; education 2.6%",
+    "asAt": "September quarter 2026",
+    "issue": "employment",
+    "source": "ABS"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Wage Price Index",
+    "def": "Measures changes in the price of a fixed quantity and quality of labour."
+   },
+   {
+    "term": "Real wages",
+    "def": "Wages adjusted for inflation, approximately wage growth minus inflation."
+   }
+  ],
+  "links": [
+   [
+    "ABS: Highest quarterly wage growth since December quarter 2023",
+    "https://www.abs.gov.au/"
+   ],
+   [
+    "SMH: Shrinking pay packets: real wages drop for fourth consecutive quarter (Shane Wright), 18 Nov 2026",
+    "https://www.smh.com.au/"
+   ],
+   [
+    "ABC News: business live, 18 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-wage-price-index-real-wages-fall.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Separate nominal wage growth (3.5%) from real wage growth (-0.4%). If pay rises faster than productivity, unit labour costs rise and SRAS shifts left (cost-push), which is why a result above forecast is 'uncomfortably high' for the RBA (EY). The minimum wage rise also gave the largest gains to the lowest paid. Economists expect an RBA hold in December; Westpac tips growth of 1.4% in 2026 and 1% in 2027.",
+  "questions": [
+   {
+    "q": "Distinguish between nominal and real wage growth, and explain how faster wage growth could influence RBA decisions.",
+    "marks": 5
+   }
+  ],
+  "note": "Replaces the 11 November card 'Wage growth cools to its slowest pace this year' (CBA account data, not the ABS WPI: monthly annualised 3.1%, August 3.5%; annual 3.2%; about 18,000 jobs added; unemployment 4.7% in September and CBA's forecast peak 5.1% by end-2027; annual wage growth SA 3.8%, WA 3.7%, NT 3.7%, Tasmania 3.5%, Victoria 2.9%). This is the WPI result the 17 November RBA preview was waiting for. CAUTION: the digest uses inflation of 3.9% here, whereas other cards use 4.3%; check which measure and period before quoting. The ABS and SMH links are site home pages because the digest gives titles only.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-backpacker-visa-backtrack-migration",
+  "title": "Backpacker backtrack: the trade-offs in cutting migration",
+  "date": "2026-11-18",
+  "type": "news",
+  "outlets": [
+   "AFR editorial (The AFR View)"
+  ],
+  "summary": "Shows the labour supply, housing and growth trade-offs of cutting migration, and a policy backtrack after an employer backlash.",
+  "lede": "After an employer backlash, Immigration Minister Tony Burke has delayed a ballot for third-year working holiday visas. An AFR editorial argues Labor's migration changes have not balanced the politics and economics of migration well.",
+  "about": {
+   "h09": [
+    "3B.3",
+    "4F.5",
+    "4H.3"
+   ],
+   "y12": [
+    "Y2e.6",
+    "Y2e.8",
+    "Y1b.4"
+   ],
+   "y11": [
+    "P3b.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "1A.7",
+    "3A.5"
+   ],
+   "y12": [
+    "Y1b.2",
+    "Y2d.6"
+   ],
+   "y11": [
+    "P3d.3"
+   ]
+  },
+  "issues": [
+   "employment",
+   "growth"
+  ],
+  "levers": [
+   "labour"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Net overseas migration target",
+    "value": "245,000 in 2026-27 and 225,000 in 2027-28 (from over 300,000 last year)",
+    "asAt": "2026-27",
+    "issue": "employment",
+    "source": "AFR"
+   },
+   {
+    "label": "Third-year backpacker visa cap / required regional work",
+    "value": "5,000 to 25,000 / 88 to 120 days",
+    "asAt": "November 2026",
+    "issue": "employment",
+    "source": "AFR"
+   },
+   {
+    "label": "People in Australia on short-stay visas",
+    "value": "Nearly 3 million",
+    "asAt": "November 2026",
+    "issue": "employment",
+    "source": "AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Net overseas migration (NOM)",
+    "def": "Arrivals minus departures of people staying 12 months or more; a key driver of population growth."
+   },
+   {
+    "term": "Labour shortage",
+    "def": "When employers cannot find enough workers at the going wage."
+   }
+  ],
+  "links": [
+   [
+    "AFR: The AFR View: Burke's backpacker backtrack is Labor's latest migration bungle, 18 Nov 2026",
+    "https://www.afr.com/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-backpacker-visa-backtrack-migration.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "Fewer backpackers shift regional labour supply left, raising wages and costs and risking unpicked crops. Lower migration eases housing and services demand but cuts labour supply and headline GDP growth. The editorial argues for a smaller but more skilled intake.",
+  "questions": [
+   {
+    "q": "Evaluate the economic effects of reducing net overseas migration on Australia's labour market and housing.",
+    "marks": 6
+   }
+  ],
+  "note": "EDITORIAL (opinion). The ballot is delayed, not cancelled. Related: 4 November card on UK FTA backpacker rules. AFR link is the site home page because the digest gives the headline only.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-carbon-credit-hir-integrity-dispute",
+  "title": "Phantom forests? The fight over Australia's biggest carbon credit method",
+  "date": "2026-11-18",
+  "type": "news",
+  "outlets": [
+   "SMH (Michael Bachelard)"
+  ],
+  "summary": "Shows how a market-based environmental policy depends on the integrity of the credits traded.",
+  "lede": "A new study says many 'human-induced regeneration' (HIR) carbon farms, including Glenn McGrath's former property, show almost no new forest despite earning millions in credits. Industry and the government say the method is sound and the satellite analysis is flawed.",
+  "about": {
+   "h09": [
+    "4G.2",
+    "3F.2",
+    "3F.4"
+   ],
+   "y12": [
+    "Y2f.3",
+    "Y2f.5",
+    "Y2f.7",
+    "Y2f.8"
+   ],
+   "y11": [
+    "P2i.2",
+    "P2i.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4G.1",
+    "4H.3",
+    "4I.6"
+   ],
+   "y12": [
+    "Y1e.5",
+    "Y2f.6"
+   ],
+   "y11": [
+    "P2h.3"
+   ]
+  },
+  "issues": [
+   "environment"
+  ],
+  "levers": [
+   "environmental"
+  ],
+  "diagrams": [
+   "ds"
+  ],
+  "figures": [
+   {
+    "label": "HIR coverage",
+    "value": "429 properties over 38 million hectares; about one-third of Safeguard credits supplied",
+    "asAt": "November 2026",
+    "issue": "environment",
+    "source": "SMH"
+   },
+   {
+    "label": "Average tree cover on 50 HIR projects",
+    "value": "29% (2017) to 30% (2025) against 50-58% expected from credits issued",
+    "asAt": "2017-2025",
+    "issue": "environment",
+    "source": "Macintosh et al. for the Australian Conservation Foundation, via SMH"
+   },
+   {
+    "label": "Wancobra (McGrath family farm)",
+    "value": "157,000 t of CO2 credited; about $4.2 million",
+    "asAt": "November 2026",
+    "issue": "environment",
+    "source": "SMH"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Additionality",
+    "def": "The requirement that an offset delivers abatement that would not have happened anyway."
+   },
+   {
+    "term": "Safeguard Mechanism",
+    "def": "Limits on emissions from Australia's largest industrial facilities, which can use offsets to comply."
+   }
+  ],
+  "links": [
+   [
+    "SMH: Glenn McGrath's family farm and a stoush over carbon policy (Michael Bachelard), 18 Nov 2026",
+    "https://www.smh.com.au/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-carbon-credit-hir-integrity-dispute.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "If credits are issued for abatement that is not real, credit supply shifts right and the carbon price falls, so emitters buy cheap offsets instead of cutting emissions. Critics say low-integrity credits keep prices low; defenders cite seven independent reviews and LiDAR measurement. Use in a limitations-of-environmental-policy paragraph.",
+  "questions": [
+   {
+    "q": "Assess the effectiveness of carbon offsets as a policy to reduce greenhouse gas emissions.",
+    "marks": 6
+   }
+  ],
+  "note": "DISPUTED findings: the study was for the Australian Conservation Foundation, and carbon companies say satellites miss early regrowth. There is no suggestion anyone broke the rules. HIR closed to new entrants in 2023. SMH link is the site home page because the digest gives the headline only.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-gas-reservation-wa-carve-out",
+  "title": "Gas reservation fires up, but don't bank on cheaper energy",
+  "date": "2026-11-18",
+  "type": "news",
+  "outlets": [
+   "AFR (Jennifer Hewett, opinion)",
+   "ABC News"
+  ],
+  "summary": "Shows short-run versus long-run effects of intervening in an energy market, with sovereign risk and investment limits.",
+  "lede": "A federal-state deal gives Western Australia a permanent carve-out from the planned national gas reservation scheme, and the bill still needs to pass the Senate. AFR columnist Jennifer Hewett argues the policy is the latest in a long line of mixed signals, with uncertain effects on prices and investment.",
+  "about": {
+   "h09": [
+    "4E.1",
+    "4E.2",
+    "4H.3"
+   ],
+   "y12": [
+    "Y2d.1",
+    "Y2d.4",
+    "Y2d.6"
+   ],
+   "y11": [
+    "P2i.2",
+    "P2i.3",
+    "P2i.4",
+    "P2i.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4E.3",
+    "2A.1"
+   ],
+   "y12": [
+    "Y2d.5"
+   ],
+   "y11": [
+    "P5a.5"
+   ]
+  },
+  "issues": [
+   "investment",
+   "trade",
+   "inflation"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Domestic supply requirement",
+    "value": "Up to 20% of gas each year, from January 2028",
+    "asAt": "November 2026",
+    "issue": "investment",
+    "source": "AFR"
+   },
+   {
+    "label": "WA obligation under the national scheme",
+    "value": "Permanently zero (10-year sunset clause dropped); WA keeps its own rule of about 15% of LNG exports",
+    "asAt": "November 2026",
+    "issue": "investment",
+    "source": "AFR; ABC News"
+   },
+   {
+    "label": "Hancock's Belisama gas project",
+    "value": "$2 billion, paused over the policy",
+    "asAt": "November 2026",
+    "issue": "investment",
+    "source": "AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Domestic gas reservation",
+    "def": "Requiring producers to sell a share of gas locally rather than export it."
+   },
+   {
+    "term": "Sovereign risk",
+    "def": "The risk that government policy changes reduce the value of an investment."
+   }
+  ],
+  "links": [
+   [
+    "AFR: Opinion: Gas policy fires up, but don't bank on cheaper energy (Jennifer Hewett), 18 Nov 2026",
+    "https://www.afr.com/"
+   ],
+   [
+    "ABC News: business live, 18 Nov 2026 (WA gas reservation item)",
+    "https://www.abc.net.au/news/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-gas-reservation-wa-carve-out.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "Short run: reserving gas adds domestic supply and lowers prices. Long run: producers expect lower returns and delay projects, so supply may fall and prices rise: the opposite of the aim. Hewett notes past east-coast interventions had only a modest effect on prices. Business groups, manufacturers and unions back the scheme; producers say projects become unviable.",
+  "questions": [
+   {
+    "q": "Discuss the short-run and long-run effects of a domestic gas reservation policy on energy prices and investment.",
+    "marks": 6
+   }
+  ],
+  "note": "UPDATE DUE: Senate vote on the bill (Labor needs Coalition support before parliament rises next week). OPINION column by one writer. Replaces the 29 October card 'Gas reservation bill passes the House: up to 20% of exports for local users' (maximum reserve 20%; electricity prices +13% in the September CPI; physical energy exports at a ten-year low as reported, to be checked against the ABS before quoting). AFR and ABC links are site pages because the digest gives titles only.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-myefo-deficit-spending-cuts-cgt",
+  "title": "MYEFO looms: voters want spending cuts as Chalmers holds firm on tax changes",
+  "date": "2026-11-18",
+  "type": "news",
+  "outlets": [
+   "AFR",
+   "AAP"
+  ],
+  "summary": "Gives public opinion on deficit options and the policy trade-off ahead of December's mid-year budget update.",
+  "lede": "With the Budget forecast to stay in deficit for a decade, a JWS Research survey shows voters far prefer spending cuts to tax rises. The Treasurer promises 'substantial' savings in December's MYEFO without cutting too deeply, and says the capital gains tax changes will go ahead.",
+  "about": {
+   "h09": [
+    "4C.1",
+    "4C.2"
+   ],
+   "y12": [
+    "Y2b.2",
+    "Y2b.3",
+    "Y2b.6",
+    "Y2b.14"
+   ],
+   "y11": [
+    "P5a.4",
+    "P5c.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4B.1",
+    "4H.3",
+    "4D.3"
+   ],
+   "y12": [
+    "Y2b.13",
+    "Y2g.1"
+   ],
+   "y11": [
+    "P5b.1"
+   ]
+  },
+  "issues": [
+   "budget"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "adas",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Budget deficit forecast",
+    "value": "$31.5 billion in 2026-27; deficits for at least a decade",
+    "asAt": "November 2026",
+    "issue": "budget",
+    "source": "AFR"
+   },
+   {
+    "label": "Voters concerned about the deficit",
+    "value": "83%",
+    "asAt": "6-9 November 2026",
+    "issue": "budget",
+    "source": "JWS Research, via AFR"
+   },
+   {
+    "label": "Voters: mainly cut spending / mix of both / mainly raise taxes / borrow now",
+    "value": "54% / 28% / 7% / 2%",
+    "asAt": "6-9 November 2026",
+    "issue": "budget",
+    "source": "JWS Research True Issues survey (1,000 voters), via AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Contractionary fiscal policy",
+    "def": "Cutting spending or raising taxes to reduce aggregate demand."
+   },
+   {
+    "term": "MYEFO",
+    "def": "The Mid-Year Economic and Fiscal Outlook, which updates Budget forecasts mid-year."
+   }
+  ],
+  "links": [
+   [
+    "AFR: Cut spending to tackle deficit, don't raise taxes, say voters (Phillip Coorey), 18 Nov 2026",
+    "https://www.afr.com/"
+   ],
+   [
+    "The Indian Sun (AAP): Chalmers stands firm on reforms as housing pressures and political criticism mount",
+    "https://www.theindiansun.com/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-myefo-deficit-spending-cuts-cgt.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "Spending cuts shift AD left, easing inflation and helping the RBA but lowering output and raising unemployment risk in a slowing economy; fiscal and monetary policy can work together but there are limits, and tax changes need the Senate. Chalmers will proceed with the CGT and trusts changes while negotiating with the Greens, and has ruled out Allegra Spender's alternative.",
+  "questions": [
+   {
+    "q": "Discuss the economic arguments for reducing the Budget deficit through spending cuts rather than tax increases.",
+    "marks": 6
+   }
+  ],
+  "note": "UPDATE DUE: add the December MYEFO. Survey of 1,000 voters (an opinion poll, not a policy outcome). Related: 9 November Chalmers productivity plan, 10 November Spender CGT alternative and 26 October Coalition $31b savings cards. AFR and The Indian Sun links are site home pages because the digest gives headlines only.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-18-super-funds-emerging-assets-chalmers",
+  "title": "Chalmers plans to free super funds to back housing, energy and start-ups",
+  "date": "2026-11-18",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "Shows a microeconomic reform to direct superannuation capital to productive investment, with a return-versus-risk trade-off.",
+  "lede": "Treasurer Jim Chalmers has proposed changing the superannuation performance test so funds can invest a small share of their portfolios in riskier 'emerging assets' without being penalised. He says this could unlock up to $90 billion for housing, energy and venture capital.",
+  "about": {
+   "h09": [
+    "4E.1",
+    "4E.2",
+    "3A.6"
+   ],
+   "y12": [
+    "Y2d.1",
+    "Y2d.2",
+    "Y2d.6"
+   ],
+   "y11": [
+    "P4a.3",
+    "P4a.1",
+    "P4a.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2A.2",
+    "3E.4",
+    "4I.1"
+   ],
+   "y12": [
+    "Y2d.4"
+   ],
+   "y11": [
+    "P3c.4"
+   ]
+  },
+  "issues": [
+   "investment",
+   "housing",
+   "productivity"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Potential investment in emerging assets (Treasurer's estimate)",
+    "value": "Up to $90 billion",
+    "asAt": "17 November 2026",
+    "issue": "investment",
+    "source": "ABC News"
+   },
+   {
+    "label": "Maximum share of a fund's portfolio in emerging assets",
+    "value": "5%, judged against a lower return benchmark (inflation plus a premium)",
+    "asAt": "17 November 2026",
+    "issue": "investment",
+    "source": "ABC News"
+   },
+   {
+    "label": "Total superannuation savings",
+    "value": "Almost $5 trillion",
+    "asAt": "17 November 2026",
+    "issue": "investment",
+    "source": "ABC News"
+   },
+   {
+    "label": "Members in underperforming funds",
+    "value": "About 1 million (2021) to about 8,500 (2025)",
+    "asAt": "2025",
+    "issue": "investment",
+    "source": "Treasury, via ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Performance test",
+    "def": "An annual test of super funds' returns; funds that fail must tell members and can be barred from taking new members."
+   },
+   {
+    "term": "Venture capital",
+    "def": "Investment in young, high-growth firms in return for a share of ownership."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: Jim Chalmers announces plan to let super funds place riskier investments in housing, energy, startups, 17 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-18-super-funds-emerging-assets-chalmers.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "More super capital shifts the supply of finance for housing, energy and start-ups right, lowering its cost and lifting investment, housing supply and productivity. Limitation: riskier assets could lower some members' retirement returns, so there is a trade-off between growth and retirement income security. Taking up the option would be voluntary and funds' best-interests duty is unchanged.",
+  "questions": [
+   {
+    "q": "Evaluate the potential benefits and risks of allowing superannuation funds to invest more in emerging assets such as housing and venture capital.",
+    "marks": 6
+   }
+  ],
+  "note": "A PROPOSAL, not yet law; the $90 billion is the Treasurer's estimate. Related: 16 November card on super nearing $5 trillion. ABC link is the 17 November page of the site because the digest gives the headline only.",
+  "added": "2026-11-19"
+ },
+ {
   "id": "2026-11-17-ai-investment-boom-wobbles",
   "title": "Is the AI investment boom running out of steam?",
   "date": "2026-11-17",
@@ -93,121 +2279,6 @@
    }
   ],
   "note": "ANALYSIS / OPINION piece by one commentator, not a news report: the valuation and market-share figures are as reported and were not checked. The float is planned, not completed. Related: 9 November (AI shares and household wealth) and the 16 November AI chips explainer.",
-  "added": "2026-11-18"
- },
- {
-  "id": "2026-11-17-china-october-slowdown-reuters",
-  "title": "China's economy loses momentum in October",
-  "date": "2026-11-17",
-  "type": "stats",
-  "outlets": [
-   "Reuters",
-   "JournalArta"
-  ],
-  "summary": "Gives October Chinese activity data and shows how weaker Chinese demand reaches Australia's terms of trade and income.",
-  "lede": "Factory output, retail sales and investment in China all grew more slowly than expected in October, a worrying start to the final quarter for Australia's largest trading partner. ING blamed weak consumer confidence and ANZ does not expect new stimulus before year's end, though officials say AI-linked exports will keep supporting growth.",
-  "about": {
-   "h09": [
-    "1A.8",
-    "1E.1",
-    "2B.4"
-   ],
-   "y12": [
-    "Y3e.3",
-    "Y1a.7",
-    "Y3a.15"
-   ],
-   "y11": [
-    "P6a.2"
-   ]
-  },
-  "also": {
-   "h09": [
-    "2A.1",
-    "3D.3",
-    "1D.9"
-   ],
-   "y12": [
-    "Y3c.4",
-    "Y3e.1"
-   ],
-   "y11": [
-    "P1e.6"
-   ]
-  },
-  "issues": [
-   "global",
-   "growth",
-   "trade"
-  ],
-  "levers": [],
-  "diagrams": [
-   "adas",
-   "flow"
-  ],
-  "figures": [
-   {
-    "label": "China industrial output, year to October",
-    "value": "+4.8% (September 5.5%; forecast 5.3%)",
-    "asAt": "November 2026",
-    "issue": "growth",
-    "source": "Reuters via MarketScreener"
-   },
-   {
-    "label": "China retail sales, year to October",
-    "value": "+0.4% (September 1.1%; forecast 0.8%)",
-    "asAt": "November 2026",
-    "issue": "growth",
-    "source": "Reuters via MarketScreener"
-   },
-   {
-    "label": "China fixed asset investment, January-October",
-    "value": "-8.1% (to September: -7.2%)",
-    "asAt": "November 2026",
-    "issue": "investment",
-    "source": "Reuters via MarketScreener"
-   },
-   {
-    "label": "China GDP, September quarter",
-    "value": "4.5% (year on year)",
-    "asAt": "September quarter 2026",
-    "issue": "growth",
-    "source": "Reuters via MarketScreener"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Fixed asset investment",
-    "def": "Spending on buildings, infrastructure and equipment."
-   },
-   {
-    "term": "Export-led growth",
-    "def": "Growth driven mainly by foreign demand rather than domestic spending."
-   }
-  ],
-  "links": [
-   [
-    "Reuters via MarketScreener: China factory output, retail sales growth slow in October",
-    "https://www.marketscreener.com/news/china-s-factory-output-retail-sales-growth-slow-in-october-ce785ededf81fe2c"
-   ],
-   [
-    "JournalArta: China economy falters, factory output and retail sales, October",
-    "https://journalarta.com/en/2026/11/16/china-economy-falters-factory-output-retail-sales-october/"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-17-china-october-slowdown-reuters.pdf",
-   "label": "Topic 1 news summary",
-   "pages": 1
-  },
-  "angle": "Falling investment and weak consumption shift China's AD left; strong exports only partly offset it. Link to Australia through lower demand for iron ore and other commodities, which lowers the terms of trade and export income.",
-  "questions": [
-   {
-    "q": "Explain how slower economic growth in China could affect Australia's current account and exchange rate.",
-    "marks": 4
-   }
-  ],
-  "note": "Replaces the 16 November ABC version of this story (same October data; it also noted iron ore US$90.95 a tonne on Friday, BHP shares -2.8% on Monday and ANZ economist Zhaopeng Xing expecting no new stimulus this year). Related: 25 October, 31 October and 11 November China cards.",
   "added": "2026-11-18"
  },
  {
@@ -518,117 +2589,6 @@
   "added": "2026-11-18"
  },
  {
-  "id": "2026-11-17-aud-iron-ore-oil-fall-wall-st-selloff",
-  "title": "Dollar and commodity prices fall after a Wall Street sell-off",
-  "date": "2026-11-17",
-  "type": "news",
-  "outlets": [
-   "ABC News markets live blog"
-  ],
-  "summary": "Shows how risk-off markets and weaker iron ore lower the AUD and the terms of trade.",
-  "lede": "A sell-off in US technology shares on Monday spread to commodity and currency markets on Tuesday 17 November. The AUD fell 0.5% to US67.40c, iron ore fell 2.5% to US$88.15 a tonne and Brent crude fell 3.7% to US$92.32 a barrel; weak Chinese October data added to the pressure on iron ore.",
-  "about": {
-   "h09": [
-    "2C.2",
-    "2C.3",
-    "2B.4",
-    "3D.1"
-   ],
-   "y12": [
-    "Y3c.2",
-    "Y3c.4",
-    "Y1a.7"
-   ],
-   "y11": [
-    "P6c.1",
-    "P6a.2"
-   ]
-  },
-  "also": {
-   "h09": [
-    "2C.6",
-    "2A.1"
-   ],
-   "y12": [
-    "Y3c.5",
-    "Y3e.3"
-   ],
-   "y11": [
-    "P2d.1"
-   ]
-  },
-  "issues": [
-   "fx",
-   "trade",
-   "global"
-  ],
-  "levers": [],
-  "diagrams": [
-   "fx",
-   "flow"
-  ],
-  "figures": [
-   {
-    "label": "AUD / USD",
-    "value": "US67.40c (-0.5%)",
-    "asAt": "Tuesday 17 November 2026",
-    "issue": "fx",
-    "source": "ABC News"
-   },
-   {
-    "label": "Iron ore",
-    "value": "US$88.15 a tonne (-2.5%)",
-    "asAt": "17 November 2026",
-    "issue": "trade",
-    "source": "ABC News"
-   },
-   {
-    "label": "Brent crude / gold",
-    "value": "US$92.32 a barrel (-3.7%) / US$3,865 an ounce (-0.4%)",
-    "asAt": "17 November 2026",
-    "issue": "trade",
-    "source": "ABC News"
-   },
-   {
-    "label": "Wall Street: Nasdaq / S&P 500",
-    "value": "-2.5% / -2.0%",
-    "asAt": "Monday 16 November 2026",
-    "issue": "global",
-    "source": "ABC News"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Commodity currency",
-    "def": "A currency, like the AUD, that tends to move with commodity prices."
-   },
-   {
-    "term": "Terms of trade",
-    "def": "Index of export prices divided by index of import prices."
-   }
-  ],
-  "links": [
-   [
-    "ABC News live blog, Tuesday 17 November 2026",
-    "https://www.abc.net.au/news/2026-11-17/asx-markets-business-news-live-updates-tuesday-17-november/107393100"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-17-aud-iron-ore-oil-fall-wall-st-selloff.pdf",
-   "label": "Topic 2 news summary",
-   "pages": 1
-  },
-  "angle": "Lower iron ore prices mean foreign buyers need fewer Australian dollars, and risk-off investors leave the AUD, so demand shifts left and the AUD depreciates. Cheaper oil helps the import bill but cheaper iron ore hurts more, so the net terms of trade effect depends on which price falls further.",
-  "questions": [
-   {
-    "q": "Explain how a fall in iron ore prices could affect Australia's exchange rate and current account.",
-    "marks": 4
-   }
-  ],
-  "note": "Single-day market prices that move daily. Kept alongside (not replacing) the 16 November AUD card, which explains the interest-rate-gap driver, and the 16 November commodity card.",
-  "added": "2026-11-18"
- },
- {
   "id": "2026-11-17-data-centres-inflation-local-disputes",
   "title": "Data centre boom adds to inflation and sparks local disputes",
   "date": "2026-11-17",
@@ -851,7 +2811,7 @@
     "marks": 5
    }
   ],
-  "note": "Replaces the 17 November preview 'A big week for the RBA: minutes, wages and jobs'. UPDATE DUE for what that preview still covered: Wage Price Index (Wed 18 Nov; CBA expected +0.9% for the quarter and 3.3% for the year, up from 3.2%), Labour Force (Thu 19 Nov; about +30,000 jobs and 4.7% unemployment expected after a fall of almost 40,000 in September), October CPI (24 Nov) and Q3 GDP (2 Dec). The RBA also expects October headline inflation to jump as household subsidies drop out of the annual figure.",
+  "note": "Replaces the 17 November preview 'A big week for the RBA: minutes, wages and jobs'. Wage Price Index now filed (18 November card: +1.1% quarter, +3.5% year). Still UPDATE DUE: Labour Force (Thu 19 Nov), October CPI (24 Nov) and Q3 GDP (2 Dec). Original preview items: Wage Price Index (Wed 18 Nov; CBA expected +0.9% for the quarter and 3.3% for the year, up from 3.2%), Labour Force (Thu 19 Nov; about +30,000 jobs and 4.7% unemployment expected after a fall of almost 40,000 in September), October CPI (24 Nov) and Q3 GDP (2 Dec). The RBA also expects October headline inflation to jump as household subsidies drop out of the annual figure.",
   "added": "2026-11-18"
  },
  {
@@ -3520,136 +5480,6 @@
    }
   ],
   "note": "Disclosure in the source: the author's organisation, Climate Resource, received Australian Government funding for analysis on electrification as a COP31 priority. The 35% figure is a pledge and is voluntary. Barriers named are grid and storage investment, incentives to switch from gas and affordable finance. See the ABC COP31 item filed today.",
-  "added": "2026-11-11"
- },
- {
-  "id": "2026-11-11-wage-growth-slows-cba",
-  "title": "Wage growth cools to its slowest pace this year",
-  "date": "2026-11-11",
-  "type": "stats",
-  "outlets": [
-   "CommBank"
-  ],
-  "summary": "Wage growth below inflation means falling real wages, with no sign yet of a wage-price spiral; includes a Phillips curve diagram.",
-  "lede": "CommBank's monthly measure of wage growth slowed to 3.1% (annualised) in October, down from 3.5% in August, and annual wage growth was 3.2%. CBA says there is no sign yet that higher inflation is feeding into a wage-price spiral, and expects unemployment to peak at 5.1% by the end of 2027.",
-  "about": {
-   "h09": [
-    "3B.4",
-    "3C.3",
-    "3E.2"
-   ],
-   "y12": [
-    "Y1c.7",
-    "Y1b.11",
-    "Y2e.1"
-   ],
-   "y11": [
-    "P3d.1"
-   ]
-  },
-  "also": {
-   "h09": [
-    "3B.2",
-    "3E.3"
-   ],
-   "y12": [
-    "Y1d.5",
-    "Y2e.7"
-   ],
-   "y11": [
-    "P1b.2"
-   ]
-  },
-  "issues": [
-   "employment",
-   "inflation",
-   "inequality"
-  ],
-  "levers": [
-   "labour",
-   "monetary"
-  ],
-  "diagrams": [
-   "phillips",
-   "chart"
-  ],
-  "figures": [
-   {
-    "label": "CBA monthly wage growth, annualised",
-    "value": "3.1% (August 3.5%; 3.2-3.3% held January-July)",
-    "asAt": "October 2026",
-    "issue": "employment",
-    "source": "CommBank"
-   },
-   {
-    "label": "Annual wage growth",
-    "value": "3.2%",
-    "asAt": "October 2026",
-    "issue": "employment",
-    "source": "CommBank"
-   },
-   {
-    "label": "Fair Work award rise described as \"short and sharp\"",
-    "value": "4.75%",
-    "asAt": "2026",
-    "issue": "employment",
-    "source": "CommBank"
-   },
-   {
-    "label": "Jobs added",
-    "value": "about 18,000",
-    "asAt": "October 2026",
-    "issue": "employment",
-    "source": "CommBank"
-   },
-   {
-    "label": "Unemployment rate / CBA forecast peak",
-    "value": "4.7% (September) / 5.1% by end-2027",
-    "asAt": "2026-2027",
-    "issue": "employment",
-    "source": "CommBank"
-   },
-   {
-    "label": "Annual wage growth by state: SA / WA / NT / Tas / Vic",
-    "value": "3.8% / 3.7% / 3.7% / 3.5% / 2.9%",
-    "asAt": "October 2026",
-    "issue": "employment",
-    "source": "CommBank"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Nominal wages",
-    "def": "Pay in dollars."
-   },
-   {
-    "term": "Real wages",
-    "def": "Nominal wage growth minus inflation (about 3.2% - 4.3%, which is negative now)."
-   },
-   {
-    "term": "Wage-price spiral",
-    "def": "Higher prices lead to higher wages, which lead to higher prices."
-   }
-  ],
-  "links": [
-   [
-    "CommBank, Monthly wage growth slows to weakest pace seen this year",
-    "https://www.commbank.com.au/articles/newsroom/2026/11/monthly-wage-growth-slows-october.html"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-11-wage-growth-slows-cba.pdf",
-   "label": "Topic 3 news summary",
-   "pages": 1
-  },
-  "angle": "With inflation at 4.3% and wages growing about 3.2%, real wages are falling, which squeezes household spending and affects the distribution of income. A softer labour market moves the economy along the short-run Phillips curve: unemployment rises and wage and price pressure eases, which is what the RBA's rate rises aim for, at the cost of jobs.",
-  "questions": [
-   {
-    "q": "Distinguish between nominal and real wage growth, and explain what it means for households when inflation is 4.3%.",
-    "marks": 3
-   }
-  ],
-  "note": "This is CBA account data, not the ABS Wage Price Index, so treat it as an early signal. Victoria has had the slowest wage growth for five months, according to CBA. Jobs growth of about 18,000 is slightly below the pace needed to stop unemployment rising.",
   "added": "2026-11-11"
  },
  {
@@ -11765,127 +13595,6 @@
    }
   ],
   "note": "A roundup of live-blog items, so claims are reported as made: the 75,000 figure is the government's and was not checked. The price cap was a backbench idea, not government policy. The ATO extended credit-card tax payments to mid-2027 after a small-business backlash, and Peter Costello opposed any GST rise."
- },
- {
-  "id": "2026-10-29-gas-reservation-bill-passes-house",
-  "title": "Gas reservation bill passes the House: up to 20% of exports for local users",
-  "date": "2026-10-29",
-  "added": "2026-10-29",
-  "type": "news",
-  "outlets": [
-   "ABC News",
-   "Business News WA",
-   "Prime Minister's office"
-  ],
-  "summary": "A current microeconomic intervention in an energy market, with a supply and demand diagram and the trade-off with export earnings and investment.",
-  "lede": "The Domestic Gas Reservation Bill, allowing up to 20% of gas exports to be reserved for the domestic market, passed the House of Representatives on 29 October and goes to the Senate. The Prime Minister says more local supply will put downward pressure on gas prices, which is particularly important for manufacturing.",
-  "about": {
-   "h09": [
-    "4E.1",
-    "4E.2"
-   ],
-   "y12": [
-    "Y2d.1",
-    "Y2d.4",
-    "Y2d.5"
-   ],
-   "y11": []
-  },
-  "also": {
-   "h09": [
-    "3C.3",
-    "4E.3",
-    "2B.4"
-   ],
-   "y12": [
-    "Y2d.6",
-    "Y1c.4",
-    "Y3a.16"
-   ],
-   "y11": [
-    "P2h.1"
-   ]
-  },
-  "issues": [
-   "inflation",
-   "trade",
-   "environment"
-  ],
-  "levers": [
-   "micro"
-  ],
-  "diagrams": [
-   "ds",
-   "flow"
-  ],
-  "figures": [
-   {
-    "label": "Maximum share of gas exports that can be reserved",
-    "value": "20%",
-    "asAt": "29 October 2026",
-    "issue": "trade",
-    "source": "ABC News; Prime Minister"
-   },
-   {
-    "label": "Electricity prices, annual",
-    "value": "+13% (September CPI)",
-    "asAt": "September 2026",
-    "issue": "inflation",
-    "source": "ABS via digest"
-   },
-   {
-    "label": "Physical energy exports",
-    "value": "ten-year low (as reported)",
-    "asAt": "2024-25",
-    "issue": "trade",
-    "source": "ABS via digest"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Gas reservation",
-    "def": "Requiring a share of production to be sold on the domestic market."
-   },
-   {
-    "term": "Microeconomic reform",
-    "def": "Policies that change how individual markets work to improve efficiency or outcomes."
-   },
-   {
-    "term": "Sovereign risk",
-    "def": "The risk that a government changes the rules and harms investors."
-   }
-  ],
-  "links": [
-   [
-    "ABC News, Federal politics live blog, 29 Oct 2026",
-    "https://www.abc.net.au/news/2026-10-29/federal-politics-live-blog-oct-29/107320104"
-   ],
-   [
-    "Prime Minister's press conference, 29 Oct 2026 (via Mirage News)",
-    "https://miragenews.com/australian-prime-minister-press-conference-1768488/"
-   ],
-   [
-    "Business News, Gas reservation scheme passes House hurdle",
-    "https://businessnews.com.au/article/Gas-reservation-scheme-passes-House-hurdle"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-10/2026-10-29-gas-reservation-bill-passes-house.pdf",
-   "label": "One-page digest",
-   "pages": 1
-  },
-  "angle": "Shows the policy as a supply shift in the domestic market (S1 to S2) lowering price. Evaluate with both sides: lower input costs and energy security against export earnings, investment certainty and sovereign risk.",
-  "questions": [
-   {
-    "q": "Use a supply and demand diagram to explain how a gas reservation policy is expected to affect domestic gas prices.",
-    "marks": 4
-   },
-   {
-    "q": "Evaluate a domestic gas reservation scheme as a microeconomic policy.",
-    "marks": 6
-   }
-  ],
-  "note": "UPDATE DUE: Senate vote. The exporter objections are the digest's expectation of the argument, not quoted positions. Check the ABS source for the energy exports figure before quoting it."
  },
  {
   "id": "2026-10-29-chalmers-rules-out-fuel-discount",
