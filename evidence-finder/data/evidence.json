@@ -246,6 +246,486 @@
   "added": "2026-11-19"
  },
  {
+  "id": "2026-11-19-unemployment-rises-4-9-highest-since-2021",
+  "title": "Unemployment rises to 4.9%, the highest since 2021",
+  "date": "2026-11-19",
+  "type": "stats",
+  "outlets": [
+   "ABS"
+  ],
+  "summary": "Gives the October Labour Force result: rising unemployment, falling employment and participation, and a weak youth market.",
+  "lede": "The ABS October Labour Force survey shows the seasonally adjusted unemployment rate rose to 4.9%, its highest since October 2021, as employment fell by 43,500 and the effects of five interest rate rises flow through to the jobs market.",
+  "about": {
+   "h09": [
+    "3B.1",
+    "3B.2",
+    "3B.3",
+    "3B.6"
+   ],
+   "y12": [
+    "Y1b.1",
+    "Y1b.3",
+    "Y1b.7",
+    "Y1b.11",
+    "Y1b.12"
+   ],
+   "y11": [
+    "P1e.7",
+    "P3d.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3A.7",
+    "4D.3"
+   ],
+   "y12": [
+    "Y1b.5",
+    "Y1b.10"
+   ],
+   "y11": [
+    "P3b.1"
+   ]
+  },
+  "issues": [
+   "employment"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "ds",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Unemployment rate, seasonally adjusted",
+    "value": "4.9% (September 4.7%; trend 4.8%), highest since October 2021",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "ABS Labour Force"
+   },
+   {
+    "label": "Change in employment",
+    "value": "-43,500 to 14.74 million (part-time -40,600; full-time -2,900)",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "ABS Labour Force"
+   },
+   {
+    "label": "Number unemployed",
+    "value": "753,700 (+17,800 in the month; +14.5% on a year ago)",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "ABS Labour Force"
+   },
+   {
+    "label": "Participation rate / employment-to-population ratio",
+    "value": "66.6% (from 66.8%) / 63.3%",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "ABS Labour Force"
+   },
+   {
+    "label": "Youth unemployment (15-24)",
+    "value": "11.3% (September 11.1%; post-COVID average 9.2%)",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "ABS Labour Force"
+   },
+   {
+    "label": "Hours worked / underemployment",
+    "value": "-0.2% / 6.2% (eased slightly)",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "ABS Labour Force"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Unemployment rate",
+    "def": "The unemployed as a share of the labour force (employed plus unemployed)."
+   },
+   {
+    "term": "Participation rate",
+    "def": "The share of the working-age population in the labour force."
+   }
+  ],
+  "links": [
+   [
+    "ABS: Unemployment rate rises to 4.9%",
+    "https://www.abs.gov.au/"
+   ],
+   [
+    "ABS: Labour Force, Australia, October 2026",
+    "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-19-unemployment-rises-4-9-highest-since-2021.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Labour is a derived demand: weaker spending lowers demand for labour, so more of the adjustment shows up as job losses and fewer hours than as lower wages. Look at participation as well as unemployment: it fell, so some people stopped looking and the unemployment rate would otherwise have risen further. Part-time jobs usually go first in a slowdown.",
+  "questions": [
+   {
+    "q": "Using the October data, explain why the unemployment rate and the participation rate are both important for understanding labour market conditions.",
+    "marks": 4
+   }
+  ],
+  "note": "Resolves the 18 November job-ads card's UPDATE DUE for the October Labour Force result. Next release 17 December 2026. Related: 15 November youth unemployment card and the 19 November recession-warnings analysis. The ABS links are to the ABS site; the digest names the releases only.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-19-recession-warnings-quacking-like-a-recession",
+  "title": "\"Quacking like a recession\": economists warn the downturn is deepening",
+  "date": "2026-11-19",
+  "type": "news",
+  "outlets": [
+   "ABC News (Jessica Irvine, analysis)"
+  ],
+  "summary": "Gives economists' recession warnings after the jump in unemployment, with the rule of thumb and the demand-led downturn mechanism.",
+  "lede": "After the jump in unemployment, leading economists warn Australia is showing the hallmarks of a recession. HSBC's Paul Bloxham says recession is 'clearly a concern' and Betashares' David Bassanese says the economy may already have 'one foot in recession'.",
+  "about": {
+   "h09": [
+    "3A.7",
+    "3B.2",
+    "3B.3"
+   ],
+   "y12": [
+    "Y1a.5",
+    "Y1a.12",
+    "Y1b.11"
+   ],
+   "y11": [
+    "P1e.4",
+    "P1e.5",
+    "P1e.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3A.4",
+    "4H.1"
+   ],
+   "y12": [
+    "Y1a.8",
+    "Y2c.8"
+   ],
+   "y11": [
+    "P1e.6"
+   ]
+  },
+  "issues": [
+   "growth",
+   "employment"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "adas",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Rise in unemployment since Christmas 2025",
+    "value": "0.8 percentage points (from 4.1%); rule of thumb: about 1 point signals recession",
+    "asAt": "November 2026",
+    "issue": "employment",
+    "source": "ABC News"
+   },
+   {
+    "label": "People available and looking for work who could not find it",
+    "value": "More than 750,000 (first time since COVID)",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "ABC News"
+   },
+   {
+    "label": "RBA forecast unemployment",
+    "value": "5.1% by next Christmas (as reported)",
+    "asAt": "November 2026",
+    "issue": "employment",
+    "source": "ABC News"
+   },
+   {
+    "label": "Westpac growth forecasts",
+    "value": "1.4% in 2026; 1% in 2027",
+    "asAt": "November 2026",
+    "issue": "growth",
+    "source": "Westpac, via SMH"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Technical recession",
+    "def": "Two consecutive quarters of falling real GDP."
+   },
+   {
+    "term": "Multiplier effect",
+    "def": "An initial fall in spending leads to further falls as incomes drop."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: Australia's jobs market is quacking like a recession (Jessica Irvine), 19 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "SMH: Shrinking pay packets: real wages drop for fourth consecutive quarter, 18 Nov 2026 (Westpac forecast)",
+    "https://www.smh.com.au/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-19-recession-warnings-quacking-like-a-recession.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Rate rises, cost-of-living pressure and falling house prices cut consumption and investment, shifting AD left and lowering output; two quarters of falling GDP is a technical recession. Unemployment is usually a lagging indicator, but a sharp rise can signal a downturn is under way. Other risks: a falling AUD, elevated oil prices and global disruption.",
+  "questions": [
+   {
+    "q": "Outline the definition of a technical recession and explain two indicators that suggest the Australian economy may be approaching one.",
+    "marks": 5
+   }
+  ],
+  "note": "ANALYSIS and opinion: the quotes are two economists' views, not a call that a recession has begun. UPDATE DUE: September-quarter GDP on 2 December. CAUTION: the RBA 5.1% unemployment forecast is described here as 'by next Christmas', whereas the 17 November minutes card has it at end-2028; check the source before quoting. ABC and SMH links are site pages because the digest gives titles only.",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-19-rba-hike-bets-vanish-unemployment-outlook",
+  "title": "Rate hike bets vanish as rising unemployment changes the RBA outlook",
+  "date": "2026-11-19",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "RBA",
+   "CommBank"
+  ],
+  "summary": "Shows the RBA's inflation-versus-unemployment dilemma and how markets repriced after the jump in unemployment.",
+  "lede": "After the jump in unemployment, markets have dropped bets on another RBA rate rise at the 8 December meeting and now expect at least one cut, possibly two, by Christmas 2027. The RBA faces a classic dilemma: inflation is above target but the labour market is weakening quickly.",
+  "about": {
+   "h09": [
+    "4D.1",
+    "4D.2",
+    "4D.3",
+    "4H.1"
+   ],
+   "y12": [
+    "Y2c.2",
+    "Y2c.4",
+    "Y2c.7",
+    "Y2c.8"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4A.7",
+    "3B.4",
+    "3C.2"
+   ],
+   "y12": [
+    "Y1c.6",
+    "Y2a.2"
+   ],
+   "y11": [
+    "P4c.4"
+   ]
+  },
+  "issues": [
+   "rates",
+   "inflation",
+   "employment"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "phillips",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "RBA cash rate",
+    "value": "4.85% after five hikes this year (from 3.6%); November decision split 6-3",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "RBA; ABC News"
+   },
+   {
+    "label": "Market pricing for the 8 December meeting",
+    "value": "No hike priced; at least one cut, possibly two, expected by Christmas 2027",
+    "asAt": "19 November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "Unemployment the RBA says may be needed to curb inflation",
+    "value": "About 4.5-5% (now 4.9%)",
+    "asAt": "November 2026",
+    "issue": "employment",
+    "source": "RBA, via ABC News"
+   },
+   {
+    "label": "RBA staff inflation forecast",
+    "value": "Above 3% until late 2027",
+    "asAt": "November 2026",
+    "issue": "inflation",
+    "source": "RBA"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Dual mandate",
+    "def": "The RBA's goals of price stability (2-3% inflation) and full employment."
+   },
+   {
+    "term": "Market pricing",
+    "def": "Expected future interest rates implied by financial market trading."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: Australia's jobs market is quacking like a recession (Jessica Irvine)",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "ABC News: Federal politics live, 19 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "CommBank: RBA pause increasingly likely after November's vote",
+    "https://www.commbank.com.au/"
+   ],
+   [
+    "FINA: RBA minutes show board split six-three",
+    "https://www.fixedincomenews.com.au/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-19-rba-hike-bets-vanish-unemployment-outlook.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "Rate rises have slowed demand, moving the economy along the short-run Phillips curve: inflation eases but unemployment rises. With unemployment at 4.9%, near the level the RBA said was needed, further hikes are less likely. Easing too early risks persistent inflation; holding too long risks recession; the full effect of 2026's hikes (a time lag) is still flowing through. Governor Bullock says the RBA does not intend to cause a recession.",
+  "questions": [
+   {
+    "q": "With inflation above target but unemployment rising, discuss the policy dilemma facing the Reserve Bank of Australia.",
+    "marks": 6
+   }
+  ],
+  "note": "Replaces the 17 November card 'CommBank expects the RBA to hold rates in December' (CBA's Belinda Allen: the 7-8 December meeting unlikely to be 'live'; February the next meeting where a rise could be seriously considered; cuts expected August and November 2027; new housing lending -15.5% and investor lending -32.3% in the September quarter). Market pricing and bank forecasts are not RBA decisions: UPDATE DUE after the 8 December meeting. Next data: October monthly CPI (24 Nov) and September-quarter GDP (2 Dec).",
+  "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-19-migrant-workers-underpaid-study",
+  "title": "Two-thirds of surveyed migrant workers are underpaid, study finds",
+  "date": "2026-11-19",
+  "type": "report",
+  "outlets": [
+   "ABC News (federal politics live)",
+   "Migrant Justice Institute"
+  ],
+  "summary": "Gives evidence on underpayment of a vulnerable group of workers and the bargaining power and enforcement issues behind it.",
+  "lede": "A Migrant Justice Institute study of almost 10,000 migrants surveyed in 2024 found about two-thirds were underpaid. Very few tried to recover their wages, and many feared that complaining would put their visa at risk.",
+  "about": {
+   "h09": [
+    "3E.5",
+    "3E.6",
+    "4F.2"
+   ],
+   "y12": [
+    "Y1d.8",
+    "Y1d.5",
+    "Y2e.4"
+   ],
+   "y11": [
+    "P3d.1",
+    "P2h.8"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4F.3",
+    "1A.7"
+   ],
+   "y12": [
+    "Y2e.3",
+    "Y2e.8"
+   ],
+   "y11": [
+    "P3d.3"
+   ]
+  },
+  "issues": [
+   "inequality",
+   "employment"
+  ],
+  "levers": [
+   "labour"
+  ],
+  "diagrams": [
+   "flow",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Surveyed migrants underpaid",
+    "value": "About two-thirds (almost 10,000 surveyed in 2024)",
+    "asAt": "2024",
+    "issue": "inequality",
+    "source": "Migrant Justice Institute, via ABC News"
+   },
+   {
+    "label": "Underpaid workers who tried to recover wages",
+    "value": "One in seven (about 14%)",
+    "asAt": "2024",
+    "issue": "inequality",
+    "source": "Migrant Justice Institute, via ABC News"
+   },
+   {
+    "label": "Feared that action would put their visa or residency pathway at risk",
+    "value": "28%",
+    "asAt": "2024",
+    "issue": "inequality",
+    "source": "Migrant Justice Institute, via ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Wage theft",
+    "def": "Paying workers less than their legal entitlements under awards or the minimum wage."
+   },
+   {
+    "term": "Bargaining power",
+    "def": "A worker's ability to negotiate pay and conditions; weaker when a visa depends on the employer."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: Federal politics live, 19 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-19-migrant-workers-underpaid-study.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Visas that depend on the employer weaken bargaining power and discourage complaints, so underpayment goes unreported and law-abiding firms are undercut. Policy options: stronger Fair Work Ombudsman enforcement, visa protections for reporting and low-cost ways to recover wages; limits: enforcement is costly, small businesses are hard to monitor and policies cutting migration can increase insecurity.",
+  "questions": [
+   {
+    "q": "Explain how underpayment of migrant workers affects the distribution of income, and outline one policy that could address it.",
+    "marks": 4
+   }
+  ],
+  "note": "Survey data are from 2024, reported 19 November 2026; the survey sample is not necessarily representative of all migrant workers. The ABC link is the news home page because the digest cites a live blog only. Related: 18 November backpacker visa backtrack card.",
+  "added": "2026-11-19"
+ },
+ {
   "id": "2026-11-18-albanese-apec-shenzhen-xi-barriers",
   "title": "Albanese heads to APEC in Shenzhen as Xi calls for lower trade barriers",
   "date": "2026-11-18",
@@ -1272,7 +1752,7 @@
     "marks": 6
    }
   ],
-  "note": "UPDATE DUE: October Labour Force data released Thursday 19 November. Related: 16 November Labour Force preview (RBA week) and 4 November job vacancies and AI card.",
+  "note": "The October Labour Force result is now filed (19 November card: unemployment 4.9%, employment -43,500). Related: 16 November Labour Force preview (RBA week) and 4 November job vacancies and AI card.",
   "added": "2026-11-19"
  },
  {
@@ -2811,112 +3291,7 @@
     "marks": 5
    }
   ],
-  "note": "Replaces the 17 November preview 'A big week for the RBA: minutes, wages and jobs'. Wage Price Index now filed (18 November card: +1.1% quarter, +3.5% year). Still UPDATE DUE: Labour Force (Thu 19 Nov), October CPI (24 Nov) and Q3 GDP (2 Dec). Original preview items: Wage Price Index (Wed 18 Nov; CBA expected +0.9% for the quarter and 3.3% for the year, up from 3.2%), Labour Force (Thu 19 Nov; about +30,000 jobs and 4.7% unemployment expected after a fall of almost 40,000 in September), October CPI (24 Nov) and Q3 GDP (2 Dec). The RBA also expects October headline inflation to jump as household subsidies drop out of the annual figure.",
-  "added": "2026-11-18"
- },
- {
-  "id": "2026-11-17-cba-expects-rba-december-hold",
-  "title": "CommBank expects the RBA to hold rates in December",
-  "date": "2026-11-17",
-  "type": "news",
-  "outlets": [
-   "CommBank Newsroom"
-  ],
-  "summary": "Shows housing lending falling as evidence of the transmission mechanism and why a central bank may pause above target.",
-  "lede": "Commonwealth Bank economists expect the RBA to keep the cash rate at 4.85% at its 7-8 December meeting. CBA's Belinda Allen says the meeting is unlikely to be 'live' and that February is the next meeting where a rise could be seriously considered if inflation surprises up.",
-  "about": {
-   "h09": [
-    "4D.2",
-    "4D.3",
-    "4H.1"
-   ],
-   "y12": [
-    "Y2c.4",
-    "Y2c.5",
-    "Y2c.8"
-   ],
-   "y11": [
-    "P4c.7",
-    "P4c.3"
-   ]
-  },
-  "also": {
-   "h09": [
-    "3C.3",
-    "4D.1"
-   ],
-   "y12": [
-    "Y2a.2",
-    "Y1c.4"
-   ],
-   "y11": [
-    "P4c.4"
-   ]
-  },
-  "issues": [
-   "rates",
-   "housing",
-   "inflation"
-  ],
-  "levers": [
-   "monetary"
-  ],
-  "diagrams": [
-   "chart",
-   "flow"
-  ],
-  "figures": [
-   {
-    "label": "New housing lending, September quarter",
-    "value": "-15.5%",
-    "asAt": "September quarter 2026",
-    "issue": "housing",
-    "source": "CommBank Newsroom"
-   },
-   {
-    "label": "Investor housing lending, September quarter",
-    "value": "-32.3%",
-    "asAt": "September quarter 2026",
-    "issue": "housing",
-    "source": "CommBank Newsroom"
-   },
-   {
-    "label": "CBA forecast",
-    "value": "Hold at 4.85% in December; cuts in August and November 2027",
-    "asAt": "17 November 2026",
-    "issue": "rates",
-    "source": "CommBank Newsroom"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Forward guidance",
-    "def": "Signals about the likely future path of interest rates."
-   },
-   {
-    "term": "Data-dependent",
-    "def": "Policy decisions that respond to new economic data as it is released."
-   }
-  ],
-  "links": [
-   [
-    "CommBank Newsroom: RBA rate pause, split vote, December 2026",
-    "https://www.commbank.com.au/articles/newsroom/2026/11/rba-rate-pause-split-vote-december-2026.html"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-17-cba-expects-rba-december-hold.pdf",
-   "label": "Topic 4 news summary",
-   "pages": 1
-  },
-  "angle": "A sharp fall in housing lending shows the credit and asset-price channels working, so earlier rises are already slowing demand. Pausing while inflation is above target shows the RBA balancing price stability against rising unemployment; the 6-3 minutes show the uncertainty inside the board.",
-  "questions": [
-   {
-    "q": "Explain why the RBA might keep the cash rate on hold even while inflation is above its target band.",
-    "marks": 4
-   }
-  ],
-  "note": "FORECAST by one bank, filed as published: UPDATE DUE after the 7-8 December decision. Key data before then: October CPI (24 Nov) and September-quarter GDP (2 Dec). Related: 11 November card on whether the RBA has peaked.",
+  "note": "Replaces the 17 November preview 'A big week for the RBA: minutes, wages and jobs'. Wage Price Index now filed (18 November card: +1.1% quarter, +3.5% year). Labour Force now filed (19 November card: unemployment 4.9%). Still UPDATE DUE: October CPI (24 Nov) and Q3 GDP (2 Dec). Original preview items: Wage Price Index (Wed 18 Nov; CBA expected +0.9% for the quarter and 3.3% for the year, up from 3.2%), Labour Force (Thu 19 Nov; about +30,000 jobs and 4.7% unemployment expected after a fall of almost 40,000 in September), October CPI (24 Nov) and Q3 GDP (2 Dec). The RBA also expects October headline inflation to jump as household subsidies drop out of the annual figure.",
   "added": "2026-11-18"
  },
  {
