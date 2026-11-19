@@ -1,0 +1,260 @@
+{
+  "checked": "2026-11-20",
+  "measures": {
+    "lf_unemp": {
+      "label": "Unemployment rate", "value": "4.9%", "prev": "4.7%",
+      "period": "October 2026, seasonally adjusted", "released": "2026-11-19",
+      "next": ["2026-12-17", "2027-01-21", "2027-02-18", "2027-03-25", "2027-04-15", "2027-05-20"],
+      "release": "ABS Labour Force", "source": "ABS Labour Force, Australia (6202)",
+      "url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/latest-release"
+    },
+    "lf_underutil": {
+      "label": "Underutilisation rate", "value": "11.1%", "prev": "11.1%",
+      "period": "October 2026, seasonally adjusted", "released": "2026-11-19",
+      "next": ["2026-12-17", "2027-01-21", "2027-02-18", "2027-03-25", "2027-04-15", "2027-05-20"],
+      "release": "ABS Labour Force", "source": "ABS Labour Force, Australia (6202)",
+      "note": "Unemployment 4.9% plus underemployment 6.2%.",
+      "url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/latest-release"
+    },
+    "lf_part": {
+      "label": "Participation rate", "value": "66.6%", "prev": "66.8%",
+      "period": "October 2026, seasonally adjusted", "released": "2026-11-19",
+      "next": ["2026-12-17", "2027-01-21", "2027-02-18", "2027-03-25", "2027-04-15", "2027-05-20"],
+      "release": "ABS Labour Force", "source": "ABS Labour Force, Australia (6202)",
+      "url": "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/latest-release"
+    },
+    "wpi": {
+      "label": "Wages (WPI, annual)", "value": "3.5%", "prev": "3.2%",
+      "period": "Year to September quarter 2026, seasonally adjusted", "released": "2026-11-18",
+      "next": ["2027-02-23"],
+      "release": "ABS Wage Price Index", "source": "ABS Wage Price Index, Australia",
+      "note": "Quarterly rise 1.1%, the largest since the December quarter 2023.",
+      "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/wage-price-index-australia/latest-release"
+    },
+    "minwage": {
+      "label": "National Minimum Wage", "value": "$26.44/hr", "prev": "$24.95/hr",
+      "period": "From 1 July 2026 ($1,004.90 a week)", "released": "2026-06-02",
+      "next": ["2027-06-01"], "approx": true,
+      "release": "FWC Annual Wage Review", "source": "Fair Work Commission, Annual Wage Review 2026",
+      "note": "Award minimum wages rose 4.75%. The 2027 decision date is not set; early June is the usual timing.",
+      "url": "https://www.fairwork.gov.au/pay-and-wages/minimum-wages"
+    },
+    "pop": {
+      "label": "Population growth (annual)", "value": "1.4%",
+      "period": "Year to 31 March 2026", "released": "2026-09-17",
+      "next": ["2026-12-17"],
+      "release": "ABS Population", "source": "ABS National, state and territory population (3101)",
+      "note": "392,700 more people; net overseas migration 292,100.",
+      "url": "https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/latest-release"
+    },
+    "saving": {
+      "label": "Household saving ratio", "value": "6.5%", "prev": "6.4%",
+      "period": "June quarter 2026", "released": "2026-09-02",
+      "next": ["2026-12-02", "2027-03-03", "2027-06-02", "2027-09-01"],
+      "release": "ABS National Accounts", "source": "ABS National Accounts (5206)",
+      "url": "https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product/latest-release"
+    },
+    "debt_income": {
+      "label": "Household debt to income", "value": "≈178%",
+      "period": "June quarter 2026 (approximate)", "released": "2026-09-30",
+      "next": ["2026-12-18"], "approx": true, "verify": true,
+      "release": "RBA Table E2", "source": "RBA Statistical Table E2, series BHFDDIT",
+      "note": "March quarter 2026 was 177.7%. Read the exact June quarter figure from Table E2 before writing it. The RBA updates E2 after the ABS Finance and Wealth release (17 December 2026).",
+      "url": "https://www.rba.gov.au/statistics/tables/"
+    },
+    "cpi_head": {
+      "label": "Headline inflation (CPI)", "value": "4.3%", "prev": "4.0%",
+      "period": "12 months to September 2026", "released": "2026-10-28",
+      "next": ["2026-11-25", "2027-01-06", "2027-01-27"],
+      "release": "ABS Monthly CPI", "source": "ABS Consumer Price Index, Australia (6401)",
+      "note": "Monthly CPI is the headline measure since November 2025. September quarter average: 3.9% annual.",
+      "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release"
+    },
+    "cpi_trim": {
+      "label": "Trimmed mean inflation", "value": "3.6%", "prev": "3.5%",
+      "period": "12 months to September 2026", "released": "2026-10-28",
+      "next": ["2026-11-25", "2027-01-06", "2027-01-27"],
+      "release": "ABS Monthly CPI", "source": "ABS Consumer Price Index, Australia (6401)",
+      "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release"
+    },
+    "cpi_wm": {
+      "label": "Weighted median inflation", "value": "3.4%",
+      "period": "12 months to September 2026", "released": "2026-10-28",
+      "next": ["2026-11-25", "2027-01-06", "2027-01-27"],
+      "release": "ABS Monthly CPI", "source": "ABS Consumer Price Index, Australia (6401)",
+      "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release"
+    },
+    "cash": {
+      "label": "Cash rate target", "value": "4.85%", "prev": "4.60%",
+      "period": "Raised 0.25 points on 3 November 2026", "released": "2026-11-03",
+      "next": ["2026-12-08", "2027-02-09", "2027-03-23", "2027-05-04", "2027-06-22", "2027-08-10", "2027-09-28", "2027-11-02", "2027-12-14"],
+      "time": "2:30pm",
+      "release": "RBA cash rate decision", "source": "RBA Monetary Policy Board",
+      "note": "Fifth rise of 2026. A decision to hold leaves this Post-it unchanged.",
+      "url": "https://www.rba.gov.au/schedules-events/calendar/"
+    },
+    "capex": {
+      "label": "Private capital spending (annual % change)", "value": "+10.7%", "prev": "+14.6%",
+      "period": "Year to June quarter 2026, seasonally adjusted volume", "released": "2026-08-27",
+      "next": ["2026-11-26", "2027-02-25", "2027-05-27"],
+      "release": "ABS Capital Expenditure", "source": "ABS Private New Capital Expenditure (5625)",
+      "note": "Fell 3.6% in the June quarter after a data centre surge in March.",
+      "url": "https://www.abs.gov.au/statistics/economy/business-indicators/private-new-capital-expenditure-and-expected-expenditure-australia/latest-release"
+    },
+    "budget_bal": {
+      "label": "Budget balance 2026-27 ($)", "value": "−$31.5b",
+      "period": "2026-27 Budget estimate (12 May 2026)", "released": "2026-05-12",
+      "next": ["2026-12-16", "2027-05-11"], "approx": true,
+      "release": "MYEFO / Budget", "source": "Budget Paper No. 1, 2026-27",
+      "note": "Underlying cash deficit. 2025-26 final outcome: deficit of $22.3b (0.8% of GDP), published 28 September 2026. MYEFO is due in December; its date is not announced (17 December last year).",
+      "url": "https://budget.gov.au/"
+    },
+    "budget_bal_gdp": {
+      "label": "Budget balance 2026-27 (% of GDP)", "value": "−1.0%",
+      "period": "2026-27 Budget estimate (12 May 2026)", "released": "2026-05-12",
+      "next": ["2026-12-16", "2027-05-11"], "approx": true,
+      "release": "MYEFO / Budget", "source": "Budget Paper No. 1, 2026-27",
+      "url": "https://budget.gov.au/"
+    },
+    "tax_gdp": {
+      "label": "Tax receipts (% of GDP)", "value": "23.8%",
+      "period": "2026-27 Budget estimate", "released": "2026-05-12",
+      "next": ["2026-12-16", "2027-05-11"], "approx": true,
+      "release": "MYEFO / Budget", "source": "Budget Paper No. 1, 2026-27",
+      "note": "Forecast to fall to 23.6% by 2029-30.",
+      "url": "https://budget.gov.au/"
+    },
+    "gdp_fc": {
+      "label": "Real GDP growth forecast", "value": "1¾%",
+      "period": "2026-27 Budget forecast for 2026-27", "released": "2026-05-12",
+      "next": ["2026-12-16", "2027-05-11"], "approx": true,
+      "release": "MYEFO / Budget", "source": "Budget Paper No. 1, 2026-27",
+      "note": "Revised down from 2¼% at the 2025-26 MYEFO.",
+      "url": "https://budget.gov.au/"
+    },
+    "gross_debt": {
+      "label": "Gross government debt ($)", "value": "$1,051.0b",
+      "period": "Estimate for 30 June 2027 (2026-27 Budget)", "released": "2026-05-12",
+      "next": ["2026-12-16", "2027-05-11"], "approx": true,
+      "release": "MYEFO / Budget", "source": "Budget Paper No. 1, 2026-27",
+      "note": "Actual at 30 June 2026: gross debt $971.4b (33.2% of GDP), net debt $550.0b (18.8%). Net debt estimate for 30 June 2027: $616.6b (19.9%).",
+      "url": "https://budget.gov.au/"
+    },
+    "gross_debt_gdp": {
+      "label": "Gross government debt (% of GDP)", "value": "34.0%",
+      "period": "Estimate for 30 June 2027 (2026-27 Budget)", "released": "2026-05-12",
+      "next": ["2026-12-16", "2027-05-11"], "approx": true,
+      "release": "MYEFO / Budget", "source": "Budget Paper No. 1, 2026-27",
+      "url": "https://budget.gov.au/"
+    },
+    "tot": {
+      "label": "Terms of trade (annual % change)", "value": "−0.6%",
+      "period": "Year to June quarter 2026", "released": "2026-09-02",
+      "next": ["2026-12-02", "2027-03-03", "2027-06-02", "2027-09-01"],
+      "release": "ABS National Accounts", "source": "ABS National Accounts (5206)",
+      "note": "Fell 1.6% in the June quarter.",
+      "url": "https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product/latest-release"
+    },
+    "aud_chg": {
+      "label": "AUD/USD (12-month % change)", "value": "≈+3%",
+      "period": "US$0.6720 on 18 November 2026 against a November 2025 average of US$0.6504", "released": "2026-11-18",
+      "cadence": "weekly", "verify": true,
+      "release": "RBA exchange rates", "source": "RBA exchange rates (calculated)",
+      "note": "Calculated here, about +3.3%. Check the same-day rate a year earlier in RBA Table F11 if you want it exact.",
+      "url": "https://www.rba.gov.au/statistics/frequency/exchange-rates.html"
+    },
+    "cab_12m": {
+      "label": "Current account balance (12 months)", "value": "−$94.4b",
+      "period": "Four quarters to June 2026 (sum of seasonally adjusted quarters)", "released": "2026-09-01",
+      "next": ["2026-12-01", "2027-03-02"],
+      "release": "ABS Balance of Payments", "source": "ABS Balance of Payments (5302)",
+      "note": "Quarterly deficits: Sep 2025 $19.0b, Dec $22.8b, Mar 2026 $25.4b, Jun $27.2b.",
+      "url": "https://www.abs.gov.au/statistics/economy/international-trade/balance-payments-and-international-investment-position-australia/latest-release"
+    },
+    "cab_gdp": {
+      "label": "Current account balance (% of GDP)", "value": "≈−3.2%",
+      "period": "Four quarters to June 2026", "released": "2026-09-01",
+      "next": ["2026-12-01", "2027-03-02"], "verify": true,
+      "release": "ABS Balance of Payments", "source": "Calculated from ABS 5302 and 2025-26 nominal GDP",
+      "note": "Calculated here: $94.4b over nominal GDP of about $2,926b. The June quarter alone was about 3.7% of quarterly GDP, the highest share since June 2016.",
+      "url": "https://www.abs.gov.au/statistics/economy/international-trade/balance-payments-and-international-investment-position-australia/latest-release"
+    },
+    "cab_q": {
+      "label": "Current account balance (quarter)", "value": "−$27.2b", "prev": "−$25.4b",
+      "period": "June quarter 2026, seasonally adjusted", "released": "2026-09-01",
+      "next": ["2026-12-01", "2027-03-02"],
+      "release": "ABS Balance of Payments", "source": "ABS Balance of Payments (5302)",
+      "url": "https://www.abs.gov.au/statistics/economy/international-trade/balance-payments-and-international-investment-position-australia/latest-release"
+    },
+    "nfl": {
+      "label": "Net foreign liabilities", "value": "$638.9b", "prev": "$761.7b",
+      "period": "At 30 June 2026", "released": "2026-09-01",
+      "next": ["2026-12-01", "2027-03-02"],
+      "release": "ABS Balance of Payments", "source": "ABS Balance of Payments (5302)",
+      "note": "Net foreign debt $1,486.0b less net foreign equity assets $847.1b.",
+      "url": "https://www.abs.gov.au/statistics/economy/international-trade/balance-payments-and-international-investment-position-australia/latest-release"
+    },
+    "nfd": {
+      "label": "Net foreign debt", "value": "$1,486.0b",
+      "period": "At 30 June 2026", "released": "2026-09-01",
+      "next": ["2026-12-01", "2027-03-02"],
+      "release": "ABS Balance of Payments", "source": "ABS Balance of Payments (5302)",
+      "url": "https://www.abs.gov.au/statistics/economy/international-trade/balance-payments-and-international-investment-position-australia/latest-release"
+    },
+    "china": {
+      "label": "China growth forecast", "value": "4.5%", "prev": "4.2%",
+      "period": "2026 forecast, East Asia and Pacific Economic Update (6 October 2026)", "released": "2026-10-06",
+      "next": ["2027-01-12"], "approx": true,
+      "release": "World Bank forecasts", "source": "World Bank",
+      "note": "Next World Bank forecasts come with Global Economic Prospects, usually in the second week of January.",
+      "url": "https://www.worldbank.org/ext/en/country/china"
+    },
+    "gwp": {
+      "label": "Gross world product growth", "value": "3.1%", "prev": "3.0%",
+      "period": "2026 forecast, World Economic Outlook (13 October 2026)", "released": "2026-10-13",
+      "next": ["2027-01-26"], "approx": true,
+      "release": "IMF World Economic Outlook", "source": "IMF World Economic Outlook",
+      "note": "2027 forecast 3.4%; 2025 growth 3.5%. The WEO Update usually comes in late January.",
+      "url": "https://www.imf.org/en/publications/weo"
+    },
+    "gdp": {
+      "label": "GDP growth (annual)", "value": "2.1%", "prev": "2.5%",
+      "period": "Year to June quarter 2026", "released": "2026-09-02",
+      "next": ["2026-12-02", "2027-03-03", "2027-06-02", "2027-09-01"],
+      "release": "ABS National Accounts", "source": "ABS National Accounts (5206)",
+      "note": "0.4% in the June quarter. Financial year 2025-26: 2.4%.",
+      "url": "https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product/latest-release"
+    },
+    "hdi": {
+      "label": "Real household disposable income per person (annual % change)", "value": "+0.9%",
+      "period": "Year to June quarter 2026", "released": "2026-09-02",
+      "next": ["2026-12-02", "2027-03-03", "2027-06-02", "2027-09-01"],
+      "release": "ABS National Accounts", "source": "ABS National Accounts (5206), as reported by the Treasurer",
+      "note": "Up 0.3% in the June quarter.",
+      "url": "https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product/latest-release"
+    },
+    "rulc": {
+      "label": "Real unit labour costs (annual % change)", "value": "+0.5%",
+      "period": "Year to June quarter 2026", "released": "2026-09-02",
+      "next": ["2026-12-02", "2027-03-03", "2027-06-02", "2027-09-01"],
+      "release": "ABS National Accounts", "source": "ABS National Accounts (5206)",
+      "note": "Up 0.9% in the June quarter. GDP per hour worked fell 0.2% over the year.",
+      "url": "https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product/latest-release"
+    },
+    "twi": {
+      "label": "Trade-weighted index", "value": "62.6",
+      "period": "4pm, 18 November 2026", "released": "2026-11-18",
+      "cadence": "weekly",
+      "release": "RBA exchange rates", "source": "RBA exchange rates",
+      "url": "https://www.rba.gov.au/statistics/frequency/exchange-rates.html"
+    },
+    "audusd": {
+      "label": "AUD/USD", "value": "0.6720",
+      "period": "4pm, 18 November 2026", "released": "2026-11-18",
+      "cadence": "weekly",
+      "release": "RBA exchange rates", "source": "RBA exchange rates",
+      "note": "Fell to a 2026 low near US$0.666 on 19 November after the October jobs figures.",
+      "url": "https://www.rba.gov.au/statistics/frequency/exchange-rates.html"
+    }
+  }
+}

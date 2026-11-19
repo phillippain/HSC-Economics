@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Australian Economy Banner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=League+Spartan:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: the printed banner, redrawn to scale, sits first. Post-it colour carries status
+   (yellow = matches the latest figure, pink = rewrite it). Work lists sit underneath. */
+:root{
+  --navy:#173f5f; --gold:#f6b955; --note:#ffe566; --note-edge:#e9c93a;
+  --hot:#ff8fb1; --hot-edge:#e0527f; --amber:#ffb347;
+  --page:#eef1f4; --card:#ffffff; --ink:#14283a; --muted:#566878; --line:#d5dce3;
+  --accent:#173f5f; --good:#1e7a4c; --bad:#b3214f; --warn:#8a5a00;
+  --display:"League Spartan","Manrope",system-ui,sans-serif;
+  --body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --hand:"Kalam","Comic Sans MS","Segoe Print",cursive;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --page:#0f1a24; --card:#172634; --ink:#e8eef3; --muted:#9db0c0; --line:#2b3d4d;
+    --accent:#f6b955; --good:#5fd39b; --bad:#ff8fb1; --warn:#ffc46b; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --page:#0f1a24; --card:#172634; --ink:#e8eef3; --muted:#9db0c0; --line:#2b3d4d;
+  --accent:#f6b955; --good:#5fd39b; --bad:#ff8fb1; --warn:#ffc46b; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--page);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1560px;margin:0 auto;padding:16px}
+h1,h2,h3{font-family:var(--body);margin:0;text-wrap:balance}
+a{color:var(--accent)}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+/* top strip */
+.top{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.top h1{font-size:20px;font-weight:800}
+.top .date{color:var(--muted);font-weight:600}
+.pills{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--card);font-weight:700;font-size:13px}
+.pill i{width:12px;height:12px;border-radius:2px;display:inline-block;border:1px solid rgba(0,0,0,.25)}
+.pill.hot i{background:var(--hot)} .pill.amb i{background:var(--amber)} .pill.ok i{background:var(--note)}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:7px 12px;font-weight:700;font-size:13px}
+.btn.primary{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn:hover{filter:brightness(1.06)}
+.notice{margin:0 0 10px;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--muted);font-size:13px}
+.notice[hidden]{display:none}
+
+/* banner stage */
+.scroller{overflow-x:auto;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.18);background:#fff}
+.sizer{position:relative;overflow:hidden}
+.stage{position:absolute;left:0;top:0;width:1535px;height:784px;transform-origin:0 0;background:#fff;color:var(--navy);font-family:var(--display)}
+.stage .side{position:absolute;left:1072px;top:0;width:463px;height:784px;background:var(--navy)}
+.stage svg{position:absolute;inset:0;pointer-events:none}
+.stage .title{position:absolute;left:0;width:1072px;top:14px;text-align:center;font-weight:800;font-size:58px;letter-spacing:-.5px}
+.panel{position:absolute;background:#f8f9f8;border:2px solid #20262b}
+.t{position:absolute;transform:translateX(-50%);white-space:nowrap;text-align:center;color:#111;line-height:1.1}
+.t.h1{font-weight:700;font-size:29px}
+.t.h2{font-weight:700;font-size:21px}
+.t.sub{font-family:var(--body);font-weight:800;font-size:12px}
+.t.lab{font-family:var(--body);font-weight:800;font-size:9.5px;white-space:normal;width:74px}
+.t.lab.wide{width:104px}
+.t.src{font-family:var(--body);font-weight:500;font-size:7.5px;color:#333}
+.t.big{font-weight:800;font-size:21px;line-height:.95;white-space:normal;width:96px;text-align:center}
+.t.ad{font-weight:800;font-size:66px;color:var(--navy)}
+.slot{position:absolute;border:1.5px solid #20262b;background:#fff}
+.policy{position:absolute;border:1.5px solid #20262b;background:#fff;font-family:var(--body);font-size:7.6px;line-height:1.25;text-align:center;color:#111;padding:4px 5px}
+.policy b{display:block;font-size:8px}
+.pod{position:absolute;background:#fff;border-radius:34px;box-shadow:0 0 0 2px rgba(255,255,255,.35)}
+.tile{position:absolute;background:#fff;border:1.5px solid #20262b}
+.today{position:absolute;left:148px;top:641px;width:897px;height:107px;border:2.5px solid #20262b;border-radius:14px;background:#fff;display:flex;align-items:center;gap:22px;padding:0 24px;font-family:var(--body);color:#111}
+.today .n{font-family:var(--display);font-weight:800;font-size:64px;line-height:1;color:var(--bad);min-width:64px;text-align:center;padding-top:8px}
+.today .n.zero{color:#1e7a4c}
+.today .l{font-weight:800;font-size:19px;line-height:1.2;width:210px}
+.today .l small{display:block;font-weight:600;font-size:12px;color:#566878;margin-top:3px}
+.today ul{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid #d5dce3;font-size:13.5px;font-weight:600;flex:1}
+.today li{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.today li b{display:inline-block;width:92px;font-weight:800}
+
+/* Post-its */
+.note{position:absolute;border:0;padding:0 3px;margin:0;display:flex;align-items:center;justify-content:space-around;gap:4px;
+  background:linear-gradient(180deg,rgba(255,255,255,.35),rgba(255,255,255,0) 30%),var(--note);
+  color:#1b2733;font-family:var(--hand);font-weight:700;box-shadow:1px 3px 5px rgba(0,0,0,.35);border-bottom:2px solid var(--note-edge);z-index:3}
+.note span{white-space:nowrap;line-height:1}
+.note.k1{font-size:21px}.note.k2{font-size:18px}.note.k3{font-size:16px}
+.note.sm{font-size:16.5px}
+.note:hover{z-index:6;transform:rotate(0deg) scale(1.08) !important}
+.note.wait{background:#f1edd3;border-bottom-color:#d6d1b0;color:#77705a}
+.note.update{background:linear-gradient(180deg,rgba(255,255,255,.35),rgba(255,255,255,0) 30%),var(--hot);border-bottom-color:var(--hot-edge)}
+.note.pending{box-shadow:0 0 0 3px var(--amber),1px 3px 5px rgba(0,0,0,.35)}
+.flag{position:absolute;top:-8px;right:-6px;font-family:var(--body);font-weight:800;font-size:8.5px;letter-spacing:.4px;padding:2px 5px;border-radius:3px;color:#fff;background:#b3214f;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,.3)}
+.flag.amb{background:#8a5a00}
+.flag.soon{background:#173f5f}
+.flag.done{background:#1e7a4c;top:auto;bottom:-8px;right:-5px;padding:1px 4px}
+@media (prefers-reduced-motion:no-preference){
+  .note{transition:transform .12s ease}
+  .note.update .flag{animation:nudge 1.6s ease-in-out infinite}
+  @keyframes nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+}
+
+/* lists */
+.cols{display:grid;grid-template-columns:1fr;gap:16px;margin-top:16px}
+.pills,#notice,.cols>.box:first-child{display:none !important}
+.note .flag{display:none}
+@media (max-width:900px){.cols{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.box h2{font-size:16px;font-weight:800;margin-bottom:2px}
+.box .hint{color:var(--muted);font-size:13px;margin:0 0 10px}
+.todo{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px}
+.card{border:1px solid var(--line);border-left:6px solid var(--hot);border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;gap:6px;background:var(--card)}
+.card.amb{border-left-color:var(--amber)}
+.card h3{font-size:14px;font-weight:800}
+.card .where{font-size:12px;color:var(--muted);font-weight:600}
+.card dl{margin:0;display:grid;grid-template-columns:1fr auto;gap:2px 10px;font-size:13px}
+.card dt{color:var(--muted)} .card dd{margin:0;font-family:var(--hand);font-weight:700;font-size:17px;text-align:right;white-space:nowrap}
+.card dd s{font-size:13px;opacity:.6;margin-right:5px}
+.card .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.empty{padding:14px;border:1px dashed var(--line);border-radius:8px;color:var(--good);font-weight:700}
+table.cal{width:100%;border-collapse:collapse;font-size:13px}
+.cal td{padding:7px 6px;border-top:1px solid var(--line);vertical-align:top}
+.cal tr:first-child td{border-top:0}
+.cal .d{white-space:nowrap;font-weight:800;font-variant-numeric:tabular-nums}
+.cal .in{white-space:nowrap;color:var(--muted);font-variant-numeric:tabular-nums}
+.cal .in.now{color:var(--bad);font-weight:800}
+.cal .who{color:var(--muted)}
+.cal .exp{font-size:11px;color:var(--warn);font-weight:700}
+.foot{color:var(--muted);font-size:12.5px;margin:14px 2px 30px;max-width:95ch}
+
+/* detail dialog */
+dialog{border:0;border-radius:12px;padding:0;max-width:min(560px,calc(100vw - 32px));width:100%;background:var(--card);color:var(--ink);box-shadow:0 20px 60px rgba(0,0,0,.45)}
+dialog::backdrop{background:rgba(10,20,30,.55)}
+.dlg{padding:18px 20px}
+.dlg header{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:8px}
+.dlg h2{font-size:18px;font-weight:800}
+.dlg .x{border:0;background:none;color:var(--muted);font-size:22px;line-height:1;padding:2px 6px}
+.dlg .status{font-weight:800;font-size:13px;margin-bottom:10px}
+.dlg .status.hot{color:var(--bad)} .dlg .status.ok{color:var(--good)} .dlg .status.amb{color:var(--warn)}
+.field{border-top:1px solid var(--line);padding:10px 0}
+.field .v{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.field .v b{font-weight:800;font-size:14px}
+.field .v span{font-family:var(--hand);font-weight:700;font-size:24px;white-space:nowrap}
+.field p{margin:3px 0 0;font-size:13px;color:var(--muted)}
+.field p.chk{color:var(--warn);font-weight:700}
+.dlg footer{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;border-top:1px solid var(--line);padding-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>Australian Economy</h1>
+      <div class="date" id="date">&nbsp;</div>
+    </div>
+    <div class="pills">
+      <span class="pill hot"><i></i><span id="p-hot">Rewrite</span></span>
+      <span class="pill amb"><i></i><span id="p-amb">New data out</span></span>
+      <span class="pill ok"><i></i><span id="p-ok">Matches latest figure</span></span>
+      <button class="btn" id="markall" type="button">Mark every Post-it as written</button>
+    </div>
+  </div>
+  <p class="notice" id="notice" hidden></p>
+
+  <div class="scroller"><div class="sizer" id="sizer"><div class="stage" id="stage" aria-label="Australian Economy banner with current figures"></div></div></div>
+
+  <div class="cols">
+    <section class="box">
+      <h2 id="todo-h">Post-its to rewrite</h2>
+      <p class="hint">Write the figure shown, stick it on the banner, then press Done.</p>
+      <div class="todo" id="todo"></div>
+    </section>
+    <section class="box">
+      <h2>Coming releases</h2>
+      <p class="hint">ABS releases come out at 11:30am Canberra time. RBA decisions come at 2:30pm.</p>
+      <table class="cal" id="cal"></table>
+    </section>
+  </div>
+  <p class="foot" id="foot"></p>
+</div>
+
+<dialog id="dlg"><div class="dlg" id="dlg-body"></div></dialog>
+
+<script>
+(function(){
+"use strict";
+var W=1535,H=784,STUDENT=true;
+var DATA=null, M={}, today="", stateReady=false, confirmed={}, db=null, ref=null, canWrite=true, writing=Promise.resolve();
+
+/* ---------- banner layout (design pixels, taken from the printed banner) ---------- */
+var NOTES=[
+ {id:"labour",title:"Unemployment, underutilisation, participation",where:"Labour Market, top box",x:53,y:198,w:152,h:48,m:["lf_unemp","lf_underutil","lf_part"]},
+ {id:"wages",title:"Wages and minimum wage",where:"Labour Market, middle box",x:53,y:300,w:152,h:48,m:["wpi","minwage"]},
+ {id:"households",title:"Households",where:"Labour Market, bottom box",x:53,y:406,w:152,h:48,m:["pop","saving","debt_income"]},
+ {id:"inflation",title:"Inflation",where:"Inflation, top box",x:324,y:198,w:152,h:48,m:["cpi_head","cpi_trim","cpi_wm"]},
+ {id:"cash",title:"Cash rate target",where:"Inflation, beside the Statement",x:430,y:302,w:78,h:46,m:["cash"]},
+ {id:"capex",title:"Capital spending",where:"Inflation, bottom box",x:396,y:411,w:78,h:47,m:["capex"]},
+ {id:"budget",title:"Budget balance",where:"Budget, top box",x:592,y:198,w:152,h:48,m:["budget_bal","budget_bal_gdp"]},
+ {id:"tax",title:"Tax share and growth forecast",where:"Budget, middle box",x:589,y:300,w:152,h:48,m:["tax_gdp","gdp_fc"]},
+ {id:"debt",title:"Government debt",where:"Budget, bottom box",x:592,y:420,w:152,h:48,m:["gross_debt","gross_debt_gdp"]},
+ {id:"tot_aud",title:"Terms of trade and AUD",where:"Trade, top box",x:859,y:198,w:152,h:48,m:["tot","aud_chg"]},
+ {id:"cab",title:"Current account balance",where:"Trade, middle box",x:857,y:300,w:152,h:48,m:["cab_12m","cab_gdp"]},
+ {id:"overseas",title:"Overseas growth",where:"Trade, bottom box",x:859,y:420,w:152,h:48,m:["china","gwp"]},
+ {id:"gdp",title:"GDP growth",where:"Top right, left square",x:1188,y:176,w:92,h:70,m:["gdp"]},
+ {id:"qol",title:"Quality of life",where:"Top right, right square",x:1306,y:176,w:92,h:70,m:["hdi"]}
+];
+var GRID=[
+ ["g_unemp","Unemployment","ABS 6202","lf_unemp"],["g_cab","Current Account Balance","ABS 5302","cab_q"],["g_nfl","Net Foreign Liabilities","ABS 5302","nfl"],
+ ["g_infl","Inflation","ABS 6401","cpi_head"],["g_prod","Productivity","Real unit labour costs % Δ","rulc"],["g_nfd","Net Foreign Debt","ABS 5302","nfd"],
+ ["g_twi","TWI","RBA","twi"],["g_tot","TOT","% Δ · ABS 5206","tot"],["g_aud","AUD/USD","RBA","audusd"]
+];
+GRID.forEach(function(g,i){
+  var c=i%3,r=Math.floor(i/3),tx=1080+c*149,ty=377+r*134;
+  NOTES.push({id:g[0],title:g[1],where:"Right-hand grid, row "+(r+1)+", column "+(c+1),x:tx+22,y:ty+9,w:91,h:56,m:[g[3]],sm:true,tile:{x:tx,y:ty,label:g[1],src:g[2]}});
+});
+var PANELS=[[28,127,226,368],[288,127,227,368],[549,127,227,368],[817,127,234,368]];
+var SLOTS=[[53,198,152,48],[53,300,152,48],[53,406,152,48],[324,198,152,48],[396,411,78,47],[592,198,152,48],[589,300,152,48],[592,420,152,48],[859,198,152,48],[857,300,152,48],[859,420,152,48]];
+var TEXT=[
+ // [x-centre, y, text, class]
+ [141,143,"Labour Market","h1"],[150,187,"ABS Labour Force, Australia","src"],
+ [67,251,"Unemployment","lab"],[67,263,"Target = NAIRU","src"],[136,251,"Under­utilisation","lab"],[207,251,"Participation Rate","lab"],
+ [78,353,"Wages","lab"],[78,364,"ABS WPI","src"],[180,353,"Minimum Wage","lab"],[180,364,"FWC Min Wage Order","src"],
+ [131,376,"Households","h1"],
+ [66,459,"Population Growth","lab"],[66,482,"ABS 3101","src"],[133,459,"Savings Rate","lab"],[133,482,"ABS 5206","src"],[203,459,"Debt: Y Rate","lab"],[203,482,"RBA E2 BHFDDIT","src"],
+ [388,141,"Inflation","h1"],[388,176,"(Annual)","sub"],[458,187,"ABS 6401","src"],
+ [343,251,"Headline","lab"],[400,251,"Trimmed","lab"],[457,251,"Weighted","lab"],
+ [401,273,"Cash Rate Target","h2"],
+ [340,414,"Capital Spending","big"],[463,462,"% Δ","lab"],[463,473,"ABS 5625","src"],
+ [667,143,"Budget","h1"],[722,187,"Budget.gov.au","src"],
+ [606,251,"Billion","lab"],[726,251,"% GDP","lab"],
+ [610,353,"Tax %GDP","lab"],[716,353,"% Δ GDP","lab"],
+ [662,393,"Government Debt","h2"],
+ [604,473,"Billion","lab"],[727,473,"% GDP","lab"],
+ [933,141,"Trade","h1"],[935,177,"(12 months)","sub"],
+ [879,251,"TOT % Δ","lab"],[879,263,"ABS 5206","src"],[985,251,"AUD % Δ","lab"],[985,263,"RBA","src"],
+ [893,353,"Current Account Balance","lab wide"],[893,377,"ABS 5302 Table 23","src"],[994,353,"% GDP","lab"],
+ [935,393,"Overseas Growth","h2"],
+ [876,473,"China","lab"],[876,484,"World Bank","src"],[999,473,"GWP","lab"],[999,484,"IMF","src"]
+];
+
+/* ---------- dates ---------- */
+function sydneyToday(){
+  try{ return new Intl.DateTimeFormat("en-CA",{timeZone:"Australia/Sydney",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date()); }
+  catch(e){ var d=new Date(); return d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2); }
+}
+function toUTC(s){var p=s.split("-");return Date.UTC(+p[0],+p[1]-1,+p[2]);}
+function days(a,b){return Math.round((toUTC(b)-toUTC(a))/864e5);}
+function addDays(s,n){return new Date(toUTC(s)+n*864e5).toISOString().slice(0,10);}
+function fmt(s,long){return new Intl.DateTimeFormat("en-AU",{timeZone:"UTC",weekday:long?"long":"short",day:"numeric",month:long?"long":"short",year:long?"numeric":undefined}).format(new Date(toUTC(s)));}
+function fmtY(s){return new Intl.DateTimeFormat("en-AU",{timeZone:"UTC",day:"numeric",month:"short",year:"numeric"}).format(new Date(toUTC(s)));}
+function nextMonday(s){var dow=new Date(toUTC(s)).getUTCDay();var n=(8-dow)%7;return addDays(s,n===0?7:n);}
+function inWords(n){return n===0?"today":n===1?"tomorrow":"in "+n+" days";}
+
+/* ---------- status ---------- */
+function mInfo(id){
+  var m=M[id],out={out:null,next:null,approx:!!m.approx};
+  if(m.cadence==="weekly"){
+    out.next=nextMonday(today); out.weekly=true;
+    if(days(m.released,today)>9) out.out=addDays(m.released,7);
+    return out;
+  }
+  (m.next||[]).forEach(function(d){
+    if(d>m.released && d<=today){ if(!m.approx||d<today) out.out=d; else if(!out.next) out.next=d; }
+    else if(d>today && !out.next) out.next=d;
+  });
+  return out;
+}
+function nInfo(n){
+  var r={update:false,out:null,next:null,approx:false,changed:[]};
+  var c=confirmed[n.id]&&confirmed[n.id].vals||{};
+  n.m.forEach(function(id){
+    var i=mInfo(id);
+    if(!STUDENT && stateReady && c[id]!==M[id].value){r.update=true;r.changed.push(id);}
+    if(i.out && !i.weekly && (!r.out||i.out>r.out)) r.out=i.out;
+    if(i.out && i.weekly && !r.out) r.out=i.out;
+    if(i.next && (!r.next||i.next<r.next)){r.next=i.next;r.approx=i.approx;r.weekly=!!i.weekly;}
+  });
+  r.soon=r.next!=null && days(today,r.next)<=7 && !r.weekly;
+  r.on=confirmed[n.id]&&confirmed[n.id].on||null;
+  return r;
+}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+
+/* ---------- banner ---------- */
+function el(tag,cls,style,html){var e=document.createElement(tag);if(cls)e.className=cls;if(style)e.style.cssText=style;if(html!=null)e.innerHTML=html;return e;}
+function box(a){return "left:"+a[0]+"px;top:"+a[1]+"px;width:"+a[2]+"px;height:"+a[3]+"px";}
+var stage=document.getElementById("stage"), noteEls={}, todayEl=null;
+function buildStage(){
+  stage.innerHTML="";
+  stage.appendChild(el("div","side"));
+  stage.appendChild(el("div","title","","Australian Economy"));
+  PANELS.forEach(function(p){stage.appendChild(el("div","panel",box(p)));});
+  var g="#f6b955";
+  var svg='<svg viewBox="0 0 '+W+' '+H+'" width="'+W+'" height="'+H+'" aria-hidden="true"><defs><marker id="ah" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="'+g+'"/></marker></defs>'+
+   '<g fill="none" stroke="'+g+'" stroke-width="5" stroke-linejoin="round">'+
+   '<path d="M132 116V92H1290V148"/><path d="M132 92V116" marker-end="url(#ah)"/><path d="M397 92V116" marker-end="url(#ah)"/>'+
+   '<path d="M469 350V400" marker-end="url(#ah)"/><path d="M469 388H240" marker-end="url(#ah)"/>'+
+   '<path d="M205 430H222V524" marker-end="url(#ah)"/><path d="M432 460V524" marker-end="url(#ah)"/>'+
+   '<path d="M665 470V524" marker-end="url(#ah)"/><path d="M935 470V524" marker-end="url(#ah)"/>'+
+   '</g></svg>';
+  stage.insertAdjacentHTML("beforeend",svg);
+  SLOTS.forEach(function(s){stage.appendChild(el("div","slot",box(s)));});
+  stage.appendChild(el("div","policy",box([298,298,124,70]),"<b>Statement on the Conduct of Monetary Policy</b>‘Keep consumer price inflation between 2 – 3 %, on average, over time.’"));
+  TEXT.forEach(function(t){stage.appendChild(el("div","t "+t[3],"left:"+t[0]+"px;top:"+t[1]+"px",t[2]));});
+  [["AD =",95],["C",222],["+",327],["I",432],["+",548],["G",665],["+",798],["(X − M)",940]].forEach(function(a){
+    stage.appendChild(el("div","t ad","left:"+a[1]+"px;top:"+540+"px",a[0]));
+  });
+  stage.appendChild(el("div","pod",box([1147,148,283,177])));
+  stage.appendChild(el("div","slot",box([1188,176,92,70])));stage.appendChild(el("div","slot",box([1306,176,92,70])));
+  stage.appendChild(el("div","t h2","left:1234px;top:256px;font-size:17px","GDP Growth"));
+  stage.appendChild(el("div","t lab","left:1234px;top:277px","% Δ GDP"));stage.appendChild(el("div","t src","left:1234px;top:290px","ABS 5206"));
+  stage.appendChild(el("div","t h2","left:1352px;top:256px;font-size:17px","Quality of life"));
+  stage.appendChild(el("div","t lab","left:1352px;top:277px;width:110px","% Δ Household disposable Y"));stage.appendChild(el("div","t src","left:1352px;top:303px","ABS 5206"));
+  NOTES.forEach(function(n){
+    if(n.tile){
+      stage.appendChild(el("div","tile",box([n.tile.x,n.tile.y,135,120])));
+      stage.appendChild(el("div","slot",box([n.x+12,n.y,66,56])));
+      var two=n.tile.label.length>16;
+      stage.appendChild(el("div","t h2","left:"+(n.tile.x+67)+"px;top:"+(n.tile.y+(two?68:74))+"px;font-size:14.5px;white-space:normal;width:125px",n.tile.label));
+      stage.appendChild(el("div","t src","left:"+(n.tile.x+67)+"px;top:"+(n.tile.y+105)+"px",n.tile.src));
+    }
+  });
+  todayEl=el("div","today");stage.appendChild(todayEl);
+  NOTES.forEach(function(n,i){
+    var b=el("button","note k"+n.m.length+(n.sm?" sm":""),box([n.x,n.y,n.w,n.h])+";transform:rotate("+[-1.3,.9,-.6,1.4,.4,-1][i%6]+"deg)");
+    b.type="button";
+    b.addEventListener("click",function(){openNote(n.id);});
+    noteEls[n.id]=b;stage.appendChild(b);
+  });
+}
+function fit(){
+  var sizer=document.getElementById("sizer"),w=Math.max(sizer.parentNode.clientWidth,900),s=w/W;
+  sizer.style.width=w+"px";sizer.style.height=Math.round(H*s)+"px";stage.style.transform="scale("+s+")";
+}
+
+/* ---------- render ---------- */
+function render(){
+  if(!DATA) return;
+  document.getElementById("date").textContent=fmt(today,true);
+  var nUp=0,nOut=0,nOk=0,todo=[],outs=[];
+  NOTES.forEach(function(n){
+    var s=nInfo(n),b=noteEls[n.id],cls="note k"+n.m.length+(n.sm?" sm":"");
+    var html=n.m.map(function(id){return "<span>"+esc(M[id].value)+"</span>";}).join("");
+    var aria=n.title+": "+n.m.map(function(id){return M[id].label+" "+M[id].value;}).join(", ");
+    if(!stateReady){cls+=" wait";}
+    else if(s.update){cls+=" update";html+='<i class="flag">REWRITE</i>';nUp++;todo.push([n,s]);aria+=". Rewrite this Post-it.";}
+    else{nOk++;}
+    if(s.out&&!STUDENT){cls+=" pending";if(!s.update||!stateReady)html+='<i class="flag amb">NEW DATA</i>';nOut++;outs.push([n,s]);aria+=". New data is out.";}
+    else if(s.soon && !s.update){html+='<i class="flag soon">'+(days(today,s.next)===0?"TODAY":days(today,s.next)+"d")+'</i>';aria+=". Next release "+inWords(days(today,s.next))+".";}
+    b.className=cls;b.innerHTML=html;b.setAttribute("aria-label",aria);
+  });
+  document.getElementById("p-hot").textContent=stateReady?(nUp+" to rewrite"):"Rewrite";
+  document.getElementById("p-amb").textContent=nOut+" with new data out";
+  document.getElementById("p-ok").textContent=stateReady?(nOk+" match the latest figure"):"Matches latest figure";
+  document.getElementById("markall").hidden=!(stateReady&&canWrite&&nUp>1);
+
+  // work list
+  var box=document.getElementById("todo");box.innerHTML="";
+  document.getElementById("todo-h").textContent=stateReady?(nUp===1?"1 Post-it to rewrite":nUp+" Post-its to rewrite"):"Post-its to rewrite";
+  if(!stateReady){box.appendChild(el("div","empty","color:var(--muted)","Loading your saved ticks…"));}
+  else if(!todo.length && !outs.length){box.appendChild(el("div","empty","","Every Post-it matches the latest published figure."));}
+  if(stateReady&&canWrite&&!Object.keys(confirmed).length){box.appendChild(el("div","empty","color:var(--muted);grid-column:1/-1","First visit: nothing has been ticked yet, so every Post-it is pink. Compare each card with your banner and press Done, or use “Mark every Post-it as written” once the banner matches this page."));}
+  todo.forEach(function(p){box.appendChild(card(p[0],p[1],false));});
+  outs.forEach(function(p){ if(!(stateReady&&p[1].update)) box.appendChild(card(p[0],p[1],true)); });
+
+  // calendar
+  var rows={},weekly=[];
+  Object.keys(M).forEach(function(id){
+    var m=M[id];
+    if(m.cadence==="weekly"){weekly.push(id);return;}
+    (m.next||[]).forEach(function(d){
+      if(d<today||days(today,d)>75) return;
+      var k=d+"|"+m.release; (rows[k]=rows[k]||{d:d,rel:m.release,approx:!!m.approx,time:m.time,ids:[]}).ids.push(id);
+    });
+  });
+  var cal=document.getElementById("cal"),h="";
+  Object.keys(rows).sort().forEach(function(k){
+    var r=rows[k],n=days(today,r.d),who={};
+    NOTES.forEach(function(nt){ if(!nt.m.some(function(id){return r.ids.indexOf(id)>=0;})) return; var t=nt.title.toLowerCase(); if(Object.keys(who).some(function(k){return k.toLowerCase().indexOf(t)===0;})) return; who[nt.title]=1; });
+    h+='<tr><td class="d">'+esc(fmt(r.d))+'</td><td><b>'+esc(r.rel)+'</b>'+(r.approx?' <span class="exp">expected date</span>':'')+'<div class="who">'+esc(Object.keys(who).join(" · "))+'</div></td><td class="in'+(n<=1?' now':'')+'">'+inWords(n)+'</td></tr>';
+  });
+  if(weekly.length) h+='<tr><td class="d">Mondays</td><td><b>RBA exchange rates</b><div class="who">AUD/USD · TWI · AUD % change. Rates are published daily at 4pm; this page refreshes them weekly.</div></td><td class="in">'+inWords(days(today,nextMonday(today)))+'</td></tr>';
+  cal.innerHTML=h;
+
+  // banner "today" box
+  var up=Object.keys(rows).sort().slice(0,3).map(function(k){var r=rows[k];return "<li><b>"+esc(fmt(r.d))+"</b>"+esc(r.rel)+(r.approx?" (expected)":"")+"</li>";}).join("");
+  todayEl.innerHTML='<div class="l">Next updates<small>Figures checked '+esc(fmtY(DATA.checked))+'</small></div><ul>'+up+'</ul>';
+
+  document.getElementById("foot").textContent="Figures last checked against the sources on "+fmtY(DATA.checked)+". Release dates come from the ABS and RBA calendars and can change; dates marked expected are not yet announced. Figures marked ≈ are calculated or approximate. Click any Post-it for its period, source and next release.";
+}
+function card(n,s,outOnly){
+  var c=el("div","card"+(outOnly?" amb":""));
+  var conf=confirmed[n.id]&&confirmed[n.id].vals||{};
+  var rowsH=n.m.map(function(id){
+    var m=M[id],old=conf[id];
+    return "<dt>"+esc(m.label)+"</dt><dd>"+(!outOnly&&old&&old!==m.value?"<s>"+esc(old)+"</s>":"")+esc(m.value)+"</dd>";
+  }).join("");
+  var first=M[n.m[0]];
+  c.innerHTML="<div><h3>"+esc(n.title)+"</h3><div class=\"where\">"+esc(n.where)+"</div></div>"+
+    (outOnly?"<div style=\"font-size:13px;font-weight:700;color:var(--warn)\">A newer release came out on "+esc(fmt(s.out))+". This page still shows the earlier figure.</div>":"")+
+    "<dl>"+rowsH+"</dl>"+(n.m.every(function(id){return M[id].period===first.period;})?"<div class=\"where\">"+esc(first.period)+"</div>":"");
+  var row=el("div","row");
+  if(!outOnly&&canWrite){var d=el("button","btn primary","","Done");d.type="button";d.addEventListener("click",function(){mark([n.id]);});row.appendChild(d);}
+  var more=el("button","btn","","Details");more.type="button";more.addEventListener("click",function(){openNote(n.id);});row.appendChild(more);
+  if(outOnly){var a=el("a","btn","text-decoration:none","Open source");a.href=first.url;a.target="_blank";a.rel="noopener";row.appendChild(a);}
+  c.appendChild(row);return c;
+}
+
+/* ---------- detail dialog ---------- */
+var dlg=document.getElementById("dlg"),dlgBody=document.getElementById("dlg-body"),openId=null;
+function openNote(id){openId=id;drawDlg();if(!dlg.open){if(dlg.showModal)dlg.showModal();else dlg.setAttribute("open","");}}
+function drawDlg(){
+  if(!openId) return;
+  var n=NOTES.filter(function(x){return x.id===openId;})[0],s=nInfo(n);
+  var st=(!stateReady||STUDENT)?'':s.update?'<div class="status hot">Rewrite this Post-it'+(s.on?" (last written "+esc(fmtY(s.on))+")":"")+'</div>':'<div class="status ok">Matches the latest figure'+(s.on?", written "+esc(fmtY(s.on)):"")+'</div>';
+  if(s.out&&!STUDENT) st+='<div class="status amb">A newer release came out on '+esc(fmt(s.out))+'. Check the source for the new figure.</div>';
+  var conf=confirmed[n.id]&&confirmed[n.id].vals||{};
+  var f=n.m.map(function(id){
+    var m=M[id],i=mInfo(id),nx=i.weekly?"Refreshed here each Monday (next "+fmt(i.next)+")":i.next?"Next release: "+fmt(i.next)+", "+inWords(days(today,i.next))+(i.approx?" (expected date)":"")+(m.time?" at "+m.time:""):"Next release date not yet published";
+    return '<div class="field"><div class="v"><b>'+esc(m.label)+'</b><span>'+esc(m.value)+'</span></div>'+
+     '<p>'+esc(m.period)+'. Published '+esc(fmtY(m.released))+'.'+(m.prev&&m.prev!==m.value?' Previously '+esc(m.prev)+'.':'')+(stateReady&&conf[id]&&conf[id]!==m.value?' Your Post-it says '+esc(conf[id])+'.':'')+'</p>'+
+     (m.note?'<p>'+esc(m.note)+'</p>':'')+(m.verify?'<p class="chk">Approximate or calculated figure.</p>':'')+
+     '<p>'+esc(nx)+'. <a href="'+esc(m.url)+'" target="_blank" rel="noopener">'+esc(m.source)+'</a></p></div>';
+  }).join("");
+  dlgBody.innerHTML='<header><div><h2>'+esc(n.title)+'</h2><div style="color:var(--muted);font-size:13px;font-weight:600">'+esc(n.where)+'</div></div><button class="x" type="button" aria-label="Close" data-a="close">×</button></header>'+st+f+
+   '<footer>'+(stateReady&&canWrite?(s.update?'<button class="btn primary" type="button" data-a="done">Done, I have rewritten it</button>':'<button class="btn" type="button" data-a="undo">Mark as not yet written</button>'):'')+'<button class="btn" type="button" data-a="close">Close</button></footer>';
+}
+dlgBody.addEventListener("click",function(e){
+  var a=e.target.getAttribute&&e.target.getAttribute("data-a"); if(!a) return;
+  if(a==="close"){closeDlg();}
+  else if(a==="done"){mark([openId]);closeDlg();}
+  else if(a==="undo"){unmark(openId);}
+});
+function closeDlg(){openId=null;if(dlg.close)dlg.close();else dlg.removeAttribute("open");}
+dlg.addEventListener("click",function(e){if(e.target===dlg)closeDlg();});
+dlg.addEventListener("close",function(){openId=null;});
+
+/* ---------- saved ticks: shared store when available, this browser otherwise ---------- */
+function notice(t){var n=document.getElementById("notice");if(t){n.textContent=t;n.hidden=false;}else{n.hidden=true;}}
+function clone(o){return JSON.parse(JSON.stringify(o||{}));}
+function save(){
+  if(ref){
+    var body={confirmed:clone(confirmed),updatedAt:new Date().toISOString()};
+    writing=writing.then(function(){return ref.set(body);}).then(function(){},function(e){
+      if(e&&e.code==="invalid_argument"){canWrite=false;notice("You can view this banner but not tick Post-its off. Ask the owner for Contributor access.");render();}
+      else notice("That tick could not be saved just now. Try again in a moment.");
+    });
+  }else{
+    try{localStorage.setItem("econ-banner-confirmed",JSON.stringify(confirmed));}catch(e){}
+  }
+}
+function mark(ids){
+  confirmed=clone(confirmed);
+  ids.forEach(function(id){var n=NOTES.filter(function(x){return x.id===id;})[0],v={};n.m.forEach(function(k){v[k]=M[k].value;});confirmed[id]={vals:v,on:today};});
+  render();drawDlg();save();
+}
+function unmark(id){confirmed=clone(confirmed);delete confirmed[id];render();drawDlg();save();}
+document.getElementById("markall").addEventListener("click",function(){mark(NOTES.map(function(n){return n.id;}));});
+function useLocal(msg){
+  try{confirmed=JSON.parse(localStorage.getItem("econ-banner-confirmed")||"{}")||{};}catch(e){confirmed={};}
+  stateReady=true;if(msg)notice(msg);render();drawDlg();
+}
+function startState(){
+  if(!(window.claude&&typeof window.claude.use==="function")){useLocal("Ticks are being saved in this browser only.");return;}
+  var slow=setTimeout(function(){ if(!stateReady) notice("Your saved ticks can't be reached yet. Still trying…"); },10000);
+  window.claude.use("db").then(function(d){
+    if(!d){clearTimeout(slow);useLocal("Ticks are being saved in this browser only. Sign in to keep them across devices.");return;}
+    db=d;ref=db.doc("banner/state");
+    ref.onSnapshot(function(snap){
+      var data=snap.exists?snap.data():null;
+      confirmed=data&&data.confirmed?clone(data.confirmed):{};
+      if(!snap.metadata||!snap.metadata.fromCache){clearTimeout(slow);if(canWrite)notice("");}
+      stateReady=true;render();drawDlg();
+    },function(){clearTimeout(slow);if(!stateReady)useLocal("Saved ticks could not be loaded. Ticks are being kept in this browser for now.");});
+  },function(){clearTimeout(slow);useLocal("Ticks are being saved in this browser only.");});
+}
+
+/* ---------- start ---------- */
+today=sydneyToday();
+buildStage();fit();
+window.addEventListener("resize",fit);
+if(window.ResizeObserver) new ResizeObserver(fit).observe(document.querySelector(".scroller"));
+fetch("economy-banner-data.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();}).then(function(d){
+  DATA=d;M=d.measures;stateReady=true;render();
+}).catch(function(){notice("The figures file could not be loaded. Reload the page to try again.");});
+setInterval(function(){var t=sydneyToday();if(t!==today){today=t;render();drawDlg();}},600000);
+})();
+</script>
+</body>
+</html>
