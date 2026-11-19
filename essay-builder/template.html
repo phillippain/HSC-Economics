@@ -217,6 +217,42 @@ svg.dg .l2{stroke:var(--gap);stroke-width:1.8;fill:none}
 svg.dg .l3{stroke:var(--ok);stroke-width:1.8;fill:none}
 svg.dg .ds{stroke:var(--mut);stroke-width:1;stroke-dasharray:3 3;fill:none}
 svg.dg text{font:600 7px var(--body);fill:var(--ink)}
+.dia{grid-template-columns:1fr 176px}
+.dia svg{width:176px;height:132px}
+.dsk{display:grid;gap:3px;justify-items:center}.dsk .fig{font-size:.74rem;font-weight:700;color:var(--mut)}
+.dplan{margin-top:8px;border-top:1px dashed var(--rule2);padding-top:6px}
+.dpt{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;color:var(--mut);text-transform:uppercase;letter-spacing:.04em}
+.dpt b{font-weight:800}
+.labsw{display:inline-flex;border:1px solid var(--rule2);border-radius:8px;overflow:hidden;text-transform:none;letter-spacing:0}
+.labsw button{border:0;background:var(--card);color:var(--mut);font:600 .78rem var(--body);padding:3px 9px;cursor:pointer}
+.labsw button+button{border-left:1px solid var(--rule)}
+.labsw button[aria-pressed="true"]{background:var(--acc);color:var(--acc-ink)}
+.capb{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+svg.dg .cl{font:700 7px var(--body);fill:var(--ink)}
+svg.dg .tg{font:700 6.4px var(--body);fill:var(--mut)}
+svg.dg .at{font:600 6.4px var(--body);fill:var(--mut)}
+svg.dg .lv{stroke:var(--ink);stroke-width:1.8;fill:none}
+svg.dg .lg1{fill:var(--acc)}svg.dg .lg2{fill:var(--gap)}svg.dg .lg0{fill:var(--mut);font-weight:600}
+svg.dg .ar{stroke:var(--ink);stroke-width:1.1;fill:none}
+svg.dg .arh{fill:var(--ink);stroke:none}
+svg.dg circle{fill:var(--mut);stroke:none}
+svg.dg circle.n{fill:var(--gap)}
+.dov{border:1px solid var(--rule);border-radius:12px;padding:10px 12px;margin:14px 0;background:var(--card)}
+.dov h3{font-size:1rem;margin:0 0 6px}
+.dvg{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.dvc{display:grid;grid-template-columns:104px 1fr;gap:9px;font-size:.84rem;align-items:start}
+.dvc svg{width:104px;height:83px;border:1px solid var(--rule);border-radius:6px;background:var(--card)}
+.dvc b{display:block}.dvc .dn{display:block;color:var(--ink)}.dvc em{color:var(--mut);font-size:.8rem}
+.dst{margin:3px 0 0;display:flex;flex-wrap:wrap;gap:3px}
+.dst span{font-size:.72rem;border:1px solid var(--rule2);border-radius:99px;padding:0 7px;color:var(--mut)}
+.dst span::before{content:"○ "}
+.dst span.y{border-color:var(--ok);color:var(--ink)}.dst span.y::before{content:"✓ ";color:var(--ok)}
+.dnote{margin:8px 0 0;font-size:.84rem;color:var(--mut)}
+.odg{display:grid;grid-template-columns:1fr 120px;gap:8px;flex-direction:row-reverse}
+.odg svg{grid-column:2;grid-row:1;width:120px;height:96px;border:1px solid var(--rule);border-radius:6px;background:var(--card)}
+.odg>div{grid-column:1;grid-row:1}.odg p{margin:2px 0}
+@media (max-width:560px){.dsk{justify-items:start}.odg{grid-template-columns:1fr}.odg svg{grid-column:1;grid-row:auto}}
+
 svg.dg rect{fill:var(--card2);stroke:var(--ink);stroke-width:1}
 body.embed .school{display:none}
 body.embed .mast{padding-top:8px}
@@ -237,6 +273,7 @@ body.embed .mast{padding-top:8px}
   #printdoc .pr{display:grid;grid-template-columns:20px 1fr;gap:8px;margin-top:4px}
   #printdoc .pr>b{display:grid;place-items:center;width:18px;height:18px;border-radius:50%;color:#fff;font-size:8pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   #printdoc .pr span{color:#444;font-size:9pt}
+  #printdoc .pr svg.dg{float:right;width:150px;height:120px;margin:0 0 4px 10px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   #printdoc footer{margin-top:10px;font-size:8pt;color:#444;display:flex;justify-content:space-between;gap:12px}
 }
 </style>
@@ -346,7 +383,8 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
       <div class="moves" id="movel"></div>
       <p class="note2"><b>Repeat E → D → E.</b> Two or three cycles a paragraph; each must add a new mechanism or new data.</p>
       <p class="note2 s"><b>Use the stimulus.</b> In Section III, cite the stimulus by its source in at least one cycle of every paragraph.</p>
-      <p class="sub" style="margin-top:10px">A diagram earns marks only when it is accurate, labelled and explained in the paragraph around it. Refer to it in the text before you draw it.</p></div>
+      <p class="sub" style="margin-top:10px">A diagram earns marks only when it is accurate, labelled and explained in the paragraph around it. Refer to it in the text before you draw it.</p>
+      <p class="sub" style="margin-top:6px"><b>Plan each diagram.</b> In step 3, choose the model, choose what changes (the sketch redraws), name the cause from your Explain chain, write the caption that says what it shows and note where you refer to it in the text. Figures are numbered across the whole response, and step 4 lists them all.</p></div>
     <div class="card"><h2>What the directive asks for</h2><p class="sub">The key words in a question tell you what kind of answer earns the marks. Many questions have more than one.</p><div class="verbs" id="verbs"></div></div>
     <div class="card"><h2>Short answers: Section II</h2><p class="sub">Marks and lines show how much depth is needed. Use the stimulus when there is one, and show all working in a calculation.</p>
       <h3 class="h">Outline</h3><p>General, big-picture information. An opening statement, then one clear point for each mark.</p>
@@ -358,7 +396,7 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
       <p style="margin-top:6px"><b>Body.</b> One major idea in each paragraph, fully explained, developed and supported. Go back to the wording of the question regularly.</p>
       <p style="margin-top:6px"><b>Conclusion.</b> Draw the strands of your argument together. Nothing at odds with the body, and no new evidence.</p>
       <p style="margin-top:6px"><b>Data.</b> A top-band response relates the theory to what is happening now in the Australian and global economy, with accurate, dated statistics.</p></div>
-    <div class="card" style="grid-column:1/-1"><h2>Diagrams you can use</h2><p class="sub">The builder suggests diagrams that fit the question. Draw large, title it, label both axes and every curve, and mark the before and after points.</p><div class="dgrid" id="dgl"></div></div>
+    <div class="card" style="grid-column:1/-1"><h2>Diagrams you can use</h2><p class="sub">The builder suggests diagrams that fit the question. Draw large, title it, label both axes and every curve, and mark the before and after points. Curve labels follow the booklet: use <b>AD₁ → AD₂</b> when both curves are named, or <b>AD → AD₁</b> if your teacher asks for the booklet's page 43 style. Use AS for the upward-sloping aggregate supply curve; call it SRAS only when LRAS is on the diagram too.</p><div class="dgrid" id="dgl"></div></div>
   </div>
 </section>
 </main>
@@ -443,6 +481,216 @@ const SUG = { '1A':['cycle','flow','chart'], '1B':['fx','flow','chart'], '1C':['
   '3A':['adas','cycle','circular','ppf'], '3B':['labour','adas','phillips'], '3C':['adas','phillips','chart'], '3D':['fx','flow','chart'], '3E':['lorenz','chart'], '3F':['extern','ppf','ds'],
   '4A':['phillips','cycle','adas'], '4B':['adas','circular','flow'], '4C':['adas','circular','chart'], '4D':['flow','adas','ds'], '4E':['adas','ds','ppf'], '4F':['labour','adas'], '4G':['extern','ds'], '4H':['phillips','adas','flow'], '4I':['adas','phillips','flow'] };
 
+/* ---------- diagram planning: scenarios, sketches that redraw, captions ---------- */
+/* Sketch space: data 0-10 on both axes, drawn into a 120 x 96 box. New curve in red, original curves blue and green. */
+const OX = 22, U = u => OX + u * 9.4, V = v => 76 - v * 7, R1 = n => Math.round(n * 10) / 10;
+const AX2 = '<path class="ax" d="M22 6V76H116"/>';
+const lab2 = (b, mode) => mode === '01' ? [b, b + '₁'] : [b + '₁', b + '₂'];
+const dirW = d => d > 0 ? 'right' : 'left';
+const pts = (fn, u0, u1, vmin = 0.8, vmax = 9.3) => { const a = []; for (let i = 0, u = u0; u <= u1 + 1e-9; i++, u = u0 + i * 0.2) { const v = fn(u); if (v >= vmin && v <= vmax) a.push([u, v]); } return a; };
+const pth = a => a.length ? 'M' + a.map(p => R1(U(p[0])) + ' ' + R1(V(p[1]))).join('L') : '';
+const arrow = (x1, y1, x2, y2) => { const a = Math.atan2(y2 - y1, x2 - x1), L = 3.2, W = 1.9, bx = x2 - Math.cos(a) * L, by = y2 - Math.sin(a) * L, nx = -Math.sin(a) * W, ny = Math.cos(a) * W;
+  return `<path class="ar" d="M${R1(x1)} ${R1(y1)}L${R1(bx)} ${R1(by)}"/><path class="arh" d="M${R1(x2)} ${R1(y2)}L${R1(bx + nx)} ${R1(by + ny)}L${R1(bx - nx)} ${R1(by - ny)}Z"/>`; };
+const dot = (u, v, cls) => `<circle class="${cls || ''}" cx="${R1(U(u))}" cy="${R1(V(v))}" r="1.9"/>`;
+const guide = (u, v) => `<path class="ds" d="M${OX} ${R1(V(v))}H${R1(U(u))}V76"/>`;
+const tx = (u, t) => `<text x="${R1(U(u))}" y="84" text-anchor="middle">${esc(t)}</text>`;
+const ty = (v, t) => `<text x="20" y="${R1(V(v) + 2.4)}" text-anchor="end">${esc(t)}</text>`;
+const tgx = (x, y, t, k) => `<text class="tg ${k || ''}" x="${R1(x)}" y="${R1(y)}">${esc(t)}</text>`;
+const cl = (x, y, t, anchor) => `<text class="cl" x="${R1(x)}" y="${R1(y)}"${anchor ? ` text-anchor="${anchor}"` : ''}>${esc(t)}</text>`;
+
+/* Two-curve markets. A is the downward curve, B the upward curve. */
+const MKT = {
+  ds:     { A: 'D',  B: 'S',   y: 'Price',              x: 'Quantity',           p: 'P',  q: 'Q',
+    ey: (up, a, b) => `the equilibrium price ${up ? 'rises' : 'falls'} from ${a} to ${b}`, ex: (up, a, b) => `the quantity traded ${up ? 'rises' : 'falls'} from ${a} to ${b}` },
+  adas:   { A: 'AD', B: 'AS',  y: 'Price level',        x: 'Real GDP',           p: 'P',  q: 'Y',
+    ey: (up, a, b) => `the price level ${up ? 'rises' : 'falls'} from ${a} to ${b}`, ex: (up, a, b) => `real GDP ${up ? 'rises' : 'falls'} from ${a} to ${b}` },
+  fx:     { A: 'D',  B: 'S',   y: 'Price of A$ (US$)',  x: 'Quantity of A$',     p: 'ER', q: 'Q',
+    ey: (up, a, b) => `the Australian dollar ${up ? 'appreciates' : 'depreciates'} (the exchange rate ${up ? 'rises' : 'falls'} from ${a} to ${b})`, ex: (up, a, b) => `the quantity of A$ traded ${up ? 'rises' : 'falls'} from ${a} to ${b}` },
+  labour: { A: 'D',  B: 'S',   y: 'Wage rate',          x: 'Quantity of labour', p: 'W',  q: 'L',
+    ey: (up, a, b) => `the equilibrium wage ${up ? 'rises' : 'falls'} from ${a} to ${b}`, ex: (up, a, b) => `employment ${up ? 'rises' : 'falls'} from ${a} to ${b}` },
+  extern: { A: 'D',  B: 'MPC', y: 'Price / cost',       x: 'Quantity',           p: 'P',  q: 'Q',
+    ey: (up, a, b) => `price ${up ? 'rises' : 'falls'} from ${a} to ${b}`, ex: (up, a, b) => `quantity ${up ? 'rises' : 'falls'} from ${a} to ${b}` }
+};
+
+/* What can change on each diagram. c: the curve that moves (A, B, LRAS, MW) and d: how far (right is positive). why: prompts for the cause. */
+const SC = {
+  ds: [
+    { id: 'dr', n: 'Demand increases', c: 'A', d: 2.4,  why: 'a rise in incomes, a change in tastes towards the good, a rise in the price of a substitute' },
+    { id: 'dl', n: 'Demand decreases', c: 'A', d: -2.4, why: 'a fall in incomes, a change in tastes away from the good, a fall in the price of a substitute' },
+    { id: 'sr', n: 'Supply increases', c: 'B', d: 2.4,  why: 'lower input costs, better technology, a subsidy to producers' },
+    { id: 'sl', n: 'Supply decreases', c: 'B', d: -2.4, why: 'higher input costs, a tax on producers, a supply disruption' }],
+  adas: [
+    { id: 'adr', n: 'AD increases',  c: 'A', d: 2.4,  why: 'a lower cash rate, higher government spending, a lower exchange rate lifting net exports, higher confidence' },
+    { id: 'adl', n: 'AD decreases',  c: 'A', d: -2.4, why: 'a higher cash rate, contractionary fiscal policy, weaker global growth' },
+    { id: 'asr', n: 'AS increases',  c: 'B', d: 2.4,  why: 'lower input costs, productivity gains, microeconomic reform' },
+    { id: 'asl', n: 'AS decreases',  c: 'B', d: -2.4, why: 'a rise in the oil price, a supply shock, higher wage costs' },
+    { id: 'lras', n: 'LRAS increases (long-run growth)', c: 'LRAS', d: 2, why: 'more or better labour, capital or technology, productivity-raising microeconomic reform' }],
+  fx: [
+    { id: 'dr', n: 'Demand for A$ increases (appreciation)', c: 'A', d: 2.4,  why: 'higher commodity export prices, a higher interest rate differential attracting capital, more foreign investment' },
+    { id: 'dl', n: 'Demand for A$ decreases (depreciation)', c: 'A', d: -2.4, why: 'falling export prices, a lower interest rate differential, weaker global demand' },
+    { id: 'sr', n: 'Supply of A$ increases (depreciation)', c: 'B', d: 2.4,  why: 'stronger demand for imports, capital outflows, Australians investing overseas' },
+    { id: 'sl', n: 'Supply of A$ decreases (appreciation)', c: 'B', d: -2.4, why: 'weaker demand for imports, smaller capital outflows' }],
+  labour: [
+    { id: 'dr', n: 'Demand for labour increases', c: 'A', d: 2.4,  why: 'stronger demand for the product, higher productivity, economic growth' },
+    { id: 'dl', n: 'Demand for labour decreases', c: 'A', d: -2.4, why: 'weaker demand for the product, a recession, automation' },
+    { id: 'sr', n: 'Supply of labour increases',  c: 'B', d: 2.4,  why: 'immigration, higher participation, an ageing workforce staying on' },
+    { id: 'sl', n: 'Supply of labour decreases',  c: 'B', d: -2.4, why: 'emigration, lower participation, an ageing population' },
+    { id: 'mw', n: 'A minimum wage above equilibrium', c: 'MW', d: 0, why: 'a minimum wage set above the market wage',
+      cap: n => `Figure ${n}: A minimum wage Wmin set above the equilibrium wage We reduces the quantity of labour demanded to Qd and raises the quantity supplied to Qs, creating an excess supply of labour (unemployment) of Qs − Qd.` }],
+  extern: [
+    { id: 'tax', n: 'The external cost is internalised (e.g. a carbon price)', c: 'B', d: -2.4, nm: ['MPC', 'MSC'], why: 'a carbon price or pollution tax equal to the external cost, a cap-and-trade scheme',
+      cap: n => `Figure ${n}: Without intervention the market produces Q₁, where D meets MPC, which is more than the socially optimal Q₂ where D meets MSC. A tax equal to the external cost moves supply from MPC to MSC, so price rises from P₁ to P₂ and quantity falls from Q₁ to Q₂.` }],
+  phillips: [
+    { id: 'up',   n: 'Movement up the curve (AD increases)',     why: 'expansionary fiscal or monetary policy raising aggregate demand',
+      cap: n => `Figure ${n}: An increase in aggregate demand moves the economy up the short-run Phillips curve from A to B: unemployment falls from U₁ to U₂ and inflation rises from π₁ to π₂.` },
+    { id: 'dn',   n: 'Movement down the curve (AD decreases)',   why: 'contractionary monetary or fiscal policy reducing aggregate demand',
+      cap: n => `Figure ${n}: A fall in aggregate demand moves the economy down the short-run Phillips curve from A to B: unemployment rises from U₁ to U₂ and inflation falls from π₁ to π₂.` },
+    { id: 'sr',   n: 'The curve shifts right', c: 'P', du: 1.2, dv: 1.6, why: 'a negative supply shock, higher inflation expectations, rising wage costs',
+      cap: (n, m) => `Figure ${n}: A supply shock or higher inflation expectations shifts the short-run Phillips curve right from ${lab2('SRPC', m).join(' to ')}: at the same unemployment rate U₁, inflation is higher (π₁ to π₂).` },
+    { id: 'sl',   n: 'The curve shifts left',  c: 'P', du: -0.8, dv: -1.1, why: 'lower inflation expectations, productivity gains, microeconomic reform',
+      cap: (n, m) => `Figure ${n}: Lower inflation expectations or higher productivity shifts the short-run Phillips curve left from ${lab2('SRPC', m).join(' to ')}: at the same unemployment rate U₁, inflation is lower (π₁ to π₂).` }],
+  ppf: [
+    { id: 'out',   n: 'Economic growth (the PPF shifts out)', why: 'more or better resources, new technology, higher productivity',
+      cap: (n, m) => `Figure ${n}: Economic growth shifts the production possibility frontier outward from ${lab2('PPF', m).join(' to ')}, so more of both goods can be produced.` },
+    { id: 'along', n: 'Opportunity cost (a move along the PPF)', why: 'a choice to produce more of one good',
+      cap: n => `Figure ${n}: Moving from A to B along the PPF shows opportunity cost: producing more of one good means giving up some of the other.` },
+    { id: 'in',    n: 'Unemployed resources (a point inside the PPF)', why: 'a recession leaving resources idle',
+      cap: n => `Figure ${n}: Unemployed resources leave the economy at A, inside the PPF. Putting them to work moves it to B on the frontier, producing more of both goods.` }],
+  lorenz: [
+    { id: 'up',   n: 'Inequality rises', k2: 3.1, why: 'unequal wage growth, rising asset prices, cuts to progressive taxes or transfers',
+      cap: (n, m) => `Figure ${n}: Inequality rises: the Lorenz curve moves from ${lab2('LC', m).join(' to ')}, further from the line of equality. Area A grows relative to A + B, so the Gini coefficient rises.` },
+    { id: 'down', n: 'Inequality falls', k2: 1.5, why: 'progressive taxation, higher transfers, minimum wage increases',
+      cap: (n, m) => `Figure ${n}: Inequality falls: the Lorenz curve moves from ${lab2('LC', m).join(' to ')}, closer to the line of equality. Area A shrinks relative to A + B, so the Gini coefficient falls.` }]
+};
+/* Diagrams with one standard picture: a caption to start from. */
+const CAP = {
+  tariff:   'A tariff lifts the price of imports from Pw to Pw + t. Domestic output rises, domestic consumption and imports fall, and the government collects tariff revenue.',
+  subsidy:  'A subsidy shifts domestic supply from S to S₁. Domestic output rises and imports fall, while consumers still pay the world price Pw and taxpayers bear the cost.',
+  quota:    'A quota limits imports, so the domestic price rises from Pw to P₁. Domestic output rises and consumption falls.',
+  cycle:    'Real GDP moves around its trend, rising to a peak, falling to a trough and then recovering.',
+  circular: 'Injections (I + G + X) and leakages (S + T + M) flow through the circular flow of income. Income rises when injections exceed leakages.',
+  flow:     'A change in [cause] flows through to [first effect] and then to [final effect].',
+  chart:    '[The indicator] moved from [value] in [year] to [value] in [year].'
+};
+const scOf = x => (SC[x.dia] || []).find(s => s.id === x.sc);
+const hasSc = key => !!SC[key];
+
+function mktBody(key, sc, mode) {
+  const g = MKT[key], c = sc ? sc.c : '', dA = c === 'A' ? sc.d : 0, dB = c === 'B' ? sc.d : 0, bN = c === 'LRAS' ? 'SRAS' : g.B;
+  const A0 = pts(u => 10 - u, 0.6, 8.6, 1.2), B0 = pts(u => u, 0.6, 8.6); let s = '';
+  const endA = p => { const q = p[p.length - 1]; return [Math.min(U(q[0]) + 1.5, 104), V(q[1]) + 3.5]; }, endB = (p, up) => { const q = p[p.length - 1]; return [Math.min(U(q[0]) + 1.5, 104), V(q[1]) + (up ? -1.5 : 1)]; };
+  const nmA = dA ? (sc.nm || lab2(g.A, mode)) : [g.A], nmB = dB ? (sc.nm || lab2(g.B, mode)) : [bN];
+  const [p1, p2] = lab2(g.p, mode), [q1, q2] = lab2(g.q, mode);
+  if (c === 'MW') {
+    s += `<path class="l1" d="${pth(A0)}"/><path class="l3" d="${pth(B0)}"/>${cl(...endA(A0), 'D')}${cl(...endB(B0), 'S')}`
+      + `<path class="l2" d="M${OX} ${R1(V(7))}H${R1(U(7))}"/><path class="ds" d="M${R1(U(3))} ${R1(V(7))}V76M${R1(U(7))} ${R1(V(7))}V76"/>${guide(5, 5)}`
+      + dot(5, 5) + dot(3, 7, 'n') + dot(7, 7, 'n') + ty(7, 'Wmin') + ty(5, 'We') + tx(3, 'Qd') + tx(5, 'Qe') + tx(7, 'Qs');
+    return s; }
+  s += `<path class="l1" d="${pth(A0)}"/><path class="l3" d="${pth(B0)}"/>`;
+  if (c === 'LRAS') {
+    const [l1, l2] = lab2('LRAS', mode);
+    s += cl(...endA(A0), 'AD') + cl(...endB(B0), 'SRAS')
+      + `<path class="lv" d="M${R1(U(5))} 76V${R1(V(8.4))}"/><path class="l2" d="M${R1(U(7))} 76V${R1(V(8.4))}"/>`
+      + cl(U(5) - 1.5, 15, l1, 'end') + cl(U(7) + 1.5, 15, l2) + tx(5, q1) + tx(7, q2) + arrow(U(5) + 1.5, V(1.6), U(7) - 1.5, V(1.6));
+    return s; }
+  const A1 = dA ? pts(u => 10 + dA - u, 0.6, 8.6, 1.2) : null, B1 = dB ? pts(u => u - dB, 0.6, 8.6) : null;
+  if (A1) s += `<path class="l2" d="${pth(A1)}"/>`; if (B1) s += `<path class="l2" d="${pth(B1)}"/>`;
+  s += cl(...endA(A0), dA ? nmA[0] : g.A) + cl(...endB(B0), dB ? nmB[0] : bN);
+  if (A1) s += cl(...endA(A1), nmA[1]); if (B1) s += cl(...endB(B1, dB < 0), nmB[1]);
+  s += guide(5, 5) + dot(5, 5) + ty(5, p1) + tx(5, q1);
+  if (sc) { const u2 = (10 + dA + dB) / 2, v2 = u2 - dB; s += guide(u2, v2) + dot(u2, v2, 'n') + ty(v2, p2) + tx(u2, q2);
+    if (dA) s += arrow(U(3.5) + (dA > 0 ? 1.4 : -1.4), V(6.5), U(3.5 + dA) + (dA > 0 ? -1.4 : 1.4), V(6.5));
+    if (dB) s += arrow(U(3.5) + (dB > 0 ? 1.4 : -1.4), V(3.5), U(3.5 + dB) + (dB > 0 ? -1.4 : 1.4), V(3.5)); }
+  return s; }
+function mktCap(key, sc, mode, n) { const g = MKT[key]; if (sc.cap) return sc.cap(n, mode);
+  const [p1, p2] = lab2(g.p, mode), [q1, q2] = lab2(g.q, mode);
+  if (sc.c === 'LRAS') return `Figure ${n}: LRAS shifts right from ${lab2('LRAS', mode).join(' to ')}, raising potential output from ${q1} to ${q2}.`;
+  const base = sc.c === 'A' ? g.A : g.B, [c1, c2] = sc.nm || lab2(base, mode), yUp = (sc.c === 'A') === (sc.d > 0), xUp = sc.d > 0;
+  return `Figure ${n}: ${base} shifts ${dirW(sc.d)} from ${c1} to ${c2}; ${g.ey(yUp, p1, p2)} and ${g.ex(xUp, q1, q2)}.`; }
+
+const phf = u => 0.2 + 14 / (u + 1.2);
+function phBody(sc, mode) { let s = '';
+  const [n1, n2] = lab2('SRPC', mode), moved = sc && sc.c === 'P';
+  const c0 = pts(phf, 0.4, 9.6, 0.5, 9.4); s += `<path class="ds" d="M${R1(U(5))} 76V${R1(V(9.2))}"/>${cl(U(5) + 1.5, 9, 'NAIRU')}<path class="l1" d="${pth(c0)}"/>`;
+  const e0 = c0[c0.length - 1];
+  if (moved) { const c1 = pts(u => phf(u - sc.du) + sc.dv, 0.4, 9.6, 0.5, 9.4), e1 = c1[c1.length - 1];
+    s += `<path class="l2" d="${pth(c1)}"/>` + cl(116, V(e0[1]) + (sc.dv > 0 ? 7 : -2), n1, 'end') + cl(116, V(e1[1]) + (sc.dv > 0 ? -2 : 7), n2, 'end')
+      + guide(5, phf(5)) + dot(5, phf(5)) + tgx(U(5) + 2.5, V(phf(5)) - 2.5, 'A') + ty(phf(5), 'π₁') + tx(5, 'U₁')
+      + `<path class="ds" d="M${OX} ${R1(V(phf(5) + sc.dv))}H${R1(U(5))}"/>` + dot(5, phf(5) + sc.dv, 'n') + tgx(U(5) + 2.5, V(phf(5) + sc.dv) - 2.5, 'B') + ty(phf(5) + sc.dv, 'π₂');
+  } else { s += cl(116, V(e0[1]) - 2, 'SRPC', 'end');
+    if (sc) { const a = sc.id === 'up' ? [6, 3] : [3, 6];
+      s += guide(a[0], phf(a[0])) + guide(a[1], phf(a[1])) + dot(a[0], phf(a[0])) + dot(a[1], phf(a[1]), 'n')
+        + tgx(U(a[0]) + 2.5, V(phf(a[0])) - 2.5, 'A') + tgx(U(a[1]) + 2.5, V(phf(a[1])) - 2.5, 'B')
+        + ty(phf(a[0]), 'π₁') + ty(phf(a[1]), 'π₂') + tx(a[0], 'U₁') + tx(a[1], 'U₂'); } }
+  return s; }
+const ppfv = (u, r) => u > r ? 0 : r * Math.sqrt(1 - (u / r) * (u / r));
+function ppfBody(sc, mode) { const [n1, n2] = lab2('PPF', mode), r1 = 5.4, r2 = 7.8; let s = '';
+  const arc = (r, step) => { const a = []; for (let i = 0; i <= 40; i++) { const u = r * i / 40; a.push([u, ppfv(u, r)]); } return a; };
+  s += `<path class="l1" d="${pth(arc(r1))}"/>`;
+  if (sc && sc.id === 'out') s += `<path class="l2" d="${pth(arc(r2))}"/>` + cl(U(r1 * 0.9) + 2, V(ppfv(r1 * 0.9, r1)) + 1, n1) + cl(U(r2 * 0.88) + 2, V(ppfv(r2 * 0.88, r2)) - 1, n2) + arrow(U(3.9) + 1, V(3.9) - 1, U(5.4) - 1, V(5.4) + 1);
+  else { s += cl(U(r1 * 0.9) + 2, V(ppfv(r1 * 0.9, r1)) - 1, sc ? 'PPF' : 'PPF');
+    if (sc && sc.id === 'along') s += guide(1, ppfv(1, r1)) + guide(4, ppfv(4, r1)) + dot(1, ppfv(1, r1)) + dot(4, ppfv(4, r1), 'n') + tgx(U(1) + 2.5, V(ppfv(1, r1)) - 2.5, 'A') + tgx(U(4) + 2.5, V(ppfv(4, r1)) - 2.5, 'B') + arrow(U(1) + 3, V(ppfv(1, r1)) + 3, U(4) - 3, V(ppfv(4, r1)) - 2);
+    if (sc && sc.id === 'in') s += dot(2.4, 2.6) + tgx(U(2.4) + 2.5, V(2.6) + 5, 'A') + dot(3.1, ppfv(3.1, r1), 'n') + tgx(U(3.1) + 2.5, V(ppfv(3.1, r1)) - 2.5, 'B') + arrow(U(2.4) + 1.5, V(2.6) - 1.5, U(3.1) - 1, V(ppfv(3.1, r1)) + 2.5); }
+  return s; }
+function lzBody(sc, mode) { const [n1, n2] = lab2('LC', mode), k1 = 2, lc = k => { const a = []; for (let i = 0; i <= 36; i++) { const u = 9 * i / 36; a.push([u, 9 * Math.pow(u / 9, k)]); } return a; };
+  let s = `<path class="ds" d="M${R1(U(0))} ${R1(V(0))}L${R1(U(9))} ${R1(V(9))}"/><path class="l1" d="${pth(lc(k1))}"/>`;
+  if (sc) s += `<path class="l2" d="${pth(lc(sc.k2))}"/>`;
+  s += `<text class="cl lg1" x="27" y="15">${esc(sc ? n1 : 'Lorenz curve')}</text>` + (sc ? `<text class="cl lg2" x="27" y="23">${esc(n2)}</text>` : '') + `<text class="cl lg0" x="27" y="${sc ? 31 : 23}">Equality</text>`;
+  return s; }
+
+function dgSvg(key, scId, x) { const d = DG[key]; if (!d) return '';
+  if (!hasSc(key)) return thumb(key);
+  const sc = SC[key].find(s => s.id === scId), mode = S.lab; let body;
+  if (MKT[key]) body = mktBody(key, sc, mode); else if (key === 'phillips') body = phBody(sc, mode); else if (key === 'ppf') body = ppfBody(sc, mode); else body = lzBody(sc, mode);
+  return `<svg class="dg" viewBox="0 0 120 96" role="img" aria-label="${esc(d[0])} sketch${sc ? ': ' + esc(sc.n) : ''}">${AX2}${body}<text class="at" x="24" y="5">${esc(d[1])}</text><text class="at" x="118" y="94" text-anchor="end">${esc(d[2])}</text></svg>`; }
+function capOf(x, n) { const key = x.dia, sc = scOf(x);
+  if (CAP[key]) return `Figure ${n}: ${CAP[key]}`;
+  if (!sc) return '';
+  return MKT[key] ? mktCap(key, sc, S.lab, n) : sc.cap(n, S.lab); }
+
+/* Figures are numbered in reading order across the whole response. */
+function figs(pl) { const out = []; if (!pl) return out;
+  if (pl.kind === 'S') E().parts.forEach(p => { const x = pl.parts[p.l]; if (x && x.dia && DG[x.dia]) out.push({ path: `parts.${p.l}`, x, where: 'Part ' + (p.l.replace(/^Q\d+/, '') || p.l), n: out.length + 1 }); });
+  else pl.paras.forEach((p, i) => p.cycles.forEach((c, j) => { if (c.dia && DG[c.dia]) out.push({ path: `paras.${i}.cycles.${j}`, para: i, x: c, where: `Paragraph ${i + 1}` + (p.cycles.length > 1 ? `, cycle ${j + 1}` : ''), n: out.length + 1 }); }));
+  return out; }
+const figNo = x => { const f = figs(P()).find(f => f.x === x); return f ? f.n : 0; };
+const capOK = x => !!x.dnote.trim() && !/\[[^\]]*\]/.test(x.dnote);
+const dgDone = x => capOK(x) && !!x.ref.trim() && !!x.cause.trim() && (!hasSc(x.dia) || !!x.sc);
+const dgName = x => `${DG[x.dia][0]}${scOf(x) ? ': ' + scOf(x).n.toLowerCase() : ''}`;
+const DGLAB = { adas: '../macro-diagram-lab/', fx: '../macro-diagram-lab/', labour: '../macro-diagram-lab/', lorenz: '../macro-diagram-lab/', extern: '../macro-diagram-lab/', tariff: '../diagram-lab/', quota: '../diagram-lab/', subsidy: '../diagram-lab/' };
+
+const lbBase = x => { const k = x.dia, sc = scOf(x); if (MKT[k]) { if (sc && sc.c === 'LRAS') return 'LRAS'; return sc && sc.c === 'B' ? MKT[k].B : MKT[k].A; } return { phillips: 'SRPC', ppf: 'PPF', lorenz: 'LC' }[k] || 'AD'; };
+function diaBlock(path, sugs) { const x = getP(P(), path), cur = x.dia, rest = DKEYS.filter(k => !sugs.includes(k)), d = DG[cur], sc = scOf(x), part = path.startsWith('parts');
+  const fn = cur ? figNo(x) : 0, cap = cur ? capOf(x, fn) : '';
+  return `<div class="dia"><div><select data-sel="${path}.dia" aria-label="Diagram"><option value="">No diagram in this ${part ? 'part' : 'cycle'}</option>${sugs.length ? `<optgroup label="Suggested for this question">${sugs.map(k => `<option value="${k}" ${cur === k ? 'selected' : ''}>${DG[k][0]}</option>`).join('')}</optgroup>` : ''}<optgroup label="Other diagrams">${rest.map(k => `<option value="${k}" ${cur === k ? 'selected' : ''}>${DG[k][0]}</option>`).join('')}</optgroup></select>
+    ${d && hasSc(cur) ? `<label class="lab">What changes? <em>(the sketch redraws)</em></label><select data-sel="${path}.sc" aria-label="What changes on the diagram"><option value="">Choose what moves</option>${SC[cur].map(s => `<option value="${s.id}" ${x.sc === s.id ? 'selected' : ''}>${esc(s.n)}</option>`).join('')}</select>` : ''}
+    ${d ? `<p class="dhint"><b>Label:</b> ${esc(d[5])}</p>` : `<p class="dhint">Not every cycle needs one. A model earns marks when it shows the mechanism in your Explain step, so plan where each diagram goes.</p>`}</div>${d ? `<div class="dsk">${dgSvg(cur, x.sc)}<span class="fig">Figure ${fn}</span></div>` : ''}</div>
+    ${d ? `<div class="dplan"><div class="dpt"><b>Diagram plan</b>${hasSc(cur) && !(sc && sc.nm) ? `<span class="labsw" role="group" aria-label="Curve labels"><button type="button" data-lab="12" aria-pressed="${S.lab !== '01'}">${lbBase(x)}₁ → ${lbBase(x)}₂</button><button type="button" data-lab="01" aria-pressed="${S.lab === '01'}">${lbBase(x)} → ${lbBase(x)}₁</button></span>` : ''}</div>
+      ${hasSc(cur) ? `<label class="lab">What causes the shift? <em>Link it to your Explain chain.</em></label>${fld(path + '.cause', sc ? 'e.g. ' + sc.why : 'Choose what changes, then name the cause from your Explain chain.')}` : `<label class="lab">What should the reader see? <em>Name the cause, effect or trend this diagram shows.</em></label>${fld(path + '.cause', 'e.g. The reason you are drawing it, in your own words.')}`}
+      <label class="lab">Caption: what the diagram shows <em>(this is the sentence that earns the mark)</em></label>${fld(path + '.dnote', cap ? cap : 'Choose what changes to get a caption to start from, or write your own.', 2)}
+      <div class="capb">${cap ? `<button type="button" class="btn ghost sm" data-capfill="${path}">Use the suggested caption</button>` : ''}${DGLAB[cur] ? `<a class="btn ghost sm" href="${DGLAB[cur]}" target="_blank" rel="noopener">Practise drawing it in the ${DGLAB[cur].includes('macro') ? 'Macro' : 'Protection'} Diagram Lab</a>` : ''}</div>
+      <label class="lab">Where do you refer to it in the text? <em>Mention Figure ${fn} before the reader reaches the drawing.</em></label>${fld(path + '.ref', `e.g. As Figure ${fn} shows, ...`)}</div>` : ''}`; }
+
+function dgNotes() { const pl = P(), fs = figs(pl), notes = [];
+  if (pl.kind === 'E') { const none = pl.paras.map((p, i) => p.cycles.some(c => c.dia) ? 0 : i + 1).filter(Boolean);
+    if (none.length) notes.push(`No diagram in paragraph${none.length > 1 ? 's' : ''} ${none.join(', ')}. That is fine where no model fits, but ask whether one would show the mechanism in your Explain step.`);
+    const cnt = {}; fs.forEach(f => cnt[f.x.dia] = (cnt[f.x.dia] || 0) + 1);
+    Object.keys(cnt).filter(k => cnt[k] > 2).forEach(k => notes.push(`${DG[k][0]} is used ${cnt[k]} times. Check that each use shows a different point, or whether another model would add something new.`)); }
+  return notes; }
+function dgOverview() { const pl = P(), fs = figs(pl), essay = pl.kind === 'E';
+  const chip = (ok, t) => `<span class="${ok ? 'y' : ''}">${t}</span>`;
+  if (!fs.length) return `<div class="dov"><h3>Diagrams in your response</h3><p class="sub">${essay ? 'No diagrams planned yet. In step 3, choose a diagram in any cycle where a model shows the mechanism.' : 'No diagrams planned yet. Parts that ask for a diagram or graph show a diagram box in step 3.'}</p></div>`;
+  return `<div class="dov"><h3>Diagrams in your response: ${fs.length}</h3><div class="dvg">${fs.map(f => `<div class="dvc">${dgSvg(f.x.dia, f.x.sc)}<div><b>Figure ${f.n}</b><span class="dn">${esc(dgName(f.x))}</span><em>${esc(f.where)}</em>
+      <p class="dst">${chip(!hasSc(f.x.dia) || f.x.sc, 'shift chosen')}${chip(f.x.cause.trim(), 'cause')}${chip(capOK(f.x), 'caption')}${chip(f.x.ref.trim(), 'in the text')}</p></div></div>`).join('')}</div>
+    ${dgNotes().map(t => `<p class="dnote">${esc(t)}</p>`).join('')}</div>`; }
+function dgRow(x) { const n = figNo(x), sc = scOf(x);
+  return mvRow('mD', 'D', `<div class="odg">${dgSvg(x.dia, x.sc)}<div><b>Figure ${n}: ${esc(DG[x.dia][0])}</b>${sc ? ` · ${esc(sc.n)}` : ''}
+    <p>${x.cause.trim() ? 'Cause: ' + esc(x.cause) : '<em>Cause: not yet written</em>'}</p><p>${or(x.dnote, 'Say what it shows')}</p><p class="src">${x.ref.trim() ? 'In the text: ' + esc(x.ref) : '<em>Add where you refer to it in the text</em>'}</p></div></div>`); }
+function dgText(x, ind) { const n = figNo(x), sc = scOf(x);
+  return `${ind}D  Diagram (Figure ${n}): ${DG[x.dia][0]}${sc ? ': ' + sc.n : ''}\n${ind}     Cause: ${x.cause || '...'}\n${ind}     Caption: ${x.dnote || '...'}\n${ind}     In the text: ${x.ref || '...'}\n`; }
+function dgPrint(x, pr) { const n = figNo(x), sc = scOf(x), v = s => s && s.trim() ? esc(s) : '&nbsp;';
+  return pr('mD', 'D', `Diagram · Figure ${n}`, `${dgSvg(x.dia, x.sc)}<strong>${esc(DG[x.dia][0])}</strong>${sc ? ' · ' + esc(sc.n) : ''}<br><span>Cause: ${v(x.cause)}</span><br><span>Caption: ${v(x.dnote)}</span><br><span>In the text: ${v(x.ref)}</span>`); }
+
 /* ---------- syllabus ---------- */
 const FW = Object.fromEntries(DATA.fw.map(f => [f.id, f]));
 const PT = {}, SEC = {}, TOP = {};
@@ -469,17 +717,20 @@ const fmtDate = s => { if (!s) return ''; const d = new Date(s + 'T00:00:00'); r
 
 /* ---------- state ---------- */
 const KEY = 'econ-er-builder-v1';
-let S = { fw: 'h09', q: null, plans: {}, qf: { s: 'IV', top: '', verb: '', text: '', n: 40 }, sf: { tab: 'fig', text: '', issue: '', match: true } };
-try { const d = JSON.parse(localStorage.getItem(KEY) || 'null'); if (d && typeof d === 'object') { if (FW[d.fw]) S.fw = d.fw; if (d.plans && typeof d.plans === 'object') S.plans = d.plans; if (d.q && EK[d.q] && S.plans[d.q]) S.q = d.q; } } catch (e) {}
+let S = { fw: 'h09', q: null, lab: '12', plans: {}, qf: { s: 'IV', top: '', verb: '', text: '', n: 40 }, sf: { tab: 'fig', text: '', issue: '', match: true } };
+try { const d = JSON.parse(localStorage.getItem(KEY) || 'null'); if (d && typeof d === 'object') { if (FW[d.fw]) S.fw = d.fw; if (d.lab === '01') S.lab = '01'; if (d.plans && typeof d.plans === 'object') S.plans = d.plans; if (d.q && EK[d.q] && S.plans[d.q]) S.q = d.q; } } catch (e) {}
 if (FW[params.get('fw')]) S.fw = params.get('fw');
-const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ fw: S.fw, q: S.q, plans: S.plans })); } catch (e) {} };
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ fw: S.fw, q: S.q, lab: S.lab, plans: S.plans })); } catch (e) {} };
 const E = () => EK[S.q], P = () => S.plans[S.q];
-const newCycle = () => ({ explain: '', dia: '', dnote: '', ev: [] });
+const newCycle = () => ({ explain: '', dia: '', sc: '', cause: '', dnote: '', ref: '', ev: [] });
+function normPlan(pl) { if (!pl) return; const fix = o => { if (!o) return; ['sc', 'cause', 'ref', 'dnote', 'dia'].forEach(k => { if (typeof o[k] !== 'string') o[k] = ''; }); if (o.dia && !DG[o.dia]) o.dia = ''; if (o.sc && !(SC[o.dia] || []).some(s => s.id === o.sc)) o.sc = ''; };
+  if (pl.kind === 'S') Object.values(pl.parts || {}).forEach(fix); else (pl.paras || []).forEach(p => (p.cycles || []).forEach(fix)); }
+Object.values(S.plans).forEach(normPlan);
 const newPara = () => ({ focus: '', point: '', cycles: [newCycle()], cyc: 0, stim: '', link: '' });
 function scaf(p) { const v = verbs(p.t); if (v.includes('calculate')) return 'calc'; if (p.m <= 2) return 'brief';
   if (['outline','describe','identify','define','distinguish'].includes(v[0])) return 'outline'; return 'explain'; }
 const nPts = p => { const k = scaf(p); return k === 'brief' ? 1 : k === 'outline' ? Math.min(p.m, 4) : p.m <= 4 ? 2 : 3; };
-function newPlan(e) { if (e.s === 'II') { const parts = {}; e.parts.forEach(p => parts[p.l] = { open: '', pts: Array.from({ length: nPts(p) }, () => ({ d: '', e: '', x: '' })), concl: '', formula: '', working: '', answer: '', stim: '', dia: '', dnote: '', ev: [] }); return { kind: 'S', parts, open: e.parts[0].l }; }
+function newPlan(e) { if (e.s === 'II') { const parts = {}; e.parts.forEach(p => parts[p.l] = { open: '', pts: Array.from({ length: nPts(p) }, () => ({ d: '', e: '', x: '' })), concl: '', formula: '', working: '', answer: '', stim: '', dia: '', sc: '', cause: '', dnote: '', ref: '', ev: [] }); return { kind: 'S', parts, open: e.parts[0].l }; }
   return { kind: 'E', stance: 2, thesis: '', terms: '', stim: '', paras: [newPara()], open: 0 }; }
 const getP = (o, path) => path.split('.').reduce((a, k) => a == null ? a : a[k], o);
 function setP(o, path, v) { const ks = path.split('.'); const last = ks.pop(); const t = ks.reduce((a, k) => a[k], o); t[last] = v; }
@@ -532,16 +783,13 @@ function renderUnpack() { const e = E(), pl = P(), p0 = e.parts[0], essay = e.s 
 
 /* ---------- 3a. essay paragraphs ---------- */
 const evChip = (x, i, path) => `<span class="evc" title="${esc((x.source || '') + (x.asAt ? ' · ' + x.asAt : ''))}"><span>${x.t === 'fig' ? `<b>${esc(x.value)}</b> ${esc(x.label)}${x.asAt ? ` (${esc(x.asAt)})` : ''}` : esc(x.title)}</span><button data-rm="${path}|${i}" aria-label="Remove">×</button></span>`;
-function diaBlock(path, sugs) { const cur = getP(P(), path + '.dia'), rest = DKEYS.filter(k => !sugs.includes(k)), d = DG[cur];
-  return `<div class="dia"><div><select data-sel="${path}.dia" aria-label="Diagram"><option value="">No diagram in this ${path.startsWith('paras') ? 'cycle' : 'part'}</option>${sugs.length ? `<optgroup label="Suggested for this question">${sugs.map(k => `<option value="${k}" ${cur === k ? 'selected' : ''}>${DG[k][0]}</option>`).join('')}</optgroup>` : ''}<optgroup label="Other diagrams">${rest.map(k => `<option value="${k}" ${cur === k ? 'selected' : ''}>${DG[k][0]}</option>`).join('')}</optgroup></select>
-    ${d ? `<p class="dhint"><b>Label:</b> ${esc(d[5])}</p><label class="lab">What your diagram shows <em>(this is the sentence that earns the mark)</em></label>${fld(path + '.dnote', 'e.g. Figure 1: AD shifts left from AD to AD₁; the price level falls from P to P₁.')}` : `<p class="dhint">Not every cycle needs one. Aim for at least one diagram in the response.</p>`}</div>${d ? thumb(cur) : ''}</div>`; }
 function sugFor(codes) { const out = []; codes.forEach(c => (SUG[secOf(c)] || []).forEach(k => { if (!out.includes(k)) out.push(k); })); return out.slice(0, 6); }
 function renderParas() { const e = E(), pl = P();
   if (pl.kind === 'S') return renderParts();
   $('#s3h').textContent = 'Plan your paragraphs';
   $('#s3sub').textContent = 'Aim for four or five body paragraphs, one major idea in each. Open a paragraph, then add statistics to it from the Evidence Finder list.';
   $('#paras').innerHTML = pl.paras.map((p, i) => { const nev = p.cycles.reduce((n, c) => n + c.ev.length, 0), on = pl.open === i, sugs = sugFor(p.focus ? [p.focus] : e.c);
-    return `<div class="para ${on ? 'open' : ''}"><button class="ph" data-open="${i}" aria-expanded="${on}"><i>${i + 1}</i><span><b>${p.point ? esc(p.point) : 'Paragraph ' + (i + 1)}</b><em>${p.cycles.length} cycle${p.cycles.length === 1 ? '' : 's'} · ${nev} piece${nev === 1 ? '' : 's'} of evidence${p.cycles.some(c => c.dia) ? ' · diagram' : ''}</em></span><u>${on ? 'Close' : 'Open'}</u></button>
+    return `<div class="para ${on ? 'open' : ''}"><button class="ph" data-open="${i}" aria-expanded="${on}"><i>${i + 1}</i><span><b>${p.point ? esc(p.point) : 'Paragraph ' + (i + 1)}</b><em>${p.cycles.length} cycle${p.cycles.length === 1 ? '' : 's'} · ${nev} piece${nev === 1 ? '' : 's'} of evidence${p.cycles.some(c => c.dia) ? ' · ' + figs(pl).filter(f => f.para === i).map(f => 'Figure ' + f.n).join(', ') : ''}</em></span><u>${on ? 'Close' : 'Open'}</u></button>
     ${on ? `<div class="pb">
       ${e.c.length > 1 ? `<label class="lab">Part of the syllabus this paragraph draws on <em>(narrows the evidence and diagram suggestions)</em></label><select data-sel="paras.${i}.focus"><option value="">Everything the question examines</option>${e.c.map(c => `<option value="${c}" ${p.focus === c ? 'selected' : ''}>${c} ${esc(PT[c].t)}</option>`).join('')}</select>` : ''}
       <div class="mv"><i class="mP">P</i><div><label class="lab">Point <em>${MOVES[0][3]}</em></label>${fld(`paras.${i}.point`, MOVES[0][4])}</div></div>
@@ -554,7 +802,7 @@ function renderParas() { const e = E(), pl = P();
       ${e.st ? `<div class="mv"><i class="mS">S</i><div><label class="lab">Stimulus <em>Cite it by its source in at least one cycle.</em></label>${fld(`paras.${i}.stim`, 'Which figure, trend or quote from the stimulus does this paragraph use?')}</div></div>` : ''}
       <div class="mv"><i class="mL">L</i><div><label class="lab">Link &amp; judge <em>${MOVES[4][3]}</em></label>${fld(`paras.${i}.link`, MOVES[4][4], 2)}</div></div>
       <div class="prow"><span></span><button class="btn ghost sm" data-del="${i}" ${pl.paras.length < 2 ? 'disabled' : ''}>Remove paragraph</button></div></div>` : ''}</div>`; }).join('')
-    + `<button class="btn ghost add" id="addp" ${pl.paras.length >= 6 ? 'disabled' : ''}>+ Add a paragraph</button>`; }
+    + `<button class="btn ghost add" id="addp" ${pl.paras.length >= 6 ? 'disabled' : ''}>+ Add a paragraph</button>` + dgOverview(); }
 
 /* ---------- 3b. short-answer parts ---------- */
 const SCAFN = { calc: 'Calculation', brief: 'Brief answer', outline: 'Outline scaffold', explain: 'Explain scaffold' };
@@ -576,7 +824,7 @@ function renderParts() { const e = E(), pl = P();
         ${k === 'explain' && p.m >= 5 ? `<label class="lab">Conclusion <em>One or two sentences linking back to the question.</em></label>${fld(base + '.concl', 'Sum up and link back to the question.')}` : ''}`}
       ${wantsDia || pp.dia ? `<div class="mv"><i class="mD">D</i><div><label class="lab">Diagram</label>${diaBlock(base, sugFor(p.c))}</div></div>` : ''}
       ${k !== 'calc' ? `<div class="mv"><i class="mV">E</i><div><label class="lab">Evidence from the Evidence Finder <em>(optional for short answers)</em></label><div class="evsel">${pp.ev.length ? pp.ev.map((x, i) => evChip(x, i, base + '.ev')).join('') : '<em>Nothing added.</em>'}</div></div></div>` : ''}
-    </div>` : ''}</div>`; }).join(''); }
+    </div>` : ''}</div>`; }).join('') + dgOverview(); }
 
 /* ---------- evidence shelf ---------- */
 function target() { const pl = P(); if (!pl) return null;
@@ -617,24 +865,26 @@ function checks() { const e = E(), pl = P();
   if (pl.kind === 'S') return e.parts.map(p => { const pp = pl.parts[p.l], k = scaf(p), lab = p.l.replace(/^Q\d+/, '') || p.l;
     const ok = k === 'calc' ? !!(pp.formula.trim() && pp.working.trim() && pp.answer.trim()) : pp.pts.every(x => x.d.trim() && (k !== 'explain' || x.e.trim()));
     return [ok, k === 'calc' ? `${lab}: formula, working and answer` : `${lab}: ${pp.pts.length} point${pp.pts.length === 1 ? '' : 's'} for ${p.m} mark${p.m === 1 ? '' : 's'}${k === 'explain' ? ', each with its effect' : ''}`]; })
-    .concat(e.st ? [[e.parts.some(p => { const pp = pl.parts[p.l]; return pp.pts.some(x => x.x.trim()) || pp.working.trim(); }), 'The stimulus is used where it is provided']] : []);
+    .concat(e.st ? [[e.parts.some(p => { const pp = pl.parts[p.l]; return pp.pts.some(x => x.x.trim()) || pp.working.trim(); }), 'The stimulus is used where it is provided']] : [])
+    .concat(figs(pl).length ? [[figs(pl).every(f => dgDone(f.x)), 'Every diagram has its shift, cause, caption and a reference in the text']] : []);
   const ps = pl.paras, judge = e.verbs.some(v => VERB[v][2]);
   return [[!!pl.thesis.trim(), judge ? 'A thesis that states your judgement' : 'A main line of argument'], [!!pl.terms.trim(), 'Key terms to define in the introduction'],
     [ps.length >= 4 && ps.every(p => p.point.trim()), 'Four or five paragraphs, each with a point'],
     [ps.every(p => p.cycles.every(c => c.explain.trim())), 'A cause and effect chain in every cycle'],
     [ps.every(p => p.cycles.some(c => c.ev.length)), 'Dated evidence in every paragraph'],
     [ps.some(p => p.cycles.some(c => c.dia && c.dnote.trim())), 'At least one diagram, with what it shows'],
+    [!figs(pl).length || figs(pl).every(f => dgDone(f.x)), 'Every diagram has its shift, cause, caption and a reference in the text'],
     [ps.every(p => p.link.trim()), 'A limitation and judgement in every paragraph']]
     .concat(e.st ? [[ps.every(p => p.stim.trim()), 'The stimulus cited in every paragraph']] : []); }
 function planText() { const e = E(), pl = P(); let t = `HSC ${e.y} ${SECN[e.s]} Question ${e.q} (${e.m} marks)\n`;
   if (pl.kind === 'S') { e.parts.forEach(p => { const pp = pl.parts[p.l], k = scaf(p); t += `\n${p.l} (${p.m} mark${p.m === 1 ? '' : 's'}) ${p.t}\n`;
       if (k === 'calc') t += `  Formula: ${pp.formula || '...'}\n  Working: ${pp.working || '...'}\n  Answer: ${pp.answer || '...'}\n`;
       else { if (k !== 'brief') t += `  Opening: ${pp.open || '...'}\n`; pp.pts.forEach((x, j) => { t += `  Point ${j + 1}: ${x.d || '...'}\n` + (k === 'explain' ? `    Effect: ${x.e || '...'}\n` : '') + (k !== 'outline' ? `    Example: ${x.x || '...'}\n` : ''); }); if (k === 'explain' && p.m >= 5) t += `  Conclusion: ${pp.concl || '...'}\n`; }
-      if (pp.dia) t += `  Diagram: ${DG[pp.dia][0]}. ${pp.dnote}\n`; pp.ev.forEach(x => t += `  Evidence: ${evLine(x)}\n`); }); return t; }
+      if (pp.dia) t += dgText(pp, '  '); pp.ev.forEach(x => t += `  Evidence: ${evLine(x)}\n`); }); return t; }
   const judge = e.verbs.some(v => VERB[v][2]);
   t += `${e.parts[0].t}\n\nINTRODUCTION\n  Define: ${pl.terms || '...'}\n  ${judge ? `Thesis (${SCALE[pl.stance].toLowerCase()})` : 'Argument'}: ${pl.thesis || '...'}\n` + (e.st ? `  From the stimulus: ${pl.stim || '...'}\n` : '');
   pl.paras.forEach((p, i) => { t += `\nPARAGRAPH ${i + 1}\n  P  Point: ${p.point || '...'}\n`;
-    p.cycles.forEach(c => { t += `  E  Explain: ${c.explain || '...'}\n` + (c.dia ? `  D  Diagram: ${DG[c.dia][0]}. ${c.dnote || '...'}\n` : '') + (c.ev.length ? c.ev.map(x => `  E  Evidence: ${evLine(x)}\n`).join('') : `  E  Evidence: ...\n`); });
+    p.cycles.forEach(c => { t += `  E  Explain: ${c.explain || '...'}\n` + (c.dia ? dgText(c, '  ') : '') + (c.ev.length ? c.ev.map(x => `  E  Evidence: ${evLine(x)}\n`).join('') : `  E  Evidence: ...\n`); });
     if (e.st) t += `  S  Stimulus: ${p.stim || '...'}\n`; t += `  L  Link & judge: ${p.link || '...'}\n`; });
   return t + `\nCONCLUSION: draw the argument together${judge ? ' and restate your judgement (' + SCALE[pl.stance].toLowerCase() + ')' : ''}. No new evidence.\n`; }
 const mvRow = (cls, L, html) => `<div class="mv"><i class="${cls}">${L}</i><span>${html}</span></div>`;
@@ -644,16 +894,16 @@ function outline() { const e = E(), pl = P();
     return `<div class="ol"><small>${esc(p.l)} · ${p.m} mark${p.m === 1 ? '' : 's'} · ${VERB[verbs(p.t)[0]][0]}</small><p><b>${esc(p.t)}</b></p>
       ${k === 'calc' ? `<p>Formula: ${or(pp.formula, 'your formula')}</p><p style="white-space:pre-wrap">Working: ${or(pp.working, 'your working')}</p><p>Answer: ${or(pp.answer, 'your answer')}</p>`
       : `${k !== 'brief' ? `<p>${or(pp.open, 'Opening statement')}</p>` : ''}${pp.pts.map((x, j) => `<p><b>${j + 1}.</b> ${or(x.d, 'Point')}${k === 'explain' ? ' → ' + or(x.e, 'effect') : ''}${k !== 'outline' && x.x.trim() ? ` <span class="src">e.g. ${esc(x.x)}</span>` : ''}</p>`).join('')}${k === 'explain' && p.m >= 5 ? `<p>${or(pp.concl, 'Conclusion')}</p>` : ''}`}
-      ${pp.dia ? mvRow('mD', 'D', `<b>${DG[pp.dia][0]}</b>. ${or(pp.dnote, 'Say what it shows')}`) : ''}${pp.ev.map(x => mvRow('mV', 'E', evHTML(x))).join('')}</div>`; }).join('');
+      ${pp.dia ? dgRow(pp) : ''}${pp.ev.map(x => mvRow('mV', 'E', evHTML(x))).join('')}</div>`; }).join('');
   const judge = e.verbs.some(v => VERB[v][2]);
   return `<div class="ol th"><small>Introduction${judge ? ' · ' + SCALE[pl.stance].toLowerCase() : ''}</small><p>Define: ${or(pl.terms, 'key terms')}</p><p>${or(pl.thesis, judge ? 'Write your thesis in step 2.' : 'Write your main argument in step 2.')}</p></div>`
     + pl.paras.map((p, i) => `<div class="ol"><small>Paragraph ${i + 1}</small>${mvRow('mP', 'P', or(p.point, 'Your point'))}
-      ${p.cycles.map(c => mvRow('mE', 'E', or(c.explain, 'Your cause and effect chain')) + (c.dia ? mvRow('mD', 'D', `<b>${DG[c.dia][0]}</b>. ${or(c.dnote, 'Say what it shows')}`) : '') + (c.ev.length ? c.ev.map(x => mvRow('mV', 'E', evHTML(x))).join('') : mvRow('mV', 'E', '<em>Choose evidence</em>'))).join('')}
+      ${p.cycles.map(c => mvRow('mE', 'E', or(c.explain, 'Your cause and effect chain')) + (c.dia ? dgRow(c) : '') + (c.ev.length ? c.ev.map(x => mvRow('mV', 'E', evHTML(x))).join('') : mvRow('mV', 'E', '<em>Choose evidence</em>'))).join('')}
       ${e.st ? mvRow('mS', 'S', or(p.stim, 'What you use from the stimulus')) : ''}${mvRow('mL', 'L', or(p.link, 'Your limitation and judgement'))}</div>`).join('')
     + `<div class="ol th"><small>Conclusion</small><p>Draw the argument together${judge ? ` and restate your judgement (<b>${SCALE[pl.stance].toLowerCase()}</b>)` : ''}. No new evidence.</p></div>`; }
 function renderPlan() { if (!S.q) return; const e = E(), pl = P(), ch = checks(), ev = allEv(pl), nf = ev.filter(x => x.t === 'fig').length;
   $('#plan').innerHTML = `<div class="planhead"><div><small>HSC ${e.y} · ${SECN[e.s]} · Question ${e.q}</small><b>${esc(e.s === 'II' ? e.parts.length + ' parts, ' + e.m + ' marks' : e.parts[0].t)}</b></div><div class="pbtns">${framed ? '' : '<button class="btn" id="print">Print or save as PDF</button>'}<button class="btn" id="copy">Copy the plan</button></div></div>
-    <div class="pl2"><div>${outline()}</div>
+    ${dgOverview()}<div class="pl2"><div>${outline()}</div>
     <div class="side"><h3>Plan check: ${ch.filter(c => c[0]).length} of ${ch.length}</h3><ul class="chk">${ch.map(c => `<li class="${c[0] ? 'y' : ''}">${c[1]}</li>`).join('')}</ul>
       <h3>Evidence: ${ev.length} piece${ev.length === 1 ? '' : 's'}</h3><p class="sub">${nf} statistic${nf === 1 ? '' : 's'}, ${ev.length - nf} news item${ev.length - nf === 1 ? '' : 's'} or report${ev.length - nf === 1 ? '' : 's'}. Check each figure against its source before the exam: figures are as reported when filed.</p>
       ${pl.kind === 'E' ? `<h3>Every paragraph</h3><div class="moves">${MOVES.map(m => `<div><i class="lt ${m[1]}">${m[0]}</i><span><b>${m[2]}</b></span></div>`).join('')}</div>` : ''}</div></div>`;
@@ -667,10 +917,10 @@ function printHTML() { const e = E(), pl = P(), line = '<span class="wl"></span>
   if (pl.kind === 'S') body = e.parts.map(p => { const pp = pl.parts[p.l], k = scaf(p);
     return `<section><h2>${esc(p.l)} (${p.m} mark${p.m === 1 ? '' : 's'}) ${esc(p.t)}</h2>${k === 'calc' ? `<small>Formula</small>${v(pp.formula)}<small>Working</small><div style="white-space:pre-wrap">${v(pp.working)}</div><small>Answer</small>${v(pp.answer)}`
       : `${k !== 'brief' ? `<small>Opening statement</small>${v(pp.open)}` : ''}${pp.pts.map((x, j) => `<small>Point ${j + 1}</small>${v(x.d)}${k === 'explain' ? `<br><span>Effect: ${v(x.e)}</span>` : ''}${k !== 'outline' ? `<br><span>Example: ${v(x.x)}</span>` : ''}`).join('')}${k === 'explain' && p.m >= 5 ? `<small>Conclusion</small>${v(pp.concl)}` : ''}`}
-      ${pp.dia ? pr('mD', 'D', 'Diagram', `<strong>${DG[pp.dia][0]}</strong>. ${v(pp.dnote)}`) : ''}${pp.ev.map(x => pr('mV', 'E', 'Evidence', esc(evLine(x)))).join('')}</section>`; }).join('');
+      ${pp.dia ? dgPrint(pp, pr) : ''}${pp.ev.map(x => pr('mV', 'E', 'Evidence', esc(evLine(x)))).join('')}</section>`; }).join('');
   else { const judge = e.verbs.some(x => VERB[x][2]);
     body = `<div class="pq">${esc(e.parts[0].t)}</div><div class="pt"><small>Introduction · define</small>${v(pl.terms)}<small>${judge ? 'Thesis · ' + SCALE[pl.stance].toLowerCase() : 'Main argument'}</small>${v(pl.thesis)}${e.st ? `<small>From the stimulus</small>${v(pl.stim)}` : ''}</div>`
-      + pl.paras.map((p, i) => `<section><h2>Paragraph ${i + 1}</h2>${pr('mP', 'P', 'Point', v(p.point))}${p.cycles.map(c => pr('mE', 'E', 'Explain', v(c.explain)) + (c.dia ? pr('mD', 'D', 'Diagram', `<strong>${DG[c.dia][0]}</strong>. ${v(c.dnote)}`) : '') + (c.ev.length ? c.ev : [null]).map(x => pr('mV', 'E', 'Evidence', x ? esc(evLine(x)) : '&nbsp;')).join('')).join('')}${e.st ? pr('mS', 'S', 'Stimulus', v(p.stim)) : ''}${pr('mL', 'L', 'Link &amp; judge', v(p.link))}</section>`).join('')
+      + pl.paras.map((p, i) => `<section><h2>Paragraph ${i + 1}</h2>${pr('mP', 'P', 'Point', v(p.point))}${p.cycles.map(c => pr('mE', 'E', 'Explain', v(c.explain)) + (c.dia ? dgPrint(c, pr) : '') + (c.ev.length ? c.ev : [null]).map(x => pr('mV', 'E', 'Evidence', x ? esc(evLine(x)) : '&nbsp;')).join('')).join('')}${e.st ? pr('mS', 'S', 'Stimulus', v(p.stim)) : ''}${pr('mL', 'L', 'Link &amp; judge', v(p.link))}</section>`).join('')
       + `<div class="pt"><small>Conclusion</small>Draw the argument together${judge ? ' and restate the judgement' : ''}. No new evidence.</div>`; }
   return `<header><div><small>HSC Economics · ${SECN[e.s]} · Response plan</small><h1>HSC ${e.y}, Question ${e.q} (${e.m} marks)</h1></div><div class="nm">Name ${line}<br>Date ${line}</div></header>${body}
     <footer><span>Built with the Extended Response Builder. The plan is yours: write the response by hand under timed conditions.</span><span>Evidence as at ${fmtDate(FEED.built)}</span></footer>`; }
@@ -686,7 +936,7 @@ function renderAll() { const has = !!S.q;
   if (has) { renderUnpack(); render3(); } stepbar(); }
 let tmr; const later = () => { clearTimeout(tmr); tmr = setTimeout(() => { renderPlan(); const pl = P(); if (pl && pl.kind === 'E') { const b = document.querySelector('.para.open .ph b'), p = pl.paras[pl.open]; if (b && p) b.textContent = p.point || 'Paragraph ' + (pl.open + 1); } }, 200); };
 $('#v-build').addEventListener('input', ev => { const b = ev.target.dataset && ev.target.dataset.b; if (!b || !S.q) return; setP(P(), b, ev.target.value); save(); later(); });
-$('#v-build').addEventListener('change', ev => { const b = ev.target.dataset && ev.target.dataset.sel; if (!b || !S.q) return; setP(P(), b, ev.target.value); save(); render3(); });
+$('#v-build').addEventListener('change', ev => { const b = ev.target.dataset && ev.target.dataset.sel; if (!b || !S.q) return; setP(P(), b, ev.target.value); if (/\.dia$/.test(b)) setP(P(), b.replace(/\.dia$/, '.sc'), ''); save(); render3(); });
 $('#fw').onclick = ev => { const b = ev.target.closest('[data-fw]'); if (!b) return; S.fw = b.dataset.fw; save(); renderAll(); };
 $('#qfil').addEventListener('click', ev => { const b = ev.target.closest('[data-sec]'); if (b) { S.qf.s = b.dataset.sec; S.qf.n = 40; renderFil(); renderQs(); } });
 $('#qlist').onclick = ev => { if (ev.target.closest('#moreq')) { S.qf.n += 40; renderQs(); return; }
@@ -696,6 +946,8 @@ $('#paras').addEventListener('click', ev => { const pl = P(), q = s => ev.target
   if (b = q('[data-rm]')) { const [path, i] = b.dataset.rm.split('|'); getP(pl, path).splice(+i, 1); }
   else if (b = q('[data-usecyc]')) pl.paras[pl.open].cyc = +b.dataset.usecyc;
   else if (b = q('[data-delcyc]')) { const p = pl.paras[pl.open]; p.cycles.splice(+b.dataset.delcyc, 1); p.cyc = Math.min(p.cyc, p.cycles.length - 1); }
+  else if (b = q('[data-lab]')) S.lab = b.dataset.lab === '01' ? '01' : '12';
+  else if (b = q('[data-capfill]')) { const x = getP(pl, b.dataset.capfill), old = x.dnote, c = capOf(x, figNo(x)); if (!c) return; x.dnote = c; save(); render3(); if (old.trim() && old !== c) toast('Caption replaced.', () => { x.dnote = old; save(); render3(); }); return; }
   else if (q('[data-addcyc]')) { const p = pl.paras[pl.open]; p.cycles.push(newCycle()); p.cyc = p.cycles.length - 1; }
   else if (b = q('[data-del]')) { pl.paras.splice(+b.dataset.del, 1); pl.open = Math.max(0, pl.open - 1); }
   else if (q('#addp')) { pl.paras.push(newPara()); pl.open = pl.paras.length - 1; }

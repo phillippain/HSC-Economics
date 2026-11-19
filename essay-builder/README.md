@@ -16,7 +16,21 @@ diagram, then checks, copies or prints the plan. It plans a response; it does no
 | 1 Choose a question | Filters by section, topic, directive or search. Section II is chosen as a whole question with all its parts. |
 | 2 Unpack it | Sees the directive words (NESA glossary), the dot points examined, the time guide, the stimulus description and the top-band criteria. Essays: key terms, a judgement scale when the directive calls for one, and a thesis. |
 | 3 Plan | **Sections III and IV:** the booklet's economics paragraph (p. 43): Point, then one to three Explain → Diagram → Evidence cycles, a Stimulus line in Section III, then Link & judge. **Section II:** a plan sized to the marks, using the booklet's Outline and Explain key word scaffolds; calculations get formula, working and answer. |
-| 4 Review | Outline of the plan, a checklist, copy as text, print or save as PDF. |
+| 4 Review | A list of every diagram in the response, then the outline of the plan, a checklist, copy as text, print or save as PDF. |
+
+## Planning diagrams (added 19 November 2026)
+
+Each Explain → Diagram → Evidence cycle (and each Section II part that asks for a diagram) has a **diagram plan**:
+
+1. **Model:** choose from the catalogue, with suggestions from the question's syllabus tags.
+2. **What changes?** (AD–AS, demand and supply, dollar, labour market, negative externality, Phillips curve, PPF, Lorenz curve): the sketch redraws with the original curve, the new curve in red, equilibrium points, guides and axis labels.
+3. **Cause:** what in the Explain chain moves the curve (a prompt lists typical causes).
+4. **Caption:** "Use the suggested caption" writes the Figure sentence from the chosen shift (the student can edit it).
+5. **In the text:** where the response refers to the figure.
+
+Figures are numbered in reading order across the response. The labels switch between **AD₁ → AD₂** (default) and **AD → AD₁** (booklet p. 43 style); AS is the upward-sloping curve, called SRAS only when LRAS is drawn. Step 3 and step 4 both show an overview (thumbnail, shift, paragraph, and whether the cause, caption and text reference are done), with notes on paragraphs that have no diagram and on a model used more than twice. The plan check, copy text and print page carry the same detail.
+
+To add a shift or diagram, edit `SC` (shifts, causes and captions), `MKT` (two-curve markets) or `CAP` (diagrams with one standard caption) in `template.html`. Sketches are drawn by `mktBody`, `phBody`, `ppfBody` and `lzBody`. Plans saved before this change load unchanged.
 
 ## Where the content comes from
 
