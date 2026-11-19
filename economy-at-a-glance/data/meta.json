@@ -1,27 +1,27 @@
 {
  "title": "Economy at a glance",
- "updated": "2026-11-18T16:35:12+00:00",
+ "updated": "2026-11-19T00:56:55+00:00",
  "weeklyCheck": "2026-11-11",
  "auto": {
   "unemp": {
-   "asOf": "2026-09-30",
-   "by": "initial snapshot"
+   "asOf": "2026-10-31",
+   "by": "manual update from ABS release"
   },
   "unempsc": {
-   "asOf": "2026-09-30",
-   "by": "initial snapshot"
+   "asOf": "2026-10-31",
+   "by": "manual update from ABS release"
   },
   "partic": {
-   "asOf": "2026-09-30",
-   "by": "initial snapshot"
+   "asOf": "2026-10-31",
+   "by": "manual update from ABS release"
   },
   "particsc": {
-   "asOf": "2026-09-30",
-   "by": "initial snapshot"
+   "asOf": "2026-10-31",
+   "by": "manual update from ABS release"
   },
   "wpi": {
-   "asOf": "2026-06-30",
-   "by": "initial snapshot"
+   "asOf": "2026-09-30",
+   "by": "manual update from ABS release"
   },
   "saving": {
    "asOf": "2026-06-30",

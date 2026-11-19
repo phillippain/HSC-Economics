@@ -3,37 +3,37 @@
   "id": "unemp",
   "panel": "C",
   "label": "Unemployment",
-  "display": "4.7%",
-  "period": "Sep 2026",
+  "display": "4.9%",
+  "period": "Oct 2026",
   "source": "ABS 6202",
-  "note": "Seasonally adjusted; steady on Aug (**4.7%**). RBA's NAIRU estimate is about 4.5%."
+  "note": "Seasonally adjusted; up from **4.7%** in Sep, the highest since Oct 2021. RBA's NAIRU estimate is about 4.5%."
  },
  {
   "id": "underut",
   "panel": "C",
   "label": "Underutilisation",
-  "display": "11.0%",
-  "period": "Sep 2026",
+  "display": "11.1%",
+  "period": "Oct 2026",
   "source": "ABS 6202",
-  "note": "Up 0.2 pts on Aug (**10.8%**)."
+  "note": "Steady on Sep (**11.1%**, revised from 11.0%)."
  },
  {
   "id": "partic",
   "panel": "C",
   "label": "Participation rate",
-  "display": "66.8%",
-  "period": "Sep 2026",
+  "display": "66.6%",
+  "period": "Oct 2026",
   "source": "ABS 6202",
-  "note": "Down 0.2 pts on Aug (**67.0%**)."
+  "note": "Down 0.2 pts on Sep (**66.8%**)."
  },
  {
   "id": "wpi",
   "panel": "C",
   "label": "Wages (WPI)",
-  "display": "3.2%",
-  "period": "Jun qtr 2026",
+  "display": "3.5%",
+  "period": "Sep qtr 2026",
   "source": "ABS 6345",
-  "note": "Annual growth; 0.8% in the quarter. Below CPI, so real wages are falling."
+  "note": "Annual growth, up from **3.2%**; 1.1% in the quarter. Below CPI, so real wages are falling."
  },
  {
   "id": "minwage",
