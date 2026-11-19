@@ -27,6 +27,7 @@ Each Explain → Diagram → Evidence cycle (and each Section II part that asks 
 3. **Cause:** what in the Explain chain moves the curve (a prompt lists typical causes).
 4. **Caption:** "Use the suggested caption" writes the Figure sentence from the chosen shift (the student can edit it).
 5. **In the text:** where the response refers to the figure.
+6. **Draw it:** for AD–AS, the dollar, the labour market, the externality and the Lorenz curve, the button opens the Macro Diagram Lab with the chosen shift and the label style already set (`LABQ` in `template.html` maps each shift to the lab's preset address; the lab reads it in `readHash`). Tariff, quota and subsidy link to the Protection Diagram Lab without a preset; the Phillips curve and PPF have no lab yet.
 
 Figures are numbered in reading order across the response. The labels switch between **AD₁ → AD₂** (default) and **AD → AD₁** (booklet p. 43 style); AS is the upward-sloping curve, called SRAS only when LRAS is drawn. Step 3 and step 4 both show an overview (thumbnail, shift, paragraph, and whether the cause, caption and text reference are done), with notes on paragraphs that have no diagram and on a model used more than twice. The plan check, copy text and print page carry the same detail.
 
