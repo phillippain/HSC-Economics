@@ -32,17 +32,21 @@ jobs:
       - name: Pull latest RBA / ABS figures
         run: python3 economy-at-a-glance/scripts/update_rba.py
 
+      - name: Refresh the Topic 2 chart series
+        continue-on-error: true # a problem here must never stop the Economy at a Glance update
+        run: python3 google-site-embeds/topic2/scripts/update_series.py
+
       - name: Commit if anything changed
         id: commit
         run: |
           git config user.name "economy-data-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add economy-at-a-glance/data
+          git add economy-at-a-glance/data google-site-embeds/topic2/data/series.json
           if git diff --cached --quiet; then
             echo "No new figures today."
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "Economy at a glance: daily data update $(date -u +%Y-%m-%d)"
+            git commit -m "Daily data update $(date -u +%Y-%m-%d): Economy at a Glance and Topic 2 charts"
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi

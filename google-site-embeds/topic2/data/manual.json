@@ -1,0 +1,27 @@
+{
+  "_readme": "Figures on the Topic 2 chart pages that the daily job cannot fetch. Check them when the source publishes: ABS trade by partner (February and December), Reserve Bank TWI weights (January), ABS balance of payments (early March, June, September, December).",
+  "partners": {
+    "period": "calendar year 2025",
+    "source": "ABS, International Trade: Supplementary Information, Calendar Year 2025",
+    "exports_total": 665.2, "imports_total": 658.3,
+    "exports": [["China", 195.6], ["Japan", 65.1], ["United States", 59.9], ["South Korea", 44.2], ["India", 32.2]],
+    "imports": [["China", 130.2], ["United States", 98.6], ["Japan", 32.4], ["Singapore", 28.2], ["Thailand", 23.6]]
+  },
+  "twi": {
+    "period": "weights from 7 January 2026",
+    "source": "Reserve Bank of Australia",
+    "weights": [["Chinese renminbi", 27.6], ["US dollar", 13.4], ["Japanese yen", 9.0], ["Euro", 8.5], ["South Korean won", 5.6], ["Indian rupee", 4.9], ["Singapore dollar", 4.3], ["UK pound", 3.8], ["NZ dollar", 3.5], ["Indonesian rupiah", 3.1]]
+  },
+  "bop_latest": {
+    "quarter": "June quarter 2026",
+    "released": "1 September 2026",
+    "next": "September quarter 2026, due early December 2026",
+    "source": "ABS, Balance of Payments and International Investment Position",
+    "rows": [["Balance on goods and services", "−$5.1b"], ["Net primary income", "−$21.9b"], ["Current account balance", "−$27.2b"]]
+  },
+  "year": {
+    "period": "2025–26",
+    "source": "ABS, Balance of Payments and International Investment Position, June quarter 2026",
+    "rows": [["Balance on goods and services", "−$7.5b"], ["Net primary income", "−$85.5b"], ["Net secondary income", "−$1.8b"], ["Current account", "−$94.9b (3.2% of GDP)"], ["Capital and financial account", "+$83.0b"], ["Net errors and omissions", "+$11.9b"]]
+  }
+}

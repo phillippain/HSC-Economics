@@ -2,6 +2,10 @@
  "_how_to": "Newest first. Add a line at the top: date as YYYY-MM-DD, text under about 110 characters, plain words for students. The Home page shows the five newest. Push to GitHub and the site updates by itself within a few minutes.",
  "items": [
   {
+   "date": "2026-11-19",
+   "text": "Topic 2: new Charts and data and Extension pages with live Australian figures for four sub-topics."
+  },
+  {
    "date": "2026-11-14",
    "text": "New look: the site now uses the cobalt and gold colours of the course tools."
   },

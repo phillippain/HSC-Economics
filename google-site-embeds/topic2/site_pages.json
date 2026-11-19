@@ -1,0 +1,7 @@
+{
+ "_note": "Addresses of the Charts and data and Extension pages on the Google Site. build_topic2.py reads this for the cross-links. Check each address after the site is published; change it here and rebuild if Google Sites gave a page a different address.",
+ "trade": {"charts": "https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/topic-2/trade-financial-flows/vcd/charts-and-data", "extension": "https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/topic-2/trade-financial-flows/vcd/extension"},
+ "bop": {"charts": "https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/topic-2/trade-financial-flows/balance-of-payments/charts-and-data", "extension": "https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/topic-2/trade-financial-flows/balance-of-payments/extension"},
+ "exchange-rates": {"charts": "https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/topic-2/exchange-rates/charts-and-data", "extension": "https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/topic-2/exchange-rates/extension"},
+ "external-stability": {"charts": "https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/topic-3/external-stability/charts-and-data", "extension": "https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/topic-3/external-stability/extension"}
+}
