@@ -659,6 +659,9 @@ const figNo = x => { const f = figs(P()).find(f => f.x === x); return f ? f.n : 
 const capOK = x => !!x.dnote.trim() && !/\[[^\]]*\]/.test(x.dnote);
 const dgDone = x => capOK(x) && !!x.ref.trim() && !!x.cause.trim() && (!hasSc(x.dia) || !!x.sc);
 const dgName = x => `${DG[x.dia][0]}${scOf(x) ? ': ' + scOf(x).n.toLowerCase() : ''}`;
+const LABQ = { adas: { adr: 'sD=8', adl: 'sD=-8', asr: 'sS=8', asl: 'sS=-8', lras: 'lras=1&sL=8' }, fx: { dr: 'sD=8', dl: 'sD=-8', sr: 'sS=8', sl: 'sS=-8' },
+  labour: { dr: 'sD=8', dl: 'sD=-8', sr: 'sS=8', sl: 'sS=-8', mw: 'mw=12' }, extern: { tax: 'e=24&t=24' }, lorenz: { up: 'g=0.43&g0=0.31', down: 'g=0.19&g0=0.31' } };
+const labLink = x => LABQ[x.dia] ? `../macro-diagram-lab/#d=${x.dia}${LABQ[x.dia][x.sc] ? '&' + LABQ[x.dia][x.sc] : ''}&ls=${S.lab === '01' ? 'plain' : 'num'}` : (DGLAB[x.dia] || '');
 const DGLAB = { adas: '../macro-diagram-lab/', fx: '../macro-diagram-lab/', labour: '../macro-diagram-lab/', lorenz: '../macro-diagram-lab/', extern: '../macro-diagram-lab/', tariff: '../diagram-lab/', quota: '../diagram-lab/', subsidy: '../diagram-lab/' };
 
 const lbBase = x => { const k = x.dia, sc = scOf(x); if (MKT[k]) { if (sc && sc.c === 'LRAS') return 'LRAS'; return sc && sc.c === 'B' ? MKT[k].B : MKT[k].A; } return { phillips: 'SRPC', ppf: 'PPF', lorenz: 'LC' }[k] || 'AD'; };
@@ -670,7 +673,7 @@ function diaBlock(path, sugs) { const x = getP(P(), path), cur = x.dia, rest = D
     ${d ? `<div class="dplan"><div class="dpt"><b>Diagram plan</b>${hasSc(cur) && !(sc && sc.nm) ? `<span class="labsw" role="group" aria-label="Curve labels"><button type="button" data-lab="12" aria-pressed="${S.lab !== '01'}">${lbBase(x)}₁ → ${lbBase(x)}₂</button><button type="button" data-lab="01" aria-pressed="${S.lab === '01'}">${lbBase(x)} → ${lbBase(x)}₁</button></span>` : ''}</div>
       ${hasSc(cur) ? `<label class="lab">What causes the shift? <em>Link it to your Explain chain.</em></label>${fld(path + '.cause', sc ? 'e.g. ' + sc.why : 'Choose what changes, then name the cause from your Explain chain.')}` : `<label class="lab">What should the reader see? <em>Name the cause, effect or trend this diagram shows.</em></label>${fld(path + '.cause', 'e.g. The reason you are drawing it, in your own words.')}`}
       <label class="lab">Caption: what the diagram shows <em>(this is the sentence that earns the mark)</em></label>${fld(path + '.dnote', cap ? cap : 'Choose what changes to get a caption to start from, or write your own.', 2)}
-      <div class="capb">${cap ? `<button type="button" class="btn ghost sm" data-capfill="${path}">Use the suggested caption</button>` : ''}${DGLAB[cur] ? `<a class="btn ghost sm" href="${DGLAB[cur]}" target="_blank" rel="noopener">Practise drawing it in the ${DGLAB[cur].includes('macro') ? 'Macro' : 'Protection'} Diagram Lab</a>` : ''}</div>
+      <div class="capb">${cap ? `<button type="button" class="btn ghost sm" data-capfill="${path}">Use the suggested caption</button>` : ''}${labLink(x) ? `<a class="btn ghost sm" href="${labLink(x)}" target="_blank" rel="noopener">${labLink(x).includes('macro') ? (sc ? 'Draw this shift in the Macro Diagram Lab' : 'Practise drawing it in the Macro Diagram Lab') : 'Practise drawing it in the Protection Diagram Lab'}</a>` : ''}</div>
       <label class="lab">Where do you refer to it in the text? <em>Mention Figure ${fn} before the reader reaches the drawing.</em></label>${fld(path + '.ref', `e.g. As Figure ${fn} shows, ...`)}</div>` : ''}`; }
 
 function dgNotes() { const pl = P(), fs = figs(pl), notes = [];

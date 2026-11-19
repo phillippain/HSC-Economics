@@ -8,6 +8,7 @@ the Protection Diagram Lab (`../diagram-lab/`), which keeps tariffs, quotas and 
 - **Published at:** `/macro-diagram-lab/` on the GitHub Pages site.
 - **Embedding:** `…/macro-diagram-lab/?embed=1`, with `theme=light|dark`.
 - **Links in:** `#d=adas|fx|labour|lorenz|extern`, `&view=scenarios`.
+- **Presets** (used by the Extended Response Builder's "Draw it" button): `&sD=8` / `&sS=-8` (shift D or S, in slider units, positive is right), `&lras=1&sL=8`, `&mw=12`, `&e=24&t=24`, `&g=0.43&g0=0.31` (Lorenz, keep the first curve), and `&ls=num|plain` for the label style. They apply once; the address then drops them.
 
 ## The two views
 

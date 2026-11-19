@@ -456,7 +456,15 @@ function renderScenarios() { const id = S.d, d = DG[id]; if (!Z || Z.id !== id) 
 /* ---------- shell ---------- */
 const VIEWS = ['experiment', 'scenarios'];
 function writeHash() { const h = new URLSearchParams(); h.set('d', S.d); if (S.view !== 'experiment') h.set('view', S.view); try { history.replaceState(null, '', location.pathname + location.search + '#' + h.toString()); } catch (e) {} }
-function readHash() { const h = new URLSearchParams(location.hash.slice(1)); if (DG[h.get('d')]) S.d = h.get('d'); if (VIEWS.includes(h.get('view'))) S.view = h.get('view'); }
+/* A link from the Extended Response Builder can preset the diagram: #d=adas&sD=8&ls=num (sD, sS, sL, mw, e, t, g, g0, lras=1). Applied once, then the hash is rewritten without it. */
+const PRE = { sD: [-24, 24], sS: [-24, 24], sL: [-16, 16], mw: [0, 24], e: [0, 32], t: [0, 40], g: [0.05, 0.7] };
+function readHash() { const h = new URLSearchParams(location.hash.slice(1)); if (DG[h.get('d')]) S.d = h.get('d'); if (VIEWS.includes(h.get('view'))) S.view = h.get('view');
+  const ls = h.get('ls'); if (ls === 'num' || ls === 'plain') { LS = ls; store.set('econ-mdl-labels', LS); }
+  const keys = Object.keys(PRE).filter(k => h.has(k) && k in S.st[S.d]);
+  if (keys.length || h.get('lras') === '1' || h.has('g0')) { const n = S.st[S.d] = fresh(S.d);
+    keys.forEach(k => { const v = +h.get(k); if (!isNaN(v)) n[k] = Math.max(PRE[k][0], Math.min(PRE[k][1], v)); });
+    if (S.d === 'adas' && h.get('lras') === '1') n.lras = true;
+    if (S.d === 'lorenz' && h.has('g0') && !isNaN(+h.get('g0'))) n.g0 = +h.get('g0'); } }
 function render() { VIEWS.forEach(v => { $('#v-' + v).classList.toggle('on', v === S.view); $(`.tab[data-view="${v}"]`).setAttribute('aria-selected', v === S.view); });
   $('#lstyle').innerHTML = [['num', 'AD₁ → AD₂'], ['plain', 'AD → AD₁']].map(o => `<button data-ls="${o[0]}" aria-pressed="${LS === o[0]}">${o[1]}</button>`).join('');
   $('#pick').innerHTML = IDS.map(id => `<button class="pk" data-d="${id}" aria-pressed="${S.d === id}" style="--tc:${TC[DG[id].topic]}"><b>${esc(DG[id].name)}</b><small>${esc(DG[id].sub)}</small></button>`).join('');
