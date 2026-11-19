@@ -246,137 +246,6 @@
   "added": "2026-11-19"
  },
  {
-  "id": "2026-11-19-unemployment-rises-4-9-highest-since-2021",
-  "title": "Unemployment rises to 4.9%, the highest since 2021",
-  "date": "2026-11-19",
-  "type": "stats",
-  "outlets": [
-   "ABS"
-  ],
-  "summary": "Gives the October Labour Force result: rising unemployment, falling employment and participation, and a weak youth market.",
-  "lede": "The ABS October Labour Force survey shows the seasonally adjusted unemployment rate rose to 4.9%, its highest since October 2021, as employment fell by 43,500 and the effects of five interest rate rises flow through to the jobs market.",
-  "about": {
-   "h09": [
-    "3B.1",
-    "3B.2",
-    "3B.3",
-    "3B.6"
-   ],
-   "y12": [
-    "Y1b.1",
-    "Y1b.3",
-    "Y1b.7",
-    "Y1b.11",
-    "Y1b.12"
-   ],
-   "y11": [
-    "P1e.7",
-    "P3d.3"
-   ]
-  },
-  "also": {
-   "h09": [
-    "3A.7",
-    "4D.3"
-   ],
-   "y12": [
-    "Y1b.5",
-    "Y1b.10"
-   ],
-   "y11": [
-    "P3b.1"
-   ]
-  },
-  "issues": [
-   "employment"
-  ],
-  "levers": [
-   "monetary"
-  ],
-  "diagrams": [
-   "ds",
-   "chart"
-  ],
-  "figures": [
-   {
-    "label": "Unemployment rate, seasonally adjusted",
-    "value": "4.9% (September 4.7%; trend 4.8%), highest since October 2021",
-    "asAt": "October 2026",
-    "issue": "employment",
-    "source": "ABS Labour Force"
-   },
-   {
-    "label": "Change in employment",
-    "value": "-43,500 to 14.74 million (part-time -40,600; full-time -2,900)",
-    "asAt": "October 2026",
-    "issue": "employment",
-    "source": "ABS Labour Force"
-   },
-   {
-    "label": "Number unemployed",
-    "value": "753,700 (+17,800 in the month; +14.5% on a year ago)",
-    "asAt": "October 2026",
-    "issue": "employment",
-    "source": "ABS Labour Force"
-   },
-   {
-    "label": "Participation rate / employment-to-population ratio",
-    "value": "66.6% (from 66.8%) / 63.3%",
-    "asAt": "October 2026",
-    "issue": "employment",
-    "source": "ABS Labour Force"
-   },
-   {
-    "label": "Youth unemployment (15-24)",
-    "value": "11.3% (September 11.1%; post-COVID average 9.2%)",
-    "asAt": "October 2026",
-    "issue": "employment",
-    "source": "ABS Labour Force"
-   },
-   {
-    "label": "Hours worked / underemployment",
-    "value": "-0.2% / 6.2% (eased slightly)",
-    "asAt": "October 2026",
-    "issue": "employment",
-    "source": "ABS Labour Force"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Unemployment rate",
-    "def": "The unemployed as a share of the labour force (employed plus unemployed)."
-   },
-   {
-    "term": "Participation rate",
-    "def": "The share of the working-age population in the labour force."
-   }
-  ],
-  "links": [
-   [
-    "ABS: Unemployment rate rises to 4.9%",
-    "https://www.abs.gov.au/"
-   ],
-   [
-    "ABS: Labour Force, Australia, October 2026",
-    "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-19-unemployment-rises-4-9-highest-since-2021.pdf",
-   "label": "Topic 3 news summary",
-   "pages": 1
-  },
-  "angle": "Labour is a derived demand: weaker spending lowers demand for labour, so more of the adjustment shows up as job losses and fewer hours than as lower wages. Look at participation as well as unemployment: it fell, so some people stopped looking and the unemployment rate would otherwise have risen further. Part-time jobs usually go first in a slowdown.",
-  "questions": [
-   {
-    "q": "Using the October data, explain why the unemployment rate and the participation rate are both important for understanding labour market conditions.",
-    "marks": 4
-   }
-  ],
-  "note": "Resolves the 18 November job-ads card's UPDATE DUE for the October Labour Force result. Next release 17 December 2026. Related: 15 November youth unemployment card and the 19 November recession-warnings analysis. The ABS links are to the ABS site; the digest names the releases only.",
-  "added": "2026-11-19"
- },
- {
   "id": "2026-11-19-recession-warnings-quacking-like-a-recession",
   "title": "\"Quacking like a recession\": economists warn the downturn is deepening",
   "date": "2026-11-19",
@@ -493,134 +362,6 @@
   "added": "2026-11-19"
  },
  {
-  "id": "2026-11-19-rba-hike-bets-vanish-unemployment-outlook",
-  "title": "Rate hike bets vanish as rising unemployment changes the RBA outlook",
-  "date": "2026-11-19",
-  "type": "news",
-  "outlets": [
-   "ABC News",
-   "RBA",
-   "CommBank"
-  ],
-  "summary": "Shows the RBA's inflation-versus-unemployment dilemma and how markets repriced after the jump in unemployment.",
-  "lede": "After the jump in unemployment, markets have dropped bets on another RBA rate rise at the 8 December meeting and now expect at least one cut, possibly two, by Christmas 2027. The RBA faces a classic dilemma: inflation is above target but the labour market is weakening quickly.",
-  "about": {
-   "h09": [
-    "4D.1",
-    "4D.2",
-    "4D.3",
-    "4H.1"
-   ],
-   "y12": [
-    "Y2c.2",
-    "Y2c.4",
-    "Y2c.7",
-    "Y2c.8"
-   ],
-   "y11": [
-    "P4c.3"
-   ]
-  },
-  "also": {
-   "h09": [
-    "4A.7",
-    "3B.4",
-    "3C.2"
-   ],
-   "y12": [
-    "Y1c.6",
-    "Y2a.2"
-   ],
-   "y11": [
-    "P4c.4"
-   ]
-  },
-  "issues": [
-   "rates",
-   "inflation",
-   "employment"
-  ],
-  "levers": [
-   "monetary"
-  ],
-  "diagrams": [
-   "phillips",
-   "chart"
-  ],
-  "figures": [
-   {
-    "label": "RBA cash rate",
-    "value": "4.85% after five hikes this year (from 3.6%); November decision split 6-3",
-    "asAt": "November 2026",
-    "issue": "rates",
-    "source": "RBA; ABC News"
-   },
-   {
-    "label": "Market pricing for the 8 December meeting",
-    "value": "No hike priced; at least one cut, possibly two, expected by Christmas 2027",
-    "asAt": "19 November 2026",
-    "issue": "rates",
-    "source": "ABC News"
-   },
-   {
-    "label": "Unemployment the RBA says may be needed to curb inflation",
-    "value": "About 4.5-5% (now 4.9%)",
-    "asAt": "November 2026",
-    "issue": "employment",
-    "source": "RBA, via ABC News"
-   },
-   {
-    "label": "RBA staff inflation forecast",
-    "value": "Above 3% until late 2027",
-    "asAt": "November 2026",
-    "issue": "inflation",
-    "source": "RBA"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Dual mandate",
-    "def": "The RBA's goals of price stability (2-3% inflation) and full employment."
-   },
-   {
-    "term": "Market pricing",
-    "def": "Expected future interest rates implied by financial market trading."
-   }
-  ],
-  "links": [
-   [
-    "ABC News: Australia's jobs market is quacking like a recession (Jessica Irvine)",
-    "https://www.abc.net.au/news/"
-   ],
-   [
-    "ABC News: Federal politics live, 19 Nov 2026",
-    "https://www.abc.net.au/news/"
-   ],
-   [
-    "CommBank: RBA pause increasingly likely after November's vote",
-    "https://www.commbank.com.au/"
-   ],
-   [
-    "FINA: RBA minutes show board split six-three",
-    "https://www.fixedincomenews.com.au/"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-19-rba-hike-bets-vanish-unemployment-outlook.pdf",
-   "label": "Topic 4 news summary",
-   "pages": 1
-  },
-  "angle": "Rate rises have slowed demand, moving the economy along the short-run Phillips curve: inflation eases but unemployment rises. With unemployment at 4.9%, near the level the RBA said was needed, further hikes are less likely. Easing too early risks persistent inflation; holding too long risks recession; the full effect of 2026's hikes (a time lag) is still flowing through. Governor Bullock says the RBA does not intend to cause a recession.",
-  "questions": [
-   {
-    "q": "With inflation above target but unemployment rising, discuss the policy dilemma facing the Reserve Bank of Australia.",
-    "marks": 6
-   }
-  ],
-  "note": "Replaces the 17 November card 'CommBank expects the RBA to hold rates in December' (CBA's Belinda Allen: the 7-8 December meeting unlikely to be 'live'; February the next meeting where a rise could be seriously considered; cuts expected August and November 2027; new housing lending -15.5% and investor lending -32.3% in the September quarter). Market pricing and bank forecasts are not RBA decisions: UPDATE DUE after the 8 December meeting. Next data: October monthly CPI (24 Nov) and September-quarter GDP (2 Dec).",
-  "added": "2026-11-19"
- },
- {
   "id": "2026-11-19-migrant-workers-underpaid-study",
   "title": "Two-thirds of surveyed migrant workers are underpaid, study finds",
   "date": "2026-11-19",
@@ -724,6 +465,948 @@
   ],
   "note": "Survey data are from 2024, reported 19 November 2026; the survey sample is not necessarily representative of all migrant workers. The ABC link is the news home page because the digest cites a live blog only. Related: 18 November backpacker visa backtrack card.",
   "added": "2026-11-19"
+ },
+ {
+  "id": "2026-11-19-labor-presses-coalition-gas-reservation",
+  "title": "Labor presses the Coalition to back domestic gas reservation",
+  "date": "2026-11-19",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "Gives the political contest over the gas reservation scheme and a supply and demand view of who gains and loses.",
+  "lede": "The government is pressing the Coalition to support its gas reservation scheme, which would require producers to set aside at least 20% of their output for Australian users rather than exporting it. Acting Prime Minister Richard Marles urged Coalition support while Shadow Resources Minister Susan McDonald said gas is selling at about $10.",
+  "about": {
+   "h09": [
+    "4E.1",
+    "4E.2"
+   ],
+   "y12": [
+    "Y2d.1",
+    "Y2d.4"
+   ],
+   "y11": [
+    "P2i.2",
+    "P2i.3",
+    "P2i.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4H.3",
+    "2A.1"
+   ],
+   "y12": [
+    "Y2d.6"
+   ],
+   "y11": [
+    "P5a.5"
+   ]
+  },
+  "issues": [
+   "investment",
+   "inflation"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [
+   "ds",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Share of output to be reserved for domestic users",
+    "value": "At least 20%",
+    "asAt": "19 November 2026",
+    "issue": "investment",
+    "source": "ABC News"
+   },
+   {
+    "label": "Gas price cited by the Coalition",
+    "value": "About $10 a gigajoule",
+    "asAt": "19 November 2026",
+    "issue": "inflation",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Gas reservation",
+    "def": "A requirement that a share of gas production be sold in the domestic market."
+   },
+   {
+    "term": "Market intervention",
+    "def": "Government action that changes how a market allocates resources."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: Federal politics live blog (Marles; McDonald), 19 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-19-labor-presses-coalition-gas-reservation.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "Reserving gas shifts domestic supply right, lowering the domestic price and raising quantity used, which helps households and manufacturers. Costs: producers earn less than at export prices, export income and the current account may fall, and long-run investment in new fields may be lower. Weigh these in a 6-mark assess question.",
+  "questions": [
+   {
+    "q": "Assess the likely impact of a domestic gas reservation scheme on Australia's energy market and its export income.",
+    "marks": 6
+   }
+  ],
+  "note": "UPDATE DUE: the Senate vote. The $10 figure is described as 'about' and the unit (per gigajoule) is the digest's. Kept alongside the 18 November opinion card on the WA carve-out, which has the investment and sovereign risk detail (WA permanently at 0%, Hancock's $2 billion project paused).",
+  "added": "2026-11-20"
+ },
+ {
+  "id": "2026-11-19-jobs-shock-december-rate-rise-off-the-table",
+  "title": "Jobs shock takes a December rate rise off the table",
+  "date": "2026-11-19",
+  "type": "news",
+  "outlets": [
+   "RBA",
+   "ABC News",
+   "CommBank",
+   "Newsquawk"
+  ],
+  "summary": "Shows the RBA's policy dilemma after October's jobs data, with its inflation forecasts, NAIRU estimate and time lags.",
+  "lede": "The RBA raised the cash rate to 4.85% on 3 November, its fifth rise of 2026, in a split 6-3 vote. After October's jobs data, economists now expect it to hold rates until at least February; Moody's said the data 'all but closes the door' on a December rise.",
+  "about": {
+   "h09": [
+    "4D.1",
+    "4D.2",
+    "4D.3",
+    "4H.1"
+   ],
+   "y12": [
+    "Y2c.4",
+    "Y2c.7",
+    "Y2c.8",
+    "Y1c.6"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3B.4",
+    "3C.2",
+    "3C.1"
+   ],
+   "y12": [
+    "Y1c.3",
+    "Y2c.3"
+   ],
+   "y11": [
+    "P4c.4"
+   ]
+  },
+  "issues": [
+   "rates",
+   "inflation",
+   "employment"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "phillips",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "RBA cash rate",
+    "value": "4.85% (+25 basis points on 3 November; highest since 2008; board vote 6-3)",
+    "asAt": "3 November 2026",
+    "issue": "rates",
+    "source": "RBA"
+   },
+   {
+    "label": "RBA headline inflation forecast",
+    "value": "Peak 4.5% in the December quarter; above 3% until late 2027; 2.5% by mid-2028",
+    "asAt": "November 2026",
+    "issue": "inflation",
+    "source": "RBA, Statement on Monetary Policy"
+   },
+   {
+    "label": "Inflation, year to September",
+    "value": "Headline 3.9%; trimmed mean 3.7%",
+    "asAt": "September 2026",
+    "issue": "inflation",
+    "source": "ABS, via digest"
+   },
+   {
+    "label": "Unemployment rate / RBA NAIRU estimate",
+    "value": "4.9% / about 4.75% (raised)",
+    "asAt": "November 2026",
+    "issue": "employment",
+    "source": "RBA; ABC News"
+   },
+   {
+    "label": "Next RBA meeting",
+    "value": "7-8 December 2026 (CommBank expects a hold)",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "CommBank"
+   }
+  ],
+  "terms": [
+   {
+    "term": "NAIRU",
+    "def": "The unemployment rate consistent with stable inflation; the RBA raised its estimate to about 4.75%."
+   },
+   {
+    "term": "Cash rate",
+    "def": "The interest rate on overnight loans between banks, which the RBA sets."
+   }
+  ],
+  "links": [
+   [
+    "RBA: Statement on Monetary Policy, November 2026",
+    "https://www.rba.gov.au/"
+   ],
+   [
+    "ABC News: Unemployment rate surges to 4.9pc, 19 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "CommBank: RBA pause increasingly likely, 17 Nov 2026",
+    "https://www.commbank.com.au/"
+   ],
+   [
+    "investinglive: RBA lifts cash rate to 4.85% in split 6-3 vote",
+    "https://investinglive.com/"
+   ],
+   [
+    "Newsquawk: Bullock headlines, 17 Nov 2026",
+    "https://newsquawk.com/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-19-jobs-shock-december-rate-rise-off-the-table.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "Rate rises move the economy along the short-run Phillips curve: inflation eases but unemployment rises. With inflation still well above target and unemployment at 4.9%, the board must weigh the cost of any further rise. Monetary policy works with long and variable lags, so earlier 2026 rises are still flowing through (a key limitation). Bullock said inflation risks are still tilted upward.",
+  "questions": [
+   {
+    "q": "Assess the policy dilemma facing the RBA when inflation is around 3.9% and unemployment has risen to 4.9%.",
+    "marks": 6
+   }
+  ],
+  "note": "Replaces the earlier 19 November card 'Rate hike bets vanish as rising unemployment changes the RBA outlook' (markets removed all bets on a December hike and expected at least one cut, possibly two, by Christmas 2027; the RBA says unemployment of about 4.5-5% may be needed to return inflation to target; Governor Bullock says the RBA does not intend to cause a recession; cash rate from 3.6% at the start of 2026). Forecasts and market pricing are not RBA decisions: UPDATE DUE after 8 December (the RBA's final 2026 meeting). CAUTION: this card gives headline inflation of 3.9% for the year to September; other cards use 4.3%, so check the measure and period before quoting.",
+  "added": "2026-11-20"
+ },
+ {
+  "id": "2026-11-19-economists-warn-edging-towards-recession",
+  "title": "Economists warn Australia is edging towards recession",
+  "date": "2026-11-19",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "AAP"
+  ],
+  "summary": "Gives economists' recession-risk estimates after the jobs shock and introduces the Sahm rule.",
+  "lede": "After October's jobs shock, leading economists warned the risk of recession is rising. AMP's Shane Oliver puts it at 'around 40 per cent' and BetaShares' David Bassanese says the economy may already have 'one foot in recession'.",
+  "about": {
+   "h09": [
+    "3A.7",
+    "3B.2",
+    "3B.3"
+   ],
+   "y12": [
+    "Y1a.5",
+    "Y1a.12",
+    "Y1b.11"
+   ],
+   "y11": [
+    "P1e.4",
+    "P1e.5",
+    "P1e.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3A.4",
+    "4H.1"
+   ],
+   "y12": [
+    "Y1a.8",
+    "Y2c.8"
+   ],
+   "y11": [
+    "P1e.6"
+   ]
+  },
+  "issues": [
+   "growth",
+   "employment"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "adas",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Recession risk (AMP, Shane Oliver)",
+    "value": "Around 40%",
+    "asAt": "19 November 2026",
+    "issue": "growth",
+    "source": "AAP"
+   },
+   {
+    "label": "Unemployment rate",
+    "value": "4.9% in October; Eslake: 5% could come by early 2027, not 2028 as the RBA forecasts",
+    "asAt": "19 November 2026",
+    "issue": "employment",
+    "source": "ABC News; AAP"
+   },
+   {
+    "label": "RBA rate rises in 2026",
+    "value": "5",
+    "asAt": "2026",
+    "issue": "rates",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Sahm rule",
+    "def": "A recession signal triggered when the 3-month average unemployment rate rises 0.5 points above its low of the past year."
+   },
+   {
+    "term": "Recession",
+    "def": "Commonly defined as two consecutive quarters of negative real GDP growth."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: Unemployment rate surges to 4.9pc in October, 19 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "AAP via Yahoo News: Risk is high: recession warning after jobless spike, 19 Nov 2026",
+    "https://au.news.yahoo.com/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-19-economists-warn-edging-towards-recession.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Higher rates and weak confidence cut consumption and investment, shifting AD left, lowering output and raising cyclical unemployment. GDP data come after jobs data, so the labour market can signal a slowdown first. Big job cuts at NAB, David Jones and General Pants are not yet in the official data (AAP).",
+  "questions": [
+   {
+    "q": "Explain how a fall in aggregate demand could lead to a recession and higher unemployment in Australia.",
+    "marks": 5
+   }
+  ],
+  "note": "FORECASTS and views of individual economists, not an official call that a recession has begun. UPDATE DUE: September-quarter GDP on 2 December. Filed alongside the 19 November ABC analysis 'Quacking like a recession' (different quotes and figures: HSBC's Bloxham, 750,000 job seekers, Westpac forecasts).",
+  "added": "2026-11-20"
+ },
+ {
+  "id": "2026-11-19-unemployment-jumps-4-9-43500-jobs-lost",
+  "title": "Unemployment jumps to 4.9% as 43,500 jobs are lost",
+  "date": "2026-11-19",
+  "type": "stats",
+  "outlets": [
+   "ABS",
+   "ABC News"
+  ],
+  "summary": "Gives the October Labour Force result against market expectations and explains why unemployment rose by less than jobs fell.",
+  "lede": "The ABS Labour Force survey showed unemployment rising from 4.7% in September to 4.9% in October, the highest since 2021, while markets had expected no change and about 25,000 new jobs. Employment fell 43,500, almost all in part-time work.",
+  "about": {
+   "h09": [
+    "3B.1",
+    "3B.2",
+    "3B.3",
+    "3B.6"
+   ],
+   "y12": [
+    "Y1b.1",
+    "Y1b.3",
+    "Y1b.7",
+    "Y1b.11",
+    "Y1b.12"
+   ],
+   "y11": [
+    "P1e.7",
+    "P3d.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3A.7",
+    "4D.3"
+   ],
+   "y12": [
+    "Y1b.5",
+    "Y1b.8",
+    "Y1b.10"
+   ],
+   "y11": [
+    "P3b.1"
+   ]
+  },
+  "issues": [
+   "employment"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "chart",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Unemployment rate, seasonally adjusted",
+    "value": "4.9% (September 4.7%; trend 4.8%)",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "ABS Labour Force"
+   },
+   {
+    "label": "Change in employment",
+    "value": "-43,500 (part-time -40,600; full-time -2,900); market expected about +25,000",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "ABS Labour Force"
+   },
+   {
+    "label": "Number unemployed",
+    "value": "753,700 (+17,800)",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "ABS Labour Force"
+   },
+   {
+    "label": "Participation rate",
+    "value": "66.6% (-0.2 points); hours worked -0.2%",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "ABS Labour Force"
+   },
+   {
+    "label": "Youth unemployment / underemployment",
+    "value": "11.3% / 6.2% (eased slightly)",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "ABS Labour Force"
+   },
+   {
+    "label": "RBA unemployment forecast, end-2028",
+    "value": "5.1%",
+    "asAt": "November 2026",
+    "issue": "employment",
+    "source": "RBA"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Participation rate",
+    "def": "The labour force (employed plus unemployed) as a share of the working-age population."
+   },
+   {
+    "term": "Cyclical unemployment",
+    "def": "Unemployment caused by a downturn in the business cycle."
+   }
+  ],
+  "links": [
+   [
+    "ABS: Labour Force, Australia, October 2026",
+    "https://www.abs.gov.au/statistics/labour/employment-and-unemployment/labour-force-australia/"
+   ],
+   [
+    "ABC News: Unemployment rate surges to 4.9pc in October, taking analysts by surprise, 19 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "investinglive: Australian jobs report preview, 18 Nov 2026",
+    "https://investinglive.com/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-19-unemployment-jumps-4-9-43500-jobs-lost.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Unemployment rose by only 17,800 while 43,500 jobs disappeared because many people left the labour force, so participation fell; people who stop looking are not counted as unemployed ('hidden unemployment'), so 4.9% may understate the weakening. Quote both the unemployment rate and the participation rate. Five rate rises slow household spending, firms cut hours and part-time staff, and cyclical unemployment rises.",
+  "questions": [
+   {
+    "q": "Explain why the unemployment rate rose by only 0.2 percentage points even though 43,500 jobs were lost in October.",
+    "marks": 3
+   }
+  ],
+  "note": "Replaces the earlier 19 November card 'Unemployment rises to 4.9%, the highest since 2021' (same ABS release; it also gave unemployed +14.5% on a year ago, employment 14.74 million, employment-to-population ratio 63.3%, September youth rate 11.1% against a post-COVID average of 9.2%, and the next release on 17 December 2026). The ABS trend rate (4.8%) is the best guide to underlying conditions.",
+  "added": "2026-11-20"
+ },
+ {
+  "id": "2026-11-19-aud-slides-towards-67-cents-sixth-day",
+  "title": "Australian dollar slides towards 67 US cents",
+  "date": "2026-11-19",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "Saxo Markets"
+  ],
+  "summary": "Shows two causes of an AUD depreciation, commodity prices and a narrowing US rate gap, and its effects.",
+  "lede": "The Australian dollar fell for a sixth straight day to about 67 US cents. Commodity prices are weaker, US interest rates look set to rise further, and Thursday's jobs data reduced the chance of more RBA rate rises.",
+  "about": {
+   "h09": [
+    "2C.2",
+    "2C.3",
+    "2C.6",
+    "2B.4"
+   ],
+   "y12": [
+    "Y3c.2",
+    "Y3c.4",
+    "Y3c.5",
+    "Y3c.6"
+   ],
+   "y11": [
+    "P6c.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3D.1",
+    "4D.3"
+   ],
+   "y12": [
+    "Y1a.7",
+    "Y2c.5"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "issues": [
+   "fx",
+   "trade",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "fx",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "AUD / USD",
+    "value": "US67.12c early Thursday (-0.3%); sixth straight daily fall to Tuesday",
+    "asAt": "19 November 2026",
+    "issue": "fx",
+    "source": "ABC News; Saxo Markets"
+   },
+   {
+    "label": "Iron ore / gold",
+    "value": "US$88.05 a tonne (-1.2%) / US$3,724 an ounce (-3.3%)",
+    "asAt": "19 November 2026",
+    "issue": "trade",
+    "source": "ABC News"
+   },
+   {
+    "label": "10-year bond yield: Australia / US",
+    "value": "5.09% / 5.07%",
+    "asAt": "19 November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Depreciation",
+    "def": "A fall in the value of the AUD against other currencies when the market sets the rate."
+   },
+   {
+    "term": "Terms of trade",
+    "def": "The ratio of export prices to import prices."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: ASX and business live blog, 19 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "Saxo: Asia Market Quick Take, 18 Nov 2026",
+    "https://www.home.saxo/"
+   ],
+   [
+    "ABC News: Unemployment rate surges to 4.9pc, 19 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-19-aud-slides-towards-67-cents-sixth-day.pdf",
+   "label": "Topic 2 news summary",
+   "pages": 1
+  },
+  "angle": "Lower commodity prices mean foreign buyers need fewer AUD, and a smaller interest rate gap with the US makes Australian assets less attractive, so demand shifts left and the AUD depreciates. A lower AUD cheapens exports and improves international competitiveness but raises import prices, adding to inflation. The dollar kept falling even though Governor Bullock sounded hawkish.",
+  "questions": [
+   {
+    "q": "Discuss two factors behind the recent depreciation of the AUD and one likely effect on the Australian economy.",
+    "marks": 5
+   }
+  ],
+  "note": "Replaces the 18 November card 'Aussie dollar slips to 67 US cents as commodities and shares fall' (AUD US67.18c, -0.19%; iron ore US$89.85 a tonne, +0.16%; Brent US$92.50 a barrel, -0.69%; gold US$3,788, -1.6%; ASX 200 -0.69% to 8,821.8, Dow -1.6%, S&P 500 -1%; cash rate 4.85%). Single-day market prices that move daily.",
+  "added": "2026-11-20"
+ },
+ {
+  "id": "2026-11-19-beef-tariffs-albanese-xi-apec",
+  "title": "Beef tariffs on the table as Albanese meets Xi at APEC",
+  "date": "2026-11-19",
+  "type": "news",
+  "outlets": [
+   "AAP",
+   "ABC News"
+  ],
+  "summary": "Gives a current example of another country's tariff-rate quota on an Australian export, with the tariff diagram and trade-relationship context.",
+  "lede": "Anthony Albanese meets Xi Jinping in Shenzhen on Friday at the APEC summit, and Australian beef exporters want relief from China's import quota, which triggered an extra 55% tariff once Australia's share was used up.",
+  "about": {
+   "h09": [
+    "1C.2",
+    "2D.4",
+    "2A.1"
+   ],
+   "y12": [
+    "Y3a.6",
+    "Y3a.7",
+    "Y3a.8",
+    "Y3a.11"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "1C.1",
+    "2B.4"
+   ],
+   "y12": [
+    "Y3a.15",
+    "Y3e.3"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "trade"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Australia's 2026 beef quota in China",
+    "value": "205,000 tonnes, used up in June (three-year quota from 2026)",
+    "asAt": "June 2026",
+    "issue": "trade",
+    "source": "AAP"
+   },
+   {
+    "label": "Extra tariff on beef above the quota",
+    "value": "55%",
+    "asAt": "2026",
+    "issue": "trade",
+    "source": "AAP"
+   },
+   {
+    "label": "Beef exports to China at risk each year (AMIC estimate)",
+    "value": "About $1 billion",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "Australian Meat Industry Council, via AAP"
+   },
+   {
+    "label": "Rabobank expectation for the 2027 quota",
+    "value": "Could be used up by May",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "Rabobank, via AAP"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Tariff-rate quota",
+    "def": "A low tariff applies up to a set volume of imports, and a higher tariff above it."
+   },
+   {
+    "term": "Safeguard measure",
+    "def": "Temporary protection for a domestic industry facing a surge in imports."
+   }
+  ],
+  "links": [
+   [
+    "Michael West Media (AAP): Tough act to follow: PM's Xi meeting overshadowed, 19 Nov 2026",
+    "https://www.michaelwest.com.au/"
+   ],
+   [
+    "ABC News: Federal politics live blog, 19 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-19-beef-tariffs-albanese-xi-apec.pdf",
+   "label": "Topic 2 news summary",
+   "pages": 1
+  },
+  "angle": "The tariff raises China's domestic beef price, lifts Chinese production, cuts consumption and imports, raises government revenue and creates deadweight losses; Australian exporters lose sales and look for other markets. Protection shifts resources to less efficient producers, reducing global welfare.",
+  "questions": [
+   {
+    "q": "Explain the effects of China's beef import quota and tariff on Australian beef producers and on Chinese consumers.",
+    "marks": 4
+   }
+  ],
+  "note": "UPDATE DUE: the outcome of the Albanese-Xi meeting (Friday 20 November) and the APEC summit; Acting PM Richard Marles says beef tariffs are a key goal of the trip. The AMIC $1 billion figure is an industry estimate. Related: 18 November Albanese at APEC card.",
+  "added": "2026-11-20"
+ },
+ {
+  "id": "2026-11-19-oil-holds-above-us90-middle-east-surplus",
+  "title": "Oil holds above US$90 as Middle East tension offsets surplus fears",
+  "date": "2026-11-19",
+  "type": "news",
+  "outlets": [
+   "Saxo Markets",
+   "ABC News",
+   "Newsquawk"
+  ],
+  "summary": "Shows how a supply shock raises oil prices when demand is price-inelastic, and how oil drives cost-push inflation.",
+  "lede": "Oil prices stayed above US$90 a barrel this week as Middle East flare-ups held prices up, even though some analysts expect a supply glut in 2027. Oil has been a major driver of inflation around the world in 2026, including in Australia.",
+  "about": {
+   "h09": [
+    "3C.3",
+    "1A.1",
+    "1A.8"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y1c.5",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P2c.4",
+    "P2d.1",
+    "P2d.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2B.4",
+    "3F.4"
+   ],
+   "y12": [
+    "Y1a.10",
+    "Y1c.8"
+   ],
+   "y11": [
+    "P1e.6"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "global"
+  ],
+  "levers": [],
+  "diagrams": [
+   "ds",
+   "adas",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Brent crude",
+    "value": "US$93.14 settle on Tuesday; about US$91.59 early Thursday (-1.7% overnight)",
+    "asAt": "19 November 2026",
+    "issue": "inflation",
+    "source": "Saxo Markets; ABC News"
+   },
+   {
+    "label": "Goldman Sachs 2027 outlook",
+    "value": "Possible surplus of about 2 million barrels a day; Brent averaging US$88",
+    "asAt": "2027 forecast",
+    "issue": "inflation",
+    "source": "Goldman Sachs, via digest"
+   },
+   {
+    "label": "US petrol price",
+    "value": "Eight-month low of US$3.78 a gallon",
+    "asAt": "November 2026",
+    "issue": "inflation",
+    "source": "digest"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Supply shock",
+    "def": "A sudden change in supply that shifts the supply curve, such as a war disrupting oil production."
+   },
+   {
+    "term": "Price-inelastic demand",
+    "def": "Quantity demanded changes little when price changes."
+   }
+  ],
+  "links": [
+   [
+    "Saxo: Asia Market Quick Take, 18 Nov 2026",
+    "https://www.home.saxo/"
+   ],
+   [
+    "ABC News: ASX and business live blog, 19 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "Newsquawk: Bullock on inflation risks, 17 Nov 2026",
+    "https://newsquawk.com/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-19-oil-holds-above-us90-middle-east-surplus.pdf",
+   "label": "Topic 1 news summary",
+   "pages": 1
+  },
+  "angle": "In the short run demand for oil is price-inelastic, so when conflict threatens supply (S shifts left) quantity falls a little but price jumps. On an AD/AS diagram, an oil price rise shifts SRAS left, causing cost-push inflation and slower growth together (stagflation). RBA Governor Bullock flagged the risk that oil prices stay high.",
+  "questions": [
+   {
+    "q": "Using an AD/AS diagram, explain how higher world oil prices affect inflation and economic growth in Australia.",
+    "marks": 6
+   }
+  ],
+  "note": "Market prices and a 2027 forecast: the Goldman surplus is a forecast, not an outcome. Single-day figures move daily. Related: 10 November oil and the bowser card and 28 October Saudi refinery card. Links are to the outlets' home pages because the digest gives titles only.",
+  "added": "2026-11-20"
+ },
+ {
+  "id": "2026-11-19-us-fed-signals-more-rate-rises",
+  "title": "US Fed signals more rate rises as global shares slide",
+  "date": "2026-11-19",
+  "type": "news",
+  "outlets": [
+   "Saxo Markets",
+   "ABC News"
+  ],
+  "summary": "Shows how expected US rate rises pull funds away from other currencies and link Australian markets to the US.",
+  "lede": "St Louis Fed President Alberto Musalem said 'several' rate rises are likely to be needed before spring 2027, and global share markets have fallen. Higher US interest rates draw investment towards the US, putting downward pressure on other currencies including the AUD.",
+  "about": {
+   "h09": [
+    "1A.4",
+    "2C.2",
+    "4H.2"
+   ],
+   "y12": [
+    "Y3c.4",
+    "Y3e.3",
+    "Y3b.3"
+   ],
+   "y11": [
+    "P6c.1",
+    "P4c.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4D.3",
+    "2A.2"
+   ],
+   "y12": [
+    "Y3c.5",
+    "Y2c.8"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "issues": [
+   "rates",
+   "fx",
+   "global"
+  ],
+  "levers": [
+   "monetary",
+   "global"
+  ],
+  "diagrams": [
+   "fx",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Fed view (St Louis Fed President Musalem)",
+    "value": "\"Several\" rate rises likely before spring 2027; real policy rate may need to rise about 1 percentage point",
+    "asAt": "18 November 2026",
+    "issue": "rates",
+    "source": "Saxo Markets"
+   },
+   {
+    "label": "US import prices, October",
+    "value": "+1.1% (expected +0.7%); US retail sales +0.2%",
+    "asAt": "October 2026",
+    "issue": "inflation",
+    "source": "Saxo Markets"
+   },
+   {
+    "label": "S&P 500 / Stoxx 600",
+    "value": "-1.0% (lowest since July) / -1.8%",
+    "asAt": "18 November 2026",
+    "issue": "global",
+    "source": "Saxo Markets"
+   },
+   {
+    "label": "10-year yield: US / Australia",
+    "value": "About 5.1% / 5.09%",
+    "asAt": "19 November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Real interest rate",
+    "def": "The nominal interest rate minus inflation."
+   },
+   {
+    "term": "Capital flows",
+    "def": "Money moving between countries to buy financial assets such as shares and bonds."
+   }
+  ],
+  "links": [
+   [
+    "Saxo: Asia Market Quick Take, 18 Nov 2026",
+    "https://www.home.saxo/"
+   ],
+   [
+    "ABC News: ASX and business live blog, 19 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-19-us-fed-signals-more-rate-rises.pdf",
+   "label": "Topic 1 news summary",
+   "pages": 1
+  },
+  "angle": "When US rates rise relative to Australia's, investors switch funds into US assets, demand for AUD falls and the AUD depreciates: a key channel linking the global economy to Australia's exchange rate through the financial account. Weak Australian jobs data makes further RBA rises less likely, which could widen the rate gap with the US.",
+  "questions": [
+   {
+    "q": "Explain how rising US interest rates could affect Australia's exchange rate and financial account.",
+    "marks": 4
+   }
+  ],
+  "note": "One Fed official's view, not a Fed decision. Replaces the 13 November card 'US bond yields jump as markets bet on a Fed rate hike' (US 10-year 5.152%, +29.4 basis points on the week, the largest since April 2025; US 2-year 4.872%, +35.2 basis points; about 88% chance of a 0.25 point December Fed hike and 12% for 0.50; Australian 10-year 5.14%; Fed Chair Kevin Warsh due to speak and the Fed's October minutes due 18 November). The 12 November card on hot US inflation is kept. UPDATE DUE: the Fed's December decision.",
+  "added": "2026-11-20"
  },
  {
   "id": "2026-11-18-albanese-apec-shenzhen-xi-barriers",
@@ -1064,130 +1747,6 @@
    }
   ],
   "note": "The WTO link is the organisation's home page because the digest gives the report title only. Mixed picture: restrictive measures and facilitating measures both rose.",
-  "added": "2026-11-19"
- },
- {
-  "id": "2026-11-18-aud-iron-ore-slip-wall-st",
-  "title": "Aussie dollar slips to 67 US cents as commodities and shares fall",
-  "date": "2026-11-18",
-  "type": "news",
-  "outlets": [
-   "ABC News",
-   "MacroBusiness"
-  ],
-  "summary": "Shows how weaker commodity prices and risk-off selling lower the AUD, and why a high cash rate only partly supports it.",
-  "lede": "A sharp Wall Street sell-off flowed through to Australian markets on Wednesday 18 November. The AUD fell 0.19% to US67.18 cents, gold fell and iron ore stayed below US$90 a tonne amid weak Chinese steel demand.",
-  "about": {
-   "h09": [
-    "2C.2",
-    "2C.3",
-    "2B.4",
-    "3D.1"
-   ],
-   "y12": [
-    "Y3c.2",
-    "Y3c.4",
-    "Y1a.7"
-   ],
-   "y11": [
-    "P6c.1",
-    "P6a.2"
-   ]
-  },
-  "also": {
-   "h09": [
-    "2C.6",
-    "2A.1",
-    "4D.3"
-   ],
-   "y12": [
-    "Y3c.5",
-    "Y3e.3"
-   ],
-   "y11": [
-    "P2d.1"
-   ]
-  },
-  "issues": [
-   "fx",
-   "trade",
-   "global"
-  ],
-  "levers": [],
-  "diagrams": [
-   "fx",
-   "flow"
-  ],
-  "figures": [
-   {
-    "label": "AUD / USD",
-    "value": "US67.18c (-0.19%)",
-    "asAt": "18 November 2026",
-    "issue": "fx",
-    "source": "ABC News"
-   },
-   {
-    "label": "Iron ore (Singapore)",
-    "value": "US$89.85 a tonne (+0.16%)",
-    "asAt": "18 November 2026",
-    "issue": "trade",
-    "source": "ABC News"
-   },
-   {
-    "label": "Brent crude / gold",
-    "value": "US$92.50 a barrel (-0.69%) / US$3,788 an ounce (-1.6%)",
-    "asAt": "18 November 2026",
-    "issue": "trade",
-    "source": "ABC News"
-   },
-   {
-    "label": "ASX 200",
-    "value": "-0.69% to 8,821.8 (Dow -1.6%, S&P 500 -1%)",
-    "asAt": "18 November 2026",
-    "issue": "global",
-    "source": "ABC News"
-   },
-   {
-    "label": "RBA cash rate",
-    "value": "4.85%, highest since 2008",
-    "asAt": "November 2026",
-    "issue": "rates",
-    "source": "ABC News"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Commodity currency",
-    "def": "A currency, such as the AUD, that tends to move with the prices of the country's main exports."
-   },
-   {
-    "term": "Risk-off",
-    "def": "Investors sell riskier assets such as shares and commodity currencies and buy safer ones."
-   }
-  ],
-  "links": [
-   [
-    "ABC News: business live, 18 Nov 2026",
-    "https://www.abc.net.au/news/"
-   ],
-   [
-    "MacroBusiness: Iron ore R.I.P., 15 Nov 2026",
-    "https://www.macrobusiness.com.au/"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-18-aud-iron-ore-slip-wall-st.pdf",
-   "label": "Topic 2 news summary",
-   "pages": 1
-  },
-  "angle": "Weaker commodity prices mean foreign buyers need fewer AUD, and risk-off investors sell AUD assets, so demand shifts left and the AUD depreciates. A depreciation partly stabilises the economy by cheapening exports but adds imported inflation, a concern for the RBA. The high cash rate tends to support the AUD through capital inflows.",
-  "questions": [
-   {
-    "q": "Explain two factors that influence the value of the Australian dollar, and outline one effect of a depreciation on the Australian economy.",
-    "marks": 5
-   }
-  ],
-  "note": "Replaces the 17 November card on the same series (AUD US67.40c, -0.5%; iron ore US$88.15 a tonne, -2.5%; Brent US$92.32, -3.7%; gold US$3,865; Nasdaq -2.5% and S&P 500 -2.0% on Monday 16 November). Single-day market prices. Links are to the outlets' pages because the digest gives titles only.",
   "added": "2026-11-19"
  },
  {
@@ -2553,15 +3112,16 @@
   "added": "2026-11-19"
  },
  {
-  "id": "2026-11-18-super-funds-emerging-assets-chalmers",
-  "title": "Chalmers plans to free super funds to back housing, energy and start-ups",
+  "id": "2026-11-18-super-investment-rules-loosened-chalmers",
+  "title": "Chalmers loosens the rules on where super funds can invest",
   "date": "2026-11-18",
   "type": "news",
   "outlets": [
-   "ABC News"
+   "ABC News",
+   "The Nightly (opinion)"
   ],
-  "summary": "Shows a microeconomic reform to direct superannuation capital to productive investment, with a return-versus-risk trade-off.",
-  "lede": "Treasurer Jim Chalmers has proposed changing the superannuation performance test so funds can invest a small share of their portfolios in riskier 'emerging assets' without being penalised. He says this could unlock up to $90 billion for housing, energy and venture capital.",
+  "summary": "Shows a structural reform that frees part of super from the performance test to back housing and renewables, with a returns-versus-steering trade-off.",
+  "lede": "The Treasurer announced changes to superannuation investment rules at a conference in Melbourne on 18 November. Media reports say about 5% of fund investments would be exempt from APRA's annual performance test, giving funds more room to invest in subsidised housing and renewable energy.",
   "about": {
    "h09": [
     "4E.1",
@@ -2586,7 +3146,8 @@
     "4I.1"
    ],
    "y12": [
-    "Y2d.4"
+    "Y2d.4",
+    "Y2d.5"
    ],
    "y11": [
     "P3c.4"
@@ -2601,69 +3162,59 @@
    "micro"
   ],
   "diagrams": [
-   "ds",
-   "flow"
+   "flow",
+   "compare"
   ],
   "figures": [
    {
-    "label": "Potential investment in emerging assets (Treasurer's estimate)",
-    "value": "Up to $90 billion",
-    "asAt": "17 November 2026",
+    "label": "Share of fund investments exempt from the performance test (reported)",
+    "value": "About 5% (about $170 billion of roughly $3.4 trillion APRA-regulated super)",
+    "asAt": "November 2026",
     "issue": "investment",
-    "source": "ABC News"
+    "source": "The Nightly (opinion), citing AFR reporting"
    },
    {
-    "label": "Maximum share of a fund's portfolio in emerging assets",
-    "value": "5%, judged against a lower return benchmark (inflation plus a premium)",
-    "asAt": "17 November 2026",
+    "label": "Performance test consequence",
+    "value": "Funds that fail twice in a row must tell members to consider moving their money",
+    "asAt": "November 2026",
     "issue": "investment",
-    "source": "ABC News"
-   },
-   {
-    "label": "Total superannuation savings",
-    "value": "Almost $5 trillion",
-    "asAt": "17 November 2026",
-    "issue": "investment",
-    "source": "ABC News"
-   },
-   {
-    "label": "Members in underperforming funds",
-    "value": "About 1 million (2021) to about 8,500 (2025)",
-    "asAt": "2025",
-    "issue": "investment",
-    "source": "Treasury, via ABC News"
+    "source": "APRA, via digest"
    }
   ],
   "terms": [
    {
     "term": "Performance test",
-    "def": "An annual test of super funds' returns; funds that fail must tell members and can be barred from taking new members."
+    "def": "APRA's annual check comparing each super fund's returns against a benchmark."
    },
    {
-    "term": "Venture capital",
-    "def": "Investment in young, high-growth firms in return for a share of ownership."
+    "term": "Structural reform",
+    "def": "A policy that changes how markets and institutions work to lift efficiency or productivity."
    }
   ],
   "links": [
    [
-    "ABC News: Jim Chalmers announces plan to let super funds place riskier investments in housing, energy, startups, 17 Nov 2026",
+    "ABC News: Federal politics live blog, 19 Nov 2026",
     "https://www.abc.net.au/news/"
+   ],
+   [
+    "The Nightly: Chalmers' changes will allow superannuation to be invested in subsidised housing and wind and solar farms (opinion), 17 Nov 2026",
+    "https://www.thenightly.com.au/"
    ]
   ],
   "file": {
-   "path": "files/2026-11/2026-11-18-super-funds-emerging-assets-chalmers.pdf",
+   "path": "files/2026-11/2026-11-18-super-investment-rules-loosened-chalmers.pdf",
    "label": "Topic 4 news summary",
    "pages": 1
   },
-  "angle": "More super capital shifts the supply of finance for housing, energy and start-ups right, lowering its cost and lifting investment, housing supply and productivity. Limitation: riskier assets could lower some members' retirement returns, so there is a trade-off between growth and retirement income security. Taking up the option would be voluntary and funds' best-interests duty is unchanged.",
+  "angle": "Possible benefits: more capital for housing supply and wind and solar, long-term investment that suits retirement savings. Possible risks: lower or riskier member returns, less pressure on poorly performing funds and government steering of private savings. Shadow Treasurer Tim Wilson revived the idea of first home buyers using super; Chalmers said the Coalition wanted a 'wrecking ball' for super.",
   "questions": [
    {
-    "q": "Evaluate the potential benefits and risks of allowing superannuation funds to invest more in emerging assets such as housing and venture capital.",
+    "q": "Discuss the possible economic benefits and costs of encouraging super funds to invest more in housing and renewable energy.",
     "marks": 6
    }
   ],
-  "note": "A PROPOSAL, not yet law; the $90 billion is the Treasurer's estimate. Related: 16 November card on super nearing $5 trillion. ABC link is the 17 November page of the site because the digest gives the headline only.",
-  "added": "2026-11-19"
+  "note": "DETAIL IS UNOFFICIAL: the figures come from media reporting (an opinion column citing AFR); the government has not released the official rules or a start date. Replaces the earlier ABC-based card on the same proposal (filed 18 November) (Treasurer's estimate that it could unlock up to $90 billion; up to 5% of a portfolio in 'emerging assets' judged against an inflation-plus-premium benchmark set on Government Actuary advice; voluntary; best-interests duty unchanged; members in underperforming funds fell from about 1 million in 2021 to about 8,500 in 2025; super savings almost $5 trillion). The $90 billion (unlocked) and $170 billion (exempt) are different measures; and the announcement is dated 17 November in the ABC card and 18 November here, so check the source.",
+  "added": "2026-11-20"
  },
  {
   "id": "2026-11-17-ai-investment-boom-wobbles",
@@ -4897,126 +5448,6 @@
   ],
   "note": "Health had the largest net spend, and Defence and Finance each spent more than $1 billion, as reported. Finance Minister Katy Gallagher is looking for savings before MYEFO in December but has not committed to a net saving. The measure is the ABC's own analysis of the budget papers. Extends the 5 November budget versus inflation item. UPDATE DUE: December MYEFO.",
   "added": "2026-11-16"
- },
- {
-  "id": "2026-11-13-us-bond-yields-jump-fed-hike-bets",
-  "title": "US bond yields jump as markets bet on a Fed rate hike",
-  "date": "2026-11-13",
-  "type": "news",
-  "outlets": [
-   "Fixed Income News Australia",
-   "ABC News"
-  ],
-  "summary": "Shows how US interest rate expectations spread to Australia through bond yields, capital flows and the exchange rate.",
-  "lede": "US government bond yields had their biggest weekly rise since April 2025 as markets priced in a likely Fed rate hike in December. The US 10-year closed Friday at 5.152% and Australian long-term yields rose to match it.",
-  "about": {
-   "h09": [
-    "1A.4",
-    "2C.2",
-    "4D.3",
-    "4H.2"
-   ],
-   "y12": [
-    "Y3c.4",
-    "Y3e.3",
-    "Y2c.8"
-   ],
-   "y11": [
-    "P4c.2",
-    "P4c.3"
-   ]
-  },
-  "also": {
-   "h09": [
-    "2A.2",
-    "3C.3",
-    "4H.2"
-   ],
-   "y12": [
-    "Y3c.5",
-    "Y3b.3"
-   ],
-   "y11": [
-    "P6c.1"
-   ]
-  },
-  "issues": [
-   "rates",
-   "fx",
-   "global"
-  ],
-  "levers": [
-   "monetary",
-   "global"
-  ],
-  "diagrams": [
-   "chart",
-   "flow"
-  ],
-  "figures": [
-   {
-    "label": "US 10-year yield",
-    "value": "5.152% (+29.4 basis points on the week, the largest since April 2025)",
-    "asAt": "Friday 13 November 2026",
-    "issue": "rates",
-    "source": "Fixed Income News Australia"
-   },
-   {
-    "label": "US 2-year yield",
-    "value": "4.872% (+35.2 basis points)",
-    "asAt": "Friday 13 November 2026",
-    "issue": "rates",
-    "source": "Fixed Income News Australia"
-   },
-   {
-    "label": "Market odds of a December Fed hike",
-    "value": "About 88% for 0.25 points; 12% for 0.50 points",
-    "asAt": "13 November 2026",
-    "issue": "rates",
-    "source": "Fixed Income News Australia"
-   },
-   {
-    "label": "Australian 10-year yield",
-    "value": "5.14% (US 10-year also 5.14% early Monday)",
-    "asAt": "16 November 2026",
-    "issue": "rates",
-    "source": "Fixed Income News Australia"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Basis point",
-    "def": "One-hundredth of a percentage point; 29 basis points is 0.29 percentage points."
-   },
-   {
-    "term": "Bond yield",
-    "def": "The return on a government bond, which moves with expected interest rates."
-   }
-  ],
-  "links": [
-   [
-    "Fixed Income News Australia: Wages, jobs and RBA minutes put Australian bonds to the test as yields match Treasuries, 16 Nov 2026",
-    "https://www.fixedincomenews.com.au/wages-jobs-and-rba-minutes-put-australian-bonds-to-the-test-as-yields-match-treasuries/"
-   ],
-   [
-    "ABC News: ASX falls as miners drag, 16 Nov 2026",
-    "https://www.abc.net.au/news/2026-11-16/asx-markets-business-live-news-nov-16/107388134"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-13-us-bond-yields-jump-fed-hike-bets.pdf",
-   "label": "Topic 1 news summary",
-   "pages": 1
-  },
-  "angle": "Evidence that Australia is closely tied to global financial markets: US rates help set Australian borrowing costs, and similar yields reduce the reason to hold Australian assets, lowering capital inflows and the AUD. It also shows the limits on a small open economy's monetary independence (limitation: global influences).",
-  "questions": [
-   {
-    "q": "Explain how a rise in US interest rates can affect Australia's exchange rate and financial flows.",
-    "marks": 4
-   }
-  ],
-  "note": "Fed Chair Kevin Warsh was due to speak Monday US time and the Fed's October minutes are due Wednesday 18 November: UPDATE DUE if the December hike odds change. Market odds are as reported by Fixed Income News Australia. Related: 12 November card on hot US inflation and a Fed hike.",
-  "added": "2026-11-17"
  },
  {
   "id": "2026-11-13-ai-chips-arms-race-explainer",
