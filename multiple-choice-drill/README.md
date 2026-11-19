@@ -5,7 +5,7 @@ Every HSC Economics Section I question from 2009 to 2025 (340 questions, 17 pape
 - **Page:** `index.html` is one self-contained file (built, do not edit by hand). Figure images are loaded from `../hsc-question-finder-site/figs/`, so the two folders must stay side by side.
 - **Published at:** `/multiple-choice-drill/` on the GitHub Pages site.
 - **Embedding:** `…/multiple-choice-drill/?embed=1`, with `theme=light|dark` and `fw=h09|y12`.
-- **Links in:** `#view=paper`, `#view=results`.
+- **Links in:** `#view=paper`, `#view=results`. Deep links into the drill (added 19 Nov 2026, 2009 syllabus codes): `#top=T2` (a topic), `#sec=2B` (a part of a topic), `#point=2B.3` (one dot point), `#q=2019-7,2021-9` (exactly these questions, in this order, started at once). Optional extras: `&from=2015` (papers from that year), `&len=10` or `&len=all`, and `&go=1` to start the set without showing the set-up panel. Example: `…/multiple-choice-drill/#sec=2C&len=10&go=1`. The Topic 2 workbook QR codes use `#sec=2A`, `2B`, `2C` and `3D`.
 
 ## The three views
 

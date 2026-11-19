@@ -368,12 +368,24 @@ document.querySelector('main').addEventListener('click', e => { const q = s => e
 document.querySelector('main').addEventListener('change', e => { const id = e.target.id;
   if (id === 'sec') { S.sec = e.target.value; renderDrill(); } else if (id === 'calc') { S.calc = e.target.checked; renderDrill(); } else if (id === 'from') { S.from = +e.target.value; renderDrill(); } else if (id === 'timed') S.timed = e.target.checked; });
 addEventListener('keydown', e => { if (e.target.matches('input,select,textarea') || e.metaKey || e.ctrlKey || e.altKey) return; const k = e.key.toUpperCase(); if (L.includes(k)) { e.preventDefault(); answer(k); } });
-addEventListener('hashchange', () => { const v = new URLSearchParams(location.hash.slice(1)).get('view'); if (VIEWS.includes(v)) go(v); });
+/* ---------- links in: #view=, #top=T2, #sec=2B, #point=2B.3, #q=2019-7,2021-9, with optional &from=2015 &len=10|all &go=1 ---------- */
+function applyLink() { const h = new URLSearchParams(location.hash.slice(1)); const v = h.get('view'); if (VIEWS.includes(v)) S.view = v;
+  const top = h.get('top'), sec = h.get('sec'), point = h.get('point'), ids = (h.get('q') || '').split(',').map(x => x.trim()).filter(x => QBY[x]);
+  if (!(top || sec || point || ids.length)) return false;
+  S.fw = 'h09'; S.view = 'drill'; DR = null; Object.assign(S, { top: '', sec: '', point: '', only: 'all', calc: false, from: YEARS[YEARS.length - 1] });
+  if (point && PT[point]) S.point = point;
+  else if (sec && SEC[sec] && SEC[sec].fw === 'h09') { S.sec = sec; S.top = SEC[sec].top.id; }
+  else if (top && FW.h09.topics.some(t => t.id === top)) S.top = top;
+  const from = +h.get('from'); if (YEARS.includes(from)) S.from = from;
+  const len = h.get('len'); if (len === 'all') S.len = 999; else if (+len > 0) S.len = +len;
+  if (ids.length) { startDrill(ids); return true; }
+  if (h.get('go') === '1') { const p = pool(); if (p.length) { startDrill(shuffle(p).slice(0, S.len).map(x => x.id)); return true; } }
+  return false; }
+addEventListener('hashchange', () => { if (location.hash.length > 1 && !applyLink()) render(); });
 { const ne = QS.filter(q => q.e).length; if (ne < QS.length) $('#ecount').textContent = ' (' + ne + ' of ' + QS.length + ' questions have one so far)'; }
 if ((D.nokey || []).length) $('#nokey').textContent = ' The ' + D.nokey.join(' and ') + ' paper is in the Question Finder but not here yet: it joins the drill when NESA publishes the answers.';
 $('#tag').textContent = `All ${QS.length} Section I questions from the ${YEARS[YEARS.length - 1]} to ${YEARS[0]} HSC papers: drill a topic, sit a timed paper, find your weak dot points`;
-{ const v = new URLSearchParams(location.hash.slice(1)).get('view'); if (VIEWS.includes(v)) S.view = v; }
-render();
+if (!applyLink()) render();
 })();
 </script>
 <!-- HOVER:START built by build/build_hover.py; glossary definitions on hover -->
