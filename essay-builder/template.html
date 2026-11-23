@@ -206,6 +206,17 @@ details.helpd .ideas,details.helpd .model{border:0;padding:0;margin:0;background
 .lvl.big u{text-decoration:none;font-weight:700;color:var(--acc);margin-top:3px}
 .supused{font-size:.78rem;color:var(--mut);margin-top:2px}
 .qcount{margin:0 0 8px;color:var(--mut);font-size:.9rem}
+.qwrap{position:relative}
+.qwrap .qlist{scrollbar-gutter:stable;scrollbar-width:auto;scrollbar-color:var(--acc) var(--card2);border:1px solid var(--rule);border-radius:12px;padding:8px;background:var(--card2)}
+.qwrap .qlist::-webkit-scrollbar{width:12px}.qwrap .qlist::-webkit-scrollbar-track{background:var(--card2);border-radius:8px}
+.qwrap .qlist::-webkit-scrollbar-thumb{background:var(--acc);border-radius:8px;border:2px solid var(--card2)}
+.qwrap.more::after{content:"";position:absolute;left:1px;right:14px;bottom:1px;height:76px;border-radius:0 0 12px 12px;background:linear-gradient(to bottom,transparent,var(--card2) 78%);pointer-events:none}
+.qwrap.up::before{content:"";position:absolute;left:1px;right:14px;top:1px;height:26px;border-radius:12px 12px 0 0;background:linear-gradient(to top,transparent,var(--card2));pointer-events:none;z-index:1}
+.qmore{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);z-index:2;display:inline-flex;gap:7px;align-items:center;border:0;border-radius:999px;background:var(--acc);color:var(--acc-ink);font-weight:700;font-size:.86rem;padding:.4rem 1rem;box-shadow:var(--shadow);white-space:nowrap}
+.qmore span{display:inline-block;animation:qbob 1.4s ease-in-out infinite}
+@keyframes qbob{50%{transform:translateY(3px)}}
+@media (prefers-reduced-motion:reduce){.qmore span{animation:none}}
+@media (max-width:520px){.qmore{font-size:.78rem;padding:.35rem .8rem}}
 .seg small{display:block;font-weight:400;font-size:.7rem;opacity:.85}
 .tabs{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 18px}
 .tab{display:inline-flex;gap:11px;align-items:center;text-align:left;border:1px solid var(--rule2);border-bottom:4px solid var(--rule2);background:var(--card);border-radius:14px;padding:.5rem 1.1rem .5rem .55rem;color:var(--mut)}
@@ -527,7 +538,8 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
   <section class="step" id="s1"><h2><i>1</i>Choose a question</h2>
     <p class="sub">Every Section II, III and IV question from the HSC papers held in the class Question Finder. The coloured edge shows the topic.</p>
     <div class="qfil" id="qfil"></div>
-    <div class="qlist" id="qlist"></div></section>
+    <p class="qcount" id="qcount" aria-live="polite"></p>
+    <div class="qwrap" id="qwrap"><div class="qlist" id="qlist" tabindex="0" aria-label="Questions"></div><button type="button" class="qmore" id="qmore" hidden><span aria-hidden="true">↓</span> More questions below: scroll the list</button></div></section>
 
   <p class="card" id="noq">Choose a question to start. The builder then helps you unpack it, plan each paragraph with a diagram and with statistics from the class Evidence Finder or your own research, and check the plan before you write. You choose how much support you get.</p>
 
@@ -1083,11 +1095,19 @@ function renderFil() { const f = S.qf, tops = FW[S.fw].topics, inS = ENT.filter(
 function renderQs() { const f = S.qf, txt = f.text.trim().toLowerCase();
   const list = ENT.filter(e => e.s === f.s && (!f.top || entTopIds(e).includes(f.top)) && (!f.sec || entSecs(e).includes(f.sec)) && (!f.verb || e.verbs.includes(f.verb)) && (!txt || (e.text + ' ' + e.y).toLowerCase().includes(txt)));
   const where = f.sec ? topLab(SEC[f.sec].top) + ' › ' + secLab(SEC[f.sec]) : f.top ? topLab(TOP[f.top]) : '';
-  const head = where ? `<p class="qcount"><b>${list.length}</b> question${list.length === 1 ? '' : 's'} in ${esc(where)}${S.fw === 'y12' ? ' <em>(matched to the 2025 syllabus)</em>' : ''}</p>` : '';
-  $('#qlist').innerHTML = head + (list.length ? list.slice(0, f.n).map(e => `<button class="q" data-q="${e.key}" aria-pressed="${S.q === e.key}" style="--tc:${entColor(e)}"><span class="yr">${e.y} Q${e.q}<small>${e.m} marks${S.plans[e.key] ? ' · plan saved' : ''}</small></span>
+  $('#qcount').innerHTML = `<b>${list.length}</b> question${list.length === 1 ? '' : 's'}${where ? ' in ' + esc(where) : ''}${where && S.fw === 'y12' ? ' <em>(matched to the 2025 syllabus)</em>' : ''}<span id="qscroll"></span>`;
+  $('#qlist').innerHTML = (list.length ? list.slice(0, f.n).map(e => `<button class="q" data-q="${e.key}" aria-pressed="${S.q === e.key}" style="--tc:${entColor(e)}"><span class="yr">${e.y} Q${e.q}<small>${e.m} marks${S.plans[e.key] ? ' · plan saved' : ''}</small></span>
       <span class="qt">${e.s === 'II' ? e.parts.map(p => `<span><b>${esc(p.l.replace(/^Q\d+/, ''))}</b>${esc(p.t)} (${p.m})</span>`).join('') : esc(e.parts[0].t)}</span>
       <span class="tags">${e.verbs.slice(0, 3).map(v => `<span class="chip v">${VERB[v][0]}</span>`).join('')}${e.st ? '<span class="chip">Stimulus</span>' : ''}${tagChips(e.c.slice(0, 4))}</span></button>`).join('')
-    + (list.length > f.n ? `<button class="btn ghost more" id="moreq">Show more (${list.length - f.n} more)</button>` : '') : '<p class="empty">No question matches. Clear the search, or choose another section of the paper, topic or sub-topic.</p>'); }
+    + (list.length > f.n ? `<button class="btn ghost more" id="moreq">Show more (${list.length - f.n} more)</button>` : '') : '<p class="empty">No question matches. Clear the search, or choose another section of the paper, topic or sub-topic.</p>'); $('#qlist').scrollTop = 0; qHint(); }
+/* make it obvious when the question list holds more than is showing */
+function qHint() { const l = $('#qlist'), n = l.querySelectorAll('.q').length; if (!l.clientHeight) return; const over = l.scrollHeight - l.clientHeight > 12, more = over && l.scrollHeight - l.scrollTop - l.clientHeight > 12;
+  let seen = 0; if (over) { const r = l.getBoundingClientRect(); l.querySelectorAll('.q').forEach(q => { const b = q.getBoundingClientRect(); if (b.top >= r.top - 4 && b.bottom <= r.bottom + 4) seen++; }); }
+  $('#qmore').hidden = !more; $('#qwrap').classList.toggle('more', more); $('#qwrap').classList.toggle('up', over && l.scrollTop > 12);
+  const sp = $('#qscroll'); if (sp) sp.textContent = over ? `. About ${Math.max(seen, 1)} show at a time: scroll the list to see them all.` : ''; }
+$('#qlist').addEventListener('scroll', () => { clearTimeout(qHint.t); qHint.t = setTimeout(qHint, 60); }, { passive: true });
+addEventListener('resize', () => qHint());
+$('#qmore').onclick = () => { const l = $('#qlist'); l.scrollBy({ top: l.clientHeight * 0.8, behavior: 'smooth' }); };
 
 /* ---------- 2. unpack ---------- */
 const mgLink = y => DATA.mg.includes(y) ? `../hsc-question-finder-site/mg-${y}.pdf` : '';
@@ -1353,7 +1373,7 @@ function stepbar() { const has = !!S.q, pl = has ? P() : null, ch = has ? checks
   const names = stepNames();
   $('#stepbar').innerHTML = [has, s2, s3, s4].map((d, i) => `<button type="button" data-gostep="${i + 1}" class="${d ? 'done' : ''} ${S.step === i + 1 ? 'cur' : ''}" ${S.step === i + 1 ? 'aria-current="step"' : ''} ${i && !has ? 'disabled' : ''}><i>${d && S.step !== i + 1 ? '✓' : i + 1}</i>${names[i]}</button>`).join(''); }
 const stepNames = () => ['Choose a question', 'Unpack it', S.q && P().kind === 'S' ? 'Plan each part' : 'Plan paragraphs', 'Review the plan'];
-function applyStep() { const has = !!S.q, names = stepNames(); if (!has) S.step = 1;
+function applyStep() { const has = !!S.q, names = stepNames(); if (!has) S.step = 1; setTimeout(qHint, 0);
   $$('#v-build .step').forEach(el => el.hidden = el.id !== 's' + S.step); $('#noq').hidden = has || S.step !== 1; $('#supbar').hidden = !has || S.step === 1 || !P().supSet; $('#todo').hidden = false;
   $('#wnav').innerHTML = (S.step > 1 ? `<button type="button" class="btn ghost" data-gostep="${S.step - 1}">← ${names[S.step - 2]}</button>` : '<span></span>') + (has && S.step < 4 ? `<button type="button" class="btn" data-gostep="${S.step + 1}">Next: ${names[S.step]} →</button>` : ''); }
 function goStep(n) { if (S.step === 2 && n > 2 && S.q) { if (!P().supSet) { toast('Choose your level of support first.'); return; } P().seenA = true; } S.step = S.q ? Math.max(1, Math.min(4, n)) : 1; save(); applyStep(); stepbar(); renderTodo(); const top = $('.stepbar').getBoundingClientRect().top; if (top < 0 || top > 200) $('.stepbar').scrollIntoView({ block: 'start' }); }
