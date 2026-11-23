@@ -69,6 +69,7 @@ body{font-weight:500}
 .seg button{border:0;background:none;padding:.42rem .75rem;font-size:.88rem;font-weight:600;color:var(--mut);border-right:1px solid var(--rule)}
 .seg button:last-child{border-right:0}
 .seg button[aria-pressed="true"]{background:var(--acc);color:var(--acc-ink)}
+.qcount{margin:0 0 8px;color:var(--mut);font-size:.9rem}
 .seg small{display:block;font-weight:400;font-size:.7rem;opacity:.85}
 .tabs{display:flex;gap:4px;border-bottom:2px solid var(--rule2);margin:6px 0 18px}
 .tab{border:0;background:none;padding:.55rem .9rem;font-family:var(--head);font-weight:700;font-size:1rem;color:var(--mut);border-bottom:3px solid transparent;margin-bottom:-2px}
@@ -711,6 +712,11 @@ DATA.q.forEach(it => { const key = it.s === 'II' ? `II-${it.y}-${it.q}` : `${it.
 ENT.forEach(e => { e.parts.sort((a, b) => a.l.localeCompare(b.l)); e.text = e.parts.map(p => (p.lead || '') + ' ' + p.t).join(' ');
   e.verbs = [...new Set(e.parts.flatMap(p => verbs(p.t)))]; e.tops = [...new Set(e.c.map(c => topOf(c)).filter(Boolean).map(t => t.id))]; e.st = e.parts.map(p => p.st).find(Boolean) || ''; });
 ENT.sort((a, b) => b.y - a.y || a.q - b.q);
+/* topic and section of a question under the syllabus chosen with the switch (2009 tags; 2025 through the crosswalk) */
+const entSecs = e => [...new Set(S.fw === 'h09' ? e.c.map(secOf) : e.c.flatMap(c => XW[secOf(c)] || []))].filter(s => SEC[s]);
+const entTopIds = e => [...new Set(entSecs(e).map(s => SEC[s].top.id))];
+const secLab = s => (S.fw === 'h09' ? s.id + ' · ' : '') + s.name;
+const topLab = t => (t.label ? t.label + ': ' : '') + t.name;
 const SECN = { II: 'Section II · Short answer', III: 'Section III · Stimulus extended response', IV: 'Section IV · Extended response' };
 
 /* ---------- evidence ---------- */
@@ -720,9 +726,12 @@ const fmtDate = s => { if (!s) return ''; const d = new Date(s + 'T00:00:00'); r
 
 /* ---------- state ---------- */
 const KEY = 'econ-er-builder-v1';
-let S = { fw: 'h09', q: null, lab: '12', plans: {}, qf: { s: 'IV', top: '', verb: '', text: '', n: 40 }, sf: { tab: 'fig', text: '', issue: '', match: true } };
+let S = { fw: 'h09', q: null, lab: '12', plans: {}, qf: { s: 'IV', top: '', sec: '', verb: '', text: '', n: 40 }, sf: { tab: 'fig', text: '', issue: '', match: true } };
 try { const d = JSON.parse(localStorage.getItem(KEY) || 'null'); if (d && typeof d === 'object') { if (FW[d.fw]) S.fw = d.fw; if (d.lab === '01') S.lab = '01'; if (d.plans && typeof d.plans === 'object') S.plans = d.plans; if (d.q && EK[d.q] && S.plans[d.q]) S.q = d.q; } } catch (e) {}
 if (FW[params.get('fw')]) S.fw = params.get('fw');
+/* deep link: ?s=IV&sec=1E opens the picker on one section of the syllabus (e.g. Topic 1 case study) */
+if (['II', 'III', 'IV'].includes(params.get('s'))) S.qf.s = params.get('s');
+{ const ps = params.get('sec'); if (ps && SEC[ps]) { S.fw = FW.y12.topics.some(t => t.id === SEC[ps].top.id) ? 'y12' : 'h09'; S.qf.top = SEC[ps].top.id; S.qf.sec = ps; } }
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ fw: S.fw, q: S.q, lab: S.lab, plans: S.plans })); } catch (e) {} };
 const E = () => EK[S.q], P = () => S.plans[S.q];
 const newCycle = () => ({ explain: '', dia: '', sc: '', cause: '', dnote: '', ref: '', ev: [] });
@@ -749,18 +758,23 @@ const entColor = e => { const t = TOP[e.tops[0]]; return t ? t.color : 'var(--ru
 /* ---------- 1. choose ---------- */
 function renderFil() { const f = S.qf;
   $('#qfil').innerHTML = `<div class="seg" role="group" aria-label="Section">${['II','III','IV'].map(s => `<button data-sec="${s}" aria-pressed="${f.s === s}">Section ${s}<small>${s === 'II' ? 'Short answer' : s === 'III' ? 'Stimulus essay' : 'Essay'}</small></button>`).join('')}</div>
-    <select id="ftop" aria-label="Topic"><option value="">All topics</option>${FW.h09.topics.map(t => `<option value="${t.id}" ${f.top === t.id ? 'selected' : ''}>${esc(t.label)}: ${esc(t.name)}</option>`).join('')}</select>
+    <select id="ftop" aria-label="Topic"><option value="">All topics (${ENT.filter(e => e.s === f.s).length})</option>${FW[S.fw].topics.map(t => `<option value="${t.id}" ${f.top === t.id ? 'selected' : ''}>${esc(topLab(t))} (${ENT.filter(e => e.s === f.s && entTopIds(e).includes(t.id)).length})</option>`).join('')}</select>
+    <select id="fsec" aria-label="Section of the topic">${(() => { const ts = FW[S.fw].topics.filter(t => !f.top || t.id === f.top), opt = x => { const n = ENT.filter(e => e.s === f.s && entSecs(e).includes(x.id)).length; return `<option value="${x.id}" ${f.sec === x.id ? 'selected' : ''} ${n || f.sec === x.id ? '' : 'disabled'}>${esc(secLab(x))} (${n})</option>`; };
+      return `<option value="">${f.top ? 'Every section of this topic' : 'Any section'}</option>` + (ts.length === 1 ? ts[0].sections.map(opt).join('') : ts.map(t => `<optgroup label="${esc(topLab(t))}">${t.sections.map(opt).join('')}</optgroup>`).join('')); })()}</select>
     <select id="fverb" aria-label="Directive"><option value="">Any directive</option>${VKEYS.map(k => `<option value="${k}" ${f.verb === k ? 'selected' : ''}>${VERB[k][0]}</option>`).join('')}</select>
     <input type="search" id="ftext" placeholder="Search the questions, e.g. inflation" aria-label="Search questions" value="${esc(f.text)}">`;
-  $('#ftop').onchange = e => { f.top = e.target.value; f.n = 40; renderQs(); };
+  $('#ftop').onchange = e => { f.top = e.target.value; if (f.sec && f.top && SEC[f.sec].top.id !== f.top) f.sec = ''; f.n = 40; renderFil(); renderQs(); };
+  $('#fsec').onchange = e => { f.sec = e.target.value; if (f.sec) f.top = SEC[f.sec].top.id; f.n = 40; renderFil(); renderQs(); };
   $('#fverb').onchange = e => { f.verb = e.target.value; f.n = 40; renderQs(); };
   $('#ftext').oninput = e => { f.text = e.target.value; f.n = 40; renderQs(); }; }
 function renderQs() { const f = S.qf, txt = f.text.trim().toLowerCase();
-  const list = ENT.filter(e => e.s === f.s && (!f.top || e.tops.includes(f.top)) && (!f.verb || e.verbs.includes(f.verb)) && (!txt || (e.text + ' ' + e.y).toLowerCase().includes(txt)));
-  $('#qlist').innerHTML = list.length ? list.slice(0, f.n).map(e => `<button class="q" data-q="${e.key}" aria-pressed="${S.q === e.key}" style="--tc:${entColor(e)}"><span class="yr">${e.y} Q${e.q}<small>${e.m} marks${S.plans[e.key] ? ' · plan saved' : ''}</small></span>
+  const list = ENT.filter(e => e.s === f.s && (!f.top || entTopIds(e).includes(f.top)) && (!f.sec || entSecs(e).includes(f.sec)) && (!f.verb || e.verbs.includes(f.verb)) && (!txt || (e.text + ' ' + e.y).toLowerCase().includes(txt)));
+  const where = f.sec ? topLab(SEC[f.sec].top) + ' › ' + secLab(SEC[f.sec]) : f.top ? topLab(TOP[f.top]) : '';
+  const head = where ? `<p class="qcount"><b>${list.length}</b> question${list.length === 1 ? '' : 's'} in ${esc(where)}${S.fw === 'y12' ? ' <em>(matched to the 2025 syllabus)</em>' : ''}</p>` : '';
+  $('#qlist').innerHTML = head + (list.length ? list.slice(0, f.n).map(e => `<button class="q" data-q="${e.key}" aria-pressed="${S.q === e.key}" style="--tc:${entColor(e)}"><span class="yr">${e.y} Q${e.q}<small>${e.m} marks${S.plans[e.key] ? ' · plan saved' : ''}</small></span>
       <span class="qt">${e.s === 'II' ? e.parts.map(p => `<span><b>${esc(p.l.replace(/^Q\d+/, ''))}</b>${esc(p.t)} (${p.m})</span>`).join('') : esc(e.parts[0].t)}</span>
       <span class="tags">${e.verbs.slice(0, 3).map(v => `<span class="chip v">${VERB[v][0]}</span>`).join('')}${e.st ? '<span class="chip">Stimulus</span>' : ''}${tagChips(e.c.slice(0, 4))}</span></button>`).join('')
-    + (list.length > f.n ? `<button class="btn ghost more" id="moreq">Show more (${list.length - f.n} more)</button>` : '') : '<p class="empty">No question matches. Clear the search or choose another section or topic.</p>'; }
+    + (list.length > f.n ? `<button class="btn ghost more" id="moreq">Show more (${list.length - f.n} more)</button>` : '') : '<p class="empty">No question matches. Clear the search or choose another section or topic.</p>'); }
 
 /* ---------- 2. unpack ---------- */
 const mgLink = y => DATA.mg.includes(y) ? `../hsc-question-finder-site/mg-${y}.pdf` : '';
@@ -940,7 +954,7 @@ function renderAll() { const has = !!S.q;
 let tmr; const later = () => { clearTimeout(tmr); tmr = setTimeout(() => { renderPlan(); const pl = P(); if (pl && pl.kind === 'E') { const b = document.querySelector('.para.open .ph b'), p = pl.paras[pl.open]; if (b && p) b.textContent = p.point || 'Paragraph ' + (pl.open + 1); } }, 200); };
 $('#v-build').addEventListener('input', ev => { const b = ev.target.dataset && ev.target.dataset.b; if (!b || !S.q) return; setP(P(), b, ev.target.value); save(); later(); });
 $('#v-build').addEventListener('change', ev => { const b = ev.target.dataset && ev.target.dataset.sel; if (!b || !S.q) return; setP(P(), b, ev.target.value); if (/\.dia$/.test(b)) setP(P(), b.replace(/\.dia$/, '.sc'), ''); save(); render3(); });
-$('#fw').onclick = ev => { const b = ev.target.closest('[data-fw]'); if (!b) return; S.fw = b.dataset.fw; save(); renderAll(); };
+$('#fw').onclick = ev => { const b = ev.target.closest('[data-fw]'); if (!b) return; S.fw = b.dataset.fw; S.qf.top = ''; S.qf.sec = ''; save(); renderAll(); };
 $('#qfil').addEventListener('click', ev => { const b = ev.target.closest('[data-sec]'); if (b) { S.qf.s = b.dataset.sec; S.qf.n = 40; renderFil(); renderQs(); } });
 $('#qlist').onclick = ev => { if (ev.target.closest('#moreq')) { S.qf.n += 40; renderQs(); return; }
   const b = ev.target.closest('.q'); if (!b) return; S.q = b.dataset.q; if (!S.plans[S.q]) S.plans[S.q] = newPlan(E()); save(); renderAll(); $('#s2').scrollIntoView({ block: 'start' }); };

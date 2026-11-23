@@ -18,6 +18,9 @@ diagram, then checks, copies or prints the plan. It plans a response; it does no
 | 3 Plan | **Sections III and IV:** the booklet's economics paragraph (p. 43): Point, then one to three Explain → Diagram → Evidence cycles, a Stimulus line in Section III, then Link & judge. **Section II:** a plan sized to the marks, using the booklet's Outline and Explain key word scaffolds; calculations get formula, working and answer. |
 | 4 Review | A list of every diagram in the response, then the outline of the plan, a checklist, copy as text, print or save as PDF. |
 
+## Choosing by topic and section (added 23 November 2026)
+Under the Section II / III / IV buttons, a **Topic** list and a **Section** list narrow the questions to one part of the syllabus, for example Topic 1 > 1E Case study. Each entry shows how many questions it holds in the paper section chosen. Picking a section also sets its topic. The lists follow the syllabus switch (2009 sections such as 1E, or the 2025 focus areas matched through the crosswalk), and the switch clears them. A heading above the list gives the count. A link can open the picker on a section: `essay-builder/?s=IV&sec=1E` (paper section and syllabus section id; `Y3d` and similar open the 2025 lists).
+
 ## Planning diagrams (added 19 November 2026)
 
 Each Explain → Diagram → Evidence cycle (and each Section II part that asks for a diagram) has a **diagram plan**:
