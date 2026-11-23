@@ -209,9 +209,16 @@ details.helpd .ideas,details.helpd .model{border:0;padding:0;margin:0;background
 .supused{font-size:.78rem;color:var(--mut);margin-top:2px}
 .qcount{margin:0 0 8px;color:var(--mut);font-size:.9rem}
 .seg small{display:block;font-weight:400;font-size:.7rem;opacity:.85}
-.tabs{display:flex;gap:4px;border-bottom:2px solid var(--rule2);margin:6px 0 18px}
-.tab{border:0;background:none;padding:.55rem .9rem;font-family:var(--head);font-weight:700;font-size:1rem;color:var(--mut);border-bottom:3px solid transparent;margin-bottom:-2px}
-.tab[aria-selected="true"]{color:var(--acc);border-color:var(--acc)}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 18px}
+.tab{display:inline-flex;gap:11px;align-items:center;text-align:left;border:1px solid var(--rule2);border-bottom:4px solid var(--rule2);background:var(--card);border-radius:14px;padding:.5rem 1.1rem .5rem .55rem;color:var(--mut)}
+.tab .tic{display:inline-grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:12px;background:var(--card2);color:var(--mut);flex:none}
+.tab .tic svg{width:1.55rem;height:1.55rem;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.tab .tt{display:grid}.tab .tt b{font-family:var(--head);font-weight:700;font-size:1.05rem;line-height:1.2;color:var(--ink)}.tab .tt small{font-size:.78rem;color:var(--mut)}
+.tab:hover{border-color:var(--acc)}
+.tab[data-view="guide"]{--tb:#ffd24a;--tbi:#1a1d2b}
+.tab[aria-selected="true"]{border-color:var(--acc);border-bottom-color:var(--tb,var(--acc));background:var(--acc-soft);box-shadow:var(--shadow)}
+.tab[aria-selected="true"] .tic{background:var(--tb,var(--acc));color:var(--tbi,var(--acc-ink))}
+@media (max-width:520px){.tab{flex:1 1 100%}}
 .view{display:none}.view.on{display:block}
 .stepbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px;position:sticky;top:0;z-index:20;background:var(--bg);padding:8px 0}
 .stepbar a{display:inline-flex;gap:7px;align-items:center;text-decoration:none;color:var(--mut);font-weight:600;font-size:.88rem;background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:.3rem .8rem .3rem .35rem}
@@ -509,7 +516,10 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
     <div class="seg" id="fw" role="group" aria-label="Choose your syllabus"></div>
   </div>
 </header>
-<nav class="tabs" role="tablist" aria-label="Views"><button class="tab" role="tab" data-view="build">Build a plan</button><button class="tab" role="tab" data-view="guide">How to write it</button></nav>
+<nav class="tabs" role="tablist" aria-label="Views">
+  <button class="tab" role="tab" data-view="build"><span class="tic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4h6v3H9z"/><path d="M9 5.500H6v15h12v-15h-3"/><path d="M9 12l1.500 1.500L13.500 10.500"/><path d="M9 17h6"/></svg></span><span class="tt"><b>Build a plan</b><small>Plan a response step by step</small></span></button>
+  <button class="tab" role="tab" data-view="guide"><span class="tic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.500C10 5 7 4.500 4 5v13.500c3-.5 6 0 8 1.500 2-1.500 5-2 8-1.500V5c-3-.5-6 0-8 1.500z"/><path d="M12 6.500V20"/></svg></span><span class="tt"><b>How to write it</b><small>The paragraph, directives and diagrams</small></span></button>
+</nav>
 
 <main>
 <section class="view" id="v-build">
