@@ -50,8 +50,8 @@ A switch above step 2 lets the student choose how much help they see. Each level
 
 The suggested points and the worked models are in `data/support.json` and are meant to be edited: `points` by 2009 syllabus section, `models` (each lists the sections it is shown for) and `s2`. The models quote dated figures (`asAt`), so refresh them each term. The chains are read from `chain-builder/data/chains.json`. Run `build.py` after changing either file. The starters and guiding questions are in `template.html` (`starters`, `guideQs`).
 
-## Choosing by topic and section (added 23 November 2026)
-Under the Section II / III / IV buttons, a **Topic** list and a **Section** list narrow the questions to one part of the syllabus, for example Topic 1 > 1E Case study. Each entry shows how many questions it holds in the paper section chosen. Picking a section also sets its topic. The lists follow the syllabus switch (2009 sections such as 1E, or the 2025 focus areas matched through the crosswalk), and the switch clears them. A heading above the list gives the count. A link can open the picker on a section: `essay-builder/?s=IV&sec=1E` (paper section and syllabus section id; `Y3d` and similar open the 2025 lists).
+## Choosing by topic and sub-topic (added 23 November 2026)
+Step 1 has a row of **topic buttons** (All topics, then one per topic in its colour, each with its question count for the paper section chosen). Choosing a topic shows a row of **sub-topic buttons** for that topic (the syllabus sections, for example Topic 1 > Case study), each with its count; sub-topics with no questions are greyed. Clicking a chosen button again clears it. The buttons follow the syllabus switch (four topics and their 2009 sections, or the three 2025 focus areas matched through the crosswalk), and the switch clears them. A heading above the list gives the count. A link can open the picker on a sub-topic: `essay-builder/?s=IV&sec=1E` (paper section and syllabus section id; `Y3d` and similar open the 2025 lists).
 
 ## Planning diagrams (added 19 November 2026)
 

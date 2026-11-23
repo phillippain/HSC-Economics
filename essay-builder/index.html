@@ -223,7 +223,22 @@ details.helpd .ideas,details.helpd .model{border:0;padding:0;margin:0;background
 .step h2 i{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
 .sub{color:var(--mut);font-size:.93rem;margin-bottom:10px}
 .card{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
-.qfil{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
+.qfil{display:grid;gap:6px;margin-bottom:12px}
+.frow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.flab{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--mut);margin-top:4px}
+.fhint{font-size:.84rem;color:var(--mut)}
+.tbtns{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.tbtn{text-align:left;display:grid;gap:1px;align-content:start;background:var(--card);border:1px solid var(--rule2);border-top:6px solid var(--tc,var(--rule2));border-radius:10px;padding:.45rem .7rem .55rem}
+.tbtn small{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--mut)}
+.tbtn b{font-family:var(--head);font-size:.95rem;line-height:1.2}.tbtn span{font-size:.78rem;color:var(--mut)}
+.tbtn:hover{border-color:var(--tc,var(--acc))}
+.tbtn[aria-pressed="true"]{background:color-mix(in srgb,var(--tc,var(--acc)) 14%,var(--card));border-color:var(--tc,var(--acc));box-shadow:var(--shadow)}
+.tbtn.all{--tc:var(--acc)}
+.sbtns{display:flex;flex-wrap:wrap;gap:6px}
+.sbtn{border:1.5px solid var(--tc);background:var(--card);border-radius:999px;padding:.3rem .8rem;font-size:.86rem;font-weight:600;display:inline-flex;gap:7px;align-items:center}
+.sbtn i{font-style:normal;font-size:.76rem;font-weight:700;background:var(--card2);border-radius:999px;padding:0 .45em;color:var(--mut)}
+.sbtn[aria-pressed="true"]{background:var(--tc);color:#fff}.sbtn[aria-pressed="true"] i{background:rgba(255,255,255,.25);color:#fff}
+.sbtn:disabled{opacity:.45;border-style:dashed;cursor:default}
 .qfil select,.qfil input,select,input[type=text],input[type=search],textarea{border:1px solid var(--rule2);border-radius:8px;background:var(--card);padding:.42rem .6rem;font-size:.92rem;max-width:100%}
 textarea,input.w{width:100%}
 textarea{resize:vertical;line-height:1.45}
@@ -499,6 +514,7 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
 <main>
 <section class="view" id="v-build">
   <div class="stepbar"><span id="stepbar" style="display:contents"></span><button class="btn ghost sm sp" id="reset">Start again</button></div>
+  <section class="card todo" id="todo" aria-label="What to do in this step"></section>
 
   <section class="step" id="s1"><h2><i>1</i>Choose a question</h2>
     <p class="sub">Every Section II, III and IV question from the HSC papers held in the class Question Finder. The coloured edge shows the topic.</p>
@@ -507,7 +523,6 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
 
   <p class="card" id="noq">Choose a question to start. The builder then helps you unpack it, plan each paragraph with a diagram and with statistics from the class Evidence Finder or your own research, and check the plan before you write. You choose how much support you get.</p>
 
-  <section class="card todo" id="todo" aria-label="What to do in this step"></section>
   <section class="card needq supbar" id="supbar" aria-label="Level of support"></section>
 
   <section class="step needq" id="s2"><h2><i>2</i>Unpack it</h2><div class="card" id="unpack"></div></section>
@@ -1048,16 +1063,14 @@ function tagChips(codes) {
 const entColor = e => { const t = TOP[e.tops[0]]; return t ? t.color : 'var(--rule2)'; };
 
 /* ---------- 1. choose ---------- */
-function renderFil() { const f = S.qf;
-  $('#qfil').innerHTML = `<div class="seg" role="group" aria-label="Section">${['II','III','IV'].map(s => `<button data-sec="${s}" aria-pressed="${f.s === s}">Section ${s}<small>${s === 'II' ? 'Short answer' : s === 'III' ? 'Stimulus essay' : 'Essay'}</small></button>`).join('')}</div>
-    <select id="ftop" aria-label="Topic"><option value="">All topics (${ENT.filter(e => e.s === f.s).length})</option>${FW[S.fw].topics.map(t => `<option value="${t.id}" ${f.top === t.id ? 'selected' : ''}>${esc(topLab(t))} (${ENT.filter(e => e.s === f.s && entTopIds(e).includes(t.id)).length})</option>`).join('')}</select>
-    <select id="fsec" aria-label="Section of the topic">${(() => { const ts = FW[S.fw].topics.filter(t => !f.top || t.id === f.top), opt = x => { const n = ENT.filter(e => e.s === f.s && entSecs(e).includes(x.id)).length; return `<option value="${x.id}" ${f.sec === x.id ? 'selected' : ''} ${n || f.sec === x.id ? '' : 'disabled'}>${esc(secLab(x))} (${n})</option>`; };
-      return `<option value="">${f.top ? 'Every section of this topic' : 'Any section'}</option>` + (ts.length === 1 ? ts[0].sections.map(opt).join('') : ts.map(t => `<optgroup label="${esc(topLab(t))}">${t.sections.map(opt).join('')}</optgroup>`).join('')); })()}</select>
-    <select id="fverb" aria-label="Directive"><option value="">Any directive</option>${VKEYS.map(k => `<option value="${k}" ${f.verb === k ? 'selected' : ''}>${VERB[k][0]}</option>`).join('')}</select>
-    <input type="search" id="ftext" placeholder="Search the questions, e.g. inflation" aria-label="Search questions" value="${esc(f.text)}">`;
-  $('#ftop').onchange = e => { f.top = e.target.value; if (f.sec && f.top && SEC[f.sec].top.id !== f.top) f.sec = ''; f.n = 40; renderFil(); renderQs(); };
-  $('#fsec').onchange = e => { f.sec = e.target.value; if (f.sec) f.top = SEC[f.sec].top.id; f.n = 40; renderFil(); renderQs(); };
-  $('#fverb').onchange = e => { f.verb = e.target.value; f.n = 40; renderQs(); };
+function renderFil() { const f = S.qf, tops = FW[S.fw].topics, inS = ENT.filter(e => e.s === f.s), cur = tops.find(t => t.id === f.top), nT = t => inS.filter(e => entTopIds(e).includes(t.id)).length, nS = x => inS.filter(e => entSecs(e).includes(x.id)).length;
+  $('#qfil').innerHTML = `<div class="frow"><div class="seg" role="group" aria-label="Section of the paper">${['II','III','IV'].map(s => `<button data-sec="${s}" aria-pressed="${f.s === s}">Section ${s}<small>${s === 'II' ? 'Short answer' : s === 'III' ? 'Stimulus essay' : 'Essay'}</small></button>`).join('')}</div>
+      <select id="fverb" aria-label="Directive"><option value="">Any directive</option>${VKEYS.map(k => `<option value="${k}" ${f.verb === k ? 'selected' : ''}>${VERB[k][0]}</option>`).join('')}</select>
+      <input type="search" id="ftext" placeholder="Search the questions, e.g. inflation" aria-label="Search questions" value="${esc(f.text)}"></div>
+    <p class="flab">Topic</p>
+    <div class="tbtns" role="group" aria-label="Topic"><button type="button" class="tbtn all" data-top="" aria-pressed="${!f.top}"><b>All topics</b><span>${inS.length} question${inS.length === 1 ? '' : 's'}</span></button>${tops.map(t => `<button type="button" class="tbtn" data-top="${t.id}" aria-pressed="${f.top === t.id}" style="--tc:${t.color}">${t.label ? `<small>${esc(t.label)}</small>` : ''}<b>${esc(t.name)}</b><span>${nT(t)} question${nT(t) === 1 ? '' : 's'}</span></button>`).join('')}</div>
+    ${cur ? `<p class="flab">Sub-topic${cur.label ? ' in ' + esc(cur.label) : ''}</p><div class="sbtns" role="group" aria-label="Sub-topic" style="--tc:${cur.color}"><button type="button" class="sbtn" data-ssec="" aria-pressed="${!f.sec}">All sub-topics <i>${nT(cur)}</i></button>${cur.sections.map(x => { const n = nS(x); return `<button type="button" class="sbtn" data-ssec="${x.id}" aria-pressed="${f.sec === x.id}" ${n || f.sec === x.id ? '' : 'disabled'}>${esc(x.name)} <i>${n}</i></button>`; }).join('')}</div>` : '<p class="fhint">Choose a topic to see its sub-topics.</p>'}`;
+  $('#fverb').onchange = e => { f.verb = e.target.value; f.n = 40; renderQs(); renderTodo(); };
   $('#ftext').oninput = e => { f.text = e.target.value; f.n = 40; renderQs(); }; }
 function renderQs() { const f = S.qf, txt = f.text.trim().toLowerCase();
   const list = ENT.filter(e => e.s === f.s && (!f.top || entTopIds(e).includes(f.top)) && (!f.sec || entSecs(e).includes(f.sec)) && (!f.verb || e.verbs.includes(f.verb)) && (!txt || (e.text + ' ' + e.y).toLowerCase().includes(txt)));
@@ -1066,7 +1079,7 @@ function renderQs() { const f = S.qf, txt = f.text.trim().toLowerCase();
   $('#qlist').innerHTML = head + (list.length ? list.slice(0, f.n).map(e => `<button class="q" data-q="${e.key}" aria-pressed="${S.q === e.key}" style="--tc:${entColor(e)}"><span class="yr">${e.y} Q${e.q}<small>${e.m} marks${S.plans[e.key] ? ' · plan saved' : ''}</small></span>
       <span class="qt">${e.s === 'II' ? e.parts.map(p => `<span><b>${esc(p.l.replace(/^Q\d+/, ''))}</b>${esc(p.t)} (${p.m})</span>`).join('') : esc(e.parts[0].t)}</span>
       <span class="tags">${e.verbs.slice(0, 3).map(v => `<span class="chip v">${VERB[v][0]}</span>`).join('')}${e.st ? '<span class="chip">Stimulus</span>' : ''}${tagChips(e.c.slice(0, 4))}</span></button>`).join('')
-    + (list.length > f.n ? `<button class="btn ghost more" id="moreq">Show more (${list.length - f.n} more)</button>` : '') : '<p class="empty">No question matches. Clear the search or choose another section or topic.</p>'); }
+    + (list.length > f.n ? `<button class="btn ghost more" id="moreq">Show more (${list.length - f.n} more)</button>` : '') : '<p class="empty">No question matches. Clear the search, or choose another section of the paper, topic or sub-topic.</p>'); }
 
 /* ---------- 2. unpack ---------- */
 const mgLink = y => DATA.mg.includes(y) ? `../hsc-question-finder-site/mg-${y}.pdf` : '';
@@ -1165,7 +1178,7 @@ function chooser() { const a = S.hc, done = a[0] != null && a[1] != null, rec = 
     ${done ? `<div class="rec"><small>Suggested for you</small>${card(rec, true)}</div>` : ''}
     <span class="or">${done ? 'Or choose a different level' : 'Or choose a level yourself'}</span><div class="lvls">${SUPL.map((l, i) => card(i)).join('')}</div></div>`; }
 function todoItems() { const has = !!S.q, e = has ? E() : null, pl = has ? P() : null, f = S.qf, out = [];
-  if (S.step === 1 || !has) return { items: [[true, 'Choose the section of the paper: II short answer, III stimulus essay or IV essay'], [!!(f.top || f.sec || f.verb || f.text.trim()) || has, 'Narrow the list by topic, section of the syllabus, directive or search', '', 1], [has, 'Click a question to choose it']], next: has ? ['step|2', 'Next: Unpack it'] : null };
+  if (S.step === 1 || !has) return { items: [[true, 'Choose the section of the paper: II short answer, III stimulus essay or IV essay'], [!!f.top || has, 'Choose a topic', '', 1], [!!f.sec || has, 'Choose a sub-topic to narrow the list', '', 1], [has, 'Click a question to choose it']], next: has ? ['step|2', 'Next: Unpack it'] : null };
   const essay = pl.kind === 'E', judge = isJudge(e.verbs);
   if (S.step === 2) { out.push([!!pl.supSet, 'Choose your level of support']);
     if (essay) { out.push([!!pl.seenA, 'Part A: read the directive, what the question examines and what the top band asks for', 'un|a|I have read it']); out.push([!!pl.terms.trim(), 'Part B: list the key terms you will define', 'focus|terms|Do this now']);
@@ -1358,7 +1371,12 @@ $('#v-build').addEventListener('click', ev => { const q = sel => ev.target.close
   if (q('[data-mkthesis]')) { const pl = P(), t = draftThesis(pl, isJudge(E().verbs)); if (!t) { toast('Answer questions 1 and 2 first.'); return; } const old = pl.thesis; pl.thesis = t; save(); renderUnpack(); renderPlan();
     const el = document.getElementById('thesis'); if (el) el.focus(); if (old.trim() && old !== t) toast('Thesis replaced.', () => { pl.thesis = old; save(); renderUnpack(); renderPlan(); }); } });
 $('#fw').onclick = ev => { const b = ev.target.closest('[data-fw]'); if (!b) return; S.fw = b.dataset.fw; S.qf.top = ''; S.qf.sec = ''; save(); renderAll(); };
-$('#qfil').addEventListener('click', ev => { const b = ev.target.closest('[data-sec]'); if (b) { S.qf.s = b.dataset.sec; S.qf.n = 40; renderFil(); renderQs(); } });
+$('#qfil').addEventListener('click', ev => { const f = S.qf, q = sel => ev.target.closest(sel); let b;
+  if (b = q('[data-sec]')) f.s = b.dataset.sec;
+  else if (b = q('[data-top]')) { f.top = f.top === b.dataset.top ? '' : b.dataset.top; f.sec = ''; }
+  else if (b = q('[data-ssec]')) f.sec = f.sec === b.dataset.ssec ? '' : b.dataset.ssec;
+  else return;
+  f.n = 40; renderFil(); renderQs(); renderTodo(); });
 $('#qlist').onclick = ev => { if (ev.target.closest('#moreq')) { S.qf.n += 40; renderQs(); return; }
   const b = ev.target.closest('.q'); if (!b) return; S.q = b.dataset.q; S.un = 'q'; if (!S.plans[S.q]) S.plans[S.q] = newPlan(E()); save(); renderAll(); goStep(2); };
 $('#unpack').addEventListener('click', ev => { const b = ev.target.closest('[data-st]'); if (b) { P().stance = +b.dataset.st; P().stSet = true; save(); $$('#stance button').forEach(x => x.setAttribute('aria-pressed', x === b)); if (S.sup >= 1) renderUnpack(); renderPlan(); } });
