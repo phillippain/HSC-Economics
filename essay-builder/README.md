@@ -18,6 +18,19 @@ diagram, then checks, copies or prints the plan. It plans a response; it does no
 | 3 Plan | **Sections III and IV:** the booklet's economics paragraph (p. 43): Point, then one to three Explain → Diagram → Evidence cycles, a Stimulus line in Section III, then Link & judge. **Section II:** a plan sized to the marks, using the booklet's Outline and Explain key word scaffolds; calculations get formula, working and answer. |
 | 4 Review | A list of every diagram in the response, then the outline of the plan, a checklist, copy as text, print or save as PDF. |
 
+## Your own evidence (added 23 November 2026)
+The evidence list in step 3 has a third tab, **My evidence**. A student adds a **statistic** (figure, what it measures, source, date), a **case study** fact (economy, defaulting to China), **stimulus** from the question's paper (offered only when the question has stimulus, and kept with that question) or another **example**. Items are saved in the browser as a personal bank and offered in every plan; they can be edited, deleted, and saved to or loaded from a backup file (`my-economics-evidence.json`) to move between devices. In the plan they are marked "your own" or "from the stimulus", and the plan check asks that each of the student's own statistics has a source and a date.
+
+## Levels of support (added 23 November 2026)
+A switch above step 2 lets the student choose how much help they see. Each level adds to the one before.
+0. **On my own**: prompts and examples only (the builder as it was).
+1. **Sentence starters**: starters and linking words under each box, fitted to the directive; a click drops one into the box.
+2. **Guiding questions**: questions for each move, and five steps that join the student's answers into a draft thesis. The reasons can be dropped into a paragraph's Point.
+3. **Suggested ideas**: possible points for the syllabus section, cause and effect chains from the Chain Builder (a click fills the Explain box) and the best-matching Evidence Finder statistics.
+4. **Worked model**: a model thesis and a model paragraph (plan beside the written paragraph, each move marked) for a different question in the topic; a model short answer in Section II.
+
+The suggested points and the worked models are in `data/support.json` and are meant to be edited: `points` by 2009 syllabus section, `models` (each lists the sections it is shown for) and `s2`. The models quote dated figures (`asAt`), so refresh them each term. The chains are read from `chain-builder/data/chains.json`. Run `build.py` after changing either file. The starters and guiding questions are in `template.html` (`starters`, `guideQs`).
+
 ## Choosing by topic and section (added 23 November 2026)
 Under the Section II / III / IV buttons, a **Topic** list and a **Section** list narrow the questions to one part of the syllabus, for example Topic 1 > 1E Case study. Each entry shows how many questions it holds in the paper section chosen. Picking a section also sets its topic. The lists follow the syllabus switch (2009 sections such as 1E, or the 2025 focus areas matched through the crosswalk), and the switch clears them. A heading above the list gives the count. A link can open the picker on a section: `essay-builder/?s=IV&sec=1E` (paper section and syllabus section id; `Y3d` and similar open the 2025 lists).
 

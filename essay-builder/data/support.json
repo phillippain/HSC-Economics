@@ -1,0 +1,441 @@
+{
+ "_how_to": "Edit freely. 'points' are suggested paragraph ideas for each 2009 syllabus section (shown at the Suggested ideas support level). 'models' are the worked model paragraphs (Worked model level): 'secs' lists the syllabus sections a model is shown for, 'para' is the paragraph split into moves (P point, E explain, D diagram, V evidence, L link and judge). Keep the statistics current and give 'asAt' the month they were checked. After editing run: python3 essay-builder/build.py",
+ "asAt": "November 2026",
+ "points": {
+  "1A": [
+   "Trade in goods and services has grown faster than world output, tying economies more closely together.",
+   "Financial flows and foreign investment have grown fastest of all, bringing capital but also volatility.",
+   "Cheaper transport, communication and technology have cut the cost of doing business across borders.",
+   "Transnational corporations spread production across countries through global supply chains.",
+   "The international business cycle passes booms and downturns between economies through trade, investment and confidence.",
+   "Labour is the least mobile factor of production, because migration is restricted."
+  ],
+  "1B": [
+   "Free trade lets economies specialise where they have a comparative advantage, raising output and living standards.",
+   "Free trade also has costs: structural unemployment and pressure on new or less competitive industries.",
+   "International organisations (WTO, IMF, World Bank) set the rules for trade and finance and respond to crises.",
+   "Trading blocs and free trade agreements open markets for members but can divert trade from non-members.",
+   "Financial flows are now far larger than trade flows and can move quickly between economies."
+  ],
+  "1C": [
+   "A tariff raises the domestic price, helping local producers at the expense of consumers.",
+   "A subsidy protects producers without raising prices, but its cost falls on the budget.",
+   "A quota limits the volume of imports and raises the price; importers keep the extra revenue from the higher price.",
+   "Governments protect industries to save jobs, shelter infant industries, prevent dumping and for defence or self-sufficiency.",
+   "Protection invites retaliation and holds resources in less efficient industries, lowering world trade and living standards."
+  ],
+  "1D": [
+   "Economic growth and economic development differ: income can rise without quality of life improving.",
+   "Income and wealth are unevenly distributed between economies, and the gaps within economies are often widening.",
+   "Economies that opened to trade and investment have grown faster and cut poverty.",
+   "Global causes of inequality include the trade system, global finance, aid and access to technology.",
+   "Domestic causes include resources, institutions and government policies.",
+   "Globalisation has environmental costs that fall hardest on developing economies."
+  ],
+  "1E": [
+   "Opening to trade and foreign investment drove export-led growth in the case study economy.",
+   "Growth raised incomes and cut poverty, improving economic development.",
+   "The gains were shared unevenly, for example between cities and rural areas.",
+   "Rapid growth brought environmental costs.",
+   "The economy became more exposed to the international business cycle and to trade disputes.",
+   "Government strategies (for example investment, education, industry policy) have worked to differing degrees."
+  ],
+  "2A": [
+   "Australia's exports are dominated by resources, with services growing in importance.",
+   "Australia's trade has shifted towards Asia, with China the largest trading partner.",
+   "Australia relies on foreign investment to fill the gap between national saving and investment.",
+   "Changes in commodity prices and the terms of trade drive the value of Australia's exports."
+  ],
+  "2B": [
+   "The balance on goods and services moves with commodity prices and the terms of trade.",
+   "The net primary income deficit is the long-standing structural cause of the current account deficit.",
+   "A current account deficit is matched by a surplus on the capital and financial account, adding to foreign liabilities.",
+   "Foreign liabilities lead to future income payments overseas, which feed back into the current account.",
+   "International competitiveness and the level of national saving shape the balance of payments over time."
+  ],
+  "2C": [
+   "The value of the dollar is set by the demand for and supply of Australian dollars in a floating system.",
+   "Commodity prices and the terms of trade are a major influence on demand for the dollar.",
+   "Interest rate differences and investor sentiment move financial flows and the exchange rate.",
+   "A depreciation makes exports more competitive and imports dearer, adding to growth and to inflation.",
+   "An appreciation lowers import prices and inflation but makes exporters less competitive.",
+   "A floating exchange rate cushions the economy against external shocks."
+  ],
+  "2D": [
+   "Australia has cut protection since the 1970s, so tariffs are now very low.",
+   "Lower protection forced structural change: efficient industries grew while protected manufacturing shrank.",
+   "Lower protection gave consumers lower prices and firms cheaper inputs.",
+   "Free trade agreements open overseas markets to Australian exporters.",
+   "Protection in other economies, such as farm subsidies and tariffs, hurts Australian exporters."
+  ],
+  "3A": [
+   "Growth in aggregate demand (C + I + G + X − M) drives economic growth in the short term.",
+   "In the long term, growth depends on aggregate supply: productivity, the labour force and capital.",
+   "Growth raises living standards, creates jobs and lifts government revenue.",
+   "Growth that is too fast brings inflation, external pressures and environmental costs.",
+   "Global conditions, especially in major trading partners, affect Australia's growth."
+  ],
+  "3B": [
+   "Cyclical unemployment rises when aggregate demand is weak.",
+   "Structural unemployment comes from a mismatch between workers' skills and the jobs available.",
+   "Unemployment means lost output, lower tax revenue and higher welfare spending.",
+   "Long-term unemployment erodes skills and widens inequality.",
+   "The unemployment rate understates spare capacity: underemployment and participation matter too.",
+   "Wages growing faster than productivity can raise unemployment."
+  ],
+  "3C": [
+   "Demand-pull inflation occurs when aggregate demand grows faster than the economy's capacity.",
+   "Cost-push inflation comes from higher wages, oil prices or other supply shocks.",
+   "A depreciation raises the price of imports (imported inflation).",
+   "Expectations of inflation feed into wage claims and price setting.",
+   "Inflation erodes real incomes and international competitiveness and creates uncertainty for investors.",
+   "Inflation redistributes income from savers and people on fixed incomes."
+  ],
+  "3D": [
+   "A persistent current account deficit reflects the gap between national saving and investment.",
+   "Foreign debt must be serviced, sending income overseas each year.",
+   "High foreign liabilities leave the economy exposed to changes in lender and investor sentiment.",
+   "The other view: foreign borrowing by the private sector funds productive investment, so it is not a problem.",
+   "The exchange rate and the terms of trade are also measures of external stability."
+  ],
+  "3E": [
+   "Wealth is distributed more unequally than income.",
+   "Differences in skills, hours and occupation drive differences in income.",
+   "Ownership of assets, especially housing, widens the wealth gap.",
+   "Some inequality gives an incentive to work, study and invest.",
+   "High inequality lowers consumption, wastes talent and has social costs such as poverty.",
+   "Progressive taxes and transfer payments reduce inequality."
+  ],
+  "3F": [
+   "Ecologically sustainable development means meeting present needs without harming future generations.",
+   "Pollution is a negative externality: the market price leaves out the social cost.",
+   "The environment is a public good, so individuals and firms have little reason to protect it (free riders).",
+   "Using up non-renewable resources limits future growth.",
+   "Environmental targets can conflict with growth and jobs in the short term."
+  ],
+  "4A": [
+   "The government aims for growth, low inflation, full employment, external stability, fairer distribution and sustainability.",
+   "In the short term, faster growth and lower unemployment can conflict with low inflation.",
+   "Faster growth can also conflict with external stability and the environment.",
+   "In the long term the objectives support each other: low inflation supports sustainable growth and jobs."
+  ],
+  "4B": [
+   "Macroeconomic policies manage aggregate demand to smooth the business cycle.",
+   "Fiscal and monetary policy work best when they pull in the same direction (the policy mix).",
+   "Demand management cannot lift the economy's long-term capacity: that needs supply-side policy."
+  ],
+  "4C": [
+   "The budget outcome shows the stance of fiscal policy: a larger deficit is expansionary.",
+   "Automatic stabilisers move the budget with the business cycle without any decision by government.",
+   "Discretionary changes to spending and taxes shift aggregate demand, with a multiplier effect.",
+   "Fiscal policy can target particular groups, industries and regions, so it affects income distribution.",
+   "Deficits must be financed by borrowing, which adds to public debt.",
+   "Implementation lags and political constraints limit fiscal policy."
+  ],
+  "4D": [
+   "The RBA sets the cash rate to keep inflation within the 2–3% target band over time.",
+   "A change in the cash rate flows through to market interest rates, spending, asset prices and the exchange rate.",
+   "Tighter monetary policy slows aggregate demand and inflation, at the cost of growth and jobs.",
+   "Monetary policy has long time lags, so its full effect can take one to two years.",
+   "Monetary policy is a blunt tool and cannot fix inflation that comes from the supply side."
+  ],
+  "4E": [
+   "Microeconomic reform increases aggregate supply by lifting productivity and efficiency.",
+   "Competition, deregulation and lower protection force firms to cut costs and innovate.",
+   "Over time, reform allows faster growth with lower inflation.",
+   "In the short term, reform brings structural unemployment and costs for some regions.",
+   "Reform takes a long time to work and is politically hard."
+  ],
+  "4F": [
+   "The minimum wage and awards protect low-paid workers (equity).",
+   "Enterprise bargaining links wage rises to productivity (efficiency).",
+   "A more decentralised system widens the gap between high-paid and low-paid workers.",
+   "Education, training and employment programs reduce structural unemployment.",
+   "Wage outcomes affect inflation, unemployment and international competitiveness."
+  ],
+  "4G": [
+   "Market-based policies, such as a carbon price, make polluters pay the social cost.",
+   "Regulations and targets set limits on emissions and resource use.",
+   "Spending and subsidies support investment in renewable energy.",
+   "International agreements are needed because climate change is a global problem.",
+   "Environmental policy is held back by free riders and by its cost to trade-exposed industries."
+  ],
+  "4H": [
+   "Time lags (recognition, implementation and impact) mean policy can act too late.",
+   "Global influences, such as a downturn in a trading partner, are outside the government's control.",
+   "Political constraints stop governments from making unpopular decisions.",
+   "Policies conflict: a policy that helps one objective can harm another."
+  ],
+  "4I": [
+   "Monetary policy has been the main policy used against inflation.",
+   "Fiscal policy has supported demand in downturns and affects income distribution.",
+   "Microeconomic and labour market policies aim to lift productivity and the economy's capacity.",
+   "The policy mix matters: policies that pull in different directions weaken each other.",
+   "How well a policy has worked should be judged against current data for the objective."
+  ]
+ },
+ "models": [
+  {
+   "id": "monetary",
+   "secs": [
+    "4D",
+    "4I",
+    "4A",
+    "4H",
+    "4B"
+   ],
+   "top": "T4",
+   "q": "Assess the effectiveness of monetary policy in achieving price stability in Australia.",
+   "thesis": "To a large extent, monetary policy has been effective in achieving price stability because higher interest rates slow aggregate demand, although long time lags and supply shocks limit how quickly inflation returns to the target band.",
+   "plan": {
+    "point": "Tighter monetary policy has been largely effective against demand-driven inflation, but it works slowly.",
+    "chain": "cash rate ↑ → market interest rates ↑ → borrowing costs and repayments ↑ → C and I ↓ → AD ↓ → inflation ↓",
+    "dia": "AD–AS diagram: AD shifts left from AD₁ to AD₂; the price level falls from P₁ to P₂.",
+    "ev": "Cash rate 4.85%, highest since 2008 (RBA, November 2026). Headline inflation 3.9% (ABS, year to September 2026).",
+    "link": "Limit: time lags and supply shocks. The RBA forecasts 2.5% inflation only by mid-2028. So: effective, but over the medium term."
+   },
+   "para": [
+    [
+     "P",
+     "Contractionary monetary policy has been effective to a large extent in restraining demand-driven inflation, although its effect is slow."
+    ],
+    [
+     "E",
+     "When the RBA raises the cash rate, banks pass their higher funding costs on to mortgages and business loans. Dearer borrowing and higher repayments reduce consumption and investment, so aggregate demand grows more slowly and firms have less room to raise prices."
+    ],
+    [
+     "D",
+     "As Figure 1 shows, aggregate demand shifts left from AD₁ to AD₂ and the price level falls from P₁ to P₂."
+    ],
+    [
+     "V",
+     "The RBA lifted the cash rate to 4.85% in November 2026, its highest level since 2008, with headline inflation at 3.9% over the year to September 2026 (ABS)."
+    ],
+    [
+     "L",
+     "However, the RBA does not expect inflation to return to 2.5% until mid-2028, which shows the long time lags of monetary policy, and higher interest rates cannot remove inflation that comes from supply shocks such as higher oil prices. Monetary policy is therefore effective against demand inflation, but only over the medium term."
+    ]
+   ]
+  },
+  {
+   "id": "fiscal",
+   "secs": [
+    "4C",
+    "4B",
+    "3A"
+   ],
+   "top": "T4",
+   "q": "Analyse the effects of fiscal policy on economic activity in Australia.",
+   "thesis": "Fiscal policy affects economic activity mainly through its effect on aggregate demand, because changes in government spending and taxes flow through to household and business spending with a multiplier effect.",
+   "plan": {
+    "point": "An expansionary budget adds to aggregate demand and economic activity in the short term.",
+    "chain": "G ↑ or taxes ↓ → disposable income ↑ → C ↑ → AD ↑ (multiplier) → real GDP ↑ → unemployment ↓",
+    "dia": "AD–AS diagram: AD shifts right from AD₁ to AD₂; real GDP rises from Y₁ to Y₂.",
+    "ev": "Budget deficit $22.3 billion in 2025–26 (Treasury, final outcome); deficits of about 1% of GDP forecast (November 2026).",
+    "link": "With inflation at 3.9%, extra demand works against tighter monetary policy, so the boost to activity comes with an inflation risk."
+   },
+   "para": [
+    [
+     "P",
+     "An expansionary budget stance increases economic activity in the short term by adding to aggregate demand."
+    ],
+    [
+     "E",
+     "When the government spends more or taxes less, households have more disposable income and spend part of it. That spending becomes income for other households and firms, so the first injection is multiplied and real GDP rises by more than the change in the budget, which lifts employment."
+    ],
+    [
+     "D",
+     "Figure 1 shows aggregate demand shifting right from AD₁ to AD₂, raising real GDP from Y₁ to Y₂."
+    ],
+    [
+     "V",
+     "The Commonwealth ran a deficit of $22.3 billion in 2025–26 (Treasury final outcome), and deficits of about 1% of GDP are forecast over the coming years."
+    ],
+    [
+     "L",
+     "This matters because the economy is already close to capacity: with inflation at 3.9% (ABS, year to September 2026), extra demand adds to price pressure and works against the RBA's higher cash rate. The effect of fiscal policy on activity therefore depends on the stage of the business cycle and on the policy mix."
+    ]
+   ]
+  },
+  {
+   "id": "inflation",
+   "secs": [
+    "3C",
+    "3B",
+    "3A",
+    "3E",
+    "3F",
+    "3D"
+   ],
+   "top": "T3",
+   "q": "Explain the causes of inflation in Australia.",
+   "thesis": "Inflation in Australia is caused mainly by aggregate demand growing faster than the economy's capacity, and is added to by cost pressures such as wages and import prices.",
+   "plan": {
+    "point": "Demand-pull inflation occurs when aggregate demand grows faster than the economy's capacity to produce.",
+    "chain": "C, I, G or net exports ↑ → AD ↑ → economy near full capacity → shortages of labour and goods → firms raise prices → inflation ↑",
+    "dia": "AD–AS diagram: AD shifts right from AD₁ to AD₂; the price level rises from P₁ to P₂.",
+    "ev": "Trimmed mean inflation 3.7% (ABS, year to September 2026), above the 2–3% target band. Wages up 3.5% over the year (ABS Wage Price Index, September quarter 2026).",
+    "link": "Demand is not the only cause: headline inflation (3.9%) is above the underlying rate, which points to cost pressures as well. Link to the next paragraph on cost-push inflation."
+   },
+   "para": [
+    [
+     "P",
+     "A major cause of inflation in Australia is aggregate demand growing faster than the economy's capacity to produce, known as demand-pull inflation."
+    ],
+    [
+     "E",
+     "When consumption, investment, government spending or net exports rise, firms try to produce more. Once the economy is near full capacity they cannot easily find more workers or materials, so they compete for scarce resources and pass the higher costs on as higher prices."
+    ],
+    [
+     "D",
+     "As Figure 1 shows, aggregate demand shifts right from AD₁ to AD₂ and the price level rises from P₁ to P₂."
+    ],
+    [
+     "V",
+     "Underlying (trimmed mean) inflation was 3.7% over the year to September 2026 (ABS), above the RBA's 2–3% target band, while wages grew 3.5% over the year (ABS Wage Price Index, September quarter 2026)."
+    ],
+    [
+     "L",
+     "Demand is not the only cause, however. Headline inflation of 3.9% sits above the underlying rate, which shows that cost pressures such as higher fuel prices are also raising prices."
+    ]
+   ]
+  },
+  {
+   "id": "depreciation",
+   "secs": [
+    "2C",
+    "2A",
+    "2B"
+   ],
+   "top": "T2",
+   "q": "Analyse the effects of a depreciation of the Australian dollar on the Australian economy.",
+   "thesis": "A depreciation affects the Australian economy mainly through trade: it makes exports more competitive and lifts growth, but it also raises import prices and so adds to inflation.",
+   "plan": {
+    "point": "A depreciation makes Australian exports more competitive, which adds to economic growth.",
+    "chain": "A$ ↓ → exports cheaper in foreign currency, imports dearer in A$ → X ↑ and M ↓ → net exports ↑ → AD ↑ → growth ↑",
+    "dia": "Market for the Australian dollar: demand shifts left from D₁ to D₂; the exchange rate falls from e₁ to e₂.",
+    "ev": "A$ at about US66.5 cents, an 11-month low, down from about US70 cents in late October (November 2026).",
+    "link": "Volumes take time to respond, and dearer imports add to inflation that is already 3.9%. So the gain to growth comes with a cost."
+   },
+   "para": [
+    [
+     "P",
+     "A depreciation of the Australian dollar makes exports more competitive and import-competing firms stronger, which adds to economic growth."
+    ],
+    [
+     "E",
+     "When the dollar falls, Australian exports become cheaper in foreign currency and imports become dearer in Australian dollars. Overseas buyers purchase more Australian goods and services while Australians switch away from imports, so net exports rise and aggregate demand increases."
+    ],
+    [
+     "D",
+     "Figure 1 shows the fall in demand for Australian dollars from D₁ to D₂, which lowers the exchange rate from e₁ to e₂."
+    ],
+    [
+     "V",
+     "In November 2026 the dollar fell to about US66.5 cents, an 11-month low, from about US70 cents in late October."
+    ],
+    [
+     "L",
+     "The effect on growth is not immediate, because export and import volumes take time to respond to the new prices. In the meantime dearer imports add to inflation, which was already 3.9% (ABS, year to September 2026), so the benefit to exporters comes at a cost to households."
+    ]
+   ]
+  },
+  {
+   "id": "protection",
+   "secs": [
+    "1C",
+    "2D",
+    "1B",
+    "1A"
+   ],
+   "top": "T1",
+   "q": "Discuss the effects of protection on an economy.",
+   "thesis": "Protection brings short-term benefits to the industries and workers it shelters, but it imposes larger costs on consumers, other industries and the wider economy.",
+   "plan": {
+    "point": "A tariff protects local producers and jobs in the short term, but consumers and efficiency bear the cost.",
+    "chain": "tariff → price of imports rises from Pw to Pw+t → local production ↑ and imports ↓ → consumers pay more and buy less → resources stay in less efficient industries",
+    "dia": "Tariff diagram: price rises from Pw to Pw+t; domestic supply expands, demand contracts and imports fall.",
+    "ev": "US tariffs on Chinese goods rose to as much as 145% in 2025; China replied with levies of 125% on US imports (Al Jazeera, November 2026). Australia has abolished more than 1,000 tariffs since 2022 (PM's office, November 2026).",
+    "link": "Retaliation shows the cost spreads to exporters too. On balance the costs outweigh the benefits, which is why Australia has kept cutting its own tariffs."
+   },
+   "para": [
+    [
+     "P",
+     "One argument for protection is that a tariff shelters local producers and jobs from import competition, but this benefit comes at a cost to consumers and to efficiency."
+    ],
+    [
+     "E",
+     "A tariff raises the price of imports above the world price, so local firms can sell more at a higher price and employ more workers. Consumers, however, pay more and buy less, and resources stay in industries where the economy does not have a comparative advantage."
+    ],
+    [
+     "D",
+     "As Figure 1 shows, the price rises from Pw to Pw+t, domestic production expands, demand contracts and the volume of imports falls."
+    ],
+    [
+     "V",
+     "In 2025 the United States raised tariffs on Chinese goods to as much as 145%, and China replied with levies of 125% on US imports (Al Jazeera, November 2026)."
+    ],
+    [
+     "L",
+     "That retaliation shows the cost of protection spreads beyond consumers to a country's own exporters. On balance the costs outweigh the benefits, which is why Australia has abolished more than 1,000 tariffs since 2022 (PM's office, November 2026)."
+    ]
+   ]
+  },
+  {
+   "id": "casestudy",
+   "secs": [
+    "1E",
+    "1D"
+   ],
+   "top": "T1",
+   "q": "Evaluate the strategies used to promote economic growth and development in an economy other than Australia.",
+   "thesis": "To a large extent, China's strategy of opening to trade and foreign investment has been effective in promoting economic growth, although it has been less effective in sharing the gains evenly.",
+   "plan": {
+    "point": "China's strategy of opening to trade and foreign investment has been highly effective in raising growth and cutting poverty.",
+    "chain": "special economic zones and WTO entry (2001) → foreign investment and technology ↑ → export manufacturing ↑ → jobs and incomes ↑ → growth ↑ → poverty ↓",
+    "dia": "Data sketch: China's exports or GDP over time, with WTO entry (2001) marked.",
+    "ev": "About 800 million people lifted out of extreme poverty since 1978 (World Bank). Record trade surplus of US$1.2 trillion in 2025 (ABC News, November 2026).",
+    "link": "Less effective for development: Gini coefficient about 0.47, and weak household spending (retail sales +0.4%, year to October 2026). So: very effective for growth, only partly for development."
+   },
+   "para": [
+    [
+     "P",
+     "China's strategy of opening its economy to trade and foreign investment has been highly effective in promoting economic growth and reducing poverty."
+    ],
+    [
+     "E",
+     "Special economic zones and entry to the World Trade Organization in 2001 attracted foreign investment and technology. Export manufacturing expanded, moving workers from low-productivity farming into factory jobs, which raised incomes and output."
+    ],
+    [
+     "D",
+     "Figure 1 sketches the rise in China's exports, with WTO entry in 2001 marked."
+    ],
+    [
+     "V",
+     "The World Bank estimates that about 800 million people in China have been lifted out of extreme poverty since 1978, and China recorded a trade surplus of US$1.2 trillion in 2025 (ABC News, November 2026)."
+    ],
+    [
+     "L",
+     "The strategy has been less effective in promoting balanced development. Income is unevenly shared, with a Gini coefficient of about 0.47, and growth still leans on exports because household spending is weak: retail sales rose only 0.4% over the year to October 2026 (National Bureau of Statistics). The strategy is therefore very effective for growth but only partly effective for development."
+    ]
+   ]
+  }
+ ],
+ "s2": {
+  "q": "Explain how an increase in the cash rate affects household consumption. (4 marks)",
+  "open": "The cash rate is the interest rate on overnight loans between banks, which the RBA sets as its tool of monetary policy.",
+  "pts": [
+   {
+    "d": "A higher cash rate raises the interest rates banks charge on loans.",
+    "e": "As a result, borrowing is dearer and saving earns more, so households put off spending, especially on items bought with credit.",
+    "x": "The cash rate rose to 4.85% in November 2026 (RBA)."
+   },
+   {
+    "d": "Repayments on variable-rate mortgages increase.",
+    "e": "Therefore households with a mortgage have less disposable income, so their consumption falls.",
+    "x": "The November 2026 rise flowed into variable mortgage rates within days."
+   }
+  ],
+  "concl": "Therefore an increase in the cash rate reduces household consumption."
+ }
+}

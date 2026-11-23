@@ -15,6 +15,8 @@ QF = REPO / "hsc-question-finder-site" / "index.html"
 EV = REPO / "evidence-finder" / "data" / "evidence.json"
 SYL = REPO / "evidence-finder" / "data" / "syllabus.json"
 FONTS = REPO / "evidence-finder" / "build" / "fonts.css"
+SUPPORT = HERE / "data" / "support.json"
+CHAINS = REPO / "chain-builder" / "data" / "chains.json"
 
 
 def qf_data():
@@ -34,6 +36,17 @@ def trim_item(r):
         "issues": r.get("issues", []), "diagrams": r.get("diagrams", []),
         "figures": [{k: f.get(k, "") for k in ("label", "value", "asAt", "source", "issue")} for f in r.get("figures", [])],
     }
+
+
+def chain_lines():
+    """The Chain Builder's chains as one arrow line per strand, for the Suggested ideas support level."""
+    arrow = lambda l: f'{l["v"]} {"↑" if l["d"] > 0 else "↓"}'
+    out = []
+    for c in json.loads(CHAINS.read_text(encoding="utf8"))["chains"]:
+        stem, tail = [arrow(l) for l in c.get("stem", [])], [arrow(l) for l in c.get("tail", [])]
+        out.append({"id": c["id"], "t": c["title"], "codes": c["codes"], "lim": c.get("limits", [])[:3],
+                    "strands": [{"n": s["name"], "line": " → ".join(stem + [arrow(l) for l in s["links"]] + tail)} for s in c["strands"]]})
+    return out
 
 
 def build():
@@ -71,6 +84,9 @@ def build():
         "mg": sorted(int(p.stem[3:]) for p in QF.parent.glob("mg-*.pdf")),
         "ev": [trim_item(r) for r in ev],
     }
+    sup = json.loads(SUPPORT.read_text(encoding="utf8"))
+    out["sup"] = {k: sup[k] for k in ("asAt", "points", "models", "s2")}
+    out["ch"] = chain_lines() if CHAINS.exists() else []
     html = (HERE / "template.html").read_text(encoding="utf8")
     html = html.replace("/*__FONTS__*/", FONTS.read_text(encoding="utf8") if FONTS.exists() else "")
     html = html.replace("__DATA__", json.dumps(out, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/"))
