@@ -1,14 +1,15 @@
 [
  {
-  "id": "2026-11-22-myefo-chalmers-cuts-enough-not-too-much",
-  "title": "Chalmers: MYEFO will cut \"enough, but not too much\"",
-  "date": "2026-11-22",
+  "id": "2026-11-23-chalmers-weaker-growth-net-spending-cuts",
+  "title": "Chalmers flags weaker growth and net spending cuts in the budget update",
+  "date": "2026-11-23",
   "type": "news",
   "outlets": [
-   "ABC News"
+   "ABC News",
+   "The Conversation"
   ],
-  "summary": "Shows the contractionary fiscal stance debate before the December MYEFO and the argument over whether government spending drives inflation.",
-  "lede": "Treasurer Jim Chalmers says December's mid-year update will cut spending 'enough, but not too much'. No cuts are confirmed, Finance Minister Katy Gallagher has flagged 'belt tightening', and there are calls to means-test EV and home battery subsidies. Chalmers rejects the claim that spending drives inflation; the Opposition says the government has an 'active inflation agenda'.",
+  "summary": "Gives the official forecast downgrade and the contractionary fiscal stance planned for MYEFO, with the policy mix and automatic stabiliser trade-offs.",
+  "lede": "In a statement to parliament on 23 November, Treasurer Jim Chalmers warned that growth will slow, unemployment will rise above 5% and inflation will stay high. The mid-year update (MYEFO) will deliver a net saving, with cuts outweighing new spending, so the budget does not add to inflation.",
   "about": {
    "h09": [
     "4C.1",
@@ -18,7 +19,8 @@
    "y12": [
     "Y2b.2",
     "Y2b.3",
-    "Y2b.6"
+    "Y2b.6",
+    "Y2b.14"
    ],
    "y11": [
     "P5a.4"
@@ -26,11 +28,10 @@
   },
   "also": {
    "h09": [
-    "3C.3",
-    "4D.3"
+    "4D.3",
+    "3C.3"
    ],
    "y12": [
-    "Y2b.14",
     "Y2b.13"
    ],
    "y11": [
@@ -39,6 +40,7 @@
   },
   "issues": [
    "budget",
+   "growth",
    "inflation"
   ],
   "levers": [
@@ -46,19 +48,40 @@
   ],
   "diagrams": [
    "adas",
-   "compare"
+   "flow"
   ],
   "figures": [
    {
-    "label": "Government spending as a share of GDP",
-    "value": "26.8% (2026-27 estimate) versus 31.3% in the pandemic era",
+    "label": "Real GDP growth",
+    "value": "2.3% last financial year, slowing to well below 2% for the next two years",
     "asAt": "November 2026",
-    "issue": "budget",
-    "source": "ABC News (Verrender analysis, 3 Nov 2026)"
+    "issue": "growth",
+    "source": "Treasurer, via ABC News"
    },
    {
-    "label": "Business savings from two deregulation tax changes",
-    "value": "$52 million a year",
+    "label": "Unemployment peak",
+    "value": "Above 5% (higher than the budget-time forecast)",
+    "asAt": "November 2026",
+    "issue": "employment",
+    "source": "Treasurer, via ABC News"
+   },
+   {
+    "label": "Inflation back in the 2-3% target band",
+    "value": "Not until late 2027",
+    "asAt": "November 2026",
+    "issue": "inflation",
+    "source": "Treasurer, via ABC News"
+   },
+   {
+    "label": "PBS co-payment",
+    "value": "Frozen at $25 until 2030 ($242 million over three years)",
+    "asAt": "November 2026",
+    "issue": "budget",
+    "source": "ABC News"
+   },
+   {
+    "label": "Private health insurance rebate for people aged 65+: proposed cut",
+    "value": "$3 billion over four years",
     "asAt": "November 2026",
     "issue": "budget",
     "source": "ABC News"
@@ -66,42 +89,614 @@
   ],
   "terms": [
    {
-    "term": "Contractionary fiscal policy",
-    "def": "Lower government spending or higher taxes that reduce aggregate demand."
+    "term": "MYEFO",
+    "def": "The Mid-Year Economic and Fiscal Outlook, which updates the Budget forecasts."
    },
    {
-    "term": "Means test",
-    "def": "Limiting a payment or subsidy to people below an income or asset level."
+    "term": "Contractionary fiscal policy",
+    "def": "Lower spending or higher taxes that reduce aggregate demand."
+   },
+   {
+    "term": "Automatic stabilisers",
+    "def": "Budget items such as tax receipts and benefits that change with the economy and dampen the cycle without new decisions."
    }
   ],
   "links": [
    [
-    "ABC News: Chalmers says MYEFO cuts will be \"enough, but not too much\", 22 Nov 2026",
-    "https://www.abc.net.au/news/"
+    "ABC News: Chalmers flags net spending cuts in mid-year budget, 23 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-23/chalmers-flags-net-spending-cuts-in-mid-year-budget/107417628"
    ],
    [
-    "ABC News: Federal politics, 17 and 20 Nov 2026",
-    "https://www.abc.net.au/news/"
+    "Yahoo News (The Conversation): Chalmers flags slowing growth, warns...",
+    "https://au.news.yahoo.com/chalmers-flags-slowing-growth-warns-043053500.html"
    ],
    [
-    "ABC News: Verrender analysis of government spending, 3 Nov 2026",
-    "https://www.abc.net.au/news/"
+    "ABC News: Federal politics live blog, parliament, 23 Nov 2026",
+    "https://abc.net.au/news/2026-11-23/federal-politics-live-blog-parliament-nov-23/107415266"
    ]
   ],
   "file": {
-   "path": "files/2026-11/2026-11-22-myefo-chalmers-cuts-enough-not-too-much.pdf",
+   "path": "files/2026-11/2026-11-23-chalmers-weaker-growth-net-spending-cuts.pdf",
    "label": "Topic 4 news summary",
    "pages": 1
   },
-  "angle": "Cutting spending shifts AD left, easing demand inflation but also slowing growth and employment, a hard trade-off when unemployment is rising. Compare the case for cuts (lower deficit, less pressure on the RBA) with the case against (weaker growth, worse jobs outlook).",
+  "angle": "Discuss the policy mix: tight fiscal policy can share the load with monetary policy (cash rate 4.85%) but cuts G and shifts AD left when unemployment is already rising. Automatic stabilisers (lower tax receipts, higher benefits) push the other way.",
   "questions": [
    {
-    "q": "Assess the likely effects of a contractionary fiscal stance on inflation and employment in Australia.",
+    "q": "Evaluate the appropriateness of a contractionary fiscal stance when unemployment is rising and inflation is above target.",
+    "marks": 8
+   }
+  ],
+  "note": "UPDATE DUE: the MYEFO itself, which comes after the RBA's 8 December meeting so September-quarter GDP can be included. Forecasts, not outcomes. Positives noted: business investment growing faster than forecast, wages growing above 3% and no recession forecast. Chalmers said tax receipts will be substantially lower than forecast. Replaces the 22 November pre-statement card (Chalmers said MYEFO would cut 'enough, but not too much'; no cuts confirmed; Gallagher flagged 'belt tightening'; calls to means-test EV and home battery subsidies; Chalmers rejected that spending drives inflation while the Opposition alleged an 'active inflation agenda'; two deregulation tax changes save business $52 million a year; government spending 26.8% of GDP in 2026-27 against 31.3% in the pandemic era per ABC's Verrender, 3 Nov) and, through it, the 18 November AFR/AAP survey card (JWS Research poll of 1,000 voters, an opinion poll: 83% concerned about the deficit, 54% mainly cut spending; deficit $31.5 billion in 2026-27).",
+  "added": "2026-11-24"
+ },
+ {
+  "id": "2026-11-23-job-losses-house-prices-slide-seven-months",
+  "title": "Job losses mount and house prices slide as the slowdown bites",
+  "date": "2026-11-23",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "Joins the labour market and housing market to show how a downturn's costs fall unevenly, with a house price demand diagram.",
+  "lede": "Behind October's jump in unemployment to 4.9% are thousands of redundancies across retail, banking and tech, and some households are being forced to sell their homes. Cotality reports national house prices have now fallen for seven consecutive months.",
+  "about": {
+   "h09": [
+    "3B.1",
+    "3B.3",
+    "3E.4"
+   ],
+   "y12": [
+    "Y1b.1",
+    "Y1d.1"
+   ],
+   "y11": [
+    "P3b.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4D.3",
+    "3A.7"
+   ],
+   "y12": [
+    "Y2c.5"
+   ],
+   "y11": [
+    "P4c.3"
+   ]
+  },
+  "issues": [
+   "employment",
+   "housing",
+   "rates"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Unemployment rate",
+    "value": "4.9% in October (from 4.7%), highest since 2021",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "ABS, via ABC News"
+   },
+   {
+    "label": "Employment change",
+    "value": "About -43,500",
+    "asAt": "October 2026",
+    "issue": "employment",
+    "source": "ABS, via ABC News"
+   },
+   {
+    "label": "National house prices",
+    "value": "Fallen seven months in a row",
+    "asAt": "November 2026",
+    "issue": "housing",
+    "source": "Cotality, via ABC News"
+   },
+   {
+    "label": "Job cuts",
+    "value": "About 1,500 roles at David Jones; 500 jobs in doubt at General Pants (in administration)",
+    "asAt": "November 2026",
+    "issue": "employment",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Cyclical unemployment",
+    "def": "Unemployment caused by a lack of aggregate demand in a downturn."
+   },
+   {
+    "term": "Wealth inequality",
+    "def": "The uneven distribution of assets such as housing and shares."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: Australians lose jobs, recession fears, some forced to sell homes, 21 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-21/australians-lose-jobs-recession-fears-some-forced-to-sell-homes/107408374"
+   ],
+   [
+    "ABC News: Federal politics live blog, recession concerns, 20 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-20/federal-politics-live-blog-recession-concerns/107407116"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-23-job-losses-house-prices-slide-seven-months.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Use for the economic and social costs of unemployment (lost income, skills and assets) and for how a downturn affects the distribution of wealth. Five rate rises this year (cash rate 4.85%) plus job insecurity shift housing demand left, lowering prices and sales.",
+  "questions": [
+   {
+    "q": "Discuss the economic and social costs of rising unemployment in Australia.",
     "marks": 6
    }
   ],
-  "note": "UPDATE DUE: add the December MYEFO. Replaces the 18 November AFR/AAP card (JWS Research survey of 1,000 voters, an opinion poll: 83% concerned about the deficit; 54% mainly cut spending, 28% a mix, 7% mainly raise taxes, 2% borrow; deficit $31.5 billion in 2026-27 and deficits for at least a decade; Chalmers said capital gains tax changes will go ahead). Links are to the ABC home page because the digest gives titles and dates only.",
-  "added": "2026-11-23"
+  "note": "Betashares' David Bassanese says the economy has 'one foot in a recession', and economists warn unemployment could pass 5%: opinions, not forecasts by the RBA or Treasury. Overlaps the 22 November human cost card (kept: this one adds housing) and 19 November house prices card. NAB, ANZ, Canva, Qantas and Bunnings have also announced cuts.",
+  "added": "2026-11-24"
+ },
+ {
+  "id": "2026-11-23-business-activity-contracts-pmi-stagflation-risk",
+  "title": "Business activity shrinks at its fastest pace in five years while inflation stays high",
+  "date": "2026-11-23",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "S&P Global",
+   "UBS"
+  ],
+  "summary": "Provides the November PMI and UBS forecasts as evidence of stagflation risk, with a cost-push AD/AS diagram.",
+  "lede": "Australia's private sector contracted further in November, with the S&P Global flash composite PMI falling to 48.7 from 49.6. UBS expects headline inflation to rise to 4.5% in the December quarter, pointing to a risk of stagflation: weak growth and high inflation together.",
+  "about": {
+   "h09": [
+    "3C.3",
+    "3A.4",
+    "3A.7"
+   ],
+   "y12": [
+    "Y1c.1",
+    "Y1c.5"
+   ],
+   "y11": [
+    "P2c.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3B.2",
+    "4D.3"
+   ],
+   "y12": [
+    "Y1a.5"
+   ],
+   "y11": [
+    "P1e.4"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "growth",
+   "employment"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "adas",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "S&P Global flash composite PMI",
+    "value": "48.7 (previous 49.6); below 50 means activity is shrinking",
+    "asAt": "November 2026",
+    "issue": "growth",
+    "source": "S&P Global, via ABC News"
+   },
+   {
+    "label": "New orders",
+    "value": "Sharpest fall in five years; firms resumed shedding jobs",
+    "asAt": "November 2026",
+    "issue": "growth",
+    "source": "S&P Global, via ABC News"
+   },
+   {
+    "label": "UBS headline CPI forecast",
+    "value": "4.5% in the December quarter 2026 (September: 4.3%)",
+    "asAt": "Q4 2026 forecast",
+    "issue": "inflation",
+    "source": "UBS, via ABC News"
+   },
+   {
+    "label": "UBS real GDP growth forecast",
+    "value": "About 2.0% in 2026, 1.4% in 2027; unemployment above 5%",
+    "asAt": "2026-27 forecast",
+    "issue": "growth",
+    "source": "UBS, via ABC News"
+   },
+   {
+    "label": "Brent crude",
+    "value": "About US$92.65 a barrel",
+    "asAt": "23 November 2026",
+    "issue": "inflation",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "PMI",
+    "def": "Purchasing Managers' Index: a survey-based measure of business activity where 50 separates expansion from contraction."
+   },
+   {
+    "term": "Stagflation",
+    "def": "Slow or negative growth combined with high inflation."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: ASX and business live news, 23 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-23/asx-markets-business-live-news-november-23/107414602"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-23-business-activity-contracts-pmi-stagflation-risk.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "High oil and input costs shift SRAS left: output falls and the price level rises. Stagflation is a policy dilemma: tightening to fight inflation deepens the downturn, while easing risks embedding inflation.",
+  "questions": [
+   {
+    "q": "Explain why stagflation makes it difficult for policymakers to achieve both low inflation and low unemployment.",
+    "marks": 5
+   }
+  ],
+  "note": "A survey and a bank's forecasts, not official outcomes. UPDATE DUE: October CPI (due the week of 23 November). Y1a.5 and P1e.4 are carried from the earlier recession card; check them against the syllabus text. The digest gives September headline inflation as 4.3%; an earlier card cites 3.9% for the year to September, so confirm against the ABS.",
+  "added": "2026-11-24"
+ },
+ {
+  "id": "2026-11-23-iron-ore-slides-steel-mills-struggle-aud-66-cents",
+  "title": "Iron ore slides as China's steel mills struggle; the dollar sits near 66 US cents",
+  "date": "2026-11-23",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "Links weaker Chinese steel demand to iron ore prices, the terms of trade and the AUD, with a demand-shift diagram.",
+  "lede": "Iron ore, Australia's biggest export, finished last week at about US$88.50 a tonne and slipped again on Monday as Chinese steel demand weakened. Oil remains high, squeezing Australia's terms of trade from both sides, and the AUD is about 66 US cents.",
+  "about": {
+   "h09": [
+    "2B.4",
+    "2C.6",
+    "2A.1"
+   ],
+   "y12": [
+    "Y1a.7",
+    "Y3c.4",
+    "Y3c.6"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2C.5"
+   ],
+   "y12": [
+    "Y3c.5"
+   ],
+   "y11": [
+    "P6c.1"
+   ]
+  },
+  "issues": [
+   "trade",
+   "fx"
+  ],
+  "levers": [],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Iron ore",
+    "value": "US$88.50 a tonne (Friday), lower again Monday",
+    "asAt": "20-23 November 2026",
+    "issue": "trade",
+    "source": "ABC News"
+   },
+   {
+    "label": "Chinese steelmakers that are profitable",
+    "value": "About 10% (38% a year ago)",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "Mysteel, cited by ABC News"
+   },
+   {
+    "label": "Brent / WTI crude",
+    "value": "About US$92.65 / US$83.55 a barrel",
+    "asAt": "23 November 2026",
+    "issue": "inflation",
+    "source": "ABC News"
+   },
+   {
+    "label": "AUD / USD",
+    "value": "About 66 US cents",
+    "asAt": "23 November 2026",
+    "issue": "fx",
+    "source": "ABC News"
+   },
+   {
+    "label": "10-year bond yield: Australia / US",
+    "value": "4.91% / 4.95%",
+    "asAt": "23 November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "BHP South Australian copper plan",
+    "value": "Double output to 650,000 tonnes by 2040 (US$14.2-18.1 billion); decision due first half of 2027",
+    "asAt": "November 2026",
+    "issue": "investment",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Terms of trade",
+    "def": "The index of export prices divided by import prices, times 100."
+   },
+   {
+    "term": "Commodity dependence",
+    "def": "Reliance on a narrow range of resource exports whose prices swing widely."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: ASX and business live news, 23 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-23/asx-markets-business-live-news-november-23/107414602"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-23-iron-ore-slides-steel-mills-struggle-aud-66-cents.pdf",
+   "label": "Topic 2 news summary",
+   "pages": 1
+  },
+  "angle": "Weaker Chinese steel demand shifts the iron ore demand curve left, lowering price and quantity. With oil import prices high, the terms of trade worsen, reducing export income and pressuring the AUD; link to the current account and to company tax receipts in MYEFO.",
+  "questions": [
+   {
+    "q": "Explain how a fall in iron ore prices affects Australia's terms of trade and current account balance.",
+    "marks": 4
+   }
+  ],
+  "note": "Market prices that move daily. The 22 November miners card gives iron ore at about US$90.6 a tonne (a different date and source): both are kept. Related 18 November China iron ore haggling card. AUD about 66 US cents, consistent with the 22 November 11-month low.",
+  "added": "2026-11-24"
+ },
+ {
+  "id": "2026-11-23-wall-street-correction-ai-share-boom-unwinds",
+  "title": "Wall Street plunges into correction as the AI share boom unwinds",
+  "date": "2026-11-23",
+  "type": "news",
+  "outlets": [
+   "Reuters",
+   "ABC News"
+  ],
+  "summary": "Gives the daily detail of the US correction and its spread to the ASX as evidence of financial globalisation and the wealth effect.",
+  "lede": "US shares fell sharply on Friday 20 November, pushing the S&P 500 and Dow more than 10% below their record highs. The sell-off was led by AI and chip stocks and spread to the ASX, which has now lost eight sessions in a row.",
+  "about": {
+   "h09": [
+    "1A.4",
+    "1D.1"
+   ],
+   "y12": [
+    "Y3e.3",
+    "Y3c.4"
+   ],
+   "y11": [
+    "P4b.2",
+    "P6c.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4D.3"
+   ],
+   "y12": [
+    "Y1a.8"
+   ],
+   "y11": [
+    "P6b.1"
+   ]
+  },
+  "issues": [
+   "global",
+   "growth"
+  ],
+  "levers": [],
+  "diagrams": [
+   "adas",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "S&P 500 on Friday 20 November",
+    "value": "-3.7% to 6,910 (seventh straight daily fall); Dow -1.9%",
+    "asAt": "20 November 2026",
+    "issue": "global",
+    "source": "Reuters"
+   },
+   {
+    "label": "Nasdaq",
+    "value": "-5.3% on the day, about -10% on the week (biggest weekly fall since March 2020)",
+    "asAt": "Week to 20 November 2026",
+    "issue": "global",
+    "source": "Reuters"
+   },
+   {
+    "label": "Nvidia",
+    "value": "-13.8% on the day",
+    "asAt": "20 November 2026",
+    "issue": "global",
+    "source": "Reuters"
+   },
+   {
+    "label": "ASX 200",
+    "value": "-1.6% on Friday and lower again Monday: eight losing sessions in a row",
+    "asAt": "20-23 November 2026",
+    "issue": "global",
+    "source": "ABC News"
+   },
+   {
+    "label": "Fed pricing",
+    "value": "Near-certain 25 basis point hike in December",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "Reuters"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Correction",
+    "def": "A fall of 10% or more from a recent market peak."
+   },
+   {
+    "term": "Wealth effect",
+    "def": "Households spend less when the value of their assets (shares, super, housing) falls."
+   }
+  ],
+  "links": [
+   [
+    "Yahoo Finance (Reuters): Wall St futures slip as Anthropic...",
+    "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-slip-anthropic-104746137.html"
+   ],
+   [
+    "ABC News: ASX and business live news, 23 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-23/asx-markets-business-live-news-november-23/107414602"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-23-wall-street-correction-ai-share-boom-unwinds.pdf",
+   "label": "Topic 1 news summary",
+   "pages": 1
+  },
+  "angle": "Falling share prices cut household wealth (including super) and business confidence, so AD shifts left. A US shock moved the ASX within hours: integrated capital markets.",
+  "questions": [
+   {
+    "q": "Explain how a sharp fall in US share prices can affect economic growth in Australia.",
+    "marks": 4
+   }
+  ],
+  "note": "Daily and weekly market moves. The digest reports newly listed AI developer Anthropic falling 9.1% on its second trading day, a Goldman Sachs AI share index about 37% below its June peak, and Fed Governor Lisa Cook saying US rates are not high enough: reported, not independently checked. Related 22 November global share sell-off card (kept: it has the weekly table across markets and weekly falls by index) and 19 November Fed card.",
+  "added": "2026-11-24"
+ },
+ {
+  "id": "2026-11-23-philippines-seeks-us-tariff-cut-new-trade-deals",
+  "title": "Philippines pushes to cut US tariffs while signing new trade deals",
+  "date": "2026-11-23",
+  "type": "news",
+  "outlets": [
+   "Daily Tribune (Philippines)"
+  ],
+  "summary": "Shows how a developing economy responds to US protectionism by negotiating and diversifying, with a tariff diagram.",
+  "lede": "The Philippines is negotiating with the United States to lower the tariff on its exports from 12.5% to 10%. At the same time it is spreading its risk with new agreements with Chile, Canada and the EU.",
+  "about": {
+   "h09": [
+    "1C.2",
+    "1B.1",
+    "2D.4"
+   ],
+   "y12": [
+    "Y3a.6",
+    "Y3a.7",
+    "Y3a.13"
+   ],
+   "y11": [
+    "P6a.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "1B.4"
+   ],
+   "y12": [
+    "Y3a.14",
+    "Y3a.15"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "US tariff on covered Philippine goods",
+    "value": "12.5% (imposed July 2026, replacing an earlier 10%); Manila seeks 10%",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "Daily Tribune"
+   },
+   {
+    "label": "Philippine exports, September 2026",
+    "value": "+35.6% (fastest growth in 35 years, per Trade Secretary Roque)",
+    "asAt": "September 2026",
+    "issue": "trade",
+    "source": "Daily Tribune"
+   },
+   {
+    "label": "New deals",
+    "value": "Chile (signed 19 Nov at APEC); Canada FTA talks concluded 14 Nov; EU FTA targeted for end-2026 or early 2027",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "Daily Tribune"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Tariff",
+    "def": "A tax on imports that raises their domestic price."
+   },
+   {
+    "term": "Trade diversification",
+    "def": "Spreading exports across more markets to reduce dependence on any one."
+   }
+  ],
+  "links": [
+   [
+    "Daily Tribune: Philippines seeks to cut US tariffs to 10% as trade talks continue, 23 Nov 2026",
+    "https://tribune.net.ph/2026/11/23/philippines-seeks-to-cut-us-tariffs-to-10-as-trade-talks-continue"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-23-philippines-seeks-us-tariff-cut-new-trade-deals.pdf",
+   "label": "Topic 1 news summary",
+   "pages": 1
+  },
+  "angle": "Apply the tariff diagram (price rises to Pw+t, imports shrink, deadweight loss) and link to the WTO and the rise of bilateral and regional deals as countries route around protectionism.",
+  "questions": [
+   {
+    "q": "With the aid of a diagram, explain the effects of a tariff on consumers, domestic producers and the government in the importing country.",
+    "marks": 6
+   }
+  ],
+  "note": "Foreign-outlet report of ongoing talks, not a deal. The US rate followed a trade investigation into forced-labour enforcement, per the digest. Trump claimed the Philippines would buy all its farm and energy needs from the US; President Marcos said talks were about diversifying supply, not exclusive deals. Related 17 November trade deals card and 22 November Xi APEC card. Y3a.14 carried from the 17 November card.",
+  "added": "2026-11-24"
  },
  {
   "id": "2026-11-22-rba-pause-after-split-vote-cba-outlook",
@@ -411,104 +1006,6 @@
    }
   ],
   "note": "Commentary and a rule of thumb, not a forecast. The RBA and Treasury are not forecasting a recession. Related 19 November recession cards (kept). The link is dated 23 November and goes to the ABC home page. UPDATE DUE: October CPI (24 Nov) and Q3 GDP (2 Dec). Check dot point 1A.2 against the course map.",
-  "added": "2026-11-23"
- },
- {
-  "id": "2026-11-22-albanese-xi-shenzhen-full-turnaround",
-  "title": "Albanese meets Xi in Shenzhen: Xi hails a \"full turnaround\"",
-  "date": "2026-11-22",
-  "type": "news",
-  "outlets": [
-   "PM's office",
-   "ABC News",
-   "The Nightly"
-  ],
-  "summary": "Shows the state of Australia-China trade relations after the APEC meeting and the risks of reliance on one market.",
-  "lede": "In their fifth meeting, in Shenzhen, Xi Jinping hailed a 'full turnaround' in relations. China takes more than a quarter of Australia's exports. Tension remains over the Darwin Port, leased for 99 years from 2015 to Landbridge, which has flagged possible legal action.",
-  "about": {
-   "h09": [
-    "2D.4",
-    "1C.2",
-    "2A.1"
-   ],
-   "y12": [
-    "Y3a.6",
-    "Y3a.7",
-    "Y3a.13"
-   ],
-   "y11": [
-    "P6a.2"
-   ]
-  },
-  "also": {
-   "h09": [
-    "1B.1",
-    "2B.4"
-   ],
-   "y12": [
-    "Y3a.15"
-   ],
-   "y11": []
-  },
-  "issues": [
-   "trade",
-   "global"
-  ],
-  "levers": [
-   "trade"
-  ],
-  "diagrams": [
-   "flow"
-  ],
-  "figures": [
-   {
-    "label": "China's share of Australian exports",
-    "value": "More than a quarter",
-    "asAt": "November 2026",
-    "issue": "trade",
-    "source": "PM's office / ABC News"
-   },
-   {
-    "label": "Albanese-Xi meetings",
-    "value": "Fifth meeting",
-    "asAt": "20 November 2026",
-    "issue": "trade",
-    "source": "The Nightly"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Trade diversification",
-    "def": "Spreading exports across many markets to reduce reliance on one buyer."
-   }
-  ],
-  "links": [
-   [
-    "PM's office: 33rd APEC Leaders' Summit",
-    "https://www.pm.gov.au/media/33rd-apec-leaders-summit"
-   ],
-   [
-    "ABC News: APEC live blog, 20 Nov 2026",
-    "https://www.abc.net.au/news/"
-   ],
-   [
-    "The Nightly: Albanese and Xi in Shenzhen",
-    "https://www.thenightly.com.au/"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-22-albanese-xi-shenzhen-full-turnaround.pdf",
-   "label": "Topic 2 news summary",
-   "pages": 1
-  },
-  "angle": "Balance the benefits of stronger China ties (export revenue, stable trade) against the risks of concentration and political tension.",
-  "questions": [
-   {
-    "q": "Evaluate the implications for Australia of its trade relationship with China.",
-    "marks": 6
-   }
-  ],
-  "note": "Replaces two preview cards: 19 November 'Beef tariffs on the table as Albanese meets Xi at APEC' (beef quota 205,000 tonnes, used up in June; extra 55% tariff above the quota; about $1 billion of beef exports at risk per an AMIC industry estimate; Rabobank said 2027 quota could be used up by May) and 18 November 'Albanese heads to APEC in Shenzhen as Xi calls for lower trade barriers' (APEC has 21 economies; WTO reported a surge in trade restrictions). The digest does not say whether the beef tariff was resolved: check the sources. The 14 November Trump-Xi-Putin preview is kept. Links to the outlets' sites where the digest gives titles only.",
   "added": "2026-11-23"
  },
  {
@@ -848,16 +1345,16 @@
   "added": "2026-11-23"
  },
  {
-  "id": "2026-11-22-cop31-ends-no-deal-fossil-fuels",
-  "title": "COP31 climate talks end with no deal on fossil fuels",
+  "id": "2026-11-22-cop31-collapses-no-deal-bowen-co-president",
+  "title": "COP31 collapses without a climate deal",
   "date": "2026-11-22",
   "type": "news",
   "outlets": [
    "UN News",
-   "CBS News"
+   "ABC News"
   ],
-  "summary": "Shows why international environmental agreements are hard to reach, using the externality and free-rider problems.",
-  "lede": "After two weeks and two days of overtime in Antalya, nearly 200 countries failed to adopt a final text; the EU and Panama formally objected. Later drafts dropped every mention of coal, oil and gas, but kept a goal for electricity to supply about 35% of world energy by 2035, a carbon-capture target and a pledge to 'at least triple' adaptation finance. The US sent no official delegation for a second year.",
+  "summary": "Shows why international environmental agreements are hard to reach, using the externality and free-rider problems, with Australia as co-president.",
+  "lede": "The UN climate summit in Antalya, Türkiye, ended on Sunday 22 November without a final agreement. It was the longest-running climate summit on record and broke down over whether the text should mention fossil fuels. Australia's Chris Bowen was co-president.",
   "about": {
    "h09": [
     "4G.4",
@@ -899,65 +1396,179 @@
   ],
   "figures": [
    {
-    "label": "Countries negotiating",
-    "value": "About 200",
-    "asAt": "November 2026",
+    "label": "Length of talks",
+    "value": "Two weeks plus two days of overtime; longest summit on record",
+    "asAt": "22 November 2026",
     "issue": "environment",
     "source": "UN News"
    },
    {
-    "label": "Warming on current national plans",
-    "value": "About 2.5°C (Paris goal of 1.5°C at risk)",
-    "asAt": "November 2026",
+    "label": "Formal objectors to the final text",
+    "value": "EU, Panama and the Marshall Islands",
+    "asAt": "22 November 2026",
     "issue": "environment",
     "source": "UN News"
    },
    {
-    "label": "Electricity share of energy by 2035 (kept in the last draft)",
-    "value": "About 35%",
-    "asAt": "November 2026",
+    "label": "Final agreed text",
+    "value": "None",
+    "asAt": "22 November 2026",
     "issue": "environment",
-    "source": "CBS News"
+    "source": "UN News"
+   },
+   {
+    "label": "Next summit",
+    "value": "COP32, Addis Ababa, Ethiopia",
+    "asAt": "2027",
+    "issue": "environment",
+    "source": "UN News"
    }
   ],
   "terms": [
    {
     "term": "Negative externality",
-    "def": "A cost imposed on third parties that is not reflected in the market price."
+    "def": "A cost imposed on third parties that is not included in the market price."
    },
    {
     "term": "Free-rider problem",
-    "def": "Each country gains from others' emission cuts without bearing the cost itself."
+    "def": "Each country benefits from others' cuts in emissions without paying the cost itself."
    }
   ],
   "links": [
    [
-    "UN News: COP31 ends without agreement, Nov 2026",
+    "UN News: COP31 ends without agreement",
     "https://news.un.org/en/story/2026/11/1168855"
    ],
    [
-    "CBS News: UN COP31 climate conference ends with no agreement",
-    "https://www.cbsnews.com/news/un-cop31-climate-conference-ends-no-agreement-fossil-fuel-debate-standstill/"
+    "ABC News: Federal politics live blog, parliament, 23 Nov 2026",
+    "https://abc.net.au/news/2026-11-23/federal-politics-live-blog-parliament-nov-23/107415266"
    ]
   ],
   "file": {
-   "path": "files/2026-11/2026-11-22-cop31-ends-no-deal-fossil-fuels.pdf",
+   "path": "files/2026-11/2026-11-22-cop31-collapses-no-deal-bowen-co-president.pdf",
    "label": "Topic 1 news summary",
    "pages": 1
   },
-  "angle": "Use the MSC/MPC diagram to show over-production of fossil-fuel energy, and discuss why consensus among about 200 countries is difficult.",
+  "angle": "Use the MSC/MPC diagram: the market produces Q1 at P1, more than the socially optimal Q*, with a deadweight loss. Agreements need consensus, and nations with fossil-fuel exports can block it, so COP31 is evidence of the limits of international environmental management.",
   "questions": [
    {
-    "q": "Using a diagram, explain why fossil-fuel energy is over-produced in a free market.",
-    "marks": 4
+    "q": "Using a negative externality diagram, explain why international cooperation is needed to reduce greenhouse gas emissions.",
+    "marks": 5
+   }
+  ],
+  "note": "Replaces the earlier 22 November COP31 card (UN News, CBS) and, through it, the 16 November first-draft card. Carried facts: about 200 countries negotiated; early draft called for faster action to phase out fossil fuels but later drafts dropped mention of coal, oil and gas; the last draft kept a goal for electricity to supply about 35% of world energy by 2035, a carbon-capture target and a pledge to 'at least triple' adaptation finance; US sent no official delegation for the second year; about 2.5 degrees of warming on current national plans against the 1.5 degree Paris goal; Guterres called it deeply disappointing. New here: co-presidents Murat Kurum (Türkiye) and Chris Bowen (Australia); Saudi Arabia defended references to carbon capture and storage; Opposition Leader Angus Taylor called on Bowen to resign as Climate Minister (a political claim). Link 3 date: the live blog is 23 November.",
+  "added": "2026-11-24"
+ },
+ {
+  "id": "2026-11-21-albanese-xi-li-qiang-full-turnaround-ai-talks",
+  "title": "Xi hails a \"full turnaround\" with Australia as AI talks are agreed",
+  "date": "2026-11-21",
+  "type": "news",
+  "outlets": [
+   "ABC News"
+  ],
+  "summary": "Shows the state of Australia-China trade relations, what business wants from the relationship, and the risk of export concentration.",
+  "lede": "Anthony Albanese met Xi Jinping at APEC in Shenzhen and Premier Li Qiang in Beijing. Business leaders used the visit to press for better access for Australian food exports, years after Beijing's trade restrictions hit Australian goods, and the two governments agreed to hold talks on artificial intelligence.",
+  "about": {
+   "h09": [
+    "2D.4",
+    "1C.2",
+    "2A.1"
+   ],
+   "y12": [
+    "Y3a.6",
+    "Y3a.7",
+    "Y3a.13",
+    "Y3a.15"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "1B.1",
+    "2B.4"
+   ],
+   "y12": [
+    "Y3e.3"
+   ],
+   "y11": [
+    "P6a.1"
+   ]
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Albanese-Xi meetings since 2022",
+    "value": "Fifth",
+    "asAt": "20 November 2026",
+    "issue": "trade",
+    "source": "ABC News"
    },
    {
-    "q": "Discuss the difficulties of reaching global agreement on environmental sustainability.",
+    "label": "Australian jobs that depend on trade",
+    "value": "One in four",
+    "asAt": "November 2026",
+    "issue": "employment",
+    "source": "PM Albanese, via ABC News"
+   },
+   {
+    "label": "Australia-China CEO Roundtable",
+    "value": "Ninth",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Market access",
+    "def": "The ability of exporters to sell into a foreign market without tariffs or other barriers."
+   },
+   {
+    "term": "Export concentration",
+    "def": "Reliance on a small number of markets, which raises vulnerability to shocks."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: Albanese to meet Xi for trade, 20 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-20/albanese-to-meet-xi-for-trade/107406222"
+   ],
+   [
+    "ABC News: Australia strikes deal on AI talks with China after APEC, 21 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-21/australia-strikes-deal-on-ai-talks-with-china-after-apec/107411592"
+   ],
+   [
+    "ABC News: Federal politics live blog, recession concerns, 20 Nov 2026",
+    "https://www.abc.net.au/news/2026-11-20/federal-politics-live-blog-recession-concerns/107407116"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-21-albanese-xi-li-qiang-full-turnaround-ai-talks.pdf",
+   "label": "Topic 2 news summary",
+   "pages": 1
+  },
+  "angle": "Weigh the gains from China trade against the risk of export concentration: earlier restrictions on barley, wine and beef show the downside. Easing barriers on beef shifts Chinese demand right, lifting export income. The Business Council pushed for access for beef and rice, medical devices and recognition of professional qualifications.",
+  "questions": [
+   {
+    "q": "Assess the benefits and risks for the Australian economy of its trade relationship with China.",
     "marks": 6
    }
   ],
-  "note": "Replaces the 16 November card on the first COP31 draft, which Australia tabled as co-host (35% electricity share by 2035; developing countries wanted at least US$120 billion in adaptation funding, triple current levels; final text was due Friday 20 November). The 11 November COP31 electrification and Albanese cards are kept. Final text status may change: check the UN site. Codes 1D.8 and 4I.6 are carried from the earlier card.",
-  "added": "2026-11-23"
+  "note": "Replaces the 22 November card on the same meeting, which carried: China takes more than a quarter of Australia's exports; the Darwin Port (99-year lease from 2015 to Landbridge) remains a source of tension and Landbridge flagged possible legal action. The digest does not say whether the beef quota or tariff was resolved (earlier previews: 205,000 tonne 2026 quota used up in June, extra 55% tariff above it, about $1 billion of beef exports at risk per an AMIC industry estimate). Australia also signed a US-led declaration on reducing reliance on China for critical technologies; Trade Minister Don Farrell urged the Coalition to back the Australia-EU FTA. Albanese's Beijing visit was about six hours.",
+  "added": "2026-11-24"
  },
  {
   "id": "2026-11-19-house-prices-fall-recovery-hinges-on-rates",
