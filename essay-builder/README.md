@@ -18,6 +18,16 @@ diagram, then checks, copies or prints the plan. It plans a response; it does no
 | 3 Plan | **Sections III and IV:** the booklet's economics paragraph (p. 43): Point, then one to three Explain → Diagram → Evidence cycles, a Stimulus line in Section III, then Link & judge. **Section II:** a plan sized to the marks, using the booklet's Outline and Explain key word scaffolds; calculations get formula, working and answer. |
 | 4 Review | A list of every diagram in the response, then the outline of the plan, a checklist, copy as text, print or save as PDF. |
 
+## Layout: one step at a time (redesigned 23 November 2026)
+The builder is a wizard. Only the current step shows; the four step buttons at the top and the Back / Next buttons at the bottom move between steps, and choosing a question opens step 2.
+- **Step 2** has two parts: A "Understand the question" and B "Plan your introduction". The thesis steps, ideas and model thesis open only when asked for.
+- **Step 3 (essays)** opens with an **essay map**: a block for the introduction, each paragraph and the conclusion, with a dot for each move that fills in when the move is done. One paragraph shows at a time. Each paragraph has a **flow chart of its moves** (Point → Explain → Diagram → Evidence → Link & judge, with Stimulus in Section III and up to three Explain–Diagram–Evidence cycles); clicking a move shows only that move. Help for the move sits beside it under **Questions, Ideas and Model** tabs, according to the support level. The evidence list shows only on the Evidence move.
+- **Chains as flow charts**: an Explain chain typed with → between steps and ↑ or ↓ after a variable is drawn as linked boxes (green for a rise, red for a fall) as the student types, and in the ideas, model and review page.
+- **Step 3 (Section II)** has a map of the parts and shows one part at a time; ideas and the model are folded away.
+- Each move and each support level has its own icon and colour, used the same way everywhere.
+
+Code in `template.html`: `applyStep` / `goStep` (wizard), `essayMap`, `pflowHTML`, `movePanel`, `mvList` / `mvState`, `flowHTML`, `ICON`. A plan remembers the open paragraph (`open`) and each paragraph's current move (`mv`).
+
 ## Your own evidence (added 23 November 2026)
 The evidence list in step 3 has a third tab, **My evidence**. A student adds a **statistic** (figure, what it measures, source, date), a **case study** fact (economy, defaulting to China), **stimulus** from the question's paper (offered only when the question has stimulus, and kept with that question) or another **example**. Items are saved in the browser as a personal bank and offered in every plan; they can be edited, deleted, and saved to or loaded from a backup file (`my-economics-evidence.json`) to move between devices. In the plan they are marked "your own" or "from the stimulus", and the plan check asks that each of the student's own statistics has a source and a date.
 

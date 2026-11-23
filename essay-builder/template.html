@@ -69,7 +69,6 @@ body{font-weight:500}
 .seg button{border:0;background:none;padding:.42rem .75rem;font-size:.88rem;font-weight:600;color:var(--mut);border-right:1px solid var(--rule)}
 .seg button:last-child{border-right:0}
 .seg button[aria-pressed="true"]{background:var(--acc);color:var(--acc-ink)}
-.supbar{margin-bottom:18px;display:grid;gap:8px}
 .suph{display:flex;flex-wrap:wrap;gap:2px 12px;align-items:baseline}.suph b{font-family:var(--head);font-size:1.08rem}.suph span,.supd{color:var(--mut);font-size:.88rem}
 .sts{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px;align-items:center}.sts>span{font-size:.78rem;color:var(--mut)}
 .st{border:1px dashed var(--rule2);background:var(--card);border-radius:999px;padding:.12rem .6rem;font-size:.8rem;color:var(--mut)}
@@ -107,6 +106,82 @@ body{font-weight:500}
 .ownact{display:flex;gap:12px;justify-content:flex-end;margin:-3px 4px 3px}.ownact button{border:0;background:none;color:var(--mut);font-size:.76rem;text-decoration:underline;padding:0}
 .ownbk{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.ownbk label{cursor:pointer}
 .er:disabled{opacity:.6;cursor:default}
+.ic{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.kP{--mc:var(--mP)}.kE{--mc:var(--mE)}.kD{--mc:var(--mD)}.kV{--mc:var(--mV)}.kL{--mc:var(--mL)}.kS{--mc:#d81b60}
+.stepbar button[data-gostep]{display:inline-flex;gap:7px;align-items:center;color:var(--mut);font-weight:600;font-size:.88rem;background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:.3rem .8rem .3rem .35rem}
+.stepbar button[data-gostep] i{font-style:normal;display:inline-grid;place-items:center;width:1.55em;height:1.55em;border-radius:50%;background:var(--card2);border:1px solid var(--rule2);font-size:.85em;font-family:var(--head);font-weight:700}
+.stepbar button.done i{background:var(--ok);border-color:var(--ok);color:#fff}
+.stepbar button.cur{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.stepbar button.cur i{background:var(--acc-ink);border-color:var(--acc-ink);color:var(--acc)}
+.stepbar button[data-gostep]:disabled{opacity:.5;cursor:default}
+.wnav{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:4px 0 30px}
+.supbar{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;padding:8px 12px;margin-bottom:16px}
+.supbar>b{font-family:var(--head);display:inline-flex;gap:6px;align-items:center}
+.supbar .seg button{display:inline-flex;gap:6px;align-items:center;padding:.35rem .65rem;font-size:.82rem}
+.supbar .supd{flex:1 1 260px;margin:0}
+.untabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 4px}
+.untabs button{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--rule2);background:var(--card);border-radius:999px;padding:.35rem .9rem .35rem .4rem;font-weight:700;font-size:.9rem;color:var(--mut)}
+.untabs button i{font-style:normal;display:inline-grid;place-items:center;width:1.5em;height:1.5em;border-radius:50%;background:var(--card2);border:1px solid var(--rule2);font-size:.85em}
+.untabs button[aria-pressed="true"]{background:var(--acc-soft);border-color:var(--acc);color:var(--ink)}
+.untabs button[aria-pressed="true"] i{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.un3 .un:nth-child(1){border-top:4px solid var(--mP)}.un3 .un:nth-child(2){border-top:4px solid var(--mE)}.un3 .un:nth-child(3){border-top:4px solid var(--mL)}
+.unnext{margin-top:12px;text-align:right}
+details.helpd{border:1px solid var(--rule);border-radius:10px;background:var(--card2);margin-top:10px}
+details.helpd>summary{cursor:pointer;padding:.45rem .75rem;font-weight:700;font-size:.9rem;display:flex;gap:8px;align-items:center}
+details.helpd>summary .ic{color:var(--hc,var(--acc))}
+details.helpd>div{padding:0 12px 10px}
+details.helpd .ideas,details.helpd .model{border:0;padding:0;margin:0;background:none}
+.hq{--hc:#0d9488}.hi{--hc:#d97706}.hm{--hc:#7c3aed}
+.emap{display:flex;gap:20px;overflow-x:auto;padding:4px 2px 10px;margin-bottom:8px}
+.eb{position:relative;flex:1 1 0;min-width:120px;max-width:230px;text-align:left;border:1px solid var(--rule2);border-top:5px solid var(--rule2);background:var(--card);border-radius:10px;padding:.4rem .6rem .5rem;display:grid;gap:2px;align-content:start}
+.eb:not(:last-child)::after{content:"→";position:absolute;right:-17px;top:50%;transform:translateY(-50%);color:var(--mut);font-weight:700}
+.eb small{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--mut)}
+.eb b{font-size:.84rem;font-weight:600;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.eb:hover{border-color:var(--acc)}
+.eb.on{border-color:var(--acc);border-top-color:var(--acc);background:var(--acc-soft);box-shadow:var(--shadow)}
+.eb.intro,.eb.concl{background:var(--card2);flex:0 0 auto}.eb.done{border-top-color:var(--ok)}
+.eb.add{flex:0 0 auto;min-width:0;width:auto;padding:.4rem 1.1rem;border-style:dashed;border-top-width:1px;place-items:center;text-align:center;font-size:1.25rem;line-height:1;color:var(--mut)}
+.dots{display:flex;gap:3px;margin-top:3px}.dots i{width:10px;height:10px;border-radius:50%;border:2px solid var(--mc)}.dots i.done{background:var(--mc)}.dots i.skip{opacity:.35}
+.pcard{background:var(--card);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);padding:12px 14px;margin-bottom:12px}
+.phead{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin-bottom:10px}.phead h3{font-size:1.15rem;margin-right:auto}.phead select{max-width:min(340px,100%);font-size:.84rem}
+.pflow{display:flex;flex-wrap:wrap;gap:6px;align-items:flex-end;margin-bottom:12px}
+.pflow .fa{color:var(--mut);font-style:normal;font-weight:700;align-self:center}.pflow>.fa{margin-bottom:.35rem;align-self:flex-end}
+.pn{display:inline-flex;gap:6px;align-items:center;border:2px solid var(--mc);color:var(--mc);background:var(--card);border-radius:999px;padding:.3rem .7rem;font-weight:700;font-size:.86rem}
+.pn b{font-weight:700;color:var(--ink)}.pn.on{background:var(--mc);color:#fff;box-shadow:0 2px 8px color-mix(in srgb,var(--mc) 40%,transparent)}.pn.on b{color:#fff}
+.pn>i{font-style:normal;font-size:.8rem}.pn.skip{border-style:dashed}
+.pn.addc{border:2px dashed var(--rule2);color:var(--mut);font-weight:600}
+.cg{display:inline-grid;gap:3px;border:1px dashed var(--rule2);border-radius:16px;padding:3px 6px 6px;background:var(--card2)}
+.cg>small{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--mut);padding-left:6px;display:flex;gap:6px;align-items:center}
+.cg>small button{border:0;background:none;color:var(--mut);font-size:.95rem;line-height:1;padding:0 2px}
+.cg>span{display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+.mpanel{border:1px solid var(--rule);border-left:6px solid var(--mc);border-radius:12px;overflow:hidden}
+.mpanel>header{display:flex;gap:10px;align-items:center;background:color-mix(in srgb,var(--mc) 12%,var(--card));padding:10px 14px}
+.mpanel>header>.ic{width:1.9rem;height:1.9rem;color:var(--mc)}.mpanel h3{font-size:1.1rem}.mpanel header p{font-size:.86rem;color:var(--mut)}
+.mstep{margin-left:auto;font-size:.76rem;color:var(--mut);white-space:nowrap}
+.mgrid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);gap:14px;padding:12px 14px}.mgrid.one{grid-template-columns:1fr}
+@media (max-width:820px){.mgrid{grid-template-columns:1fr}}
+.mmain>.lab:first-child{margin-top:0}
+.mpanel>footer{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;padding:10px 14px;border-top:1px solid var(--rule);background:var(--card2)}
+.help{border:1px solid var(--rule);border-radius:10px;background:var(--card2);align-self:start;overflow:hidden;min-width:0}
+.htabs{display:flex;border-bottom:1px solid var(--rule)}
+.htabs button{flex:1;border:0;background:none;padding:.4rem .5rem;font-weight:700;font-size:.8rem;color:var(--mut);display:inline-flex;gap:5px;justify-content:center;align-items:center;border-bottom:3px solid transparent}
+.htabs button .ic{color:var(--hc)}
+.htabs button[aria-pressed="true"]{color:var(--ink);background:var(--card);border-bottom-color:var(--hc)}
+.hbody{padding:8px 10px 10px;font-size:.88rem;display:grid;gap:6px}
+.hbody .gq{margin:0 0 0 1.1em;font-size:.88rem;color:var(--ink)}.hbody .gq li{margin:3px 0}
+.hbody .dhint{margin:0}.hbody .idea{margin-top:0}
+.hbody .mwrite{border-left:3px solid var(--mc);padding-left:8px}
+.flow{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+.fn{border:1.5px solid var(--rule2);background:var(--card);border-radius:8px;padding:.18rem .5rem;font-size:.84rem;display:inline-flex;gap:5px;align-items:center}
+.fn b{font-size:.95em}.fn.up{border-color:var(--ok)}.fn.up b{color:var(--ok)}.fn.dn{border-color:var(--gap)}.fn.dn b{color:var(--gap)}
+.flow .fa{font-style:normal;color:var(--mut);font-weight:700}.flow.sm .fn{font-size:.76rem;padding:.1rem .4rem}
+.flowprev{margin-top:8px;padding:8px;border:1px dashed var(--rule2);border-radius:10px;background:var(--card2)}
+.flowprev>small{display:block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--mut);margin-bottom:4px}
+.flowprev em{font-style:normal;font-size:.82rem;color:var(--mut)}
+.chcard{border:1px solid var(--rule);background:var(--card);border-radius:8px;padding:6px 8px;display:grid;gap:5px}
+.chcard header{display:flex;justify-content:space-between;gap:8px;font-size:.8rem;font-weight:700;align-items:center}
+.build.noev{grid-template-columns:1fr}.build.noev .shelf{display:none}
+.parts .para:not(.open){display:none}.parts .ph u{display:none}.parts .ph{cursor:default}
 .qcount{margin:0 0 8px;color:var(--mut);font-size:.9rem}
 .seg small{display:block;font-weight:400;font-size:.7rem;opacity:.85}
 .tabs{display:flex;gap:4px;border-bottom:2px solid var(--rule2);margin:6px 0 18px}
@@ -416,6 +491,7 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
       <aside class="shelf" aria-label="Evidence"><h3>Evidence<span id="evfor"></span></h3><p class="feed" id="feed"></p><div id="evhead"></div><div class="evlist" id="evlist"></div></aside></div></section>
 
   <section class="step needq" id="s4"><h2><i>4</i>Review the plan</h2><p class="sub">Your plan updates as you build. Check it, copy or print it, then write the response by hand under timed conditions.</p><div class="card" id="plan"></div></section>
+  <div class="wnav" id="wnav"></div>
 </section>
 
 <section class="view" id="v-guide">
@@ -438,7 +514,7 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
       <p style="margin-top:6px"><b>Conclusion.</b> Draw the strands of your argument together. Nothing at odds with the body, and no new evidence.</p>
       <p style="margin-top:6px"><b>Data.</b> A top-band response relates the theory to what is happening now in the Australian and global economy, with accurate, dated statistics.</p></div>
     <div class="card"><h2>Choose your level of support</h2><p class="sub">The support switch sits above step 2. Each level adds to the one before it.</p>
-      <p><b>On my own.</b> Prompts and examples only. This is how you will plan in the exam.</p>
+      <p>In step 3 the help for each move sits beside it, under Questions, Ideas and Model.</p><p style="margin-top:6px"><b>On my own.</b> Prompts and examples only. This is how you will plan in the exam.</p>
       <p style="margin-top:6px"><b>Sentence starters.</b> Starters and linking words under each box. Click one, then finish the sentence.</p>
       <p style="margin-top:6px"><b>Guiding questions.</b> Questions for each part of a paragraph, and five steps that build a draft thesis from your answers.</p>
       <p style="margin-top:6px"><b>Suggested ideas.</b> Possible points, cause and effect chains from the Chain Builder and evidence that fits. Reword them to answer the question.</p>
@@ -813,13 +889,13 @@ function importBank(file) { const r = new FileReader(); r.onload = () => { try {
 
 /* ---------- state ---------- */
 const KEY = 'econ-er-builder-v1';
-let S = { fw: 'h09', q: null, lab: '12', sup: 0, bank: [], eco: 'China', plans: {}, qf: { s: 'IV', top: '', sec: '', verb: '', text: '', n: 40 }, sf: { tab: 'fig', text: '', issue: '', match: true, form: false, draft: null } };
-try { const d = JSON.parse(localStorage.getItem(KEY) || 'null'); if (d && typeof d === 'object') { if (FW[d.fw]) S.fw = d.fw; if (d.lab === '01') S.lab = '01'; if ([1, 2, 3, 4].includes(d.sup)) S.sup = d.sup; S.bank = cleanBank(d.bank); if (str(d.eco).trim()) S.eco = str(d.eco).trim(); if (d.plans && typeof d.plans === 'object') S.plans = d.plans; if (d.q && EK[d.q] && S.plans[d.q]) S.q = d.q; } } catch (e) {}
+let S = { fw: 'h09', q: null, step: 1, un: 'q', walk: false, help: 'q', fullModel: false, lab: '12', sup: 0, bank: [], eco: 'China', plans: {}, qf: { s: 'IV', top: '', sec: '', verb: '', text: '', n: 40 }, sf: { tab: 'fig', text: '', issue: '', match: true, form: false, draft: null } };
+try { const d = JSON.parse(localStorage.getItem(KEY) || 'null'); if (d && typeof d === 'object') { if (FW[d.fw]) S.fw = d.fw; if (d.lab === '01') S.lab = '01'; if ([2, 3, 4].includes(d.step)) S.step = d.step; if ([1, 2, 3, 4].includes(d.sup)) S.sup = d.sup; S.bank = cleanBank(d.bank); if (str(d.eco).trim()) S.eco = str(d.eco).trim(); if (d.plans && typeof d.plans === 'object') S.plans = d.plans; if (d.q && EK[d.q] && S.plans[d.q]) S.q = d.q; } } catch (e) {}
 if (FW[params.get('fw')]) S.fw = params.get('fw');
 /* deep link: ?s=IV&sec=1E opens the picker on one section of the syllabus (e.g. Topic 1 case study) */
 if (['II', 'III', 'IV'].includes(params.get('s'))) S.qf.s = params.get('s');
 { const ps = params.get('sec'); if (ps && SEC[ps]) { S.fw = FW.y12.topics.some(t => t.id === SEC[ps].top.id) ? 'y12' : 'h09'; S.qf.top = SEC[ps].top.id; S.qf.sec = ps; } }
-const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ fw: S.fw, q: S.q, lab: S.lab, sup: S.sup, eco: S.eco, bank: S.bank, plans: S.plans })); } catch (e) {} };
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ fw: S.fw, q: S.q, step: S.step, lab: S.lab, sup: S.sup, eco: S.eco, bank: S.bank, plans: S.plans })); } catch (e) {} };
 S.sf.draft = newDraft();
 const E = () => EK[S.q], P = () => S.plans[S.q];
 const newCycle = () => ({ explain: '', dia: '', sc: '', cause: '', dnote: '', ref: '', ev: [] });
@@ -880,8 +956,7 @@ function guideQs(kind, vs) { const judge = isJudge(vs);
 const gqHTML = (kind, vs) => { const q = S.sup >= 2 ? guideQs(kind, vs) : []; return q.length ? `<ul class="gq">${q.map(x => `<li>${x}</li>`).join('')}</ul>` : ''; };
 const stHTML = (path, kind, vs) => { const s = S.sup >= 1 ? starters(kind, vs) : []; return s.length ? `<div class="sts" role="group" aria-label="Sentence starters">${s.map(x => `<button type="button" class="st" data-ins="${esc(x)}" data-to="${esc(path)}">${esc(x)}</button>`).join('')}</div>` : ''; };
 const fk = (kind, vs, path, ph, rows) => gqHTML(kind, vs) + fld(path, ph, rows) + stHTML(path, kind, vs);
-function renderSup() { $('#supbar').innerHTML = `<div class="suph"><b>How much support do you want?</b><span>Each level adds to the one before it. Step down a level as you gain confidence.</span></div>
-  <div class="seg" role="group" aria-label="Level of support">${SUPL.map((l, i) => `<button data-sup="${i}" aria-pressed="${S.sup === i}">${l[0]}<small>${i ? 'Level ' + i : 'No extra help'}</small></button>`).join('')}</div><p class="supd">${SUPL[S.sup][1]}</p>`; }
+function renderSup() { $('#supbar').innerHTML = `<b>${ic('s' + S.sup)}Support</b><div class="seg" role="group" aria-label="Level of support">${SUPL.map((l, i) => `<button data-sup="${i}" aria-pressed="${S.sup === i}" title="${esc(l[1])}">${ic('s' + i)}${l[0]}</button>`).join('')}</div><p class="supd">${SUPL[S.sup][1]}</p>`; }
 /* suggestions (level 3) */
 const rr = lists => { const out = []; for (let i = 0; lists.some(l => i < l.length); i++) lists.forEach(l => { if (i < l.length && !out.includes(l[i])) out.push(l[i]); }); return out; };
 const sugPoints = (codes, n) => rr([...new Set(codes.map(secOf))].map(s => DATA.sup.points[s] || [])).slice(0, n);
@@ -901,9 +976,9 @@ function ideasE(p, e) { if (S.sup < 3) return ''; const codes = p.focus ? [p.foc
     ${QUICK.length ? `<h5>Evidence that fits <em>(more in the evidence list)</em></h5><div class="idl">${QUICK.map((r, k) => { const on = have.has(r.x.k); return `<button type="button" class="idea ${on ? 'on' : ''}" data-quickev="${k}"><span><b>${esc(r.x.value)}</b> ${esc(r.x.label)} <em>${esc([r.x.asAt, r.x.source].filter(Boolean).join(' · '))}</em></span><u>${on ? '✓' : '+'}</u></button>`; }).join('')}</div>` : ''}</div>`; }
 function ideasS(p, k) { if (S.sup < 3 || k === 'calc') return ''; const codes = p.c.filter(c => PT[c]), pts = sugPoints(codes, 5), chs = chainsFor(codes).slice(0, 1);
   if (!pts.length && !chs.length) return '';
-  return `<div class="ideas"><h4>Suggested ideas for this part</h4><p class="dhint">These fit this part of the syllabus. Choose what answers the question, then reword it.</p>
+  return `<details class="helpd hi"><summary>${ic('s3')}Ideas for this part</summary><div><div class="ideas"><p class="dhint">These fit this part of the syllabus. Choose what answers the question, then reword it.</p>
     ${pts.length ? `<h5>Possible points <em>(go into the next empty point)</em></h5><div class="idl">${pts.map(t => `<button type="button" class="idea" data-usept="${esc(t)}"><span>${esc(t)}</span><u>Use</u></button>`).join('')}</div>` : ''}
-    ${chs.length ? `<h5>A cause and effect chain you could use</h5>${chainHTML(chs, false)}` : ''}</div>`; }
+    ${chs.length ? `<h5>A cause and effect chain you could use</h5>${chainHTML(chs, false)}` : ''}</div></div></details>`; }
 /* worked models (level 4) */
 function modelFor(codes) { const secs = [...new Set(codes.map(secOf))], M = DATA.sup.models; let best = null, bs = 0;
   M.forEach(m => { let s = 0; secs.forEach((x, i) => { const j = m.secs.indexOf(x); if (j >= 0) s += (10 - Math.min(j, 5)) * (i ? 1 : 2); }); if (s > bs) { bs = s; best = m; } });
@@ -915,9 +990,9 @@ function modelPanel(e) { if (S.sup < 4) return ''; const m = modelFor(e.c), row 
     <div><small>The paragraph written from the plan</small><p class="mpara">${m.para.map(([k, t]) => `<span class="mk mk${k}"><b class="mb ${MKL[k][0]}" title="${MKL[k][2]}">${MKL[k][1]}</b>${esc(t)}</span>`).join(' ')}</p></div></div>
     <p class="dhint">Figures were checked in ${esc(DATA.sup.asAt)}. Use the newest figures in your own paragraph.</p></div>`; }
 function s2Model() { if (S.sup < 4) return ''; const m = DATA.sup.s2;
-  return `<div class="model"><h4>Worked model <span>for a similar short-answer question. Copy the pattern, not the words.</span></h4><p class="mq">${esc(m.q)}</p>
+  return `<details class="helpd hm"><summary>${ic('s4')}Worked model for a similar short-answer question</summary><div><div class="model"><p class="dhint">Copy the pattern, not the words.</p><p class="mq">${esc(m.q)}</p>
     <p><b>Opening:</b> ${esc(m.open)}</p>${m.pts.map((x, j) => `<p><b>Point ${j + 1}:</b> ${esc(x.d)} <b>Effect:</b> ${esc(x.e)} <b>Example:</b> ${esc(x.x)}</p>`).join('')}<p><b>Link back:</b> ${esc(m.concl)}</p>
-    <p class="dhint">Figures were checked in ${esc(DATA.sup.asAt)}.</p></div>`; }
+    <p class="dhint">Figures were checked in ${esc(DATA.sup.asAt)}.</p></div></div></details>`; }
 /* thesis: guided steps (level 2), lines of argument (level 3), model thesis (level 4) */
 const tidy = (s, re) => (s || '').trim().replace(/[.\s]+$/, '').replace(re || /^$/, '');
 function draftThesis(pl, judge) { const g = pl.g, topic = tidy(g.topic), what = tidy(g.what, /^(it|they)\s+/i), r1 = tidy(g.r1, /^because\s+/i), r2 = tidy(g.r2, /^(and|because)\s+/i), lim = tidy(g.lim, /^(although|but|however,?)\s+/i);
@@ -925,15 +1000,15 @@ function draftThesis(pl, judge) { const g = pl.g, topic = tidy(g.topic), what = 
   const head = judge ? `${SCALE[pl.stance]}, ${topic} ${what}` : `${topic[0].toUpperCase()}${topic.slice(1)} ${what}`;
   return head + (r1 ? ` because ${r1}` : '') + (r1 && r2 ? ` and ${r2}` : '') + (lim ? `, although ${lim}` : '') + '.'; }
 function thesisHelp(e, pl, judge) { let h = '';
-  if (S.sup >= 2) h += `<div class="walk"><b>Build your thesis step by step</b><p class="dhint">Answer in a few words each. The builder joins your answers into a draft for you to improve.</p>
+  if (S.sup >= 2) h += `<p style="margin-top:12px"><button type="button" class="btn ${S.walk ? '' : 'ghost '}sm" data-walk aria-pressed="${S.walk}">${ic('s2')}${S.walk ? 'Hide the thesis steps' : 'Build my thesis step by step'}</button></p>` + (S.walk ? `<div class="walk"><b>Build your thesis step by step</b><p class="dhint">Answer in a few words each. The builder joins your answers into a draft for you to improve.</p>
     <label class="lab">1. What is the question about? <em>Name the policy, issue or change.</em></label>${fld('g.topic', 'e.g. monetary policy')}
     <label class="lab">2. ${judge ? 'What is your judgement of it? <em>Finish the sentence: it has …</em>' : 'What does it do or cause? <em>Finish the sentence: it …</em>'}</label>${fld('g.what', judge ? 'e.g. has been effective in reducing inflation' : 'e.g. reduces inflation by slowing aggregate demand')}
     <label class="lab">3. Your strongest reason <em>because …</em></label>${fld('g.r1', 'e.g. higher interest rates reduce consumption and investment')}
     <label class="lab">4. A second reason <em>(optional)</em></label>${fld('g.r2', 'e.g. a higher dollar lowers import prices')}
     <label class="lab">5. ${judge ? 'What limits it or works against it?' : 'Is there a limit or an exception?'} <em>although … (optional)</em></label>${fld('g.lim', 'e.g. it takes one to two years to work')}
-    <p style="margin-top:8px"><button type="button" class="btn ghost sm" data-mkthesis>Draft my thesis from these answers</button></p></div>`;
-  if (S.sup >= 3) { const pts = sugPoints(e.c, 8); if (pts.length) h += `<div class="ideas"><h4>Lines of argument from this part of the syllabus</h4><p class="dhint">Which of these would best answer this question? Your reasons in the thesis become your paragraphs.</p><ul class="lines">${pts.map(t => `<li>${esc(t)}</li>`).join('')}</ul></div>`; }
-  if (S.sup >= 4) { const m = modelFor(e.c); h += `<div class="model"><h4>Model thesis <span>for a different question in this topic</span></h4><p class="mq">${esc(m.q)}</p><p>${esc(m.thesis)}</p></div>`; }
+    <p style="margin-top:8px"><button type="button" class="btn sm" data-mkthesis>Draft my thesis from these answers</button></p></div>` : '');
+  if (S.sup >= 3) { const pts = sugPoints(e.c, 8); if (pts.length) h += `<details class="helpd hi"><summary>${ic('s3')}Ideas: lines of argument from this part of the syllabus</summary><div><p class="dhint">Which of these would best answer this question? Your reasons in the thesis become your paragraphs.</p><ul class="lines">${pts.map(t => `<li>${esc(t)}</li>`).join('')}</ul></div></details>`; }
+  if (S.sup >= 4) { const m = modelFor(e.c); h += `<details class="helpd hm"><summary>${ic('s4')}Model thesis for a different question in this topic</summary><div><p class="mq" style="font-weight:700">${esc(m.q)}</p><p>${esc(m.thesis)}</p></div></details>`; }
   return h; }
 const fromThesis = (pl, i) => { if (S.sup < 2) return ''; const g = pl.g, xs = [tidy(g.r1, /^because\s+/i), tidy(g.r2, /^(and|because)\s+/i), tidy(g.lim, /^(although|but|however,?)\s+/i)].filter(Boolean); return xs.length ? `<div class="sts"><span>From your thesis answers:</span>${xs.map(x => `<button type="button" class="st" data-ins="${esc(x[0].toUpperCase() + x.slice(1))}" data-to="paras.${i}.point">${esc(x)}</button>`).join('')}</div>` : ''; };
 
@@ -975,47 +1050,88 @@ function renderUnpack() { const e = E(), pl = P(), p0 = e.parts[0], essay = e.s 
   $('#unpack').innerHTML = `<div class="qcard"><small>HSC ${e.y} · ${SECN[e.s]} · Question ${e.q} · ${e.m} marks</small>
       ${essay ? `<b>${esc(p0.t)}</b>` : e.parts.map(p => `${p.lead ? `<p class="pt"><em>${esc(p.lead)}</em></p>` : ''}<p class="pt"><b>${esc(p.l.replace(/^Q\d+/, ''))}</b> ${esc(p.t)} <span class="chip">${p.m} mark${p.m === 1 ? '' : 's'}</span></p>`).join('')}
       ${e.st ? `<div class="stimbox"><b style="display:inline;font:700 .88rem var(--body)">Stimulus:</b> ${esc(e.st)} ${paper ? `<a href="${paper}" target="_blank" rel="noopener">Open the ${e.y} paper to see it</a>` : ''}</div>` : ''}</div>
-    <div class="un3">
+    ${essay ? `<div class="untabs" role="group" aria-label="Parts of this step"><button type="button" data-un="q" aria-pressed="${S.un !== 'a'}"><i>A</i>Understand the question</button><button type="button" data-un="a" aria-pressed="${S.un === 'a'}"><i>B</i>Plan your introduction</button></div>` : ''}
+    <div ${essay && S.un === 'a' ? 'hidden' : ''}><div class="un3">
       <div class="un"><small>Directive${vs.length > 1 ? 's' : ''}</small>${vs.map(v => `<p><b class="big">${VERB[v][0]}</b>${VERB[v][1]}</p>`).join('')}</div>
       <div class="un"><small>What it examines${S.fw === 'y12' ? ' (2025 syllabus)' : ''}</small><div class="chips">${tagChips(e.c) || '<em>Not tagged</em>'}</div>${S.fw === 'y12' ? `<p>This question was set under the 2009 syllabus. These are the closest parts of the 2025 syllabus.</p>` : ''}
         <p><b>Time:</b> about ${mins} minutes${essay ? ', including the plan. Aim for about four pages.' : ' for the whole question (roughly two minutes a mark).'}</p></div>
       ${essay ? `<div class="un"><small>What the top band asks for</small>${bands(p0) || '<p>No marking criteria are held for this year.</p>'}${mg ? `<p><a href="${mg}" target="_blank" rel="noopener">NESA marking guidelines ${e.y}</a></p>` : ''}</div>` : (mg ? `<div class="un"><small>Marking</small><p>Plan your answer first, then check it against the <a href="${mg}" target="_blank" rel="noopener">NESA marking guidelines ${e.y}</a>.</p><p>The marks for each part show how much depth is needed.</p></div>` : '')}
-    </div>
-    ${essay ? `<label class="lab" for="terms">Key terms from the question to define in your introduction</label>${fk('terms', vs, 'terms', 'e.g. inflation; contractionary monetary policy; cash rate')}
+    </div>${essay ? '<p class="unnext"><button type="button" class="btn" data-un="a">Next: plan your introduction →</button></p>' : ''}</div>
+    ${essay ? `<div ${S.un === 'a' ? '' : 'hidden'}><label class="lab" for="terms">Key terms from the question to define in your introduction</label>${gqHTML('terms', vs)}${fld('terms', 'e.g. inflation; contractionary monetary policy; cash rate')}${stHTML('terms', 'terms', vs)}
       ${e.st ? `<label class="lab">What the stimulus gives you <em>(figures, trends, quotes: note the source of each)</em></label>${fld('stim', 'List what you can use from each piece of stimulus. Do not copy it out: use it.', 2)}` : ''}
       ${judge ? `<h3 class="h">Your judgement</h3><p class="sub">This question asks for a judgement. Markers reward a clear position held from the first sentence to the last.</p><div class="seg" id="stance">${SCALE.map((s, i) => `<button data-st="${i}" aria-pressed="${pl.stance === i}">${s}</button>`).join('')}</div>` : ''}
-      ${thesisHelp(e, pl, judge)}<label class="lab">${judge ? 'Your thesis in one sentence' : 'Your main line of argument in one sentence'}</label>${fk('thesis', vs, 'thesis', judge ? 'State your judgement and your main reason for it.' : 'State the main relationship or argument your response will develop.', 2)}` : ''}`;
+      ${thesisHelp(e, pl, judge)}<label class="lab">${judge ? 'Your thesis in one sentence' : 'Your main line of argument in one sentence'}</label>${fk('thesis', vs, 'thesis', judge ? 'State your judgement and your main reason for it.' : 'State the main relationship or argument your response will develop.', 2)}</div>` : ''}`;
   $('#unpack').querySelectorAll('[data-b]').forEach(el => el.id = el.dataset.b); }
 
 /* ---------- 3a. essay paragraphs ---------- */
 const evChip = (x, i, path) => `<span class="evc${x.t === 'own' ? ' own' : ''}" title="${esc((x.source || '') + (x.asAt ? ' · ' + x.asAt : ''))}"><span>${x.t === 'item' ? esc(x.title) : evMainH(x) + (x.asAt ? ` (${esc(x.asAt)})` : '')}</span><button data-rm="${path}|${i}" aria-label="Remove">×</button></span>`;
 function sugFor(codes) { const out = []; codes.forEach(c => (SUG[secOf(c)] || []).forEach(k => { if (!out.includes(k)) out.push(k); })); return out.slice(0, 6); }
+/* ---------- icons, flow charts and the one-move-at-a-time paragraph (redesign, 23 Nov 2026) ---------- */
+const ICON = { P: '<path d="M6 21V4"/><path d="M6 5h11l-2.5 3.5L17 12H6"/>', E: '<circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="12" r="2.5"/><path d="M7.5 12h9"/><path d="M13.5 9l3 3-3 3"/>',
+  D: '<path d="M4 4v16h16"/><path d="M7.5 8l10 8"/><path d="M7.5 16l10-8"/>', V: '<path d="M4 20h16"/><path d="M7 20v-6M12 20V7M17 20v-9"/>',
+  S: '<path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/>', L: '<path d="M12 4v16M7 20h10M5 8h14"/><path d="M5 8l-2.5 6h5zM19 8l-2.5 6h5z"/>',
+  s0: '<circle cx="12" cy="8" r="3.5"/><path d="M5 20c1-4 4-6 7-6s6 2 7 6"/>', s1: '<path d="M4 20l4-1 11-11-3-3L5 16z"/>',
+  s2: '<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 115 0c0 1.5-2.5 2-2.5 4M12 17v.5"/>', s3: '<path d="M9 18h6M10 21h4"/><path d="M8 14a6 6 0 118 0c-.8.8-1 1.5-1 2H9c0-.5-.2-1.2-1-2z"/>',
+  s4: '<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.200 9.500l6.100-.9z"/>' };
+const ic = k => `<svg class="ic" viewBox="0 0 24 24" aria-hidden="true">${ICON[k]}</svg>`;
+const MVN = { P: ['Point', MOVES[0][3]], E: ['Explain', MOVES[1][3]], D: ['Diagram', MOVES[2][3]], V: ['Evidence', MOVES[3][3]], S: ['Stimulus', 'Cite the stimulus by its source in at least one cycle of every paragraph.'], L: ['Link & judge', MOVES[4][3]] };
+const short = (t, n) => { t = (t || '').trim(); return t.length > (n || 70) ? t.slice(0, n || 70).replace(/\s+\S*$/, '') + '…' : t; };
+function flowHTML(text, small) { const parts = String(text || '').split(/\s*(?:→|->|=>)\s*/).map(x => x.trim()).filter(Boolean); if (parts.length < 2) return '';
+  return `<div class="flow${small ? ' sm' : ''}">${parts.map(p => { const m = p.match(/^(.*?)\s*([↑↓])$/), d = m ? m[2] : ''; return `<span class="fn ${d === '↑' ? 'up' : d === '↓' ? 'dn' : ''}">${esc(m ? m[1] : p)}${d ? `<b>${d}</b>` : ''}</span>`; }).join('<i class="fa" aria-hidden="true">→</i>')}</div>`; }
+const flowPrev = t => `<small>Your chain as a flow chart</small>${flowHTML(t) || '<em>Put → between the steps and ↑ or ↓ after anything that rises or falls. The chain is drawn here as you type.</em>'}`;
+function mvList(p, e) { const out = [{ id: 'P', k: 'P' }]; p.cycles.forEach((c, j) => ['E', 'D', 'V'].forEach(k => out.push({ id: k + j, k, j }))); if (e.st) out.push({ id: 'S', k: 'S' }); out.push({ id: 'L', k: 'L' }); return out; }
+function mvState(p, m) { const c = m.j != null ? p.cycles[m.j] : null, y = v => v ? 'done' : 'todo';
+  switch (m.k) { case 'P': return y(p.point.trim()); case 'E': return y(c.explain.trim()); case 'D': return c.dia ? y(dgDone(c)) : 'skip'; case 'V': return y(c.ev.length);
+    case 'S': return y(p.stim.trim() || p.cycles.some(x => x.ev.some(v => v.kind === 'stim'))); default: return y(p.link.trim()); } }
+function essayMap(pl, e, live) { const th = !!pl.thesis.trim();
+  return `<nav class="emap" aria-label="Map of your response"><button type="button" class="eb intro ${th ? 'done' : ''}" data-gostep="2"><small>Introduction</small><b>${th ? 'Thesis ✓' : 'Thesis to write'}</b></button>`
+    + pl.paras.map((p, i) => `<button type="button" class="eb ${live && pl.open === i ? 'on' : ''}" data-open="${i}" ${live && pl.open === i ? 'aria-current="true"' : ''}><small>Paragraph ${i + 1}</small><b>${p.point.trim() ? esc(short(p.point)) : 'Not started'}</b><span class="dots">${mvList(p, e).map(x => `<i class="k${x.k} ${mvState(p, x)}"></i>`).join('')}</span></button>`).join('')
+    + (live && pl.paras.length < 6 ? '<button type="button" class="eb add" id="addp" title="Add a paragraph" aria-label="Add a paragraph">+</button>' : '')
+    + `<button type="button" class="eb concl" data-gostep="4"><small>Conclusion</small><b>Review the plan</b></button></nav>`; }
+function pflowHTML(p, e) { const ms = mvList(p, e), A = '<i class="fa" aria-hidden="true">→</i>';
+  const node = x => { const st = mvState(p, x); return `<button type="button" class="pn k${x.k} ${x.id === p.mv ? 'on' : ''} ${st}" data-mv="${x.id}" aria-pressed="${x.id === p.mv}">${ic(x.k)}<b>${MVN[x.k][0]}</b>${st === 'done' ? '<i>✓</i>' : ''}</button>`; };
+  return `<div class="pflow" role="group" aria-label="The moves in this paragraph">${node(ms[0])}${A}` + p.cycles.map((c, j) => `<span class="cg"><small>Cycle ${j + 1}${p.cycles.length > 1 ? `<button type="button" data-delcyc="${j}" title="Remove this cycle" aria-label="Remove cycle ${j + 1}">×</button>` : ''}</small><span>${['E', 'D', 'V'].map(k => node(ms.find(x => x.id === k + j))).join(A)}</span></span>`).join(A)
+    + (p.cycles.length < 3 ? `<button type="button" class="pn addc" data-addcyc title="Add another Explain → Diagram → Evidence cycle: a new mechanism or new data">+ cycle</button>` : '') + A + (e.st ? node(ms.find(x => x.id === 'S')) + A : '') + node(ms[ms.length - 1]) + '</div>'; }
+function movePanel(pl, e, i) { const p = pl.paras[i], ms = mvList(p, e), at = ms.findIndex(x => x.id === p.mv), m = ms[at], j = m.j, c = j != null ? p.cycles[j] : null, base = `paras.${i}`, codes = p.focus ? [p.focus] : e.c, vs = e.verbs;
+  const model = S.sup >= 4 ? modelFor(e.c) : null, mk = { P: 'point', E: 'chain', D: 'dia', V: 'ev', L: 'link' }[m.k];
+  let body = '', ideas = '';
+  if (m.k === 'P') { body = `<label class="lab">Your point for this paragraph</label>${fld(base + '.point', MOVES[0][4])}${stHTML(base + '.point', 'point', vs)}${fromThesis(pl, i)}`;
+    const pts = S.sup >= 3 ? sugPoints(codes, 6) : []; if (pts.length) ideas = `<p class="dhint">Possible points from this part of the syllabus. Choose one, then reword it to answer the question.</p>${pts.map(t => `<button type="button" class="idea" data-usept="${esc(t)}"><span>${esc(t)}</span><u>Use</u></button>`).join('')}`; }
+  else if (m.k === 'E') { body = `<label class="lab">Your cause and effect chain</label>${fld(`${base}.cycles.${j}.explain`, 'cash rate ↑ → borrowing costs ↑ → C and I ↓ → AD ↓ → inflation ↓', 2)}${stHTML(`${base}.cycles.${j}.explain`, 'explain', vs)}<div class="flowprev" id="flowprev">${flowPrev(c.explain)}</div>`;
+    const chs = S.sup >= 3 ? chainsFor(codes).slice(0, 2) : []; if (chs.length) ideas = `<p class="dhint">Chains from the Chain Builder. Use one as a start, then make it fit your point.</p>` + chs.map((ch, n) => ch.strands.slice(0, n ? 1 : 2).map((s, k) => `<div class="chcard"><header><span>${esc(ch.t)}: ${esc(s.n)}</span><button type="button" class="btn ghost sm" data-usech="${ch.id}|${k}">Use</button></header>${flowHTML(s.line, true)}</div>`).join('')).join('') + `<p class="dhint"><a href="../chain-builder/#chain=${chs[0].id}" target="_blank" rel="noopener">Open the Chain Builder</a> to see every strand.</p>`; }
+  else if (m.k === 'D') body = diaBlock(`${base}.cycles.${j}`, sugFor(codes));
+  else if (m.k === 'V') { body = `<label class="lab">Evidence in this cycle</label><div class="evsel">${c.ev.length ? c.ev.map((x, k) => evChip(x, k, `${base}.cycles.${j}.ev`)).join('') : '<em>Nothing yet. Choose one or two pieces from the evidence list, or add your own under My evidence.</em>'}</div>${S.sup >= 1 ? '<p class="dhint">Write it into your paragraph as: For example, … ([source], [date]), which shows that …</p>' : ''}`;
+    if (S.sup >= 3) { QUICK = bestEv(codes, 4); const have = new Set(c.ev.map(x => x.k)); if (QUICK.length) ideas = `<p class="dhint">The closest matches in the Evidence Finder. There are more in the evidence list.</p>${QUICK.map((r, k) => { const on = have.has(r.x.k); return `<button type="button" class="idea ${on ? 'on' : ''}" data-quickev="${k}"><span><b>${esc(r.x.value)}</b> ${esc(r.x.label)} <em>${esc([r.x.asAt, r.x.source].filter(Boolean).join(' · '))}</em></span><u>${on ? '✓' : '+'}</u></button>`; }).join('')}`; } }
+  else if (m.k === 'S') body = `<label class="lab">What this paragraph uses from the stimulus</label>${fld(base + '.stim', 'Which figure, trend or quote from the stimulus does this paragraph use?')}${stHTML(base + '.stim', 'stim', vs)}`;
+  else { body = `<label class="lab">Your limitation and judgement</label>${fld(base + '.link', MOVES[4][4], 2)}${stHTML(base + '.link', 'link', vs)}`;
+    const lim = S.sup >= 3 ? rr(chainsFor(codes).slice(0, 2).map(ch => ch.lim)).slice(0, 4) : []; if (lim.length) ideas = `<p class="dhint">Limits you could weigh, if they fit your point.</p><ul class="gq">${lim.map(t => `<li>${esc(t)}</li>`).join('')}</ul>`; }
+  const qs = gqHTML(m.k === 'P' ? 'point' : m.k === 'E' ? 'explain' : m.k === 'D' ? 'dia' : m.k === 'V' ? 'ev' : m.k === 'S' ? 'stim' : 'link', vs);
+  const mh = model && mk ? `<p class="dhint">From a model paragraph for a different question in this topic: “${esc(model.q)}”</p><p><b>In the plan:</b></p>${mk === 'chain' ? flowHTML(model.plan.chain, true) : `<p>${esc(model.plan[mk])}</p>`}<p><b>Written out:</b></p><p class="mwrite">${esc(model.para.filter(x => x[0] === m.k).map(x => x[1]).join(' '))}</p><p><button type="button" class="btn ghost sm" data-fullmodel>${S.fullModel ? 'Hide' : 'See'} the whole model paragraph</button></p>` : '';
+  const tabs = [['q', 'Questions', 's2', qs], ['i', 'Ideas', 's3', ideas], ['m', 'Model', 's4', mh]].filter(t => t[3]), cur = tabs.find(t => t[0] === S.help) || tabs[0];
+  const help = tabs.length ? `<aside class="help" aria-label="Help for this move"><div class="htabs" role="group">${tabs.map(t => `<button type="button" class="h${t[0]}" data-help="${t[0]}" aria-pressed="${t === cur}">${ic(t[2])}${t[1]}</button>`).join('')}</div><div class="hbody">${cur[3]}</div></aside>` : '';
+  const prev = ms[at - 1], next = ms[at + 1], nm = x => MVN[x.k][0] + (x.j != null && p.cycles.length > 1 ? ' ' + (x.j + 1) : '');
+  return `<section class="mpanel k${m.k}" aria-label="${MVN[m.k][0]}"><header>${ic(m.k)}<div><h3>${MVN[m.k][0]}${j != null && p.cycles.length > 1 ? ` <small>cycle ${j + 1}</small>` : ''}</h3><p>${MVN[m.k][1]}</p></div><span class="mstep">Move ${at + 1} of ${ms.length}</span></header>
+    <div class="mgrid ${help && m.k !== 'V' ? '' : 'one'}"><div class="mmain">${body}</div>${help}</div>
+    <footer>${prev ? `<button type="button" class="btn ghost" data-mv="${prev.id}">← ${nm(prev)}</button>` : '<span></span>'}${next ? `<button type="button" class="btn" data-mv="${next.id}">Next: ${nm(next)} →</button>` : pl.paras[i + 1] ? `<button type="button" class="btn" data-open="${i + 1}">Next: Paragraph ${i + 2} →</button>` : `<span>${pl.paras.length < 6 ? '<button type="button" class="btn ghost" data-addp>+ Add a paragraph</button> ' : ''}<button type="button" class="btn" data-gostep="4">Review the plan →</button></span>`}</footer></section>`; }
 function renderParas() { const e = E(), pl = P();
   if (pl.kind === 'S') return renderParts();
+  if (!(pl.open >= 0 && pl.paras[pl.open])) pl.open = 0;
+  const i = pl.open, p = pl.paras[i], ms = mvList(p, e); if (!ms.some(m => m.id === p.mv)) p.mv = 'P';
+  const m = ms.find(x => x.id === p.mv); if (m.j != null) p.cyc = m.j;
   $('#s3h').textContent = 'Plan your paragraphs';
-  $('#s3sub').textContent = 'Aim for four or five body paragraphs, one major idea in each. Open a paragraph, then add statistics to it from the Evidence Finder list, or add your own under My evidence.';
-  $('#paras').innerHTML = modelPanel(e) + pl.paras.map((p, i) => { const nev = p.cycles.reduce((n, c) => n + c.ev.length, 0), on = pl.open === i, sugs = sugFor(p.focus ? [p.focus] : e.c);
-    return `<div class="para ${on ? 'open' : ''}"><button class="ph" data-open="${i}" aria-expanded="${on}"><i>${i + 1}</i><span><b>${p.point ? esc(p.point) : 'Paragraph ' + (i + 1)}</b><em>${p.cycles.length} cycle${p.cycles.length === 1 ? '' : 's'} · ${nev} piece${nev === 1 ? '' : 's'} of evidence${p.cycles.some(c => c.dia) ? ' · ' + figs(pl).filter(f => f.para === i).map(f => 'Figure ' + f.n).join(', ') : ''}</em></span><u>${on ? 'Close' : 'Open'}</u></button>
-    ${on ? `<div class="pb">
-      ${e.c.length > 1 ? `<label class="lab">Part of the syllabus this paragraph draws on <em>(narrows the evidence and diagram suggestions)</em></label><select data-sel="paras.${i}.focus"><option value="">Everything the question examines</option>${e.c.map(c => `<option value="${c}" ${p.focus === c ? 'selected' : ''}>${c} ${esc(PT[c].t)}</option>`).join('')}</select>` : ''}
-      ${ideasE(p, e)}<div class="mv"><i class="mP">P</i><div><label class="lab">Point <em>${MOVES[0][3]}</em></label>${fk('point', e.verbs, `paras.${i}.point`, MOVES[0][4])}${fromThesis(pl, i)}</div></div>
-      ${p.cycles.map((c, j) => `<div class="cyc ${p.cyc === j ? 'act' : ''}" data-cyc="${j}"><header><span>Cycle ${j + 1}: Explain → Diagram → Evidence</span><span>${p.cycles.length > 1 ? (p.cyc === j ? 'Evidence is added here' : `<button class="btn ghost sm" data-usecyc="${j}">Add evidence here</button>`) : ''}${p.cycles.length > 1 ? ` <button class="btn ghost sm" data-delcyc="${j}" aria-label="Remove cycle ${j + 1}">Remove</button>` : ''}</span></header>
-        <div class="mv"><i class="mE">E</i><div><label class="lab">Explain <em>${MOVES[1][3]}</em></label>${fk('explain', e.verbs, `paras.${i}.cycles.${j}.explain`, 'Write the chain with arrows: cash rate ↑ → borrowing costs ↑ → C and I ↓ → AD ↓ → inflation ↓', 2)}</div></div>
-        <div class="mv"><i class="mD">D</i><div><label class="lab">Diagram <em>${MOVES[2][3]}</em></label>${gqHTML('dia', e.verbs)}${diaBlock(`paras.${i}.cycles.${j}`, sugs)}</div></div>
-        <div class="mv"><i class="mV">E</i><div><label class="lab">Evidence <em>${MOVES[3][3]}</em></label>${gqHTML('ev', e.verbs)}<div class="evsel">${c.ev.length ? c.ev.map((x, k) => evChip(x, k, `paras.${i}.cycles.${j}.ev`)).join('') : '<em>Nothing yet. Add one or two statistics from the evidence list, or your own under My evidence.</em>'}</div>${S.sup >= 1 ? '<p class="dhint">Write it into your paragraph as: For example, … ([source], [date]), which shows that …</p>' : ''}</div></div>
-      </div>`).join('')}
-      ${p.cycles.length < 3 ? `<button class="btn ghost sm" data-addcyc style="margin-top:8px">+ Add another cycle (a new mechanism or new data)</button>` : ''}
-      ${e.st ? `<div class="mv"><i class="mS">S</i><div><label class="lab">Stimulus <em>Cite it by its source in at least one cycle.</em></label>${fk('stim', e.verbs, `paras.${i}.stim`, 'Which figure, trend or quote from the stimulus does this paragraph use?')}</div></div>` : ''}
-      <div class="mv"><i class="mL">L</i><div><label class="lab">Link &amp; judge <em>${MOVES[4][3]}</em></label>${fk('link', e.verbs, `paras.${i}.link`, MOVES[4][4], 2)}</div></div>
-      <div class="prow"><span></span><button class="btn ghost sm" data-del="${i}" ${pl.paras.length < 2 ? 'disabled' : ''}>Remove paragraph</button></div></div>` : ''}</div>`; }).join('')
-    + `<button class="btn ghost add" id="addp" ${pl.paras.length >= 6 ? 'disabled' : ''}>+ Add a paragraph</button>` + dgOverview(); }
+  $('#s3sub').textContent = 'One paragraph at a time, one move at a time. Aim for four or five paragraphs, with one major idea in each.';
+  $('.build').classList.toggle('noev', m.k !== 'V');
+  $('#paras').innerHTML = essayMap(pl, e, true) + `<div class="pcard"><div class="phead"><h3>Paragraph ${i + 1}</h3>${e.c.length > 1 ? `<select data-sel="paras.${i}.focus" aria-label="Part of the syllabus this paragraph draws on" title="Narrows the ideas, evidence and diagram suggestions"><option value="">Syllabus focus: everything the question examines</option>${e.c.map(c => `<option value="${c}" ${p.focus === c ? 'selected' : ''}>${c} ${esc(PT[c].t)}</option>`).join('')}</select>` : ''}<button type="button" class="btn ghost sm" data-del="${i}" ${pl.paras.length < 2 ? 'disabled' : ''}>Remove paragraph</button></div>${pflowHTML(p, e)}${movePanel(pl, e, i)}</div>`
+    + (S.sup >= 4 && S.fullModel ? modelPanel(e) : '') + dgOverview(); }
 
 /* ---------- 3b. short-answer parts ---------- */
 const SCAFN = { calc: 'Calculation', brief: 'Brief answer', outline: 'Outline scaffold', explain: 'Explain scaffold' };
 function renderParts() { const e = E(), pl = P();
   $('#s3h').textContent = 'Plan each part';
-  $('#s3sub').textContent = 'Each part gets a plan sized to its marks. Open a part, then add a statistic or example from the evidence list if it helps.';
-  $('#paras').innerHTML = s2Model() + e.parts.map(p => { const pp = pl.parts[p.l], on = pl.open === p.l, k = scaf(p), base = `parts.${p.l}`, v = verbs(p.t)[0], lab = p.l.replace(/^Q\d+/, '') || p.l, wantsDia = p.k.includes('diagram') || /diagram|graph/i.test(p.t);
+  $('#s3sub').textContent = 'One part at a time. Each part gets a plan sized to its marks; add a statistic or example from the evidence list if it helps.';
+  if (!pl.parts[pl.open]) pl.open = e.parts[0].l; $('.build').classList.remove('noev');
+  const pmap = `<nav class="emap" aria-label="Parts of this question">${e.parts.map(p => { const pp = pl.parts[p.l], k = scaf(p), done = k === 'calc' ? !!pp.answer.trim() : pp.pts.every(x => x.d.trim()); return `<button type="button" class="eb ${pl.open === p.l ? 'on' : ''} ${done ? 'done' : ''}" data-openpart="${esc(p.l)}"><small>Part ${esc(p.l.replace(/^Q\d+/, '') || p.l)} · ${p.m} mark${p.m === 1 ? '' : 's'}</small><b>${VERB[verbs(p.t)[0]][0]}${done ? ' ✓' : ''}</b></button>`; }).join('')}<button type="button" class="eb concl" data-gostep="4"><small>Finish</small><b>Review the plan</b></button></nav>`;
+  $('#paras').innerHTML = pmap + '<div class="parts">' + e.parts.map(p => { const pp = pl.parts[p.l], on = pl.open === p.l, k = scaf(p), base = `parts.${p.l}`, v = verbs(p.t)[0], lab = p.l.replace(/^Q\d+/, '') || p.l, wantsDia = p.k.includes('diagram') || /diagram|graph/i.test(p.t);
     const filled = k === 'calc' ? !!pp.answer.trim() : pp.pts.some(x => x.d.trim());
     return `<div class="para ${on ? 'open' : ''}"><button class="ph" data-openpart="${esc(p.l)}" aria-expanded="${on}"><i>${esc(lab.replace(/[()]/g, '').slice(0, 3) || '•')}</i><span><b>${esc(p.t)}</b><em>${p.m} mark${p.m === 1 ? '' : 's'} · ${VERB[v][0]} · ${SCAFN[k]}${filled ? ' · started' : ''}</em></span><u>${on ? 'Close' : 'Open'}</u></button>
     ${on ? `<div class="pb"><p class="dhint" style="margin-top:8px"><b>${VERB[v][0]}:</b> ${VERB[v][1]} About ${Math.max(1, Math.round(p.m * 75 / 40))} minute${Math.round(p.m * 75 / 40) > 1 ? 's' : ''}.</p>${ideasS(p, k)}
@@ -1030,7 +1146,7 @@ function renderParts() { const e = E(), pl = P();
         ${k === 'explain' && p.m >= 5 ? `<label class="lab">Conclusion <em>One or two sentences linking back to the question.</em></label>${fk('concl', [v], base + '.concl', 'Sum up and link back to the question.')}` : ''}`}
       ${wantsDia || pp.dia ? `<div class="mv"><i class="mD">D</i><div><label class="lab">Diagram</label>${diaBlock(base, sugFor(p.c))}</div></div>` : ''}
       ${k !== 'calc' ? `<div class="mv"><i class="mV">E</i><div><label class="lab">Evidence <em>(optional for short answers)</em></label><div class="evsel">${pp.ev.length ? pp.ev.map((x, i) => evChip(x, i, base + '.ev')).join('') : '<em>Nothing added.</em>'}</div></div></div>` : ''}
-    </div>` : ''}</div>`; }).join('') + dgOverview(); }
+    </div>` : ''}</div>`; }).join('') + '</div>' + s2Model() + dgOverview(); }
 
 /* ---------- evidence shelf ---------- */
 function target() { const pl = P(); if (!pl) return null;
@@ -1109,12 +1225,12 @@ function outline() { const e = E(), pl = P();
   const judge = e.verbs.some(v => VERB[v][2]);
   return `<div class="ol th"><small>Introduction${judge ? ' · ' + SCALE[pl.stance].toLowerCase() : ''}</small><p>Define: ${or(pl.terms, 'key terms')}</p><p>${or(pl.thesis, judge ? 'Write your thesis in step 2.' : 'Write your main argument in step 2.')}</p></div>`
     + pl.paras.map((p, i) => `<div class="ol"><small>Paragraph ${i + 1}</small>${mvRow('mP', 'P', or(p.point, 'Your point'))}
-      ${p.cycles.map(c => mvRow('mE', 'E', or(c.explain, 'Your cause and effect chain')) + (c.dia ? dgRow(c) : '') + (c.ev.length ? c.ev.map(x => mvRow('mV', 'E', evHTML(x))).join('') : mvRow('mV', 'E', '<em>Choose evidence</em>'))).join('')}
+      ${p.cycles.map(c => mvRow('mE', 'E', flowHTML(c.explain, true) || or(c.explain, 'Your cause and effect chain')) + (c.dia ? dgRow(c) : '') + (c.ev.length ? c.ev.map(x => mvRow('mV', 'E', evHTML(x))).join('') : mvRow('mV', 'E', '<em>Choose evidence</em>'))).join('')}
       ${e.st ? mvRow('mS', 'S', or(p.stim, 'What you use from the stimulus')) : ''}${mvRow('mL', 'L', or(p.link, 'Your limitation and judgement'))}</div>`).join('')
     + `<div class="ol th"><small>Conclusion</small><p>Draw the argument together${judge ? ` and restate your judgement (<b>${SCALE[pl.stance].toLowerCase()}</b>)` : ''}. No new evidence.</p></div>`; }
 function renderPlan() { if (!S.q) return; const e = E(), pl = P(), ch = checks(), ev = allEv(pl), nf = ev.filter(x => x.t === 'fig').length, no = ev.filter(x => x.t === 'own').length, ni = ev.length - nf - no;
   $('#plan').innerHTML = `<div class="planhead"><div><small>HSC ${e.y} · ${SECN[e.s]} · Question ${e.q}</small><b>${esc(e.s === 'II' ? e.parts.length + ' parts, ' + e.m + ' marks' : e.parts[0].t)}</b></div><div class="pbtns">${framed ? '' : '<button class="btn" id="print">Print or save as PDF</button>'}<button class="btn" id="copy">Copy the plan</button></div></div>
-    ${dgOverview()}<div class="pl2"><div>${outline()}</div>
+    ${pl.kind === 'E' ? essayMap(pl, e, false) : ''}${dgOverview()}<div class="pl2"><div>${outline()}</div>
     <div class="side"><h3>Plan check: ${ch.filter(c => c[0]).length} of ${ch.length}</h3><ul class="chk">${ch.map(c => `<li class="${c[0] ? 'y' : ''}">${c[1]}</li>`).join('')}</ul>
       <h3>Evidence: ${ev.length} piece${ev.length === 1 ? '' : 's'}</h3><p class="sub">From the Evidence Finder: ${nf} statistic${nf === 1 ? '' : 's'} and ${ni} news item${ni === 1 ? '' : 's'} or report${ni === 1 ? '' : 's'}. Your own: ${no}. Check each figure against its source before the exam: figures are as reported when filed.</p>
       ${pl.kind === 'E' ? `<h3>Every paragraph</h3><div class="moves">${MOVES.map(m => `<div><i class="lt ${m[1]}">${m[0]}</i><span><b>${m[2]}</b></span></div>`).join('')}</div>` : ''}</div></div>`;
@@ -1139,16 +1255,26 @@ function printHTML() { const e = E(), pl = P(), line = '<span class="wl"></span>
 /* ---------- wiring ---------- */
 function stepbar() { const has = !!S.q, pl = has ? P() : null, ch = has ? checks() : [];
   const s2 = has && (pl.kind === 'S' || !!pl.thesis.trim()), s3 = has && (pl.kind === 'S' ? ch.some(c => c[0]) : pl.paras.filter(p => p.point.trim()).length >= 3), s4 = has && ch.every(c => c[0]);
-  $('#stepbar').innerHTML = [['Choose a question', has], ['Unpack it', s2], [has && pl.kind === 'S' ? 'Plan each part' : 'Plan paragraphs', s3], ['Review the plan', s4]].map((s, i) => `<a href="#s${i + 1}" class="${s[1] ? 'done' : ''}"><i>${i + 1}</i>${s[0]}</a>`).join(''); }
+  const names = stepNames();
+  $('#stepbar').innerHTML = [has, s2, s3, s4].map((d, i) => `<button type="button" data-gostep="${i + 1}" class="${d ? 'done' : ''} ${S.step === i + 1 ? 'cur' : ''}" ${S.step === i + 1 ? 'aria-current="step"' : ''} ${i && !has ? 'disabled' : ''}><i>${d && S.step !== i + 1 ? '✓' : i + 1}</i>${names[i]}</button>`).join(''); }
+const stepNames = () => ['Choose a question', 'Unpack it', S.q && P().kind === 'S' ? 'Plan each part' : 'Plan paragraphs', 'Review the plan'];
+function applyStep() { const has = !!S.q, names = stepNames(); if (!has) S.step = 1;
+  $$('#v-build .step').forEach(el => el.hidden = el.id !== 's' + S.step); $('#noq').hidden = has || S.step !== 1; $('#supbar').hidden = !has || S.step === 1 || S.step === 4;
+  $('#wnav').innerHTML = (S.step > 1 ? `<button type="button" class="btn ghost" data-gostep="${S.step - 1}">← ${names[S.step - 2]}</button>` : '<span></span>') + (has && S.step < 4 ? `<button type="button" class="btn" data-gostep="${S.step + 1}">Next: ${names[S.step]} →</button>` : ''); }
+function goStep(n) { S.step = S.q ? Math.max(1, Math.min(4, n)) : 1; save(); applyStep(); stepbar(); const top = $('.stepbar').getBoundingClientRect().top; if (top < 0 || top > 200) $('.stepbar').scrollIntoView({ block: 'start' }); }
 function render3() { renderParas(); renderEv(); renderPlan(); }
 function renderAll() { const has = !!S.q;
   $('#fw').innerHTML = DATA.fw.map(f => `<button data-fw="${f.id}" aria-pressed="${S.fw === f.id}">${esc(f.sub)}<small>${f.id === 'h09' ? 'HSC to 2027' : 'HSC from 2028'}</small></button>`).join('');
-  renderFil(); renderQs(); renderSup(); $$('.needq').forEach(el => el.hidden = !has); $('#noq').hidden = has;
+  renderFil(); renderQs(); renderSup(); applyStep();
   if (has) { renderUnpack(); render3(); } stepbar(); }
-let tmr; const later = () => { clearTimeout(tmr); tmr = setTimeout(() => { renderPlan(); const pl = P(); if (pl && pl.kind === 'E') { const b = document.querySelector('.para.open .ph b'), p = pl.paras[pl.open]; if (b && p) b.textContent = p.point || 'Paragraph ' + (pl.open + 1); } }, 200); };
-$('#v-build').addEventListener('input', ev => { const b = ev.target.dataset && ev.target.dataset.b; if (!b || !S.q) return; setP(P(), b, ev.target.value); save(); later(); });
+let tmr; const later = () => { clearTimeout(tmr); tmr = setTimeout(() => { renderPlan(); const pl = P(); if (pl && pl.kind === 'E' && pl.paras[pl.open]) { const a = $('#paras .emap'), f = $('#paras .pflow'); if (a) a.outerHTML = essayMap(pl, E(), true); if (f) f.outerHTML = pflowHTML(pl.paras[pl.open], E()); } stepbar(); }, 200); };
+$('#v-build').addEventListener('input', ev => { const b = ev.target.dataset && ev.target.dataset.b; if (!b || !S.q) return; setP(P(), b, ev.target.value); save(); later(); if (/\.explain$/.test(b)) { const fp = $('#flowprev'); if (fp) fp.innerHTML = flowPrev(ev.target.value); } });
 $('#v-build').addEventListener('change', ev => { const b = ev.target.dataset && ev.target.dataset.sel; if (!b || !S.q) return; setP(P(), b, ev.target.value); if (/\.dia$/.test(b)) setP(P(), b.replace(/\.dia$/, '.sc'), ''); save(); render3(); });
 $('#v-build').addEventListener('click', ev => { const q = sel => ev.target.closest(sel); let b;
+  if (b = q('[data-gostep]')) { if (b.closest('#plan') || b.closest('#paras')) render3(); goStep(+b.dataset.gostep); return; }
+  if (b = q('[data-un]')) { S.un = b.dataset.un; renderUnpack(); return; }
+  if (q('[data-walk]')) { S.walk = !S.walk; renderUnpack(); return; }
+  if (b = q('#plan [data-open]')) { P().open = +b.dataset.open; save(); render3(); goStep(3); return; }
   if (b = q('[data-sup]')) { S.sup = +b.dataset.sup; save(); renderAll(); return; }
   if (b = q('[data-ins]')) { const el = [...document.querySelectorAll('#v-build [data-b]')].find(x => x.dataset.b === b.dataset.to); if (!el) return; const add = b.dataset.ins, cur = el.value;
     el.value = cur.trim() ? cur.replace(/\s*$/, ' ') + (/[.!?:]\s*$/.test(cur) || add === '→' ? add : add[0].toLowerCase() + add.slice(1)) : add; el.dispatchEvent(new Event('input', { bubbles: true })); el.focus(); try { el.setSelectionRange(el.value.length, el.value.length); } catch (e) {} return; }
@@ -1157,7 +1283,7 @@ $('#v-build').addEventListener('click', ev => { const q = sel => ev.target.close
 $('#fw').onclick = ev => { const b = ev.target.closest('[data-fw]'); if (!b) return; S.fw = b.dataset.fw; S.qf.top = ''; S.qf.sec = ''; save(); renderAll(); };
 $('#qfil').addEventListener('click', ev => { const b = ev.target.closest('[data-sec]'); if (b) { S.qf.s = b.dataset.sec; S.qf.n = 40; renderFil(); renderQs(); } });
 $('#qlist').onclick = ev => { if (ev.target.closest('#moreq')) { S.qf.n += 40; renderQs(); return; }
-  const b = ev.target.closest('.q'); if (!b) return; S.q = b.dataset.q; if (!S.plans[S.q]) S.plans[S.q] = newPlan(E()); save(); renderAll(); $('#s2').scrollIntoView({ block: 'start' }); };
+  const b = ev.target.closest('.q'); if (!b) return; S.q = b.dataset.q; S.un = 'q'; if (!S.plans[S.q]) S.plans[S.q] = newPlan(E()); save(); renderAll(); goStep(2); };
 $('#unpack').addEventListener('click', ev => { const b = ev.target.closest('[data-st]'); if (b) { P().stance = +b.dataset.st; save(); $$('#stance button').forEach(x => x.setAttribute('aria-pressed', x === b)); if (S.sup >= 1) renderUnpack(); renderPlan(); } });
 $('#paras').addEventListener('click', ev => { const pl = P(), q = s => ev.target.closest(s); let b;
   if (b = q('[data-rm]')) { const [path, i] = b.dataset.rm.split('|'); getP(pl, path).splice(+i, 1); }
@@ -1168,15 +1294,18 @@ $('#paras').addEventListener('click', ev => { const pl = P(), q = s => ev.target
     if (old.trim() && old !== c.explain) { save(); render3(); toast('Explain chain replaced.', () => { c.explain = old; save(); render3(); }); return; } }
   else if (b = q('[data-quickev]')) { const r = QUICK[+b.dataset.quickev], t = target(); if (!r || !t) return; const i = t.ev.findIndex(y => y.k === r.x.k);
     if (i >= 0) t.ev.splice(i, 1); else if (t.ev.length < t.max) t.ev.push(r.x); else { toast(`That is ${t.max} pieces already. Remove one first, or add a new cycle.`); return; } }
+  else if (b = q('[data-mv]')) pl.paras[pl.open].mv = b.dataset.mv;
+  else if (b = q('[data-help]')) S.help = b.dataset.help;
+  else if (q('[data-fullmodel]')) S.fullModel = !S.fullModel;
   else if (b = q('[data-usecyc]')) pl.paras[pl.open].cyc = +b.dataset.usecyc;
-  else if (b = q('[data-delcyc]')) { const p = pl.paras[pl.open]; p.cycles.splice(+b.dataset.delcyc, 1); p.cyc = Math.min(p.cyc, p.cycles.length - 1); }
+  else if (b = q('[data-delcyc]')) { const p = pl.paras[pl.open]; p.cycles.splice(+b.dataset.delcyc, 1); p.cyc = Math.min(p.cyc, p.cycles.length - 1); p.mv = 'E' + p.cyc; }
   else if (b = q('[data-lab]')) S.lab = b.dataset.lab === '01' ? '01' : '12';
   else if (b = q('[data-capfill]')) { const x = getP(pl, b.dataset.capfill), old = x.dnote, c = capOf(x, figNo(x)); if (!c) return; x.dnote = c; save(); render3(); if (old.trim() && old !== c) toast('Caption replaced.', () => { x.dnote = old; save(); render3(); }); return; }
-  else if (q('[data-addcyc]')) { const p = pl.paras[pl.open]; p.cycles.push(newCycle()); p.cyc = p.cycles.length - 1; }
+  else if (q('[data-addcyc]')) { const p = pl.paras[pl.open]; p.cycles.push(newCycle()); p.cyc = p.cycles.length - 1; p.mv = 'E' + p.cyc; }
   else if (b = q('[data-del]')) { pl.paras.splice(+b.dataset.del, 1); pl.open = Math.max(0, pl.open - 1); }
-  else if (q('#addp')) { pl.paras.push(newPara()); pl.open = pl.paras.length - 1; }
-  else if (b = q('[data-open]')) pl.open = pl.open === +b.dataset.open ? -1 : +b.dataset.open;
-  else if (b = q('[data-openpart]')) pl.open = pl.open === b.dataset.openpart ? '' : b.dataset.openpart;
+  else if (q('#addp,[data-addp]')) { if (pl.paras.length >= 6) return; pl.paras.push(newPara()); pl.open = pl.paras.length - 1; }
+  else if (b = q('[data-open]')) pl.open = +b.dataset.open;
+  else if (b = q('[data-openpart]')) pl.open = b.dataset.openpart;
   else if ((b = q('.cyc[data-cyc]')) && !ev.target.closest('input,textarea,select,button')) { const p = pl.paras[pl.open]; if (p.cyc === +b.dataset.cyc) return; p.cyc = +b.dataset.cyc; }
   else return;
   save(); render3(); });
@@ -1207,7 +1336,7 @@ $$('.tab').forEach(t => t.onclick = () => show(t.dataset.view, true));
 /* A link such as #q=IV-2025-28 (from the Chain Builder) opens that question. */
 function fromHash() { const k = new URLSearchParams(location.hash.slice(1)).get('q'); if (!k || !EK[k]) return false;
   S.q = k; S.qf.s = EK[k].s; if (!S.plans[k]) S.plans[k] = newPlan(EK[k]); save(); show('build'); renderAll();
-  try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {} $('#s2').scrollIntoView({ block: 'start' }); return true; }
+  try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {} goStep(2); return true; }
 addEventListener('hashchange', () => { const h = location.hash.slice(1); if (VIEWS.includes(h)) show(h); else fromHash(); });
 
 /* ---------- guide ---------- */
