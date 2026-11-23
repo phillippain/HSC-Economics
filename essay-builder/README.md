@@ -28,6 +28,15 @@ The builder is a wizard. Only the current step shows; the four step buttons at t
 
 Code in `template.html`: `applyStep` / `goStep` (wizard), `essayMap`, `pflowHTML`, `movePanel`, `mvList` / `mvState`, `flowHTML`, `ICON`. A plan remembers the open paragraph (`open`) and each paragraph's current move (`mv`).
 
+## Leading the student through each step (added 23 November 2026)
+- **A checklist on every step.** A "What to do here" card under the step buttons lists the tasks for the step, ticks them off as they are done and highlights the next one with a button that takes the student to it ("Do this now", "Go to Explain"). When the list is done it offers the next step. On the review step it also says how long to write for.
+- **Choosing support.** Step 2 starts by asking two quick questions (planned one before? confident with the topic?) and suggests a level; the student accepts it or picks another from the five cards. The student cannot go on to step 3 until a level is chosen.
+- **The level is always shown.** A "Support: Level n" bar sits above steps 2 to 4 with a "Change level" button.
+- **Stepping down.** When every item in the plan check is done, the review step suggests the next level down for the next response, and the chooser on the next plan reminds the student what they chose last time.
+- **Recorded on the plan.** The review page, the copied text and the printout say "Support used: Level n", the highest level used on that plan.
+
+Code in `template.html`: `todoItems` (the tasks for each step), `renderTodo`, `doTodo`, `chooser`, `HCQ` (the two questions), `supUsed`, `renderSup`. A plan stores `supSet`, `supMax`, `seenA`, `stSet` and `out`.
+
 ## Your own evidence (added 23 November 2026)
 The evidence list in step 3 has a third tab, **My evidence**. A student adds a **statistic** (figure, what it measures, source, date), a **case study** fact (economy, defaulting to China), **stimulus** from the question's paper (offered only when the question has stimulus, and kept with that question) or another **example**. Items are saved in the browser as a personal bank and offered in every plan; they can be edited, deleted, and saved to or loaded from a backup file (`my-economics-evidence.json`) to move between devices. In the plan they are marked "your own" or "from the stimulus", and the plan check asks that each of the student's own statistics has a source and a date.
 

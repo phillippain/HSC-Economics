@@ -184,6 +184,29 @@ details.helpd .ideas,details.helpd .model{border:0;padding:0;margin:0;background
 .chcard header{display:flex;justify-content:space-between;gap:8px;font-size:.8rem;font-weight:700;align-items:center}
 .build.noev{grid-template-columns:1fr}.build.noev .shelf{display:none}
 .parts .para:not(.open){display:none}.parts .ph u{display:none}.parts .ph{cursor:default}
+#todo{border-left:6px solid var(--acc);padding:10px 14px;margin-bottom:16px}
+.todoh{display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+.todoh b{font-family:var(--head);font-size:1.02rem}.todoh span{font-size:.8rem;color:var(--mut);font-weight:600}
+#todo ol{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:3px;counter-reset:td}
+#todo li{counter-increment:td;display:flex;gap:9px;align-items:center;font-size:.9rem;padding:.22rem .4rem;border-radius:8px;color:var(--mut)}
+#todo li::before{content:counter(td);flex:none;display:inline-grid;place-items:center;width:1.5em;height:1.5em;border-radius:50%;border:1.5px solid var(--rule2);font:700 .78em var(--head);background:var(--card)}
+#todo li.done{color:var(--ink)}#todo li.done::before{content:"✓";background:var(--ok);border-color:var(--ok);color:#fff}
+#todo li.now{background:var(--acc-soft);color:var(--ink);font-weight:600}#todo li.now::before{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+#todo li.opt em{font-style:normal;font-size:.78rem;color:var(--mut);font-weight:400}
+#todo li span{flex:1}#todo li .btn{flex:none}
+#todo .then{margin-top:8px;font-size:.88rem;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+#todo .then.down{border:1px dashed var(--ok);border-radius:8px;padding:.35rem .6rem;color:var(--ink)}
+.supbar .supname{font-family:var(--head);font-weight:700;display:inline-flex;gap:6px;align-items:center}
+.supbar .seg{flex-basis:100%}
+.choose{margin-top:14px}.choose h3{display:flex;gap:8px;align-items:center;font-size:1.15rem}
+.choose .seg{margin-top:2px}
+.rec{margin-top:14px}.rec>small,.choose .or{display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--mut);margin:14px 0 5px}
+.lvls{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px}
+.lvl{text-align:left;border:1px solid var(--rule2);background:var(--card);border-radius:10px;padding:.55rem .7rem;display:grid;gap:3px;align-content:start}
+.lvl:hover{border-color:var(--acc)}.lvl b{display:flex;gap:6px;align-items:center;font-family:var(--head);font-size:.92rem}.lvl span{font-size:.8rem;color:var(--mut)}
+.lvl.big{border:2px solid var(--acc);background:var(--acc-soft);max-width:560px;width:100%}.lvl.big b{font-size:1.05rem}.lvl.big span{font-size:.88rem;color:var(--ink)}
+.lvl.big u{text-decoration:none;font-weight:700;color:var(--acc);margin-top:3px}
+.supused{font-size:.78rem;color:var(--mut);margin-top:2px}
 .qcount{margin:0 0 8px;color:var(--mut);font-size:.9rem}
 .seg small{display:block;font-weight:400;font-size:.7rem;opacity:.85}
 .tabs{display:flex;gap:4px;border-bottom:2px solid var(--rule2);margin:6px 0 18px}
@@ -484,6 +507,7 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
 
   <p class="card" id="noq">Choose a question to start. The builder then helps you unpack it, plan each paragraph with a diagram and with statistics from the class Evidence Finder or your own research, and check the plan before you write. You choose how much support you get.</p>
 
+  <section class="card todo" id="todo" aria-label="What to do in this step"></section>
   <section class="card needq supbar" id="supbar" aria-label="Level of support"></section>
 
   <section class="step needq" id="s2"><h2><i>2</i>Unpack it</h2><div class="card" id="unpack"></div></section>
@@ -515,7 +539,7 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
       <p style="margin-top:6px"><b>Body.</b> One major idea in each paragraph, fully explained, developed and supported. Go back to the wording of the question regularly.</p>
       <p style="margin-top:6px"><b>Conclusion.</b> Draw the strands of your argument together. Nothing at odds with the body, and no new evidence.</p>
       <p style="margin-top:6px"><b>Data.</b> A top-band response relates the theory to what is happening now in the Australian and global economy, with accurate, dated statistics.</p></div>
-    <div class="card"><h2>Choose your level of support</h2><p class="sub">The support switch sits above step 2. Each level adds to the one before it.</p>
+    <div class="card"><h2>Choose your level of support</h2><p class="sub">When you start a plan, the builder asks two quick questions and suggests a level. The level you are using shows above each step, with a button to change it. Each level adds to the one before it, and the level you used is recorded on the plan you copy or print.</p>
       <p>In step 3 the help for each move sits beside it, under Questions, Ideas and Model.</p><p style="margin-top:6px"><b>On my own.</b> Prompts and examples only. This is how you will plan in the exam.</p>
       <p style="margin-top:6px"><b>Sentence starters.</b> Starters and linking words under each box. Click one, then finish the sentence.</p>
       <p style="margin-top:6px"><b>Guiding questions.</b> Questions for each part of a paragraph, and five steps that build a draft thesis from your answers.</p>
@@ -891,13 +915,13 @@ function importBank(file) { const r = new FileReader(); r.onload = () => { try {
 
 /* ---------- state ---------- */
 const KEY = 'econ-er-builder-v1';
-let S = { fw: 'h09', q: null, step: 1, un: 'q', walk: false, help: 'q', fullModel: false, lab: '12', sup: 0, bank: [], eco: 'China', plans: {}, qf: { s: 'IV', top: '', sec: '', verb: '', text: '', n: 40 }, sf: { tab: 'fig', text: '', issue: '', match: true, form: false, draft: null } };
-try { const d = JSON.parse(localStorage.getItem(KEY) || 'null'); if (d && typeof d === 'object') { if (FW[d.fw]) S.fw = d.fw; if (d.lab === '01') S.lab = '01'; if ([2, 3, 4].includes(d.step)) S.step = d.step; if ([1, 2, 3, 4].includes(d.sup)) S.sup = d.sup; S.bank = cleanBank(d.bank); if (str(d.eco).trim()) S.eco = str(d.eco).trim(); if (d.plans && typeof d.plans === 'object') S.plans = d.plans; if (d.q && EK[d.q] && S.plans[d.q]) S.q = d.q; } } catch (e) {}
+let S = { fw: 'h09', q: null, step: 1, un: 'q', walk: false, help: 'q', fullModel: false, supOpen: false, hc: [null, null], lastSup: null, lab: '12', sup: 0, bank: [], eco: 'China', plans: {}, qf: { s: 'IV', top: '', sec: '', verb: '', text: '', n: 40 }, sf: { tab: 'fig', text: '', issue: '', match: true, form: false, draft: null } };
+try { const d = JSON.parse(localStorage.getItem(KEY) || 'null'); if (d && typeof d === 'object') { if (FW[d.fw]) S.fw = d.fw; if (d.lab === '01') S.lab = '01'; if ([2, 3, 4].includes(d.step)) S.step = d.step; if ([0, 1, 2, 3, 4].includes(d.lastSup)) S.lastSup = d.lastSup; if ([1, 2, 3, 4].includes(d.sup)) S.sup = d.sup; S.bank = cleanBank(d.bank); if (str(d.eco).trim()) S.eco = str(d.eco).trim(); if (d.plans && typeof d.plans === 'object') S.plans = d.plans; if (d.q && EK[d.q] && S.plans[d.q]) S.q = d.q; } } catch (e) {}
 if (FW[params.get('fw')]) S.fw = params.get('fw');
 /* deep link: ?s=IV&sec=1E opens the picker on one section of the syllabus (e.g. Topic 1 case study) */
 if (['II', 'III', 'IV'].includes(params.get('s'))) S.qf.s = params.get('s');
 { const ps = params.get('sec'); if (ps && SEC[ps]) { S.fw = FW.y12.topics.some(t => t.id === SEC[ps].top.id) ? 'y12' : 'h09'; S.qf.top = SEC[ps].top.id; S.qf.sec = ps; } }
-const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ fw: S.fw, q: S.q, step: S.step, lab: S.lab, sup: S.sup, eco: S.eco, bank: S.bank, plans: S.plans })); } catch (e) {} };
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ fw: S.fw, q: S.q, step: S.step, lastSup: S.lastSup, lab: S.lab, sup: S.sup, eco: S.eco, bank: S.bank, plans: S.plans })); } catch (e) {} };
 S.sf.draft = newDraft();
 const E = () => EK[S.q], P = () => S.plans[S.q];
 const newCycle = () => ({ explain: '', dia: '', sc: '', cause: '', dnote: '', ref: '', ev: [] });
@@ -958,7 +982,9 @@ function guideQs(kind, vs) { const judge = isJudge(vs);
 const gqHTML = (kind, vs) => { const q = S.sup >= 2 ? guideQs(kind, vs) : []; return q.length ? `<ul class="gq">${q.map(x => `<li>${x}</li>`).join('')}</ul>` : ''; };
 const stHTML = (path, kind, vs) => { const s = S.sup >= 1 ? starters(kind, vs) : []; return s.length ? `<div class="sts" role="group" aria-label="Sentence starters">${s.map(x => `<button type="button" class="st" data-ins="${esc(x)}" data-to="${esc(path)}">${esc(x)}</button>`).join('')}</div>` : ''; };
 const fk = (kind, vs, path, ph, rows) => gqHTML(kind, vs) + fld(path, ph, rows) + stHTML(path, kind, vs);
-function renderSup() { $('#supbar').innerHTML = `<b>${ic('s' + S.sup)}Support</b><div class="seg" role="group" aria-label="Level of support">${SUPL.map((l, i) => `<button data-sup="${i}" aria-pressed="${S.sup === i}" title="${esc(l[1])}">${ic('s' + i)}${l[0]}</button>`).join('')}</div><p class="supd">${SUPL[S.sup][1]}</p>`; }
+function renderSup() { const pl = P(); if (!pl) { $('#supbar').innerHTML = ''; return; } if (pl.supSet) pl.supMax = Math.max(pl.supMax || 0, S.sup);
+  $('#supbar').innerHTML = `<span class="supname">${ic('s' + S.sup)}Support: ${supName(S.sup)}</span><p class="supd">${SUPL[S.sup][1]}</p><button type="button" class="btn ghost sm" data-supopen aria-expanded="${S.supOpen}">${S.supOpen ? 'Close' : 'Change level'}</button>
+    ${S.supOpen ? `<div class="seg" role="group" aria-label="Level of support">${SUPL.map((l, i) => `<button data-sup="${i}" aria-pressed="${S.sup === i}" title="${esc(l[1])}">${ic('s' + i)}${l[0]}</button>`).join('')}</div>` : ''}`; }
 /* suggestions (level 3) */
 const rr = lists => { const out = []; for (let i = 0; lists.some(l => i < l.length); i++) lists.forEach(l => { if (i < l.length && !out.includes(l[i])) out.push(l[i]); }); return out; };
 const sugPoints = (codes, n) => rr([...new Set(codes.map(secOf))].map(s => DATA.sup.points[s] || [])).slice(0, n);
@@ -1049,6 +1075,7 @@ function bands(p) { if (!p.crit) return ''; const top = p.crit[0];
 function renderUnpack() { const e = E(), pl = P(), p0 = e.parts[0], essay = e.s !== 'II', vs = e.verbs, judge = vs.some(v => VERB[v][2]);
   const paper = DATA.papers[e.y], mg = mgLink(e.y);
   const mins = essay ? 35 : Math.round(e.m * 75 / 40);
+  if (!pl.supSet) { $('#unpack').innerHTML = `<div class="qcard"><small>HSC ${e.y} · ${SECN[e.s]} · Question ${e.q} · ${e.m} marks</small>${essay ? `<b>${esc(p0.t)}</b>` : `<b>${e.parts.length} parts, ${e.m} marks</b>`}</div>${chooser()}`; return; }
   $('#unpack').innerHTML = `<div class="qcard"><small>HSC ${e.y} · ${SECN[e.s]} · Question ${e.q} · ${e.m} marks</small>
       ${essay ? `<b>${esc(p0.t)}</b>` : e.parts.map(p => `${p.lead ? `<p class="pt"><em>${esc(p.lead)}</em></p>` : ''}<p class="pt"><b>${esc(p.l.replace(/^Q\d+/, ''))}</b> ${esc(p.t)} <span class="chip">${p.m} mark${p.m === 1 ? '' : 's'}</span></p>`).join('')}
       ${e.st ? `<div class="stimbox"><b style="display:inline;font:700 .88rem var(--body)">Stimulus:</b> ${esc(e.st)} ${paper ? `<a href="${paper}" target="_blank" rel="noopener">Open the ${e.y} paper to see it</a>` : ''}</div>` : ''}</div>
@@ -1125,6 +1152,51 @@ function renderParas() { const e = E(), pl = P();
   $('.build').classList.toggle('noev', m.k !== 'V');
   $('#paras').innerHTML = essayMap(pl, e, true) + `<div class="pcard"><div class="phead"><h3>Paragraph ${i + 1}</h3>${e.c.length > 1 ? `<select data-sel="paras.${i}.focus" aria-label="Part of the syllabus this paragraph draws on" title="Narrows the ideas, evidence and diagram suggestions"><option value="">Syllabus focus: everything the question examines</option>${e.c.map(c => `<option value="${c}" ${p.focus === c ? 'selected' : ''}>${c} ${esc(PT[c].t)}</option>`).join('')}</select>` : ''}<button type="button" class="btn ghost sm" data-del="${i}" ${pl.paras.length < 2 ? 'disabled' : ''}>Remove paragraph</button></div>${pflowHTML(p, e)}${movePanel(pl, e, i)}</div>`
     + (S.sup >= 4 && S.fullModel ? modelPanel(e) : '') + dgOverview(); }
+
+/* ---------- leading the student: a checklist for each stage and a guided choice of support (23 Nov 2026) ---------- */
+const HCQ = [['Have you planned a response like this before?', ['This is my first', 'A few times', 'Many times']], ['How confident are you with this topic?', ['Not yet', 'Fairly confident', 'Very confident']]];
+const supName = n => (n ? `Level ${n}: ` : '') + SUPL[n][0];
+const supUsed = pl => supName(Math.max(pl.supMax || 0, pl.supSet ? S.sup : 0));
+function chooser() { const a = S.hc, done = a[0] != null && a[1] != null, rec = done ? 4 - a[0] - a[1] : null;
+  const card = (i, big) => `<button type="button" class="lvl ${big ? 'big' : ''}" data-sup="${i}">${big ? '' : ''}<b>${ic('s' + i)}${supName(i)}</b><span>${SUPL[i][1]}</span>${big ? '<u>Use this level →</u>' : ''}</button>`;
+  return `<div class="choose"><h3>${ic('s2')}Choose your level of support</h3><p class="sub">Answer two quick questions and the builder suggests a level. You can change it at any time, and each level adds to the one before.</p>
+    ${S.lastSup != null && S.lastSup > 0 ? `<p class="note2"><b>Last time you chose ${esc(SUPL[S.lastSup][0])}.</b> If that plan went well, try one level down this time: ${esc(SUPL[S.lastSup - 1][0])}.</p>` : ''}
+    ${HCQ.map((q, i) => `<p class="lab">${i + 1}. ${q[0]}</p><div class="seg" role="group">${q[1].map((t, k) => `<button type="button" data-hc="${i}|${k}" aria-pressed="${a[i] === k}">${t}</button>`).join('')}</div>`).join('')}
+    ${done ? `<div class="rec"><small>Suggested for you</small>${card(rec, true)}</div>` : ''}
+    <span class="or">${done ? 'Or choose a different level' : 'Or choose a level yourself'}</span><div class="lvls">${SUPL.map((l, i) => card(i)).join('')}</div></div>`; }
+function todoItems() { const has = !!S.q, e = has ? E() : null, pl = has ? P() : null, f = S.qf, out = [];
+  if (S.step === 1 || !has) return { items: [[true, 'Choose the section of the paper: II short answer, III stimulus essay or IV essay'], [!!(f.top || f.sec || f.verb || f.text.trim()) || has, 'Narrow the list by topic, section of the syllabus, directive or search', '', 1], [has, 'Click a question to choose it']], next: has ? ['step|2', 'Next: Unpack it'] : null };
+  const essay = pl.kind === 'E', judge = isJudge(e.verbs);
+  if (S.step === 2) { out.push([!!pl.supSet, 'Choose your level of support']);
+    if (essay) { out.push([!!pl.seenA, 'Part A: read the directive, what the question examines and what the top band asks for', 'un|a|I have read it']); out.push([!!pl.terms.trim(), 'Part B: list the key terms you will define', 'focus|terms|Do this now']);
+      if (e.st) out.push([!!pl.stim.trim(), 'Note what the stimulus gives you: figures, trends, quotes', 'focus|stim|Do this now']);
+      if (judge) out.push([!!pl.stSet, 'Choose your judgement: to what extent?', 'focus|stance|Do this now']);
+      out.push([!!pl.thesis.trim(), judge ? 'Write your thesis in one sentence' : 'Write your main line of argument in one sentence', 'focus|thesis|Do this now']); }
+    else out.push([!!pl.seenA, 'Read each part: its directive and its marks tell you how much to write', 'seen|I have read it']);
+    return { items: out, next: ['step|3', 'Next: ' + stepNames()[2]] }; }
+  if (S.step === 3) {
+    if (essay) { pl.paras.forEach((p, i) => { const todo = mvList(p, e).find(m => mvState(p, m) === 'todo'); out.push([!todo, `Paragraph ${i + 1}: ${todo ? 'next is ' + MVN[todo.k][0] + (todo.j ? ' (cycle ' + (todo.j + 1) + ')' : '') : 'planned'}`, todo ? `para|${i}|${todo.id}|Go to ${MVN[todo.k][0]}` : '']); });
+      if (pl.paras.length < 4) out.push([false, `Add paragraph ${pl.paras.length + 1}: aim for four or five paragraphs`, 'addp|Add it']);
+      out.push([pl.paras.some(p => p.cycles.some(c => c.dia)), 'Plan a diagram in at least one paragraph', '', 1]); }
+    else e.parts.forEach(p => { const pp = pl.parts[p.l], k = scaf(p), done = k === 'calc' ? !!(pp.formula.trim() && pp.working.trim() && pp.answer.trim()) : pp.pts.every(x => x.d.trim() && (k !== 'explain' || x.e.trim())); out.push([done, `Part ${p.l.replace(/^Q\d+/, '') || p.l} (${p.m} mark${p.m === 1 ? '' : 's'}): ${done ? 'planned' : 'plan it'}`, done ? '' : `part|${p.l}|Open it`]); });
+    return { items: out, next: ['step|4', 'Next: Review the plan'] }; }
+  const ch = checks(), n = ch.filter(c => c[0]).length, all = n === ch.length;
+  out.push([all, `Fix anything unticked in the plan check (${n} of ${ch.length} done)`, 'step|3|Back to the plan']); out.push([!!pl.out, 'Copy the plan, or print it']);
+  return { items: out, then: `Then write the response by hand in about ${essay ? 35 : Math.round(e.m * 75 / 40)} minutes, without the builder open.`, down: all && pl.supSet && Math.max(pl.supMax || 0, S.sup) > 0 ? Math.max(pl.supMax || 0, S.sup) : 0 }; }
+function renderTodo() { const el = $('#todo'); if (!el) return; const t = todoItems(), names = stepNames(), req = t.items.filter(x => !x[3]), nd = req.filter(x => x[0]).length, now = t.items.find(x => !x[0] && !x[3]);
+  el.innerHTML = `<div class="todoh"><b>Step ${S.step} of 4: ${names[S.step - 1].toLowerCase()}. What to do here</b><span>${nd} of ${req.length} done</span></div><ol>${t.items.map(x => { const a = (x[2] || '').split('|'), lab = a.pop(), isNow = x === now;
+      return `<li class="${x[0] ? 'done' : ''} ${isNow ? 'now' : ''} ${x[3] ? 'opt' : ''}"><span>${esc(x[1])}${x[3] && !x[0] ? ' <em>(optional)</em>' : ''}</span>${isNow && x[2] ? `<button type="button" class="btn sm" data-todo="${esc(a.join('|'))}">${esc(lab)}</button>` : ''}</li>`; }).join('')}</ol>
+    ${!now && t.next ? `<p class="then"><b>All done here.</b><button type="button" class="btn sm" data-todo="${t.next[0]}">${t.next[1]} →</button></p>` : ''}${t.then ? `<p class="then">${t.then}</p>` : ''}
+    ${t.down ? `<p class="then down">${ic('s' + (t.down - 1))}<span><b>Step down next time.</b> You planned this with ${esc(SUPL[t.down][0].toLowerCase())}. For your next response, try ${esc(SUPL[t.down - 1][0].toLowerCase())}.</span></p>` : ''}`; }
+function doTodo(v) { const a = v.split('|'), pl = P();
+  if (a[0] === 'step') { if (S.step === 2 && pl) pl.seenA = true; if (+a[1] === 3) render3(); goStep(+a[1]); return; }
+  if (!pl) return;
+  if (a[0] === 'un' || a[0] === 'seen') { pl.seenA = true; if (a[0] === 'un') S.un = a[1]; save(); renderUnpack(); stepbar(); return; }
+  if (a[0] === 'focus') { S.un = 'a'; pl.seenA = true; save(); renderUnpack(); stepbar(); const el = a[1] === 'stance' ? $('#stance button') : document.getElementById(a[1]); if (el) { el.scrollIntoView({ block: 'center' }); el.focus(); } return; }
+  if (a[0] === 'para') { pl.open = +a[1]; if (pl.paras[pl.open]) pl.paras[pl.open].mv = a[2]; }
+  else if (a[0] === 'part') pl.open = a.slice(1).join('|');
+  else if (a[0] === 'addp') { if (pl.paras.length < 6) { pl.paras.push(newPara()); pl.open = pl.paras.length - 1; } }
+  save(); render3(); const m = $('#paras .mpanel, #paras .para.open'); if (m) m.scrollIntoView({ block: 'nearest' }); }
 
 /* ---------- 3b. short-answer parts ---------- */
 const SCAFN = { calc: 'Calculation', brief: 'Brief answer', outline: 'Outline scaffold', explain: 'Explain scaffold' };
@@ -1205,7 +1277,7 @@ function checks() { const e = E(), pl = P();
     [!figs(pl).length || figs(pl).every(f => dgDone(f.x)), 'Every diagram has its shift, cause, caption and a reference in the text'],
     [ps.every(p => p.link.trim()), 'A limitation and judgement in every paragraph']]
     .concat(e.st ? [[ps.every(p => p.stim.trim() || p.cycles.some(c => c.ev.some(x => x.kind === 'stim'))), 'The stimulus cited in every paragraph']] : []).concat(ownCheck(pl)); }
-function planText() { const e = E(), pl = P(); let t = `HSC ${e.y} ${SECN[e.s]} Question ${e.q} (${e.m} marks)\n`;
+function planText() { const e = E(), pl = P(); let t = `HSC ${e.y} ${SECN[e.s]} Question ${e.q} (${e.m} marks)\nSupport used: ${supUsed(pl)}\n`;
   if (pl.kind === 'S') { e.parts.forEach(p => { const pp = pl.parts[p.l], k = scaf(p); t += `\n${p.l} (${p.m} mark${p.m === 1 ? '' : 's'}) ${p.t}\n`;
       if (k === 'calc') t += `  Formula: ${pp.formula || '...'}\n  Working: ${pp.working || '...'}\n  Answer: ${pp.answer || '...'}\n`;
       else { if (k !== 'brief') t += `  Opening: ${pp.open || '...'}\n`; pp.pts.forEach((x, j) => { t += `  Point ${j + 1}: ${x.d || '...'}\n` + (k === 'explain' ? `    Effect: ${x.e || '...'}\n` : '') + (k !== 'outline' ? `    Example: ${x.x || '...'}\n` : ''); }); if (k === 'explain' && p.m >= 5) t += `  Conclusion: ${pp.concl || '...'}\n`; }
@@ -1231,14 +1303,14 @@ function outline() { const e = E(), pl = P();
       ${e.st ? mvRow('mS', 'S', or(p.stim, 'What you use from the stimulus')) : ''}${mvRow('mL', 'L', or(p.link, 'Your limitation and judgement'))}</div>`).join('')
     + `<div class="ol th"><small>Conclusion</small><p>Draw the argument together${judge ? ` and restate your judgement (<b>${SCALE[pl.stance].toLowerCase()}</b>)` : ''}. No new evidence.</p></div>`; }
 function renderPlan() { if (!S.q) return; const e = E(), pl = P(), ch = checks(), ev = allEv(pl), nf = ev.filter(x => x.t === 'fig').length, no = ev.filter(x => x.t === 'own').length, ni = ev.length - nf - no;
-  $('#plan').innerHTML = `<div class="planhead"><div><small>HSC ${e.y} · ${SECN[e.s]} · Question ${e.q}</small><b>${esc(e.s === 'II' ? e.parts.length + ' parts, ' + e.m + ' marks' : e.parts[0].t)}</b></div><div class="pbtns">${framed ? '' : '<button class="btn" id="print">Print or save as PDF</button>'}<button class="btn" id="copy">Copy the plan</button></div></div>
+  $('#plan').innerHTML = `<div class="planhead"><div><small>HSC ${e.y} · ${SECN[e.s]} · Question ${e.q}</small><b>${esc(e.s === 'II' ? e.parts.length + ' parts, ' + e.m + ' marks' : e.parts[0].t)}</b><p class="supused">Support used: ${supUsed(pl)}</p></div><div class="pbtns">${framed ? '' : '<button class="btn" id="print">Print or save as PDF</button>'}<button class="btn" id="copy">Copy the plan</button></div></div>
     ${pl.kind === 'E' ? essayMap(pl, e, false) : ''}${dgOverview()}<div class="pl2"><div>${outline()}</div>
     <div class="side"><h3>Plan check: ${ch.filter(c => c[0]).length} of ${ch.length}</h3><ul class="chk">${ch.map(c => `<li class="${c[0] ? 'y' : ''}">${c[1]}</li>`).join('')}</ul>
       <h3>Evidence: ${ev.length} piece${ev.length === 1 ? '' : 's'}</h3><p class="sub">From the Evidence Finder: ${nf} statistic${nf === 1 ? '' : 's'} and ${ni} news item${ni === 1 ? '' : 's'} or report${ni === 1 ? '' : 's'}. Your own: ${no}. Check each figure against its source before the exam: figures are as reported when filed.</p>
       ${pl.kind === 'E' ? `<h3>Every paragraph</h3><div class="moves">${MOVES.map(m => `<div><i class="lt ${m[1]}">${m[0]}</i><span><b>${m[2]}</b></span></div>`).join('')}</div>` : ''}</div></div>`;
-  $('#copy').onclick = () => { const done = ok => { $('#copy').textContent = ok ? 'Copied' : 'Could not copy. Select the plan and copy it by hand.'; };
+  $('#copy').onclick = () => { P().out = true; save(); renderTodo(); const done = ok => { $('#copy').textContent = ok ? 'Copied' : 'Could not copy. Select the plan and copy it by hand.'; };
     try { navigator.clipboard.writeText(planText()).then(() => done(true), () => done(false)); } catch (err) { done(false); } };
-  if ($('#print')) $('#print').onclick = () => { $('#printdoc').innerHTML = printHTML(); try { window.print(); } catch (err) {} };
+  if ($('#print')) $('#print').onclick = () => { P().out = true; save(); renderTodo(); $('#printdoc').innerHTML = printHTML(); try { window.print(); } catch (err) {} };
   stepbar(); }
 function printHTML() { const e = E(), pl = P(), line = '<span class="wl"></span>', v = x => x && x.trim() ? esc(x) : '&nbsp;';
   const pr = (cls, L, lab, html) => `<div class="pr"><b class="${cls}">${L}</b><div><small>${lab}</small>${html}</div></div>`;
@@ -1251,19 +1323,19 @@ function printHTML() { const e = E(), pl = P(), line = '<span class="wl"></span>
     body = `<div class="pq">${esc(e.parts[0].t)}</div><div class="pt"><small>Introduction · define</small>${v(pl.terms)}<small>${judge ? 'Thesis · ' + SCALE[pl.stance].toLowerCase() : 'Main argument'}</small>${v(pl.thesis)}${e.st ? `<small>From the stimulus</small>${v(pl.stim)}` : ''}</div>`
       + pl.paras.map((p, i) => `<section><h2>Paragraph ${i + 1}</h2>${pr('mP', 'P', 'Point', v(p.point))}${p.cycles.map(c => pr('mE', 'E', 'Explain', v(c.explain)) + (c.dia ? dgPrint(c, pr) : '') + (c.ev.length ? c.ev : [null]).map(x => pr('mV', 'E', 'Evidence', x ? esc(evLine(x)) : '&nbsp;')).join('')).join('')}${e.st ? pr('mS', 'S', 'Stimulus', v(p.stim)) : ''}${pr('mL', 'L', 'Link &amp; judge', v(p.link))}</section>`).join('')
       + `<div class="pt"><small>Conclusion</small>Draw the argument together${judge ? ' and restate the judgement' : ''}. No new evidence.</div>`; }
-  return `<header><div><small>HSC Economics · ${SECN[e.s]} · Response plan</small><h1>HSC ${e.y}, Question ${e.q} (${e.m} marks)</h1></div><div class="nm">Name ${line}<br>Date ${line}</div></header>${body}
+  return `<header><div><small>HSC Economics · ${SECN[e.s]} · Response plan · Support used: ${supUsed(pl)}</small><h1>HSC ${e.y}, Question ${e.q} (${e.m} marks)</h1></div><div class="nm">Name ${line}<br>Date ${line}</div></header>${body}
     <footer><span>Built with the Extended Response Builder. The plan is yours: write the response by hand under timed conditions.</span><span>Evidence as at ${fmtDate(FEED.built)}</span></footer>`; }
 
 /* ---------- wiring ---------- */
-function stepbar() { const has = !!S.q, pl = has ? P() : null, ch = has ? checks() : [];
+function stepbar() { const has = !!S.q, pl = has ? P() : null, ch = has ? checks() : []; renderTodo();
   const s2 = has && (pl.kind === 'S' || !!pl.thesis.trim()), s3 = has && (pl.kind === 'S' ? ch.some(c => c[0]) : pl.paras.filter(p => p.point.trim()).length >= 3), s4 = has && ch.every(c => c[0]);
   const names = stepNames();
   $('#stepbar').innerHTML = [has, s2, s3, s4].map((d, i) => `<button type="button" data-gostep="${i + 1}" class="${d ? 'done' : ''} ${S.step === i + 1 ? 'cur' : ''}" ${S.step === i + 1 ? 'aria-current="step"' : ''} ${i && !has ? 'disabled' : ''}><i>${d && S.step !== i + 1 ? '✓' : i + 1}</i>${names[i]}</button>`).join(''); }
 const stepNames = () => ['Choose a question', 'Unpack it', S.q && P().kind === 'S' ? 'Plan each part' : 'Plan paragraphs', 'Review the plan'];
 function applyStep() { const has = !!S.q, names = stepNames(); if (!has) S.step = 1;
-  $$('#v-build .step').forEach(el => el.hidden = el.id !== 's' + S.step); $('#noq').hidden = has || S.step !== 1; $('#supbar').hidden = !has || S.step === 1 || S.step === 4;
+  $$('#v-build .step').forEach(el => el.hidden = el.id !== 's' + S.step); $('#noq').hidden = has || S.step !== 1; $('#supbar').hidden = !has || S.step === 1 || !P().supSet; $('#todo').hidden = false;
   $('#wnav').innerHTML = (S.step > 1 ? `<button type="button" class="btn ghost" data-gostep="${S.step - 1}">← ${names[S.step - 2]}</button>` : '<span></span>') + (has && S.step < 4 ? `<button type="button" class="btn" data-gostep="${S.step + 1}">Next: ${names[S.step]} →</button>` : ''); }
-function goStep(n) { S.step = S.q ? Math.max(1, Math.min(4, n)) : 1; save(); applyStep(); stepbar(); const top = $('.stepbar').getBoundingClientRect().top; if (top < 0 || top > 200) $('.stepbar').scrollIntoView({ block: 'start' }); }
+function goStep(n) { if (S.step === 2 && n > 2 && S.q) { if (!P().supSet) { toast('Choose your level of support first.'); return; } P().seenA = true; } S.step = S.q ? Math.max(1, Math.min(4, n)) : 1; save(); applyStep(); stepbar(); renderTodo(); const top = $('.stepbar').getBoundingClientRect().top; if (top < 0 || top > 200) $('.stepbar').scrollIntoView({ block: 'start' }); }
 function render3() { renderParas(); renderEv(); renderPlan(); }
 function renderAll() { const has = !!S.q;
   $('#fw').innerHTML = DATA.fw.map(f => `<button data-fw="${f.id}" aria-pressed="${S.fw === f.id}">${esc(f.sub)}<small>${f.id === 'h09' ? 'HSC to 2027' : 'HSC from 2028'}</small></button>`).join('');
@@ -1274,10 +1346,13 @@ $('#v-build').addEventListener('input', ev => { const b = ev.target.dataset && e
 $('#v-build').addEventListener('change', ev => { const b = ev.target.dataset && ev.target.dataset.sel; if (!b || !S.q) return; setP(P(), b, ev.target.value); if (/\.dia$/.test(b)) setP(P(), b.replace(/\.dia$/, '.sc'), ''); save(); render3(); });
 $('#v-build').addEventListener('click', ev => { const q = sel => ev.target.closest(sel); let b;
   if (b = q('[data-gostep]')) { if (b.closest('#plan') || b.closest('#paras')) render3(); goStep(+b.dataset.gostep); return; }
-  if (b = q('[data-un]')) { S.un = b.dataset.un; renderUnpack(); return; }
+  if (b = q('[data-todo]')) { doTodo(b.dataset.todo); return; }
+  if (b = q('[data-hc]')) { const [i, k] = b.dataset.hc.split('|'); S.hc[+i] = +k; renderUnpack(); return; }
+  if (q('[data-supopen]')) { S.supOpen = !S.supOpen; renderSup(); return; }
+  if (b = q('[data-un]')) { S.un = b.dataset.un; if (S.un === 'a') P().seenA = true; save(); renderUnpack(); stepbar(); return; }
   if (q('[data-walk]')) { S.walk = !S.walk; renderUnpack(); return; }
   if (b = q('#plan [data-open]')) { P().open = +b.dataset.open; save(); render3(); goStep(3); return; }
-  if (b = q('[data-sup]')) { S.sup = +b.dataset.sup; save(); renderAll(); return; }
+  if (b = q('[data-sup]')) { S.sup = +b.dataset.sup; const pl = P(); if (pl) { if (!pl.supSet) S.lastSup = S.sup; pl.supSet = true; } S.supOpen = false; S.hc = [null, null]; save(); renderAll(); return; }
   if (b = q('[data-ins]')) { const el = [...document.querySelectorAll('#v-build [data-b]')].find(x => x.dataset.b === b.dataset.to); if (!el) return; const add = b.dataset.ins, cur = el.value;
     el.value = cur.trim() ? cur.replace(/\s*$/, ' ') + (/[.!?:]\s*$/.test(cur) || add === '→' ? add : add[0].toLowerCase() + add.slice(1)) : add; el.dispatchEvent(new Event('input', { bubbles: true })); el.focus(); try { el.setSelectionRange(el.value.length, el.value.length); } catch (e) {} return; }
   if (q('[data-mkthesis]')) { const pl = P(), t = draftThesis(pl, isJudge(E().verbs)); if (!t) { toast('Answer questions 1 and 2 first.'); return; } const old = pl.thesis; pl.thesis = t; save(); renderUnpack(); renderPlan();
@@ -1286,7 +1361,7 @@ $('#fw').onclick = ev => { const b = ev.target.closest('[data-fw]'); if (!b) ret
 $('#qfil').addEventListener('click', ev => { const b = ev.target.closest('[data-sec]'); if (b) { S.qf.s = b.dataset.sec; S.qf.n = 40; renderFil(); renderQs(); } });
 $('#qlist').onclick = ev => { if (ev.target.closest('#moreq')) { S.qf.n += 40; renderQs(); return; }
   const b = ev.target.closest('.q'); if (!b) return; S.q = b.dataset.q; S.un = 'q'; if (!S.plans[S.q]) S.plans[S.q] = newPlan(E()); save(); renderAll(); goStep(2); };
-$('#unpack').addEventListener('click', ev => { const b = ev.target.closest('[data-st]'); if (b) { P().stance = +b.dataset.st; save(); $$('#stance button').forEach(x => x.setAttribute('aria-pressed', x === b)); if (S.sup >= 1) renderUnpack(); renderPlan(); } });
+$('#unpack').addEventListener('click', ev => { const b = ev.target.closest('[data-st]'); if (b) { P().stance = +b.dataset.st; P().stSet = true; save(); $$('#stance button').forEach(x => x.setAttribute('aria-pressed', x === b)); if (S.sup >= 1) renderUnpack(); renderPlan(); } });
 $('#paras').addEventListener('click', ev => { const pl = P(), q = s => ev.target.closest(s); let b;
   if (b = q('[data-rm]')) { const [path, i] = b.dataset.rm.split('|'); getP(pl, path).splice(+i, 1); }
   else if (b = q('[data-usept]')) { const t = b.dataset.usept;
