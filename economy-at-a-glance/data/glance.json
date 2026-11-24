@@ -228,10 +228,10 @@
   "id": "audchg",
   "panel": "XM",
   "label": "AUD/USD % Δ",
-  "display": "+3.0%",
-  "period": "Year to 23 Nov 2026",
+  "display": "+2.6%",
+  "period": "Year to 24 Nov 2026",
   "source": "RBA",
-  "note": "66.38 US cents on 23 Nov 2026 vs **64.46** a year earlier."
+  "note": "66.27 US cents on 24 Nov 2026 vs **64.61** a year earlier."
  },
  {
   "id": "ca",
@@ -282,8 +282,8 @@
   "id": "twi",
   "panel": "XM",
   "label": "TWI",
-  "display": "61.9",
-  "period": "23 Nov 2026",
+  "display": "61.8",
+  "period": "24 Nov 2026",
   "source": "RBA",
   "note": "**65.2** on 30 Oct 2026. Trade-weighted index, May 1970 = 100."
  }
