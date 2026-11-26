@@ -4,7 +4,7 @@
 import sys, os, json, glob, html
 sys.path.insert(0, glob.glob('/root/.claude/skills/synced/*/hsc-econ-diagrams/scripts')[0] if glob.glob('/root/.claude/skills/synced/*/hsc-econ-diagrams/scripts') else '.')
 import econ_diagrams as ed
-STAMP = "Updated 14 November 2026"
+STAMP = "Updated 26 November 2026"
 INK, GREY = "#0b1330", "#5a6580"
 TOOLS = "https://phillippain.github.io/HSC-Economics/"
 GLANCE = TOOLS + "economy-at-a-glance/data/glance.json"

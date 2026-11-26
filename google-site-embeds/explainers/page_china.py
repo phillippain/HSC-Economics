@@ -1,0 +1,45 @@
+def make(B):
+    c, cd = "#2447d6", "#1a3399"
+    text = (
+    "<h3>Case study: China</h3>"
+    "<p>The syllabus asks you to study how globalisation has influenced one economy other than Australia, and to <b>evaluate</b> the strategies it used to promote growth and development. China is the clearest example of an emerging economy transformed by integration with the world economy.</p>"
+    "<h3>Strategies used to promote growth and development</h3>"
+    "<ul>"
+    "<li><b>Market reforms from 1978.</b> Under Deng Xiaoping, farmers could sell surplus crops at market prices and private firms were allowed. Price controls were wound back over the following decades.</li>"
+    "<li><b>Opening to trade and foreign investment.</b> Special Economic Zones, starting with Shenzhen in 1980, offered low taxes and cheap land to foreign firms. FDI brought capital, technology and management skills, and made China the centre of many global value chains.</li>"
+    "<li><b>Joining the WTO in 2001.</b> Membership cut tariffs and gave China secure access to world markets. Exports grew about 30 per cent a year from 2001 to 2006, and China became the world's largest goods exporter in 2009.</li>"
+    "<li><b>State-led investment.</b> Very high rates of saving and investment funded roads, ports, rail, power and housing, much of it through state-owned enterprises and state banks.</li>"
+    "<li><b>Industry policy.</b> <i>Made in China 2025</i> (launched 2015) targeted high-technology industries. China now leads in electric vehicles, batteries and solar panels, and produces about 30 per cent of the world's manufacturing output.</li>"
+    "<li><b>Outward investment.</b> The Belt and Road Initiative (from 2013) funds infrastructure in developing and emerging economies, extending China's trade links.</li>"
+    "<li><b>Rebalancing.</b> &ldquo;Dual circulation&rdquo; and &ldquo;common prosperity&rdquo; aim to rely more on household spending at home and less on exports and property.</li>"
+    "</ul>"
+    "<h3>Evaluation: what the strategies achieved</h3>"
+    "<p><b>Growth.</b> China averaged about 10 per cent growth a year for three decades to 2010, the fastest sustained growth of any large economy. GDP per capita is now about US$15,370 (IMF, 2026), still well below the US at over US$95,000.</p>"
+    "<p><b>Development.</b> The World Bank estimates close to 800 million people left extreme poverty, and China declared absolute poverty eliminated in 2021 on its national measure. Its HDI rose from 0.491 in 1990 to 0.797 in 2023 (78th).</p>"
+    "<h3>Evaluation: the costs and limits</h3>"
+    "<ul>"
+    "<li><b>Inequality.</b> Gains went first to the coastal cities, so gaps between urban and rural incomes and between regions widened. The hukou (household registration) system limits migrant workers' access to services.</li>"
+    "<li><b>Environment.</b> Coal-fired industrial growth made China the largest emitter of greenhouse gases and caused severe air and water pollution, although China is also now the largest builder of renewable energy.</li>"
+    "<li><b>Imbalances.</b> Growth relies on investment and exports while household spending is weak. Property investment fell 20.6 per cent in January&ndash;September 2026 and retail sales rose only 0.4 per cent in the year to October. Growth slowed to 4.5 per cent in the September quarter, at the bottom of the 4.5&ndash;5 per cent target.</li>"
+    "<li><b>Trade tensions.</b> A record trade surplus (about US$1.19 trillion in 2025 and US$1.04 trillion in January&ndash;October 2026) has drawn retaliation. US tariffs on Chinese goods averaged about 35 per cent in August 2026, and China has used export controls on critical minerals it dominates, such as gallium and rare earths.</li>"
+    "</ul>"
+    "<h3>Why it matters for Australia</h3>"
+    "<p>China is Australia's largest trading partner, with two-way trade of A$309 billion in 2024&ndash;25. Its demand for iron ore, coal and gas drives Australia's terms of trade, so China's slowdown and the shift away from property construction directly affect Australian export income.</p>"
+    "<p><b>Use it in an exam:</b> name each strategy, explain how it worked through globalisation (trade, FDI, technology), and then judge it against growth <i>and</i> development indicators. A strong answer weighs the poverty reduction against inequality, environmental damage and the current imbalances.</p>"
+    "<p>Sources: IMF World Economic Outlook (2026); China National Bureau of Statistics via Reuters (October&ndash;November 2026); UNDP HDR 2025; World Bank; PIIE; DFAT; MFAT market report (June 2026).</p>"
+    )
+    tiles = ('<div class="k"><div><b>4.5%</b><i>GDP growth, year to Sept qtr</i><u>2026, target 4.5&ndash;5%</u></div>'
+             '<div><b>US$1.19tn</b><i>Trade surplus, a record</i><u>2025</u></div>'
+             '<div><b>~30%</b><i>Share of world manufacturing</i><u>2024</u></div>'
+             '<div><b>A$309bn</b><i>Two-way trade with Australia</i><u>2024&ndash;25, DFAT</u></div></div>')
+    figs = [B.fig(1, "Key numbers", tiles),
+      B.fig(2, "China's real GDP growth (% a year)", B.colchart([("2010", 10.6), ("2015", 7.0), ("2019", 6.0), ("2020", 2.2), ("2021", 8.4), ("2022", 3.0), ("2023", 5.2), ("2024", 5.0), ("2025", 5.0), ("2026*", 4.6)], c, 0, 12),
+            "*January&ndash;September 2026. Growth has slowed as the economy matured and property construction fell. Source: China National Bureau of Statistics."),
+      B.fig(3, "A timeline of China's strategies", B.chain(["1978: market reforms begin", "1980: first Special Economic Zone (Shenzhen)", "2001: joins the WTO", "2013: Belt and Road Initiative", "2015: Made in China 2025", "2020s: dual circulation and common prosperity"])),
+      B.fig(4, "Weak spots in 2026 (% change, year on year)", B.colchart([("Property inv.", -20.6), ("Fixed-asset inv.", -8.1), ("Retail sales", 0.4), ("Industrial output", 4.8)], c, -24, 8),
+            "Property and fixed-asset investment to Sept and Oct 2026; retail sales and output October 2026. Source: NBS via Reuters."),
+      B.fig(5, "Evaluating the strategies", B.table(["Strategy", "Benefit", "Cost"],
+            [["Opening to trade and FDI", "Exports, jobs, technology", "Trade tensions, reliance on foreign demand"], ["State-led investment", "Infrastructure, fast growth", "Debt, property oversupply"],
+             ["Industry policy", "Lead in EVs, solar, batteries", "Overcapacity, subsidy disputes"], ["Coastal-first growth", "Poverty fell fast", "Regional and urban&ndash;rural inequality"]])),
+      B.tools([("ef", "Latest China evidence"), ("qf", "Past HSC case study questions"), ("essay", "Plan a case study essay"), ("chain", "Build a chain from China's slowdown to Australia")])]
+    B.build("china-case-study", c, cd, text, figs, "")
