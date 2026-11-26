@@ -1,6 +1,6 @@
 # Reference notes, What's New and "Updated" stamps (14 November 2026)
 
-## Reference notes on eight sub-topic pages
+## Reference notes on ten sub-topic pages
 Each page has two parts, side by side on a computer and stacked on a phone:
 
 - **Text** (`ref-<page>-text.html`): pasted into a normal Google Sites text box, so it reflows on phones.
@@ -17,8 +17,10 @@ Each page has two parts, side by side on a computer and stacked on a phone:
 | `ref-protection-policy` | Topic 2 > Free trade & protection |
 | `ref-free-trade-agreements` | Topic 2 > Free Trade Agreements |
 | `ref-environment-context` | Topic 4 > National & global context for environmental management |
+| `ref-methods-of-protection` | Topic 1 > Protection > Methods (added 26 November 2026) |
+| `ref-free-trade-and-blocs` | Topic 1 > Trade, financial flows and foreign investment (added 26 November 2026) |
 
-To update: edit `content_ref.py` (text and figures) and `STAMP` in `build_reference.py`, run
+To update: edit `content_ref.py` (text and figures) and `STAMP` in `build_reference.py` (a page can carry its own date as an eighth item in its entry), run
 `python3 build_reference.py`, then replace the text box contents and the embed code on the page.
 Google Sites keeps an embed's height in proportion to its width, so after changing the amount of
 content, drag the embed's bottom handle until nothing is cut off.

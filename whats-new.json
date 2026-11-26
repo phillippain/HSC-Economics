@@ -2,6 +2,10 @@
  "_how_to": "Newest first. Add a line at the top: date as YYYY-MM-DD, text under about 110 characters, plain words for students. The Home page shows the five newest. Push to GitHub and the site updates by itself within a few minutes.",
  "items": [
   {
+   "date": "2026-11-26",
+   "text": "New notes on Topic 1 pages: methods of protection, and free trade, trading blocs and monetary unions."
+  },
+  {
    "date": "2026-11-23",
    "text": "Extended Response Builder: a checklist on every step and help choosing your level of support."
   },

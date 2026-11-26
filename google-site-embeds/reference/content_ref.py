@@ -131,4 +131,75 @@ def PAGES(hbar, line, exam, T1, T2, T4):
            extra=[("2030", 2030, 346.4, "346"), ("2035", 2035, 230.9, "231")])
       + hbar("Cut in emissions from 2005 levels (%)", [("Achieved by 2024", 23.3), ("Projected for 2035", 48, "#5a6580"), ("2030 target", 43, "#b8860b"), ("2035 target (low)", 62, "#b8860b"), ("2035 target (high)", 70, "#b8860b")], T4, "Emissions fell a further 1.6% in the year to March 2026.", "%", vmax=80),
       [("DCCEEW, National Greenhouse Gas Inventory", "https://www.dcceew.gov.au/"), ("DCCEEW, Australia's emissions projections 2025", "https://www.dcceew.gov.au/"), ("UNFCCC, The Paris Agreement", "https://unfccc.int/")]))
+    # ---------- Topic 1: two parent pages that were empty (26 November 2026) ----------
+    SITE = "https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb"
+    GH = "https://phillippain.github.io/HSC-Economics"
+    mtbl = ("<h3>Compare the methods</h3><table><tr><th>Method</th><th>Price in the home market</th><th>Who pays</th></tr>"
+      "<tr><td><b>Tariff</b></td><td>Rises by the tariff</td><td>Consumers. The government collects revenue.</td></tr>"
+      "<tr><td><b>Subsidy</b></td><td>Does not rise</td><td>Taxpayers, through the budget.</td></tr>"
+      "<tr><td><b>Quota</b></td><td>Rises, because fewer imports are allowed in</td><td>Consumers. Importers keep the extra revenue from the higher price.</td></tr>"
+      "<tr><td><b>Local content rule</b></td><td>Can rise, if local inputs cost more</td><td>Firms and consumers. No cost to the budget.</td></tr>"
+      "<tr><td><b>Export incentive</b></td><td>No direct effect</td><td>Taxpayers, through the budget.</td></tr></table>")
+    P.append(("methods-of-protection", T1, "Reference notes: methods of protection",
+      [("5%", "the highest general tariff rate in Australia today"), ("Over 90%", "of imports by value enter Australia duty free"), ("$16.8 billion", "budgetary assistance to Australian industry in 2024-25")],
+      "<h3>What protection is</h3><p>Protection is any government action that gives local producers an advantage over foreign producers. The syllabus names five methods. Each one helps a local industry, and each one has a cost that someone else pays.</p>"
+      "<h3>The five methods</h3><ul>"
+      "<li><b>Tariff:</b> a tax on an imported good. The price of the import rises, so buyers switch to the local product. Local output rises, imports fall and the government collects revenue.</li>"
+      "<li><b>Subsidy:</b> a payment from the government to local producers. It lowers their costs, so they can supply more at the world price. Consumers do not pay a higher price, but taxpayers fund the payment.</li>"
+      "<li><b>Quota:</b> a limit on the quantity of a good that can be imported. With fewer imports for sale the price rises, and local producers sell more. The government collects no revenue. Importers keep the extra revenue from the higher price.</li>"
+      "<li><b>Local content rule:</b> a set share of a good or service must be made in the home country. Local producers are guaranteed part of the market.</li>"
+      "<li><b>Export incentive:</b> a grant, cheap loan or tax break that helps local firms sell overseas. It protects by lowering the exporter's costs, not by blocking imports. Australia's Export Market Development Grants are an example.</li></ul>"
+      "<h3>Effects on the domestic economy</h3><ul><li><b>Protected industry:</b> higher output, jobs and profits in the short run.</li>"
+      "<li><b>Consumers:</b> higher prices and less choice under tariffs, quotas and local content rules.</li>"
+      "<li><b>Other firms:</b> higher input costs, and the risk that trading partners retaliate against their exports.</li>"
+      "<li><b>Efficiency:</b> resources stay in industries where the economy lacks comparative advantage, so productivity and living standards are lower in the long run.</li>"
+      "<li><b>Budget:</b> tariffs raise revenue. Subsidies and export incentives cost revenue.</li></ul>"
+      "<h3>Effects on the global economy</h3><ul><li>World trade and world output are lower, because countries specialise less.</li>"
+      "<li>Exporters in other countries lose sales. Developing economies are hit hard when rich countries protect farming.</li>"
+      "<li>One country's protection can lead others to retaliate, as with the United States and China since 2018.</li></ul>"
+      + exam("Name the method, explain how it changes price, local production and imports, then say who gains and who pays. Draw the tariff or subsidy diagram when the question allows.")
+      + "<h3>Go deeper</h3><ul><li><a href=\"" + SITE + "/topic-1/protection/methods/tariffs\">Tariffs</a> and <a href=\"" + SITE + "/topic-1/protection/methods/local-content-rules\">Local content rules</a> have their own pages.</li>"
+      "<li><a href=\"" + GH + "/protection-explainer/\">Who Wins from Protection</a> explains tariffs, quotas and subsidies step by step.</li>"
+      "<li><a href=\"" + GH + "/diagram-lab/\">Protection Diagram Lab</a> lets you build and test each diagram.</li>"
+      "<li><a href=\"" + SITE + "/topic-1/protection/reasons\">Reasons for protection</a> covers why governments protect.</li></ul>",
+      mtbl
+      + hbar("Government support to farmers (% of farm income)", [("Australia", 3), ("United States", 7), ("European Union", 16), ("South Korea", 41)], T1, "Australia's figure is under 3%. High farm support overseas makes it harder for Australian farmers to compete.", "%", vmax=50),
+      [("Productivity Commission, Trade and Assistance Review", "https://www.pc.gov.au/"), ("OECD, Agricultural policy monitoring", "https://www.oecd.org/"), ("Austrade, Export Market Development Grants", "https://www.austrade.gov.au/")],
+      "Updated 26 November 2026"))
+
+    catbl = ("<h3>Comparative advantage: an example</h3><table><tr><th>One worker makes in a day</th><th>Wheat</th><th>Cars</th><th>Cost of 1 car</th></tr>"
+      "<tr><td><b>Australia</b></td><td>10 tonnes</td><td>2</td><td>5 tonnes of wheat</td></tr>"
+      "<tr><td><b>Japan</b></td><td>4 tonnes</td><td>4</td><td>1 tonne of wheat</td></tr></table>"
+      "<p>Japan gives up less wheat to make a car, so it has the comparative advantage in cars. Australia has it in wheat. Both gain if each specialises and they trade. The numbers are made up to show the idea.</p>")
+    bltbl = ("<h3>Types of agreement</h3><table><tr><th>Type</th><th>What members share</th><th>Example</th></tr>"
+      "<tr><td><b>Free trade agreement</b></td><td>Low or no tariffs between members</td><td>USMCA; Australia's bilateral agreements</td></tr>"
+      "<tr><td><b>Trading bloc</b></td><td>Free trade across a region, often with common rules</td><td>European Union, ASEAN</td></tr>"
+      "<tr><td><b>Monetary union</b></td><td>One currency and one central bank</td><td>The euro area</td></tr></table>")
+    P.append(("free-trade-and-blocs", T1, "Reference notes: trade, financial flows and foreign investment",
+      [("166", "members of the World Trade Organization"), ("27", "countries in the European Union, a single market for goods, services, capital and workers"), ("15", "countries in RCEP, which covers about 30% of world GDP")],
+      "<h3>The basis of free trade</h3><p>Free trade means goods and services move between countries without tariffs, quotas or other barriers. The case for it rests on <b>comparative advantage</b>. A country has a comparative advantage in a good when it can make it at a lower opportunity cost than other countries. If each country specialises in those goods and trades for the rest, total output is higher and every country can consume more.</p>"
+      "<h3>Advantages of free trade</h3><ul><li>Resources move to the industries that use them best, so output and incomes rise.</li>"
+      "<li>Consumers get lower prices and more choice.</li><li>Firms reach larger markets and gain economies of scale.</li>"
+      "<li>Competition from imports pushes local firms to lift productivity and innovate.</li></ul>"
+      "<h3>Disadvantages of free trade</h3><ul><li>Structural unemployment rises in industries that cannot compete, often in particular regions.</li>"
+      "<li>New industries may fail before they are large enough to compete.</li>"
+      "<li>Production can move to countries with weaker wages, safety or environmental rules.</li>"
+      "<li>A country can become reliant on imports of essential goods, or on one export market.</li></ul>"
+      "<h3>Trading blocs, monetary unions and free trade agreements</h3><ul>"
+      "<li><b>Free trade agreement:</b> members cut tariffs and other barriers on each other's goods and services. A <b>bilateral</b> agreement has two members. A <b>multilateral</b> agreement has many.</li>"
+      "<li><b>Trading bloc:</b> a group of countries, usually in one region, with free trade between members. The European Union and ASEAN are examples.</li>"
+      "<li><b>Monetary union:</b> members share one currency and one central bank. Twenty-one European Union countries use the euro, and the European Central Bank sets one interest rate for all of them.</li></ul>"
+      "<h3>Are these agreements good for world trade?</h3><ul><li><b>For:</b> they open markets faster than global talks, which have stalled at the World Trade Organization. Trade between members grows (trade creation).</li>"
+      "<li><b>Against:</b> members may buy from each other when a non-member is cheaper (trade diversion). Blocs can keep high barriers against outsiders, and many overlapping deals add rules and paperwork.</li>"
+      "<li><b>Monetary unions:</b> a shared currency removes exchange rate risk and lowers costs. But members cannot set their own interest rate or let their currency fall in a downturn, as Greece found after 2009.</li></ul>"
+      + exam("Explain comparative advantage in one or two sentences, then weigh an advantage of free trade against a disadvantage. For agreements, name one bloc and one bilateral deal and use the terms trade creation and trade diversion.")
+      + "<h3>Go deeper</h3><ul><li><a href=\"" + SITE + "/topic-1/trade-financial-flows-and-foreign-investment/role-of-international-organisations\">Role of international organisations</a> covers the WTO, IMF, World Bank, OECD, G20 and G7.</li>"
+      "<li><a href=\"" + SITE + "/topic-2/free-trade-protection/free-trade-agreements\">Australia's free trade agreements</a> (Topic 2) lists Australia's own deals.</li>"
+      "<li><a href=\"" + SITE + "/topic-1/international-economic-integration/financial-flows\">Financial flows</a> and <a href=\"" + SITE + "/topic-1/international-economic-integration/investment-tncs\">Investment and transnational corporations</a> are under International economic integration.</li></ul>",
+      catbl
+      + hbar("Members of major trade groups", [("European Union", 27), ("APEC", 21), ("RCEP", 15), ("CPTPP", 12), ("ASEAN", 11), ("USMCA", 3)], T1, "Australia belongs to APEC, RCEP and the CPTPP.", "", vmax=32)
+      + bltbl,
+      [("World Trade Organization", "https://www.wto.org/"), ("European Union", "https://european-union.europa.eu/"), ("DFAT, Free trade agreements", "https://www.dfat.gov.au/"), ("ASEAN", "https://asean.org/")],
+      "Updated 26 November 2026"))
     return P
+

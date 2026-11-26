@@ -88,12 +88,13 @@ def split(slug, left, right):
     return left, right
 
 JS2 = "<script>function z(){document.getElementById('p').style.zoom=innerWidth/400}addEventListener('resize',z);z()</script>"
-def page(slug, c, title, ts, left, right, links):
+def page(slug, c, title, ts, left, right, links, stamp=None):
+    stamp = stamp or STAMP
     text, vis = split(slug, left, right)
     text = text.replace('<div class="x">', "<p>").replace("</div>", "</p>")
-    t = ("<p><i>%s</i></p>" % STAMP) + text + "<p>Sources: " + "; ".join('<a href="%s">%s</a>' % (u, n) for n, u in links) + ".</p>"
+    t = ("<p><i>%s</i></p>" % stamp) + text + "<p>Sources: " + "; ".join('<a href="%s">%s</a>' % (u, n) for n, u in links) + ".</p>"
     emb = (FONT + css(c) + "<style>#p{width:400px!important}.k{grid-template-columns:1fr!important}.m{display:none!important}</style>"
-           + '<div id="p"><div class="top"><b>Key data</b><span>%s</span></div>%s%s</div>' % (STAMP, tiles(ts), vis) + JS2)
+           + '<div id="p"><div class="top"><b>Key data</b><span>%s</span></div>%s%s</div>' % (stamp, tiles(ts), vis) + JS2)
     d = os.path.dirname(os.path.abspath(__file__))
     open(os.path.join(d, "ref-%s-text.html" % slug), "w").write(t)
     open(os.path.join(d, "ref-%s-charts.html" % slug), "w").write(emb)
