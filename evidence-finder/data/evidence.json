@@ -1,298 +1,924 @@
 [
  {
-  "id": "2026-11-25-us-overcapacity-tariffs-14-economies",
-  "title": "US targets 14 economies with new \"overcapacity\" tariffs",
-  "date": "2026-11-25",
+  "id": "2026-11-27-rba-expected-to-hold-4-85-despite-inflation-surprise",
+  "title": "RBA expected to hold at 4.85% despite inflation surprise",
+  "date": "2026-11-27",
   "type": "news",
   "outlets": [
-   "Al Jazeera",
-   "ABC News (US)"
-  ],
-  "summary": "Gives a live case of protectionism under Section 301, the role of courts in trade policy and the indirect risks for Australia, which is not targeted.",
-  "lede": "The US Trade Representative has proposed new tariffs on 14 trading partners, including China, the EU and Japan, arguing that subsidised excess capacity in their manufacturing sectors gives them an unfair advantage. Australia is not on the list.",
-  "about": {
-   "h09": [
-    "1C.2",
-    "1C.1",
-    "2D.4",
-    "1B.2"
-   ],
-   "y12": [
-    "Y3a.6",
-    "Y3a.7",
-    "Y3a.8",
-    "Y3a.11",
-    "Y3a.14"
-   ],
-   "y11": [
-    "P6a.1"
-   ]
-  },
-  "also": {
-   "h09": [
-    "2A.1"
-   ],
-   "y12": [
-    "Y3a.15",
-    "Y3e.3"
-   ],
-   "y11": [
-    "P6a.2"
-   ]
-  },
-  "issues": [
-   "trade",
-   "global"
-  ],
-  "levers": [
-   "trade"
-  ],
-  "diagrams": [
-   "ds",
-   "flow"
-  ],
-  "figures": [
-   {
-    "label": "Economies named in the proposed tariffs",
-    "value": "14: China, EU, India, Japan, South Korea, Indonesia, Bangladesh, Cambodia, Malaysia, Singapore, Switzerland, Taiwan, Thailand, Vietnam (Mexico and Norway investigated but left out)",
-    "asAt": "25 November 2026",
-    "issue": "trade",
-    "source": "ABC News (US) / Al Jazeera"
-   },
-   {
-    "label": "Proposed rate on China and Vietnam",
-    "value": "20% (China on top of about 25% in duties from Trump's first term)",
-    "asAt": "November 2026",
-    "issue": "trade",
-    "source": "Al Jazeera"
-   },
-   {
-    "label": "Reported rate caps in earlier trade deals",
-    "value": "15% for the EU, Japan and Korea; 19% for Malaysia",
-    "asAt": "November 2026",
-    "issue": "trade",
-    "source": "Al Jazeera"
-   },
-   {
-    "label": "US share market reaction",
-    "value": "Nasdaq -3.9%, S&P 500 -2.8%",
-    "asAt": "25 November 2026",
-    "issue": "global",
-    "source": "Al Jazeera"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Section 301",
-    "def": "US trade law used to impose tariffs on countries found to trade unfairly."
-   },
-   {
-    "term": "Excess capacity",
-    "def": "More production than domestic demand can absorb, often supported by subsidies and then exported cheaply."
-   },
-   {
-    "term": "Trade diversion",
-    "def": "Goods blocked from one market are redirected to other markets."
-   }
-  ],
-  "links": [
-   [
-    "Al Jazeera: World reacts to Trump's new tariffs as US stocks tumble, 25 Nov 2026",
-    "https://www.aljazeera.com/"
-   ],
-   [
-    "Al Jazeera: Trump announces new trade tariffs: which countries will they target?, 25 Nov 2026",
-    "https://www.aljazeera.com/"
-   ],
-   [
-    "ABC News (US): Trump admin proposes new tariffs on China, EU and 12 other trading partners, 25 Nov 2026",
-    "https://abcnews.go.com/"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-25-us-overcapacity-tariffs-14-economies.pdf",
-   "label": "Topic 1 news summary",
-   "pages": 1
-  },
-  "angle": "Apply the tariff diagram (price rises to Pw+t, imports shrink, revenue and deadweight loss). Indirect effects on Australia: weaker Chinese manufacturing could cut demand for iron ore and coal (terms of trade), while goods diverted from the US could flow into Australia more cheaply, helping consumers but pressuring import-competing firms.",
-  "questions": [
-   {
-    "q": "Using a tariff diagram, explain the effects of a US tariff on US consumers, US producers and the US government.",
-    "marks": 6
-   },
-   {
-    "q": "Explain how US tariffs on China could indirectly affect the Australian economy.",
-    "marks": 4
-   }
-  ],
-  "note": "PROPOSED, from preliminary findings of an eight-month Section 301 investigation: not yet in force. The US used Section 301 after the Supreme Court struck down its broad emergency-powers (IEEPA) tariffs in February 2026. The EU said it 'strongly rejects' the overcapacity premise and China called it a 'false issue'; analysts see the mid-December G20 meetings as a chance to negotiate. Replaces the 24 November preview card (WSJ via Investing.com: USTR Jamieson Greer could release findings 'as soon as this week'; 27 EU members in scope; July tariffs of 10-12.5% on 60 economies under court challenge; steel, aluminium and cars excluded as separate national security tariffs apply). UPDATE DUE: final rates and start date. Links are to the outlets' home pages because the digest gives titles only.",
-  "added": "2026-11-26"
- },
- {
-  "id": "2026-11-25-aud-slides-11-month-low-hot-cpi",
-  "title": "Aussie dollar slides to an 11-month low",
-  "date": "2026-11-25",
-  "type": "news",
-  "outlets": [
-   "CommBank (AAP)",
    "ABC News",
-   "AFR"
+   "CommBank"
   ],
-  "summary": "Explains the AUD's fall through commodity prices and diverging interest rate expectations, and the inflation cost of depreciation.",
-  "lede": "The Australian dollar fell to about US65.9 cents on 25 November, its lowest level in 11 months. Metal prices slumped and investors are betting that US and Australian interest rates will move in opposite directions next year.",
+  "summary": "Shows the RBA's 'worst nightmare' of rising inflation and unemployment together, with the Phillips curve shift and market pricing for 8 December.",
+  "lede": "After five rate rises in 2026, markets and most economists expect the Reserve Bank to keep the cash rate on hold at its 8 December meeting. It faces the 'worst nightmare' of rising inflation and rising unemployment.",
   "about": {
    "h09": [
-    "2C.2",
-    "2C.3",
-    "2C.6"
+    "4D.1",
+    "4D.2",
+    "4D.3"
    ],
    "y12": [
-    "Y3c.2",
-    "Y3c.4",
-    "Y3c.5",
-    "Y3c.6"
-   ],
-   "y11": [
-    "P6c.1"
-   ]
-  },
-  "also": {
-   "h09": [
-    "4D.3",
-    "3C.3",
-    "2B.4"
-   ],
-   "y12": [
-    "Y2c.5",
-    "Y1c.4",
-    "Y1a.7"
+    "Y2c.1",
+    "Y2c.2",
+    "Y2c.4",
+    "Y2c.5"
    ],
    "y11": [
     "P4c.3"
    ]
   },
+  "also": {
+   "h09": [
+    "3C.3",
+    "4H.1",
+    "3C.1"
+   ],
+   "y12": [
+    "Y1c.6",
+    "Y2c.3",
+    "Y1c.4"
+   ],
+   "y11": [
+    "P4c.4"
+   ]
+  },
   "issues": [
-   "fx",
    "rates",
-   "trade",
-   "inflation"
+   "inflation",
+   "employment"
   ],
   "levers": [
    "monetary"
   ],
   "diagrams": [
-   "fx",
-   "flow"
+   "phillips",
+   "flow",
+   "compare"
   ],
   "figures": [
    {
-    "label": "AUD / USD",
-    "value": "About US65.9c, down about 0.7% on the day (briefly US66.6c when the hot CPI came out)",
-    "asAt": "25 November 2026",
-    "issue": "fx",
-    "source": "ABC News; CommBank/AAP"
+    "label": "Cash rate",
+    "value": "4.85% (raised 0.25 percentage points on 3 November, 6-3 vote); highest since 2008",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "RBA"
    },
    {
-    "label": "Copper on the LME",
-    "value": "-5% to about US$11,900 a tonne",
-    "asAt": "25 November 2026",
-    "issue": "trade",
-    "source": "CommBank/AAP"
+    "label": "Market-implied chance of a hold on 8 December",
+    "value": "96.7% after the October CPI",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "ABC News"
    },
    {
-    "label": "ASX 200",
-    "value": "-0.4% to 8,692",
-    "asAt": "25 November 2026",
-    "issue": "global",
-    "source": "CommBank/AAP"
+    "label": "RBA forecast for inflation back at the 2-3% target midpoint",
+    "value": "About mid-2028",
+    "asAt": "November 2026",
+    "issue": "inflation",
+    "source": "RBA"
    },
    {
-    "label": "10-year bond yield: Australia / US",
-    "value": "4.84% / 4.90%",
+    "label": "CommBank expectation",
+    "value": "Cuts from August 2027; UBS and Betashares see a risk of a February hike",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "CommBank"
+   },
+   {
+    "label": "Market pricing for December",
+    "value": "About 97% chance of no change",
     "asAt": "25 November 2026",
     "issue": "rates",
     "source": "ABC News"
    },
    {
-    "label": "First RBA cut priced",
-    "value": "August 2027",
+    "label": "First cut priced",
+    "value": "Pushed back from June to August 2027; chance of a March cut fell from 33% to 23%",
     "asAt": "25 November 2026",
     "issue": "rates",
     "source": "AFR"
+   },
+   {
+    "label": "Oil",
+    "value": "Down from a US$125 peak to about US$91; petrol down about 20%",
+    "asAt": "November 2026",
+    "issue": "inflation",
+    "source": "digest"
    }
   ],
   "terms": [
    {
-    "term": "Depreciation",
-    "def": "A fall in the value of the AUD under a floating exchange rate."
+    "term": "Inflation expectations",
+    "def": "What people expect prices to do, which shapes wages and prices."
    },
    {
-    "term": "Interest rate differential",
-    "def": "The gap between Australian and overseas rates, which influences capital flows."
+    "term": "Time lags",
+    "def": "The delay of up to 1-2 years before rate changes fully affect the economy."
    },
    {
-    "term": "Imported inflation",
-    "def": "Higher domestic prices caused by more expensive imports."
+    "term": "Cash rate",
+    "def": "The RBA's target interest rate on overnight loans between banks."
    }
   ],
   "links": [
    [
-    "CommBank Newsroom (AAP): Aussie shares slip as hot inflation pushes back rate cut hopes, 25 Nov 2026",
-    "https://www.commbank.com.au/"
+    "ABC News: Inflation rises to 4.9pc, 25 Nov 2026",
+    "https://www.abc.net.au/news/"
    ],
    [
     "ABC News: markets blog, 25 Nov 2026",
     "https://www.abc.net.au/news/"
    ],
    [
+    "CommBank: RBA analysis, Nov 2026",
+    "https://www.commbank.com.au/"
+   ],
+   [
+    "The Conversation: Inflation jumps to 4.9% as fuel prices surge, but the RBA should hold rates steady (Stella Huangfu)",
+    "https://theconversation.com/au"
+   ],
+   [
+    "AFR: Rate hike calls grow even as inflation tipped for three-year high (Lea Jurkovic), 24 Nov 2026",
+    "https://www.afr.com/"
+   ],
+   [
     "AFR: Hot inflation dashes market's hopes of an early RBA cut (Cécile Lefort), 25 Nov 2026",
+    "https://www.afr.com/"
+   ],
+   [
+    "SBS News, Nov 2026",
+    "https://www.sbs.com.au/news/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-27-rba-expected-to-hold-4-85-despite-inflation-surprise.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "When inflation expectations rise, the short-run Phillips curve shifts up, so both inflation and unemployment rise: raising rates fights inflation but pushes unemployment higher still. The split vote shows the policy trade-off and is evidence of the limitations of monetary policy.",
+  "questions": [
+   {
+    "q": "Explain the monetary policy transmission mechanism.",
+    "marks": 4
+   },
+   {
+    "q": "Using a Phillips curve, explain the dilemma the RBA faces when inflation and unemployment rise together.",
+    "marks": 5
+   },
+   {
+    "q": "Evaluate the effectiveness of monetary policy in responding to inflation caused by a global oil price shock.",
+    "marks": 6
+   }
+  ],
+  "note": "UPDATE DUE: RBA decision on 7-8 December. Market pricing and economist views, not decisions. Oxford Economics called rising inflation and unemployment together the RBA's 'worst nightmare'. Replaces the 25 November 'hold, hike or cut?' card (retained facts are in the figures above): that card also had 97% hold pricing, first cut pushed back from June to August 2027, Bullock's 'sustainably back to target' test and the cases for hiking and holding.",
+  "added": "2026-11-27"
+ },
+ {
+  "id": "2026-11-27-chalmers-promises-substantial-savings-december-update",
+  "title": "Chalmers promises \"substantial savings\" in December budget update",
+  "date": "2026-11-27",
+  "type": "news",
+  "outlets": [
+   "Guardian (via CathNews)",
+   "ABC News"
+  ],
+  "summary": "Shows fiscal policy being used to support the RBA when inflation is cost-push, and the limits of that approach.",
+  "lede": "With inflation at 4.9%, the Treasurer says savings will be at the core of next month's MYEFO, with the aim that fiscal policy supports the RBA rather than adds to demand. He called the result 'a very serious moment' and said no amount of relief or savings would make it go away overnight.",
+  "about": {
+   "h09": [
+    "4C.1",
+    "4C.2",
+    "4B.1"
+   ],
+   "y12": [
+    "Y2b.3",
+    "Y2b.9",
+    "Y2b.13",
+    "Y2b.14",
+    "Y2b.2"
+   ],
+   "y11": [
+    "P5a.4",
+    "P5c.3"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4D.3",
+    "4H.3"
+   ],
+   "y12": [
+    "Y2c.5"
+   ],
+   "y11": [
+    "P5b.7"
+   ]
+  },
+  "issues": [
+   "budget",
+   "inflation"
+  ],
+  "levers": [
+   "fiscal"
+  ],
+  "diagrams": [
+   "adas",
+   "flow",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Headline inflation",
+    "value": "4.9% (the Treasurer's \"very serious moment\")",
+    "asAt": "November 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "Minimum tax on discretionary trust distributions",
+    "value": "30%, passed by Parliament after a Labor-Greens deal",
+    "asAt": "November 2026",
+    "issue": "budget",
+    "source": "Guardian, via CathNews"
+   },
+   {
+    "label": "Private health insurance rebate for over-65s",
+    "value": "Deal exempts pensioners, forgoing about A$1.5 billion of the planned A$3 billion saving",
+    "asAt": "November 2026",
+    "issue": "budget",
+    "source": "ABC News"
+   },
+   {
+    "label": "Unemployment peak driving welfare costs",
+    "value": "Above 5%",
+    "asAt": "November 2026",
+    "issue": "budget",
+    "source": "ABC News"
+   },
+   {
+    "label": "PBS script price",
+    "value": "$25, frozen to the end of the decade",
+    "asAt": "November 2026",
+    "issue": "budget",
+    "source": "ABC News"
+   },
+   {
+    "label": "MYEFO timing",
+    "value": "December, after the RBA's 8 December decision",
+    "asAt": "November 2026",
+    "issue": "budget",
+    "source": "ABC News"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Contractionary fiscal policy",
+    "def": "Cutting spending or raising taxes to slow aggregate demand."
+   },
+   {
+    "term": "Policy mix",
+    "def": "How fiscal and monetary policy work together."
+   },
+   {
+    "term": "MYEFO",
+    "def": "The Mid-Year Economic and Fiscal Outlook, the update to the May Budget."
+   },
+   {
+    "term": "Automatic stabilisers",
+    "def": "Tax receipts fall and welfare spending rises automatically as the economy slows."
+   }
+  ],
+  "links": [
+   [
+    "CathNews (Guardian): Chalmers promises substantial savings",
+    "https://cathnews.com/"
+   ],
+   [
+    "ABC News: David Speers analysis, Nov 2026",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "ABC News: Federal politics blog, 26 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "Fixed Income News: Chalmers flags jobless rate above 5%",
+    "https://www.fixedincomenews.com.au/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-27-chalmers-promises-substantial-savings-december-update.pdf",
+   "label": "Topic 4 news summary",
+   "pages": 1
+  },
+  "angle": "Today's inflation is largely cost-push (fuel, electricity), but fiscal tightening cuts demand-pull pressure, so it may do little to the CPI while hurting growth: a limitation of fiscal policy. ABC's David Speers argues spending cuts are unlikely to fix inflation and could risk recession as unemployment rises (analysis, not fact).",
+  "questions": [
+   {
+    "q": "Explain how contractionary fiscal policy can complement monetary policy in reducing inflation.",
+    "marks": 4
+   },
+   {
+    "q": "Assess whether fiscal tightening is appropriate when inflation is high but unemployment is rising.",
+    "marks": 6
+   },
+   {
+    "q": "Distinguish between the cyclical and structural components of the budget, and explain why the government is seeking savings in MYEFO.",
+    "marks": 5
+   }
+  ],
+  "note": "UPDATE DUE: the MYEFO itself (December, after the RBA's 8 December meeting). Infrastructure spending is a possible target. Replaces the 24 November MYEFO savings card (lower tax receipts and bigger deficits in later years; net saving with savings exceeding new spending; EV and home-battery subsidies could be means-tested; Chalmers said no realistic savings will make inflation go away; Wilson's spending 'speed limit'; $25 PBS script price frozen). The 25 November critics card (mostly AFR opinion) is kept. The trust tax card has been updated to say the tax has now passed.",
+  "added": "2026-11-27"
+ },
+ {
+  "id": "2026-11-27-gas-reservation-scheme-set-to-become-law",
+  "title": "Gas reservation scheme set to become law",
+  "date": "2026-11-27",
+  "type": "news",
+  "outlets": [
+   "AAP (Yahoo News)",
+   "ABC News",
+   "World Today Journal"
+  ],
+  "summary": "Shows the final shape of the gas reservation policy, including amendments, and the trade-off between domestic energy costs and export income.",
+  "lede": "Parliament is set to pass a national scheme forcing east-coast LNG exporters to keep up to 20% of their gas for Australian users, aiming to drive 'a permanent wedge' between export and domestic prices.",
+  "about": {
+   "h09": [
+    "4E.1",
+    "4E.2"
+   ],
+   "y12": [
+    "Y2d.1",
+    "Y2d.4",
+    "Y2d.5"
+   ],
+   "y11": [
+    "P2i.2",
+    "P2i.3",
+    "P2i.4"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4H.3",
+    "2A.1"
+   ],
+   "y12": [
+    "Y2d.6"
+   ],
+   "y11": [
+    "P2d.1"
+   ]
+  },
+  "issues": [
+   "investment",
+   "inflation",
+   "trade"
+  ],
+  "levers": [
+   "micro"
+  ],
+  "diagrams": [
+   "ds",
+   "flow",
+   "compare"
+  ],
+  "figures": [
+   {
+    "label": "Share of gas to be reserved for domestic users",
+    "value": "Up to 20% for the largest LNG exporters from 1 January 2028",
+    "asAt": "November 2026",
+    "issue": "investment",
+    "source": "AAP"
+   },
+   {
+    "label": "East-coast wholesale gas prices versus WA",
+    "value": "About double",
+    "asAt": "November 2026",
+    "issue": "inflation",
+    "source": "AAP"
+   },
+   {
+    "label": "Amendments",
+    "value": "An \"up to\" 10% oversupply buffer and a review of the investment impact after five years",
+    "asAt": "November 2026",
+    "issue": "investment",
+    "source": "AAP"
+   },
+   {
+    "label": "Greens' alternative: 25% gas export tax",
+    "value": "Said to raise $17 billion a year",
+    "asAt": "November 2026",
+    "issue": "budget",
+    "source": "AAP"
+   },
+   {
+    "label": "Share of supply to be reserved for domestic users",
+    "value": "Up to 20%, from January 2028",
+    "asAt": "November 2026",
+    "issue": "investment",
+    "source": "AFR"
+   },
+   {
+    "label": "Disputed \"oversupply\" requirement",
+    "value": "10%",
+    "asAt": "November 2026",
+    "issue": "investment",
+    "source": "AFR"
+   },
+   {
+    "label": "Expected passage",
+    "value": "Thursday 26 November, before parliament rises for summer",
+    "asAt": "26 November 2026",
+    "issue": "investment",
+    "source": "AFR"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Export parity pricing",
+    "def": "Domestic prices that track higher world (LNG) prices."
+   },
+   {
+    "term": "Market intervention",
+    "def": "Government action to change market outcomes."
+   },
+   {
+    "term": "Domestic gas reservation",
+    "def": "Requiring a share of gas production to be sold locally rather than exported."
+   },
+   {
+    "term": "Sovereign risk",
+    "def": "The risk that a government changes rules in ways that reduce the value of investments."
+   },
+   {
+    "term": "Marginal cost",
+    "def": "The cost of producing one more unit."
+   }
+  ],
+  "links": [
+   [
+    "Yahoo News (AAP): Gas reserve gets green light",
+    "https://au.news.yahoo.com/"
+   ],
+   [
+    "World Today Journal: Gas reservation from 2028",
+    "https://world-today-journal.com/"
+   ],
+   [
+    "ABC News: Federal politics blog, 26 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "AFR: Coalition to back Labor's 20pc gas reservation (Ryan Cropp and Angela Macdonald-Smith), 25 Nov 2026",
     "https://www.afr.com/"
    ]
   ],
   "file": {
-   "path": "files/2026-11/2026-11-25-aud-slides-11-month-low-hot-cpi.pdf",
-   "label": "Topic 2 news summary",
+   "path": "files/2026-11/2026-11-27-gas-reservation-scheme-set-to-become-law.pdf",
+   "label": "Topic 4 news summary",
    "pages": 1
   },
-  "angle": "Lower commodity prices cut the demand for AUD, and expectations that US rates rise while Australian rates fall make AUD assets less attractive, so D shifts left and the AUD depreciates. A depreciation is two-edged: exporters become more competitive, but imports (especially fuel) cost more and the AUD value of foreign-currency debt rises, complicating the RBA's job.",
+  "angle": "Reservation shifts domestic supply right (S1 to S2): domestic price falls and quantity rises, helping manufacturers and households, but exporters earn less than world prices and long-run investment in new supply may weaken.",
   "questions": [
    {
-    "q": "Explain two factors that contributed to the depreciation of the Australian dollar in November 2026.",
+    "q": "Using a supply and demand diagram, explain the intended effect of the gas reservation scheme on domestic gas prices.",
     "marks": 4
    },
    {
-    "q": "Discuss the effects of a depreciation on Australia's external stability and inflation.",
+    "q": "Evaluate the scheme as a policy to reduce energy costs in Australia.",
+    "marks": 6
+   },
+   {
+    "q": "Discuss the economic costs and benefits of a domestic gas reservation policy for Australia.",
     "marks": 6
    }
   ],
-  "note": "Market prices that move daily. Replaces the 24 November card (Westpac IQ: AUD US$0.6609 on 23 November, an 11-month low and weakest G10 currency of the week; iron ore 61% fines US$89.30 a tonne; only about 10% of Chinese steelmakers profitable per Mysteel, against 38% a year earlier; copper down about 14-16% in November; gold near 15-month lows; AUD had wiped out all its 2026 gains). The 16 November low was US67.6c (a 10-month low). The 22 November miners and 23 November iron ore cards are kept. Links are to the outlets' home pages because the digest gives titles only.",
-  "added": "2026-11-26"
+  "note": "UPDATE DUE: confirm the House passed the amended bill (due Friday 27 November) and the start date. The Coalition agreed not to block the bill in the Senate on Thursday night but warned it could deter investment. WA is exempt because it has run its own reservation policy for two decades. Replaces the 25 November AFR card on the Coalition backing the scheme (Resources Minister Madeleine King on 'must sell' rules; Amplitude Energy's sovereign risk warning; Rod Sims' view). The 18 November WA carve-out card is kept.",
+  "added": "2026-11-27"
  },
  {
-  "id": "2026-11-25-inflation-hits-4-9-per-cent-october-cpi",
-  "title": "Inflation hits 4.9%: fuel, power and a home-grown problem",
-  "date": "2026-11-25",
+  "id": "2026-11-27-rba-bulletin-small-businesses-squeezed",
+  "title": "RBA: small businesses squeezed by weak demand and rising costs",
+  "date": "2026-11-27",
+  "type": "report",
+  "outlets": [
+   "RBA Bulletin"
+  ],
+  "summary": "Gives official RBA evidence on how tight monetary policy reaches small businesses, with a bright spot in AI adoption.",
+  "lede": "A new RBA Bulletin finds small business conditions have deteriorated over the past year. Higher interest rates are working through to the firms that employ a large share of Australians.",
+  "about": {
+   "h09": [
+    "4D.3",
+    "3A.7",
+    "3C.3"
+   ],
+   "y12": [
+    "Y2c.5",
+    "Y1a.14",
+    "Y1a.10"
+   ],
+   "y11": [
+    "P4c.3",
+    "P1e.7"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3A.6"
+   ],
+   "y12": [
+    "Y1c.4"
+   ],
+   "y11": [
+    "P3c.5"
+   ]
+  },
+  "issues": [
+   "rates",
+   "growth",
+   "productivity",
+   "employment"
+  ],
+  "levers": [
+   "monetary"
+  ],
+  "diagrams": [
+   "flow",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Small businesses reporting difficulty getting finance",
+    "value": "About 1 in 5",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "RBA Bulletin"
+   },
+   {
+    "label": "Extra borrowing cost for small businesses over large firms",
+    "value": "About 75 basis points (historic low)",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "RBA Bulletin"
+   },
+   {
+    "label": "Small business credit secured by residential property",
+    "value": "About 50%",
+    "asAt": "November 2026",
+    "issue": "housing",
+    "source": "RBA Bulletin"
+   },
+   {
+    "label": "SMEs reporting material efficiency gains from AI",
+    "value": "About 20% already; about 40% expect gains within a year",
+    "asAt": "November 2026",
+    "issue": "productivity",
+    "source": "Macquarie BOSS survey, cited in RBA Bulletin"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Profit margin squeeze",
+    "def": "Costs rise faster than the prices firms can charge."
+   },
+   {
+    "term": "Insolvency",
+    "def": "When a business cannot pay its debts as they fall due."
+   }
+  ],
+  "links": [
+   [
+    "RBA Bulletin: Small business conditions, 26 Nov 2026",
+    "https://www.rba.gov.au/publications/bulletin/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-27-rba-bulletin-small-businesses-squeezed.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Small businesses feel tight monetary policy through the cash-flow channel (higher loan repayments) and weaker household spending; with about half of small business credit secured on housing, a weak housing market can also restrict finance. Financial stress is expected to rise most in construction, hospitality and retail (hospitality has the highest insolvency rate).",
+  "questions": [
+   {
+    "q": "Explain how tight monetary policy affects small businesses.",
+    "marks": 4
+   },
+   {
+    "q": "Assess the potential of AI adoption to improve productivity in Australia.",
+    "marks": 5
+   }
+  ],
+  "note": "Official RBA analysis (a Bulletin article), so a strong source; AI shares quoted are from a Macquarie BOSS survey cited in it (approximate: 20% already, 40% expect, 23% no material change, 16% too early to say). Related earlier small business cards in this series are kept. The link goes to the RBA Bulletin index because the digest gives the title only.",
+  "added": "2026-11-27"
+ },
+ {
+  "id": "2026-11-27-home-building-lifts-construction-ahead-of-gdp",
+  "title": "Home building lifts construction activity ahead of next week's GDP",
+  "date": "2026-11-27",
+  "type": "news",
+  "outlets": [
+   "ABS",
+   "ABC News"
+  ],
+  "summary": "Shows how partial indicators are used to forecast GDP, and links residential investment to growth, capacity and housing costs.",
+  "lede": "Construction work done rose 0.9% in the September quarter, above the 0.7% consensus, led by residential building. It is one of the partial indicators economists use to forecast GDP before the National Accounts are released next week.",
+  "about": {
+   "h09": [
+    "3A.4",
+    "3A.5",
+    "3A.1",
+    "3A.6",
+    "3C.3"
+   ],
+   "y12": [
+    "Y1a.3",
+    "Y1a.6",
+    "Y1a.10",
+    "Y1a.12",
+    "Y1c.4"
+   ],
+   "y11": [
+    "P1e.1",
+    "P1e.6"
+   ]
+  },
+  "also": {
+   "h09": [
+    "4E.1"
+   ],
+   "y12": [
+    "Y2d.3",
+    "Y1c.5"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "growth",
+   "housing",
+   "investment",
+   "inflation"
+  ],
+  "levers": [],
+  "diagrams": [
+   "chart",
+   "flow",
+   "adas"
+  ],
+  "figures": [
+   {
+    "label": "Total construction work done, September quarter",
+    "value": "+0.9% (consensus +0.7%): building +2.4%, residential +3.1%, engineering -0.9%",
+    "asAt": "September quarter 2026",
+    "issue": "growth",
+    "source": "ABS, via ABC News"
+   },
+   {
+    "label": "Q3 GDP forecast",
+    "value": "JP Morgan 0.4% q/q; NAB estimates residential building adds about 0.1 percentage points to GDP growth",
+    "asAt": "September quarter 2026",
+    "issue": "growth",
+    "source": "ABC News"
+   },
+   {
+    "label": "Construction work done, September quarter",
+    "value": "+0.9% (building +2.4%, engineering -0.9%)",
+    "asAt": "September quarter 2026",
+    "issue": "growth",
+    "source": "ABS, via ABC News"
+   },
+   {
+    "label": "Real residential building",
+    "value": "Record about $30.4 billion, up roughly 9% on a year earlier",
+    "asAt": "September quarter 2026",
+    "issue": "housing",
+    "source": "ABS, via SMH and AFR"
+   },
+   {
+    "label": "Non-residential construction",
+    "value": "+10.2% over the year (much of it data centres and renewable energy)",
+    "asAt": "September quarter 2026",
+    "issue": "investment",
+    "source": "SMH"
+   },
+   {
+    "label": "Cost of building new homes",
+    "value": "+0.8% in October, +5.1% over the year",
+    "asAt": "October 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "Expected Q3 GDP growth",
+    "value": "About 0.4% (due next week)",
+    "asAt": "September quarter 2026",
+    "issue": "growth",
+    "source": "SMH"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Partial indicator",
+    "def": "Data on one part of the economy used to forecast GDP."
+   },
+   {
+    "term": "Residential investment",
+    "def": "Spending on new homes and renovations (part of I)."
+   },
+   {
+    "term": "Productive capacity",
+    "def": "The maximum sustainable output of the economy (LRAS)."
+   },
+   {
+    "term": "Capacity constraints",
+    "def": "Shortages of labour or materials that push up prices when demand grows faster than supply."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: markets blog, 25 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "AFR: Domestic cost increases fuel surprise inflation jump (Grace Lagan)",
+    "https://www.afr.com/"
+   ],
+   [
+    "SMH: Stagflation fears grip Canberra; Chalmers cannot spin a silver lining out of this grim story (Shane Wright)",
+    "https://www.smh.com.au/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-27-home-building-lifts-construction-ahead-of-gdp.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Construction feeds into GDP through investment (I). More dwellings over time should ease rent and price pressures, though housing and data centres are meanwhile competing for scarce tradespeople and materials (adding to inflation now but expanding capacity later).",
+  "questions": [
+   {
+    "q": "Explain how economists use partial indicators such as construction work done to forecast GDP.",
+    "marks": 3
+   },
+   {
+    "q": "Explain how increased housing construction could affect inflation over time.",
+    "marks": 4
+   },
+   {
+    "q": "Explain how the AI and data-centre investment boom can add to inflation in the short run but raise economic growth in the long run.",
+    "marks": 5
+   }
+  ],
+  "note": "UPDATE DUE: Q3 GDP (National Accounts, 2 December). Replaces the 25 November 'Record home building as the AI boom stretches capacity' card: the figures and dot points are carried over, including the record real residential building of about $30.4 billion, non-residential construction +10.2% over the year, new home building costs +5.1% over the year (SMH/AFR/ABS) and Shane Wright's point that data centres and homes need the same electricians and plumbers. Housing costs rose 6.4% over the year in the CPI.",
+  "added": "2026-11-27"
+ },
+ {
+  "id": "2026-11-27-data-centre-boom-biggest-investment-jump-since-2011",
+  "title": "Data centre boom drives the biggest investment jump since 2011",
+  "date": "2026-11-27",
+  "type": "news",
+  "outlets": [
+   "ABS",
+   "TechTimes"
+  ],
+  "summary": "Shows why a large investment boom adds less to GDP than the headline suggests, because the equipment is imported.",
+  "lede": "Business investment surged in the September quarter as firms poured money into data centre equipment. But because most of that equipment is imported, the boost to Australia's GDP is much smaller than the headline.",
+  "about": {
+   "h09": [
+    "3A.1",
+    "3A.5",
+    "2B.1"
+   ],
+   "y12": [
+    "Y1a.6",
+    "Y1a.10",
+    "Y3b.1"
+   ],
+   "y11": [
+    "P3c.4",
+    "P3c.5"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2B.4",
+    "3D.1"
+   ],
+   "y12": [
+    "Y1a.12"
+   ],
+   "y11": [
+    "P6b.1"
+   ]
+  },
+  "issues": [
+   "investment",
+   "growth",
+   "productivity",
+   "trade"
+  ],
+  "levers": [],
+  "diagrams": [
+   "adas",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Private new capital expenditure, September quarter",
+    "value": "+12.2% (+18.6% over the year): largest quarterly rise since the 2011 mining boom",
+    "asAt": "September quarter 2026",
+    "issue": "investment",
+    "source": "ABS"
+   },
+   {
+    "label": "Equipment investment",
+    "value": "Record, +23.1%; information media and telecommunications equipment +183.5%",
+    "asAt": "September quarter 2026",
+    "issue": "investment",
+    "source": "ABS"
+   },
+   {
+    "label": "Buildings and structures",
+    "value": "+1.7%",
+    "asAt": "September quarter 2026",
+    "issue": "investment",
+    "source": "ABS"
+   },
+   {
+    "label": "Expected 2026-27 capex revised",
+    "value": "Up 11.8%",
+    "asAt": "2026-27",
+    "issue": "investment",
+    "source": "ABS"
+   },
+   {
+    "label": "Share of data centre equipment that is imported",
+    "value": "About 70% (RBA Governor Bullock estimate)",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "TechTimes"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Capital expenditure",
+    "def": "Business spending on buildings, machinery and equipment."
+   },
+   {
+    "term": "Leakage",
+    "def": "Spending that flows to imports rather than domestic production."
+   }
+  ],
+  "links": [
+   [
+    "ABS: Data centre investment drives new capex, 26 Nov 2026",
+    "https://www.abs.gov.au/"
+   ],
+   [
+    "TechTimes: Capex jumps 12%",
+    "https://www.techtimes.com/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-27-data-centre-boom-biggest-investment-jump-since-2011.pdf",
+   "label": "Topic 3 news summary",
+   "pages": 1
+  },
+  "angle": "Remember AD = C + I + G + (X - M): investment financed by imports raises I and M together, so the real shift in AD is smaller than a 12% rise in capex suggests, and the current account deficit widens. Over time the data centre build-out expands productive capacity.",
+  "questions": [
+   {
+    "q": "Explain why a large rise in business investment may add relatively little to GDP growth.",
+    "marks": 4
+   },
+   {
+    "q": "Discuss how the data centre boom could affect Australia's long-term productive capacity.",
+    "marks": 5
+   }
+  ],
+  "note": "The 70% imported share is attributed to Governor Bullock via TechTimes (second-hand). Victoria (+31.0%) and NSW (+9.6%) led. Related 17 November data centre cards and 25 November record home building card (now replaced by the 27 November construction card). UPDATE DUE: Q3 GDP, 2 December. Links to home pages where the digest gives titles only.",
+  "added": "2026-11-27"
+ },
+ {
+  "id": "2026-11-27-october-inflation-jumps-4-9-highest-in-three-years",
+  "title": "Inflation jumps to 4.9%, its highest in three years",
+  "date": "2026-11-27",
   "type": "news",
   "outlets": [
    "ABS",
    "ABC News",
-   "SBS",
-   "AFR",
-   "SMH",
-   "The Conversation"
+   "Guardian (via CathNews)"
   ],
-  "summary": "Gives the October CPI with headline and trimmed mean figures and the split between supply shocks and domestic pressure.",
-  "lede": "Headline CPI rose 4.9% in the year to October, up from 4.3% in September and the highest in three years. The RBA's preferred trimmed mean measure rose from 3.6% to 3.8%. Both are well above the 2-3% target.",
+  "summary": "Gives the October CPI with headline and underlying measures and shows the unequal burden of non-discretionary price rises.",
+  "lede": "The October CPI showed inflation rising faster than expected, driven by fuel and the end of electricity rebates. The Treasurer called it 'a very serious moment' for the economy.",
   "about": {
    "h09": [
     "3C.1",
     "3C.2",
-    "3C.3"
+    "3C.3",
+    "3C.4"
    ],
    "y12": [
     "Y1c.2",
     "Y1c.3",
     "Y1c.4",
+    "Y1c.7",
     "Y1c.8",
     "Y1c.9"
    ],
@@ -302,11 +928,10 @@
   },
   "also": {
    "h09": [
-    "3C.4",
     "4D.3"
    ],
    "y12": [
-    "Y1c.7",
+    "Y1c.5",
     "Y2c.5"
    ],
    "y11": [
@@ -320,11 +945,32 @@
    "monetary"
   ],
   "diagrams": [
-   "chart",
    "adas",
+   "chart",
    "flow"
   ],
   "figures": [
+   {
+    "label": "Non-discretionary versus discretionary prices",
+    "value": "+6.1% versus +3.2% over the year",
+    "asAt": "October 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "Headline CPI and trimmed mean",
+    "value": "4.9% (September 4.3%) and 3.8% (September 3.6%), against a 2-3% target",
+    "asAt": "October 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "Electricity, fuel, housing over the year",
+    "value": "+25.2%, +32.5%, +6.4%",
+    "asAt": "October 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   },
    {
     "label": "Headline CPI, year to October",
     "value": "4.9% (September: 4.3%); highest in three years",
@@ -370,6 +1016,14 @@
   ],
   "terms": [
    {
+    "term": "Trimmed mean",
+    "def": "An underlying inflation measure that removes the largest price rises and falls."
+   },
+   {
+    "term": "Non-discretionary",
+    "def": "Essentials households cannot easily cut, such as fuel and power."
+   },
+   {
     "term": "Headline vs trimmed mean",
     "def": "Headline is the whole CPI basket; the trimmed mean strips out the biggest price rises and falls each month to show underlying inflation."
    },
@@ -384,8 +1038,16 @@
   ],
   "links": [
    [
-    "ABC News: Inflation rises more than expected to 4.9pc in year to October, 25 Nov 2026",
+    "ABS: Consumer Price Index, October 2026",
+    "https://www.abs.gov.au/"
+   ],
+   [
+    "ABC News: Inflation rises to 4.9pc, 25 Nov 2026",
     "https://www.abc.net.au/news/"
+   ],
+   [
+    "CathNews (Guardian): Chalmers",
+    "https://cathnews.com/"
    ],
    [
     "SBS News, 25 Nov 2026",
@@ -405,12 +1067,20 @@
    ]
   ],
   "file": {
-   "path": "files/2026-11/2026-11-25-inflation-hits-4-9-per-cent-october-cpi.pdf",
+   "path": "files/2026-11/2026-11-27-october-inflation-jumps-4-9-highest-in-three-years.pdf",
    "label": "Topic 3 news summary",
    "pages": 1
   },
-  "angle": "Separate temporary supply shocks (fuel, rebates ending) from persistent domestic pressure (housing, services), the core of the debate over whether the RBA needs to raise rates again. The Business Council says most of the problem is home-grown (AFR); many economists think October is the peak because petrol has fallen about 20% in four weeks (AMP via SMH).",
+  "angle": "The RBA looks through one-off shocks such as rebates ending, but the rising trimmed mean and inflation expectations suggest more persistent pressure. Rising non-discretionary prices hit low-income households hardest, linking inflation to the distribution of income.",
   "questions": [
+   {
+    "q": "Distinguish between headline and underlying inflation, using October 2026 data.",
+    "marks": 3
+   },
+   {
+    "q": "Explain why rising non-discretionary prices affect low-income households most.",
+    "marks": 4
+   },
    {
     "q": "Distinguish between headline and underlying inflation, using the October 2026 data.",
     "marks": 4
@@ -420,105 +1090,137 @@
     "marks": 6
    }
   ],
-  "note": "This is the October CPI release (flagged UPDATE DUE on earlier cards). Australia's headline rate is now above the US, UK, Canada and NZ (AFR). The AI boom is competing for resources and chips: toy and game prices +13% (SMH). Other items: fruit +10.9%, transport group +10.6%, meals out +4.1%. Headline inflation and the unemployment rate are both 4.9% (coincidence). This confirms September headline CPI of 4.3%, resolving the earlier 3.9% discrepancy. UPDATE DUE: November CPI and the RBA decision on 8 December. Links to home pages where the digest gives titles only.",
-  "added": "2026-11-26"
+  "note": "Replaces the 25 November CPI card on the same release: its details are carried over in the figures, dot points and links (including tradables +5.3% and non-tradables +4.7%, rents +3.5%, toys and games +13%, and the home-grown versus imported debate from the AFR and SMH). UPDATE DUE: November CPI and the RBA decision on 8 December. The 4.9% inflation rate coincides with the 4.9% unemployment rate.",
+  "added": "2026-11-27"
  },
  {
-  "id": "2026-11-25-record-home-building-ai-boom-capacity",
-  "title": "Record home building as the AI boom stretches capacity",
-  "date": "2026-11-25",
+  "id": "2026-11-27-aud-weakest-since-december-despite-hot-cpi",
+  "title": "Australian dollar slides to its weakest level since December",
+  "date": "2026-11-27",
   "type": "news",
   "outlets": [
-   "ABS",
-   "ABC News",
-   "AFR",
-   "SMH"
+   "ABC News"
   ],
-  "summary": "Shows investment as both a demand-side and supply-side force, with competition for scarce labour and materials adding to inflation.",
-  "lede": "Construction work done rose 0.9% in the September quarter and residential building reached a record of about $30.4 billion. But data centres and housing are competing for the same scarce tradespeople and materials, adding to inflation even as it supports growth.",
+  "summary": "Shows why the AUD fell despite high inflation, with commodity prices and risk-off selling outweighing interest rates.",
+  "lede": "Even though inflation came in high, the dollar fell rather than rose. Weaker commodity prices and global risk-off selling outweighed the pull of higher Australian interest rates.",
   "about": {
    "h09": [
-    "3A.5",
-    "3A.6",
-    "3C.3"
+    "2C.2",
+    "2C.3",
+    "2C.6"
    ],
    "y12": [
-    "Y1a.6",
-    "Y1a.10",
-    "Y1a.12",
-    "Y1c.4"
+    "Y3c.2",
+    "Y3c.4",
+    "Y3c.5",
+    "Y3c.6"
    ],
    "y11": [
-    "P1e.6"
+    "P6c.1"
    ]
   },
   "also": {
    "h09": [
-    "3A.1",
-    "4E.1"
+    "4D.3",
+    "2B.4",
+    "3C.3"
    ],
    "y12": [
-    "Y1c.5",
-    "Y2d.3"
+    "Y1a.7",
+    "Y2c.5",
+    "Y1c.4"
    ],
-   "y11": []
+   "y11": [
+    "P4c.3"
+   ]
   },
   "issues": [
-   "growth",
-   "inflation",
-   "housing",
-   "investment"
+   "fx",
+   "rates",
+   "trade",
+   "inflation"
   ],
-  "levers": [],
+  "levers": [
+   "monetary"
+  ],
   "diagrams": [
-   "adas",
+   "fx",
    "flow"
   ],
   "figures": [
    {
-    "label": "Construction work done, September quarter",
-    "value": "+0.9% (building +2.4%, engineering -0.9%)",
-    "asAt": "September quarter 2026",
-    "issue": "growth",
-    "source": "ABS, via ABC News"
+    "label": "AUD / USD on Wednesday 25 November",
+    "value": "About 65.9 US cents (-0.7%), lowest since December; briefly towards 66.7c on the CPI release; steady at 66.25c on Thursday morning",
+    "asAt": "25-26 November 2026",
+    "issue": "fx",
+    "source": "ABC News"
    },
    {
-    "label": "Real residential building",
-    "value": "Record about $30.4 billion, up roughly 9% on a year earlier",
-    "asAt": "September quarter 2026",
-    "issue": "housing",
-    "source": "ABS, via SMH and AFR"
+    "label": "Copper and iron ore",
+    "value": "Copper -4.8% on Wednesday; iron ore near four-year lows (about US$88 a tonne)",
+    "asAt": "25 November 2026",
+    "issue": "trade",
+    "source": "ABC News"
    },
    {
-    "label": "Non-residential construction",
-    "value": "+10.2% over the year (much of it data centres and renewable energy)",
-    "asAt": "September quarter 2026",
-    "issue": "investment",
-    "source": "SMH"
+    "label": "Chance the RBA holds on 8 December",
+    "value": "96.7%",
+    "asAt": "November 2026",
+    "issue": "rates",
+    "source": "ABC News"
    },
    {
-    "label": "Cost of building new homes",
-    "value": "+0.8% in October, +5.1% over the year",
-    "asAt": "October 2026",
-    "issue": "inflation",
-    "source": "ABS"
+    "label": "AUD / USD",
+    "value": "About US65.9c, down about 0.7% on the day (briefly US66.6c when the hot CPI came out)",
+    "asAt": "25 November 2026",
+    "issue": "fx",
+    "source": "ABC News; CommBank/AAP"
    },
    {
-    "label": "Expected Q3 GDP growth",
-    "value": "About 0.4% (due next week)",
-    "asAt": "September quarter 2026",
-    "issue": "growth",
-    "source": "SMH"
+    "label": "Copper on the LME",
+    "value": "-5% to about US$11,900 a tonne",
+    "asAt": "25 November 2026",
+    "issue": "trade",
+    "source": "CommBank/AAP"
+   },
+   {
+    "label": "ASX 200",
+    "value": "-0.4% to 8,692",
+    "asAt": "25 November 2026",
+    "issue": "global",
+    "source": "CommBank/AAP"
+   },
+   {
+    "label": "10-year bond yield: Australia / US",
+    "value": "4.84% / 4.90%",
+    "asAt": "25 November 2026",
+    "issue": "rates",
+    "source": "ABC News"
+   },
+   {
+    "label": "First RBA cut priced",
+    "value": "August 2027",
+    "asAt": "25 November 2026",
+    "issue": "rates",
+    "source": "AFR"
    }
   ],
   "terms": [
    {
-    "term": "Productive capacity",
-    "def": "The maximum sustainable output of the economy (LRAS)."
+    "term": "Risk-off",
+    "def": "Investors sell riskier assets, often including the AUD."
    },
    {
-    "term": "Capacity constraints",
-    "def": "Shortages of labour or materials that push up prices when demand grows faster than supply."
+    "term": "Interest rate differential",
+    "def": "The gap between Australian and overseas rates, which drives capital flows."
+   },
+   {
+    "term": "Depreciation",
+    "def": "A fall in the value of the AUD under a floating exchange rate."
+   },
+   {
+    "term": "Imported inflation",
+    "def": "Higher domestic prices caused by more expensive imports."
    }
   ],
   "links": [
@@ -527,28 +1229,477 @@
     "https://www.abc.net.au/news/"
    ],
    [
-    "AFR: Domestic cost increases fuel surprise inflation jump (Grace Lagan)",
-    "https://www.afr.com/"
+    "ABC News: markets blog, 26 Nov 2026",
+    "https://www.abc.net.au/news/"
    ],
    [
-    "SMH: Stagflation fears grip Canberra; Chalmers cannot spin a silver lining out of this grim story (Shane Wright)",
-    "https://www.smh.com.au/"
+    "CommBank Newsroom (AAP): Aussie shares slip as hot inflation pushes back rate cut hopes, 25 Nov 2026",
+    "https://www.commbank.com.au/"
+   ],
+   [
+    "AFR: Hot inflation dashes market's hopes of an early RBA cut (Cécile Lefort), 25 Nov 2026",
+    "https://www.afr.com/"
    ]
   ],
   "file": {
-   "path": "files/2026-11/2026-11-25-record-home-building-ai-boom-capacity.pdf",
-   "label": "Topic 3 news summary",
+   "path": "files/2026-11/2026-11-27-aud-weakest-since-december-despite-hot-cpi.pdf",
+   "label": "Topic 2 news summary",
    "pages": 1
   },
-  "angle": "In the short run the investment boom shifts AD right against a near-fixed LRAS, so the main effect is a higher price level; over time finished homes, data centres and energy projects expand productive capacity (LRAS shifts right). Investment is both a demand-side and a supply-side force.",
+  "angle": "Lower commodity prices mean foreign buyers need fewer Australian dollars, and risk-off investors sell AUD assets, so demand shifts left and the AUD depreciates. A lower AUD makes exports more competitive but raises import prices including fuel, adding to imported inflation when the CPI is already 4.9%.",
   "questions": [
    {
-    "q": "Explain how the AI and data-centre investment boom can add to inflation in the short run but raise economic growth in the long run.",
-    "marks": 5
+    "q": "Explain two reasons the AUD fell this week despite high Australian inflation.",
+    "marks": 4
+   },
+   {
+    "q": "Using a diagram, explain the effect of a depreciation on Australia's inflation rate.",
+    "marks": 4
+   },
+   {
+    "q": "Explain two factors that contributed to the depreciation of the Australian dollar in November 2026.",
+    "marks": 4
+   },
+   {
+    "q": "Discuss the effects of a depreciation on Australia's external stability and inflation.",
+    "marks": 6
    }
   ],
-  "note": "Shane Wright (SMH): data centres need 'electricians and plumbers just as much as' new homes do. The SMH reports that strong construction may help Australia avoid a recession. UPDATE DUE: Q3 GDP (due 2 December). Related 17 November data centres and inflation card. Links to home pages where the digest gives titles only.",
-  "added": "2026-11-26"
+  "note": "Replaces the 25 November card on the 11-month low (CommBank/AAP, ABC, AFR): carried over in the merged figures and links. The two cards give slightly different details of the same day (CPI-day spike to about 66.6c versus 66.7c; copper -5% versus -4.8%): single-day market prices. The 'weakest since December' framing agrees with the 'lowest in 11 months'.",
+  "added": "2026-11-27"
+ },
+ {
+  "id": "2026-11-27-iron-ore-below-us90-china-buying-bloc",
+  "title": "Iron ore stuck below US$90 as China's buying bloc flexes its muscle",
+  "date": "2026-11-27",
+  "type": "news",
+  "outlets": [
+   "Reuters (via Investing.com)",
+   "ABC News"
+  ],
+  "summary": "Shows China's buyer power in iron ore price talks and what falling prices mean for terms of trade, income and government revenue.",
+  "lede": "Australia's biggest export is trading near four-year lows. China's state-run buyer is using its market power in annual supply talks with BHP, Rio Tinto and Fortescue, which threatens Australian export income and tax revenue.",
+  "about": {
+   "h09": [
+    "2B.4",
+    "2A.1",
+    "2D.4",
+    "2C.6"
+   ],
+   "y12": [
+    "Y1a.7",
+    "Y3e.1",
+    "Y3c.6"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "3D.1"
+   ],
+   "y12": [
+    "Y3a.15",
+    "Y3c.4"
+   ],
+   "y11": []
+  },
+  "issues": [
+   "trade",
+   "fx",
+   "budget"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Iron ore",
+    "value": "US$88.30 a tonne on Thursday 26 November (-0.5%); SGX benchmark below US$90 for the first time in four years",
+    "asAt": "26 November 2026",
+    "issue": "trade",
+    "source": "Reuters; ABC News"
+   },
+   {
+    "label": "Australian iron ore exports",
+    "value": "About A$107 billion in 2026-27 (estimate)",
+    "asAt": "2026-27",
+    "issue": "trade",
+    "source": "ABC News"
+   },
+   {
+    "label": "Goldman Sachs cut to miners' earnings forecasts",
+    "value": "Up to US$9 billion over a decade",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "Goldman Sachs, via Reuters"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Market power",
+    "def": "The ability of a buyer or seller to influence price."
+   },
+   {
+    "term": "Commodity dependence",
+    "def": "Reliance on a few raw-material exports for income."
+   }
+  ],
+  "links": [
+   [
+    "Reuters via Investing.com: BHP, Rio meet China leaders",
+    "https://www.investing.com/"
+   ],
+   [
+    "ABC News: markets blog, 26 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-27-iron-ore-below-us90-china-buying-bloc.pdf",
+   "label": "Topic 2 news summary",
+   "pages": 1
+  },
+  "angle": "Weaker Chinese demand shifts the iron ore demand curve left, lowering price and quantity. Lower iron ore prices cut the terms of trade, export income, company tax and royalty revenue and put downward pressure on the AUD. Assess the risks of dependence on China as an export market.",
+  "questions": [
+   {
+    "q": "Explain how a fall in iron ore prices affects Australia's terms of trade and current account balance.",
+    "marks": 4
+   },
+   {
+    "q": "Assess the risks of Australia's dependence on China as an export market.",
+    "marks": 6
+   }
+  ],
+  "note": "China Mineral Resources Group (CMRG), the state's central iron ore buyer, has banned steelmakers from buying certain products from BHP, Rio and Fortescue during supply talks (reported second-hand by Reuters); Resources Minister Madeleine King warned price manipulation would breach international rules. BHP and Rio executives joined a CEO roundtable with Premier Li Qiang in Beijing. Related: 18 November CMRG haggling analysis and the 23 November iron ore card (kept; iron ore prices there are US$88.50 and US$90.6 on other dates). Link 1 goes to the Investing.com home page because the digest gives the title only.",
+  "added": "2026-11-27"
+ },
+ {
+  "id": "2026-11-27-oil-climbs-again-hormuz-disruption-drags-on",
+  "title": "Oil climbs again as Strait of Hormuz disruption drags on",
+  "date": "2026-11-27",
+  "type": "news",
+  "outlets": [
+   "ABC News",
+   "ABS",
+   "CommBank"
+  ],
+  "summary": "Shows an oil supply shock transmitted to Australian petrol prices and inflation, with the price-inelastic demand diagram.",
+  "lede": "Brent crude jumped 3.7% on Thursday as shipping through the Strait of Hormuz stayed disrupted. A supply shock in the Middle East is now showing up directly in Australian petrol prices and inflation.",
+  "about": {
+   "h09": [
+    "3C.3",
+    "1A.1",
+    "1A.8"
+   ],
+   "y12": [
+    "Y1c.4",
+    "Y1c.5",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P2c.4",
+    "P2d.1",
+    "P2d.2"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2B.4",
+    "3F.4"
+   ],
+   "y12": [
+    "Y1c.8",
+    "Y1a.10"
+   ],
+   "y11": [
+    "P1e.6"
+   ]
+  },
+  "issues": [
+   "inflation",
+   "global"
+  ],
+  "levers": [],
+  "diagrams": [
+   "ds",
+   "adas",
+   "flow",
+   "chart"
+  ],
+  "figures": [
+   {
+    "label": "Brent crude on Thursday 26 November",
+    "value": "US$94.76 a barrel (+3.7%), after slipping 1.4% to US$90.10 the day before",
+    "asAt": "26 November 2026",
+    "issue": "inflation",
+    "source": "ABC News"
+   },
+   {
+    "label": "Australian automotive fuel prices",
+    "value": "+6.3% in October and +32.5% on a year ago",
+    "asAt": "October 2026",
+    "issue": "inflation",
+    "source": "ABS"
+   },
+   {
+    "label": "Fuel's contribution to the rise in annual inflation to 4.9%",
+    "value": "About 0.3 of the 0.6 percentage point rise",
+    "asAt": "October 2026",
+    "issue": "inflation",
+    "source": "Treasurer, via ABC News"
+   },
+   {
+    "label": "Brent crude",
+    "value": "US$93.14 settle on Tuesday; about US$91.59 early Thursday (-1.7% overnight)",
+    "asAt": "19 November 2026",
+    "issue": "inflation",
+    "source": "Saxo Markets; ABC News"
+   },
+   {
+    "label": "Goldman Sachs 2027 outlook",
+    "value": "Possible surplus of about 2 million barrels a day; Brent averaging US$88",
+    "asAt": "2027 forecast",
+    "issue": "inflation",
+    "source": "Goldman Sachs, via digest"
+   },
+   {
+    "label": "US petrol price",
+    "value": "Eight-month low of US$3.78 a gallon",
+    "asAt": "November 2026",
+    "issue": "inflation",
+    "source": "digest"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Supply shock",
+    "def": "A sudden event that cuts (or raises) supply and shifts the supply curve."
+   },
+   {
+    "term": "Price-inelastic demand",
+    "def": "Quantity demanded changes little when the price changes."
+   }
+  ],
+  "links": [
+   [
+    "ABC News: markets blog, 26 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "ABS: Consumer Price Index, October 2026",
+    "https://www.abs.gov.au/"
+   ],
+   [
+    "CommBank: RBA analysis",
+    "https://www.commbank.com.au/"
+   ],
+   [
+    "Saxo: Asia Market Quick Take, 18 Nov 2026",
+    "https://www.home.saxo/"
+   ],
+   [
+    "Newsquawk: Bullock on inflation risks, 17 Nov 2026",
+    "https://newsquawk.com/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-27-oil-climbs-again-hormuz-disruption-drags-on.pdf",
+   "label": "Topic 1 news summary",
+   "pages": 1
+  },
+  "angle": "In the short run demand for oil is price-inelastic, so a supply cut (S1 to S2) lowers quantity only slightly but lifts the price sharply. On an AD/AS diagram the same shock shifts SRAS left, raising prices and reducing output: stagflation.",
+  "questions": [
+   {
+    "q": "With the aid of a diagram, explain why oil prices rise sharply when supply is disrupted.",
+    "marks": 4
+   },
+   {
+    "q": "Explain how a global oil price shock affects Australia's inflation and economic growth.",
+    "marks": 4
+   },
+   {
+    "q": "Using an AD/AS diagram, explain how higher world oil prices affect inflation and economic growth in Australia.",
+    "marks": 6
+   }
+  ],
+  "note": "Replaces the 19 November oil card, whose figures and dot points are carried over (Brent about US$91-93; Goldman Sachs 2027 surplus forecast of about 2 million barrels a day with Brent averaging US$88 is a forecast). Brent moves daily: US$88.97 on 24 November (lowest close since 31 August), US$90.10 on 25 November and US$94.76 on 26 November. The 24 November Russian oil flows card is kept. CommBank economists list Middle East-linked fuel and commodity prices among the RBA's main inflation concerns.",
+  "added": "2026-11-27"
+ },
+ {
+  "id": "2026-11-27-us-excess-capacity-tariffs-14-economies",
+  "title": "US targets 14 economies with new \"excess capacity\" tariffs",
+  "date": "2026-11-27",
+  "type": "news",
+  "outlets": [
+   "Al Jazeera",
+   "Reuters",
+   "ABC News"
+  ],
+  "summary": "Gives a live case of protectionism under Section 301 and shows how Australia can be affected through China and Asia even though it is not targeted.",
+  "lede": "Washington has proposed a fresh round of Section 301 tariffs on 14 economies it says produce far more manufactured goods than their own markets can absorb. China faces the steepest rate. Australia was not on the list.",
+  "about": {
+   "h09": [
+    "1C.2",
+    "1C.1",
+    "2D.4",
+    "1B.2"
+   ],
+   "y12": [
+    "Y3a.6",
+    "Y3a.7",
+    "Y3a.8",
+    "Y3a.11",
+    "Y3a.14"
+   ],
+   "y11": [
+    "P6a.1"
+   ]
+  },
+  "also": {
+   "h09": [
+    "2A.1"
+   ],
+   "y12": [
+    "Y3a.15",
+    "Y3e.3"
+   ],
+   "y11": [
+    "P6a.2"
+   ]
+  },
+  "issues": [
+   "trade",
+   "global"
+  ],
+  "levers": [
+   "trade"
+  ],
+  "diagrams": [
+   "ds",
+   "flow"
+  ],
+  "figures": [
+   {
+    "label": "Proposed tariff on China",
+    "value": "An extra 20% on top of about 25% from Trump's first term",
+    "asAt": "25 November 2026",
+    "issue": "trade",
+    "source": "Al Jazeera / Reuters"
+   },
+   {
+    "label": "Rate caps under existing deals",
+    "value": "15% for the EU, Japan and Korea; 19% for Malaysia",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "Al Jazeera / Reuters"
+   },
+   {
+    "label": "China's 2026 trade surplus",
+    "value": "On track for a record, above US$1 trillion",
+    "asAt": "2026",
+    "issue": "trade",
+    "source": "Al Jazeera / Reuters"
+   },
+   {
+    "label": "Nasdaq on the day",
+    "value": "Ended 0.6% lower after falling more than 4% early in the session",
+    "asAt": "25 November 2026",
+    "issue": "global",
+    "source": "Reuters"
+   },
+   {
+    "label": "Economies named in the proposed tariffs",
+    "value": "14: China, EU, India, Japan, South Korea, Indonesia, Bangladesh, Cambodia, Malaysia, Singapore, Switzerland, Taiwan, Thailand, Vietnam (Mexico and Norway investigated but left out)",
+    "asAt": "25 November 2026",
+    "issue": "trade",
+    "source": "ABC News (US) / Al Jazeera"
+   },
+   {
+    "label": "Proposed rate on China and Vietnam",
+    "value": "20% (China on top of about 25% in duties from Trump's first term)",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "Al Jazeera"
+   },
+   {
+    "label": "Reported rate caps in earlier trade deals",
+    "value": "15% for the EU, Japan and Korea; 19% for Malaysia",
+    "asAt": "November 2026",
+    "issue": "trade",
+    "source": "Al Jazeera"
+   },
+   {
+    "label": "US share market reaction",
+    "value": "Nasdaq -3.9%, S&P 500 -2.8%",
+    "asAt": "25 November 2026",
+    "issue": "global",
+    "source": "Al Jazeera"
+   }
+  ],
+  "terms": [
+   {
+    "term": "Section 301",
+    "def": "US trade law letting the President act against unfair foreign trade practices."
+   },
+   {
+    "term": "Trade diversion",
+    "def": "Trade shifting to untaxed suppliers when tariffs hit others."
+   },
+   {
+    "term": "Excess capacity",
+    "def": "More production than domestic demand can absorb, often supported by subsidies and then exported cheaply."
+   }
+  ],
+  "links": [
+   [
+    "Al Jazeera: Which countries are affected?, 25 Nov 2026",
+    "https://www.aljazeera.com/"
+   ],
+   [
+    "Al Jazeera/Reuters: World reacts, 25 Nov 2026",
+    "https://www.aljazeera.com/"
+   ],
+   [
+    "ABC News: markets blog, 26 Nov 2026",
+    "https://www.abc.net.au/news/"
+   ],
+   [
+    "ABC News (US): Trump admin proposes new tariffs on China, EU and 12 other trading partners, 25 Nov 2026",
+    "https://abcnews.go.com/"
+   ]
+  ],
+  "file": {
+   "path": "files/2026-11/2026-11-27-us-excess-capacity-tariffs-14-economies.pdf",
+   "label": "Topic 1 news summary",
+   "pages": 1
+  },
+  "angle": "Apply the tariff diagram (price rises to Pw+t, imports shrink, revenue and deadweight loss). Tariffs on China and ASEAN can divert their surplus goods to other markets including Australia (lower import prices but competition for local manufacturers), and slower Asian growth means weaker demand for Australian resources and a lower terms of trade.",
+  "questions": [
+   {
+    "q": "Using a tariff diagram, explain how the proposed US tariffs affect US consumers, producers and government.",
+    "marks": 5
+   },
+   {
+    "q": "Discuss how Australia could be affected even though it is not targeted.",
+    "marks": 4
+   },
+   {
+    "q": "Using a tariff diagram, explain the effects of a US tariff on US consumers, US producers and the US government.",
+    "marks": 6
+   },
+   {
+    "q": "Explain how US tariffs on China could indirectly affect the Australian economy.",
+    "marks": 4
+   }
+  ],
+  "note": "PROPOSED, not in force; China called overcapacity a 'false issue' and the EU rejected the premise. Replaces the 25 November card on the same announcement. NOTE a discrepancy: the 25 November digest reported US shares falling sharply (Nasdaq -3.9%, S&P 500 -2.8%), while this digest says the Nasdaq ended 0.6% lower after an early fall of more than 4%; check the sources. This digest also says Australia 'still faces the separate 12.5% tariff the US imposed in July': that figure has been reported elsewhere as the Philippines' rate (July tariffs of 10-12.5% on 60 economies), so check before quoting. UPDATE DUE: final rates and start date; G20 meetings in mid-December.",
+  "added": "2026-11-27"
  },
  {
   "id": "2026-11-25-stagflation-fears-shoppers-retreat",
@@ -920,114 +2071,6 @@
   "added": "2026-11-26"
  },
  {
-  "id": "2026-11-25-coalition-backs-labor-20-per-cent-gas-reservation",
-  "title": "Coalition to back Labor's 20% gas reservation",
-  "date": "2026-11-25",
-  "type": "news",
-  "outlets": [
-   "AFR"
-  ],
-  "summary": "Shows how a contested market intervention was settled by political compromise, with the costs and benefits of reserving gas.",
-  "lede": "Labor and the Coalition are set to pass laws forcing gas producers to set aside up to 20% of their supply for domestic users, after agreeing minor technical changes. The scheme is due to start in January 2028.",
-  "about": {
-   "h09": [
-    "4E.1",
-    "4E.2"
-   ],
-   "y12": [
-    "Y2d.1",
-    "Y2d.4",
-    "Y2d.5"
-   ],
-   "y11": [
-    "P2i.2",
-    "P2i.3",
-    "P2i.4"
-   ]
-  },
-  "also": {
-   "h09": [
-    "4H.3",
-    "2A.1"
-   ],
-   "y12": [
-    "Y2d.6"
-   ],
-   "y11": [
-    "P2d.1"
-   ]
-  },
-  "issues": [
-   "investment",
-   "inflation",
-   "trade"
-  ],
-  "levers": [
-   "micro"
-  ],
-  "diagrams": [
-   "ds",
-   "compare"
-  ],
-  "figures": [
-   {
-    "label": "Share of supply to be reserved for domestic users",
-    "value": "Up to 20%, from January 2028",
-    "asAt": "November 2026",
-    "issue": "investment",
-    "source": "AFR"
-   },
-   {
-    "label": "Disputed \"oversupply\" requirement",
-    "value": "10%",
-    "asAt": "November 2026",
-    "issue": "investment",
-    "source": "AFR"
-   },
-   {
-    "label": "Expected passage",
-    "value": "Thursday 26 November, before parliament rises for summer",
-    "asAt": "26 November 2026",
-    "issue": "investment",
-    "source": "AFR"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Domestic gas reservation",
-    "def": "Requiring a share of gas production to be sold locally rather than exported."
-   },
-   {
-    "term": "Sovereign risk",
-    "def": "The risk that a government changes rules in ways that reduce the value of investments."
-   },
-   {
-    "term": "Marginal cost",
-    "def": "The cost of producing one more unit."
-   }
-  ],
-  "links": [
-   [
-    "AFR: Coalition to back Labor's 20pc gas reservation (Ryan Cropp and Angela Macdonald-Smith), 25 Nov 2026",
-    "https://www.afr.com/"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-25-coalition-backs-labor-20-per-cent-gas-reservation.pdf",
-   "label": "Topic 4 news summary",
-   "pages": 1
-  },
-  "angle": "Reservation shifts domestic supply right: price falls and quantity used rises, helping manufacturers and households. Costs: lower export volumes and revenue (terms of trade, tax receipts) and possibly less future investment. A trade-off between domestic energy costs and export income, linked to Topic 2.",
-  "questions": [
-   {
-    "q": "Discuss the economic costs and benefits of a domestic gas reservation policy for Australia.",
-    "marks": 6
-   }
-  ],
-  "note": "UPDATE DUE: confirm that the Senate passed the laws on 26 November. The sticking point was a 'must sell' rule and a requirement to oversupply the market by 10%, which the Coalition said would push prices so low it would destroy future investment (producers say they would be forced to sell below marginal cost); Resources Minister Madeleine King says the must-sell rules are fundamental. The Coalition won a stronger carve-out for WA producers and limits on the minister's powers; Andrew Hastie says the goal is to keep advanced manufacturing and heavy industry in Australia; Amplitude Energy warns of sovereign risk; former ACCC chair Rod Sims says it is not tenable to export so much gas while local industry cannot secure supply. Replaces the 24 November Senate showdown card (from 2028; Labor-chaired Senate committee recommended the bill; Gladstone LNG netback A$35.48/GJ on 10 November against A$15.40 a year earlier; east-coast December gas about A$12.20/GJ; Greens and David Pocock proposed a 25% gas export tax, rejected by the government; WA already has a 15% reservation; industry warned the 110% east-coast oversupply target could distort the market). The 18 November WA carve-out card is kept. Link to the AFR home page because the digest gives the title only.",
-  "added": "2026-11-26"
- },
- {
   "id": "2026-11-25-google-ends-news-deals-news-bargaining-incentive",
   "title": "Google walks away from news deals under the new digital levy",
   "date": "2026-11-25",
@@ -1137,138 +2180,6 @@
    }
   ],
   "note": "Single-source report (AFR). The ABC says the 60 regional journalist jobs it funded will be kept. Google says the NBI was 'not providing incentives to reach commercial deals'; its contracts with Nine and Seven West Media have lapsed, and the charge has angered US tech lobby groups. Background: the News Media Bargaining Code put about $250 million into local news over three years from 2021. Related 5 November card on US tech giants pushing for trade retaliation over the levy. Link to the AFR home page because the digest gives the title only.",
-  "added": "2026-11-26"
- },
- {
-  "id": "2026-11-25-rba-december-dilemma-hold-hike-or-cut",
-  "title": "The RBA's dilemma: hold, hike or cut?",
-  "date": "2026-11-25",
-  "type": "news",
-  "outlets": [
-   "ABC News",
-   "The Conversation",
-   "AFR",
-   "SBS"
-  ],
-  "summary": "Sets out the case for holding or hiking after the hot CPI and shows why monetary policy is limited against a supply shock.",
-  "lede": "The cash rate is 4.85%, its highest level in 18 years, after five rate rises in 2026. Hot inflation and a weakening labour market now pull the Reserve Bank in opposite directions before its 8 December meeting.",
-  "about": {
-   "h09": [
-    "4D.1",
-    "4D.2",
-    "4D.3"
-   ],
-   "y12": [
-    "Y2c.1",
-    "Y2c.2",
-    "Y2c.4",
-    "Y2c.5"
-   ],
-   "y11": [
-    "P4c.3"
-   ]
-  },
-  "also": {
-   "h09": [
-    "3C.1",
-    "3C.3",
-    "4H.1"
-   ],
-   "y12": [
-    "Y2c.3",
-    "Y1c.4"
-   ],
-   "y11": [
-    "P4c.4"
-   ]
-  },
-  "issues": [
-   "rates",
-   "inflation",
-   "employment"
-  ],
-  "levers": [
-   "monetary"
-  ],
-  "diagrams": [
-   "flow",
-   "compare"
-  ],
-  "figures": [
-   {
-    "label": "Cash rate",
-    "value": "4.85% after five rises in 2026 (+1.25 percentage points from 3.60%); November vote 6-3",
-    "asAt": "November 2026",
-    "issue": "rates",
-    "source": "RBA"
-   },
-   {
-    "label": "Market pricing for December",
-    "value": "About 97% chance of no change",
-    "asAt": "25 November 2026",
-    "issue": "rates",
-    "source": "ABC News"
-   },
-   {
-    "label": "First cut priced",
-    "value": "Pushed back from June to August 2027; chance of a March cut fell from 33% to 23%",
-    "asAt": "25 November 2026",
-    "issue": "rates",
-    "source": "AFR"
-   },
-   {
-    "label": "Oil",
-    "value": "Down from a US$125 peak to about US$91; petrol down about 20%",
-    "asAt": "November 2026",
-    "issue": "inflation",
-    "source": "digest"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Cash rate",
-    "def": "The RBA's target interest rate on overnight loans between banks."
-   },
-   {
-    "term": "Time lags",
-    "def": "The 12-18 months it takes for monetary policy to have its full effect."
-   }
-  ],
-  "links": [
-   [
-    "ABC News: markets blog, 25 Nov 2026",
-    "https://www.abc.net.au/news/"
-   ],
-   [
-    "The Conversation: Inflation jumps to 4.9% as fuel prices surge, but the RBA should hold rates steady (Stella Huangfu)",
-    "https://theconversation.com/au"
-   ],
-   [
-    "AFR: Rate hike calls grow even as inflation tipped for three-year high (Lea Jurkovic), 24 Nov 2026",
-    "https://www.afr.com/"
-   ],
-   [
-    "AFR: Hot inflation dashes market's hopes of an early RBA cut (Cécile Lefort), 25 Nov 2026",
-    "https://www.afr.com/"
-   ],
-   [
-    "SBS News, Nov 2026",
-    "https://www.sbs.com.au/news/"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-25-rba-december-dilemma-hold-hike-or-cut.pdf",
-   "label": "Topic 4 news summary",
-   "pages": 1
-  },
-  "angle": "Case for hiking: trimmed mean (3.8%) above the RBA's own 3.6% forecast, a weaker AUD adds imported inflation, and some board members may lean hawkish. Case for holding: unemployment (4.9%) already at the RBA's late-2027 forecast, oil and petrol falling, five rises still working through with 12-18 month lags. Much of the inflation is a supply shock, so higher rates cut it only by cutting demand and jobs: a key limitation of monetary policy.",
-  "questions": [
-   {
-    "q": "Evaluate the effectiveness of monetary policy in responding to inflation caused by a global oil price shock.",
-    "marks": 6
-   }
-  ],
-  "note": "UPDATE DUE: RBA decision on 7-8 December. Market pricing and economist views, not decisions. Governor Bullock has said inflation must be moving sustainably back to target before cuts are considered; former RBA official Jonathan Kearns says no cut is likely in the first half of 2027 without a 'major catastrophe'; Kapstream and UBS warn markets are underpricing a hike; Schroders warns of a possible 'policy mistake' if rates stay too high. Before the CPI, ANZ had brought its first-cut forecast forward to June 2027. Replaces the 24 November 'RBA tipped to hold' card (new housing lending -15.5% and investor lending -32.3% in the September quarter; CommBank's Belinda Allen said December would not be 'live'; Pitcher Partners expected a hold until February 2027; the RBA expected inflation above 3% until late 2027). The 17 November minutes and 19 November jobs shock cards are kept. Links to home pages where the digest gives titles only.",
   "added": "2026-11-26"
  },
  {
@@ -1402,120 +2313,8 @@
     "marks": 3
    }
   ],
-  "note": "The Coalition promises to contest the laws at the next election; critics warn families face irreversible decisions and Grant Thornton warns some small businesses may fail. Testamentary trusts can still distribute to minors at adult rates; charities and not-for-profits stay excluded (an estimated $1.3 billion over five years); medical, agricultural, charter and hobby flying are exempt from the jet fee. Compliance cost estimates differ widely between CPA Australia and Treasury. Links to home pages where the digest gives titles only.",
+  "note": "UPDATE (27 November digest): Parliament has now PASSED the 30% minimum tax on discretionary trust distributions after the Labor-Greens deal. The Coalition promises to contest the laws at the next election; critics warn families face irreversible decisions and Grant Thornton warns some small businesses may fail. Testamentary trusts can still distribute to minors at adult rates; charities and not-for-profits stay excluded (an estimated $1.3 billion over five years); medical, agricultural, charter and hobby flying are exempt from the jet fee. Compliance cost estimates differ widely between CPA Australia and Treasury. Links to home pages where the digest gives titles only.",
   "added": "2026-11-26"
- },
- {
-  "id": "2026-11-24-myefo-substantial-savings-budget-weakens",
-  "title": "MYEFO to bring \"substantial\" savings as the budget weakens",
-  "date": "2026-11-24",
-  "type": "news",
-  "outlets": [
-   "ABC News",
-   "CathNews",
-   "Fixed Income News"
-  ],
-  "summary": "Shows what is moving the budget (lower receipts, rising welfare costs) and how savings aim to avoid adding to inflation.",
-  "lede": "The government's mid-year budget update (MYEFO) will show lower tax receipts and bigger deficits in later years. The Treasurer has promised savings that more than cover any new spending, so as not to add to inflation, though final dollar figures have not been released.",
-  "about": {
-   "h09": [
-    "4C.1",
-    "4C.2",
-    "4B.1"
-   ],
-   "y12": [
-    "Y2b.2",
-    "Y2b.3",
-    "Y2b.14"
-   ],
-   "y11": [
-    "P5a.4"
-   ]
-  },
-  "also": {
-   "h09": [
-    "4D.3"
-   ],
-   "y12": [
-    "Y2b.13"
-   ],
-   "y11": [
-    "P5c.3"
-   ]
-  },
-  "issues": [
-   "budget",
-   "inflation"
-  ],
-  "levers": [
-   "fiscal"
-  ],
-  "diagrams": [
-   "adas",
-   "flow",
-   "compare"
-  ],
-  "figures": [
-   {
-    "label": "Unemployment peak driving welfare costs",
-    "value": "Above 5%",
-    "asAt": "November 2026",
-    "issue": "budget",
-    "source": "ABC News"
-   },
-   {
-    "label": "PBS script price",
-    "value": "$25, frozen to the end of the decade",
-    "asAt": "November 2026",
-    "issue": "budget",
-    "source": "ABC News"
-   },
-   {
-    "label": "MYEFO timing",
-    "value": "December, after the RBA's 8 December decision",
-    "asAt": "November 2026",
-    "issue": "budget",
-    "source": "ABC News"
-   }
-  ],
-  "terms": [
-   {
-    "term": "MYEFO",
-    "def": "The Mid-Year Economic and Fiscal Outlook, the update to the May Budget."
-   },
-   {
-    "term": "Automatic stabilisers",
-    "def": "Tax receipts fall and welfare spending rises automatically as the economy slows."
-   }
-  ],
-  "links": [
-   [
-    "ABC News: Federal politics live, 24 Nov 2026",
-    "https://www.abc.net.au/news/"
-   ],
-   [
-    "CathNews (ABC): Chalmers economic statement",
-    "https://cathnews.com/"
-   ],
-   [
-    "Fixed Income News: Chalmers flags jobless rate above 5%",
-    "https://www.fixedincomenews.com.au/"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-24-myefo-substantial-savings-budget-weakens.pdf",
-   "label": "Topic 4 news summary",
-   "pages": 1
-  },
-  "angle": "A contractionary (or less expansionary) fiscal stance supports the RBA by not adding to demand, but cutting too hard in a slowdown risks deepening it. Explain cyclical versus structural components: a slowing economy cuts receipts and lifts welfare spending, widening the cyclical deficit.",
-  "questions": [
-   {
-    "q": "Distinguish between the cyclical and structural components of the budget, and explain why the government is seeking savings in MYEFO.",
-    "marks": 5
-   }
-  ],
-  "note": "UPDATE DUE: the MYEFO itself. EV and home-battery subsidies, whose costs have blown out, could be targeted; Labor's Andrew Charlton did not rule out means-testing. Chalmers argued that no realistic level of savings will make inflation go away but too much new spending can make it worse. Shadow Treasurer Tim Wilson proposed a 'speed limit' on government spending. Replaces the 23 November card on Chalmers' statement to parliament (growth from 2.3% last financial year to well below 2% for the next two years; unemployment to peak above 5%; inflation not back in the 2-3% band until late 2027; PBS co-payment frozen at $25 until 2030, $242 million over three years; $3 billion over four years from cutting the private health insurance rebate for people aged 65+; positives: business investment growing faster than forecast, wages above 3%, no recession forecast) and, through it, the 22 November and 18 November MYEFO cards (JWS survey: 83% concerned about the deficit; deficit $31.5 billion in 2026-27; government spending 26.8% of GDP against 31.3% in the pandemic era). The forecast numbers are also on the 24 November Chalmers jobless warning card. Links are to the outlets' home pages because the digest gives titles only.",
-  "added": "2026-11-25"
  },
  {
   "id": "2026-11-24-business-activity-fastest-fall-five-years-pmi",
@@ -4038,120 +4837,6 @@
    }
   ],
   "note": "Replaces the earlier 19 November card 'Unemployment rises to 4.9%, the highest since 2021' (same ABS release; it also gave unemployed +14.5% on a year ago, employment 14.74 million, employment-to-population ratio 63.3%, September youth rate 11.1% against a post-COVID average of 9.2%, and the next release on 17 December 2026). The ABS trend rate (4.8%) is the best guide to underlying conditions.",
-  "added": "2026-11-20"
- },
- {
-  "id": "2026-11-19-oil-holds-above-us90-middle-east-surplus",
-  "title": "Oil holds above US$90 as Middle East tension offsets surplus fears",
-  "date": "2026-11-19",
-  "type": "news",
-  "outlets": [
-   "Saxo Markets",
-   "ABC News",
-   "Newsquawk"
-  ],
-  "summary": "Shows how a supply shock raises oil prices when demand is price-inelastic, and how oil drives cost-push inflation.",
-  "lede": "Oil prices stayed above US$90 a barrel this week as Middle East flare-ups held prices up, even though some analysts expect a supply glut in 2027. Oil has been a major driver of inflation around the world in 2026, including in Australia.",
-  "about": {
-   "h09": [
-    "3C.3",
-    "1A.1",
-    "1A.8"
-   ],
-   "y12": [
-    "Y1c.4",
-    "Y1c.5",
-    "Y3e.3"
-   ],
-   "y11": [
-    "P2c.4",
-    "P2d.1",
-    "P2d.2"
-   ]
-  },
-  "also": {
-   "h09": [
-    "2B.4",
-    "3F.4"
-   ],
-   "y12": [
-    "Y1a.10",
-    "Y1c.8"
-   ],
-   "y11": [
-    "P1e.6"
-   ]
-  },
-  "issues": [
-   "inflation",
-   "global"
-  ],
-  "levers": [],
-  "diagrams": [
-   "ds",
-   "adas",
-   "chart"
-  ],
-  "figures": [
-   {
-    "label": "Brent crude",
-    "value": "US$93.14 settle on Tuesday; about US$91.59 early Thursday (-1.7% overnight)",
-    "asAt": "19 November 2026",
-    "issue": "inflation",
-    "source": "Saxo Markets; ABC News"
-   },
-   {
-    "label": "Goldman Sachs 2027 outlook",
-    "value": "Possible surplus of about 2 million barrels a day; Brent averaging US$88",
-    "asAt": "2027 forecast",
-    "issue": "inflation",
-    "source": "Goldman Sachs, via digest"
-   },
-   {
-    "label": "US petrol price",
-    "value": "Eight-month low of US$3.78 a gallon",
-    "asAt": "November 2026",
-    "issue": "inflation",
-    "source": "digest"
-   }
-  ],
-  "terms": [
-   {
-    "term": "Supply shock",
-    "def": "A sudden change in supply that shifts the supply curve, such as a war disrupting oil production."
-   },
-   {
-    "term": "Price-inelastic demand",
-    "def": "Quantity demanded changes little when price changes."
-   }
-  ],
-  "links": [
-   [
-    "Saxo: Asia Market Quick Take, 18 Nov 2026",
-    "https://www.home.saxo/"
-   ],
-   [
-    "ABC News: ASX and business live blog, 19 Nov 2026",
-    "https://www.abc.net.au/news/"
-   ],
-   [
-    "Newsquawk: Bullock on inflation risks, 17 Nov 2026",
-    "https://newsquawk.com/"
-   ]
-  ],
-  "file": {
-   "path": "files/2026-11/2026-11-19-oil-holds-above-us90-middle-east-surplus.pdf",
-   "label": "Topic 1 news summary",
-   "pages": 1
-  },
-  "angle": "In the short run demand for oil is price-inelastic, so when conflict threatens supply (S shifts left) quantity falls a little but price jumps. On an AD/AS diagram, an oil price rise shifts SRAS left, causing cost-push inflation and slower growth together (stagflation). RBA Governor Bullock flagged the risk that oil prices stay high.",
-  "questions": [
-   {
-    "q": "Using an AD/AS diagram, explain how higher world oil prices affect inflation and economic growth in Australia.",
-    "marks": 6
-   }
-  ],
-  "note": "Market prices and a 2027 forecast: the Goldman surplus is a forecast, not an outcome. Single-day figures move daily. Related: 10 November oil and the bowser card and 28 October Saudi refinery card. Links are to the outlets' home pages because the digest gives titles only.",
   "added": "2026-11-20"
  },
  {
