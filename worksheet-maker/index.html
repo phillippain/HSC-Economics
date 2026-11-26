@@ -109,9 +109,10 @@ p{margin:0}
 .stepper button{border:0;background:var(--card2);width:30px;height:32px;font-weight:800}
 .stepper output{min-width:30px;text-align:center;font-weight:800}
 .presets{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
-label.opt{display:flex;gap:8px;align-items:flex-start;padding:4px 0;font-size:.9rem}
-label.opt input{margin-top:4px}
-select,input[type=number],input[type=text],textarea{border:1px solid var(--rule2);border-radius:8px;padding:6px 8px;background:var(--card)}
+input[type=checkbox]{width:20px;height:20px;flex:none;margin:0;accent-color:var(--acc);cursor:pointer}
+label.opt{display:flex;gap:10px;align-items:flex-start;padding:6px 0;font-size:.9rem;cursor:pointer}
+label.opt input[type=checkbox]{margin-top:1px}
+select,input[type=number],input[type=text],input[type=password],textarea{border:1px solid var(--rule2);border-radius:8px;padding:6px 8px;background:var(--card)}
 .field{display:grid;gap:3px;margin:6px 0}
 .field>span{font-size:.82rem;font-weight:700;color:var(--mut)}
 .go{position:sticky;bottom:0;background:linear-gradient(transparent,var(--bg) 22%);padding:14px 0 4px;display:grid;gap:8px}
@@ -173,6 +174,9 @@ dialog::backdrop{background:rgba(8,12,28,.55)}
 textarea{width:100%;min-height:90px}
 .claude{border:1px solid #c79a1d;background:var(--warn)}
 .claude h3{font-size:1rem;margin-bottom:6px}
+.claude .who{margin-top:8px;font-size:.8rem;color:var(--mut)}
+.linkish{border:0;background:none;padding:0;color:var(--acc);font:inherit;font-weight:700;text-decoration:underline;cursor:pointer}
+ol.steps{margin:6px 0 10px 1.2em;display:grid;gap:4px}
 .spin{display:inline-block;width:14px;height:14px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:sp 1s linear infinite;vertical-align:-2px}
 @keyframes sp{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.spin{animation:none}}
@@ -308,15 +312,23 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
     </div>
     <div class="panel claude" id="claudebox" hidden>
       <h3>Write new questions with Claude</h3>
-      <p class="hint" style="margin-bottom:8px">Claude writes new questions for the dot points you chose, in the type you pick, with answers. Check them before you print: they are not from NESA and have not been reviewed.</p>
-      <div class="two-col">
-        <label class="field"><span>Type</span><select id="cl-fmt"></select></label>
-        <label class="field"><span>How many</span><select id="cl-n"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option><option>6</option><option>8</option><option>10</option></select></label>
-        <label class="field"><span>Level</span><select id="cl-lv"><option value="1">Foundation</option><option value="2" selected>HSC standard</option><option value="3">Extension (Band 6)</option></select></label>
-        <label class="field"><span>Reading level</span><select id="cl-read"><option value="std" selected>Year 12</option><option value="plain">Plain English (about Year 7)</option></select></label>
+      <div id="cl-setup" hidden>
+        <p class="hint">Claude can write new questions in the same style as the ones on your worksheet, for any dot point. On this website it uses a teacher’s own Anthropic API key, kept in this browser only.</p>
+        <div class="row" style="margin-top:6px"><button class="btn sm" id="cl-key">Set up Claude…</button></div>
       </div>
-      <label class="field"><span>Anything else (optional)</span><input type="text" id="cl-note" placeholder="e.g. use the 2026 cash rate rises; focus on the J-curve"></label>
-      <div class="row" style="margin-top:6px"><button class="btn" id="cl-go">Write them</button><button class="btn ghost sm" id="cl-stop" hidden>Stop</button><span class="hint" id="cl-msg" role="status"></span></div>
+      <div id="cl-form" hidden>
+        <p class="hint" style="margin-bottom:8px"><b>More like my worksheet</b> copies the style of the questions already on your worksheet for the dot point (or of past HSC questions on it, if there are none yet): the same types, marks and verbs, with new scenarios and data. Check Claude’s questions before you print: they are not from NESA and have not been reviewed.</p>
+        <div class="two-col">
+          <label class="field"><span>What to write</span><select id="cl-fmt"></select></label>
+          <label class="field"><span>How many</span><select id="cl-n"><option>1</option><option>2</option><option>3</option><option>4</option><option selected>5</option><option>6</option><option>8</option><option>10</option></select></label>
+          <label class="field"><span>Dot point</span><select id="cl-dp"></select></label>
+          <label class="field" id="cl-lv-f"><span>Level</span><select id="cl-lv"><option value="1">Foundation</option><option value="2" selected>HSC standard</option><option value="3">Extension (Band 6)</option></select></label>
+          <label class="field"><span>Reading level</span><select id="cl-read"><option value="std" selected>Year 12</option><option value="plain">Plain English (about Year 7)</option></select></label>
+        </div>
+        <label class="field"><span>Anything else (optional)</span><input type="text" id="cl-note" placeholder="e.g. use the 2026 cash rate rises; focus on the J-curve"></label>
+        <div class="row" style="margin-top:6px"><button class="btn" id="cl-go">Write them</button><button class="btn ghost sm" id="cl-stop" hidden>Stop</button><span class="hint" id="cl-msg" role="status"></span></div>
+        <p class="who" id="cl-who"></p>
+      </div>
     </div>
   </div>
   <div>
@@ -611,7 +623,7 @@ function defaultLayout(style) {
 const newSheet = () => ({ id: 'ws' + Date.now().toString(36), title: 'Practice worksheet', items: [], layout: defaultLayout('exam'), seed: Math.floor(Math.random() * 1e9), created: Date.now() });
 const S = { view: 'build', fw: 'h09', topic: 'T1', q: '', sel09: new Set(), sel25: new Set(), skills: new Set(),
   counts: { mc: 8, sa: 3 }, src: { hsc: true, bank: true, ev: true, auto: true }, from: 2009, to: 2026, lv: 0, whole: false, ws: newSheet() };
-let SAMPLE = null, DOWNLOADS = null;
+let SAMPLE = null, DOWNLOADS = null, CLAUDE = null, APIKEY = null;
 function persist() {
   store.set(KEY + ':cur', { fw: S.fw, topic: S.topic, sel09: [...S.sel09], sel25: [...S.sel25], skills: [...S.skills], counts: S.counts, src: S.src,
     from: S.from, to: S.to, lv: S.lv, whole: S.whole, ws: S.ws });
@@ -918,6 +930,7 @@ function renderFormats() {
   }).join('') + '</div>').join('');
   const nq = FMT.reduce((s, f) => s + (S.counts[f.id] || 0), 0);
   $('#sum-formats').textContent = nq ? `${nq} chosen` : '';
+  renderClaudeBox();
 }
 function renderSources() {
   const yrs = []; for (let y = 2002; y <= 2026; y++) yrs.push(y);
@@ -925,7 +938,7 @@ function renderSources() {
   $('#sources').innerHTML = `
     <label class="opt"><input type="checkbox" data-src="hsc" ${S.src.hsc ? 'checked' : ''}><span><b>Past HSC questions</b> from the Question Finder, from <select id="from" aria-label="From">${opt(0, S.from)}</select> to <select id="to" aria-label="To">${opt(0, S.to)}</select>, with NESA’s marking criteria for 2009 to 2025</span></label>
     <label class="opt" style="padding-left:24px"><input type="checkbox" id="whole" ${S.whole ? 'checked' : ''}><span>Keep HSC short-answer questions whole (add every part of a question, even parts on other dot points)</span></label>
-    <label class="opt"><input type="checkbox" data-src="bank" ${S.src.bank ? 'checked' : ''}><span><b>New practice questions</b> written for this site: HSC-style questions, diagrams, sorting, comparing and spot-the-error tasks${SAMPLE ? ', and any Claude writes for you' : ''}</span></label>
+    <label class="opt"><input type="checkbox" data-src="bank" ${S.src.bank ? 'checked' : ''}><span><b>New practice questions</b> written for this site: HSC-style questions, diagrams, sorting, comparing and spot-the-error tasks${CLAUDE ? ', and any Claude writes for you' : ''}</span></label>
     <label class="opt"><input type="checkbox" data-src="ev" ${S.src.ev ? 'checked' : ''}><span><b>This year’s news and data</b> from the Evidence Finder, with its questions</span></label>
     <label class="opt"><input type="checkbox" data-src="auto" ${S.src.auto ? 'checked' : ''}><span><b>Built from the class tools</b>: key terms (Glossary), calculations (Calculation Trainer), chains and true or false (Chain Builder), pathways (Topic Map)</span></label>
     <label class="field" style="max-width:280px"><span>Level of the new questions</span><select id="lv"><option value="0">Any level</option><option value="1" ${S.lv === 1 ? 'selected' : ''}>Foundation</option><option value="2" ${S.lv === 2 ? 'selected' : ''}>HSC standard</option><option value="3" ${S.lv === 3 ? 'selected' : ''}>Extension (Band 6)</option></select></label>`;
@@ -949,8 +962,8 @@ function renderList() {
       const acts = [`<button data-act="up" data-k="${x.e.k}" aria-label="Move up">↑</button>`, `<button data-act="down" data-k="${x.e.k}" aria-label="Move down">↓</button>`,
         `<button data-act="swap" data-k="${x.e.k}" title="Replace with another question like it">Swap</button>`,
         (it.src === 'hsc' ? `<button data-act="like" data-k="${x.e.k}" title="Add a new question of the same kind">Look-alike</button>` : ''),
-        (SAMPLE && (it.src === 'hsc' || it.src === 'bank' || it.src === 'ev') ? `<button class="c" data-act="clike" data-k="${x.e.k}" title="Claude writes a new question modelled on this one">Look-alike by Claude</button>` : ''),
-        (SAMPLE && ['mc', 'sa', 'er', 'stim', 'draw', 'sort', 'compare', 'error'].includes(it.f) ? `<button class="c" data-act="plain" data-k="${x.e.k}" title="Claude rewrites the wording in plain English">Simpler wording</button>` : ''),
+        (CLAUDE && (it.src === 'hsc' || it.src === 'bank' || it.src === 'ev') ? `<button class="c" data-act="clike" data-k="${x.e.k}" title="Claude writes a new question modelled on this one">Look-alike by Claude</button>` : ''),
+        (CLAUDE && ['mc', 'sa', 'er', 'stim', 'draw', 'sort', 'compare', 'error'].includes(it.f) ? `<button class="c" data-act="plain" data-k="${x.e.k}" title="Claude rewrites the wording in plain English">Simpler wording</button>` : ''),
         `<button data-act="edit" data-k="${x.e.k}">Edit</button>`, `<button data-act="del" data-k="${x.e.k}">Remove</button>`].join('');
       html += `<div class="q" style="--gc:var(${g.css})"><span class="no">${isFirst ? u.num : ''}</span><div class="meta"><span class="f">${esc(FBY[it.f].name)}</span><span>${esc(srcLabel(it))}</span><span>${esc(it.c.slice(0, 4).join(' '))}</span><span class="m">${marksOf(it)} ${marksOf(it) === 1 ? 'mark' : 'marks'}</span>${it.rev ? '<span class="rev">not yet reviewed</span>' : ''}${it.src === 'claude' ? '<span class="rev">check before printing</span>' : ''}${it.ed ? '<span>edited</span>' : ''}${it.part ? `<span>part ${esc(it.part)}</span>` : ''}</div><div class="txt">${preview(it)}</div><div class="acts">${acts}</div></div>`;
     }
@@ -1000,7 +1013,7 @@ function lookAlike(k) {
     if (same.length) add = { k: uid(), ref: same[Math.floor(rnd() * same.length)].id };
     else if (it.k && it.k.includes('diagram')) { const d = D.items.filter(x => x.f === 'draw' && x.c.some(c => it.c.includes(c))); if (d.length) add = { k: uid(), ref: d[Math.floor(rnd() * d.length)].id }; }
   }
-  if (!add) { toast(SAMPLE ? 'No ready-made look-alike for this one: try “Look-alike by Claude”.' : 'No ready-made look-alike for this question yet.'); return; }
+  if (!add) { toast(CLAUDE ? 'No ready-made look-alike for this one: try “Look-alike by Claude”.' : 'No ready-made look-alike for this question yet.'); return; }
   S.ws.items.splice(i + 1, 0, add); persist(); renderList(); toast('Added a look-alike after it.', () => { S.ws.items.splice(entryIndex(add.k), 1); persist(); renderList(); });
 }
 function removeEntry(k) {
@@ -1156,6 +1169,8 @@ function bind() {
     e.target.value = '';
   };
   $('#cl-go').onclick = claudeWrite;
+  $('#cl-fmt').onchange = () => { $('#cl-lv-f').hidden = $('#cl-fmt').value === 'like'; };
+  $('#claudebox').addEventListener('click', e => { if (e.target.closest('#cl-key, #cl-set')) keyDialog(); });
 }
 
 /* ================================================================ layout settings */
@@ -1770,7 +1785,7 @@ async function download(mode) {
 const CL_FMTS = [['mc', 'Multiple choice'], ['sa', 'Short answer'], ['stim', 'Data or source with questions'], ['er', 'Extended response'], ['draw', 'Draw a diagram'],
   ['tf', 'True or false'], ['chain', 'Cause and effect chain'], ['sort', 'Sort and classify'], ['compare', 'Compare'], ['error', 'Spot the error']];
 const SHAPES = {
-  mc: '{"f":"mc","c":["2C.2"],"m":1,"lv":2,"q":"the stem","o":["option A","option B","option C","option D"],"key":["B"],"e":{"why":"why B is right and the error behind each other option"}}  (add "table":{"cap":"Table 1","rows":[["Heading","Heading"],["cell","cell"]]} when the question needs data)',
+  mc: '{"f":"mc","c":["2C.2"],"m":1,"lv":2,"q":"the stem","o":["option A","option B","option C","option D"],"key":["B"],"e":{"why":"why B is right and the error behind each other option"}}  (add "table":{"cap":"Table 1","rows":[["Heading","Heading"],["cell","cell"]]} when the question needs data; when the options are pairs set out in columns, as in many HSC papers, also add "mat":{"head":["Column 1","Column 2"],"rows":[["A cell","A cell"],["B cell","B cell"],["C cell","C cell"],["D cell","D cell"]]} and make each of "o" the cells of that row joined by a space)',
   sa: '{"f":"sa","c":["3C.3"],"m":4,"lv":2,"q":"one question that starts with a NESA key verb","pts":["a marking point (1 mark)","..."],"ans":"a model answer"}  (or several parts: "lead":"stimulus sentence","table":{...},"parts":[{"label":"(a)","m":2,"q":"...","pts":["..."],"ans":"..."}])',
   stim: '{"f":"sa","c":["3B.1"],"lv":2,"lead":"what the data shows","table":{"cap":"Table 1: ...","rows":[["Year","..."],["1","..."]]},"parts":[{"label":"(a)","m":1,"q":"Calculate ...","pts":["..."],"ans":"..."},{"label":"(b)","m":3,"q":"Explain ...","pts":["..."],"ans":"..."}]}',
   er: '{"f":"er","c":["4D.3","3C.3"],"m":20,"lv":3,"q":"the essay question","pts":["what a Band 6 response includes"],"plan":["paragraph 1 idea","paragraph 2 idea","paragraph 3 idea"]}',
@@ -1791,18 +1806,20 @@ const RULES = `House rules (NSW HSC Economics):
 - Every question has an answer: marking points with marks, or a model answer.
 - Write for students, not teachers. No markdown, no HTML.`;
 const READING = { std: 'Write at the level of the HSC exam.', plain: 'Write in plain English for students reading at about Year 7: short sentences, everyday words, and a short meaning in brackets the first time a key term appears. Keep the economics exactly right.' };
-function selText() {
-  if (S.fw === 'h09') return [...S.sel09].slice(0, 30).map(p => `${p} ${DOT[p]}`).join('\n');
-  return [...S.sel25].map(s => `${s} ${SECN[s]}: ` + (D.syl.y12.flatMap(t => t.sections).find(x => x.id === s) || { points: [] }).points.map(p => p.t).join('; ')).join('\n');
+function selText(F) {
+  if (S.fw === 'h09') return (F || [...S.sel09]).slice(0, 30).map(p => `${p} ${DOT[p]}`).join('\n');
+  return (F || [...S.sel25]).map(s => `${s} ${SECN[s]}: ` + (D.syl.y12.flatMap(t => t.sections).find(x => x.id === s) || { points: [] }).points.map(p => p.t).join('; ')).join('\n');
 }
-function normalise(x, fallbackC) {
+function normalise(x, fallbackC, fallback25) {
   if (!x || typeof x !== 'object') return null;
   const f = x.f === 'stim' ? 'sa' : x.f; if (!FBY[f] || !SHAPES[x.f === 'sa' && x.parts ? 'sa' : x.f] && !SHAPES[f]) return null;
   const valid = c => (c || []).filter(p => DOT[p] && /^\d[A-I]\.\d+$/.test(p));
   const it = Object.assign({}, x, { f, id: 'cl:' + uid(), src: 'claude', rev: 1, c: valid(x.c).length ? valid(x.c) : fallbackC, k: x.k || [] });
-  if (S.fw === 'y12') { it.c25 = (x.c || []).filter(p => /^Y\d/.test(p)); }
+  if (S.fw === 'y12') { it.c25 = (x.c || []).filter(p => /^Y\d/.test(p)); if (!it.c25.length && fallback25) it.c25 = fallback25.slice(0, 3); }
   const str = v => typeof v === 'string' ? v : '';
-  if (f === 'mc') { if (!Array.isArray(it.o) || it.o.length !== 4 || !Array.isArray(it.key) || !it.key.length || !it.key.every(k => 'ABCD'.includes(k))) return null; it.o = it.o.map(str); it.m = 1; it.e = { why: str(it.e && it.e.why), not: {} }; }
+  if (f === 'mc') { if (!Array.isArray(it.o) || it.o.length !== 4 || !Array.isArray(it.key) || !it.key.length || !it.key.every(k => 'ABCD'.includes(k))) return null; it.o = it.o.map(str); it.m = 1; it.e = { why: str(it.e && it.e.why), not: {} };
+    const mt = it.mat; if (mt && !(Array.isArray(mt.head) && mt.head.length && Array.isArray(mt.rows) && mt.rows.length === 4 && mt.rows.every(r => Array.isArray(r) && r.length === mt.head.length))) delete it.mat;
+    else if (mt) it.mat = { head: mt.head.map(str), rows: mt.rows.map(r => r.map(str)) }; }
   if (f === 'sa') { if (it.parts) { it.parts = it.parts.filter(p => p && p.q).map(p => ({ label: str(p.label) || '', m: +p.m || 1, q: str(p.q), pts: (p.pts || []).map(str), ans: str(p.ans) })); if (!it.parts.length) return null; it.m = it.parts.reduce((a, p) => a + p.m, 0); } else { if (!it.q) return null; it.m = +it.m || 2; it.pts = (it.pts || []).map(str); } }
   if (it.table && !(Array.isArray(it.table.rows) && it.table.rows.length > 1)) delete it.table;
   if (f === 'er') { if (!it.q) return null; it.m = +it.m || 20; it.pts = (it.pts || []).map(str); }
@@ -1814,30 +1831,157 @@ function normalise(x, fallbackC) {
   if (f === 'error') { if (!/\[\[.+?=>.+?\]\]/.test(str(it.text))) return null; it.m = (it.text.match(/\[\[/g) || []).length; }
   return it;
 }
+/* Which Claude writes. Inside the Claude copy: the page's own "sample" capability. On the website: a teacher's own
+   Anthropic API key, kept in this browser (localStorage, or sessionStorage when it is not remembered) and sent only to
+   api.anthropic.com, which accepts calls from a web page when the anthropic-dangerous-direct-browser-access header is set. */
+const INSIDE_CLAUDE = !!window.WM_ARTIFACT;
+const KEYST = KEY + ':claude-key';
+const MODELS = [['claude-sonnet-5-5', 'Claude Sonnet 5.5: quick and careful (recommended)'], ['claude-opus-5-5', 'Claude Opus 5.5: the most careful, about twice the cost'],
+  ['claude-haiku-5-5', 'Claude Haiku 5.5: the quickest and cheapest']];
+const modelName = id => (MODELS.find(m => m[0] === id) || [id, id])[1].split(':')[0];
+function readKey() {
+  for (const remember of [true, false]) {
+    try { const v = JSON.parse((remember ? localStorage : sessionStorage).getItem(KEYST) || 'null'); if (v && v.key) return { key: v.key, model: v.model || MODELS[0][0], ws: v.ws || '', remember }; } catch (e) { }
+  }
+  return null;
+}
+function writeKey(v) {
+  for (const st of ['localStorage', 'sessionStorage']) { try { window[st].removeItem(KEYST); } catch (e) { } }
+  if (v) { try { (v.remember ? localStorage : sessionStorage).setItem(KEYST, JSON.stringify({ key: v.key, model: v.model, ws: v.ws || '' })); } catch (e) { } }
+}
+function setBackend() {
+  if (SAMPLE) CLAUDE = { kind: 'claude', json: (p, o) => SAMPLE.json(p, { signal: o.signal, cache: false, modelTier: 'default' }) };
+  else if (APIKEY && !INSIDE_CLAUDE) CLAUDE = { kind: 'key', json: (p, o) => apiJson(p, o) };
+  else CLAUDE = null;
+}
+function parseJsonText(t) {
+  t = String(t || '').trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+  try { return JSON.parse(t); } catch (e) { }
+  const a = t.indexOf('{'), b = t.lastIndexOf('}');
+  if (a >= 0 && b > a) { try { return JSON.parse(t.slice(a, b + 1)); } catch (e) { } }
+  return null;
+}
+function apiCode(status, type, msg) {
+  if (/CORS requests are not allowed/i.test(msg)) return 'no_browser';
+  if (/not scoped to a workspace/i.test(msg)) return 'need_ws';
+  if (/workspace/i.test(msg) && (status === 404 || /valid workspace ID/i.test(msg))) return 'bad_ws';
+  if (/credit balance/i.test(msg)) return 'no_credit';
+  if (status === 401 || type === 'authentication_error') return 'bad_key';
+  if (status === 403 || type === 'permission_error') return 'forbidden';
+  if (status === 404 || type === 'not_found_error') return 'bad_model';
+  if (status === 429 || type === 'rate_limit_error') return 'rate_limited';
+  if (status === 529 || status === 503 || type === 'overloaded_error') return 'overloaded';
+  return 'api_error';
+}
+/* One request to the Messages API, straight from the browser. Claude is asked for a JSON object; only text blocks are read. */
+async function apiJson(prompt, o = {}) {
+  const cred = o.cred || APIKEY; let r, body = null;
+  try {
+    r = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST', signal: o.signal,
+      headers: Object.assign({ 'content-type': 'application/json', 'x-api-key': cred.key, 'anthropic-version': '2026-10-21', 'anthropic-dangerous-direct-browser-access': 'true' },
+        cred.ws ? { 'anthropic-workspace-id': cred.ws } : {}),
+      body: JSON.stringify({ model: cred.model, max_tokens: o.max || 16000, output_config: { effort: o.effort || 'medium' }, messages: [{ role: 'user', content: prompt }] })
+    });
+    body = await r.json().catch(() => null);
+  } catch (e) { throw { code: o.signal && o.signal.aborted ? 'cancelled' : 'network' }; }
+  if (o.signal && o.signal.aborted) throw { code: 'cancelled' };
+  if (!r.ok) { const er = (body && body.error) || {}; throw { code: apiCode(r.status, er.type, er.message || ''), message: er.message || '' }; }
+  const j = parseJsonText(((body && body.content) || []).filter(x => x.type === 'text').map(x => x.text).join(''));
+  if (j === null) throw { code: body && body.stop_reason === 'max_tokens' ? 'too_long' : 'invalid_json' };
+  return j;
+}
+function keyDialog() {
+  if (INSIDE_CLAUDE) return;
+  const cur = APIKEY || { key: '', model: MODELS[0][0], remember: true };
+  openDlg('Claude on this website', `
+    <p>Claude can write new questions, look-alikes and plain-English wording on this website with your own <b>Anthropic API key</b>. Set it up once on each computer you use.</p>
+    <ol class="steps"><li>Sign in at <a href="https://platform.claude.com/" target="_blank" rel="noopener">platform.claude.com</a> and add some credit. This account is separate from a Claude chat subscription.</li><li>Create an API key at <a href="https://platform.claude.com/settings/keys" target="_blank" rel="noopener">platform.claude.com/settings/keys</a>. Choose a workspace for it (Default is fine), then paste the key below.</li></ol>
+    <label class="field"><span>API key</span><input type="password" id="k-key" autocomplete="off" spellcheck="false" placeholder="sk-ant-…"></label>
+    <label class="field"><span>Model</span><select id="k-model">${MODELS.map(([v, n]) => `<option value="${v}" ${v === cur.model ? 'selected' : ''}>${esc(n)}</option>`).join('')}</select></label>
+    <label class="field"><span>Workspace ID (only for a key with no workspace)</span><input type="text" id="k-ws" autocomplete="off" spellcheck="false" placeholder="wrkspc_…"></label>
+    <label class="opt"><input type="checkbox" id="k-rem" ${cur.remember ? 'checked' : ''}><span>Remember the key on this computer. Leave this off on a shared or student computer: the key is then forgotten when the browser closes.</span></label>
+    <p class="hint">The key stays in this browser and is sent only to Anthropic (api.anthropic.com). Each batch of questions is charged to the key’s account, usually a few cents with Sonnet. Only question text and syllabus wording are sent, never anything about students.</p>
+    <p class="hint" id="k-msg" role="status"></p>`,
+    `${APIKEY ? '<button class="btn ghost sm" id="k-forget">Forget my key</button>' : ''}<button class="btn ghost sm" data-close>Cancel</button><button class="btn" id="k-save">Check and save</button>`);
+  $('#k-key').value = cur.key; $('#k-ws').value = cur.ws || '';
+  $('#k-save').onclick = async () => {
+    const key = $('#k-key').value.trim(), model = $('#k-model').value, ws = $('#k-ws').value.trim(), remember = $('#k-rem').checked, msg = $('#k-msg'), btn = $('#k-save');
+    if (!key) { msg.textContent = 'Paste your API key first.'; return; }
+    btn.disabled = true; msg.innerHTML = '<span class="spin"></span> Checking the key with Anthropic…';
+    try {
+      const j = await apiJson('Reply with only this JSON object and nothing else: {"ok": true}', { cred: { key, model, ws }, max: 2000, effort: 'low' });
+      if (!j || j.ok !== true) throw { code: 'invalid_json' };
+    } catch (e) { msg.textContent = CL_ERR[e.code] || 'The key could not be checked. Try again.'; btn.disabled = false; return; }
+    APIKEY = { key, model, ws, remember }; writeKey(APIKEY); setBackend(); dlg.close(); renderAll();
+    toast('Claude is ready: use “Write new questions with Claude”.');
+  };
+  if ($('#k-forget')) $('#k-forget').onclick = () => { APIKEY = null; writeKey(null); setBackend(); dlg.close(); renderAll(); toast('Your key was removed from this browser.'); };
+}
 function renderClaudeBox() {
-  const on = !!SAMPLE; $('#claudebox').hidden = !on;
-  if (on && !$('#cl-fmt').options.length) $('#cl-fmt').innerHTML = CL_FMTS.map(([k, n]) => `<option value="${k}">${n}</option>`).join('');
+  const box = $('#claudebox'); if (!box || !D) return;
+  box.hidden = !CLAUDE && INSIDE_CLAUDE;
+  $('#cl-setup').hidden = !!CLAUDE; $('#cl-form').hidden = !CLAUDE;
+  if (!CLAUDE) return;
+  if (!$('#cl-fmt').options.length) $('#cl-fmt').innerHTML = '<option value="like">More like my worksheet (same style)</option><optgroup label="Or a set of one type">'
+    + CL_FMTS.map(([k, n]) => `<option value="${k}">${esc(n)}</option>`).join('') + '</optgroup>';
+  const sel = S.fw === 'h09' ? [...S.sel09] : [...S.sel25], cur = $('#cl-dp').value;
+  const name = p => { const t = (S.fw === 'h09' ? DOT[p] : SECN[p]) || ''; return t.length > 70 ? t.slice(0, 69) + '…' : t; };
+  $('#cl-dp').innerHTML = `<option value="all">${sel.length === 1 ? esc(sel[0] + ' ' + name(sel[0])) : sel.length ? `All the dot points I chose (${sel.length})` : 'Choose dot points in step 1'}</option>`
+    + (sel.length > 1 && sel.length <= 60 ? sel.map(p => `<option value="${esc(p)}" ${p === cur ? 'selected' : ''}>${esc(p + ' ' + name(p))}</option>`).join('') : '');
+  $('#cl-lv-f').hidden = $('#cl-fmt').value === 'like';
+  $('#cl-who').innerHTML = CLAUDE.kind === 'key' ? `Writing with your API key and ${esc(modelName(APIKEY.model))}. <button type="button" class="linkish" id="cl-set">Claude settings</button>` : 'Writing with Claude in this page.';
 }
 let clCtl = null;
-const CL_ERR = { not_granted: 'Claude was not allowed for this page.', sampling_disabled: 'Claude is not available for this account.', rate_limited: 'Too many requests just now. Wait a minute and try again.', refused: 'Claude declined that request. Try different wording.', invalid_json: 'Claude’s answer could not be read. Try again, or ask for fewer questions.', session_expired: 'Sign in to Claude again.' };
+const CL_ERR = { not_granted: 'Claude was not allowed for this page.', sampling_disabled: 'Claude is not available for this account.', rate_limited: 'Too many requests just now. Wait a minute and try again.',
+  refused: 'Claude declined that request. Try different wording.', invalid_json: 'Claude’s answer could not be read. Try again, or ask for fewer questions.', session_expired: 'Sign in to Claude again.',
+  bad_key: 'Anthropic did not accept that API key. Check it in Claude settings.', no_credit: 'The Anthropic account for this key has run out of credit. Add credit at platform.claude.com.',
+  forbidden: 'This API key is not allowed to do that. Check it at platform.claude.com.', bad_model: 'That Claude model is not available with this key. Choose another in Claude settings.',
+  overloaded: 'Claude is busy right now. Try again in a minute.', network: 'Claude could not be reached. Check the connection: some school networks block api.anthropic.com.',
+  too_long: 'Claude’s answer was cut short. Ask for fewer questions at a time.', api_error: 'Claude returned an error. Try again.',
+  need_ws: 'This key is not tied to a workspace. Create a key for one workspace (Default is fine), or add the workspace ID in Claude settings.',
+  bad_ws: 'That workspace ID was not found for this key. Check it at platform.claude.com/settings/workspaces.',
+  no_browser: 'Your Anthropic organisation does not allow Claude to be used from a web page. Use the Claude copy of the Worksheet Maker instead.' };
 async function askClaude(prompt, msgEl) {
-  clCtl = new AbortController(); $('#cl-stop').hidden = false;
-  msgEl.innerHTML = '<span class="spin"></span> Claude is writing…';
-  try { return await SAMPLE.json(prompt, { signal: clCtl.signal, cache: false, modelTier: 'default' }); }
-  catch (e) { if (e.code === 'not_granted' || e.code === 'sampling_disabled') { SAMPLE = null; renderAll(); } msgEl.textContent = e.code === 'cancelled' ? 'Stopped.' : (CL_ERR[e.code] || 'Something went wrong. Try again.'); return null; }
-  finally { $('#cl-stop').hidden = true; }
+  if (!CLAUDE) return null;
+  clCtl = new AbortController(); $('#cl-stop').hidden = false; $('#cl-go').disabled = true;
+  msgEl.innerHTML = '<span class="spin"></span> Claude is writing. This can take a minute or two.';
+  try { return await CLAUDE.json(prompt, { signal: clCtl.signal }); }
+  catch (e) {
+    const code = (e && e.code) || 'error';
+    if (code === 'not_granted' || code === 'sampling_disabled') { SAMPLE = null; setBackend(); renderAll(); }
+    msgEl.textContent = code === 'cancelled' ? 'Stopped.' : (CL_ERR[code] || 'Something went wrong. Try again.') + (code === 'api_error' && e.message ? ' (' + String(e.message).slice(0, 160) + ')' : '');
+    return null;
+  }
+  finally { $('#cl-stop').hidden = true; $('#cl-go').disabled = false; }
+}
+/* The dot points Claude writes for: the one picked in the panel, or all those chosen in step 1. */
+function focusSel() {
+  const v = $('#cl-dp').value, all = S.fw === 'h09' ? [...S.sel09] : [...S.sel25];
+  return v && v !== 'all' && all.includes(v) ? [v] : all;
+}
+function inFocus(it, F) {
+  if (S.fw === 'h09') return (it.c || []).some(c => F.includes(c));
+  return (it._y || []).concat(it.c25 || []).some(y => F.includes(y)) || (it.c || []).some(c => (XW[SEC[c]] || []).some(y => F.includes(y)));
+}
+const fbC = F => S.fw === 'h09' ? F.slice(0, 3) : [];
+const fb25 = F => S.fw === 'y12' ? F.slice(0, 3) : null;
+function sheetStems(max) {
+  const first = it => it.q || it.title || it.trigger || (it.parts && it.parts[0] && it.parts[0].q) || (it.qs && it.qs[0] && (it.qs[0].q || (typeof it.qs[0] === 'string' ? it.qs[0] : ''))) || '';
+  return S.ws.items.map(itemOf).filter(Boolean).slice(0, max || 40).map(it => plain(first(it)).slice(0, 120)).filter(Boolean);
 }
 async function claudeWrite() {
-  if (!SAMPLE) return;
+  if (!CLAUDE) return;
   const msg = $('#cl-msg');
   if (!hasSel()) { msg.textContent = 'Choose dot points first (step 1).'; return; }
-  const fmt = $('#cl-fmt').value, n = +$('#cl-n').value, lv = $('#cl-lv').value, read = $('#cl-read').value, note = $('#cl-note').value.trim();
-  const fallbackC = S.fw === 'h09' ? [...S.sel09].slice(0, 3) : [];
-  const avoid = S.ws.items.map(itemOf).filter(Boolean).slice(0, 25).map(it => plain(it.q || it.title || it.trigger || '').slice(0, 120)).filter(Boolean);
+  const fmt = $('#cl-fmt').value;
+  if (fmt === 'like') return claudeMore();
+  const F = focusSel(), n = +$('#cl-n').value, lv = $('#cl-lv').value, read = $('#cl-read').value, note = $('#cl-note').value.trim();
+  const avoid = sheetStems(25);
   const prompt = `You are an experienced NSW HSC Economics teacher writing practice questions for a printed worksheet.
 
 Syllabus content to practise (${S.fw === 'h09' ? '2009 syllabus dot points' : '2025 syllabus sections'}):
-${selText()}
+${selText(F)}
 
 Write ${n} new ${CL_FMTS.find(x => x[0] === fmt)[1].toLowerCase()} question${n > 1 ? 's' : ''}. Level: ${{ 1: 'foundation (Band 3 and 4)', 2: 'HSC standard', 3: 'extension (Band 6 discriminators)' }[lv]}. ${READING[read]}
 ${note ? 'Teacher’s note: ' + note + '\n' : ''}${fmt === 'draw' ? 'Diagram codes you may use (the page draws them; pick the one that fits): ' + Object.keys(D.dias).filter(k => !/given$/.test(k)).join(', ') + '. Add " given" to the code to show students the starting diagram.\n' : ''}${avoid.length ? 'Do not repeat these questions already on the worksheet:\n- ' + avoid.join('\n- ') + '\n' : ''}
@@ -1847,23 +1991,118 @@ Tag each question in "c" with the ${S.fw === 'h09' ? '2009 dot point codes above
 Reply with only a JSON object: {"items":[ ... ]} where each item has this shape:
 ${SHAPES[fmt]}`;
   const out = await askClaude(prompt, msg); if (!out) return;
-  const items = (Array.isArray(out) ? out : out.items || []).map(x => normalise(x, fallbackC)).filter(Boolean);
+  const items = (Array.isArray(out) ? out : out.items || []).map(x => normalise(x, fbC(F), fb25(F))).filter(Boolean);
   if (!items.length) { msg.textContent = 'Claude’s questions could not be used. Try again.'; return; }
+  const before = clone(S.ws.items);
   items.forEach(it => S.ws.items.push({ k: uid(), item: it })); persist(); renderList();
   msg.textContent = `Added ${items.length}. Check them before you print.`;
+  toast(`Added ${items.length} from Claude.`, () => { S.ws.items = before; persist(); renderList(); });
 }
-function itemForPrompt(it) {
-  const keep = ['f', 'm', 'q', 'o', 'key', 'lead', 'parts', 'pts', 'ans', 'could', 'table', 'title', 'trigger', 'steps', 'rows', 'cats', 'cols', 'text', 'qs', 'lede', 'figs', 'guide', 'dia'];
+
+/* "More like my worksheet": new questions in the style of those already on the sheet for the dot point
+   (or of past HSC and bank questions on it when the sheet has none), in the same mix of types. */
+const CL_KINDS = new Set(CL_FMTS.map(x => x[0]));
+const LOCAL_KINDS = ['calc', 'match', 'cloze', 'define'];          // the page makes these itself: new numbers, new terms
+const clFmtOf = it => it.f === 'read' ? 'sa' : it.f === 'order' ? 'chain' : it.f;
+function styleExamples(F) {
+  const onSheet = S.ws.items.map(itemOf).filter(it => it && inFocus(it, F));
+  if (onSheet.length) return { ex: onSheet, from: 'sheet' };
+  const chosen = FMT.filter(f => S.counts[f.id] > 0).map(f => f.id), types = chosen.length ? chosen : ['mc', 'sa'];
+  const pool = D.items.filter(it => types.includes(it.f) && inFocus(it, F) && (it.src === 'hsc' || it.src === 'bank'))
+    .sort((a, b) => (a.src === 'hsc' ? 0 : 1) - (b.src === 'hsc' ? 0 : 1) || (b.y || 0) - (a.y || 0));
+  const ex = []; for (const f of types) ex.push(...pool.filter(it => it.f === f).slice(0, 3));
+  for (const f of types) if (LOCAL_KINDS.includes(f)) ex.push({ f, c: F, k: [], gen: true });   // a calculation or term task needs no example
+  return { ex, from: 'pool' };
+}
+/* Share n new questions across the types in proportion to how often each appears among the examples. */
+function allocate(n, counts) {
+  const fm = Object.keys(counts).sort((a, b) => counts[b] - counts[a]), tot = fm.reduce((t, f) => t + counts[f], 0), out = {};
+  if (n <= fm.length) { fm.slice(0, n).forEach(f => { out[f] = 1; }); return out; }
+  let left = n; const rem = [];
+  for (const f of fm) { const exact = n * counts[f] / tot, k = Math.max(1, Math.floor(exact)); out[f] = k; left -= k; rem.push([exact - Math.floor(exact), f]); }
+  rem.sort((a, b) => b[0] - a[0]);
+  for (let i = 0; left > 0; i++, left--) out[rem[i % rem.length][1]]++;
+  while (left < 0) { const f = Object.keys(out).sort((a, b) => out[b] - out[a])[0]; out[f]--; left++; }
+  return out;
+}
+function pickVaried(list, k) {
+  const out = [], marks = new Set();
+  for (const it of list) if (out.length < k && !marks.has(it.m)) { out.push(it); marks.add(it.m); }
+  for (const it of list) if (out.length < k && !out.includes(it)) out.push(it);
+  return out;
+}
+function morePrompt(F, plan, shown, from, read, note) {
+  const want = Object.entries(plan).map(([f, k]) => `${k} ${CL_FMTS.find(x => x[0] === f)[1].toLowerCase()}`).join(', ');
+  const avoid = sheetStems(40);
+  return `You are an experienced NSW HSC Economics teacher adding questions to a printed practice worksheet.
+
+Syllabus content (${S.fw === 'h09' ? '2009 syllabus dot points' : '2025 syllabus sections'}):
+${selText(F)}
+
+${from === 'sheet' ? 'These questions are already on the worksheet' : 'These are past HSC and practice questions on this content'}. They show the style to copy:
+${shown.map((it, i) => `Example ${i + 1} (${FBY[it.f].name}): ${itemForPrompt(it, 2500)}`).join('\n\n')}
+
+Write these new questions: ${want}. Write each one in the style of the examples of the same type: match their format, marks, NESA key verb, level of difficulty and kind of stimulus (a data table, an extract, a diagram), so the new questions sit naturally beside them. Use new scenarios, products, countries, events and numbers, and cover other parts of the syllabus content above where you can. Do not copy the examples’ wording, and do not repeat a question already on the worksheet. Where an example relies on a figure you cannot see, give your question its own data as a table.
+${READING[read]}
+${note ? 'Teacher’s note: ' + note + '\n' : ''}${plan.draw ? 'Diagram codes you may use (the page draws them; pick the one that fits): ' + Object.keys(D.dias).filter(k => !/given$/.test(k)).join(', ') + '. Add " given" to the code to show students the starting diagram.\n' : ''}${avoid.length ? 'Questions already on the worksheet:\n- ' + avoid.join('\n- ') + '\n' : ''}
+${RULES}
+
+Tag each question in "c" with the ${S.fw === 'h09' ? 'dot point codes above (for example 2C.2)' : 'section codes above (for example Y3c)'} it practises.
+Reply with only a JSON object: {"items":[ ... ]}, the questions in this order of type: ${Object.keys(plan).join(', ')}. Each item has the shape for its type:
+${Object.keys(plan).map(f => f + ': ' + SHAPES[f]).join('\n')}`;
+}
+async function claudeMore() {
+  const msg = $('#cl-msg');
+  const F = focusSel(), n = +$('#cl-n').value, read = $('#cl-read').value, note = $('#cl-note').value.trim();
+  const { ex, from } = styleExamples(F);
+  if (!ex.length) { msg.textContent = 'There is nothing on this dot point to copy the style of yet. Choose a type under “What to write” instead.'; return; }
+  const counts = {}; ex.forEach(it => { const f = clFmtOf(it); counts[f] = (counts[f] || 0) + 1; });
+  const plan = allocate(n, counts);
+  const cant = Object.keys(plan).filter(f => !CL_KINDS.has(f) && !LOCAL_KINDS.includes(f));
+  // calculations and key-term tasks: the same skills with new numbers, or new terms, made here
+  const rnd = newRnd(), used = usedSet(), local = [];
+  for (const f of LOCAL_KINDS) {
+    if (!plan[f]) continue;
+    const skills = ex.filter(it => it.f === 'calc' && it.skill).map(it => D.calc.find(c => c.id === it.skill)).filter(Boolean);
+    for (let i = 0; i < plan[f]; i++) {
+      const x = f === 'calc' && skills.length ? calcItem(skills[i % skills.length], rnd) : genItem(f, rnd, used, f === 'define' ? 3 : (LAY().style === 'adapt' ? 5 : 8));
+      if (x) local.push({ k: uid(), item: x });
+    }
+    delete plan[f];
+  }
+  for (const f of Object.keys(plan)) if (!CL_KINDS.has(f) || !plan[f]) delete plan[f];
+  let cl = [], failed = false;
+  if (Object.keys(plan).length) {
+    const shown = []; for (const f of Object.keys(plan)) shown.push(...pickVaried(ex.filter(it => clFmtOf(it) === f && !it.gen), 2));
+    const out = await askClaude(morePrompt(F, plan, shown, from, read, note), msg);
+    if (out) cl = (Array.isArray(out) ? out : out.items || []).map(x => normalise(x, fbC(F), fb25(F))).filter(Boolean);
+    failed = !out;
+  }
+  if (!local.length && !cl.length) {
+    if (!failed) msg.textContent = cant.length && !Object.keys(plan).length ? `Claude does not write ${cant.map(f => FBY[f].name.toLowerCase()).join(' or ')} tasks. Choose a type under “What to write” instead.` : 'Claude’s questions could not be used. Try again.';
+    return;
+  }
+  const before = clone(S.ws.items);
+  local.concat(cl.map(it => ({ k: uid(), item: it }))).forEach(e => S.ws.items.push(e));
+  persist(); renderList(); renderFormats();
+  const added = local.length + cl.length;
+  if (failed) msg.textContent += ` Added ${local.length} made here (calculations or key terms).`;
+  else msg.textContent = `Added ${added} in the same style${cl.length ? '. Check Claude’s before you print' : ''}.`;
+  toast(`Added ${added} more like these.`, () => { S.ws.items = before; persist(); renderList(); renderFormats(); });
+}
+function itemForPrompt(it, max) {
+  const keep = ['f', 'm', 'q', 'o', 'mat', 'key', 'lead', 'parts', 'pts', 'ans', 'could', 'table', 'title', 'trigger', 'steps', 'rows', 'cats', 'cols', 'text', 'qs', 'lede', 'figs', 'guide', 'dia'];
   const o = {}; keep.forEach(k => { if (it[k] !== undefined) o[k] = it[k]; });
   if (it.e && it.e.why) o.why = it.e.why;
-  if (it.crit) o.criteria = it.crit.map(b => b.m + ': ' + b.b.join(' / '));
+  if (it.crit && !max) o.criteria = it.crit.map(b => b.m + ': ' + b.b.join(' / '));
+  if (max) delete o.could;
   if (it.st) o.stimulus = 'The paper had this stimulus (not shown): ' + it.st;
   if (it.fig) o.figures = 'The question uses a figure or table from the paper that you cannot see.';
   if (it.src === 'hsc') o.source = `NSW HSC Economics ${it.y} ${it.l}`;
-  return JSON.stringify(o).slice(0, 12000);
+  return JSON.stringify(o).slice(0, max || 12000);
 }
 async function claudeLike(k) {
-  const it = itemOf(S.ws.items[entryIndex(k)]); if (!it || !SAMPLE) return;
+  const it = itemOf(S.ws.items[entryIndex(k)]); if (!it || !CLAUDE) return;
   const msg = $('#cl-msg'); $('#claudebox').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   const fmt = it.f === 'stim' ? 'stim' : (it.f === 'read' ? 'sa' : it.f);
   const prompt = `You are an experienced NSW HSC Economics teacher. Write ONE new question modelled on the question below, for a printed worksheet.
@@ -1886,7 +2125,7 @@ ${SHAPES[fmt] || SHAPES.sa}`;
   msg.textContent = 'Added a look-alike after the original. Check it before you print.';
 }
 async function claudePlain(k) {
-  const i = entryIndex(k), it = itemOf(S.ws.items[i]); if (!it || !SAMPLE) return;
+  const i = entryIndex(k), it = itemOf(S.ws.items[i]); if (!it || !CLAUDE) return;
   const msg = $('#cl-msg'); $('#claudebox').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   const fields = ['q', 'lead', 'o', 'parts', 'rows', 'text', 'trigger', 'title', 'cats', 'cols', 'qs', 'lede'].filter(f => it[f] !== undefined);
   const prompt = `Rewrite the student-facing wording of this NSW HSC Economics question in plain English for students reading at about Year 7. Keep the economics, the answer, the marks, the order of any options and the format exactly the same. Use short sentences and everyday words. Keep each key term, but add a short meaning in brackets the first time it appears. Keep any [[wrong => right]] markers and [[gap]] markers exactly as they are.
@@ -1920,19 +2159,21 @@ function renderHelp() {
   <ul><li>New questions are marked <i>not yet reviewed</i> until the teacher has checked them. Explanations of multiple-choice answers were written for the site, not by NESA.</li>
   <li>Diagrams are drawn in the class house style. They are conceptual and not to scale, except the numbered figures used for “Read a diagram”.</li>
   <li>Questions on news items come from the Evidence Finder. Figures in them are as at the date shown.</li>
-  ${SAMPLE ? '<li>This copy runs inside Claude, so it can also write new questions, look-alikes of any question and plain-English rewordings. Claude’s questions are marked <i>check before printing</i>.</li>' : '<li>A copy of this page inside Claude can also write new questions and look-alikes on request.</li>'}</ul>`;
+  <li>Claude can write new questions for any dot point, including <b>More like my worksheet</b> (new questions in the same style as those already on it), look-alikes of any question and plain-English wording. ${INSIDE_CLAUDE ? 'This copy runs inside Claude, so it is ready to use.' : 'On this website a teacher sets it up once on each computer with their own Anthropic API key (<button type="button" class="linkish" data-keydlg>Claude settings</button>). The key stays in that browser, and each batch of questions is charged to the key’s account.'} Claude’s questions are marked <i>check before printing</i>.</li></ul>`;
 }
 
 /* ================================================================ start */
 async function init() {
   try {
     // The version in the address stops browsers keeping an old copy; plain data.json is the fallback
-    let r = await fetch('data.json?v=210eb8b03f').catch(() => null);
+    let r = await fetch('data.json?v=35759f5f65').catch(() => null);
     if (!r || !r.ok) r = await fetch('data.json');
     if (!r.ok) throw new Error(r.status);
     D = await r.json();
   } catch (e) { $('#list').innerHTML = '<div class="empty">The question data could not be loaded. Check your connection and reload the page.</div>'; return; }
   indexData(); restore(); bind();
+  APIKEY = INSIDE_CLAUDE ? null : readKey(); setBackend();
+  $('#v-help').addEventListener('click', e => { if (e.target.closest('[data-keydlg]')) keyDialog(); });
   $('#layout').addEventListener('change', onLayout);
   $('#layout').addEventListener('input', e => { if (e.target.type === 'text' && e.target.dataset.l) onLayout(e); });
   $('#styles').onclick = e => { const b = e.target.closest('[data-style]'); if (!b) return; const keepT = { name: LAY().name, cls: LAY().cls, date: LAY().date, intro: LAY().intro, version: LAY().version, answers: LAY().answers, group: LAY().group }; S.ws.layout = Object.assign(defaultLayout(b.dataset.style), keepT); persist(); renderLayout(); schedulePreview(0); };
@@ -1951,7 +2192,7 @@ async function init() {
   const qf = params.get('qf');
   if (qf) { qfImport(qf.split(',').map(x => x.trim()).filter(Boolean)); history.replaceState(null, '', location.pathname); }
   if (window.claude && typeof window.claude.use === 'function') {
-    window.claude.use('sample').then(s => { if (s) { SAMPLE = s; renderAll(); } }).catch(() => {});
+    window.claude.use('sample').then(s => { if (s) { SAMPLE = s; setBackend(); renderAll(); } }).catch(() => {});
     window.claude.use('downloads').then(d => { if (d) DOWNLOADS = d; }).catch(() => {});
   }
   let twoDeep = false; try { twoDeep = window.self !== window.top && window.parent !== window.top; } catch (e) { twoDeep = true; }

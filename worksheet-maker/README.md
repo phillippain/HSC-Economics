@@ -55,15 +55,44 @@ statements). They are plain text; `bank/README.md` explains the format. Every on
 until the teacher checks it: `review.html` lists them all with their answers. Mark a checked file by making its
 first line `# reviewed`, or one question by adding `checked: yes` under its heading.
 
-## The Claude copy
+## Writing new questions with Claude
 
-The same page, published as a claude.ai artifact, can also ask Claude to write new questions for the chosen
-dot points (any of ten types, three levels, Year 12 or plain-English wording), a look-alike of any question, or
-a plain-English rewording. Claude's questions are marked **check before printing** and are kept in the
-worksheet, not in the bank. To republish it after a rebuild, run the build with `--artifact <folder>` and ask
-Claude to publish that folder to the existing artifact (**HSC Economics Worksheet Maker**); it needs the `sample` and
-`downloads` capabilities. Artifacts may load scripts only from a few sites, so the copy loads pdfmake and pdf.js from
-`cdn.jsdelivr.net` (the same pinned versions as `lib/`) and runs pdf.js on the page rather than in a worker.
+Claude can write new questions for the chosen dot points, with answers:
+
+- **More like my worksheet** (the first choice under *What to write*): new questions in the same style as those
+  already on the worksheet for the dot point picked under *Dot point*, or as past HSC and bank questions on it when
+  the worksheet has none yet. It keeps the mix of types (as many again of each, shared out across *How many*),
+  and Claude copies each example's format, marks, NESA verb, difficulty and kind of stimulus with new scenarios
+  and data. Calculations and key-term tasks are made by the page itself (the same skills with new numbers, or new
+  terms); Claude does not write label-a-diagram tasks.
+- **A set of one type**: any of ten types, at one of three levels.
+- On each question card: **Look-alike by Claude** and **Simpler wording** (plain English, about Year 7).
+- Every Claude question is marked **check before printing** in the list (not on the printed sheet) and stays in
+  the worksheet, not in the bank.
+
+Where Claude comes from:
+
+- **On the website**, a teacher sets it up once on each computer with their own **Anthropic API key**
+  (**Set up Claude…** in the panel, or *Claude settings*). The page checks the key with a one-line request,
+  then keeps it in that browser only: `localStorage` key `econ-worksheet-maker-v1:claude-key`, or
+  `sessionStorage` (gone when the browser closes) when *Remember the key* is off. The key is sent only to
+  `api.anthropic.com` (Messages API, `anthropic-version: 2026-10-21`, the
+  `anthropic-dangerous-direct-browser-access` header that allows calls from a web page, effort `medium`, and
+  `anthropic-workspace-id` when a workspace ID is given for a key that has no workspace). Create the key at
+  `platform.claude.com/settings/keys` and choose a workspace for it (Default is fine). Each
+  batch is charged to the key's account; Sonnet 5.5 is the default (Opus 5.5 and Haiku 5.5 can be chosen).
+  Only question text and syllabus wording are sent. Without a key the panel just offers the set-up, and the
+  Claude buttons stay hidden, so students see no change. Every page on `phillippain.github.io` shares that
+  browser storage, so set it up only on a computer you trust, and use *Forget my key* on any other.
+- **The Claude copy** (a claude.ai artifact, **HSC Economics Worksheet Maker**) uses Claude in the page instead
+  (the `sample` capability) and offers no key set-up. To republish it after a rebuild, run the build with
+  `--artifact <folder>` and ask Claude to publish that folder to the existing artifact; it needs the `sample`
+  and `downloads` capabilities. Artifacts may load scripts only from a few sites, so the copy loads pdfmake and
+  pdf.js from `cdn.jsdelivr.net` (the same pinned versions as `lib/`) and runs pdf.js on the page rather than
+  in a worker. The build marks it with `window.WM_ARTIFACT = true`.
+
+Error messages name the usual causes: a key that is not accepted, an account out of credit, Claude busy, or a
+network that blocks `api.anthropic.com` (some school networks do).
 
 ## Files
 
@@ -80,4 +109,6 @@ Claude to publish that folder to the existing artifact (**HSC Economics Workshee
 
 Tested in headless Chrome: every question type in all four styles, student and answer copies, answers at the
 end, Version B, the 2025 syllabus, Question Finder import, browse, edit, swap, look-alike, save and reopen,
-and phone width. Not tested by students, on the school network or inside the Google Site.
+and phone width. The Claude features were tested against a stand-in for the API (key check, More like my
+worksheet, one type, errors, Stop, remembering and forgetting the key), not against Anthropic itself. Not
+tested by students, on the school network or inside the Google Site.

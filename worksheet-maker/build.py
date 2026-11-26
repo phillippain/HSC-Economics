@@ -311,7 +311,7 @@ def write_artifact(out, page, data_txt):
     cdn = "https://cdn.jsdelivr.net/npm/"
     libs = (f"window.WM_LIB = {{ pdfmake: '{cdn}pdfmake@0.2.23/build/pdfmake.min.js', "
             f"pdfjs: '{cdn}pdfjs-dist@3.11.174/build/pdf.min.js', worker: '{cdn}pdfjs-dist@3.11.174/build/pdf.worker.min.js', onPage: true }};")
-    art = art.replace("<script>\n/* Calculation generators", "<script>window.WM_FIGBASE = 'figs/'; window.WM_LIVE_EVIDENCE = false; " + libs + "</script>\n<script>\n/* Calculation generators", 1)
+    art = art.replace("<script>\n/* Calculation generators", "<script>window.WM_FIGBASE = 'figs/'; window.WM_LIVE_EVIDENCE = false; window.WM_ARTIFACT = true; " + libs + "</script>\n<script>\n/* Calculation generators", 1)
     assert "WM_LIB" in art, "could not add the artifact settings to the page"
     (out / "index.html").write_text(art, encoding="utf8")
     (out / "data.json").write_text(data_txt, encoding="utf8")
