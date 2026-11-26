@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
-"""Put a "Make a PDF worksheet" button in the Question Finder's toolbar, beside "Print worksheet".
+"""The "Make a PDF worksheet" button in the Question Finder's toolbar, beside "Print worksheet".
 
-    python3 build/link_worksheet_maker.py           # add (or refresh) the button
-    python3 build/link_worksheet_maker.py --check   # change nothing; fail if the button is missing
+    python3 build/link_worksheet_maker.py                    # add (or refresh) the button
+    python3 build/link_worksheet_maker.py --remove           # take it out
+    python3 build/link_worksheet_maker.py --check            # change nothing; fail if the button is missing or out of date
+    python3 build/link_worksheet_maker.py --check --remove   # change nothing; fail if the button is still there
+
+At 27 November 2026 the Worksheet Maker is for teachers only, so the button is OUT of the Question Finder
+(--remove). Run the script without --remove to put it back when students may use the Worksheet Maker.
 
 The button opens the Worksheet Maker in a new tab with the ticked questions in the address
 (?qf=I2019Q1,II2019Q21(a),...). Passing them in the address matters on the Google Site: an embedded
@@ -24,12 +29,16 @@ BLOCK = ('<!-- WM:START (written by build/link_worksheet_maker.py) -->'
          '<!-- WM:END -->')
 
 s = QF.read_text(encoding="utf8")
-new = re.sub(r"\n[ \t]*<!-- WM:START.*?<!-- WM:END -->", "", s, flags=re.S)
-assert ANCHOR in new, "the Print worksheet button was not found in the Question Finder"
-new = new.replace(ANCHOR, ANCHOR + "\n      " + BLOCK, 1)
+bare = re.sub(r"\n[ \t]*<!-- WM:START.*?<!-- WM:END -->", "", s, flags=re.S)
+assert ANCHOR in bare, "the Print worksheet button was not found in the Question Finder"
+remove = "--remove" in sys.argv
+new = bare if remove else bare.replace(ANCHOR, ANCHOR + "\n      " + BLOCK, 1)
 if "--check" in sys.argv:
     ok = s == new
-    print("Question Finder has the Worksheet Maker button" if ok else "Question Finder button is MISSING or out of date: run build/link_worksheet_maker.py")
+    if remove:
+        print("Question Finder has no Worksheet Maker button" if ok else "Question Finder still has the Worksheet Maker button: run build/link_worksheet_maker.py --remove")
+    else:
+        print("Question Finder has the Worksheet Maker button" if ok else "Question Finder button is MISSING or out of date: run build/link_worksheet_maker.py")
     sys.exit(0 if ok else 1)
 QF.write_text(new, encoding="utf8")
-print("Added the Make a PDF worksheet button to the Question Finder")
+print("Took the Make a PDF worksheet button out of the Question Finder" if remove else "Added the Make a PDF worksheet button to the Question Finder")

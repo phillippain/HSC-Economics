@@ -7,12 +7,17 @@ and downloads the files.
 - **Page:** `index.html` (built from `template.html`; do not edit by hand). It loads `data.json`, the PDF
   maker in `lib/` and the fonts in `fonts/` from this folder, and the past-paper figures from
   `../hsc-question-finder-site/figs/`, so it must stay beside the Question Finder.
-- **Published at:** `/worksheet-maker/` on the GitHub Pages site. Embed it in the Google Site with the usual
-  iframe loader; inside an embed an **Open in a new tab** button appears, because some browsers block
-  downloads from embedded pages.
-- **From the Question Finder:** its **Make a PDF worksheet ↗** button (added by
-  `build/link_worksheet_maker.py`) opens this page with the ticked questions, as `?qf=I2019Q1,II2019Q21(a),...`.
-  **Add my Question Finder ticks** does the same from inside this page when both run in the same browser.
+- **Published at:** `/worksheet-maker/` on the GitHub Pages site. **For teachers only at present (27 November
+  2026):** it is not in the Other tools menu, the Google Site's Tools page, What's New or the Question Finder, and
+  the page asks search engines not to list it (`noindex`). Anyone who has the address can still open it, because
+  GitHub Pages has no sign-in. If it is embedded in a Google Site page later, an **Open in a new tab** button
+  appears inside the embed, because some browsers block downloads from embedded pages.
+- **To list it for students later:** uncomment its line in `SITES` in `build/build_sitemenu.py` and run that
+  script; run `build/link_worksheet_maker.py` (without `--remove`) to put the Question Finder's **Make a PDF
+  worksheet ↗** button back; add its card to `google-site-embeds/tools.html`; and add a What's New line.
+- **From the Question Finder:** while the button is out, use **Add my Question Finder ticks** inside this page.
+  It reads the ticks when the Question Finder is open at its own address (not inside the Google Site) in the same
+  browser. An address in the form `?qf=I2019Q1,II2019Q21(a),...` still opens the page with those questions.
 - **Other links in:** `?embed=1`, `?theme=light|dark`.
 
 ## The three steps
