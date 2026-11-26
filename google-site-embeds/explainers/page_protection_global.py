@@ -13,7 +13,7 @@ def make(B):
     "</ul>"
     "<p>Other reasons are sometimes given: retaliation against another country's barriers, raising government revenue, and protecting the environment or labour standards.</p>"
     "<h3>Methods of protection</h3>"
-    "<p>The methods are <b>tariffs, subsidies, quotas, local content rules and export incentives</b>. Each is explained, with a diagram, on the <b>Methods of protection</b> page. A tariff is the most common: it raises the domestic price from P<sub>w</sub> to P<sub>w+t</sub>, so local output rises, consumption falls and imports shrink (Figure 3).</p>"
+    "<p>The methods are <b>tariffs, subsidies, quotas, local content rules and export incentives</b>. Each is explained, with a diagram, on the <a href=\"https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/topic-1/protection/methods\"><b>Methods of protection</b></a> page. A tariff is the most common: it raises the domestic price from P<sub>w</sub> to P<sub>w+t</sub>, so local output rises, consumption falls and imports shrink (Figure 3).</p>"
     "<h3>Effects on the domestic economy</h3>"
     "<ul>"
     "<li>Consumers pay higher prices and have less choice.</li>"
