@@ -1,0 +1,320 @@
+# New multiple-choice questions, Topic 3.
+
+=== mc mc-3A1-01
+c: 3A.1
+lv: 1
+Q: Which is the largest component of aggregate demand in Australia?
+A: Government spending
+B: Investment
+C: Household consumption
+D: Net exports
+ANS: C
+WHY: Household consumption is roughly half of GDP, far larger than any other component.
+
+=== mc mc-3A2-01
+c: 3A.2
+lv: 2
+Q: In an economy, S = $90b, T = $120b, M = $80b, I = $100b, G = $110b and X = $70b. What will happen to national income?
+A: It will rise, because injections exceed withdrawals
+B: It will fall, because withdrawals exceed injections
+C: It will not change, because injections equal withdrawals
+D: It will fall, because the budget is in surplus
+ANS: B
+WHY: Withdrawals = 90 + 120 + 80 = 290; injections = 100 + 110 + 70 = 280. Withdrawals exceed injections by $10b, so income will fall until they are equal. The budget surplus (D) is part of the story but not the full test.
+
+=== mc mc-3A3-01
+c: 3A.3
+lv: 2
+Q: The marginal propensity to save is 0.25. Investment rises by $20 billion. By how much will national income eventually rise?
+A: $5 billion
+B: $25 billion
+C: $60 billion
+D: $80 billion
+ANS: D
+WHY: k = 1 ÷ MPS = 1 ÷ 0.25 = 4. ΔY = $20b × 4 = $80 billion.
+
+=== mc mc-3A4-01
+c: 3A.4
+lv: 2
+Q: Nominal GDP rose by 6 per cent and the general price level rose by 4 per cent. Real GDP grew by about
+A: 2 per cent
+B: 4 per cent
+C: 6 per cent
+D: 10 per cent
+ANS: A
+WHY: Real growth ≈ nominal growth − inflation = 6 − 4 = 2 per cent.
+
+=== mc mc-3A5-01
+c: 3A.5
+lv: 2
+Q: Which is a likely cost of rapid economic growth?
+A: Lower unemployment
+B: Higher tax revenue
+C: Greater pressure on inflation and the environment
+D: Higher living standards
+ANS: C
+WHY: Fast growth can push demand above capacity, adding to inflation and import spending, and can increase pollution and resource use. A, B and D are benefits.
+
+=== mc mc-3A6-01
+c: 3A.6
+lv: 1
+Q: Which would most likely shift aggregate supply to the right?
+A: An increase in company tax
+B: Higher productivity from new technology
+C: A rise in the world oil price
+D: Wages rising faster than productivity
+ANS: B
+WHY: Higher productivity lowers unit costs, so firms supply more at each price level. A, C and D raise costs and shift AS left.
+
+=== mc mc-3A7-01
+c: 3A.7
+lv: 1
+Q: A period of falling real GDP and rising unemployment is called a
+A: boom.
+B: recovery.
+C: downturn.
+D: peak.
+ANS: C
+WHY: A downturn (contraction) is a period of falling or slowing growth with rising unemployment. Two consecutive quarters of negative growth is a technical recession.
+
+=== mc mc-3B1-01
+c: 3B.1
+lv: 2
+Q: Employed 14.5 million, unemployed 0.7 million, working-age population 22.8 million. What is the participation rate?
+A: 63.6 per cent
+B: 66.7 per cent
+C: 4.6 per cent
+D: 4.8 per cent
+ANS: B
+WHY: Labour force = 14.5 + 0.7 = 15.2 million. Participation rate = 15.2 ÷ 22.8 × 100 = 66.7 per cent. A leaves out the unemployed; C is the unemployment rate.
+
+=== mc mc-3B2-01
+c: 3B.2 3B.3
+lv: 2
+Q: Which statement best describes unemployment in Australia since the COVID-19 recession?
+A: It rose above 10 per cent and stayed there
+B: It fell to its lowest level in about 50 years (around 3.5 per cent in 2022) and has risen gradually since
+C: It has remained above 7 per cent
+D: It has fallen every year since 2020
+ANS: B
+WHY: Strong demand pushed unemployment down to about 3.5 per cent in 2022–23, the lowest in around 50 years. It rose gradually as growth slowed and interest rates rose (it reached 4.9 per cent in October 2026).
+
+=== mc mc-3B4-01
+c: 3B.4
+lv: 3
+Q: If unemployment falls below the NAIRU, the most likely result is
+A: falling inflation.
+B: rising wage growth and inflation.
+C: a rise in the participation rate to 100 per cent.
+D: an immediate recession.
+ANS: B
+WHY: Below the NAIRU, employers compete for scarce workers, so wage growth and inflation tend to rise.
+
+=== mc mc-3B5-01
+c: 3B.5
+lv: 2
+Q: Which group usually has an unemployment rate well above the national average?
+A: People aged 35 to 54
+B: People with a university degree
+C: Young people aged 15 to 24
+D: People who own their own business
+ANS: C
+WHY: Youth unemployment is usually about twice the national rate, because young people have less experience and are often first to lose jobs in a downturn.
+
+=== mc mc-3B6-01
+c: 3B.6
+lv: 2
+Q: Which is an economic cost of unemployment rather than a social cost?
+A: Higher rates of mental illness
+B: Family breakdown
+C: Lost output and lower tax revenue
+D: Social isolation
+ANS: C
+WHY: Lost production and lower tax revenue (with higher welfare payments) are economic costs. A, B and D are social costs.
+
+=== mc mc-3C1-01
+c: 3C.1
+lv: 2
+Q: The CPI was 132.0 last year and is 137.3 this year. What is the inflation rate?
+A: 3.9 per cent
+B: 4.0 per cent
+C: 5.3 per cent
+D: 37.3 per cent
+ANS: B
+WHY: (137.3 − 132.0) ÷ 132.0 × 100 = 4.0 per cent. C is the change in index points, which is not a percentage unless the earlier index is 100.
+
+=== mc mc-3C2-01
+c: 3C.2
+lv: 2
+Q: Which statement best describes inflation in Australia since 2021?
+A: It has stayed inside the 2–3 per cent target band throughout
+B: It peaked near 8 per cent in late 2022, eased, then rose again in 2026
+C: Australia has had deflation since 2021
+D: It has been below 1 per cent since 2021
+ANS: B
+WHY: Headline inflation peaked at 7.8 per cent in the December quarter 2022 after supply shocks and strong demand, fell back towards the target, then rose again in 2026 with higher energy prices, prompting cash rate rises.
+
+=== mc mc-3C3-01
+c: 3C.3
+lv: 2
+Q: Workers ask for bigger pay rises because they expect prices to keep rising, and firms raise prices because they expect costs to rise. This is an example of
+A: imported inflation.
+B: inflationary expectations.
+C: deflation.
+D: demand inflation from government spending.
+ANS: B
+WHY: Expectations of future inflation feed into wage claims and price setting, which can make inflation self-fulfilling. That is why central banks try to keep expectations anchored.
+
+=== mc mc-3C4-01
+c: 3C.4
+lv: 2
+Q: Which group is most likely to be harmed by unexpectedly high inflation?
+A: Borrowers with fixed-rate loans
+B: Owners of property
+C: Lenders and savers receiving a fixed interest rate
+D: Businesses with large debts
+ANS: C
+WHY: Unexpected inflation lowers the real value of fixed repayments and savings, so lenders and savers on fixed rates lose and borrowers gain.
+
+=== mc mc-3D1-01
+c: 3D.1
+lv: 2
+Q: Net foreign debt is $1,500 billion, net foreign equity is −$100 billion and GDP is $2,800 billion. Net foreign liabilities as a percentage of GDP are
+A: 46.4 per cent
+B: 50.0 per cent
+C: 53.6 per cent
+D: 57.1 per cent
+ANS: B
+WHY: NFL = 1,500 + (−100) = $1,400 billion. 1,400 ÷ 2,800 × 100 = 50.0 per cent. C uses debt alone; D adds the equity instead of subtracting.
+
+=== mc mc-3D2-01
+c: 3D.2
+lv: 2
+Q: Which statement best describes the trend in Australia's net foreign equity in recent years?
+A: Foreign ownership of Australian assets has grown much faster than Australian investment abroad
+B: Australian investment abroad, much of it by superannuation funds, has grown so that net foreign equity is negative
+C: Net foreign equity has been unchanged for 20 years
+D: Australia has no foreign equity liabilities
+ANS: B
+WHY: Large outflows by superannuation funds into overseas shares mean Australians now own more foreign equity than foreigners own here, so net foreign equity is negative and net foreign liabilities are mostly debt.
+
+=== mc mc-3D3-01
+c: 3D.3
+lv: 3
+Q: Which is a structural cause of Australia's current account deficit?
+A: A temporary fall in commodity prices
+B: A short-term boom in domestic spending
+C: National saving that has long been lower than national investment
+D: A temporary recession in our trading partners
+ANS: C
+WHY: The savings-investment gap is a long-run feature of the economy that has to be funded from overseas, a structural cause. A, B and D are cyclical.
+
+=== mc mc-3E1-01
+c: 3E.1
+lv: 2
+Q: On a Lorenz curve diagram, the area between the line of equality and the curve is 1,200 and the area under the curve is 3,800. The Gini coefficient is
+A: 0.24
+B: 0.32
+C: 0.76
+D: 1.20
+ANS: A
+WHY: Gini = A ÷ (A + B) = 1,200 ÷ 5,000 = 0.24. B divides by B alone (1,200 ÷ 3,800 = 0.32).
+
+=== mc mc-3E2-01
+c: 3E.2
+lv: 1
+Q: Which is the main source of income for most Australian households?
+A: Social welfare transfers
+B: Wages and salaries
+C: Dividends from shares
+D: Rent from property
+ANS: B
+WHY: Wages and salaries are by far the largest source of household income. Lower-income households rely more on transfers, and higher-income households receive more capital income.
+
+=== mc mc-3E3-01
+c: 3E.3
+lv: 2
+Q: Which policy would most directly reduce inequality in disposable income?
+A: A rise in the GST rate
+B: Lower top marginal tax rates
+C: Higher income support payments funded by progressive income tax
+D: Lower company tax
+ANS: C
+WHY: Progressive taxes take a larger share of higher incomes and transfers lift low incomes, narrowing the gap. A raises a regressive tax; B and D mostly help higher-income earners.
+
+=== mc mc-3E4-01
+c: 3E.4
+lv: 2
+Q: Which asset makes up the largest share of Australian household wealth?
+A: Shares
+B: Housing (owner-occupied and investment property)
+C: Bank deposits
+D: Cars and household goods
+ANS: B
+WHY: Property is the largest part of household wealth, followed by superannuation. Because older and higher-income households own more property, wealth is less equal than income.
+
+=== mc mc-3E5-01
+c: 3E.5
+lv: 2
+Q: Which statement about the distribution of income and wealth in Australia is correct?
+A: Younger households usually hold more wealth than older households
+B: Women's average earnings are below men's (a gender pay gap)
+C: Income is distributed more unequally than wealth
+D: Occupation has no effect on income
+ANS: B
+WHY: There is a persistent gender pay gap. Wealth peaks for households near retirement age and is less equal than income; occupation strongly affects income.
+
+=== mc mc-3E6-01
+c: 3E.6
+lv: 3
+Q: Which is an economic benefit of some inequality?
+A: Lower crime
+B: Incentives to work, study and take business risks
+C: Greater social cohesion
+D: Higher consumption by low-income households
+ANS: B
+WHY: Differences in income reward effort, skills and risk-taking. High inequality has costs, such as lost potential, weaker social cohesion and lower consumption.
+
+=== mc mc-3F1-01
+c: 3F.1
+lv: 1
+Q: Ecologically sustainable development means
+A: stopping economic growth to protect the environment.
+B: growth that meets present needs without reducing future generations' ability to meet theirs.
+C: using only renewable energy.
+D: protecting national parks only.
+ANS: B
+WHY: ESD balances economic growth with the protection of the environment so that future generations are not left worse off (intergenerational equity).
+
+=== mc mc-3F2-01
+c: 3F.2
+lv: 2
+Q: A factory pollutes a river used by farmers downstream. Without government action, the market will
+A: produce the socially efficient output.
+B: produce more than the socially efficient output, at a price that is too low.
+C: produce less than the socially efficient output.
+D: charge farmers for the pollution.
+ANS: B
+WHY: The factory ignores the external cost, so its private costs are below the social cost. It overproduces, and the price does not reflect the full cost: market failure.
+
+=== mc mc-3F3-01
+c: 3F.3
+lv: 1
+Q: Which is the best example of a public good?
+A: A sandwich
+B: A private swimming pool
+C: National defence
+D: A train ticket
+ANS: C
+WHY: Defence is non-rival (one person's protection does not reduce another's) and non-excludable (people cannot be stopped from benefiting), so the market would underprovide it.
+
+=== mc mc-3F4-01
+c: 3F.4 4G.2
+lv: 2
+Q: Which environmental issue is an example of the depletion of a natural resource?
+A: Noise from a construction site
+B: Overfishing that reduces fish stocks
+C: Litter in a park
+D: Light pollution in cities
+ANS: B
+WHY: Overfishing uses up a renewable resource faster than it can regenerate. The others are forms of pollution.

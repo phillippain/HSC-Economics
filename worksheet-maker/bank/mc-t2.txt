@@ -1,0 +1,243 @@
+# New multiple-choice questions, Topic 2.
+
+=== mc mc-2A1-01
+c: 2A.1
+lv: 1
+Q: Which statement best describes the direction of Australia's trade today?
+A: Most exports go to Europe
+B: Most exports go to East and South Asia, with China the largest market
+C: The United States buys most of Australia's resources
+D: New Zealand is Australia's largest export market
+ANS: B
+WHY: Asia takes about three-quarters of Australia's goods exports, and China alone takes close to 30 per cent of all exports. Trade with Europe has fallen in relative terms since the 1960s.
+
+=== mc mc-2A1-02
+c: 2A.1
+lv: 2
+Q: Which change best describes the composition of Australia's exports over the past 40 years?
+A: Manufactured goods have replaced resources as the main export
+B: Resources and services have grown as a share of exports, and rural goods have fallen
+C: Services have fallen to a very small share of exports
+D: Exports have become less concentrated in a few commodities
+ANS: B
+WHY: Mining exports (iron ore, coal, gas) and services (education, tourism) have grown in importance, while rural goods have fallen as a share. Exports remain concentrated in a few commodities.
+
+=== mc mc-2A2-01
+c: 2A.2 3D.1
+lv: 2
+Q: Australia's net foreign liabilities are equal to
+A: net foreign debt plus net foreign equity.
+B: net foreign debt minus net foreign equity.
+C: the current account deficit plus the budget deficit.
+D: exports minus imports.
+ANS: A
+WHY: Net foreign liabilities are what Australia owes the rest of the world in debt plus the net foreign ownership of Australian assets (equity).
+
+=== mc mc-2A2-02
+c: 2A.2
+lv: 3
+Q: Which of the following would increase Australia's net foreign equity?
+A: An Australian bank borrows from a US bank
+B: A Canadian pension fund buys shares in an Australian airport
+C: An Australian company repays an overseas loan
+D: The government sells bonds to Australian super funds
+ANS: B
+WHY: Foreign purchases of shares and businesses raise foreign ownership of Australian assets: net foreign equity. Borrowing (A) adds to debt; C reduces debt; D is domestic.
+
+=== mc mc-2B1-01
+c: 2B.1
+lv: 1
+Q: Where is the payment of interest on Australia's foreign debt recorded in the balance of payments?
+A: Balance on goods and services
+B: Net primary income
+C: Net secondary income
+D: The capital account
+ANS: B
+WHY: Interest and dividends paid to and received from overseas are primary income, part of the current account.
+
+=== mc mc-2B1-02
+c: 2B.1
+lv: 2
+Q: Exports of goods $400b, imports of goods $380b, exports of services $90b, imports of services $100b, net primary income −$60b, net secondary income −$2b. What is the current account balance?
+A: +$10b
+B: −$50b
+C: −$52b
+D: −$62b
+ANS: C
+WHY: BOGS = (400 − 380) + (90 − 100) = +10. Current account = 10 − 60 − 2 = −$52 billion. B leaves out secondary income; D adds the services deficit twice.
+
+=== mc mc-2B2-01
+c: 2B.2
+lv: 2
+Q: An Australian superannuation fund buys $5 billion of shares in US companies. In Australia's balance of payments this is recorded as
+A: a credit in the current account.
+B: portfolio investment abroad, a debit in the financial account.
+C: direct investment in Australia, a credit in the financial account.
+D: a credit in the capital account.
+ANS: B
+WHY: Buying overseas shares (below 10 per cent of the company) is portfolio investment by Australians abroad, an outflow recorded as a debit in the financial account.
+
+=== mc mc-2B3-01
+c: 2B.3 2A.2
+lv: 3
+Q: Why do persistent financial account surpluses tend to widen Australia's current account deficit over time?
+A: They make the Australian dollar depreciate
+B: They add to foreign liabilities, so more interest and dividends are paid overseas, widening the net primary income deficit
+C: They reduce imports
+D: They are recorded as exports of services
+ANS: B
+WHY: Each year's inflow adds to foreign debt and equity. Servicing those liabilities raises payments of interest and dividends abroad, which widens the net primary income deficit in the current account.
+
+=== mc mc-2B4-01
+c: 2B.4
+lv: 2
+Q: Export prices rise by 10 per cent and import prices rise by 2 per cent. The terms of trade index, starting at 100, becomes about
+A: 92
+B: 102
+C: 108
+D: 112
+ANS: C
+WHY: Terms of trade = export price index ÷ import price index × 100 = 110 ÷ 102 × 100 ≈ 107.8. The terms of trade improve.
+
+=== mc mc-2B4-02
+c: 2B.4 3D.2
+lv: 2
+Q: Australia recorded current account surpluses from 2019–20 to 2022–23. Which factor contributed most?
+A: Very high commodity prices that lifted export income
+B: A large rise in imports
+C: A rise in Australia's net primary income deficit
+D: A sharp appreciation of the Australian dollar
+ANS: A
+WHY: High prices for iron ore, coal and gas lifted the terms of trade and produced large trade surpluses, enough to outweigh the primary income deficit. The current account returned to deficit from 2023–24.
+
+=== mc mc-2C1-01
+c: 2C.1
+lv: 1
+Q: The exchange rate moves from A$1 = US$0.70 to A$1 = US$0.63. What has happened?
+A: The Australian dollar has appreciated by 10 per cent
+B: The Australian dollar has depreciated by 10 per cent
+C: The Australian dollar has depreciated by 7 per cent
+D: The US dollar has depreciated against the Australian dollar
+ANS: B
+WHY: (0.63 − 0.70) ÷ 0.70 × 100 = −10 per cent: the A$ buys fewer US dollars, a depreciation. The US dollar has appreciated.
+
+=== mc mc-2C1-02
+c: 2C.1
+lv: 2
+Q: The Australian dollar rises against the US dollar but the Trade Weighted Index falls. Which explanation is most likely?
+A: The TWI only measures the dollar against the US dollar
+B: The A$ fell against currencies with large weights in the TWI, such as the Chinese renminbi
+C: The RBA lowered the cash rate
+D: The TWI rises whenever the A$ rises against any currency
+ANS: B
+WHY: The TWI is weighted by trade; the renminbi has the largest weight. If the A$ falls against major trading partners' currencies, the TWI can fall even while it rises against the US dollar.
+
+=== mc mc-2C2-01
+c: 2C.2
+lv: 1
+Q: Which of the following would increase the supply of Australian dollars on the foreign exchange market?
+A: Overseas investors buy Australian property
+B: The world price of LNG rises
+C: Australians buy more imported cars
+D: More overseas students enrol in Australian universities
+ANS: C
+WHY: To pay for imports, Australians sell Australian dollars for foreign currency, increasing the supply of A$. The other three increase the demand for A$.
+
+=== mc mc-2C3-01
+c: 2C.3 2C.6
+lv: 2
+Q: Which group is most likely to be helped by an appreciation of the Australian dollar?
+A: Australian exporters of wine
+B: Australian tourism operators
+C: Australian households buying imported goods
+D: Australian manufacturers competing with imports
+ANS: C
+WHY: An appreciation makes imports cheaper in A$. It hurts exporters, tourism operators and import-competing producers, whose prices rise relative to overseas competitors.
+
+=== mc mc-2C4-01
+c: 2C.4
+lv: 2
+Q: Under a fixed exchange rate, what must the central bank do if there is excess supply of its currency at the fixed rate?
+A: Sell its currency
+B: Buy its currency with foreign reserves
+C: Lower interest rates
+D: Let the currency depreciate
+ANS: B
+WHY: To hold the peg, the central bank must remove the excess supply by buying its own currency with foreign currency reserves (and may also need to raise interest rates).
+
+=== mc mc-2C5-01
+c: 2C.5
+lv: 2
+Q: Since the Australian dollar was floated, the RBA's direct intervention in the foreign exchange market has mainly been to
+A: set the exchange rate each day.
+B: keep the A$ at parity with the US dollar.
+C: calm a disorderly market during extreme swings.
+D: make exports more competitive every year.
+ANS: C
+WHY: The dollar floats. The RBA intervenes only rarely, buying or selling A$ to smooth disorderly markets, as it did during the global financial crisis in 2008.
+
+=== mc mc-2C6-01
+c: 2C.6 3C.3
+lv: 2
+Q: A sustained 15 per cent depreciation of the Australian dollar is most likely to
+A: lower inflation and improve the current account straight away.
+B: add to inflation and, after a delay, improve the balance on goods and services.
+C: lower the A$ cost of servicing foreign-currency debt.
+D: reduce Australia's international competitiveness.
+ANS: B
+WHY: Dearer imports raise inflation, while volumes take time to adjust: the trade balance may worsen first and improve later (the J-curve). Servicing foreign-currency debt costs more (C is wrong) and competitiveness improves (D is wrong).
+
+=== mc mc-2D1-01
+c: 2D.1
+lv: 1
+Q: Which statement best describes Australia's trade policy since the 1980s?
+A: Steady increases in tariffs to protect manufacturing
+B: Large cuts to tariffs and quotas, and a focus on free trade agreements
+C: Quotas on most imports
+D: Leaving the WTO to sign only bilateral deals
+ANS: B
+WHY: Since the 1980s Australia has cut average tariffs to very low levels (most imports now enter tariff-free) and has pursued multilateral, regional and bilateral agreements.
+
+=== mc mc-2D1-02
+c: 2D.1 1C.2
+lv: 3
+Q: Which of the following is the best example of Australia still assisting an industry?
+A: Removing the tariff on imported cars
+B: Payments and tax incentives for local production of green metals and critical minerals
+C: Abolishing the Export Market Development Grants scheme
+D: Joining RCEP
+ANS: B
+WHY: Production incentives, such as those under Future Made in Australia, are a form of assistance (subsidies). Removing tariffs (A) is liberalisation; EMDG still operates (C is wrong); RCEP (D) is a trade agreement.
+
+=== mc mc-2D2-01
+c: 2D.2
+lv: 1
+Q: Which of the following is a bilateral free trade agreement?
+A: The Australia–United States Free Trade Agreement
+B: The Regional Comprehensive Economic Partnership
+C: The Comprehensive and Progressive Agreement for Trans-Pacific Partnership
+D: WTO agreements
+ANS: A
+WHY: A bilateral agreement has two parties: AUSFTA. RCEP and the CPTPP are regional agreements; WTO agreements are multilateral.
+
+=== mc mc-2D3-01
+c: 2D.3
+lv: 2
+Q: How do Australia's low tariffs mainly benefit Australian households?
+A: They raise wages in all import-competing industries
+B: They lower the prices of imported goods and raise real incomes
+C: They increase government tariff revenue
+D: They reduce the number of goods available
+ANS: B
+WHY: Low tariffs mean lower prices and more choice, raising households' real incomes. They reduce tariff revenue and can cost jobs in import-competing industries.
+
+=== mc mc-2D4-01
+c: 2D.4
+lv: 2
+Q: The United States raises tariffs on imports from China. Which is the most likely indirect effect on Australia?
+A: Higher demand for Australian iron ore
+B: Slower Chinese growth reduces demand for Australian resources, and diverted Chinese goods may compete with Australian producers
+C: Australia's terms of trade improve
+D: Australia's exports to the US must fall
+ANS: B
+WHY: Even if not targeted, Australia is exposed: weaker Chinese manufacturing reduces demand for resources, and goods blocked from the US may be sold more cheaply in Australia.

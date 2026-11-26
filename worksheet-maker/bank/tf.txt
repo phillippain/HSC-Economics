@@ -1,0 +1,160 @@
+# True or false statements. The page picks 6 to 10 for the dot points chosen.
+# "- T: statement => (optional) why it is true"   "- F: false statement => the corrected statement"
+
+=== tf tf-T1-glob
+c: 1A.1 1A.3 1A.4 1A.5 1A.6 1A.7
+- T: Globalisation is the increasing integration of the world's economies through trade, finance, investment, technology and the movement of people.
+- F: Financial flows are the smallest part of global economic integration. => Financial flows are the largest and fastest-growing part of global integration, far larger than trade flows.
+- T: Transnational corporations (TNCs) produce in more than one country and account for a large share of world trade.
+- F: Improvements in transport and communication have raised the cost of trading across borders. => Improvements in transport and communication have lowered the cost of trading across borders.
+- T: The international division of labour means countries specialise in different stages of production according to their comparative advantage.
+- F: Gross World Product is measured by adding together each country's exports. => Gross World Product is the total value of goods and services produced by all the world's economies (the sum of countries' GDP).
+
+=== tf tf-T1-trade
+c: 1B.1 1B.2 1B.3 1B.4
+- T: Comparative advantage means a country can produce a good at a lower opportunity cost than another country.
+- F: The IMF's main role is to settle trade disputes between countries. => The WTO settles trade disputes; the IMF promotes financial stability and lends to countries facing balance of payments problems.
+- T: The World Bank provides loans and grants for development projects in developing economies.
+- F: A monetary union is a group of countries that only remove tariffs on trade with each other. => A monetary union shares a single currency and one monetary policy, such as the euro area.
+- T: The G20 is a forum of major advanced and emerging economies, and Australia is a member.
+- F: Trade diversion means trade moves to the lowest-cost producer in the world. => Trade diversion means imports switch from a lower-cost non-member to a higher-cost member of a trading bloc.
+
+=== tf tf-T1-prot
+c: 1C.1 1C.2
+- T: A tariff raises the domestic price of an imported good and gives the government revenue.
+- F: An import quota gives the government revenue equal to the quota multiplied by the price rise. => With a quota, the importers keep the extra revenue from the higher price; the government receives no revenue.
+- T: Dumping is selling exports below the price charged in the home market or below the cost of production.
+- F: A production subsidy raises the price consumers pay for the good. => With a production subsidy, consumers still pay the world price; domestic production rises and imports fall.
+- T: The infant industry argument says a new industry may need temporary protection until it is large enough to compete.
+- F: Protection raises world efficiency because each country produces more of its own goods. => Protection lowers world efficiency because production moves away from the lowest-cost producers.
+
+=== tf tf-T1-dev
+c: 1D.1 1D.2 1D.3 1D.4 1D.5 1D.8 1D.9
+- T: Economic development includes improvements in health, education and living standards, not just higher output.
+- F: Emerging economies and developing economies are the same group of countries. => Emerging economies (such as China and India) are industrialising quickly; developing economies have lower incomes and are mostly agricultural.
+- T: The Human Development Index combines life expectancy, education and income per person.
+- F: Purchasing power parity compares incomes using market exchange rates. => Purchasing power parity adjusts incomes for differences in the cost of living between countries.
+- T: Global income and wealth are distributed very unequally between countries.
+- T: A downturn in the international business cycle can spread to Australia through lower demand for its exports.
+
+=== tf tf-T2-trade
+c: 2A.1 2A.2
+- T: China is Australia's largest trading partner.
+- F: Most of Australia's goods exports are manufactured goods. => Most of Australia's goods exports are resources (minerals and energy) and rural goods.
+- T: Australia's foreign liabilities are larger than its foreign assets, so it has net foreign liabilities.
+- F: Net foreign debt is foreign ownership of Australian shares and businesses. => Net foreign equity is foreign ownership of shares and businesses; net foreign debt is borrowing that must be repaid with interest.
+- T: The direction of Australia's trade has shifted towards Asia over the past 50 years.
+
+=== tf tf-T2-bop
+c: 2B.1 2B.2 2B.3 2B.4
+- T: The current account records trade in goods and services, primary income and secondary income.
+- F: Australia usually records a surplus on net primary income. => Australia usually records a large deficit on net primary income, because it pays more interest and dividends to foreigners than it receives.
+- T: A current account deficit is financed by a surplus on the capital and financial account.
+- F: Foreign aid paid by Australia is recorded in the capital and financial account. => Foreign aid is recorded as secondary income, in the current account.
+- T: An improvement in the terms of trade means a given quantity of exports buys more imports.
+- F: The balance on goods and services is the current account balance. => The balance on goods and services leaves out primary and secondary income; the current account balance includes them.
+
+=== tf tf-T2-xr
+c: 2C.1 2C.2 2C.3 2C.4 2C.5 2C.6
+- T: The Trade Weighted Index measures the value of the Australian dollar against a basket of trading partners' currencies, weighted by trade.
+- F: A depreciation of the Australian dollar makes imports cheaper for Australians. => A depreciation makes imports dearer for Australians and exports cheaper for overseas buyers.
+- T: The Australian dollar has floated since December 1983.
+- F: In a floating exchange rate system, the central bank sets the exchange rate each day. => In a floating system the exchange rate is set by supply and demand; the central bank intervenes only rarely.
+- T: Higher Australian interest rates relative to overseas rates tend to increase demand for Australian dollars.
+- F: The Australian dollar can only rise against the US dollar if the TWI also rises. => The dollar can rise against the US dollar while the TWI falls, if it falls against other major currencies.
+- T: The RBA can buy Australian dollars with its foreign currency reserves to support the dollar when the market is disorderly.
+
+=== tf tf-T2-trade-policy
+c: 2D.1 2D.2 2D.3 2D.4
+- T: Australia has cut its tariffs to very low levels, and most imports enter tariff-free.
+- F: RCEP is a bilateral free trade agreement between Australia and China. => RCEP is a regional agreement of 15 Asia-Pacific economies, including China, Japan, Korea and ASEAN.
+- T: Protectionist policies in other countries can reduce Australia's export income even when Australia is not targeted directly.
+- F: Lower tariffs always raise employment in every Australian industry. => Lower tariffs can cost jobs in import-competing industries while creating jobs in exporting industries.
+
+=== tf tf-T3-growth
+c: 3A.1 3A.2 3A.3 3A.4 3A.5 3A.6 3A.7
+- T: Aggregate demand is the total spending in the economy: C + I + G + (X − M).
+- F: Savings, taxation and exports are the three withdrawals from the circular flow. => The withdrawals are savings, taxation and imports; exports are an injection.
+- T: Real GDP measures output after removing the effect of price changes.
+- F: A technical recession is one quarter of negative growth in real GDP. => A technical recession is two consecutive quarters of negative growth in real GDP.
+- T: Higher productivity shifts aggregate supply to the right.
+- F: The larger the marginal propensity to save, the larger the multiplier. => The larger the marginal propensity to save, the smaller the multiplier, because more income leaks out each round.
+
+=== tf tf-T3-unemp
+c: 3B.1 3B.2 3B.3 3B.4 3B.5 3B.6
+- T: The participation rate is the labour force as a percentage of the working-age population.
+- F: To be counted as employed, a person must work at least 35 hours a week. => A person who did at least one hour of paid work in the survey week is counted as employed.
+- T: Underemployed people have a job but want, and are available for, more hours.
+- F: Frictional unemployment is caused by a recession. => Frictional unemployment is the short time people spend between jobs; a recession causes cyclical unemployment.
+- T: The NAIRU is the lowest unemployment rate the economy can sustain without inflation rising.
+- T: Young people, people with lower skills and long-term unemployed people are among the groups most affected by unemployment.
+
+=== tf tf-T3-infl
+c: 3C.1 3C.2 3C.3 3C.4
+- T: The Consumer Price Index measures the change in the price of a fixed basket of goods and services bought by households.
+- F: The RBA's inflation target is 1 to 2 per cent. => The RBA's inflation target is 2 to 3 per cent, with the midpoint as the focus.
+- T: Imported inflation occurs when the prices of imported goods and inputs rise, for example after a depreciation.
+- F: Deflation is a fall in the rate of inflation. => Deflation is a fall in the general price level; a fall in the rate of inflation is disinflation.
+- T: High inflation reduces the purchasing power of people on fixed incomes.
+
+=== tf tf-T3-ext
+c: 3D.1 3D.2 3D.3
+- T: The current account deficit is often expressed as a percentage of GDP to show its size relative to the economy.
+- F: A falling Australian dollar always increases Australia's net foreign liabilities. => A depreciation can reduce net foreign liabilities, because Australia's foreign assets are mostly in foreign currency and are worth more in Australian dollars.
+- T: The debt servicing ratio measures interest payments on foreign debt as a percentage of export income.
+- F: The Pitchford thesis argues that every current account deficit is a serious problem. => The Pitchford thesis argues that a deficit driven by private-sector decisions to borrow and invest need not be a concern.
+
+=== tf tf-T3-dist
+c: 3E.1 3E.2 3E.3 3E.4 3E.5 3E.6
+- T: Wealth is distributed much more unequally than income in Australia.
+- F: The GST is a progressive tax. => The GST is regressive, because low-income households spend a larger share of their income.
+- T: The social wage includes government-provided services such as Medicare, public education and public housing.
+- F: A Gini coefficient of 0 means perfect inequality. => A Gini coefficient of 0 means perfect equality; 1 means perfect inequality.
+- T: Inequality can provide incentives to work, study and take risks.
+- T: Women, on average, earn less than men in Australia.
+
+=== tf tf-T3-env
+c: 3F.1 3F.2 3F.3 3F.4
+- T: Ecologically sustainable development means meeting the needs of today without reducing the ability of future generations to meet theirs.
+- F: A negative externality means the market produces too little of a good. => A negative externality means the market produces too much, because the external cost is ignored.
+- T: A public good is non-rival and non-excludable.
+- F: The free rider problem means private firms will overproduce public goods. => Because people can use public goods without paying, private firms underproduce them, so governments provide them.
+
+=== tf tf-T4-objectives
+c: 4A.1 4A.2 4A.3 4A.4 4A.5 4A.6 4A.7 4B.1
+- T: Full employment does not mean zero unemployment; it is unemployment at about the NAIRU.
+- F: Economic objectives never conflict, so a government can always achieve all of them at once. => Objectives can conflict, such as faster growth raising inflation and the current account deficit.
+- T: Macroeconomic policies aim to stabilise the business cycle by managing aggregate demand.
+- F: Fiscal policy is set by the Reserve Bank. => Fiscal policy is set by the Federal Government through the budget; monetary policy is set by the RBA.
+
+=== tf tf-T4-fiscal
+c: 4C.1 4C.2 4C.3 4C.4
+- T: The budget outcome is government revenue minus government spending.
+- F: An expansionary budget stance means the government is reducing its deficit. => An expansionary stance adds to aggregate demand, for example through a larger deficit or smaller surplus.
+- T: Automatic stabilisers increase the deficit in a downturn without any new decision by the government.
+- F: The structural budget balance changes automatically with the business cycle. => The cyclical component changes with the business cycle; the structural balance reflects the government's policy settings.
+- T: Selling Commonwealth Government Securities is the main way the government finances a deficit.
+
+=== tf tf-T4-monetary
+c: 4D.1 4D.2 4D.3
+- T: The RBA Monetary Policy Board sets the target for the cash rate.
+- F: The RBA sets the interest rates banks charge on home loans. => The RBA sets the cash rate target; banks set their own lending rates, which usually follow the cash rate.
+- T: Changes in the cash rate affect the economy with long and variable lags.
+- F: A cut in the cash rate tends to make the Australian dollar appreciate. => A cut in the cash rate tends to make the Australian dollar depreciate, as Australian assets become less attractive.
+- T: Monetary policy aims for inflation of 2 to 3 per cent and the maximum sustainable level of employment.
+
+=== tf tf-T4-micro
+c: 4E.1 4E.2 4E.3 4F.1 4F.2 4F.3 4F.4 4F.5
+- T: Microeconomic reform aims to raise efficiency and productivity, shifting aggregate supply to the right.
+- F: Competition policy aims to protect large firms from new competitors. => Competition policy aims to increase competition, for example by stopping price fixing and the misuse of market power.
+- T: The Fair Work Commission sets the national minimum wage and modern award wages in its Annual Wage Review.
+- F: Enterprise agreements are set by the Fair Work Commission for each industry. => Enterprise agreements are negotiated between an employer and its employees; the Fair Work Commission approves them.
+- T: Education and training programs can reduce structural unemployment by matching workers' skills to the jobs available.
+
+=== tf tf-T4-env-limits
+c: 4G.1 4G.2 4G.3 4G.4 4H.1 4H.2 4H.3
+- T: An emissions trading scheme caps total emissions and lets firms buy and sell permits.
+- F: The Paris Agreement sets legally binding emission cuts for each country, chosen by the UN. => Under the Paris Agreement each country sets its own target (its nationally determined contribution).
+- T: Australia has a legislated target of net zero emissions by 2050.
+- T: Time lags, global influences and political constraints all limit how well economic policies work.
+- F: Fiscal policy has a shorter implementation lag than monetary policy. => Monetary policy has the shorter implementation lag: the cash rate can change at any meeting, while budget changes take time to plan and legislate.

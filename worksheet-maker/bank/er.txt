@@ -1,0 +1,332 @@
+# New extended response questions (20 marks). PTS say what a Band 6 response includes; PLAN suggests paragraphs.
+
+=== er er-1-glob-growth
+c: 1A.3 1A.4 1D.6 1D.5
+lv: 3
+k: evaluate
+Q: Evaluate the impact of globalisation on economic growth and development in emerging and developing economies.
+PTS:
+- Defines globalisation, growth and development, and treats emerging and developing economies separately
+- Trade and foreign investment: export-led growth, technology transfer and jobs, with evidence (e.g. China, India, Vietnam)
+- Development: poverty reduction and HDI gains, but uneven distribution and rising inequality within countries
+- Costs: volatile capital flows, commodity dependence, environmental damage, exposure to the international business cycle
+- A sustained judgement: large benefits for emerging economies; smaller and less certain gains for many developing economies
+PLAN:
+- Judgement: globalisation has driven growth in emerging economies but its benefits for developing economies are uneven
+- Trade and TNCs as engines of growth (evidence and a diagram such as a PPF shift)
+- Development outcomes: poverty, HDI, inequality within countries
+- Risks: financial flows, commodity prices, environment
+- Conclusion weighing growth against development
+
+=== er er-1-protection
+c: 1C.1 1C.2 2D.4
+lv: 3
+k: analyse diagram
+Q: Analyse the effects of protectionist policies on the global economy.
+PTS:
+- Explains methods of protection with a tariff diagram (price, production, consumption, imports, revenue, deadweight losses)
+- Effects on the protecting economy: higher prices, inefficient resource allocation, retaliation
+- Global effects: lower world trade and growth, trade diversion, retaliation and trade wars (e.g. US tariffs from 2025)
+- Effects on developing economies and on third countries such as Australia
+- Links throughout to efficiency and living standards
+PLAN:
+- Thesis: protection reduces global efficiency and growth, even if some producers gain
+- Tariff diagram and its effects on one economy
+- Retaliation, trade wars and reduced world trade
+- Effects on developing economies and third countries
+- Conclusion
+
+=== er er-1-china
+c: 1E.1 1D.6 1A.5
+lv: 3
+k: evaluate case
+Q: Evaluate the influence of globalisation on the economy of a country other than Australia.
+PTS:
+- Names the economy and outlines how it is integrated into the global economy (trade, investment, finance, labour, technology)
+- Effects on growth with data, e.g. China's export-led growth since 1978 and WTO entry in 2001
+- Effects on development and distribution: poverty reduction, rising inequality, urban and rural gaps
+- Costs: environmental degradation, exposure to trade tensions and the international business cycle
+- Government policies that shaped the outcome, and a clear overall judgement
+PLAN:
+- Judgement on the net effect of globalisation on the economy
+- Trade and foreign investment as drivers of growth
+- Development and inequality
+- Environmental and external risks
+- Role of government policy; conclusion
+
+=== er er-2-cad
+c: 2B.4 3D.3 2A.2
+lv: 3
+k: analyse
+Q: Analyse the causes and effects of changes in Australia's current account balance over the last decade.
+PTS:
+- Describes the trend: deficits, the surpluses of 2019–20 to 2022–23 and the return to deficit from 2023–24
+- Cyclical causes: commodity prices and the terms of trade, domestic demand, the exchange rate
+- Structural causes: the savings-investment gap and the net primary income deficit from past foreign borrowing and investment
+- Effects on foreign liabilities, the exchange rate and external stability
+- Uses balance of payments terms correctly and integrates data
+PLAN:
+- Thesis: recent changes were driven mainly by the terms of trade, against a structural primary income deficit
+- The surpluses: commodity prices and the BOGS
+- The return to deficit: falling commodity prices and rising imports
+- The structural savings-investment gap and net primary income
+- Effects on foreign liabilities and external stability; conclusion
+
+=== er er-2-xr
+c: 2C.2 2C.6 2C.5
+lv: 2
+k: discuss diagram
+Q: Discuss the effects of fluctuations in the value of the Australian dollar on the Australian economy.
+PTS:
+- Explains the determination of the exchange rate with a demand and supply diagram for A$
+- Effects of a depreciation: competitiveness, net exports, inflation, the J-curve, valuation effects on foreign liabilities
+- Effects of an appreciation: lower inflation, cheaper imports, pressure on exporters and import-competing firms
+- Volatility: uncertainty for traders and investors; hedging; RBA intervention only when markets are disorderly
+- Balanced judgement about whether a floating dollar helps the economy adjust to shocks
+PLAN:
+- Thesis: the floating dollar acts as a shock absorber, though its swings bring costs
+- Diagram and causes of fluctuations
+- Effects of a depreciation
+- Effects of an appreciation
+- Volatility and the RBA's role; conclusion
+
+=== er er-2-trade-policy
+c: 2D.1 2D.2 2D.3
+lv: 3
+k: evaluate
+Q: Evaluate the impact of Australia's free trade policies on individuals, firms and the government.
+PTS:
+- Outlines Australia's trade liberalisation since the 1980s and its multilateral, regional and bilateral agreements
+- Individuals: lower prices and more choice; job losses and structural change in import-competing industries
+- Firms: access to export markets, cheaper inputs, competitive pressure to raise efficiency
+- Government: lower tariff revenue, adjustment assistance, policy constraints in agreements
+- Weighs costs and benefits with evidence, for example cuts to nuisance tariffs and new agreements with the EU
+PLAN:
+- Judgement: free trade has raised living standards overall, with costs concentrated in some groups
+- Individuals
+- Firms
+- Government
+- Conclusion
+
+=== er er-3-growth
+c: 3A.5 3A.6 4A.1
+lv: 3
+k: discuss
+Q: Discuss the sources and effects of economic growth in Australia.
+PTS:
+- Distinguishes demand-side and supply-side sources of growth; uses an AD–AS diagram (and LRAS for capacity)
+- Sources: population growth, productivity, investment, the terms of trade, policy settings
+- Effects: employment and incomes, inflation, the current account, the environment and the distribution of income
+- Uses recent data, e.g. weak productivity growth and population-driven growth
+- Balanced judgement about sustainable growth
+PLAN:
+- Thesis on the main sources of recent growth and whether growth is sustainable
+- Demand-side sources
+- Supply-side sources and productivity
+- Effects on objectives (inflation, external stability, environment)
+- Conclusion
+
+=== er er-3-unemp
+c: 3B.3 3B.6 4F.5 4I.2
+lv: 3
+k: analyse
+Q: Analyse the causes and effects of unemployment in Australia.
+PTS:
+- Types: cyclical, structural, frictional, seasonal, plus underemployment and hidden unemployment
+- Causes linked to the business cycle, structural change, technology and the NAIRU
+- Economic and social costs, and the groups most affected
+- Uses current data (unemployment, underemployment, youth unemployment)
+- Integrates the relationship between unemployment and inflation
+PLAN:
+- Thesis: recent unemployment has been mainly cyclical, with persistent structural pockets
+- Cyclical causes and the business cycle
+- Structural causes and the NAIRU
+- Economic and social effects; groups affected
+- Conclusion
+
+=== er er-3-infl
+c: 3C.3 3C.4 4D.3
+lv: 3
+k: analyse
+Q: Analyse the causes and effects of inflation in Australia since 2021.
+PTS:
+- Describes the trend: the 2022 peak, easing, and the rise again in 2026
+- Causes: demand inflation, supply shocks and imported inflation (energy, shipping), expectations, the labour market
+- Effects: real incomes, interest rates, uncertainty and investment, competitiveness, distribution
+- AD–AS diagrams for demand and cost inflation
+- Links to monetary policy responses and the 2–3 per cent target
+PLAN:
+- Thesis on the main drivers of inflation in this period
+- Supply shocks and imported inflation (diagram)
+- Demand inflation and a tight labour market (diagram)
+- Effects on households, firms and the economy
+- Policy response; conclusion
+
+=== er er-3-ext
+c: 3D.1 3D.3 4A.4
+lv: 3
+k: discuss
+Q: Discuss the causes and effects of Australia's level of foreign liabilities.
+PTS:
+- Measures: net foreign debt, net foreign equity and net foreign liabilities as a percentage of GDP
+- Causes: the savings-investment gap, current account deficits, valuation effects, superannuation outflows
+- Effects: primary income payments, vulnerability to shifts in investor confidence, the debt servicing ratio, risk premiums
+- The Pitchford view and why investors' confidence matters
+- A judgement on sustainability supported by data
+PLAN:
+- Thesis on whether Australia's foreign liabilities are sustainable
+- How the liabilities built up
+- Costs and risks
+- Why the risks may be manageable (A$ denomination, negative net equity, floating dollar)
+- Conclusion
+
+=== er er-3-dist
+c: 3E.1 3E.3 3E.6 4I.5
+lv: 3
+k: evaluate
+Q: Evaluate the effectiveness of government policies in reducing inequality in Australia.
+PTS:
+- Measures of inequality: Lorenz curve and Gini coefficient, income and wealth
+- Policies: progressive income tax, transfers, the social wage, minimum wages, education
+- Evidence of impact: market versus disposable income Gini
+- Limits: wealth inequality and housing, regressive taxes such as the GST, work incentives
+- Judgement, with the costs and benefits of inequality
+PLAN:
+- Thesis: policy reduces income inequality significantly but does less for wealth inequality
+- Measuring inequality (Lorenz diagram)
+- Tax and transfer policies
+- Labour market and social wage policies
+- Limits and conclusion
+
+=== er er-3-env
+c: 3F.2 4G.2 4G.4 4I.6
+lv: 3
+k: analyse diagram
+Q: Analyse the role of government policy in achieving environmental sustainability in Australia.
+PTS:
+- Market failure: externalities and public goods, with an externality diagram
+- Regulation, market-based policies (Safeguard Mechanism, renewables support), targets (43 per cent by 2030, net zero by 2050)
+- International agreements (Paris Agreement) and global context
+- Conflicts with growth and employment; costs and effectiveness
+- Judgement on how far policy has moved Australia towards sustainability
+PLAN:
+- Thesis on how effective policy has been
+- Why markets fail (diagram)
+- Regulation and market-based policies
+- Targets and international agreements
+- Conflicts and conclusion
+
+=== er er-4-fiscal
+c: 4C.1 4C.2 4B.1 4I.1
+lv: 3
+k: analyse
+Q: Analyse the effects of recent fiscal policy on the Australian economy.
+PTS:
+- Budget outcomes and stance in recent budgets, with data (deficits and debt)
+- Automatic stabilisers versus discretionary measures; the multiplier
+- Effects on growth, unemployment, inflation and the distribution of income
+- Interaction with monetary policy (policy mix) and limits such as time lags and political constraints
+- Integrates current data and an AD–AS diagram
+PLAN:
+- Thesis on the stance of fiscal policy and its main effects
+- Recent budget outcomes and stance
+- Effects on growth and employment (diagram)
+- Effects on inflation and the policy mix
+- Limits; conclusion
+
+=== er er-4-monetary
+c: 4D.2 4D.3 4I.3
+lv: 3
+k: evaluate
+Q: Evaluate the effectiveness of monetary policy in achieving price stability in Australia since 2022.
+PTS:
+- Purpose and implementation: the 2–3 per cent target, the Monetary Policy Board, the cash rate
+- The transmission mechanism: interest rates, spending, asset prices, the exchange rate
+- Evidence: the tightening of 2022–23, the fall in inflation, and the rises of 2026
+- Limits: time lags, supply shocks, fixed-rate loans, global influences
+- Judgement supported by data
+PLAN:
+- Thesis on how effective monetary policy has been
+- How monetary policy is set and transmitted
+- The 2022–23 tightening and its results
+- The 2026 episode and supply shocks
+- Limits; conclusion
+
+=== er er-4-micro
+c: 4E.1 4E.2 4E.3 4I.1
+lv: 3
+k: discuss
+Q: Discuss the role of microeconomic policies in improving the performance of the Australian economy.
+PTS:
+- Purpose: efficiency, productivity and shifts in aggregate supply (diagram)
+- Examples: competition policy, trade liberalisation, privatisation, tax and labour market reform, deregulation
+- Effects on product and factor markets, prices, employment and international competitiveness
+- Costs: structural unemployment, adjustment costs, political resistance
+- Judgement with evidence about productivity growth
+PLAN:
+- Thesis on the contribution of microeconomic reform
+- Rationale and aggregate supply (diagram)
+- Reforms in product markets
+- Reforms in factor markets
+- Costs, limits and conclusion
+
+=== er er-4-mix
+c: 4B.1 4A.7 4H.1 4H.2 4H.3
+lv: 3
+k: evaluate
+Q: Evaluate the effectiveness of the policy mix in managing conflicts between Australia's economic objectives.
+PTS:
+- Explains conflicts: growth and inflation, growth and external stability, growth and the environment, employment and inflation (Phillips curve)
+- The roles of fiscal, monetary and microeconomic policy and how they combine
+- Evidence from recent episodes (COVID-19, the 2022–23 inflation surge, 2026)
+- Limitations: time lags, global influences, political constraints
+- Sustained judgement
+PLAN:
+- Thesis on how well the policy mix has handled the conflicts
+- Conflicts between objectives (Phillips curve)
+- Macroeconomic policy working together or against each other
+- Microeconomic policy and the long run
+- Limitations; conclusion
+
+=== er er-4-labour
+c: 4F.1 4F.2 4F.4 4F.5
+lv: 3
+k: analyse
+Q: Analyse the impact of labour market policies on the Australian economy.
+PTS:
+- National system: the Fair Work Act, the National Employment Standards, minimum wages and modern awards
+- Enterprise bargaining and recent changes such as multi-employer bargaining
+- Effects on wages, productivity, unemployment, inflation and inequality
+- Education, training and employment programs and structural unemployment
+- Judgement supported by data
+PLAN:
+- Thesis on how labour market policy balances efficiency and equity
+- Minimum standards and wages
+- Bargaining and productivity
+- Training programs and unemployment
+- Conclusion
+
+=== er er-sIII-rates
+c: 4D.3 3C.3 2C.6
+lv: 3
+k: stimulus analyse
+LEAD: Use the information below and your knowledge of economics.
+TABLE: Selected Australian data, 2026 (ABS, RBA)
+| Indicator | Earlier | Later |
+| Cash rate (%) | 3.60 (start of 2026) | 4.85 (from 3 November 2026) |
+| Headline inflation (%) | 3.5 (July 2026) | 4.9 (October 2026) |
+| Unemployment rate (%) | 4.4 (June 2026) | 4.9 (October 2026) |
+| A$ (US cents) | about 70 (late October 2026) | about 66.5 (late November 2026) |
+Q: Using the data, analyse the impact of changes in monetary policy on economic activity, inflation and the exchange rate in Australia.
+PTS:
+- Uses the data in every paragraph (cash rate up 125 basis points, inflation, unemployment, A$)
+- Transmission: borrowing costs, spending, asset prices, expectations
+- Effects on activity and unemployment (rising from 4.4 to 4.9 per cent), with lags
+- Exchange rate channel: why the A$ fell even as the cash rate rose (the gap with US rates narrowed, commodity prices, risk appetite)
+- Judgement on effectiveness, and limits such as supply shocks
+PLAN:
+- Thesis using the data
+- How the rate rises work (transmission)
+- Effects on activity and employment
+- Effects on inflation and the exchange rate
+- Limits; conclusion

@@ -1,0 +1,320 @@
+# New multiple-choice questions, Topic 1. ANS is the correct letter; WHY explains it.
+
+=== mc mc-1A1-01
+c: 1A.1
+lv: 1
+Q: Which of the following best describes the global economy?
+A: The economies of the G20 countries
+B: The sum of the world's national economies and the links between them through trade, finance and people
+C: The total value of world exports in a year
+D: The economies that belong to the World Trade Organization
+ANS: B
+WHY: The global economy is all the world's national economies together, linked through trade, financial flows, investment, technology and migration. Exports (C) are only one link; A and D are subsets of countries.
+
+=== mc mc-1A2-01
+c: 1A.2
+lv: 2
+Q: Gross World Product grew by 3.2 per cent in real terms in a year in which world population grew by 1 per cent. Which statement is correct?
+A: Real output per person fell
+B: Real output per person rose by about 2.2 per cent
+C: Real output per person rose by about 4.2 per cent
+D: Nominal output must have grown by less than 3.2 per cent
+ANS: B
+WHY: Growth in real output per person is roughly real growth minus population growth: 3.2 − 1.0 ≈ 2.2 per cent. Nominal output (D) would usually grow faster than real output because of inflation.
+
+=== mc mc-1A3-01
+c: 1A.3
+lv: 1
+Q: Which of the following would most likely increase world trade in goods and services?
+A: Higher shipping costs
+B: Higher tariffs on manufactured goods
+C: Lower tariffs and the spread of digital trade platforms
+D: More import quotas on farm products
+ANS: C
+WHY: Lower trade barriers and cheaper ways to buy and sell across borders raise trade. Higher costs and barriers (A, B, D) reduce it.
+
+=== mc mc-1A4-01
+c: 1A.4
+lv: 2
+Q: Which of the following is an example of a global financial flow?
+A: An Australian winery exports wine to the United Kingdom
+B: A Japanese pension fund buys Australian government bonds
+C: A German tourist visits the Great Barrier Reef
+D: A worker migrates from India to Australia
+ANS: B
+WHY: Buying bonds overseas is a movement of financial capital. Wine exports and tourism are trade in goods and services; migration is a movement of labour.
+
+=== mc mc-1A4-02
+c: 1A.4 1A.8
+lv: 3
+Q: Why can a financial crisis in one country spread quickly to other economies?
+A: Exchange rates are fixed between most major economies
+B: Financial markets are closely integrated, so investors move funds and losses across borders very quickly
+C: Most countries ban foreign investment during a crisis
+D: Governments must keep their budgets balanced
+ANS: B
+WHY: Integrated financial markets let capital move instantly, so falling asset prices, losses and loss of confidence in one market spread to others (contagion), as in the 2008 global financial crisis.
+
+=== mc mc-1A5-01
+c: 1A.5
+lv: 1
+Q: A transnational corporation is best described as a business that
+A: sells its products only overseas.
+B: is owned by a foreign government.
+C: has production or operations in more than one country.
+D: trades only with members of a free trade agreement.
+ANS: C
+WHY: A TNC produces or operates in more than one country, usually with its headquarters in one country. It may sell at home and abroad.
+
+=== mc mc-1A6-01
+c: 1A.6
+lv: 1
+Q: Which development has done most to lower the cost of trading services across borders?
+A: Containerised shipping
+B: Fast, cheap internet and digital communication
+C: Higher air freight costs
+D: The use of tariffs
+ANS: B
+WHY: Services such as finance, education and software can now be delivered online. Containers (A) cut the cost of moving goods rather than services.
+
+=== mc mc-1A7-01
+c: 1A.7
+lv: 2
+Q: A smartphone is designed in the United States, uses parts made in Korea and Japan and is assembled in Vietnam. This is an example of
+A: the international division of labour.
+B: import substitution.
+C: a customs union.
+D: dumping.
+ANS: A
+WHY: Different stages of production are done in different countries according to their comparative advantage: the international division of labour, organised through global supply chains.
+
+=== mc mc-1A8-01
+c: 1A.8 1D.9
+lv: 2
+Q: A sharp slowdown in China would most likely affect Australia through
+A: higher demand for Australian iron ore.
+B: lower export volumes and prices, and a lower Australian dollar.
+C: a higher Australian terms of trade.
+D: lower unemployment in Australian mining regions.
+ANS: B
+WHY: China is Australia's largest export market. A slowdown reduces demand for resources, lowering export volumes and prices (the terms of trade fall) and the dollar, which spreads the downturn to Australia.
+
+=== mc mc-1B1-01
+c: 1B.1
+lv: 2
+Q: In one day, Country X can make 10 shirts or 5 bikes, and Country Y can make 6 shirts or 2 bikes. Which statement is correct?
+A: Country X has a comparative advantage in shirts
+B: Country Y has a comparative advantage in bikes
+C: Country X has a comparative advantage in bikes and Country Y in shirts
+D: Neither country can gain from trade, because Country X is better at both
+ANS: C
+WHY: For X, 1 bike costs 2 shirts; for Y, 1 bike costs 3 shirts. X makes bikes at a lower opportunity cost, so Y has the comparative advantage in shirts (1 shirt costs Y ⅓ bike but costs X ½ bike). Both gain from specialising, even though X has an absolute advantage in both.
+
+=== mc mc-1B1-02
+c: 1B.1
+lv: 1
+Q: Which of the following is a disadvantage of free trade for an economy?
+A: Consumers can choose from a wider range of goods
+B: Resources move to industries in which the economy is most efficient
+C: Jobs may be lost in industries that cannot compete with imports
+D: Firms can sell to larger markets and gain economies of scale
+ANS: C
+WHY: Free trade forces structural change: import-competing industries may shrink, causing job losses in the short term. A, B and D are advantages.
+
+=== mc mc-1B2-01
+c: 1B.2
+lv: 1
+Q: Which international organisation lends to countries with balance of payments difficulties, usually with conditions attached?
+A: The World Trade Organization
+B: The International Monetary Fund
+C: The OECD
+D: The G20
+ANS: B
+WHY: The IMF lends to countries facing balance of payments crises and sets conditions on their policies. The WTO deals with trade rules; the OECD and G20 are forums for research and coordination.
+
+=== mc mc-1B3-01
+c: 1B.3
+lv: 2
+Q: Which statement about the G20 is correct?
+A: It can impose binding trade sanctions on its members
+B: It is a forum where major advanced and emerging economies coordinate economic policy
+C: It lends money to developing economies
+D: Its members are the 20 richest economies in Europe
+ANS: B
+WHY: The G20 brings together leaders and finance ministers of major advanced and emerging economies (including Australia) to coordinate policy. It has no power to impose sanctions and does not lend.
+
+=== mc mc-1B4-01
+c: 1B.4
+lv: 1
+Q: Which of the following is a monetary union?
+A: The Australia–United States Free Trade Agreement
+B: RCEP
+C: The euro area
+D: APEC
+ANS: C
+WHY: Euro area members share one currency and one central bank (the ECB). The others are trade agreements or forums.
+
+=== mc mc-1B4-02
+c: 1B.4 2D.2
+lv: 3
+Q: Australia signs a free trade agreement with Country Z, and Australians switch from buying cheaper TVs from Country Q to slightly dearer TVs from Country Z. This is an example of
+A: trade creation.
+B: trade diversion.
+C: dumping.
+D: comparative advantage.
+ANS: B
+WHY: Imports have switched from the lowest-cost producer (Q) to a higher-cost member of the agreement (Z) because Z no longer faces a tariff: trade diversion.
+
+=== mc mc-1C1-01
+c: 1C.1
+lv: 1
+Q: Which argument for protection is most widely accepted by economists?
+A: Protection keeps all domestic jobs safe
+B: Temporary help for an infant industry with real potential to become competitive
+C: Protection improves the trade balance permanently
+D: Protection lowers prices for consumers
+ANS: B
+WHY: The infant industry argument has some support if the help is temporary and the industry can become competitive. Protection raises prices (D is wrong) and does not save jobs overall (A).
+
+=== mc mc-1C2-01
+c: 1C.2
+lv: 2
+Q: Compared with a tariff that gives domestic producers the same price, an import quota
+A: raises more revenue for the government.
+B: lets importers keep the extra revenue from the higher price.
+C: has no deadweight loss.
+D: lowers the price consumers pay.
+ANS: B
+WHY: A quota and an equivalent tariff raise the price by the same amount, but with a quota the government collects nothing: the importers who hold the quota keep the extra revenue. Both have deadweight losses.
+
+=== mc mc-1C2-02
+c: 1C.2
+lv: 2
+Q: A production subsidy to an import-competing industry will
+A: raise the price consumers pay.
+B: reduce domestic production.
+C: increase domestic production while consumers still pay the world price.
+D: raise revenue for the government.
+ANS: C
+WHY: The subsidy shifts domestic supply right. Consumers keep paying the world price, domestic production rises and imports fall, and the government bears the cost.
+
+=== mc mc-1D1-01
+c: 1D.1
+lv: 1
+Q: Which change would show economic development rather than only economic growth?
+A: Real GDP rises by 4 per cent
+B: Exports of coal increase
+C: Life expectancy and school completion rates rise
+D: The population increases
+ANS: C
+WHY: Development is about wellbeing and living standards, such as health and education. Higher output (A, B) is growth, which may or may not improve living standards.
+
+=== mc mc-1D2-01
+c: 1D.2
+lv: 2
+Q: Which of the following best describes the distribution of global income?
+A: Income is spread evenly between countries
+B: A small share of the world's population, mostly in advanced economies, receives a large share of world income
+C: Emerging economies receive most of the world's income
+D: Developing economies have the fastest growth in income per person
+ANS: B
+WHY: Global income is very unequal: advanced economies, with a minority of the world's people, receive a large share of world income, although the rise of China and India has narrowed the gap since the 1990s.
+
+=== mc mc-1D2-02
+c: 1D.2 1D.5
+lv: 3
+Q: Strong growth in China and India since the 1990s has most likely
+A: increased inequality between countries but reduced it within every country.
+B: reduced inequality between countries, while inequality within some of those countries rose.
+C: had no effect on the global distribution of income.
+D: reduced the number of people living in extreme poverty in Africa only.
+ANS: B
+WHY: Rapid growth in large, poorer economies lifted hundreds of millions out of poverty and narrowed the gap between countries. Within China, inequality rose as coastal and urban incomes grew faster.
+
+=== mc mc-1D3-01
+c: 1D.3
+lv: 1
+Q: Why is GNI per person usually converted at purchasing power parity (PPP) to compare living standards?
+A: To remove the effect of inflation over time
+B: To allow for differences in the cost of living between countries
+C: To include unpaid work
+D: To measure the distribution of income
+ANS: B
+WHY: PPP adjusts for the fact that a dollar buys more in some countries than others, giving a better comparison of what incomes can buy.
+
+=== mc mc-1D4-01
+c: 1D.4
+lv: 1
+Q: Which economy is best described as emerging rather than developing?
+A: Malawi
+B: Niger
+C: India
+D: Mozambique
+ANS: C
+WHY: India is industrialising rapidly with fast growth and a large middle class: an emerging economy. Malawi, Niger and Mozambique are low-income developing economies.
+
+=== mc mc-1D5-01
+c: 1D.5
+lv: 2
+Q: Which factor best explains why some nations have much higher living standards than others?
+A: Differences in population size
+B: Differences in productive capacity: education, technology, capital, infrastructure and institutions
+C: Differences in the number of trade agreements signed
+D: Differences in inflation rates
+ANS: B
+WHY: Productive capacity and strong institutions (rule of law, stable government) drive long-run differences in living standards. Population size alone does not.
+
+=== mc mc-1D6-01
+c: 1D.6
+lv: 2
+Q: Which of the following is a likely cost of globalisation for an advanced economy?
+A: Cheaper imported consumer goods
+B: Structural unemployment in manufacturing as production moves offshore
+C: Access to foreign capital for investment
+D: Faster spread of new technology
+ANS: B
+WHY: As labour-intensive production moves to lower-cost countries, workers in advanced economies' manufacturing industries may lose jobs and need to retrain. A, C and D are benefits.
+
+=== mc mc-1D6-02
+c: 1D.6 1D.8
+lv: 3
+Q: A critic argues that globalisation has led to a "race to the bottom". This means that
+A: countries compete to have the lowest unemployment.
+B: countries lower environmental and labour standards to attract foreign investment.
+C: global interest rates fall to zero.
+D: exporters cut prices below cost to win market share.
+ANS: B
+WHY: The argument is that to attract TNCs, governments weaken regulation of wages, working conditions and pollution, lowering standards everywhere.
+
+=== mc mc-1D7-01
+c: 1D.7
+lv: 2
+Q: How can foreign direct investment by transnational corporations help a developing economy?
+A: It always increases the government's tax revenue
+B: It brings capital, technology, skills and jobs
+C: It guarantees higher wages for all workers
+D: It reduces the economy's reliance on exports
+ANS: B
+WHY: FDI can bring new capital, technology and management skills and create jobs. Its benefits depend on conditions; it does not guarantee higher tax revenue or wages for everyone.
+
+=== mc mc-1D8-01
+c: 1D.8
+lv: 1
+Q: Which statement best describes the link between global economic growth and the environment?
+A: Growth always improves the environment
+B: Growth in production and consumption has added to greenhouse gas emissions, pollution and resource depletion
+C: Growth has no effect on the environment
+D: Only advanced economies affect the global environment
+ANS: B
+WHY: Rising output and energy use have increased emissions, pollution and pressure on resources. Cleaner technology can reduce the damage per unit of output, but total impacts have grown.
+
+=== mc mc-1E1-01
+c: 1E.1
+lv: 2
+Q: Which policy change did most to open China's economy to the world after 1978?
+A: Leaving the World Trade Organization
+B: Economic reforms that allowed markets, private enterprise and foreign investment, including special economic zones
+C: Fixing the price of all goods
+D: Banning exports of manufactured goods
+ANS: B
+WHY: Under Deng Xiaoping, China introduced market reforms, opened special economic zones to foreign investment and later joined the WTO in 2001, which drove rapid export-led growth.

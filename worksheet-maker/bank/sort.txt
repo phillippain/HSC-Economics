@@ -1,0 +1,344 @@
+# Sort and classify: each line is "- item => heading". The student copy lists the items in a mixed order.
+
+=== sort so-3B3-types
+c: 3B.3
+lv: 1
+Q: Sort each example into the type of unemployment it shows.
+CATS: Cyclical | Structural | Frictional | Seasonal
+- A car parts factory closes because imported parts are cheaper => Structural
+- Retail workers lose their jobs as spending falls in a recession => Cyclical
+- A graduate spends six weeks looking for her first job => Frictional
+- Fruit pickers are out of work after the harvest => Seasonal
+- A coal miner's skills are no longer needed as mines close => Structural
+- Builders are laid off as home building slows after interest rates rise => Cyclical
+- A nurse moves interstate and is looking for a new hospital job => Frictional
+- Ski instructors are out of work in summer => Seasonal
+
+=== sort so-3C3-causes
+c: 3C.3
+lv: 2
+Q: Sort each event into the main cause of inflation it shows.
+CATS: Demand inflation | Cost inflation | Imported inflation | Inflationary expectations
+- Tax cuts lift household spending while the economy is near full capacity => Demand inflation
+- Wages rise faster than labour productivity => Cost inflation
+- A depreciation of the Australian dollar raises the price of imported cars => Imported inflation
+- Workers ask for bigger pay rises because they expect prices to keep rising => Inflationary expectations
+- A housing boom lifts spending on furniture and renovations => Demand inflation
+- Electricity network charges for businesses rise sharply => Cost inflation
+- The world price of oil rises and petrol prices follow => Imported inflation
+- Firms raise prices now because they expect their costs to rise next year => Inflationary expectations
+
+=== sort so-2B1-accounts
+c: 2B.1 2B.2
+lv: 2
+Q: Sort each transaction into the part of Australia's balance of payments where it is recorded.
+CATS: Current account | Capital account | Financial account
+- An Australian mine exports iron ore to Japan => Current account
+- Interest paid on Australian bank borrowings from overseas => Current account
+- A Japanese company buys a controlling share of an Australian dairy firm => Financial account
+- An Australian super fund buys shares in US companies => Financial account
+- Australia forgives a debt owed by a Pacific nation => Capital account
+- Foreign tourists spend money in Sydney => Current account
+- An Australian firm buys a trademark from an overseas company => Capital account
+- Workers in Australia send money to their families overseas => Current account
+
+=== sort so-2B1-credit
+c: 2B.1
+lv: 2
+Q: Sort each transaction into a credit or a debit in Australia's balance of payments.
+CATS: Credit (money comes in) | Debit (money goes out)
+- Exports of beef to Korea => Credit (money comes in)
+- Imports of cars from Japan => Debit (money goes out)
+- Dividends paid to foreign shareholders in Australian banks => Debit (money goes out)
+- International students pay university fees in Australia => Credit (money comes in)
+- Australians holidaying in Bali => Debit (money goes out)
+- Interest received by Australian funds on overseas bonds => Credit (money comes in)
+- Foreign aid paid by the Australian Government => Debit (money goes out)
+- A US investor buys Australian government bonds => Credit (money comes in)
+
+=== sort so-4B-policy
+c: 4B.1 4C.1 4D.2 4E.1
+lv: 1
+Q: Sort each action into the type of economic policy it belongs to.
+CATS: Fiscal policy | Monetary policy | Microeconomic policy
+- The RBA Monetary Policy Board raises the cash rate target => Monetary policy
+- The government cuts personal income tax rates => Fiscal policy
+- The government abolishes tariffs on hundreds of products => Microeconomic policy
+- The government spends more on roads and railways => Fiscal policy
+- The RBA says it expects to keep rates on hold for some time => Monetary policy
+- A state government sells its electricity company => Microeconomic policy
+- The government raises the JobSeeker payment => Fiscal policy
+- New laws increase penalties for businesses that collude on prices => Microeconomic policy
+
+=== sort so-4C2-stabilisers
+c: 4C.2 4C.1
+lv: 2
+Q: Sort each change in the budget into an automatic stabiliser or a discretionary change.
+CATS: Automatic stabiliser | Discretionary change
+- Unemployment benefit payments rise as more people lose their jobs => Automatic stabiliser
+- Income tax collections fall during a recession => Automatic stabiliser
+- The government announces a new $10 billion infrastructure program => Discretionary change
+- The government cuts the top marginal tax rate => Discretionary change
+- Company tax receipts fall as business profits drop => Automatic stabiliser
+- The government sends one-off cash payments to households => Discretionary change
+- GST revenue grows as consumer spending rises in a boom => Automatic stabiliser
+- The government raises the tobacco excise => Discretionary change
+
+=== sort so-3D3-cad
+c: 3D.3 2B.4
+lv: 3
+Q: Sort each factor into a cyclical or a structural cause of Australia's current account deficit.
+CATS: Cyclical cause | Structural cause
+- Strong growth in Australia raises spending on imports => Cyclical cause
+- A fall in world commodity prices cuts export earnings => Cyclical cause
+- National saving has long been lower than national investment => Structural cause
+- Interest and dividends paid on past foreign borrowing and investment => Structural cause
+- A downturn in our major trading partners reduces export volumes => Cyclical cause
+- Exports are concentrated in a narrow range of commodities => Structural cause
+- A high Australian dollar makes imports cheap for a few years => Cyclical cause
+- Many manufactured goods are imported because Australia is a small, distant market => Structural cause
+
+=== sort so-3E3-tax
+c: 3E.3
+lv: 2
+Q: Sort each tax into progressive, proportional or regressive (as a share of income).
+CATS: Progressive | Proportional | Regressive
+- Personal income tax, with higher rates on higher incomes => Progressive
+- The goods and services tax (GST) => Regressive
+- Company tax at a single flat rate on profits => Proportional
+- Excise on tobacco => Regressive
+- Excise on fuel => Regressive
+- The Medicare levy of 2 per cent of taxable income => Proportional
+
+=== sort so-4G-env
+c: 4G.1 4G.2
+lv: 2
+Q: Sort each environmental policy into a regulation or a market-based policy.
+CATS: Regulation | Market-based policy
+- A ban on single-use plastic bags => Regulation
+- An emissions trading scheme with tradeable permits => Market-based policy
+- Fuel efficiency standards for new cars => Regulation
+- A levy on each tonne of waste sent to landfill => Market-based policy
+- Tradeable water entitlements in the Murray-Darling Basin => Market-based policy
+- Limits on land clearing near rivers => Regulation
+- Rebates for households that install rooftop solar => Market-based policy
+- A rule that new buildings meet energy ratings => Regulation
+
+=== sort so-1D6-glob
+c: 1D.6 1A.3
+lv: 1
+Q: Sort each effect of globalisation into a benefit or a cost.
+CATS: Benefit | Cost
+- Consumers can buy a wider range of goods at lower prices => Benefit
+- Jobs are lost in industries that cannot compete with imports => Cost
+- New technology spreads quickly to developing economies => Benefit
+- A financial crisis in one country spreads quickly to others => Cost
+- Exporters can sell to much larger markets => Benefit
+- Pollution rises where production moves to countries with weak rules => Cost
+- Foreign investment funds new factories and creates jobs => Benefit
+- Profits of transnational corporations flow out of the host country => Cost
+
+=== sort so-1D4-econ
+c: 1D.4
+lv: 1
+Q: Sort each country into the type of economy it is usually classed as.
+CATS: Advanced economy | Emerging economy | Developing economy
+- Japan => Advanced economy
+- India => Emerging economy
+- Malawi => Developing economy
+- Germany => Advanced economy
+- Indonesia => Emerging economy
+- Niger => Developing economy
+- Brazil => Emerging economy
+- Australia => Advanced economy
+- Mozambique => Developing economy
+
+=== sort so-1C1-reasons
+c: 1C.1
+lv: 1
+Q: Sort each argument into the reason for protection it uses.
+CATS: Infant industry | Domestic employment | Dumping | Defence
+- A new solar panel industry needs help until it is large enough to compete => Infant industry
+- Tariffs on imported clothing will keep local textile workers in jobs => Domestic employment
+- Steel is being sold here below what it costs to make in China => Dumping
+- The country must be able to make its own ammunition in a war => Defence
+- A young electric vehicle maker cannot yet match the low costs of big overseas firms => Infant industry
+- Imports of aluminium are priced below the price charged in the exporter's home market => Dumping
+- Shipbuilding must stay in Australia for national security => Defence
+- Car factories employ thousands of workers in one region => Domestic employment
+
+=== sort so-1C2-methods
+c: 1C.2
+lv: 1
+Q: Sort each description into the method of protection it describes.
+CATS: Tariff | Quota | Subsidy | Local content rule
+- A tax on each imported television => Tariff
+- Only 10,000 tonnes of sugar may be imported a year => Quota
+- The government pays local steelmakers for each tonne produced => Subsidy
+- Free-to-air TV must show a minimum share of Australian programs => Local content rule
+- Imported cars are charged 5 per cent of their value at the border => Tariff
+- Payments to farmers that lower their costs of production => Subsidy
+- A limit on the number of imported shirts each year => Quota
+- Government contracts must use a set share of Australian-made parts => Local content rule
+
+=== sort so-2C2-ads
+c: 2C.2
+lv: 2
+Q: Sort each event into whether it mainly increases the demand for, or the supply of, Australian dollars.
+CATS: Increases the demand for A$ | Increases the supply of A$
+- The world price of coal rises => Increases the demand for A$
+- Australians buy more imported electronics => Increases the supply of A$
+- Overseas investors buy Australian shares => Increases the demand for A$
+- An Australian company buys a factory in Vietnam => Increases the supply of A$
+- The RBA raises the cash rate while overseas rates are steady => Increases the demand for A$
+- More Australians holiday in Europe => Increases the supply of A$
+- More tourists visit Australia from China => Increases the demand for A$
+- Australian banks repay loans to overseas lenders => Increases the supply of A$
+
+=== sort so-2C6-dep
+c: 2C.6
+lv: 2
+Q: Sort each effect of a depreciation of the Australian dollar into good news or bad news for the Australian economy.
+CATS: Good news | Bad news
+- Exports become cheaper to overseas buyers => Good news
+- Imported goods and inputs become dearer, adding to inflation => Bad news
+- Australian tourism becomes better value for overseas visitors => Good news
+- The A$ cost of servicing foreign-currency debt rises => Bad news
+- Local firms that compete with imports gain sales => Good news
+- Households can buy less with their income overseas => Bad news
+- The A$ value of Australia's foreign-currency assets rises => Good news
+- The trade balance may worsen at first before it improves (the J-curve) => Bad news
+
+=== sort so-3B6-costs
+c: 3B.6
+lv: 1
+Q: Sort each cost of unemployment into an economic cost or a social cost.
+CATS: Economic cost | Social cost
+- Output is lost because labour is not used => Economic cost
+- The government pays more in unemployment benefits => Economic cost
+- People who are out of work for a long time suffer poorer health => Social cost
+- Skills are lost the longer someone is out of work => Economic cost
+- Family breakdown and stress increase => Social cost
+- Tax revenue falls because fewer people earn income => Economic cost
+- Crime tends to rise in areas of high unemployment => Social cost
+- People feel cut off from their community => Social cost
+
+=== sort so-3E2-income
+c: 3E.2 3E.4
+lv: 1
+Q: Sort each source of household income into its category.
+CATS: Wages and salaries | Income from capital | Social welfare transfers
+- Weekly pay from a part-time job => Wages and salaries
+- Dividends from shares => Income from capital
+- The Age Pension => Social welfare transfers
+- Rent from an investment property => Income from capital
+- Overtime pay => Wages and salaries
+- Interest on a term deposit => Income from capital
+- JobSeeker Payment => Social welfare transfers
+- Family Tax Benefit => Social welfare transfers
+
+=== sort so-3C4-effects
+c: 3C.4
+lv: 2
+Q: Sort each effect into a positive or a negative effect of inflation.
+CATS: Positive effect | Negative effect
+- A little inflation lets real wages adjust without nominal pay cuts => Positive effect
+- People on fixed incomes can buy less => Negative effect
+- High inflation makes it harder for firms to plan investment => Negative effect
+- Moderate inflation lowers the real burden of existing debts for borrowers => Positive effect
+- Australian exports become less competitive if our inflation is higher than overseas => Negative effect
+- Bracket creep raises the average tax rate on wage earners => Negative effect
+- Low, stable inflation avoids the risks of deflation => Positive effect
+- Savers lose when interest rates are below the inflation rate => Negative effect
+
+=== sort so-4H1-lags
+c: 4H.1
+lv: 2
+Q: Sort each delay into the type of time lag it shows.
+CATS: Recognition lag | Implementation lag | Impact lag
+- GDP figures for a quarter are released two months after it ends => Recognition lag
+- A new spending program must be passed by Parliament first => Implementation lag
+- Higher interest rates take up to two years to have their full effect on inflation => Impact lag
+- Economists disagree for months about whether a slowdown has begun => Recognition lag
+- New infrastructure projects need planning and approvals before work starts => Implementation lag
+- Households keep spending for a while after a tax rise is announced => Impact lag
+
+=== sort so-4F4-wages
+c: 4F.4 4F.2
+lv: 2
+Q: Sort each way of setting pay and conditions into centralised, decentralised or individual.
+CATS: Centralised | Decentralised (enterprise) | Individual
+- The Fair Work Commission's Annual Wage Review => Centralised
+- An enterprise agreement negotiated by a supermarket chain and its workers => Decentralised (enterprise)
+- A modern award covering all hospitality workers => Centralised
+- A common law contract for a senior manager => Individual
+- Australian Workplace Agreements (1996 to 2008) => Individual
+- A university and its staff union bargain over a new agreement => Decentralised (enterprise)
+
+=== sort so-1B2-orgs
+c: 1B.2
+lv: 1
+Q: Sort each role into the international organisation that performs it.
+CATS: WTO | IMF | World Bank | United Nations | OECD
+- Settles trade disputes between member countries => WTO
+- Lends to countries facing a balance of payments crisis => IMF
+- Funds development projects such as schools and roads in poorer countries => World Bank
+- Set the Sustainable Development Goals for 2030 => United Nations
+- Publishes economic research and policy advice for advanced economies => OECD
+- Runs rounds of negotiations to cut tariffs => WTO
+- Checks members' exchange rate and economic policies each year => IMF
+- Gives low-interest loans to reduce poverty => World Bank
+
+=== sort so-2A2-stocks
+c: 2A.2 3D.1 4C.1
+lv: 3
+Q: Sort each measure into a stock (an amount at a point in time) or a flow (an amount over a period).
+CATS: Stock | Flow
+- Net foreign debt => Stock
+- The current account deficit => Flow
+- Net primary income => Flow
+- Net foreign liabilities => Stock
+- The budget deficit => Flow
+- Government (public) debt => Stock
+- Exports of goods and services => Flow
+- Australia's foreign-currency reserves => Stock
+
+=== sort so-3F3-goods
+c: 3F.3
+lv: 1
+Q: Sort each good into a public good or a private good.
+CATS: Public good | Private good
+- Street lighting => Public good
+- A sandwich => Private good
+- National defence => Public good
+- A cinema ticket => Private good
+- A lighthouse => Public good
+- A pair of running shoes => Private good
+- Flood levees that protect a town => Public good
+- A haircut => Private good
+
+=== sort so-4B1-stance
+c: 4B.1 4C.1 4D.3
+lv: 1
+Q: Sort each policy action into expansionary or contractionary.
+CATS: Expansionary | Contractionary
+- The RBA cuts the cash rate => Expansionary
+- The government raises income tax rates => Contractionary
+- Government spending rises faster than revenue => Expansionary
+- The RBA raises the cash rate => Contractionary
+- The budget moves from deficit into surplus => Contractionary
+- The government gives tax rebates to households => Expansionary
+
+=== sort so-4E1-reform
+c: 4E.1 4E.2 4E.3
+lv: 2
+Q: Sort each reform into the type of microeconomic policy it is.
+CATS: Deregulation and competition policy | Privatisation and corporatisation | Trade liberalisation | Labour market reform
+- Opening airline routes to new competitors => Deregulation and competition policy
+- Selling a government-owned bank => Privatisation and corporatisation
+- Cutting tariffs on imported clothing => Trade liberalisation
+- Allowing pay to be set by enterprise bargaining => Labour market reform
+- Running a government business on commercial lines with a board => Privatisation and corporatisation
+- Removing quotas on imported cars => Trade liberalisation
+- Stopping firms from agreeing to fix prices => Deregulation and competition policy
+- Funding apprenticeships in skills that are in short supply => Labour market reform

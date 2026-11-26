@@ -1,0 +1,269 @@
+# New short-answer questions, Topics 1 and 2. PTS are marking points (marks in brackets); ANS is a model answer.
+
+=== sa sa-1A3-01
+c: 1A.3 1A.6
+m: 3
+lv: 2
+k: explain
+Q: Explain how changes in technology have increased world trade in goods and services.
+PTS:
+- Containerisation and larger ships have cut the cost of moving goods (1)
+- The internet and digital platforms let services such as education, finance and design be traded across borders (1)
+- Lower costs and better information mean more goods and services can be traded profitably, so trade grows faster than world output (1)
+
+=== sa sa-1A5-01
+c: 1A.5 1D.7
+m: 4
+lv: 2
+k: explain
+Q: Explain TWO effects of transnational corporations on a host economy.
+PTS:
+- One positive effect, explained: e.g. foreign direct investment brings capital, technology and management skills, raising productivity and creating jobs (2)
+- One negative effect, explained: e.g. profits flow back to the home country, local firms may be crowded out, or TNCs may use transfer pricing to reduce tax paid (2)
+
+=== sa sa-1A8-01
+c: 1A.8 1D.9
+m: 3
+lv: 2
+k: explain
+Q: Explain how a downturn in the international business cycle can affect the Australian economy.
+PTS:
+- Weaker growth overseas lowers demand for Australian exports, especially resources (1)
+- Lower export volumes and prices reduce the terms of trade, national income and investment in the resources sector (1)
+- Growth slows and unemployment rises in Australia; the dollar may depreciate, which partly cushions the effect (1)
+
+=== sa sa-1B1-01
+c: 1B.1
+m: 4
+lv: 2
+k: explain
+Q: Explain how free trade can increase living standards in both countries that trade.
+PTS:
+- Each country specialises in goods in which it has a comparative advantage (lower opportunity cost) (1)
+- Specialisation raises total output, so world production rises (1)
+- Through trade, each country consumes beyond its own production possibilities (1)
+- Consumers benefit from lower prices and more choice; firms gain economies of scale from larger markets (1)
+
+=== sa sa-1B2-01
+c: 1B.2
+m: 4
+lv: 2
+k: compare
+Q: Distinguish between the roles of the World Trade Organization and the International Monetary Fund.
+PTS:
+- WTO: sets and enforces the rules of world trade (1)
+- WTO: runs negotiations to reduce trade barriers and settles trade disputes between members (1)
+- IMF: promotes international financial stability and monitors members' economic policies (1)
+- IMF: lends to countries facing balance of payments crises, usually with conditions (1)
+
+=== sa sa-1B4-01
+c: 1B.4
+m: 4
+lv: 3
+k: evaluate
+Q: Assess the advantages and disadvantages of bilateral free trade agreements compared with multilateral agreements.
+PTS:
+- Advantage: bilateral agreements are quicker and easier to negotiate than multilateral deals that need every WTO member to agree (1)
+- Advantage: they can go further, covering services, investment and other areas (1)
+- Disadvantage: they can cause trade diversion away from lower-cost non-members (1)
+- Disadvantage: many overlapping agreements with different rules of origin (a "noodle bowl") raise compliance costs; judgement on balance (1)
+
+=== sa sa-1C1-01
+c: 1C.1
+m: 3
+lv: 2
+k: explain
+Q: Explain the infant industry argument for protection.
+PTS:
+- A new industry has higher average costs than established overseas firms because it has not yet reached a large scale (1)
+- Temporary protection lets it grow and gain economies of scale and experience, lowering costs (1)
+- Once it can compete, protection should be removed; the risk is that the industry never becomes competitive and protection becomes permanent (1)
+
+=== sa sa-1C2-01
+c: 1C.2
+m: 4
+lv: 2
+k: diagram explain
+Q: With the aid of a diagram, explain the effects of a tariff on domestic producers and consumers.
+PTS:
+- Diagram: domestic D and S, world price Pw and Pw+t, Q1 to Q4 (1)
+- The domestic price rises from Pw to Pw+t (1)
+- Domestic producers increase output from Q1 to Q2 and gain producer surplus (1)
+- Consumers pay more and buy less (Q4 to Q3), losing consumer surplus; imports fall (1)
+
+=== sa sa-1D1-01
+c: 1D.1 1D.3
+m: 3
+lv: 1
+k: compare
+Q: Distinguish between economic growth and economic development.
+PTS:
+- Economic growth is an increase in real GDP, the volume of goods and services produced (1)
+- Economic development is a broader improvement in wellbeing: health, education, living standards and freedom (1)
+- Growth can occur without development if the gains are not shared or come with environmental damage; development is measured by indicators such as the HDI (1)
+
+=== sa sa-1D2-01
+c: 1D.2
+m: 4
+lv: 3
+k: explain
+Q: Explain why the global distribution of income has changed since 1990.
+PTS:
+- Rapid growth in large emerging economies, especially China and India, has raised incomes for billions of people (1)
+- This has narrowed the gap between countries and greatly reduced extreme poverty (1)
+- Inequality within many countries has risen, as gains from globalisation and technology went mostly to owners of capital and skilled workers (1)
+- Many developing economies, especially in sub-Saharan Africa, have grown more slowly, so some gaps remain wide (1)
+
+=== sa sa-1D4-01
+c: 1D.4
+m: 3
+lv: 1
+k: compare
+Q: Outline ONE feature that distinguishes emerging economies from developing economies.
+PTS:
+- A clear feature, e.g. emerging economies have fast growth driven by industrialisation and rising exports of manufactures (2)
+- A contrast with developing economies, e.g. which have low incomes and rely mostly on agriculture or commodity exports (1)
+
+=== sa sa-1D5-01
+c: 1D.5
+m: 4
+lv: 2
+k: explain
+Q: Explain TWO reasons for differences in living standards between nations.
+PTS:
+- First reason explained, e.g. differences in human capital: education and health raise productivity and incomes (2)
+- Second reason explained, e.g. institutions and governance (rule of law, property rights, stable government) encourage investment; or access to capital and technology; or geography and resources (2)
+
+=== sa sa-1D6-01
+c: 1D.6 1D.8
+m: 5
+lv: 3
+k: evaluate
+Q: Assess the effects of globalisation on the environment.
+PTS:
+- Negative: higher world output and trade raise energy use, greenhouse gas emissions and resource depletion (1)
+- Negative: production may shift to countries with weaker environmental rules ("pollution havens") (1)
+- Positive: globalisation spreads cleaner technology, such as cheaper solar panels and batteries (1)
+- Positive: global cooperation through agreements such as the Paris Agreement (1)
+- Judgement supported by reasoning, e.g. net effect depends on policy and technology (1)
+
+=== sa sa-1E1-01
+c: 1E.1
+m: 5
+lv: 3
+k: analyse case
+Q: Analyse the influence of globalisation on the economy of a country other than Australia.
+PTS:
+- Names the economy and describes how it is integrated into the global economy, e.g. China's trade, foreign investment and WTO entry in 2001 (1)
+- Effect on growth, with evidence, e.g. export-led growth averaging close to 10 per cent a year for three decades (1)
+- Effect on development or poverty, e.g. hundreds of millions lifted out of extreme poverty (1)
+- A cost, e.g. rising inequality between regions, pollution, or dependence on exports and exposure to tariffs (1)
+- Links the effects back to globalisation rather than describing them separately (1)
+
+=== sa sa-2A1-01
+c: 2A.1
+m: 3
+lv: 2
+k: explain
+Q: Explain why the direction of Australia's trade has shifted towards Asia.
+PTS:
+- Rapid industrialisation in Asia, especially China, has raised demand for Australian resources and energy (1)
+- Rising incomes in Asia increased demand for Australian services such as education and tourism, and for food (1)
+- Proximity, trade agreements (e.g. with China, Japan and Korea) and Britain's entry to the European Economic Community in 1973 shifted trade away from Europe (1)
+
+=== sa sa-2B1-01
+c: 2B.1 2B.2
+m: 4
+lv: 2
+k: explain
+Q: Explain how the purchase of an Australian business by a foreign company affects Australia's balance of payments, now and in the future.
+PTS:
+- Now: the purchase is a capital inflow, recorded as a credit (foreign direct investment in Australia) in the financial account (1)
+- It adds to Australia's foreign liabilities (net foreign equity) (1)
+- In future: profits and dividends paid to the foreign owners are debits in net primary income (1)
+- This widens the current account deficit over time (1)
+
+=== sa sa-2B3-01
+c: 2B.3 2A.2
+m: 4
+lv: 3
+k: analyse
+Q: Analyse the relationship between the balance on the capital and financial account and the net primary income balance.
+PTS:
+- A surplus on the capital and financial account means foreign borrowing and investment flow into Australia (1)
+- These inflows add to Australia's foreign debt and foreign equity liabilities (1)
+- Servicing the liabilities requires interest and dividend payments overseas, debits in net primary income (1)
+- So persistent financial account surpluses lead to larger net primary income deficits, which widen the current account deficit and must themselves be financed: a cycle (1)
+
+=== sa sa-2B4-01
+c: 2B.4
+m: 4
+lv: 2
+k: explain
+Q: Explain how a rise in the terms of trade affects Australia's balance of payments.
+PTS:
+- The terms of trade rise when export prices rise relative to import prices (1)
+- Export income rises, so the balance on goods and services improves (1)
+- The current account deficit narrows (or a surplus appears, as in 2019–20 to 2022–23) (1)
+- Profits of foreign-owned mining firms rise, so more dividends flow overseas, widening the net primary income deficit and partly offsetting the gain (1)
+
+=== sa sa-2C2-01
+c: 2C.2
+m: 4
+lv: 2
+k: diagram explain
+Q: With the aid of a diagram, explain how a rise in Australian interest rates relative to overseas rates affects the value of the Australian dollar.
+PTS:
+- Diagram of the market for A$ with demand shifting right (D1 to D2), and e1 to e2 (1)
+- Higher relative interest rates raise the return on Australian assets (1)
+- Foreign investors buy A$ to invest in Australia, so demand for A$ rises (1)
+- The exchange rate appreciates from e1 to e2 (1)
+
+=== sa sa-2C4-01
+c: 2C.4 2C.5
+m: 4
+lv: 3
+k: compare
+Q: Compare a floating exchange rate with a fixed exchange rate.
+PTS:
+- Floating: the rate is set by supply and demand; the central bank intervenes rarely (1)
+- Fixed: the government or central bank sets the rate and defends it by buying or selling currency (1)
+- Floating: monetary policy can target inflation, and the rate absorbs shocks such as a fall in commodity prices (1)
+- Fixed: gives certainty to traders, but needs large reserves and can be attacked by speculators (1)
+
+=== sa sa-2C6-01
+c: 2C.6 3C.3
+m: 5
+lv: 3
+k: analyse
+Q: Analyse the effects of a sustained depreciation of the Australian dollar on the Australian economy.
+PTS:
+- Exports become cheaper overseas and imports dearer, raising international competitiveness (1)
+- Net exports and aggregate demand rise, lifting growth and employment (1)
+- Import prices rise, adding to inflation (imported inflation) (1)
+- The trade balance may worsen first and then improve (J-curve); the A$ cost of foreign-currency debt rises (1)
+- Valuation effects: foreign-currency assets are worth more in A$, which can lower net foreign liabilities (1)
+
+=== sa sa-2D1-01
+c: 2D.1 2D.3
+m: 4
+lv: 2
+k: explain
+Q: Explain the effects of tariff reductions on Australian firms and consumers.
+PTS:
+- Consumers pay lower prices for imported goods and have more choice, raising real incomes (1)
+- Firms that use imported inputs gain lower costs, improving competitiveness (1)
+- Import-competing firms face more competition; some may close, causing structural unemployment (1)
+- Resources move to more efficient, export-oriented industries in the long run (1)
+
+=== sa sa-2D4-01
+c: 2D.4
+m: 4
+lv: 3
+k: explain
+Q: Explain how protectionist policies of other countries affect Australia.
+PTS:
+- Tariffs or quotas on Australian goods reduce export volumes and prices, e.g. China's duties on Australian wine and barley from 2020 (1)
+- Export income and employment in the affected industries fall (1)
+- Subsidies overseas (e.g. EU and US farm support) lower world prices, hurting Australian exporters in third markets (1)
+- Trade wars between major economies slow world growth and divert goods to Australia, affecting Australian firms indirectly (1)

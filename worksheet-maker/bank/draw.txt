@@ -1,0 +1,282 @@
+# Draw a diagram: the student gets blank labelled axes (or the starting diagram where the code says "given");
+# the answer copy shows the finished diagram. Diagram codes are listed in build/diagrams.py.
+
+=== draw dr-adas-01
+c: 4D.3 3A.1
+lv: 1
+DIA: adas AD right
+Q: The Reserve Bank cuts the cash rate by half a percentage point, and households and firms borrow and spend more. Draw an AD–AS diagram to show the effect on the economy.
+ANS: Lower interest rates raise consumption and investment, which are components of aggregate demand, so AD shifts right from AD1 to AD2. Real GDP rises from Y1 to Y2 and the price level rises from P1 to P2.
+
+=== draw dr-adas-02
+c: 4C.2 4B.1
+lv: 1
+DIA: adas AD left
+Q: The Federal Government cuts its spending and raises taxes to return the budget to surplus. Draw an AD–AS diagram to show the effect on the economy.
+ANS: Government spending is a component of AD and higher taxes reduce disposable income and consumption, so AD shifts left from AD1 to AD2. Real GDP falls from Y1 to Y2 and the price level falls from P1 to P2 (in practice, inflation slows). This is contractionary fiscal policy.
+
+=== draw dr-adas-03
+c: 3C.3 1A.8
+lv: 2
+DIA: adas AS left
+Q: Conflict in the Middle East closes a major shipping route and the world price of oil rises sharply. Draw an AD–AS diagram to show the effect on the Australian economy.
+ANS: Higher fuel and energy costs raise production costs across the economy, so aggregate supply shifts left from AS1 to AS2. The price level rises from P1 to P2 while real GDP falls from Y1 to Y2: cost-push (and imported) inflation together with slower growth, or stagflation.
+
+=== draw dr-adas-04
+c: 4E.1 3A.6
+lv: 1
+DIA: adas AS right
+Q: Microeconomic reform raises labour productivity and lowers firms' unit costs. Draw an AD–AS diagram to show the effect.
+ANS: Lower unit costs mean firms will supply more at each price level, so AS shifts right from AS1 to AS2. Real GDP rises from Y1 to Y2 and the price level falls from P1 to P2: growth without inflationary pressure.
+
+=== draw dr-adas-05
+c: 1A.8 3A.5
+lv: 1
+DIA: adas AD left
+Q: A recession in China cuts its demand for Australian iron ore and coal. Draw an AD–AS diagram to show the effect on the Australian economy.
+ANS: Exports are a component of AD, so lower export demand shifts AD left from AD1 to AD2. Real GDP falls from Y1 to Y2 and the price level falls from P1 to P2. The international business cycle is transmitted to Australia through trade.
+
+=== draw dr-adas-06
+c: 3A.1
+lv: 1
+DIA: adas AD right
+Q: Consumer confidence jumps after a run of good economic news, and households spend more of their income. Draw an AD–AS diagram to show the effect.
+ANS: Consumption is the largest component of AD, so AD shifts right from AD1 to AD2. Real GDP rises from Y1 to Y2 and the price level rises from P1 to P2.
+
+=== draw dr-adas-07
+c: 3C.3
+lv: 2
+DIA: adas AS left given
+Q: Wages rise much faster than labour productivity across the economy. On the diagram, show the effect on the price level and real GDP.
+ANS: Unit labour costs rise, so firms supply less at each price level and AS shifts left from AS1 to AS2. The price level rises from P1 to P2 and real GDP falls from Y1 to Y2: cost-push inflation.
+
+=== draw dr-adas-08
+c: 2C.6 3A.1
+lv: 2
+DIA: adas AD right
+Q: The Australian dollar depreciates by 15 per cent against the currencies of Australia's trading partners. Draw an AD–AS diagram to show the main effect on the Australian economy.
+ANS: Australian exports become cheaper overseas and imports dearer, so net exports rise and AD shifts right from AD1 to AD2. Real GDP rises from Y1 to Y2 and the price level rises from P1 to P2. A strong answer also notes that dearer imported inputs push AS left a little (imported inflation), which adds to the rise in prices.
+
+=== draw dr-adas-09
+c: 4D.3 3C.3
+lv: 1
+DIA: adas AD left given
+Q: The Reserve Bank raises the cash rate to bring inflation back to its 2–3 per cent target. On the diagram, show the effect of higher interest rates.
+ANS: Higher interest rates reduce consumption and investment, so AD shifts left from AD1 to AD2. The price level falls from P1 to P2 (inflation slows) and real GDP falls from Y1 to Y2, which is the trade-off of tighter monetary policy.
+
+=== draw dr-adas-10
+c: 3C.3 3A.6
+lv: 1
+DIA: adas AS right given
+Q: The world price of oil falls by a third, cutting transport and energy costs. On the diagram, show the effect on the Australian economy.
+ANS: Lower input costs let firms supply more at each price level, so AS shifts right from AS1 to AS2. The price level falls from P1 to P2 and real GDP rises from Y1 to Y2.
+
+=== draw dr-lras-01
+c: 3A.6 4E.1
+lv: 2
+DIA: lras growth
+Q: Investment in education, training and new technology increases the economy's productive capacity. Draw an AD–LRAS diagram to show the effect.
+ANS: Higher productivity and more skilled labour raise potential output, so LRAS shifts right from LRAS1 to LRAS2. Real GDP rises from Y1 to Y2 and the price level falls from P1 to P2, so the economy can grow faster without adding to inflation.
+
+=== draw dr-lras-02
+c: 3C.3 3A.5
+lv: 3
+DIA: lras AD right
+Q: A housing boom and strong government spending push aggregate demand beyond the economy's productive capacity. Draw a diagram with LRAS to show why this causes inflation.
+ANS: AD shifts right from AD1 to AD2 along SRAS. Because the economy is already near capacity (LRAS), most of the extra demand raises the price level from P1 to P2, with only a small rise in real GDP from Y1 to Y2: demand-pull inflation. Name the upward-sloping curve SRAS because LRAS is also on the diagram.
+
+=== draw dr-fx-01
+c: 2C.2 2C.3
+lv: 1
+DIA: fx D right
+Q: The world price of iron ore rises by 30 per cent. Draw a diagram of the market for Australian dollars to show the effect on the exchange rate.
+ANS: Overseas buyers need more Australian dollars to pay for the same exports, so the demand for A$ shifts right from D1 to D2. The exchange rate rises from e1 to e2 (an appreciation) and the quantity of A$ traded rises from Q1 to Q2.
+
+=== draw dr-fx-02
+c: 2C.2 4D.3
+lv: 2
+DIA: fx D left
+Q: Central banks overseas raise interest rates while the Reserve Bank keeps the cash rate unchanged. Draw a diagram of the market for Australian dollars to show the effect.
+ANS: The interest rate differential narrows, so Australian assets offer a smaller relative return and foreign investors buy fewer A$. Demand for A$ shifts left from D1 to D2, the exchange rate falls from e1 to e2 (a depreciation) and the quantity traded falls from Q1 to Q2.
+
+=== draw dr-fx-03
+c: 2C.2 2A.2
+lv: 1
+DIA: fx S right
+Q: Australian superannuation funds move more of their money into overseas shares. Draw a diagram of the market for Australian dollars to show the effect.
+ANS: The funds sell Australian dollars to buy foreign currency (a capital outflow), so the supply of A$ shifts right from S1 to S2. The exchange rate falls from e1 to e2 (a depreciation) and the quantity traded rises from Q1 to Q2.
+
+=== draw dr-fx-04
+c: 2C.2 2A.1
+lv: 1
+DIA: fx D left
+Q: Far fewer international students enrol at Australian universities. Draw a diagram of the market for Australian dollars to show the effect.
+ANS: Education for overseas students is an export of services, paid for in Australian dollars. Fewer students means less demand for A$, so demand shifts left from D1 to D2 and the exchange rate falls from e1 to e2 (a depreciation).
+
+=== draw dr-fx-05
+c: 2C.2
+lv: 1
+DIA: fx S left
+Q: Australian households cut their spending on imported goods and overseas holidays. Draw a diagram of the market for Australian dollars to show the effect.
+ANS: Fewer Australian dollars are sold to buy foreign currency, so the supply of A$ shifts left from S1 to S2. The exchange rate rises from e1 to e2 (an appreciation) and the quantity traded falls from Q1 to Q2.
+
+=== draw dr-fx-06
+c: 4D.3 2C.2
+lv: 2
+DIA: fx D right given
+Q: The Reserve Bank raises the cash rate while rates overseas stay the same, and foreign investors buy more Australian government bonds. On the diagram, show the effect on the exchange rate.
+ANS: A wider interest rate differential attracts capital inflow, so demand for A$ shifts right from D1 to D2. The exchange rate rises from e1 to e2 (an appreciation). This is the exchange rate channel of monetary policy: the appreciation also slows inflation by making imports cheaper.
+
+=== draw dr-fx-07
+c: 2C.2 2C.3
+lv: 2
+DIA: fx S right given
+Q: Speculators expect the Australian dollar to fall and sell it now. On the diagram, show the effect.
+ANS: Selling ahead of an expected fall increases the supply of A$, so supply shifts right from S1 to S2 and the exchange rate falls from e1 to e2. The expectation is self-fulfilling: the dollar depreciates.
+
+=== draw dr-fx-08
+c: 2C.2 1A.8
+lv: 1
+DIA: fx D left given
+Q: A global downturn reduces world demand for Australia's commodity exports. On the diagram, show the effect on the Australian dollar.
+ANS: Lower export volumes and prices mean overseas buyers need fewer A$, so demand shifts left from D1 to D2 and the exchange rate falls from e1 to e2. The depreciation cushions the downturn by making Australian exports cheaper.
+
+=== draw dr-lab-01
+c: 3B.3
+lv: 1
+DIA: labour D left
+Q: The economy falls into recession and firms cut production. Draw a diagram of the labour market to show the effect.
+ANS: The demand for labour is derived from the demand for goods and services, so it shifts left from D1 to D2. Employment falls from Q1 to Q2 and the wage rate falls from W1 to W2 (in practice wages are sticky, so more of the adjustment shows up as cyclical unemployment).
+
+=== draw dr-lab-02
+c: 3B.1 1A.7
+lv: 1
+DIA: labour S right
+Q: Net overseas migration of working-age people rises. Draw a diagram of the labour market to show the effect.
+ANS: More people are available to work at each wage, so the supply of labour shifts right from S1 to S2. Employment rises from Q1 to Q2 and the wage rate falls from W1 to W2 (or grows more slowly).
+
+=== draw dr-lab-03
+c: 3B.3 3A.5
+lv: 1
+DIA: labour D right given
+Q: Strong economic growth lifts the demand for goods and services. On the diagram, show the effect on the labour market.
+ANS: Firms need more workers to produce more output, so the demand for labour shifts right from D1 to D2. Employment rises from Q1 to Q2 and the wage rate rises from W1 to W2.
+
+=== draw dr-lab-04
+c: 3B.1
+lv: 2
+DIA: labour S left
+Q: A large share of the workforce reaches retirement age and leaves the labour force. Draw a diagram of the labour market to show the effect.
+ANS: The supply of labour shifts left from S1 to S2 as the participation rate falls. The wage rate rises from W1 to W2 and employment falls from Q1 to Q2.
+
+=== draw dr-mw-01
+c: 4F.2 3B.3
+lv: 2
+DIA: minwage
+Q: The minimum wage for unskilled workers is set above the wage the market would set. Draw a diagram of the market for unskilled labour to show the effect.
+ANS: At the minimum wage (Wmin) the quantity of labour supplied (Qs) is greater than the quantity demanded (Qd), so the gap between Qd and Qs is unemployment. Employment falls from Qe to Qd. In practice the effect depends on how far the minimum wage sits above the market wage and on productivity.
+
+=== draw dr-sd-01
+c: 2D.4 1C.2
+lv: 2
+DIA: sd D left good=Australian wine in China
+Q: China places anti-dumping duties of up to 218 per cent on Australian wine. Draw a diagram of the market for Australian wine sold in China to show the effect.
+ANS: The tariff raises the price Chinese buyers pay, so demand for Australian wine in China shifts left from D1 to D2. The price falls from P1 to P2 and the quantity sold falls from Q1 to Q2. Australian wine exports to China fell from about $1.3 billion to under $1 million by 2023 before the duties were removed in March 2024.
+
+=== draw dr-sd-02
+c: 4E.2
+lv: 2
+DIA: sd S right good=new housing
+Q: A state government speeds up planning approvals so more new homes can be built. Draw a diagram of the market for new housing to show the effect.
+ANS: Faster approvals lower costs and delays for builders, so supply shifts right from S1 to S2. The price falls from P1 to P2 and the quantity of new homes rises from Q1 to Q2: a microeconomic policy acting on one product market.
+
+=== draw dr-ceil-01
+c: 4E.2
+lv: 2
+DIA: ceiling good=rental housing
+Q: A state government caps rents below the market rent. Draw a diagram of the rental housing market to show the effect.
+ANS: At the maximum rent (Pmax) the quantity demanded (Qd) is greater than the quantity supplied (Qs), so there is a shortage between Qs and Qd. Fewer homes are offered for rent than at the market rent (Qe), even though renters who find a home pay less.
+
+=== draw dr-tar-01
+c: 1C.2 2D.3
+lv: 2
+DIA: tariff good=steel
+Q: The government imposes a tariff on imported steel. Draw a diagram of the domestic steel market to show the effects of the tariff.
+ANS: The domestic price rises from the world price Pw to Pw+t. Domestic production rises from Q1 to Q2 and consumption falls from Q4 to Q3, so imports fall from Q1–Q4 to Q2–Q3. The government collects revenue (the shaded rectangle), producers gain surplus, consumers lose surplus, and the two shaded triangles are deadweight losses.
+
+=== draw dr-quo-01
+c: 1C.2
+lv: 3
+DIA: quota good=cheese
+Q: The government limits imports of cheese with a quota. Draw a diagram of the domestic cheese market to show the effects of the quota.
+ANS: With imports limited to the quota, the domestic price rises from Pw to P1 until the gap between domestic demand (Q3) and domestic supply (Q2) equals the quota. Domestic production rises from Q1 to Q2 and consumption falls from Q4 to Q3. Unlike a tariff, the government collects no revenue: the importers keep the extra revenue from the higher price (the shaded rectangle). The two triangles are deadweight losses.
+
+=== draw dr-sub-01
+c: 1C.2 2D.1
+lv: 3
+DIA: subsidy good=solar panels
+Q: The government pays local makers of solar panels a subsidy for each panel produced. Draw a diagram of the domestic solar panel market to show the effects.
+ANS: The subsidy lowers producers' costs, so domestic supply shifts right from S1 to S2. Consumers still pay the world price Pw, so consumption (Q3) does not change. Domestic production rises from Q1 to Q2 and imports fall. Producers receive Pw+s; the shaded areas show the producer surplus gain and the deadweight loss, and the government pays the subsidy on every unit produced (Q2).
+
+=== draw dr-ext-01
+c: 3F.2
+lv: 2
+DIA: extern good=electricity
+Q: Coal-fired power stations emit carbon dioxide and no policy makes them pay for the damage. Draw a diagram to show why the market produces too much electricity.
+ANS: Producers base supply on their private costs (MPC), but the social cost (MSC) is higher by the external cost. The market produces Q_m where demand meets MPC, more than the socially efficient Qs where demand meets MSC, and the price is too low. The shaded triangle is the deadweight loss: market failure.
+
+=== draw dr-ext-02
+c: 4G.2 3F.2
+lv: 3
+DIA: extern given good=electricity
+Q: The government puts a price on carbon equal to the external cost of each unit of electricity. On the diagram, show the effect.
+ANS: The carbon price makes producers pay the full social cost, so supply shifts up from MPC to MSC. Output falls from Q_m to the socially efficient Qs and the price rises from P_m to Ps: the externality is internalised and the deadweight loss disappears.
+
+=== draw dr-lor-01
+c: 3E.3
+lv: 2
+DIA: lorenz less
+Q: The government makes income tax more progressive and raises income support payments. Draw a Lorenz curve diagram to show the effect on the distribution of income.
+ANS: Higher earners pay a larger share of their income in tax and low-income households receive more in transfers, so disposable income is spread more evenly. The Lorenz curve moves towards the line of equality, from L1 to L2, and the Gini coefficient falls.
+
+=== draw dr-lor-02
+c: 3E.4 3E.5
+lv: 2
+DIA: lorenz more
+Q: Share and property prices boom while wages grow slowly. Draw a Lorenz curve diagram to show the effect on the distribution of wealth.
+ANS: Assets are owned mostly by the highest quintiles, so their wealth grows fastest. The Lorenz curve moves further from the line of equality, from L1 to L2, and the Gini coefficient for wealth rises.
+
+=== draw dr-lor-03
+c: 3B.6 3E.6
+lv: 1
+DIA: lorenz more given
+Q: Unemployment rises sharply in a recession. On the diagram, show the likely effect on the distribution of income.
+ANS: Job losses fall mainly on lower-income households, whose market income falls, so income becomes less equal. The Lorenz curve moves away from the line of equality, from L1 to L2, and the Gini coefficient rises (transfer payments such as JobSeeker offset part of the change).
+
+=== draw dr-phil-01
+c: 4A.7 3B.4
+lv: 2
+DIA: phillips along
+Q: Expansionary policy pushes unemployment below the NAIRU. Draw a Phillips curve diagram to show the short-run effect.
+ANS: The economy moves up along the short-run Phillips curve from A to B: unemployment falls from U1 to U2 and inflation rises from π1 to π2. This shows the conflict between the objectives of full employment and price stability.
+
+=== draw dr-phil-02
+c: 4A.7 3C.3
+lv: 3
+DIA: phillips right
+Q: After several years of high inflation, workers and firms expect prices to keep rising. Draw a Phillips curve diagram to show the effect of higher inflationary expectations.
+ANS: Higher expectations are built into wage claims and price setting, so the Phillips curve shifts right (up) from PC1 to PC2. Each unemployment rate now comes with higher inflation; the economy may move from A to B with both inflation and unemployment higher. This is why central banks act early to keep expectations anchored.
+
+=== draw dr-ppf-01
+c: 3A.6 3A.5
+lv: 1
+DIA: ppf growth
+Q: New technology and investment in capital raise the economy's productive capacity. Draw a production possibility frontier to show the effect.
+ANS: The economy can now produce more of both capital goods and consumer goods, so the PPF shifts outward from PPF1 to PPF2: long-run economic growth.
+
+=== draw dr-ppf-02
+c: 3B.6 3A.7
+lv: 1
+DIA: ppf inside
+Q: A recession leaves many workers and machines idle. Draw a production possibility frontier to show where the economy is producing.
+ANS: The economy produces at a point inside the frontier, such as A, because resources are unemployed. Output could rise without giving up anything else: the cost of unemployment is the output lost.

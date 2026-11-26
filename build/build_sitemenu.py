@@ -30,6 +30,8 @@ SITES = [
      '<path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.5 12h6M9.5 16h6"/>'),
     ("Finders", "ef", "Evidence Finder", "News, statistics and reports by dot point", "evidence-finder/",
      '<path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/>'),
+    ("Finders", "ws", "Worksheet Maker", "Printable practice sheets and answers as PDFs", "worksheet-maker/",
+     '<path d="M7 9V3h10v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v7H7zM10 17.5h4"/>'),
     ("Writing and skills", "essay", "Extended Response Builder", "Plan a Section II, III or IV answer", "essay-builder/",
      '<path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/>'),
     ("Writing and skills", "chain", "Chain Builder", "Cause and effect, one link at a time", "chain-builder/",
@@ -62,6 +64,7 @@ SITES = [
 PAGES = {
     "qf":      ["hsc-question-finder-site/index.html"],
     "ef":      ["evidence-finder/build/template.html", "evidence-finder/index.html"],
+    "ws":      ["worksheet-maker/template.html", "worksheet-maker/index.html"],
     "essay":   ["essay-builder/template.html", "essay-builder/index.html"],
     "chain":   ["chain-builder/template.html", "chain-builder/index.html"],
     "macro":   ["macro-diagram-lab/template.html", "macro-diagram-lab/index.html"],

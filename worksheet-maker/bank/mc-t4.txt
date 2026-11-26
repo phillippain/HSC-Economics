@@ -1,0 +1,353 @@
+# New multiple-choice questions, Topic 4.
+
+=== mc mc-4A1-01
+c: 4A.1
+lv: 2
+Q: Which statement about economic growth and quality of life is correct?
+A: Higher real GDP always means a higher quality of life
+B: Growth can raise living standards, but quality of life also depends on health, leisure, the environment and how income is shared
+C: Quality of life is measured by the inflation rate
+D: Governments do not aim for economic growth
+ANS: B
+WHY: Growth gives more goods, services and jobs, but quality of life also depends on non-material factors such as health, leisure, the environment and the distribution of income.
+
+=== mc mc-4A2-01
+c: 4A.2
+lv: 2
+Q: The objective of full employment is best described as
+A: zero unemployment.
+B: an unemployment rate at about the NAIRU, where only frictional, seasonal and some structural unemployment remain.
+C: a participation rate of 100 per cent.
+D: everyone working full-time.
+ANS: B
+WHY: Full employment allows for people moving between jobs and some mismatch; pushing unemployment below the NAIRU adds to inflation.
+
+=== mc mc-4A3-01
+c: 4A.3
+lv: 1
+Q: Price stability in Australia means
+A: no change in any prices.
+B: inflation of 2 to 3 per cent on average, the RBA's target.
+C: falling prices each year.
+D: inflation of 5 per cent.
+ANS: B
+WHY: The RBA targets inflation of 2 to 3 per cent, aiming for the midpoint. Low, positive inflation is the goal, not zero or falling prices.
+
+=== mc mc-4A4-01
+c: 4A.4
+lv: 2
+Q: The objective of external stability is best described as
+A: never running a current account deficit.
+B: keeping the current account deficit and foreign liabilities at levels that can be serviced, and avoiding big swings in the exchange rate.
+C: fixing the exchange rate.
+D: having more exports than imports every year.
+ANS: B
+WHY: External stability means Australia can meet its obligations to the rest of the world over time, so investors stay confident. A deficit is not a problem in itself if it is sustainable.
+
+=== mc mc-4A5-01
+c: 4A.5
+lv: 2
+Q: Which policy best supports the objective of environmental sustainability?
+A: Subsidies for coal-fired power
+B: A market-based price on emissions such as the Safeguard Mechanism's tradeable credits
+C: Lower fuel excise
+D: Removing water use limits
+ANS: B
+WHY: A price on emissions makes polluters count the external cost. A, C and D encourage more emissions or resource use.
+
+=== mc mc-4A6-01
+c: 4A.6
+lv: 2
+Q: Which change would most likely make the distribution of income more equal?
+A: Lower rates of income support
+B: More progressive personal income tax
+C: A higher GST rate
+D: A rise in share prices
+ANS: B
+WHY: A more progressive tax system takes a larger share from higher incomes, narrowing the gap in disposable income.
+
+=== mc mc-4A7-01
+c: 4A.7
+lv: 3
+Q: Strong economic growth lifts imports faster than exports. Which two objectives are in conflict?
+A: Price stability and environmental sustainability
+B: Economic growth and external stability
+C: Full employment and economic growth
+D: Distribution of income and price stability
+ANS: B
+WHY: Faster growth raises spending on imports, widening the current account deficit: a conflict between growth and external stability.
+
+=== mc mc-4B1-01
+c: 4B.1
+lv: 2
+Q: Which policy mix is most suitable when inflation is well above target and unemployment is low?
+A: Expansionary fiscal and expansionary monetary policy
+B: Contractionary monetary policy, supported by a tighter budget
+C: Cuts to the cash rate and tax cuts
+D: Higher tariffs
+ANS: B
+WHY: With the economy running above capacity, contractionary policy slows demand. Fiscal and monetary policy working in the same direction makes the RBA's job easier.
+
+=== mc mc-4C1-01
+c: 4C.1
+lv: 1
+Q: Government revenue is $700 billion and government spending is $735 billion. The budget outcome is
+A: a surplus of $35 billion.
+B: a deficit of $35 billion.
+C: a deficit of $1,435 billion.
+D: balanced.
+ANS: B
+WHY: Budget outcome = revenue − spending = 700 − 735 = −$35 billion, a deficit.
+
+=== mc mc-4C1-02
+c: 4C.1 4C.2
+lv: 3
+Q: The budget deficit widens because unemployment rises in a downturn, with no change in policy. This change is
+A: an increase in the structural deficit.
+B: an increase in the cyclical component of the budget, through automatic stabilisers.
+C: discretionary expansionary fiscal policy.
+D: a contractionary budget stance.
+ANS: B
+WHY: Lower tax receipts and higher welfare payments in a downturn change the cyclical component automatically. The structural balance reflects policy decisions.
+
+=== mc mc-4C2-01
+c: 4C.2
+lv: 2
+Q: Which budget change would most directly improve income distribution?
+A: Cutting the top marginal tax rate
+B: Increasing the rate of JobSeeker and Commonwealth Rent Assistance
+C: Raising excise on fuel
+D: Cutting company tax
+ANS: B
+WHY: Larger transfers to low-income households raise their disposable incomes, reducing inequality.
+
+=== mc mc-4C3-01
+c: 4C.3
+lv: 2
+Q: How does the Federal Government usually finance a budget deficit?
+A: By printing money through the Reserve Bank
+B: By selling Commonwealth Government Securities to investors in Australia and overseas
+C: By raising the cash rate
+D: By selling Australian dollars on the foreign exchange market
+ANS: B
+WHY: The Australian Office of Financial Management sells government bonds and notes. Borrowing from overseas investors adds to foreign debt.
+
+=== mc mc-4C4-01
+c: 4C.4
+lv: 2
+Q: Which is a common use of a budget surplus?
+A: Reducing government debt or investing in funds such as the Future Fund
+B: Lowering the cash rate
+C: Buying Australian dollars to raise the exchange rate
+D: Raising tariffs
+ANS: A
+WHY: A surplus can be used to repay debt, which lowers future interest costs, or to build up assets in funds such as the Future Fund.
+
+=== mc mc-4D1-01
+c: 4D.1
+lv: 1
+Q: The main purpose of monetary policy in Australia is
+A: to balance the budget.
+B: to keep inflation at 2 to 3 per cent and support full employment.
+C: to fix the value of the Australian dollar.
+D: to set the minimum wage.
+ANS: B
+WHY: The RBA uses the cash rate to keep inflation within its target and support the maximum sustainable level of employment, which promotes sustainable growth.
+
+=== mc mc-4D2-01
+c: 4D.2
+lv: 2
+Q: Who decides the target for the cash rate in Australia?
+A: The Treasurer
+B: The RBA Monetary Policy Board
+C: The commercial banks
+D: The Australian Prudential Regulation Authority
+ANS: B
+WHY: Since March 2025 the RBA Monetary Policy Board sets monetary policy. The RBA then manages money market conditions so the cash rate stays at the target.
+
+=== mc mc-4D3-01
+c: 4D.3 2C.2
+lv: 2
+Q: The RBA cuts the cash rate while overseas central banks keep theirs unchanged. Which outcome is most likely?
+A: An appreciation of the A$ and lower inflation
+B: A depreciation of the A$, higher spending and more inflationary pressure
+C: Higher mortgage rates and lower spending
+D: Lower investment and a fall in employment
+ANS: B
+WHY: Lower rates reduce the return on Australian assets, so the dollar tends to depreciate. Cheaper borrowing and a lower dollar lift spending and net exports, adding to activity and inflation.
+
+=== mc mc-4D3-02
+c: 4D.3 4H.1
+lv: 3
+Q: Why might a rise in the cash rate take a long time to lower inflation?
+A: Banks never pass on changes in the cash rate
+B: Households and firms take time to adjust spending, and many loans have fixed rates for a while
+C: The RBA can only change the cash rate once a year
+D: Higher rates immediately raise import prices
+ANS: B
+WHY: Monetary policy works with long and variable lags: borrowers on fixed rates are affected only when their loans roll over, and spending plans change slowly.
+
+=== mc mc-4E1-01
+c: 4E.1
+lv: 2
+Q: Microeconomic reform mainly aims to
+A: smooth the business cycle in the short run.
+B: increase efficiency and productivity, shifting aggregate supply to the right.
+C: raise the inflation rate.
+D: increase tariffs to protect industry.
+ANS: B
+WHY: Microeconomic policies work on the supply side: they improve how markets and firms use resources, lifting productivity and potential growth.
+
+=== mc mc-4E2-01
+c: 4E.2
+lv: 2
+Q: The government opens a market for a service to new competitors. In the short run, the most likely effect in that market is
+A: higher prices and fewer firms.
+B: lower prices, more choice and possible job losses at the former monopoly.
+C: no change.
+D: higher prices and more jobs at the former monopoly.
+ANS: B
+WHY: More competition pushes prices down and lifts efficiency. The incumbent may cut costs and jobs, a short-term cost of reform.
+
+=== mc mc-4E3-01
+c: 4E.3
+lv: 2
+Q: Which body enforces Australia's competition laws, such as the ban on price-fixing?
+A: The Reserve Bank of Australia
+B: The Australian Competition and Consumer Commission
+C: The Fair Work Commission
+D: The Productivity Commission
+ANS: B
+WHY: The ACCC enforces the Competition and Consumer Act 2010, including the bans on cartels and the misuse of market power.
+
+=== mc mc-4F1-01
+c: 4F.1
+lv: 2
+Q: Which statement about Australia's industrial relations system is correct?
+A: Each state sets the pay of all private-sector workers in that state
+B: Most private-sector employees are covered by the national system under the Fair Work Act 2009
+C: There are no minimum wages in Australia
+D: All pay is set in individual contracts
+ANS: B
+WHY: Most states referred their powers to the Commonwealth, so most private-sector employees are in the national system; Western Australia's unincorporated businesses and state public servants remain in state systems.
+
+=== mc mc-4F2-01
+c: 4F.2
+lv: 2
+Q: Which body decides changes to the national minimum wage each year?
+A: The Australian Council of Trade Unions
+B: The Fair Work Commission
+C: The Reserve Bank
+D: The Fair Work Ombudsman
+ANS: B
+WHY: The Fair Work Commission's Annual Wage Review sets the national minimum wage and modern award minimum wages. The Fair Work Ombudsman enforces compliance.
+
+=== mc mc-4F3-01
+c: 4F.3
+lv: 2
+Q: When the Fair Work Commission makes a binding decision to settle a dispute, this is called
+A: conciliation.
+B: mediation.
+C: arbitration.
+D: protected industrial action.
+ANS: C
+WHY: Arbitration is a binding decision by an independent third party. In conciliation and mediation the parties are helped to reach their own agreement.
+
+=== mc mc-4F4-01
+c: 4F.4
+lv: 3
+Q: Which is an argument for decentralised (enterprise) bargaining?
+A: It gives every worker the same pay rise
+B: It lets pay and conditions reflect each workplace's productivity
+C: It reduces wage inequality between industries
+D: It removes the need for minimum standards
+ANS: B
+WHY: Enterprise bargaining can link pay rises to productivity gains at each workplace. Critics say it can widen inequality where workers have little bargaining power.
+
+=== mc mc-4F5-01
+c: 4F.5 3B.3
+lv: 1
+Q: Which policy is best suited to reducing structural unemployment?
+A: Cutting the cash rate
+B: Funding retraining and apprenticeships in skills that are in short supply
+C: A one-off cash payment to households
+D: Raising tariffs
+ANS: B
+WHY: Structural unemployment comes from a skills or location mismatch, so education and training programs address its cause. A and C mainly help cyclical unemployment.
+
+=== mc mc-4G1-01
+c: 4G.1
+lv: 1
+Q: Which is an example of environmental regulation?
+A: An emissions trading scheme
+B: A ban on clearing native vegetation near rivers
+C: A tax on carbon emissions
+D: A rebate for buying an electric vehicle
+ANS: B
+WHY: A ban is a regulation: a rule backed by penalties. A, C and D are market-based policies that work through prices.
+
+=== mc mc-4G3-01
+c: 4G.3 4G.4
+lv: 2
+Q: Australia's legislated emissions targets are
+A: a 26 per cent cut on 2005 levels by 2030 only.
+B: a 43 per cent cut on 2005 levels by 2030 and net zero by 2050.
+C: net zero by 2030.
+D: no targets, because Australia left the Paris Agreement.
+ANS: B
+WHY: The Climate Change Act 2022 legislated a 43 per cent cut below 2005 levels by 2030 and net zero emissions by 2050. Australia remains in the Paris Agreement.
+
+=== mc mc-4H1-01
+c: 4H.1
+lv: 2
+Q: The time between an economic problem starting and policymakers being sure it has started is the
+A: implementation lag.
+B: recognition lag.
+C: impact lag.
+D: political constraint.
+ANS: B
+WHY: Data arrive with a delay and are revised, so it takes time to recognise a downturn or an inflation problem.
+
+=== mc mc-4H2-01
+c: 4H.2
+lv: 2
+Q: Which is the best example of a global influence limiting Australian economic policy?
+A: A Senate vote against a tax bill
+B: A global recession that cuts demand for exports even after the RBA lowers interest rates
+C: Delays in collecting GDP data
+D: The time taken to build new infrastructure
+ANS: B
+WHY: Australia is a small open economy: world events can overwhelm domestic policy. A is a political constraint; C and D are time lags.
+
+=== mc mc-4H3-01
+c: 4H.3
+lv: 2
+Q: A government delays an unpopular tax increase until after an election. This is an example of
+A: a recognition lag.
+B: a global influence.
+C: a political constraint.
+D: an automatic stabiliser.
+ANS: C
+WHY: Political considerations, such as elections or the need to pass laws through the Senate, can stop governments from using the best economic policy at the right time.
+
+=== mc mc-4I3-01
+c: 4I.3 4D.3
+lv: 2
+Q: Headline inflation rose to 4.9 per cent in the year to October 2026. Which policy response is most consistent with the RBA's mandate?
+A: Cutting the cash rate to support growth
+B: Raising the cash rate to bring inflation back to the 2–3 per cent target
+C: Fixing the exchange rate
+D: Abolishing the inflation target
+ANS: B
+WHY: With inflation well above target, the RBA tightened monetary policy, raising the cash rate several times in 2026 (to 4.85 per cent from 3 November) to slow demand and anchor expectations.
+
+=== mc mc-4I4-01
+c: 4I.4 3D.3
+lv: 3
+Q: Which policy would most directly help external stability in the long run?
+A: Policies that lift national saving and international competitiveness
+B: Larger budget deficits funded by overseas borrowing
+C: Higher tariffs on all imports
+D: A sharp cut in interest rates to encourage borrowing
+ANS: A
+WHY: Higher saving narrows the savings-investment gap, and greater competitiveness lifts exports, both reducing reliance on foreign borrowing over time.

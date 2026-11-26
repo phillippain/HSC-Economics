@@ -1,0 +1,92 @@
+# Read a diagram: numbered figures drawn to exact equations, so every answer is a whole number.
+# Figures and answers match the Diagram and Calculation Skills resource (fig2 uses the revised cheese numbers).
+
+=== read rd-fig1
+c: 1C.2
+lv: 2
+k: diagram calc
+DIA: fig1
+LEAD: The figure shows the domestic market for steel. The world price is $20 a tonne. The government then imposes a tariff of $10 a tonne.
+PART (a) 1: Calculate the quantity of steel imported before the tariff.
+ANS: 80 − 20 = 60 million tonnes.
+PART (b) 1: Calculate the quantity of steel imported after the tariff.
+ANS: 70 − 30 = 40 million tonnes.
+PART (c) 1: Calculate the government's revenue from the tariff.
+ANS: $10 × 40 million tonnes = $400 million (tariff × imports after the tariff, not before).
+PART (d) 2: Calculate the change in domestic production and the deadweight loss of the tariff.
+ANS: Domestic production rises from 20 to 30 million tonnes (+10 million). Deadweight loss = ½ × 10 × 10 (production) + ½ × 10 × 10 (consumption) = $50 million + $50 million = $100 million.
+PART (e) 3: Explain who gains and who loses from the tariff.
+PTS:
+- Domestic producers gain: they sell more (20 to 30 million tonnes) at a higher price, a producer surplus gain of $250 million (1)
+- The government gains $400 million of tariff revenue (1)
+- Consumers lose: they pay $30 instead of $20 and buy less, a consumer surplus loss of $750 million, larger than the gains (deadweight loss $100 million) (1)
+
+=== read rd-fig6
+c: 1C.2
+lv: 3
+k: diagram calc
+DIA: fig6
+LEAD: The figure shows the domestic market for bicycles (quantities in thousands). The world price is $100. The government imposes a tariff of $20 a bicycle.
+PART (a) 2: Calculate the number of bicycles imported before and after the tariff.
+ANS: Before: 100,000 − 30,000 = 70,000. After: 80,000 − 40,000 = 40,000.
+PART (b) 1: Calculate the tariff revenue.
+ANS: $20 × 40,000 = $800,000.
+PART (c) 3: Calculate the loss of consumer surplus, the gain in producer surplus and the total deadweight loss.
+ANS: Consumer surplus loss = ½ × (100,000 + 80,000) × $20 = $1,800,000. Producer surplus gain = ½ × (30,000 + 40,000) × $20 = $700,000. Deadweight loss = $100,000 (production) + $200,000 (consumption) = $300,000. Check: 1,800,000 = 700,000 + 800,000 + 300,000.
+
+=== read rd-fig2
+c: 1C.2
+lv: 3
+k: diagram calc
+DIA: fig2
+LEAD: The figure shows the domestic market for cheese (million kg). The world price is $4 a kg. The government then limits imports with a quota of 30 million kg.
+PART (a) 1: Calculate imports of cheese before the quota.
+ANS: 90 − 20 = 70 million kg.
+PART (b) 1: State the domestic price of cheese once the quota applies.
+ANS: $6 a kg: the price at which domestic demand (70 million kg) is 30 million kg more than domestic supply (40 million kg).
+PART (c) 2: Calculate the extra revenue importers receive because of the higher price, and explain who receives it.
+ANS: ($6 − $4) × 30 million kg = $60 million. The importers who hold the quota keep it: unlike a tariff, the government receives nothing.
+PART (d) 2: Calculate the deadweight loss of the quota.
+ANS: ½ × (40 − 20) × $2 + ½ × (90 − 70) × $2 = $20 million + $20 million = $40 million. Check: consumer surplus loss $160 million = producer gain $60 million + importers $60 million + deadweight loss $40 million.
+
+=== read rd-fig7
+c: 1C.2
+lv: 2
+k: diagram calc
+DIA: fig7
+LEAD: The figure shows the domestic market for sugar (million kg). The world price is $2 a kg. The government sets an import quota of 40 million kg.
+PART (a) 2: Calculate imports before the quota and the domestic price after it.
+ANS: Before: 100 − 20 = 80 million kg. After the quota the price rises to $3, where demand (80) exceeds domestic supply (40) by the 40 million kg quota.
+PART (b) 1: Calculate the change in domestic production.
+ANS: It rises from 20 to 40 million kg, an increase of 20 million kg.
+PART (c) 2: Calculate the loss of consumer surplus and explain why it is larger than the gain to producers.
+ANS: ½ × (100 + 80) × $1 = $90 million. Producers gain only $30 million; importers keep $40 million and $20 million is deadweight loss, so the consumers' loss is larger than any one group's gain.
+
+=== read rd-fig3
+c: 1C.2 2D.1
+lv: 3
+k: diagram calc
+DIA: fig3
+LEAD: The figure shows the domestic market for canned fruit (million cans). The world price is $50 a can. The government pays local producers a subsidy of $20 a can, which shifts supply from S1 to S2.
+PART (a) 2: Calculate domestic production and imports before and after the subsidy.
+ANS: Production rises from 40 to 60 million cans. Consumption stays at 120 million cans (consumers still pay $50), so imports fall from 80 to 60 million cans.
+PART (b) 1: Calculate the cost of the subsidy to the government.
+ANS: $20 × 60 million cans = $1,200 million (the subsidy is paid on all domestic production, not just the increase).
+PART (c) 3: Explain why a subsidy has a smaller deadweight loss than a tariff that gives producers the same protection.
+PTS:
+- Consumers still pay the world price, so consumption does not fall and there is no consumption deadweight loss (1)
+- The only loss is on production: the extra 20 million cans cost more to make here than to import, ½ × 20 × $20 = $200 million (1)
+- The cost moves from consumers to taxpayers through the budget, which has an opportunity cost (1)
+
+=== read rd-fig8
+c: 1C.2 2D.1
+lv: 3
+k: diagram calc
+DIA: fig8
+LEAD: The figure shows the domestic market for solar panels (thousands). The world price is $200 a panel. The government pays local makers a subsidy of $80 a panel, which shifts supply from S1 to S2.
+PART (a) 2: Calculate the change in domestic production and the change in imports.
+ANS: Production rises from 10,000 to 18,000 panels (+8,000). Consumption stays at 40,000, so imports fall from 30,000 to 22,000.
+PART (b) 1: Calculate the cost of the subsidy to the government.
+ANS: $80 × 18,000 = $1,440,000.
+PART (c) 1: Calculate the deadweight loss.
+ANS: ½ × 8,000 × $80 = $320,000.

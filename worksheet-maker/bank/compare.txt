@@ -1,0 +1,186 @@
+# Compare tables: "- row heading => cell | cell". A cell starting with ! is printed on the student copy as a hint.
+
+=== compare cp-fiscal-monetary
+c: 4C.1 4D.1 4B.1
+lv: 2
+Q: Compare fiscal policy and monetary policy.
+COLS: Fiscal policy | Monetary policy
+- Who decides => !The Federal Government (the Treasurer and Cabinet), through the budget | The RBA Monetary Policy Board
+- Main instruments => Government spending, taxation and transfer payments | The cash rate target, plus forward guidance and the RBA's balance sheet
+- How often it can change => Mainly once a year in the budget (plus mid-year updates) | Eight meetings a year, so it can change quickly
+- Implementation lag => Long: new spending and tax changes need decisions, laws and planning | Short: the cash rate changes the day after a meeting
+- How it changes AD => Directly through G, and through C and I via tax and transfers | Indirectly, through interest rates, credit, asset prices and the exchange rate
+- Can it target groups or regions? => Yes, spending and tax can be aimed at particular groups | No, one cash rate applies to the whole economy
+
+=== compare cp-tariff-quota-subsidy
+c: 1C.2
+lv: 2
+Q: Compare the effects of a tariff, a quota and a production subsidy on an import-competing industry.
+COLS: Tariff | Quota | Subsidy
+- Price paid by consumers => Rises to the world price plus the tariff | Rises until demand minus supply equals the quota | !Unchanged at the world price
+- Domestic production => Rises | Rises | Rises
+- Imports => Fall | Fall to the quota | Fall
+- Who receives the money from the higher price? => The government, as tariff revenue | The importers keep the extra revenue from the higher price | There is no higher price; producers receive the subsidy
+- Effect on the budget => Revenue for the government | No direct effect | A cost to the government
+- Deadweight loss => Production and consumption losses | Production and consumption losses | Production loss only
+
+=== compare cp-xr-systems
+c: 2C.4
+lv: 2
+Q: Compare the three main exchange rate systems.
+COLS: Fixed (pegged) | Managed (flexible peg) | Floating
+- How the rate is set => The government or central bank sets the rate | !The central bank keeps the rate within a band or near a target | Supply and demand in the foreign exchange market
+- Role of the central bank => Buys and sells currency to defend the peg | Intervenes when the rate moves outside the band | May intervene rarely to smooth extreme moves
+- Effect on monetary policy => Interest rates must defend the peg, so little independence | Some independence | Interest rates can target domestic goals such as inflation
+- Example => Hong Kong dollar to the US dollar | China's renminbi (2% daily band) | Australian dollar since December 1983
+- Main advantage => Certainty for traders and investors | Some stability with some flexibility | Absorbs shocks automatically
+- Main disadvantage => Needs large reserves; open to speculative attack | Can be manipulated and still attacked | Can be volatile
+
+=== compare cp-headline-underlying
+c: 3C.1
+lv: 1
+Q: Compare headline and underlying inflation.
+COLS: Headline inflation | Underlying inflation
+- What it measures => The change in the price of the whole CPI basket | !The trend in prices, leaving out volatile or one-off price changes
+- How it is calculated => Percentage change in the CPI over the year | Trimmed mean or weighted median of the CPI price changes
+- Includes volatile items such as fuel and fruit? => Yes | No, extreme changes are trimmed out
+- Main use => Tells households what happened to the cost of living | Tells the RBA about inflationary pressure when it sets policy
+
+=== compare cp-ca-kafa
+c: 2B.1 2B.2 2B.3
+lv: 2
+Q: Compare the current account and the capital and financial account.
+COLS: Current account | Capital and financial account
+- What it records => Trade in goods and services, primary income and secondary income | !Flows of capital: investment, borrowing and lending, plus capital transfers
+- Main parts => Balance on goods and services, net primary income, net secondary income | Capital account; financial account (direct, portfolio, other investment, derivatives, reserves)
+- Australia's usual balance => A deficit (the recent exception: surpluses from 2019–20 to 2022–23) | A surplus
+- How the two are linked => A deficit must be financed by a surplus in the other account | They sum to zero, apart from net errors and omissions
+- Example => Interest paid to overseas lenders | A foreign company buys an Australian business
+
+=== compare cp-debt-equity
+c: 2A.2 3D.1
+lv: 2
+Q: Compare foreign debt and foreign equity.
+COLS: Foreign debt | Foreign equity
+- What it is => Money borrowed from overseas that must be repaid with interest | !Foreign ownership of Australian assets such as shares and businesses
+- Payment to foreigners => Interest | Dividends and profits
+- Is repayment required? => Yes, on a set schedule | No, owners can sell their shares to someone else
+- Risk if the dollar depreciates => Debt in foreign currency costs more to service | Returns fall in foreign-currency terms, so the risk sits with the investor
+- Recorded in => Net primary income and the financial account | Net primary income and the financial account
+
+=== compare cp-growth-development
+c: 1D.1 1D.3
+lv: 1
+Q: Compare economic growth and economic development.
+COLS: Economic growth | Economic development
+- Meaning => An increase in the volume of goods and services produced (real GDP) | !A rise in living standards and wellbeing, including health, education and freedom
+- Main measure => The percentage change in real GDP | The Human Development Index (HDI) and other quality of life indicators
+- Can one happen without the other? => Growth can occur while inequality, pollution or poverty worsen | Development usually needs growth, but growth alone is not enough
+- Time frame => Can be measured each quarter | Changes over years and decades
+
+=== compare cp-econ-types
+c: 1D.4 1D.5
+lv: 2
+Q: Compare advanced, emerging and developing economies.
+COLS: Advanced | Emerging | Developing
+- Income per person => High | Middle and rising quickly | !Low
+- Structure of the economy => Mostly services | Manufacturing growing fast | Mostly agriculture
+- Typical growth rate => Low to moderate | High | Varies; often held back
+- Main challenge => Ageing population and slow productivity growth | Inequality and pollution | Poverty, debt and weak institutions
+- Example => Australia or Japan | China or India | Malawi or Niger
+
+=== compare cp-cyclical-structural
+c: 3B.3 4F.5
+lv: 2
+Q: Compare cyclical and structural unemployment.
+COLS: Cyclical unemployment | Structural unemployment
+- Cause => !A downturn in the business cycle: not enough aggregate demand | A mismatch between workers' skills or location and the jobs available
+- How long it lasts => Falls when the economy recovers | Can last for years and become long-term unemployment
+- Example => Retail workers laid off in a recession | Workers whose skills are no longer needed when a factory closes
+- Policy that helps most => Expansionary fiscal and monetary policy | Education, training, relocation help and other labour market programs
+
+=== compare cp-demand-cost
+c: 3C.3
+lv: 2
+Q: Compare demand inflation and cost inflation.
+COLS: Demand inflation | Cost inflation
+- Cause => !Aggregate demand grows faster than the economy's capacity | Costs of production rise, such as wages, energy or imported inputs
+- Shift on an AD–AS diagram => AD shifts right | AS shifts left
+- Effect on real GDP => Rises | Falls
+- Effect on unemployment => Falls | Rises
+- Best policy response => Contractionary monetary or fiscal policy | Supply-side policy; monetary policy has a harder trade-off
+
+=== compare cp-macro-micro
+c: 4B.1 4E.1
+lv: 2
+Q: Compare macroeconomic and microeconomic policy.
+COLS: Macroeconomic policy | Microeconomic policy
+- Aim => !Stabilise the business cycle by managing aggregate demand | Raise efficiency and productivity, shifting aggregate supply
+- Main tools => Fiscal and monetary policy | Competition policy, trade liberalisation, privatisation, tax and labour market reform
+- Time frame => Short to medium term | Long term
+- Effect on the economy => Smooths growth, inflation and unemployment | Raises potential growth and international competitiveness
+- A limitation => Time lags and global influences | Short-term costs such as job losses in some industries
+
+=== compare cp-reg-market
+c: 4G.1 4G.2
+lv: 2
+Q: Compare regulation and market-based policies for the environment.
+COLS: Regulation | Market-based policy
+- How it works => !Rules that ban or limit harmful activity, enforced with fines | Puts a price on pollution or rewards cleaner choices
+- Example => Fuel efficiency standards or bans on land clearing | An emissions trading scheme or a landfill levy
+- Advantage => Certain result; simple to understand | Pollution is cut where it is cheapest to do so
+- Disadvantage => The same rule for every firm can be costly | The amount of pollution cut is less certain with a tax
+
+=== compare cp-wages
+c: 4F.4 4F.2
+lv: 3
+Q: Compare centralised and decentralised wage determination.
+COLS: Centralised | Decentralised
+- Who sets pay => !An independent body for a whole industry or the economy (the Fair Work Commission) | Employers and employees at each workplace or enterprise
+- Australian example => The Annual Wage Review and modern awards | Enterprise agreements, which must pass the better off overall test
+- Link to productivity => Weak: the same rise everywhere | Strong: rises can be traded for productivity gains
+- Effect on inequality => Narrower wage gaps; protects low-paid workers | Wider gaps between strong and weak bargainers
+- Effect on inflation => A large national rise can add to cost inflation | Rises tied to productivity add less to unit labour costs
+
+=== compare cp-taxes
+c: 3E.3
+lv: 2
+Q: Compare progressive, proportional and regressive taxes.
+COLS: Progressive | Proportional | Regressive
+- Average tax rate as income rises => Rises | Stays the same | Falls
+- Australian example => Personal income tax | Company tax | GST
+- Effect on inequality => Reduces it | No direct effect | Increases it
+- Who pays the largest share of their income? => High-income earners | Everyone pays the same share | !Low-income earners
+
+=== compare cp-trade-agreements
+c: 1B.4 2D.2
+lv: 2
+Q: Compare multilateral, regional and bilateral trade agreements.
+COLS: Multilateral | Regional | Bilateral
+- Number of countries => !Many, through the WTO | A group of countries in a region | Two countries
+- Example => WTO agreements | RCEP; CPTPP | The Australia–United States FTA (AUSFTA)
+- How easy to agree => Very hard: every member must agree | Moderate | Easiest
+- Risk => Slow progress | Trade diversion away from non-members | Trade diversion and a 'noodle bowl' of different rules
+
+=== compare cp-surplus-deficit
+c: 4C.1 4C.3 4C.4
+lv: 2
+Q: Compare a budget surplus and a budget deficit.
+COLS: Budget surplus | Budget deficit
+- Definition => !Government revenue is greater than spending | Government spending is greater than revenue
+- Effect on aggregate demand => Contractionary | Expansionary
+- What happens to the money => Repay government debt or put it into funds such as the Future Fund | Financed by borrowing: selling Commonwealth Government Securities
+- Effect on public debt => Falls | Rises
+- When it suits the cycle => In a boom, to ease inflation | In a downturn, to support demand and jobs
+
+=== compare cp-appreciation
+c: 2C.6 3D.3
+lv: 3
+Q: Compare the effects of an appreciation and a depreciation of the Australian dollar.
+COLS: Appreciation | Depreciation
+- Price of exports overseas => Rises | !Falls
+- Price of imports in A$ => Falls | Rises
+- Inflation => Lower, through cheaper imports | Higher, through imported inflation
+- A$ cost of servicing foreign-currency debt => Falls | Rises
+- Current account in the long run => Tends to worsen | Tends to improve, after a J-curve
+- Valuation effect on net foreign liabilities => Rises, because foreign-currency assets are worth fewer A$ | Falls, because foreign-currency assets are worth more A$

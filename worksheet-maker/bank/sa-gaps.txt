@@ -1,0 +1,396 @@
+# More short-answer questions, written to give every dot point at least one new question.
+
+=== sa sa-1A1-01
+c: 1A.1
+m: 2
+lv: 1
+k: outline
+Q: Outline what is meant by the global economy.
+PTS:
+- All the world's national economies together (1)
+- Linked through trade, financial flows, investment, technology and the movement of people (1)
+
+=== sa sa-1A2-01
+c: 1A.2
+m: 3
+lv: 2
+k: explain
+Q: Explain why Gross World Product is usually compared using purchasing power parity rather than market exchange rates.
+PTS:
+- GWP adds up the output of all economies, which must be converted to a common currency (1)
+- Market exchange rates do not reflect differences in what money buys in each country (1)
+- PPP adjusts for price differences, so it gives a better comparison of real output, raising the measured share of emerging and developing economies (1)
+
+=== sa sa-1A4-01
+c: 1A.4
+m: 3
+lv: 2
+k: explain
+Q: Explain why global financial flows have grown faster than world trade.
+PTS:
+- Deregulation of financial markets and removal of capital controls since the 1980s (1)
+- Technology lets funds move instantly and cheaply around the world (1)
+- Investors seek the highest returns and spread risk, and floating exchange rates create speculation and hedging (1)
+
+=== sa sa-1A7-01
+c: 1A.7
+m: 3
+lv: 2
+k: explain
+Q: Explain how the international division of labour affects advanced economies such as Australia.
+PTS:
+- Labour-intensive production moves to lower-cost economies (1)
+- Advanced economies specialise in skilled services, design and capital-intensive industries (1)
+- Workers in declining industries may face structural unemployment and need to retrain; skilled migration fills shortages (1)
+
+=== sa sa-1B3-01
+c: 1B.3
+m: 3
+lv: 2
+k: explain
+Q: Explain the influence of the G20 on the global economy.
+PTS:
+- The G20 brings together major advanced and emerging economies, which produce most of world output (1)
+- It coordinates policy, e.g. stimulus during the global financial crisis in 2008–09 and financial regulation reforms (1)
+- Its influence is limited because its decisions are not binding (1)
+
+=== sa sa-2D2-01
+c: 2D.2
+m: 4
+lv: 2
+k: explain
+Q: Explain TWO benefits for Australia of the Regional Comprehensive Economic Partnership (RCEP).
+PTS:
+- First benefit explained, e.g. lower tariffs and common rules of origin across 15 Asia-Pacific economies make it easier for Australian firms to use regional supply chains (2)
+- Second benefit explained, e.g. better access for Australian services and investment, or a rules-based framework that includes China (2)
+
+=== sa sa-3A1-01
+c: 3A.1
+m: 3
+lv: 1
+k: outline
+Q: Outline the components of aggregate demand.
+PTS:
+- AD = C + I + G + (X − M) (1)
+- Consumption by households and investment by firms (1)
+- Government spending and net exports (exports minus imports) (1)
+
+=== sa sa-3A7-01
+c: 3A.7
+m: 3
+lv: 2
+k: describe
+Q: Describe the phases of the business cycle.
+PTS:
+- Upswing (recovery and boom): rising growth, falling unemployment, rising inflation (1)
+- Peak, then downswing: slowing growth, rising unemployment (1)
+- Trough: lowest point; a recession is two consecutive quarters of negative growth (1)
+
+=== sa sa-3B5-01
+c: 3B.5
+m: 3
+lv: 2
+k: explain
+Q: Explain why young people are more affected by unemployment than other groups.
+PTS:
+- They have less experience and fewer skills than older workers (1)
+- They are often in casual or entry-level jobs that are cut first in a downturn (1)
+- When firms stop hiring, new entrants to the labour force find it hardest to get a first job (1)
+
+=== sa sa-3C2-01
+c: 3C.2
+m: 3
+lv: 2
+k: describe
+Q: Describe the trend in Australian inflation since 2020.
+PTS:
+- Low inflation in 2020 during the COVID-19 recession (1)
+- A sharp rise to a peak of 7.8 per cent in late 2022, from supply shocks and strong demand (1)
+- A fall back towards the target in 2024–25, then a rise again in 2026 (4.9 per cent in the year to October) (1)
+
+=== sa sa-3D2-01
+c: 3D.2
+m: 3
+lv: 2
+k: describe
+Q: Describe the trends in Australia's net foreign liabilities over the past decade.
+PTS:
+- Net foreign liabilities have fallen as a share of GDP (1)
+- Net foreign equity has turned negative as superannuation funds invest heavily overseas (1)
+- So the liabilities are now mainly net foreign debt, much of it in Australian dollars (1)
+
+=== sa sa-3E2-01
+c: 3E.2
+m: 3
+lv: 2
+k: explain
+Q: Explain how the sources of income differ between low-income and high-income households.
+PTS:
+- Low-income households rely more on social welfare transfers, such as pensions and JobSeeker (1)
+- Middle-income households rely mainly on wages and salaries (1)
+- High-income households receive more income from capital (interest, dividends, rent) as well as high wages (1)
+
+=== sa sa-3E4-01
+c: 3E.4 3E.5
+m: 3
+lv: 2
+k: explain
+Q: Explain why wealth is distributed more unequally than income.
+PTS:
+- Wealth accumulates over a lifetime, so older households hold much more than younger ones (1)
+- Wealth earns income (rent, dividends, capital gains), which is reinvested, so it compounds (1)
+- Property and inheritance concentrate wealth; housing price rises have favoured existing owners (1)
+
+=== sa sa-3E5-01
+c: 3E.5
+m: 4
+lv: 2
+k: describe
+Q: Describe TWO dimensions of inequality in Australia.
+PTS:
+- First dimension described, e.g. gender: women earn less on average (a gender pay gap) and retire with less superannuation (2)
+- Second dimension described, e.g. age, occupation, ethnic background or Aboriginal and Torres Strait Islander peoples, with an example (2)
+
+=== sa sa-3F1-01
+c: 3F.1
+m: 3
+lv: 2
+k: explain
+Q: Explain the concept of ecologically sustainable development.
+PTS:
+- Development that meets the needs of today without compromising the ability of future generations to meet theirs (1)
+- Balances economic growth with protection of the environment (1)
+- Includes intergenerational equity and the precautionary principle (1)
+
+=== sa sa-3F4-01
+c: 3F.4
+m: 3
+lv: 2
+k: explain
+Q: Explain why preserving natural environments is an economic issue.
+PTS:
+- Natural environments provide valuable services (clean water, biodiversity, tourism) that are not priced in markets (1)
+- Because they are public goods or common resources, markets overuse them (1)
+- Their loss is often permanent, so the cost falls on future generations (1)
+
+=== sa sa-4A1-01
+c: 4A.1
+m: 3
+lv: 2
+k: explain
+Q: Explain why economic growth is an objective of government policy.
+PTS:
+- Growth creates jobs and lowers unemployment (1)
+- It raises incomes and living standards (1)
+- It increases tax revenue for services such as health and education (1)
+
+=== sa sa-4A2-01
+c: 4A.2
+m: 2
+lv: 1
+k: outline
+Q: Outline what is meant by full employment.
+PTS:
+- An unemployment rate at about the NAIRU, not zero (1)
+- Only frictional, seasonal and some structural unemployment remain (1)
+
+=== sa sa-4A3-01
+c: 4A.3
+m: 3
+lv: 2
+k: explain
+Q: Explain why governments aim for low and stable inflation.
+PTS:
+- High inflation erodes purchasing power, especially for people on fixed incomes (1)
+- Uncertainty about prices discourages investment and distorts decisions (1)
+- Inflation above trading partners' reduces international competitiveness (1)
+
+=== sa sa-4A4-01
+c: 4A.4
+m: 3
+lv: 3
+k: explain
+Q: Explain what external stability means for Australia.
+PTS:
+- A sustainable current account deficit and level of foreign liabilities (1)
+- Australia can meet its foreign obligations, so investors stay confident (1)
+- An exchange rate without extreme swings (1)
+
+=== sa sa-4A5-01
+c: 4A.5
+m: 2
+lv: 1
+k: outline
+Q: Outline the objective of environmental sustainability.
+PTS:
+- To use resources and the environment in a way that allows growth to continue in the future (1)
+- E.g. cutting emissions to net zero by 2050 and protecting natural environments (1)
+
+=== sa sa-4A6-01
+c: 4A.6
+m: 3
+lv: 2
+k: explain
+Q: Explain why governments aim for a more equitable distribution of income.
+PTS:
+- To reduce poverty and give everyone access to a basic standard of living (1)
+- High inequality can weaken social cohesion and lower opportunity (1)
+- Lower-income households spend more of each dollar, supporting demand; equity is also a value judgement (1)
+
+=== sa sa-4B1-01
+c: 4B.1
+m: 3
+lv: 2
+k: explain
+Q: Explain the rationale for macroeconomic policies.
+PTS:
+- To stabilise the business cycle by managing aggregate demand (1)
+- Expansionary policy in a downturn supports growth and employment (1)
+- Contractionary policy in a boom restrains inflation and external imbalances (1)
+
+=== sa sa-4C4-01
+c: 4C.4
+m: 3
+lv: 2
+k: explain
+Q: Explain how the government can use a budget surplus.
+PTS:
+- Repay government debt, lowering future interest costs (1)
+- Invest in funds such as the Future Fund for future liabilities (1)
+- A surplus is contractionary, which can help restrain inflation in a boom (1)
+
+=== sa sa-4D1-01
+c: 4D.1
+m: 3
+lv: 2
+k: explain
+Q: Explain the purpose of monetary policy in Australia.
+PTS:
+- To keep inflation within the 2–3 per cent target on average (1)
+- To support full employment (the maximum sustainable level of employment) (1)
+- Low, stable inflation and employment promote sustainable growth and welfare (1)
+
+=== sa sa-4F1-01
+c: 4F.1
+m: 3
+lv: 3
+k: outline
+Q: Outline the roles of the national and state industrial relations systems.
+PTS:
+- The national system under the Fair Work Act 2009 covers most private-sector employees (1)
+- The Fair Work Commission sets minimum wages and awards and approves agreements; the Fair Work Ombudsman enforces them (1)
+- State systems cover state public servants and, in WA, unincorporated businesses (1)
+
+=== sa sa-4F2-01
+c: 4F.2
+m: 3
+lv: 2
+k: outline
+Q: Outline how minimum wages are set in Australia.
+PTS:
+- The Fair Work Commission conducts the Annual Wage Review (1)
+- It sets the national minimum wage and modern award minimum wages (1)
+- It weighs factors such as living costs, inflation, productivity, employment and the needs of the low-paid (1)
+
+=== sa sa-4F3-01
+c: 4F.3
+m: 3
+lv: 2
+k: outline
+Q: Outline how industrial disputes are resolved in Australia.
+PTS:
+- Through negotiation between the parties (1)
+- The Fair Work Commission can help by conciliation or mediation (1)
+- In some cases it can arbitrate (make a binding decision); protected industrial action is allowed only during bargaining (1)
+
+=== sa sa-4F5-01
+c: 4F.5
+m: 3
+lv: 2
+k: explain
+Q: Explain how education and training programs can reduce unemployment.
+PTS:
+- They give workers the skills firms need, reducing the skills mismatch (1)
+- They help the long-term unemployed and young people become job-ready (1)
+- A more skilled workforce raises productivity and can lower the NAIRU (1)
+
+=== sa sa-4G3-01
+c: 4G.3 4G.4
+m: 3
+lv: 2
+k: explain
+Q: Explain how emissions targets are used in environmental management.
+PTS:
+- Targets set a goal, e.g. a 43 per cent cut on 2005 levels by 2030 and net zero by 2050 (1)
+- They guide policies such as the Safeguard Mechanism and support for renewable energy (1)
+- They give investors certainty and meet commitments under the Paris Agreement (1)
+
+=== sa sa-4H2-01
+c: 4H.2
+m: 3
+lv: 2
+k: explain
+Q: Explain how global influences can limit the effectiveness of Australian economic policy.
+PTS:
+- Australia is a small open economy, affected by world growth, commodity prices and interest rates overseas (1)
+- A global downturn can reduce growth despite expansionary policy at home (1)
+- Global supply shocks (e.g. oil prices) can raise inflation that the RBA can only slow at the cost of jobs (1)
+
+=== sa sa-4H3-01
+c: 4H.3
+m: 3
+lv: 2
+k: explain
+Q: Explain how political constraints can limit economic policy.
+PTS:
+- Governments may avoid unpopular measures, such as tax rises or spending cuts, before an election (1)
+- Legislation must pass the Senate, where minor parties may block it (1)
+- Promises and pressure from interest groups can lead to policies that are not the best economically (1)
+
+=== sa sa-4I2-01
+c: 4I.2 4F.5
+m: 4
+lv: 3
+k: evaluate
+Q: Assess the effectiveness of government policies in reducing unemployment in Australia.
+PTS:
+- Macroeconomic policy supported demand during COVID-19, helping unemployment fall to about 3.5 per cent by 2022 (1)
+- Monetary tightening from 2022 and in 2026 saw unemployment rise gradually (to 4.9 per cent in October 2026) (1)
+- Labour market programs target structural and long-term unemployment (1)
+- Judgement: effective in reducing cyclical unemployment, less so for structural unemployment (1)
+
+=== sa sa-4I4-01
+c: 4I.4 3D.3
+m: 4
+lv: 3
+k: explain
+Q: Explain how government policies can improve Australia's external stability.
+PTS:
+- Fiscal consolidation raises national saving and reduces reliance on foreign borrowing (1)
+- Microeconomic reform improves international competitiveness and export performance (1)
+- Monetary policy keeps inflation low, supporting competitiveness and investor confidence (1)
+- A floating exchange rate helps absorb external shocks (1)
+
+=== sa sa-4I5-01
+c: 4I.5 3E.3
+m: 4
+lv: 3
+k: explain
+Q: Explain how government policies affect the distribution of income in Australia.
+PTS:
+- Progressive income tax narrows differences in after-tax income (1)
+- Transfer payments lift low incomes (1)
+- The social wage provides services such as Medicare and education (1)
+- Minimum wages and labour market policies affect market incomes (1)
+
+=== sa sa-4I6-01
+c: 4I.6 4G.2
+m: 4
+lv: 3
+k: evaluate
+Q: Assess the effectiveness of policies to achieve environmental sustainability in Australia.
+PTS:
+- Policies include the Safeguard Mechanism, renewable energy support, targets and regulation (1)
+- Emissions have fallen (about a quarter below 2005 levels), largely from electricity and land use (1)
+- Limits: emissions from transport and industry, political constraints, and dependence on fossil fuel exports (1)
+- Judgement on whether the 2030 target will be met (1)

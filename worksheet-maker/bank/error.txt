@@ -1,0 +1,109 @@
+# Spot the error: write each mistake as [[the mistaken words => the correct words]].
+
+=== error er-4D3-mp
+c: 4D.3 4D.1
+lv: 1
+Q: This paragraph answers: "Explain how a rise in the cash rate affects the economy."
+TEXT: When inflation is above the target band, the RBA raises the cash rate to [[stimulate => slow]] the economy. Banks pass the increase on, so borrowers face higher interest rates on loans. Higher interest rates [[encourage => discourage]] borrowing for houses, cars and business investment, so consumption and investment fall. Aggregate demand shifts [[right => left]], which eases demand inflation. The higher return on Australian assets also attracts foreign capital, so the Australian dollar [[depreciates => appreciates]], making imports cheaper and further reducing inflation.
+
+=== error er-1C2-tariff
+c: 1C.2
+lv: 2
+Q: This paragraph answers: "Explain the effects of a tariff on an imported good."
+TEXT: A tariff is a tax on imports, so the domestic price rises from the world price to the world price plus the tariff. Domestic producers respond to the higher price by producing [[less => more]], while consumers buy less. Imports therefore [[rise => fall]]. The government's revenue equals the tariff per unit multiplied by the quantity of imports [[before => after]] the tariff. Consumers [[gain => lose]] consumer surplus, and part of that loss is a deadweight loss to society.
+
+=== error er-3A3-mult
+c: 3A.3 3A.2
+lv: 2
+Q: This paragraph answers: "Explain the multiplier effect of a rise in government spending."
+TEXT: An increase in government spending is an injection into the circular flow. The people who receive it spend part of it, so it becomes someone else's income, and so on. The simple multiplier is k = [[1 ÷ MPC => 1 ÷ (1 − MPC)]]. If the marginal propensity to consume is 0.8, the multiplier is [[1.25 => 5]], so a $10 billion increase in spending raises national income by $50 billion. If households decide to save more of each extra dollar, the multiplier becomes [[larger => smaller]], because more income leaks out of the circular flow in each round.
+
+=== error er-3B1-measure
+c: 3B.1
+lv: 1
+Q: This paragraph answers: "Outline how unemployment is measured in Australia."
+TEXT: The ABS Labour Force Survey counts a person as unemployed if they had no paid work in the survey week, were actively looking for work and were available to start. The unemployment rate is the number of unemployed people divided by the [[working age population => labour force]], multiplied by 100. The labour force is the employed plus the [[underemployed => unemployed]]. A discouraged job seeker who has stopped looking for work is [[counted as unemployed => not counted in the labour force]], which is why this group is called hidden unemployment.
+
+=== error er-2B1-ca
+c: 2B.1 2B.3
+lv: 2
+Q: This paragraph answers: "Explain the relationship between the current account and the capital and financial account."
+TEXT: The current account records trade in goods and services and income flows. Interest paid on Australia's foreign debt is recorded in the [[financial account => primary income section of the current account]]. When Australia runs a current account deficit, it must be financed by a capital and financial account [[deficit => surplus]], as foreigners lend to Australia or invest here. In theory the two accounts sum to [[one => zero]], although in practice net errors and omissions are needed to make them balance.
+
+=== error er-2C2-factors
+c: 2C.2 2C.3
+lv: 1
+Q: This paragraph answers: "Explain two factors that could cause the Australian dollar to appreciate."
+TEXT: First, if the world price of iron ore and coal rises, overseas buyers need more Australian dollars to pay for our exports. Demand for the Australian dollar rises and the dollar [[depreciates => appreciates]]. Second, if Australian interest rates rise relative to interest rates overseas, Australian assets offer a higher return. Foreign investors buy Australian dollars to invest here, which [[reduces => increases]] the demand for the dollar and pushes its value up. A higher Australian dollar means one Australian dollar buys [[less => more]] foreign currency.
+
+=== error er-4C2-fiscal
+c: 4C.2 4C.3
+lv: 2
+Q: This paragraph answers: "Explain how the budget can stabilise the economy."
+TEXT: A budget deficit is [[contractionary => expansionary]] because the government injects more into the circular flow through spending than it withdraws through tax. In a recession, automatic stabilisers work without any new decisions: tax revenue [[rises => falls]] and payments such as JobSeeker rise, which supports aggregate demand. To finance a deficit, the government sells Commonwealth Government Securities. If this borrowing competes with private borrowers, it can [[lower => raise]] interest rates and reduce private investment, which is called crowding out.
+
+=== error er-3C1-measure
+c: 3C.1
+lv: 1
+Q: This paragraph answers: "Distinguish between headline and underlying inflation."
+TEXT: Headline inflation is the percentage change in the Consumer Price Index over a year, so it includes every item in the basket. Underlying inflation [[includes => removes]] the most volatile price changes, such as those for fuel and fruit, so it shows the trend in prices. The RBA's preferred measure of underlying inflation is the [[GDP deflator => trimmed mean]]. The RBA aims to keep inflation between [[1 and 2 => 2 and 3]] per cent on average over time.
+
+=== error er-3E1-gini
+c: 3E.1 3E.3
+lv: 2
+Q: This paragraph answers: "Explain how the Lorenz curve and the Gini coefficient measure inequality."
+TEXT: The Lorenz curve plots the cumulative percentage of households against the cumulative percentage of income they receive. The further the curve bows away from the line of equality, the [[more equal => less equal]] the distribution. The Gini coefficient is the area between the line of equality and the Lorenz curve divided by the total area under the line of equality. A Gini coefficient of 1 means perfect [[equality => inequality]]. Progressive taxes and transfer payments move the Lorenz curve [[away from => towards]] the line of equality.
+
+=== error er-3F2-ext
+c: 3F.2 4G.2
+lv: 2
+Q: This paragraph answers: "Explain why a negative externality is an example of market failure."
+TEXT: When a power station pollutes the air, it does not pay for the damage it causes to others. Its private costs are therefore [[higher => lower]] than the social cost of its output, so the marginal social cost curve lies [[below => above]] the private supply curve. The market produces [[less => more]] than the socially efficient quantity, at a price that is too low. A [[subsidy to => tax on]] the polluter, equal to the external cost, would make it pay the full social cost.
+
+=== error er-1B1-ca
+c: 1B.1
+lv: 3
+Q: This paragraph answers: "Explain the basis of free trade."
+TEXT: Free trade is based on comparative advantage. A country should specialise in the good it can produce at the [[highest => lowest]] opportunity cost, and trade for other goods. Even if one country has an absolute advantage in producing both goods, trade [[cannot => can still]] benefit both countries, as long as their opportunity costs differ. Specialisation raises total world output, so [[only the more efficient country gains => both countries can consume beyond their own production possibility frontiers]].
+
+=== error er-2C6-jcurve
+c: 2C.6 2B.4
+lv: 3
+Q: This paragraph answers: "Explain the J-curve effect of a depreciation."
+TEXT: After a depreciation, the price of imports in Australian dollars rises straight away. Because import and export volumes take time to respond, the trade balance at first [[improves => worsens]]: Australia pays more for roughly the same imports. Over the next year or two, buyers switch away from dearer imports and overseas buyers buy more of our cheaper exports, so the trade balance [[worsens => improves]]. Drawn over time, the path of the trade balance looks like the letter J. The effect only works if exports and imports are [[completely inelastic => responsive enough to price]] over time.
+
+=== error er-4A7-phillips
+c: 4A.7 3B.4
+lv: 3
+Q: This paragraph answers: "Explain the conflict between full employment and price stability."
+TEXT: The short-run Phillips curve shows a [[positive => negative (inverse)]] relationship between inflation and unemployment. If expansionary policy pushes unemployment below the NAIRU, firms compete for scarce workers and wages rise faster, so inflation tends to [[fall => rise]]. To bring inflation back to target, the RBA may raise interest rates, which [[lowers => raises]] unemployment. This shows that policymakers cannot always achieve both objectives at the same time.
+
+=== error er-1D3-hdi
+c: 1D.3 1D.1
+lv: 2
+Q: This paragraph answers: "Outline how quality of life is measured."
+TEXT: The Human Development Index combines three dimensions: a long and healthy life (life expectancy at birth), knowledge (years of schooling) and a decent standard of living, measured by [[the inflation rate => gross national income per person at purchasing power parity]]. The index runs from 0 to 1, and a higher score means [[lower => higher]] human development. Economic growth [[always => does not always]] lead to economic development, because the extra income may be spread unevenly or come at the cost of the environment.
+
+=== error er-4F2-system
+c: 4F.2 4F.1
+lv: 3
+Q: This paragraph answers: "Outline how minimum pay and conditions are set in Australia."
+TEXT: The National Employment Standards set minimum conditions, such as annual leave and maximum weekly hours, for employees in the national system. Modern awards set minimum pay and conditions for particular industries and occupations and are [[negotiated between each employer and its workers => made and reviewed by the Fair Work Commission]]. Enterprise agreements are negotiated at the workplace level and must pass the better off overall test, which compares the agreement with the relevant [[National Employment Standards => modern award]]. The national minimum wage is reviewed [[every five years => each year]] in the Annual Wage Review.
+
+=== error er-2B4-tot
+c: 2B.4 3D.3
+lv: 2
+Q: This paragraph answers: "Explain how a change in the terms of trade affects Australia."
+TEXT: The terms of trade is the export price index divided by the [[GDP deflator => import price index]], multiplied by 100. When the world prices of iron ore and coal rise, Australia's terms of trade [[deteriorate => improve]], so each unit of exports buys more imports. Export income rises, so the balance on goods and services tends to [[worsen => improve]], and the extra demand for Australian dollars tends to make the dollar appreciate.
+
+=== error er-4C3-financing
+c: 4C.3 4C.4
+lv: 3
+Q: This paragraph answers: "Explain how the Federal Government finances a budget deficit."
+TEXT: The Federal Government finances most of its deficits by [[borrowing from the Reserve Bank => selling Commonwealth Government Securities, mostly to the private sector]]. When these bonds are bought by foreign investors, the borrowing adds to Australia's [[net foreign equity => net foreign debt]] and future interest payments add to the primary income deficit. When the budget returns to surplus, the government can use the money to [[increase => reduce]] public debt or invest in funds such as the Future Fund.
+
+=== error er-2D2-fta
+c: 2D.2 1B.4
+lv: 1
+Q: This paragraph answers: "Outline Australia's approach to free trade agreements."
+TEXT: Australia takes part in multilateral, regional and bilateral trade agreements. A bilateral agreement involves [[many => two]] countries, such as the Australia–United States Free Trade Agreement. The Regional Comprehensive Economic Partnership (RCEP) is a [[bilateral => regional (plurilateral)]] agreement that includes China, Japan, Korea and the ten ASEAN members. A risk of preferential agreements is trade [[creation => diversion]], where imports switch from the lowest-cost supplier to a higher-cost member of the agreement.

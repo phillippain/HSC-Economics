@@ -1,0 +1,1371 @@
+{
+ "_about": "Which dot points each glossary term (terms), Topic Map node (nodes) and Calculation Trainer skill (calc) belongs to. Edit here, then run build.py.",
+ "terms": {
+  "absolute-advantage": [
+   "1B.1"
+  ],
+  "accrual-aggregates": [
+   "4C.1"
+  ],
+  "advanced-economies": [
+   "1D.4"
+  ],
+  "aggregate-demand": [
+   "3A.1"
+  ],
+  "aggregate-supply": [
+   "3A.6"
+  ],
+  "allocative-efficiency": [
+   "4E.1"
+  ],
+  "anti-competitive-conduct": [
+   "4E.3"
+  ],
+  "apec": [
+   "1B.4"
+  ],
+  "appreciation": [
+   "2C.3"
+  ],
+  "asean": [
+   "1B.4"
+  ],
+  "australia-united-states-free-trade-agreement-ausfta": [
+   "2D.2",
+   "1B.4"
+  ],
+  "australian-competition-and-consumer-commission": [
+   "4E.3"
+  ],
+  "automatic-stabilisers": [
+   "4C.2"
+  ],
+  "award": [
+   "4F.2"
+  ],
+  "balance-of-payments": [
+   "2B.1"
+  ],
+  "balance-on-goods-and-services-bogs": [
+   "2B.1"
+  ],
+  "bank-bills": [
+   "4D.2"
+  ],
+  "better-off-overall-test-boot": [
+   "4F.2"
+  ],
+  "bilateral-trade-agreement": [
+   "1B.4",
+   "2D.2"
+  ],
+  "bond-market": [
+   "1A.4"
+  ],
+  "bracket-creep": [
+   "4C.2"
+  ],
+  "budget-outcome": [
+   "4C.1"
+  ],
+  "budget-stance": [
+   "4C.1"
+  ],
+  "business-cycle": [
+   "3A.7"
+  ],
+  "capital-account": [
+   "2B.2"
+  ],
+  "capital-flight": [
+   "1A.4",
+   "2A.2"
+  ],
+  "capital-gains-tax": [
+   "3E.3"
+  ],
+  "cash-rate": [
+   "4D.2"
+  ],
+  "central-bank": [
+   "4D.1"
+  ],
+  "certa": [
+   "2D.2",
+   "1B.4"
+  ],
+  "circular-flow-of-income": [
+   "3A.2"
+  ],
+  "commodity-prices": [
+   "2C.2",
+   "2B.4"
+  ],
+  "commonwealth-government-security": [
+   "4C.3",
+   "4D.2"
+  ],
+  "comparative-advantage": [
+   "1B.1"
+  ],
+  "competition-and-consumer-act-2010": [
+   "4E.3"
+  ],
+  "competition-policy": [
+   "4E.3"
+  ],
+  "composition-of-trade": [
+   "2A.1"
+  ],
+  "contractionary-policy": [
+   "4B.1"
+  ],
+  "corporatisation": [
+   "4E.2"
+  ],
+  "cost-push-inflation": [
+   "3C.3"
+  ],
+  "counter-cyclical-policy": [
+   "4B.1"
+  ],
+  "cpi": [
+   "3C.1"
+  ],
+  "crawling-peg": [
+   "2C.4"
+  ],
+  "credit": [
+   "1A.4"
+  ],
+  "crowding-out": [
+   "4C.3"
+  ],
+  "currency-crisis": [
+   "2C.4"
+  ],
+  "current-account": [
+   "2B.1"
+  ],
+  "current-account-deficit-cad": [
+   "2B.1",
+   "3D.1"
+  ],
+  "cyclical-component-of-the-budget": [
+   "4C.1"
+  ],
+  "cyclical-unemployment": [
+   "3B.3"
+  ],
+  "debt": [
+   "2A.2"
+  ],
+  "debt-servicing-ratio": [
+   "3D.1"
+  ],
+  "decentralised-wage-determination": [
+   "4F.4"
+  ],
+  "deficit-budget": [
+   "4C.1"
+  ],
+  "deflation": [
+   "3C.1"
+  ],
+  "demand-pull-inflation": [
+   "3C.3"
+  ],
+  "depreciation": [
+   "2C.3"
+  ],
+  "deregulation": [
+   "4E.3"
+  ],
+  "derivatives": [
+   "1A.4"
+  ],
+  "developing-economies": [
+   "1D.4"
+  ],
+  "development": [
+   "1D.1"
+  ],
+  "direct-investment": [
+   "2B.2",
+   "2A.2"
+  ],
+  "direction-of-trade": [
+   "2A.1"
+  ],
+  "dirty-float": [
+   "2C.4",
+   "2C.5"
+  ],
+  "discretionary-fiscal-policy": [
+   "4C.2"
+  ],
+  "disinflation": [
+   "3C.1"
+  ],
+  "dumping": [
+   "1C.1"
+  ],
+  "dynamic-efficiency": [
+   "4E.1"
+  ],
+  "ecologically-sustainable-development": [
+   "3F.1"
+  ],
+  "economic-development": [
+   "1D.1"
+  ],
+  "economic-growth": [
+   "1D.1",
+   "3A.4"
+  ],
+  "effective-rate-of-protection": [
+   "2D.1"
+  ],
+  "emerging-economies": [
+   "1D.4"
+  ],
+  "emissions-trading-scheme": [
+   "4G.2"
+  ],
+  "enterprise-agreement": [
+   "4F.2"
+  ],
+  "enterprise-bargaining": [
+   "4F.2",
+   "4F.4"
+  ],
+  "equities-market": [
+   "1A.4"
+  ],
+  "european-union-eu": [
+   "1B.4"
+  ],
+  "exchange-rate": [
+   "2C.1"
+  ],
+  "exchange-settlement-accounts-esas": [
+   "4D.2"
+  ],
+  "expansionary-policy": [
+   "4B.1"
+  ],
+  "export-incentives": [
+   "1C.2"
+  ],
+  "export-propensity": [
+   "2A.1"
+  ],
+  "external-stability": [
+   "3D.1",
+   "4A.4"
+  ],
+  "externalities": [
+   "3F.2"
+  ],
+  "fair-work-act-2009": [
+   "4F.1",
+   "4F.2"
+  ],
+  "fair-work-australia": [
+   "4F.1"
+  ],
+  "fair-work-commission": [
+   "4F.1",
+   "4F.2"
+  ],
+  "financial-account": [
+   "2B.2"
+  ],
+  "financial-innovation": [
+   "1A.4"
+  ],
+  "financial-intermediaries": [
+   "1A.4"
+  ],
+  "fiscal-balance": [
+   "4C.1"
+  ],
+  "fiscal-consolidation": [
+   "4C.1"
+  ],
+  "fiscal-policy": [
+   "4C.1",
+   "4B.1"
+  ],
+  "fixed-exchange-rate": [
+   "2C.4"
+  ],
+  "flexible-peg": [
+   "2C.4"
+  ],
+  "floating-exchange-rate": [
+   "2C.4"
+  ],
+  "foreign-currency-swaps": [
+   "1A.4"
+  ],
+  "foreign-debt": [
+   "2A.2",
+   "3D.1"
+  ],
+  "foreign-direct-investment-fdi": [
+   "1A.5"
+  ],
+  "foreign-exchange-market": [
+   "2C.1",
+   "2C.2"
+  ],
+  "free-rider": [
+   "3F.3"
+  ],
+  "free-trade": [
+   "1B.1"
+  ],
+  "free-trade-agreement": [
+   "1B.4"
+  ],
+  "frictional-unemployment": [
+   "3B.3"
+  ],
+  "fringe-benefits-tax": [
+   "3E.3"
+  ],
+  "full-employment": [
+   "4A.2",
+   "3B.4"
+  ],
+  "futures-market": [
+   "1A.4"
+  ],
+  "g20": [
+   "1B.3"
+  ],
+  "g7-8": [
+   "1B.3"
+  ],
+  "gini-coefficient": [
+   "3E.1"
+  ],
+  "global-economy": [
+   "1A.1"
+  ],
+  "global-production-web": [
+   "1A.7",
+   "1A.5"
+  ],
+  "globalisation": [
+   "1A.1"
+  ],
+  "goods-and-services-tax": [
+   "3E.3"
+  ],
+  "government-budget": [
+   "4C.1"
+  ],
+  "government-business-enterprises": [
+   "4E.2"
+  ],
+  "gross-national-income-gni-per-capita": [
+   "1D.3"
+  ],
+  "gross-world-product": [
+   "1A.2"
+  ],
+  "hardcore-unemployment": [
+   "3B.3"
+  ],
+  "headline-cash-balance": [
+   "4C.1"
+  ],
+  "headline-inflation": [
+   "3C.1"
+  ],
+  "hidden-unemployment": [
+   "3B.3"
+  ],
+  "human-capital": [
+   "4F.5",
+   "3B.6"
+  ],
+  "human-development-index-hdi": [
+   "1D.3"
+  ],
+  "impact-of-a-tax": [
+   "3E.3"
+  ],
+  "implicit-price-deflator": [
+   "3A.4"
+  ],
+  "import-penetration": [
+   "2A.1"
+  ],
+  "imported-inflation": [
+   "3C.3"
+  ],
+  "incidence-of-a-tax": [
+   "3E.3"
+  ],
+  "income": [
+   "3E.2"
+  ],
+  "income-tax": [
+   "3E.3"
+  ],
+  "indirect-tax": [
+   "3E.3"
+  ],
+  "industrial-dispute": [
+   "4F.3"
+  ],
+  "industrial-relations-commission": [
+   "4F.1"
+  ],
+  "infant-industry-argument": [
+   "1C.1"
+  ],
+  "inflation": [
+   "3C.1"
+  ],
+  "inflation-targeting": [
+   "4D.1"
+  ],
+  "inflationary-expectations": [
+   "3C.3"
+  ],
+  "injections": [
+   "3A.2"
+  ],
+  "intergenerational-equity": [
+   "3F.1"
+  ],
+  "international-business-cycle": [
+   "1A.8",
+   "1D.9"
+  ],
+  "international-competitiveness": [
+   "2B.4",
+   "3D.3"
+  ],
+  "international-division-of-labour": [
+   "1A.7"
+  ],
+  "international-monetary-fund-imf": [
+   "1B.2"
+  ],
+  "j-curve": [
+   "2C.6"
+  ],
+  "kuznets-curve": [
+   "1D.2"
+  ],
+  "kyoto-protocol": [
+   "4G.4"
+  ],
+  "labour-force": [
+   "3B.1"
+  ],
+  "labour-force-underutilisation-rate": [
+   "3B.1"
+  ],
+  "labour-market-policies": [
+   "4F.1"
+  ],
+  "liquidity": [
+   "1A.4"
+  ],
+  "local-content-rules": [
+   "1C.2"
+  ],
+  "long-term-unemployment": [
+   "3B.3"
+  ],
+  "lorenz-curve": [
+   "3E.1"
+  ],
+  "macroeconomic-policy": [
+   "4B.1"
+  ],
+  "managed-float": [
+   "2C.4"
+  ],
+  "marginal-propensity-to-consume-mpc": [
+   "3A.3"
+  ],
+  "marginal-propensity-to-save-mps": [
+   "3A.3"
+  ],
+  "marginal-tax-rate": [
+   "3E.3"
+  ],
+  "market-failure": [
+   "3F.2"
+  ],
+  "market-operations": [
+   "4D.2"
+  ],
+  "microeconomic-reform": [
+   "4E.1"
+  ],
+  "mobility-of-labour": [
+   "3B.3"
+  ],
+  "modern-awards": [
+   "4F.2"
+  ],
+  "monetary-policy": [
+   "4D.1"
+  ],
+  "monetary-union": [
+   "1B.4"
+  ],
+  "multilateral-trade-agreement": [
+   "1B.4",
+   "2D.2"
+  ],
+  "multiplier-effect": [
+   "3A.3"
+  ],
+  "nafta": [
+   "1B.4"
+  ],
+  "nairu": [
+   "3B.4"
+  ],
+  "national-debt": [
+   "4C.3"
+  ],
+  "national-minimum-wage": [
+   "4F.2"
+  ],
+  "natural-rate-of-unemployment": [
+   "3B.4"
+  ],
+  "negative-externality": [
+   "3F.2"
+  ],
+  "net-foreign-debt": [
+   "3D.1",
+   "2A.2"
+  ],
+  "net-foreign-equity": [
+   "2A.2"
+  ],
+  "net-foreign-liabilities": [
+   "3D.1",
+   "2A.2"
+  ],
+  "net-primary-income": [
+   "2B.1"
+  ],
+  "net-zero-emissions": [
+   "4G.3"
+  ],
+  "nominal-rate-of-protection": [
+   "2D.1"
+  ],
+  "non-wage-outcomes": [
+   "4F.2"
+  ],
+  "oecd": [
+   "1B.2"
+  ],
+  "offshoring": [
+   "1A.5"
+  ],
+  "okun-s-law": [
+   "3B.3",
+   "3A.5"
+  ],
+  "output-gap": [
+   "3A.7"
+  ],
+  "outsourcing": [
+   "1A.7"
+  ],
+  "paris-agreement": [
+   "4G.4"
+  ],
+  "part-time-work": [
+   "3B.2"
+  ],
+  "participation-rate": [
+   "3B.1"
+  ],
+  "phillips-curve": [
+   "4A.7"
+  ],
+  "physical-quality-of-life-index": [
+   "1D.3"
+  ],
+  "pitchford-thesis": [
+   "3D.3"
+  ],
+  "policy-mix": [
+   "4B.1"
+  ],
+  "political-constraints": [
+   "4H.3"
+  ],
+  "portfolio-investment": [
+   "2B.2",
+   "2A.2"
+  ],
+  "prices-and-incomes-policy": [
+   "4F.4"
+  ],
+  "primary-income": [
+   "2B.1"
+  ],
+  "private-goods": [
+   "3F.3"
+  ],
+  "privatisation": [
+   "4E.2"
+  ],
+  "productivity": [
+   "3A.6"
+  ],
+  "progressive-tax": [
+   "3E.3"
+  ],
+  "proportional-tax": [
+   "3E.3"
+  ],
+  "protection": [
+   "1C.1"
+  ],
+  "public-goods": [
+   "3F.3"
+  ],
+  "public-sector": [
+   "4C.1"
+  ],
+  "purchasing-power-parity": [
+   "1D.3"
+  ],
+  "quality-of-life": [
+   "1D.3"
+  ],
+  "quantitative-easing": [
+   "4D.2"
+  ],
+  "quota": [
+   "1C.2"
+  ],
+  "rba-monetary-policy-board": [
+   "4D.2"
+  ],
+  "real-gdp": [
+   "3A.4"
+  ],
+  "real-interest-rate": [
+   "4D.3"
+  ],
+  "real-wages": [
+   "3C.4"
+  ],
+  "recession": [
+   "3A.7"
+  ],
+  "regional-business-cycle": [
+   "1A.8"
+  ],
+  "regressive-tax": [
+   "3E.3"
+  ],
+  "relative-poverty": [
+   "3E.6"
+  ],
+  "repurchase-agreements": [
+   "4D.2"
+  ],
+  "reserve-assets": [
+   "2B.2"
+  ],
+  "reserve-bank": [
+   "4D.2"
+  ],
+  "revaluation-devaluation": [
+   "2C.4"
+  ],
+  "safeguard-mechanism": [
+   "4G.1",
+   "4G.2"
+  ],
+  "safety-net": [
+   "4F.2"
+  ],
+  "seasonal-unemployment": [
+   "3B.3"
+  ],
+  "secondary-income": [
+   "2B.1"
+  ],
+  "share-market": [
+   "1A.4"
+  ],
+  "social-cost": [
+   "3F.2"
+  ],
+  "social-wage": [
+   "3E.3"
+  ],
+  "sovereign-debt": [
+   "1A.4"
+  ],
+  "speculation": [
+   "2C.2"
+  ],
+  "stagflation": [
+   "3C.3"
+  ],
+  "structural-change": [
+   "2A.1",
+   "4E.1"
+  ],
+  "structural-component-of-the-budget": [
+   "4C.1"
+  ],
+  "structural-unemployment": [
+   "3B.3"
+  ],
+  "subsidy": [
+   "1C.2"
+  ],
+  "surplus-budget": [
+   "4C.4"
+  ],
+  "sustainable-development-goals-sdgs": [
+   "1D.8"
+  ],
+  "tariff": [
+   "1C.2"
+  ],
+  "tax-efficiency": [
+   "3E.3"
+  ],
+  "tax-threshold": [
+   "3E.3"
+  ],
+  "technical-efficiency": [
+   "4E.1"
+  ],
+  "technology-diffusion": [
+   "1A.6"
+  ],
+  "terms-of-trade": [
+   "2B.4",
+   "3D.3"
+  ],
+  "time-lags": [
+   "4H.1"
+  ],
+  "trade-liberalisation": [
+   "2D.1"
+  ],
+  "trade-policy": [
+   "2D.1"
+  ],
+  "trade-practices-act": [
+   "4E.3"
+  ],
+  "trade-weighted-index": [
+   "2C.1"
+  ],
+  "trading-bloc": [
+   "1B.4"
+  ],
+  "transfer-payments": [
+   "3E.3"
+  ],
+  "transmission-mechanism": [
+   "4D.3"
+  ],
+  "transnational-corporation-tnc": [
+   "1A.5"
+  ],
+  "trimmed-mean-inflation": [
+   "3C.1"
+  ],
+  "underemployment": [
+   "3B.3"
+  ],
+  "underlying-cash-balance": [
+   "4C.1"
+  ],
+  "underlying-inflation": [
+   "3C.1"
+  ],
+  "unemployment": [
+   "3B.1"
+  ],
+  "unemployment-rate": [
+   "3B.1"
+  ],
+  "united-nations-un": [
+   "1B.2"
+  ],
+  "usmca": [
+   "1B.4"
+  ],
+  "valuation-effect": [
+   "2C.6"
+  ],
+  "w-curve": [
+   "2C.6"
+  ],
+  "wage-price-index-wpi": [
+   "3C.3"
+  ],
+  "wealth": [
+   "3E.4"
+  ],
+  "withdrawals": [
+   "3A.2"
+  ],
+  "world-bank": [
+   "1B.2"
+  ],
+  "world-trade-organisation-wto": [
+   "1B.2"
+  ]
+ },
+ "nodes": {
+  "GE": [
+   "1A.1"
+  ],
+  "GWP": [
+   "1A.2"
+  ],
+  "TRADE1": [
+   "1A.3"
+  ],
+  "FLOWS": [
+   "1A.4"
+  ],
+  "TNC": [
+   "1A.5"
+  ],
+  "TTC": [
+   "1A.6"
+  ],
+  "DOL": [
+   "1A.7"
+  ],
+  "GLOBEFF": [
+   "1D.6"
+  ],
+  "IBC": [
+   "1A.8",
+   "1D.9"
+  ],
+  "ENV1": [
+   "1D.8"
+  ],
+  "GDIST": [
+   "1D.2"
+  ],
+  "FT": [
+   "1B.1"
+  ],
+  "REASON": [
+   "1C.1"
+  ],
+  "PROTM": [
+   "1C.2"
+  ],
+  "BLOCS": [
+   "1B.4"
+  ],
+  "FTA": [
+   "1B.4"
+  ],
+  "ORGS": [
+   "1B.2"
+  ],
+  "G20": [
+   "1B.3"
+  ],
+  "GVD": [
+   "1D.1"
+  ],
+  "QOL": [
+   "1D.3"
+  ],
+  "DEV": [
+   "1D.4"
+  ],
+  "DIFF": [
+   "1D.5"
+  ],
+  "CASE": [
+   "1E.1"
+  ],
+  "TRP": [
+   "2A.1"
+  ],
+  "AUPOL": [
+   "2D.1"
+  ],
+  "AUFTA": [
+   "2D.2"
+  ],
+  "OTHERP": [
+   "2D.4"
+  ],
+  "IMPL": [
+   "2D.3"
+  ],
+  "CA": [
+   "2B.1"
+  ],
+  "KFA": [
+   "2B.2"
+  ],
+  "LINKS": [
+   "2B.3"
+  ],
+  "FTR": [
+   "2A.2"
+  ],
+  "BOPTR": [
+   "2B.4"
+  ],
+  "BOPEFF": [
+   "2B.4"
+  ],
+  "TWI": [
+   "2C.1"
+  ],
+  "FACT": [
+   "2C.2"
+  ],
+  "DEPREC": [
+   "2C.3"
+  ],
+  "REGIME": [
+   "2C.4"
+  ],
+  "RBAX": [
+   "2C.5"
+  ],
+  "XEFF": [
+   "2C.6"
+  ],
+  "AD": [
+   "3A.1"
+  ],
+  "INJ": [
+   "3A.2"
+  ],
+  "MULT": [
+   "3A.3"
+  ],
+  "GDP": [
+   "3A.4"
+  ],
+  "SRC": [
+   "3A.5"
+  ],
+  "AS": [
+   "3A.6"
+  ],
+  "BC": [
+   "3A.7"
+  ],
+  "LF": [
+   "3B.1"
+  ],
+  "PART": [
+   "3B.1"
+  ],
+  "UR": [
+   "3B.1"
+  ],
+  "UTR": [
+   "3B.2"
+  ],
+  "CYC": [
+   "3B.3"
+  ],
+  "STRUCU": [
+   "3B.3"
+  ],
+  "FRIC": [
+   "3B.3"
+  ],
+  "SEAS": [
+   "3B.3"
+  ],
+  "UNDER": [
+   "3B.3"
+  ],
+  "HID": [
+   "3B.3"
+  ],
+  "LONG": [
+   "3B.3"
+  ],
+  "NAIRU": [
+   "3B.4"
+  ],
+  "GROUPS": [
+   "3B.5"
+  ],
+  "UCOST": [
+   "3B.6"
+  ],
+  "HEAD": [
+   "3C.1"
+  ],
+  "UNDERL": [
+   "3C.1"
+  ],
+  "ITR": [
+   "3C.2"
+  ],
+  "IEFF": [
+   "3C.4"
+  ],
+  "DEMINF": [
+   "3C.3"
+  ],
+  "COSTINF": [
+   "3C.3"
+  ],
+  "IMPINF": [
+   "3C.3"
+  ],
+  "EXPECT": [
+   "3C.3"
+  ],
+  "CAD": [
+   "3D.1"
+  ],
+  "NFD": [
+   "3D.1"
+  ],
+  "NFL": [
+   "3D.1"
+  ],
+  "TOT": [
+   "3D.3"
+  ],
+  "XR3": [
+   "3D.3"
+  ],
+  "COMP": [
+   "3D.3"
+  ],
+  "XTR": [
+   "3D.2",
+   "3D.3"
+  ],
+  "GINI": [
+   "3E.1"
+  ],
+  "SOURCES": [
+   "3E.2",
+   "3E.4"
+  ],
+  "DIMS": [
+   "3E.5"
+  ],
+  "TAX": [
+   "3E.3"
+  ],
+  "INEQC": [
+   "3E.6"
+  ],
+  "ESD": [
+   "3F.1"
+  ],
+  "PSC": [
+   "3F.2"
+  ],
+  "EXT": [
+   "3F.2"
+  ],
+  "PUB": [
+   "3F.3"
+  ],
+  "PRES": [
+   "3F.4"
+  ],
+  "POLL": [
+   "3F.4"
+  ],
+  "DEPL": [
+   "3F.4"
+  ],
+  "STAB": [
+   "4B.1"
+  ],
+  "BUD": [
+   "4C.1"
+  ],
+  "BUDEFF": [
+   "4C.2"
+  ],
+  "DEF": [
+   "4C.3"
+  ],
+  "SURP": [
+   "4C.4"
+  ],
+  "FISCDIST": [
+   "4C.2"
+  ],
+  "MONP": [
+   "4D.1"
+  ],
+  "RBA": [
+   "4D.2"
+  ],
+  "INTR": [
+   "4D.3"
+  ],
+  "MICRO": [
+   "4E.1"
+  ],
+  "MICEFF": [
+   "4E.2"
+  ],
+  "COMPOL": [
+   "4E.3"
+  ],
+  "NSS": [
+   "4F.1"
+  ],
+  "MES": [
+   "4F.2"
+  ],
+  "MINW": [
+   "4F.2"
+  ],
+  "AWARD": [
+   "4F.2"
+  ],
+  "EA": [
+   "4F.2"
+  ],
+  "HIC": [
+   "4F.2"
+  ],
+  "DISP": [
+   "4F.3"
+  ],
+  "CENT": [
+   "4F.4"
+  ],
+  "EDU": [
+   "4F.5"
+  ],
+  "REG": [
+   "4G.1"
+  ],
+  "MKT": [
+   "4G.2"
+  ],
+  "TARG": [
+   "4G.3"
+  ],
+  "INTAGR": [
+   "4G.4"
+  ],
+  "TL": [
+   "4H.1"
+  ],
+  "GI": [
+   "4H.2"
+  ],
+  "PC": [
+   "4H.3"
+  ],
+  "RESP_G": [
+   "4I.1"
+  ],
+  "RESP_E": [
+   "4I.2"
+  ],
+  "RESP_P": [
+   "4I.3"
+  ],
+  "RESP_X": [
+   "4I.4"
+  ],
+  "RESP_D": [
+   "4I.5"
+  ],
+  "RESP_V": [
+   "4I.6"
+  ],
+  "OBJ_G": [
+   "4A.1"
+  ],
+  "OBJ_E": [
+   "4A.2"
+  ],
+  "OBJ_P": [
+   "4A.3"
+  ],
+  "OBJ_X": [
+   "4A.4"
+  ],
+  "OBJ_D": [
+   "4A.6"
+  ],
+  "OBJ_V": [
+   "4A.5"
+  ]
+ },
+ "calc": [
+  {
+   "id": "growth",
+   "name": "Real growth rate",
+   "c": [
+    "3A.4"
+   ],
+   "ss": []
+  },
+  {
+   "id": "percap",
+   "name": "Real GDP per capita",
+   "c": [
+    "1D.3",
+    "3A.4"
+   ],
+   "ss": []
+  },
+  {
+   "id": "realgdp",
+   "name": "Real GDP from nominal GDP",
+   "c": [
+    "3A.4"
+   ],
+   "ss": []
+  },
+  {
+   "id": "tariff",
+   "name": "Tariff: imports and revenue",
+   "c": [
+    "1C.2"
+   ],
+   "ss": [
+    "S1.5"
+   ]
+  },
+  {
+   "id": "cab",
+   "name": "Current account balance",
+   "c": [
+    "2B.1"
+   ],
+   "ss": [
+    "S2.6"
+   ]
+  },
+  {
+   "id": "bop",
+   "name": "Balance of payments identity",
+   "c": [
+    "2B.2",
+    "2B.3"
+   ],
+   "ss": [
+    "S2.6",
+    "S2.8"
+   ]
+  },
+  {
+   "id": "tot",
+   "name": "Terms of trade",
+   "c": [
+    "2B.4"
+   ],
+   "ss": []
+  },
+  {
+   "id": "nfl",
+   "name": "Net foreign liabilities",
+   "c": [
+    "3D.1"
+   ],
+   "ss": []
+  },
+  {
+   "id": "fx",
+   "name": "Exchange rate changes",
+   "c": [
+    "2C.1",
+    "2C.3"
+   ],
+   "ss": [
+    "S2.3"
+   ]
+  },
+  {
+   "id": "mult",
+   "name": "The simple multiplier",
+   "c": [
+    "3A.3"
+   ],
+   "ss": [
+    "S3.10",
+    "S4.6"
+   ]
+  },
+  {
+   "id": "leak",
+   "name": "Leakages and injections",
+   "c": [
+    "3A.2"
+   ],
+   "ss": [
+    "S3.9"
+   ]
+  },
+  {
+   "id": "labour",
+   "name": "Unemployment and participation rates",
+   "c": [
+    "3B.1"
+   ],
+   "ss": [
+    "S3.12"
+   ]
+  },
+  {
+   "id": "infl",
+   "name": "Inflation rate",
+   "c": [
+    "3C.1"
+   ],
+   "ss": []
+  },
+  {
+   "id": "gini",
+   "name": "Gini coefficient and quintile ratios",
+   "c": [
+    "3E.1"
+   ],
+   "ss": [
+    "S3.13"
+   ]
+  },
+  {
+   "id": "budget",
+   "name": "Budget outcome",
+   "c": [
+    "4C.1"
+   ],
+   "ss": []
+  }
+ ]
+}

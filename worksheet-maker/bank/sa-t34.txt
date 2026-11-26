@@ -1,0 +1,259 @@
+# New short-answer questions, Topics 3 and 4.
+
+=== sa sa-3A3-01
+c: 3A.3 4C.2
+m: 3
+lv: 2
+k: explain
+Q: Explain how the multiplier affects the impact of a change in government spending on national income.
+PTS:
+- A rise in government spending is an injection that becomes income for others (1)
+- Recipients spend part of each extra dollar (the MPC), creating further rounds of income (1)
+- National income rises by a multiple of the original change: ΔY = ΔG × k, where k = 1 ÷ (1 − MPC) (1)
+
+=== sa sa-3A5-01
+c: 3A.5
+ss: S3.1
+m: 4
+lv: 3
+k: evaluate
+Q: Assess the arguments for and against increasing Australia's rate of economic growth.
+PTS:
+- For: higher growth creates jobs and lowers unemployment (1)
+- For: higher incomes and tax revenue fund services and raise living standards (1)
+- Against: growth above capacity raises inflation and widens the current account deficit (1)
+- Against: environmental costs and resource depletion; judgement about sustainable growth (1)
+
+=== sa sa-3A6-01
+c: 3A.6 4E.1
+m: 3
+lv: 2
+k: explain
+Q: Explain how improvements in efficiency and technology increase aggregate supply.
+PTS:
+- New technology and better ways of working raise productivity: more output from the same inputs (1)
+- Unit costs fall, so firms can supply more at each price level (1)
+- Aggregate supply (and potential output) shifts right, allowing growth without extra inflation (1)
+
+=== sa sa-3B3-01
+c: 3B.3
+m: 4
+lv: 2
+k: compare
+Q: Distinguish between cyclical and structural unemployment, using an example of each.
+PTS:
+- Cyclical: caused by a lack of aggregate demand in a downturn (1)
+- Example, e.g. retail or construction jobs lost in a recession (1)
+- Structural: caused by a mismatch between workers' skills or location and the jobs available, often from technology or changes in industry (1)
+- Example, e.g. car manufacturing workers after the closure of car plants in 2017 (1)
+
+=== sa sa-3B4-01
+c: 3B.4 4A.7
+m: 3
+lv: 3
+k: explain
+Q: Explain the relationship between the NAIRU and inflation.
+PTS:
+- The NAIRU is the lowest unemployment rate that can be sustained without inflation rising (1)
+- Below the NAIRU, tight labour markets push wage growth up, raising costs and inflation (1)
+- Above it, spare capacity keeps wage growth and inflation subdued; structural reform can lower the NAIRU (1)
+
+=== sa sa-3B6-01
+c: 3B.6
+m: 4
+lv: 1
+k: explain
+Q: Explain TWO costs of unemployment.
+PTS:
+- An economic cost explained, e.g. lost output and lower living standards, or higher welfare spending and lower tax revenue (2)
+- A social cost explained, e.g. poorer mental health, family stress, or loss of skills that makes it harder to find work later (2)
+
+=== sa sa-3C1-01
+c: 3C.1
+m: 3
+lv: 2
+k: compare
+Q: Explain why the RBA pays close attention to underlying inflation as well as headline inflation.
+PTS:
+- Headline inflation can be swung by volatile or one-off price changes such as fuel, fruit or government rebates (1)
+- Underlying measures such as the trimmed mean remove extreme price changes, showing the trend in inflation (1)
+- Monetary policy works with lags, so the RBA responds to the persistent trend rather than temporary changes (1)
+
+=== sa sa-3C3-01
+c: 3C.3 2C.6
+m: 4
+lv: 2
+k: explain
+Q: Explain how a depreciation of the Australian dollar can cause inflation.
+PTS:
+- A depreciation raises the A$ price of imported goods (1)
+- Consumer goods such as cars and electronics cost more, raising the CPI directly (1)
+- Imported inputs such as fuel and machinery cost more, raising firms' costs (cost inflation) (1)
+- Higher import prices can lift inflationary expectations and wage claims (1)
+
+=== sa sa-3C4-01
+c: 3C.4
+m: 4
+lv: 2
+k: explain
+Q: Explain ONE positive and ONE negative effect of inflation.
+PTS:
+- A positive effect explained, e.g. moderate inflation lets real wages adjust and avoids the risks of deflation (2)
+- A negative effect explained, e.g. lower purchasing power for people on fixed incomes, uncertainty for investment, or loss of international competitiveness (2)
+
+=== sa sa-3D3-01
+c: 3D.3
+ss: S3.4
+m: 5
+lv: 3
+k: discuss
+Q: Discuss the effects of a continued current account deficit on the Australian economy.
+PTS:
+- A CAD allows investment higher than national saving, funding growth (1)
+- It adds to foreign liabilities, so more income is paid overseas (net primary income), widening the CAD further (1)
+- A high level of foreign debt can raise the risk premium on borrowing and make the economy vulnerable to a loss of investor confidence (1)
+- It can lead to downward pressure on the exchange rate and constrain policy (1)
+- Balanced judgement, e.g. sustainable if borrowing funds productive investment (the Pitchford view) (1)
+
+=== sa sa-3E3-01
+c: 3E.3
+m: 4
+lv: 2
+k: explain
+Q: Explain how the tax and transfer system reduces inequality in Australia.
+PTS:
+- Progressive income tax: higher earners pay a higher share of income (1)
+- Transfer payments, such as JobSeeker and the Age Pension, lift the incomes of low-income households (1)
+- The social wage (Medicare, public education, housing assistance) gives services regardless of income (1)
+- Together these make disposable income more equal than market income: the Gini coefficient falls (1)
+
+=== sa sa-3E6-01
+c: 3E.6
+m: 4
+lv: 3
+k: evaluate
+Q: Assess the economic costs and benefits of inequality.
+PTS:
+- Benefit: differences in income create incentives to work, train and invest (1)
+- Cost: low-income households consume less, which can weaken aggregate demand (1)
+- Cost: lost potential, as people cannot afford education, and lower social cohesion (1)
+- Judgement: moderate inequality may encourage effort, but high inequality reduces growth and wellbeing (1)
+
+=== sa sa-3F2-01
+c: 3F.2 3F.3
+m: 4
+lv: 2
+k: explain
+Q: Explain why the market fails to protect the natural environment.
+PTS:
+- Negative externalities: producers ignore external costs such as pollution, so output is too high (1)
+- Public goods and free riders: clean air and biodiversity are non-excludable, so they are underprovided (1)
+- Prices do not reflect the full social cost, so resources are overused (1)
+- Future generations are not represented in today's market decisions (1)
+
+=== sa sa-4A7-01
+c: 4A.7
+m: 4
+lv: 3
+k: explain
+Q: Explain how a conflict can arise between the objectives of economic growth and environmental sustainability.
+PTS:
+- Faster growth means more production and energy use (1)
+- With current technology this raises emissions, pollution and resource use (1)
+- Policies to cut emissions, such as a price on carbon, raise costs and can slow growth in the short run (1)
+- Clean technology and structural change can reduce the conflict over time (1)
+
+=== sa sa-4C2-01
+c: 4C.2 4C.1
+m: 4
+lv: 2
+k: explain
+Q: Explain how automatic stabilisers in the budget help reduce fluctuations in economic activity.
+PTS:
+- Automatic stabilisers are parts of the budget that change with the cycle without new decisions (1)
+- In a downturn, tax revenue falls and welfare payments rise, supporting incomes and AD (1)
+- In a boom, tax revenue rises and welfare payments fall, restraining AD (1)
+- So the budget moves towards deficit in downturns and surplus in booms, smoothing the cycle (1)
+
+=== sa sa-4D2-01
+c: 4D.2
+m: 3
+lv: 3
+k: outline
+Q: Outline how the RBA implements a change in monetary policy.
+PTS:
+- The Monetary Policy Board decides the target for the cash rate and announces it (1)
+- The RBA manages the supply of money in the overnight market (exchange settlement balances), through open market operations and the interest rates on its standing facilities, so the cash rate settles at the target (1)
+- Banks pass the change through to lending and deposit rates (1)
+
+=== sa sa-4D3-01
+c: 4D.3
+m: 5
+lv: 3
+k: analyse
+Q: Analyse how an increase in the cash rate affects economic activity and the exchange rate.
+PTS:
+- Higher interest rates raise borrowing costs and repayments on variable loans (1)
+- Consumption and investment fall; asset prices and wealth may fall too (1)
+- Aggregate demand slows, reducing growth and inflation; unemployment may rise (1)
+- The higher return on Australian assets increases demand for A$, causing an appreciation (1)
+- The appreciation lowers import prices and net exports, adding to the effect on inflation; note the time lags (1)
+
+=== sa sa-4E2-01
+c: 4E.2 4E.3
+m: 4
+lv: 2
+k: explain
+Q: Explain how competition policy can improve the efficiency of a product market.
+PTS:
+- Competition policy stops anti-competitive conduct such as cartels and the misuse of market power (1)
+- More competition forces firms to cut costs and prices (allocative and technical efficiency) (1)
+- Firms innovate to keep customers (dynamic efficiency) (1)
+- Consumers gain lower prices and more choice; resources go to their most valued uses (1)
+
+=== sa sa-4F4-01
+c: 4F.4
+m: 4
+lv: 3
+k: discuss
+Q: Discuss the arguments for and against decentralised wage determination.
+PTS:
+- For: pay can reflect each workplace's productivity, which can lift productivity growth (1)
+- For: flexibility for firms to adjust to their own conditions (1)
+- Against: workers with little bargaining power may fall behind, widening inequality (1)
+- Against: can lead to more industrial disputes; safety nets such as the NES and awards remain important (1)
+
+=== sa sa-4G2-01
+c: 4G.2 4G.1
+m: 4
+lv: 2
+k: compare
+Q: Compare the use of regulation and market-based policies to reduce pollution.
+PTS:
+- Regulation sets rules, such as emission standards or bans, enforced by penalties (1)
+- Market-based policies, such as taxes or emissions trading, put a price on pollution (1)
+- Regulation gives a more certain result but can be costly because every firm must meet the same rule (1)
+- Market-based policies cut pollution where it is cheapest, but the outcome of a tax is less certain (1)
+
+=== sa sa-4H1-01
+c: 4H.1
+m: 3
+lv: 2
+k: explain
+Q: Explain how time lags limit the effectiveness of fiscal policy.
+PTS:
+- Recognition lag: data are delayed, so problems are identified late (1)
+- Implementation lag: budget changes need planning and laws passed by Parliament (1)
+- Impact lag: spending and tax changes take time to affect demand, so policy may take effect when it is no longer needed (1)
+
+=== sa sa-4I1-01
+c: 4I.1 4E.1
+m: 4
+lv: 3
+k: evaluate
+Q: Assess the effectiveness of microeconomic policies in promoting economic growth.
+PTS:
+- Microeconomic reform raises productivity and shifts aggregate supply right, lifting potential growth (1)
+- Evidence, e.g. tariff cuts, competition policy and financial deregulation contributed to strong productivity growth in the 1990s (1)
+- Limitations: benefits take years, there are short-term job losses, and reform can be politically difficult (1)
+- Judgement: effective for long-run growth, but slower productivity growth since the mid-2000s suggests the pace of reform matters (1)

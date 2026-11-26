@@ -1,0 +1,278 @@
+# Data questions in the style of HSC Section II: a table, then parts that move from calculating to explaining.
+
+=== sa sd-3B1-lf
+c: 3B.1 3B.2
+lv: 2
+k: calc table explain
+ss: S3.12
+like: II2014Q23(a) II2014Q23(b)
+LEAD: The table shows labour market data for a hypothetical economy.
+TABLE: Labour market data ('000)
+| | Year 1 | Year 2 |
+| Employed | 14,000 | 14,200 |
+| Unemployed | 600 | 760 |
+| Working-age population | 22,000 | 22,400 |
+PART (a) 1: Calculate the unemployment rate in Year 2.
+ANS: Labour force = 14,200 + 760 = 14,960 thousand. Unemployment rate = 760 ÷ 14,960 × 100 = 5.1%.
+PART (b) 1: Calculate the participation rate in Year 2.
+ANS: 14,960 ÷ 22,400 × 100 = 66.8%.
+PART (c) 2: Explain why the unemployment rate rose even though employment increased.
+PTS:
+- The labour force grew faster than employment: it rose by 360,000 (2.5%) while employment rose by 200,000 (1.4%) (1)
+- More people entered the labour force looking for work (participation rose from 66.4% to 66.8%), so the number unemployed rose (1)
+PART (d) 3: Explain ONE policy the government could use to reduce structural unemployment.
+PTS:
+- Identifies a suitable policy, e.g. education and training or apprenticeship programs (1)
+- Explains how it addresses the skills mismatch between workers and the jobs available (1)
+- Explains the effect, e.g. more employable workers, lower long-term unemployment, possibly a lower NAIRU (1)
+
+=== sa sd-3C1-cpi
+c: 3C.1 3C.3 4D.3
+lv: 2
+k: calc table evaluate
+like: II2019Q24(a) II2019Q24(b)
+LEAD: The table shows data for a hypothetical economy. The central bank's inflation target is 2 to 3 per cent.
+TABLE: Economic indicators
+| | Year 1 | Year 2 | Year 3 |
+| Consumer Price Index | 125.0 | 130.0 | 136.5 |
+| Unemployment rate (%) | 4.2 | 3.9 | 3.6 |
+PART (a) 1: Calculate the inflation rate in Year 3.
+ANS: (136.5 − 130.0) ÷ 130.0 × 100 = 5.0%.
+PART (b) 2: Outline ONE likely cause of the inflation shown in the table.
+PTS:
+- Identifies a cause consistent with the data, e.g. demand inflation as unemployment falls to low levels (1)
+- Outlines how it raises prices, e.g. spending grows faster than capacity and tight labour markets push wages up (1)
+PART (c) 3: Justify an appropriate monetary policy stance for this economy. Support your answer with reference to the table.
+PTS:
+- Recommends contractionary (tighter) monetary policy: raise the cash rate (1)
+- Justifies it with the data: inflation (5.0%) is above the 2–3% target and unemployment is low and falling (3.6%), suggesting excess demand (1)
+- Explains how higher interest rates reduce spending and inflation, noting the possible rise in unemployment (1)
+
+=== sa sd-2B1-bop
+c: 2B.1 2B.2 2B.3
+lv: 2
+k: calc table analyse
+ss: S2.6 S2.7
+like: II2023Q22(a) II2011Q22(a)(i)
+LEAD: The table shows balance of payments data for a hypothetical economy. Net errors and omissions are zero.
+TABLE: Balance of payments ($ billion)
+| Item | $ billion |
+| Exports of goods | 480 |
+| Imports of goods | 450 |
+| Exports of services | 110 |
+| Imports of services | 125 |
+| Net primary income | −75 |
+| Net secondary income | −2 |
+| Balance on capital account | −1 |
+PART (a) 1: Calculate the balance on goods and services.
+ANS: (480 − 450) + (110 − 125) = 30 − 15 = $15 billion (a surplus).
+PART (b) 1: Calculate the balance on current account.
+ANS: 15 + (−75) + (−2) = −$62 billion (a deficit).
+PART (c) 1: Calculate the balance on the financial account.
+ANS: Current account + capital account + financial account = 0, so −62 + (−1) + financial account = 0: the financial account is +$63 billion (a surplus).
+PART (d) 3: Explain the relationship between the financial account surplus and the net primary income deficit.
+PTS:
+- The financial account surplus shows foreign borrowing and investment flowing in to fund the current account deficit (1)
+- These inflows add to the economy's foreign debt and equity liabilities (1)
+- Servicing them (interest and dividends) is recorded as debits in net primary income, so the deficit grows over time and must itself be financed (1)
+
+=== sa sd-2C1-xr
+c: 2C.1 2C.3 2C.6
+lv: 2
+k: calc table explain
+LEAD: The table shows the value of the Australian dollar in two years (hypothetical data).
+TABLE: Exchange rates (foreign currency per A$1) and the Trade Weighted Index
+| | Year 1 | Year 2 |
+| US dollar | 0.68 | 0.64 |
+| Japanese yen | 98.0 | 104.0 |
+| Euro | 0.60 | 0.58 |
+| TWI (May 1970 = 100) | 63.0 | 62.4 |
+PART (a) 1: Calculate the percentage change in the value of the A$ against the US dollar.
+ANS: (0.64 − 0.68) ÷ 0.68 × 100 = −5.9%, a depreciation.
+PART (b) 1: Identify the currency in the table against which the A$ appreciated.
+ANS: The Japanese yen (one A$ buys 104 yen instead of 98).
+PART (c) 2: Explain why the TWI fell by much less than the A$ fell against the US dollar.
+PTS:
+- The TWI measures the A$ against a basket of trading partners' currencies, weighted by trade (1)
+- The A$ rose against some currencies (the yen) and fell less against others, so the fall against the US dollar was partly offset (1)
+PART (d) 2: Explain how this change in the exchange rate could affect Australian exporters.
+PTS:
+- Australian exports become cheaper in US dollar terms, so exporters can sell more (1)
+- Contracts priced in US dollars earn more A$, lifting exporters' revenue and profits (1)
+
+=== sa sd-4C1-budget
+c: 4C.1 4C.2 4C.3
+lv: 3
+k: calc table explain
+LEAD: The table shows budget data for a hypothetical economy.
+TABLE: Government budget ($ billion)
+| | Year 1 | Year 2 |
+| Revenue | 680 | 690 |
+| Expenditure | 700 | 735 |
+| GDP | 2,700 | 2,780 |
+PART (a) 2: Calculate the budget outcome in Year 2, in dollars and as a percentage of GDP.
+ANS: 690 − 735 = −$45 billion, a deficit of 45 ÷ 2,780 × 100 = 1.6% of GDP.
+PART (b) 1: Identify the change in the budget stance from Year 1 to Year 2.
+ANS: More expansionary: the deficit widened from $20 billion (0.7% of GDP) to $45 billion (1.6% of GDP).
+PART (c) 2: Explain ONE reason the deficit could have widened without any new policy decision.
+PTS:
+- Automatic stabilisers: a slowdown lowers tax revenue and raises welfare payments (1)
+- So the cyclical component of the budget moves towards deficit, even though policy settings are unchanged (1)
+PART (d) 3: Explain how the government could finance this deficit and ONE possible effect.
+PTS:
+- By selling Commonwealth Government Securities (bonds) to investors in Australia or overseas (1)
+- Effect explained, e.g. borrowing competes for funds and may raise interest rates (crowding out) (1)
+- Or: borrowing from overseas adds to foreign debt and future interest payments in the current account (1)
+
+=== sa sd-3A2-flow
+c: 3A.2 3A.3
+lv: 2
+k: calc table explain
+ss: S3.9 S3.10 S3.11
+like: II2016Q24(a) II2013Q22(a)
+LEAD: The table shows data for a hypothetical economy. The marginal propensity to consume is 0.75.
+TABLE: Leakages and injections ($ billion)
+| Item | $ billion |
+| Savings | 120 |
+| Taxation | 200 |
+| Imports | 140 |
+| Investment | 130 |
+| Government spending | 210 |
+| Exports | 110 |
+PART (a) 1: State whether national income will rise, fall or stay the same. Give a reason.
+ANS: It will fall: withdrawals (120 + 200 + 140 = $460b) exceed injections (130 + 210 + 110 = $450b).
+PART (b) 1: Calculate the value of the multiplier.
+ANS: k = 1 ÷ (1 − 0.75) = 4.
+PART (c) 1: Calculate the change in national income if government spending rises by $10 billion.
+ANS: $10 billion × 4 = $40 billion increase.
+PART (d) 2: Explain the implications of the multiplier for fluctuations in economic activity.
+PTS:
+- Small changes in spending (such as investment or exports) cause larger changes in national income (1)
+- So shocks are magnified into larger booms and downturns; a larger multiplier means larger fluctuations (1)
+
+=== sa sd-3E1-quint
+c: 3E.1 3E.3
+lv: 2
+k: calc table explain
+ss: S3.13
+LEAD: The table shows the share of income received by each fifth (quintile) of households in a hypothetical economy.
+TABLE: Share of income by quintile (%)
+| Quintile | Market income | Disposable income |
+| Lowest 20% | 2 | 7 |
+| Second | 6 | 12 |
+| Third | 15 | 17 |
+| Fourth | 25 | 23 |
+| Highest 20% | 52 | 41 |
+PART (a) 1: Calculate the ratio of the highest quintile's share of disposable income to the lowest quintile's share.
+ANS: 41 ÷ 7 = 5.9 to 1.
+PART (b) 2: Identify which distribution is more equal, and explain why.
+PTS:
+- Disposable income is more equal: the top quintile's share falls from 52% to 41% and the bottom's rises from 2% to 7% (1)
+- Because progressive income tax takes more from high incomes and transfer payments add to low incomes (1)
+PART (c) 3: Explain how a Lorenz curve for disposable income would differ from one for market income.
+PTS:
+- The Lorenz curve for disposable income lies closer to the line of equality (1)
+- Area A (between the line of equality and the curve) is smaller (1)
+- So the Gini coefficient for disposable income is lower than for market income (1)
+
+=== sa sd-3D1-ext
+c: 3D.1 3D.3
+lv: 3
+k: calc table discuss
+LEAD: The table shows external data for a hypothetical economy.
+TABLE: External position ($ billion)
+| Item | $ billion |
+| Net foreign debt | 1,450 |
+| Net foreign equity | −80 |
+| Current account deficit | 55 |
+| GDP | 2,750 |
+PART (a) 1: Calculate net foreign liabilities as a percentage of GDP.
+ANS: NFL = 1,450 + (−80) = $1,370 billion; 1,370 ÷ 2,750 × 100 = 49.8% of GDP.
+PART (b) 1: Calculate the current account deficit as a percentage of GDP.
+ANS: 55 ÷ 2,750 × 100 = 2.0% of GDP.
+PART (c) 4: Explain TWO risks of a high level of net foreign debt.
+PTS:
+- Servicing costs: more interest is paid overseas, widening the net primary income deficit and the CAD (2)
+- Vulnerability: lenders may demand a higher risk premium or withdraw funds, causing a depreciation or forcing contractionary policy; a depreciation raises the A$ cost of foreign-currency debt (2)
+
+=== sa sd-2B4-tot
+c: 2B.4 2C.2
+lv: 2
+k: calc table explain
+like: II2010Q21(a)
+LEAD: The table shows price indexes for an economy's exports and imports.
+TABLE: Price indexes
+| | Year 1 | Year 2 | Year 3 |
+| Export price index | 100 | 115 | 108 |
+| Import price index | 100 | 104 | 106 |
+PART (a) 1: Calculate the terms of trade in Year 2.
+ANS: 115 ÷ 104 × 100 = 110.6.
+PART (b) 1: Identify the trend in the terms of trade from Year 2 to Year 3.
+ANS: It deteriorated: Year 3 = 108 ÷ 106 × 100 = 101.9, down from 110.6.
+PART (c) 3: Explain how the change in the terms of trade from Year 1 to Year 2 could affect the exchange rate and the balance on goods and services.
+PTS:
+- Higher export prices mean more export income for each unit sold (1)
+- The balance on goods and services improves (1)
+- Overseas buyers need more of the domestic currency, so demand for it rises and it appreciates (1)
+
+=== sa sd-3A4-gdp
+c: 3A.4 1D.3
+lv: 2
+k: calc table explain
+LEAD: The table shows data for a hypothetical economy. Year 1 is the base year.
+TABLE: GDP and prices
+| | Year 1 | Year 2 |
+| Nominal GDP ($ billion) | 2,500 | 2,650 |
+| Price index | 100 | 104 |
+PART (a) 1: Calculate real GDP in Year 2.
+ANS: 2,650 × 100 ÷ 104 = $2,548 billion.
+PART (b) 1: Calculate the real growth rate from Year 1 to Year 2.
+ANS: (2,548 − 2,500) ÷ 2,500 × 100 = 1.9%.
+PART (c) 2: Outline ONE limitation of real GDP as a measure of living standards.
+PTS:
+- Identifies a limitation, e.g. it ignores population growth, the distribution of income, unpaid work, leisure or environmental damage (1)
+- Outlines why it matters, e.g. real GDP can rise while GDP per person falls if population grows faster (1)
+
+=== sa sd-1C2-tariff
+c: 1C.2
+lv: 2
+k: calc table explain
+like: II2024Q21(a)(i) II2024Q21(a)(ii)
+LEAD: The table shows the domestic market for a good. The world price is $40, and the government imposes a tariff of $10 a unit.
+TABLE: Domestic demand and supply ('000 units)
+| Price ($) | Quantity demanded | Quantity supplied by domestic firms |
+| 40 | 120 | 30 |
+| 50 | 110 | 45 |
+PART (a) 1: Calculate the quantity imported before the tariff.
+ANS: 120 − 30 = 90,000 units.
+PART (b) 1: Calculate the quantity imported after the tariff.
+ANS: 110 − 45 = 65,000 units.
+PART (c) 1: Calculate the government's revenue from the tariff.
+ANS: $10 × 65,000 = $650,000.
+PART (d) 3: Explain the effect of the tariff on the allocation of resources.
+PTS:
+- Domestic production rises from 30,000 to 45,000 units, drawing resources into a less efficient industry (1)
+- Consumers buy less and pay more, so resources are not allocated to their most valued uses (1)
+- The result is a deadweight loss: production and consumption losses that no one gains (1)
+
+=== sa sd-1D3-hdi
+c: 1D.3 1D.4 1D.1
+lv: 2
+k: table explain
+LEAD: The table shows development indicators for three countries.
+TABLE: Development indicators
+| | Country A | Country B | Country C |
+| GNI per person (PPP, US$) | 62,000 | 18,000 | 2,200 |
+| Life expectancy (years) | 83 | 77 | 62 |
+| Mean years of schooling | 12.7 | 8.0 | 4.5 |
+PART (a) 1: Identify which country is most likely a developing economy.
+ANS: Country C: the lowest income, life expectancy and schooling.
+PART (b) 3: Explain why GNI per person alone is a limited measure of a country's level of development.
+PTS:
+- It measures average income, not how it is distributed (1)
+- It leaves out health, education, freedom and the environment, which are part of wellbeing (1)
+- Two countries with similar incomes can have very different life expectancy and schooling (1)
+PART (c) 2: Outline how the Human Development Index gives a fuller picture.
+PTS:
+- It combines three dimensions: a long and healthy life, knowledge and a decent standard of living (1)
+- Each is measured (life expectancy, years of schooling, GNI per person at PPP) and combined in an index from 0 to 1 (1)

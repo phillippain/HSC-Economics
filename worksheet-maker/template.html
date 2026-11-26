@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<!-- GA:START (Google Analytics; written by build/build_analytics.py, do not edit here) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-11YGV11ZES"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-11YGV11ZES');</script>
+<!-- GA:END -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HSC Economics Worksheet Maker</title>
+<meta name="description" content="Make printable HSC Economics worksheets as PDFs: choose dot points and skills, mix past HSC questions with new practice questions, key terms, diagrams, calculations and cause-and-effect tasks, and set the page layout.">
+<style>
+/*__FONTS__*/
+:root{
+  --bg:#f3f5fa; --card:#ffffff; --card2:#e9eef8; --ink:#0b1330; --mut:#3b4663; --rule:#c9d2e4; --rule2:#a7b3cd;
+  --acc:#1c3fb0; --acc-ink:#ffffff; --acc-soft:#e3eafb; --gold:#ffd24a; --ok:#1c7d52; --bad:#b42318; --warn:#fff3c9;
+  --g-exam:#1c3fb0; --g-dc:#0e8a8a; --g-know:#b26a00; --g-think:#8a3fb0;
+  --shadow:0 1px 0 rgba(14,21,38,.06),0 8px 24px -14px rgba(14,21,38,.25);
+  --head:'Manrope','Avenir Next','Segoe UI',system-ui,sans-serif; --body:'Manrope','Segoe UI',system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+}
+:root[data-theme="dark"]{
+  --bg:#0c1120; --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+  --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52; --warn:#3a3010; --ok:#59d39b; --bad:#ff8b72;
+  --g-exam:#8fa6ff; --g-dc:#4fd1d1; --g-know:#f0b44c; --g-think:#c99af0; color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0c1120; --card:#151c30; --card2:#1b2339; --ink:#e9eefb; --mut:#a2aec9; --rule:#27304b; --rule2:#3a4566;
+  --acc:#8fa6ff; --acc-ink:#0c1120; --acc-soft:#212c52; --warn:#3a3010; --ok:#59d39b; --bad:#ff8b72;
+  --g-exam:#8fa6ff; --g-dc:#4fd1d1; --g-know:#f0b44c; --g-think:#c99af0; color-scheme:dark}}
+*{box-sizing:border-box;min-width:0}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:500 1rem/1.5 var(--body);color:var(--ink);background:var(--bg)}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--acc)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 20px 60px}
+h1,h2,h3{font-family:var(--head);letter-spacing:-.015em;margin:0}
+p{margin:0}
+.mast{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:flex-end;justify-content:space-between;padding:16px 0 14px;border-bottom:2px solid var(--acc);margin-bottom:16px}
+.school{font-size:.82rem;color:var(--mut);font-weight:600}
+.mast h1{font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.1}
+.tag{color:var(--mut);max-width:62ch;margin-top:4px}
+.seg{display:inline-flex;border:1px solid var(--rule2);border-radius:999px;overflow:hidden;background:var(--card)}
+.seg button{border:0;background:none;padding:7px 14px;font-weight:700;font-size:.9rem}
+.seg button[aria-pressed="true"]{background:var(--acc);color:var(--acc-ink)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 16px}
+.tab{border:1px solid var(--rule2);background:var(--card);border-radius:999px;padding:8px 16px;font-weight:700}
+.tab[aria-selected="true"]{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.tab .n{display:inline-grid;place-items:center;width:1.4em;height:1.4em;border-radius:50%;background:var(--acc-soft);color:var(--acc);font-size:.8em;margin-right:6px}
+.tab[aria-selected="true"] .n{background:var(--acc-ink);color:var(--acc)}
+.split{display:grid;grid-template-columns:minmax(0,440px) minmax(0,1fr);gap:18px;align-items:start}
+@media (max-width:900px){.split{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);padding:14px 16px}
+.panel+.panel{margin-top:12px}
+.step>summary{list-style:none;cursor:pointer;display:flex;gap:10px;align-items:center;font-family:var(--head);font-weight:800;font-size:1.05rem}
+.step>summary::-webkit-details-marker{display:none}
+.step>summary .num{display:inline-grid;place-items:center;width:1.7em;height:1.7em;border-radius:50%;background:var(--acc);color:var(--acc-ink);font-size:.85rem;flex:none}
+.step>summary .sum{margin-left:auto;font:600 .8rem var(--body);color:var(--mut);text-align:right}
+.step>summary::after{content:"▾";color:var(--mut);transition:transform .15s}
+.step[open]>summary::after{transform:rotate(180deg)}
+.step .body{margin-top:12px}
+.hint{color:var(--mut);font-size:.86rem}
+.small{font-size:.86rem}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.btn{border:1px solid var(--acc);background:var(--acc);color:var(--acc-ink);border-radius:10px;padding:9px 14px;font-weight:700;min-height:40px}
+.btn.ghost{background:var(--card);color:var(--acc)}
+.btn.sm{padding:5px 10px;min-height:32px;font-size:.86rem;border-radius:8px}
+.btn.gold{background:var(--gold);border-color:#d9ad16;color:#1a1d2b}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.wide{width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--rule2);background:var(--card);border-radius:999px;padding:3px 10px;font-size:.82rem;font-weight:700}
+.chip[aria-pressed="true"]{background:var(--acc-soft);border-color:var(--acc);color:var(--acc)}
+.chip button{border:0;background:none;padding:0 0 0 2px;color:var(--mut)}
+/* syllabus picker */
+.ttabs{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px}
+.ttab{border:1px solid var(--rule2);background:var(--card);border-radius:8px;padding:5px 10px;font-weight:700;font-size:.86rem;border-left:4px solid var(--tc)}
+.ttab[aria-pressed="true"]{background:var(--acc-soft);border-color:var(--tc)}
+.ttab .c{color:var(--mut);font-weight:600;margin-left:4px}
+.secs{max-height:430px;overflow:auto;border:1px solid var(--rule);border-radius:10px;padding:4px 8px;background:var(--card)}
+.sec{border-bottom:1px solid var(--rule)}
+.sec:last-child{border-bottom:0}
+.sec>summary{display:flex;gap:8px;align-items:center;padding:7px 0;cursor:pointer;list-style:none;font-weight:700;font-size:.92rem}
+.sec>summary::-webkit-details-marker{display:none}
+.sec>summary .id{font-family:ui-monospace,Menlo,monospace;color:var(--mut);font-size:.8rem;flex:none}
+.sec>summary .cnt{margin-left:auto;color:var(--mut);font-weight:600;font-size:.78rem;flex:none}
+.pt{display:grid;grid-template-columns:22px 44px 1fr auto;gap:4px 6px;align-items:start;padding:4px 0 4px 6px;font-size:.88rem;cursor:pointer}
+.pt input{margin-top:3px}
+.pt .id{font-family:ui-monospace,Menlo,monospace;color:var(--mut);font-size:.78rem;padding-top:2px}
+.pt .cnt{color:var(--mut);font-size:.76rem;padding-top:2px}
+.pt.none{opacity:.55}
+.search{width:100%;border:1px solid var(--rule2);border-radius:10px;padding:8px 12px;background:var(--card);margin-bottom:8px}
+.selline{margin-top:8px;font-size:.86rem}
+/* formats */
+.grp{margin-bottom:10px}
+.grp h3{font-size:.86rem;text-transform:none;color:var(--gc);display:flex;align-items:center;gap:6px;margin:6px 0}
+.grp h3::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--gc)}
+.fmt{display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:center;padding:6px 0;border-top:1px dashed var(--rule)}
+.fmt b{font-size:.92rem}
+.fmt .d{grid-column:1;font-size:.8rem;color:var(--mut)}
+.fmt .av{font-size:.75rem;color:var(--mut)}
+.fmt.zero b,.fmt.zero .d{opacity:.55}
+.stepper{display:inline-flex;align-items:center;border:1px solid var(--rule2);border-radius:9px;overflow:hidden;grid-row:1/3;grid-column:2}
+.stepper button{border:0;background:var(--card2);width:30px;height:32px;font-weight:800}
+.stepper output{min-width:30px;text-align:center;font-weight:800}
+.presets{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+label.opt{display:flex;gap:8px;align-items:flex-start;padding:4px 0;font-size:.9rem}
+label.opt input{margin-top:4px}
+select,input[type=number],input[type=text],textarea{border:1px solid var(--rule2);border-radius:8px;padding:6px 8px;background:var(--card)}
+.field{display:grid;gap:3px;margin:6px 0}
+.field>span{font-size:.82rem;font-weight:700;color:var(--mut)}
+.go{position:sticky;bottom:0;background:linear-gradient(transparent,var(--bg) 22%);padding:14px 0 4px;display:grid;gap:8px}
+@media (max-width:900px){.go{position:static;background:none}}
+/* worksheet */
+.sheet-head{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.sheet-head input{flex:1 1 260px;font:800 1.15rem var(--head);border:1px solid var(--rule2);border-radius:10px;padding:8px 12px;background:var(--card)}
+.stats{color:var(--mut);font-size:.9rem;margin:8px 0 10px}
+.list{display:grid;gap:8px}
+.q{background:var(--card);border:1px solid var(--rule);border-left:5px solid var(--gc);border-radius:12px;padding:10px 12px;display:grid;grid-template-columns:auto 1fr;gap:4px 10px}
+.q .no{font:800 1rem var(--head);min-width:1.8em;color:var(--gc)}
+.q .meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:.78rem;color:var(--mut)}
+.q .meta .f{font-weight:800;color:var(--gc)}
+.q .meta .m{font-weight:800;color:var(--ink)}
+.q .meta .rev{background:var(--warn);border-radius:6px;padding:0 6px;color:var(--ink)}
+.q .txt{grid-column:2;font-size:.92rem;white-space:pre-line}
+.q .txt ol{margin:4px 0 0;padding-left:1.4em}
+.q .acts{grid-column:2;display:flex;gap:4px;flex-wrap:wrap}
+.q .acts button{border:1px solid var(--rule2);background:var(--card);border-radius:7px;padding:3px 9px;font-size:.8rem;font-weight:700;min-height:30px}
+.q .acts button.c{border-color:#c79a1d;background:var(--warn)}
+.parthead{font:800 .95rem var(--head);color:var(--gc);margin:10px 0 2px;display:flex;gap:8px;align-items:center}
+.empty{border:2px dashed var(--rule2);border-radius:14px;padding:28px;text-align:center;color:var(--mut)}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:700;z-index:50;display:flex;gap:12px;align-items:center;max-width:90vw}
+.toast button{background:none;border:1px solid currentColor;color:inherit;border-radius:7px;padding:2px 8px}
+/* layout and print */
+.styles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.style{border:2px solid var(--rule);border-radius:12px;padding:8px;background:var(--card);text-align:left;display:grid;gap:6px}
+.style[aria-pressed="true"]{border-color:var(--acc);box-shadow:0 0 0 3px var(--acc-soft)}
+.style b{font-size:.92rem}
+.style span{font-size:.76rem;color:var(--mut)}
+.mini{height:84px;border-radius:6px;border:1px solid var(--rule);background:#fff;padding:7px;display:grid;gap:4px;align-content:start;overflow:hidden}
+.mini i{display:block;height:5px;border-radius:2px;background:#cfd6e4}
+.mini i.t{height:8px;width:60%;background:#2a3550}
+.mini i.l{background:none;border-bottom:1px solid #8b95a8;height:6px}
+.mini i.d{background:none;border-bottom:1px dotted #8b95a8;height:6px}
+.mini .band{height:10px;border-radius:3px;background:#10253F}
+.mini .two{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.mini.lex i{height:7px}
+.mini.lex .box{border:1px solid #8b95a8;border-radius:4px;padding:4px;display:grid;gap:4px}
+.preview{background:#525a6b;border-radius:14px;padding:14px;min-height:420px;display:grid;gap:14px;justify-items:center;align-content:start}
+.preview canvas{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.35);max-width:100%;height:auto}
+.preview .msg{color:#e8ecf5;text-align:center;padding:40px 10px}
+.ptools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.ptools .sp{flex:1}
+fieldset{border:1px solid var(--rule);border-radius:10px;padding:6px 12px 10px;margin:10px 0}
+legend{font-weight:800;font-size:.88rem;padding:0 4px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}
+@media (max-width:520px){.two-col,.styles{grid-template-columns:1fr}}
+/* dialogs */
+dialog{border:1px solid var(--rule2);border-radius:16px;padding:0;max-width:min(860px,96vw);width:100%;background:var(--card);color:var(--ink);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+dialog::backdrop{background:rgba(8,12,28,.55)}
+.dh{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--rule);position:sticky;top:0;background:var(--card);z-index:2}
+.db{padding:12px 16px;max-height:70vh;overflow:auto}
+.df{padding:10px 16px;border-top:1px solid var(--rule);display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+.res{display:grid;gap:6px}
+.res .r{border:1px solid var(--rule);border-radius:10px;padding:8px 10px;display:grid;grid-template-columns:1fr auto;gap:4px 10px;align-items:start}
+.res .r .meta{font-size:.76rem;color:var(--mut)}
+.res .r .t{font-size:.88rem}
+textarea{width:100%;min-height:90px}
+.claude{border:1px solid #c79a1d;background:var(--warn)}
+.claude h3{font-size:1rem;margin-bottom:6px}
+.spin{display:inline-block;width:14px;height:14px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:sp 1s linear infinite;vertical-align:-2px}
+@keyframes sp{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spin{animation:none}}
+.saved .r{grid-template-columns:1fr auto}
+.foot{color:var(--mut);font-size:.82rem;margin-top:26px;border-top:1px solid var(--rule);padding-top:12px}
+.help h2{font-size:1.15rem;margin:18px 0 6px}
+.help p,.help li{max-width:75ch}
+.newtab{position:fixed;right:14px;bottom:14px;z-index:40}
+body.embed .mast{padding-top:8px}
+</style>
+</head>
+<body>
+<!-- SITEMENU:START built by build/build_sitemenu.py; edit the list of tools there, not here -->
+<style>
+.smbar{display:flex;justify-content:flex-end;padding:10px 20px 0;font-family:'Manrope','Public Sans','Segoe UI',system-ui,-apple-system,sans-serif}
+.smw{display:inline-flex;gap:8px;align-items:center;font-size:13px;line-height:1.3}
+.sm{position:relative;display:inline-block;text-align:left}
+.smw svg{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sm-btn{list-style:none;cursor:pointer;display:inline-flex;gap:7px;align-items:center;background:#ffd24a;color:#1a1d2b;border:1px solid #d9ad16;border-radius:999px;padding:6px 13px;font-weight:700;white-space:nowrap;text-decoration:none;user-select:none;-webkit-user-select:none}
+.sm-btn::-webkit-details-marker{display:none}
+.sm-btn:hover{background:#ffe07a}
+.sm-btn:focus-visible{outline:3px solid #1746d1;outline-offset:2px}
+.sm[open] .sm-caret{transform:rotate(180deg)}
+.sm-list{position:fixed;top:0;left:0;z-index:1000;width:min(340px,calc(100vw - 16px));max-height:calc(100vh - 90px);overflow:auto;background:#fff;color:#1a1d2b;border:1px solid #dcdfea;border-radius:14px;box-shadow:0 12px 34px rgba(10,14,40,.3);padding:8px;display:flex;flex-direction:column;gap:1px;font-weight:400}
+.sm:not([open]) .sm-list{display:none}
+.sm-h{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#5a6072;padding:8px 10px 3px}
+.sm-a{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:center;padding:7px 10px;border-radius:9px;color:inherit;text-decoration:none}
+.sm-a svg{font-size:18px;color:#1746d1}
+.sm-a b{display:block;font-size:14px;font-weight:700;color:inherit}
+.sm-a em{display:block;font-style:normal;font-size:12px;color:#5a6072}
+a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
+.sm-cur{background:#fff3c9}
+.sm-cur em{color:#7d5f00;font-weight:700}
+.sm-ext{border-top:1px solid #dcdfea;margin-top:6px;padding-top:10px;border-radius:0 0 9px 9px}
+@media print{.smbar{display:none !important}}
+:root[data-theme="dark"] .sm-list{background:#151c30;color:#e9eefb;border-color:#27304b}
+:root[data-theme="dark"] .sm-h,:root[data-theme="dark"] .sm-a em{color:#a2aec9}
+:root[data-theme="dark"] .sm-a svg{color:#8fa6ff}
+:root[data-theme="dark"] a.sm-a:hover,:root[data-theme="dark"] a.sm-a:focus-visible{background:#212c52}
+:root[data-theme="dark"] .sm-cur{background:#3a3010}
+:root[data-theme="dark"] .sm-cur em{color:#e6bd45}
+:root[data-theme="dark"] .sm-ext{border-color:#27304b}
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]) .sm-list{background:#151c30;color:#e9eefb;border-color:#27304b}
+:root:not([data-theme="light"]) .sm-h,:root:not([data-theme="light"]) .sm-a em{color:#a2aec9}
+:root:not([data-theme="light"]) .sm-a svg{color:#8fa6ff}
+:root:not([data-theme="light"]) a.sm-a:hover,:root:not([data-theme="light"]) a.sm-a:focus-visible{background:#212c52}
+:root:not([data-theme="light"]) .sm-cur{background:#3a3010}
+:root:not([data-theme="light"]) .sm-cur em{color:#e6bd45}
+:root:not([data-theme="light"]) .sm-ext{border-color:#27304b}
+}
+</style>
+<div class="smbar"><span class="smw"><a class="sm-btn sm-home" href="https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/home" aria-label="Home: back to the HSC Economics website"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg>Home</a>
+<details class="sm" id="sitemenu"><summary class="sm-btn" aria-label="Other tools: open the list of HSC Economics tools"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>Other tools<svg class="sm-caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+<div class="sm-list">
+  <span class="sm-h">Finders</span>
+  <a class="sm-a" href="../hsc-question-finder-site/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.5 12h6M9.5 16h6"/></svg><span><b>Question Finder</b><em>Every HSC question, 2002 to 2025</em></span></a>
+  <a class="sm-a" href="../evidence-finder/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></svg><span><b>Evidence Finder</b><em>News, statistics and reports by dot point</em></span></a>
+  <span class="sm-a sm-cur" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9V3h10v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v7H7zM10 17.5h4"/></svg><span><b>Worksheet Maker</b><em>You are here</em></span></span>
+  <span class="sm-h">Writing and skills</span>
+  <a class="sm-a" href="../essay-builder/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/></svg><span><b>Extended Response Builder</b><em>Plan a Section II, III or IV answer</em></span></a>
+  <a class="sm-a" href="../chain-builder/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="12" r="2.5"/><path d="M7.5 12h9M13.5 9l3 3-3 3"/></svg><span><b>Chain Builder</b><em>Cause and effect, one link at a time</em></span></a>
+  <a class="sm-a" href="../macro-diagram-lab/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7 7l11 9M7 17l11-9"/><circle cx="12.5" cy="12" r="1.6"/></svg><span><b>Macro Diagram Lab</b><em>AD–AS, the dollar, labour, Lorenz, externalities</em></span></a>
+  <a class="sm-a" href="../policy-simulator/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V10M10 20V10M14 20V10M18 20V10M3 10l9-6 9 6z"/></svg><span><b>Policy Simulator</b><em>You set the cash rate and the budget</em></span></a>
+  <a class="sm-a" href="../calculation-trainer/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M12 12h0M16 12h0M8 16h2M12 16h0M16 16h0"/></svg><span><b>Calculation Trainer</b><em>Every HSC calculation, with the working</em></span></a>
+  <a class="sm-a" href="../multiple-choice-drill/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="M11 7h9M11 17h9M5 17l1 1 2-2"/></svg><span><b>Multiple Choice Drill</b><em>All 340 Section I questions, 2009 to 2025</em></span></a>
+  <a class="sm-a" href="../exchange-rate-explorer/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h14M14 4l4 4-4 4M20 16H6M10 12l-4 4 4 4"/></svg><span><b>Exchange Rate Explorer</b><em>Floating, managed, flexible peg and fixed rates</em></span></a>
+  <a class="sm-a" href="../bop-explorer/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6h5zM19 8l-2.5 6h5z"/></svg><span><b>Balance of Payments Explorer</b><em>Sort transactions, trace shocks, read the record</em></span></a>
+  <a class="sm-a" href="../protection-explainer/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M7.5 20h9M5 7h14M5 7l-3 7a3 3 0 006 0zM19 7l-3 7a3 3 0 006 0z"/></svg><span><b>Who Wins from Protection</b><em>Tariffs, quotas and subsidies explained</em></span></a>
+  <a class="sm-a" href="../diagram-lab/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7 8l10 9M7 17l10-9"/></svg><span><b>Protection Diagram Lab</b><em>Experiment, predict and build the diagram</em></span></a>
+  <span class="sm-h">Reference</span>
+  <a class="sm-a" href="../economy-at-a-glance/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M21 20H3"/></svg><span><b>Economy at a Glance</b><em>The latest Australian indicators</em></span></a>
+  <a class="sm-a" href="../glossary/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5c3-1 6-1 8 1 2-2 5-2 8-1v13c-3-1-6-1-8 1-2-2-5-2-8-1zM12 6v13"/></svg><span><b>Economics Glossary</b><em>Key terms, flashcards and a quiz</em></span></a>
+  <a class="sm-a" href="../mind-map/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 000-6H9a3 3 0 010-6h6.5"/></svg><span><b>Topic Map</b><em>See how the course fits together</em></span></a>
+  <a class="sm-a sm-ext" href="https://sites.google.com/education.nsw.gov.au/hsceconomics-at-sscbwb/home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></svg><span><b>HSC Economics website</b><em>Back to the main class site</em></span></a>
+</div></details></span></div>
+<script>(function(){var d=document.getElementById('sitemenu');if(!d)return;var s=d.querySelector('summary'),l=d.querySelector('.sm-list');var framed=false;try{framed=window.self!==window.top}catch(e){framed=true}if(framed)d.parentNode.querySelectorAll('a').forEach(function(a){a.target='_blank';a.rel='noopener'});function place(){var b=s.getBoundingClientRect(),w=l.offsetWidth,x=Math.min(Math.max(8,b.right-w),window.innerWidth-w-8),y=b.bottom+8;l.style.left=x+'px';l.style.top=y+'px';l.style.maxHeight=Math.max(160,window.innerHeight-y-12)+'px'}function shut(){if(d.open)d.open=false}d.addEventListener('toggle',function(){if(d.open)place()});document.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))shut()});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){shut();s.focus()}});window.addEventListener('scroll',shut,{passive:true});window.addEventListener('resize',shut)})();</script>
+<!-- SITEMENU:END -->
+<div class="wrap">
+<header class="mast">
+  <div>
+    <p class="school">Sydney Secondary College, Blackwattle Bay Campus</p>
+    <h1>Worksheet Maker</h1>
+    <p class="tag">Make a printable practice sheet: choose the dot points and skills, mix past HSC questions with new questions, key terms, diagrams, calculations and cause-and-effect tasks, then set out the page and download the PDF.</p>
+  </div>
+  <div class="seg" id="fw" role="group" aria-label="Choose the syllabus">
+    <button data-fw="h09" aria-pressed="true">2009 syllabus</button><button data-fw="y12" aria-pressed="false">2025 syllabus</button>
+  </div>
+</header>
+<nav class="tabs" role="tablist" aria-label="Steps">
+  <button class="tab" role="tab" data-view="build" aria-selected="true"><span class="n">1</span>Choose questions</button>
+  <button class="tab" role="tab" data-view="print" aria-selected="false"><span class="n">2</span>Layout and print</button>
+  <button class="tab" role="tab" data-view="saved" aria-selected="false">My worksheets</button>
+  <button class="tab" role="tab" data-view="help" aria-selected="false">How it works</button>
+</nav>
+<main>
+<section class="view split" id="v-build">
+  <div>
+    <details class="panel step" id="st-content" open>
+      <summary><span class="num">1</span>What to practise<span class="sum" id="sum-content"></span></summary>
+      <div class="body">
+        <input class="search" id="q" type="search" placeholder="Search dot points, e.g. exchange rate, multiplier, tariff" aria-label="Search dot points">
+        <div class="ttabs" id="ttabs"></div>
+        <div class="secs" id="secs"></div>
+        <div class="selline" id="selline"></div>
+        <details class="sec" id="skillbox" style="margin-top:8px;border:0">
+          <summary style="padding:4px 0">Focus on skills (optional)<span class="cnt" id="skillcnt"></span></summary>
+          <p class="hint" style="margin:2px 0 6px">Only use questions that practise these skills. Leave them all off to use every question for the dot points above.</p>
+          <div class="chips" id="prac"></div>
+          <p class="hint" style="margin:10px 0 4px">Syllabus skills (“students learn to”) for the topics you chose:</p>
+          <div class="chips" id="ssk"></div>
+        </details>
+      </div>
+    </details>
+    <details class="panel step" id="st-formats" open>
+      <summary><span class="num">2</span>Question types<span class="sum" id="sum-formats"></span></summary>
+      <div class="body">
+        <div class="presets" id="presets"></div>
+        <div id="fmts"></div>
+      </div>
+    </details>
+    <details class="panel step" id="st-sources">
+      <summary><span class="num">3</span>Where questions come from<span class="sum" id="sum-sources"></span></summary>
+      <div class="body" id="sources"></div>
+    </details>
+    <div class="go">
+      <button class="btn wide" id="make">Make the worksheet</button>
+      <div class="row">
+        <button class="btn ghost sm" id="addmore" title="Keep the questions you have and add more">Add more questions</button>
+        <button class="btn ghost sm" id="browse">Pick questions one by one</button>
+        <button class="btn ghost sm" id="qfimport" title="Questions you ticked in the Question Finder on this device">Add my Question Finder ticks</button>
+      </div>
+    </div>
+    <div class="panel claude" id="claudebox" hidden>
+      <h3>Write new questions with Claude</h3>
+      <p class="hint" style="margin-bottom:8px">Claude writes new questions for the dot points you chose, in the type you pick, with answers. Check them before you print: they are not from NESA and have not been reviewed.</p>
+      <div class="two-col">
+        <label class="field"><span>Type</span><select id="cl-fmt"></select></label>
+        <label class="field"><span>How many</span><select id="cl-n"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option><option>6</option><option>8</option><option>10</option></select></label>
+        <label class="field"><span>Level</span><select id="cl-lv"><option value="1">Foundation</option><option value="2" selected>HSC standard</option><option value="3">Extension (Band 6)</option></select></label>
+        <label class="field"><span>Reading level</span><select id="cl-read"><option value="std" selected>Year 12</option><option value="plain">Plain English (about Year 7)</option></select></label>
+      </div>
+      <label class="field"><span>Anything else (optional)</span><input type="text" id="cl-note" placeholder="e.g. use the 2026 cash rate rises; focus on the J-curve"></label>
+      <div class="row" style="margin-top:6px"><button class="btn" id="cl-go">Write them</button><button class="btn ghost sm" id="cl-stop" hidden>Stop</button><span class="hint" id="cl-msg" role="status"></span></div>
+    </div>
+  </div>
+  <div>
+    <div class="sheet-head">
+      <input id="title" aria-label="Worksheet title" value="Practice worksheet">
+      <button class="btn ghost sm" id="clear" title="Remove every question">Clear</button>
+      <button class="btn ghost sm" id="save">Save</button>
+      <button class="btn gold sm" id="toprint">Layout and print →</button>
+    </div>
+    <p class="stats" id="stats"></p>
+    <div id="list" class="list"></div>
+  </div>
+</section>
+
+<section class="view split" id="v-print" hidden>
+  <div>
+    <div class="panel">
+      <h2 style="font-size:1.05rem;margin-bottom:8px">Page style</h2>
+      <div class="styles" id="styles"></div>
+    </div>
+    <div class="panel" id="layout"></div>
+  </div>
+  <div>
+    <div class="ptools">
+      <button class="btn" id="dl-ws">Download worksheet (PDF)</button>
+      <button class="btn ghost" id="dl-ans">Download answer copy</button>
+      <span class="sp"></span>
+      <label class="small"><input type="checkbox" id="pv-ans"> Preview the answer copy</label>
+    </div>
+    <p class="hint" id="pvnote" style="margin-bottom:8px"></p>
+    <div class="preview" id="preview"><p class="msg">The preview appears here.</p></div>
+  </div>
+</section>
+
+<section class="view" id="v-saved" hidden>
+  <div class="panel saved">
+    <div class="row" style="justify-content:space-between;margin-bottom:10px">
+      <h2 style="font-size:1.1rem">My worksheets</h2>
+      <div class="row"><button class="btn ghost sm" id="exportall">Save all to a file</button><label class="btn ghost sm" style="display:inline-flex;align-items:center">Open a file<input type="file" id="importfile" accept=".json,application/json" hidden></label></div>
+    </div>
+    <p class="hint" style="margin-bottom:10px">Worksheets are kept in this browser. Save them to a file to keep a copy or move them to another computer.</p>
+    <div class="res" id="savedlist"></div>
+  </div>
+</section>
+
+<section class="view help panel" id="v-help" hidden></section>
+</main>
+<p class="foot" id="foot"></p>
+</div>
+
+<dialog id="dlg" aria-labelledby="dlg-t">
+  <div class="dh"><h2 id="dlg-t" style="font-size:1.05rem"></h2><button class="btn ghost sm" data-close>Close</button></div>
+  <div class="db" id="dlg-b"></div>
+  <div class="df" id="dlg-f"></div>
+</dialog>
+<div class="toast" id="toast" role="status" hidden></div>
+<a class="btn gold newtab" id="newtab" target="_blank" rel="noopener" hidden>Open in a new tab ↗</a>
+<script>
+/* Calculation generators, copied in at build time from calculation-trainer/template.html (do not edit here). */
+const CALC = (function () {
+/*__CALC__*/
+return { SK, f, setRNG: fn => { RNG = fn; } };
+})();
+</script>
+<script>
+(function () {
+'use strict';
+/* ================================================================ basics */
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const FIGBASE = window.WM_FIGBASE || '../hsc-question-finder-site/figs/';
+const LIVE_EV = window.WM_LIVE_EVIDENCE === false ? null : '../evidence-finder/data/evidence.json';
+const KEY = 'econ-worksheet-maker-v1', QFKEY = 'hsc-qf-done';
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } }
+};
+function mulberry(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const shuffle = (arr, rnd) => { const a = [...arr]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const uniq = a => [...new Set(a)];
+const uid = () => Math.random().toString(36).slice(2, 9);
+const clone = o => JSON.parse(JSON.stringify(o));
+const newRnd = () => mulberry((Date.now() ^ Math.floor(Math.random() * 1e9)) >>> 0);
+const sentence1 = s => { const m = String(s).match(/^(.{40,}?[.!?])\s/); return m ? m[1] : String(s); };
+const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+let toastT = null;
+function toast(msg, undo) {
+  const t = $('#toast'); t.innerHTML = esc(msg) + (undo ? ' <button type="button">Undo</button>' : ''); t.hidden = false;
+  if (undo) t.querySelector('button').onclick = () => { undo(); t.hidden = true; };
+  clearTimeout(toastT); toastT = setTimeout(() => { t.hidden = true; }, undo ? 7000 : 3800);
+}
+
+/* ================================================================ what the page offers */
+const GROUPS = [
+  { id: 'exam', name: 'HSC exam formats', col: '#1c3fb0', css: '--g-exam' },
+  { id: 'dc', name: 'Diagrams and calculations', col: '#0e8a8a', css: '--g-dc' },
+  { id: 'know', name: 'Knowledge checks', col: '#b26a00', css: '--g-know' },
+  { id: 'think', name: 'Thinking tasks', col: '#8a3fb0', css: '--g-think' }];
+const GBY = Object.fromEntries(GROUPS.map(g => [g.id, g]));
+const FMT = [
+  { id: 'mc', g: 'exam', name: 'Multiple choice', d: 'Four options, one answer', u: 'questions', ins: 'Circle the letter of the best answer.' },
+  { id: 'sa', g: 'exam', name: 'Short answer', d: 'Outline, explain, calculate: 1 to 8 marks', u: 'questions', ins: 'Answer in the spaces provided.' },
+  { id: 'stim', g: 'exam', name: 'Source-based', d: 'A news story or statistics with questions', u: 'sources', ins: 'Read the source, then answer the questions.' },
+  { id: 'er', g: 'exam', name: 'Extended response', d: 'Section III and IV questions, with a planning box', u: 'questions', ins: 'Plan first: a judgement, then paragraphs that make a point, explain it, show it on a diagram where it helps, give evidence and link back to the question.' },
+  { id: 'calc', g: 'dc', name: 'Calculations', d: 'New numbers each time, with the working', u: 'questions', gen: true, ins: 'Show your working.' },
+  { id: 'draw', g: 'dc', name: 'Draw a diagram', d: 'Show the effect of an event on the axes', u: 'diagrams', ins: 'Draw and label the diagram, then explain the change.' },
+  { id: 'label', g: 'dc', name: 'Label a diagram', d: 'Name each numbered part', u: 'diagrams', ins: 'Write the correct label for each number.' },
+  { id: 'read', g: 'dc', name: 'Read a diagram', d: 'Imports, revenue and welfare from a figure', u: 'diagrams', ins: 'Use the figure to answer the questions.' },
+  { id: 'match', g: 'know', name: 'Match terms', d: 'Key terms to their definitions', u: 'sets', gen: true, ins: 'Write the letter of the matching definition beside each term.' },
+  { id: 'cloze', g: 'know', name: 'Fill the gaps', d: 'Definitions with the key term missing', u: 'sets', gen: true, ins: 'Write the missing key term in each gap.' },
+  { id: 'define', g: 'know', name: 'Define', d: 'Short definitions, 2 marks each', u: 'terms', gen: true, ins: 'Define each term.' },
+  { id: 'tf', g: 'know', name: 'True or false', d: 'Then correct the false ones', u: 'sets', gen: true, ins: 'Write T (true) or F (false). Rewrite each false statement so it is true.' },
+  { id: 'chain', g: 'think', name: 'Cause and effect chain', d: 'Fill in each step and its direction', u: 'chains', ins: 'Fill in each step of the chain and tick whether it rises or falls.' },
+  { id: 'order', g: 'think', name: 'Put in order', d: 'Number the steps of a chain', u: 'tasks', ins: 'Number the steps in the order they happen.' },
+  { id: 'sort', g: 'think', name: 'Sort and classify', d: 'Put each item under the right heading', u: 'tasks', ins: 'Write each item under the right heading.' },
+  { id: 'compare', g: 'think', name: 'Compare', d: 'Complete a comparison table', u: 'tables', ins: 'Complete the table.' },
+  { id: 'error', g: 'think', name: 'Spot the error', d: 'Find and fix the mistakes in an answer', u: 'tasks', ins: 'Find the mistakes. Underline each one and write the correction in the table.' }];
+const FBY = Object.fromEntries(FMT.map(f => [f.id, f]));
+const FORDER = Object.fromEntries(FMT.map((f, i) => [f.id, i]));
+const PRESETS = [
+  { n: 'Quick quiz', c: { mc: 10, match: 1, tf: 1 } },
+  { n: 'HSC practice', c: { mc: 6, sa: 4, er: 1 } },
+  { n: 'Diagrams and calculations', c: { calc: 4, draw: 2, label: 1, read: 1 } },
+  { n: 'Key terms', c: { match: 1, cloze: 1, define: 4, tf: 1 } },
+  { n: 'Thinking', c: { chain: 1, order: 1, sort: 1, compare: 1, error: 1 } },
+  { n: 'This year’s news', c: { stim: 2, mc: 5 } }];
+const STYLES = {
+  exam: { name: 'HSC exam style', d: 'Plain, like the paper: marks on the right, ruled lines scaled to the marks.', font: 'Exam', size: 11, space: 'lines', cols: 1 },
+  book: { name: 'Workbook style', d: 'Your workbook look: navy and gold, coloured activity banners, dotted lines.', font: 'Book', size: 10.5, space: 'dots', cols: 1 },
+  adapt: { name: 'Adapted layout', d: 'Lexend 12 pt, calm pages, word boxes, hints and extra space.', font: 'Lex', size: 12.5, space: 'lines', cols: 1 },
+  compact: { name: 'Compact revision', d: 'Two columns, little or no writing space, for books or quick quizzes.', font: 'Book', size: 9.5, space: 'none', cols: 2 }};
+const KINDN = {};
+const TC = { T1: '#2447d6', T2: '#0e8a8a', T3: '#d9822b', T4: '#8a3fb0', Y1: '#d9822b', Y2: '#8a3fb0', Y3: '#0e8a8a' };
+
+/* ================================================================ data */
+let D = null;
+const POOL = new Map(), DOT = {}, SEC = {}, TOP = {}, SECN = {}, XW = {};
+function indexData() {
+  for (const fw of ['h09', 'y12']) for (const t of D.syl[fw]) for (const s of t.sections) {
+    SECN[s.id] = s.name;
+    for (const p of s.points) { DOT[p.id] = p.t; SEC[p.id] = s.id; TOP[p.id] = t.id; }
+    TOP[s.id] = t.id;
+  }
+  for (const [s09, ys] of D.xwalk) XW[s09] = ys.filter(y => y[0] === 'Y');
+  D.prac.forEach(p => { KINDN[p.k] = p.n; });
+  for (const it of D.items) addToPool(it);
+}
+function addToPool(it) {
+  it._y = uniq(it.c.flatMap(c => XW[SEC[c]] || []).concat((it.c25 || []).map(c => SEC[c]).filter(Boolean)));
+  POOL.set(it.id, it);
+}
+/* News filed after the last build: read the Evidence Finder's live file (on the class site only). */
+async function liveEvidence() {
+  if (!LIVE_EV) return 0;
+  try {
+    const r = await fetch(LIVE_EV, { cache: 'no-cache' }); if (!r.ok) return 0;
+    const E = await r.json(); let n = 0;
+    for (const e of E) {
+      const id = 'ev:' + e.id; if (POOL.has(id)) continue;
+      const qs = (e.questions || []).filter(q => q.q), c = ((e.about || {}).h09 || []).filter(p => DOT[p]);
+      if (!qs.length || !c.length) continue;
+      const figs = (e.figures || []).slice(0, 6).map(f => ({ label: f.label || '', value: f.value || '', asAt: f.asAt || '', source: f.source || '' }));
+      const x = { id, src: 'ev', f: 'stim', c, c25: (e.about || {}).y12 || [], date: e.date, title: e.title, outlets: e.outlets || [], lede: e.lede || '', figs,
+        qs: qs.slice(0, 4).map(q => ({ q: q.q, m: +q.marks || 2 })), guide: e.angle || '', terms: (e.terms || []).slice(0, 4), k: ['stimulus', 'extract'].concat(figs.length ? ['table'] : []), live: true };
+      x.m = x.qs.reduce((a, q) => a + q.m, 0);
+      D.items.push(x); addToPool(x); n++;
+    }
+    return n;
+  } catch (e) { return 0; }
+}
+
+/* ================================================================ state */
+function defaultLayout(style) {
+  const s = STYLES[style];
+  return { style, size: 0, space: s.space, amount: 1, cols: s.cols, group: 'format', marks: true, tags: false, source: true, instr: true,
+    name: true, cls: true, date: true, intro: '', time: true, breaks: style === 'adapt', erPages: style === 'compact' ? 0 : 1, plan: true,
+    answers: 'none', mcGrid: false, hints: style === 'adapt', wordbank: true, version: 'A', diagram: 'blank' };
+}
+const newSheet = () => ({ id: 'ws' + Date.now().toString(36), title: 'Practice worksheet', items: [], layout: defaultLayout('exam'), seed: Math.floor(Math.random() * 1e9), created: Date.now() });
+const S = { view: 'build', fw: 'h09', topic: 'T1', q: '', sel09: new Set(), sel25: new Set(), skills: new Set(),
+  counts: { mc: 8, sa: 3 }, src: { hsc: true, bank: true, ev: true, auto: true }, from: 2009, to: 2026, lv: 0, whole: false, ws: newSheet() };
+let SAMPLE = null, DOWNLOADS = null;
+function persist() {
+  store.set(KEY + ':cur', { fw: S.fw, topic: S.topic, sel09: [...S.sel09], sel25: [...S.sel25], skills: [...S.skills], counts: S.counts, src: S.src,
+    from: S.from, to: S.to, lv: S.lv, whole: S.whole, ws: S.ws });
+}
+function restore() {
+  const c = store.get(KEY + ':cur', null); if (!c) return;
+  Object.assign(S, { fw: c.fw || 'h09', topic: c.topic || 'T1', counts: c.counts || S.counts, src: Object.assign(S.src, c.src || {}),
+    from: c.from || 2009, to: c.to || 2026, lv: c.lv || 0, whole: !!c.whole });
+  S.sel09 = new Set(c.sel09 || []); S.sel25 = new Set(c.sel25 || []); S.skills = new Set(c.skills || []);
+  if (c.ws && Array.isArray(c.ws.items)) { S.ws = c.ws; S.ws.layout = Object.assign(defaultLayout(c.ws.layout && c.ws.layout.style || 'exam'), c.ws.layout || {}); }
+}
+const itemOf = e => e.item || POOL.get(e.ref);
+
+/* ================================================================ matching */
+const hasSel = () => S.fw === 'h09' ? S.sel09.size > 0 : S.sel25.size > 0;
+function inContentC(c) {
+  if (S.fw === 'h09') return c.some(x => S.sel09.has(x));
+  return c.some(x => (XW[SEC[x]] || []).some(y => S.sel25.has(y)));
+}
+function inContent(it) { return S.fw === 'h09' ? it.c.some(c => S.sel09.has(c)) : (it._y || []).some(y => S.sel25.has(y)); }
+function inSkills(k, ss) { if (!S.skills.size) return true; return (k || []).some(x => S.skills.has(x)) || (ss || []).some(x => S.skills.has(x)); }
+function srcOk(it) {
+  if (it.src === 'hsc') return S.src.hsc && it.y >= S.from && it.y <= S.to;
+  if (it.src === 'bank' || it.src === 'claude') return S.src.bank;
+  if (it.src === 'ev') return S.src.ev;
+  return S.src.auto;
+}
+const lvOk = it => !S.lv || !it.lv || it.lv === S.lv;
+const usable = it => srcOk(it) && inContent(it) && inSkills(it.k, it.ss) && lvOk(it);
+const glossFor = () => D.gloss.filter(t => inContentC(t.c));
+const tfFor = () => D.tf.filter(t => inContentC(t.c));
+const calcFor = () => D.calc.filter(c => inContentC(c.c) && inSkills(['calc'], c.ss));
+const termsOk = () => S.src.auto && inSkills(['define', 'recall'], []);
+function avail() {
+  const a = {}; FMT.forEach(f => { a[f.id] = { hsc: 0, bank: 0, ev: 0, auto: 0, gen: 0 }; });
+  if (!hasSel()) return a;
+  for (const it of D.items) if (usable(it)) a[it.f][it.src === 'claude' ? 'bank' : it.src]++;
+  if (termsOk()) { const g = glossFor().length; if (g >= 4) { a.match.gen = a.cloze.gen = Math.floor(g / 4); a.mc.gen = g; } a.define.gen = g; }
+  if (S.src.auto && inSkills(['recall', 'explain'], [])) { const t = tfFor().length; if (t >= 4) a.tf.gen = Math.floor(t / 4); }
+  if (S.src.auto && calcFor().length) a.calc.gen = Infinity;
+  return a;
+}
+const total = x => x.hsc + x.bank + x.ev + x.auto + (x.gen === Infinity ? 0 : x.gen);
+
+/* ================================================================ generators: key terms, true/false, calculations */
+function termPick(n, rnd, used) {
+  const all = shuffle(glossFor(), rnd), fresh = all.filter(t => !used.has('term:' + t.id));
+  const out = (fresh.length >= n ? fresh : fresh.concat(all.filter(t => used.has('term:' + t.id)))).slice(0, n);
+  out.forEach(t => used.add('term:' + t.id));
+  return out;
+}
+function blankTerm(def, term) {
+  const names = [term, term.replace(/\s*\(.*?\)\s*/g, ' ').trim(), (term.match(/\(([^)]+)\)/) || [])[1]].filter(Boolean);
+  let text = def, hit = false;
+  for (const n of names) { const re = new RegExp('\\b' + escRe(n) + '(?:s|es)?\\b', 'gi'); if (re.test(text)) { text = text.replace(re, '[[gap]]'); hit = true; } }
+  return hit ? text : '[[gap]]: ' + def;
+}
+function genItem(fmt, rnd, used, size) {
+  const base = { id: 'gen:' + fmt + ':' + uid(), src: 'auto', f: fmt, gen: true };
+  if (fmt === 'match') {
+    const T = termPick(size || 8, rnd, used); if (T.length < 4) return null;
+    return Object.assign(base, { c: uniq(T.flatMap(t => t.c)), k: ['define', 'recall'], m: T.length, pairs: T.map(t => ({ term: t.term, def: sentence1(t.def) })), perm: shuffle(T.map((_, i) => i), rnd) });
+  }
+  if (fmt === 'cloze') {
+    const T = termPick(size || 6, rnd, used); if (T.length < 4) return null;
+    const rows = T.map(t => ({ text: blankTerm(sentence1(t.def), t.term), ans: t.term }));
+    const extra = shuffle(glossFor().filter(t => !T.includes(t)), rnd).slice(0, 2).map(t => t.term);
+    return Object.assign(base, { c: uniq(T.flatMap(t => t.c)), k: ['define', 'recall'], m: T.length, rows, words: shuffle(T.map(t => t.term).concat(extra), rnd) });
+  }
+  if (fmt === 'define') {
+    const T = termPick(size || 1, rnd, used); if (!T.length) return null;
+    return Object.assign(base, { c: uniq(T.flatMap(t => t.c)), k: ['define', 'recall'], m: 2 * T.length, rows: T.map(t => ({ term: t.term, def: t.def })) });
+  }
+  if (fmt === 'tf') {
+    const pool = shuffle(tfFor().filter(t => !used.has(t.id)), rnd).slice(0, size || 8); if (pool.length < 4) return null;
+    pool.forEach(t => used.add(t.id));
+    const rows = pool.map(t => { const showTrue = !t.f || (t.t && rnd() < 0.5); return { s: showTrue ? t.t : t.f, ans: showTrue, fix: showTrue ? (t.why || '') : t.t, why: t.why || '' }; });
+    return Object.assign(base, { c: uniq(pool.flatMap(t => t.c)), k: ['recall', 'explain'], m: rows.length, rows });
+  }
+  if (fmt === 'calc') {
+    let skills = calcFor(); if (!skills.length) return null;
+    const fresh = skills.filter(s => !used.has('calc:' + s.id)); if (fresh.length) skills = fresh;
+    const sk = skills[Math.floor(rnd() * skills.length)]; used.add('calc:' + sk.id);
+    return calcItem(sk, rnd);
+  }
+  if (fmt === 'mc') return termMc(rnd, used);
+  return null;
+}
+function calcItem(sk, rnd) {
+  const gen = CALC.SK.find(s => s.id === sk.id); CALC.setRNG(rnd); const Q = gen.gen(); CALC.setRNG(Math.random);
+  return { id: 'gen:calc:' + uid(), src: 'auto', f: 'calc', gen: true, c: sk.c, ss: sk.ss, k: ['calc'], skill: sk.id, name: sk.name,
+    blocks: htmlBlocks(Q.q), parts: Q.parts.map(p => Object.assign({}, p, { shown: p.type === 'sel' ? p.value : CALC.f(p.value, p.dp > 0 ? p.dp : 0) + (p.unit ? ' ' + p.unit : '') })),
+    steps: Q.steps, watch: Q.watch, formula: gen.formula, m: Q.parts.length + 1 };
+}
+function termMc(rnd, used) {
+  const G = glossFor(); if (G.length < 4) return null;
+  const T = termPick(1, rnd, used)[0]; if (!T) return null;
+  const same = G.filter(t => t !== T && t.c.some(c => T.c.includes(c))), rest = G.filter(t => t !== T && !same.includes(t));
+  const dist = shuffle(same, rnd).concat(shuffle(rest, rnd)).slice(0, 3); if (dist.length < 3) return null;
+  const opts = shuffle([T].concat(dist), rnd);
+  let stem = sentence1(T.def).replace(new RegExp('\\b' + escRe(T.term.replace(/\s*\(.*?\)/g, '')) + '\\b', 'gi'), '______');
+  return { id: 'gen:mc:' + uid(), src: 'auto', f: 'mc', gen: true, c: T.c, k: ['define', 'recall'], m: 1,
+    q: 'Which key term matches this description? “' + stem + '”', o: opts.map(t => t.term), key: ['ABCD'[opts.indexOf(T)]],
+    e: { why: T.term + ': ' + T.def, not: {} } };
+}
+/* The Calculation Trainer writes its questions as small HTML: turn that into paragraphs and tables. */
+function htmlBlocks(html) {
+  const box = new DOMParser().parseFromString('<div>' + html + '</div>', 'text/html').body.firstChild, out = [];
+  const runs = el => { const r = []; (function walk(n, b) { for (const c of n.childNodes) { if (c.nodeType === 3) { if (c.textContent) r.push({ t: c.textContent, b }); } else walk(c, b || /^(B|STRONG)$/.test(c.tagName)); } })(el, false); return r; };
+  for (const el of box.childNodes) {
+    if (el.nodeType === 3) { if (el.textContent.trim()) out.push({ p: [{ t: el.textContent.trim() }] }); continue; }
+    if (el.tagName === 'TABLE') out.push({ table: [...el.querySelectorAll('tr')].map(tr => [...tr.children].map(td => td.textContent.trim())) });
+    else out.push({ p: runs(el) });
+  }
+  return out;
+}
+
+/* ================================================================ making a worksheet */
+function firstSel(it) {
+  if (S.fw === 'h09') return it.c.find(c => S.sel09.has(c)) || it.c[0] || '';
+  return (it._y || []).find(y => S.sel25.has(y)) || '';
+}
+function pickFor(fmt, n, rnd, used) {
+  const out = [];
+  if (['match', 'cloze', 'define', 'tf', 'calc'].includes(fmt)) {
+    if (fmt === 'define') { const x = genItem('define', rnd, used, n); if (x) out.push({ k: uid(), item: x }); return out; }
+    for (let i = 0; i < n; i++) { const x = genItem(fmt, rnd, used, LAY().style === 'adapt' ? 5 : (LAY().style === 'compact' ? 10 : 8)); if (!x) break; out.push({ k: uid(), item: x }); }
+    return out;
+  }
+  const cands = shuffle(D.items.filter(it => it.f === fmt && usable(it) && !used.has(it.id)), rnd);
+  const buckets = new Map();
+  for (const it of cands) { const k = firstSel(it); if (!buckets.has(k)) buckets.set(k, []); buckets.get(k).push(it); }
+  const keys = shuffle([...buckets.keys()], rnd), chosen = [];
+  while (chosen.length < n && keys.some(k => buckets.get(k).length)) for (const k of keys) { const b = buckets.get(k); if (b.length && chosen.length < n) chosen.push(b.shift()); }
+  for (const it of chosen) {
+    used.add(it.id); out.push({ k: uid(), ref: it.id });
+    if (fmt === 'sa' && it.grp && S.whole) for (const sib of D.items) if (sib.grp === it.grp && sib.id !== it.id && !used.has(sib.id)) { used.add(sib.id); out.push({ k: uid(), ref: sib.id }); }
+  }
+  if (fmt === 'mc' && out.length < n && termsOk()) for (let i = out.length; i < n; i++) { const x = termMc(rnd, used); if (!x) break; out.push({ k: uid(), item: x }); }
+  return out;
+}
+function usedSet() {
+  const used = new Set();
+  for (const e of S.ws.items) { const it = itemOf(e); if (!it) continue; used.add(it.id);
+    (it.pairs || []).forEach(p => used.add('term:' + (D.gloss.find(t => t.term === p.term) || {}).id));
+    if (it.skill) used.add('calc:' + it.skill); }
+  return used;
+}
+function make(append) {
+  if (!hasSel()) { toast('Choose at least one dot point first.'); $('#st-content').open = true; $('#st-content').scrollIntoView({ behavior: 'smooth' }); return; }
+  const before = clone(S.ws.items);
+  if (!append) S.ws.items = [];
+  const rnd = newRnd(), used = usedSet(), short = [];
+  let added = 0;
+  for (const f of FMT) {
+    const n = S.counts[f.id] || 0; if (!n) continue;
+    const got = pickFor(f.id, n, rnd, used);
+    S.ws.items.push(...got); added += got.length;
+    const wanted = f.id === 'define' ? 1 : n;
+    if (got.length < wanted) short.push(`${f.name.toLowerCase()} (${got.length} of ${n})`);
+  }
+  if (!append && S.ws.title === 'Practice worksheet' || !S.ws.title) S.ws.title = autoTitle();
+  persist(); renderAll();
+  if (!added) toast('No questions match. Choose more dot points, more question types or more sources.');
+  else toast(short.length ? `Added ${added}. Not enough for: ${short.join(', ')}.` : `Added ${added} ${added === 1 ? 'question' : 'questions'}.`, () => { S.ws.items = before; persist(); renderAll(); });
+}
+function autoTitle() {
+  if (S.fw === 'h09') {
+    const secs = uniq([...S.sel09].map(p => SEC[p]));
+    if (secs.length === 1) return SECN[secs[0]] + ': practice';
+    const tops = uniq([...S.sel09].map(p => TOP[p]));
+    if (tops.length === 1) { const t = D.syl.h09.find(x => x.id === tops[0]); return t.name + ': practice'; }
+    return 'HSC Economics practice';
+  }
+  const secs = [...S.sel25]; return secs.length === 1 ? SECN[secs[0]] + ': practice' : 'HSC Economics practice';
+}
+
+/* ================================================================ worksheet order and numbering */
+const LAY = () => S.ws.layout;
+function topicKey(it) { const c = it.c[0] || ''; return (TOP[c] || 'T9') + (SEC[c] || ''); }
+function ordered() {
+  const ents = S.ws.items.map((e, i) => ({ e, it: itemOf(e), i })).filter(x => x.it);
+  const g = LAY().group;
+  if (g === 'format') ents.sort((a, b) => FORDER[a.it.f] - FORDER[b.it.f] || a.i - b.i);
+  else if (g === 'topic') ents.sort((a, b) => topicKey(a.it).localeCompare(topicKey(b.it)) || FORDER[a.it.f] - FORDER[b.it.f] || a.i - b.i);
+  // the parts of one HSC question stay together, in the order the paper set them
+  const out = [], done = new Set();
+  for (const x of ents) {
+    if (done.has(x)) continue;
+    if (x.it.f === 'sa' && x.it.grp) ents.filter(y => y.it.f === 'sa' && y.it.grp === x.it.grp).sort((a, b) => String(a.it.l).localeCompare(String(b.it.l))).forEach(y => { out.push(y); done.add(y); });
+    else { out.push(x); done.add(x); }
+  }
+  return out;
+}
+/* Consecutive parts of the same HSC question become one numbered question. */
+function units(ents) {
+  const U = [];
+  for (const x of ents) {
+    const last = U[U.length - 1];
+    if (last && x.it.f === 'sa' && x.it.grp && last.f === 'sa' && last.grp === x.it.grp) { last.ents.push(x); continue; }
+    U.push({ f: x.it.f, grp: x.it.f === 'sa' ? x.it.grp : null, ents: [x] });
+  }
+  U.forEach((u, i) => { u.num = i + 1; u.marks = u.ents.reduce((a, x) => a + (x.it.m || 0), 0); });
+  return U;
+}
+const marksOf = it => it.m || 0;
+function sheetStats() {
+  const ents = ordered(); let marks = 0, mins = 0;
+  for (const x of ents) { const m = marksOf(x.it); marks += m; mins += m * (['mc', 'sa', 'er', 'stim', 'calc', 'read'].includes(x.it.f) ? 1.8 : 1.1); }
+  return { n: units(ents).length, marks, mins: Math.max(5, Math.round(mins / 5) * 5) };
+}
+
+/* ================================================================ labels for the cards */
+function srcLabel(it) {
+  if (it.src === 'hsc') return `HSC ${it.y} ${it.l}`;
+  if (it.src === 'ev') return 'News · ' + new Date(it.date + 'T00:00').toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' });
+  if (it.src === 'bank') return 'New question';
+  if (it.src === 'claude') return 'Written by Claude';
+  if (['match', 'cloze', 'define'].includes(it.f) || (it.f === 'mc' && it.gen)) return 'From the Glossary';
+  if (it.f === 'calc') return 'From the Calculation Trainer';
+  if (it.f === 'tf') return 'From the Chain Builder';
+  if (it.f === 'chain' || (it.f === 'order' && it.id.startsWith('or:'))) return 'From the Chain Builder';
+  if (it.f === 'order') return 'From the Topic Map';
+  return 'Class tools';
+}
+function plain(s) { return String(s || '').replace(/\[\[(.+?)=>(.+?)\]\]/g, '$1').replace(/\[\[gap\]\]/g, '______').replace(/<[^>]+>/g, ''); }
+function preview(it) {
+  const t = s => esc(plain(s));
+  switch (it.f) {
+    case 'mc': return t(it.q) + (it.fig ? ' <i>[figure or table]</i>' : '') + (it.mat ? ' <i>[options in a table]</i>' : '<ol type="A">' + it.o.map(o => `<li>${t(o)}</li>`).join('') + '</ol>');
+    case 'sa': case 'read': return (it.lead ? t(it.lead) + '\n' : '') + (it.parts ? it.parts.map(p => `${p.label} ${t(p.q)} (${p.m})`).join('\n') : t(it.q)) + (it.fig || it.table ? ' <i>[figure or table]</i>' : '');
+    case 'er': return t(it.q) + (it.fig ? ' <i>[stimulus]</i>' : '');
+    case 'stim': return `<b>${t(it.title)}</b>\n` + t(it.lede).slice(0, 220) + (it.lede.length > 220 ? '…' : '') + '\n' + it.qs.map((q, i) => `(${'abcd'[i]}) ${t(q.q)} (${q.m})`).join('\n');
+    case 'calc': return `<b>${t(it.name)}</b>: ` + t(it.blocks.map(b => b.p ? b.p.map(r => r.t).join('') : '[table]').join(' ')).slice(0, 260);
+    case 'draw': case 'label': return t(it.q);
+    case 'match': return `${it.pairs.length} terms: ` + it.pairs.map(p => t(p.term)).join(', ');
+    case 'cloze': return `${it.rows.length} gaps: ` + it.rows.map(r => t(r.ans)).join(', ');
+    case 'define': return it.rows.map(r => t(r.term)).join(', ');
+    case 'tf': return `${it.rows.length} statements, e.g. “${t(it.rows[0].s)}”`;
+    case 'chain': return `<b>${t(it.title)}${it.strand ? ': ' + t(it.strand) : ''}</b>\n${t(it.trigger)} (${it.steps.length} steps)`;
+    case 'order': return `<b>${t(it.title)}</b> (${it.steps.length} steps)`;
+    case 'sort': return t(it.q) + '\nHeadings: ' + it.cats.map(t).join(' · ');
+    case 'compare': return t(it.q) + '\nColumns: ' + it.cols.map(t).join(' · ');
+    case 'error': return t(it.q || 'Spot the error') + '\n' + t(it.text).slice(0, 200) + '…';
+  }
+  return '';
+}
+
+/* ================================================================ rendering: step 1, the syllabus */
+function topicsNow() { return D.syl[S.fw]; }
+function countFor(pointOrSec) {
+  // how many questions (any type, current sources) sit under a dot point (2009) or section (2025)
+  let n = 0;
+  for (const it of D.items) {
+    if (!srcOk(it) || !lvOk(it)) continue;
+    if (S.fw === 'h09' ? it.c.includes(pointOrSec) : (it._y || []).includes(pointOrSec)) n++;
+  }
+  return n;
+}
+function renderContent() {
+  const T = topicsNow(); if (!T.some(t => t.id === S.topic)) S.topic = T[0].id;
+  const selN = S.fw === 'h09' ? S.sel09.size : S.sel25.size;
+  $('#ttabs').innerHTML = T.map(t => {
+    const n = S.fw === 'h09' ? t.sections.flatMap(s => s.points).filter(p => S.sel09.has(p.id)).length : t.sections.filter(s => S.sel25.has(s.id)).length;
+    return `<button class="ttab" style="--tc:${t.color}" data-t="${t.id}" aria-pressed="${t.id === S.topic}">${esc(t.label || t.id)}${n ? `<span class="c">${n}</span>` : ''}</button>`;
+  }).join('');
+  const q = S.q.trim().toLowerCase();
+  const tops = q ? T : T.filter(t => t.id === S.topic);
+  let html = '';
+  for (const t of tops) for (const s of t.sections) {
+    if (s.skills) continue;
+    if (S.fw === 'h09') {
+      const pts = s.points.filter(p => !q || (p.id + ' ' + p.t + ' ' + s.name).toLowerCase().includes(q)); if (!pts.length) continue;
+      const on = pts.filter(p => S.sel09.has(p.id)).length;
+      html += `<details class="sec" ${q || on ? 'open' : ''}><summary><input type="checkbox" data-sec="${s.id}" ${on === pts.length ? 'checked' : ''} aria-label="All of ${esc(s.name)}"><span class="id">${s.id}</span>${esc(s.name)}<span class="cnt">${on ? on + ' of ' : ''}${pts.length}</span></summary>`
+        + pts.map(p => { const n = countFor(p.id); return `<label class="pt ${n ? '' : 'none'}"><input type="checkbox" data-p="${p.id}" ${S.sel09.has(p.id) ? 'checked' : ''}><span class="id">${p.id}</span><span>${esc(p.t)}</span><span class="cnt">${n}</span></label>`; }).join('') + '</details>';
+    } else {
+      if (q && !(s.id + ' ' + s.name + ' ' + s.points.map(p => p.t).join(' ')).toLowerCase().includes(q)) continue;
+      const n = countFor(s.id);
+      html += `<div class="sec" style="padding:6px 0"><label class="pt ${n ? '' : 'none'}" style="grid-template-columns:22px 44px 1fr auto;padding-left:0"><input type="checkbox" data-s25="${s.id}" ${S.sel25.has(s.id) ? 'checked' : ''}><span class="id">${s.id}</span><span><b>${esc(s.name)}</b><br><span class="hint">${esc((t => t.length > 150 ? t.slice(0, 148) + '…' : t)(s.points.map(p => p.t).join('; ')))}</span></span><span class="cnt">${n}</span></label></div>`;
+    }
+  }
+  $('#secs').innerHTML = html || '<p class="hint" style="padding:10px">Nothing matches that search.</p>';
+  $('#selline').innerHTML = selN ? `<b>${selN}</b> ${S.fw === 'h09' ? (selN === 1 ? 'dot point' : 'dot points') : (selN === 1 ? 'section' : 'sections')} chosen <button class="btn ghost sm" id="selclear">Clear</button>` + (S.fw === 'y12' ? ' <span class="hint">Questions are matched to the 2025 syllabus through the class crosswalk.</span>' : '') : '<span class="hint">Tick the dot points to practise. Tick a section heading to take all of it.</span>';
+  $('#sum-content').textContent = selN ? `${selN} chosen` : '';
+  // skills
+  $('#prac').innerHTML = D.prac.map(p => `<button class="chip" data-k="${p.k}" aria-pressed="${S.skills.has(p.k)}">${esc(p.n)}</button>`).join('');
+  const topIds = S.fw === 'h09' ? uniq([...S.sel09].map(p => TOP[p])) : uniq([...S.sel25].flatMap(y => D.xwalk.filter(x => x[1].includes(y)).map(x => TOP[x[0] + '.1'] || '')));
+  const ssk = D.syl.h09.filter(t => topIds.includes(t.id)).flatMap(t => t.sections.filter(s => s.skills).flatMap(s => s.points));
+  $('#ssk').innerHTML = ssk.length ? ssk.map(p => `<button class="chip" data-k="${p.id}" aria-pressed="${S.skills.has(p.id)}" title="${esc(p.t)}">${p.id} ${esc(p.t.length > 46 ? p.t.slice(0, 44) + '…' : p.t)}</button>`).join('') : '<span class="hint">Choose dot points to see their topic’s skills.</span>';
+  $('#skillcnt').textContent = S.skills.size ? S.skills.size + ' on' : '';
+}
+
+/* ================================================================ rendering: steps 2 and 3 */
+function renderFormats() {
+  const A = avail();
+  $('#presets').innerHTML = PRESETS.map((p, i) => `<button class="chip" data-pre="${i}">${esc(p.n)}</button>`).join('') + '<button class="chip" data-pre="none">None</button>';
+  $('#fmts').innerHTML = GROUPS.map(g => `<div class="grp" style="--gc:var(${g.css})"><h3>${esc(g.name)}</h3>` + FMT.filter(f => f.g === g.id).map(f => {
+    const a = A[f.id], n = S.counts[f.id] || 0, tot = total(a);
+    const bits = [a.hsc && `${a.hsc} past HSC`, a.bank && `${a.bank} new`, a.ev && `${a.ev} news`, a.auto && `${a.auto} from class tools`,
+      a.gen === Infinity ? 'new numbers each time' : (a.gen && (f.id === 'mc' ? `${a.gen} key terms` : f.id === 'define' ? `${a.gen} terms` : `about ${a.gen} sets`))].filter(Boolean);
+    const none = !tot && !a.gen;
+    return `<div class="fmt ${none ? 'zero' : ''}"><b>${esc(f.name)}</b><span class="stepper"><button data-dec="${f.id}" aria-label="Fewer ${esc(f.name)}">−</button><output>${n}</output><button data-inc="${f.id}" aria-label="More ${esc(f.name)}">+</button></span><span class="d">${esc(f.d)}<br><span class="av">${hasSel() ? (bits.length ? bits.join(' · ') : 'none for these dot points') : ''}</span></span></div>`;
+  }).join('') + '</div>').join('');
+  const nq = FMT.reduce((s, f) => s + (S.counts[f.id] || 0), 0);
+  $('#sum-formats').textContent = nq ? `${nq} chosen` : '';
+}
+function renderSources() {
+  const yrs = []; for (let y = 2002; y <= 2026; y++) yrs.push(y);
+  const opt = (v, cur) => yrs.map(y => `<option ${y === cur ? 'selected' : ''}>${y}</option>`).join('');
+  $('#sources').innerHTML = `
+    <label class="opt"><input type="checkbox" data-src="hsc" ${S.src.hsc ? 'checked' : ''}><span><b>Past HSC questions</b> from the Question Finder, from <select id="from" aria-label="From">${opt(0, S.from)}</select> to <select id="to" aria-label="To">${opt(0, S.to)}</select>, with NESA’s marking criteria for 2009 to 2025</span></label>
+    <label class="opt" style="padding-left:24px"><input type="checkbox" id="whole" ${S.whole ? 'checked' : ''}><span>Keep HSC short-answer questions whole (add every part of a question, even parts on other dot points)</span></label>
+    <label class="opt"><input type="checkbox" data-src="bank" ${S.src.bank ? 'checked' : ''}><span><b>New practice questions</b> written for this site: HSC-style questions, diagrams, sorting, comparing and spot-the-error tasks${SAMPLE ? ', and any Claude writes for you' : ''}</span></label>
+    <label class="opt"><input type="checkbox" data-src="ev" ${S.src.ev ? 'checked' : ''}><span><b>This year’s news and data</b> from the Evidence Finder, with its questions</span></label>
+    <label class="opt"><input type="checkbox" data-src="auto" ${S.src.auto ? 'checked' : ''}><span><b>Built from the class tools</b>: key terms (Glossary), calculations (Calculation Trainer), chains and true or false (Chain Builder), pathways (Topic Map)</span></label>
+    <label class="field" style="max-width:280px"><span>Level of the new questions</span><select id="lv"><option value="0">Any level</option><option value="1" ${S.lv === 1 ? 'selected' : ''}>Foundation</option><option value="2" ${S.lv === 2 ? 'selected' : ''}>HSC standard</option><option value="3" ${S.lv === 3 ? 'selected' : ''}>Extension (Band 6)</option></select></label>`;
+  const on = Object.entries(S.src).filter(([, v]) => v).length;
+  $('#sum-sources').textContent = on === 4 ? 'all sources' : `${on} of 4 sources`;
+}
+
+/* ================================================================ rendering: the worksheet list */
+function renderList() {
+  if (document.activeElement !== $('#title')) $('#title').value = S.ws.title;
+  const ents = ordered(), U = units(ents), st = sheetStats();
+  $('#stats').textContent = ents.length ? `${st.n} ${st.n === 1 ? 'question' : 'questions'} · ${st.marks} marks · about ${st.mins} minutes` : '';
+  if (!ents.length) { $('#list').innerHTML = `<div class="empty"><p><b>No questions yet.</b></p><p>Choose dot points and question types on the left, then press <b>Make the worksheet</b>. You can also pick questions one by one, or add the questions you ticked in the Question Finder.</p></div>`; return; }
+  let html = '', lastHead = null;
+  for (const u of U) {
+    const it0 = u.ents[0].it, g = GBY[FBY[it0.f].g];
+    const head = LAY().group === 'format' ? FBY[it0.f].name : LAY().group === 'topic' ? (TOP[it0.c[0]] || '') + ' ' + (SECN[SEC[it0.c[0]]] || '') : null;
+    if (head && head !== lastHead) { html += `<div class="parthead" style="--gc:var(${g.css})">${esc(head)}</div>`; lastHead = head; }
+    for (const x of u.ents) {
+      const it = x.it, isFirst = x === u.ents[0];
+      const acts = [`<button data-act="up" data-k="${x.e.k}" aria-label="Move up">↑</button>`, `<button data-act="down" data-k="${x.e.k}" aria-label="Move down">↓</button>`,
+        `<button data-act="swap" data-k="${x.e.k}" title="Replace with another question like it">Swap</button>`,
+        (it.src === 'hsc' ? `<button data-act="like" data-k="${x.e.k}" title="Add a new question of the same kind">Look-alike</button>` : ''),
+        (SAMPLE && (it.src === 'hsc' || it.src === 'bank' || it.src === 'ev') ? `<button class="c" data-act="clike" data-k="${x.e.k}" title="Claude writes a new question modelled on this one">Look-alike by Claude</button>` : ''),
+        (SAMPLE && ['mc', 'sa', 'er', 'stim', 'draw', 'sort', 'compare', 'error'].includes(it.f) ? `<button class="c" data-act="plain" data-k="${x.e.k}" title="Claude rewrites the wording in plain English">Simpler wording</button>` : ''),
+        `<button data-act="edit" data-k="${x.e.k}">Edit</button>`, `<button data-act="del" data-k="${x.e.k}">Remove</button>`].join('');
+      html += `<div class="q" style="--gc:var(${g.css})"><span class="no">${isFirst ? u.num : ''}</span><div class="meta"><span class="f">${esc(FBY[it.f].name)}</span><span>${esc(srcLabel(it))}</span><span>${esc(it.c.slice(0, 4).join(' '))}</span><span class="m">${marksOf(it)} ${marksOf(it) === 1 ? 'mark' : 'marks'}</span>${it.rev ? '<span class="rev">not yet reviewed</span>' : ''}${it.src === 'claude' ? '<span class="rev">check before printing</span>' : ''}${it.ed ? '<span>edited</span>' : ''}${it.part ? `<span>part ${esc(it.part)}</span>` : ''}</div><div class="txt">${preview(it)}</div><div class="acts">${acts}</div></div>`;
+    }
+  }
+  $('#list').innerHTML = html;
+}
+function renderAll() { renderContent(); renderFormats(); renderSources(); renderList(); renderClaudeBox(); }
+
+/* ================================================================ worksheet actions */
+function entryIndex(k) { return S.ws.items.findIndex(e => e.k === k); }
+function moveEntry(k, dir) {
+  const ents = ordered(), pos = ents.findIndex(x => x.e.k === k); if (pos < 0) return;
+  const tgt = ents[pos + dir]; if (!tgt) return;
+  if (LAY().group === 'format' && tgt.it.f !== ents[pos].it.f) return;
+  const a = entryIndex(k), b = entryIndex(tgt.e.k); [S.ws.items[a], S.ws.items[b]] = [S.ws.items[b], S.ws.items[a]];
+  persist(); renderList();
+}
+function similarPool(it) {
+  return D.items.filter(x => x.f === it.f && x.id !== it.id && srcOk(x) && (hasSel() ? inContent(x) : x.c.some(c => it.c.includes(c))) && !S.ws.items.some(e => (e.ref || (e.item && e.item.id)) === x.id));
+}
+function swapEntry(k) {
+  const i = entryIndex(k), it = itemOf(S.ws.items[i]); if (!it) return;
+  const before = clone(S.ws.items[i]), rnd = newRnd();
+  if (it.gen) {
+    const saved = { sel09: S.sel09, sel25: S.sel25 };
+    if (!hasSel()) { S.sel09 = new Set(it.c); }
+    let x = it.f === 'calc' ? calcItem(D.calc.find(c => c.id === it.skill), rnd) : genItem(it.f, rnd, usedSet(), (it.pairs || it.rows || []).length || 8);
+    Object.assign(S, saved);
+    if (!x) { toast('No other question of this kind for these dot points.'); return; }
+    S.ws.items[i] = { k, item: x };
+  } else {
+    const p = similarPool(it); if (!p.length) { toast('No other question of this kind for these dot points.'); return; }
+    const near = p.filter(x => x.c.some(c => it.c.includes(c))), pick = (near.length ? near : p)[Math.floor(rnd() * (near.length || p.length))];
+    S.ws.items[i] = { k, ref: pick.id };
+  }
+  persist(); renderList(); toast('Swapped.', () => { S.ws.items[entryIndex(k)] = before; persist(); renderList(); });
+}
+function lookAlike(k) {
+  const i = entryIndex(k), it = itemOf(S.ws.items[i]); if (!it) return;
+  const rnd = newRnd();
+  const sk = (it.k || []).includes('calc') && D.calc.find(c => c.c.some(x => it.c.includes(x)));
+  let add = null;
+  if (sk) add = { k: uid(), item: calcItem(sk, rnd) };
+  else {
+    const like = D.items.filter(x => (x.like || []).includes(it.id) && !S.ws.items.some(e => e.ref === x.id));
+    const same = like.length ? like : D.items.filter(x => x.src !== 'hsc' && x.f === (it.f === 'er' ? 'er' : it.f) && x.c.some(c => it.c.includes(c)) && !S.ws.items.some(e => e.ref === x.id));
+    if (same.length) add = { k: uid(), ref: same[Math.floor(rnd() * same.length)].id };
+    else if (it.k && it.k.includes('diagram')) { const d = D.items.filter(x => x.f === 'draw' && x.c.some(c => it.c.includes(c))); if (d.length) add = { k: uid(), ref: d[Math.floor(rnd() * d.length)].id }; }
+  }
+  if (!add) { toast(SAMPLE ? 'No ready-made look-alike for this one: try “Look-alike by Claude”.' : 'No ready-made look-alike for this question yet.'); return; }
+  S.ws.items.splice(i + 1, 0, add); persist(); renderList(); toast('Added a look-alike after it.', () => { S.ws.items.splice(entryIndex(add.k), 1); persist(); renderList(); });
+}
+function removeEntry(k) {
+  const i = entryIndex(k), e = S.ws.items[i]; S.ws.items.splice(i, 1); persist(); renderList(); renderFormats();
+  toast('Removed.', () => { S.ws.items.splice(i, 0, e); persist(); renderList(); });
+}
+
+/* ================================================================ dialogs: edit, browse */
+const dlg = $('#dlg');
+function openDlg(title, body, foot) { $('#dlg-t').textContent = title; $('#dlg-b').innerHTML = body; $('#dlg-f').innerHTML = foot || ''; if (!dlg.open) dlg.showModal(); }
+dlg.addEventListener('click', e => { if (e.target.matches('[data-close]') || e.target === dlg) dlg.close(); });
+function editEntry(k) {
+  const i = entryIndex(k), it = clone(itemOf(S.ws.items[i]));
+  const ta = (id, label, v, rows) => `<label class="field"><span>${label}</span><textarea id="${id}" rows="${rows || 3}">${esc(v || '')}</textarea></label>`;
+  let body = '';
+  if (it.lead !== undefined || ['sa', 'read'].includes(it.f)) body += ta('e-lead', 'Lead-in (optional)', it.lead, 2);
+  if (it.parts) body += it.parts.map((p, j) => ta('e-p' + j, `Part ${esc(p.label)} (${p.m} marks)`, p.q, 2) + `<label class="field"><span>Marks for ${esc(p.label)}</span><input type="number" id="e-pm${j}" min="0" max="20" value="${p.m}"></label>`).join('');
+  else if ('q' in it) body += ta('e-q', it.f === 'mc' ? 'Question (stem)' : 'Question or instructions', it.q, 4);
+  if (it.f === 'mc' && !it.mat) body += it.o.map((o, j) => `<label class="field"><span>Option ${'ABCD'[j]}</span><input type="text" id="e-o${j}" value="${esc(o)}"></label>`).join('');
+  if (it.f === 'mc') body += `<label class="field"><span>Correct answer</span><select id="e-key">${'ABCD'.split('').map(L => `<option ${(it.key || []).includes(L) ? 'selected' : ''}>${L}</option>`).join('')}</select></label>`;
+  if (!it.parts) body += `<label class="field"><span>Marks</span><input type="number" id="e-m" min="0" max="25" value="${marksOf(it)}"></label>`;
+  if (['sa', 'er', 'draw', 'stim', 'calc', 'read'].includes(it.f)) body += `<label class="field"><span>Extra writing lines (can be negative)</span><input type="number" id="e-x" min="-20" max="40" value="${it.xl || 0}"></label>`;
+  if (['sa', 'er', 'draw'].includes(it.f) && !it.parts) body += ta('e-ans', 'Answer or marking notes for the answer copy (one point per line)', it.ans || (it.pts || []).join('\n') || (it.could || []).join('\n'), 4);
+  openDlg('Edit question', body || '<p>This kind of task has nothing to edit here apart from its marks.</p>', '<button class="btn ghost" data-close>Cancel</button><button class="btn" id="e-save">Save changes</button>');
+  $('#e-save').onclick = () => {
+    const v = id => { const el = $('#' + id); return el ? el.value : undefined; };
+    if (v('e-lead') !== undefined) it.lead = v('e-lead').trim() || undefined;
+    if (it.parts) it.parts.forEach((p, j) => { p.q = v('e-p' + j); p.m = +v('e-pm' + j) || 0; }), it.m = it.parts.reduce((a, p) => a + p.m, 0);
+    else if (v('e-q') !== undefined) it.q = v('e-q');
+    if (it.f === 'mc' && !it.mat) it.o = it.o.map((o, j) => v('e-o' + j));
+    if (it.f === 'mc') it.key = [v('e-key')];
+    if (v('e-m') !== undefined) it.m = +v('e-m') || 0;
+    if (v('e-x') !== undefined) it.xl = +v('e-x') || 0;
+    if (v('e-ans') !== undefined) { const lines = v('e-ans').split('\n').map(s => s.trim()).filter(Boolean); if (lines.length > 1) { it.pts = lines; delete it.ans; } else if (lines.length) { it.ans = lines[0]; delete it.pts; } }
+    it.ed = true; it.id = it.id.startsWith('ed:') ? it.id : 'ed:' + it.id;
+    S.ws.items[i] = { k, item: it }; persist(); dlg.close(); renderList(); toast('Saved your changes to this worksheet.');
+  };
+}
+function browse() {
+  const fmts = FMT.map(f => `<option value="${f.id}">${esc(f.name)}</option>`).join('');
+  openDlg('Pick questions one by one', `<div class="row" style="margin-bottom:8px"><input class="search" id="b-q" style="flex:1 1 220px;margin:0" type="search" placeholder="Search the question text"><select id="b-f"><option value="">Every type</option>${fmts}</select><select id="b-s"><option value="">Every source</option><option value="hsc">Past HSC</option><option value="bank">New questions</option><option value="ev">News</option><option value="auto">Class tools</option></select></div><label class="opt"><input type="checkbox" id="b-mine" ${hasSel() ? 'checked' : ''}> Only the dot points I chose</label><div class="res" id="b-res"></div>`, '<button class="btn" data-close>Done</button>');
+  let limit = 60;
+  const draw = () => {
+    const q = $('#b-q').value.trim().toLowerCase(), f = $('#b-f').value, s = $('#b-s').value, mine = $('#b-mine').checked;
+    const res = D.items.filter(it => (!f || it.f === f) && (!s || it.src === s) && (!mine || inContent(it)) && (!q || JSON.stringify([it.q, it.title, it.lede, it.o, it.parts, it.id]).toLowerCase().includes(q)));
+    const inSheet = new Set(S.ws.items.map(e => e.ref).filter(Boolean));
+    $('#b-res').innerHTML = `<p class="hint">${res.length} found</p>` + res.slice(0, limit).map(it => `<div class="r"><div><div class="meta">${esc(FBY[it.f].name)} · ${esc(srcLabel(it))} · ${esc(it.c.join(' '))} · ${marksOf(it)} marks</div><div class="t">${preview(it)}</div></div><button class="btn sm ${inSheet.has(it.id) ? 'ghost' : ''}" data-add="${esc(it.id)}" ${inSheet.has(it.id) ? 'disabled' : ''}>${inSheet.has(it.id) ? 'Added' : 'Add'}</button></div>`).join('')
+      + (res.length > limit ? `<button class="btn ghost sm" id="b-more">Show more</button>` : '');
+    const more = $('#b-more'); if (more) more.onclick = () => { limit += 60; draw(); };
+  };
+  ['#b-q', '#b-f', '#b-s', '#b-mine'].forEach(s => $(s).addEventListener('input', () => { limit = 60; draw(); }));
+  $('#b-res').addEventListener('click', e => { const b = e.target.closest('[data-add]'); if (!b) return; S.ws.items.push({ k: uid(), ref: b.dataset.add }); b.textContent = 'Added'; b.disabled = true; b.classList.add('ghost'); persist(); renderList(); });
+  draw();
+}
+function qfImport(fromUrl) {
+  const ids = (fromUrl || store.get(QFKEY, [])).filter(id => POOL.has(id));
+  const have = new Set(S.ws.items.map(e => e.ref));
+  const add = ids.filter(id => !have.has(id)).sort((a, b) => { const A = POOL.get(a), B = POOL.get(b); return A.y - B.y || A.sec.localeCompare(B.sec) || String(A.n).localeCompare(String(B.n), undefined, { numeric: true }) || A.l.localeCompare(B.l); });
+  if (!ids.length) { toast('No ticked questions found. Tick questions in the Question Finder in this browser, then come back.'); return; }
+  if (!add.length) { toast('Your ticked Question Finder questions are already on the worksheet.'); return; }
+  add.forEach(id => S.ws.items.push({ k: uid(), ref: id })); persist(); renderList(); toast(`Added ${add.length} ticked ${add.length === 1 ? 'question' : 'questions'} from the Question Finder.`);
+}
+
+/* ================================================================ saved worksheets */
+const SAVED = KEY + ':saved';
+function packSheet(ws) { return { v: 1, id: ws.id, title: ws.title, items: ws.items, layout: ws.layout, seed: ws.seed, created: ws.created, updated: Date.now() }; }
+function saveSheet() {
+  const list = store.get(SAVED, []), i = list.findIndex(x => x.id === S.ws.id), p = packSheet(S.ws);
+  if (i >= 0) list[i] = p; else list.unshift(p);
+  if (!store.set(SAVED, list)) { toast('This browser would not save it (storage is full or blocked). Use “Save all to a file”.'); return; }
+  toast('Saved in My worksheets.'); renderSaved();
+}
+function openSheet(p) {
+  const missing = p.items.filter(e => !e.item && !POOL.has(e.ref)).length;
+  S.ws = { id: p.id, title: p.title, items: p.items.filter(e => e.item || POOL.has(e.ref)), layout: Object.assign(defaultLayout((p.layout || {}).style || 'exam'), p.layout || {}), seed: p.seed || 1, created: p.created || Date.now() };
+  persist(); go('build'); renderAll(); toast(missing ? `Opened. ${missing} question(s) are no longer in the bank and were left out.` : 'Opened.');
+}
+function downloadText(name, text) {
+  const blob = new Blob([text], { type: 'application/json' });
+  if (DOWNLOADS) { DOWNLOADS.save({ filename: name, data: blob }).catch(e => { if (e.code !== 'declined') toast('Could not save the file.'); }); return; }
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 3000);
+}
+function renderSaved() {
+  const list = store.get(SAVED, []);
+  $('#savedlist').innerHTML = list.length ? list.map((p, i) => `<div class="r"><div><b>${esc(p.title)}</b><div class="hint">${p.items.length} questions · ${esc(STYLES[(p.layout || {}).style || 'exam'].name)} · saved ${new Date(p.updated).toLocaleString('en-AU', { dateStyle: 'medium', timeStyle: 'short' })}</div></div><div class="row"><button class="btn sm" data-open="${i}">Open</button><button class="btn ghost sm" data-copy="${i}">Duplicate</button><button class="btn ghost sm" data-file="${i}">File</button><button class="btn ghost sm" data-delsaved="${i}">Delete</button></div></div>`).join('')
+    : '<div class="empty">Nothing saved yet. Press <b>Save</b> above a worksheet to keep it here.</div>';
+}
+
+/* ================================================================ views and events */
+function go(v) {
+  S.view = v; $$('.tab').forEach(t => t.setAttribute('aria-selected', String(t.dataset.view === v)));
+  $$('.view').forEach(s => { s.hidden = s.id !== 'v-' + v; });
+  if (v === 'print') { renderLayout(); schedulePreview(0); }
+  if (v === 'saved') renderSaved();
+  if (v === 'help') renderHelp();
+  window.scrollTo({ top: 0 });
+}
+function bind() {
+  $$('.tab').forEach(t => t.onclick = () => go(t.dataset.view));
+  $('#fw').onclick = e => { const b = e.target.closest('[data-fw]'); if (!b) return; S.fw = b.dataset.fw; $$('#fw button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); S.topic = topicsNow()[0].id; persist(); renderAll(); };
+  $('#q').addEventListener('input', e => { S.q = e.target.value; renderContent(); });
+  $('#ttabs').onclick = e => { const b = e.target.closest('[data-t]'); if (!b) return; S.topic = b.dataset.t; S.q = ''; $('#q').value = ''; persist(); renderContent(); };
+  $('#secs').addEventListener('change', e => {
+    const t = e.target;
+    if (t.dataset.p) { t.checked ? S.sel09.add(t.dataset.p) : S.sel09.delete(t.dataset.p); }
+    else if (t.dataset.sec) { const sec = topicsNow().flatMap(x => x.sections).find(s => s.id === t.dataset.sec); sec.points.forEach(p => t.checked ? S.sel09.add(p.id) : S.sel09.delete(p.id)); }
+    else if (t.dataset.s25) { t.checked ? S.sel25.add(t.dataset.s25) : S.sel25.delete(t.dataset.s25); }
+    persist(); renderContent(); renderFormats();
+  });
+  $('#secs').addEventListener('click', e => { if (e.target.matches('summary input')) e.stopPropagation(); }, true);
+  $('#selline').onclick = e => { if (e.target.id === 'selclear') { S.fw === 'h09' ? S.sel09.clear() : S.sel25.clear(); persist(); renderContent(); renderFormats(); } };
+  $('#skillbox').addEventListener('click', e => { const b = e.target.closest('[data-k]'); if (!b) return; S.skills.has(b.dataset.k) ? S.skills.delete(b.dataset.k) : S.skills.add(b.dataset.k); persist(); renderContent(); renderFormats(); });
+  $('#fmts').onclick = e => { const b = e.target.closest('[data-inc],[data-dec]'); if (!b) return; const id = b.dataset.inc || b.dataset.dec; S.counts[id] = Math.max(0, Math.min(40, (S.counts[id] || 0) + (b.dataset.inc ? 1 : -1))); persist(); renderFormats(); };
+  $('#presets').onclick = e => { const b = e.target.closest('[data-pre]'); if (!b) return; S.counts = b.dataset.pre === 'none' ? {} : Object.assign({}, PRESETS[+b.dataset.pre].c); persist(); renderFormats(); };
+  $('#sources').addEventListener('change', e => {
+    const t = e.target;
+    if (t.dataset.src) S.src[t.dataset.src] = t.checked;
+    else if (t.id === 'from') S.from = Math.min(+t.value, S.to);
+    else if (t.id === 'to') S.to = Math.max(+t.value, S.from);
+    else if (t.id === 'lv') S.lv = +t.value;
+    else if (t.id === 'whole') S.whole = t.checked;
+    persist(); renderSources(); renderFormats(); renderContent();
+  });
+  $('#make').onclick = () => make(false);
+  $('#addmore').onclick = () => make(true);
+  $('#browse').onclick = browse;
+  $('#qfimport').onclick = qfImport;
+  $('#title').addEventListener('input', e => { S.ws.title = e.target.value; persist(); });
+  $('#clear').onclick = () => { if (!S.ws.items.length) return; const before = S.ws.items; S.ws.items = []; persist(); renderList(); toast('Cleared the worksheet.', () => { S.ws.items = before; persist(); renderList(); }); };
+  $('#save').onclick = saveSheet;
+  $('#toprint').onclick = () => go('print');
+  $('#list').onclick = e => {
+    const b = e.target.closest('[data-act]'); if (!b) return; const k = b.dataset.k;
+    ({ up: () => moveEntry(k, -1), down: () => moveEntry(k, 1), swap: () => swapEntry(k), like: () => lookAlike(k), edit: () => editEntry(k), del: () => removeEntry(k),
+      clike: () => claudeLike(k), plain: () => claudePlain(k) })[b.dataset.act]();
+  };
+  $('#savedlist').onclick = e => {
+    const list = store.get(SAVED, []), b = e.target.closest('button'); if (!b) return;
+    if (b.dataset.open) openSheet(list[+b.dataset.open]);
+    else if (b.dataset.copy) { const p = clone(list[+b.dataset.copy]); p.id = 'ws' + Date.now().toString(36); p.title += ' (copy)'; list.unshift(p); store.set(SAVED, list); renderSaved(); }
+    else if (b.dataset.file) { const p = list[+b.dataset.file]; downloadText(`Worksheet - ${p.title.replace(/[\\/:*?"<>|]+/g, '')}.json`, JSON.stringify({ worksheetMaker: 1, sheets: [p] }, null, 1)); }
+    else if (b.dataset.delsaved) { const i = +b.dataset.delsaved, gone = list.splice(i, 1)[0]; store.set(SAVED, list); renderSaved(); toast('Deleted.', () => { const l = store.get(SAVED, []); l.splice(i, 0, gone); store.set(SAVED, l); renderSaved(); }); }
+  };
+  $('#exportall').onclick = () => downloadText('My worksheets.json', JSON.stringify({ worksheetMaker: 1, sheets: store.get(SAVED, []) }, null, 1));
+  $('#importfile').onchange = async e => {
+    const f = e.target.files[0]; if (!f) return;
+    try {
+      const j = JSON.parse(await f.text()), sheets = (j.sheets || []).filter(p => p && Array.isArray(p.items));
+      const list = store.get(SAVED, []); let n = 0;
+      for (const p of sheets) { const i = list.findIndex(x => x.id === p.id); if (i >= 0) list[i] = p; else list.unshift(p); n++; }
+      store.set(SAVED, list); renderSaved(); toast(n ? `Opened ${n} worksheet(s) from the file.` : 'That file has no worksheets in it.');
+    } catch (err) { toast('That file could not be read.'); }
+    e.target.value = '';
+  };
+  $('#cl-go').onclick = claudeWrite;
+}
+
+/* ================================================================ layout settings */
+function renderLayout() {
+  const L = LAY();
+  $('#styles').innerHTML = Object.entries(STYLES).map(([k, s]) => `<button class="style" data-style="${k}" aria-pressed="${L.style === k}"><div class="mini ${k === 'adapt' ? 'lex' : ''}">${mini(k)}</div><b>${esc(s.name)}</b><span>${esc(s.d)}</span></button>`).join('');
+  const sel = (id, label, opts, v) => `<label class="field"><span>${label}</span><select data-l="${id}">${opts.map(([val, t]) => `<option value="${val}" ${String(v) === String(val) ? 'selected' : ''}>${t}</option>`).join('')}</select></label>`;
+  const chk = (id, label) => `<label class="opt"><input type="checkbox" data-l="${id}" ${L[id] ? 'checked' : ''}><span>${label}</span></label>`;
+  $('#layout').innerHTML = `
+  <fieldset><legend>Top of the first page</legend>
+    <label class="field"><span>Title</span><input type="text" id="l-title" value="${esc(S.ws.title)}"></label>
+    <div class="two-col">${chk('name', 'Name line')}${chk('cls', 'Class line')}${chk('date', 'Date line')}${chk('time', 'Total marks and time')}</div>
+    <label class="field"><span>Instructions for students (optional)</span><input type="text" data-l="intro" value="${esc(L.intro)}" placeholder="e.g. Complete Part A in class and Part B for homework."></label>
+  </fieldset>
+  <fieldset><legend>Questions</legend>
+    <div class="two-col">${sel('group', 'Order', [['format', 'By question type'], ['list', 'As listed'], ['topic', 'By syllabus section']], L.group)}
+    ${sel('size', 'Text size', [[-1, 'Smaller'], [0, 'Normal'], [1, 'Larger']], L.size)}</div>
+    <div class="two-col">${chk('marks', 'Show marks')}${chk('source', 'Show where each question is from')}${chk('tags', 'Show dot points')}${chk('instr', 'Instructions for each part')}${chk('breaks', 'Start each part on a new page')}${chk('mcGrid', 'Multiple choice answer grid')}</div>
+  </fieldset>
+  <fieldset><legend>Writing space</legend>
+    <div class="two-col">${sel('space', 'Answer space', [['lines', 'Ruled lines'], ['dots', 'Dotted lines'], ['box', 'An empty box'], ['none', 'None: answer in books']], L.space)}
+    ${sel('amount', 'How much', [[0.6, 'Less'], [1, 'Normal'], [1.4, 'More'], [2, 'Lots']], L.amount)}
+    ${sel('erPages', 'Extended response', [[0, 'No writing space'], [1, 'One page'], [2, 'Two pages'], [4, 'Four pages (as in the exam)']], L.erPages)}
+    ${sel('cols', 'Short questions', [[1, 'One column'], [2, 'Two columns']], L.cols)}
+    ${sel('diagram', 'Diagram tasks', [['blank', 'Blank, labelled axes'], ['given', 'The starting diagram']], L.diagram)}</div>
+    <div class="two-col">${chk('plan', 'Planning box for extended responses')}${chk('wordbank', 'Word banks')}${chk('hints', 'Sentence starters')}</div>
+  </fieldset>
+  <fieldset><legend>Answers</legend>
+    ${sel('answers', 'On the student copy', [['none', 'No answers (use the answer copy)'], ['end', 'Answers at the end, after a page break']], L.answers)}
+    ${sel('version', 'Version', [['A', 'Version A'], ['B', 'Version B: questions and options in a different order']], L.version)}
+    <p class="hint">The answer copy (button above the preview) has the answers, NESA marking criteria, marking points and model diagrams in red.</p>
+  </fieldset>`;
+  $('#l-title').oninput = e => { S.ws.title = e.target.value; persist(); schedulePreview(); };
+}
+function mini(k) {
+  if (k === 'exam') return '<i class="t"></i><i></i><i class="l"></i><i class="l"></i><i style="width:70%"></i><i class="l"></i><i class="l"></i>';
+  if (k === 'book') return '<div class="band"></div><i style="width:80%"></i><i class="d"></i><i class="d"></i><div class="band" style="background:#0e8a8a;height:7px;width:50%"></div><i class="d"></i>';
+  if (k === 'adapt') return '<i class="t" style="width:70%"></i><div class="box"><i style="width:85%"></i><i class="l"></i></div><div class="box"><i style="width:60%"></i></div>';
+  return '<i class="t"></i><div class="two"><div><i></i><i style="width:70%"></i><i></i></div><div><i></i><i style="width:80%"></i><i></i></div></div><div class="two"><div><i></i><i></i></div><div><i style="width:60%"></i><i></i></div></div>';
+}
+function onLayout(e) {
+  const t = e.target, id = t.dataset.l; if (!id) return;
+  const L = LAY(); let v = t.type === 'checkbox' ? t.checked : t.value;
+  if (['size', 'amount', 'erPages', 'cols'].includes(id)) v = +v;
+  L[id] = v; persist(); schedulePreview();
+}
+
+/* ================================================================ PDF: libraries, fonts, images */
+const loadScript = src => new Promise((res, rej) => { const s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = () => rej(new Error('could not load ' + src)); document.head.append(s); });
+const FAMS = { Exam: ['R', 'B', 'I', 'BI'], Book: ['R', 'B', 'I', 'BI'], Lex: ['R', 'B'], Sym: ['R', 'B'] };
+const FONTDEFS = {
+  Exam: { normal: 'Exam-R.ttf', bold: 'Exam-B.ttf', italics: 'Exam-I.ttf', bolditalics: 'Exam-BI.ttf' },
+  Book: { normal: 'Book-R.ttf', bold: 'Book-B.ttf', italics: 'Book-I.ttf', bolditalics: 'Book-BI.ttf' },
+  Lex: { normal: 'Lex-R.ttf', bold: 'Lex-B.ttf', italics: 'Lex-R.ttf', bolditalics: 'Lex-B.ttf' },
+  Sym: { normal: 'Sym-R.ttf', bold: 'Sym-B.ttf', italics: 'Sym-R.ttf', bolditalics: 'Sym-B.ttf' }};
+const VFS = {}, HAS = {}, IMG = new Map();
+function b64(buf) { let s = ''; const b = new Uint8Array(buf); for (let i = 0; i < b.length; i += 0x8000) s += String.fromCharCode.apply(null, b.subarray(i, i + 0x8000)); return btoa(s); }
+// Where the PDF libraries come from: this folder's lib/, or (the Claude copy) the pinned copies on cdn.jsdelivr.net,
+// with pdf.js's worker run on the page because a worker cannot be loaded from another site.
+const LIB = Object.assign({ pdfmake: 'lib/pdfmake.min.js', pdfjs: 'lib/pdf.min.js', worker: 'lib/pdf.worker.min.js', onPage: false }, window.WM_LIB || {});
+async function ensurePdfLib(fam) {
+  if (!window.pdfMake) await loadScript(LIB.pdfmake);
+  if (!HAS.Sym) {
+    const cov = await (await fetch('fonts/coverage.json')).json();
+    for (const f of Object.keys(FAMS)) { const set = new Set(); for (const [a, b] of cov[f + '-R']) for (let c = a; c <= b; c++) set.add(c); HAS[f] = set; }
+  }
+  for (const f of [fam, 'Sym']) for (const v of FAMS[f]) {
+    const n = `${f}-${v}.ttf`; if (VFS[n]) continue;
+    const r = await fetch('fonts/' + n); if (!r.ok) throw new Error('font ' + n + ' missing');
+    VFS[n] = b64(await r.arrayBuffer());
+  }
+}
+async function toPng(src, scale, w, h) {
+  const img = new Image(); img.decoding = 'async';
+  await new Promise((res, rej) => { img.onload = res; img.onerror = () => rej(new Error('image')); img.src = src; });
+  const c = document.createElement('canvas'); c.width = Math.round(w * scale); c.height = Math.round(h * scale);
+  const g = c.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height); g.drawImage(img, 0, 0, c.width, c.height);
+  return c.toDataURL('image/png');
+}
+async function figKey(file) {
+  const key = 'f_' + file.replace(/\W/g, '_'); if (IMG.has(key)) return key;
+  const r = await fetch(FIGBASE + file); if (!r.ok) throw new Error('figure ' + file);
+  const url = URL.createObjectURL(await r.blob());
+  try { const bmp = await createImageBitmap(await (await fetch(url)).blob()); const c = document.createElement('canvas'); c.width = bmp.width; c.height = bmp.height; const g = c.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height); g.drawImage(bmp, 0, 0); IMG.set(key, { url: c.toDataURL('image/png'), w: bmp.width / 3, h: bmp.height / 3 }); }
+  finally { URL.revokeObjectURL(url); }
+  return key;
+}
+async function svgKey(svg, name) {
+  const key = 'd_' + name.replace(/\W/g, '_'); if (IMG.has(key)) return key;
+  const m = svg.match(/viewBox="([-\d.]+) ([-\d.]+) ([\d.]+) ([\d.]+)"/), vw = m ? +m[3] : 300, vh = m ? +m[4] : 220;
+  const sized = svg.replace(/width="100%"/, `width="${vw}" height="${vh}"`).replace(/font-family="[^"]*"/, 'font-family="Helvetica, Arial, sans-serif"');
+  IMG.set(key, { url: await toPng('data:image/svg+xml;charset=utf-8,' + encodeURIComponent(sized), 5, vw, vh), w: vw, h: vh });
+  return key;
+}
+function diaSpec(it, L, answer) {
+  const sp = it.dia; if (!sp || !D.dias[sp]) return null;
+  if (!answer && it.f === 'draw' && L.diagram === 'given' && !/\bgiven\b/.test(sp) && D.dias[sp + ' given']) return sp + ' given';
+  return sp;
+}
+async function preloadImages(ents, L, withAns) {
+  const jobs = [];
+  for (const x of ents) {
+    const it = x.it;
+    for (const b of (it.fig || [])) if (b.t === 'img') jobs.push(figKey(b.f).catch(() => null));
+    if (it.dia && D.dias[it.dia]) {
+      const sp = diaSpec(it, L, false); jobs.push(svgKey(D.dias[sp].s, sp + ':s'));
+      if (withAns) jobs.push(svgKey(D.dias[it.dia].a, it.dia + ':a'));
+    }
+  }
+  await Promise.all(jobs);
+}
+
+/* ================================================================ PDF: text */
+const RED = '#B42318', MUTE = '#5b6475', INK = '#14213d';
+let FAM = 'Exam';
+const SUBRE = /\b(AD|AS|SRAS|LRAS|PC|PPF|MSC|MPC|MSB|MPB|P|Q|S|D|Y|U|W|e)([0-9])\b(?![.\d])/g;
+function glyphFix(r) {
+  const has = HAS[FAM], sym = HAS.Sym, text = r.text, out = []; let cur = '', curSym = false;
+  for (const ch of text) {
+    const cp = ch.codePointAt(0), main = !has || has.has(cp) || cp < 32, useSym = !main && sym.has(cp);
+    const c = (!main && !useSym) ? '?' : ch;
+    if (useSym !== curSym && cur) { out.push(Object.assign({}, r, { text: cur }, curSym ? { font: 'Sym' } : {})); cur = ''; }
+    curSym = useSym; cur += c;
+  }
+  if (cur) out.push(Object.assign({}, r, { text: cur }, curSym ? { font: 'Sym' } : {}));
+  return out;
+}
+/* Text with <b> <i> <sub> <sup>, diagram labels (AD1, P2) as subscripts, and symbols the font lacks set in DejaVu. */
+function R(str, base, nosub) {
+  str = String(str == null ? '' : str);
+  const out = [], st = { b: false, i: false, sub: false, sup: false }, re = /<(\/?)(b|i|sub|sup)>/g; let last = 0, m;
+  const push = t => {
+    if (!t) return;
+    let k = 0; SUBRE.lastIndex = 0; let mm;
+    if (nosub) { out.push(Object.assign({}, base || {}, { text: t }, st.b ? { bold: true } : {}, st.i ? { italics: true } : {})); return; }
+    const add = (s, sub) => { if (s) out.push(Object.assign({}, base || {}, { text: s }, st.b ? { bold: true } : {}, st.i ? { italics: true } : {}, (st.sub || sub) ? { sub: true } : {}, st.sup ? { sup: true } : {})); };
+    while ((mm = SUBRE.exec(t))) { add(t.slice(k, mm.index) + mm[1], false); add(mm[2], true); k = SUBRE.lastIndex; }
+    add(t.slice(k), false);
+  };
+  while ((m = re.exec(str))) { push(str.slice(last, m.index)); st[m[2]] = !m[1]; last = re.lastIndex; }
+  push(str.slice(last));
+  return out.flatMap(glyphFix);
+}
+const T = (str, o) => Object.assign({ text: R(str) }, o || {});
+const A = (str, o) => Object.assign({ text: R(str, { color: RED }) }, o || {});   // answer text
+
+/* ================================================================ PDF: page furniture */
+function styleTokens(L) {
+  const s = STYLES[L.style], k = L.size === 1 ? 1.12 : L.size === -1 ? 0.9 : 1;
+  const base = { exam: { gap: 23, lead: 1.22, m: [54, 50, 54, 52] }, book: { gap: 21, lead: 1.2, m: [42, 46, 42, 48] }, adapt: { gap: 30, lead: 1.45, m: [54, 54, 54, 56] }, compact: { gap: 17, lead: 1.15, m: [36, 40, 36, 44] } }[L.style];
+  return Object.assign({ font: s.font, fs: s.size * k, style: L.style }, base, { gap: base.gap * (k > 1 ? 1.08 : 1) });
+}
+function contentWidth(st) { return 595.28 - st.m[0] - st.m[2]; }
+const RAINBOW = ['#E53935', '#F4511E', '#FB8C00', '#FDD835', '#C0CA33', '#7CB342', '#43A047', '#00897B', '#039BE5', '#1E88E5', '#3949AB', '#8E24AA'];
+function docHeader(ctx, totals) {
+  const { L, st, W, mode } = ctx, out = [], ans = mode === 'answers';
+  const title = S.ws.title || 'Worksheet', fields = [L.name && 'Name', L.cls && 'Class', L.date && 'Date'].filter(Boolean);
+  const info = [`${totals.n} ${totals.n === 1 ? 'question' : 'questions'}`, L.time && `${totals.marks} marks`, L.time && `about ${totals.mins} minutes`, L.version === 'B' && 'Version B'].filter(Boolean).join('  ·  ');
+  const fieldRow = fields.length && !ans ? {
+    table: { widths: fields.map(f => f === 'Name' ? '*' : 110), body: [fields.map(f => ({ text: R(f), fontSize: st.fs * 0.9, color: MUTE, margin: [0, 10, 0, 2] }))] },
+    layout: { hLineWidth: (i) => i === 1 ? 0.7 : 0, vLineWidth: () => 0, hLineColor: () => '#555', paddingLeft: () => 0, paddingRight: (i) => 14 }, margin: [0, 6, 0, 8] } : null;
+  if (L.style === 'book') {
+    out.push({ table: { widths: ['*'], body: [[{ stack: [{ text: R('HSC ECONOMICS' + (ans ? '  ·  ANSWER COPY' : '')), color: '#FFD24A', bold: true, fontSize: st.fs * 0.8, characterSpacing: 1 }, { text: R(title), color: '#fff', bold: true, fontSize: st.fs * 1.9 }], fillColor: '#10253F', margin: [12, 10, 12, 10] }]] }, layout: 'noBorders' });
+    out.push({ canvas: RAINBOW.map((c, i) => ({ type: 'rect', x: i * W / 12, y: 0, w: W / 12 + 0.5, h: 4, color: c })), margin: [0, 0, 0, 6] });
+    out.push(T(info, { fontSize: st.fs * 0.9, color: MUTE }));
+  } else if (L.style === 'adapt') {
+    out.push(T(title, { fontSize: st.fs * 1.6, bold: true, margin: [0, 0, 0, 4] }));
+    out.push(T(info + (ans ? '  ·  ANSWER COPY' : ''), { fontSize: st.fs * 0.85, color: ans ? RED : MUTE }));
+  } else {
+    out.push({ columns: [T('HSC Economics', { fontSize: st.fs * 0.85, color: MUTE, bold: true }), T(ans ? 'ANSWER COPY' : '', { alignment: 'right', color: RED, bold: true, fontSize: st.fs * 0.85 })] });
+    out.push(T(title, { fontSize: st.fs * (L.style === 'compact' ? 1.45 : 1.75), bold: true, margin: [0, 2, 0, 2] }));
+    out.push(T(info, { fontSize: st.fs * 0.9, color: MUTE }));
+    out.push({ canvas: [{ type: 'line', x1: 0, y1: 4, x2: W, y2: 4, lineWidth: L.style === 'exam' ? 1.2 : 0.8, lineColor: '#222' }], margin: [0, 0, 0, 2] });
+  }
+  if (fieldRow) out.push(fieldRow);
+  if (L.intro) out.push(T(L.intro, { italics: true, margin: [0, 2, 0, 6] }));
+  if (L.style === 'adapt' && !ans) out.push(box([T('How to use this sheet', { bold: true }), T('Do one question at a time. Tick the box ☐ beside a question when you finish it. Use the word boxes and the sentence starters if you get stuck.')], '#EEF3FB', '#B8C6E0'));
+  if (L.mcGrid && !ans) { const mcs = ctx.U.filter(u => u.f === 'mc'); if (mcs.length) out.push(mcGrid(mcs, ctx)); }
+  return out;
+}
+function mcGrid(mcs, ctx, answers) {
+  const per = Math.min(10, mcs.length), rows = [];
+  for (let i = 0; i < mcs.length; i += per) {
+    const slice = mcs.slice(i, i + per);
+    rows.push(slice.map(u => ({ text: R(String(u.num)), bold: true, alignment: 'center', fillColor: '#EEF1F6', fontSize: ctx.st.fs * 0.85 })).concat(Array(per - slice.length).fill({ text: '' })));
+    rows.push(slice.map(u => answers ? { text: R((u.ents[0].it.key || ['–']).join('/'), { color: RED, bold: true }), alignment: 'center' } : { text: ' ', margin: [0, 6, 0, 6] }).concat(Array(per - slice.length).fill({ text: '' })));
+  }
+  return { stack: [T(answers ? 'Multiple choice answers' : 'Multiple choice: write your answers here', { bold: true, fontSize: ctx.st.fs * 0.9, margin: [0, 6, 0, 3] }), { table: { widths: Array(per).fill('*'), body: rows }, layout: thinGrid() }], margin: [0, 0, 0, 8], unbreakable: true };
+}
+function thinGrid(col) { return { hLineWidth: () => 0.6, vLineWidth: () => 0.6, hLineColor: () => col || '#8a93a6', vLineColor: () => col || '#8a93a6', paddingLeft: () => 4, paddingRight: () => 4, paddingTop: () => 2, paddingBottom: () => 2 }; }
+function box(stack, fill, line) { return { table: { widths: ['*'], body: [[{ stack, fillColor: fill || '#F6F7FB', margin: [8, 6, 8, 6] }]] }, layout: { hLineWidth: () => 0.7, vLineWidth: () => 0.7, hLineColor: () => line || '#C9D2E4', vLineColor: () => line || '#C9D2E4' }, margin: [0, 4, 0, 8] }; }
+function partHeading(f, letter, ctx) {
+  const { L, st, W } = ctx, g = GBY[FBY[f].g], name = FBY[f].name, marks = ctx.U.filter(u => u.f === f).reduce((a, u) => a + u.marks, 0);
+  const label = (L.group === 'format' ? `Part ${letter}: ` : '') + name + (L.marks && marks ? `  (${marks} ${marks === 1 ? 'mark' : 'marks'})` : '');
+  const ins = L.instr ? T(L.space === 'none' && ['sa', 'er', 'stim', 'calc'].includes(f) ? 'Answer in your book.' + (f === 'calc' ? ' Show your working.' : '') : FBY[f].ins, { italics: true, color: MUTE, fontSize: st.fs * 0.92, margin: [0, 2, 0, 6] }) : null;
+  let head;
+  if (L.style === 'book') head = { table: { widths: ['*'], body: [[{ text: R(label), color: '#fff', bold: true, fillColor: g.col, margin: [8, 3, 8, 3] }]] }, layout: 'noBorders', margin: [0, 10, 0, 2] };
+  else if (L.style === 'adapt') head = { table: { widths: [5, '*'], body: [[{ text: '', fillColor: g.col }, T(label, { bold: true, fontSize: st.fs * 1.12, margin: [6, 2, 0, 2] })]] }, layout: 'noBorders', margin: [0, 12, 0, 2] };
+  else head = { stack: [T(label, { bold: true, fontSize: st.fs * (L.style === 'compact' ? 1.02 : 1.12) }), { canvas: [{ type: 'line', x1: 0, y1: 2, x2: W, y2: 2, lineWidth: 0.6, lineColor: '#444' }] }], margin: [0, L.style === 'compact' ? 6 : 12, 0, 2] };
+  head.headlineLevel = 1;
+  return [head, ins].filter(Boolean);
+}
+
+/* ================================================================ PDF: writing space */
+function nLines(m, f, ctx, extra) {
+  const { L } = ctx; if (L.space === 'none') return 0;
+  let n = f === 'calc' ? 5 : m <= 1 ? 2 : Math.round(2.1 * m + 1);
+  if (L.style === 'compact') n = Math.max(1, Math.round(n * 0.6));
+  return Math.max(0, Math.min(40, Math.round(n * L.amount) + (extra || 0)));
+}
+function lines(n, ctx, width) {
+  const { L, st } = ctx, W = width || ctx.W; if (n <= 0 || L.space === 'none') return [];
+  const gap = st.gap;
+  if (L.space === 'box') return [{ canvas: [{ type: 'rect', x: 0, y: 0, w: W, h: n * gap, r: 4, lineWidth: 0.7, lineColor: '#8a93a6' }], margin: [0, 4, 0, 8] }];
+  const dots = L.space === 'dots', out = []; let left = n;
+  while (left > 0) {
+    const k = Math.min(3, left); left -= k;
+    out.push({ canvas: Array.from({ length: k }, (_, i) => Object.assign({ type: 'line', x1: 0, y1: (i + 1) * gap, x2: W, y2: (i + 1) * gap, lineWidth: dots ? 1 : 0.5, lineColor: dots ? '#7f889b' : '#8f97a6' }, dots ? { dash: { length: 1, space: 2.4 }, lineCap: 'round' } : {})) });
+  }
+  out[out.length - 1].margin = [0, 0, 0, 6];
+  return out;
+}
+/* Keep a question with its first writing lines; the rest of the lines may run onto the next page. */
+function keep(head, space, extra) { const sp = space || []; return [{ stack: head.concat(sp.slice(0, 1)), unbreakable: true }].concat(sp.slice(1), extra || []); }
+function marksTxt(m, ctx) { return ctx.L.marks && m ? ` (${m} ${m === 1 ? 'mark' : 'marks'})` : ''; }
+function qHead(u, ctx, label) {
+  const { L, st } = ctx, it = u.ents[0].it, m = u.marks;
+  const src = L.source ? sourceLine(it) : '', tags = L.tags ? it.c.join(' ') : '';
+  const extra = [src, tags].filter(Boolean).join('  ·  ');
+  const tick = L.style === 'adapt' ? '☐  ' : '';
+  return { text: R(`${tick}${label || 'Question'} ${u.num}`, { bold: true }).concat(R(marksTxt(m, ctx), { bold: L.style === 'exam' })).concat(extra ? R('   ' + extra, { color: MUTE, fontSize: st.fs * 0.78 }, true) : []), margin: [0, 8, 0, 3] };
+}
+const niceDate = d => new Date(d + 'T00:00').toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' });
+function sourceLine(it) { if (it.src === 'hsc') return `HSC ${it.y} ${it.l}`; if (it.src === 'ev') return 'News, ' + niceDate(it.date); if (it.src === 'claude') return 'Written by Claude'; return ''; }
+function partRow(label, text, m, ctx) {
+  const { L, st } = ctx;
+  if (L.style === 'exam' && L.marks) return { columns: [{ width: label ? 26 : 0, text: R(label || '') }, { width: '*', text: R(text) }, { width: 26, text: m ? R(String(m), { bold: true }) : '', alignment: 'right' }], columnGap: 4, margin: [0, 2, 0, 2] };
+  return { columns: [{ width: label ? 26 : 0, text: R(label || '') }, { width: '*', text: R(text).concat(R(marksTxt(m, ctx), { color: MUTE, fontSize: st.fs * 0.9 })) }], columnGap: 4, margin: [0, 2, 0, 2] };
+}
+const STARTERS = [
+  [/^\s*(define|what is|identify)\b/i, 'A … is …'],
+  [/^\s*(outline|describe)\b/i, 'One feature is … Another is …'],
+  [/^\s*(explain|account for|how)\b/i, '… happens because … This leads to … As a result …'],
+  [/^\s*(analyse|examine)\b/i, 'The main effect is … because … This means … The link between them is …'],
+  [/^\s*(discuss|assess|evaluate|justify|to what extent)\b/i, 'On one hand … On the other hand … Overall, I think … because …'],
+  [/^\s*(calculate|using the (information|data))\b/i, 'Formula: …  Working: …  Answer: … (with units)'],
+  [/^\s*(compare|distinguish)\b/i, 'Both … However, … whereas …']];
+function hint(text, ctx) {
+  if (!ctx.L.hints || ctx.mode === 'answers') return null;
+  const s = STARTERS.find(([re]) => re.test(text)); if (!s) return null;
+  return T('Start with: ' + s[1], { italics: true, color: '#3a5a99', fontSize: ctx.st.fs * 0.85, margin: [26, 0, 0, 2] });
+}
+
+/* ================================================================ PDF: stimulus pieces */
+function dataTable(rows, ctx, cap) {
+  if (!rows || !rows.length) return null;
+  const n = Math.max(...rows.map(r => r.length));
+  const body = rows.map((r, i) => Array.from({ length: n }, (_, j) => ({ text: R(r[j] == null ? '' : String(r[j]), i === 0 ? { bold: true } : {}), fillColor: i === 0 ? '#E8ECF3' : null, fontSize: ctx.st.fs * 0.92 })));
+  const t = { table: { headerRows: 1, widths: Array(n).fill(n > 3 ? '*' : 'auto'), body, dontBreakRows: true }, layout: thinGrid('#9aa3b5'), margin: [0, 3, 0, 6] };
+  return cap ? { stack: [T(cap, { bold: true, fontSize: ctx.st.fs * 0.9, margin: [0, 2, 0, 2] }), t] } : t;
+}
+function figNodes(list, ctx) {
+  const out = [];
+  for (const b of list || []) {
+    if (b.t === 'tbl') { const t = dataTable(b.rows, ctx); if (t) out.push(t); }
+    else if (b.t === 'img') {
+      const key = 'f_' + b.f.replace(/\W/g, '_'), im = IMG.get(key);
+      if (!im) { out.push(T('[The figure from the paper could not be loaded.]', { italics: true, color: MUTE })); continue; }
+      const w = Math.min(b.w * (ctx.L.style === 'compact' ? 0.72 : 1.0), ctx.W * 0.95), h = w * im.h / im.w, maxH = ctx.L.style === 'compact' ? 330 : 560;
+      out.push({ image: key, width: h > maxH ? w * maxH / h : w, margin: [0, 4, 0, 6] });
+    }
+  }
+  return out;
+}
+function stNote(it, ctx) { return T(`This question uses a stimulus from the ${it.y} HSC paper (${it.st.replace(/\.$/, '')}). See the paper.`, { italics: true, color: MUTE, fontSize: ctx.st.fs * 0.88, margin: [0, 2, 0, 4] }); }
+function imgNode(key, ctx, frac) { const im = IMG.get(key); if (!im) return T('[diagram missing]', { italics: true }); return { image: key, width: Math.min(ctx.W * frac, im.w * 1.35), margin: [0, 4, 0, 6] }; }
+function ansBox(nodes, ctx) { return { table: { widths: [3, '*'], body: [[{ text: '', fillColor: RED }, { stack: nodes, margin: [6, 1, 0, 1] }]] }, layout: 'noBorders', margin: [0, 2, 0, 8], fontSize: ctx.st.fs * 0.92 }; }
+function critNodes(it, ctx, top) {
+  const out = [];
+  if (it.crit) {
+    const bands = top ? it.crit.slice(0, top) : it.crit;
+    out.push(A('NESA marking criteria' + (top && it.crit.length > top ? ' (top bands)' : '') + ':', { bold: true }));
+    for (const b of bands) out.push({ columns: [{ width: 34, text: R(b.m, { color: RED, bold: true }) }, { width: '*', stack: b.b.map(x => A('• ' + x)) }], columnGap: 4, margin: [0, 1, 0, 1] });
+  }
+  if (it.could && it.could.length) out.push(A('Answers could include: ' + it.could.map(c => c.replace(/[.;,\s]+$/, '')).join('; ') + '.', { margin: [0, 3, 0, 0] }));
+  if (it.samp && ctx.L.style !== 'compact' && !top) out.push(A('Sample answer (NESA): ' + it.samp, { italics: true, margin: [0, 3, 0, 0] }));
+  if (it.pts && it.pts.length) { out.push(A('Marking points:', { bold: true, margin: [0, 2, 0, 0] })); it.pts.forEach(p => out.push(A('• ' + p))); }
+  if (it.ans) out.push(A((it.pts && it.pts.length ? 'Model answer: ' : '') + it.ans, { margin: [0, 2, 0, 0] }));
+  if (it.plan && it.plan.length) { out.push(A('A plan:', { bold: true, margin: [0, 2, 0, 0] })); it.plan.forEach((p, i) => out.push(A(`${i + 1}. ${p}`))); }
+  if (!out.length) out.push(A(it.src === 'hsc' ? `NESA did not publish marking guidelines for ${it.y} in the class collection.` : 'No answer notes for this question.', { italics: true }));
+  return out;
+}
+
+/* ================================================================ PDF: one renderer per question type */
+function letterOf(i) { return 'ABCDEFGHIJKLMNOP'[i]; }
+function rMC(u, ctx) {
+  const it = u.ents[0].it, { L, st, mode } = ctx, ans = mode === 'answers', key = it.key || [];
+  const src = L.source && sourceLine(it) ? R('   ' + sourceLine(it), { color: MUTE, fontSize: st.fs * 0.76 }, true) : [];
+  const nodes = [{ text: R(`${L.style === 'adapt' ? '☐ ' : ''}${u.num}.  `, { bold: true }).concat(R(it.q), src), margin: [0, 0, 0, 3] }];
+  if (it.table) nodes.push(dataTable(it.table.rows, ctx, it.table.cap));
+  nodes.push(...figNodes(it.fig, ctx));
+  const hit = i => ans && key.includes(letterOf(i));
+  if (it.mat) {
+    const body = [[{ text: '' }].concat(it.mat.head.map(h => ({ text: R(h, { bold: true }), fontSize: st.fs * 0.9 })))].concat(
+      it.mat.rows.map((r, i) => [{ text: R(letterOf(i) + (hit(i) ? ' ✓' : ''), { bold: true, color: hit(i) ? RED : undefined }) }].concat(r.map(c => ({ text: R(c, hit(i) ? { color: RED, bold: true } : {}), fontSize: st.fs * 0.92 })))));
+    nodes.push({ table: { widths: [26].concat(it.mat.head.map(() => '*')), body }, layout: thinGrid('#9aa3b5'), margin: [18, 2, 0, 4] });
+  } else {
+    const short = it.o.every(o => o.length <= 34) && ctx.W > 300 && L.style !== 'adapt';
+    const opt = (o, i) => ({ columns: [{ width: 18, text: R(letterOf(i), { bold: true, color: hit(i) ? RED : undefined }) }, { width: '*', text: R(o + (hit(i) ? '  ✓' : ''), hit(i) ? { color: RED, bold: true } : {}) }], margin: [0, 1, 0, 1] });
+    if (short) nodes.push({ table: { widths: ['*', '*'], body: [[opt(it.o[0], 0), opt(it.o[1], 1)], [opt(it.o[2], 2), opt(it.o[3], 3)]] }, layout: 'noBorders', margin: [16, 0, 0, 2] });
+    else nodes.push({ stack: it.o.map(opt), margin: [16, 0, 0, 2] });
+  }
+  if (ans) nodes.push(ansBox(key.length ? [A(`Answer: ${key.join(' or ')}`, { bold: true }), it.e && it.e.why ? A(it.e.why) : null].filter(Boolean)
+    : [A('NESA has not yet published the answer.' + (it.note ? ' What it examined: ' + it.note : ''), { italics: true })], ctx));
+  return [{ stack: nodes, unbreakable: true, margin: [0, 0, 0, L.style === 'compact' ? 6 : 10] }];
+}
+function rSA(u, ctx) {
+  const { mode } = ctx, ans = mode === 'answers', first = u.ents[0].it, out = [];
+  const head = [qHead(u, ctx)], shown = new Set();
+  if (first.lead) head.push(T(first.lead, { margin: [0, 0, 0, 4] }));
+  let firstPart = true;
+  for (const x of u.ents) {
+    const it = x.it, pre = [];
+    const figs = (it.fig || []).filter(b => { const k = b.f || JSON.stringify(b.rows); if (shown.has(k)) return false; shown.add(k); return true; });
+    pre.push(...figNodes(figs, ctx));
+    if (it.st && !it.fig && !shown.size && !shown.has('st')) { pre.push(stNote(it, ctx)); shown.add('st'); }
+    if (it.table) pre.push(dataTable(it.table.rows, ctx, it.table.cap));
+    if (it.f === 'read' && it.dia) pre.push(imgNode('d_' + (it.dia + (ans ? ':a' : ':s')).replace(/\W/g, '_'), ctx, 0.62));
+    const seq = u.ents.length > 1 ? `(${'abcdefghij'[u.ents.indexOf(x)]})` : '';
+    const parts = it.parts || [{ label: seq, q: it.q, m: it.m, pts: it.pts, ans: it.ans, crit: it.crit }];
+    for (const p of parts) {
+      const blk = [partRow(p.label, p.q, p.m, ctx)], h = hint(p.q, ctx); if (h) blk.push(h);
+      const pseudo = Object.assign({}, it, { pts: p.pts, ans: p.ans, parts: undefined });
+      if (it.parts) { pseudo.crit = null; pseudo.could = null; pseudo.samp = null; }
+      const space = ans ? [ansBox(critNodes(pseudo, ctx), ctx)] : lines(nLines(p.m, it.f, ctx, it.xl), ctx);
+      out.push(...keep((firstPart ? head : []).concat(pre, blk), space)); firstPart = false; pre.length = 0;
+    }
+  }
+  return out;
+}
+function rER(u, ctx) {
+  const it = u.ents[0].it, { L, st, mode } = ctx, ans = mode === 'answers', head = [qHead(u, ctx)];
+  head.push(...figNodes(it.fig, ctx));
+  if (it.st && !it.fig) head.push(stNote(it, ctx));
+  head.push(T(it.q, { margin: [0, 2, 0, 6] }));
+  if (ans) return keep(head, [ansBox(critNodes(it, ctx, 2), ctx)]);
+  const extra = [];
+  if (L.plan) {
+    const rows = ['Your judgement (answer the question)', 'Paragraph 1', 'Paragraph 2', 'Paragraph 3', 'Conclusion'];
+    extra.push({ stack: [T('Plan' + (L.hints || L.style === 'adapt' ? '  (each paragraph: Point · Explain · Diagram · Evidence · Link and judge)' : ''), { bold: true, fontSize: st.fs * 0.92, margin: [0, 0, 0, 2] }),
+      { table: { widths: [L.style === 'compact' ? 90 : 130, '*'], body: rows.map(r => [T(r, { fontSize: st.fs * 0.85, bold: true, color: MUTE }), { text: ' ', margin: [0, st.gap * 0.7, 0, st.gap * 0.7] }]) }, layout: thinGrid('#b4bccb') }], unbreakable: true, margin: [0, 0, 0, 8] });
+  }
+  const perPage = Math.floor((842 - st.m[1] - st.m[3] - 40) / st.gap);
+  return keep(head, extra).concat(L.space === 'none' ? [] : lines(Math.round(L.erPages * perPage), ctx));
+}
+function rStim(u, ctx) {
+  const it = u.ents[0].it, { st, mode } = ctx, ans = mode === 'answers', head = [qHead(u, ctx)];
+  const when = new Date(it.date + 'T00:00').toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
+  const src = [T(it.title, { bold: true }), T((it.outlets || []).join(', ') + (it.outlets && it.outlets.length ? ', ' : '') + when, { italics: true, color: MUTE, fontSize: st.fs * 0.85, margin: [0, 0, 0, 4] }), T(it.lede, { margin: [0, 0, 0, 4] })];
+  if (it.figs && it.figs.length) src.push(dataTable([['Measure', 'Figure', 'As at']].concat(it.figs.map(f => [f.label, f.value, f.asAt])), ctx));
+  head.push(box(src, '#F7F8FB', '#C9D2E4'));
+  const out = []; let first = true;
+  it.qs.forEach((q, i) => {
+    const blk = [partRow(`(${'abcd'[i]})`, q.q, q.m, ctx)], h = hint(q.q, ctx); if (h) blk.push(h);
+    const space = ans ? [] : lines(nLines(q.m, 'sa', ctx, it.xl), ctx);
+    out.push(...keep((first ? head : []).concat(blk), space)); first = false;
+  });
+  if (ans) out.push(ansBox([it.guide ? A('Guidance: ' + it.guide) : null].concat((it.terms || []).map(t => A(`${t.term}: ${t.def}`, { fontSize: st.fs * 0.85 }))).filter(Boolean).concat(it.guide ? [] : [A('No answer notes for this source.', { italics: true })]), ctx));
+  return out;
+}
+function rCalc(u, ctx) {
+  const it = u.ents[0].it, { L, st, mode } = ctx, ans = mode === 'answers', head = [qHead(u, ctx)];
+  for (const b of it.blocks) head.push(b.table ? dataTable(b.table, ctx) : { text: b.p.flatMap(r => R(r.t, r.b ? { bold: true } : {})), margin: [0, 1, 0, 3] });
+  const parts = it.parts.map((p, i) => {
+    const lab = (it.parts.length > 1 ? `(${'abcd'[i]}) ` : '') + p.label + ': ';
+    if (ans) return { text: R(lab).concat(R(p.shown, { color: RED, bold: true })), margin: [0, 2, 0, 2] };
+    if (p.type === 'sel') return { text: R(lab + p.options.map(o => '☐ ' + o).join('    ')), margin: [0, 3, 0, 3] };
+    return { text: R(lab + '____________________ ' + (p.unit || '')), margin: [0, 5, 0, 3] };
+  });
+  const h = L.hints && !ans ? T('Formula: ' + it.formula[0], { italics: true, color: '#3a5a99', fontSize: st.fs * 0.85 }) : null;
+  if (ans) return keep(head.concat(parts), [ansBox([A('Working:', { bold: true })].concat(it.steps.map((s, i) => A(`${i + 1}. ${s}`)), [A('Watch for: ' + it.watch, { italics: true })]), ctx)]);
+  const work = L.space === 'none' ? [] : lines(nLines(it.m, 'calc', ctx, it.xl), ctx);
+  const label = L.space === 'none' ? [] : [T('Working', { fontSize: st.fs * 0.85, color: MUTE, margin: [0, 4, 0, 0] })];
+  return keep(head.concat(h ? [h] : [], label), work, parts);
+}
+function rDraw(u, ctx) {
+  const it = u.ents[0].it, { L, st, mode } = ctx, ans = mode === 'answers', head = [qHead(u, ctx), T(it.q, { margin: [0, 0, 0, 4] })];
+  const sp = diaSpec(it, L, false), frac = L.style === 'compact' ? 0.42 : L.style === 'adapt' ? 0.62 : 0.55;
+  if (ans) return keep(head, [{ columns: [imgNode('d_' + (it.dia + ':a').replace(/\W/g, '_'), ctx, frac), { width: '*', stack: [ansBox([A(it.ans || 'See the diagram.')], ctx)] }], columnGap: 10 }]);
+  const img = imgNode('d_' + (sp + ':s').replace(/\W/g, '_'), ctx, frac);
+  const n = nLines(4, 'sa', ctx, it.xl);
+  if (L.style === 'compact' || L.space === 'none') return keep(head.concat([img]), lines(n, ctx));
+  const colW = ctx.W * (1 - frac) - 12;
+  return [{ stack: head.concat([{ columns: [Object.assign({}, img, { width: ctx.W * frac }), { width: '*', stack: [T('Explain the change:', { fontSize: st.fs * 0.85, color: MUTE })].concat(lines(Math.max(4, n), ctx, colW)) }], columnGap: 12 }]), unbreakable: true, margin: [0, 0, 0, 8] }];
+}
+function rLabel(u, ctx) {
+  const it = u.ents[0].it, { st, mode } = ctx, ans = mode === 'answers', head = [qHead(u, ctx), T(it.q, { margin: [0, 0, 0, 4] })];
+  const img = imgNode('d_' + (it.dia + ':s').replace(/\W/g, '_'), ctx, 0.55);
+  const rows = it.labels.map(([k, v]) => [T(k, { bold: true }), ans ? A(v, { bold: true }) : { text: ' ', margin: [0, st.gap * 0.45, 0, 0] }]);
+  const tbl = { table: { widths: [30, '*'], body: rows }, layout: { hLineWidth: (i, n) => i === 0 ? 0 : 0.6, vLineWidth: () => 0, hLineColor: () => '#8a93a6' } };
+  return [{ stack: head.concat([{ columns: [Object.assign({}, img, { width: ctx.W * 0.55 }), { width: '*', stack: [tbl] }], columnGap: 14 }]), unbreakable: true, margin: [0, 0, 0, 10] }];
+}
+function rMatch(u, ctx) {
+  const it = u.ents[0].it, { st, mode } = ctx, ans = mode === 'answers', head = [qHead(u, ctx)];
+  const pos = it.pairs.map((_, i) => it.perm.indexOf(i));
+  const body = [[T('Term', { bold: true }), T('', {}), T('', {}), T('Definition', { bold: true })]].concat(it.pairs.map((p, i) => [
+    T(`${i + 1}. ${p.term}`, { bold: true }),
+    ans ? A(letterOf(pos[i]), { bold: true, alignment: 'center' }) : { text: ' ' },
+    T(letterOf(i), { bold: true, alignment: 'right' }),
+    T(it.pairs[it.perm[i]].def, { fontSize: st.fs * 0.92 })]));
+  return [{ stack: head.concat([{ table: { headerRows: 1, widths: [ctx.W * 0.27, 26, 14, '*'], body, dontBreakRows: true }, layout: { hLineWidth: (i) => i === 1 ? 0.8 : 0.4, vLineWidth: (i) => i === 1 || i === 2 ? 0.8 : 0, hLineColor: () => '#aab2c2', vLineColor: () => '#555', paddingTop: () => 3, paddingBottom: () => 3 } }]), unbreakable: it.pairs.length <= 10, margin: [0, 0, 0, 10] }];
+}
+function rCloze(u, ctx) {
+  const it = u.ents[0].it, { L, st, mode } = ctx, ans = mode === 'answers', head = [qHead(u, ctx)];
+  if ((L.wordbank || L.style === 'adapt') && !ans) head.push(box([T('Word box:  ' + it.words.join('   ·   '), { bold: true, fontSize: st.fs * 0.92 })], '#FFF8E1', '#E8C25A'));
+  const rows = it.rows.map((r, i) => {
+    const bits = r.text.split('[[gap]]'), txt = [];
+    bits.forEach((b, j) => { txt.push(...R(b)); if (j < bits.length - 1) txt.push(...(ans ? R(r.ans, { color: RED, bold: true }) : R('_______________________'))); });
+    return { columns: [{ width: 18, text: R(`${i + 1}.`, { bold: true }) }, { width: '*', text: txt }], margin: [0, 3, 0, ans ? 2 : 6] };
+  });
+  return [{ stack: head.concat(rows), unbreakable: rows.length <= 8, margin: [0, 0, 0, 8] }];
+}
+function rDefine(u, ctx) {
+  const it = u.ents[0].it, { mode } = ctx, ans = mode === 'answers', out = []; let first = true;
+  it.rows.forEach((r, i) => {
+    const term = /^[A-Z][a-z]/.test(r.term) && !/\s[A-Z]/.test(r.term) && !/^(Australia|Kyoto|Paris|Okun|Phillips|Lorenz|Gini|Pitchford|Kuznets|Fair)/.test(r.term) ? r.term[0].toLowerCase() + r.term.slice(1) : r.term;
+    const blk = [partRow(it.rows.length > 1 ? `(${'abcdefghij'[i]})` : '', `Define ${term}.`, 2, ctx)];
+    out.push(...keep((first ? [qHead(u, ctx)] : []).concat(blk), ans ? [ansBox([A(r.def)], ctx)] : lines(nLines(2, 'sa', ctx), ctx))); first = false;
+  });
+  return out;
+}
+function rTF(u, ctx) {
+  const it = u.ents[0].it, { st, mode } = ctx, ans = mode === 'answers';
+  const body = [[T('', {}), T('Statement', { bold: true }), T('T or F', { bold: true, alignment: 'center' }), T('If false, write the correct statement', { bold: true })]].concat(it.rows.map((r, i) => [
+    T(String(i + 1), { bold: true }), T(r.s, { fontSize: st.fs * 0.95 }),
+    ans ? A(r.ans ? 'T' : 'F', { bold: true, alignment: 'center' }) : { text: ' ' },
+    ans ? A(r.ans ? (r.why || '') : r.fix, { fontSize: st.fs * 0.85 }) : { text: ' ', margin: [0, st.gap * 0.6, 0, 0] }]));
+  return [{ stack: [qHead(u, ctx), { table: { headerRows: 1, widths: [14, '*', 34, ctx.W * 0.34], body, dontBreakRows: true }, layout: thinGrid('#aab2c2') }], unbreakable: it.rows.length <= 6, margin: [0, 0, 0, 10] }];
+}
+function seededOrder(id, n) { let h = 2166136261; for (const c of id) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return shuffle([...Array(n).keys()], mulberry(h >>> 0)); }
+function rChain(u, ctx) {
+  const it = u.ents[0].it, { L, st, mode } = ctx, ans = mode === 'answers';
+  const shown = i => i === 0 || (L.style === 'adapt' && i % 2 === 0);
+  const hidden = it.steps.map((s, i) => shown(i) ? null : s.v).filter(Boolean), order = seededOrder(it.id, hidden.length);
+  const head = [qHead(u, ctx), T(`${it.title}${it.strand ? ' (' + it.strand.toLowerCase() + ')' : ''}`, { bold: true }), T('What happens: ' + it.trigger, { margin: [0, 0, 0, 4] })];
+  if ((L.wordbank || L.style === 'adapt') && !ans && hidden.length) head.push(box([T('Word box:  ' + order.map(i => hidden[i]).join('   ·   '), { fontSize: st.fs * 0.9 })], '#FFF8E1', '#E8C25A'));
+  const body = [];
+  it.steps.forEach((s, i) => {
+    if (i) body.push([{ text: '' }, { text: R('↓'), alignment: 'center', fontSize: st.fs * 1.1, color: MUTE }, { text: '' }]);
+    const give = shown(i) || ans, dir = s.d > 0 ? 'rises ↑' : 'falls ↓';
+    body.push([T(String(i + 1), { bold: true, margin: [0, 4, 0, 0] }),
+      give ? { text: R(s.v, ans && !shown(i) ? { color: RED, bold: true } : { bold: true }), margin: [6, 5, 6, 5] } : { canvas: [{ type: 'rect', x: 0, y: 0, w: ctx.W * 0.48 - 14, h: st.gap * 1.05, r: 3, lineWidth: 0.7, lineColor: '#8a93a6', color: '#ffffff' }], margin: [6, 2, 6, 2] },
+      ans || i === 0 ? { stack: [T(dir, { bold: true, color: ans && i ? RED : INK })].concat(ans && s.why ? [A(s.why, { fontSize: st.fs * 0.78 })] : []), margin: [4, 4, 0, 4] } : T('☐ rises    ☐ falls', { margin: [4, 5, 0, 5] })]);
+  });
+  const tbl = { table: { widths: [14, ctx.W * 0.48, '*'], body, dontBreakRows: true }, layout: { hLineWidth: (i) => 0, vLineWidth: () => 0, fillColor: (r) => r % 2 === 0 ? '#F1F4FA' : null } };
+  return [{ stack: head.concat([tbl]), unbreakable: it.steps.length <= 9, margin: [0, 0, 0, 10] }];
+}
+function rOrder(u, ctx) {
+  const it = u.ents[0].it, { st, mode } = ctx, ans = mode === 'answers', order = seededOrder(it.id, it.steps.length);
+  const head = [qHead(u, ctx), T(it.title, { bold: true }), it.blurb ? T(it.blurb, { italics: true, color: MUTE, margin: [0, 0, 0, 4] }) : null].filter(Boolean);
+  const body = order.map(i => [ans ? A(String(i + 1), { bold: true, alignment: 'center' }) : { text: ' ' }, T(it.steps[i])]);
+  const out = head.concat([{ table: { widths: [28, '*'], body, dontBreakRows: true }, layout: { hLineWidth: () => 0.6, vLineWidth: (i) => i < 2 ? 0.6 : 0, hLineColor: () => '#aab2c2', vLineColor: () => '#555', paddingTop: () => 4, paddingBottom: () => 4 } }]);
+  if (ans && it.closing) out.push(ansBox([A(it.closing)], ctx));
+  return [{ stack: out, unbreakable: true, margin: [0, 0, 0, 10] }];
+}
+function rSort(u, ctx) {
+  const it = u.ents[0].it, { st, mode } = ctx, ans = mode === 'answers', order = seededOrder(it.id, it.rows.length);
+  const head = [qHead(u, ctx), T(it.q, { margin: [0, 0, 0, 4] })];
+  if (!ans) head.push(box([{ text: order.map((i, j) => R(`(${'abcdefghijklmnopqrstuvwxyz'[j]}) ${it.rows[i].t}`)).reduce((a, r, j) => a.concat(j ? R('     ') : [], r), []), fontSize: st.fs * 0.92, lineHeight: 1.35 }], '#F7F8FB'));
+  const cells = it.cats.map(c => ans ? { stack: it.rows.filter(r => r.cat === c).map(r => A('• ' + r.t, { fontSize: st.fs * 0.88 })) } : { text: ' ', margin: [0, Math.max(60, it.rows.length * st.gap / it.cats.length * 1.4), 0, 0] });
+  return [{ stack: head.concat([{ table: { headerRows: 1, widths: it.cats.map(() => '*'), body: [it.cats.map(c => T(c, { bold: true, fillColor: '#E8ECF3' })), cells] }, layout: thinGrid('#8a93a6') }]), unbreakable: true, margin: [0, 0, 0, 10] }];
+}
+function rCompare(u, ctx) {
+  const it = u.ents[0].it, { st, mode } = ctx, ans = mode === 'answers', h = st.gap * 1.6;
+  const body = [[{ text: '' }].concat(it.cols.map(c => T(c, { bold: true, fillColor: '#E8ECF3' })))].concat(it.rows.map(r => [T(r.h, { bold: true, fontSize: st.fs * 0.92 })].concat(
+    r.cells.map(c => c.given ? T(c.t, { fontSize: st.fs * 0.9 }) : ans ? A(c.t, { fontSize: st.fs * 0.88 }) : { text: ' ', margin: [0, h / 2, 0, h / 2] }))));
+  return [{ stack: [qHead(u, ctx), T(it.q, { margin: [0, 0, 0, 4] }), { table: { headerRows: 1, widths: [ctx.W * 0.22].concat(it.cols.map(() => '*')), body, dontBreakRows: true }, layout: thinGrid('#8a93a6') }], unbreakable: it.rows.length <= 7, margin: [0, 0, 0, 10] }];
+}
+function rError(u, ctx) {
+  const it = u.ents[0].it, { st, mode } = ctx, ans = mode === 'answers';
+  const errs = [...it.text.matchAll(/\[\[(.+?)=>(.+?)\]\]/g)].map(m => [m[1].trim(), m[2].trim()]);
+  const para = [];
+  it.text.split(/(\[\[.+?=>.+?\]\])/).forEach(bit => {
+    const m = bit.match(/^\[\[(.+?)=>(.+?)\]\]$/);
+    if (!m) para.push(...R(bit));
+    else if (ans) { para.push(...R(m[1].trim(), { decoration: 'lineThrough', color: MUTE })); para.push(...R(' ' + m[2].trim(), { color: RED, bold: true })); }
+    else para.push(...R(m[1].trim()));
+  });
+  const head = [qHead(u, ctx), T((it.q ? it.q + ' ' : '') + `There ${errs.length === 1 ? 'is 1 mistake' : 'are ' + errs.length + ' mistakes'} to find.`, { margin: [0, 0, 0, 4] }), box([{ text: para, lineHeight: 1.45 }], '#FBFBFD')];
+  const body = [[T('Mistake', { bold: true }), T('Correction', { bold: true })]].concat(errs.map(e => ans ? [A(e[0]), A(e[1], { bold: true })] : [{ text: ' ', margin: [0, st.gap * 0.5, 0, 0] }, { text: ' ' }]));
+  return [{ stack: head.concat([{ table: { headerRows: 1, widths: ['*', '*'], body }, layout: thinGrid('#aab2c2') }]), unbreakable: true, margin: [0, 0, 0, 10] }];
+}
+const RENDER = { mc: rMC, sa: rSA, read: rSA, er: rER, stim: rStim, calc: rCalc, draw: rDraw, label: rLabel, match: rMatch, cloze: rCloze, define: rDefine, tf: rTF, chain: rChain, order: rOrder, sort: rSort, compare: rCompare, error: rError };
+
+/* ================================================================ PDF: the document */
+function versionB(ents) {
+  const rnd = mulberry((S.ws.seed ^ 0xB0B) >>> 0), out = [];
+  const byF = new Map(); ents.forEach(x => { if (!byF.has(x.it.f)) byF.set(x.it.f, []); byF.get(x.it.f).push(x); });
+  for (const [, list] of byF) {
+    const U = units(list).map(u => u.ents);
+    for (const grp of shuffle(U, rnd)) for (const x of grp) {
+      let it = x.it;
+      if (it.f === 'mc' && !it.o.some(o => /\b(both|all of the above|none of the above|[A-D] and [A-D])\b/i.test(o))) {
+        it = clone(it); const p = shuffle([0, 1, 2, 3], rnd);
+        it.o = p.map(i => x.it.o[i]); if (it.mat) it.mat.rows = p.map(i => x.it.mat.rows[i]);
+        if (it.key) it.key = it.key.map(k => letterOf(p.indexOf('ABCD'.indexOf(k))));
+        if (it.e && it.e.why) it.e = Object.assign({}, it.e, { why: it.e.why.replace(/\b([A-D])\b(?=[ ,.)]|$)/g, m => letterOf(p.indexOf('ABCD'.indexOf(m)))) });
+      }
+      out.push(Object.assign({}, x, { it }));
+    }
+  }
+  return out;
+}
+async function makePdf(mode) {
+  const L = LAY(), st = styleTokens(L);
+  FAM = st.font;
+  await ensurePdfLib(st.font);
+  let ents = ordered(); if (!ents.length) throw new Error('the worksheet has no questions');
+  if (L.version === 'B') ents = versionB(ents);
+  await preloadImages(ents, L, mode === 'answers' || L.answers === 'end');
+  const U = units(ents), W = contentWidth(st), stats = sheetStats();
+  const ctx = { L, st, W, mode, U };
+  const content = docHeader(ctx, stats);
+  let lastF = null, partN = 0;
+  const compact2 = L.cols === 2;
+  let pending = null, firstPart = true;
+  const put = nodes => {   // a part heading never sits alone at the foot of a page: it goes with the first question
+    if (pending && nodes.length) { nodes[0] = Object.assign({ stack: pending.concat([nodes[0]]), unbreakable: true }, pending.brk ? { pageBreak: 'before' } : {}); pending = null; }
+    content.push(...nodes);
+  };
+  let colBuf = [];
+  const flushCols = () => {
+    if (!colBuf.length) return;
+    const half = (W - 14) / 2, sub = Object.assign({}, ctx, { W: half }), rows = [];
+    for (let i = 0; i < colBuf.length; i += 2) rows.push([{ stack: RENDER[colBuf[i].f](colBuf[i], sub) }, colBuf[i + 1] ? { stack: RENDER[colBuf[i + 1].f](colBuf[i + 1], sub) } : { text: '' }]);
+    const lay = { hLineWidth: () => 0, vLineWidth: (i) => i === 1 ? 0.5 : 0, vLineColor: () => '#c9d2e4', paddingLeft: (i) => i ? 7 : 0, paddingRight: (i) => i ? 0 : 7 };
+    put([{ table: { widths: [half, half], body: rows.slice(0, 1), dontBreakRows: true }, layout: lay }].concat(rows.length > 1 ? [{ table: { widths: [half, half], body: rows.slice(1), dontBreakRows: true }, layout: lay }] : []));
+    colBuf = [];
+  };
+  for (const u of U) {
+    const headKey = L.group === 'format' ? u.f : L.group === 'topic' ? topicKey(u.ents[0].it) : null;
+    if (headKey !== lastF && headKey !== null) {
+      flushCols();
+      pending = L.group === 'format' ? partHeading(u.f, letterOf(partN++), ctx) : [T(SECN[SEC[u.ents[0].it.c[0]]] || 'Questions', { bold: true, fontSize: st.fs * 1.1, margin: [0, 10, 0, 4] })];
+      pending.brk = L.breaks && !firstPart; firstPart = false; lastF = headKey;
+    }
+    if (compact2 && ['mc', 'define', 'calc', 'order', 'label'].includes(u.f) && mode !== 'answers') { colBuf.push(u); continue; }
+    flushCols();
+    put(RENDER[u.f](u, ctx));
+  }
+  flushCols();
+  if (mode === 'student' && L.answers === 'end') {
+    content.push(T('Answers', { bold: true, fontSize: st.fs * 1.4, pageBreak: 'before', margin: [0, 0, 0, 6] }));
+    const mcs = U.filter(u => u.f === 'mc'); if (mcs.length) content.push(mcGrid(mcs, ctx, true));
+    const actx = Object.assign({}, ctx, { mode: 'answers' });
+    for (const u of U) if (u.f !== 'mc') content.push(...RENDER[u.f](u, actx));
+  }
+  const title = S.ws.title || 'Worksheet';
+  const dd = {
+    pageSize: 'A4', pageMargins: st.m, content, info: { title, author: 'HSC Economics Worksheet Maker', subject: 'HSC Economics practice' },
+    defaultStyle: { font: st.font, fontSize: st.fs, lineHeight: st.lead, color: INK },
+    images: Object.fromEntries([...IMG].map(([k, v]) => [k, v.url])),
+    footer: (p, n) => ({ columns: [T(`HSC Economics  ·  ${title}${L.version === 'B' ? '  ·  Version B' : ''}${mode === 'answers' ? '  ·  ANSWER COPY' : ''}`, { fontSize: 7.5, color: mode === 'answers' ? RED : MUTE }), T(`Page ${p} of ${n}`, { alignment: 'right', fontSize: 7.5, color: MUTE })], margin: [st.m[0], 14, st.m[2], 0] }),
+    pageBreakBefore: (node, after) => node.headlineLevel === 1 && after.length < 6
+  };
+  return new Promise((res, rej) => { try { window.pdfMake.createPdf(dd, null, FONTDEFS, VFS).getBlob(res); } catch (e) { rej(e); } });
+}
+
+/* ================================================================ preview and download */
+let pvTimer = null, pvSeq = 0;
+function schedulePreview(ms) { if (S.view !== 'print') return; clearTimeout(pvTimer); pvTimer = setTimeout(renderPreview, ms == null ? 700 : ms); }
+async function renderPreview() {
+  const seq = ++pvSeq, box = $('#preview');
+  if (!S.ws.items.length) { box.innerHTML = '<p class="msg">Add questions in step 1 first.</p>'; $('#pvnote').textContent = ''; return; }
+  box.innerHTML = '<p class="msg"><span class="spin"></span> Making the PDF…</p>';
+  try {
+    const blob = await makePdf($('#pv-ans').checked ? 'answers' : 'student');
+    if (seq !== pvSeq) return;
+    if (!window.pdfjsLib) await loadScript(LIB.pdfjs);
+    if (LIB.onPage) { if (!window.pdfjsWorker) await loadScript(LIB.worker); }
+    else window.pdfjsLib.GlobalWorkerOptions.workerSrc = LIB.worker;
+    const doc = await window.pdfjsLib.getDocument({ data: new Uint8Array(await blob.arrayBuffer()) }).promise;
+    if (seq !== pvSeq) return;
+    box.innerHTML = '';
+    $('#pvnote').textContent = `${doc.numPages} ${doc.numPages === 1 ? 'page' : 'pages'} of A4. ${$('#pv-ans').checked ? 'This is the answer copy.' : 'This is the student copy.'}`;
+    const W = Math.min(box.clientWidth - 28, 860), dpr = Math.min(2, window.devicePixelRatio || 1);
+    for (let p = 1; p <= doc.numPages; p++) {
+      const page = await doc.getPage(p); if (seq !== pvSeq) return;
+      const vp = page.getViewport({ scale: 1 }), v2 = page.getViewport({ scale: W / vp.width * dpr });
+      const c = document.createElement('canvas'); c.width = Math.floor(v2.width); c.height = Math.floor(v2.height); c.style.width = Math.floor(v2.width / dpr) + 'px';
+      c.setAttribute('aria-label', 'Page ' + p); box.append(c);
+      await page.render({ canvasContext: c.getContext('2d'), viewport: v2 }).promise;
+    }
+  } catch (e) { console.error(e); box.innerHTML = `<p class="msg">The preview could not be made (${esc(e.message || e)}). The download buttons may still work.</p>`; }
+}
+function fileName(mode) {
+  const t = (S.ws.title || 'Worksheet').replace(/[\\/:*?"<>|]+/g, '').slice(0, 80);
+  return `Worksheet - ${t}${LAY().version === 'B' ? ' (B)' : ''}${mode === 'answers' ? ' - answers' : ''}.pdf`;
+}
+async function download(mode) {
+  const btn = mode === 'answers' ? $('#dl-ans') : $('#dl-ws'), old = btn.innerHTML;
+  btn.disabled = true; btn.innerHTML = '<span class="spin"></span> Making the PDF…';
+  try {
+    const blob = await makePdf(mode), name = fileName(mode);
+    if (DOWNLOADS) { try { await DOWNLOADS.save({ filename: name, data: blob }); } catch (e) { if (e.code !== 'declined') toast('The PDF could not be saved here (' + (e.code || 'error') + ').'); } }
+    else { const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 5000); }
+  } catch (e) { console.error(e); toast('The PDF could not be made: ' + (e.message || e)); }
+  finally { btn.disabled = false; btn.innerHTML = old; }
+}
+
+/* ================================================================ Claude (only in the copy of this page that runs inside Claude) */
+const CL_FMTS = [['mc', 'Multiple choice'], ['sa', 'Short answer'], ['stim', 'Data or source with questions'], ['er', 'Extended response'], ['draw', 'Draw a diagram'],
+  ['tf', 'True or false'], ['chain', 'Cause and effect chain'], ['sort', 'Sort and classify'], ['compare', 'Compare'], ['error', 'Spot the error']];
+const SHAPES = {
+  mc: '{"f":"mc","c":["2C.2"],"m":1,"lv":2,"q":"the stem","o":["option A","option B","option C","option D"],"key":["B"],"e":{"why":"why B is right and the error behind each other option"}}  (add "table":{"cap":"Table 1","rows":[["Heading","Heading"],["cell","cell"]]} when the question needs data)',
+  sa: '{"f":"sa","c":["3C.3"],"m":4,"lv":2,"q":"one question that starts with a NESA key verb","pts":["a marking point (1 mark)","..."],"ans":"a model answer"}  (or several parts: "lead":"stimulus sentence","table":{...},"parts":[{"label":"(a)","m":2,"q":"...","pts":["..."],"ans":"..."}])',
+  stim: '{"f":"sa","c":["3B.1"],"lv":2,"lead":"what the data shows","table":{"cap":"Table 1: ...","rows":[["Year","..."],["1","..."]]},"parts":[{"label":"(a)","m":1,"q":"Calculate ...","pts":["..."],"ans":"..."},{"label":"(b)","m":3,"q":"Explain ...","pts":["..."],"ans":"..."}]}',
+  er: '{"f":"er","c":["4D.3","3C.3"],"m":20,"lv":3,"q":"the essay question","pts":["what a Band 6 response includes"],"plan":["paragraph 1 idea","paragraph 2 idea","paragraph 3 idea"]}',
+  draw: '{"f":"draw","c":["2C.2"],"m":4,"lv":2,"dia":"one diagram code from the list below","q":"Draw a diagram to show the effect of ... on ...","ans":"which curve shifts, which way, the new equilibrium, and why"}',
+  tf: '{"f":"tf","c":["3B.3"],"rows":[{"s":"a statement as printed","ans":true,"fix":"why it is true"},{"s":"a false statement","ans":false,"fix":"the corrected statement"}]}  (6 to 8 rows, about half false)',
+  chain: '{"f":"chain","c":["4D.3"],"title":"short title","trigger":"the event","steps":[{"v":"the variable that changes","d":1,"why":"why it rises"},{"v":"...","d":-1,"why":"why it falls"}]}  (5 to 8 steps; d is 1 for rises, -1 for falls)',
+  sort: '{"f":"sort","c":["3B.3"],"q":"the instruction","cats":["heading 1","heading 2"],"rows":[{"t":"an item","cat":"heading 1"}]}  (8 to 12 items)',
+  compare: '{"f":"compare","c":["4C.1","4D.1"],"q":"the instruction","cols":["thing 1","thing 2"],"rows":[{"h":"row heading","cells":[{"t":"answer","given":false},{"t":"answer","given":true}]}]}  (5 to 7 rows; give about one cell in four)',
+  error: '{"f":"error","c":["2C.3"],"q":"This paragraph answers: <question>","text":"a 100 to 160 word student paragraph with 3 to 5 mistakes, each written as [[the mistaken words => the correct words]]"}'
+};
+const RULES = `House rules (NSW HSC Economics):
+- Australian spelling. Use NESA key verbs (identify, outline, describe, explain, analyse, discuss, assess, evaluate, calculate) and set the marks to suit the verb.
+- Call the upward-sloping aggregate supply curve AS. Call it SRAS only when LRAS is also on the diagram. Label shifts AD1 to AD2, S1 to S2.
+- Do not use the term "quota rent". Say the importers keep the extra revenue from the higher price.
+- Treat developing economies and emerging economies as separate categories, never lumped together.
+- Prefer hypothetical numbers for calculations. If you quote a real statistic, name the source and the date it was true, and only use figures you are sure of.
+- Every multiple-choice question has exactly one correct answer, and each wrong option is a common student error.
+- Every question has an answer: marking points with marks, or a model answer.
+- Write for students, not teachers. No markdown, no HTML.`;
+const READING = { std: 'Write at the level of the HSC exam.', plain: 'Write in plain English for students reading at about Year 7: short sentences, everyday words, and a short meaning in brackets the first time a key term appears. Keep the economics exactly right.' };
+function selText() {
+  if (S.fw === 'h09') return [...S.sel09].slice(0, 30).map(p => `${p} ${DOT[p]}`).join('\n');
+  return [...S.sel25].map(s => `${s} ${SECN[s]}: ` + (D.syl.y12.flatMap(t => t.sections).find(x => x.id === s) || { points: [] }).points.map(p => p.t).join('; ')).join('\n');
+}
+function normalise(x, fallbackC) {
+  if (!x || typeof x !== 'object') return null;
+  const f = x.f === 'stim' ? 'sa' : x.f; if (!FBY[f] || !SHAPES[x.f === 'sa' && x.parts ? 'sa' : x.f] && !SHAPES[f]) return null;
+  const valid = c => (c || []).filter(p => DOT[p] && /^\d[A-I]\.\d+$/.test(p));
+  const it = Object.assign({}, x, { f, id: 'cl:' + uid(), src: 'claude', rev: 1, c: valid(x.c).length ? valid(x.c) : fallbackC, k: x.k || [] });
+  if (S.fw === 'y12') { it.c25 = (x.c || []).filter(p => /^Y\d/.test(p)); }
+  const str = v => typeof v === 'string' ? v : '';
+  if (f === 'mc') { if (!Array.isArray(it.o) || it.o.length !== 4 || !Array.isArray(it.key) || !it.key.length || !it.key.every(k => 'ABCD'.includes(k))) return null; it.o = it.o.map(str); it.m = 1; it.e = { why: str(it.e && it.e.why), not: {} }; }
+  if (f === 'sa') { if (it.parts) { it.parts = it.parts.filter(p => p && p.q).map(p => ({ label: str(p.label) || '', m: +p.m || 1, q: str(p.q), pts: (p.pts || []).map(str), ans: str(p.ans) })); if (!it.parts.length) return null; it.m = it.parts.reduce((a, p) => a + p.m, 0); } else { if (!it.q) return null; it.m = +it.m || 2; it.pts = (it.pts || []).map(str); } }
+  if (it.table && !(Array.isArray(it.table.rows) && it.table.rows.length > 1)) delete it.table;
+  if (f === 'er') { if (!it.q) return null; it.m = +it.m || 20; it.pts = (it.pts || []).map(str); }
+  if (f === 'draw') { if (!it.q || !D.dias[it.dia]) return null; it.m = +it.m || 4; }
+  if (f === 'tf') { if (!Array.isArray(it.rows) || it.rows.length < 3) return null; it.rows = it.rows.map(r => ({ s: str(r.s), ans: !!r.ans, fix: str(r.fix), why: r.ans ? str(r.fix) : '' })); it.m = it.rows.length; }
+  if (f === 'chain') { if (!Array.isArray(it.steps) || it.steps.length < 3) return null; it.steps = it.steps.map(s => ({ v: str(s.v), d: s.d < 0 ? -1 : 1, why: str(s.why) })); it.m = it.steps.length; }
+  if (f === 'sort') { if (!Array.isArray(it.cats) || !Array.isArray(it.rows)) return null; it.rows = it.rows.filter(r => it.cats.includes(r.cat)); it.m = Math.max(2, Math.round(it.rows.length / 2)); }
+  if (f === 'compare') { if (!Array.isArray(it.cols) || !Array.isArray(it.rows)) return null; it.rows = it.rows.map(r => ({ h: str(r.h), cells: (r.cells || []).slice(0, it.cols.length).map(c => ({ t: str(c.t), given: !!c.given })) })); it.m = it.rows.length; }
+  if (f === 'error') { if (!/\[\[.+?=>.+?\]\]/.test(str(it.text))) return null; it.m = (it.text.match(/\[\[/g) || []).length; }
+  return it;
+}
+function renderClaudeBox() {
+  const on = !!SAMPLE; $('#claudebox').hidden = !on;
+  if (on && !$('#cl-fmt').options.length) $('#cl-fmt').innerHTML = CL_FMTS.map(([k, n]) => `<option value="${k}">${n}</option>`).join('');
+}
+let clCtl = null;
+const CL_ERR = { not_granted: 'Claude was not allowed for this page.', sampling_disabled: 'Claude is not available for this account.', rate_limited: 'Too many requests just now. Wait a minute and try again.', refused: 'Claude declined that request. Try different wording.', invalid_json: 'Claude’s answer could not be read. Try again, or ask for fewer questions.', session_expired: 'Sign in to Claude again.' };
+async function askClaude(prompt, msgEl) {
+  clCtl = new AbortController(); $('#cl-stop').hidden = false;
+  msgEl.innerHTML = '<span class="spin"></span> Claude is writing…';
+  try { return await SAMPLE.json(prompt, { signal: clCtl.signal, cache: false, modelTier: 'default' }); }
+  catch (e) { if (e.code === 'not_granted' || e.code === 'sampling_disabled') { SAMPLE = null; renderAll(); } msgEl.textContent = e.code === 'cancelled' ? 'Stopped.' : (CL_ERR[e.code] || 'Something went wrong. Try again.'); return null; }
+  finally { $('#cl-stop').hidden = true; }
+}
+async function claudeWrite() {
+  if (!SAMPLE) return;
+  const msg = $('#cl-msg');
+  if (!hasSel()) { msg.textContent = 'Choose dot points first (step 1).'; return; }
+  const fmt = $('#cl-fmt').value, n = +$('#cl-n').value, lv = $('#cl-lv').value, read = $('#cl-read').value, note = $('#cl-note').value.trim();
+  const fallbackC = S.fw === 'h09' ? [...S.sel09].slice(0, 3) : [];
+  const avoid = S.ws.items.map(itemOf).filter(Boolean).slice(0, 25).map(it => plain(it.q || it.title || it.trigger || '').slice(0, 120)).filter(Boolean);
+  const prompt = `You are an experienced NSW HSC Economics teacher writing practice questions for a printed worksheet.
+
+Syllabus content to practise (${S.fw === 'h09' ? '2009 syllabus dot points' : '2025 syllabus sections'}):
+${selText()}
+
+Write ${n} new ${CL_FMTS.find(x => x[0] === fmt)[1].toLowerCase()} question${n > 1 ? 's' : ''}. Level: ${{ 1: 'foundation (Band 3 and 4)', 2: 'HSC standard', 3: 'extension (Band 6 discriminators)' }[lv]}. ${READING[read]}
+${note ? 'Teacher’s note: ' + note + '\n' : ''}${fmt === 'draw' ? 'Diagram codes you may use (the page draws them; pick the one that fits): ' + Object.keys(D.dias).filter(k => !/given$/.test(k)).join(', ') + '. Add " given" to the code to show students the starting diagram.\n' : ''}${avoid.length ? 'Do not repeat these questions already on the worksheet:\n- ' + avoid.join('\n- ') + '\n' : ''}
+${RULES}
+
+Tag each question in "c" with the ${S.fw === 'h09' ? '2009 dot point codes above (for example 2C.2)' : '2025 section codes above (for example Y3c)'} it practises.
+Reply with only a JSON object: {"items":[ ... ]} where each item has this shape:
+${SHAPES[fmt]}`;
+  const out = await askClaude(prompt, msg); if (!out) return;
+  const items = (Array.isArray(out) ? out : out.items || []).map(x => normalise(x, fallbackC)).filter(Boolean);
+  if (!items.length) { msg.textContent = 'Claude’s questions could not be used. Try again.'; return; }
+  items.forEach(it => S.ws.items.push({ k: uid(), item: it })); persist(); renderList();
+  msg.textContent = `Added ${items.length}. Check them before you print.`;
+}
+function itemForPrompt(it) {
+  const keep = ['f', 'm', 'q', 'o', 'key', 'lead', 'parts', 'pts', 'ans', 'could', 'table', 'title', 'trigger', 'steps', 'rows', 'cats', 'cols', 'text', 'qs', 'lede', 'figs', 'guide', 'dia'];
+  const o = {}; keep.forEach(k => { if (it[k] !== undefined) o[k] = it[k]; });
+  if (it.e && it.e.why) o.why = it.e.why;
+  if (it.crit) o.criteria = it.crit.map(b => b.m + ': ' + b.b.join(' / '));
+  if (it.st) o.stimulus = 'The paper had this stimulus (not shown): ' + it.st;
+  if (it.fig) o.figures = 'The question uses a figure or table from the paper that you cannot see.';
+  if (it.src === 'hsc') o.source = `NSW HSC Economics ${it.y} ${it.l}`;
+  return JSON.stringify(o).slice(0, 12000);
+}
+async function claudeLike(k) {
+  const it = itemOf(S.ws.items[entryIndex(k)]); if (!it || !SAMPLE) return;
+  const msg = $('#cl-msg'); $('#claudebox').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  const fmt = it.f === 'stim' ? 'stim' : (it.f === 'read' ? 'sa' : it.f);
+  const prompt = `You are an experienced NSW HSC Economics teacher. Write ONE new question modelled on the question below, for a printed worksheet.
+It must practise exactly the same skill, at the same level, with the same marks and the same directive verb, in the same format, but with a different scenario, product, country, event or numbers. Do not copy its wording. If the original depends on a figure or table you cannot see, write the data you need as a table instead.
+
+The original (JSON):
+${itemForPrompt(it)}
+
+Dot points it practises: ${it.c.map(c => c + ' ' + (DOT[c] || '')).join('; ')}
+${fmt === 'draw' ? 'Diagram codes you may use: ' + Object.keys(D.dias).filter(x => !/given$/.test(x)).join(', ') + '\n' : ''}
+${RULES}
+
+Reply with only a JSON object: {"items":[ one item ]} in this shape:
+${SHAPES[fmt] || SHAPES.sa}`;
+  const out = await askClaude(prompt, msg); if (!out) return;
+  const x = normalise((out.items || [out])[0], it.c);
+  if (!x) { msg.textContent = 'Claude’s look-alike could not be used. Try again.'; return; }
+  x.like = [it.id];
+  S.ws.items.splice(entryIndex(k) + 1, 0, { k: uid(), item: x }); persist(); renderList();
+  msg.textContent = 'Added a look-alike after the original. Check it before you print.';
+}
+async function claudePlain(k) {
+  const i = entryIndex(k), it = itemOf(S.ws.items[i]); if (!it || !SAMPLE) return;
+  const msg = $('#cl-msg'); $('#claudebox').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  const fields = ['q', 'lead', 'o', 'parts', 'rows', 'text', 'trigger', 'title', 'cats', 'cols', 'qs', 'lede'].filter(f => it[f] !== undefined);
+  const prompt = `Rewrite the student-facing wording of this NSW HSC Economics question in plain English for students reading at about Year 7. Keep the economics, the answer, the marks, the order of any options and the format exactly the same. Use short sentences and everyday words. Keep each key term, but add a short meaning in brackets the first time it appears. Keep any [[wrong => right]] markers and [[gap]] markers exactly as they are.
+
+The question (JSON): ${JSON.stringify(Object.fromEntries(fields.map(f => [f, it[f]])))}
+
+Reply with only a JSON object with the same keys (${fields.join(', ')}) and the rewritten text.`;
+  const out = await askClaude(prompt, msg); if (!out) return;
+  const x = clone(it); let changed = 0;
+  for (const f of fields) if (out[f] !== undefined && typeof out[f] === typeof it[f] && (!Array.isArray(it[f]) || out[f].length === it[f].length)) { x[f] = out[f]; changed++; }
+  if (!changed) { msg.textContent = 'The rewrite could not be used. Try again.'; return; }
+  x.ed = true; x.id = x.id.startsWith('ed:') ? x.id : 'ed:' + x.id;
+  const before = S.ws.items[i]; S.ws.items[i] = { k, item: x }; persist(); renderList();
+  msg.textContent = 'Reworded.'; toast('Reworded in plain English.', () => { S.ws.items[entryIndex(k)] = before; persist(); renderList(); });
+}
+
+/* ================================================================ help and footer */
+function renderHelp() {
+  const n = D.items.length, by = s => D.items.filter(x => x.src === s).length;
+  $('#v-help').innerHTML = `<h2>What it does</h2>
+  <p>The Worksheet Maker builds a printable PDF practice sheet, and a matching answer copy, from ${n.toLocaleString('en-AU')} questions and tasks: ${by('hsc')} past HSC questions (multiple choice, short-answer parts and extended responses, 2002 to 2026), ${by('bank')} new practice questions written for it, ${by('ev')} sources from this year’s news and data, and ${by('auto')} tasks built from the class tools. Key-term tasks and calculations are made fresh each time from the Glossary (${D.gloss.length} terms), ${D.tf.length} true-or-false statements and the Calculation Trainer’s ${D.calc.length} skills.</p>
+  <h2>Three steps</h2>
+  <ol><li><b>Choose questions.</b> Tick dot points (or 2025 syllabus sections), optionally narrow to skills, set how many of each type you want, then press <b>Make the worksheet</b>. Swap, edit, reorder or remove any question. <b>Look-alike</b> adds a new question of the same kind as a past HSC question: a fresh calculation, a matching new question from the bank, or a diagram task.</li>
+  <li><b>Layout and print.</b> Pick a page style (HSC exam, workbook, adapted or compact) and set the header, writing space, columns, part breaks and answers. The preview is the real PDF. <b>Download worksheet</b> and <b>Download answer copy</b> save the files to print.</li>
+  <li><b>Keep it.</b> <b>Save</b> puts the worksheet in <b>My worksheets</b> in this browser; save to a file to move it to another computer.</li></ol>
+  <h2>The Question Finder</h2>
+  <p>Questions you tick in the <a href="../hsc-question-finder-site/">Question Finder</a> on this computer can be added with <b>Add my Question Finder ticks</b>. The figures, tables and NESA marking criteria come with them.</p>
+  <h2>Page styles</h2>
+  <ul><li><b>HSC exam style</b>: plain, numbered, marks in the right margin, ruled lines scaled to the marks.</li><li><b>Workbook style</b>: the navy and gold workbook look, with coloured part banners and dotted lines.</li><li><b>Adapted layout</b>: Lexend at 12.5 pt, extra space, a tick box on every question, word boxes, sentence starters and a reminder of the paragraph scaffold.</li><li><b>Compact revision</b>: two columns for short questions, small or no writing space, for answering in books.</li></ul>
+  <h2>Good to know</h2>
+  <ul><li>New questions are marked <i>not yet reviewed</i> until the teacher has checked them. Explanations of multiple-choice answers were written for the site, not by NESA.</li>
+  <li>Diagrams are drawn in the class house style. They are conceptual and not to scale, except the numbered figures used for “Read a diagram”.</li>
+  <li>Questions on news items come from the Evidence Finder. Figures in them are as at the date shown.</li>
+  ${SAMPLE ? '<li>This copy runs inside Claude, so it can also write new questions, look-alikes of any question and plain-English rewordings. Claude’s questions are marked <i>check before printing</i>.</li>' : '<li>A copy of this page inside Claude can also write new questions and look-alikes on request.</li>'}</ul>`;
+}
+
+/* ================================================================ start */
+async function init() {
+  try {
+    // The version in the address stops browsers keeping an old copy; plain data.json is the fallback
+    let r = await fetch('data.json?v=__DATAVER__').catch(() => null);
+    if (!r || !r.ok) r = await fetch('data.json');
+    if (!r.ok) throw new Error(r.status);
+    D = await r.json();
+  } catch (e) { $('#list').innerHTML = '<div class="empty">The question data could not be loaded. Check your connection and reload the page.</div>'; return; }
+  indexData(); restore(); bind();
+  $('#layout').addEventListener('change', onLayout);
+  $('#layout').addEventListener('input', e => { if (e.target.type === 'text' && e.target.dataset.l) onLayout(e); });
+  $('#styles').onclick = e => { const b = e.target.closest('[data-style]'); if (!b) return; const keepT = { name: LAY().name, cls: LAY().cls, date: LAY().date, intro: LAY().intro, version: LAY().version, answers: LAY().answers, group: LAY().group }; S.ws.layout = Object.assign(defaultLayout(b.dataset.style), keepT); persist(); renderLayout(); schedulePreview(0); };
+  $('#pv-ans').onchange = () => schedulePreview(0);
+  $('#dl-ws').onclick = () => download('student');
+  $('#dl-ans').onclick = () => download('answers');
+  $('#cl-stop').onclick = () => { if (clCtl) clCtl.abort(); };
+  $$('#fw button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.fw === S.fw)));
+  const params = new URLSearchParams(location.search);
+  if (params.get('embed') === '1') document.body.classList.add('embed');
+  if (['light', 'dark'].includes(params.get('theme'))) document.documentElement.dataset.theme = params.get('theme');
+  renderAll(); go('build');
+  $('#foot').innerHTML = `Past HSC questions, figures, marking criteria and answers are from the NESA HSC Economics papers and marking guidelines, as held in the class <a href="../hsc-question-finder-site/">Question Finder</a>. New practice questions, multiple-choice explanations and answer notes were written for this site and are not from NESA. Dot-point tags are a reading of the questions, not an official mapping. Your worksheets are kept in this browser only. Data version ${esc(D.built)}.`;
+  liveEvidence().then(n => { if (n) { renderFormats(); renderContent(); } });
+  // Opened from the Question Finder's "Make a PDF worksheet" button: its ticks arrive in the address
+  const qf = params.get('qf');
+  if (qf) { qfImport(qf.split(',').map(x => x.trim()).filter(Boolean)); history.replaceState(null, '', location.pathname); }
+  if (window.claude && typeof window.claude.use === 'function') {
+    window.claude.use('sample').then(s => { if (s) { SAMPLE = s; renderAll(); } }).catch(() => {});
+    window.claude.use('downloads').then(d => { if (d) DOWNLOADS = d; }).catch(() => {});
+  }
+  let twoDeep = false; try { twoDeep = window.self !== window.top && window.parent !== window.top; } catch (e) { twoDeep = true; }
+  if (twoDeep && !window.claude && location.protocol.startsWith('http')) { const a = $('#newtab'); a.href = location.href; a.hidden = false; }
+}
+init();
+})();
+</script>
+</body>
+</html>
