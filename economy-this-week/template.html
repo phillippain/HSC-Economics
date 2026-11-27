@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- GA:START (Google Analytics G-11YGV11ZES; same tag as build/build_analytics.py writes into the tools) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-11YGV11ZES"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-11YGV11ZES');</script>
+<!-- GA:END -->
+<title>The Economy This Week · HSC Economics</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#12134a;--cob:#1c3fb0;--gold:#ffd24a;--ink:#0b1330;--grey:#5a6580;--line:#d7deec;--bg:#f3f5fa;
+--t1:#2563eb;--t2:#0f9488;--t3:#d97706;--t4:#7c3aed}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:Manrope,Arial,sans-serif;color:var(--ink);background:#fff;font-size:15px;line-height:1.45}
+button{font:inherit;cursor:pointer}
+a{color:var(--cob)}
+.wrap{max-width:1100px;margin:0 auto;padding:14px 16px 40px}
+header.top{display:flex;align-items:center;gap:14px;border-bottom:3px solid var(--gold);padding-bottom:12px}
+.logo{flex:0 0 48px;height:48px;border-radius:12px;background:var(--navy);display:flex;align-items:center;justify-content:center}
+.logo svg{width:28px;height:28px;fill:none;stroke:var(--gold);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+header h1{margin:0;font-size:26px;font-weight:800;letter-spacing:-.01em;color:var(--navy)}
+header p{margin:2px 0 0;color:var(--grey);font-size:14px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:14px 0 16px}
+.tabs,.chips{display:flex;flex-wrap:wrap;gap:6px}
+.tab{border:2px solid var(--cob);background:#fff;color:var(--cob);border-radius:999px;padding:6px 14px;font-weight:700}
+.tab[aria-selected=true]{background:var(--cob);color:#fff}
+.chip{border:2px solid var(--c,#8a94ad);background:#fff;color:var(--c,#5a6580);border-radius:999px;padding:4px 11px;font-weight:700;font-size:13px}
+.chip[aria-pressed=true]{background:var(--c,#5a6580);color:#fff}
+.chip small{font-weight:600;opacity:.8}
+.c1{--c:var(--t1)}.c2{--c:var(--t2)}.c3{--c:var(--t3)}.c4{--c:var(--t4)}
+.pill{display:inline-block;border-radius:999px;padding:1px 9px;font-size:12px;font-weight:800;color:#fff;background:var(--c);white-space:nowrap}
+.btn{display:inline-flex;align-items:center;gap:6px;border-radius:10px;padding:8px 13px;font-weight:800;text-decoration:none;border:2px solid var(--cob);font-size:14px}
+.btn.p{background:var(--cob);color:#fff}.btn.s{background:#fff;color:var(--cob)}.btn.g{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+/* latest */
+.latest{display:grid;grid-template-columns:minmax(200px,330px) 1fr;gap:22px;align-items:start}
+.cover{display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(18,19,74,.14);cursor:zoom-in;background:#fff;padding:0}
+.cover img{display:block;width:100%;height:auto}
+.kicker{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--cob)}
+.latest h2{margin:2px 0 6px;font-size:24px;font-weight:800;color:var(--navy)}
+.sum{font-size:16px;margin:0 0 10px}
+.big{border:2px dashed var(--navy);border-radius:10px;padding:9px 12px;font-size:14px;margin:10px 0 12px;background:#fffbea}
+.big b{color:var(--navy)}
+ol.stories{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+ol.stories li{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-left:5px solid var(--c);border-radius:10px;padding:7px 10px;background:#fff;cursor:pointer}
+ol.stories li:hover{background:var(--bg)}
+ol.stories li.dim{opacity:.35}
+.num{font-weight:800;color:var(--c);font-size:18px;line-height:1.1;min-width:24px}
+.st b{display:block;font-size:14.5px;line-height:1.3}
+.st span{font-size:12.5px;color:var(--grey)}
+/* archive */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.card.dim{opacity:.35}
+.card .thumb{height:170px;overflow:hidden;border-bottom:1px solid var(--line);cursor:zoom-in;background:var(--bg);border:0;padding:0;width:100%}
+.card .thumb img{width:100%;display:block}
+.card .bd{padding:10px 12px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{margin:0;font-size:16px;color:var(--navy)}
+.card p{margin:0;font-size:13px;color:var(--grey);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.dots{display:flex;flex-wrap:wrap;gap:4px}
+.card .btns{margin-top:auto;padding-top:4px}
+.card .btn{padding:5px 9px;font-size:13px}
+.new{background:var(--gold);color:var(--navy);font-size:11px;font-weight:800;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:2px}
+/* index */
+.search{display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.search input{flex:1;font:inherit;padding:9px 12px;border:2px solid var(--line);border-radius:10px}
+.search input:focus{outline:none;border-color:var(--cob)}
+.count{color:var(--grey);font-size:13px;margin-bottom:8px}
+.rows{display:grid;gap:8px}
+.row{border:1px solid var(--line);border-left:5px solid var(--c);border-radius:10px;padding:9px 12px;background:#fff}
+.row h4{margin:0 0 2px;font-size:15px;line-height:1.3}
+.row h4 button{all:unset;cursor:pointer;color:var(--ink)}
+.row h4 button:hover{color:var(--cob);text-decoration:underline}
+.meta{font-size:12.5px;color:var(--grey);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.lead{font-size:13.5px;margin:4px 0}
+.terms{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
+.term{border:1px solid var(--line);background:var(--bg);border-radius:6px;padding:1px 7px;font-size:12px;color:var(--ink)}
+.term:hover{border-color:var(--cob)}
+details.try{margin-top:6px;font-size:13.5px}
+details.try summary{cursor:pointer;font-weight:800;color:var(--cob);font-size:13px}
+details.try p{margin:5px 0 0;background:#eef3ff;border-radius:8px;padding:7px 10px}
+mark{background:#ffe680;padding:0 1px;border-radius:2px}
+.empty{color:var(--grey);padding:20px;text-align:center;border:1px dashed var(--line);border-radius:10px}
+footer{margin-top:28px;color:var(--grey);font-size:12.5px;border-top:1px solid var(--line);padding-top:10px}
+/* reader */
+.reader{position:fixed;inset:0;background:rgba(11,19,48,.92);display:none;flex-direction:column;z-index:10}
+.reader.on{display:flex}
+.rbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px 12px;background:var(--navy);color:#fff}
+.rbar b{font-size:15px;margin-right:auto}
+.rbar .btn{padding:5px 10px;font-size:13px}
+.rbar .btn.s{background:transparent;color:#fff;border-color:#fff}
+.rbar .pg{font-weight:700;font-size:14px;min-width:84px;text-align:center}
+.rbody{flex:1;overflow:auto;display:flex;justify-content:center;padding:14px}
+.rbody img{max-width:min(900px,100%);height:auto;align-self:flex-start;box-shadow:0 8px 30px rgba(0,0,0,.5);background:#fff}
+@media (max-width:700px){.latest{grid-template-columns:1fr}.cover{max-width:340px}header h1{font-size:21px}.rbar b{width:100%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h13v14H6a2 2 0 01-2-2z"/><path d="M17 8h3v9a2 2 0 01-2 2"/><path d="M7 9h7M7 12h7M7 15h4"/></svg></div>
+    <div><h1>The Economy This Week</h1><p>The week's economic news in four pages, linked to the syllabus, with a practice question for every story. New every Friday.</p></div>
+  </header>
+  <div class="bar">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" data-tab="latest">This week</button>
+      <button class="tab" role="tab" data-tab="all">All editions</button>
+      <button class="tab" role="tab" data-tab="index">Story index</button>
+    </div>
+    <div class="chips" id="chips" aria-label="Filter by topic"></div>
+  </div>
+  <main id="main"></main>
+  <footer id="foot"></footer>
+</div>
+<div class="reader" id="reader" role="dialog" aria-modal="true" aria-label="Read the edition">
+  <div class="rbar">
+    <b id="rtitle"></b>
+    <button class="btn s" id="rprev" aria-label="Previous page">&larr; Prev</button>
+    <span class="pg" id="rpg"></span>
+    <button class="btn s" id="rnext" aria-label="Next page">Next &rarr;</button>
+    <a class="btn g" id="rdrive" target="_blank" rel="noopener">Open in Drive</a>
+    <a class="btn s" id="rpdf" target="_blank" rel="noopener" download>PDF</a>
+    <button class="btn s" id="rclose">Close &times;</button>
+  </div>
+  <div class="rbody" id="rbody"><img id="rimg" alt=""></div>
+</div>
+<script>
+var D=/*__DATA__*/null;
+(function(){
+var E=D.editions, T=D.topics, state={tab:'latest',topic:0,q:''}, $=function(s){return document.querySelector(s)};
+var ICON={read:'<svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>',
+ drive:'<svg viewBox="0 0 24 24"><path d="M8 3h8l6 11-4 7H6l-4-7z"/><path d="M8 3l6 11h8M2 14h12l-4 7"/></svg>',
+ pdf:'<svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>'};
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function short(e){var m=e.date.match(/(\d{1,2}) (\w+) (\d{4})/);return m?m[1]+' '+m[2].slice(0,3)+' '+m[3]:e.id}
+function driveUrl(e){return e.drive?'https://drive.google.com/file/d/'+e.drive+'/view':''}
+function buttons(e,small){var b='<button class="btn p" data-read="'+e.id+'">'+ICON.read+'Read here</button>';
+  if(e.drive)b+='<a class="btn g" target="_blank" rel="noopener" href="'+driveUrl(e)+'">'+ICON.drive+(small?'Drive':'Open in Drive')+'</a>';
+  b+='<a class="btn s" target="_blank" rel="noopener" href="'+e.pdf+'" download>'+ICON.pdf+'PDF</a>';return '<div class="btns">'+b+'</div>'}
+function counts(e){var c={1:0,2:0,3:0,4:0};e.stories.forEach(function(s){c[s.topic]++});return c}
+function hasTopic(e){return !state.topic||e.stories.some(function(s){return s.topic==state.topic})}
+function chips(){var h='<button class="chip" data-t="0" aria-pressed="'+(state.topic==0)+'">All topics</button>';
+  for(var t=1;t<=4;t++)h+='<button class="chip c'+t+'" data-t="'+t+'" title="Topic '+t+': '+esc(T[t])+'" aria-pressed="'+(state.topic==t)+'">Topic '+t+'</button>';
+  $('#chips').innerHTML=h}
+function latest(){var e=E[0];if(!e)return '<p class="empty">No editions yet.</p>';
+  var li=e.stories.map(function(s){var dim=state.topic&&s.topic!=state.topic;
+    return '<li class="c'+s.topic+(dim?' dim':'')+'" data-read="'+e.id+'" data-p="'+s.page+'" title="Read story '+s.n+' (page '+s.page+')"><span class="num">'+s.n+'</span><span class="st"><b>'+esc(s.title)+'</b><span>Topic '+s.topic+' · page '+s.page+'</span></span></li>'}).join('');
+  return '<div class="latest"><button class="cover" data-read="'+e.id+'" aria-label="Read the '+esc(e.date)+' edition"><img src="'+e.images[0]+'" alt="Front page of The Economy This Week, '+esc(e.date)+'"></button><div>'+
+   '<div class="kicker">Latest edition'+(e.focus?' · Focus: '+esc(e.focus):'')+'</div><h2>'+esc(e.date)+'</h2><p class="sum">'+esc(e.summary)+'</p>'+
+   (e.big?'<div class="big"><b>The big exam idea:</b> '+esc(e.big)+'</div>':'')+'<ol class="stories">'+li+'</ol>'+buttons(e)+'</div></div>'}
+function all(){var h=E.map(function(e,i){var c=counts(e),dots='';for(var t=1;t<=4;t++)if(c[t])dots+='<span class="pill c'+t+'" style="--c:var(--t'+t+')">T'+t+' · '+c[t]+'</span>';
+  return '<div class="card'+(hasTopic(e)?'':' dim')+'"><button class="thumb" data-read="'+e.id+'" aria-label="Read the '+esc(e.date)+' edition"><img loading="lazy" src="'+e.images[0]+'" alt=""></button><div class="bd"><h3>'+esc(short(e))+(i==0?'<span class="new">NEW</span>':'')+'</h3><p>'+esc(e.summary)+'</p><div class="dots">'+dots+'</div><div class="meta">'+e.stories.length+' stories · '+e.pages+' pages</div>'+buttons(e,1)+'</div></div>'}).join('');
+  return '<div class="grid">'+h+'</div>'}
+function hl(s,q){s=esc(s);if(!q)return s;var r=new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig');return s.replace(r,'<mark>$1</mark>')}
+function index(){var q=state.q.trim().toLowerCase(),rows=[];
+  E.forEach(function(e){e.stories.forEach(function(s){if(state.topic&&s.topic!=state.topic)return;
+    var hay=(s.title+' '+s.lead+' '+s.terms.join(' ')+' '+s.q).toLowerCase();if(q&&hay.indexOf(q)<0)return;rows.push([e,s])})});
+  var h='<div class="search"><input id="q" type="search" placeholder="Search stories, key terms and questions (e.g. tariff, cash rate, China)" value="'+esc(state.q)+'" aria-label="Search the story index"></div>';
+  h+='<div class="count">'+rows.length+' stor'+(rows.length==1?'y':'ies')+(state.topic?' in Topic '+state.topic:'')+(q?' matching “'+esc(state.q)+'”':'')+'</div>';
+  if(!rows.length)return h+'<div class="empty">No stories match. Try a shorter word or clear the topic filter.</div>';
+  h+='<div class="rows">'+rows.map(function(r){var e=r[0],s=r[1];
+    return '<div class="row c'+s.topic+'"><div class="meta"><span class="pill" style="--c:var(--t'+s.topic+')">Topic '+s.topic+'</span>'+esc(short(e))+' · story '+s.n+' · page '+s.page+'</div>'+
+    '<h4><button data-read="'+e.id+'" data-p="'+s.page+'">'+hl(s.title,q)+'</button></h4><div class="lead">'+hl(s.lead,q)+'</div>'+
+    (s.terms.length?'<div class="terms">'+s.terms.map(function(t){return '<button class="term" data-term="'+esc(t)+'">'+hl(t,q)+'</button>'}).join('')+'</div>':'')+
+    (s.q?'<details class="try"><summary>Try this question</summary><p>'+hl(s.q,q)+'</p></details>':'')+'</div>'}).join('')+'</div>';
+  return h}
+function render(keepFocus){chips();document.querySelectorAll('.tab').forEach(function(b){b.setAttribute('aria-selected',b.dataset.tab==state.tab)});
+  $('#main').innerHTML=state.tab=='latest'?latest():state.tab=='all'?all():index();
+  var qi=$('#q');if(qi){qi.oninput=function(){state.q=qi.value;var p=qi.selectionStart;render(1);var n=$('#q');n.focus();n.setSelectionRange(p,p);hash()};if(keepFocus)qi.focus()}
+  hash()}
+function hash(){var h='tab='+state.tab;if(state.topic)h+='&topic='+state.topic;if(state.q&&state.tab=='index')h+='&q='+encodeURIComponent(state.q);
+  if(R.e)h+='&e='+R.e.id+'&p='+(R.p+1);try{history.replaceState(null,'','#'+h)}catch(x){}}
+/* reader */
+var R={e:null,p:0};
+function open(id,p){var e=E.filter(function(x){return x.id==id})[0];if(!e)return;R.e=e;R.p=Math.max(0,Math.min((p||1)-1,e.images.length-1));
+  $('#rtitle').textContent='The Economy This Week · '+e.date;$('#rpdf').href=e.pdf;var d=driveUrl(e);$('#rdrive').style.display=d?'':'none';$('#rdrive').href=d;
+  $('#reader').classList.add('on');show();$('#rclose').focus()}
+function show(){var e=R.e;$('#rimg').src=e.images[R.p];$('#rimg').alt='Page '+(R.p+1)+' of '+e.images.length;$('#rpg').textContent='Page '+(R.p+1)+' of '+e.images.length;
+  $('#rprev').disabled=R.p==0;$('#rnext').disabled=R.p==e.images.length-1;$('#rbody').scrollTop=0;
+  if(R.p+1<e.images.length){new Image().src=e.images[R.p+1]}hash()}
+function close(){$('#reader').classList.remove('on');R.e=null;hash()}
+$('#rprev').onclick=function(){if(R.p>0){R.p--;show()}};$('#rnext').onclick=function(){if(R.p<R.e.images.length-1){R.p++;show()}};$('#rclose').onclick=close;
+$('#reader').addEventListener('click',function(ev){if(ev.target.id=='rbody')close()});
+document.addEventListener('keydown',function(ev){if(!R.e)return;if(ev.key=='Escape')close();if(ev.key=='ArrowRight')$('#rnext').click();if(ev.key=='ArrowLeft')$('#rprev').click()});
+document.addEventListener('click',function(ev){var t=ev.target.closest('[data-tab],[data-t],[data-read],[data-term]');if(!t)return;
+  if(t.dataset.tab){state.tab=t.dataset.tab;render()}else if(t.dataset.t!=null){state.topic=+t.dataset.t;render()}
+  else if(t.dataset.read){open(t.dataset.read,+t.dataset.p||1)}else if(t.dataset.term){state.tab='index';state.q=t.dataset.term;render()}});
+/* start: read the hash (e.g. #tab=index&q=tariff or #e=2026-11-27&p=2) */
+var H={};location.hash.slice(1).split('&').forEach(function(kv){var i=kv.indexOf('=');if(i>0)H[kv.slice(0,i)]=decodeURIComponent(kv.slice(i+1))});
+if(/^(latest|all|index)$/.test(H.tab))state.tab=H.tab;if(/^[1-4]$/.test(H.topic))state.topic=+H.topic;if(H.q)state.q=H.q;
+var n=0;E.forEach(function(e){n+=e.stories.length});
+$('#foot').innerHTML=E.length+' editions · '+n+' stories. “Open in Drive” needs your school Google account; “Read here” and “PDF” work anywhere. Updated '+esc(D.built)+'.';
+render();if(H.e)open(H.e,+H.p||1);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+{
+ "_how_to": "Corrections the parser cannot work out, keyed by edition id (YYYY-MM-DD). Top-level keys replace edition fields; 'stories' replaces fields of a story by its number.",
+ "2026-10-20": {
+  "summary": "Oil is above US$110 and the IEA says it won't settle down soon. China grew on exports, NAB is cutting jobs, and the RBA could raise rates again on Melbourne Cup Day.",
+  "stories": {
+   "01": {
+    "terms": [
+     "trade surplus",
+     "domestic demand"
+    ],
+    "q": "Define trade surplus. (2 marks)"
+   },
+   "02": {
+    "terms": [
+     "supply shock",
+     "cost-push inflation"
+    ],
+    "q": "Using an AD/AS diagram, explain how a rise in global oil prices affects inflation and economic growth in an oil-importing economy such as Australia. (6 marks)"
+   },
+   "03": {
+    "terms": [
+     "tariff",
+     "secondary sanctions"
+    ],
+    "q": "Outline two reasons other than protecting local industry that a government might impose tariffs. Use this story as an example. (4 marks)"
+   },
+   "04": {
+    "terms": [
+     "terms of trade",
+     "current account"
+    ],
+    "q": "Explain how a fall in iron ore prices affects Australia's terms of trade and current account balance. (4 marks)"
+   },
+   "05": {
+    "terms": [
+     "safeguard",
+     "tariff"
+    ],
+    "q": "Using a diagram, explain the effects of a US tariff on Australian lamb exporters, US producers and US consumers. (6 marks)"
+   },
+   "06": {
+    "terms": [
+     "foreign investment",
+     "foreign ownership"
+    ],
+    "q": "Discuss the costs and benefits of foreign ownership of essential-service companies in Australia. (6 marks)"
+   },
+   "07": {
+    "terms": [
+     "structural unemployment",
+     "cyclical unemployment"
+    ],
+    "q": "Using the NAB job cuts and the September Labour Force data, distinguish between structural and cyclical unemployment. (4 marks)"
+   },
+   "08": {
+    "terms": [
+     "cost-push inflation",
+     "inflationary expectations"
+    ],
+    "q": "Explain how rising inflationary expectations can make inflation harder to bring down. (4 marks)"
+   },
+   "09": {
+    "terms": [
+     "transmission mechanism",
+     "time lags"
+    ],
+    "q": "Evaluate how effective monetary policy can be in reducing inflation that is caused by rising global oil prices. (8 marks)"
+   }
+  }
+ },
+ "2026-11-06": {
+  "stories": {
+   "09": {
+    "terms": [
+     "import dependence",
+     "fuel security",
+     "cost-push inflation"
+    ]
+   }
+  }
+ }
+}
