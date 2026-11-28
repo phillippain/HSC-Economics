@@ -6,6 +6,16 @@
    "h": "627394cb6c",
    "at": "2026-11-28",
    "note": "Update the main instruments to be the cash rate target, forward guidance, and additional policy measures."
+  },
+  "bk:cp-tariff-quota-subsidy": {
+   "s": "ok",
+   "h": "d76b2a4532",
+   "at": "2026-11-28"
+  },
+  "bk:cp-xr-systems": {
+   "s": "ok",
+   "h": "ee3b70796f",
+   "at": "2026-11-28"
   }
  }
 }
