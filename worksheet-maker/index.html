@@ -2183,7 +2183,7 @@ function renderHelp() {
 async function init() {
   try {
     // The version in the address stops browsers keeping an old copy; plain data.json is the fallback
-    let r = await fetch('data.json?v=caeb904589').catch(() => null);
+    let r = await fetch('data.json?v=2a439dedd4').catch(() => null);
     if (!r || !r.ok) r = await fetch('data.json');
     if (!r.ok) throw new Error(r.status);
     D = await r.json();

@@ -6,7 +6,7 @@ lv: 2
 Q: Compare fiscal policy and monetary policy.
 COLS: Fiscal policy | Monetary policy
 - Who decides => !The Federal Government (the Treasurer and Cabinet), through the budget | The RBA Monetary Policy Board
-- Main instruments => Government spending, taxation and transfer payments | The cash rate target, plus forward guidance and the RBA's balance sheet
+- Main instruments => Government spending, taxation and transfer payments | The cash rate target, forward guidance and additional policy measures
 - How often it can change => Mainly once a year in the budget (plus mid-year updates) | Eight meetings a year, so it can change quickly
 - Implementation lag => Long: new spending and tax changes need decisions, laws and planning | Short: the cash rate changes the day after a meeting
 - How it changes AD => Directly through G, and through C and I via tax and transfers | Indirectly, through interest rates, credit, asset prices and the exchange rate
