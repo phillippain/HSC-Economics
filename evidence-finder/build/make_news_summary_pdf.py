@@ -1,20 +1,27 @@
 #!/usr/bin/env python3
-"""Make a one-page A4 HSC Economics news summary PDF from a story record.
+"""Make a one-page A4 Economics news summary PDF, HSC or Year 11, from a story record.
 
-    python3 make_hsc_summary_pdf.py <record.json> <output folder> [--force]
+    python3 make_news_summary_pdf.py <record.json> <output folder> [--force]
 
-Writes  <output folder>/12Eco_Topic N_<Short_name>.pdf  in the house style of the
-teacher's news summaries (topic pill, headline, lede, What happened, stat tiles,
-key terms, diagram panel, flow chart, Syllabus link, Try this, sources).
-Prints one line beginning SAVED, EXISTS or ERROR (and NOTE lines for anything left out).
+Both courses use the house style of the teacher's news summaries (pill, headline, lede,
+What happened, stat tiles, key terms, diagram panel, flow chart, syllabus box, Try this,
+sources).
+  HSC      ("course": "hsc", the default)   ->  12Eco_Topic N_<Short_name>.pdf
+  Year 11  ("course": "year11")             ->  11Eco_<Focus area>_<Short name> (<date>).pdf
+Prints one line beginning SAVED, EXISTS or ERROR, NOTE lines for anything left out, and
+for Year 11 a line "SUBFOLDER 04 Financial Sector" naming the folder the PDF belongs in.
 
 Needs Playwright with Chromium and the Inter font (present in Claude's cloud workspace).
 Diagrams come from the hsc-econ-diagrams skill's scripts/econ_diagrams.py when it can be
 found; without it the page is built with no diagram panel.
 
 The record (JSON):
+  course        "hsc" or "year11"
   date          "2026-11-30"                      the digest date
-  topic         1-4                               the story's main HSC topic
+  topic         1-4                               HSC: the story's main topic
+  focus_area    1-6                               Year 11: 1 Introduction to economics, 2 Markets,
+                                                  3 Household and business sector, 4 Financial sector,
+                                                  5 Government sector, 6 International sector
   title         headline, under about 70 characters
   short_name    3-5 words for the file name, e.g. "RBA holds cash rate"
   sources_line  "ABC News · RBA"                  publisher names
@@ -25,10 +32,15 @@ The record (JSON):
   key_terms     2-3 [term, definition] pairs
   diagram       optional: {"preset": "ad_as", "args": {"shift": "SRAS left"},
                            "title": "...", "explain": "..."}   (or "svg_file": path)
-  exam_angle    one or two sentences
+  exam_angle    HSC: one or two sentences on using it in an answer
+  why_it_matters  Year 11: one or two sentences linking the story to the course idea
+  year12_idea   Year 11, optional: a Year 12 idea the story uses, explained in one plain sentence
   flow          {"title": "...", "steps": [5 short strings]}   (the last is the outcome)
-  syllabus_link "Topic 4 – monetary policy: ..."
-  questions     1-2 [question, marks] pairs
+  syllabus_link HSC: "Topic 4 – monetary policy: ..."
+  year11_link   Year 11: "Financial sector – interest rates and housing affordability"
+  student_reading  Year 11, optional: "Yes – open, about 700 words" or "Teacher only – subscriber article"
+  stimulus      Year 11, optional: a chart or table worth saving, in a few words
+  questions     1-2 [question, marks] pairs (Year 11: marks may be left out)
   sources       [label, url] pairs
 """
 import glob, html, json, os, re, sys
@@ -43,8 +55,30 @@ PRESETS = {"supply_shift": {"direction", "good", "elastic_demand", "ylabel", "xl
            "subsidy": {"good"}, "ad_as": {"shift"}, "lras_growth": set(),
            "phillips": {"expectations_shift"}, "fx_market": {"show_counterfactual"},
            "lorenz": {"second"}, "ppf": {"growth"}}
-REQUIRED = ("date", "topic", "title", "short_name", "sources_line", "published", "lede",
-            "what_happened", "key_terms", "exam_angle", "flow", "syllabus_link", "questions", "sources")
+FOCUS = {1: ("Introduction to Economics", "#475569", "#EEF1F5"),
+         2: ("Markets", "#0D9488", "#E3F4F2"),
+         3: ("Household and Business Sector", "#D97706", "#FDF0DD"),
+         4: ("Financial Sector", "#7C3AED", "#F0EAFE"),
+         5: ("Government Sector", "#4F46E5", "#ECEBFD"),
+         6: ("International Sector", "#2563EB", "#EAF1FE")}
+COMMON = ("date", "title", "short_name", "sources_line", "published", "lede",
+          "what_happened", "key_terms", "flow", "questions", "sources")
+REQUIRED = {"hsc": COMMON + ("topic", "exam_angle", "syllabus_link"),
+            "year11": COMMON + ("focus_area", "why_it_matters", "year11_link")}
+
+
+def course(rec):
+    c = str(rec.get("course", "hsc")).lower().replace(" ", "")
+    return "year11" if c in ("year11", "y11", "11") else "hsc"
+
+
+def look(rec):
+    """(pill text, colour, tint) for the record's course."""
+    if course(rec) == "year11":
+        name, colour, tint = FOCUS[int(rec["focus_area"])]
+        return f"Year 11 · {name}", colour, tint
+    name, colour, tint = TOPICS[int(rec["topic"])]
+    return f"Topic {int(rec['topic'])} · {name}", colour, tint
 
 
 def fmt(s):
@@ -53,9 +87,20 @@ def fmt(s):
     return re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", s)
 
 
+def fmt_sub(s):
+    """fmt, plus subscripts on diagram labels written plainly: D1, S2, P1, AD2, SRAS1, PC2 ..."""
+    return re.sub(r"\b(AD|SRAS|LRAS|PPF|PC|[DSPQYUe\u03c0])([1-4])\b", r"\1<sub>\2</sub>", fmt(s))
+
+
 def file_name(rec):
     words = re.sub(r"[^A-Za-z0-9%.\- ]+", " ", str(rec["short_name"])).split()
+    if course(rec) == "year11":
+        return f"11Eco_{FOCUS[int(rec['focus_area'])][0]}_{' '.join(words)[:60].strip(' .')} ({rec['date']}).pdf"
     return f"12Eco_Topic {int(rec['topic'])}_{'_'.join(words)[:60].strip('_.')}.pdf"
+
+
+def subfolder(rec):
+    return f"{int(rec['focus_area']):02d} {FOCUS[int(rec['focus_area'])][0]}"
 
 
 def diagram_svg(rec, colour, notes):
@@ -128,6 +173,7 @@ ul { margin: 0 0 8px; padding-left: 15px } li { line-height: 1.48; margin-bottom
 .syl { background: #F3F4F6; border-radius: 11px; padding: 10px 12px; line-height: 1.5 }
 .try { background: var(--c); color: #fff; border-radius: 11px; padding: 10px 12px; line-height: 1.5 }
 .try h4 { color: #fff } .try p { margin: 0 0 3px }
+.xtra { margin-top: 5px; font-size: 9.2px; color: #374151 }
 .grow { flex: 1 }
 .links { font-size: 7.4px; color: #6B7280; line-height: 1.5; margin-top: 8px }
 .links a { color: #6B7280; text-decoration: none }
@@ -137,38 +183,54 @@ sub { font-size: 70%; vertical-align: sub; line-height: 0 }
 
 
 def build_html(rec, k, notes):
-    name, colour, tint = TOPICS[int(rec["topic"])]
+    y11 = course(rec) == "year11"
+    pill, colour, tint = look(rec)
     svg = diagram_svg(rec, colour, notes)
     d = rec.get("diagram") or {}
     stats = "".join(f'<div class="tile"><div class="n">{fmt(v)}</div><div class="l">{fmt(l)}</div></div>'
                     for v, l in (rec.get("stats") or [])[:3])
     bullets = "".join(f"<li>{fmt(b)}</li>" for b in rec["what_happened"][:5])
     terms = "".join(f"<p><b>{fmt(t)}</b> – {fmt(x)}</p>" for t, x in rec["key_terms"][:3])
-    angle = f'<b class="h">Exam angle:</b> {fmt(rec["exam_angle"])}'
+    angle = (f'<b class="h">Why it matters:</b> {fmt(rec["why_it_matters"])}' if y11
+             else f'<b class="h">Exam angle:</b> {fmt(rec["exam_angle"])}')
+    if y11 and rec.get("year12_idea"):
+        angle += f'<br><b class="h">Year 12 idea:</b> {fmt(rec["year12_idea"])}'
     if svg:
         panel = (f'<div class="panel"><div class="ph"><span class="tag">Diagram</span>{fmt(d.get("title", ""))}</div>'
-                 f'<div class="grid2"><div>{svg}</div><div class="explain">{fmt(d.get("explain", ""))}</div></div>'
+                 f'<div class="grid2"><div>{svg}</div><div class="explain">{fmt_sub(d.get("explain", ""))}</div></div>'
                  f'<div class="note">{angle}</div></div>')
     else:
         panel = f'<div class="panel"><div class="note solo">{angle}</div></div>'
     steps = [fmt(s) for s in rec["flow"]["steps"][:5]]
     flow = '<div class="arrow">→</div>'.join(
         f'<div class="step{" hi" if i == len(steps) - 1 else ""}">{s}</div>' for i, s in enumerate(steps))
-    qs = "".join(f"<p>{fmt(q)} <b>({int(m)} mark{'s' if int(m) != 1 else ''})</b></p>" for q, m in rec["questions"][:2])
+    def q_html(q):
+        q = q if isinstance(q, (list, tuple)) else [q]
+        marks = f" <b>({int(q[1])} mark{'s' if int(q[1]) != 1 else ''})</b>" if len(q) > 1 and q[1] else ""
+        return f"<p>{fmt(q[0])}{marks}</p>"
+    qs = "".join(q_html(q) for q in rec["questions"][:2])
+    if y11:
+        extra = "".join(f'<div class="xtra"><b>{lab}:</b> {fmt(rec[k])}</div>'
+                        for k, lab in (("student_reading", "Student reading"), ("stimulus", "Stimulus")) if rec.get(k))
+        syl = f'<h4>Year 11 link</h4>{fmt(rec["year11_link"])}{extra}'
+        foot_l = "Economics news summary · Year 11 Economics"
+    else:
+        syl = f'<h4>Syllabus link</h4>{fmt(rec["syllabus_link"])}'
+        foot_l = "The Economy This Week · Year 12 HSC Economics"
     links = " · ".join(f'<a href="{html.escape(u, quote=True)}">{fmt(l)}</a>' for l, u in rec["sources"][:5])
     foot_r = "Diagrams are illustrative, not to scale" if svg else fmt(rec["date"])
     return f"""<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><title>{fmt(rec['title'])}</title>
 <style>{CSS}</style></head><body><div class="page" id="page" style="--c:{colour};--t:{tint};--k:{k}">
-<div class="top"><span class="pill">Topic {int(rec['topic'])} · {html.escape(name)}</span><span class="src">{fmt(rec['sources_line'])} · {fmt(rec['published'])}</span></div>
+<div class="top"><span class="pill">{html.escape(pill)}</span><span class="src">{fmt(rec['sources_line'])} · {fmt(rec['published'])}</span></div>
 <h1>{fmt(rec['title'])}</h1>
 <div class="lede">{fmt(rec['lede'])}</div>
 <div class="cols"><div><h4>What happened</h4><ul>{bullets}</ul><div class="terms"><h4>Key terms</h4>{terms}</div></div><div class="tiles">{stats}</div></div>
 {panel}
 <div class="panel"><div class="ph"><span class="tag">Flow chart</span>{fmt(rec['flow'].get('title', ''))}</div><div class="flow">{flow}</div></div>
-<div class="bottom"><div class="syl"><h4>Syllabus link</h4>{fmt(rec['syllabus_link'])}</div><div class="try"><h4>Try this</h4>{qs}</div></div>
+<div class="bottom"><div class="syl">{syl}</div><div class="try"><h4>Try this</h4>{qs}</div></div>
 <div class="grow"></div>
 <div class="links">Sources: {links}</div>
-<div class="foot"><span>The Economy This Week · Year 12 HSC Economics</span><span>{foot_r}</span></div>
+<div class="foot"><span>{foot_l}</span><span>{foot_r}</span></div>
 </div></body></html>"""
 
 
@@ -180,16 +242,21 @@ def main(argv):
         return 2
     try:
         rec = json.load(open(argv[0], encoding="utf-8"))
-        missing = [k for k in REQUIRED if not rec.get(k)]
+        missing = [k for k in REQUIRED[course(rec)] if not rec.get(k)]
         if missing:
             raise ValueError("record is missing: " + ", ".join(missing))
-        if int(rec["topic"]) not in TOPICS:
+        if course(rec) == "year11":
+            if int(rec["focus_area"]) not in FOCUS:
+                raise ValueError("focus_area must be 1-6")
+        elif int(rec["topic"]) not in TOPICS:
             raise ValueError("topic must be 1-4")
         if len(rec["flow"].get("steps", [])) < 3:
             raise ValueError("flow needs 3-5 steps")
         out = os.path.join(argv[1], file_name(rec))
         if os.path.exists(out) and not force:
             print(f"EXISTS {out}")
+            if course(rec) == "year11":
+                print(f"SUBFOLDER {subfolder(rec)}")
             return 0
         os.makedirs(argv[1], exist_ok=True)
         from playwright.sync_api import sync_playwright
@@ -219,6 +286,8 @@ def main(argv):
         if k < 1:
             print(f"NOTE text scaled to {int(k * 100)}% to fit the page")
         print(f"SAVED {out}")
+        if course(rec) == "year11":
+            print(f"SUBFOLDER {subfolder(rec)}")
         return 0
     except Exception as e:
         print(f"ERROR {type(e).__name__}: {e}")
