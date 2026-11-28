@@ -1,11 +1,21 @@
 {
  "about": "The teacher's decisions on the questions Claude wrote for the Worksheet Maker bank. Saved by the Question review page on the staff Tools site (https://phillippain.github.io/Tools/question-review/); the Worksheet Maker reads this file when it opens. s: ok = approved, fix = needs a fix (see note; not used until fixed), out = removed (not used). h is the question's fingerprint when the decision was made: a question changed since then goes back on the review list.",
  "items": {
+  "bk:cp-ca-kafa": {
+   "s": "ok",
+   "h": "48b0b4c15b",
+   "at": "2026-11-28"
+  },
   "bk:cp-fiscal-monetary": {
    "s": "fix",
    "h": "627394cb6c",
    "at": "2026-11-28",
    "note": "Update the main instruments to be the cash rate target, forward guidance, and additional policy measures."
+  },
+  "bk:cp-headline-underlying": {
+   "s": "ok",
+   "h": "0281426727",
+   "at": "2026-11-28"
   },
   "bk:cp-tariff-quota-subsidy": {
    "s": "ok",
