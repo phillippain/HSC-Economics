@@ -2,6 +2,10 @@
 
 Each item is one object in `data/evidence.json`. Put the PDF (if any) in `files/YYYY-MM/`, add the record, then run `python3 build/build_site.py`.
 
+## From the inbox
+
+Items dropped in `HSC_Economics_SSCBWB / Evidence Finder / inbox` are listed by `python3 build/ingest.py status`. For each one, choose the id, then `python3 build/ingest.py file "<inbox name>" <id> --label "Original article"`: it puts the PDF in `files/YYYY-MM/`, moves the original to `filed/` on the drive and prints the `file` block to paste into the record. Use `archive` for a dropped link or note once its story is filed, and for duplicates. Finish with `python3 build/ingest.py refresh --commit "<message>"`. See the README for more.
+
 ## A record
 
 ```json
