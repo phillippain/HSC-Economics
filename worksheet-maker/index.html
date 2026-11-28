@@ -178,6 +178,13 @@ textarea{width:100%;min-height:90px}
 .claude .who{margin-top:8px;font-size:.8rem;color:var(--mut)}
 .linkish{border:0;background:none;padding:0;color:var(--acc);font:inherit;font-weight:700;text-decoration:underline;cursor:pointer}
 ol.steps{margin:6px 0 10px 1.2em;display:grid;gap:4px}
+.drive-last{font-size:.84rem;margin:-2px 0 8px;padding:6px 10px;border:1px solid var(--rule);border-radius:10px;background:var(--card)}
+.drive-last a{font-weight:700}
+.places{list-style:none;margin:6px 0 10px;padding:0;display:grid;gap:2px;font-size:.84rem}
+.places li::before{content:'✓ ';color:#15803d;font-weight:800}
+.places li.bad::before{content:'✗ ';color:#b91c1c}
+.drv-done{border:1px solid #15803d;border-radius:10px;padding:8px 12px;background:rgba(21,128,61,.07);display:grid;gap:4px;font-size:.9rem}
+.drv-done a{font-weight:700}
 .spin{display:inline-block;width:14px;height:14px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:sp 1s linear infinite;vertical-align:-2px}
 @keyframes sp{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.spin{animation:none}}
@@ -355,9 +362,11 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
     <div class="ptools">
       <button class="btn" id="dl-ws">Download worksheet (PDF)</button>
       <button class="btn ghost" id="dl-ans">Download answer copy</button>
+      <button class="btn ghost" id="dl-drive" title="Save the student copy, answer copy and editable worksheet into the topic’s Worksheets folder">Save to Google Drive</button>
       <span class="sp"></span>
       <label class="small"><input type="checkbox" id="pv-ans"> Preview the answer copy</label>
     </div>
+    <p class="drive-last" id="drive-last" hidden></p>
     <p class="hint" id="pvnote" style="margin-bottom:8px"></p>
     <div class="preview" id="preview"><p class="msg">The preview appears here.</p></div>
   </div>
@@ -1128,7 +1137,7 @@ function qfImport(fromUrl) {
 
 /* ================================================================ saved worksheets */
 const SAVED = KEY + ':saved';
-function packSheet(ws) { return { v: 1, id: ws.id, title: ws.title, items: ws.items, layout: ws.layout, seed: ws.seed, created: ws.created, updated: Date.now() }; }
+function packSheet(ws) { return { v: 1, id: ws.id, title: ws.title, items: ws.items, layout: ws.layout, seed: ws.seed, created: ws.created, updated: Date.now(), drive: ws.drive }; }
 function saveSheet() {
   const list = store.get(SAVED, []), i = list.findIndex(x => x.id === S.ws.id), p = packSheet(S.ws);
   if (i >= 0) list[i] = p; else list.unshift(p);
@@ -1137,7 +1146,7 @@ function saveSheet() {
 }
 function openSheet(p) {
   const missing = p.items.filter(e => !e.item && !POOL.has(e.ref)).length;
-  S.ws = { id: p.id, title: p.title, items: p.items.filter(e => e.item || POOL.has(e.ref)), layout: Object.assign(defaultLayout((p.layout || {}).style || 'exam'), p.layout || {}), seed: p.seed || 1, created: p.created || Date.now() };
+  S.ws = { id: p.id, title: p.title, items: p.items.filter(e => e.item || POOL.has(e.ref)), layout: Object.assign(defaultLayout((p.layout || {}).style || 'exam'), p.layout || {}), seed: p.seed || 1, created: p.created || Date.now(), drive: p.drive };
   persist(); go('build'); renderAll(); toast(missing ? `Opened. ${missing} question(s) are no longer in the bank and were left out.` : 'Opened.');
 }
 function downloadText(name, text) {
@@ -1155,7 +1164,7 @@ function renderSaved() {
 function go(v) {
   S.view = v; $$('.tab').forEach(t => t.setAttribute('aria-selected', String(t.dataset.view === v)));
   $$('.view').forEach(s => { s.hidden = s.id !== 'v-' + v; });
-  if (v === 'print') { renderLayout(); schedulePreview(0); }
+  if (v === 'print') { renderLayout(); renderDriveBits(); schedulePreview(0); }
   if (v === 'saved') renderSaved();
   if (v === 'help') renderHelp();
   window.scrollTo({ top: 0 });
@@ -1795,7 +1804,7 @@ async function makePdf(mode) {
 let pvTimer = null, pvSeq = 0;
 function schedulePreview(ms) { if (S.view !== 'print') return; clearTimeout(pvTimer); pvTimer = setTimeout(renderPreview, ms == null ? 700 : ms); }
 async function renderPreview() {
-  const seq = ++pvSeq, box = $('#preview');
+  const seq = ++pvSeq, box = $('#preview'); renderDriveBits();
   if (!S.ws.items.length) { box.innerHTML = '<p class="msg">Add questions in step 1 first.</p>'; $('#pvnote').textContent = ''; return; }
   box.innerHTML = '<p class="msg"><span class="spin"></span> Making the PDF…</p>';
   try {
@@ -1831,6 +1840,243 @@ async function download(mode) {
     else { const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 5000); }
   } catch (e) { console.error(e); toast('The PDF could not be made: ' + (e.message || e)); }
   finally { btn.disabled = false; btn.innerHTML = old; }
+}
+
+/* ================================================================ Google Drive, through the teacher's own "Worksheet saver"
+   The saver (drive-saver/Code.gs) is a Google Apps Script web app that runs in the teacher's school account and saves
+   into the shared drives. This page keeps its address and private key in this browser under worksheet-maker:drive,
+   where the Lesson Register on this computer (same site) reads them too, and notes each save under
+   worksheet-maker:drive-saved so the Lesson Register can offer it even when the saver can't be reached.
+   Two routes: fetch() when the web app is open to Anyone (the key keeps it private), and a hidden form and frame
+   with postMessage when it is limited to school accounts (needs this browser signed in to Google). */
+const DRIVEKEY = 'worksheet-maker:drive', DRIVESAVED = 'worksheet-maker:drive-saved';
+const DRIVE_PLACES = [
+  ['hsc-t1', 'hsc', 'Topic 1 The Global Economy', 'Topic 1 - Global Economy', 'zzTeacher Only › Topic 1'],
+  ['hsc-t2', 'hsc', "Topic 2 Australia's Place in the Global Economy", "Topic 2 - Australia's Place in the Global Economy (resources)", 'zzTeacher Only › Topic 2'],
+  ['hsc-t3', 'hsc', 'Topic 3 Economic Issues', 'Topic 3 - Economic Issues (resources)', 'zzTeacher Only › Topic 3'],
+  ['hsc-t4', 'hsc', 'Topic 4 Economic Policies and Management', 'Topic 4 - Economic Policies & Management', 'zzTeacher Only › Topic 4'],
+  ['y11-p1', 'y11', '01 Introduction to Economics'], ['y11-p2', 'y11', '02 Markets'], ['y11-p3', 'y11', '03 Household and Business Sector'],
+  ['y11-p4', 'y11', '04 Financial Sector'], ['y11-p5', 'y11', '05 Government Sector'], ['y11-p6', 'y11', '06 International Sector']
+].map(([id, course, label, where, teacher]) => ({ id, course, label, where: where || `2027 Syllabus › ${label} › New resources (2027)`, teacher: teacher || null,
+  drive: course === 'y11' ? 'Prelim_Eco_SSCBWB' : 'HSC_Economics_SSCBWB' }));
+let DRIVE = null, YREV = null;
+function readDrive() {
+  for (const remember of [true, false]) {
+    try { const v = JSON.parse((remember ? localStorage : sessionStorage).getItem(DRIVEKEY) || 'null'); if (v && v.key) return Object.assign(v, { remember }); } catch (e) { }
+  }
+  return null;
+}
+function writeDrive(v) {
+  for (const st of ['localStorage', 'sessionStorage']) { try { window[st].removeItem(DRIVEKEY); } catch (e) { } }
+  if (v) { try { (v.remember === false ? sessionStorage : localStorage).setItem(DRIVEKEY, JSON.stringify({ url: v.url || '', key: v.key, via: v.via || '', user: v.user || '', version: v.version || 0, places: v.places || null })); } catch (e) { } }
+}
+function newSaverKey() { const a = new Uint8Array(24); crypto.getRandomValues(a); return btoa(String.fromCharCode(...a)).replace(/\+/g, '-').replace(/\//g, '_'); }
+const saverUrlOk = u => /^https:\/\/script\.google\.com\/(a\/macros\/[^/?#]+|macros)\/s\/[\w-]{20,}\/exec$/.test(u) || /^http:\/\/(127\.0\.0\.1|localhost):\d+\/.*\/exec$/.test(u);
+const connCode = c => 'WMS1.' + btoa(unescape(encodeURIComponent(JSON.stringify({ u: c.url, k: c.key })))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+function parseConn(code) {
+  const m = String(code || '').trim().match(/^WMS1\.([\w-]+)$/); if (!m) return null;
+  try { const j = JSON.parse(decodeURIComponent(escape(atob(m[1].replace(/-/g, '+').replace(/_/g, '/'))))); return j && j.u && j.k ? { url: j.u, key: j.k } : null; } catch (e) { return null; }
+}
+const SAVER_ERR = {
+  'not-set': 'Set up Google Drive first.',
+  'no-key': 'The saver script has no key in it. Use Copy the saver script below, paste it over Code.gs and deploy a new version.',
+  'bad-key': 'The saver did not accept this computer’s key. Copy the saver script again, paste it over Code.gs and deploy a new version (Deploy › Manage deployments › Edit › Version: New version), or paste a connection code from the computer you set it up on.',
+  'bad-place': 'The saver does not know that folder. Copy the saver script again and deploy a new version.',
+  'bad-name': 'Give the file a name first.', 'no-file': 'The PDF did not reach the saver. Try again.', 'too-big': 'The PDFs are too big to save this way (over 25 MB).',
+  timeout: 'The saver did not answer. If it was deployed for “Anyone within NSW Department of Education”, this browser has to be signed in to your school Google account (open the Web app URL once to check). Deploying it for “Anyone” avoids this; your key keeps it private.',
+  network: 'Google could not be reached. Check the internet connection and try again.'
+};
+const saverErr = e => (e && SAVER_ERR[e.code]) || ('The saver could not do it' + (e && (e.detail || e.code) ? ': ' + (e.detail || e.code) : '') + '.');
+async function saverCall(body, opt = {}) {
+  const conn = opt.conn || DRIVE; if (!conn || !conn.url) throw { code: 'not-set' };
+  const req = Object.assign({}, body, { key: conn.key });
+  if (conn.via !== 'frame') {
+    let j = null, status = 0;
+    try {
+      const r = await fetch(conn.url, { method: 'POST', body: JSON.stringify(req), redirect: 'follow' }); status = r.status;
+      try { j = JSON.parse(await r.text()); } catch (e) { j = null; }
+    } catch (e) { if (conn.via === 'fetch') throw { code: 'network' }; }
+    if (j && typeof j === 'object') { conn.via = 'fetch'; return j; }
+    if (conn.via === 'fetch') throw { code: 'failed', detail: 'Google answered ' + status };
+  }
+  const j = await saverFrame(conn, req, opt.timeout || 90000); conn.via = 'frame'; return j;
+}
+function saverFrame(conn, req, timeout) {
+  return new Promise((resolve, reject) => {
+    const nonce = newSaverKey().slice(0, 20), name = 'wmsaver' + nonce.replace(/[^\w]/g, '');
+    const ifr = document.createElement('iframe'); ifr.name = name; ifr.title = 'Worksheet saver'; ifr.hidden = true; ifr.setAttribute('aria-hidden', 'true'); document.body.append(ifr);
+    const form = document.createElement('form'); form.method = 'POST'; form.action = conn.url; form.target = name; form.acceptCharset = 'UTF-8'; form.hidden = true;
+    const ta = document.createElement('textarea'); ta.name = 'p'; ta.value = JSON.stringify(Object.assign({}, req, { nonce, origin: location.origin })); form.append(ta); document.body.append(form);
+    // The answer comes from Google's page inside our frame (a frame or two down), so check where it came from as well as the nonce
+    const ours = src => { let w = src; for (let i = 0; i < 12 && w; i++) { if (w === ifr.contentWindow) return true; let p = null; try { p = w.parent; } catch (e) { return false; } if (!p || p === w) return false; w = p; } return false; };
+    let timer = null;
+    const finish = (fn, v) => { clearTimeout(timer); window.removeEventListener('message', onMsg); form.remove(); setTimeout(() => ifr.remove(), 0); fn(v); };
+    const onMsg = e => { const d = e.data; if (!d || d.worksheetSaver !== 1 || d.nonce !== nonce || !ours(e.source)) return; finish(resolve, d.result || { ok: false, error: 'failed' }); };
+    window.addEventListener('message', onMsg);
+    timer = setTimeout(() => finish(reject, { code: 'timeout' }), timeout);
+    form.submit();
+  });
+}
+function drivePlaces() {
+  const live = (DRIVE && DRIVE.places) || [], byId = Object.fromEntries(live.map(p => [p.id, p]));
+  const out = DRIVE_PLACES.filter(p => !live.length || byId[p.id]).map(p => Object.assign({}, p, { error: byId[p.id] && byId[p.id].error }));
+  for (const p of live) if (!DRIVE_PLACES.some(x => x.id === p.id)) out.push({ id: p.id, course: p.course, label: p.label, where: (p.folder && p.folder.name) || p.label, teacher: p.teacher || null, drive: '', error: p.error });
+  return out;
+}
+/* Which folder a worksheet belongs in: the topic (or Year 11 focus area) most of its questions are tagged to. */
+function drivePlaceGuess(places) {
+  const y11 = (LAY().course || 'hsc') === 'y11', tally = {}, add = id => { tally[id] = (tally[id] || 0) + 1; };
+  if (!YREV) { YREV = {}; for (const [s09, ys] of Object.entries(XW)) for (const y of ys) if (y[0] === 'Y') (YREV[y] = YREV[y] || []).push(s09); }
+  for (const it of S.ws.items.map(itemOf).filter(Boolean)) {
+    const all = (it.c || []).concat(it.c25 || []);
+    if (y11) uniq(all.filter(c => /^P[1-6]/.test(c)).map(c => 'y11-p' + c[1])).forEach(add);
+    else {
+      let t = uniq((it.c || []).filter(c => /^[1-4]/.test(c)).map(c => c[0]));
+      if (!t.length) t = uniq(all.filter(c => c[0] === 'Y').flatMap(c => YREV[SEC[c] || c] || []).map(s => s[0]));
+      t.forEach(d => add('hsc-t' + d));
+    }
+  }
+  const ok = places.filter(p => !p.error && p.course === (y11 ? 'y11' : 'hsc')).map(p => p.id);
+  const best = Object.entries(tally).filter(([k]) => ok.includes(k)).sort((a, b) => b[1] - a[1])[0];
+  return best ? best[0] : ok[0] || (places[0] && places[0].id);
+}
+function sheetSig() { const s = JSON.stringify([S.ws.title, S.ws.items, S.ws.layout]); let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return (h >>> 0).toString(36); }
+function driveMeta() {
+  const its = S.ws.items.map(itemOf).filter(Boolean), st = sheetStats();
+  return { title: S.ws.title || 'Worksheet', course: LAY().course || 'hsc', codes: uniq(its.flatMap(codesShown)).sort(), count: st.n, marks: st.marks };
+}
+const blobB64 = blob => new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(String(r.result).split(',')[1] || ''); r.onerror = () => rej(r.error); r.readAsDataURL(blob); });
+const linkOf = f => f && f.url ? { id: f.id, url: f.url, name: f.name } : null;
+function renderDriveBits() {
+  const btn = $('#dl-drive'), line = $('#drive-last'); if (!btn) return;
+  btn.hidden = INSIDE_CLAUDE; line.hidden = INSIDE_CLAUDE || !S.ws.drive;
+  if (line.hidden) return;
+  const d = S.ws.drive, when = new Date(d.at).toLocaleString('en-AU', { dateStyle: 'medium', timeStyle: 'short' });
+  line.innerHTML = `Saved to Google Drive ${esc(when)}: ${esc(d.label || d.place)} › Worksheets › ${esc(d.name)}. `
+    + [d.student && `<a href="${esc(d.student.url)}" target="_blank" rel="noopener">Student copy</a>`, d.answers && `<a href="${esc(d.answers.url)}" target="_blank" rel="noopener">Answer copy</a>`,
+      d.folder && `<a href="${esc(d.folder.url)}" target="_blank" rel="noopener">Folder</a>`].filter(Boolean).join(' · ')
+    + (d.sig && d.sig !== sheetSig() ? ' · <b>Changed since then:</b> save again to keep the new version.' : '');
+}
+function placeHtml(p) { return `${esc(p.label)}${p.error ? ' (cannot reach this folder)' : ''}`; }
+function driveDialog(then) {
+  if (INSIDE_CLAUDE) return;
+  let conn = DRIVE || readDrive();
+  if (!conn || !conn.key) { conn = { key: newSaverKey(), url: '', remember: true }; writeDrive(conn); } // the key copied into the script must survive closing this
+  const on = !!(DRIVE && DRIVE.url), live = on ? drivePlaces() : [];
+  openDlg('Save to Google Drive', `
+    ${on ? `<p><b>Connected</b> to your Worksheet saver${DRIVE.user ? ' (' + esc(DRIVE.user) + ')' : ''}. Worksheets go into a <b>Worksheets</b> folder in:</p>
+      <ul class="places">${live.map(p => `<li class="${p.error ? 'bad' : ''}">${placeHtml(p)}</li>`).join('')}</ul>` : `
+    <p>The Worksheet Maker saves into your shared drives through a small Google Apps Script, the <b>Worksheet saver</b>, that runs in your own school Google account. Set it up once, in about 10 minutes. Other computers can then connect to it with a connection code.</p>`}
+    <ol class="steps">
+      <li><button class="btn sm" id="d-copy">Copy the saver script</button> <span class="hint">It has this computer’s private key in it, so keep it to yourself.</span></li>
+      <li>Open <a href="https://script.google.com/home/projects/create" target="_blank" rel="noopener">script.google.com</a>, signed in with your school account. A new project opens: name it <b>Worksheet saver</b>.</li>
+      <li>In <b>Code.gs</b>, select everything, paste the script over it, and press <b>Save</b>.</li>
+      <li>Press <b>Deploy › New deployment</b>, click the cog beside “Select type” and choose <b>Web app</b>. Set <b>Execute as: Me</b> and <b>Who has access: Anyone</b> (if your account offers only “Anyone within NSW Department of Education”, choose that). Press <b>Deploy</b>, then <b>Authorize access</b>, choose your school account and allow it.</li>
+      <li>Copy the <b>Web app URL</b> (it ends in <code>/exec</code>) and paste it here.</li>
+    </ol>
+    ${on ? '<p class="hint">Updating the script later? Copy it again, paste it over Code.gs, then Deploy › Manage deployments › Edit (the pencil) › Version: New version › Deploy, so the address stays the same.</p>' : ''}
+    <div id="d-copybox" hidden><p class="hint">Copying was blocked. Select all of this, copy it and paste it into Code.gs:</p><textarea id="d-script" rows="6" readonly></textarea></div>
+    <label class="field"><span>Web app URL</span><input type="text" id="d-url" autocomplete="off" spellcheck="false" placeholder="https://script.google.com/macros/s/…/exec"></label>
+    <label class="opt"><input type="checkbox" id="d-rem" ${conn.remember !== false ? 'checked' : ''}><span>Remember on this computer. The Lesson Register on this computer uses it too, to list your saved worksheets. Leave it off on a shared computer.</span></label>
+    <details><summary>Set up on another computer already? Use its connection code</summary>
+      <p class="hint">On that computer, open Save to Google Drive › Drive settings and press Copy a connection code. Paste it here, then press Check and save.</p>
+      <textarea id="d-code" rows="2" spellcheck="false" placeholder="WMS1.…"></textarea></details>
+    ${on ? '<p class="hint"><button type="button" class="linkish" id="d-conn">Copy a connection code</button> for another computer, or for the Lesson Register on another device. It holds your private key, so send it only to yourself.</p>' : ''}
+    <p class="hint">The address and key stay in this browser. Only the worksheet PDFs and the editable worksheet are sent, and only to your own saver.</p>
+    <p class="hint" id="d-msg" role="status"></p>`,
+    `${on ? '<button class="btn ghost sm" id="d-forget">Disconnect</button>' : ''}<button class="btn ghost sm" data-close>Cancel</button><button class="btn" id="d-save">Check and save</button>`);
+  $('#d-url').value = conn.url || '';
+  $('#d-copy').onclick = async () => {
+    let src;
+    try { const r = await fetch('drive-saver/Code.gs?v=ba8dbc16b0'); if (!r.ok) throw 0; src = await r.text(); } catch (e) { $('#d-msg').textContent = 'The script could not be loaded. Check the connection and try again.'; return; }
+    if (!src.includes("'__WORKSHEET_SAVER_KEY__'")) { $('#d-msg').textContent = 'The script file looks wrong. Reload the page and try again.'; return; }
+    src = src.replace("'__WORKSHEET_SAVER_KEY__'", `'${conn.key}'`);
+    if (!src.includes(`'${location.origin}'`)) src = src.replace(/const ORIGINS = \[/, `const ORIGINS = ['${location.origin}', `);
+    try { await navigator.clipboard.writeText(src); $('#d-msg').textContent = 'Copied. Now paste it over everything in Code.gs (step 3).'; }
+    catch (e) { $('#d-copybox').hidden = false; $('#d-script').value = src; $('#d-script').select(); }
+  };
+  if ($('#d-conn')) $('#d-conn').onclick = async () => {
+    try { await navigator.clipboard.writeText(connCode(DRIVE)); $('#d-msg').textContent = 'Connection code copied. Paste it into Set up Google Drive on the other computer, or the Lesson Register’s “Connect” box.'; }
+    catch (e) { $('#d-copybox').hidden = false; $('#d-script').value = connCode(DRIVE); $('#d-script').select(); }
+  };
+  if ($('#d-forget')) $('#d-forget').onclick = () => { DRIVE = null; writeDrive(null); dlg.close(); renderDriveBits(); toast('Disconnected. This browser no longer has the saver’s address or key.'); };
+  $('#d-save').onclick = async () => {
+    const msg = $('#d-msg'), btn = $('#d-save'), code = $('#d-code').value.trim();
+    let next = { key: conn.key, url: $('#d-url').value.trim(), remember: $('#d-rem').checked };
+    if (code) { const c = parseConn(code); if (!c) { msg.textContent = 'That connection code could not be read. Copy it again; it starts with WMS1.'; return; } Object.assign(next, c); }
+    if (!saverUrlOk(next.url)) { msg.textContent = 'Paste the Web app URL from the deployment. It starts with https://script.google.com/ and ends in /exec.'; return; }
+    btn.disabled = true; msg.innerHTML = '<span class="spin"></span> Checking the saver. The first time can take up to a minute…';
+    try {
+      const j = await saverCall({ action: 'ping' }, { conn: next, timeout: 60000 });
+      if (!j || !j.ok) throw { code: (j && j.error) || 'failed', detail: j && j.message };
+      Object.assign(next, { user: j.user || '', places: j.places || null, version: j.version || 0 });
+      DRIVE = next; writeDrive(DRIVE); renderDriveBits();
+      const bad = (j.places || []).filter(p => p.error);
+      if (bad.length) { msg.textContent = `Connected, but your account can’t reach ${bad.length === 1 ? 'one folder' : bad.length + ' folders'}: ${bad.map(p => p.label).join('; ')}. Saving to the others works. Check you are a member of that shared drive.`; btn.disabled = false; return; }
+      dlg.close(); toast('Google Drive is ready.');
+      if (then) then();
+    } catch (e) { msg.textContent = saverErr(e); btn.disabled = false; }
+  };
+}
+async function driveSave() {
+  if (INSIDE_CLAUDE) return;
+  if (!S.ws.items.length) { toast('Add questions in step 1 first.'); return; }
+  if (!DRIVE || !DRIVE.url) { driveDialog(driveSave); return; }
+  const places = drivePlaces(), guess = drivePlaceGuess(places), L = LAY();
+  const name0 = ((S.ws.title || 'Worksheet').replace(/[\\/:*?"<>|]+/g, ' ').replace(/\s+/g, ' ').trim() || 'Worksheet') + (L.version === 'B' ? ' (B)' : '');
+  const opt = p => `<option value="${esc(p.id)}" ${p.id === guess ? 'selected' : ''} ${p.error ? 'disabled' : ''}>${placeHtml(p)}</option>`;
+  const grp = (course, name) => { const ps = places.filter(p => p.course === course); return ps.length ? `<optgroup label="${esc(name)}">${ps.map(opt).join('')}</optgroup>` : ''; };
+  openDlg('Save to Google Drive', `
+    <label class="field"><span>Folder</span><select id="sv-place">${grp('hsc', 'HSC Economics (HSC_Economics_SSCBWB)')}${grp('y11', 'Year 11 Economics (Prelim_Eco_SSCBWB)')}${places.filter(p => !['hsc', 'y11'].includes(p.course)).map(opt).join('')}</select></label>
+    <p class="hint" id="sv-where"></p>
+    <label class="field"><span>File name</span><input type="text" id="sv-name" value="${esc(name0)}" maxlength="120"></label>
+    <fieldset><legend>What to save</legend>
+      <label class="opt"><input type="checkbox" checked disabled><span><b>Student copy</b> (PDF). Anyone with an NSW DoE account and the link can view it.</span></label>
+      <label class="opt"><input type="checkbox" id="sv-a" checked><span><b>Answer copy</b> (PDF), teachers only.</span></label>
+      <label class="opt"><input type="checkbox" id="sv-j" checked><span><b>Editable worksheet</b>, teachers only: open it in My worksheets › Open a file to change the worksheet later.</span></label>
+    </fieldset>
+    <p class="hint">If the folder already has a file with this name, the new one is saved as “… (2)”, so links in your lesson records keep pointing to what you used.</p>
+    <p class="hint" id="sv-msg" role="status"></p><div id="sv-done"></div>`,
+    `<button class="btn ghost sm" id="sv-set">Drive settings</button><button class="btn ghost sm" data-close>Close</button><button class="btn" id="sv-go">Save to Drive</button>`);
+  const where = () => {
+    const p = places.find(x => x.id === $('#sv-place').value); if (!p) return;
+    $('#sv-where').innerHTML = p.teacher ? `Student copy: <b>${esc(p.where)} › Worksheets</b>. Answer copy and editable worksheet: <b>${esc(p.teacher)} › Worksheets</b>.`
+      : `All three go in <b>${esc(p.where)} › Worksheets</b>${p.course === 'y11' ? ', with the answer copy named “… – Teacher”' : ''}.`;
+  };
+  where(); $('#sv-place').onchange = where;
+  $('#sv-set').onclick = () => driveDialog(driveSave);
+  $('#sv-go').onclick = async () => {
+    const msg = $('#sv-msg'), btn = $('#sv-go'), place = $('#sv-place').value, name = $('#sv-name').value.trim(), withA = $('#sv-a').checked, withJ = $('#sv-j').checked;
+    if (!name) { msg.textContent = 'Give the file a name first.'; return; }
+    btn.disabled = true; $('#sv-done').innerHTML = '';
+    try {
+      msg.innerHTML = '<span class="spin"></span> Making the PDFs…';
+      const student = await blobB64(await makePdf('student')), answers = withA ? await blobB64(await makePdf('answers')) : null;
+      msg.innerHTML = '<span class="spin"></span> Saving to Google Drive…';
+      const meta = driveMeta(), sheet = withJ ? { worksheetMaker: 1, sheets: [Object.assign(packSheet(S.ws), { drive: undefined })] } : null;
+      const j = await saverCall({ action: 'save', place, name, student: { b64: student }, answers: answers ? { b64: answers } : null, sheet, meta }, { timeout: 150000 });
+      if (!j || !j.ok) throw { code: (j && j.error) || 'failed', detail: j && j.message };
+      if (DRIVE.via) writeDrive(DRIVE);
+      const p = places.find(x => x.id === j.place) || {}, rec = { at: Date.now(), place: j.place, label: j.label || p.label, name: j.name, student: linkOf(j.student), answers: linkOf(j.answers),
+        sheet: linkOf(j.sheet), folder: linkOf(j.folder), shared: j.shared !== false, sig: sheetSig() };
+      S.ws.drive = rec; persist();
+      const saved = store.get(SAVED, []), si = saved.findIndex(x => x.id === S.ws.id); if (si >= 0) { saved[si].drive = rec; store.set(SAVED, saved); }
+      const idx = store.get(DRIVESAVED, []).filter(x => x.id !== j.student.id);
+      idx.unshift({ id: j.student.id, url: j.student.url, name: j.name, title: meta.title, place: j.place, label: rec.label, course: p.course || meta.course,
+        topic: /^hsc-t(\d)$/.test(j.place) ? +j.place.slice(-1) : null, area: /^y11-p(\d)$/.test(j.place) ? 'P' + j.place.slice(-1) : null,
+        at: new Date(rec.at).toISOString(), answers: rec.answers ? rec.answers.url : null, codes: meta.codes.slice(0, 30), count: meta.count, marks: meta.marks, maker: true });
+      store.set(DRIVESAVED, idx.slice(0, 300));
+      msg.textContent = '';
+      $('#sv-done').innerHTML = `<div class="drv-done"><div><b>Saved</b> to ${esc(rec.label)} › Worksheets as “${esc(j.name)}”.</div><div>`
+        + [rec.student && `<a href="${esc(rec.student.url)}" target="_blank" rel="noopener">Student copy</a>`, rec.answers && `<a href="${esc(rec.answers.url)}" target="_blank" rel="noopener">Answer copy</a>`,
+          rec.sheet && `<a href="${esc(rec.sheet.url)}" target="_blank" rel="noopener">Editable worksheet</a>`, rec.folder && `<a href="${esc(rec.folder.url)}" target="_blank" rel="noopener">Open the folder</a>`].filter(Boolean).join(' · ')
+        + `</div>${j.warning ? `<div class="hint">${esc(j.warning)}</div>` : ''}<div class="hint">It’s ready to pick in the Lesson Register when you record the lesson (Resources not in the program › From the Worksheet Maker).</div></div>`;
+      btn.textContent = 'Save again'; btn.disabled = false; renderDriveBits();
+    } catch (e) {
+      if (e && typeof e.code === 'string') msg.textContent = saverErr(e); else { console.error(e); msg.textContent = 'The PDF could not be made: ' + ((e && e.message) || e); }
+      btn.disabled = false;
+    }
+  };
 }
 
 /* ================================================================ Claude (only in the copy of this page that runs inside Claude) */
@@ -2222,6 +2468,9 @@ function renderHelp() {
   <ul><li><b>HSC exam style</b>: plain, numbered, marks in the right margin, ruled lines scaled to the marks.</li><li><b>Workbook style</b>: the navy and gold workbook look, with coloured part banners and dotted lines.</li><li><b>Adapted layout</b>: Lexend at 12.5 pt, extra space, a tick box on every question, word boxes, sentence starters and a reminder of the paragraph scaffold.</li><li><b>Compact revision</b>: two columns for short questions, small or no writing space, for answering in books.</li></ul>
   <h2>Year 11 (2025 syllabus)</h2>
   <p>Year 11 worksheets use only material tagged to the 2025 Year 11 course: ${D.items.filter(x => x.src === 'bank' && x.c.some(c => c[0] === 'P')).length} new Year 11 questions and ${D.tf.filter(t => t.c.some(c => c[0] === 'P')).length} true-or-false statements written for the six focus areas, news tagged to Year 11 in the Evidence Finder, and Glossary terms and Calculation Trainer skills that Year 11 uses. For stretch, tick <b>Past HSC questions</b> under step 3 to add the Year 12 questions the class crosswalk links to a Year 11 section (trade, investment, exchange rates, the balance of payments, the business cycle, market failure, taxation, government spending and interest rates). The course named at the top of the sheet is set under <b>Layout and print</b>.</p>
+  ${INSIDE_CLAUDE ? '' : `<h2>Save to Google Drive</h2>
+  <p><b>Save to Google Drive</b> (under Layout and print) puts the worksheet into a <b>Worksheets</b> folder in the topic's resources on your shared drive: Topics 1 to 4 on HSC_Economics_SSCBWB, and the six Year 11 focus areas (2027 Syllabus › … › New resources (2027)) on Prelim_Eco_SSCBWB. The student copy can be opened by anyone with an NSW DoE account and the link; the answer copy and the editable worksheet stay teachers only (in zzTeacher Only for the HSC topics, and beside the student copy, named “… – Teacher”, for Year 11). Saved worksheets appear in the Lesson Register, under <i>Resources not in the program</i>, when you record a lesson.</p>
+  <p>It works through the <b>Worksheet saver</b>, a small Google Apps Script that runs in your own school account. Set it up once with <button type="button" class="linkish" data-drivedlg>Set up Google Drive</button>; other computers connect with a connection code.</p>`}
   <h2>Good to know</h2>
   <ul><li>New questions are marked <i>not yet reviewed</i> until the teacher has checked them on the Question review page (staff Tools site); questions flagged there for a fix, or removed, are left out of new worksheets. Explanations of multiple-choice answers were written for the site, not by NESA.</li>
   <li>Diagrams are drawn in the class house style. They are conceptual and not to scale, except the numbered figures used for “Read a diagram”.</li>
@@ -2240,13 +2489,16 @@ async function init() {
   } catch (e) { $('#list').innerHTML = '<div class="empty">The question data could not be loaded. Check your connection and reload the page.</div>'; return; }
   indexData(); restore(); bind();
   APIKEY = INSIDE_CLAUDE ? null : readKey(); setBackend();
-  $('#v-help').addEventListener('click', e => { if (e.target.closest('[data-keydlg]')) keyDialog(); });
+  DRIVE = INSIDE_CLAUDE ? null : readDrive(); if (DRIVE && !DRIVE.url) DRIVE = null;
+  renderDriveBits();
+  $('#v-help').addEventListener('click', e => { if (e.target.closest('[data-keydlg]')) keyDialog(); if (e.target.closest('[data-drivedlg]')) driveDialog(); });
   $('#layout').addEventListener('change', onLayout);
   $('#layout').addEventListener('input', e => { if (e.target.type === 'text' && e.target.dataset.l) onLayout(e); });
   $('#styles').onclick = e => { const b = e.target.closest('[data-style]'); if (!b) return; const keepT = { name: LAY().name, cls: LAY().cls, date: LAY().date, intro: LAY().intro, version: LAY().version, answers: LAY().answers, group: LAY().group, course: LAY().course }; S.ws.layout = Object.assign(defaultLayout(b.dataset.style), keepT); persist(); renderLayout(); schedulePreview(0); };
   $('#pv-ans').onchange = () => schedulePreview(0);
   $('#dl-ws').onclick = () => download('student');
   $('#dl-ans').onclick = () => download('answers');
+  $('#dl-drive').onclick = driveSave;
   $('#cl-stop').onclick = () => { if (clCtl) clCtl.abort(); };
   $$('#fw button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.fw === S.fw)));
   const params = new URLSearchParams(location.search);

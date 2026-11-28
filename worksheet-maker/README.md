@@ -29,6 +29,39 @@ layout and downloads the files.
 | 2 Layout and print | Four page styles (HSC exam, workbook, adapted, compact) and settings for the header, order, marks, sources, dot points, part breaks, answer space (lines, dots, box or none, and how much), extended response pages, a planning box, word banks, sentence starters, one or two columns, diagram tasks on blank axes or the starting diagram, answers at the end, and Version B (questions and options reordered). The preview is the real PDF, drawn with pdf.js. |
 | My worksheets | Saved in this browser (`localStorage`, key `econ-worksheet-maker-v1:saved`); save to and open from a file to move them between computers. |
 
+## Save to Google Drive (28 November 2026)
+
+**Save to Google Drive** (step 2, beside the download buttons) puts a worksheet into a **Worksheets** folder in the
+topic's resources on the shared drives, and the Lesson Register (staff Tools site) then offers it when a lesson is
+recorded (*Resources not in the program › From the Worksheet Maker*).
+
+| Course | Student copy | Answer copy and editable worksheet |
+|---|---|---|
+| HSC Topic 1 | `HSC_Economics_SSCBWB / Topic 1 - Global Economy / Worksheets` | `zzTeacher Only / Topic 1 / Worksheets` |
+| HSC Topic 2 | `… / Topic 2 - Australia's Place in the Global Economy (resources) / Worksheets` | `zzTeacher Only / Topic 2 / Worksheets` |
+| HSC Topic 3 | `… / Topic 3 - Economic Issues (resources) / Worksheets` | `zzTeacher Only / Topic 3 / Worksheets` |
+| HSC Topic 4 | `… / Topic 4 - Economic Policies & Management / Worksheets` | `zzTeacher Only / Topic 4 / Worksheets` |
+| Year 11, six focus areas | `Prelim_Eco_SSCBWB / 2027 Syllabus / 0N … / New resources (2027) / Worksheets` | the same folder; the answer copy is named `… – Teacher` |
+
+- The folder is picked from the topic (or Year 11 focus area) most of the worksheet's questions are tagged to, and
+  can be changed. The student copy is opened to NSW DoE accounts (Viewer), as other student files on the shared
+  drive are; the answer copy (`… (answers).pdf` for HSC) and the editable file (`….worksheet.json`, opened with
+  My worksheets › Open a file) stay teachers only. A name already in the folder gets `(2)`, `(3)` and so on, so a
+  saved file is never replaced and links in lesson records keep pointing to what was used.
+- **How it reaches Drive:** through the teacher's own **Worksheet saver**, a Google Apps Script web app
+  (`drive-saver/Code.gs`) that runs in their school account. The set-up dialog copies the script with a private
+  key written into it (the key is made in the browser and is never in this repository), and the teacher deploys
+  it (Execute as: Me; Who has access: Anyone, or Anyone within NSW Department of Education). Steps are in
+  `drive-saver/README.md` and in the dialog.
+- **In the browser:** the saver's address and key are kept under `worksheet-maker:drive` (`localStorage`, or
+  `sessionStorage` if not remembered), and each save is noted under `worksheet-maker:drive-saved`. The Lesson
+  Register is on the same site, so it reads both. **Copy a connection code** (`WMS1.…`, holds the key) connects
+  another computer, or the Lesson Register on another device. The last save shows under the print buttons, with
+  "Changed since then" once the sheet has been edited. Not shown in the copy that runs inside Claude.
+- **Two routes:** `fetch()` when the web app is open to Anyone; otherwise a hidden form and frame, with Google's
+  page answering by `postMessage` (checked by nonce and by coming from inside that frame). The second needs the
+  browser to be signed in to the school Google account.
+
 ## Year 11 (2025 syllabus)
 
 The **2025 Year 11** switch shows the six Year 11 focus areas (`y11` in `evidence-finder/data/syllabus.json`) as
@@ -156,6 +189,7 @@ network that blocks `api.anthropic.com` (some school networks do).
 | `build.py` | Gathers every source into `data.json` and writes `index.html`, `review.html` and `review-data.json` |
 | `build/bank.py` | Reads the bank files, fingerprints each question; writes the review list and the Question review page's data |
 | `bank/reviews.json` | The teacher's decisions from the Question review page (saved there; don't edit by hand unless asked) |
+| `drive-saver/Code.gs`, `drive-saver/README.md` | The Worksheet saver (Google Apps Script) and how to set it up |
 | `build/diagrams.py`, `build/econ_diagrams.py` | Diagram codes → SVG in the house style |
 | `build/fonts.py` | How the font files were cut (run once; not part of the build) |
 | `bank/` | The new questions, and `maps.json` (glossary terms, Topic Map nodes and calculation skills → dot points) |
@@ -165,5 +199,7 @@ network that blocks `api.anthropic.com` (some school networks do).
 Tested in headless Chrome: every question type in all four styles, student and answer copies, answers at the
 end, Version B, the 2025 syllabus, Question Finder import, browse, edit, swap, look-alike, save and reopen,
 and phone width. The Claude features were tested against a stand-in for the API (key check, More like my
-worksheet, one type, errors, Stop, remembering and forgetting the key), not against Anthropic itself. Not
+worksheet, one type, errors, Stop, remembering and forgetting the key), not against Anthropic itself. Save to
+Google Drive was tested against a stand-in for Google that runs the real `Code.gs` (both routes, set-up, the
+connection code, Year 11 and HSC folders, a second save, a wrong key), not against Google itself. Not
 tested by students, on the school network or inside the Google Site.
