@@ -4,7 +4,7 @@ Each item is one object in `data/evidence.json`. Put the PDF (if any) in `files/
 
 ## From the inbox
 
-Items dropped in `HSC_Economics_SSCBWB / Evidence Finder / inbox` are listed by `python3 build/ingest.py status`. For each one, choose the id, then `python3 build/ingest.py file "<inbox name>" <id> --label "Original article"`: it puts the PDF in `files/YYYY-MM/`, moves the original to `filed/` on the drive and prints the `file` block to paste into the record. Use `archive` for a dropped link or note once its story is filed, and for duplicates. Finish with `python3 build/ingest.py refresh --commit "<message>"`. See the README for more.
+Items dropped in `HSC_Economics_SSCBWB / Evidence Finder / inbox` are listed by `python3 build/ingest.py status`. For each one, choose the id, then `python3 build/ingest.py file "<inbox name>" <id> --label "Original article"`: it puts the PDF in `files/YYYY-MM/`, moves the original to `filed/` on the drive and prints the `file` block to paste into the record. The daily news task also drops its summaries here with an index (`_index-<date>.json`); `status` then shows which PDFs are the same story (`SAME STORY as`) and any `possible existing card`. For a pair, file the HSC summary with `file`, then the Year 11 one with `file "<name>" <same id> --as year11`, which prints the `file11` block. If the story already has a card, add the new PDF to that card (`--as year11` with the card's id) or `archive` it; do not make a second card. Use `archive` for a dropped link or note once its story is filed, and for duplicates. Finish with `python3 build/ingest.py refresh --commit "<message>"`. See the README for more.
 
 ## A record
 
@@ -35,6 +35,14 @@ Items dropped in `HSC_Economics_SSCBWB / Evidence Finder / inbox` are listed by 
   "links": [{"label": "Reuters via Investing.com, China's economic growth accelerates, 19 Oct 2026", "url": "https://..."}]
 }
 ```
+
+A card can carry a second document, `file11`, for the Year 11 version of the same story:
+
+```json
+  "file11": {"path": "files/2026-10/2026-10-19-china-q3-gdp-year11.pdf", "label": "Year 11 version", "pages": 1}
+```
+
+One story is one card. When a story has both an HSC summary and a Year 11 summary, the HSC summary is `file` and the Year 11 summary is `file11`; tag the card in all three syllabuses. A Year 11-only story uses its Year 11 summary as `file`. The card shows both buttons, with the Year 11 one first in the Year 11 view.
 
 Required: `id`, `title`, `date`, `type`, `outlets`, `summary`, `lede`, `about`, `also`, `issues`, `levers`, `diagrams`, `figures`, `terms`, `links`, `file`. Use empty lists where nothing applies. `dateText`, `angle`, `questions`, `extended` and `note` are optional.
 

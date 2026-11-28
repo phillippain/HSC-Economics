@@ -36,6 +36,7 @@ data/qf_taxonomy.json      2009 dot points, shared with the Question Finder so c
 files/YYYY-MM/             the PDFs the cards link to
 build/build_site.py        checks every tag, then writes index.html
 build/ingest.py            Drive inbox -> files/: status, file, archive, rebuild, commit
+build/make_hsc_summary_pdf.py  story record (JSON) -> one-page HSC summary PDF (needs Playwright; run in Claude's cloud workspace)
 data/ingest-log.jsonl      what was filed from the inbox, and where the original went
 build/make_syllabus.py     rebuilds data/syllabus.json (vocabularies and crosswalk live here)
 build/template.html        the page
@@ -57,6 +58,8 @@ python3 build/ingest.py refresh --commit "Evidence Finder: file inbox (3 new)"
 ```
 
 `file` copies the document to `files/YYYY-MM/<id>.pdf` in the repo, which is the copy the site links to, and moves the original to `Evidence Finder / filed / YYYY-MM /` on the drive, so an empty inbox means everything has been dealt with. Nothing is deleted. `data/ingest-log.jsonl` records each move. Then push (GitHub Desktop, Push origin).
+
+**Daily news summaries.** Two weekday-morning scheduled tasks feed the inbox. "Economics news digest (HSC and Year 11)" writes the digest and the Year 11 summary PDFs, and leaves a hand-off file of the day's stories. "Economics HSC summaries and Evidence Finder inbox" then makes a one-page HSC summary PDF for each Topic 1 to 4 story with `build/make_hsc_summary_pdf.py` (the working copy is in `Evidence Finder / _tools` on the drive), saves it to the 12Eco Evidence folder, and copies the HSC and Year 11 PDFs into the inbox with `_index-<date>.json`. Filing uses that index to keep one card per story: the HSC summary is the card's `file`, the Year 11 summary its `file11` (`ingest.py file ... --as year11`).
 
 Unlike the Legal Studies finder there is no Apps Script and no Drive id map, because the cards link to the copy in the repo and not to Drive.
 

@@ -753,11 +753,18 @@ function cardHTML(x){
       ${tagRow}${viaNote}
       ${more}
       <div class="acts">
-        <a class="btn" href="${esc(it.file.path)}" target="_blank" rel="noopener">Open the ${esc(it.file.label.toLowerCase())} (PDF)</a>
+        ${fileBtns(it)}
         <label class="pick"><input type="checkbox" data-act="tick" data-id="${esc(it.id)}" ${tick?'checked':''}> Add to my list</label>
       </div>
     </div>
   </article>`;
+}
+function fileBtns(it){
+  // A card can carry a second document written for Year 11 (file11). In the Year 11 view it is offered first.
+  const main = `<a class="btn" href="${esc(it.file.path)}" target="_blank" rel="noopener">Open the ${esc(it.file.label.toLowerCase())} (PDF)</a>`;
+  if(!it.file11) return main;
+  const y11 = `<a class="btn${S.fw==='y11'?'':' ghost'}" href="${esc(it.file11.path)}" target="_blank" rel="noopener">Open the ${esc((it.file11.label||'Year 11 version').replace(/^Year 11/,'\u0001').toLowerCase().replace('\u0001','Year 11'))} (PDF)</a>`;
+  return S.fw==='y11' ? y11 + main.replace('class="btn"','class="btn ghost"') : main + y11;
 }
 function statsHTML(list){
   const rows = [];

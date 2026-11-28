@@ -32,6 +32,10 @@ for it in items:
     for f in it.get("figures", []):
         if f["issue"] not in vocab["issues"]: errors.append(f"{n}: figure issue {f['issue']}")
     if not os.path.exists(f"{ROOT}/{it['file']['path']}"): errors.append(f"{n}: missing file {it['file']['path']}")
+    if "file11" in it:                       # optional second document: the Year 11 version of the same story
+        f11 = it["file11"]
+        if not isinstance(f11, dict) or not f11.get("path"): errors.append(f"{n}: file11 needs a path")
+        elif not os.path.exists(f"{ROOT}/{f11['path']}"): errors.append(f"{n}: missing file {f11['path']}")
 if errors:
     print("\n".join(errors)); sys.exit(1)
 
@@ -47,4 +51,5 @@ print(f"index.html  {len(out)/1024:,.0f} KB  ·  {len(items)} items  ·  {sum(le
 for fw in ids:
     cov = {t for i in items for t in i["about"][fw]}
     print(f"  {fw}: {len(cov)} of {n_pts[fw]} dot points have 'about' evidence")
+print(f"  cards with a Year 11 version as well: {sum(1 for i in items if i.get('file11'))}")
 print("placeholders left:", [p for p in ("__DATA__", "__FONTS__") if p in out] or "none")
