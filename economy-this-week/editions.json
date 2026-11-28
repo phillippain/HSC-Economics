@@ -1,5 +1,5 @@
 {
- "built": "2026-11-27",
+ "built": "2026-11-28",
  "topics": {
   "1": "The Global Economy",
   "2": "Australia's Place in the Global Economy",
@@ -632,6 +632,120 @@
     "pages/2026-11-03-2.jpg",
     "pages/2026-11-03-3.jpg",
     "pages/2026-11-03-4.jpg"
+   ]
+  },
+  {
+   "date": "Tuesday 27 October 2026",
+   "pages": 4,
+   "summary": "Wednesday's CPI is the last big number before the RBA's Melbourne Cup Day decision on 3 November, with oil near US$114, house prices falling and unemployment at 4.7%.",
+   "big": "an oil supply shock pushes prices up and growth down together (stagflation), so the RBA must weigh inflation expectations against rising unemployment: a key limitation of macro policy (Topic 4).",
+   "focus": "",
+   "stories": [
+    {
+     "n": "01",
+     "topic": 3,
+     "title": "Wednesday's CPI will set up the RBA's Melbourne Cup Day decision",
+     "lead": "The ABS releases the September-quarter CPI on Wednesday 28 October, six days before the RBA meets. Underlying inflation is expected above the RBA's forecast, with fuel the biggest single driver.",
+     "page": 1,
+     "terms": [
+      "headline vs underlying inflation",
+      "trimmed mean",
+      "cost- push",
+      "real wages"
+     ],
+     "q": "Distinguish between headline and underlying inflation, and explain why the RBA focuses on underlying measures. (4 marks)"
+    },
+    {
+     "n": "02",
+     "topic": 1,
+     "title": "Houthi strikes on Saudi oil keep crude near a five-month high",
+     "lead": "Yemen's Houthis said on Saturday they had attacked Saudi oil facilities and airports, adding to fears about supply from the world's largest crude exporter just as oil sits at its highest in five months.",
+     "page": 2,
+     "terms": [
+      "supply shock",
+      "price-inelastic demand",
+      "imported inflation"
+     ],
+     "q": "Using a supply and demand diagram, explain why a disruption to Saudi oil supply could cause a large rise in world oil prices. (4 marks)"
+    },
+    {
+     "n": "03",
+     "topic": 4,
+     "title": "The RBA says rate rises are “not quite yet” done",
+     "lead": "Assistant Governor Sarah Hunter said on Sunday that demand is still running ahead of what the economy can supply. Markets now price roughly a 61–67% chance of a fifth rise on Melbourne Cup Day, 3 November.",
+     "page": 2,
+     "terms": [
+      "inflation expectations",
+      "transmission mechanism",
+      "contractionary policy"
+     ],
+     "q": "Explain why the RBA is concerned about rising inflation expectations and how monetary policy can respond. (6 marks)"
+    },
+    {
+     "n": "04",
+     "topic": 3,
+     "title": "House prices fall for a sixth month, with a record quarterly drop",
+     "lead": "Two measures agree the slide is deepening: Cotality has national values down six months in a row, and Domain's median house price had its biggest quarterly fall on record as rate rises bite.",
+     "page": 3,
+     "terms": [
+      "wealth effect",
+      "asset price channel",
+      "distribution of wealth"
+     ],
+     "q": "Explain how rising interest rates affect the distribution of wealth in Australia. (4 marks)"
+    },
+    {
+     "n": "05",
+     "topic": 1,
+     "title": "Tariffs, retaliation, then subsidies: Canada shields steel and autos",
+     "lead": "Prime Minister Mark Carney and Ontario Premier Doug Ford announced a joint package for steel and auto firms hit by 50% US tariffs, while the White House quietly reshuffled which Canadian goods it taxes.",
+     "page": 3,
+     "terms": [
+      "tariff",
+      "retaliation",
+      "deadweight loss",
+      "trade diversion"
+     ],
+     "q": "Explain the effects of a tariff on domestic consumers, domestic producers and the government. Use a diagram. (6 marks)"
+    },
+    {
+     "n": "06",
+     "topic": 2,
+     "title": "Challenger rejects a Japanese-owned insurer's takeover bid",
+     "lead": "The board of annuities provider Challenger rejected an $11.80-a-share offer from TAL Dai-ichi, owned by Japan's Dai-ichi Life, but is still talking with the bidder. It is a live example of foreign direct investment.",
+     "page": 4,
+     "terms": [
+      "FDI",
+      "financial account",
+      "primary income",
+      "FIRB"
+     ],
+     "q": "Explain how a completed takeover would affect Australia's financial account now and its current account in later years. (4 marks)"
+    },
+    {
+     "n": "07",
+     "topic": 4,
+     "title": "Coalition costs $31b of cuts as a MYEFO downgrade looms",
+     "lead": "The Opposition has released PBO-costed savings of $31.3b over four years to pay for tax changes, while Treasurer Chalmers says December's MYEFO will show softer growth and slightly higher unemployment.",
+     "page": 4,
+     "terms": [
+      "fiscal stance",
+      "MYEFO",
+      "policy mix",
+      "bracket creep"
+     ],
+     "q": "Discuss whether fiscal policy should be tightened to support the RBA's efforts to reduce inflation. (8 marks)"
+    }
+   ],
+   "id": "2026-10-27",
+   "file": "12Eco_The_Economy_This_Week_27Oct2026.pdf",
+   "pdf": "editions/12Eco_The_Economy_This_Week_27Oct2026.pdf",
+   "drive": "1JtE_yKEVVcZFdmkdGa0XzVrHl9Ra9HGK",
+   "images": [
+    "pages/2026-10-27-1.jpg",
+    "pages/2026-10-27-2.jpg",
+    "pages/2026-10-27-3.jpg",
+    "pages/2026-10-27-4.jpg"
    ]
   },
   {
