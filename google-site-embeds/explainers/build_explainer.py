@@ -4,7 +4,7 @@
 import sys, os, json, glob, html
 sys.path.insert(0, glob.glob('/root/.claude/skills/synced/*/hsc-econ-diagrams/scripts')[0] if glob.glob('/root/.claude/skills/synced/*/hsc-econ-diagrams/scripts') else '.')
 import econ_diagrams as ed
-STAMP = "Updated 26 November 2026"
+STAMP = "Updated 28 November 2026"
 INK, GREY = "#0b1330", "#5a6580"
 TOOLS = "https://phillippain.github.io/HSC-Economics/"
 GLANCE = TOOLS + "economy-at-a-glance/data/glance.json"
@@ -94,9 +94,9 @@ ICONS = {
  "map": ("Topic Map", "mind-map/", '<circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 000-6H9a3 3 0 010-6h6.5"/>'),
 }
 def tools(items):
-    """items: [(key, what to do there)] -> 'Practise with the tools' block of buttons, two per row."""
+    """items: [(key, what to do there[, link suffix such as #skill=tariff])] -> 'Practise with the tools' block of buttons, two per row."""
     b = "".join('<a class="tb" target="_blank" rel="noopener" href="%s%s"><svg viewBox="0 0 24 24" aria-hidden="true">%s</svg><span><b>%s</b><i>%s</i></span></a>'
-                % (TOOLS, ICONS[k][1], ICONS[k][2], e(ICONS[k][0]), e(d)) for k, d in items)
+                % (TOOLS, ICONS[it[0]][1] + (it[2] if len(it) > 2 else ""), ICONS[it[0]][2], e(ICONS[it[0]][0]), e(it[1])) for it in items)
     return '<div class="tw"><h4>Practise with the tools</h4><div class="tg">%s</div></div>' % b
 def tool(name, path): return '<a href="%s%s">%s</a>' % (TOOLS, path, name)
 
