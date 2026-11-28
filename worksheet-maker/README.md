@@ -40,7 +40,7 @@ and downloads the files.
 ## Building
 
 ```
-python3 worksheet-maker/build.py            # write data.json, index.html and review.html
+python3 worksheet-maker/build.py            # write data.json, index.html, review.html and review-data.json
 python3 worksheet-maker/build.py --check    # change nothing; fail if any of them is out of date
 python3 worksheet-maker/build.py --report   # also list how many questions each dot point has, by group
 python3 worksheet-maker/build.py --artifact <folder>   # also write the Claude copy (see below)
@@ -57,8 +57,28 @@ has no dot point in `bank/maps.json`, or a diagram code cannot be drawn.
 
 `bank/*.txt` holds the questions written for this tool (335 at 26 November 2026, plus 101 true/false
 statements). They are plain text; `bank/README.md` explains the format. Every one shows **not yet reviewed**
-until the teacher checks it: `review.html` lists them all with their answers. Mark a checked file by making its
-first line `# reviewed`, or one question by adding `checked: yes` under its heading.
+until the teacher checks it.
+
+**Reviewing them.** The **Question review** page on the staff Tools site
+(`phillippain.github.io/Tools/question-review/`) shows every bank question and statement with its answer, and
+one click each to **Approve**, flag as **Needs a fix** (with a note) or **Remove**. With a GitHub token connected
+once per computer, it saves the decisions to `bank/reviews.json` in this repository (a commit on `main`), and
+this page reads that file when it opens:
+
+| Decision | In the Worksheet Maker |
+|---|---|
+| Approved (`ok`) | Loses **not yet reviewed** |
+| Needs a fix (`fix`) | Left out of new worksheets and *Pick questions one by one*; labelled *flagged: needs a fix* on a saved sheet that has it. Ask Claude to fix it from the note, then review it again. |
+| Removed (`out`) | Left out the same way; labelled *removed from the bank* |
+
+A decision counts only while the question is unchanged: each one stores the question's fingerprint (`h`, from
+`build/bank.py`), so a question edited after it was approved or flagged goes back to **not yet reviewed**. The
+build writes `review-data.json` (every bank question with its fingerprint and answer) for the review page.
+Without a token the page keeps the decisions in that browser and offers **Copy decisions for Claude**.
+`review.html` (a plain list of the unreviewed questions) still works and links to the review page.
+
+You can still mark a whole file as checked by making its first line `# reviewed`, or one question by adding
+`checked: yes` under its heading.
 
 ## Writing new questions with Claude
 
@@ -104,8 +124,9 @@ network that blocks `api.anthropic.com` (some school networks do).
 | File | What it is |
 |---|---|
 | `template.html` | The page: HTML, CSS and the app. The calculation generators are copied in at build time between the `/*__CALC__*/` markers. |
-| `build.py` | Gathers every source into `data.json` and writes `index.html` and `review.html` |
-| `build/bank.py` | Reads the bank files; writes the review page |
+| `build.py` | Gathers every source into `data.json` and writes `index.html`, `review.html` and `review-data.json` |
+| `build/bank.py` | Reads the bank files, fingerprints each question; writes the review list and the Question review page's data |
+| `bank/reviews.json` | The teacher's decisions from the Question review page (saved there; don't edit by hand unless asked) |
 | `build/diagrams.py`, `build/econ_diagrams.py` | Diagram codes → SVG in the house style |
 | `build/fonts.py` | How the font files were cut (run once; not part of the build) |
 | `bank/` | The new questions, and `maps.json` (glossary terms, Topic Map nodes and calculation skills → dot points) |

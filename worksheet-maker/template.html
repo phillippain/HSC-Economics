@@ -478,6 +478,22 @@ function addToPool(it) {
   it._y = uniq(it.c.flatMap(c => XW[SEC[c]] || []).concat((it.c25 || []).map(c => SEC[c]).filter(Boolean)));
   POOL.set(it.id, it);
 }
+/* The teacher's decisions from the Question review page (staff Tools site), saved in bank/reviews.json. A decision
+   counts only while the question is unchanged (same fingerprint h): approved questions lose "not yet reviewed";
+   flagged and removed ones stay out of new worksheets (a sheet that already has one still shows it, labelled). */
+async function loadReviews() {
+  try {
+    const r = await fetch('bank/reviews.json?t=' + Date.now(), { cache: 'no-store' }); if (!r.ok) return 0;
+    const dec = ((await r.json()) || {}).items || {}; let n = 0;
+    const apply = x => { const d = dec[x.id]; if (!d || !x.h || d.h !== x.h) return true; n++;
+      if (d.s === 'ok') { x.rev = 0; delete x.hold; return true; }
+      if (d.s === 'fix' || d.s === 'out') { x.hold = d.s; x.note = d.note || ''; return false; }
+      return true; };
+    D.items.forEach(x => { if (x.src === 'bank') apply(x); });
+    D.tf = D.tf.filter(t => !t.h || apply(t));
+    return n;
+  } catch (e) { return 0; }
+}
 /* News filed after the last build: read the Evidence Finder's live file (on the class site only). */
 async function liveEvidence() {
   if (!LIVE_EV) return 0;
@@ -531,6 +547,7 @@ function inContentC(c) {
 function inContent(it) { return S.fw === 'h09' ? it.c.some(c => S.sel09.has(c)) : (it._y || []).some(y => S.sel25.has(y)); }
 function inSkills(k, ss) { if (!S.skills.size) return true; return (k || []).some(x => S.skills.has(x)) || (ss || []).some(x => S.skills.has(x)); }
 function srcOk(it) {
+  if (it.hold) return false;              // flagged for a fix or removed on the Question review page
   if (it.src === 'hsc') return S.src.hsc && it.y >= S.from && it.y <= S.to;
   if (it.src === 'bank' || it.src === 'claude') return S.src.bank;
   if (it.src === 'ev') return S.src.ev;
@@ -850,7 +867,7 @@ function renderList() {
         (CLAUDE && (it.src === 'hsc' || it.src === 'bank' || it.src === 'ev') ? `<button class="c" data-act="clike" data-k="${x.e.k}" title="Claude writes a new question modelled on this one">Look-alike by Claude</button>` : ''),
         (CLAUDE && ['mc', 'sa', 'er', 'stim', 'draw', 'sort', 'compare', 'error'].includes(it.f) ? `<button class="c" data-act="plain" data-k="${x.e.k}" title="Claude rewrites the wording in plain English">Simpler wording</button>` : ''),
         `<button data-act="edit" data-k="${x.e.k}">Edit</button>`, `<button data-act="del" data-k="${x.e.k}">Remove</button>`].join('');
-      html += `<div class="q" style="--gc:var(${g.css})"><span class="no">${isFirst ? u.num : ''}</span><div class="meta"><span class="f">${esc(FBY[it.f].name)}</span><span>${esc(srcLabel(it))}</span><span>${esc(it.c.slice(0, 4).join(' '))}</span><span class="m">${marksOf(it)} ${marksOf(it) === 1 ? 'mark' : 'marks'}</span>${it.rev ? '<span class="rev">not yet reviewed</span>' : ''}${it.src === 'claude' ? '<span class="rev">check before printing</span>' : ''}${it.ed ? '<span>edited</span>' : ''}${it.part ? `<span>part ${esc(it.part)}</span>` : ''}</div><div class="txt">${preview(it)}</div><div class="acts">${acts}</div></div>`;
+      html += `<div class="q" style="--gc:var(${g.css})"><span class="no">${isFirst ? u.num : ''}</span><div class="meta"><span class="f">${esc(FBY[it.f].name)}</span><span>${esc(srcLabel(it))}</span><span>${esc(it.c.slice(0, 4).join(' '))}</span><span class="m">${marksOf(it)} ${marksOf(it) === 1 ? 'mark' : 'marks'}</span>${it.hold ? `<span class="rev">${it.hold === 'fix' ? 'flagged: needs a fix' : 'removed from the bank'}</span>` : it.rev ? '<span class="rev">not yet reviewed</span>' : ''}${it.src === 'claude' ? '<span class="rev">check before printing</span>' : ''}${it.ed ? '<span>edited</span>' : ''}${it.part ? `<span>part ${esc(it.part)}</span>` : ''}</div><div class="txt">${preview(it)}</div><div class="acts">${acts}</div></div>`;
     }
   }
   $('#list').innerHTML = html;
@@ -943,7 +960,7 @@ function browse() {
   let limit = 60;
   const draw = () => {
     const q = $('#b-q').value.trim().toLowerCase(), f = $('#b-f').value, s = $('#b-s').value, mine = $('#b-mine').checked;
-    const res = D.items.filter(it => (!f || it.f === f) && (!s || it.src === s) && (!mine || inContent(it)) && (!q || JSON.stringify([it.q, it.title, it.lede, it.o, it.parts, it.id]).toLowerCase().includes(q)));
+    const res = D.items.filter(it => !it.hold && (!f || it.f === f) && (!s || it.src === s) && (!mine || inContent(it)) && (!q || JSON.stringify([it.q, it.title, it.lede, it.o, it.parts, it.id]).toLowerCase().includes(q)));
     const inSheet = new Set(S.ws.items.map(e => e.ref).filter(Boolean));
     $('#b-res').innerHTML = `<p class="hint">${res.length} found</p>` + res.slice(0, limit).map(it => `<div class="r"><div><div class="meta">${esc(FBY[it.f].name)} · ${esc(srcLabel(it))} · ${esc(it.c.join(' '))} · ${marksOf(it)} marks</div><div class="t">${preview(it)}</div></div><button class="btn sm ${inSheet.has(it.id) ? 'ghost' : ''}" data-add="${esc(it.id)}" ${inSheet.has(it.id) ? 'disabled' : ''}>${inSheet.has(it.id) ? 'Added' : 'Add'}</button></div>`).join('')
       + (res.length > limit ? `<button class="btn ghost sm" id="b-more">Show more</button>` : '');
@@ -1893,7 +1910,7 @@ function styleExamples(F) {
   const onSheet = S.ws.items.map(itemOf).filter(it => it && inFocus(it, F));
   if (onSheet.length) return { ex: onSheet, from: 'sheet' };
   const chosen = FMT.filter(f => S.counts[f.id] > 0).map(f => f.id), types = chosen.length ? chosen : ['mc', 'sa'];
-  const pool = D.items.filter(it => types.includes(it.f) && inFocus(it, F) && (it.src === 'hsc' || it.src === 'bank'))
+  const pool = D.items.filter(it => !it.hold && types.includes(it.f) && inFocus(it, F) && (it.src === 'hsc' || it.src === 'bank'))
     .sort((a, b) => (a.src === 'hsc' ? 0 : 1) - (b.src === 'hsc' ? 0 : 1) || (b.y || 0) - (a.y || 0));
   const ex = []; for (const f of types) ex.push(...pool.filter(it => it.f === f).slice(0, 3));
   for (const f of types) if (LOCAL_KINDS.includes(f)) ex.push({ f, c: F, k: [], gen: true });   // a calculation or term task needs no example
@@ -2041,7 +2058,7 @@ function renderHelp() {
   <h2>Page styles</h2>
   <ul><li><b>HSC exam style</b>: plain, numbered, marks in the right margin, ruled lines scaled to the marks.</li><li><b>Workbook style</b>: the navy and gold workbook look, with coloured part banners and dotted lines.</li><li><b>Adapted layout</b>: Lexend at 12.5 pt, extra space, a tick box on every question, word boxes, sentence starters and a reminder of the paragraph scaffold.</li><li><b>Compact revision</b>: two columns for short questions, small or no writing space, for answering in books.</li></ul>
   <h2>Good to know</h2>
-  <ul><li>New questions are marked <i>not yet reviewed</i> until the teacher has checked them. Explanations of multiple-choice answers were written for the site, not by NESA.</li>
+  <ul><li>New questions are marked <i>not yet reviewed</i> until the teacher has checked them on the Question review page (staff Tools site); questions flagged there for a fix, or removed, are left out of new worksheets. Explanations of multiple-choice answers were written for the site, not by NESA.</li>
   <li>Diagrams are drawn in the class house style. They are conceptual and not to scale, except the numbered figures used for “Read a diagram”.</li>
   <li>Questions on news items come from the Evidence Finder. Figures in them are as at the date shown.</li>
   <li>Claude can write new questions for any dot point, including <b>More like my worksheet</b> (new questions in the same style as those already on it), look-alikes of any question and plain-English wording. ${INSIDE_CLAUDE ? 'This copy runs inside Claude, so it is ready to use.' : 'On this website a teacher sets it up once on each computer with their own Anthropic API key (<button type="button" class="linkish" data-keydlg>Claude settings</button>). The key stays in that browser, and each batch of questions is charged to the key’s account.'} Claude’s questions are marked <i>check before printing</i>.</li></ul>`;
@@ -2073,6 +2090,7 @@ async function init() {
   renderAll(); go('build');
   $('#foot').innerHTML = `Past HSC questions, figures, marking criteria and answers are from the NESA HSC Economics papers and marking guidelines, as held in the class <a href="../hsc-question-finder-site/">Question Finder</a>. New practice questions, multiple-choice explanations and answer notes were written for this site and are not from NESA. Dot-point tags are a reading of the questions, not an official mapping. Your worksheets are kept in this browser only. Data version ${esc(D.built)}.`;
   liveEvidence().then(n => { if (n) { renderFormats(); renderContent(); } });
+  loadReviews().then(n => { if (n) { renderFormats(); renderContent(); renderList(); } });
   // Opened from the Question Finder's "Make a PDF worksheet" button: its ticks arrive in the address
   const qf = params.get('qf');
   if (qf) { qfImport(qf.split(',').map(x => x.trim()).filter(Boolean)); history.replaceState(null, '', location.pathname); }

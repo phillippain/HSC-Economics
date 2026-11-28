@@ -14,7 +14,9 @@ in short, every question starts with a line `=== <type> <id>`, then `key: value`
     ANS: B
     WHY: Overseas buyers need more Australian dollars to pay for the same exports.
 """
+import hashlib
 import html
+import json
 import re
 from pathlib import Path
 
@@ -275,6 +277,12 @@ def load(folder, points):
         if reviewed:
             for x in items[first_item:]:
                 x["rev"] = 0
+        for x in items[first_item:]:
+            x.setdefault("_f", path.name)
+        for t in tfs:
+            t.setdefault("_f", path.name)
+    for x in items + tfs:
+        x["h"] = fingerprint(x)
     for x in items + tfs:
         bad = [c for c in x["c"] if c not in points]
         if bad:
@@ -282,68 +290,95 @@ def load(folder, points):
     return items, tfs, problems
 
 
+def fingerprint(x):
+    """A short fingerprint of a question's content. A review decision is saved with it, so a question that is
+    changed after it was approved (or flagged) goes back to the review list."""
+    body = {k: v for k, v in x.items() if k not in ("id", "src", "rev", "h", "_f", "labels")}
+    return hashlib.sha1(json.dumps(body, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:10]
+
+
 # ---------------------------------------------------------------- the teacher's review page
+REVIEW_URL = "https://phillippain.github.io/Tools/question-review/"
 NAMES = {"mc": "Multiple choice", "sa": "Short answer", "er": "Extended response", "draw": "Draw a diagram",
          "label": "Label a diagram", "read": "Read a diagram", "sort": "Sort and classify", "compare": "Compare table",
          "error": "Spot the error", "chain": "Cause and effect chain"}
 
 
+def _tbl(t):
+    e = html.escape
+    if not t:
+        return ""
+    rows = t["rows"]
+    return ('<table><thead><tr>' + "".join(f"<th>{e(c)}</th>" for c in rows[0]) + "</tr></thead><tbody>"
+            + "".join("<tr>" + "".join(f"<td>{e(c)}</td>" for c in r) + "</tr>" for r in rows[1:]) + "</tbody></table>")
+
+
+def _ul(xs):
+    e = html.escape
+    return "<ul>" + "".join(f"<li>{e(v)}</li>" for v in xs) + "</ul>" if xs else ""
+
+
+def _err_html(text):
+    return re.sub(r"\[\[(.+?)=&gt;(.+?)\]\]", r'<s>\1</s> <ins>\2</ins>', html.escape(text))
+
+
+def tf_html(t):
+    e = html.escape
+    return (f"<p><b>{'False' if t['f'] else 'True'}:</b> {e(t['f'] or t['t'])}</p>"
+            + (f"<p class='why'>Corrected: {e(t['t'])}</p>" if t["f"] else "")
+            + (f"<p class='why'>{e(t['why'])}</p>" if t.get("why") else ""))
+
+
+def item_html(x, dias=None):
+    """One bank question with its answer, as HTML (escaped)."""
+    e = html.escape
+    body = ""
+    if x.get("lead"):
+        body += f"<p>{e(x['lead'])}</p>"
+    body += _tbl(x.get("table"))
+    if x.get("dia") and dias and x["dia"] in dias:
+        dd = dias[x["dia"]]
+        body += f'<div class="dia"><figure>{dd["s"]}<figcaption>Student copy</figcaption></figure><figure>{dd["a"]}<figcaption>Answer</figcaption></figure></div>'
+    if x["f"] == "mc":
+        body += f"<p>{e(x['q'])}</p><ol type='A'>" + "".join(
+            f"<li class='{'k' if L in x['key'] else ''}'>{e(o)}</li>" for L, o in zip("ABCD", x["o"])) + "</ol>"
+        if x.get("e"):
+            body += f"<p class='why'><b>Why {'/'.join(x['key'])}:</b> {e(x['e']['why'])}</p>"
+    elif x.get("parts"):
+        for p in x["parts"]:
+            body += f"<p><b>{e(p['label'])}</b> {e(p['q'])} <small>({p['m']} marks)</small></p>{_ul(p['pts'])}"
+            if p.get("ans"):
+                body += f"<p class='why'>{e(p['ans'])}</p>"
+    elif x["f"] in ("sa", "er", "draw", "label", "read"):
+        body += f"<p>{e(x.get('q', ''))}</p>{_ul(x.get('pts'))}"
+        if x.get("plan"):
+            body += "<p><b>Plan</b></p>" + _ul(x["plan"])
+        if x.get("ans"):
+            body += f"<p class='why'>{e(x['ans'])}</p>"
+    elif x["f"] == "sort":
+        body += f"<p>{e(x['q'])}</p><table><thead><tr><th>Item</th><th>Category</th></tr></thead><tbody>" + "".join(
+            f"<tr><td>{e(r['t'])}</td><td>{e(r['cat'])}</td></tr>" for r in x["rows"]) + "</tbody></table>"
+    elif x["f"] == "compare":
+        body += f"<p>{e(x['q'])}</p><table><thead><tr><th></th>" + "".join(f"<th>{e(c)}</th>" for c in x["cols"]) + "</tr></thead><tbody>" + "".join(
+            "<tr><th>" + e(r["h"]) + "</th>" + "".join(f"<td>{'<i>(given)</i> ' if c['given'] else ''}{e(c['t'])}</td>" for c in r["cells"]) + "</tr>"
+            for r in x["rows"]) + "</tbody></table>"
+    elif x["f"] == "error":
+        body += f"<p>{e(x.get('q') or '')}</p><p class='err'>{_err_html(x['text'])}</p>"
+    elif x["f"] == "chain":
+        body += f"<p><b>{e(x['title'])}</b>: {e(x['trigger'])}</p><ol>" + "".join(
+            f"<li>{e(s['v'])} {'↑' if s['d'] > 0 else '↓'} <small>{e(s['why'])}</small></li>" for s in x["steps"]) + "</ol>"
+    return body
+
+
 def review_page(items, tfs, points, dias=None):
     e = html.escape
-
-    def tbl(t):
-        if not t:
-            return ""
-        rows = t["rows"]
-        return ('<table><thead><tr>' + "".join(f"<th>{e(c)}</th>" for c in rows[0]) + "</tr></thead><tbody>"
-                + "".join("<tr>" + "".join(f"<td>{e(c)}</td>" for c in r) + "</tr>" for r in rows[1:]) + "</tbody></table>")
-
-    def ul(xs):
-        return "<ul>" + "".join(f"<li>{e(v)}</li>" for v in xs) + "</ul>" if xs else ""
-
-    def err_html(text):
-        return re.sub(r"\[\[(.+?)=&gt;(.+?)\]\]", r'<s>\1</s> <ins>\2</ins>', e(text))
 
     out, toc = [], {}
     items = [x for x in items if x.get("rev")]
     for x in items:
         toc.setdefault(x["f"], 0)
         toc[x["f"]] += 1
-        body = ""
-        if x.get("lead"):
-            body += f"<p>{e(x['lead'])}</p>"
-        body += tbl(x.get("table"))
-        if x.get("dia") and dias and x["dia"] in dias:
-            dd = dias[x["dia"]]
-            body += f'<div class="dia"><figure>{dd["s"]}<figcaption>Student copy</figcaption></figure><figure>{dd["a"]}<figcaption>Answer</figcaption></figure></div>'
-        if x["f"] == "mc":
-            body += f"<p>{e(x['q'])}</p><ol type='A'>" + "".join(
-                f"<li class='{'k' if L in x['key'] else ''}'>{e(o)}</li>" for L, o in zip("ABCD", x["o"])) + "</ol>"
-            if x.get("e"):
-                body += f"<p class='why'><b>Why {'/'.join(x['key'])}:</b> {e(x['e']['why'])}</p>"
-        elif x.get("parts"):
-            for p in x["parts"]:
-                body += f"<p><b>{e(p['label'])}</b> {e(p['q'])} <small>({p['m']} marks)</small></p>{ul(p['pts'])}"
-                if p.get("ans"):
-                    body += f"<p class='why'>{e(p['ans'])}</p>"
-        elif x["f"] in ("sa", "er", "draw", "label", "read"):
-            body += f"<p>{e(x.get('q', ''))}</p>{ul(x.get('pts'))}"
-            if x.get("plan"):
-                body += "<p><b>Plan</b></p>" + ul(x["plan"])
-            if x.get("ans"):
-                body += f"<p class='why'>{e(x['ans'])}</p>"
-        elif x["f"] == "sort":
-            body += f"<p>{e(x['q'])}</p><table><thead><tr><th>Item</th><th>Category</th></tr></thead><tbody>" + "".join(
-                f"<tr><td>{e(r['t'])}</td><td>{e(r['cat'])}</td></tr>" for r in x["rows"]) + "</tbody></table>"
-        elif x["f"] == "compare":
-            body += f"<p>{e(x['q'])}</p><table><thead><tr><th></th>" + "".join(f"<th>{e(c)}</th>" for c in x["cols"]) + "</tr></thead><tbody>" + "".join(
-                "<tr><th>" + e(r["h"]) + "</th>" + "".join(f"<td>{'<i>(given)</i> ' if c['given'] else ''}{e(c['t'])}</td>" for c in r["cells"]) + "</tr>"
-                for r in x["rows"]) + "</tbody></table>"
-        elif x["f"] == "error":
-            body += f"<p>{e(x.get('q') or '')}</p><p class='err'>{err_html(x['text'])}</p>"
-        elif x["f"] == "chain":
-            body += f"<p><b>{e(x['title'])}</b>: {e(x['trigger'])}</p><ol>" + "".join(
-                f"<li>{e(s['v'])} {'↑' if s['d'] > 0 else '↓'} <small>{e(s['why'])}</small></li>" for s in x["steps"]) + "</ol>"
+        body = item_html(x, dias)
         like = f" · modelled on {' '.join(x['like'])}" if x.get("like") else ""
         out.append(f'<section id="{e(x["id"])}"><h2>{e(NAMES.get(x["f"], x["f"]))} <small>{e(x["id"][3:])} · '
                    f'{e(" ".join(x["c"]))} · {x.get("m", "")} marks · level {x.get("lv", "-")}{e(like)}</small></h2>{body}</section>')
@@ -358,8 +393,21 @@ def review_page(items, tfs, points, dias=None):
             'th{background:#eef2fb}li.k{font-weight:700;color:#17693a}.why{background:#eef8f1;border-left:3px solid #17693a;padding:4px 10px}'
             '.err s{color:#b42318}.err ins{color:#17693a;text-decoration:none;font-weight:700}ins{color:#17693a;text-decoration:none}'
             '.dia{display:flex;gap:16px;flex-wrap:wrap}.dia figure{margin:0;width:300px}.dia figcaption{font-size:12px;color:#4a5578}'
-            'section{break-inside:avoid}</style></head><body><h1>Worksheet Maker: new questions for review</h1>'
+            'section{break-inside:avoid}.go{background:#fff6d6;border:1px solid #e8c96a;border-radius:8px;padding:8px 12px}</style></head><body><h1>Worksheet Maker: new questions for review</h1>'
+            f'<p class="go"><b>To approve questions, use the <a href="{REVIEW_URL}">Question review</a> page on the staff Tools site</b>: one click to approve, flag for a fix or remove. This page lists every question still marked “not yet reviewed” in the bank files.</p>'
             f'<p>These {len(items)} questions and {len(tfs)} true/false statements were written for the Worksheet Maker by Claude and have not yet been checked. '
             'Each shows its answer. To change one, edit the file in <code>worksheet-maker/bank/</code> named in the heading and run '
             '<code>python3 worksheet-maker/build.py</code>. When you have checked a whole file, make its first line <code># reviewed</code>; to clear one question, add the line <code>checked: yes</code> under its heading. Checked questions drop off this page and lose the “not yet reviewed” label on the worksheet page.</p>'
             f'<p>{e(counts)}</p>' + "".join(out) + f'<h2>True or false statements ({len(tfs)})</h2><ul>{tfo}</ul></body></html>')
+
+
+def review_data(items, tfs, points, dias, files):
+    """Everything the Question review page (staff Tools site) shows: each bank question and statement with its
+    fingerprint, file, dot points and its question and answer as HTML."""
+    used = sorted({c for x in items + tfs for c in x["c"]})
+    qs = [{"id": x["id"], "h": x["h"], "f": x["f"], "name": NAMES.get(x["f"], x["f"]), "file": files.get(x["id"], ""),
+           "c": x["c"], "m": x.get("m"), "lv": x.get("lv"), "like": x.get("like", []), "pre": 0 if x.get("rev") else 1,
+           "html": item_html(x, dias)} for x in items]
+    ts = [{"id": t["id"], "h": t["h"], "f": "tf", "name": "True or false", "file": files.get(t["id"], ""), "c": t["c"],
+           "pre": 0, "html": tf_html(t)} for t in tfs]
+    return {"dp": {c: points.get(c, "") for c in used}, "items": qs + ts}

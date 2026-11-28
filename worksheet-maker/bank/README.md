@@ -20,6 +20,12 @@ The id must be unique (letters, numbers, dots and hyphens). Lines starting with 
 
 A file whose first line is `# reviewed` has been checked as a whole.
 
+Most reviewing happens on the **Question review** page (staff Tools site), which saves the teacher's decisions to
+`reviews.json` in this folder: `ok` approved, `fix` needs a fix (with a `note`), `out` removed. Each decision
+holds the question's fingerprint `h`, so editing a question sends it back for review. To fix a flagged question,
+edit it here from the note and rebuild; to drop a removed one for good, delete it here and its entry in
+`reviews.json`.
+
 ## The body, by type
 
 **Multiple choice** (`mc`)

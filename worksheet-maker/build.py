@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Build the Worksheet Maker: data.json (every question it can put on a worksheet), index.html and review.html.
+"""Build the Worksheet Maker: data.json (every question it can put on a worksheet), index.html, review.html and
+review-data.json (what the Question review page on the staff Tools site shows).
 
     python3 worksheet-maker/build.py           # write data.json, index.html and review.html
     python3 worksheet-maker/build.py --check   # change nothing; fail if any of them is out of date
@@ -236,6 +237,7 @@ def main():
 
     bank_items, bank_tf, problems = BANK.load(HERE / "bank", points)
     assert not problems, "bank problems:\n  " + "\n  ".join(problems)
+    files = {x["id"]: x.pop("_f", "") for x in bank_items + bank_tf}     # which bank file each came from (review page only)
     specs = list(DIA.BASE) + [x["dia"] for x in bank_items if x.get("dia")]
     dias = {}
     for sp in specs:
@@ -278,8 +280,10 @@ def main():
     page = page.replace("/*__FONTS__*/", FONTS.read_text(encoding="utf8") if FONTS.exists() else "")
     page = page.replace("/*__CALC__*/", calc_code()).replace("__DATAVER__", digest)
     review = BANK.review_page(bank_items, bank_tf, points, dias)
+    # The Question review page (staff Tools site) reads this; decisions come back in bank/reviews.json.
+    rdata = json.dumps(BANK.review_data(bank_items, bank_tf, points, dias, files), ensure_ascii=False, separators=(",", ":")) + "\n"
 
-    outs = {HERE / "data.json": data_txt, HERE / "index.html": page, HERE / "review.html": review}
+    outs = {HERE / "data.json": data_txt, HERE / "index.html": page, HERE / "review.html": review, HERE / "review-data.json": rdata}
     if CHECK:
         stale = [p.name for p, t in outs.items() if not p.exists() or p.read_text(encoding="utf8") != t]
         print("worksheet-maker is up to date" if not stale else f"worksheet-maker is OUT OF DATE ({', '.join(stale)}): run worksheet-maker/build.py")
@@ -292,7 +296,8 @@ def main():
     print(f"Wrote data.json ({len(data_txt)//1024} KB, version {digest}): {len(items)} questions; "
           f"{len(gloss)} key terms, {len(tf)} true/false statements, {len(calc)} calculation skills.")
     print("  " + ", ".join(f"{k} {v}" for k, v in sorted(by.items())))
-    print(f"Wrote index.html ({len(page)//1024} KB) and review.html ({len(bank_items)} new questions for review).")
+    print(f"Wrote index.html ({len(page)//1024} KB), review.html ({sum(1 for x in bank_items if x.get('rev'))} questions not yet reviewed in the bank files) "
+          f"and review-data.json ({len(bank_items)} questions, {len(bank_tf)} statements, {len(rdata)//1024} KB).")
     if REPORT:
         coverage(items, gloss, tf, calc, points)
     if ARTIFACT:
@@ -316,6 +321,9 @@ def write_artifact(out, page, data_txt):
     (out / "index.html").write_text(art, encoding="utf8")
     (out / "data.json").write_text(data_txt, encoding="utf8")
     shutil.copytree(HERE / "fonts", out / "fonts", dirs_exist_ok=True)
+    if (HERE / "bank" / "reviews.json").exists():      # the teacher's review decisions, as they stood at this build
+        (out / "bank").mkdir(exist_ok=True)
+        shutil.copy2(HERE / "bank" / "reviews.json", out / "bank" / "reviews.json")
     figs = REPO / "hsc-question-finder-site" / "figs"
     (out / "figs").mkdir(exist_ok=True)
     for f in figs.glob("*.webp"):
