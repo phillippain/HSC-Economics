@@ -32,10 +32,9 @@
    "at": "2026-11-28"
   },
   "bk:cp-fiscal-monetary": {
-   "s": "fix",
-   "h": "627394cb6c",
-   "at": "2026-11-28",
-   "note": "Update the main instruments to be the cash rate target, forward guidance, and additional policy measures."
+   "s": "ok",
+   "h": "965b9b1301",
+   "at": "2026-11-28"
   },
   "bk:cp-growth-development": {
    "s": "ok",
