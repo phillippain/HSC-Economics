@@ -2,6 +2,10 @@
  "_how_to": "Newest first. Add a line at the top: date as YYYY-MM-DD, text under about 110 characters, plain words for students. The Home page shows the five newest. Push to GitHub and the site updates by itself within a few minutes.",
  "items": [
   {
+   "date": "2026-11-28",
+   "text": "New reading: Uncertainty About the Stars, the RBA's NAIRU, output gap and neutral rate explained (Topic 4, Monetary policy)."
+  },
+  {
    "date": "2026-11-27",
    "text": "New page: every edition of The Economy This Week, with a story index and topic filter (News & reading)."
   },
