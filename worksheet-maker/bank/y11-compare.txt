@@ -1,0 +1,87 @@
+# Year 11 (2025 syllabus) compare tables. Start a cell with ! to print it on the student copy as a hint.
+
+=== compare y11-cp-P1b-systems
+c: P1b.3 P1b.4
+lv: 2
+Q: Compare a planned economy and a free market economy.
+COLS: Planned economy | Free market economy
+- Who decides what to produce => !A central planning authority (government) | Consumers, through their spending and the price mechanism
+- Ownership of resources => Mostly owned by the state | Mostly privately owned
+- How prices are set => Set by the government | By demand and supply in markets
+- Incentive to produce => Meeting the plan's targets | The profit motive
+- A strength => Can direct resources to national priorities and reduce inequality | Responds quickly to consumers and encourages efficiency and innovation
+- A weakness => Shortages and surpluses; weak incentives to innovate | Inequality; public goods and merit goods under-provided
+
+=== compare y11-cp-P1a-micro
+c: P1a.10
+lv: 1
+Q: Compare microeconomics and macroeconomics.
+COLS: Microeconomics | Macroeconomics
+- What it studies => !Individual consumers, firms and markets | The economy as a whole
+- Typical questions => How is the price of rental housing set? | Why has unemployment risen?
+- Key measures => Prices, quantities and costs in one market | GDP, unemployment, inflation, the balance of payments
+- Example of a policy => A tax on sugary drinks | A change in government spending to support jobs
+
+=== compare y11-cp-P2g-structures
+c: P2g.2
+lv: 2
+Q: Compare perfect competition and monopoly.
+COLS: Perfect competition | Monopoly
+- Number of sellers => !Very many | One
+- Type of product => Identical (homogeneous) | Unique, with no close substitutes
+- Barriers to entry => None | Very high
+- Pricing power => Price taker: sells at the market price | Price maker: sets its own price
+- Example => A market for one variety of wheat | The only water supplier in a city
+
+=== compare y11-cp-P2h-extern
+c: P2h.3 P2h.4
+lv: 2
+Q: Compare negative and positive externalities.
+COLS: Negative externality | Positive externality
+- Effect on third parties => !A cost imposed on others | A benefit enjoyed by others
+- Social compared with private => Marginal social cost is greater than marginal private cost | Marginal social benefit is greater than marginal private benefit
+- Market outcome => Too much produced or consumed | Too little produced or consumed
+- Example => Pollution from a coal-fired power station | Vaccinations reducing the spread of disease
+- A policy to correct it => A tax, regulation or tradeable permits | A subsidy or free provision
+
+=== compare y11-cp-P2h-goods
+c: P2h.5
+lv: 2
+Q: Compare public goods and private goods.
+COLS: Public goods | Private goods
+- Rivalry => !Non-rival: one person's use does not reduce what is left for others | Rival: one person's use leaves less for others
+- Excludability => Non-excludable: people who do not pay cannot be stopped from using it | Excludable: people who do not pay can be kept out
+- Free rider problem => Yes, so markets under-provide them | No
+- Who usually provides them => Government | Private firms through markets
+- Example => Street lighting, national defence | A sandwich, a mobile phone
+
+=== compare y11-cp-P3c-profit
+c: P3c.2
+lv: 2
+Q: Compare accounting profit and economic profit.
+COLS: Accounting profit | Economic profit
+- Definition => !Revenue minus explicit costs | Revenue minus explicit and implicit (opportunity) costs
+- Costs included => Payments the business actually makes, e.g. wages, rent, materials | Those costs plus the income the owner's time and money could earn elsewhere
+- Usually larger or smaller? => Larger | Smaller
+- What it tells the owner => Whether the business makes money on paper | Whether staying in business is better than the next best use of the owner's resources
+
+=== compare y11-cp-P4-markets
+c: P4b.1 P4c.1
+lv: 2
+Q: Compare equity markets and debt markets.
+COLS: Equity markets | Debt markets
+- What is traded => !Shares (part-ownership of companies) | Bonds and other loans
+- What the investor receives => Dividends and capital gains (or losses) | Interest, and the amount lent is repaid
+- Risk for the investor => Higher: returns depend on the company's profits | Lower: payments are set, unless the borrower defaults
+- Effect on the business => Raises funds without borrowing, but shares control | Raises funds that must be repaid with interest
+- Example => A company floating on the ASX | The Australian Government issuing bonds
+
+=== compare y11-cp-P5b-tax
+c: P5b.5 P5b.4
+lv: 2
+Q: Compare direct and indirect taxes.
+COLS: Direct taxes | Indirect taxes
+- What is taxed => !Income, profits or wealth | Spending on goods and services
+- Who pays the tax office => The person or business that earns the income | Businesses, which pass the cost on in prices
+- Effect on fairness => Can be progressive, taking more from those with higher incomes | Usually regressive, taking a larger share of low incomes
+- Examples => Personal income tax, company tax | GST, fuel and tobacco excise

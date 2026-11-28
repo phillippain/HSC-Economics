@@ -1,0 +1,262 @@
+# Year 11 (2025 syllabus) diagram tasks. Draw: the student gets blank labelled axes (or the starting diagram where
+# the code says "given"); the answer copy shows the finished diagram. Codes are listed in build/diagrams.py.
+
+=== draw y11-dr-P2b-01
+c: P2b.4 P2d.1 P2d.2
+lv: 1
+DIA: sd D right good=ice cream
+Q: A heatwave hits Sydney over summer. Draw a demand and supply diagram to show the effect on the market for ice cream.
+ANS: Hot weather changes tastes in favour of ice cream, so demand increases: the demand curve shifts right from D1 to D2. At the old price there is a shortage, so the price rises from P1 to P2 and the quantity bought and sold rises from Q1 to Q2.
+
+=== draw y11-dr-P2b-02
+c: P2b.4 P2d.1
+lv: 2
+DIA: sd D left good=overseas holidays
+Q: Household incomes fall during a recession. Draw a demand and supply diagram to show the effect on the market for overseas holidays (a normal good).
+ANS: Lower incomes reduce demand for a normal good, so the demand curve shifts left from D1 to D2. The price falls from P1 to P2 and the quantity falls from Q1 to Q2.
+
+=== draw y11-dr-P2b-03
+c: P2b.4 P2d.2
+lv: 2
+DIA: sd D right good=rental housing
+Q: Strong population growth adds many new households to a city. Draw a demand and supply diagram to show the effect on the market for rental housing.
+ANS: More households increase demand for rental housing: the demand curve shifts right from D1 to D2. Rents rise from P1 to P2 and the quantity of rental housing rises from Q1 to Q2 (only a little in the short run, because supply is inelastic).
+
+=== draw y11-dr-P2c-01
+c: P2c.4 P2d.1 P2d.2
+lv: 1
+DIA: sd S left good=coffee
+Q: Frost destroys a large part of the coffee crop in Brazil, a major producer. Draw a demand and supply diagram to show the effect on the world market for coffee.
+ANS: Less coffee is available at every price, so supply decreases: the supply curve shifts left from S1 to S2. The price of coffee rises from P1 to P2 and the quantity falls from Q1 to Q2.
+
+=== draw y11-dr-P2c-02
+c: P2c.4 P2d.2
+lv: 1
+DIA: sd S right good=solar panels
+Q: A new manufacturing technology lowers the cost of making solar panels. Draw a demand and supply diagram to show the effect on the market for solar panels.
+ANS: Lower production costs mean firms will supply more at every price: supply increases and the curve shifts right from S1 to S2. The price falls from P1 to P2 and the quantity rises from Q1 to Q2.
+
+=== draw y11-dr-P2c-03
+c: P2c.4 P2d.1
+lv: 2
+DIA: sd S left good=beef
+Q: Cattle farmers expect beef prices to rise strongly next year, so they hold back cattle from sale. Draw a demand and supply diagram to show the effect on the market for beef this year.
+ANS: Expected future prices are a non-price factor: holding stock back reduces supply now, so the supply curve shifts left from S1 to S2. The price rises from P1 to P2 and the quantity sold falls from Q1 to Q2.
+
+=== draw y11-dr-P2b-04
+c: P2b.3 P2b.5
+lv: 1
+DIA: along D fall good=pizza
+Q: A pizza shop cuts the price of its pizzas. Nothing else changes. Draw a diagram to show the effect on the quantity of pizzas demanded.
+ANS: A change in the good's own price is a movement along the demand curve, not a shift. The price falls from P1 to P2, so the quantity demanded expands from Q1 to Q2 (point A to point B): an expansion of demand.
+
+=== draw y11-dr-P2c-04
+c: P2c.3 P2c.5
+lv: 1
+DIA: along S rise good=strawberries
+Q: The price of strawberries rises. Nothing else changes. Draw a diagram to show the effect on the quantity of strawberries supplied.
+ANS: The higher price is a movement along the supply curve: the quantity supplied expands from Q1 to Q2 as the price rises from P1 to P2 (point A to point B), because growing strawberries is now more profitable.
+
+=== draw y11-dr-P2i-01
+c: P2i.3 P2i.2
+lv: 2
+DIA: ceiling good=rental housing
+Q: To make renting more affordable, the government sets a maximum rent below the equilibrium rent. Draw a diagram to show the effect on the rental market.
+ANS: The binding ceiling Pmax is below the equilibrium price Pe. At Pmax the quantity demanded (Qd) is greater than the quantity supplied (Qs), so there is a shortage of rental housing. Fewer homes are rented than at equilibrium (Qe), and landlords may let homes run down or sell them.
+
+=== draw y11-dr-P2i-02
+c: P2i.3 P2i.2
+lv: 2
+DIA: floor good=wheat
+Q: The government guarantees wheat farmers a minimum price above the equilibrium price. Draw a diagram to show the effect on the market for wheat.
+ANS: The binding floor Pmin is above the equilibrium price Pe. At Pmin the quantity supplied (Qs) exceeds the quantity demanded (Qd): a surplus of wheat, which the government may have to buy and store.
+
+=== draw y11-dr-P2i-03
+c: P2i.3 P5b.5 P2i.2
+lv: 2
+DIA: tax good=cigarettes
+Q: The government increases the excise tax on each packet of cigarettes. Draw a diagram to show the effect on the market for cigarettes.
+ANS: The tax raises producers' costs, so supply decreases: the supply curve shifts up by the amount of the tax, from S1 to S2. The price consumers pay rises from P1 to P2 and the quantity falls from Q1 to Q2. Producers keep P3 (P2 less the tax). The shaded rectangle is the tax revenue (tax × Q2). Because demand is inelastic, consumers bear most of the tax.
+
+=== draw y11-dr-P2i-04
+c: P2i.3 P2i.2 P2h.3
+lv: 2
+DIA: tax good=sugary drinks
+Q: The government places a tax of 50 cents on each bottle of sugary drink. Draw a diagram to show the effect, and shade the tax revenue.
+ANS: Supply shifts up by the tax from S1 to S2. The price rises from P1 to P2 and the quantity falls from Q1 to Q2. Consumers pay P2, producers keep P3 (P2 − 50 cents), and the government's revenue is the tax per bottle × Q2 (the shaded rectangle). The red triangle is the deadweight loss, the consumption and production that no longer take place.
+
+=== draw y11-dr-P2h-01
+c: P2h.4 P2h.3
+lv: 2
+DIA: extern good=electricity from coal
+Q: Coal-fired power stations release emissions that harm people living nearby and the climate. Draw a diagram to show this negative externality in production.
+ANS: The market supply curve reflects only private costs (MPC). The marginal social cost (MSC) is higher, because of the cost of emissions to others. The market produces Q_m, where D (MPB) = MPC, more than the efficient quantity Qs, where D = MSC. The shaded triangle is the deadweight loss from over-production.
+
+=== draw y11-dr-P2h-02
+c: P2h.4 P2h.3
+lv: 2
+DIA: extern pos good=vaccinations
+Q: When a person is vaccinated, others also benefit because the disease spreads less. Draw a diagram to show this positive externality in consumption.
+ANS: The demand curve shows private benefits only (D, MPB). The marginal social benefit (MSB) is higher, because of the benefit to others. The market settles at Q_m, where MPB = S, less than the efficient quantity Qs, where MSB = MSC (S). The shaded triangle is the welfare lost through under-consumption; a subsidy or free provision could raise output to Qs.
+
+=== draw y11-dr-P2h-03
+c: P2h.4 P2h.3 P2i.2
+lv: 3
+DIA: extern pos good=education
+Q: Education is a merit good. Draw a diagram to show why, left to the market, too little education would be consumed, and explain ONE policy to correct this.
+ANS: Society gains extra benefits from education, so MSB lies above private demand (D, MPB). The market produces Q_m, less than the efficient Qs where MSB = S (MSC). A subsidy that lowers the price, or free provision of schooling, raises consumption towards Qs and removes the welfare loss (shaded).
+
+=== draw y11-dr-P2e-01
+c: P2e.1 P2e.2
+lv: 1
+DIA: ped elastic
+Q: Draw a relatively elastic demand curve and show the effect of a small rise in price on the quantity demanded.
+ANS: A relatively elastic demand curve is flat. A small rise in price from P1 to P2 causes a large fall in quantity demanded from Q1 to Q2, so the percentage change in quantity is larger than the percentage change in price (PED > 1).
+
+=== draw y11-dr-P2e-02
+c: P2e.1 P2e.2 P2e.4
+lv: 1
+DIA: ped inelastic good=petrol
+Q: Draw a demand curve for petrol, a good with price inelastic demand in the short run, and show the effect of a rise in its price.
+ANS: The demand curve is steep. A large rise in price from P1 to P2 causes only a small fall in quantity demanded from Q1 to Q2 (PED < 1), because petrol has few close substitutes in the short run.
+
+=== draw y11-dr-P2e-03
+c: P2e.1
+lv: 1
+DIA: ped perfectly-inelastic
+Q: Draw a perfectly inelastic demand curve.
+ANS: A vertical demand curve at Q1: the quantity demanded does not change whatever the price (PED = 0).
+
+=== draw y11-dr-P2e-04
+c: P2e.1 P2e.2
+lv: 2
+DIA: ped unit
+Q: Draw a unit elastic demand curve and show a rise in price from P1 to P2.
+ANS: A unit elastic demand curve is a curve (a rectangular hyperbola) along which the percentage change in quantity demanded always equals the percentage change in price (PED = 1), so total revenue does not change when the price changes.
+
+=== draw y11-dr-P2f-01
+c: P2f.1 P2f.2 P2f.3
+lv: 2
+DIA: pes inelastic good=new housing
+Q: Draw a supply curve for new housing in the short run, and show the effect of a rise in house prices on the quantity supplied.
+ANS: Supply is inelastic in the short run (a steep curve) because building takes time and land and approvals are limited. A large rise in price from P1 to P2 brings only a small rise in quantity supplied from Q1 to Q2 (PES < 1).
+
+=== draw y11-dr-P2f-02
+c: P2f.1 P2f.2 P2f.3
+lv: 2
+DIA: pes elastic good=T-shirts
+Q: A clothing maker has plenty of spare capacity. Draw its supply curve for T-shirts and show the effect of a small rise in price.
+ANS: Supply is elastic (a flat curve), because spare capacity lets the firm raise output quickly. A small rise in price from P1 to P2 brings a large rise in quantity supplied from Q1 to Q2 (PES > 1).
+
+=== draw y11-dr-P4c-01
+c: P4c.6 P4c.4
+lv: 2
+DIA: funds D right
+Q: Business confidence rises and many firms plan to borrow to expand. Draw a loanable funds diagram to show the effect on interest rates.
+ANS: More investment plans increase the demand for loanable funds: the demand curve shifts right from D1 to D2. The interest rate rises from r1 to r2 and the quantity of funds borrowed and lent rises from Q1 to Q2.
+
+=== draw y11-dr-P4c-02
+c: P4c.6 P4c.5
+lv: 2
+DIA: funds S right
+Q: Households decide to save a larger share of their income. Draw a loanable funds diagram to show the effect on interest rates.
+ANS: More saving increases the supply of loanable funds: the supply curve shifts right from S1 to S2. The interest rate falls from r1 to r2 and the quantity of funds lent rises from Q1 to Q2.
+
+=== draw y11-dr-P4c-03
+c: P4c.6 P4c.5
+lv: 3
+DIA: funds S left
+Q: Foreign investors become worried about risk and withdraw funds from Australia. Draw a loanable funds diagram to show the effect on interest rates in Australia.
+ANS: Less foreign investment reduces the supply of loanable funds: the supply curve shifts left from S1 to S2. The interest rate rises from r1 to r2 and the quantity of funds lent falls from Q1 to Q2.
+
+=== draw y11-dr-P3c-01
+c: P3c.6 P3c.5
+lv: 2
+DIA: lrac
+Q: Draw a long-run average cost (LRAC) curve. Label economies of scale, diseconomies of scale and the technical optimum.
+ANS: The LRAC curve is U-shaped. While it falls, the firm enjoys economies of scale (e.g. bulk buying, specialisation, better technology). Its lowest point is the technical optimum (output Q*). Beyond it, diseconomies of scale (e.g. coordination and communication problems) push average costs up.
+
+=== draw y11-dr-P1e-01
+c: P1e.4
+lv: 1
+DIA: cycle
+Q: Draw a diagram of the business cycle. Label the trend, a peak, a trough, a contraction and an expansion.
+ANS: Real GDP rises over time along its trend, but fluctuates around it. A peak is a high point, followed by a contraction (downturn) to a trough, the low point, then an expansion (upturn) to the next peak.
+
+=== draw y11-dr-P1c-01
+c: P1c.2 P1c.5
+lv: 1
+DIA: ppf growth
+Q: An economy's workers become more skilled and its technology improves. Draw a production possibilities frontier to show the effect.
+ANS: Better skills and technology increase the economy's productive capacity, so the frontier shifts outwards from PPF1 to PPF2: the economy can now produce more of both goods.
+
+=== draw y11-dr-P1c-02
+c: P1c.5
+lv: 1
+DIA: ppf inside
+Q: An economy is in recession and many workers are unemployed. Draw a production possibilities frontier and mark the economy's position.
+ANS: The economy is at a point such as A inside its frontier: it could produce more of both goods with the same resources, because labour and capital are unemployed or underemployed.
+
+=== draw y11-dr-P1c-03
+c: P1c.1 P1c.5
+lv: 2
+DIA: ppf points
+Q: Draw a production possibilities frontier. Mark two efficient combinations (A and B), an inefficient combination (C) and an unattainable combination (D).
+ANS: A and B lie on the frontier: all resources are used efficiently. C lies inside it: some resources are unemployed. D lies outside it: it cannot be produced with current resources and technology. Moving from A to B has an opportunity cost: less of the capital good for more of the consumer good.
+
+=== draw y11-dr-P3d-01
+c: P3d.3
+lv: 2
+DIA: labour D left
+Q: Self-service checkouts and AI reduce the number of checkout workers supermarkets need. Draw a labour market diagram to show the effect on the market for checkout workers.
+ANS: Automation reduces the demand for checkout workers: the demand curve shifts left from D1 to D2. The wage falls from W1 to W2 and employment falls from Q1 to Q2.
+
+=== draw y11-dr-P3b-01
+c: P3b.1 P3b.2
+lv: 2
+DIA: labour S right
+Q: The government makes childcare cheaper and more widely available. Draw a labour market diagram to show the effect on the supply of labour.
+ANS: Lower childcare costs encourage more parents to work, so the supply of labour increases: the supply curve shifts right from S1 to S2. The wage falls from W1 to W2 (or rises more slowly) and employment rises from Q1 to Q2.
+
+=== draw y11-dr-P3d-02
+c: P3d.1 P2i.3
+lv: 2
+DIA: minwage
+Q: A minimum wage is set above the equilibrium wage in the market for low-skilled labour. Draw a diagram to show the effect.
+ANS: At Wmin, above the equilibrium wage We, the quantity of labour supplied (Qs) is greater than the quantity demanded (Qd). The gap is unemployment. Workers who keep their jobs earn more, but fewer are employed than at equilibrium (Qe).
+
+=== label y11-lb-sd
+c: P2d.2 P2b.5 P2c.5
+lv: 1
+DIA: label sd
+Q: This is a demand and supply diagram. Write the correct label for each number.
+
+=== label y11-lb-tax
+c: P2i.3 P5b.5
+lv: 2
+DIA: label tax
+Q: This diagram shows the effect of a per-unit tax on a market. Write the correct label for each number.
+
+=== label y11-lb-pos
+c: P2h.4 P2h.3
+lv: 2
+DIA: label pos
+Q: This diagram shows a positive externality in consumption. Write the correct label for each number.
+
+=== label y11-lb-neg
+c: P2h.4 P2h.3
+lv: 2
+DIA: label extern
+Q: This diagram shows a negative externality in production. Write the correct label for each number.
+
+=== label y11-lb-lrac
+c: P3c.6
+lv: 1
+DIA: label lrac
+Q: This diagram shows a firm's long-run average cost curve. Write the correct label for each number.
+
+=== label y11-lb-cycle
+c: P1e.4
+lv: 1
+DIA: label cycle
+Q: This diagram shows the business cycle. Write the correct label for each number.

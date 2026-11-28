@@ -1,0 +1,724 @@
+# Year 11 (2025 syllabus) short-answer questions. PTS are marking points with marks.
+
+=== sa y11-sa-P1a-01
+c: P1a.2 P1a.4
+m: 3
+lv: 1
+k: explain
+Q: Explain the relationship between scarcity and opportunity cost.
+PTS:
+- Scarcity: people's wants are unlimited but the resources to satisfy them are limited (1)
+- So every individual, business and government must choose how to use resources (1)
+- Each choice has an opportunity cost, the next best alternative forgone, e.g. a council that builds a pool cannot use the same funds for a library (1)
+
+=== sa y11-sa-P1a-02
+c: P1a.6 P1a.9
+m: 4
+lv: 2
+k: explain
+Q: Explain how incentives and behavioural biases can each affect economic decisions. Use an example of each.
+PTS:
+- Incentives are rewards (or penalties) that encourage (or discourage) a choice (1)
+- Example, e.g. a rebate on solar panels encourages households to install them; a tax on sugary drinks discourages buying them (1)
+- Behavioural biases mean people do not always make the rational, self-interested choice that economic models assume (1)
+- Example, e.g. present bias leads people to under-save for retirement; default bias keeps people in a high-fee super fund (1)
+
+=== sa y11-sa-P1a-03
+c: P1a.7
+m: 3
+lv: 1
+k: outline
+Q: Outline TWO ways data is used in economic decision-making.
+PTS:
+- Identifies two uses, e.g. informing public policy, monitoring economic performance, forecasting (1)
+- Outlines the first with an example, e.g. unemployment data shows governments where to target job programs (1)
+- Outlines the second with an example, e.g. the RBA uses inflation and wage data to forecast inflation before it sets the cash rate (1)
+
+=== sa y11-sa-P1a-04
+c: P1a.10 P1a.11
+m: 3
+lv: 1
+k: compare
+Q: Distinguish between microeconomics and macroeconomics, using an example of an issue studied in each.
+PTS:
+- Microeconomics studies individual consumers, firms and markets (1)
+- Macroeconomics studies the economy as a whole: total output, employment, inflation, trade (1)
+- Examples, e.g. micro: why the price of rental housing in Sydney is rising; macro: why Australia's unemployment rate has risen (1)
+
+=== sa y11-sa-P1a-05
+c: P1a.8
+m: 3
+lv: 2
+k: explain
+Q: Explain why economists use models, and ONE limitation of economic models.
+PTS:
+- Models simplify a complex economy so economists can see the effect of one change at a time (1)
+- They rely on assumptions, such as ceteris paribus and rational behaviour, to make predictions (1)
+- Limitation, e.g. real people and markets do not always behave as assumed (behavioural economics), so predictions can be wrong (1)
+
+=== sa y11-sa-P1b-01
+c: P1b.3 P1b.4
+m: 4
+lv: 2
+k: compare
+Q: Compare how a planned economy and a free market economy answer the question "What to produce?"
+PTS:
+- Planned economy: a central authority (government) decides what is produced, according to its plan and priorities (1)
+- Free market economy: consumers' spending decides, through the price mechanism and the profit motive (1)
+- Similarity: both must choose because resources are scarce (1)
+- Difference in outcomes, e.g. markets respond quickly to consumer wants but may under-provide public goods; planning can direct resources to priorities but often creates shortages and surpluses (1)
+
+=== sa y11-sa-P1b-02
+c: P1b.5
+m: 3
+lv: 1
+k: outline
+Q: Outline THREE functions of money.
+PTS:
+- Medium of exchange: accepted in payment for goods and services, avoiding the need for barter (1)
+- Measure of value (unit of account): lets the values of different goods be compared in dollars (1)
+- Store of value: can be saved and spent later (also a standard of deferred payment for debts) (1)
+
+=== sa y11-sa-P1b-03
+c: P1b.1 P1b.2
+m: 4
+lv: 1
+k: define
+Q: Identify the FOUR factors of production and the income each one earns.
+PTS:
+- Land (natural resources): rent (1)
+- Labour: wages (1)
+- Capital: interest (1)
+- Entrepreneurship: profit (1)
+
+=== sa y11-sa-P1c-01
+c: P1c.2 P1c.6
+m: 3
+lv: 2
+k: explain
+Q: Explain how producing more capital goods today can affect an economy's production possibilities in the future.
+PTS:
+- More capital goods today means fewer consumer goods: an opportunity cost of lower consumption now (1)
+- Capital goods (machinery, infrastructure, technology) raise the economy's productive capacity (1)
+- So the production possibilities frontier shifts outwards in the future, allowing more of both goods (1)
+
+=== sa y11-sa-P1d-01
+c: P1d.1 P1d.3
+m: 4
+lv: 2
+k: explain
+Q: Describe the roles of the household sector and the financial sector in the circular flow of income.
+PTS:
+- Households own the factors of production and supply them to businesses in return for income (1)
+- Households spend most of their income on goods and services (consumption) and save the rest (1)
+- The financial sector collects households' savings (a leakage) (1)
+- It lends or invests these funds, mainly to businesses for investment (an injection), linking saving to investment (1)
+
+=== sa y11-sa-P1e-01
+c: P1e.4 P1e.5
+m: 4
+lv: 2
+k: explain
+Q: Describe the stages of the business cycle and how unemployment and inflation typically change in each.
+PTS:
+- Expansion (upturn): real GDP growth speeds up, unemployment falls, inflationary pressure builds (1)
+- Peak: the economy is near full capacity; unemployment is low and inflation is likely to be rising (1)
+- Contraction (downturn): growth slows or GDP falls; unemployment rises and inflation eases (1)
+- Trough: the lowest point; unemployment is high and inflation low, before recovery begins (1)
+
+=== sa y11-sa-P1e-02
+c: P1e.3 P1e.1
+m: 3
+lv: 2
+k: outline
+Q: Outline how Aboriginal and Torres Strait Islander businesses contribute to GDP.
+PTS:
+- They produce goods and services counted in GDP, in industries such as construction, professional services, tourism, the arts and native foods (1)
+- They employ people, including many Aboriginal and Torres Strait Islander workers, and pay wages, so they add to incomes and spending (1)
+- They buy from and sell to other businesses and government, e.g. through the Commonwealth's Indigenous Procurement Policy, supporting activity in cities and regional and remote areas (1)
+
+=== sa y11-sa-P1e-03
+c: P1e.6 P1e.7
+m: 4
+lv: 3
+k: explain
+Q: Explain ONE cause of a contraction in the business cycle and ONE effect of the contraction on households.
+PTS:
+- Identifies a cause, e.g. higher interest rates, a fall in business or consumer confidence, a world recession that cuts exports (1)
+- Explains how it reduces spending (aggregate demand) and production (1)
+- Identifies an effect on households, e.g. job losses, fewer hours, slower wage growth (1)
+- Explains it, e.g. lower incomes reduce living standards and confidence, so households cut spending further (1)
+
+=== sa y11-sa-P2a-01
+c: P2a.1
+m: 3
+lv: 2
+k: explain
+Q: During an outbreak of illness, demand for hand sanitiser surges and its price rises. Explain the signalling, incentive and rationing functions of the price mechanism using this example.
+PTS:
+- Signalling: the higher price tells producers and consumers that hand sanitiser has become scarcer (1)
+- Incentive: higher prices and profits encourage firms to produce more and new firms to enter (1)
+- Rationing: the higher price limits purchases to those most willing and able to pay, so the available stock is shared out (1)
+
+=== sa y11-sa-P2a-02
+c: P2a.2
+m: 3
+lv: 2
+k: explain
+Q: Explain why the rule of law and the enforcement of property rights and contracts are important for markets to work.
+PTS:
+- Secure property rights let owners keep the rewards of their effort and investment, giving them an incentive to produce and invest (1)
+- Enforceable contracts let buyers and sellers trust that agreements will be honoured, so they are willing to trade (1)
+- Without them, people face theft, fraud and uncertainty, so less trade and investment take place (1)
+
+=== sa y11-sa-P2b-01
+c: P2b.4
+m: 4
+lv: 2
+k: explain
+Q: Explain how a rise in incomes and a rise in the price of a complement would each affect the demand for a good. Use examples.
+PTS:
+- A rise in incomes increases demand for normal goods: more is demanded at each price and the curve shifts right (1)
+- Example, e.g. restaurant meals; for inferior goods demand would decrease (1)
+- A rise in the price of a complement decreases demand for the good, because the two are used together (1)
+- Example, e.g. dearer printers reduce the demand for printer ink; the demand curve shifts left (1)
+
+=== sa y11-sa-P2c-01
+c: P2c.4
+m: 4
+lv: 2
+k: explain
+Q: Explain how TWO non-price factors could increase the supply of solar panels.
+PTS:
+- Identifies a first factor, e.g. improved technology in making panels (1)
+- Explains it: lower costs mean firms will supply more at each price, so supply shifts right (1)
+- Identifies a second factor, e.g. more suppliers entering the market, or cheaper factors of production such as silicon (1)
+- Explains it (1)
+
+=== sa y11-sa-P2c-02
+c: P2c.3 P2c.4
+m: 2
+lv: 1
+k: compare
+Q: Distinguish between an expansion of supply and an increase in supply.
+PTS:
+- An expansion of supply is a movement along the supply curve caused by a rise in the good's own price (1)
+- An increase in supply is a shift of the whole supply curve to the right, caused by a non-price factor such as better technology (1)
+
+=== sa y11-sa-P2d-01
+c: P2d.3
+m: 3
+lv: 3
+k: explain
+Q: Explain how market equilibrium contributes to an efficient allocation of resources.
+PTS:
+- At equilibrium the quantity demanded equals the quantity supplied: no shortage or surplus (1)
+- Every unit that buyers value at more than its cost of production is produced, and none that cost more than they are worth to buyers (1)
+- So resources go to their most valued uses (allocative efficiency), and competition pushes firms to produce at least cost (1)
+
+=== sa y11-sa-P2e-01
+c: P2e.4
+m: 4
+lv: 2
+k: explain
+Q: Explain TWO factors that make the demand for cigarettes price inelastic.
+PTS:
+- Addictiveness: smokers find it hard to cut back when the price rises (1)
+- So the quantity demanded falls by a smaller percentage than the price rises (1)
+- Few close substitutes for smokers (1)
+- So there is little to switch to; demand stays relatively unresponsive (time horizon: it becomes more elastic over the long run as some people quit) (1)
+
+=== sa y11-sa-P2e-02
+c: P2e.5
+m: 3
+lv: 3
+k: explain
+Q: Explain why a business needs to know the price elasticity of demand for its product when setting its price.
+PTS:
+- If demand is elastic, a price rise reduces total revenue and a price cut raises it (1)
+- If demand is inelastic, a price rise raises total revenue (1)
+- So PED tells the business whether a price change will raise or lower revenue, and guides decisions such as product differentiation to make demand less elastic (1)
+
+=== sa y11-sa-P2f-01
+c: P2f.3 P2f.1
+m: 4
+lv: 2
+k: explain
+Q: Explain why the supply of new housing is price inelastic in the short run but more elastic in the long run.
+PTS:
+- In the short run, building takes time, land is limited and approvals are slow (1)
+- So a rise in house prices causes only a small rise in the quantity of new homes supplied: inelastic (1)
+- In the long run, builders can acquire land, gain approvals, hire workers and expand capacity (1)
+- So the quantity supplied responds more to the higher price: more elastic (1)
+
+=== sa y11-sa-P2f-02
+c: P2f.1 P2f.2
+m: 2
+lv: 1
+k: compare
+Q: Outline the difference between perfectly elastic and perfectly inelastic supply.
+PTS:
+- Perfectly elastic supply (PES = ∞): firms will supply any quantity at one price; the supply curve is horizontal (1)
+- Perfectly inelastic supply (PES = 0): the quantity supplied is fixed whatever the price; the supply curve is vertical (1)
+
+=== sa y11-sa-P2g-01
+c: P2g.2
+m: 4
+lv: 2
+k: compare
+Q: Compare perfect competition and monopoly in terms of the number of firms, the product, barriers to entry and pricing power.
+PTS:
+- Number of firms: very many in perfect competition; one in a monopoly (1)
+- Product: identical (homogeneous) in perfect competition; unique, with no close substitutes, in a monopoly (1)
+- Barriers to entry: none in perfect competition; very high in a monopoly (1)
+- Pricing power: firms are price takers in perfect competition; a monopoly is a price maker (1)
+
+=== sa y11-sa-P2g-02
+c: P2g.4 P2g.3
+m: 4
+lv: 3
+k: explain
+Q: Explain how network effects and first-mover advantage can give digital platforms market power, and ONE effect of this on consumers.
+PTS:
+- Network effects: a platform becomes more valuable to each user as more people use it (1)
+- First-mover advantage: the first platform to attract users becomes the default, making it hard for rivals to win users (1)
+- Together they create high barriers to entry and allow a few platforms to dominate (1)
+- Effect on consumers, e.g. less choice, higher fees or more advertising, use of personal data; or benefits such as free services (1)
+
+=== sa y11-sa-P2h-01
+c: P2h.3 P2h.4
+m: 4
+lv: 2
+k: explain
+Q: Explain why a negative externality in production leads to market failure. Refer to marginal private cost and marginal social cost.
+PTS:
+- Producers base supply on their marginal private costs (MPC) (1)
+- A negative externality, e.g. pollution, imposes extra costs on third parties, so marginal social cost (MSC) is greater than MPC (1)
+- The market therefore produces more than the socially efficient quantity, where MSC equals marginal social benefit (1)
+- Resources are misallocated: too much of the good is produced at too low a price, a market failure (deadweight loss) (1)
+
+=== sa y11-sa-P2h-02
+c: P2h.5
+m: 3
+lv: 2
+k: explain
+Q: Explain why public goods are unlikely to be provided by private firms.
+PTS:
+- Public goods are non-excludable: people who do not pay cannot be stopped from using them (1)
+- So people can free ride, and few would pay a private firm for them (1)
+- Firms cannot make a profit, so the market under-provides (or does not provide) them; government provides them, e.g. street lighting, national defence (1)
+
+=== sa y11-sa-P2h-03
+c: P2h.6 P2h.7
+m: 4
+lv: 2
+k: outline
+Q: Outline how asymmetric information and the abuse of market power can each cause market failure.
+PTS:
+- Asymmetric information: one party to a transaction knows more than the other (1)
+- E.g. a seller hides a product's defects or a buyer conceals risk from an insurer (adverse selection), so prices and quantities are not efficient (1)
+- Abuse of market power: firms with market power restrict competition, e.g. collusion or predatory pricing (1)
+- So prices are higher and output lower than in a competitive market (1)
+
+=== sa y11-sa-P2h-04
+c: P2h.2
+m: 3
+lv: 2
+k: outline
+Q: Outline TWO challenges faced by Aboriginal and Torres Strait Islander businesses in accessing capital and markets.
+PTS:
+- Access to capital, e.g. fewer assets lenders accept as security: land held communally or under native title generally cannot be mortgaged, and less inherited wealth (1)
+- Access to markets, e.g. remoteness raises transport costs and distance from customers; fewer established links into large firms' and government supply chains (1)
+- Outlines a response, e.g. Indigenous Business Australia loans or the Commonwealth's Indigenous Procurement Policy, which sets targets for buying from Indigenous businesses (1)
+
+=== sa y11-sa-P2i-01
+c: P2i.2 P2h.3
+m: 4
+lv: 2
+k: explain
+Q: Explain how a tax on sugary drinks could correct the market failure caused by their overconsumption.
+PTS:
+- Sugary drinks are a demerit good: consumers ignore the external costs, such as public health costs, so they are over-consumed (1)
+- A per-unit tax raises producers' costs, so supply decreases and the price rises (1)
+- The quantity bought falls towards the socially efficient level (1)
+- The revenue could fund health programs; the effect depends on how price elastic demand is (1)
+
+=== sa y11-sa-P2i-02
+c: P2i.3
+m: 4
+lv: 2
+k: explain
+Q: Explain the effects of a binding price ceiling on rents in a city.
+PTS:
+- A binding ceiling is set below the equilibrium rent (1)
+- At the lower rent, the quantity of housing demanded expands and the quantity supplied contracts (1)
+- A shortage results: some people cannot find a home to rent (1)
+- Other effects, e.g. landlords spend less on maintenance, rental homes are sold or withdrawn, waiting lists or black markets develop (1)
+
+=== sa y11-sa-P2i-03
+c: P2i.4 P2i.5
+m: 4
+lv: 3
+k: explain
+Q: Explain TWO limitations of government intervention to correct market failure, using examples.
+PTS:
+- Identifies a first limitation, e.g. lack of information: the government may not know the size of an externality, so a tax is set too high or too low (1)
+- Explains it with an example (1)
+- Identifies a second limitation, e.g. unintended consequences, rent-seeking, administration costs, slow decisions (1)
+- Explains it with an example, e.g. a price ceiling on rents reduces the supply of rental housing (1)
+
+=== sa y11-sa-P3a-01
+c: P3a.2 P3a.7
+m: 3
+lv: 2
+k: explain
+Q: Explain how marketing and behavioural sludges can challenge consumer sovereignty.
+PTS:
+- Consumer sovereignty means consumers' informed choices decide what is produced (1)
+- Marketing can shape wants and create demand that reflects firms' interests rather than consumers' own preferences (1)
+- Sludges add friction to choices that are good for consumers, e.g. hard-to-cancel subscriptions or complex fee structures, so consumers keep buying what they would otherwise stop buying (1)
+
+=== sa y11-sa-P3a-02
+c: P3a.8
+m: 3
+lv: 2
+k: compare
+Q: Distinguish between normal, inferior and Veblen goods, using an example of each.
+PTS:
+- Normal good: demand rises as income rises, e.g. restaurant meals (1)
+- Inferior good: demand falls as income rises, as people switch to preferred alternatives, e.g. generic store-brand products (1)
+- Veblen good: demand rises as its price rises, because a high price signals status, e.g. luxury watches (1)
+
+=== sa y11-sa-P3a-03
+c: P3a.6
+m: 4
+lv: 3
+k: explain
+Q: Explain the paradox of thrift.
+PTS:
+- Saving is deferred consumption; one household saving more can be sensible (1)
+- If all households save more at the same time, total consumption falls (1)
+- Firms sell less, cut production and jobs, so national income falls (1)
+- With lower incomes, total saving may not rise at all: what is wise for one household can be harmful for the economy as a whole (1)
+
+=== sa y11-sa-P3a-04
+c: P3a.9 P3a.3
+m: 3
+lv: 2
+k: explain
+Q: Explain how consumption and income contribute to wellbeing, and why they are not the only influences on it.
+PTS:
+- Higher income lets households consume more goods and services, raising material living standards (1)
+- Consumption of essentials such as housing, food and health care supports wellbeing (1)
+- Wellbeing also depends on non-material factors such as health, leisure, relationships, safety and the environment, so more consumption does not always mean higher wellbeing (1)
+
+=== sa y11-sa-P3b-01
+c: P3b.1 P3b.2
+m: 4
+lv: 2
+k: explain
+Q: Explain how TWO factors could increase the participation of parents in the workforce.
+PTS:
+- Identifies a first factor, e.g. more affordable and available childcare (1)
+- Explains it: lowers the cost of working, so more parents choose to work or work more hours (1)
+- Identifies a second factor, e.g. flexible working arrangements, longer paid parental leave, a workplace culture that supports carers (1)
+- Explains it (1)
+
+=== sa y11-sa-P3c-01
+c: P3c.4 P3c.5
+m: 4
+lv: 2
+k: explain
+Q: Explain how capital deepening and worker skills raise productivity, and why higher productivity matters for living standards.
+PTS:
+- Capital deepening gives each worker more or better equipment and technology, so output per hour rises (1)
+- More skilled and better trained workers produce more and better output in the same time (1)
+- Higher productivity lowers unit costs and raises profitability (1)
+- It allows real wages and incomes to rise without higher inflation, raising living standards (1)
+
+=== sa y11-sa-P3c-02
+c: P3c.6 P3c.5
+m: 3
+lv: 2
+k: explain
+Q: Explain why a firm's long-run average costs may rise if it grows very large.
+PTS:
+- Beyond the technical optimum a firm experiences diseconomies of scale (1)
+- Causes, e.g. communication and coordination problems, layers of management, slower decisions, lower worker motivation (1)
+- These raise the cost of each unit produced, so the long-run average cost curve slopes upwards (1)
+
+=== sa y11-sa-P3d-01
+c: P3d.3
+m: 4
+lv: 2
+k: explain
+Q: Explain how artificial intelligence (AI) and automation may affect businesses' demand for labour.
+PTS:
+- AI and automation can do some tasks more cheaply than workers, so the relative cost of capital falls (1)
+- Firms may substitute capital for labour in routine tasks, reducing the demand for some workers, e.g. data entry, checkouts (1)
+- They can also raise productivity and output, increasing demand for workers who use or complement the technology (1)
+- The overall effect varies across occupations and skills; workers may need retraining (1)
+
+=== sa y11-sa-P3d-02
+c: P3d.1 P3d.2
+m: 4
+lv: 3
+k: evaluate
+Q: Outline ONE argument for and ONE argument against a large rise in the minimum wage.
+PTS:
+- For: raises the incomes of low-paid workers and reduces in-work poverty (1)
+- Explains it, e.g. a fairer distribution of income from work; higher spending (1)
+- Against: raises labour costs for employers, who may hire fewer workers or cut hours, especially young and low-skilled workers (1)
+- Explains it, e.g. small businesses may raise prices or automate (1)
+
+=== sa y11-sa-P4a-01
+c: P4a.1 P4a.2
+m: 4
+lv: 2
+k: explain
+Q: Explain how financial intermediaries channel savings into investment.
+PTS:
+- Financial intermediaries, such as banks, insurers and fund managers, stand between savers and borrowers (1)
+- They collect deposits, premiums and contributions from households and firms (1)
+- They lend or invest these funds, e.g. business loans, mortgages, shares and bonds (1)
+- They reduce costs and risks for savers by spreading investments and assessing borrowers, so more saving becomes productive investment (1)
+
+=== sa y11-sa-P4a-02
+c: P4a.3
+m: 3
+lv: 2
+k: outline
+Q: Outline the role of superannuation as a source of savings and investment in Australia.
+PTS:
+- Employers must pay compulsory contributions into workers' super funds (12 per cent of ordinary earnings from 1 July 2025) (1)
+- This builds a large pool of long-term savings, among the largest in the world (1)
+- Super funds invest the savings in Australian and overseas shares, bonds, property and infrastructure, financing investment and providing retirement incomes (1)
+
+=== sa y11-sa-P4b-01
+c: P4b.2 P4b.1
+m: 4
+lv: 2
+k: compare
+Q: Distinguish between the primary and secondary share markets, and explain how each helps the economy.
+PTS:
+- Primary market: companies issue new shares, e.g. in an initial public offering (1)
+- It raises funds for businesses to invest and expand (1)
+- Secondary market: existing shares are traded between investors, e.g. on the ASX (1)
+- It gives investors liquidity (they can sell easily), which makes them more willing to buy new shares (1)
+
+=== sa y11-sa-P4c-01
+c: P4c.3
+m: 4
+lv: 2
+k: explain
+Q: Explain TWO roles of interest rates in the economy.
+PTS:
+- Identifies a first role, e.g. the cost of credit for borrowers (1)
+- Explains it, e.g. higher rates discourage borrowing for houses, cars and business investment (1)
+- Identifies a second role, e.g. the return on savings, the price of money or an indicator of risk (1)
+- Explains it, e.g. higher rates reward saving, so households may save more and spend less (1)
+
+=== sa y11-sa-P4c-02
+c: P4c.4 P4c.6
+m: 4
+lv: 2
+k: explain diagram
+Q: Using the loanable funds model, explain the effect of a fall in business confidence on interest rates.
+PTS:
+- Lower confidence means firms plan less investment (1)
+- So the demand for loanable funds decreases: the demand curve shifts left (1)
+- At the old interest rate there is a surplus of funds, so the interest rate falls (1)
+- The quantity of funds borrowed and lent falls (1)
+
+=== sa y11-sa-P5a-01
+c: P5a.1
+m: 4
+lv: 2
+k: explain
+Q: Explain TWO roles of government in the economy, using an example of each.
+PTS:
+- Identifies a first role, e.g. redistribution of income (1)
+- Explains it with an example, e.g. progressive income tax and welfare payments narrow the gap between rich and poor (1)
+- Identifies a second role, e.g. reallocation, stabilisation or correcting market failure (1)
+- Explains it with an example, e.g. providing public goods such as roads; spending more in a recession (1)
+
+=== sa y11-sa-P5a-02
+c: P5a.5 P5a.6
+m: 3
+lv: 2
+k: compare
+Q: Distinguish between regulation and a nudge as ways of changing behaviour, using an example of each.
+PTS:
+- Regulation is a rule backed by law that requires or forbids an action (1)
+- Example, e.g. compulsory seatbelts, food safety standards (1)
+- A nudge changes how a choice is presented to encourage a better decision without forcing it, e.g. automatic enrolment in a savings plan with the option to opt out (1)
+
+=== sa y11-sa-P5a-03
+c: P5a.7
+m: 4
+lv: 3
+k: evaluate
+Q: Outline ONE argument for and ONE argument against the privatisation of a government business.
+PTS:
+- For: private owners face competition and the profit motive, which may improve efficiency and service (1)
+- Explains it, e.g. sale proceeds can reduce government debt or fund infrastructure (1)
+- Against: a private monopoly may raise prices or cut unprofitable services, such as in remote areas (1)
+- Explains it, e.g. the government loses future dividends and direct control of an essential service (1)
+
+=== sa y11-sa-P5a-04
+c: P5a.2 P5a.3
+m: 3
+lv: 2
+k: outline
+Q: Outline the role of Aboriginal and Torres Strait Islander advisory and partnership bodies in shaping government policy for economic outcomes.
+PTS:
+- They bring the knowledge and priorities of Aboriginal and Torres Strait Islander communities into the design of policy (1)
+- Example, e.g. the Coalition of Peaks shares decision-making with governments under the National Agreement on Closing the Gap (2020), including targets for employment and education (1)
+- Policies designed with communities are more likely to fit local needs and improve outcomes and quality of life (1)
+
+=== sa y11-sa-P5b-01
+c: P5b.5
+m: 4
+lv: 2
+k: compare
+Q: Distinguish between direct and indirect taxes, and between the legal and economic incidence of a tax.
+PTS:
+- Direct taxes are levied on income, profits or wealth and paid by those who earn or own them, e.g. income tax (1)
+- Indirect taxes are levied on spending and collected by businesses, e.g. the GST, excise (1)
+- Legal incidence: who must pay the tax to the government (1)
+- Economic incidence: who actually bears the cost, e.g. consumers paying higher prices; it depends on price elasticities (1)
+
+=== sa y11-sa-P5b-02
+c: P5b.6 P5b.4
+m: 4
+lv: 3
+k: evaluate
+Q: Assess the GST against the features of a good tax.
+PTS:
+- Simplicity: one rate (10 per cent) collected by businesses, but exemptions (e.g. fresh food, health, education) add complexity (1)
+- Efficiency: a broad consumption tax distorts decisions less than high income taxes and is hard to avoid (1)
+- Fairness: it is regressive, because lower-income households spend a larger share of their income (1)
+- Judgement, e.g. an efficient revenue source, but it needs the transfer system to offset its unfairness (1)
+
+=== sa y11-sa-P5b-03
+c: P5b.1 P5b.7
+m: 3
+lv: 2
+k: outline
+Q: Outline the purposes of taxation and ONE reason for reforming Australia's tax system.
+PTS:
+- Taxation raises revenue to fund government spending such as health, education and welfare (1)
+- It is used to redistribute income and to change behaviour, e.g. tobacco excise (1)
+- Reason for reform, e.g. reliance on income tax, bracket creep, a narrow GST base, an ageing population reducing the share of people paying income tax (1)
+
+=== sa y11-sa-P5c-01
+c: P5c.1 P5c.2
+m: 3
+lv: 1
+k: compare
+Q: Distinguish between recurrent and non-recurrent government spending, giving an example of each.
+PTS:
+- Recurrent spending is ongoing, day-to-day spending, e.g. salaries, welfare payments such as the age pension (1)
+- Non-recurrent (capital) spending creates long-lasting assets, e.g. building roads, hospitals and schools (1)
+- Social security and welfare is the largest area of Australian Government spending, followed by health (1)
+
+=== sa y11-sa-P5c-02
+c: P5c.3
+m: 4
+lv: 3
+k: explain
+Q: Explain why the Australian Government may need to reform its spending.
+PTS:
+- Spending on some programs is growing faster than revenue, e.g. the NDIS, aged care, health and interest on debt (1)
+- An ageing population increases these costs while reducing the share of people of working age (1)
+- Persistent deficits add to government debt and interest costs, leaving less for other priorities (1)
+- Reform aims to target spending better and improve its value for money, e.g. means testing, efficiency reviews (1)
+
+=== sa y11-sa-P6a-01
+c: P6a.1
+m: 4
+lv: 2
+k: explain
+Q: Explain how international trade based on voluntary exchange benefits both countries involved.
+PTS:
+- Trade is voluntary, so countries trade only if both expect to gain (1)
+- Countries specialise in goods they produce at a lower opportunity cost (comparative advantage) (1)
+- Specialisation and trade allow more total output from the same resources: a more efficient allocation of resources (1)
+- Consumers gain more choice and lower prices; producers gain larger markets and economies of scale (1)
+
+=== sa y11-sa-P6a-02
+c: P6a.3
+m: 3
+lv: 2
+k: outline
+Q: Describe the trade between Yolŋu people of Arnhem Land and fishermen from Makassar.
+PTS:
+- From at least the 1700s until 1907, fleets from Makassar (in present-day Indonesia) sailed to the Arnhem Land coast each year, arriving around December (1)
+- They caught, boiled and dried trepang (sea cucumber) and sold it to Chinese traders: an international trade route linking northern Australia, Sulawesi and China (1)
+- Yolŋu people traded and worked with them, receiving goods such as cloth, tobacco, knives and rice, with lasting cultural exchange (National Museum of Australia) (1)
+
+=== sa y11-sa-P6a-03
+c: P6a.2
+m: 3
+lv: 2
+k: outline
+Q: Describe the composition and direction of Australia's goods exports.
+PTS:
+- Composition: dominated by mineral and energy resources such as iron ore, coal, natural gas and gold (1)
+- Rural exports such as beef, wheat and wool are also significant; manufactured exports are a small share (1)
+- Direction: mostly to Asia, with China the largest market and Japan, South Korea and India also major markets (1)
+
+=== sa y11-sa-P6b-01
+c: P6b.1 P6b.2
+m: 4
+lv: 2
+k: compare
+Q: Distinguish between foreign debt and foreign equity, using an example of each.
+PTS:
+- Foreign debt: borrowing from overseas that must be repaid with interest (1)
+- Example, e.g. an Australian bank borrowing from US lenders (1)
+- Foreign equity: overseas ownership of Australian assets, such as shares, businesses or property, which earns dividends and profits (1)
+- Example, e.g. a Japanese company buying an Australian mine or a stake in an Australian company (1)
+
+=== sa y11-sa-P6c-01
+c: P6c.1
+m: 3
+lv: 1
+k: outline
+Q: Outline the role of exchange rates in international trade and investment.
+PTS:
+- Countries use different currencies, so traders and investors must exchange one currency for another (1)
+- The exchange rate is the price of one currency in terms of another, e.g. A$1 = US$0.65 (1)
+- It converts the prices of exports, imports and overseas assets into each currency, which affects how much is traded and invested (1)
+
+=== sa y11-sa-P6d-01
+c: P6d.1
+m: 3
+lv: 1
+k: outline
+Q: Outline the purpose of the balance of payments.
+PTS:
+- It records all economic transactions between Australian residents and the rest of the world over a period (1)
+- The current account records trade in goods and services and income flows; the capital and financial account records investment and borrowing (1)
+- It shows how Australia pays its way in the world and helps governments and businesses monitor Australia's international position (1)
+
+=== sa y11-sa-P1a-06
+c: P1a.1 P1a.2
+m: 2
+lv: 1
+k: outline
+Q: Outline what an economy is and what economics studies.
+PTS:
+- An economy is the system through which a society's people, businesses and government produce, exchange and consume goods and services (1)
+- Economics studies how individuals, businesses and governments make choices about using scarce resources to satisfy their wants (1)
+
+=== sa y11-sa-P3c-03
+c: P3c.1 P3c.2
+m: 3
+lv: 1
+k: outline
+Q: Outline THREE roles of businesses in the economy.
+PTS:
+- Produce the goods and services that households, governments and other businesses buy (1)
+- Employ labour and other factors of production, paying wages, rent and interest that become household incomes (1)
+- Invest and innovate, adding to the economy's productive capacity, and pay taxes that fund government spending (1)

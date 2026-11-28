@@ -1,0 +1,722 @@
+# Year 11 (2025 syllabus) multiple choice: Focus areas 3 to 6 (household and business, financial,
+# government and international sectors).
+
+=== mc y11-mc-P3a-01
+c: P3a.5 P3a.4
+lv: 2
+k: calc
+Q: A household's weekly income rises from $1,000 to $1,200 and its weekly consumption rises from $900 to $1,050. Its marginal propensity to consume (MPC) is
+A: 0.75
+B: 0.875
+C: 0.25
+D: 1.33
+ANS: A
+WHY: MPC = change in consumption ÷ change in income = 150 ÷ 200 = 0.75. B is consumption ÷ income at the new level, the average, not the marginal, propensity.
+
+=== mc y11-mc-P3a-02
+c: P3a.4
+lv: 1
+k: calc
+Q: If the marginal propensity to consume is 0.8, the marginal propensity to save is
+A: 0.8
+B: 1.8
+C: 0.2
+D: 1.25
+ANS: C
+WHY: Every extra dollar of income is either spent or saved, so MPC + MPS = 1 and MPS = 1 − 0.8 = 0.2.
+
+=== mc y11-mc-P3a-03
+c: P3a.2
+lv: 2
+Q: The law of diminishing marginal utility states that
+A: total satisfaction falls as more of a good is consumed
+B: utility rises with the price of a good
+C: consumers always buy the cheapest good available
+D: each extra unit consumed adds less satisfaction than the one before
+ANS: D
+WHY: The third slice of pizza adds less satisfaction than the first. Total utility can still rise; it is the extra (marginal) utility that falls.
+
+=== mc y11-mc-P3a-04
+c: P3a.8
+lv: 2
+Q: As their incomes rise, people buy fewer packets of generic store-brand noodles. Store-brand noodles are
+A: a normal good
+B: a merit good
+C: a Veblen good
+D: an inferior good
+ANS: D
+WHY: Demand for an inferior good falls as income rises, because buyers switch to preferred alternatives. Demand for a normal good rises with income.
+
+=== mc y11-mc-P3a-05
+c: P3a.8
+lv: 2
+Q: Demand for a luxury handbag rises when its price rises, because a high price signals status. The handbag is
+A: a Veblen good
+B: an inferior good
+C: a public good
+D: a complement
+ANS: A
+WHY: For a Veblen good, a higher price makes the good more desirable as a status symbol, the opposite of the usual law of demand.
+
+=== mc y11-mc-P3a-06
+c: P3a.6
+lv: 3
+Q: The paradox of thrift suggests that if all households try to save more during a downturn,
+A: total saving will rise sharply
+B: interest rates will rise
+C: spending and incomes will fall, so total saving may not rise at all
+D: the economy will grow faster
+ANS: C
+WHY: One household saving more is sensible, but if everyone spends less, firms sell less and incomes fall, which limits how much people can actually save.
+
+=== mc y11-mc-P3a-07
+c: P3a.7
+lv: 2
+Q: A subscription service is easy to join online but can only be cancelled by phoning during business hours. This is an example of
+A: a nudge
+B: a public good
+C: consumer sovereignty
+D: a sludge
+ANS: D
+WHY: A sludge is friction deliberately put in the way of a choice that is good for the consumer, here cancelling, so that people keep paying.
+
+=== mc y11-mc-P3a-08
+c: P3a.7
+lv: 2
+Q: Consumer sovereignty means that
+A: consumers' spending decisions determine what is produced
+B: the government decides what consumers buy
+C: firms control what consumers want
+D: consumers set the prices of goods
+ANS: A
+WHY: In a market economy, firms produce what consumers are willing to buy. Marketing and behavioural sludges can weaken this.
+
+=== mc y11-mc-P3a-09
+c: P3a.3
+lv: 2
+Q: A shopper pays more for free-range eggs because she is concerned about animal welfare. This shows the consumer as
+A: an agent who cares only about the lowest price
+B: a Veblen consumer
+C: an inferior-good buyer
+D: a socially and ethically motivated agent
+ANS: D
+WHY: Consumers' choices are also shaped by values, culture and social norms, not only by price and their own satisfaction.
+
+=== mc y11-mc-P3b-01
+c: P3b.1 P3b.2
+lv: 2
+Q: Which of the following is most likely to increase the supply of labour?
+A: Raising the school leaving age
+B: More affordable and available childcare
+C: An ageing population
+D: Higher income tax rates for people returning to work
+ANS: B
+WHY: Childcare costs and availability are a major barrier to parents working, so making care cheaper and easier to find raises participation. A, C and D reduce labour supply.
+
+=== mc y11-mc-P3b-02
+c: P3b.2
+lv: 1
+Q: Which of the following is a disincentive to participating in the workforce?
+A: Flexible working hours
+B: Paid parental leave
+C: A lack of affordable care for children or older relatives
+D: Subsidised training
+ANS: C
+WHY: People with caring responsibilities may not be able to work if care is unaffordable or unavailable. A, B and D make working easier.
+
+=== mc y11-mc-P3b-03
+c: P3b.1
+lv: 2
+Q: Occupational mobility of labour refers to
+A: workers' ability to move between different jobs or occupations
+B: workers moving between cities and regions
+C: workers travelling further to work each day
+D: businesses moving production overseas
+ANS: A
+WHY: Occupational mobility depends on skills and training; B is geographic mobility.
+
+=== mc y11-mc-P3c-01
+c: P3c.2
+lv: 2
+k: calc
+Q: A business earned revenue of $500,000 and paid $380,000 in explicit costs. Its owner could have earned $90,000 working for another firm. What are the business's accounting profit and economic profit?
+A: Accounting profit $120,000; economic profit $30,000
+B: Accounting profit $120,000; economic profit $210,000
+C: Accounting profit $30,000; economic profit $120,000
+D: Accounting profit $500,000; economic profit $120,000
+ANS: A
+WHY: Accounting profit = 500,000 − 380,000 = $120,000. Economic profit also subtracts the opportunity cost of the owner's time: 120,000 − 90,000 = $30,000.
+
+=== mc y11-mc-P3c-02
+c: P3c.3
+lv: 1
+Q: Australia Post, a business owned by the Australian Government, is an example of
+A: a private enterprise
+B: a sole trader
+C: a public enterprise
+D: a not-for-profit charity
+ANS: C
+WHY: A public enterprise (government business enterprise) is owned by government but sells goods and services in the market.
+
+=== mc y11-mc-P3c-03
+c: P3c.4
+lv: 1
+Q: Productivity measures
+A: the total output of an economy
+B: the profits earned by businesses
+C: the number of people employed
+D: output per unit of input, such as output per hour worked
+ANS: D
+WHY: Higher productivity means more output from the same inputs, which lowers costs and supports higher wages and living standards.
+
+=== mc y11-mc-P3c-04
+c: P3c.5
+lv: 2
+Q: A large supermarket chain buys stock in huge quantities at a lower price per unit than small grocers pay. This is an example of
+A: an external economy of scale
+B: capital deepening
+C: a diseconomy of scale
+D: an internal economy of scale
+ANS: D
+WHY: Purchasing economies come from the firm's own size, so they are internal. External economies come from the growth of the whole industry or region.
+
+=== mc y11-mc-P3c-05
+c: P3c.5
+lv: 2
+Q: Capital deepening means
+A: increasing the amount of capital per worker
+B: increasing the number of workers
+C: borrowing more money
+D: selling off machinery
+ANS: A
+WHY: Giving each worker more or better equipment raises output per worker, a key source of productivity growth.
+
+=== mc y11-mc-P3c-06
+c: P3c.6
+lv: 2
+Q: On a long-run average cost (LRAC) curve, the technical optimum is the level of output at which
+A: long-run average cost is lowest
+B: total output is largest
+C: economies of scale begin
+D: total cost is lowest
+ANS: A
+WHY: Up to the technical optimum the firm enjoys economies of scale; beyond it, diseconomies of scale push average cost up.
+
+=== mc y11-mc-P3d-01
+c: P3d.1
+lv: 1
+Q: In Australia, the national minimum wage is set each year by
+A: the Reserve Bank of Australia
+B: each employer
+C: the Fair Work Commission
+D: the Australian Competition and Consumer Commission
+ANS: C
+WHY: The Fair Work Commission's annual wage review sets the national minimum wage and the minimum rates in modern awards.
+
+=== mc y11-mc-P3d-02
+c: P3d.3
+lv: 2
+Q: Which of the following is most likely to reduce businesses' demand for labour?
+A: A rise in total output
+B: Cheaper automation and AI that can do tasks workers now do
+C: A fall in the cost of labour compared with the cost of capital
+D: Higher business profits
+ANS: B
+WHY: When machines and software become cheaper relative to labour, firms may replace some workers. A, C and D would usually increase the demand for labour.
+
+=== mc y11-mc-P3d-03
+c: P3d.1
+lv: 1
+Q: Which of the following is a non-wage benefit of a job?
+A: Overtime pay
+B: Flexible working hours
+C: The hourly rate of pay
+D: Penalty rates for weekend work
+ANS: B
+WHY: Non-wage benefits are rewards other than pay, such as flexibility, leave, training or a work car. A, C and D are all forms of wage.
+
+=== mc y11-mc-P4a-01
+c: P4a.1
+lv: 1
+Q: The main role of the financial sector in the economy is to
+A: produce goods and services for households
+B: channel funds from savers to borrowers who want to invest
+C: set tax rates
+D: regulate international trade
+ANS: B
+WHY: By linking savers with borrowers, the financial sector turns savings into investment, which helps the economy grow.
+
+=== mc y11-mc-P4a-02
+c: P4a.2
+lv: 1
+Q: Which of the following is a financial intermediary?
+A: A superannuation fund
+B: A supermarket
+C: The Australian Competition and Consumer Commission
+D: The Fair Work Commission
+ANS: A
+WHY: A super fund pools members' savings and invests them in shares, bonds, property and infrastructure, standing between savers and the users of funds.
+
+=== mc y11-mc-P4a-03
+c: P4a.3
+lv: 2
+Q: Superannuation supports the Australian economy mainly by
+A: increasing government spending
+B: building a large pool of savings that is invested in shares, bonds, property and infrastructure
+C: lowering the cash rate
+D: increasing imports
+ANS: B
+WHY: Compulsory contributions create long-term savings that fund investment, and they also provide retirement incomes.
+
+=== mc y11-mc-P4a-04
+c: P4a.3
+lv: 1
+Q: From 1 July 2025, the superannuation guarantee requires employers to contribute what percentage of an employee's ordinary time earnings to super?
+A: 9.5 per cent
+B: 10 per cent
+C: 11.5 per cent
+D: 12 per cent
+ANS: D
+WHY: The superannuation guarantee rose in half-point steps from 9.5 per cent in 2020–21 to 12 per cent from 1 July 2025 (Australian Taxation Office).
+
+=== mc y11-mc-P4b-01
+c: P4b.2
+lv: 2
+Q: A company sells new shares to investors for the first time in an initial public offering (IPO). This takes place in the
+A: secondary share market
+B: primary share market
+C: debt market
+D: foreign exchange market
+ANS: B
+WHY: New shares are issued in the primary market, which raises funds for the company. Later trading of those shares between investors is the secondary market.
+
+=== mc y11-mc-P4b-02
+c: P4b.1
+lv: 1
+Q: A shareholder in a company owns
+A: a loan to the company that must be repaid with interest
+B: part of the company and a claim on its profits
+C: a government bond
+D: nothing until the company is sold
+ANS: B
+WHY: Shares are equity: part-ownership, with a share of profits paid as dividends. A loan is debt.
+
+=== mc y11-mc-P4b-03
+c: P4b.2
+lv: 2
+Q: The secondary share market, such as the Australian Securities Exchange, helps the economy mainly because
+A: companies receive new funds every time their shares are traded
+B: investors can easily sell shares, which makes them more willing to buy new shares when companies issue them
+C: the government sets share prices on it
+D: it removes the risk of owning shares
+ANS: B
+WHY: Liquidity in the secondary market supports the primary market. Companies do not receive money when existing shares change hands.
+
+=== mc y11-mc-P4c-01
+c: P4c.3
+lv: 1
+Q: An interest rate can best be described as
+A: the price of money: the cost of borrowing and the reward for saving
+B: the rate of inflation
+C: the exchange rate
+D: the rate of tax on savings
+ANS: A
+WHY: Borrowers pay interest for the use of funds and savers receive it for lending them.
+
+=== mc y11-mc-P4c-02
+c: P4c.6 P4c.4
+lv: 2
+Q: In the loanable funds market, an increase in the demand for funds, with supply unchanged, will
+A: raise the interest rate and the quantity of funds lent
+B: lower the interest rate
+C: reduce the quantity of funds lent
+D: have no effect on the interest rate
+ANS: A
+WHY: The demand curve for funds shifts right, so the interest rate rises until the extra borrowing is matched by an expansion in the quantity of funds supplied.
+
+=== mc y11-mc-P4c-03
+c: P4c.5
+lv: 2
+Q: Which of the following would increase the supply of loanable funds?
+A: Households saving a larger share of their income
+B: A fall in business confidence
+C: A larger government budget deficit
+D: Higher household spending
+ANS: A
+WHY: More saving means more funds available to lend. B and C affect the demand for funds; D reduces saving.
+
+=== mc y11-mc-P4c-04
+c: P4c.7
+lv: 2
+Q: A rise in interest rates is most likely to
+A: make housing more affordable for new buyers
+B: raise mortgage repayments and reduce how much buyers can borrow
+C: raise house prices straight away
+D: have no effect on housing
+ANS: B
+WHY: Higher rates increase the cost of servicing a loan, so existing borrowers pay more and new buyers can borrow less.
+
+=== mc y11-mc-P4c-05
+c: P4c.2
+lv: 2
+Q: When the Australian Government sells newly issued bonds to raise funds, it is borrowing in the
+A: primary debt (bond) market
+B: secondary share market
+C: foreign exchange market
+D: equity market
+ANS: A
+WHY: New bonds are sold in the primary market. Investors may later trade them in the secondary bond market.
+
+=== mc y11-mc-P4c-06
+c: P4c.3
+lv: 3
+Q: Riskier borrowers usually pay higher interest rates because
+A: lenders want a higher return to compensate for the greater chance that they will not be repaid
+B: the Reserve Bank requires it
+C: risky borrowers always borrow less
+D: interest rates are set by the government
+ANS: A
+WHY: The interest rate includes a risk premium, so it also acts as an indicator of risk.
+
+=== mc y11-mc-P5a-01
+c: P5a.1
+lv: 2
+Q: Unemployment benefits and a progressive income tax help the government to
+A: reallocate resources
+B: redistribute income
+C: correct a public good problem
+D: privatise government businesses
+ANS: B
+WHY: Taxing higher incomes at higher rates and paying benefits to those on low incomes makes the distribution of income more equal.
+
+=== mc y11-mc-P5a-02
+c: P5a.1
+lv: 2
+Q: When the government increases its spending during a recession to support jobs, it is carrying out its role of
+A: stabilisation
+B: redistribution
+C: reallocation
+D: privatisation
+ANS: A
+WHY: Stabilisation means smoothing the business cycle: supporting spending in a downturn and restraining it when the economy overheats.
+
+=== mc y11-mc-P5a-03
+c: P5a.4
+lv: 1
+Q: A budget deficit occurs when
+A: government revenue is greater than government expenditure
+B: government expenditure is greater than government revenue
+C: imports are greater than exports
+D: saving is greater than investment
+ANS: B
+WHY: The government must borrow to cover a deficit. A describes a budget surplus.
+
+=== mc y11-mc-P5a-04
+c: P5a.6
+lv: 2
+Q: An energy company sends each household a report comparing its electricity use with that of similar households nearby, to encourage it to use less. This is an example of
+A: a tax
+B: a regulation
+C: a nudge
+D: privatisation
+ANS: C
+WHY: The comparison uses social norms to change behaviour without changing prices or banning anything.
+
+=== mc y11-mc-P5a-05
+c: P5a.7
+lv: 2
+Q: Which of the following is an argument for privatising a government business?
+A: Private ownership and competition may make the business more efficient
+B: Privatisation guarantees lower prices for consumers
+C: Privatisation ensures services reach remote areas
+D: Privatisation increases government ownership
+ANS: A
+WHY: Supporters argue that the profit motive and competition improve efficiency and service. B and C are not guaranteed; a private monopoly may raise prices or cut unprofitable services.
+
+=== mc y11-mc-P5a-06
+c: P5a.2
+lv: 2
+Q: Under the National Agreement on Closing the Gap (2020), Australian governments agreed to share decision-making on policy with
+A: the Reserve Bank of Australia
+B: the Coalition of Aboriginal and Torres Strait Islander Community-Controlled Peak Organisations (the Coalition of Peaks)
+C: the Australian Competition and Consumer Commission
+D: the G20
+ANS: B
+WHY: The Coalition of Peaks is a party to the National Agreement, which commits governments to formal partnerships and shared decision-making with Aboriginal and Torres Strait Islander organisations.
+
+=== mc y11-mc-P5a-07
+c: P5a.5
+lv: 1
+Q: A law requiring builders to meet safety standards is an example of
+A: regulation
+B: a subsidy
+C: a tax
+D: direct provision of a good
+ANS: A
+WHY: Regulation sets rules that businesses and households must follow, to prevent or reduce harm.
+
+=== mc y11-mc-P5b-01
+c: P5b.2
+lv: 1
+Q: The largest single source of Australian Government revenue is
+A: company tax
+B: the goods and services tax (GST)
+C: individual (personal) income tax
+D: fuel excise
+ANS: C
+WHY: Taxes on individuals' incomes raise more than any other source, around half of the Australian Government's tax revenue.
+
+=== mc y11-mc-P5b-02
+c: P5b.5
+lv: 2
+Q: A direct tax is a tax that
+A: is paid when goods and services are bought
+B: is levied on income or profits and paid by the person or business that earns it
+C: is always regressive
+D: is collected by retailers
+ANS: B
+WHY: Income tax and company tax are direct taxes. A and D describe indirect taxes such as the GST.
+
+=== mc y11-mc-P5b-03
+c: P5b.5
+lv: 2
+Q: The GST is an indirect tax because
+A: it is levied on incomes
+B: businesses pay it to the government, but its cost is passed on to consumers in higher prices
+C: it is a tax on wealth
+D: it applies only to imported goods
+ANS: B
+WHY: The legal incidence falls on businesses, which collect and remit the tax, but most of the economic incidence falls on consumers.
+
+=== mc y11-mc-P5b-04
+c: P5b.5
+lv: 3
+Q: The legal incidence of a tax refers to
+A: who actually bears the cost of the tax
+B: who is legally required to pay the tax to the government
+C: the rate at which the tax is charged
+D: the revenue the tax raises
+ANS: B
+WHY: Legal incidence is who must pay the tax office. Economic incidence (A) is who finally bears the cost, which depends on price elasticities.
+
+=== mc y11-mc-P5b-05
+c: P5b.6
+lv: 2
+Q: A tax that taxpayers find easy to understand and comply with meets which feature of a good tax?
+A: Fairness
+B: Simplicity
+C: Efficiency
+D: Progressivity
+ANS: B
+WHY: Simplicity means a tax is easy to understand, comply with and collect. Fairness concerns who pays; efficiency concerns how little the tax distorts decisions.
+
+=== mc y11-mc-P5b-06
+c: P5b.3
+lv: 2
+Q: Which of the following is a tax on wealth?
+A: The GST
+B: Personal income tax
+C: Land tax
+D: Payroll tax
+ANS: C
+WHY: Land tax is charged on the value of land owned, a stock of wealth. The GST taxes consumption; income and payroll taxes are taxes on income.
+
+=== mc y11-mc-P5b-07
+c: P5b.6
+lv: 2
+Q: A tax is progressive when
+A: everyone pays the same amount of tax
+B: the average tax rate rises as income rises
+C: lower-income earners pay a larger share of their income in tax
+D: everyone pays the same percentage of their income
+ANS: B
+WHY: Under a progressive tax, people with higher incomes pay a larger proportion of their income. C describes a regressive tax and D a proportional tax.
+
+=== mc y11-mc-P5b-08
+c: P5b.7
+lv: 3
+Q: Which of the following is a common argument for reform of the Australian tax system?
+A: Heavy reliance on income tax may discourage work and investment, and bracket creep raises average tax rates over time
+B: Australia has no income tax
+C: The GST base is too broad
+D: Companies in Australia pay no tax
+ANS: A
+WHY: Reviews have pointed to Australia's reliance on income taxes and to bracket creep. A common view is that the GST base is too narrow, because of exemptions such as fresh food, the opposite of C.
+
+=== mc y11-mc-P5c-01
+c: P5c.2
+lv: 1
+Q: The largest category of Australian Government spending is
+A: defence
+B: education
+C: social security and welfare
+D: transport and infrastructure
+ANS: C
+WHY: Payments such as the age pension, family payments, disability support and unemployment benefits make social security and welfare the largest category, around a third of spending.
+
+=== mc y11-mc-P5c-02
+c: P5c.1
+lv: 2
+Q: Which of the following is non-recurrent (capital) government spending?
+A: Paying teachers' salaries
+B: The age pension
+C: Building a new hospital
+D: Interest on government debt
+ANS: C
+WHY: Capital spending creates long-lasting assets such as hospitals, roads and schools. A, B and D occur every year (recurrent spending).
+
+=== mc y11-mc-P5c-03
+c: P5c.3
+lv: 3
+Q: Which of the following is a reason given for reform of Australian Government spending?
+A: Spending on programs such as the NDIS, aged care, health and interest on debt is growing faster than revenue
+B: The government spends nothing on welfare
+C: Spending never affects the budget balance
+D: Most spending goes on defence
+ANS: A
+WHY: Fast-growing spending pressures, many linked to an ageing population, raise questions about the budget's long-term sustainability and how well spending is targeted.
+
+=== mc y11-mc-P6a-01
+c: P6a.1
+lv: 2
+Q: International trade raises living standards mainly because
+A: countries specialise according to comparative advantage and trade, so more is produced from the same resources
+B: imports always cost more than exports
+C: countries become self-sufficient
+D: trade removes the need for money
+ANS: A
+WHY: Voluntary exchange benefits both sides: each country specialises in what it produces at the lowest opportunity cost and trades for the rest.
+
+=== mc y11-mc-P6a-02
+c: P6a.2
+lv: 1
+Q: Australia's largest two-way trading partner is
+A: the United States
+B: Japan
+C: China
+D: the United Kingdom
+ANS: C
+WHY: China has been Australia's largest two-way trading partner since 2007 (Department of Foreign Affairs and Trade), mainly through Australian exports of iron ore and other resources.
+
+=== mc y11-mc-P6a-03
+c: P6a.2
+lv: 2
+Q: Which statement best describes the composition of Australia's goods exports?
+A: They are mostly manufactured goods such as cars and machinery
+B: They are dominated by mineral and energy resources such as iron ore, coal, natural gas and gold
+C: They are mostly services
+D: They are mostly agricultural products
+ANS: B
+WHY: Resources make up the largest share of Australia's exports. Rural goods such as beef and wheat and services such as education and tourism are also important, but smaller.
+
+=== mc y11-mc-P6a-04
+c: P6a.4
+lv: 2
+k: calc
+Q: A country's exports of goods and services are worth $480 billion and its imports are worth $510 billion. Its trade balance is
+A: a surplus of $30 billion
+B: a deficit of $30 billion
+C: balanced
+D: a surplus of $990 billion
+ANS: B
+WHY: Trade balance = exports − imports = 480 − 510 = −$30 billion, a trade deficit.
+
+=== mc y11-mc-P6a-05
+c: P6a.3
+lv: 2
+Q: From at least the 1700s until 1907, fishermen from Makassar (in present-day Indonesia) sailed each year to the Arnhem Land coast and traded and worked with Yolŋu people. The main product they took back, to be sold on to China, was
+A: wool
+B: trepang (sea cucumber)
+C: gold
+D: iron ore
+ANS: B
+WHY: The fishermen caught, boiled and dried trepang on the Arnhem Land coast and sold it to Chinese traders. Yolŋu people traded with them for goods such as cloth, tobacco, knives and rice (National Museum of Australia).
+
+=== mc y11-mc-P6b-01
+c: P6b.1
+lv: 2
+Q: Foreign equity investment in Australia occurs when
+A: an Australian bank borrows from overseas lenders
+B: overseas investors buy shares in, or take ownership of, Australian businesses or property
+C: Australians buy shares in overseas companies
+D: the Reserve Bank buys foreign currency
+ANS: B
+WHY: Equity is ownership. A creates foreign debt; C is Australian investment abroad.
+
+=== mc y11-mc-P6b-02
+c: P6b.1
+lv: 2
+Q: Which of the following adds to Australia's foreign debt?
+A: A Japanese company buying an Australian mine
+B: An Australian company borrowing from a US bank
+C: An Australian buying shares in a US company
+D: A tourist spending money in Sydney
+ANS: B
+WHY: Borrowing from overseas creates a debt that must be repaid with interest. A is foreign equity in Australia.
+
+=== mc y11-mc-P6b-03
+c: P6b.2
+lv: 2
+Q: Which country is the largest source of foreign investment in Australia?
+A: China
+B: The United States
+C: India
+D: New Zealand
+ANS: B
+WHY: The United States holds the largest stock of foreign investment in Australia (Australian Bureau of Statistics, International Investment Position). China's investment is much smaller than its share of Australia's trade.
+
+=== mc y11-mc-P6c-01
+c: P6c.2
+lv: 2
+k: calc
+Q: If A$1 = US$0.65, how much does a laptop priced at US$1,300 cost in Australian dollars?
+A: A$845
+B: A$2,000
+C: A$1,300
+D: A$1,950
+ANS: B
+WHY: Australian dollars = US$ price ÷ US$ per A$ = 1,300 ÷ 0.65 = A$2,000. A multiplies instead of dividing.
+
+=== mc y11-mc-P6c-02
+c: P6c.1
+lv: 1
+Q: Exchange rates are needed for international trade and investment because
+A: countries use different currencies, so buyers must convert their currency to pay sellers
+B: every country uses the US dollar
+C: exchange rates set the prices of goods within each country
+D: exchange rates prevent trade between countries
+ANS: A
+WHY: An Australian importer paying a Japanese supplier must buy yen with Australian dollars, at the exchange rate.
+
+=== mc y11-mc-P6c-03
+c: P6c.2
+lv: 2
+Q: The Australian dollar rises from US$0.62 to US$0.68. The Australian dollar has
+A: depreciated
+B: appreciated
+C: been devalued by the Reserve Bank
+D: stayed the same
+ANS: B
+WHY: Each Australian dollar now buys more US dollars, so its value has risen (appreciated). C applies only to fixed exchange rates.
+
+=== mc y11-mc-P6d-01
+c: P6d.1
+lv: 1
+Q: The balance of payments is
+A: the Federal Government's budget
+B: a record of all economic transactions between a country's residents and the rest of the world over a period of time
+C: a record of a country's foreign debt only
+D: the difference between national saving and investment
+ANS: B
+WHY: It records trade, income and financial flows with the rest of the world, usually each quarter and year.
+
+=== mc y11-mc-P6d-02
+c: P6d.1
+lv: 2
+Q: Which of the following is recorded in the current account of Australia's balance of payments?
+A: A foreign company buying an Australian mine
+B: Exports of Australian beef
+C: The Reserve Bank's holdings of foreign currency
+D: Australian banks borrowing from overseas
+ANS: B
+WHY: The current account records trade in goods and services and income flows. A, C and D are financial account transactions.

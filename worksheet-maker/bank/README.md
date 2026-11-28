@@ -4,13 +4,14 @@ Plain-text files, one question after another. Edit them in any text editor, then
 `python3 worksheet-maker/build.py`. The build stops and names the file and line if anything is wrong.
 
 Every question starts with a heading line, `=== <type> <id>`, followed by details, then the body.
+Files named `y11-*.txt` hold the Year 11 (2025 syllabus) questions; the rest are HSC.
 The id must be unique (letters, numbers, dots and hyphens). Lines starting with `#` are comments.
 
 ## Details (all types)
 
 | Line | Meaning |
 |---|---|
-| `c: 2C.2 2C.3` | 2009 syllabus dot points (required). 2025 sections are matched through the crosswalk. |
+| `c: 2C.2 2C.3` | Dot points (required): 2009 syllabus HSC dot points, matched to 2025 Year 12 sections through the crosswalk; or 2025 Year 11 dot points such as `P2e.3` (the `y11-*.txt` files) |
 | `m: 4` | Marks (each type has a sensible default) |
 | `lv: 2` | Level: 1 foundation, 2 HSC standard, 3 extension (Band 6) |
 | `k: explain diagram` | Skills, using the Question Finder's names: calc, diagram, graph, table, extract, case, define, explain, analyse, evaluate, discuss, compare, outline, stimulus, recall |

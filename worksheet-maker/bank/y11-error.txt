@@ -1,0 +1,49 @@
+# Year 11 (2025 syllabus) spot the error: write each mistake as [[the mistaken words => the correct words]].
+
+=== error y11-er-P2b-demand
+c: P2b.3 P2b.4
+lv: 1
+Q: This paragraph answers: "Explain the difference between a change in quantity demanded and a change in demand."
+TEXT: A fall in the price of a good causes [[an increase in demand => an expansion in the quantity demanded]], which is shown as a movement along the demand curve. A change in a non-price factor, such as income, shifts the whole demand curve. For example, if incomes rise, the demand for a normal good [[decreases => increases]] and the demand curve shifts to the [[left => right]]. If the price of a substitute falls, consumers switch to the substitute, so the demand for the original good [[increases => decreases]].
+
+=== error y11-er-P2e-ped
+c: P2e.3 P2e.5
+lv: 2
+Q: This paragraph answers: "A bakery raises the price of a loaf from $5 to $6 and sales fall from 1,000 to 900 loaves a week. Calculate and explain the price elasticity of demand."
+TEXT: The price rises by [[$1, or 10 per cent => $1, or 20 per cent]] and the quantity demanded falls by 10 per cent. Using the percentage method, PED = % change in quantity demanded ÷ % change in price = 10 ÷ 20 = 0.5. Because PED is [[greater => less]] than 1, demand is relatively inelastic. This means the bakery's total revenue [[falls => rises]] when it raises its price: it rises from $5,000 to $5,400 a week.
+
+=== error y11-er-P2i-ceiling
+c: P2i.3
+lv: 2
+Q: This paragraph answers: "Explain the effects of a binding price ceiling."
+TEXT: A binding price ceiling is set [[above => below]] the equilibrium price. At this lower price the quantity demanded expands and the quantity supplied [[expands => contracts]]. As a result there is a [[surplus => shortage]] of the good. Some buyers who are willing to pay more cannot buy the good, so queues, waiting lists or black markets may develop.
+
+=== error y11-er-P2h-tax
+c: P2h.3 P2i.2
+lv: 2
+Q: This paragraph answers: "Explain how a tax can correct a negative externality in production."
+TEXT: When a firm pollutes, the marginal social cost of production is [[less => greater]] than its marginal private cost, because others bear part of the cost. The market therefore produces [[less => more]] than the socially efficient quantity. A tax equal to the external cost raises the firm's costs, so supply [[increases => decreases]]. The price rises and the quantity falls towards the efficient level, where marginal social cost equals marginal social benefit.
+
+=== error y11-er-P1e-cycle
+c: P1e.4 P1e.5
+lv: 1
+Q: This paragraph answers: "Describe the stages of the business cycle."
+TEXT: During an expansion, real GDP grows and unemployment [[rises => falls]]. The highest point of the cycle is the [[trough => peak]], when the economy is close to full capacity and inflation is likely to be rising. A contraction follows, during which growth slows or real GDP falls and unemployment rises. The lowest point of the cycle is the trough. Two consecutive quarters of [[rising => falling]] real GDP are often called a recession.
+
+=== error y11-er-P1c-ppf
+c: P1c.2 P1c.4 P1c.5
+lv: 2
+Q: This paragraph answers: "Explain what a production possibilities frontier shows."
+TEXT: A production possibilities frontier shows the maximum combinations of two goods an economy can produce with its [[unlimited => given]] resources and technology. A point on the frontier shows that resources are used efficiently. A point [[outside => inside]] the frontier shows unemployed resources. Moving along the frontier to produce more of one good means producing less of the other: this is the [[profit => opportunity cost]] of the choice. An improvement in technology shifts the frontier [[inwards => outwards]].
+
+=== error y11-er-P4c-funds
+c: P4c.5 P4c.6 P4c.7
+lv: 2
+Q: This paragraph answers: "Explain how a rise in household saving affects interest rates."
+TEXT: When households save more, the [[demand for => supply of]] loanable funds increases. The supply curve shifts to the right, so the interest rate [[rises => falls]] and the quantity of funds borrowed and lent rises. Lower interest rates reduce the cost of credit, so businesses are more likely to borrow to invest. Lower mortgage rates also make housing [[less => more]] affordable for new borrowers, although cheaper credit can push up house prices over time.
+
+=== error y11-er-P1d-flow
+c: P1d.2 P1d.4
+lv: 2
+Q: This paragraph answers: "Explain when the circular flow of income is in equilibrium."
+TEXT: Leakages are income that is not passed on as spending on domestic goods and services: savings, taxation and [[exports => imports]]. Injections are spending that comes from outside the household–business flow: investment, government spending and exports. The economy is in equilibrium when [[S + T + X => S + T + M]] equals I + G + X. If injections are greater than leakages, national income will [[fall => rise]] until the two are equal again.

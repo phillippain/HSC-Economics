@@ -1,0 +1,212 @@
+# Year 11 (2025 syllabus) true or false statements. The page picks 6 to 10 for the sections chosen.
+# "- T: statement => (optional) why it is true"   "- F: false statement => the corrected statement"
+
+=== tf y11-tf-P1a
+c: P1a.1 P1a.2 P1a.3 P1a.4 P1a.5 P1a.6 P1a.9 P1a.10
+- T: Scarcity exists because people's wants are unlimited while the resources to satisfy them are limited.
+- F: Opportunity cost is the money price paid for a good. => Opportunity cost is the value of the next best alternative given up when a choice is made.
+- T: Consumers, producers and governments are the economic agents that make economic decisions.
+- F: The cost–benefit principle says a choice is worth making whenever its total benefit is positive. => The cost–benefit principle says a choice is worth making when its marginal benefit is at least as great as its marginal cost.
+- T: An incentive can have unintended consequences that work against the aim of the policy.
+- F: Behavioural economics assumes that people always make rational, self-interested decisions. => Behavioural economics challenges that assumption: cognitive biases and ethical concerns shape real decisions.
+- T: Microeconomics studies individual markets, while macroeconomics studies the economy as a whole.
+
+=== tf y11-tf-P1b
+c: P1b.1 P1b.2 P1b.3 P1b.4 P1b.5
+- T: The four factors of production are land (natural resources), labour, capital and entrepreneurship.
+- F: Interest is the factor income earned by labour. => Wages are the income earned by labour; interest is the income earned by capital.
+- T: Every economy must decide what to produce, how to produce, how much to produce and how to distribute production.
+- F: In a free market economy, a central planning authority decides what is produced. => In a free market economy, consumers' spending and the price mechanism decide what is produced.
+- T: Australia is a mixed market economy.
+- F: Money acting as a store of value means it is accepted in exchange for goods and services. => That is money as a medium of exchange; as a store of value, money can be saved and spent later.
+
+=== tf y11-tf-P1c
+c: P1c.1 P1c.2 P1c.3 P1c.4 P1c.5 P1c.6
+- T: A production possibilities frontier shows the maximum combinations of two goods an economy can produce with its resources and technology.
+- F: A point outside the production possibilities frontier shows unemployed resources. => A point inside the frontier shows unemployed resources; a point outside it cannot be reached with current resources.
+- T: Moving along the frontier to produce more of one good has an opportunity cost: less of the other good.
+- F: An improvement in technology shifts the production possibilities frontier inwards. => An improvement in technology shifts the frontier outwards.
+- T: Producing more capital goods today can allow an economy to produce more of both goods in the future.
+
+=== tf y11-tf-P1d
+c: P1d.1 P1d.2 P1d.3 P1d.4 P1d.5
+- T: In the circular flow of income, households supply factors of production and businesses pay them factor incomes.
+- F: Exports are a leakage from the circular flow of income. => Exports are an injection; imports are a leakage.
+- T: The economy is in equilibrium when S + T + M = I + G + X.
+- F: When leakages are greater than injections, national income rises. => When leakages are greater than injections, national income falls.
+- T: The financial sector links saving, a leakage, with investment, an injection.
+
+=== tf y11-tf-P1e
+c: P1e.1 P1e.2 P1e.4 P1e.5 P1e.6 P1e.7
+- T: GDP is the total market value of the final goods and services produced in an economy in a period.
+- F: The trough is the highest point of the business cycle. => The peak is the highest point; the trough is the lowest point.
+- T: During an expansion, unemployment usually falls and inflationary pressures build.
+- F: During a contraction, government tax revenue rises and welfare spending falls. => During a contraction, tax revenue falls and spending on income support rises.
+- T: A fall in demand for exports can start a downturn in the business cycle.
+- T: Aboriginal and Torres Strait Islander businesses contribute to GDP through the goods and services they produce and the people they employ.
+
+=== tf y11-tf-P2a
+c: P2a.1 P2a.2 P2a.3
+- T: Prices signal to producers and consumers when a good has become more or less scarce.
+- F: The rationing function of price means everyone gets an equal share of a good. => The rationing function means a scarce good goes to those willing and able to pay the price.
+- T: Secure property rights and enforceable contracts encourage people to invest and trade.
+- F: Labour is traded in product markets. => Labour is traded in factor markets; goods and services are traded in product markets.
+
+=== tf y11-tf-P2b
+c: P2b.1 P2b.2 P2b.3 P2b.4 P2b.5
+- T: The law of demand states that, other things equal, a rise in price leads to a fall in the quantity demanded.
+- F: A change in a good's own price shifts its demand curve. => A change in a good's own price causes a movement along the demand curve.
+- T: A rise in the price of a substitute increases the demand for a good.
+- F: A rise in the price of a complement increases the demand for a good. => A rise in the price of a complement decreases the demand for a good.
+- T: Effective demand is the desire for a good backed by the ability and willingness to pay.
+
+=== tf y11-tf-P2c
+c: P2c.1 P2c.2 P2c.3 P2c.4 P2c.5
+- T: The supply curve slopes upwards because higher prices make it profitable to produce more.
+- F: An improvement in technology decreases supply. => An improvement in technology lowers costs and increases supply, shifting the supply curve right.
+- T: A rise in the cost of the factors of production decreases supply.
+- F: A rise in a good's own price is an increase in supply. => A rise in a good's own price causes an expansion of the quantity supplied, a movement along the curve.
+
+=== tf y11-tf-P2d
+c: P2d.1 P2d.2 P2d.3
+- T: At equilibrium, the quantity demanded equals the quantity supplied.
+- F: When the price is above equilibrium, there is a shortage. => When the price is above equilibrium, there is a surplus.
+- T: An increase in demand, with supply unchanged, raises both the equilibrium price and quantity.
+- F: A decrease in supply lowers the equilibrium price. => A decrease in supply raises the equilibrium price and lowers the equilibrium quantity.
+
+=== tf y11-tf-P2e
+c: P2e.1 P2e.2 P2e.3 P2e.4 P2e.5
+- T: PED = % change in quantity demanded ÷ % change in price.
+- F: When demand is price elastic, a price rise increases total revenue. => When demand is price elastic, a price rise reduces total revenue.
+- T: Goods with few close substitutes, such as necessities, tend to have price inelastic demand.
+- F: Demand usually becomes less elastic over time. => Demand usually becomes more elastic over time, as buyers find substitutes.
+- T: A perfectly inelastic demand curve is vertical.
+
+=== tf y11-tf-P2f
+c: P2f.1 P2f.2 P2f.3 P2f.4
+- T: Supply is usually more elastic in the long run than in the short run.
+- F: Spare capacity makes supply less elastic. => Spare capacity makes supply more elastic, because firms can raise output quickly.
+- T: A perfectly elastic supply curve is horizontal.
+- F: Goods that perish quickly have very elastic supply. => Perishable goods that cannot be stored tend to have inelastic supply.
+
+=== tf y11-tf-P2g
+c: P2g.1 P2g.2 P2g.3 P2g.4
+- T: In perfect competition, firms are price takers.
+- F: An oligopoly is a market with one seller. => A monopoly has one seller; an oligopoly is dominated by a few large firms.
+- T: Monopolistic competition has many firms selling differentiated products, with low barriers to entry.
+- F: Higher market concentration usually leads to lower prices for consumers. => Higher market concentration usually gives firms more pricing power, so prices tend to rise.
+- T: Network effects make a digital platform more valuable to each user as more people use it.
+
+=== tf y11-tf-P2h
+c: P2h.1 P2h.2 P2h.3 P2h.5 P2h.6 P2h.7 P2h.8
+- T: A negative externality is a cost borne by third parties who are not part of the transaction.
+- F: Public goods are rival and excludable. => Public goods are non-rival and non-excludable.
+- T: Merit goods, such as education, tend to be under-consumed when left to the market.
+- F: Collusion between firms benefits consumers through lower prices. => Collusion is an abuse of market power that raises prices for consumers.
+- T: Asymmetric information occurs when one party to a transaction knows more than the other.
+- F: A common-pool resource is non-rival. => A common-pool resource, such as a fish stock, is rival but hard to exclude people from.
+- T: Land held communally or under native title generally cannot be mortgaged, which can make it harder for some Aboriginal and Torres Strait Islander businesses to borrow.
+
+=== tf y11-tf-P2i
+c: P2i.1 P2i.2 P2i.3 P2i.4 P2i.5
+- T: A binding price ceiling is set below the equilibrium price and causes a shortage.
+- F: A price floor set below the equilibrium price causes a surplus. => A floor below equilibrium has no effect; a binding floor is set above equilibrium and causes a surplus.
+- T: A nudge changes how choices are presented without banning options or changing prices.
+- F: Government intervention always improves the allocation of resources. => Government intervention can fail, for example through unintended consequences or rent-seeking.
+- T: When demand is price inelastic, consumers bear most of the burden of a per-unit tax.
+
+=== tf y11-tf-P3a
+c: P3a.1 P3a.2 P3a.4 P3a.5 P3a.6 P3a.7 P3a.8
+- T: MPC + MPS = 1.
+- F: If the MPC is 0.9, the MPS is 0.9. => If the MPC is 0.9, the MPS is 0.1.
+- T: The law of diminishing marginal utility states that each extra unit consumed adds less satisfaction than the one before.
+- F: Demand for an inferior good rises as incomes rise. => Demand for an inferior good falls as incomes rise.
+- T: For a Veblen good, demand can rise when its price rises, because a high price signals status.
+- F: A sludge makes it easier for consumers to make choices that benefit them. => A sludge adds friction that makes beneficial choices harder, such as cancelling a subscription.
+
+=== tf y11-tf-P3b
+c: P3b.1 P3b.2
+- T: More affordable and available childcare tends to increase the supply of labour.
+- F: Geographic mobility of labour is the ability of workers to change occupations. => Geographic mobility is the ability to move between places; occupational mobility is the ability to change jobs or occupations.
+- T: Inflexible workplaces and inadequate leave entitlements can discourage people from joining the workforce.
+
+=== tf y11-tf-P3c
+c: P3c.1 P3c.2 P3c.3 P3c.4 P3c.5 P3c.6
+- T: Economic profit subtracts opportunity costs as well as explicit costs from revenue.
+- F: Accounting profit is usually smaller than economic profit. => Accounting profit is usually larger, because economic profit also subtracts implicit (opportunity) costs.
+- T: Productivity is output per unit of input, such as output per hour worked.
+- F: Capital deepening means hiring more workers. => Capital deepening means increasing the amount of capital per worker.
+- T: The technical optimum is the level of output at which long-run average cost is lowest.
+- F: Diseconomies of scale cause long-run average cost to fall as a firm grows. => Diseconomies of scale cause long-run average cost to rise as a firm grows beyond its technical optimum.
+
+=== tf y11-tf-P3d
+c: P3d.1 P3d.2 P3d.3
+- T: The Fair Work Commission sets Australia's national minimum wage each year.
+- F: Flexible working hours are a wage benefit. => Flexible working hours are a non-wage benefit.
+- T: A fall in the cost of capital relative to labour can reduce businesses' demand for labour.
+
+=== tf y11-tf-P4a
+c: P4a.1 P4a.2 P4a.3
+- T: The financial sector channels funds from savers to borrowers.
+- F: Superannuation contributions are voluntary for Australian employers. => Employers must pay the superannuation guarantee, 12 per cent of ordinary earnings from 1 July 2025.
+- T: Banks, insurers, fund managers and the central bank are types of financial intermediaries.
+
+=== tf y11-tf-P4b
+c: P4b.1 P4b.2
+- T: A share gives its owner part-ownership of a company.
+- F: Companies raise new funds each time their shares are traded on the secondary market. => Companies raise funds when new shares are issued in the primary market; secondary trading is between investors.
+- T: An initial public offering takes place in the primary share market.
+
+=== tf y11-tf-P4c
+c: P4c.1 P4c.2 P4c.3 P4c.4 P4c.5 P4c.6 P4c.7
+- T: The interest rate is the price of money: the cost of credit and the return on savings.
+- F: An increase in household saving increases the demand for loanable funds. => An increase in saving increases the supply of loanable funds, which lowers the interest rate.
+- T: Riskier borrowers usually pay higher interest rates.
+- F: A rise in interest rates makes housing more affordable for new buyers. => A rise in interest rates raises repayments and reduces how much buyers can borrow, making housing less affordable.
+- T: Governments borrow in the debt market by issuing bonds.
+
+=== tf y11-tf-P5a
+c: P5a.1 P5a.3 P5a.4 P5a.5 P5a.6 P5a.7
+- T: The roles of government include redistribution, reallocation, stabilisation and correcting market failure.
+- F: A budget surplus occurs when government spending is greater than revenue. => A budget deficit occurs when spending is greater than revenue; a surplus is when revenue is greater.
+- T: A nudge uses insights about behaviour to encourage a choice without forcing it.
+- F: Privatisation is the government taking ownership of a private business. => Privatisation is the sale of a government business to private owners; nationalisation is the reverse.
+
+=== tf y11-tf-P5b
+c: P5b.1 P5b.2 P5b.3 P5b.4 P5b.5 P5b.6
+- T: Individual income tax is the largest source of Australian Government revenue.
+- F: The GST is a direct tax. => The GST is an indirect tax on spending.
+- T: The legal incidence of a tax is on whoever must pay it to the government.
+- F: A regressive tax takes a larger share of income from people on high incomes. => A regressive tax takes a larger share of income from people on low incomes.
+- T: Simplicity, fairness and efficiency are features of a good tax.
+
+=== tf y11-tf-P5c
+c: P5c.1 P5c.2 P5c.3
+- T: Social security and welfare is the largest area of Australian Government spending.
+- F: Building a new hospital is recurrent government spending. => Building a hospital is non-recurrent (capital) spending; running it is recurrent spending.
+- T: The NDIS, aged care and health are among the fastest-growing areas of Australian Government spending.
+
+=== tf y11-tf-P6a
+c: P6a.1 P6a.2 P6a.3 P6a.4
+- T: Trade based on comparative advantage lets countries produce more from the same resources.
+- F: The United States is Australia's largest two-way trading partner. => China is Australia's largest two-way trading partner.
+- T: Mineral and energy resources make up the largest share of Australia's goods exports.
+- F: A trade surplus occurs when imports are greater than exports. => A trade surplus occurs when exports are greater than imports.
+- T: From at least the 1700s, before European colonisation, Yolŋu people in Arnhem Land traded with fishermen from Makassar, who sold the trepang they collected to China.
+
+=== tf y11-tf-P6b
+c: P6b.1 P6b.2
+- T: Foreign debt must be repaid with interest, while foreign equity earns dividends and profits for its overseas owners.
+- F: China is the largest source of foreign investment in Australia. => The United States is the largest source of foreign investment in Australia.
+- T: Australian companies borrowing from overseas banks add to Australia's foreign debt.
+
+=== tf y11-tf-P6c
+c: P6c.1 P6c.2
+- T: An exchange rate is the price of one currency in terms of another.
+- F: If A$1 falls from US$0.70 to US$0.65, the Australian dollar has appreciated. => The Australian dollar has depreciated, because each A$1 buys fewer US dollars.
+- T: If A$1 = US$0.65, a US$650 item costs A$1,000.
+
+=== tf y11-tf-P6d
+c: P6d.1
+- T: The balance of payments records all economic transactions between Australian residents and the rest of the world.
+- F: Exports of beef are recorded in the financial account. => Exports are recorded in the current account; the financial account records investment and borrowing.

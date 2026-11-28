@@ -260,8 +260,8 @@ a.sm-a:hover,a.sm-a:focus-visible{background:#eaf0fe;outline:none}
     <h1>Worksheet Maker</h1>
     <p class="tag">Make a printable practice sheet: choose the dot points and skills, mix past HSC questions with new questions, key terms, diagrams, calculations and cause-and-effect tasks, then set out the page and download the PDF.</p>
   </div>
-  <div class="seg" id="fw" role="group" aria-label="Choose the syllabus">
-    <button data-fw="h09" aria-pressed="true">2009 syllabus</button><button data-fw="y12" aria-pressed="false">2025 syllabus</button>
+  <div class="seg" id="fw" role="group" aria-label="Choose the syllabus and the course">
+    <button data-fw="h09" aria-pressed="true" title="Year 12 (HSC), 2009 syllabus">2009 HSC</button><button data-fw="y11" aria-pressed="false" title="Year 11 (Preliminary), 2025 syllabus">2025 Year 11</button><button data-fw="y12" aria-pressed="false" title="Year 12 (HSC), 2025 syllabus">2025 Year 12</button>
   </div>
 </header>
 <nav class="tabs" role="tablist" aria-label="Steps">
@@ -465,19 +465,28 @@ const TC = { T1: '#2447d6', T2: '#0e8a8a', T3: '#d9822b', T4: '#8a3fb0', Y1: '#d
 let D = null;
 const POOL = new Map(), DOT = {}, SEC = {}, TOP = {}, SECN = {}, XW = {};
 function indexData() {
-  for (const fw of ['h09', 'y12']) for (const t of D.syl[fw]) for (const s of t.sections) {
+  for (const fw of ['h09', 'y12', 'y11']) for (const t of D.syl[fw] || []) for (const s of t.sections) {
     SECN[s.id] = s.name;
     for (const p of s.points) { DOT[p.id] = p.t; SEC[p.id] = s.id; TOP[p.id] = t.id; }
     TOP[s.id] = t.id;
   }
-  for (const [s09, ys] of D.xwalk) XW[s09] = ys.filter(y => y[0] === 'Y');
+  for (const [s09, ys] of D.xwalk) XW[s09] = ys;     // a 2009 section -> 2025 sections (Year 12 Y..., Year 11 P...)
   D.prac.forEach(p => { KINDN[p.k] = p.n; });
   for (const it of D.items) addToPool(it);
 }
+/* The 2025 sections a code belongs to: a 2025 dot point (Y1a.2, P2e.3) or section (Y3c, P2e) directly; a 2009 dot
+   point through the class crosswalk (2C.1 -> Y3c and P6c). */
+function secs25(c) { return /^[PY]\d/.test(c) ? [SEC[c] || (SECN[c] ? c : '')].filter(Boolean) : (XW[SEC[c]] || []); }
 function addToPool(it) {
-  it._y = uniq(it.c.flatMap(c => XW[SEC[c]] || []).concat((it.c25 || []).map(c => SEC[c]).filter(Boolean)));
+  const all = it.c.concat(it.c25 || []);
+  it._y = uniq(all.flatMap(secs25));                                         // directly or through the crosswalk
+  it._yd = uniq(all.filter(c => /^[PY]\d/.test(c)).flatMap(secs25));         // tagged to the 2025 syllabus directly
   POOL.set(it.id, it);
 }
+/* The 2025 sections that count for a question. Year 11 uses only material tagged to Year 11 directly (the Year 11
+   bank, news, key terms and calculations), so HSC-level content does not come in through the crosswalk. The one
+   exception is past HSC questions, which the teacher can add for stretch (step 3). */
+const y25 = it => S.fw === 'y11' && it.src !== 'hsc' ? it._yd || [] : it._y || [];
 /* The teacher's decisions from the Question review page (staff Tools site), saved in bank/reviews.json. A decision
    counts only while the question is unchanged (same fingerprint h): approved questions lose "not yet reviewed";
    flagged and removed ones stay out of new worksheets (a sheet that already has one still shows it, labelled). */
@@ -503,9 +512,10 @@ async function liveEvidence() {
     for (const e of E) {
       const id = 'ev:' + e.id; if (POOL.has(id)) continue;
       const qs = (e.questions || []).filter(q => q.q), c = ((e.about || {}).h09 || []).filter(p => DOT[p]);
-      if (!qs.length || !c.length) continue;
+      const c25 = ((e.about || {}).y12 || []).concat((e.about || {}).y11 || []).filter(p => DOT[p]);
+      if (!qs.length || !(c.length || c25.length)) continue;
       const figs = (e.figures || []).slice(0, 6).map(f => ({ label: f.label || '', value: f.value || '', asAt: f.asAt || '', source: f.source || '' }));
-      const x = { id, src: 'ev', f: 'stim', c, c25: (e.about || {}).y12 || [], date: e.date, title: e.title, outlets: e.outlets || [], lede: e.lede || '', figs,
+      const x = { id, src: 'ev', f: 'stim', c, c25, date: e.date, title: e.title, outlets: e.outlets || [], lede: e.lede || '', figs,
         qs: qs.slice(0, 4).map(q => ({ q: q.q, m: +q.marks || 2 })), guide: e.angle || '', terms: (e.terms || []).slice(0, 4), k: ['stimulus', 'extract'].concat(figs.length ? ['table'] : []), live: true };
       x.m = x.qs.reduce((a, q) => a + q.m, 0);
       D.items.push(x); addToPool(x); n++;
@@ -519,36 +529,49 @@ function defaultLayout(style) {
   const s = STYLES[style];
   return { style, size: 0, space: s.space, amount: 1, cols: s.cols, group: 'format', marks: true, tags: false, source: true, instr: true,
     name: true, cls: true, date: true, intro: '', time: true, breaks: style === 'adapt', erPages: style === 'compact' ? 0 : 1, plan: true,
-    answers: 'none', mcGrid: false, hints: style === 'adapt', wordbank: true, version: 'A', diagram: 'blank' };
+    answers: 'none', mcGrid: false, hints: style === 'adapt', wordbank: true, version: 'A', diagram: 'blank', course: 'hsc' };
 }
 const newSheet = () => ({ id: 'ws' + Date.now().toString(36), title: 'Practice worksheet', items: [], layout: defaultLayout('exam'), seed: Math.floor(Math.random() * 1e9), created: Date.now() });
-const S = { view: 'build', fw: 'h09', topic: 'T1', q: '', sel09: new Set(), sel25: new Set(), skills: new Set(),
-  counts: { mc: 8, sa: 3 }, src: { hsc: true, bank: true, ev: true, auto: true }, from: 2009, to: 2026, lv: 0, whole: false, ws: newSheet() };
+const S = { view: 'build', fw: 'h09', topic: 'T1', q: '', sel09: new Set(), sel25: new Set(), sel11: new Set(), skills: new Set(),
+  counts: { mc: 8, sa: 3 }, src: { hsc: true, hsc11: false, bank: true, ev: true, auto: true }, from: 2009, to: 2026, lv: 0, whole: false, ws: newSheet() };
 let SAMPLE = null, DOWNLOADS = null, CLAUDE = null, APIKEY = null;
 function persist() {
-  store.set(KEY + ':cur', { fw: S.fw, topic: S.topic, sel09: [...S.sel09], sel25: [...S.sel25], skills: [...S.skills], counts: S.counts, src: S.src,
+  store.set(KEY + ':cur', { fw: S.fw, topic: S.topic, sel09: [...S.sel09], sel25: [...S.sel25], sel11: [...S.sel11], skills: [...S.skills], counts: S.counts, src: S.src,
     from: S.from, to: S.to, lv: S.lv, whole: S.whole, ws: S.ws });
 }
 function restore() {
   const c = store.get(KEY + ':cur', null); if (!c) return;
   Object.assign(S, { fw: c.fw || 'h09', topic: c.topic || 'T1', counts: c.counts || S.counts, src: Object.assign(S.src, c.src || {}),
     from: c.from || 2009, to: c.to || 2026, lv: c.lv || 0, whole: !!c.whole });
-  S.sel09 = new Set(c.sel09 || []); S.sel25 = new Set(c.sel25 || []); S.skills = new Set(c.skills || []);
+  S.sel09 = new Set(c.sel09 || []); S.sel25 = new Set(c.sel25 || []); S.sel11 = new Set(c.sel11 || []); S.skills = new Set(c.skills || []);
   if (c.ws && Array.isArray(c.ws.items)) { S.ws = c.ws; S.ws.layout = Object.assign(defaultLayout(c.ws.layout && c.ws.layout.style || 'exam'), c.ws.layout || {}); }
 }
 const itemOf = e => e.item || POOL.get(e.ref);
 
 /* ================================================================ matching */
-const hasSel = () => S.fw === 'h09' ? S.sel09.size > 0 : S.sel25.size > 0;
-function inContentC(c) {
-  if (S.fw === 'h09') return c.some(x => S.sel09.has(x));
-  return c.some(x => (XW[SEC[x]] || []).some(y => S.sel25.has(y)));
+/* S.fw: 'h09' (2009 syllabus, HSC dot points), 'y11' or 'y12' (2025 syllabus, Year 11 or Year 12 sections). */
+const selOf = () => S.fw === 'h09' ? S.sel09 : S.fw === 'y11' ? S.sel11 : S.sel25;
+const hasSel = () => selOf().size > 0;
+const courseOf = () => S.fw === 'y11' ? 'y11' : 'hsc';
+const COURSE = { hsc: 'HSC Economics', y11: 'Year 11 Economics' };
+/* The dot points to show for a question: Year 11 codes on a Year 11 sheet, HSC codes otherwise (key terms and
+   calculations can carry both). */
+function codesShown(it) {
+  const all = (it.c || []).concat(it.c25 || []), y11 = (LAY().course || 'hsc') === 'y11';
+  const pick = y11 ? all.filter(c => c[0] === 'P') : ((it.c || []).length ? it.c : it.c25 || []).filter(c => c[0] !== 'P');
+  return pick.length ? pick : all;
 }
-function inContent(it) { return S.fw === 'h09' ? it.c.some(c => S.sel09.has(c)) : (it._y || []).some(y => S.sel25.has(y)); }
+function inContentC(c) {     // key terms, true/false statements and calculations
+  if (S.fw === 'h09') return c.some(x => S.sel09.has(x));
+  const sel = selOf();
+  if (S.fw === 'y11') return c.some(x => x[0] === 'P' && sel.has(SEC[x]));
+  return c.some(x => secs25(x).some(y => sel.has(y)));
+}
+function inContent(it) { if (S.fw === 'h09') return it.c.some(c => S.sel09.has(c)); const sel = selOf(); return y25(it).some(y => sel.has(y)); }
 function inSkills(k, ss) { if (!S.skills.size) return true; return (k || []).some(x => S.skills.has(x)) || (ss || []).some(x => S.skills.has(x)); }
 function srcOk(it) {
   if (it.hold) return false;              // flagged for a fix or removed on the Question review page
-  if (it.src === 'hsc') return S.src.hsc && it.y >= S.from && it.y <= S.to;
+  if (it.src === 'hsc') return (S.fw === 'y11' ? S.src.hsc11 : S.src.hsc) && it.y >= S.from && it.y <= S.to;
   if (it.src === 'bank' || it.src === 'claude') return S.src.bank;
   if (it.src === 'ev') return S.src.ev;
   return S.src.auto;
@@ -603,7 +626,8 @@ function genItem(fmt, rnd, used, size) {
     const pool = shuffle(tfFor().filter(t => !used.has(t.id)), rnd).slice(0, size || 8); if (pool.length < 4) return null;
     pool.forEach(t => used.add(t.id));
     const rows = pool.map(t => { const showTrue = !t.f || (t.t && rnd() < 0.5); return { s: showTrue ? t.t : t.f, ans: showTrue, fix: showTrue ? (t.why || '') : t.t, why: t.why || '' }; });
-    return Object.assign(base, { c: uniq(pool.flatMap(t => t.c)), k: ['recall', 'explain'], m: rows.length, rows });
+    const from = pool.every(t => t.h) ? 'bank' : pool.some(t => t.h) ? 'mixed' : 'chain';      // bank statements carry a fingerprint
+    return Object.assign(base, { c: uniq(pool.flatMap(t => t.c)), k: ['recall', 'explain'], m: rows.length, rows, from });
   }
   if (fmt === 'calc') {
     let skills = calcFor(); if (!skills.length) return null;
@@ -646,7 +670,7 @@ function htmlBlocks(html) {
 /* ================================================================ making a worksheet */
 function firstSel(it) {
   if (S.fw === 'h09') return it.c.find(c => S.sel09.has(c)) || it.c[0] || '';
-  return (it._y || []).find(y => S.sel25.has(y)) || '';
+  const sel = selOf(); return y25(it).find(y => sel.has(y)) || '';
 }
 function pickFor(fmt, n, rnd, used) {
   const out = [];
@@ -678,6 +702,7 @@ function make(append) {
   if (!hasSel()) { toast('Choose at least one dot point first.'); $('#st-content').open = true; $('#st-content').scrollIntoView({ behavior: 'smooth' }); return; }
   const before = clone(S.ws.items);
   if (!append) S.ws.items = [];
+  if (!S.ws.items.length) S.ws.layout.course = courseOf();
   const rnd = newRnd(), used = usedSet(), short = [];
   let added = 0;
   for (const f of FMT) {
@@ -687,7 +712,7 @@ function make(append) {
     const wanted = f.id === 'define' ? 1 : n;
     if (got.length < wanted) short.push(`${f.name.toLowerCase()} (${got.length} of ${n})`);
   }
-  if (!append && S.ws.title === 'Practice worksheet' || !S.ws.title) S.ws.title = autoTitle();
+  if (!append && (S.ws.title === 'Practice worksheet' || S.ws.autoT) || !S.ws.title) { S.ws.title = autoTitle(); S.ws.autoT = true; }
   persist(); renderAll();
   if (!added) toast('No questions match. Choose more dot points, more question types or more sources.');
   else toast(short.length ? `Added ${added}. Not enough for: ${short.join(', ')}.` : `Added ${added} ${added === 1 ? 'question' : 'questions'}.`, () => { S.ws.items = before; persist(); renderAll(); });
@@ -700,7 +725,11 @@ function autoTitle() {
     if (tops.length === 1) { const t = D.syl.h09.find(x => x.id === tops[0]); return t.name + ': practice'; }
     return 'HSC Economics practice';
   }
-  const secs = [...S.sel25]; return secs.length === 1 ? SECN[secs[0]] + ': practice' : 'HSC Economics practice';
+  const secs = [...selOf()], tops = uniq(secs.map(x => TOP[x]));
+  if (secs.length === 1) return SECN[secs[0]] + ': practice';
+  const t = tops.length === 1 && (D.syl[S.fw] || []).find(x => x.id === tops[0]);
+  if (t) return t.name.charAt(0).toUpperCase() + t.name.slice(1) + ': practice';
+  return COURSE[courseOf()] + ' practice';
 }
 
 /* ================================================================ worksheet order and numbering */
@@ -746,7 +775,7 @@ function srcLabel(it) {
   if (it.src === 'claude') return 'Written by Claude';
   if (['match', 'cloze', 'define'].includes(it.f) || (it.f === 'mc' && it.gen)) return 'From the Glossary';
   if (it.f === 'calc') return 'From the Calculation Trainer';
-  if (it.f === 'tf') return 'From the Chain Builder';
+  if (it.f === 'tf') return it.from === 'bank' ? 'New statements' : it.from === 'mixed' ? 'Chain Builder and new statements' : 'From the Chain Builder';
   if (it.f === 'chain' || (it.f === 'order' && it.id.startsWith('or:'))) return 'From the Chain Builder';
   if (it.f === 'order') return 'From the Topic Map';
   return 'Class tools';
@@ -781,15 +810,15 @@ function countFor(pointOrSec) {
   let n = 0;
   for (const it of D.items) {
     if (!srcOk(it) || !lvOk(it)) continue;
-    if (S.fw === 'h09' ? it.c.includes(pointOrSec) : (it._y || []).includes(pointOrSec)) n++;
+    if (S.fw === 'h09' ? it.c.includes(pointOrSec) : y25(it).includes(pointOrSec)) n++;
   }
   return n;
 }
 function renderContent() {
   const T = topicsNow(); if (!T.some(t => t.id === S.topic)) S.topic = T[0].id;
-  const selN = S.fw === 'h09' ? S.sel09.size : S.sel25.size;
+  const selN = selOf().size;
   $('#ttabs').innerHTML = T.map(t => {
-    const n = S.fw === 'h09' ? t.sections.flatMap(s => s.points).filter(p => S.sel09.has(p.id)).length : t.sections.filter(s => S.sel25.has(s.id)).length;
+    const n = S.fw === 'h09' ? t.sections.flatMap(s => s.points).filter(p => S.sel09.has(p.id)).length : t.sections.filter(s => selOf().has(s.id)).length;
     return `<button class="ttab" style="--tc:${t.color}" data-t="${t.id}" aria-pressed="${t.id === S.topic}">${esc(t.label || t.id)}${n ? `<span class="c">${n}</span>` : ''}</button>`;
   }).join('');
   const q = S.q.trim().toLowerCase();
@@ -805,17 +834,17 @@ function renderContent() {
     } else {
       if (q && !(s.id + ' ' + s.name + ' ' + s.points.map(p => p.t).join(' ')).toLowerCase().includes(q)) continue;
       const n = countFor(s.id);
-      html += `<div class="sec" style="padding:6px 0"><label class="pt ${n ? '' : 'none'}" style="grid-template-columns:22px 44px 1fr auto;padding-left:0"><input type="checkbox" data-s25="${s.id}" ${S.sel25.has(s.id) ? 'checked' : ''}><span class="id">${s.id}</span><span><b>${esc(s.name)}</b><br><span class="hint">${esc((t => t.length > 150 ? t.slice(0, 148) + '…' : t)(s.points.map(p => p.t).join('; ')))}</span></span><span class="cnt">${n}</span></label></div>`;
+      html += `<div class="sec" style="padding:6px 0"><label class="pt ${n ? '' : 'none'}" style="grid-template-columns:22px 44px 1fr auto;padding-left:0"><input type="checkbox" data-s25="${s.id}" ${selOf().has(s.id) ? 'checked' : ''}><span class="id">${s.id}</span><span><b>${esc(s.name)}</b><br><span class="hint">${esc((t => t.length > 150 ? t.slice(0, 148) + '…' : t)(s.points.map(p => p.t).join('; ')))}</span></span><span class="cnt">${n}</span></label></div>`;
     }
   }
   $('#secs').innerHTML = html || '<p class="hint" style="padding:10px">Nothing matches that search.</p>';
-  $('#selline').innerHTML = selN ? `<b>${selN}</b> ${S.fw === 'h09' ? (selN === 1 ? 'dot point' : 'dot points') : (selN === 1 ? 'section' : 'sections')} chosen <button class="btn ghost sm" id="selclear">Clear</button>` + (S.fw === 'y12' ? ' <span class="hint">Questions are matched to the 2025 syllabus through the class crosswalk.</span>' : '') : '<span class="hint">Tick the dot points to practise. Tick a section heading to take all of it.</span>';
+  $('#selline').innerHTML = selN ? `<b>${selN}</b> ${S.fw === 'h09' ? (selN === 1 ? 'dot point' : 'dot points') : (selN === 1 ? 'section' : 'sections')} chosen <button class="btn ghost sm" id="selclear">Clear</button>` + (S.fw === 'y12' ? ' <span class="hint">Questions are matched to the 2025 syllabus through the class crosswalk.</span>' : S.fw === 'y11' ? ' <span class="hint">Year 11 questions, news, key terms and calculations tagged to the 2025 Year 11 course. Past HSC questions are optional (step 3).</span>' : '') : `<span class="hint">${S.fw === 'h09' ? 'Tick the dot points to practise. Tick a section heading to take all of it.' : `Tick the ${S.fw === 'y11' ? 'Year 11' : 'Year 12'} sections to practise.`}</span>`;
   $('#sum-content').textContent = selN ? `${selN} chosen` : '';
   // skills
   $('#prac').innerHTML = D.prac.map(p => `<button class="chip" data-k="${p.k}" aria-pressed="${S.skills.has(p.k)}">${esc(p.n)}</button>`).join('');
-  const topIds = S.fw === 'h09' ? uniq([...S.sel09].map(p => TOP[p])) : uniq([...S.sel25].flatMap(y => D.xwalk.filter(x => x[1].includes(y)).map(x => TOP[x[0] + '.1'] || '')));
+  const topIds = S.fw === 'h09' ? uniq([...S.sel09].map(p => TOP[p])) : S.fw === 'y12' ? uniq([...S.sel25].flatMap(y => D.xwalk.filter(x => x[1].includes(y)).map(x => TOP[x[0] + '.1'] || ''))) : [];
   const ssk = D.syl.h09.filter(t => topIds.includes(t.id)).flatMap(t => t.sections.filter(s => s.skills).flatMap(s => s.points));
-  $('#ssk').innerHTML = ssk.length ? ssk.map(p => `<button class="chip" data-k="${p.id}" aria-pressed="${S.skills.has(p.id)}" title="${esc(p.t)}">${p.id} ${esc(p.t.length > 46 ? p.t.slice(0, 44) + '…' : p.t)}</button>`).join('') : '<span class="hint">Choose dot points to see their topic’s skills.</span>';
+  $('#ssk').innerHTML = ssk.length ? ssk.map(p => `<button class="chip" data-k="${p.id}" aria-pressed="${S.skills.has(p.id)}" title="${esc(p.t)}">${p.id} ${esc(p.t.length > 46 ? p.t.slice(0, 44) + '…' : p.t)}</button>`).join('') : `<span class="hint">${S.fw === 'y11' ? 'These skills come from the 2009 HSC syllabus, so there are none for Year 11. Use the skills above.' : 'Choose dot points to see their topic’s skills.'}</span>`;
   $('#skillcnt').textContent = S.skills.size ? S.skills.size + ' on' : '';
 }
 
@@ -838,13 +867,13 @@ function renderSources() {
   const yrs = []; for (let y = 2002; y <= 2026; y++) yrs.push(y);
   const opt = (v, cur) => yrs.map(y => `<option ${y === cur ? 'selected' : ''}>${y}</option>`).join('');
   $('#sources').innerHTML = `
-    <label class="opt"><input type="checkbox" data-src="hsc" ${S.src.hsc ? 'checked' : ''}><span><b>Past HSC questions</b> from the Question Finder, from <select id="from" aria-label="From">${opt(0, S.from)}</select> to <select id="to" aria-label="To">${opt(0, S.to)}</select>, with NESA’s marking criteria for 2009 to 2025</span></label>
+    <label class="opt"><input type="checkbox" data-src="${S.fw === 'y11' ? 'hsc11' : 'hsc'}" ${(S.fw === 'y11' ? S.src.hsc11 : S.src.hsc) ? 'checked' : ''}><span><b>Past HSC questions</b>${S.fw === 'y11' ? ' (Year 12 level, for stretch: those the class crosswalk links to the Year 11 sections)' : ''} from the Question Finder, from <select id="from" aria-label="From">${opt(0, S.from)}</select> to <select id="to" aria-label="To">${opt(0, S.to)}</select>, with NESA’s marking criteria for 2009 to 2025</span></label>
     <label class="opt" style="padding-left:24px"><input type="checkbox" id="whole" ${S.whole ? 'checked' : ''}><span>Keep HSC short-answer questions whole (add every part of a question, even parts on other dot points)</span></label>
-    <label class="opt"><input type="checkbox" data-src="bank" ${S.src.bank ? 'checked' : ''}><span><b>New practice questions</b> written for this site: HSC-style questions, diagrams, sorting, comparing and spot-the-error tasks${CLAUDE ? ', and any Claude writes for you' : ''}</span></label>
+    <label class="opt"><input type="checkbox" data-src="bank" ${S.src.bank ? 'checked' : ''}><span><b>New practice questions</b> written for this site: ${S.fw === 'y11' ? 'Year 11' : 'HSC-style'} questions, diagrams, sorting, comparing and spot-the-error tasks${CLAUDE ? ', and any Claude writes for you' : ''}</span></label>
     <label class="opt"><input type="checkbox" data-src="ev" ${S.src.ev ? 'checked' : ''}><span><b>This year’s news and data</b> from the Evidence Finder, with its questions</span></label>
-    <label class="opt"><input type="checkbox" data-src="auto" ${S.src.auto ? 'checked' : ''}><span><b>Built from the class tools</b>: key terms (Glossary), calculations (Calculation Trainer), chains and true or false (Chain Builder), pathways (Topic Map)</span></label>
-    <label class="field" style="max-width:280px"><span>Level of the new questions</span><select id="lv"><option value="0">Any level</option><option value="1" ${S.lv === 1 ? 'selected' : ''}>Foundation</option><option value="2" ${S.lv === 2 ? 'selected' : ''}>HSC standard</option><option value="3" ${S.lv === 3 ? 'selected' : ''}>Extension (Band 6)</option></select></label>`;
-  const on = Object.entries(S.src).filter(([, v]) => v).length;
+    <label class="opt"><input type="checkbox" data-src="auto" ${S.src.auto ? 'checked' : ''}><span><b>Built from the class tools</b>: ${S.fw === 'y11' ? 'the key terms (Glossary) and calculations (Calculation Trainer) that Year 11 uses, and true or false from the Year 11 bank' : 'key terms (Glossary), calculations (Calculation Trainer), chains and true or false (Chain Builder), pathways (Topic Map)'}</span></label>
+    <label class="field" style="max-width:280px"><span>Level of the new questions</span><select id="lv"><option value="0">Any level</option><option value="1" ${S.lv === 1 ? 'selected' : ''}>Foundation</option><option value="2" ${S.lv === 2 ? 'selected' : ''}>${S.fw === 'y11' ? 'Year 11 standard' : 'HSC standard'}</option><option value="3" ${S.lv === 3 ? 'selected' : ''}>${S.fw === 'y11' ? 'Extension' : 'Extension (Band 6)'}</option></select></label>`;
+  const on = [S.fw === 'y11' ? 'hsc11' : 'hsc', 'bank', 'ev', 'auto'].filter(k => S.src[k]).length;
   $('#sum-sources').textContent = on === 4 ? 'all sources' : `${on} of 4 sources`;
 }
 
@@ -867,7 +896,7 @@ function renderList() {
         (CLAUDE && (it.src === 'hsc' || it.src === 'bank' || it.src === 'ev') ? `<button class="c" data-act="clike" data-k="${x.e.k}" title="Claude writes a new question modelled on this one">Look-alike by Claude</button>` : ''),
         (CLAUDE && ['mc', 'sa', 'er', 'stim', 'draw', 'sort', 'compare', 'error'].includes(it.f) ? `<button class="c" data-act="plain" data-k="${x.e.k}" title="Claude rewrites the wording in plain English">Simpler wording</button>` : ''),
         `<button data-act="edit" data-k="${x.e.k}">Edit</button>`, `<button data-act="del" data-k="${x.e.k}">Remove</button>`].join('');
-      html += `<div class="q" style="--gc:var(${g.css})"><span class="no">${isFirst ? u.num : ''}</span><div class="meta"><span class="f">${esc(FBY[it.f].name)}</span><span>${esc(srcLabel(it))}</span><span>${esc(it.c.slice(0, 4).join(' '))}</span><span class="m">${marksOf(it)} ${marksOf(it) === 1 ? 'mark' : 'marks'}</span>${it.hold ? `<span class="rev">${it.hold === 'fix' ? 'flagged: needs a fix' : 'removed from the bank'}</span>` : it.rev ? '<span class="rev">not yet reviewed</span>' : ''}${it.src === 'claude' ? '<span class="rev">check before printing</span>' : ''}${it.ed ? '<span>edited</span>' : ''}${it.part ? `<span>part ${esc(it.part)}</span>` : ''}</div><div class="txt">${preview(it)}</div><div class="acts">${acts}</div></div>`;
+      html += `<div class="q" style="--gc:var(${g.css})"><span class="no">${isFirst ? u.num : ''}</span><div class="meta"><span class="f">${esc(FBY[it.f].name)}</span><span>${esc(srcLabel(it))}</span><span>${esc(codesShown(it).slice(0, 4).join(' '))}</span><span class="m">${marksOf(it)} ${marksOf(it) === 1 ? 'mark' : 'marks'}</span>${it.hold ? `<span class="rev">${it.hold === 'fix' ? 'flagged: needs a fix' : 'removed from the bank'}</span>` : it.rev ? '<span class="rev">not yet reviewed</span>' : ''}${it.src === 'claude' ? '<span class="rev">check before printing</span>' : ''}${it.ed ? '<span>edited</span>' : ''}${it.part ? `<span>part ${esc(it.part)}</span>` : ''}</div><div class="txt">${preview(it)}</div><div class="acts">${acts}</div></div>`;
     }
   }
   $('#list').innerHTML = html;
@@ -890,8 +919,11 @@ function swapEntry(k) {
   const i = entryIndex(k), it = itemOf(S.ws.items[i]); if (!it) return;
   const before = clone(S.ws.items[i]), rnd = newRnd();
   if (it.gen) {
-    const saved = { sel09: S.sel09, sel25: S.sel25 };
-    if (!hasSel()) { S.sel09 = new Set(it.c); }
+    const saved = { sel09: S.sel09, sel25: S.sel25, sel11: S.sel11 };
+    if (!hasSel()) {
+      if (S.fw === 'h09') S.sel09 = new Set(it.c);
+      else { const pre = S.fw === 'y11' ? 'P' : 'Y', secs = new Set(it.c.flatMap(secs25).filter(y => y[0] === pre)); if (S.fw === 'y11') S.sel11 = secs; else S.sel25 = secs; }
+    }
     let x = it.f === 'calc' ? calcItem(D.calc.find(c => c.id === it.skill), rnd) : genItem(it.f, rnd, usedSet(), (it.pairs || it.rows || []).length || 8);
     Object.assign(S, saved);
     if (!x) { toast('No other question of this kind for these dot points.'); return; }
@@ -1015,18 +1047,20 @@ function go(v) {
 }
 function bind() {
   $$('.tab').forEach(t => t.onclick = () => go(t.dataset.view));
-  $('#fw').onclick = e => { const b = e.target.closest('[data-fw]'); if (!b) return; S.fw = b.dataset.fw; $$('#fw button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); S.topic = topicsNow()[0].id; persist(); renderAll(); };
+  $('#fw').onclick = e => { const b = e.target.closest('[data-fw]'); if (!b) return; S.fw = b.dataset.fw; $$('#fw button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); S.topic = topicsNow()[0].id;
+    if (!S.ws.items.length) S.ws.layout.course = courseOf();
+    persist(); renderAll(); };
   $('#q').addEventListener('input', e => { S.q = e.target.value; renderContent(); });
   $('#ttabs').onclick = e => { const b = e.target.closest('[data-t]'); if (!b) return; S.topic = b.dataset.t; S.q = ''; $('#q').value = ''; persist(); renderContent(); };
   $('#secs').addEventListener('change', e => {
     const t = e.target;
     if (t.dataset.p) { t.checked ? S.sel09.add(t.dataset.p) : S.sel09.delete(t.dataset.p); }
     else if (t.dataset.sec) { const sec = topicsNow().flatMap(x => x.sections).find(s => s.id === t.dataset.sec); sec.points.forEach(p => t.checked ? S.sel09.add(p.id) : S.sel09.delete(p.id)); }
-    else if (t.dataset.s25) { t.checked ? S.sel25.add(t.dataset.s25) : S.sel25.delete(t.dataset.s25); }
+    else if (t.dataset.s25) { t.checked ? selOf().add(t.dataset.s25) : selOf().delete(t.dataset.s25); }
     persist(); renderContent(); renderFormats();
   });
   $('#secs').addEventListener('click', e => { if (e.target.matches('summary input')) e.stopPropagation(); }, true);
-  $('#selline').onclick = e => { if (e.target.id === 'selclear') { S.fw === 'h09' ? S.sel09.clear() : S.sel25.clear(); persist(); renderContent(); renderFormats(); } };
+  $('#selline').onclick = e => { if (e.target.id === 'selclear') { selOf().clear(); persist(); renderContent(); renderFormats(); } };
   $('#skillbox').addEventListener('click', e => { const b = e.target.closest('[data-k]'); if (!b) return; S.skills.has(b.dataset.k) ? S.skills.delete(b.dataset.k) : S.skills.add(b.dataset.k); persist(); renderContent(); renderFormats(); });
   $('#fmts').onclick = e => { const b = e.target.closest('[data-inc],[data-dec]'); if (!b) return; const id = b.dataset.inc || b.dataset.dec; S.counts[id] = Math.max(0, Math.min(40, (S.counts[id] || 0) + (b.dataset.inc ? 1 : -1))); persist(); renderFormats(); };
   $('#presets').onclick = e => { const b = e.target.closest('[data-pre]'); if (!b) return; S.counts = b.dataset.pre === 'none' ? {} : Object.assign({}, PRESETS[+b.dataset.pre].c); persist(); renderFormats(); };
@@ -1043,7 +1077,7 @@ function bind() {
   $('#addmore').onclick = () => make(true);
   $('#browse').onclick = browse;
   $('#qfimport').onclick = qfImport;
-  $('#title').addEventListener('input', e => { S.ws.title = e.target.value; persist(); });
+  $('#title').addEventListener('input', e => { S.ws.title = e.target.value; S.ws.autoT = false; persist(); });
   $('#clear').onclick = () => { if (!S.ws.items.length) return; const before = S.ws.items; S.ws.items = []; persist(); renderList(); toast('Cleared the worksheet.', () => { S.ws.items = before; persist(); renderList(); }); };
   $('#save').onclick = saveSheet;
   $('#toprint').onclick = () => go('print');
@@ -1083,7 +1117,8 @@ function renderLayout() {
   const chk = (id, label) => `<label class="opt"><input type="checkbox" data-l="${id}" ${L[id] ? 'checked' : ''}><span>${label}</span></label>`;
   $('#layout').innerHTML = `
   <fieldset><legend>Top of the first page</legend>
-    <label class="field"><span>Title</span><input type="text" id="l-title" value="${esc(S.ws.title)}"></label>
+    <div class="two-col"><label class="field"><span>Title</span><input type="text" id="l-title" value="${esc(S.ws.title)}"></label>
+    ${sel('course', 'Course', [['hsc', 'HSC Economics'], ['y11', 'Year 11 Economics']], L.course || 'hsc')}</div>
     <div class="two-col">${chk('name', 'Name line')}${chk('cls', 'Class line')}${chk('date', 'Date line')}${chk('time', 'Total marks and time')}</div>
     <label class="field"><span>Instructions for students (optional)</span><input type="text" data-l="intro" value="${esc(L.intro)}" placeholder="e.g. Complete Part A in class and Part B for homework."></label>
   </fieldset>
@@ -1105,7 +1140,7 @@ function renderLayout() {
     ${sel('version', 'Version', [['A', 'Version A'], ['B', 'Version B: questions and options in a different order']], L.version)}
     <p class="hint">The answer copy (button above the preview) has the answers, NESA marking criteria, marking points and model diagrams in red.</p>
   </fieldset>`;
-  $('#l-title').oninput = e => { S.ws.title = e.target.value; persist(); schedulePreview(); };
+  $('#l-title').oninput = e => { S.ws.title = e.target.value; S.ws.autoT = false; persist(); schedulePreview(); };
 }
 function mini(k) {
   if (k === 'exam') return '<i class="t"></i><i></i><i class="l"></i><i class="l"></i><i style="width:70%"></i><i class="l"></i><i class="l"></i>';
@@ -1235,14 +1270,14 @@ function docHeader(ctx, totals) {
     table: { widths: fields.map(f => f === 'Name' ? '*' : 110), body: [fields.map(f => ({ text: R(f), fontSize: st.fs * 0.9, color: MUTE, margin: [0, 10, 0, 2] }))] },
     layout: { hLineWidth: (i) => i === 1 ? 0.7 : 0, vLineWidth: () => 0, hLineColor: () => '#555', paddingLeft: () => 0, paddingRight: (i) => 14 }, margin: [0, 6, 0, 8] } : null;
   if (L.style === 'book') {
-    out.push({ table: { widths: ['*'], body: [[{ stack: [{ text: R('HSC ECONOMICS' + (ans ? '  ·  ANSWER COPY' : '')), color: '#FFD24A', bold: true, fontSize: st.fs * 0.8, characterSpacing: 1 }, { text: R(title), color: '#fff', bold: true, fontSize: st.fs * 1.9 }], fillColor: '#10253F', margin: [12, 10, 12, 10] }]] }, layout: 'noBorders' });
+    out.push({ table: { widths: ['*'], body: [[{ stack: [{ text: R(COURSE[L.course || 'hsc'].toUpperCase() + (ans ? '  ·  ANSWER COPY' : '')), color: '#FFD24A', bold: true, fontSize: st.fs * 0.8, characterSpacing: 1 }, { text: R(title), color: '#fff', bold: true, fontSize: st.fs * 1.9 }], fillColor: '#10253F', margin: [12, 10, 12, 10] }]] }, layout: 'noBorders' });
     out.push({ canvas: RAINBOW.map((c, i) => ({ type: 'rect', x: i * W / 12, y: 0, w: W / 12 + 0.5, h: 4, color: c })), margin: [0, 0, 0, 6] });
     out.push(T(info, { fontSize: st.fs * 0.9, color: MUTE }));
   } else if (L.style === 'adapt') {
     out.push(T(title, { fontSize: st.fs * 1.6, bold: true, margin: [0, 0, 0, 4] }));
     out.push(T(info + (ans ? '  ·  ANSWER COPY' : ''), { fontSize: st.fs * 0.85, color: ans ? RED : MUTE }));
   } else {
-    out.push({ columns: [T('HSC Economics', { fontSize: st.fs * 0.85, color: MUTE, bold: true }), T(ans ? 'ANSWER COPY' : '', { alignment: 'right', color: RED, bold: true, fontSize: st.fs * 0.85 })] });
+    out.push({ columns: [T(COURSE[L.course || 'hsc'], { fontSize: st.fs * 0.85, color: MUTE, bold: true }), T(ans ? 'ANSWER COPY' : '', { alignment: 'right', color: RED, bold: true, fontSize: st.fs * 0.85 })] });
     out.push(T(title, { fontSize: st.fs * (L.style === 'compact' ? 1.45 : 1.75), bold: true, margin: [0, 2, 0, 2] }));
     out.push(T(info, { fontSize: st.fs * 0.9, color: MUTE }));
     out.push({ canvas: [{ type: 'line', x1: 0, y1: 4, x2: W, y2: 4, lineWidth: L.style === 'exam' ? 1.2 : 0.8, lineColor: '#222' }], margin: [0, 0, 0, 2] });
@@ -1300,7 +1335,7 @@ function keep(head, space, extra) { const sp = space || []; return [{ stack: hea
 function marksTxt(m, ctx) { return ctx.L.marks && m ? ` (${m} ${m === 1 ? 'mark' : 'marks'})` : ''; }
 function qHead(u, ctx, label) {
   const { L, st } = ctx, it = u.ents[0].it, m = u.marks;
-  const src = L.source ? sourceLine(it) : '', tags = L.tags ? it.c.join(' ') : '';
+  const src = L.source ? sourceLine(it) : '', tags = L.tags ? codesShown(it).join(' ') : '';
   const extra = [src, tags].filter(Boolean).join('  ·  ');
   const tick = L.style === 'adapt' ? '☐  ' : '';
   return { text: R(`${tick}${label || 'Question'} ${u.num}`, { bold: true }).concat(R(marksTxt(m, ctx), { bold: L.style === 'exam' })).concat(extra ? R('   ' + extra, { color: MUTE, fontSize: st.fs * 0.78 }, true) : []), margin: [0, 8, 0, 3] };
@@ -1632,10 +1667,10 @@ async function makePdf(mode) {
   }
   const title = S.ws.title || 'Worksheet';
   const dd = {
-    pageSize: 'A4', pageMargins: st.m, content, info: { title, author: 'HSC Economics Worksheet Maker', subject: 'HSC Economics practice' },
+    pageSize: 'A4', pageMargins: st.m, content, info: { title, author: 'HSC Economics Worksheet Maker', subject: COURSE[L.course || 'hsc'] + ' practice' },
     defaultStyle: { font: st.font, fontSize: st.fs, lineHeight: st.lead, color: INK },
     images: Object.fromEntries([...IMG].map(([k, v]) => [k, v.url])),
-    footer: (p, n) => ({ columns: [T(`HSC Economics  ·  ${title}${L.version === 'B' ? '  ·  Version B' : ''}${mode === 'answers' ? '  ·  ANSWER COPY' : ''}`, { fontSize: 7.5, color: mode === 'answers' ? RED : MUTE }), T(`Page ${p} of ${n}`, { alignment: 'right', fontSize: 7.5, color: MUTE })], margin: [st.m[0], 14, st.m[2], 0] }),
+    footer: (p, n) => ({ columns: [T(`${COURSE[L.course || 'hsc']}  ·  ${title}${L.version === 'B' ? '  ·  Version B' : ''}${mode === 'answers' ? '  ·  ANSWER COPY' : ''}`, { fontSize: 7.5, color: mode === 'answers' ? RED : MUTE }), T(`Page ${p} of ${n}`, { alignment: 'right', fontSize: 7.5, color: MUTE })], margin: [st.m[0], 14, st.m[2], 0] }),
     pageBreakBefore: (node, after) => node.headlineLevel === 1 && after.length < 6
   };
   return new Promise((res, rej) => { try { window.pdfMake.createPdf(dd, null, FONTDEFS, VFS).getBlob(res); } catch (e) { rej(e); } });
@@ -1708,16 +1743,25 @@ const RULES = `House rules (NSW HSC Economics):
 - Every question has an answer: marking points with marks, or a model answer.
 - Write for students, not teachers. No markdown, no HTML.`;
 const READING = { std: 'Write at the level of the HSC exam.', plain: 'Write in plain English for students reading at about Year 7: short sentences, everyday words, and a short meaning in brackets the first time a key term appears. Keep the economics exactly right.' };
+/* What Claude is told about the course: the 2009 HSC, or Year 11 or Year 12 of the 2025 syllabus. */
+const reading = r => r === 'std' && S.fw === 'y11' ? 'Write at the level of a Year 11 school exam.' : READING[r];
+const teacherIs = () => `an experienced NSW ${S.fw === 'y11' ? 'Year 11 Economics' : 'HSC Economics'} teacher`;
+const contentIs = () => S.fw === 'h09' ? '2009 syllabus dot points' : `Economics 11–12 Syllabus (2025), ${S.fw === 'y11' ? 'Year 11 (Preliminary)' : 'Year 12 (HSC)'} sections`;
+const tagLike = () => S.fw === 'h09' ? '2009 dot point codes above (for example 2C.2)' : `section codes above (for example ${S.fw === 'y11' ? 'P2e' : 'Y3c'})`;
+const LEVELS = () => S.fw === 'y11' ? { 1: 'foundation', 2: 'Year 11 standard (a school Year 11 exam)', 3: 'extension (for the most capable Year 11 students)' }
+  : { 1: 'foundation (Band 3 and 4)', 2: 'HSC standard', 3: 'extension (Band 6 discriminators)' };
+const Y11_NOTE = () => S.fw === 'y11' ? 'This is the Year 11 course: keep to the Year 11 content above and do not rely on Year 12 (HSC) content.\n' : '';
 function selText(F) {
   if (S.fw === 'h09') return (F || [...S.sel09]).slice(0, 30).map(p => `${p} ${DOT[p]}`).join('\n');
-  return (F || [...S.sel25]).map(s => `${s} ${SECN[s]}: ` + (D.syl.y12.flatMap(t => t.sections).find(x => x.id === s) || { points: [] }).points.map(p => p.t).join('; ')).join('\n');
+  const secs = (D.syl[S.fw] || []).flatMap(t => t.sections);
+  return (F || [...selOf()]).map(s => `${s} ${SECN[s]}: ` + (secs.find(x => x.id === s) || { points: [] }).points.map(p => p.t).join('; ')).join('\n');
 }
 function normalise(x, fallbackC, fallback25) {
   if (!x || typeof x !== 'object') return null;
   const f = x.f === 'stim' ? 'sa' : x.f; if (!FBY[f] || !SHAPES[x.f === 'sa' && x.parts ? 'sa' : x.f] && !SHAPES[f]) return null;
   const valid = c => (c || []).filter(p => DOT[p] && /^\d[A-I]\.\d+$/.test(p));
   const it = Object.assign({}, x, { f, id: 'cl:' + uid(), src: 'claude', rev: 1, c: valid(x.c).length ? valid(x.c) : fallbackC, k: x.k || [] });
-  if (S.fw === 'y12') { it.c25 = (x.c || []).filter(p => /^Y\d/.test(p)); if (!it.c25.length && fallback25) it.c25 = fallback25.slice(0, 3); }
+  if (S.fw !== 'h09') { const pre = S.fw === 'y11' ? 'P' : 'Y'; it.c25 = (x.c || []).filter(p => typeof p === 'string' && p[0] === pre && (SECN[p] || DOT[p])); if (!it.c25.length && fallback25) it.c25 = fallback25.slice(0, 3); }
   const str = v => typeof v === 'string' ? v : '';
   if (f === 'mc') { if (!Array.isArray(it.o) || it.o.length !== 4 || !Array.isArray(it.key) || !it.key.length || !it.key.every(k => 'ABCD'.includes(k))) return null; it.o = it.o.map(str); it.m = 1; it.e = { why: str(it.e && it.e.why), not: {} };
     const mt = it.mat; if (mt && !(Array.isArray(mt.head) && mt.head.length && Array.isArray(mt.rows) && mt.rows.length === 4 && mt.rows.every(r => Array.isArray(r) && r.length === mt.head.length))) delete it.mat;
@@ -1827,7 +1871,10 @@ function renderClaudeBox() {
   if (!CLAUDE) return;
   if (!$('#cl-fmt').options.length) $('#cl-fmt').innerHTML = '<option value="like">More like my worksheet (same style)</option><optgroup label="Or a set of one type">'
     + CL_FMTS.map(([k, n]) => `<option value="${k}">${esc(n)}</option>`).join('') + '</optgroup>';
-  const sel = S.fw === 'h09' ? [...S.sel09] : [...S.sel25], cur = $('#cl-dp').value;
+  const sel = [...selOf()], cur = $('#cl-dp').value, y11 = S.fw === 'y11';
+  $('#cl-lv').options[1].textContent = y11 ? 'Year 11 standard' : 'HSC standard';
+  $('#cl-lv').options[2].textContent = y11 ? 'Extension' : 'Extension (Band 6)';
+  $('#cl-read').options[0].textContent = y11 ? 'Year 11' : 'Year 12';
   const name = p => { const t = (S.fw === 'h09' ? DOT[p] : SECN[p]) || ''; return t.length > 70 ? t.slice(0, 69) + '…' : t; };
   $('#cl-dp').innerHTML = `<option value="all">${sel.length === 1 ? esc(sel[0] + ' ' + name(sel[0])) : sel.length ? `All the dot points I chose (${sel.length})` : 'Choose dot points in step 1'}</option>`
     + (sel.length > 1 && sel.length <= 60 ? sel.map(p => `<option value="${esc(p)}" ${p === cur ? 'selected' : ''}>${esc(p + ' ' + name(p))}</option>`).join('') : '');
@@ -1859,15 +1906,16 @@ async function askClaude(prompt, msgEl) {
 }
 /* The dot points Claude writes for: the one picked in the panel, or all those chosen in step 1. */
 function focusSel() {
-  const v = $('#cl-dp').value, all = S.fw === 'h09' ? [...S.sel09] : [...S.sel25];
+  const v = $('#cl-dp').value, all = [...selOf()];
   return v && v !== 'all' && all.includes(v) ? [v] : all;
 }
 function inFocus(it, F) {
   if (S.fw === 'h09') return (it.c || []).some(c => F.includes(c));
-  return (it._y || []).concat(it.c25 || []).some(y => F.includes(y)) || (it.c || []).some(c => (XW[SEC[c]] || []).some(y => F.includes(y)));
+  const ys = it._y ? y25(it) : uniq((it.c || []).concat(it.c25 || []).flatMap(secs25));      // Claude's questions are not in the pool
+  return ys.some(y => F.includes(y));
 }
 const fbC = F => S.fw === 'h09' ? F.slice(0, 3) : [];
-const fb25 = F => S.fw === 'y12' ? F.slice(0, 3) : null;
+const fb25 = F => S.fw !== 'h09' ? F.slice(0, 3) : null;
 function sheetStems(max) {
   const first = it => it.q || it.title || it.trigger || (it.parts && it.parts[0] && it.parts[0].q) || (it.qs && it.qs[0] && (it.qs[0].q || (typeof it.qs[0] === 'string' ? it.qs[0] : ''))) || '';
   return S.ws.items.map(itemOf).filter(Boolean).slice(0, max || 40).map(it => plain(first(it)).slice(0, 120)).filter(Boolean);
@@ -1880,16 +1928,16 @@ async function claudeWrite() {
   if (fmt === 'like') return claudeMore();
   const F = focusSel(), n = +$('#cl-n').value, lv = $('#cl-lv').value, read = $('#cl-read').value, note = $('#cl-note').value.trim();
   const avoid = sheetStems(25);
-  const prompt = `You are an experienced NSW HSC Economics teacher writing practice questions for a printed worksheet.
+  const prompt = `You are ${teacherIs()} writing practice questions for a printed worksheet.
 
-Syllabus content to practise (${S.fw === 'h09' ? '2009 syllabus dot points' : '2025 syllabus sections'}):
+Syllabus content to practise (${contentIs()}):
 ${selText(F)}
 
-Write ${n} new ${CL_FMTS.find(x => x[0] === fmt)[1].toLowerCase()} question${n > 1 ? 's' : ''}. Level: ${{ 1: 'foundation (Band 3 and 4)', 2: 'HSC standard', 3: 'extension (Band 6 discriminators)' }[lv]}. ${READING[read]}
-${note ? 'Teacher’s note: ' + note + '\n' : ''}${fmt === 'draw' ? 'Diagram codes you may use (the page draws them; pick the one that fits): ' + Object.keys(D.dias).filter(k => !/given$/.test(k)).join(', ') + '. Add " given" to the code to show students the starting diagram.\n' : ''}${avoid.length ? 'Do not repeat these questions already on the worksheet:\n- ' + avoid.join('\n- ') + '\n' : ''}
+Write ${n} new ${CL_FMTS.find(x => x[0] === fmt)[1].toLowerCase()} question${n > 1 ? 's' : ''}. Level: ${LEVELS()[lv]}. ${reading(read)}
+${Y11_NOTE()}${note ? 'Teacher’s note: ' + note + '\n' : ''}${fmt === 'draw' ? 'Diagram codes you may use (the page draws them; pick the one that fits): ' + Object.keys(D.dias).filter(k => !/given$/.test(k)).join(', ') + '. Add " given" to the code to show students the starting diagram.\n' : ''}${avoid.length ? 'Do not repeat these questions already on the worksheet:\n- ' + avoid.join('\n- ') + '\n' : ''}
 ${RULES}
 
-Tag each question in "c" with the ${S.fw === 'h09' ? '2009 dot point codes above (for example 2C.2)' : '2025 section codes above (for example Y3c)'} it practises.
+Tag each question in "c" with the ${tagLike()} it practises.
 Reply with only a JSON object: {"items":[ ... ]} where each item has this shape:
 ${SHAPES[fmt]}`;
   const out = await askClaude(prompt, msg); if (!out) return;
@@ -1910,7 +1958,7 @@ function styleExamples(F) {
   const onSheet = S.ws.items.map(itemOf).filter(it => it && inFocus(it, F));
   if (onSheet.length) return { ex: onSheet, from: 'sheet' };
   const chosen = FMT.filter(f => S.counts[f.id] > 0).map(f => f.id), types = chosen.length ? chosen : ['mc', 'sa'];
-  const pool = D.items.filter(it => !it.hold && types.includes(it.f) && inFocus(it, F) && (it.src === 'hsc' || it.src === 'bank'))
+  const pool = D.items.filter(it => !it.hold && types.includes(it.f) && inFocus(it, F) && (it.src === 'hsc' && S.fw !== 'y11' || it.src === 'bank'))
     .sort((a, b) => (a.src === 'hsc' ? 0 : 1) - (b.src === 'hsc' ? 0 : 1) || (b.y || 0) - (a.y || 0));
   const ex = []; for (const f of types) ex.push(...pool.filter(it => it.f === f).slice(0, 3));
   for (const f of types) if (LOCAL_KINDS.includes(f)) ex.push({ f, c: F, k: [], gen: true });   // a calculation or term task needs no example
@@ -1936,20 +1984,20 @@ function pickVaried(list, k) {
 function morePrompt(F, plan, shown, from, read, note) {
   const want = Object.entries(plan).map(([f, k]) => `${k} ${CL_FMTS.find(x => x[0] === f)[1].toLowerCase()}`).join(', ');
   const avoid = sheetStems(40);
-  return `You are an experienced NSW HSC Economics teacher adding questions to a printed practice worksheet.
+  return `You are ${teacherIs()} adding questions to a printed practice worksheet.
 
-Syllabus content (${S.fw === 'h09' ? '2009 syllabus dot points' : '2025 syllabus sections'}):
+Syllabus content (${contentIs()}):
 ${selText(F)}
 
 ${from === 'sheet' ? 'These questions are already on the worksheet' : 'These are past HSC and practice questions on this content'}. They show the style to copy:
 ${shown.map((it, i) => `Example ${i + 1} (${FBY[it.f].name}): ${itemForPrompt(it, 2500)}`).join('\n\n')}
 
 Write these new questions: ${want}. Write each one in the style of the examples of the same type: match their format, marks, NESA key verb, level of difficulty and kind of stimulus (a data table, an extract, a diagram), so the new questions sit naturally beside them. Use new scenarios, products, countries, events and numbers, and cover other parts of the syllabus content above where you can. Do not copy the examples’ wording, and do not repeat a question already on the worksheet. Where an example relies on a figure you cannot see, give your question its own data as a table.
-${READING[read]}
-${note ? 'Teacher’s note: ' + note + '\n' : ''}${plan.draw ? 'Diagram codes you may use (the page draws them; pick the one that fits): ' + Object.keys(D.dias).filter(k => !/given$/.test(k)).join(', ') + '. Add " given" to the code to show students the starting diagram.\n' : ''}${avoid.length ? 'Questions already on the worksheet:\n- ' + avoid.join('\n- ') + '\n' : ''}
+${reading(read)}
+${Y11_NOTE()}${note ? 'Teacher’s note: ' + note + '\n' : ''}${plan.draw ? 'Diagram codes you may use (the page draws them; pick the one that fits): ' + Object.keys(D.dias).filter(k => !/given$/.test(k)).join(', ') + '. Add " given" to the code to show students the starting diagram.\n' : ''}${avoid.length ? 'Questions already on the worksheet:\n- ' + avoid.join('\n- ') + '\n' : ''}
 ${RULES}
 
-Tag each question in "c" with the ${S.fw === 'h09' ? 'dot point codes above (for example 2C.2)' : 'section codes above (for example Y3c)'} it practises.
+Tag each question in "c" with the ${tagLike()} it practises.
 Reply with only a JSON object: {"items":[ ... ]}, the questions in this order of type: ${Object.keys(plan).join(', ')}. Each item has the shape for its type:
 ${Object.keys(plan).map(f => f + ': ' + SHAPES[f]).join('\n')}`;
 }
@@ -2007,13 +2055,13 @@ async function claudeLike(k) {
   const it = itemOf(S.ws.items[entryIndex(k)]); if (!it || !CLAUDE) return;
   const msg = $('#cl-msg'); $('#claudebox').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   const fmt = it.f === 'stim' ? 'stim' : (it.f === 'read' ? 'sa' : it.f);
-  const prompt = `You are an experienced NSW HSC Economics teacher. Write ONE new question modelled on the question below, for a printed worksheet.
+  const prompt = `You are ${teacherIs()}. Write ONE new question modelled on the question below, for a printed worksheet.
 It must practise exactly the same skill, at the same level, with the same marks and the same directive verb, in the same format, but with a different scenario, product, country, event or numbers. Do not copy its wording. If the original depends on a figure or table you cannot see, write the data you need as a table instead.
 
 The original (JSON):
 ${itemForPrompt(it)}
 
-Dot points it practises: ${it.c.map(c => c + ' ' + (DOT[c] || '')).join('; ')}
+Dot points it practises: ${(it.c.length ? it.c : it.c25 || []).map(c => c + ' ' + (DOT[c] || SECN[c] || '')).join('; ')}
 ${fmt === 'draw' ? 'Diagram codes you may use: ' + Object.keys(D.dias).filter(x => !/given$/.test(x)).join(', ') + '\n' : ''}
 ${RULES}
 
@@ -2030,7 +2078,7 @@ async function claudePlain(k) {
   const i = entryIndex(k), it = itemOf(S.ws.items[i]); if (!it || !CLAUDE) return;
   const msg = $('#cl-msg'); $('#claudebox').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   const fields = ['q', 'lead', 'o', 'parts', 'rows', 'text', 'trigger', 'title', 'cats', 'cols', 'qs', 'lede'].filter(f => it[f] !== undefined);
-  const prompt = `Rewrite the student-facing wording of this NSW HSC Economics question in plain English for students reading at about Year 7. Keep the economics, the answer, the marks, the order of any options and the format exactly the same. Use short sentences and everyday words. Keep each key term, but add a short meaning in brackets the first time it appears. Keep any [[wrong => right]] markers and [[gap]] markers exactly as they are.
+  const prompt = `Rewrite the student-facing wording of this NSW Economics question in plain English for students reading at about Year 7. Keep the economics, the answer, the marks, the order of any options and the format exactly the same. Use short sentences and everyday words. Keep each key term, but add a short meaning in brackets the first time it appears. Keep any [[wrong => right]] markers and [[gap]] markers exactly as they are.
 
 The question (JSON): ${JSON.stringify(Object.fromEntries(fields.map(f => [f, it[f]])))}
 
@@ -2050,13 +2098,15 @@ function renderHelp() {
   $('#v-help').innerHTML = `<h2>What it does</h2>
   <p>The Worksheet Maker builds a printable PDF practice sheet, and a matching answer copy, from ${n.toLocaleString('en-AU')} questions and tasks: ${by('hsc')} past HSC questions (multiple choice, short-answer parts and extended responses, 2002 to 2026), ${by('bank')} new practice questions written for it, ${by('ev')} sources from this year’s news and data, and ${by('auto')} tasks built from the class tools. Key-term tasks and calculations are made fresh each time from the Glossary (${D.gloss.length} terms), ${D.tf.length} true-or-false statements and the Calculation Trainer’s ${D.calc.length} skills.</p>
   <h2>Three steps</h2>
-  <ol><li><b>Choose questions.</b> Tick dot points (or 2025 syllabus sections), optionally narrow to skills, set how many of each type you want, then press <b>Make the worksheet</b>. Swap, edit, reorder or remove any question. <b>Look-alike</b> adds a new question of the same kind as a past HSC question: a fresh calculation, a matching new question from the bank, or a diagram task.</li>
+  <ol><li><b>Choose questions.</b> Choose the course at the top: <b>2009 HSC</b> (tick dot points), or the 2025 syllabus for <b>Year 11</b> (Preliminary) or <b>Year 12</b> (HSC) (tick sections). Optionally narrow to skills, set how many of each type you want, then press <b>Make the worksheet</b>. Swap, edit, reorder or remove any question. <b>Look-alike</b> adds a new question of the same kind as a past HSC question: a fresh calculation, a matching new question from the bank, or a diagram task.</li>
   <li><b>Layout and print.</b> Pick a page style (HSC exam, workbook, adapted or compact) and set the header, writing space, columns, part breaks and answers. The preview is the real PDF. <b>Download worksheet</b> and <b>Download answer copy</b> save the files to print.</li>
   <li><b>Keep it.</b> <b>Save</b> puts the worksheet in <b>My worksheets</b> in this browser; save to a file to move it to another computer.</li></ol>
   <h2>The Question Finder</h2>
   <p>Questions you tick in the <a href="../hsc-question-finder-site/">Question Finder</a> on this computer can be added with <b>Add my Question Finder ticks</b>. The figures, tables and NESA marking criteria come with them.</p>
   <h2>Page styles</h2>
   <ul><li><b>HSC exam style</b>: plain, numbered, marks in the right margin, ruled lines scaled to the marks.</li><li><b>Workbook style</b>: the navy and gold workbook look, with coloured part banners and dotted lines.</li><li><b>Adapted layout</b>: Lexend at 12.5 pt, extra space, a tick box on every question, word boxes, sentence starters and a reminder of the paragraph scaffold.</li><li><b>Compact revision</b>: two columns for short questions, small or no writing space, for answering in books.</li></ul>
+  <h2>Year 11 (2025 syllabus)</h2>
+  <p>Year 11 worksheets use only material tagged to the 2025 Year 11 course: ${D.items.filter(x => x.src === 'bank' && x.c.some(c => c[0] === 'P')).length} new Year 11 questions and ${D.tf.filter(t => t.c.some(c => c[0] === 'P')).length} true-or-false statements written for the six focus areas, news tagged to Year 11 in the Evidence Finder, and Glossary terms and Calculation Trainer skills that Year 11 uses. For stretch, tick <b>Past HSC questions</b> under step 3 to add the Year 12 questions the class crosswalk links to a Year 11 section (trade, investment, exchange rates, the balance of payments, the business cycle, market failure, taxation, government spending and interest rates). The course named at the top of the sheet is set under <b>Layout and print</b>.</p>
   <h2>Good to know</h2>
   <ul><li>New questions are marked <i>not yet reviewed</i> until the teacher has checked them on the Question review page (staff Tools site); questions flagged there for a fix, or removed, are left out of new worksheets. Explanations of multiple-choice answers were written for the site, not by NESA.</li>
   <li>Diagrams are drawn in the class house style. They are conceptual and not to scale, except the numbered figures used for “Read a diagram”.</li>
@@ -2078,7 +2128,7 @@ async function init() {
   $('#v-help').addEventListener('click', e => { if (e.target.closest('[data-keydlg]')) keyDialog(); });
   $('#layout').addEventListener('change', onLayout);
   $('#layout').addEventListener('input', e => { if (e.target.type === 'text' && e.target.dataset.l) onLayout(e); });
-  $('#styles').onclick = e => { const b = e.target.closest('[data-style]'); if (!b) return; const keepT = { name: LAY().name, cls: LAY().cls, date: LAY().date, intro: LAY().intro, version: LAY().version, answers: LAY().answers, group: LAY().group }; S.ws.layout = Object.assign(defaultLayout(b.dataset.style), keepT); persist(); renderLayout(); schedulePreview(0); };
+  $('#styles').onclick = e => { const b = e.target.closest('[data-style]'); if (!b) return; const keepT = { name: LAY().name, cls: LAY().cls, date: LAY().date, intro: LAY().intro, version: LAY().version, answers: LAY().answers, group: LAY().group, course: LAY().course }; S.ws.layout = Object.assign(defaultLayout(b.dataset.style), keepT); persist(); renderLayout(); schedulePreview(0); };
   $('#pv-ans').onchange = () => schedulePreview(0);
   $('#dl-ws').onclick = () => download('student');
   $('#dl-ans').onclick = () => download('answers');

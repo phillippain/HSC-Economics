@@ -156,12 +156,14 @@ def evidence_items(E, points):
     items = []
     for e in E:
         qs = [q for q in (e.get("questions") or []) if q.get("q")]
-        c = [p for p in (e.get("about") or {}).get("h09", []) if p in points]
-        if not qs or not c:
+        about = e.get("about") or {}
+        c = [p for p in about.get("h09", []) if p in points]
+        c25 = list(about.get("y12", [])) + list(about.get("y11", []))
+        if not qs or not (c or c25):
             continue
         figs = [{"label": clean(f.get("label")), "value": clean(f.get("value")), "asAt": clean(f.get("asAt")),
                  "source": clean(f.get("source"))} for f in (e.get("figures") or [])][:6]
-        x = {"id": "ev:" + e["id"], "src": "ev", "f": "stim", "c": c, "c25": (e.get("about") or {}).get("y12", []),
+        x = {"id": "ev:" + e["id"], "src": "ev", "f": "stim", "c": c, "c25": c25,
              "date": e["date"], "title": clean(e["title"]), "outlets": e.get("outlets") or [], "lede": clean(e.get("lede")),
              "figs": figs, "qs": [{"q": clean(q["q"]), "m": int(q.get("marks") or 2)} for q in qs[:4]],
              "guide": clean(e.get("angle")), "terms": [{"term": t["term"], "def": t["def"]} for t in (e.get("terms") or [])][:4],
@@ -222,6 +224,7 @@ def main():
     EX = json.loads(MCEX.read_text(encoding="utf8")) if MCEX.exists() else {}
     maps = json.loads((HERE / "bank" / "maps.json").read_text(encoding="utf8"))
     points = {p["id"]: p["t"] for t in fw["h09"]["topics"] for sec in t["sections"] for p in sec["points"]}
+    every = {p["id"]: p["t"] for k in ("h09", "y11", "y12") for t in fw[k]["topics"] for sec in t["sections"] for p in sec["points"]}
 
     items = hsc_items(D, EX)
     items += evidence_items(json.loads(EVID.read_text(encoding="utf8")), points)
@@ -234,8 +237,10 @@ def main():
     missing = [t["id"] for t in G if t["id"] not in gmap]
     assert not missing, f"glossary terms with no dot point in bank/maps.json: {missing}"
     gloss = [{"id": t["id"], "term": t["term"], "def": clean(t["def"]), "c": gmap[t["id"]]} for t in G]
+    badmap = sorted({c for v in gmap.values() for c in v if c not in every} | {c for x in maps["calc"] for c in x["c"] if c not in every})
+    assert not badmap, f"bank/maps.json: unknown dot points {badmap}"
 
-    bank_items, bank_tf, problems = BANK.load(HERE / "bank", points)
+    bank_items, bank_tf, problems = BANK.load(HERE / "bank", every)
     assert not problems, "bank problems:\n  " + "\n  ".join(problems)
     files = {x["id"]: x.pop("_f", "") for x in bank_items + bank_tf}     # which bank file each came from (review page only)
     specs = list(DIA.BASE) + [x["dia"] for x in bank_items if x.get("dia")]
@@ -257,12 +262,12 @@ def main():
     dup = {i for i in ids if ids.count(i) > 1}
     assert not dup, f"duplicate ids: {sorted(dup)[:10]}"
     for x in items:
-        bad = [c for c in x["c"] if c not in points]
+        bad = [c for c in x["c"] if c not in every]
         assert not bad, f"{x['id']}: unknown dot points {bad}"
 
     calc = maps["calc"]
     trees = {}
-    for key in ("h09", "y12"):
+    for key in ("h09", "y12", "y11"):
         f = fw[key]
         trees[key] = [{"id": t["id"], "label": t.get("label", ""), "name": t["name"], "color": t["color"],
                        "sections": [{"id": x["id"], "name": x["name"], "skills": bool(x.get("skills")),
@@ -279,9 +284,9 @@ def main():
     page = (HERE / "template.html").read_text(encoding="utf8")
     page = page.replace("/*__FONTS__*/", FONTS.read_text(encoding="utf8") if FONTS.exists() else "")
     page = page.replace("/*__CALC__*/", calc_code()).replace("__DATAVER__", digest)
-    review = BANK.review_page(bank_items, bank_tf, points, dias)
+    review = BANK.review_page(bank_items, bank_tf, every, dias)
     # The Question review page (staff Tools site) reads this; decisions come back in bank/reviews.json.
-    rdata = json.dumps(BANK.review_data(bank_items, bank_tf, points, dias, files), ensure_ascii=False, separators=(",", ":")) + "\n"
+    rdata = json.dumps(BANK.review_data(bank_items, bank_tf, every, dias, files), ensure_ascii=False, separators=(",", ":")) + "\n"
 
     outs = {HERE / "data.json": data_txt, HERE / "index.html": page, HERE / "review.html": review, HERE / "review-data.json": rdata}
     if CHECK:

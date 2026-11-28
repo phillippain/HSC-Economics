@@ -1,0 +1,72 @@
+# Year 11 (2025 syllabus) cause and effect chains: "- variable => up | why" or "- variable => down | why".
+
+=== chain y11-ch-P2c-frost
+c: P2c.4 P2d.1 P2b.4
+lv: 1
+TITLE: Frost hits the coffee crop
+TRIGGER: Frost destroys a large share of the coffee crop in a major growing country.
+- The supply of coffee => down | Less coffee is available at every price
+- The world price of coffee => up | At the old price there is a shortage, so the price rises
+- The quantity of coffee bought => down | Buyers contract their purchases at the higher price
+- Café prices for a cup of coffee => up | Cafés pass on the higher cost of beans
+- The demand for tea => up | Tea is a substitute, so some coffee drinkers switch
+
+=== chain y11-ch-P2i-excise
+c: P2i.2 P2e.4 P5b.5
+lv: 2
+TITLE: A higher tobacco excise
+TRIGGER: The government raises the excise tax on each packet of cigarettes.
+- Producers' costs per packet => up | The tax is paid on each packet sold
+- The supply of cigarettes => down | Higher costs shift the supply curve up by the tax
+- The price consumers pay => up | Producers pass most of the tax on because demand is inelastic
+- The quantity of cigarettes bought => down | Some smokers cut back or quit, though only a little in the short run
+- Tax revenue => up | Demand is inelastic, so sales fall less than the tax per packet rises
+- Smoking-related health costs over time => down | Fewer people smoke, a smaller negative externality
+
+=== chain y11-ch-P4c-rates
+c: P4c.3 P4c.7 P4c.4
+lv: 2
+TITLE: Interest rates rise
+TRIGGER: Banks raise interest rates on loans and deposits.
+- The cost of borrowing => up | Interest is the price of credit
+- Borrowing for housing and business investment => down | Fewer projects and purchases are worth the higher cost
+- The reward for saving => up | Deposits earn more interest
+- Mortgage repayments for existing borrowers => up | Variable-rate loans cost more each month
+- Housing affordability for new buyers => down | Buyers can borrow less for the same repayment
+- Household spending => down | Borrowers have less left over and savers have a reason to save
+
+=== chain y11-ch-P3a-thrift
+c: P3a.6 P1d.5 P1e.6
+lv: 3
+TITLE: Everyone saves more: the paradox of thrift
+TRIGGER: Worried about the future, all households decide to save a larger share of their income.
+- Household consumption => down | Saving is income that is not spent
+- Leakages from the circular flow => up | Saving is a leakage
+- Business sales => down | Firms sell less to households
+- Production and employment => down | Firms cut output and jobs
+- National income => down | Lower production means lower incomes, so households may end up saving no more than before
+- Business investment => down | With weaker sales, firms need less new equipment, so spending falls further
+
+=== chain y11-ch-P3c-tech
+c: P3c.4 P3c.5 P2c.4 P1c.2
+lv: 2
+TITLE: A productivity breakthrough
+TRIGGER: A new technology lets factories produce much more with the same workers and machines.
+- Productivity => up | More output from the same inputs
+- Costs of producing each unit => down | Fixed costs are spread over more output
+- Supply => up | Firms will supply more at every price
+- Prices of the goods => down | The supply curve shifts right
+- Real wages and living standards => up | Higher output per worker allows higher real incomes
+- The economy's production possibilities => up | The frontier shifts outwards
+
+=== chain y11-ch-P1e-exports
+c: P1e.6 P1e.7 P1d.5 P6a.4
+lv: 2
+TITLE: A recession overseas
+TRIGGER: Australia's major trading partners fall into recession.
+- Demand for Australian exports => down | Overseas buyers spend less
+- Injections into the circular flow => down | Exports are an injection
+- Real GDP growth in Australia => down | Lower spending means lower production
+- Unemployment => up | Firms need fewer workers
+- Government tax revenue => down | Incomes and profits fall
+- Government spending on unemployment benefits => up | More people need income support

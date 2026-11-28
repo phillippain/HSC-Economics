@@ -1,8 +1,9 @@
 # Worksheet Maker
 
-Builds printable HSC Economics worksheets as PDFs, with a matching answer copy. The teacher (or a student)
-chooses dot points and skills, the types of question and where they come from, then sets the page layout
-and downloads the files.
+Builds printable Economics worksheets as PDFs, with a matching answer copy: HSC (2009 syllabus, or Year 12 of the
+2025 syllabus) and, from 28 November 2026, Year 11 (Preliminary) of the 2025 syllabus. The teacher (or a student)
+chooses the course, dot points and skills, the types of question and where they come from, then sets the page
+layout and downloads the files.
 
 - **Page:** `index.html` (built from `template.html`; do not edit by hand). It loads `data.json`, the PDF
   maker in `lib/` and the fonts in `fonts/` from this folder, and the past-paper figures from
@@ -24,9 +25,37 @@ and downloads the files.
 
 | Step | What it does |
 |---|---|
-| 1 Choose questions | Tick 2009 dot points (or 2025 sections through the crosswalk); optionally narrow to skills (calculation, diagram, explain, the syllabus “learn to” points and so on); set how many of each of the 17 question types; choose the sources and the level. **Make the worksheet** spreads the picks across the dot points. Each question can be moved, swapped, edited or removed; past HSC questions have **Look-alike**. **Pick questions one by one** searches everything. |
+| 1 Choose questions | Choose the course at the top (**2009 HSC**, **2025 Year 11** or **2025 Year 12**), then tick 2009 dot points or 2025 sections; optionally narrow to skills (calculation, diagram, explain, the syllabus “learn to” points and so on); set how many of each of the 17 question types; choose the sources and the level. **Make the worksheet** spreads the picks across the dot points. Each question can be moved, swapped, edited or removed; past HSC questions have **Look-alike**. **Pick questions one by one** searches everything. |
 | 2 Layout and print | Four page styles (HSC exam, workbook, adapted, compact) and settings for the header, order, marks, sources, dot points, part breaks, answer space (lines, dots, box or none, and how much), extended response pages, a planning box, word banks, sentence starters, one or two columns, diagram tasks on blank axes or the starting diagram, answers at the end, and Version B (questions and options reordered). The preview is the real PDF, drawn with pdf.js. |
 | My worksheets | Saved in this browser (`localStorage`, key `econ-worksheet-maker-v1:saved`); save to and open from a file to move them between computers. |
+
+## Year 11 (2025 syllabus)
+
+The **2025 Year 11** switch shows the six Year 11 focus areas (`y11` in `evidence-finder/data/syllabus.json`) as
+28 sections to tick. A Year 11 worksheet uses only material tagged to the Year 11 course:
+
+- **The Year 11 bank** (`bank/y11-*.txt`, written 28 November 2026, not yet reviewed): 311 questions (147
+  multiple choice, 78 short answer and data, 12 extended responses, 32 draw and 6 label tasks, 14 sort, 8 compare,
+  8 spot the error, 6 cause and effect chains) and 126 true/false statements, tagged to the Year 11 dot points
+  (`c: P2e.3`); every one of the 134 points has at least one. They are reviewed on the Question review page like
+  the HSC bank.
+- **News** tagged to Year 11 in the Evidence Finder (`about.y11`).
+- **Key terms and calculations** that Year 11 uses: Glossary terms and Calculation Trainer skills carry Year 11
+  dot points as well as 2009 ones in `bank/maps.json`.
+- **Past HSC questions** only if **Past HSC questions** is ticked under step 3 (its own switch for Year 11, off
+  at first): the Year 12 questions the class crosswalk links to a Year 11 section (`P6a`–`P6d`, `P1e`, `P2h`,
+  `P4c`, `P5b`, `P5c`).
+
+Making a new worksheet in Year 11 sets **Course** (under *Layout and print*, top of the first page) to *Year 11
+Economics*, which names the sheet, its footer and its file details; HSC courses use *HSC Economics*. The skills
+chips, levels (*Year 11 standard*) and Claude's prompts (Year 11 course, sections such as `P2e`, Year 11 school
+exam level, examples from the Year 11 bank) follow the switch. The Year 12 and 2009 choices are kept separately.
+
+New diagram codes for Year 11 (in `build/diagrams.py`): `tax` (per-unit tax: revenue and deadweight loss),
+`extern pos` (positive externality in consumption), `ped` and `pes` with `elastic`, `inelastic`, `unit`,
+`perfectly-elastic`, `perfectly-inelastic`, `along D fall|rise` and `along S rise|fall` (movements along a curve),
+`funds` (loanable funds), `lrac`, `cycle` (business cycle), `ppf points`, and label sets `sd`, `tax`, `pos`, `lrac`,
+`cycle`.
 
 ## The 17 question types
 
@@ -34,7 +63,7 @@ and downloads the files.
 |---|---|---|
 | HSC exam formats | Multiple choice, short answer, source-based, extended response | Past HSC papers (Question Finder), the new bank, the Evidence Finder's questions on news items |
 | Diagrams and calculations | Calculations, draw a diagram, label a diagram, read a diagram | The Calculation Trainer's generators (new numbers each time); the bank, drawn with `build/econ_diagrams.py` |
-| Knowledge checks | Match terms, fill the gaps, define, true or false | Made fresh from the Glossary (terms matched to dot points in `bank/maps.json`); true/false from the Chain Builder and `bank/tf.txt` |
+| Knowledge checks | Match terms, fill the gaps, define, true or false | Made fresh from the Glossary (terms matched to dot points in `bank/maps.json`); true/false from the Chain Builder, `bank/tf.txt` and `bank/y11-tf.txt` |
 | Thinking tasks | Cause and effect chain, put in order, sort and classify, compare, spot the error | The Chain Builder, the Topic Map's pathways, and the bank |
 
 ## Building

@@ -1,0 +1,579 @@
+# Year 11 (2025 syllabus) multiple choice: Focus area 2, Markets.
+
+=== mc y11-mc-P2a-01
+c: P2a.1
+lv: 2
+Q: When a good becomes scarce and its price rises, the higher price gives firms a reason to produce more of it. This is the price mechanism's
+A: signalling function
+B: redistribution function
+C: rationing function
+D: incentive function
+ANS: D
+WHY: The higher price makes production more profitable, an incentive to supply more. The signalling function is the price change telling people the good has become scarcer; rationing is limiting who buys it.
+
+=== mc y11-mc-P2a-02
+c: P2a.1
+lv: 2
+Q: Concert tickets sell out at a high price, so only people willing and able to pay that price can attend. This shows the price mechanism's
+A: signalling function
+B: incentive function
+C: rationing function
+D: stabilisation function
+ANS: C
+WHY: A higher price rations a scarce good among buyers: those who will not or cannot pay that price go without.
+
+=== mc y11-mc-P2a-03
+c: P2a.2
+lv: 2
+Q: Markets work better when property rights are clearly defined and enforced because
+A: firms no longer need to compete
+B: the government can then set all prices
+C: owners can be confident they will keep the rewards of their effort and investment
+D: consumers no longer need information
+ANS: C
+WHY: Secure property rights and enforceable contracts give people the confidence to invest, produce and trade.
+
+=== mc y11-mc-P2a-04
+c: P2a.3
+lv: 1
+Q: The market in which businesses hire workers is an example of
+A: a product market
+B: a foreign exchange market
+C: a factor market
+D: an equity market
+ANS: C
+WHY: Labour is a factor of production, so it is traded in a factor market. Goods and services are traded in product markets.
+
+=== mc y11-mc-P2b-01
+c: P2b.2
+lv: 1
+Q: The law of demand states that, other things equal,
+A: as income rises, demand rises
+B: as the price of a good rises, the quantity demanded rises
+C: as the price of a good rises, the quantity demanded falls
+D: as supply rises, demand rises
+ANS: C
+WHY: The law of demand is the inverse relationship between a good's own price and the quantity demanded, which gives the demand curve its downward slope.
+
+=== mc y11-mc-P2b-02
+c: P2b.3 P2b.4
+lv: 2
+Q: A fall in the price of coffee leads to
+A: an increase in demand for coffee: the demand curve shifts right
+B: a contraction in the quantity of coffee demanded
+C: a decrease in demand for coffee
+D: an expansion in the quantity of coffee demanded: a movement along the demand curve
+ANS: D
+WHY: A change in the good's own price causes a movement along its demand curve. Only a change in a non-price factor shifts the curve.
+
+=== mc y11-mc-P2b-03
+c: P2b.4
+lv: 2
+Q: Which of the following would increase the demand for electric cars?
+A: A fall in the price of electric cars
+B: A rise in the price of petrol
+C: A rise in the price of electricity
+D: A fall in consumers' incomes
+ANS: B
+WHY: Dearer petrol makes petrol cars (substitutes for electric cars) more costly to run, so demand for electric cars increases. A is a movement along the curve; C raises the cost of a complement; D reduces demand for a normal good.
+
+=== mc y11-mc-P2b-04
+c: P2b.4
+lv: 2
+Q: Tea and coffee are substitutes. If the price of tea rises, the demand for coffee will
+A: expand along the demand curve for coffee
+B: decrease: the demand curve for coffee shifts to the left
+C: increase: the demand curve for coffee shifts to the right
+D: stay the same
+ANS: C
+WHY: Some tea drinkers switch to coffee, so more coffee is demanded at every price of coffee.
+
+=== mc y11-mc-P2b-05
+c: P2b.1
+lv: 1
+Q: Effective demand is
+A: the desire for a good or service
+B: demand from businesses only
+C: the total quantity supplied in a market
+D: the desire for a good or service backed by the ability and willingness to pay
+ANS: D
+WHY: Wanting something is not enough; demand only counts in a market when the buyer can and will pay.
+
+=== mc y11-mc-P2c-01
+c: P2c.2
+lv: 1
+Q: The supply curve slopes upwards because
+A: at higher prices production is more profitable, so firms supply more
+B: consumers buy more at higher prices
+C: costs of production fall as prices rise
+D: the government requires firms to produce more
+ANS: A
+WHY: A higher price covers the higher costs of extra output and gives firms an incentive to produce more (the law of supply).
+
+=== mc y11-mc-P2c-05
+c: P2c.1
+lv: 1
+Q: The market supply of a good is
+A: the quantity one firm will supply at each price
+B: the quantity consumers want to buy at each price
+C: the sum of the quantities all firms in the market will supply at each price
+D: the total stock of the good held in warehouses
+ANS: C
+WHY: Market supply adds together every firm's individual supply at each price. Supply is effective only when firms are willing and able to produce at that price.
+
+=== mc y11-mc-P2c-02
+c: P2c.4
+lv: 2
+Q: Which of the following would decrease the supply of wheat?
+A: A new, higher-yielding seed variety
+B: A drought that destroys part of the crop
+C: A fall in the price of fertiliser
+D: More farmers deciding to grow wheat
+ANS: B
+WHY: The drought reduces the quantity of wheat available at every price, so supply shifts left. A, C and D all increase supply.
+
+=== mc y11-mc-P2c-03
+c: P2c.3
+lv: 2
+Q: A rise in the price of strawberries causes
+A: an increase in the supply of strawberries
+B: the supply curve of strawberries to shift right
+C: a decrease in the supply of strawberries
+D: an expansion in the quantity of strawberries supplied
+ANS: D
+WHY: A change in the good's own price is a movement along the supply curve (an expansion when the price rises), not a shift.
+
+=== mc y11-mc-P2c-04
+c: P2c.4
+lv: 2
+Q: Cattle farmers expect the price of beef to rise sharply next year, so they hold back cattle from sale now. The supply of beef this year will
+A: increase
+B: not change
+C: expand along the supply curve
+D: decrease
+ANS: D
+WHY: Expected future prices are a non-price factor: holding stock back for a better price later reduces supply now, shifting the supply curve left.
+
+=== mc y11-mc-P2d-01
+c: P2d.1
+lv: 1
+Q: Demand for a good increases while supply does not change. The equilibrium price and quantity will
+A: price falls and quantity rises
+B: price rises and quantity falls
+C: both rise
+D: both fall
+ANS: C
+WHY: At the old price there is now a shortage, so the price rises; the higher price causes an expansion of supply, so quantity rises too.
+
+=== mc y11-mc-P2d-02
+c: P2d.1 P2d.2
+lv: 3
+Q: Demand for avocados increases and, at the same time, a bumper harvest increases supply. What happens to the market equilibrium?
+A: Price and quantity both rise
+B: Price falls and quantity does not change
+C: Quantity rises, but the change in price depends on the relative size of the two shifts
+D: Price rises, but the change in quantity cannot be known
+ANS: C
+WHY: Both shifts raise quantity. The demand increase pushes price up and the supply increase pushes it down, so the net effect on price depends on which shift is larger.
+
+=== mc y11-mc-P2d-03
+c: P2d.2
+lv: 1
+k: table
+Q: Using the schedule for mangoes, what is the equilibrium price?
+TABLE: Market for mangoes
+| Price ($ each) | Quantity demanded | Quantity supplied |
+| 1 | 900 | 300 |
+| 2 | 750 | 450 |
+| 3 | 600 | 600 |
+| 4 | 450 | 750 |
+| 5 | 300 | 900 |
+A: $2
+B: $5
+C: $4
+D: $3
+ANS: D
+WHY: At $3 the quantity demanded equals the quantity supplied (600), so the market clears.
+
+=== mc y11-mc-P2d-04
+c: P2d.2 P2d.1
+lv: 2
+k: table calc
+Q: Using the schedule for mangoes, at a price of $2 there is
+TABLE: Market for mangoes
+| Price ($ each) | Quantity demanded | Quantity supplied |
+| 1 | 900 | 300 |
+| 2 | 750 | 450 |
+| 3 | 600 | 600 |
+| 4 | 450 | 750 |
+| 5 | 300 | 900 |
+A: a surplus of 300
+B: an equilibrium
+C: a shortage of 750
+D: a shortage of 300
+ANS: D
+WHY: At $2, quantity demanded (750) exceeds quantity supplied (450) by 300: a shortage, which pushes the price up towards $3.
+
+=== mc y11-mc-P2d-05
+c: P2d.3
+lv: 2
+Q: A competitive market equilibrium is said to be efficient because
+A: firms earn the highest possible profit
+B: everyone can afford the good
+C: resources are used to produce output up to the point where the value buyers place on the last unit equals the cost of producing it
+D: the government sets the price
+ANS: C
+WHY: At equilibrium, every unit that buyers value at more than its cost is produced, and no unit that costs more than it is worth to buyers is produced (allocative efficiency). It does not mean everyone can afford it.
+
+=== mc y11-mc-P2e-01
+c: P2e.3
+lv: 2
+k: calc
+Q: The price of a movie ticket rises by 10 per cent and the quantity demanded falls by 25 per cent. Using the percentage method, the price elasticity of demand is
+A: 0.4
+B: 0.25
+C: 15
+D: 2.5
+ANS: D
+WHY: PED = % change in quantity demanded ÷ % change in price = −25 ÷ 10 = −2.5, usually written as 2.5. It is greater than 1, so demand is relatively elastic. A divides the wrong way round.
+
+=== mc y11-mc-P2e-02
+c: P2e.1
+lv: 1
+Q: Demand for a good is perfectly inelastic. This means that
+A: the quantity demanded does not change when the price changes
+B: any price rise causes the quantity demanded to fall to zero
+C: the percentage change in quantity equals the percentage change in price
+D: the demand curve is horizontal
+ANS: A
+WHY: Perfectly inelastic demand (PED = 0) is a vertical demand curve. B and D describe perfectly elastic demand; C describes unit elasticity.
+
+=== mc y11-mc-P2e-03
+c: P2e.4
+lv: 2
+Q: Which of the following is most likely to have price inelastic demand?
+A: One particular brand of soft drink
+B: Overseas holidays
+C: Insulin for people with diabetes
+D: Restaurant meals
+ANS: C
+WHY: Insulin is a necessity with no close substitute, so buyers keep buying when the price rises. A has many close substitutes; B and D are not necessities.
+
+=== mc y11-mc-P2e-04
+c: P2e.5
+lv: 2
+Q: A business sells a product with price elastic demand. If it raises its price, its total revenue will
+A: rise
+B: double
+C: stay the same
+D: fall
+ANS: D
+WHY: With elastic demand, the percentage fall in quantity sold is larger than the percentage rise in price, so price × quantity falls.
+
+=== mc y11-mc-P2e-05
+c: P2e.4
+lv: 2
+Q: Demand for petrol is usually more price elastic in the long run than in the short run because
+A: over time, people can find substitutes, such as more fuel-efficient or electric cars and public transport
+B: petrol becomes cheaper over time
+C: incomes fall over time
+D: petrol becomes more addictive over time
+ANS: A
+WHY: The time horizon matters: with more time, buyers can change their habits and find alternatives, so they respond more to a price change.
+
+=== mc y11-mc-P2e-06
+c: P2e.2
+lv: 2
+Q: Compared with a relatively inelastic demand curve drawn through the same point, a relatively elastic demand curve is
+A: flatter, because a small change in price causes a large change in quantity demanded
+B: steeper, because a large change in price causes a small change in quantity demanded
+C: vertical
+D: upward sloping
+ANS: A
+WHY: The flatter the demand curve through a point, the more the quantity demanded responds to a given price change.
+
+=== mc y11-mc-P2f-01
+c: P2f.1 P2f.3
+lv: 2
+Q: On the morning of a fish market, the supply of fresh fish is likely to be
+A: perfectly elastic
+B: relatively elastic
+C: very inelastic, because the day's catch is already fixed
+D: unit elastic
+ANS: C
+WHY: In the very short run sellers cannot catch more fish, and fresh fish cannot be stored for long, so the quantity supplied barely responds to price.
+
+=== mc y11-mc-P2f-02
+c: P2f.3
+lv: 2
+Q: Which of the following makes the supply of a good more price elastic?
+A: Firms have spare (excess) capacity
+B: A very short time period
+C: The good perishes quickly and cannot be stored
+D: Production needs specialised workers who are hard to find
+ANS: A
+WHY: Spare capacity lets firms raise output quickly when the price rises. B, C and D all make supply less elastic.
+
+=== mc y11-mc-P2f-03
+c: P2f.4
+lv: 2
+Q: Price elasticity of supply matters to a business because
+A: a firm with elastic supply can raise its output quickly to take advantage of a price rise
+B: it shows how consumers respond to price changes
+C: it sets the rate of tax on the firm's product
+D: it matters only to governments
+ANS: A
+WHY: Firms that can respond quickly to higher prices earn more from a rise in demand. B describes price elasticity of demand.
+
+=== mc y11-mc-P2f-04
+c: P2f.1 P2f.2
+lv: 1
+Q: The amount of land in a city centre is fixed. Its supply curve is
+A: horizontal (perfectly elastic)
+B: upward sloping and flat
+C: vertical (perfectly inelastic)
+D: downward sloping
+ANS: C
+WHY: However high the price, no more city-centre land can be supplied, so PES = 0 and the supply curve is vertical.
+
+=== mc y11-mc-P2g-01
+c: P2g.2
+lv: 1
+Q: A market with a single seller, a product with no close substitutes and very high barriers to entry is
+A: perfect competition
+B: monopolistic competition
+C: an oligopoly
+D: a monopoly
+ANS: D
+WHY: These are the characteristics of a monopoly, which gives the seller strong pricing power.
+
+=== mc y11-mc-P2g-02
+c: P2g.2
+lv: 2
+Q: Which market structure best describes Australia's supermarket industry?
+A: Perfect competition
+B: Monopolistic competition
+C: Oligopoly
+D: Monopoly
+ANS: C
+WHY: A few large firms, led by Coles and Woolworths, hold most of the market, with high barriers to entry and businesses that watch and respond to each other's prices.
+
+=== mc y11-mc-P2g-03
+c: P2g.2
+lv: 2
+Q: Cafés in a large city are an example of monopolistic competition because
+A: there are many sellers offering similar but differentiated products, with low barriers to entry
+B: one café controls the whole market
+C: every café sells identical coffee at the same price
+D: a few large chains dominate and new cafés cannot enter
+ANS: A
+WHY: Each café differentiates itself (location, quality, atmosphere), which gives it a little pricing power, but it is easy for new cafés to open.
+
+=== mc y11-mc-P2g-04
+c: P2g.3
+lv: 2
+Q: An increase in market concentration (fewer, larger firms) is most likely to lead to
+A: lower prices and higher output
+B: perfect competition
+C: more firms entering the market
+D: higher prices, lower output and higher profits for the remaining firms
+ANS: D
+WHY: With less competition, firms have more pricing power: they can charge more and supply less. Quality and innovation may also suffer.
+
+=== mc y11-mc-P2g-05
+c: P2g.4
+lv: 2
+Q: A social media platform becomes more valuable to each user as more people join it. This is
+A: first-mover advantage
+B: consumer sovereignty
+C: an economy of scale in production
+D: a network effect
+ANS: D
+WHY: Network effects make large platforms more attractive and harder for new rivals to challenge, which adds to their market power.
+
+=== mc y11-mc-P2h-01
+c: P2h.3
+lv: 1
+Q: A negative externality is
+A: a cost imposed on third parties who are not part of the transaction
+B: a benefit received by the buyer
+C: a cost paid by the producer
+D: a tax on a good
+ANS: A
+WHY: Pollution affecting nearby residents is an example: the cost is not paid by the buyer or seller, so the market does not take it into account.
+
+=== mc y11-mc-P2h-02
+c: P2h.5
+lv: 2
+Q: A lighthouse is an example of a public good because it is
+A: rival and excludable
+B: provided only by private firms
+C: non-rival and non-excludable
+D: a demerit good
+ANS: C
+WHY: One ship using the light does not reduce its use by others (non-rival), and ships that do not pay cannot be stopped from using it (non-excludable).
+
+=== mc y11-mc-P2h-03
+c: P2h.5
+lv: 2
+Q: The free rider problem means that
+A: people can benefit from a good without paying for it, so private firms will not supply enough of it
+B: the government provides goods free of charge
+C: monopolies charge high prices
+D: consumers lack information about products
+ANS: A
+WHY: If people can use a good without paying, few will pay, so a profit-seeking firm will under-provide it. This is why public goods are usually provided by government.
+
+=== mc y11-mc-P2h-04
+c: P2h.7
+lv: 2
+Q: A used-car seller knows a car has a faulty gearbox, but the buyer does not. This is an example of
+A: a positive externality
+B: perfect competition
+C: a public good
+D: asymmetric information
+ANS: D
+WHY: One side of the transaction knows more than the other, so the buyer may pay more than the car is worth. This can lead to market failure.
+
+=== mc y11-mc-P2h-05
+c: P2h.6
+lv: 2
+Q: Two petrol stations in a town secretly agree to keep their prices at the same high level. This is
+A: predatory pricing
+B: consumer sovereignty
+C: a network effect
+D: collusion
+ANS: D
+WHY: Collusion is an abuse of market power: firms agree not to compete, so consumers pay more. Predatory pricing is setting prices very low to drive rivals out.
+
+=== mc y11-mc-P2h-06
+c: P2h.3
+lv: 2
+Q: Education is often called a merit good because
+A: left to the market, it would be under-consumed, as people do not take into account its benefits to others
+B: left to the market, it would be over-consumed
+C: it is a public good
+D: it is a demerit good
+ANS: A
+WHY: An educated workforce benefits the whole community (a positive externality), so private demand is less than the socially efficient amount.
+
+=== mc y11-mc-P2h-07
+c: P2h.3
+lv: 3
+Q: Overfishing in international waters is an example of the problem of
+A: public goods
+B: merit goods
+C: common-pool resources
+D: asymmetric information
+ANS: C
+WHY: Fish stocks are rival (one boat's catch leaves fewer fish for others) but hard to exclude people from, so each user has an incentive to overuse them.
+
+=== mc y11-mc-P2h-08
+c: P2h.2
+lv: 2
+Q: Which of the following is a challenge some Aboriginal and Torres Strait Islander businesses face in accessing capital?
+A: Interest rates set specifically for them by the Reserve Bank
+B: Too many lenders competing for their business
+C: A law that bans them from borrowing
+D: Fewer assets that lenders accept as security, such as land that can be mortgaged, which can make loans harder to obtain
+ANS: D
+WHY: Lenders usually want security for a loan. Land held communally or under native title generally cannot be mortgaged, and lower inherited wealth can mean fewer other assets.
+
+=== mc y11-mc-P2h-09
+c: P2h.8
+lv: 2
+Q: Income and wealth inequality can be seen as a market failure because
+A: markets reward people according to what they own and can sell, which can leave some people socially excluded and unable to meet basic needs
+B: markets always produce equal incomes
+C: inequality raises GDP
+D: the price mechanism sets the same wage for everyone
+ANS: A
+WHY: Markets allocate according to purchasing power, not need, so they may not achieve the community's social objectives.
+
+=== mc y11-mc-P2h-10
+c: P2h.1
+lv: 2
+Q: Which of the following is a limitation of the price mechanism?
+A: It allocates goods to people with purchasing power, regardless of need
+B: It responds to changes in consumer preferences
+C: It signals changes in scarcity
+D: It gives producers an incentive to supply more
+ANS: A
+WHY: B, C and D are strengths of the price mechanism. Allocating by ability to pay is one reason markets may not meet social objectives.
+
+=== mc y11-mc-P2i-01
+c: P2i.2
+lv: 1
+Q: The government wants fewer people to smoke. Which policy directly raises the price of cigarettes?
+A: A subsidy
+B: Direct provision
+C: A price ceiling
+D: An excise tax
+ANS: D
+WHY: An excise is a per-unit tax that raises producers' costs and so the price consumers pay, reducing the quantity of cigarettes bought.
+
+=== mc y11-mc-P2i-02
+c: P2i.3
+lv: 2
+Q: A binding price ceiling, set below the equilibrium price, will cause
+A: a surplus
+B: no change in the market
+C: a shortage
+D: an increase in supply
+ANS: C
+WHY: At the lower price, quantity demanded expands and quantity supplied contracts, so demand exceeds supply.
+
+=== mc y11-mc-P2i-03
+c: P2i.3
+lv: 2
+Q: A price floor is binding only when it is set
+A: below the equilibrium price
+B: by the market
+C: at the equilibrium price
+D: above the equilibrium price
+ANS: D
+WHY: A floor stops the price falling below it. If it is below equilibrium the market price is already higher, so the floor has no effect.
+
+=== mc y11-mc-P2i-04
+c: P2i.5
+lv: 2
+Q: An industry lobbies the government for a subsidy that benefits its firms but not the wider community. This is an example of
+A: rent-seeking
+B: consumer sovereignty
+C: a positive externality
+D: a nudge
+ANS: A
+WHY: Rent-seeking is using resources to gain a benefit from government rather than by producing something of value, and it can lead to government failure.
+
+=== mc y11-mc-P2i-05
+c: P2i.2
+lv: 2
+Q: Placing fruit at eye level and lollies on the top shelf of a school canteen is an example of
+A: a tax
+B: a regulation
+C: a nudge
+D: a quota
+ANS: C
+WHY: A nudge changes how choices are presented to encourage better decisions, without banning options or changing prices.
+
+=== mc y11-mc-P2i-06
+c: P2i.5 P2i.4
+lv: 3
+Q: A government subsidises fertiliser to raise farm output, but farmers overuse it and runoff damages a river. This is best described as
+A: government failure through an unintended consequence
+B: a public good
+C: allocative efficiency
+D: a binding price floor
+ANS: A
+WHY: The intervention aimed to help but created a new negative externality, so resources may end up less efficiently used.
+
+=== mc y11-mc-P2i-07
+c: P2i.3 P5b.5
+lv: 3
+Q: A per-unit tax is placed on a good with very price inelastic demand. Most of the burden of the tax will fall on
+A: producers
+B: no one, because the price will not change
+C: the government
+D: consumers
+ANS: D
+WHY: When demand is inelastic, buyers keep buying as the price rises, so producers can pass most of the tax on to them in a higher price.

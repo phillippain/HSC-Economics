@@ -1,0 +1,224 @@
+# Year 11 (2025 syllabus) extended responses (20 marks). PTS say what a high-band response includes;
+# PLAN suggests paragraphs.
+
+=== er y11-er-P1-choice
+c: P1a.2 P1a.3 P1a.4 P1a.5 P1c.1
+lv: 2
+k: explain
+Q: Explain how the economic problem and opportunity cost shape the decisions made by consumers, producers and governments.
+PTS:
+- Defines the economic problem (unlimited wants, scarce resources) and opportunity cost accurately
+- Consumers: choices about spending and saving, decided at the margin, with examples
+- Producers: what and how much to produce and how to combine resources, with examples
+- Governments: choices between spending priorities, with a production possibilities frontier showing the trade-off
+- Uses economic terms (marginal cost and benefit, trade-offs, incentives) throughout
+PLAN:
+- Introduction: the economic problem and why every agent must choose
+- Consumers: budgets, trade-offs and opportunity cost
+- Producers: allocating scarce resources and the cost–benefit principle
+- Governments: competing priorities, illustrated with a PPF
+- Conclusion: opportunity cost is the common thread in all economic decisions
+
+=== er y11-er-P1-systems
+c: P1b.3 P1b.4 P1b.1
+lv: 3
+k: analyse
+Q: Analyse how different economic systems answer the key economic questions.
+PTS:
+- Identifies the key questions: what, how and how much to produce, and how to distribute production
+- Pre-industrial, planned, free market and mixed economies, with how each answers the questions
+- Strengths and weaknesses of each, e.g. efficiency and choice versus equity and stability
+- Relates the analysis to Australia's mixed market economy, with examples of market and government roles
+- A clear line of argument linking the system's institutions to its outcomes
+PLAN:
+- Introduction: the key economic questions and the range of systems
+- Pre-industrial and planned economies: tradition and central planning
+- Free market economies: the price mechanism and the profit motive
+- Mixed economies and Australia
+- Conclusion: why most modern economies are mixed
+
+=== er y11-er-P1-cycle
+c: P1e.4 P1e.5 P1e.6 P1e.7 P1d.5
+lv: 3
+k: analyse
+Q: Explain the causes of fluctuations in the business cycle and analyse their effects on households, businesses and government.
+PTS:
+- Describes the stages of the business cycle, using a diagram
+- Causes: changes in injections and leakages (e.g. investment, exports, confidence, interest rates), shocks such as pandemics or global downturns
+- Effects on households: jobs, incomes, wealth and confidence
+- Effects on businesses: sales, profits, investment and hiring; on government: tax revenue, welfare spending and the budget
+- Links to unemployment and inflation in each stage, with examples
+PLAN:
+- Introduction: the business cycle and why economies fluctuate
+- Causes of fluctuations, using the circular flow of income
+- Effects of a contraction on households, businesses and government
+- Effects of an expansion, including inflation
+- Conclusion
+
+=== er y11-er-P2-equilibrium
+c: P2d.1 P2d.2 P2b.4 P2c.4
+lv: 2
+k: explain diagram
+Q: Using demand and supply diagrams, explain how changes in demand and supply affect market equilibrium.
+PTS:
+- Explains equilibrium and how the price mechanism clears shortages and surpluses
+- Shows an increase or decrease in demand on a correctly labelled diagram, with the non-price factor that caused it
+- Shows an increase or decrease in supply on a diagram, with its cause
+- Distinguishes movements along curves (expansions and contractions) from shifts
+- Explains a case where demand and supply change together, and why one effect is then uncertain
+PLAN:
+- Introduction: market equilibrium
+- A change in demand (diagram, cause, effect on price and quantity)
+- A change in supply (diagram, cause, effect)
+- Both curves shifting together
+- Conclusion
+
+=== er y11-er-P2-elasticity
+c: P2e.1 P2e.4 P2e.5 P2f.3 P2f.4
+lv: 3
+k: analyse calc
+Q: Analyse the significance of price elasticity of demand and price elasticity of supply for businesses and governments.
+PTS:
+- Defines PED and PES, the degrees of elasticity and the percentage method, with a calculation
+- Factors affecting PED (necessity, substitutes, share of income, time, addictiveness) and PES (time, spare capacity, storage, mobility of factors)
+- Significance for businesses: pricing and total revenue, product differentiation, responding to price rises
+- Significance for governments: tax revenue and tax incidence, e.g. excise on tobacco or fuel
+- Uses diagrams and examples throughout
+PLAN:
+- Introduction: elasticity defined
+- PED: degrees, measurement and factors
+- PED and business decisions on price and revenue
+- PES and how businesses respond to price changes
+- Governments: taxes and their incidence
+- Conclusion
+
+=== er y11-er-P2-concentration
+c: P2g.1 P2g.2 P2g.3 P2g.4 P2h.6
+lv: 3
+k: analyse
+Q: Analyse the economic implications of increasing market concentration, including the role of digital platforms.
+PTS:
+- Describes the market structures and the role of competition
+- Effects of concentration on price, quantity, quality, innovation and profit
+- Digital platforms: network effects and first-mover advantage as sources of market power
+- Possible abuse of market power (collusion, predatory pricing) and its link to market failure
+- Balanced analysis, e.g. economies of scale and innovation can benefit consumers; Australian examples such as supermarkets
+PLAN:
+- Introduction: competition and market structures
+- Effects of concentration on consumers
+- Effects on businesses: profits and innovation
+- Digital platforms
+- Conclusion with a judgement
+
+=== er y11-er-P2-failure
+c: P2h.3 P2h.5 P2i.1 P2i.2 P2i.4 P2i.5
+lv: 3
+k: evaluate diagram
+Q: Evaluate the effectiveness of government intervention in correcting market failure.
+PTS:
+- Explains types of market failure: externalities, public goods, market power, asymmetric information, inequality
+- Explains forms of intervention: taxes, subsidies, direct provision, regulation, price and quantity controls, nudges
+- Uses a diagram, e.g. a negative externality corrected by a tax, or a binding price ceiling
+- Evaluates strengths and limitations, including government failure (unintended consequences, rent-seeking)
+- Reaches a sustained judgement supported by examples
+PLAN:
+- Introduction and judgement
+- Externalities and taxes or subsidies (diagram)
+- Public goods and direct provision
+- Price controls and their unintended consequences
+- Government failure
+- Conclusion
+
+=== er y11-er-P3-households
+c: P3a.1 P3a.2 P3a.4 P3b.1 P3b.2
+lv: 2
+k: analyse
+Q: Analyse the role of households in the economy as consumers and as suppliers of labour.
+PTS:
+- Households as consumers: utility-maximising and socially and ethically motivated agents
+- Consumption, saving and income, using MPC and MPS with a calculation
+- Consumer sovereignty and the challenges to it
+- Households as suppliers of labour: factors affecting labour supply and participation
+- Links between the two roles, e.g. incomes earned from work fund consumption
+PLAN:
+- Introduction: households in the circular flow
+- Consumption decisions
+- Saving and the MPC and MPS
+- Supplying labour and barriers to participation
+- Conclusion
+
+=== er y11-er-P3-productivity
+c: P3c.4 P3c.5 P3c.6 P3c.2 P3d.3
+lv: 3
+k: analyse diagram
+Q: Explain the factors that affect the productivity of businesses and analyse why productivity matters for profits and living standards.
+PTS:
+- Defines productivity and its link to production
+- Factors: technological innovation, capital deepening, worker skills, economies and diseconomies of scale
+- Uses an LRAC diagram to show economies of scale and the technical optimum
+- Links productivity to costs and profit, using accounting and economic profit
+- Links productivity to wages, employment (including AI and automation) and living standards
+PLAN:
+- Introduction: productivity
+- Technology and capital deepening
+- Skills and training
+- Scale: the LRAC curve
+- Why it matters: profits, wages and living standards
+- Conclusion
+
+=== er y11-er-P4-finance
+c: P4a.1 P4a.2 P4c.3 P4c.4 P4c.5 P4c.6 P4c.7
+lv: 3
+k: analyse diagram
+Q: Analyse the role of the financial sector and interest rates in the Australian economy.
+PTS:
+- Explains how financial intermediaries and superannuation channel savings into investment
+- Describes equity and debt markets, primary and secondary
+- Explains the roles of interest rates: the price of money, the cost of credit, the return on savings, an indicator of risk
+- Uses a loanable funds diagram to show how changes in the demand for and supply of funds affect interest rates
+- Analyses effects of interest rate changes, e.g. on housing affordability, investment and saving
+PLAN:
+- Introduction: the financial sector in the circular flow
+- Intermediaries and superannuation
+- Equity and debt markets
+- Interest rates and the loanable funds market (diagram)
+- Effects of rate changes on households and businesses
+- Conclusion
+
+=== er y11-er-P5-tax
+c: P5b.1 P5b.4 P5b.5 P5b.6 P5b.7
+lv: 3
+k: evaluate
+Q: Evaluate the Australian tax system against the features of a good tax.
+PTS:
+- Explains the purposes of taxation and the major sources of Australian Government revenue
+- Distinguishes direct and indirect taxes, and progressive, proportional and regressive taxes
+- Assesses taxes such as income tax and the GST against simplicity, fairness and efficiency
+- Explains arguments for reform, e.g. reliance on income tax, bracket creep, a narrow GST base
+- A clear judgement supported by examples and, where useful, calculations
+PLAN:
+- Introduction and judgement
+- Purposes and structure of the tax system
+- Fairness: progressivity and incidence
+- Efficiency and simplicity
+- The case for reform
+- Conclusion
+
+=== er y11-er-P6-links
+c: P6a.1 P6a.2 P6b.1 P6c.1 P6d.1
+lv: 2
+k: explain
+Q: Explain how international trade, international investment and exchange rates link Australia with the global economy.
+PTS:
+- Explains the basis of trade and its benefits, and the value, direction and composition of Australia's trade
+- Explains international investment flows: foreign debt and foreign equity, and Australia's main sources of investment
+- Explains the role of exchange rates, with a bilateral exchange rate calculation
+- Explains the purpose of the balance of payments as the record of these links
+- Uses accurate examples, e.g. resource exports to Asia, US investment in Australia
+PLAN:
+- Introduction: Australia as an open economy
+- International trade
+- International investment
+- Exchange rates
+- The balance of payments
+- Conclusion

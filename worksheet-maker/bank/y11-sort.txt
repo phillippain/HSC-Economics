@@ -1,0 +1,197 @@
+# Year 11 (2025 syllabus) sort and classify: each line is "- item => heading". The student copy mixes the order.
+
+=== sort y11-so-P1b-factors
+c: P1b.1 P1b.2
+lv: 1
+Q: Sort each item into the factor of production it is, and remember the income each factor earns.
+CATS: Land (natural resources) | Labour | Capital | Entrepreneurship
+- Iron ore in the ground in the Pilbara => Land (natural resources)
+- A nurse's work in a hospital => Labour
+- A delivery van owned by a bakery => Capital
+- Starting a new app business and taking the risk => Entrepreneurship
+- Fish in the ocean => Land (natural resources)
+- An accountant's skills and time => Labour
+- A factory's robots => Capital
+- Organising land, labour and capital to open a café => Entrepreneurship
+
+=== sort y11-so-P1b-systems
+c: P1b.4
+lv: 2
+Q: Sort each feature into the economic system it best describes.
+CATS: Pre-industrial | Planned | Free market | Mixed market
+- Production follows tradition and custom => Pre-industrial
+- A central authority decides what is produced and sets prices => Planned
+- The price mechanism and the profit motive decide what is produced => Free market
+- Markets allocate most resources, but government provides health, education and welfare => Mixed market
+- Most resources are owned by the state => Planned
+- Government has almost no role apart from protecting property rights => Free market
+- Families produce mainly for their own needs => Pre-industrial
+- Australia today => Mixed market
+
+=== sort y11-so-P1d-flows
+c: P1d.2
+lv: 1
+Q: Sort each flow into an injection into, or a leakage from, the circular flow of income.
+CATS: Injection | Leakage
+- A Chinese steelmaker buys Australian iron ore => Injection
+- A household puts part of its pay into a savings account => Leakage
+- The government builds a new motorway => Injection
+- Workers pay income tax => Leakage
+- A business buys new machinery => Injection
+- An Australian family buys a car made in Japan => Leakage
+- An overseas student pays university fees in Australia => Injection
+- A company pays tax on its profits => Leakage
+
+=== sort y11-so-P2b-shift
+c: P2b.3 P2b.4
+lv: 2
+Q: Each event affects the demand for coffee. Sort it into a movement along the demand curve or a shift of the demand curve.
+CATS: Movement along the demand curve | Shift of the demand curve
+- Cafés raise the price of coffee => Movement along the demand curve
+- The price of tea (a substitute) falls => Shift of the demand curve
+- A study finds that coffee is good for your health => Shift of the demand curve
+- A café runs a half-price coffee special => Movement along the demand curve
+- Consumers' incomes rise => Shift of the demand curve
+- The price of milk (a complement) rises sharply => Shift of the demand curve
+- People expect coffee prices to rise next month => Shift of the demand curve
+- Coffee becomes cheaper because of a good harvest => Movement along the demand curve
+
+=== sort y11-so-P2c-supply
+c: P2c.4
+lv: 2
+Q: Sort each event into whether it would increase or decrease the supply of bread.
+CATS: Increase in supply | Decrease in supply
+- The price of wheat falls => Increase in supply
+- A new oven bakes bread faster and uses less power => Increase in supply
+- Bakers' wages rise => Decrease in supply
+- Several new bakeries open in the area => Increase in supply
+- Electricity prices rise sharply => Decrease in supply
+- A drought cuts the wheat harvest => Decrease in supply
+- Bakers expect bread prices to fall next month, so they sell more now => Increase in supply
+- Some bakeries close down => Decrease in supply
+
+=== sort y11-so-P2e-elastic
+c: P2e.4 P2e.1
+lv: 2
+Q: Sort each good by whether its demand is likely to be relatively price elastic or relatively price inelastic.
+CATS: Relatively elastic | Relatively inelastic
+- Life-saving medicine => Relatively inelastic
+- One brand of breakfast cereal => Relatively elastic
+- Cigarettes => Relatively inelastic
+- Overseas holidays => Relatively elastic
+- Salt => Relatively inelastic
+- New cars => Relatively elastic
+- Electricity for a household => Relatively inelastic
+- Restaurant meals => Relatively elastic
+
+=== sort y11-so-P2g-structures
+c: P2g.2
+lv: 2
+Q: Sort each market into the market structure it is closest to.
+CATS: Perfect competition | Monopolistic competition | Oligopoly | Monopoly
+- A market for one variety of wheat, with thousands of growers selling at the world price => Perfect competition
+- Hairdressers in a large city => Monopolistic competition
+- Australian supermarkets => Oligopoly
+- The only water supplier for a city => Monopoly
+- Cafés in a busy suburb => Monopolistic competition
+- Australia's major banks => Oligopoly
+- Airlines on domestic routes in Australia => Oligopoly
+- A company holding the only licence to run a city's train network => Monopoly
+
+=== sort y11-so-P2h-failure
+c: P2h.3 P2h.5 P2h.6 P2h.7
+lv: 2
+Q: Sort each example into the type of market failure it shows.
+CATS: Externality | Public good | Abuse of market power | Asymmetric information
+- A factory's smoke damages the health of nearby residents => Externality
+- Street lighting that everyone can use whether or not they pay => Public good
+- Two cement companies secretly agree to raise their prices => Abuse of market power
+- A seller hides the fact that a used car has been in a flood => Asymmetric information
+- Neighbours enjoy a beautiful garden they did not pay for => Externality
+- National defence => Public good
+- A large retailer cuts prices below cost to drive a new rival out of business => Abuse of market power
+- People who know they are likely to get sick are more likely to buy health insurance => Asymmetric information
+
+=== sort y11-so-P2i-policy
+c: P2i.2
+lv: 2
+Q: Sort each government action into the form of intervention it is.
+CATS: Tax | Subsidy | Regulation | Price control | Nudge
+- An excise on alcohol => Tax
+- Payments to households that install home batteries => Subsidy
+- A ban on selling tobacco to people under 18 => Regulation
+- A maximum price for rental housing => Price control
+- Text messages reminding people to pay their fines on time => Nudge
+- A minimum price for farm produce => Price control
+- Laws that set standards for car emissions => Regulation
+- A levy on each tonne of waste sent to landfill => Tax
+
+=== sort y11-so-P3a-goods
+c: P3a.8
+lv: 2
+Q: Sort each good by how its demand responds, for most people, to a rise in income or (for a Veblen good) to a rise in its price.
+CATS: Normal good | Inferior good | Veblen good
+- Restaurant meals => Normal good
+- Generic store-brand pasta => Inferior good
+- A limited-edition designer handbag => Veblen good
+- Overseas holidays => Normal good
+- Second-hand clothing => Inferior good
+- A luxury Swiss watch => Veblen good
+- New furniture => Normal good
+- Long-distance bus travel => Inferior good
+
+=== sort y11-so-P5-tax
+c: P5b.4 P5b.5
+lv: 2
+Q: Sort each tax into direct or indirect.
+CATS: Direct tax | Indirect tax
+- Personal income tax => Direct tax
+- Goods and services tax (GST) => Indirect tax
+- Company tax => Direct tax
+- Fuel excise => Indirect tax
+- Tobacco excise => Indirect tax
+- Capital gains tax => Direct tax
+- Customs duty on imported goods => Indirect tax
+- Tax on a superannuation fund's earnings => Direct tax
+
+=== sort y11-so-P5c-spend
+c: P5c.1
+lv: 1
+Q: Sort each item of government spending into recurrent or non-recurrent (capital) spending.
+CATS: Recurrent spending | Non-recurrent (capital) spending
+- The age pension => Recurrent spending
+- Building a new hospital => Non-recurrent (capital) spending
+- Teachers' salaries => Recurrent spending
+- A new railway line => Non-recurrent (capital) spending
+- JobSeeker payments => Recurrent spending
+- Buying new navy ships => Non-recurrent (capital) spending
+- Running costs of public hospitals => Recurrent spending
+- Constructing a new school => Non-recurrent (capital) spending
+
+=== sort y11-so-P4-markets
+c: P4b.1 P4b.2 P4c.1 P4c.2
+lv: 2
+Q: Sort each transaction into the financial market where it takes place.
+CATS: Primary equity market | Secondary equity market | Primary debt market | Secondary debt market
+- A company sells new shares to the public for the first time => Primary equity market
+- An investor sells her bank shares on the ASX => Secondary equity market
+- The Australian Government issues new 10-year bonds => Primary debt market
+- A super fund sells government bonds it has held for two years => Secondary debt market
+- A mining company raises funds by issuing extra new shares => Primary equity market
+- A bank issues new bonds to fund its lending => Primary debt market
+- Two investors trade shares in a supermarket company => Secondary equity market
+- An investor buys existing company bonds from another investor => Secondary debt market
+
+=== sort y11-so-P6d-bop
+c: P6d.1 P6b.1
+lv: 2
+Q: Sort each transaction into the part of Australia's balance of payments where it is recorded.
+CATS: Current account | Financial account
+- Australia exports coal to Japan => Current account
+- A US company buys an Australian tech start-up => Financial account
+- Australians holiday in Bali => Current account
+- An Australian bank borrows from investors in London => Financial account
+- Interest paid to overseas lenders => Current account
+- A Japanese company buys shares in an Australian mining company => Financial account
+- Overseas students pay fees to Australian universities => Current account
+- An Australian super fund buys shares in Apple => Financial account

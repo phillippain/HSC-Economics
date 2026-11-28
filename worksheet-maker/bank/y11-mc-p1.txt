@@ -1,0 +1,354 @@
+# Year 11 (2025 syllabus) multiple choice: Focus area 1, Introduction to economics.
+
+=== mc y11-mc-P1a-01
+c: P1a.2
+lv: 1
+Q: The basic economic problem arises because
+A: resources are unlimited but people's wants are limited
+B: people's wants are unlimited but the resources to satisfy them are scarce
+C: governments control most of the economy's resources
+D: prices are too high for many consumers
+ANS: B
+WHY: Scarcity, unlimited wants and limited resources, forces every economy to make choices. A reverses the problem; C and D describe particular situations, not the basic problem.
+
+=== mc y11-mc-P1a-02
+c: P1a.4
+lv: 1
+Q: Kate could spend Saturday at the beach or work a shift that pays $160. She chooses to work. What is the opportunity cost of working?
+A: The $160 she earns
+B: The cost of travelling to work
+C: Nothing, because she is paid
+D: The day at the beach she gives up
+ANS: D
+WHY: Opportunity cost is the next best alternative given up when a choice is made, here the day at the beach. The $160 is the benefit of working, not its cost.
+
+=== mc y11-mc-P1a-03
+c: P1a.3
+lv: 1
+Q: Which of the following is an economic decision made by a producer?
+A: A family deciding whether to buy a new car
+B: A bakery deciding how many loaves to bake each morning
+C: The Federal Government deciding how much to spend on hospitals
+D: A student deciding whether to save her part-time earnings
+ANS: B
+WHY: Producers (businesses) decide what and how much to produce. A and D are consumer decisions; C is a government decision.
+
+=== mc y11-mc-P1a-04
+c: P1a.5
+lv: 2
+k: calc
+Q: A café owner is deciding whether to stay open one extra hour each evening. The extra hour would bring in $300 of sales and add $220 to wages and other costs. Using the cost–benefit principle at the margin, she should
+A: stay open, because the marginal benefit ($300) is greater than the marginal cost ($220)
+B: close, because the café already makes a profit during the day
+C: stay open only if the café's total revenue for the day is above its total cost
+D: close, because wages are a cost of production
+ANS: A
+WHY: A decision at the margin compares the extra benefit with the extra cost of that one choice. The extra hour adds $80 to profit, so it is worth doing; the rest of the day's results (B, C) do not change that.
+
+=== mc y11-mc-P1a-05
+c: P1a.6
+lv: 2
+Q: A council gives a $50 rebate to households that buy a water-saving shower head. Some of these households then take longer showers. This is an example of
+A: an intended consequence of a disincentive
+B: a market reaching equilibrium
+C: the opportunity cost of saving water
+D: an unintended consequence of an incentive
+ANS: D
+WHY: The rebate is an incentive to save water; longer showers are a response the council did not intend, which reduces the water saved.
+
+=== mc y11-mc-P1a-06
+c: P1a.9
+lv: 2
+Q: Many people keep the superannuation fund their employer chose for them, even when another fund would charge lower fees and leave them better off. Behavioural economists explain this mainly as
+A: rational, self-interested behaviour
+B: the law of diminishing marginal utility
+C: status quo (default) bias
+D: a response to perfect information
+ANS: C
+WHY: People tend to stick with the default option even when switching would benefit them, which challenges the assumption that people always act rationally in their own interest.
+
+=== mc y11-mc-P1a-07
+c: P1a.10
+lv: 1
+Q: Which of the following is a macroeconomic issue?
+A: The price of avocados at a local market
+B: The wage paid to a nurse
+C: Australia's unemployment rate
+D: A firm's decision to hire one more worker
+ANS: C
+WHY: Macroeconomics studies the economy as a whole, such as total output, unemployment and inflation. A, B and D concern individual markets, workers or firms (microeconomics).
+
+=== mc y11-mc-P1a-08
+c: P1a.8
+lv: 2
+Q: Economic models such as demand and supply often assume ceteris paribus. This means that
+A: the government does not intervene in markets
+B: consumers have perfect information
+C: all other factors are held constant while one factor changes
+D: prices never change
+ANS: C
+WHY: Ceteris paribus ("other things equal") lets a model show the effect of one change at a time. It is a simplifying assumption, not a claim that nothing else ever changes.
+
+=== mc y11-mc-P1b-01
+c: P1b.2
+lv: 1
+Q: Which factor income is the reward for entrepreneurship?
+A: Rent
+B: Wages
+C: Interest
+D: Profit
+ANS: D
+WHY: Entrepreneurs organise the other factors and take the risk, and their reward is profit. Rent is paid for land, wages for labour and interest for capital.
+
+=== mc y11-mc-P1b-02
+c: P1b.1
+lv: 1
+Q: A tractor used on a farm is an example of which factor of production?
+A: Land (natural resources)
+B: Labour
+C: Capital
+D: Entrepreneurship
+ANS: C
+WHY: Capital is a man-made good used to produce other goods and services. The soil the tractor works is land.
+
+=== mc y11-mc-P1b-03
+c: P1b.4
+lv: 2
+Q: In a planned (command) economy, the question "What to produce?" is mainly answered by
+A: consumers, through the price mechanism
+B: government planners
+C: tradition and custom
+D: competition between private firms
+ANS: B
+WHY: In a planned economy the state owns most resources and a central authority decides what is produced. A and D describe a free market economy; C describes a pre-industrial (traditional) economy.
+
+=== mc y11-mc-P1b-04
+c: P1b.4
+lv: 2
+Q: Australia is best described as a mixed market economy because
+A: the government owns all the major industries
+B: prices are set by a central planning authority
+C: production is decided mainly by tradition
+D: most resources are allocated by markets, while the government provides some goods and services and regulates markets
+ANS: D
+WHY: A mixed economy combines market allocation with a significant role for government, for example health, education, welfare and regulation in Australia.
+
+=== mc y11-mc-P1b-05
+c: P1b.5
+lv: 1
+Q: When money acts as a measure of value (unit of account), it
+A: is accepted in exchange for goods and services
+B: allows the values of different goods and services to be compared in the same units
+C: can be saved and spent later
+D: is backed by gold
+ANS: B
+WHY: Prices in dollars let us compare the value of very different things. A is money as a medium of exchange; C is money as a store of value.
+
+=== mc y11-mc-P1b-06
+c: P1b.3
+lv: 1
+Q: The key economic question "How to distribute production?" is about
+A: which goods and services to produce
+B: which methods and combinations of resources to use
+C: who receives the goods and services that are produced
+D: what quantity of each good to produce
+ANS: C
+WHY: Distribution is about who gets the output. A is "What to produce?", B is "How to produce?" and D is "How much to produce?".
+
+=== mc y11-mc-P1c-01
+c: P1c.4 P1c.1
+lv: 2
+k: calc table
+Q: The production possibilities schedule shows an economy that produces only food and machines. What is the opportunity cost of increasing machine production from 20 to 30 units?
+TABLE: Production possibilities schedule
+| Point | Food (tonnes) | Machines (units) |
+| A | 100 | 0 |
+| B | 90 | 10 |
+| C | 75 | 20 |
+| D | 55 | 30 |
+| E | 30 | 40 |
+| F | 0 | 50 |
+A: 10 tonnes of food
+B: 20 tonnes of food
+C: 55 tonnes of food
+D: 10 machines
+ANS: B
+WHY: Moving from C to D, food falls from 75 to 55 tonnes, so the 10 extra machines cost 20 tonnes of food (2 tonnes per machine).
+
+=== mc y11-mc-P1c-02
+c: P1c.5
+lv: 1
+Q: A point inside an economy's production possibilities frontier shows
+A: a combination of goods that cannot be produced with current resources
+B: full and efficient use of all resources
+C: unemployed or underemployed resources
+D: economic growth
+ANS: C
+WHY: Inside the frontier the economy could produce more of one good without giving up any of the other, so some resources are idle or not used efficiently. A describes a point outside the frontier.
+
+=== mc y11-mc-P1c-03
+c: P1c.2 P1c.5
+lv: 2
+Q: Which of the following would shift an economy's production possibilities frontier outwards?
+A: A fall in unemployment
+B: A new technology that raises productivity in all industries
+C: Moving resources from making consumer goods to making capital goods
+D: A recession
+ANS: B
+WHY: Better technology lets the same resources produce more of both goods. A moves the economy from inside the frontier towards it; C is a movement along the frontier; D moves the economy inside it.
+
+=== mc y11-mc-P1c-04
+c: P1c.3
+lv: 2
+Q: Which of the following is an assumption of the production possibilities model?
+A: Prices are set by the government
+B: Resources can grow without limit during the period
+C: The economy produces two goods with a fixed quantity of resources and given technology
+D: Consumers decide what is produced
+ANS: C
+WHY: The model holds resources and technology fixed and assumes they are fully used, so it can show the trade-off between two goods.
+
+=== mc y11-mc-P1c-05
+c: P1c.6
+lv: 2
+Q: An economy decides to produce more capital goods and fewer consumer goods this year. The most likely result is
+A: no opportunity cost, because capital goods are useful
+B: a point inside the production possibilities frontier
+C: a production possibilities frontier that shifts inwards
+D: lower consumption now but a frontier that can shift outwards in the future
+ANS: D
+WHY: The opportunity cost is consumer goods today. More machinery and infrastructure raise future productive capacity, so the frontier can shift out later.
+
+=== mc y11-mc-P1d-01
+c: P1d.2
+lv: 1
+Q: Which of the following is an injection into the circular flow of income?
+A: Savings
+B: Taxation
+C: Exports
+D: Imports
+ANS: C
+WHY: Exports bring spending into the economy from overseas. Savings, taxation and imports are leakages from the circular flow.
+
+=== mc y11-mc-P1d-02
+c: P1d.4
+lv: 2
+k: calc
+Q: In an economy, S = $60b, T = $90b, M = $50b, I = $70b, G = $85b and X = $55b. This economy is
+A: in equilibrium
+B: in disequilibrium, and national income will fall
+C: in disequilibrium, and national income will rise
+D: in equilibrium, because government spending is less than taxation
+ANS: C
+WHY: Leakages S + T + M = $200b and injections I + G + X = $210b. Injections exceed leakages, so spending and income rise until the two are equal.
+
+=== mc y11-mc-P1d-03
+c: P1d.1
+lv: 1
+Q: In the circular flow of income, households provide businesses with
+A: goods and services
+B: taxes
+C: profits
+D: the factors of production: land, labour, capital and enterprise
+ANS: D
+WHY: Households own the factors of production and sell their services to businesses in return for factor incomes. Businesses provide goods and services to households.
+
+=== mc y11-mc-P1d-04
+c: P1d.5
+lv: 2
+Q: Households decide to save a larger share of their income. Other things equal, the circular flow model predicts that
+A: leakages fall and national income rises
+B: injections rise and national income rises
+C: leakages rise and national income falls
+D: there is no effect, because savings stay in the economy
+ANS: C
+WHY: Saving is a leakage: money saved is not spent on goods and services, so spending and income fall unless the savings are matched by more investment.
+
+=== mc y11-mc-P1d-05
+c: P1d.1
+lv: 2
+Q: Which sector's main role in the circular flow of income is to channel savings to businesses for investment?
+A: The international sector
+B: The government sector
+C: The financial sector
+D: The household sector
+ANS: C
+WHY: Banks, super funds and other financial institutions take in savings and lend or invest them, linking a leakage (S) with an injection (I).
+
+=== mc y11-mc-P1e-01
+c: P1e.4
+lv: 1
+Q: The stage of the business cycle at which real GDP stops rising and begins to fall is the
+A: trough
+B: upturn
+C: expansion
+D: peak
+ANS: D
+WHY: The peak is the high point of the cycle, after which a contraction begins. The trough is the low point, after which an expansion (upturn) begins.
+
+=== mc y11-mc-P1e-02
+c: P1e.5
+lv: 2
+Q: During the contraction (downturn) phase of the business cycle, we would usually expect
+A: unemployment to fall and inflation to rise
+B: both unemployment and inflation to fall
+C: unemployment to rise and inflationary pressure to ease
+D: business profits to rise
+ANS: C
+WHY: Spending and production slow, so firms need fewer workers and have less ability to raise prices.
+
+=== mc y11-mc-P1e-03
+c: P1e.1
+lv: 2
+k: calc
+Q: An economy's real GDP rose from $2,000 billion to $2,050 billion over a year. Its rate of economic growth was
+A: 2.5 per cent
+B: 5.0 per cent
+C: 50 per cent
+D: 2.4 per cent
+ANS: A
+WHY: Growth = (2,050 − 2,000) ÷ 2,000 × 100 = 2.5 per cent. D divides by the new value instead of the original one.
+
+=== mc y11-mc-P1e-04
+c: P1e.6
+lv: 2
+Q: Which of the following is most likely to start a downturn in Australia's business cycle?
+A: A rise in business confidence
+B: A large fall in exports because major trading partners are in recession
+C: Lower interest rates
+D: Rising household wealth
+ANS: B
+WHY: Exports are an injection; a large fall reduces spending, production and income. A, C and D would usually lift spending.
+
+=== mc y11-mc-P1e-05
+c: P1e.2
+lv: 1
+Q: The main reason economies pursue higher GDP is to
+A: reduce exports
+B: increase inflation
+C: raise material living standards and create jobs
+D: reduce the size of government
+ANS: C
+WHY: Higher output means more goods and services and more income per person, and growing production needs more workers.
+
+=== mc y11-mc-P1e-06
+c: P1e.3 P1e.1
+lv: 1
+Q: Which statement about Aboriginal and Torres Strait Islander businesses is correct?
+A: They operate only in the arts
+B: They are not counted in Australia's GDP
+C: They add to GDP through the goods and services they produce, the people they employ and the incomes they pay, across many industries
+D: They are all owned by government
+ANS: C
+WHY: Aboriginal and Torres Strait Islander businesses operate in industries such as construction, professional services, tourism, retail, the arts and native foods, and their output is part of GDP.
+
+=== mc y11-mc-P1e-07
+c: P1e.7
+lv: 2
+Q: During a contraction in the business cycle, the Federal Government's budget usually moves towards deficit because
+A: tax revenue rises and spending on unemployment benefits falls
+B: neither tax revenue nor spending changes
+C: both tax revenue and spending rise
+D: tax revenue falls and spending on unemployment benefits rises
+ANS: D
+WHY: Lower incomes and profits mean less tax collected, while more people qualify for income support.
